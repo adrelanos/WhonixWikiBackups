@@ -12448,15 +12448,14 @@ For even more Security, see [[Advanced Security Guide]].
     <ns>0</ns>
     <id>120</id>
     <revision>
-      <id>3673</id>
-      <parentid>3672</parentid>
-      <timestamp>2013-10-18T09:00:56Z</timestamp>
+      <id>4013</id>
+      <parentid>4012</parentid>
+      <timestamp>2013-11-10T16:40:55Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Introduction */</comment>
-      <text xml:space="preserve" bytes="26992">&lt;!--
+      <text xml:space="preserve" bytes="27035">&lt;!--
 Copyright:
 
    Whonix Trust wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -12625,7 +12624,7 @@ Other reasons:
 * I2p (anonymizing network) does also talk about [http://www.i2p2.de/how_threatmodel.html#dev development attacks]. ([http://www.webcitation.org/6EnyKSGdn w])
 * [http://wiki.qubes-os.org/trac/wiki/VerifyingSignatures Qubes OS: What do the Digital Signatures Prove and What They DO NOT Prove] ([http://www.webcitation.org/6EnyL8AQn w])
 * [http://hyper.to/blog/link/attack-scenarios-software-distribution/ Miron’s Weblog: Attack Scenarios on Software Distributions] ([http://www.webcitation.org/6EnzaBTdP w])
-* list of incidents of compromised servers: [http://www.koch.ro/blog/index.php?/archives/153-On-distributing-binaries.html On distributing binaries]
+* list of incidents of compromised servers: [http://www.koch.ro/blog/index.php?/archives/153-On-distributing-binaries.html On distributing binaries] ([http://www.webcitation.org/6L1roljIe w])
 
 = How to improve the situation? =
 
@@ -12643,9 +12642,9 @@ Whonix provides an optional updater since Whonix 6.
 &lt;pre&gt;
 rm --verbose whonix_shared/usr/share/whonix/postinst.d/70_whonix_apt_key
 rm --verbose whonix_shared/usr/bin/whonix_repository
-rm --verbose man/whonix_shared/whonix_repository.8.ronn
 
 ## Not really necessary.
+rm --verbose man/whonix_shared/whonix_repository.8.ronn
 rm --verbose whonix_shared/etc/whonix.d/30_aptrepository_default
 &lt;/pre&gt;
 
@@ -12713,7 +12712,7 @@ Thanks to Qubes OS ([https://groups.google.com/forum/?fromgroups=#!topic/qubes-d
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>811697d17swxp15a8dykf2reooy49ug</sha1>
+      <sha1>2zoaros8mluf2ezfhesbzkna4fejea0</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -18338,14 +18337,14 @@ When you go ahead now, and ask in a cracker forum, they probably won't spread a 
     <ns>0</ns>
     <id>162</id>
     <revision>
-      <id>3950</id>
-      <parentid>3712</parentid>
-      <timestamp>2013-11-04T22:45:21Z</timestamp>
+      <id>4015</id>
+      <parentid>3950</parentid>
+      <timestamp>2013-11-10T21:08:21Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="5160">{{Header}}
+      <text xml:space="preserve" bytes="5143">{{Header}}
 {{forkme}}
 * '''Technical Design'''
 ** [[Dev/Technical Introduction|Dev/Technical Introduction, Whonix Framework, Security Overview]]
@@ -18362,7 +18361,7 @@ When you go ahead now, and ask in a cracker forum, they probably won't spread a 
 ** [[Dev/Anonymity Network|Anonymity Network]]
 ** [[Dev/About Computer (In)Security]]
 ** [[Dev/Threat Model]]
-** [[Dev/Operating System|Operating System]]
+** [[Dev/Operating System]]
 ** [[Dev/Host]]
 ** [[Dev/Virtualization Platform]]
 ** [[Dev/Gateway]]
@@ -18450,7 +18449,7 @@ When you go ahead now, and ask in a cracker forum, they probably won't spread a 
 [[Category:Design]]
 
 {{Footer}}</text>
-      <sha1>mzfppghzz5dfrd9pcf95y5bbjoe0u38</sha1>
+      <sha1>g4lrhf7yguwqsyzm96m49oqwt7kz0x6</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -30247,15 +30246,15 @@ Some partially finished attempts:
     <ns>0</ns>
     <id>254</id>
     <revision>
-      <id>3883</id>
-      <parentid>3860</parentid>
-      <timestamp>2013-10-30T13:36:43Z</timestamp>
+      <id>4014</id>
+      <parentid>3883</parentid>
+      <timestamp>2013-11-10T20:49:50Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Popularity Contest */</comment>
-      <text xml:space="preserve" bytes="11359">{{Header}}
+      <comment>/* General */</comment>
+      <text xml:space="preserve" bytes="11628">{{Header}}
 
 = Operating System =
 
@@ -30323,6 +30322,11 @@ Although the [http://www.debian.org/security/faq Debian security FAQ] states, th
 
 [http://www.trapkit.de/tools/checksec.html checksec.sh] --kernel reports good kernel protection: GCC stack protector support, Enforce read-only kernel data, Restrict /dev/mem and /dev/kmem access are all enabled.
 
+Also interesting:
+
+* [http://lists.debian.org/debian-security/2013/10/msg00065.html Debian APT Key Revocation Procedure]
+* [http://lists.debian.org/debian-security/2013/11/msg00019.html How (un)safe would Debian be when only using the security.debian.org repository?]
+
 Related statements from the FAQ reasoning why Debian is the base for Whonix Example Implementation:
 
 * [[FAQ#Why_are_the_Whonix_images_so_big.3F|Why are the Whonix images so big?]]
@@ -30369,7 +30373,7 @@ For these reasons it's not a good idea to add popcon to Whonix. If you have sugg
 {{Footer}}
 
 [[Category:Design]]</text>
-      <sha1>iib5fcyv6ojcbetcds53x13pd6zorxk</sha1>
+      <sha1>hcqh62a17m54wvmhs0rkwjvobsjjrbg</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
