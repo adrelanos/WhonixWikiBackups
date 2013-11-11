@@ -116,14 +116,14 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
     <ns>8</ns>
     <id>3</id>
     <revision>
-      <id>3504</id>
-      <parentid>3503</parentid>
-      <timestamp>2013-10-17T00:15:37Z</timestamp>
+      <id>4021</id>
+      <parentid>3504</parentid>
+      <timestamp>2013-11-11T13:52:07Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="1533">
+      <text xml:space="preserve" bytes="1578">
 * users
 ** Main Page|Homepage
 ** About|About
@@ -155,7 +155,7 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
 ** Official Whonix Online Profiles|Social Media Profiles
 ** https://twitter.com/Whonix|@Whonix Twitter
 ** https://plus.google.com/108150429836421683225|Google+
-** Facebook|Facebook
+** https://www.facebook.com/pages/Whonix/622399681135624|Facebook
 
 * Developers
 ** Mailing Lists#whonix-devel|Development Mailing List
@@ -175,7 +175,7 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
 ** helppage|help
 
 * LANGUAGES</text>
-      <sha1>hr2yhxn5eznljob4f9d4sglbs2rsduh</sha1>
+      <sha1>hgdv0jux06uklm3vu7prn0f03wij3h5</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -14587,34 +14587,6 @@ The UUID line should look like ''UUID: 9852BF98-B83C-49DB-A8DE-182C42C7226B''. I
 
 [[Category:Design]]</text>
       <sha1>lc6k3hpnccrkonb1li3tqm7hsu2v3tm</sha1>
-      <model>wikitext</model>
-      <format>text/x-wiki</format>
-    </revision>
-  </page>
-  <page>
-    <title>Facebook</title>
-    <ns>0</ns>
-    <id>131</id>
-    <revision>
-      <id>1971</id>
-      <parentid>1970</parentid>
-      <timestamp>2013-07-30T22:45:20Z</timestamp>
-      <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
-      </contributor>
-      <text xml:space="preserve" bytes="522">{{Header}}
-
-Feel free to follow [https://www.facebook.com/pages/Whonix/369240439779108 Whonix's Facebook page], if it isn't of concern to you to acknowledge being a Whonix user.
-
-There won't be any updates on Facebook, because [https://sourceforge.net/p/whonix/featureblog/2013/01/facebook-asking-for-government-issued-photo-id-ex-passport-drivers-license---whonix-facebook-account-permanently-blocked/ I can no longer log in].
-
-New admin will be Jason Ayala (Jason@JasonAyala.com).
-
-{{Footer}}
-
-[[Category:Documentation]]</text>
-      <sha1>mjup2q8o7mv4si52nwhrg8j7zkcco3y</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -30496,15 +30468,15 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
     <ns>0</ns>
     <id>256</id>
     <revision>
-      <id>4002</id>
-      <parentid>3927</parentid>
-      <timestamp>2013-11-07T23:21:27Z</timestamp>
+      <id>4022</id>
+      <parentid>4002</parentid>
+      <timestamp>2013-11-11T13:55:39Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
       <comment>/* Whonix Social Media Profiles */</comment>
-      <text xml:space="preserve" bytes="2918">{{Header}}
+      <text xml:space="preserve" bytes="3026">{{Header}}
 = Whonix Social Media Profiles =
 
 There are some Whonix Social Media Profiles, but please don't rely on them for getting Whonix News (See [[Download#Stay Tuned|News]] for how to get Whonix related news.) and please don't use them to contact Whonix developers. (See [[Contact]] for contact information.)
@@ -30514,7 +30486,7 @@ If you don't get into trouble, by letting others to know, that you like or use W
 * [https://twitter.com/Whonix Twitter Whonix]
 * [https://plus.google.com/108150429836421683225/about Google+ Whonix] &lt;font size=&quot;-3&quot;&gt;(registered by contributor, maintained by adrelanos)&lt;/font&gt;
 * [https://www.youtube.com/user/adrelanos YouTube Whonix] &lt;font size=&quot;-3&quot;&gt;(registered by contributor, maintained by adrelanos)&lt;/font&gt;
-* [https://www.facebook.com/pages/Whonix/622399681135624 Facebook Whonix]
+* [https://www.facebook.com/pages/Whonix/622399681135624 Facebook Whonix] &lt;font size=&quot;-3&quot;&gt;(admin is [https://www.facebook.com/jasonjayala Jason Ayala] (Jason@JasonAyala.com))&lt;/font&gt;
 
 = Other Accounts =
 == Project Accounts ==
@@ -30547,7 +30519,7 @@ If you don't get into trouble, by letting others to know, that you like or use W
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>ry86eo2udmh1wpygrze2wct30pva9tm</sha1>
+      <sha1>3fs45scuq9mbw4cj3nzde6tm3len7zj</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
