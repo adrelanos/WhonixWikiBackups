@@ -30958,15 +30958,15 @@ For technical stuff, see [[Dev/Mixmaster]].
     <ns>0</ns>
     <id>260</id>
     <revision>
-      <id>4011</id>
-      <parentid>3230</parentid>
-      <timestamp>2013-11-10T00:21:35Z</timestamp>
+      <id>4024</id>
+      <parentid>4011</parentid>
+      <timestamp>2013-11-12T14:20:57Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Manually updating Tor Browser (TBB Alpha version) */</comment>
-      <text xml:space="preserve" bytes="5621">{{Header}}
+      <comment>/* Manually updating Tor Browser (TBB stable version) */</comment>
+      <text xml:space="preserve" bytes="4475">{{Header}}
 
 = Manually updating Tor Browser (TBB stable version) =
 (1) Go to https://www.torproject.org/ and/or http://idnxcnkne4qt76tg.onion/ and download the Tor Browser Bundle for Linux 32 bit. Store it in ''/home/user/''.
@@ -31003,42 +31003,13 @@ cd ~
 
 (11) Make the ''start-tor-browser'' script executable. Right click on ''start-tor-browser'' -&gt; Properties -&gt; Permissions -&gt; enable the ''Is executable'' box -&gt; ok.
 
-(12) Go to ''/home/user/tor-browser_en-US/Data/profile/'' and create a file ''user.js'' with the following content.
+(12) If you want to make 100% sure you never have Tor over Tor, you must shut down Whonix-Gateway while doing the following.
 
-&lt;pre&gt;## Begin of patched user.js.
+(13) Delete /home/user/my_tor-browser_en-US/App/tor.
 
-## If you edit this file while Firefox is running, your changes will be
-## overwritten, when you close Firefox.
+(14) If there is '''no''' green Vidalia icon in the task bar, everything is fine.
 
-## How to create the user.js network settings:
-## 1. Make a backup of prefs.js.
-## 1. Start Tor Browser with the patched start script.
-## 2. Apply proxy settings using the Tor Button settings dialog..
-## 3. Make a diff from the old and the new pref.js.
-## 4. Copy the relevant changes to user.js.
-
-## network settings
-## (Are now set in /etc/environment - or not...)
-## (See /etc/environment.)
-user_pref(&quot;extensions.torbutton.use_privoxy&quot;, false);
-user_pref(&quot;extensions.torbutton.settings_method&quot;, &quot;custom&quot;);
-user_pref(&quot;extensions.torbutton.socks_host&quot;, &quot;192.168.0.10&quot;);
-user_pref(&quot;extensions.torbutton.socks_port&quot;, 9100);
-user_pref(&quot;network.proxy.socks&quot;, &quot;192.168.0.10&quot;);
-user_pref(&quot;network.proxy.socks_port&quot;, 9100);
-user_pref(&quot;extensions.torbutton.custom.socks_host&quot;, &quot;192.168.0.10&quot;);
-user_pref(&quot;extensions.torbutton.custom.socks_port&quot;, 9100);
-
-## End of Whonix user.js.
-&lt;/pre&gt;
-
-(13) If you want to make 100% sure you never have Tor over Tor, you must shut down Whonix-Gateway while doing the following.
-
-(14) Delete /home/user/my_tor-browser_en-US/App/tor.
-
-(15) If there is '''no''' green Vidalia icon in the task bar, everything is fine.
-
-(16) Start Tor Browser and run
+(15) Start Tor Browser and run
 
 &lt;pre&gt;ps aux | grep tor&lt;/pre&gt;
 
@@ -31052,11 +31023,11 @@ Or.
 
 Something went wrong and you're running Tor over Tor, which is recommended against.
 
-(17) If the tests results are as expected, everything went fine.
+(16) If the tests results are as expected, everything went fine.
 
-(18) Don't forget to restart Whonix-Gateway, if you shut it down in step (13).
+(17) Don't forget to restart Whonix-Gateway, if you shut it down in step (13).
 
-(19) Done.
+(18) Done.
 
 = General information about Tor Browser in Whonix =
 See [[Tor Browser]].
@@ -31092,7 +31063,7 @@ See [[Tor Browser]].
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>cchfvphr69guzfpkhy5yq1sh0ko4frk</sha1>
+      <sha1>dqkdmhbkqxszhdgpplr7ewus3dkyack</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -48758,6 +48729,23 @@ from mainland once a day.
 test
 &lt;/translate&gt;</text>
       <sha1>hyu2jhc9zpffurg4mzrfqlhi4d9wnx9</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Talk:Main Page</title>
+    <ns>1</ns>
+    <id>515</id>
+    <revision>
+      <id>4023</id>
+      <timestamp>2013-11-12T12:47:18Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>時計 ブランド</comment>
+      <text xml:space="preserve" bytes="214">新着商品特価商品カスタマーサービス 価格破壊宣言！時計 ブランド売れ筋のセイコー腕時計激安ハミルトン 腕時計を衝撃タイムセールhttp://www.leparadisdedieu.com/</text>
+      <sha1>symsz634f1rnbt7q67n9o7uiqhm4g0d</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
