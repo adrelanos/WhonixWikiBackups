@@ -13298,15 +13298,15 @@ When you are using them at the same time, the risks explained in the introductio
     <ns>0</ns>
     <id>127</id>
     <revision>
-      <id>3821</id>
-      <parentid>3497</parentid>
-      <timestamp>2013-10-21T04:34:37Z</timestamp>
+      <id>4029</id>
+      <parentid>3821</parentid>
+      <timestamp>2013-11-13T16:17:55Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* More than one Tor Browser in Whonix */</comment>
-      <text xml:space="preserve" bytes="36518">{{Header}}
+      <comment>/* About VirtualBox */</comment>
+      <text xml:space="preserve" bytes="36564">{{Header}}
 &lt;!--
 Copyright:
 
@@ -13646,6 +13646,10 @@ Related VirtualBox Links:
 * [https://www.virtualbox.org/query?summary=~&amp;col=id&amp;col=summary&amp;col=status&amp;col=owner&amp;col=type&amp;col=priority&amp;col=component&amp;order=priority Custom Ticket Search]
 * [https://www.virtualbox.org/newticket New Ticket]
 
+See also:
+
+* [[Dev/Virtualization_Platform]]
+
 == Qubes OS ==
 
 It shouldn't be very hard to get Whonix to run on top of Qubes OS, which would be more secure than VirtualBox. See blog post: [https://sourceforge.net/p/whonix/featureblog/2013/02/running-whonix-on-top-of-qubes-os-anyone-interested-unpacking-ova-images/ Running Whonix on top of Qubes OS, anyone interested?].
@@ -13965,7 +13969,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>qd8a3hsssm5wcwle3cftjmw9qhtz4un</sha1>
+      <sha1>10ozo7rlflv963gg7cnwyjrc6neyywt</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -15682,37 +15686,41 @@ What's the point in using Skype if you and all your chat partners are also willi
     <ns>0</ns>
     <id>137</id>
     <revision>
-      <id>2741</id>
-      <parentid>2163</parentid>
-      <timestamp>2013-09-12T21:33:26Z</timestamp>
+      <id>4030</id>
+      <parentid>4028</parentid>
+      <timestamp>2013-11-13T17:22:05Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Virtualization Platform */</comment>
-      <text xml:space="preserve" bytes="1275">{{Header}}
-
-= Virtualization Platform =
+      <text xml:space="preserve" bytes="1564">{{Header}}
+{{forkme}}
+= Introduction =
 ''Whonix Example Implementation'' is based on VirtualBox. There was a development discussion about switching to a more secure Virtualization Platform and help is required.
 
 In an ideal world, ''Whonix Example Implementation'' would support all Virtualization Platforms. Theoretically it could be done using [http://libvirt.org/ libvirt]. Practically libvirt is out of question. [https://www.redhat.com/archives/libvirt-users/2012-August/msg00150.html libvirt-users Does libvirt abstract each and any vm specific command?] Libvirt does not (yet) abstract some commands Whonix depends on.
 
-See also [[Advanced_Security_Guide#About_VirtualBox]].
+= VirtualBox =
+* [https://forums.virtualbox.org/viewtopic.php?f=1&amp;t=58460 export VM using VDI instead of VMDK?]: seems not possible.
+* [https://forums.virtualbox.org/viewtopic.php?f=7&amp;t=58461 Mount VMDK on Debian testing/jessie?]: seems not possible.
 
-See [[Dev/Other Virtualization Platforms]] for more.
+This is non-ideal for reproducible builds.
 
-VirtualBox no longer in Debian main:
-
+= VirtualBox no longer in Debian main =
 * http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=709899
 * http://lists.debian.org/debian-devel/2013/08/msg00057.html
 * &quot;Virtualbox ships a BIOS that requires Watcom to compile from real sources,precompiled copy they ship as well is free but is not the preferred form for modification.&quot; http://lists.debian.org/debian-devel/2013/08/msg00106.html
 * https://www.virtualbox.org/ticket/12011
 * https://lists.torproject.org/pipermail/tor-talk/2013-September/029978.html
 
+= See Also =
+* [[Dev/Other Virtualization Platforms]]
+* [[Advanced_Security_Guide#About_VirtualBox]]
+
 {{Footer}}
 
 [[Category: Design]]</text>
-      <sha1>11c93zdiq9qn9xw8vthm8iy0nz897ps</sha1>
+      <sha1>8kdqo7quu7zk2epzm9jo8a3apqh2my0</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -30355,15 +30363,15 @@ For these reasons it's not a good idea to add popcon to Whonix. If you have sugg
     <ns>0</ns>
     <id>255</id>
     <revision>
-      <id>3988</id>
-      <parentid>3987</parentid>
-      <timestamp>2013-11-05T13:29:12Z</timestamp>
+      <id>4026</id>
+      <parentid>3988</parentid>
+      <timestamp>2013-11-13T16:08:48Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Advanced Topics = */</comment>
-      <text xml:space="preserve" bytes="6493">&lt;!--
+      <comment>/* Advanced Topics */</comment>
+      <text xml:space="preserve" bytes="6642">&lt;!--
 Copyright:
 
    Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -30406,6 +30414,9 @@ To be written.
 = Advanced Topics =
 == Air Gapped OpenPGP Key ==
 See [[Air Gapped OpenPGP Key]].
+
+== Clearsign with Multiple Keys ==
+[http://lists.gnupg.org/pipermail/gnupg-users/2013-July/047118.html Clearsign text document with multiple keys?]
 
 == The OpenPGP Web of Trust ==
 If you want to be extra cautious and really authenticate a OpenPGP key in a stronger way than what standard HTTPS offers you, you could use the OpenPGP Web of Trust.
@@ -30458,7 +30469,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>ely1amok47unzuifg7g2wahgm3vuwtc</sha1>
+      <sha1>kf3lb977myfp7x72vcrx8u659p2li81</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -39417,15 +39428,15 @@ To learn about adrelanos, the person who maintains Whonix, its OpenPGP key, see 
     <ns>0</ns>
     <id>380</id>
     <revision>
-      <id>1952</id>
-      <parentid>1525</parentid>
-      <timestamp>2013-07-30T00:50:16Z</timestamp>
+      <id>4027</id>
+      <parentid>1952</parentid>
+      <timestamp>2013-11-13T16:10:29Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="661">{{Header}}
-
+      <text xml:space="preserve" bytes="836">{{Header}}
+{{forkme}}
 = Location =
 http://sourceforge.net/projects/whonixdevelopermetafiles/files/internal/
 
@@ -39454,10 +39465,15 @@ Migrate from testers APT repository to stable APT repository.
 ./debug-steps/reprepro-wrapper copymatched stable testers &quot;*&quot;
 &lt;/pre&gt;
 
+= Misc =
+We might need this for key transition:
+
+* [http://lists.gnupg.org/pipermail/gnupg-users/2013-July/047118.html Clearsign text document with multiple keys?]
+
 {{Footer}}
 
 [[Category: Development]]</text>
-      <sha1>fe2yvnpdaemkvdck3lx3h9kkx8j4ly4</sha1>
+      <sha1>6l4x7a0xunxbiaviwhemfcll01ds8wu</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
