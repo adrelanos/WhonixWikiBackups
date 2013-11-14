@@ -2901,14 +2901,14 @@ Without performing these basics steps, the setup may sound clever, but may not w
     <ns>0</ns>
     <id>58</id>
     <revision>
-      <id>3502</id>
-      <parentid>3451</parentid>
-      <timestamp>2013-10-17T00:12:47Z</timestamp>
+      <id>4045</id>
+      <parentid>3502</parentid>
+      <timestamp>2013-11-14T22:59:19Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="1795">{{Header}}
+      <text xml:space="preserve" bytes="1892">{{Header}}
 
 = Contact =
 Please do use e-mail for reporting security vulnerabilities!
@@ -2922,7 +2922,7 @@ See [[Support]].
 &lt;html&gt;&lt;a href=&quot;/cgi-bin/mailman/listinfo/whonix-devel&quot;&gt;Developer Mailing List&lt;/a&gt;&lt;/html&gt;
 
 == For Press ==
-'''Email:''' ''adrelanos at riseup dot net'' &lt;ref name=OpenPGP /&gt;
+'''Email:''' ''adrelanos at riseup dot net'' &lt;ref name=OpenPGP&gt;E-mail encryption available. [[Trusting Whonix Signing Key | Whonix OpenPGP key information]]&lt;/ref&gt;
 
 I would appreciate if you could send me your draft before publishing articles about Whonix. This is not a request. It's an offer. I would proofread it, state where I think something is incorrect and add sources to my claims. I dislike to pressure press. You are free to write what you want. I feel free to post my standpoint in public if I feel otherwise about something.
 
@@ -2949,7 +2949,7 @@ If you don't get into trouble, by letting others to know, that you like or use W
 &lt;references/&gt;
 
 [[Category:Documentation]]</text>
-      <sha1>tb2a15zhvww3bo3xobz5o1q2qy56edh</sha1>
+      <sha1>6ph78w9j2ciyxnlwn9dum1ltcxy0ktl</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -14604,17 +14604,16 @@ The UUID line should look like ''UUID: 9852BF98-B83C-49DB-A8DE-182C42C7226B''. I
     <ns>0</ns>
     <id>132</id>
     <revision>
-      <id>3885</id>
-      <parentid>3874</parentid>
-      <timestamp>2013-10-31T00:18:45Z</timestamp>
+      <id>4044</id>
+      <parentid>3885</parentid>
+      <timestamp>2013-11-14T20:53:22Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* sdwdate / timesync */</comment>
-      <text xml:space="preserve" bytes="13333">{{Header}}
+      <text xml:space="preserve" bytes="13590">{{Header}}
 
-= Basic Troubleshooting =
+= Basic Troubleshooting - Installation and Network Issues =
 == Introduction ==
 This introduction is a summary of the basic troubleshooting instructions. It will be described below in greater details. This basically boils down to:
 
@@ -14842,6 +14841,11 @@ Check the timezone.
 &lt;pre&gt;cat /etc/timezone&lt;/pre&gt;
 
 Must be {{Code2|Etc/UTC}}.
+
+= Troubleshooting =
+== Virtual Box Disk Images ==
+=== INCONSISTENCY BETWEEN GRAIN TABLE AND BACKUP GRAIN TABLE ===
+Maybe this will help: Try convert the vmdk to vdi, remove the old vmdk from the VM and attach the new vdi.
 
 = Advanced users / developers and testers only =
 
@@ -15155,7 +15159,7 @@ See [[Dev/Leak Tests]].
 {{Footer}}
 
 [[Category:Development]] [[Category:Design]] [[Category:Documentation]]</text>
-      <sha1>2vr48iua4ibnxkbf9dmk3c7wtpdb5e6</sha1>
+      <sha1>8qznybzjxod78zra48hq6b3tln3q736</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
