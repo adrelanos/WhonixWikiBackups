@@ -11000,15 +11000,15 @@ Pack. Upload.
     <ns>0</ns>
     <id>113</id>
     <revision>
-      <id>3770</id>
-      <parentid>3611</parentid>
-      <timestamp>2013-10-19T12:09:39Z</timestamp>
+      <id>4036</id>
+      <parentid>3770</parentid>
+      <timestamp>2013-11-14T00:30:11Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Skipping selected Whonix Packages from Installation */</comment>
-      <text xml:space="preserve" bytes="12431">{{Header}}
+      <comment>/* Introduction */</comment>
+      <text xml:space="preserve" bytes="12826">{{Header}}
 {{forkme}}
 = Introduction =
 This chapter is dedicated to give an introduction into the Whonix source code. '''''If you prefer to read and understand the source code just by reading scripts you may skip this optional chapter.''''' It can be quite difficult to get started with hacking existing big complex projects.
@@ -11070,7 +11070,7 @@ Boring methods, which are required by the build-steps above.
 
 '''whonix_build'''
 
-Is a script, which simply runs all other build-steps. Actually it's &quot;optional&quot;. It has very little functionality besides running all other steps. You are free to run all steps one by one. That is useful for learning and for debugging purposes. In case you want to fix a bug or in case you want to upgrade the distribution or in case you want to switch the operating system or whatever you are better off running the steps manually. Run it with -help to see available switches. It has also -fast, -tg-fast and -tw-fast switch, which skips the slow 20_create-debian-img step.
+Is a script, which simply runs all other build-steps. Actually it's &quot;optional&quot;. It has very little functionality besides running all other steps. You are free to run all steps one by one. That is useful for learning and for debugging purposes. In case you want to fix a bug or in case you want to upgrade the distribution or in case you want to switch the operating system or whatever you are better off running the steps manually. Run it with -help to see available switches. It has also has a --fast1 and --fast2 switch which skips certain steps, which is useful for debugging purposes if these steps were already run.
 
 '''''Overview''''':
 
@@ -11092,6 +11092,10 @@ Is a script, which simply runs all other build-steps. Actually it's &quot;option
 '''''Modularity:'''''
 
 All steps could be easily replaced to add support for additional virtualizers, operating systems and so on. The numbers before the script names (20_..., 25_..., 30..., ...) are honored by whonix_build (using [http://manpages.ubuntu.com/manpages/raring/man8/run-parts.8.html run-parts]), which runs these steps in lexical order. Therefore you can easily add steps to the beginning or the end or even wretch steps in between.
+
+'''''File sizes:'''''
+
+Do not get shocked by file sized. Initially the .img is created with a size of 100 GB, but it will actually only take a fraction of that space on the harddrive. This is because .img .vdi and .vmdk are all sparse files, which means they do not take their maximum size, but only as much data as really is inside these images.
 
 '''''Summary:'''''
 
@@ -11273,7 +11277,7 @@ What would have to be done:
 {{Footer}}
 
 [[Category:Development]] [[Category:Design]]</text>
-      <sha1>ov8o2pf42a8qot5wj4a8mrc7nyykjn2</sha1>
+      <sha1>3fnrxddspgt4ga2o386piytd2eqs654</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -15686,25 +15690,30 @@ What's the point in using Skype if you and all your chat partners are also willi
     <ns>0</ns>
     <id>137</id>
     <revision>
-      <id>4030</id>
-      <parentid>4028</parentid>
-      <timestamp>2013-11-13T17:22:05Z</timestamp>
+      <id>4033</id>
+      <parentid>4032</parentid>
+      <timestamp>2013-11-13T23:22:23Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="1564">{{Header}}
+      <comment>/* VirtualBox */</comment>
+      <text xml:space="preserve" bytes="1957">{{Header}}
 {{forkme}}
 = Introduction =
 ''Whonix Example Implementation'' is based on VirtualBox. There was a development discussion about switching to a more secure Virtualization Platform and help is required.
 
 In an ideal world, ''Whonix Example Implementation'' would support all Virtualization Platforms. Theoretically it could be done using [http://libvirt.org/ libvirt]. Practically libvirt is out of question. [https://www.redhat.com/archives/libvirt-users/2012-August/msg00150.html libvirt-users Does libvirt abstract each and any vm specific command?] Libvirt does not (yet) abstract some commands Whonix depends on.
 
-= VirtualBox =
+= VirtualBox missing features =
+The following is non-ideal for [[Comparison_with_Others#Verifiable_Builds|verifiable builds]], because we have to convert to vdi first:
+
 * [https://forums.virtualbox.org/viewtopic.php?f=1&amp;t=58460 export VM using VDI instead of VMDK?]: seems not possible.
 * [https://forums.virtualbox.org/viewtopic.php?f=7&amp;t=58461 Mount VMDK on Debian testing/jessie?]: seems not possible.
 
-This is non-ideal for reproducible builds.
+The following is non-ideal, because we can not warn when host operating sytems are being used we don't think are the right tool for hosting Whonix VMs:
+
+* [https://forums.virtualbox.org/viewtopic.php?f=1&amp;t=58498 Can a guest find out its host operating system?]: seems not possible.
 
 = VirtualBox no longer in Debian main =
 * http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=709899
@@ -15720,7 +15729,7 @@ This is non-ideal for reproducible builds.
 {{Footer}}
 
 [[Category: Design]]</text>
-      <sha1>8kdqo7quu7zk2epzm9jo8a3apqh2my0</sha1>
+      <sha1>9uvuq7l9ji9joq3of4b27ufvkv68xrp</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -16789,21 +16798,20 @@ See also [[TestVPN|Free example VPNs working with Whonix for testing purposes]].
     <ns>0</ns>
     <id>146</id>
     <revision>
-      <id>1908</id>
-      <parentid>1670</parentid>
-      <timestamp>2013-07-29T01:02:16Z</timestamp>
+      <id>4042</id>
+      <parentid>1908</parentid>
+      <timestamp>2013-11-14T03:47:54Z</timestamp>
       <contributor>
-        <username>Anon</username>
-        <id>10</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <text xml:space="preserve" bytes="2936">{{Header}}
+      <comment>/* VPN method (WORKING) */</comment>
+      <text xml:space="preserve" bytes="2949">{{Header}}
 
 = Introduction =
 
 The Tor software does not support UDP itself yet&lt;ref&gt;https://trac.torproject.org/projects/tor/ticket/7830&lt;/ref&gt;. Whonix provides a limited workaround for using UDP anyway, in the best possible secure manner.
 
 = VPN method (WORKING) =
-
 Read first: [https://trac.torproject.org/projects/tor/wiki/doc/TorPlusVPN Tor Plus VPN] and [[Whonix:General_disclaimer#Whonix_VPN_disclaimer|Whonix VPN disclaimer]].
 
 This tutorial uses OpenVPN. &lt;font size=&quot;-3&quot;&gt;Other VPN implementations, such as PPTP, might be useful as well, but we haven't researched that yet. Maybe there are other VPN implementations, which also support UDP, and which are free and allow UDP. We haven't researched that yet.&lt;/font&gt;
@@ -16814,17 +16822,20 @@ Test if your Whonix setup is working in general.
 
 &lt;pre&gt;
 ## Enforcing SSL.
-/usr/bin/curl --tlsv1 --proto =https https://check.torproject.org
+curl.real --tlsv1 --proto =https https://check.torproject.org
 
 ## Alternatively, not enforcing SSL, because some VPN services seem to block SSL.
-/usr/bin/curl http://check.torproject.org
+curl.real http://check.torproject.org
 &lt;/pre&gt;
 
 Which should show &quot;Congratulations. Your browser is configured to use Tor.&quot;.
 
 Install rdate for UDP and TCP testing.
 
-&lt;pre&gt;sudo apt-get install rdate&lt;/pre&gt;
+&lt;pre&gt;
+sudo apt-get update
+sudo apt-get install rdate
+&lt;/pre&gt;
 
 Commands for TCP testing are.
 
@@ -16866,7 +16877,7 @@ Moved to [Dev] Archive Tunneling UDP over Tor.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>jjxcma9cs9er1vnm2lxbhke6sbg6u2h</sha1>
+      <sha1>kddiqssgb4lt8meb060wqg1j3q0693c</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -30969,15 +30980,15 @@ For technical stuff, see [[Dev/Mixmaster]].
     <ns>0</ns>
     <id>260</id>
     <revision>
-      <id>4024</id>
-      <parentid>4011</parentid>
-      <timestamp>2013-11-12T14:20:57Z</timestamp>
+      <id>4035</id>
+      <parentid>4024</parentid>
+      <timestamp>2013-11-13T23:36:10Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Manually updating Tor Browser (TBB stable version) */</comment>
-      <text xml:space="preserve" bytes="4475">{{Header}}
+      <comment>/* Manually updating Tor Browser (TBB Alpha version) */</comment>
+      <text xml:space="preserve" bytes="4503">{{Header}}
 
 = Manually updating Tor Browser (TBB stable version) =
 (1) Go to https://www.torproject.org/ and/or http://idnxcnkne4qt76tg.onion/ and download the Tor Browser Bundle for Linux 32 bit. Store it in ''/home/user/''.
@@ -31065,7 +31076,7 @@ See [[Tor Browser]].
 {{mbox
 | type       = notice
 | image      = [[File:Ambox_notice.png|40px|alt=Info]]
-| text       = In case you are wondering if this will result in [[DoNot#Prevent_Tor_over_Tor_scenarios.|Tor over Tor]]... No, because since Whonix version 6, Tor Browser and Whonix play well together.&lt;ref&gt;Technically, rinetd listens on {{Code2|127.0.0.1}} {{Code2|9150}} and {{Code2|9151}} (TBB's default ports) and forwards them to Whonix-Gateway {{Code2|192.168.0.10 9150}} (where a Tor SocksPort is listening) and {{Code2|9151}} (where [[Dev/CPFP|Control Port Filter Proxy]] is listening). Tor does not get started by {{Code2|[https://gitweb.torproject.org/tor-launcher.git torbrowser-launcher]}} because the {{Code2|[https://trac.torproject.org/projects/tor/ticket/6009 TOR_SKIP_LAUNCH]}} environment variable has been set set to {{Code2|1}} in {{Code2|/etc/profile.d/}}.&lt;/ref&gt;
+| text       = In case you are wondering if this will result in [[DoNot#Prevent_Tor_over_Tor_scenarios.|Tor over Tor]]... No, because since Whonix version 6, Tor Browser and Whonix play well together.&lt;ref&gt;Technically, rinetd listens on {{Code2|127.0.0.1}} {{Code2|9150}} and {{Code2|9151}} (TBB's default ports) and forwards them to Whonix-Gateway {{Code2|192.168.0.10 9150}} (where a Tor SocksPort is listening) and {{Code2|9151}} (where [[Dev/CPFP|Control Port Filter Proxy]] is listening). Tor does not get started by {{Code2|[https://gitweb.torproject.org/tor-launcher.git torbrowser-launcher]}} because the {{Code2|[https://trac.torproject.org/projects/tor/ticket/6009 TOR_SKIP_LAUNCH]}} environment variable has been set set to {{Code2|1}} in {{Code2|/etc/profile.d/}}. See also [[Dev/Dummy_Tor]].&lt;/ref&gt;
 }}
 
 = Footnotes =
@@ -31074,7 +31085,7 @@ See [[Tor Browser]].
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>dqkdmhbkqxszhdgpplr7ewus3dkyack</sha1>
+      <sha1>ahkctg7pep18iuww9hvhh5nd7jz78cz</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -32857,27 +32868,26 @@ This was tested in VirtualBox.
     <ns>0</ns>
     <id>278</id>
     <revision>
-      <id>3260</id>
-      <parentid>3259</parentid>
-      <timestamp>2013-10-11T17:48:40Z</timestamp>
+      <id>4034</id>
+      <parentid>3260</parentid>
+      <timestamp>2013-11-13T23:33:58Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Dummy Tor */</comment>
-      <text xml:space="preserve" bytes="869">{{Header}}
+      <text xml:space="preserve" bytes="1159">{{Header}}
 
-= Dummy Tor =
-Three implementations. Only on Whonix-Workstation.
+= Why? =
+See [[DoNot#Prevent_Tor_over_Tor_scenarios.]]
 
-* Implemented in Whonix source folder, {{Code|debian/control}}. The dummytor package uses the &quot;Provides: tor&quot; field&lt;ref&gt;See &quot;7.5 Virtual packages - Provides&quot; on http://www.debian.org/doc/debian-policy/ch-relationships.html&lt;/ref&gt;, which should avoid any kinds of conflicts, in case upstream releases a higher version. This won't work for packages, which depend on an explicit version (such as TorChat).
+= Implementation =
+Implemented in three ways. Only on Whonix-Workstation.
+
+* Implemented in Whonix source folder, {{Code|debian/control}}. The dummytor package uses the &quot;Provides: tor&quot; field&lt;ref&gt;See &quot;7.5 Virtual packages - Provides&quot; on http://www.debian.org/doc/debian-policy/ch-relationships.html&lt;/ref&gt;, which should avoid any kinds of conflicts, in case upstream releases a higher version of Tor. This won't work for packages, which depend on an explicit version of Tor (such as TorChat).
 
 * Tor autostart is disabled in {{Code|/etc/default/tor}}, so even if the package gets installed, it won't be automatically started.
 
-* rinetd listens on Tor's default ports. system Tor's {{Code|127.0.0.1:9050}}, {{Code|127.0.0.1:9051}} and TBB's {{Code|127.0.0.1:9150}}, {{Code|127.0.0.1:9051}}.
-
-= Footnotes =
-&lt;references /&gt;
+* rinetd listens on Tor's default ports. system Tor's {{Code|127.0.0.1:9050}}, {{Code|127.0.0.1:9051}} and TBB's {{Code|127.0.0.1:9150}}, {{Code|127.0.0.1:9051}}, which prevents the default Tor Browser Bundle or Tor package from The Tor Project to open listening ports on these ports, which will result in their Tor failing to open the listening port and therefore exiting, thus preventing Tor over Tor.
 
 = Footnotes =
 &lt;references /&gt;
@@ -32885,7 +32895,7 @@ Three implementations. Only on Whonix-Workstation.
 {{Footer}}
 
 [[Category:Design]]</text>
-      <sha1>p5ksysju0j5fo0kuyb1vqxhhf1ham4n</sha1>
+      <sha1>tm74bz23ocfalkuk2vz76lj89mjgf2s</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -33376,15 +33386,14 @@ See [[Dev/Build Documentation]].
     <ns>0</ns>
     <id>288</id>
     <revision>
-      <id>3623</id>
-      <parentid>3359</parentid>
-      <timestamp>2013-10-18T03:41:47Z</timestamp>
+      <id>4041</id>
+      <parentid>4040</parentid>
+      <timestamp>2013-11-14T00:37:55Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Pre Building */</comment>
-      <text xml:space="preserve" bytes="3692">{{Header}}
+      <text xml:space="preserve" bytes="3566">{{Header}}
 
 = Redistribution =
 See [https://github.com/Whonix/Whonix/tree/master/release Release Folder] in Whonix source code.
@@ -33393,11 +33402,11 @@ See [https://github.com/Whonix/Whonix/tree/master/release Release Folder] in Who
 Clean source code
 
 * &lt;ref&gt;get rid of .directory files inside the source code: dolphin -&gt; preferences -&gt; general -&gt; behavior -&gt; use common view properties for all folders&lt;/ref&gt;
-* &lt;ref&gt;* get rid of ~backup files: {{Code|find ./ -name '*~' | xargs trash-put}}&lt;/ref&gt;
+* &lt;ref&gt;get rid of ~backup files: {{Code|find ./ -name '*~' | xargs trash-put}}&lt;/ref&gt;
 * You can get a list of unwanted files with {{Code|git clean -dfxn}} and remove them with {{Code|git clean -dfx}}.
 
 
-* Build Configuration: Enable Whonix's APT Repository.
+* Use a newer snapshot.debian.org repository.
 
 
 * Update Whonix debian package repository.
@@ -33438,9 +33447,6 @@ git push origin version
 ./release/upload_images
 &lt;/pre&gt;
 
-* Only next version: updated v1 news for Whonix 0.5.6: ./release/upload_whonix_news
-
-* Update {{Code|Whonix News}}.
 * OpenPGP sign, verify, transfer sf download README.
 
 &lt;pre&gt;
@@ -33451,7 +33457,7 @@ git push origin version
 * OpenPGP sign, verify, transfer {{Code|Whonix News Files}}.
 
 &lt;pre&gt;
-.release/upload_whonix_news_v2
+./release/upload_whonix_news_v3
 &lt;/pre&gt;
 
 === Testing ===
@@ -33521,7 +33527,7 @@ Compress. Upload.
 {{Footer}}
 
 [[Category:Development]] [[Category:Design]]</text>
-      <sha1>s89tdfmc8hrd3i7a946306xlzfxu5qd</sha1>
+      <sha1>e8bxwu0tht16llhl6898e8o06k5v6bx</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -48780,6 +48786,84 @@ test
       <comment>Created page with &quot;This Link contains all news on rock [http://Search.huffingtonpost.com/search?q=crushing&amp;s_it=header_form_v1 crushing] and rock busting technology.&lt;br&gt;&lt;br&gt;Here is my web site ....&quot;</comment>
       <text xml:space="preserve" bytes="236">This Link contains all news on rock [http://Search.huffingtonpost.com/search?q=crushing&amp;s_it=header_form_v1 crushing] and rock busting technology.&lt;br&gt;&lt;br&gt;Here is my web site ... [http://www.youtube.com/watch?v=vUjNUEZoEFA rock breaking]</text>
       <sha1>7nwfrjddvc5yazyvysrec65pd0zysc1</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Talk:Support</title>
+    <ns>1</ns>
+    <id>517</id>
+    <revision>
+      <id>4043</id>
+      <timestamp>2013-11-14T08:03:30Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Giới thiệu cảnh đẹp và du lịch Việt Nam</comment>
+      <text xml:space="preserve" bytes="14117">Chết một ngày bỗng sống lại thành... người mới 
+ 
+Trong câu chuyện về luân hồi chuyển kiếp, TS. Vũ Thế Khanh đã kể cho tôi nghe câu chuyện ở Vụ Bản (Nam Định) mà ông đã được biết. Thực tế, nhiều nhà nghiên cứu muốn gặp cháu bé để tìm hiểu một vấn đề khoa học mà lâu nay họ vẫn đặt ra nhiều giả thuyết mà chưa tiếp cận được, bởi gia đình chưa đồng ý. Họ mong muốn cháu bé được sống bình thường như những đứa trẻ khác mặc dù sự &quot;đầu thai&quot; của cháu khá kỳ lạ. Nó như chuyện &quot;cổ tích&quot; Hồn Trương Ba da hàng thịt mà chúng ta vẫn từng nghe kể. 
+ 
+Ông Khanh kể, cháu bé Nguyễn Phú Quyết Tiến quê ở Vụ Bản (Nam Định) bị chết đuối khi mới 5 tuổi. Gia đình anh Tân, chị Thuận sau này có nghe người ta mách ở Xóm Cọi, xã Yên Phú, Lạc Sơn (Hoà Bình) có đứa trẻ nghi là &quot;con tái sinh&quot; của anh chị. Cháu bé tên là Bùi Lạc Bình, sinh năm 2002, con của một người Mường, nhưng từ khi biết nói cứ khăng khăng nhận mình là người Kinh, nhà ở thị trấn Vụ Bản. 
+ 
+Sự thực khoa học về những vụ đầu thai tại Việt Nam 
+Có hay không kiếp luân hồi của con người. Ảnh minh họa. 
+ 
+Bán tín, bán nghi anh chị Tân đã tìm lên Lạc Sơn gặp cháu Bình. Nhưng bất ngờ, vừa gặp anh chị cháu Bình tự nhiên quấn quít gọi bố mẹ, xưng con. Hình dạng của Bình thì khác Tiến nhưng mọi cử chỉ, hành động và cách nhớ lại chuyện nhà thì giống nhau. Khi cháu Bình về Vụ Bản chơi, tất cả những đồ đạc trong nhà, hàng xóm láng giềng cháu đều nhớ tên, thấy thân quen. Sau chuyến đi ấy, khi về Hoà Bình, cháu bé chỉ nằng nặc đòi về Vụ Bản. Dù chẳng biết thực hư như thế nào, nhưng nhiều người biết chuyện vẫn coi cháu Bình là sự &quot;đầu thai&quot; của cháu Tiến. 
+ 
+Một trong nhiều câu chuyện được các nhà nghiên cứu về khả năng đặc biệt của con người kể lại về hiện tượng &quot;đầu thai&quot;, bằng chứng này được ghi lại trong cuốn Phật học Phổ thông, xuất bản tại Việt Nam vào cuối năm 1990. Đó là câu chuyện mang tính huyền bí nhưng cũng không xa lạ với một số câu chuyện thời hiện đại. Chuyện có thật này xảy ra tại làng Tân Việt ở Cà Mau (vùng Đầm Giơi). Vợ chồng ông Cả Hiêu có 3 người con, trong đó, cô con gái được ông Hiêu chiều chuộng nhất nhưng không may, cô bị bệnh và qua đời lúc 19 tuổi. Cả nhà ai cũng đau buồn, thương xót, ông Cả Hiêu thì như điên như dại. 
+ 
+Câu chuyện không chấm dứt ở sự qua đời của cô gái mà lại là chuyện bắt đầu vì sự trùng hợp. Cách làng Tân Việt khoảng 100 cây số là làng Vĩnh Mỹ (Bạc Liêu) cũng có một cô gái bị bệnh (cùng thời gian với cô con gái ông Cả Hiêu) và qua đời. Người nhà khóc lóc lo việc tẩm liệm thì bất ngờ ngày hôm sau cô gái sống lại làm mọi người vừa mừng vừa sợ. 
+ 
+Điều lạ lùng là từ khi sống lại, cô gái này cứ một mực đòi người trong gia đình đưa cô đến nhà ông Cả Hiêu. Tất cả mọi người không ai biết nhà ông Cả Hiêu, nhưng cô gái đã dẫn đường về đến tận &quot;nhà cũ&quot; của mình. Ông Cả Hiêu cũng kể lại chuyện con gái mình bị bệnh qua đời cho cha mẹ cô gái nghe. Ông còn chỉ tay lên bàn thờ có đặt tấm ảnh của cô con gái. 
+ 
+Tuy nhiên, cô gái vừa sống lại nhất quyết nói ông bà Cả Hiêu là cha mẹ mình và ông bà Cả Hiêu cũng chấp nhận điều đó vì cô gái nói rõ những chi tiết mà ngoài con gái ông Cả Hiêu ra khó ai có thể biết rõ chuyện gia đình ông bà. Nhiều người dân hai vùng Cà Mau, Bạc Liêu biết được một chuyện lạ lùng. Họ bảo cô gái ấy có hồn là cô gái làng Tân Việt nhưng thân xác lại là cô gái người làng Vĩnh Mỹ. 
+ 
+Sự thực khoa học về những vụ đầu thai tại Việt Nam 
+TS. Vũ Thế Khanh. 
+ 
+Bài toán khó cho các nhà khoa học 
+ 
+Lý giải trường hợp này, ông Khanh cho rằng, ông đã từng gặp và nghiên cứu nhiều trường hợp như vậy không chỉ ở Việt Nam, các nước Phương Đông chứa đựng nhiều sự huyền bí mà còn có nhiều trường hợp cụ thể ở các nước châu Âu, châu Mỹ. 
+ 
+Theo nguồn tài liệu TS. Vũ Thế Khanh nghiên cứu: Người Tây Tạng tin rằng, vì Phật Sống Lạt Ma của họ khi qua đời sẽ lại tái sinh để chăm dắt và che chở cho dân tộc họ. Cũng vậy, những người da đỏ Bắc Mỹ Châu tin rằng vị Tù trưởng bộ lạc đôi khi chọn sự đầu thai trở lại để giúp đỡ những người trong thị tộc. Thường thì sự tái sinh được suy đoán qua giấc mộng, qua lời nói bất chợt của người trong nhà, nhất là của đứa bé. Sự trùng hợp về hình hài, cử chỉ, hiện tượng... đều được chú ý cẩn thận. 
+ 
+Đôi khi, người ta còn tin tưởng rằng người chết hiện về dù trong giấc mộng cũng bao hàm ý tưởng là họ sắp đầu thai trở lại. Cũng có khi, người ta còn để ý qua dấu bớt, vết sẹo trên da của trẻ sơ sinh. Nếu giống với dấu vết mà người đã chết trước đó có thì có thể nghĩ rằng người ấy đã lại tái sinh, hoặc quan sát đứa trẻ về cách cư xử, ăn ở của nó nếu giống với người đã chết thì đó là điều đáng quan tâm. Nhiều người trước khi chết thường trăn trối, lại lời ao ước muốn hay không muốn được sinh ra lần nữa. 
+ 
+TS. nhà văn Nguyễn Chu Phác cho rằng, ngày nay, chính các nhà khoa học, đã bắt đầu thực sự tiến bước vào sâu trong lãnh vực nghiên cứu vấn đề này. Từ những năm của thập niên 60 cho đến nay danh sách những nhà khoa học tên tuổi đã dấn thân vào việc tìm hiểu vấn đề luân hồi đã dài thêm ra và chắc chắn trong tương lai, sẽ có một số kết luận trung thực cho vấn đề đầy tính cách thâm sâu huyền bí này. 
+ 
+Qua hàng ngàn câu chuyện có thật đã xảy ra trên khắp thế giới với những chứng cớ và tư liệu rõ ràng chứng minh vấn đề luân hồi chuyển kiếp đã được thu thập. Nhưng các nhà nghiên cứu, nhất là các nhà khoa học còn muốn thêm càng nhiều càng tốt những hiện tượng đã xảy ra có liên hệ đến những gì mà họ gọi là &quot;những tài liệu chứng minh&quot;. Những hiện tượng mà theo họ có thể xem là những dấu tích của luân hồi theo các nhà khoa học, nếu luân hồi là có thật thì ít ra trên những chặng đường chuyển hóa từ kiếp này đến kiếp khác phải có những dấu vết rơi rớt lại. 
+ 
+Điều này cũng giống như trong lịch trình tiến hóa của sinh vật nói chung và con người nói riêng đã có nhiều dấu tích còn lại trên cơ thể sinh vật và sự kiện ấy đã giúp các nhà sinh vật học, nhất là cổ sinh vật học biết được những gì đã xảy ra trong quá khứ xa xăm mà thời gian có khi hàng vạn năm đến hàng triệu năm. 
+ 
+Đầu thai theo giáo lý nhà Phật 
+ 
+Theo ông Tân, con người là thể tổng hòa của hai mặt vật chất và tinh thần, loài người có hai đời sống là vật chất và tinh thần luôn hòa quyện, tương hỗ với nhau. Phần tinh thần của con người, ta còn gọi là phần tâm linh bao gồm trí tuệ và cảm xúc tâm hồn. Câu hỏi đặt ra là sau khi phần thể xác của con người dừng hoạt động thì phần tâm linh có còn tồn tại không? Và nếu tâm linh vẫn còn tồn tại thì ở nó tồn tại ở mức độ nào và sự vận động của nó ra sao? Cho tới ngày nay, khoa học vẫn chưa có câu trả lời rõ ràng về vấn đề này! 
+ 
+Đời sống tâm linh là vô cùng phong phú. Nó là một thực tại có bản chất huyền bí, vô hình nên việc áp dụng khoa học kỹ thuật vào nghiên cứu các hiện tượng của đời sống tâm linh nói chung còn rất hạn chế, hiện mới chỉ dừng lại việc ghi nhận và thống kê các hiện tượng tâm linh. Khoa học vẫn chưa thể giúp con người quan sát tâm linh một cách trực tiếp và chưa thể giải thích rạch ròi lĩnh vực này. 
+ 
+Tuy nhiên nhiều tôn giáo trong đó có Phật giáo hơn hai ngàn năm trăm năm nay đã có nhận thức sâu sắc và khá rõ ràng của mình về lĩnh vực tâm linh. Nhiều ý kiến cho rằng, chỉ khi hiểu sâu sắc các kinh nghiệm và kiến thức cũng như biết cách áp dụng đúng đắn, hài hòa các phương pháp của cả khoa học và phật học, các nhà nghiên cứu tâm linh mới có thể thâm nhập vào lĩnh vực Tâm linh tinh tế và nhạy cảm này. 
+ 
+Đối với một hiện tượng hay câu chuyện tâm linh cụ thể, hiện tượng &quot;đầu thai&quot; hay câu chuyện tâm linh chỉ là bằng chứng hiển nhiên có sức thuyết phục với ai đã được tiếp xúc và thấy biết trực tiếp nó. Là những người trong cuộc, họ thường nói: &quot;Tôi đã được mắt thấy tai nghe rõ ràng nên không thể không tin vào việc đó! Ngược lại, với những người ngoài cuộc chỉ được nghe kể lại thì thường rất khó tin ngay vào những chuyện hiếm khi xảy ra như vậy. Do vậy, việc tin hay không tin chủ yếu phụ thuộc vào kinh nghiệm và lập luận của riêng mình&quot;. 
+ 
+Quan điểm của tôi, như một người mới chỉ được đọc và nghe gián tiếp, là: Nếu câu chuyện đã được nhân chứng kể lại là sự thật (tôi xin nhấn mạnh, nếu đó là sự thật), thì đây chính là một bằng chứng về sự tái sinh luân hồi của một con người được trình bày trong giáo lý của nhà Phật. Còn việc đó có phải là sự thật hay không? xin dành lại cho các nhà khoa học trả lời sau khi nhập cuộc đầy đủ và thực sự nghiêm túc. 
+ 
+Thực ra, vấn đề về sự tái sinh luân hồi của con người là một chủ đề cốt yếu của nhà Phật đã được trình bày trong toàn bộ giáo lý của nhà Phật và đặc biệt trong Duy thức học một bộ môn khoa học trong Phật học. Có thể vắn tắt như sau: Con người được cấu thành và phối kết hợp bởi năm thành tố mà Phật giáo gọi là ngũ uẩn (hay năm kết tập) gồm Sắc uẩn, Thọ uẩn, Tưởng uẩn, Hành uẩn và Thức uẩn. Trong đó, Sắc uẩn là phần vật chất, và bốn uẩn kia thuộc về phần tinh thần. 
+ 
+Gạch nối tiềm thức với cõi vô cùng 
+ 
+Sắc uẩn ám chỉ xác thân, có hình thức khối lượng, biến đổi theo thời gian, và sờ thấy được, nên nó cụ thể. 
+ 
+Còn Thọ uẩn, Tưởng uẩn, Hành uẩn, và Thức uẩn thì biến hiện, trừu tượng, vô hình như trường điện từ. Bốn uẩn này phải nương vào Sắc uẩn (xác thân còn sinh hoạt) mới hiển lộng ra được. Khi hoạt động, bốn uẩn (hay danh pháp) ấy lại hiển lộng ra hai mặt, là mặt nổi và mặt chìm: Mặt nổi gồm Thọ uẩn, Tưởng uẩn, và Hành uẩn. Mặt chìm tuy chỉ có một mình Thức uẩn (thuộc tinh thần) hoạt động, nhưng nó lại rất đa diện, tốc hành và hùng hậu. Xưa nay những nhà nghiên cứu tâm linh thường gọi nôm na Thức uẩn là tinh thần hay linh hồn. 
+ 
+Nhưng theo Duy thức học trong Phật giáo, thì vì Thức uẩn hùng hậu như vậy nên nó tự thiết lập đến ba vòng ẩn hoạt, huyền bí vô cùng, là vòng ngoài, vòng giữa, và vòng trong. Vòng trong cùng, hay trung tâm được gọi là linh thức nó gồm có hai phần: Phần động (hiển lộng) gọi là Mạt-Na, quen gọi là hồn, và phần tĩnh (an nhiên) gọi là A-Lại-Da, thường gọi là phách. Đó là hai thức lực tiềm lặng nằm vừa trong vừa ngoài trí não con người. Hai loại siêu năng này biểu lộ được là do động lực cảm ứng của dòng nhân điện lưu chuyển trong thân thể. 
+ 
+Hồn lực Mạt-Na (còn gọi là thức thứ bảy) chủ trì các sự hiếu động và hành vi con người. Nó tượng trưng cho tự ngã (tức là cái ta), nắm giữ toàn diện cá thể nhân sinh. Phách lực A-Lại-Da (hay tàng thức) ẩn sâu trong tâm khảm nên rất tiềm tàng, vốn tĩnh lặng. Cái kho A-Lại-Da cất giữ không những tất cả hiểu biết và kinh nghiệm của hiện tại mà nó còn tồn trữ toàn thể pháp hành từ vô thủy quá khứ đến mãi mãi muôn kiếp luân hồi trong tương lai. Phách lực hay tàng thức A-Lại-Da tượng trưng cho đại ngã, làm tiêu biểu cho bản thể vũ trụ. Nó là gạch nối giữa tiềm thức với cõi vô cùng, và là pháp thân của mọi sinh linh khi chưa chuyển động. 
+ 
+ 
+Người đưa tin</text>
+      <sha1>qqdxtupf3mgn132yep60mlol0vta8q3</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
