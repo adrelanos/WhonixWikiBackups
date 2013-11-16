@@ -2,7 +2,7 @@
   <siteinfo>
     <sitename>Whonix</sitename>
     <base>http://localhost/wiki/Main_Page</base>
-    <generator>MediaWiki 1.21.2</generator>
+    <generator>MediaWiki 1.21.3</generator>
     <case>first-letter</case>
     <namespaces>
       <namespace key="-2" case="first-letter">Media</namespace>
