@@ -14605,248 +14605,17 @@ The UUID line should look like ''UUID: 9852BF98-B83C-49DB-A8DE-182C42C7226B''. I
     <ns>0</ns>
     <id>132</id>
     <revision>
-      <id>4044</id>
-      <parentid>3885</parentid>
-      <timestamp>2013-11-14T20:53:22Z</timestamp>
+      <id>4051</id>
+      <parentid>4044</parentid>
+      <timestamp>2013-11-19T10:29:23Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="13590">{{Header}}
-
-= Basic Troubleshooting - Installation and Network Issues =
-== Introduction ==
-This introduction is a summary of the basic troubleshooting instructions. It will be described below in greater details. This basically boils down to:
-
-# If you haven't already done, verify the Whonix virtual machine images.
-# Make sure you have imported the Virtual Machines into a supported virtualizer (currently only VirtualBox).
-# Check if the [https://www.torproject.org/download/download-easy.html.en Tor Browser Bundle] works for you on the host.
-# Check if other Virtual Box virtual machines, ones you created yourself or from a different vendor have working internet.
-
-Include all these information in a support request or bug report.
-
-== Before you start ==
-[[Download#Verify_the_Whonix_images|Verify the Whonix virtual machine images]].
-
-== On the host ==
-=== General ===
-Always test first, if your host internet connection is working. (ping 8.8.8.8, ping google.com, etc). On your host:
-
-&lt;pre&gt;ping google.com&lt;/pre&gt;
-
-Check time.
-
-&lt;pre&gt;date&lt;/pre&gt;
-
-{{Code2|sudo dpkg-reconfigure -a}} must not show any errors. Will take a while...
-
-&lt;pre&gt;sudo dpkg-reconfigure -a&lt;/pre&gt;
-
-{{Code2|sudo dpkg --configure -a}} must be silent, i.e. not show any errors, must show output at all. Will take a while...
-
-&lt;pre&gt;sudo dpkg --configure -a&lt;/pre&gt;
-
-Get all updates:
-
-&lt;pre&gt;
-sudo apt-get update
-sudo apt-get dist-upgrade
-&lt;/pre&gt;
-
-Check VirtualBox version.
-
-&lt;pre&gt;vboxmanage --version&lt;/pre&gt;
-
-Get the Tor Browser Bundle from [https://www.torproject.org/download/download-easy.html.en torproject.org] and test if it's working.
-
-&lt;pre&gt;
-## If you can not get the Tor Browser Bundle to work,
-## you will most certainly not get Whonix to work either.
-##
-## In the Whonix Documentation it is recommended to have a current
-## copy of the Tor Browser Bundle at all times.
-##
-## The Tor Browser Bundle is great for testing if you live in a
-## censored area or not, if Tor is blocked by your ISP or not.
-## When you need (private) (obfuscated) bridges for the Tor Browser Bundle,
-## you will need them for Whonix as well.
-&lt;/pre&gt;
-
-=== Import Whonix images ===
-Importing the images with the VirtualBox GUI should work well in most cases. If not, please check first if you have enough free disk space. Please also refer to the Whonix [[Install|Install Screenshots]] or [[Videos|Video Tutorials]]. Also check if the checksums of the ova images match, which is explained at the top of this page.
-
-Delete any half imported or otherwise broken virtual machine images by using the VBoxManage command line tool. Copy the output.
-
-&lt;pre&gt;VBoxManage unregistervm &quot;Whonix-Gateway&quot; --delete&lt;/pre&gt;
-
-&lt;pre&gt;VBoxManage unregistervm &quot;Whonix-Workstation&quot; --delete&lt;/pre&gt;
-
-Go to the folder where you downloaded Whonix. Import Whonix-Gateway and Whonix-Workstation by using the VBoxManage command line tool.
-
-&lt;pre&gt;VBoxManage import Whonix-Gateway.ova&lt;/pre&gt;
-
-&lt;pre&gt;VBoxManage import Whonix-Workstation.ova&lt;/pre&gt;
-
-Clean (anonymize) the output.
-
-&lt;pre&gt;# Remove operating system user name or any problematic paths.&lt;/pre&gt;
-
-[[Contact|Contact Whonix developer]] by sending the output.
-
-&lt;pre&gt;.&lt;/pre&gt;
-
-=== No network inside Whonix? ===
-If you have trouble with networking inside Whonix virtual machines, maybe something went wrong while installing VirtualBox. In this case,
-
-# Please install some operating system in one of your own virtual machine or download a regular image without Tor enforcement [http://virtualboximages.com/ elsewhere].
-# Try if networking is functional in the freshly downloaded non-Whonix virtual machine.
-# If it's not working: then Whonix won't work either. You need to sort that out first. Try re-installing VirtualBox. Deinstall VirtualBox, reboot, re-install VirtualBox, reboot, try again.
-# If it's working: add this to your support request or bug report, that networking in other non-Whonix VMs is working.
-
-== On the Gateway ==
-=== As user {{Code2|user}} ===
-Login as user {{Code2|user}}.
-
-&lt;pre&gt;sudo su user&lt;/pre&gt;
-
-Check your &lt;code&gt;route&lt;/code&gt; command, make sure the network 192.168.0.0 is associated with eth1.
-
-&lt;pre&gt;route&lt;/pre&gt;
-
-Check if Tor is running with 'pgrep tor -l', this should return something like &quot;103 tor&quot;. If not try 'sudo service tor start' and check for any errors.
-
-&lt;pre&gt;pgrep tor -l&lt;/pre&gt;
-
-Check the status of Tor.
-
-&lt;pre&gt;sudo service tor status | less&lt;/pre&gt;
-
-Should reply with.
-
-&lt;pre&gt;tor is running.&lt;/pre&gt;
-
-Restart Tor.
-
-&lt;pre&gt;sudo service tor restart | less&lt;/pre&gt;
-
-Tor should show only notices, no errors.
-
-Verify Tor configuration is valid:
-
-&lt;pre&gt;sudo tor --verify-config | less&lt;/pre&gt;
-
-You should see confirmation:
-
-&lt;pre&gt;Configuration was valid&lt;/pre&gt;
-
-Ping the Whonix-Workstation.
-
-&lt;pre&gt;ping 192.168.0.11&lt;/pre&gt;
-
-Ping VirtualBox.
-
-&lt;pre&gt;
-ping 10.0.2.2
-&lt;/pre&gt;
-
-Should show {{Code2|Packet filtered}}.
-
-nslookup should NOT work.
-
-&lt;pre&gt;nslookup google.com&lt;/pre&gt;
-
-Should show timeout.
-
-=== As user {{Code2|unsafe}} ===
-Login as user {{Code2|unsafe}}.
-
-&lt;pre&gt;sudo su unsafe&lt;/pre&gt;
-
-'''The following tests in this very &quot;Login as unsafe&quot; chapter might reveal, that you are a Whonix user. Omit them, if that is of concern for you.'''
-
-unsafe user account has no password. Login with
-
-&lt;pre&gt;sudo su unsafe&lt;/pre&gt;
-
-Remove write protection from /etc/resolv.conf
-
-&lt;pre&gt;chattr -i /etc/resolv.conf&lt;/pre&gt;
-
-Restart networking. DHCP will rewrite /etc/resolv.conf (Temporary login as root.)
-
-&lt;pre&gt;service networking restart&lt;/pre&gt;
-
-Check /etc/resolv.conf.
-
-&lt;pre&gt;cat /etc/resolv.conf&lt;/pre&gt;
-
-Content should be:
-
-&lt;pre&gt;nameserver 10.0.2.2&lt;/pre&gt;
-
-Check if dns resolution is functional.
-
-&lt;pre&gt;nslookup google.com&lt;/pre&gt;
-
-== Tests on both Virtual Machines ==
-Run the following tests on Whonix-Gateway and on Whonix-Workstation.
-
-Login as user {{Code2|user}}.
-
-&lt;pre&gt;sudo su user&lt;/pre&gt;
-
-Check time.
-
-&lt;pre&gt;date&lt;/pre&gt;
-
-{{Code2|sudo dpkg-reconfigure -a}} must not show any errors. Will take a while...
-
-&lt;pre&gt;sudo dpkg-reconfigure -a&lt;/pre&gt;
-
-{{Code2|sudo dpkg --configure -a}} must be silent, i.e. not show any errors, must show output at all. Will take a while...
-
-&lt;pre&gt;sudo dpkg --configure -a&lt;/pre&gt;
-
-Test update-grub.
-
-&lt;pre&gt;sudo update-grub&lt;/pre&gt;
-
-Run 'locale'. Must not report any error.
-
-&lt;pre&gt;
-locale
-sudo locale
-&lt;/pre&gt;
-
-Restart networking:
-
-&lt;pre&gt;sudo service networking restart | less&lt;/pre&gt;
-
-Apt-get must be fully functional.
-
-&lt;pre&gt;
-sudo apt-get update
-sudo apt-get dist-upgrade
-&lt;/pre&gt;
-
-Test whonixcheck.
-
-&lt;pre&gt;whonixcheck&lt;/pre&gt;
-
-Test whonixcheck with debugging.
-
-&lt;pre&gt;whonixcheck --verbose&lt;/pre&gt;
-
-Check the timezone.
-
-&lt;pre&gt;cat /etc/timezone&lt;/pre&gt;
-
-Must be {{Code2|Etc/UTC}}.
+      <text xml:space="preserve" bytes="6900">{{Header}}
 
 = Troubleshooting =
-== Virtual Box Disk Images ==
-=== INCONSISTENCY BETWEEN GRAIN TABLE AND BACKUP GRAIN TABLE ===
-Maybe this will help: Try convert the vmdk to vdi, remove the old vmdk from the VM and attach the new vdi.
+See [[Troubleshooting]].
 
 = Advanced users / developers and testers only =
 
@@ -15160,7 +14929,7 @@ See [[Dev/Leak Tests]].
 {{Footer}}
 
 [[Category:Development]] [[Category:Design]] [[Category:Documentation]]</text>
-      <sha1>8qznybzjxod78zra48hq6b3tln3q736</sha1>
+      <sha1>88b5qnm7rdf3dsocpbgo3h1ugjtclz5</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -48288,15 +48057,15 @@ Disadvantages:
     <ns>0</ns>
     <id>509</id>
     <revision>
-      <id>3986</id>
-      <parentid>3985</parentid>
-      <timestamp>2013-11-05T13:26:22Z</timestamp>
+      <id>4055</id>
+      <parentid>4054</parentid>
+      <timestamp>2013-11-19T10:50:29Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Security Considerations */</comment>
-      <text xml:space="preserve" bytes="15812">{{Header}}
+      <comment>/* Create your Slave Key without Master Key */</comment>
+      <text xml:space="preserve" bytes="15938">{{Header}}
 
 '''UNFINISHED!'''
 '''ADVANCED USERS ONLY!'''
@@ -48305,8 +48074,8 @@ Disadvantages:
 The high level overview of this concept is as follows:
 
 # Shut down your every day operating system. Boot your air gapped operating system.
-# Create a regular GPG keypair. This will become our master key. By default GPG creates one signing subkey (your identity) and one encryption subkey (how you receive messages intended for you).
-# Use GPG to add an additional signing subkey to your keypair. This new subkey is linked to the first signing key. Now we have three subkeys. Store it in a protected place. Your master keypair is the one whose loss would be truly catastrophic.
+# Create a regular GPG keypair. This will become our master key. By default GPG creates a signing key as your main key (your identity) and one encryption subkey (how you receive messages intended for you).
+# Use GPG to add an additional signing subkey to your keypair. This new subkey is linked to your main key. Now we have three subkeys. Store it in a protected place. Your master keypair is the one whose compromise would be truly catastrophic.
 # Then create a slave key which won't contain your master key.
 # Copy your slave key to your every day operating system.
 
@@ -48549,7 +48318,7 @@ ssb   4096R/69B0EA85 2013-03-13
 ssb   4096R/C24C2CDA 2013-03-13
 &lt;/pre&gt;
 
-See how the third line begins with “sec#”, not “sec”? The pound sign means the signing subkey is not in the keypair located in the keyring.
+See how the third line begins with “sec#”, not “sec”? The pound sign means the signing subkey is not in the keypair located in the keyring. Or more correctly said, see footnote. &lt;ref&gt;The pound sign means that the mainkey has been replaced by a stub.&lt;/ref&gt;
 
 To make sure everything is alright, use switch gpg's homedir to {{Code|~/gpg-master}} and see if the secret master key is available.
 
@@ -48653,7 +48422,7 @@ Most of this text has been written by [https://alexcabal.com/creating-the-perfec
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>ovm1qv1aqn8oudi2dmi6isvnvs6dw93</sha1>
+      <sha1>kp73o6y0gr56jpe3qyiq9y8f3k6uhx4</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -48793,6 +48562,338 @@ test
 * If you simply want your browser to remember which certificates it has already accepted, and inform you if any certificate makes a sudden change, you can install [https://addons.mozilla.org/addon/certificate-patrol/ Certificate Patrol].
 ** I removed this, because Certificate Patrol has not been recommended by The Tor Project. Since it fades in popups, it may alter the browser fingerprint. Therefore not a general recommendation. --[[User:Adrelanos|Adrelanos]] ([[User talk:Adrelanos|talk]]) 18:47, 18 November 2013 (CET)</text>
       <sha1>an6xo4zq4mpejy8l6wkcxdit4ge6y2x</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Troubleshooting</title>
+    <ns>0</ns>
+    <id>520</id>
+    <revision>
+      <id>4050</id>
+      <timestamp>2013-11-19T10:27:58Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;{{Header}}  = Installation and Network Issues = == Introduction == This introduction is a summary of the basic troubleshooting instructions. It will be described below in grea...&quot;</comment>
+      <text xml:space="preserve" bytes="6768">{{Header}}
+
+= Installation and Network Issues =
+== Introduction ==
+This introduction is a summary of the basic troubleshooting instructions. It will be described below in greater details. This basically boils down to:
+
+# If you haven't already done, verify the Whonix virtual machine images.
+# Make sure you have imported the Virtual Machines into a supported virtualizer (currently only VirtualBox).
+# Check if the [https://www.torproject.org/download/download-easy.html.en Tor Browser Bundle] works for you on the host.
+# Check if other Virtual Box virtual machines, ones you created yourself or from a different vendor have working internet.
+
+Include all these information in a support request or bug report.
+
+== Before you start ==
+[[Download#Verify_the_Whonix_images|Verify the Whonix virtual machine images]].
+
+== On the host ==
+=== General ===
+Always test first, if your host internet connection is working. (ping 8.8.8.8, ping google.com, etc). On your host:
+
+&lt;pre&gt;
+ping google.com
+&lt;/pre&gt;
+
+Check time.
+
+&lt;pre&gt;
+date
+&lt;/pre&gt;
+
+{{Code2|sudo dpkg-reconfigure -a}} must not show any errors. Will take a while...
+
+&lt;pre&gt;
+sudo dpkg-reconfigure -a
+&lt;/pre&gt;
+
+{{Code2|sudo dpkg --configure -a}} must be silent, i.e. not show any errors, must show output at all. Will take a while...
+
+&lt;pre&gt;
+sudo dpkg --configure -a
+&lt;/pre&gt;
+
+Get all updates:
+
+&lt;pre&gt;
+sudo apt-get update
+sudo apt-get dist-upgrade
+&lt;/pre&gt;
+
+Check VirtualBox version.
+
+&lt;pre&gt;
+vboxmanage --version
+&lt;/pre&gt;
+
+Get the Tor Browser Bundle from [https://www.torproject.org/download/download-easy.html.en torproject.org] and test if it's working.
+
+&lt;pre&gt;
+## If you can not get the Tor Browser Bundle to work,
+## you will most certainly not get Whonix to work either.
+##
+## In the Whonix Documentation it is recommended to have a current
+## copy of the Tor Browser Bundle at all times.
+##
+## The Tor Browser Bundle is great for testing if you live in a
+## censored area or not, if Tor is blocked by your ISP or not.
+## When you need (private) (obfuscated) bridges for the Tor Browser Bundle,
+## you will need them for Whonix as well.
+&lt;/pre&gt;
+
+=== Import Whonix images ===
+Importing the images with the VirtualBox GUI should work well in most cases. If not, please check first if you have enough free disk space. Please also refer to the Whonix [[Install|Install Screenshots]] or [[Videos|Video Tutorials]].
+
+Delete any half imported or otherwise broken virtual machine images by using the VBoxManage command line tool. Copy the output.
+
+&lt;pre&gt;
+VBoxManage unregistervm &quot;Whonix-Gateway&quot; --delete
+&lt;/pre&gt;
+
+&lt;pre&gt;
+VBoxManage unregistervm &quot;Whonix-Workstation&quot; --delete
+&lt;/pre&gt;
+
+Go to the folder where you downloaded Whonix. Import Whonix-Gateway and Whonix-Workstation by using the VBoxManage command line tool.
+
+&lt;pre&gt;
+VBoxManage import Whonix-Gateway.ova
+&lt;/pre&gt;
+
+&lt;pre&gt;
+VBoxManage import Whonix-Workstation.ova
+&lt;/pre&gt;
+
+Clean (anonymize) the output.
+
+&lt;pre&gt;
+# Remove operating system user name or any problematic paths.
+&lt;/pre&gt;
+
+[[Contact|Contact Whonix developer]] by sending the output.
+
+&lt;pre&gt;
+.
+&lt;/pre&gt;
+
+=== No network inside Whonix? ===
+If you have trouble with networking inside Whonix virtual machines, maybe something went wrong while installing VirtualBox. In this case,
+
+# Please install some operating system in one of your own virtual machine or download a regular image without Tor enforcement [http://virtualboximages.com/ elsewhere].
+# Try if networking is functional in the freshly downloaded non-Whonix virtual machine.
+# If it's not working: then Whonix won't work either. You need to sort that out first. Try re-installing VirtualBox. Deinstall VirtualBox, reboot, re-install VirtualBox, reboot, try again.
+# If it's working: add this to your support request or bug report, that networking in other non-Whonix VMs is working.
+
+== On the Gateway ==
+=== As user {{Code2|user}} ===
+Login as user {{Code2|user}}.
+
+&lt;pre&gt;
+sudo su user
+&lt;/pre&gt;
+
+Check your &lt;code&gt;route&lt;/code&gt; command, make sure the network 192.168.0.0 is associated with eth1.
+
+&lt;pre&gt;
+route&lt;/pre&gt;
+
+Check if Tor is running with 'pgrep tor -l', this should return something like &quot;103 tor&quot;. If not try 'sudo service tor start' and check for any errors.
+
+&lt;pre&gt;
+pgrep tor -l
+&lt;/pre&gt;
+
+Check the status of Tor.
+
+&lt;pre&gt;
+sudo service tor status | less
+&lt;/pre&gt;
+
+Should reply with.
+
+&lt;pre&gt;
+tor is running.
+&lt;/pre&gt;
+
+Restart Tor.
+
+&lt;pre&gt;
+sudo service tor restart | less
+&lt;/pre&gt;
+
+Tor should show only notices, no errors.
+
+Verify Tor configuration is valid:
+
+&lt;pre&gt;
+sudo tor --verify-config | less
+&lt;/pre&gt;
+
+You should see confirmation:
+
+&lt;pre&gt;
+Configuration was valid
+&lt;/pre&gt;
+
+Ping the Whonix-Workstation.
+
+&lt;pre&gt;
+ping 192.168.0.11
+&lt;/pre&gt;
+
+Ping VirtualBox.
+
+&lt;pre&gt;
+ping 10.0.2.2
+&lt;/pre&gt;
+
+Should show {{Code2|Packet filtered}}.
+
+nslookup should NOT work.
+
+&lt;pre&gt;
+nslookup google.com
+&lt;/pre&gt;
+
+Should show timeout.
+
+=== As user {{Code2|unsafe}} ===
+Login as user {{Code2|unsafe}}.
+
+&lt;pre&gt;
+sudo su unsafe
+&lt;/pre&gt;
+
+'''The following tests in this very &quot;Login as unsafe&quot; chapter might reveal, that you are a Whonix user. Omit them, if that is of concern for you.'''
+
+unsafe user account has no password. Login with
+
+&lt;pre&gt;
+sudo su unsafe
+&lt;/pre&gt;
+
+Remove write protection from /etc/resolv.conf
+
+&lt;pre&gt;
+chattr -i /etc/resolv.conf
+&lt;/pre&gt;
+
+Restart networking. DHCP will rewrite /etc/resolv.conf (Temporary login as root.)
+
+&lt;pre&gt;
+service networking restart
+&lt;/pre&gt;
+
+Check /etc/resolv.conf.
+
+&lt;pre&gt;
+cat /etc/resolv.conf
+&lt;/pre&gt;
+
+Content should be:
+
+&lt;pre&gt;
+nameserver 10.0.2.2
+&lt;/pre&gt;
+
+Check if dns resolution is functional.
+
+&lt;pre&gt;
+nslookup google.com
+&lt;/pre&gt;
+
+== Tests on both Virtual Machines ==
+Run the following tests on Whonix-Gateway and on Whonix-Workstation.
+
+Login as user {{Code2|user}}.
+
+&lt;pre&gt;
+sudo su user
+&lt;/pre&gt;
+
+Check time.
+
+&lt;pre&gt;
+date
+&lt;/pre&gt;
+
+{{Code2|sudo dpkg-reconfigure -a}} must not show any errors. Will take a while...
+
+&lt;pre&gt;
+sudo dpkg-reconfigure -a
+&lt;/pre&gt;
+
+{{Code2|sudo dpkg --configure -a}} must be silent, i.e. not show any errors, must show output at all. Will take a while...
+
+&lt;pre&gt;
+sudo dpkg --configure -a
+&lt;/pre&gt;
+
+Test update-grub.
+
+&lt;pre&gt;
+sudo update-grub
+&lt;/pre&gt;
+
+Run 'locale'. Must not report any error.
+
+&lt;pre&gt;
+locale
+sudo locale
+&lt;/pre&gt;
+
+Restart networking:
+
+&lt;pre&gt;
+sudo service networking restart | less
+&lt;/pre&gt;
+
+Apt-get must be fully functional.
+
+&lt;pre&gt;
+sudo apt-get update
+sudo apt-get dist-upgrade
+&lt;/pre&gt;
+
+Test whonixcheck.
+
+&lt;pre&gt;
+whonixcheck
+&lt;/pre&gt;
+
+Test whonixcheck with debugging.
+
+&lt;pre&gt;
+whonixcheck --verbose
+&lt;/pre&gt;
+
+Check the timezone.
+
+&lt;pre&gt;
+cat /etc/timezone
+&lt;/pre&gt;
+
+Must be {{Code2|Etc/UTC}}.
+
+= Troubleshooting =
+== Virtual Box Disk Images ==
+=== INCONSISTENCY BETWEEN GRAIN TABLE AND BACKUP GRAIN TABLE ===
+Maybe this will help: Try convert the vmdk to vdi, remove the old vmdk from the VM and attach the new vdi.
+
+= Footnotes =
+&lt;references /&gt;
+
+{{Footer}}
+
+[[Category:Documentation]]</text>
+      <sha1>dib7g4f22asuhz71zsv4cnu6go0tdy3</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
