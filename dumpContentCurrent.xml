@@ -30011,15 +30011,15 @@ Some partially finished attempts:
     <ns>0</ns>
     <id>254</id>
     <revision>
-      <id>4014</id>
-      <parentid>3883</parentid>
-      <timestamp>2013-11-10T20:49:50Z</timestamp>
+      <id>4068</id>
+      <parentid>4067</parentid>
+      <timestamp>2013-11-20T11:37:02Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
       <comment>/* General */</comment>
-      <text xml:space="preserve" bytes="11628">{{Header}}
+      <text xml:space="preserve" bytes="11775">{{Header}}
 
 = Operating System =
 
@@ -30080,8 +30080,8 @@ Why based on Testing, not stable?
 
 * Contains [http://packages.debian.org/python-stem python-stem], which is a Tor controller library. It is in use to ask for Tor's bootstrap status. This is required for whonixcheck (diagnosing connection issues) and [[Dev/TimeSync|TimeSync]] (TimeSync starts as soon as Tor is bootstrapped). See this [https://github.com/Whonix/Whonix/issues/60 ticket] for more details. The alternative, uploading python-stem to Whonix's APT Repository isn't doable given Whonix's contributor size. (It would require keeping up with the original package and updating when they update. And implementing the feature, allowing builders to build Whonix from source code without touching Whonix's APT repository for [[Trust]] reasons would also have been more difficult.)
 * Being based on stable and incorporating a few packages from testing is difficult, see this [https://github.com/Whonix/Whonix/issues/60 ticket] for details.
-* Contains build dependency config-package-dev &lt;u&gt;with&lt;/u&gt; debhelper support. (We could probably build on stable and just get the config-package-dev &lt;u&gt;with&lt;/u&gt; debhelper support elsewhere, but it's simpler just to require Debian testing as build operating system.
-* Stable (Wheezy) contains only obfs2 (obfsproxy 0.1.4), while Testing (Jessie) contains obfs3 (obfsproxy 0.2.3), and obfsproxy has been recently removed from torproject's apt repository.
+* Contains build dependency [http://packages.debian.org/jessie/config-package-dev config-package-dev] &lt;u&gt;with&lt;/u&gt; debhelper support. (We could probably build on stable and just get the config-package-dev &lt;u&gt;with&lt;/u&gt; debhelper support elsewhere, but it's simpler just to require Debian testing as build operating system.
+* Stable (Wheezy) contains only obfs2 (obfsproxy [http://packages.debian.org/wheezy/obfsproxy 0.1.4]), while Testing (Jessie) contains obfs3 (obfsproxy [http://packages.debian.org/jessie/obfsproxy 0.2.3]), and obfsproxy has been recently removed from torproject's apt repository.
 
 Although the [http://www.debian.org/security/faq Debian security FAQ] states, that stable gets more attention from the security team, Debian Testing can't be so bad either, since many distributions are based on Debian testing and/or even Debian sid (unstable).
 
@@ -30138,7 +30138,7 @@ For these reasons it's not a good idea to add popcon to Whonix. If you have sugg
 {{Footer}}
 
 [[Category:Design]]</text>
-      <sha1>hcqh62a17m54wvmhs0rkwjvobsjjrbg</sha1>
+      <sha1>f2itip8qk41thdgv9qmho60trbo2dwy</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -48065,14 +48065,14 @@ Disadvantages:
     <ns>0</ns>
     <id>509</id>
     <revision>
-      <id>4063</id>
-      <parentid>4062</parentid>
-      <timestamp>2013-11-19T11:50:04Z</timestamp>
+      <id>4070</id>
+      <parentid>4063</parentid>
+      <timestamp>2013-11-20T19:50:26Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="18584">{{Header}}
+      <text xml:space="preserve" bytes="18714">{{Header}}
 
 '''UNFINISHED!'''
 '''ADVANCED USERS ONLY!'''
@@ -48116,7 +48116,7 @@ When you create your new keypair, use the highest possible values for key length
 You may want your key to expire; it’s up to you. When prompted for a passphrase, make sure to pick a long and unique one. If your key gets stolen, this passphrase is the only thing protecting it!
 
 &lt;pre&gt;
-gpg --homedir ~/gpg-master --gen-key
+gpg --homedir ~/gpg-master --cert-digest-algo sha512 --gen-key
 gpg (GnuPG) 1.4.15; Copyright (C) 2013 Free Software Foundation, Inc.
 This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.
@@ -48171,7 +48171,7 @@ the command &quot;--edit-key&quot; to generate a subkey for this purpose.
 Now we set our key to prefer stronger hashes. Use the {{Code2|gpg ‐‐edit-key}} command. At the gpg&gt; prompt, enter the command {{Code2|setpref SHA512 SHA384 SHA256 SHA224 AES256 AES192 AES CAST5 ZLIB BZIP2 ZIP Uncompressed}}, then save.
 
 &lt;pre&gt;
-gpg --homedir ~/gpg-master --edit-key bilbo@shire.org
+gpg --homedir ~/gpg-master --cert-digest-algo sha512 --edit-key bilbo@shire.org
 gpg (GnuPG) 1.4.11; Copyright (C) 2010 Free Software Foundation, Inc.
 This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.
@@ -48212,7 +48212,7 @@ gpg&gt; save
 If you want to be able to receive encrypted mails as well, add an encryption sub key.
 
 &lt;pre&gt;
-gpg --homedir ~/gpg-master --edit-key bilbo@shire.org
+gpg --homedir ~/gpg-master --cert-digest-algo sha512 --edit-key bilbo@shire.org
 gpg (GnuPG) 1.4.15; Copyright (C) 2013 Free Software Foundation, Inc.
 This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.
@@ -48270,7 +48270,7 @@ Now for the special sauce: let’s add our new signing subkey.
 Use the {{Code2|gpg ‐‐edit-key}} command. At the gpg&gt; prompt, enter the command addkey. Select RSA (sign only) and 4096 for the keysize. Don’t forget to save at the last gpg&gt; prompt:
 
 &lt;pre&gt;
-gpg --homedir ~/gpg-master --edit-key bilbo@shire.org
+gpg --homedir ~/gpg-master --cert-digest-algo sha512 --edit-key bilbo@shire.org
 gpg (GnuPG) 1.4.11; Copyright (C) 2010 Free Software Foundation, Inc.
 This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.
@@ -48326,7 +48326,7 @@ gpg&gt; save
 Now we generate a revocation certificate file. If your master keypair gets lost or stolen, this certificate file is the only way you’ll be able to tell people to ignore the stolen key. This is important, don’t skip this step!
 
 &lt;pre&gt;
-gpg --homedir ~/gpg-master --gen-revoke bilbo@shire.org &gt; bilbo@shire.org.gpg-revocation-certificate
+gpg --homedir ~/gpg-master --cert-digest-algo sha512 --gen-revoke bilbo@shire.org &gt; bilbo@shire.org.gpg-revocation-certificate
 &lt;/pre&gt;
 
 Store the revocation certificate file in a different place than your master keypair (which we’ll export in a later step). You’ll use it to revoke your master keypair should you lose access to it. If you only lose access to your slave keypair, then you’ll revoke those slave subkeys using the master keypair, not this revocation certificate.
@@ -48493,7 +48493,7 @@ Most of this text has been written by [https://alexcabal.com/creating-the-perfec
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>sls7yrsqahji8u3x8z85rz8t1heiy6d</sha1>
+      <sha1>5n2v9aau46x7z71t1zvp8k9moktnk7k</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -48965,6 +48965,24 @@ Maybe this will help: Try convert the vmdk to vdi, remove the old vmdk from the 
 
 [[Category:Documentation]]</text>
       <sha1>dib7g4f22asuhz71zsv4cnu6go0tdy3</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>User:CarmeloRamaciot</title>
+    <ns>2</ns>
+    <id>521</id>
+    <revision>
+      <id>4069</id>
+      <timestamp>2013-11-20T19:38:33Z</timestamp>
+      <contributor>
+        <username>CarmeloRamaciot</username>
+        <id>108</id>
+      </contributor>
+      <comment>Created page with &quot;Hello! My name is [http://Www.Sharkbayte.com/keyword/Carmelo Carmelo]. &lt;br&gt;It is a little about myself: I live in Austria, my city of Schleinbach. &lt;br&gt;It's called often Easter...&quot;</comment>
+      <text xml:space="preserve" bytes="524">Hello! My name is [http://Www.Sharkbayte.com/keyword/Carmelo Carmelo]. &lt;br&gt;It is a little about myself: I live in Austria, my city of Schleinbach. &lt;br&gt;It's called often Eastern or cultural capital of LOWER AUSTRIA. I've [http://Mondediplo.com/spip.php?page=recherche&amp;recherche=married married] 1 years ago.&lt;br&gt;I have two children - a son (Charmain) and the daughter (Twyla). We all like Videophilia (Home theater).&lt;br&gt;&lt;br&gt;My web site; [http://www.youtube.com/watch?v=uatK-0eKLJs Monster High Basic Travel Ghoulia Yelps Doll]</text>
+      <sha1>ouqln1i863kfkhe38u7op9k88yll0lt</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
