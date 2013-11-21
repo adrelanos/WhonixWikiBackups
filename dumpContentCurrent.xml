@@ -5562,15 +5562,14 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
     <ns>0</ns>
     <id>88</id>
     <revision>
-      <id>3843</id>
-      <parentid>3842</parentid>
-      <timestamp>2013-10-23T05:39:48Z</timestamp>
+      <id>4071</id>
+      <parentid>3843</parentid>
+      <timestamp>2013-11-21T01:19:04Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* Tunnel Tor through SSH */</comment>
-      <text xml:space="preserve" bytes="7004">{{Header}}
+      <comment>/* Introduction */</comment>
+      <text xml:space="preserve" bytes="7005">{{Header}}
 
 == Introduction ==
 
@@ -5711,7 +5710,7 @@ Socks5Proxy 127.0.0.1:1080
 
 '''user -&gt; VPN -&gt; Tor'''
 
-There are too many different VPN protocols. To many to add all of them to this guide. However, at least adding OpenVPN would be worth it.
+There are too many different VPN protocols. Too many to add all of them to this guide. However, at least adding OpenVPN would be worth it.
 
 If you are using VPN not,
 
@@ -5747,7 +5746,7 @@ See also [[TestVPN|Free example VPNs working with Whonix for testing purposes]].
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>cs53pkm73hsgsnxawhslp18bw3c01th</sha1>
+      <sha1>bxzf1kzs02vy3v4k85zvd8wmx8impse</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
