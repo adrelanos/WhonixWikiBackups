@@ -4685,15 +4685,16 @@ Use at your own risk.
     <ns>4</ns>
     <id>84</id>
     <revision>
-      <id>2401</id>
-      <parentid>383</parentid>
-      <timestamp>2013-08-15T23:20:13Z</timestamp>
+      <id>4083</id>
+      <parentid>2401</parentid>
+      <timestamp>2013-11-23T14:25:17Z</timestamp>
       <contributor>
-        <username>Anon</username>
-        <id>10</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>/* Whonix.org Site Security */</comment>
-      <text xml:space="preserve" bytes="4129">= Whonix.org Privacy Policy =
+      <text xml:space="preserve" bytes="4200">{{Header}}
+
+= Whonix.org Privacy Policy =
 
 The website whonix.org, takes your privacy serious and collect as little as information as possible. IP logs are disabled, we are using apache mod-removeip &lt;ref&gt;https://we.riseup.net/debian/apache#mod_removeip&lt;/ref&gt;. In case its required (such as spamming or abuse), we may need to re-enable IP logging. 
 
@@ -4770,8 +4771,11 @@ AyCDWXR3yKGMWHkJqfLu
 &lt;/pre&gt;
 &lt;/ref&gt;
 
-&lt;references/&gt;</text>
-      <sha1>lg9mpla45vrfo64pdqiji7gkuxlkj03</sha1>
+&lt;references/&gt;
+
+{{Footer}}
+[[Category:Documentation]] [[Category:Design]]</text>
+      <sha1>npodhybcn608xyyhbevhqc0glpioc7f</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -11289,15 +11293,15 @@ What would have to be done:
     <ns>0</ns>
     <id>114</id>
     <revision>
-      <id>4079</id>
-      <parentid>4078</parentid>
-      <timestamp>2013-11-22T22:53:01Z</timestamp>
+      <id>4082</id>
+      <parentid>4079</parentid>
+      <timestamp>2013-11-23T14:14:26Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
       <comment>/* SSH into Whonix-Workstation */</comment>
-      <text xml:space="preserve" bytes="9481">{{Header}}
+      <text xml:space="preserve" bytes="9486">{{Header}}
 
 = Security Overview =
 
@@ -11484,7 +11488,7 @@ Then SSH from the host into Whonix-Gateway (host -&gt; Whonix-Gateway). From the
 ## On the host!
 
 ## or root@
-ssh -t user@127.0.0.1 -p 2200 &quot;ssh user@192.168.0.11&quot;
+ssh -t user@127.0.0.1 -p 2200 &quot;ssh.real user@192.168.0.11&quot;
 &lt;/pre&gt;
 
 You can also mount the filesystem of Whonix-Workstation with two commands. SSH hopping is also possible for sshfs (a website [http://www.larkinweb.co.uk/computing/mounting_file_systems_over_two_ssh_hops.html told] ([http://www.webcitation.org/6FDYtApEP w]) me).
@@ -11610,7 +11614,7 @@ sudo umount /mnt/whonix
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Development]]</text>
-      <sha1>khca0z1z7mb1a5o4dgi1ip98xw792fa</sha1>
+      <sha1>cm07al6pblevuzdgauh1vuvlanxzxlw</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
