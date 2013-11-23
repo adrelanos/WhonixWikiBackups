@@ -7197,14 +7197,15 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
     <ns>0</ns>
     <id>96</id>
     <revision>
-      <id>4009</id>
-      <parentid>3894</parentid>
-      <timestamp>2013-11-08T21:31:06Z</timestamp>
+      <id>4081</id>
+      <parentid>4009</parentid>
+      <timestamp>2013-11-23T03:20:51Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="71058">{{Header}}
+      <comment>/* Verifiable Builds */</comment>
+      <text xml:space="preserve" bytes="71019">{{Header}}
  
 = Introduction =
 This page contains the comparisons of Whonix, Tails, Tor Browser and Qubes OS TorVM. If anything here is incorrect or becomes outdated feel free to edit this page or [[contact]] us, we'll correct as soon as possible. See also [[#Statement about Neutrality of this Page]].
@@ -7597,7 +7598,7 @@ Therefore it is impossible to claim that non-trivial source code is backdoor fre
 | {{No}} &lt;ref name=upstream-distro-no-hidden-code /&gt;
 |-
 | style=&quot;height: 27px;background-color: #f9f9f9&quot;| Project's binary builds verifiably created from project's own source code (no {{Code2|hidden source code}}&lt;ref name=hidden-source-code /&gt; in the project's own source code)
-| {{No}}, planned. &lt;ref&gt;Help welcome. See [https://github.com/Whonix/Whonix/issues/113 ticket].&lt;/ref&gt;
+| {{No}}, planned. &lt;ref&gt;See [[Trust#Verifiable Builds]].&lt;/ref&gt;
 | {{No}}
 | Soon, deterministically built. See above.
 | ?
@@ -8312,7 +8313,7 @@ One has always to be very careful, when talking about others. Especially, when t
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Design]]</text>
-      <sha1>ox2q6c353a1kx85k3a0l5ctmjm513pr</sha1>
+      <sha1>eb6hrdzvm1y2q00tfyno22cboy7p9v9</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -12472,14 +12473,14 @@ For even more Security, see [[Advanced Security Guide]].
     <ns>0</ns>
     <id>120</id>
     <revision>
-      <id>4013</id>
-      <parentid>4012</parentid>
-      <timestamp>2013-11-10T16:40:55Z</timestamp>
+      <id>4080</id>
+      <parentid>4013</parentid>
+      <timestamp>2013-11-23T03:17:51Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="27035">&lt;!--
+      <text xml:space="preserve" bytes="29618">&lt;!--
 Copyright:
 
    Whonix Trust wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -12720,6 +12721,26 @@ The least secure and most convenient way is to use Whonix is using Whonix-Defaul
 
 It's a bit safer to use Whonix-Default-Download version and to disable Whonix's APT repository. When updated Whonix deb packages are released, download them manually, verify them manually and install them manually. Big security bonus points for verifying the deb package contents before installing them. You'll get most security, if you [[Dev/Build_Documentation|build Whonix from source code]] and also build update packages from source code. Big security bonus points for verifying the source code before building Whonix.
 
+= Verifiable Builds =
+'''UNFINISHED!'''
+
+This will hopefully be ready for Whonix 8.
+
+* [https://github.com/Whonix/Whonix/issues/113 development ticket]
+* [https://github.com/adrelanos/Whonix/blob/master/release/analyze_image script work in progress]
+
+Planned usage example.
+
+{{Code|sudo ./release/analyze_image --ova /home/user/whonix_binary/Whonix-Gateway-7.ova --report /home/user/report}}
+
+This should analyze /home/user/whonix_binary/Whonix-Gateway-7.ova and write a report to /home/user/report.
+
+It will extract the ova, which will result getting three files, i.e. Whonix-Gateway-7.ovf, Whonix-Gateway-7.mf and Whonix-Gateway-7-disk1.vmdk. The vmdk image will be converted to vdi, then converted to raw. (Converting as in creating a copy, not actually converting.) The filesystem layout, the MBR and the VBR (not yet implemented) are written in separate files. The vdi will be mounted. A sha512 checksum of every file will be created and stored in the report.
+
+Anyone running the {{Code2|analyze_image}} script on the same Whonix.ova will hopefully get the same report. Someone building Whonix-own.ova will hopefully create an image very similar to Whonix.ova. We can then {{Code2|diff}} the reports. Those reports will be hopefully so similar, that it is reasonable to believe, that the original Whonix.ova has been build from the source code that has been published for that Whonix version. This would only prove, that on the machine building Whonix nothing malicious has been added, it wouldn't prove, that there aren't any vulnerabilities or that there are no backdoors in Debian (this isn't possible, because neither Debian nor any other operating system provides deterministic builds yet). The [[Comparison with Others#Verifiable Builds]] table makes it clear what this archives.
+
+[https://github.com/sleuthkit/sleuthkit/ sleuthkit] could be an interesting addition or even replacement for our custom script. Then we could create a report using something like {{Code|fls -f ext4 ./Whonix-Gateway-7.img}}. The version in Debian even in [http://packages.debian.org/sid/sleuthkit sid] is outdated and does unfortunately not include support for ext4 and our images are using ext4. More recent upstream releases do support ext4, but there are no signed git tags yet ([https://github.com/sleuthkit/sleuthkit/issues/264 reported an issue]), so getting sleuthkit is a bit difficult. (If we want to defeat sophisticated backdoors, we shouldn't encourage auditors to blindly trust github's SSL alone for sleuthkit's integrity.) We could think about bending our images, using ext3.
+
 = Footnotes / References =
 &lt;references/&gt;
 
@@ -12736,7 +12757,7 @@ Thanks to Qubes OS ([https://groups.google.com/forum/?fromgroups=#!topic/qubes-d
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>2zoaros8mluf2ezfhesbzkna4fejea0</sha1>
+      <sha1>6zf3g8t4z09ptp755ubxqtaqbgy3z11</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -48998,49 +49019,6 @@ Maybe this will help: Try convert the vmdk to vdi, remove the old vmdk from the 
 
 [[Category:Documentation]]</text>
       <sha1>dib7g4f22asuhz71zsv4cnu6go0tdy3</sha1>
-      <model>wikitext</model>
-      <format>text/x-wiki</format>
-    </revision>
-  </page>
-  <page>
-    <title>User:CarmeloRamaciot</title>
-    <ns>2</ns>
-    <id>521</id>
-    <revision>
-      <id>4069</id>
-      <timestamp>2013-11-20T19:38:33Z</timestamp>
-      <contributor>
-        <username>CarmeloRamaciot</username>
-        <id>108</id>
-      </contributor>
-      <comment>Created page with &quot;Hello! My name is [http://Www.Sharkbayte.com/keyword/Carmelo Carmelo]. &lt;br&gt;It is a little about myself: I live in Austria, my city of Schleinbach. &lt;br&gt;It's called often Easter...&quot;</comment>
-      <text xml:space="preserve" bytes="524">Hello! My name is [http://Www.Sharkbayte.com/keyword/Carmelo Carmelo]. &lt;br&gt;It is a little about myself: I live in Austria, my city of Schleinbach. &lt;br&gt;It's called often Eastern or cultural capital of LOWER AUSTRIA. I've [http://Mondediplo.com/spip.php?page=recherche&amp;recherche=married married] 1 years ago.&lt;br&gt;I have two children - a son (Charmain) and the daughter (Twyla). We all like Videophilia (Home theater).&lt;br&gt;&lt;br&gt;My web site; [http://www.youtube.com/watch?v=uatK-0eKLJs Monster High Basic Travel Ghoulia Yelps Doll]</text>
-      <sha1>ouqln1i863kfkhe38u7op9k88yll0lt</sha1>
-      <model>wikitext</model>
-      <format>text/x-wiki</format>
-    </revision>
-  </page>
-  <page>
-    <title>Talk:HardenedGentooTG</title>
-    <ns>1</ns>
-    <id>522</id>
-    <revision>
-      <id>4073</id>
-      <timestamp>2013-11-22T05:49:31Z</timestamp>
-      <contributor>
-        <ip>127.0.0.1</ip>
-      </contributor>
-      <comment>7x4sie6 insurance</comment>
-      <text xml:space="preserve" bytes="57">xvntj05d 
- 
-hruttw78 
- 
-insurance 
- 
-tszpdrrp 
- 
-yw56n45v</text>
-      <sha1>3r5fa8nkuzym8zxwg4vp0d32s8q9bas</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
