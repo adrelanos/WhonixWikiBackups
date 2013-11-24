@@ -278,16 +278,17 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
     <ns>10</ns>
     <id>14</id>
     <revision>
-      <id>2526</id>
-      <parentid>2525</parentid>
-      <timestamp>2013-09-02T17:15:21Z</timestamp>
+      <id>4084</id>
+      <parentid>2526</parentid>
+      <timestamp>2013-11-23T23:28:17Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="546">&lt;font size=&quot;3&quot;&gt;[https://www.whonix.org{{localurl:{{FULLPAGENAME}}}} https] | &lt;html&gt;&lt;a class=&quot;link-https&quot; style=&quot;color: #3366BB&quot; href=&quot;http://zo7fksnun4b4v4jv.onion&lt;/html&gt;{{localurl:{{FULLPAGENAME}}}}&lt;html&gt;&quot; rel=&quot;nofollow&quot;&gt;.onion&lt;/a&gt;&lt;/html&gt;&lt;/font&gt; &lt;font size=&quot;1&quot;&gt;| [http://whonix.org.nyud.net{{localurl:{{FULLPAGENAME}}}} Mirror] | [https://zo7fksnun4b4v4jv.tor2web.org{{localurl:{{FULLPAGENAME}}}} Mirror] | [[Contribute#Donate|Donate to Whonix!]]&lt;/font&gt;&lt;!--
+      <text xml:space="preserve" bytes="546">&lt;font size=&quot;3&quot;&gt;[https://www.whonix.org{{localurl:{{FULLPAGENAME}}}} https] | &lt;html&gt;&lt;a class=&quot;link-https&quot; style=&quot;color: #3366BB&quot; href=&quot;http://kkkkkkkkkk63ava6.onion&lt;/html&gt;{{localurl:{{FULLPAGENAME}}}}&lt;html&gt;&quot; rel=&quot;nofollow&quot;&gt;.onion&lt;/a&gt;&lt;/html&gt;&lt;/font&gt; &lt;font size=&quot;1&quot;&gt;| [http://whonix.org.nyud.net{{localurl:{{FULLPAGENAME}}}} Mirror] | [https://kkkkkkkkkk63ava6.tor2web.org{{localurl:{{FULLPAGENAME}}}} Mirror] | [[Contribute#Donate|Donate to Whonix!]]&lt;/font&gt;&lt;!--
 inspired by http://aboli.sh/
 @cnpirates ssl(tor) ssl(i2p) coralcdn .sdns .onion .i2p--&gt;</text>
-      <sha1>qr531t4zbhd1s87f7wgkqq886gzjo48</sha1>
+      <sha1>pg8qs1uri4qjqyik6qo4p3a290g089u</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -4685,13 +4686,14 @@ Use at your own risk.
     <ns>4</ns>
     <id>84</id>
     <revision>
-      <id>4083</id>
-      <parentid>2401</parentid>
-      <timestamp>2013-11-23T14:25:17Z</timestamp>
+      <id>4085</id>
+      <parentid>4083</parentid>
+      <timestamp>2013-11-23T23:30:44Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
+      <comment>/* Whonix.org Site Security */</comment>
       <text xml:space="preserve" bytes="4200">{{Header}}
 
 = Whonix.org Privacy Policy =
@@ -4728,7 +4730,7 @@ A written privacy policy isn't worth so much anyway, since its only privacy by p
 |Yes, admins must verify changes before they become the default version.
 |-
 |Secondary .onion domain &lt;ref&gt;Optional Tor hidden service (.onion domain); alternative end-to-end encrypted/authenticated connection; in this use case, not for location privacy&lt;/ref&gt;
-|Yes. &lt;ref&gt;http://zo7fksnun4b4v4jv.onion.&lt;/ref&gt;
+|Yes. &lt;ref&gt;http://kkkkkkkkkk63ava6.onion.&lt;/ref&gt;
 |-
 |}
 
@@ -4775,7 +4777,7 @@ AyCDWXR3yKGMWHkJqfLu
 
 {{Footer}}
 [[Category:Documentation]] [[Category:Design]]</text>
-      <sha1>npodhybcn608xyyhbevhqc0glpioc7f</sha1>
+      <sha1>50gv41n02mdhmon0xbybadvwp6i15qt</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
