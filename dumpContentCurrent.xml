@@ -16099,15 +16099,15 @@ If you want to enforce, that the VPN gets always used, see: https://github.com/a
     <ns>0</ns>
     <id>144</id>
     <revision>
-      <id>2776</id>
-      <parentid>2775</parentid>
-      <timestamp>2013-09-14T02:26:44Z</timestamp>
+      <id>4086</id>
+      <parentid>2776</parentid>
+      <timestamp>2013-11-24T19:50:19Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
       <comment>/* HowTo */</comment>
-      <text xml:space="preserve" bytes="5042">{{Header}}
+      <text xml:space="preserve" bytes="5155">{{Header}}
 
 = Status of VMware support in Whonix =
 
@@ -16165,6 +16165,9 @@ Due to a VMware upstream bug the network settings have to be adjusted.
 (Windows 8 specific forum help thread: &lt;br /&gt;
 [[Special:AWCforum/st/id110/No_Tor/Internet_connection_on_VM....html|No Tor/Internet connection with Windows 8 on VMware - Whonix Gateway]].)
 
+(Black screen forum help thread: &lt;br /&gt;
+[[Special:AWCforum/st/id268/Gateway_7_issue_on_Vmware_workst....html]])
+
 = Harden VMware =
 
 * Remove printer
@@ -16202,7 +16205,7 @@ See also [[Security Guide]].
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>p2gnxtkx5re2josawx2gcjr2vmu3d89</sha1>
+      <sha1>ltc385sdhrrrch435acmrusf3hkwabh</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -36566,13 +36569,13 @@ grep -r torbutton_send_ctrl_cmd *
     <ns>0</ns>
     <id>304</id>
     <revision>
-      <id>4003</id>
-      <parentid>3841</parentid>
-      <timestamp>2013-11-08T10:43:44Z</timestamp>
+      <id>4087</id>
+      <parentid>4003</parentid>
+      <timestamp>2013-11-24T20:20:41Z</timestamp>
       <contributor>
         <ip>127.0.0.1</ip>
       </contributor>
-      <comment>there are dangers everywhere.. thanks for doing whonix</comment>
+      <comment>/* On Whonix-Workstation */</comment>
       <text xml:space="preserve" bytes="16792">{{Header}}
 &lt;!--
 Copyright:
@@ -36734,7 +36737,7 @@ echo &quot;INFO $(realpath $BASH_SOURCE): Dummy Tor.&quot;
 exit 0
 &lt;/pre&gt;
 
-Safe.
+Save.
 
 Update your package lists.
 
@@ -36932,7 +36935,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>5o9dmxo2ixjd9p8971tcb389ywpi2xd</sha1>
+      <sha1>ku8exa1w8bmtg34motcbxrv565hmb6n</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
