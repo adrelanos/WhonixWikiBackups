@@ -654,14 +654,15 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>19</id>
     <revision>
-      <id>3890</id>
-      <parentid>3724</parentid>
-      <timestamp>2013-10-31T10:10:48Z</timestamp>
+      <id>4090</id>
+      <parentid>3890</parentid>
+      <timestamp>2013-11-25T22:59:14Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="16542">{{Header}}
+      <comment>/* Known bugs */</comment>
+      <text xml:space="preserve" bytes="17053">{{Header}}
 &lt;!--
 Copyright:
 
@@ -871,12 +872,20 @@ In case you are interested in Whonix source code updates, [[Dev/git#subscribe_to
 
 = Known bugs =
 == Normal ==
+=== Tor Browser Updater (Whonix) ===
+Currently broken due to changes by torproject.org. You have to [[Manually Updating Tor Browser|manually update Tor Browser]] in meanwhile.
+
+Forum help thread:
+[[Special:AWCforum/st/id262/updating_TOR_browser_error...html]]
+
+=== Virtual Box Shared Folder Issues ===
+Shared Folders aren’t working with the latest Linux kernel. (This is a Debian/Virtual Box not caused by Whonix. Has been already reported it upstream by a Debian user.)
+
+Possible workarounds, more information, etc. can be found in the Whonix User Help Forum discussion thread:
+[[Special:AWCforum/st/id261/VirtualBox_shared_directories_on....html]]
+
 === Enigmail Encryption ===
 When using OpenPGP encryption in Icedove / Enigmail you might get &quot;encryption command failed&quot;.
-
-Please use this workaround: &lt;br /&gt;
-
-&lt;s&gt;In Icedove, go to OpenPGP -&gt; Preferences -&gt; Override With -&gt; use this: {{Code|/usr/bin/gpg.real}}&lt;/s&gt;
 
 Icedove has been updated in Debian Testing in meanwhile. Upgrade it.
 
@@ -933,7 +942,7 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>kqxs46hr2dh71v2k01kihdp4p6wvsw4</sha1>
+      <sha1>5d2ilh9q376mwa30eyhow6qqxu8nmfx</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
