@@ -11978,14 +11978,15 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>118</id>
     <revision>
-      <id>3878</id>
-      <parentid>3839</parentid>
-      <timestamp>2013-10-28T20:19:08Z</timestamp>
+      <id>4088</id>
+      <parentid>3878</parentid>
+      <timestamp>2013-11-25T03:57:34Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <username>Fortasse</username>
+        <id>1</id>
       </contributor>
-      <comment>/* Release Manager */</comment>
+      <minor/>
+      <comment>Protected &quot;[[Contribute]]&quot;: prevent tampering of BTC address ([Edit=Allow only administrators] (indefinite) [Move=Allow only administrators] (indefinite))</comment>
       <text xml:space="preserve" bytes="6257">{{Header}}
 
 = Easy / Anyone =
@@ -49028,6 +49029,23 @@ Maybe this will help: Try convert the vmdk to vdi, remove the old vmdk from the 
 
 [[Category:Documentation]]</text>
       <sha1>dib7g4f22asuhz71zsv4cnu6go0tdy3</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>How to import key</title>
+    <ns>0</ns>
+    <id>523</id>
+    <revision>
+      <id>4089</id>
+      <timestamp>2013-11-25T04:41:28Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Created page with &quot;How do you &quot;import a Key&quot; in Windows 8.1&quot;</comment>
+      <text xml:space="preserve" bytes="40">How do you &quot;import a Key&quot; in Windows 8.1</text>
+      <sha1>du0cffsj254vq5c9qurtnyxrhyvdehe</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
