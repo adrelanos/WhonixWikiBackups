@@ -35,14 +35,13 @@
     <ns>0</ns>
     <id>1</id>
     <revision>
-      <id>3159</id>
-      <parentid>2927</parentid>
-      <timestamp>2013-10-11T11:29:40Z</timestamp>
+      <id>4091</id>
+      <parentid>3159</parentid>
+      <timestamp>2013-11-26T07:46:07Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <text xml:space="preserve" bytes="4912">{{Header}}
+      <text xml:space="preserve" bytes="4913">{{Header}}
 
 {{Infobox OS
 | logo                   = [[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|alt=Download Whonix]]
@@ -99,14 +98,14 @@ Whonix is produced independently of, and carries no guarantee from, The Tor Proj
 
 &lt;references /&gt;
 
-Thanks to Tomchen1989 from Wikimedia Commons for the download button! [https://commons.wikimedia.org/wiki/File:Download_Button.svg 1] ([http://www.webcitation.org/6I2DQzdu0 w])
+Thanks too Tomchen1989 from Wikimedia Commons for the download button! [https://commons.wikimedia.org/wiki/File:Download_Button.svg 1] ([http://www.webcitation.org/6I2DQzdu0 w])
 Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_43.htm awxcnx.de]!
 &lt;!---
 &lt;a href=&quot;https://plus.google.com/108150429836421683225&quot; rel=&quot;publisher&quot;&gt;Google+&lt;/a&gt;
 ---&gt;
 {{Footer}}
 [[Category:Documentation]]</text>
-      <sha1>euubfoe6i9yb769f33um2ekqj15jcc5</sha1>
+      <sha1>q87e36ym9zwlxpkzhb9l13po61itxqy</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
