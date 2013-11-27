@@ -35,13 +35,16 @@
     <ns>0</ns>
     <id>1</id>
     <revision>
-      <id>4091</id>
-      <parentid>3159</parentid>
-      <timestamp>2013-11-26T07:46:07Z</timestamp>
+      <id>4092</id>
+      <parentid>4091</parentid>
+      <timestamp>2013-11-27T20:04:57Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Fortasse</username>
+        <id>1</id>
       </contributor>
-      <text xml:space="preserve" bytes="4913">{{Header}}
+      <minor/>
+      <comment>Reverted edits by [[Special:Contributions/127.0.0.1|127.0.0.1]] ([[User talk:127.0.0.1|talk]]) to last revision by [[User:Adrelanos|Adrelanos]]</comment>
+      <text xml:space="preserve" bytes="4912">{{Header}}
 
 {{Infobox OS
 | logo                   = [[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|alt=Download Whonix]]
@@ -98,14 +101,14 @@ Whonix is produced independently of, and carries no guarantee from, The Tor Proj
 
 &lt;references /&gt;
 
-Thanks too Tomchen1989 from Wikimedia Commons for the download button! [https://commons.wikimedia.org/wiki/File:Download_Button.svg 1] ([http://www.webcitation.org/6I2DQzdu0 w])
+Thanks to Tomchen1989 from Wikimedia Commons for the download button! [https://commons.wikimedia.org/wiki/File:Download_Button.svg 1] ([http://www.webcitation.org/6I2DQzdu0 w])
 Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_43.htm awxcnx.de]!
 &lt;!---
 &lt;a href=&quot;https://plus.google.com/108150429836421683225&quot; rel=&quot;publisher&quot;&gt;Google+&lt;/a&gt;
 ---&gt;
 {{Footer}}
 [[Category:Documentation]]</text>
-      <sha1>q87e36ym9zwlxpkzhb9l13po61itxqy</sha1>
+      <sha1>euubfoe6i9yb769f33um2ekqj15jcc5</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -41251,13 +41254,14 @@ The Tor Project never managed to get such a downloader up and running, see {{Cod
     <ns>0</ns>
     <id>437</id>
     <revision>
-      <id>4016</id>
-      <parentid>3697</parentid>
-      <timestamp>2013-11-11T01:30:04Z</timestamp>
+      <id>4096</id>
+      <parentid>4095</parentid>
+      <timestamp>2013-11-27T20:29:29Z</timestamp>
       <contributor>
         <username>Fortasse</username>
         <id>1</id>
       </contributor>
+      <comment>Rejected the last text change (by [[Special:Contributions/127.0.0.1|127.0.0.1]]) and restored revision 4094 by 127.0.0.1</comment>
       <text xml:space="preserve" bytes="714">{| class=&quot;mw-collapsible mw-collapsed wikitable&quot;
 ! The header || remains visible
 |-
