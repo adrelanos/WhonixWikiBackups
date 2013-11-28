@@ -41254,15 +41254,15 @@ The Tor Project never managed to get such a downloader up and running, see {{Cod
     <ns>0</ns>
     <id>437</id>
     <revision>
-      <id>4096</id>
-      <parentid>4095</parentid>
-      <timestamp>2013-11-27T20:29:29Z</timestamp>
+      <id>4097</id>
+      <parentid>4096</parentid>
+      <timestamp>2013-11-27T23:24:36Z</timestamp>
       <contributor>
-        <username>Fortasse</username>
-        <id>1</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>Rejected the last text change (by [[Special:Contributions/127.0.0.1|127.0.0.1]]) and restored revision 4094 by 127.0.0.1</comment>
-      <text xml:space="preserve" bytes="714">{| class=&quot;mw-collapsible mw-collapsed wikitable&quot;
+      <comment>Marked this version for translation</comment>
+      <text xml:space="preserve" bytes="725">{| class=&quot;mw-collapsible mw-collapsed wikitable&quot;
 ! The header || remains visible
 |-
 | This  content || is hidden
@@ -41284,10 +41284,11 @@ It has marvelous beaches with a lot of seagulls.
 It doesn't have many services. There is a shop and car ferry visits the island
 from mainland once a day.
 
+&lt;!--T:4--&gt;
 In 2009 January the roof of the church in the island fell down. It was rebuilt
 collaboratively in the following summer.
 &lt;/translate&gt;</text>
-      <sha1>oiogm2lxkc3w3y2c3b5u9unoqb57i7i</sha1>
+      <sha1>dh1997focn9usdvbjb78zf5i248pz6g</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
