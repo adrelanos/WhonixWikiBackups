@@ -6317,17 +6317,14 @@ You could try the [https://www.riseup.net/en/openvpn-linux#gnome riseup.net Open
     <ns>0</ns>
     <id>92</id>
     <revision>
-      <id>3882</id>
-      <parentid>3804</parentid>
-      <timestamp>2013-10-30T13:16:58Z</timestamp>
+      <id>4110</id>
+      <parentid>3882</parentid>
+      <timestamp>2013-11-28T22:19:04Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="18300">{{Header}}
-
-{{Testing}}
-
-Older instructions for Whonix 0.5.6 are here: [[Physical_Isolation_0.5.6]]
+      <text xml:space="preserve" bytes="18211">{{Header}}
 
 '''WARNING''': Please don't forget reading the Warnings chapter.
 
@@ -6722,7 +6719,7 @@ To get a more complete list, install Debian (with KDE) on bare metal using the r
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>dljktlhkq1tqmvqo4nyk960ll6vvpzj</sha1>
+      <sha1>gf2p501lqzaqpibtc142wxry6apvfaz</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -12491,14 +12488,15 @@ For even more Security, see [[Advanced Security Guide]].
     <ns>0</ns>
     <id>120</id>
     <revision>
-      <id>4080</id>
-      <parentid>4013</parentid>
-      <timestamp>2013-11-23T03:17:51Z</timestamp>
+      <id>4109</id>
+      <parentid>4108</parentid>
+      <timestamp>2013-11-28T18:09:08Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="29618">&lt;!--
+      <comment>/* Possible Future Improvements */</comment>
+      <text xml:space="preserve" bytes="34286">&lt;!--
 Copyright:
 
    Whonix Trust wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -12740,24 +12738,47 @@ The least secure and most convenient way is to use Whonix is using Whonix-Defaul
 It's a bit safer to use Whonix-Default-Download version and to disable Whonix's APT repository. When updated Whonix deb packages are released, download them manually, verify them manually and install them manually. Big security bonus points for verifying the deb package contents before installing them. You'll get most security, if you [[Dev/Build_Documentation|build Whonix from source code]] and also build update packages from source code. Big security bonus points for verifying the source code before building Whonix.
 
 = Verifiable Builds =
+== Introduction - What this Archives ==
 '''UNFINISHED!'''
 
 This will hopefully be ready for Whonix 8.
 
 * [https://github.com/Whonix/Whonix/issues/113 development ticket]
-* [https://github.com/adrelanos/Whonix/blob/master/release/analyze_image script work in progress]
+* [https://github.com/adrelanos/Whonix/blob/master/help-steps/analyze_image script work in progress]
 
-Planned usage example.
+{{mbox
+| type       = critical
+| image      = [[File:Ambox_warning_pn.svg.png|40px|alt=Question mark]]
+| text       = 
+Warning:
 
-{{Code|sudo ./release/analyze_image --ova /home/user/whonix_binary/Whonix-Gateway-7.ova --report /home/user/report}}
+For this feature adding security, it needs your help! Do not assume, that others are doing it for you.
+}}
 
-This should analyze /home/user/whonix_binary/Whonix-Gateway-7.ova and write a report to /home/user/report.
+Whonix has a feature which allows the community to check that Whonix .ova&lt;ref&gt;https://en.wikipedia.org/wiki/Open_Virtualization_Format&lt;/ref&gt; releases are verifiably created from project's own source code. We call this verifiable builds. This only proves, that the person and machine&lt;ref&gt;Due to build machine compromise.&lt;/ref&gt; building Whonix has added nothing malicious, such as a backdoor&lt;ref&gt;https://en.wikipedia.org/wiki/Backdoor_(computing)&lt;/ref&gt;. It doesn't prove, that there are no backdoors in Debian. This isn't possible, because neither Debian&lt;ref&gt;Whonix is based on Debian.&lt;/ref&gt; nor any other operating system provides deterministic builds yet.&lt;ref&gt;Some Debian developres are working on it, see [https://wiki.debian.org/ReproducibleBuilds Reproducible Builds].&lt;/ref&gt; Rather this feature is no attempt to proof, that there aren't any vulnerabilities&lt;ref&gt;https://en.wikipedia.org/wiki/Vulnerability_(computing)&lt;/ref&gt; in Whonix's or Debian. An remotely exploitable&lt;ref&gt;https://en.wikipedia.org/wiki/Exploit_(computer_security)&lt;/ref&gt; bug in Whonix or Debian, a flaw in Whonix's firewall leaking traffic or code {{Code2|phoning home}}&lt;ref&gt;https://en.wikipedia.org/wiki/Phoning_home&lt;/ref&gt; the contents of your harddrive would still be fatal. A precondition so this feature can improve overall security is, that folks are checking Whonix's and Debian's source code in the first place. In summary, we believe this feature is useful and can improve security, but however isn't a magical answer to all computer security questions. The [[Comparison with Others#Verifiable Builds]] table makes it clear what this feature archives.
 
-It will extract the ova, which will result getting three files, i.e. Whonix-Gateway-7.ovf, Whonix-Gateway-7.mf and Whonix-Gateway-7-disk1.vmdk. The vmdk image will be converted to vdi, then converted to raw. (Converting as in creating a copy, not actually converting.) The filesystem layout, the MBR and the VBR (not yet implemented) are written in separate files. The vdi will be mounted. A sha512 checksum of every file will be created and stored in the report.
+You might be curious, why Whonix is verifiable while neither Debian nor any other operating system is? This is because [[About#Based_on_Debian|Whonix is very simple]], to oversimplify it: Whonix is just a collection of configuration files and scripts, i.e. Whonix's source code does not contain any compiled code etc. On the other hand, Debian is a full operating system. And of course, without the great work of the Debian project and all the upstream projects, Whonix wouldn't exist.
 
-Anyone running the {{Code2|analyze_image}} script on the same Whonix.ova will hopefully get the same report. Someone building Whonix-own.ova will hopefully create an image very similar to Whonix.ova. We can then {{Code2|diff}} the reports. Those reports will be hopefully so similar, that it is reasonable to believe, that the original Whonix.ova has been build from the source code that has been published for that Whonix version. This would only prove, that on the machine building Whonix nothing malicious has been added, it wouldn't prove, that there aren't any vulnerabilities or that there are no backdoors in Debian (this isn't possible, because neither Debian nor any other operating system provides deterministic builds yet). The [[Comparison with Others#Verifiable Builds]] table makes it clear what this archives.
+This feature will hopefully be ready for Whonix 8. Only users who download a new image can profit from this feature. Auditing old versions is not possible.&lt;ref&gt;Because in order to implement the verifiable builds feature, we need to get rid of lots of non-deterministic auto-generated files at the end of the build process and to re-create them during first boot.&lt;/ref&gt;
 
-[https://github.com/sleuthkit/sleuthkit/ sleuthkit] could be an interesting addition or even replacement for our custom script. Then we could create a report using something like {{Code|fls -f ext4 ./Whonix-Gateway-7.img}}. The version in Debian even in [http://packages.debian.org/sid/sleuthkit sid] is outdated and does unfortunately not include support for ext4 and our images are using ext4. More recent upstream releases do support ext4, but there are no signed git tags yet ([https://github.com/sleuthkit/sleuthkit/issues/264 reported an issue]), so getting sleuthkit is a bit difficult. (If we want to defeat sophisticated backdoors, we shouldn't encourage auditors to blindly trust github's SSL alone for sleuthkit's integrity.) We could think about bending our images, using ext3.
+== Short Overview - How it Works ==
+When building Whonix .ova's from source code, for example /home/user/whonix_binary/Whonix-Gateway-7.ova also report /home/user/whonix_binary/Whonix-Gateway-7.report file will be created.
+
+After building the .ova, the last build-step will extract the .ova, which will result getting three files, i.e. Whonix-Gateway-7.ovf, Whonix-Gateway-7.mf and Whonix-Gateway-7-disk1.vmdk. The vmdk&lt;ref&gt;https://en.wikipedia.org/wiki/VMDK&lt;/ref&gt; image then will be converted to vdi&lt;ref&gt;https://en.wikipedia.org/wiki/VDI_(file_format)&lt;/ref&gt;, then converted to raw&lt;ref&gt;https://en.wikipedia.org/wiki/Raw_image_format&lt;/ref&gt;. (Converting as in creating a copy, not actually converting.) The filesystem layout, the MBR&lt;ref&gt;https://en.wikipedia.org/wiki/Master_boot_record&lt;/ref&gt; and the VBR&lt;ref&gt;https://en.wikipedia.org/wiki/Volume_boot_record&lt;/ref&gt; (?) are written in a separate files. The raw image will then be mounted. A sha512 checksum of every file will be created and stored in the report.
+
+Anyone building Whonix.ova images will hopefully end up with the same report. We can then compare the reports using tools such as {{Code2|diff}} and/or {{Code2|meld}}. Those reports will hopefully be so similar. We can't end up with the very same reports, because again, there are no deterministically built operating systems yet. However, we can manually review the few remaining differences. That should make it reasonable to believe, that the original Whonix.ova images have been build from the source code that has been published for that Whonix version
+
+== Current Limitations ==
+Our {{Code2|[https://github.com/adrelanos/Whonix/blob/master/help-steps/analyze_image help-steps/analyze_image]}} script does not check the contents of the image outside the file system. We're not aware of any method getting a backdoor activated by writing malicious data into those places. We might get rid of this limitation in future, see chapter Possible Future Improvements.
+
+== Attack Surface ==
+The {{Code2|/help-steps/analyze_image}} script is supposed to execute no code from the image you are analyzing. The risk running that script on images you did not create yourself such as on the official images should be low, but not non-existent. Audits of the analyzing script itself are most welcome. In order to analyze the image, tools which are available in Debian's repository are used. Such as extracting the .ova requires {{Code2|tar}}&lt;ref&gt;http://packages.debian.org/jessie/tar&lt;/ref&gt;. The .ova could be malformed in a way to exploit the auditor's machine while extracting it to coerce the auditor's machine create a legit report hiding the actual backdoor (and infecting the auditor's machine with a backdoor). To find out what other tools are used and for what, please have a look at the {{Code2|/help-steps/analyze_image}} script.
+
+== Your Own Alternatives ==
+The {{Code2|/help-steps/analyze_image}} script is the tool which comes with Whonix's source code to audit Whonix.ova's. Nothing prevents you from cooking up your own custom method to verify Whonix.ova's. On the contrary, we'd be very happy to hear about your methods, source code and results. Since this hasn't ever happened in past, Whonix came up with its own {{Code2|/help-steps/analyze_image}} script.
+
+== Possible Future Improvements ==
+[https://github.com/sleuthkit/sleuthkit/ sleuthkit] could be an interesting addition or even replacement for our custom script. Then we could create a report using something like {{Code|fls -f ext4 ./Whonix-Gateway-7.img}}. Does {{Code|fls}} very similar results when run on very similar images or does it mess up the ordering? The version in Debian even in [http://packages.debian.org/sid/sleuthkit sid] is outdated and does unfortunately not include support for ext4 and our images are using ext4. More recent sleuthkit upstream releases do support ext4, but there are no signed git tags yet ([https://github.com/sleuthkit/sleuthkit/issues/264 reported an issue]), so getting sleuthkit is a bit difficult. (If we want to defeat sophisticated backdoors, we shouldn't encourage auditors to blindly trust github's SSL alone for sleuthkit's integrity.) We could think about bending our images, downgrading from ext4 to ext3.
 
 = Footnotes / References =
 &lt;references/&gt;
@@ -12775,7 +12796,7 @@ Thanks to Qubes OS ([https://groups.google.com/forum/?fromgroups=#!topic/qubes-d
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>6zf3g8t4z09ptp755ubxqtaqbgy3z11</sha1>
+      <sha1>c9nrvj84x4d4dfq0h46c5aog3v2fe3d</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -42542,424 +42563,22 @@ Be careful with the advice you are getting in public places. Do not run commands
     <ns>0</ns>
     <id>476</id>
     <revision>
-      <id>3535</id>
-      <timestamp>2013-10-17T09:14:23Z</timestamp>
+      <id>4111</id>
+      <parentid>3535</parentid>
+      <timestamp>2013-11-28T22:19:43Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>Created page with &quot;{{Header}}  '''WARNING''': Please don't forget reading the Warnings chapter.  {{Old-Stable-0.5.6}}  = Introduction =  == Technical Introduction ==  When setting up Whonix in t...&quot;</comment>
-      <text xml:space="preserve" bytes="17515">{{Header}}
+      <comment>Replaced content with &quot;{{Header}}  '''Deprecated. Old Article still available in the wiki history. No longer supported. Use the [[Physical Isolation]] page.'''  {{Footer}}  Category:Documentat...&quot;</comment>
+      <text xml:space="preserve" bytes="176">{{Header}}
 
-'''WARNING''': Please don't forget reading the Warnings chapter.
-
-{{Old-Stable-0.5.6}}
-
-= Introduction =
-
-== Technical Introduction ==
-
-When setting up Whonix in the form of two Virtual Machines running on the same physical host, exploits targeting the VM implementation or the host can still break out of the torified Client VM and expose the IP of a user. Malware running on the host has full control over all VMs. To protect such attacks we need a different approach: In this context we called it Physical Isolation, because the gateway system is installed on separate hardware. This drastically reduces the TCB&lt;ref&gt;https://en.wikipedia.org/wiki/Trusted_computing_base&lt;/ref&gt; by more than the half.
-
-In total we'll be installing and configuring two computers and set up an isolated point to point network between them (you could also set up a an ordinary, completely isolated, LAN behind the Whonix-Gateway). One computer acts as the client or &quot;Whonix-Workstation&quot;, the other as a proxy or &quot;Whonix-Gateway&quot; which will transparently route all of the Whonix-Workstation's traffic through Tor.
-
-The Whonix-Gateway on its own physical device can either run directly on hardware or inside a virtual machine. Both options have advantages and disadvantages. We recommend to use no additional Virtual Machine for the Whonix-Gateway.
-
-The Whonix-Workstation should always be installed in a Virtual Machine: A VM hides hardware serial numbers. See also [[Security_Guide#Recommendation_to_use_multiple_VM_Snapshots4|Recommendation to use multiple VM Snapshots]].
-
-The host operating system(s) should only be used for downloading operating system updating, hosting Whonix-Gateway or Whonix-Workstation and nothing else.
-
-Bonus points if the physical systems are exclusively used for hosting Whonix, or if storage devices are separated for Whonix and non-Whonix use cases, to avoid a Whonix hard drive getting infected by a another operating system.
-
-== Warnings ==
-
-'''WARNING''': Instructions for Whonix 0.5.6 with Physical Isolation are still under development. Advanced Linux users can already understand them. As recently [http://sourceforge.net/p/whonix/discussion/general/thread/24115e26/ reported] in the user help forum, they are working. There are no instructions for Whonix 6 yet.
-
-'''WARNING''': [[Dev/Build Anonymity]] has not been considered for this article.
-
-'''WARNING''': This article currently lacks information about Whonix-Gateway's and Whonix-Workstation's MAC address. See also
-
-* [[Protocol-Leak-Protection and Fingerprinting-Protection]]
-* [[Pre_Install_Advice#MAC_Address|Whonix in public networks / MAC Address]]
-
-== Using spare hardware + Virtual Machine ==
-
-Advantages:
-
-* You can install a graphical host.
-* Use the Whonix download version.
-* You can use the graphical network manager on the host, for example to connect to WiFi.
-* You can setup easily a VPN on the host. Tor will be tunneled through the VPN.
-
-Disadvantages:
-
-* Higher attack surface, because the Virtual Machine code get's involved.
-
-== Using spare hardware without Virtual Machine ==
-
-Advantages:
-
-* More secure, because less code is involved.
-
-Disadvantages:
-
-* Slightly more complicated setup
-* More difficult to set up VPN
-* More difficult to set up 3G networking compared to using a Windows host
-
-== Hardware ==
-
-=== General ===
-
-We recommend that you use two dedicated computers for Whonix that are never used for activities that could lead back to your identity. Alternatively you can use an already existing and otherwise used computer for the Whonix-Gateway. To offer some isolation you should disconnect all internal and external drives and boot from a eSATA, USB or another internal drive into a clean environment.
-
-=== non-anonymous use ===
-
-* non-anonymous box (leave it as it is, like you want)
-* non-anonymous home dial up internet router (leave it as it is, like you want)
-
-=== anonymous use ===
-
-* Whonix-Gateway
-** This really does not have to be a big desktop computer or ordinary server. There are alternatives.
-** smartphone &lt;ref name=one&gt;Just some hints to get started. It is difficult and beyond the scope of Whonix, because you don't have an Ethernet interface. Some (after market) firmwares support USB-host. (You can plug USB devices into your phone, such as an USB ethernet card. For example some rooted android smartphones can [http://android.galoula.com/en/LinuxInstall/ install] Debian Linux.&lt;/ref&gt;,
-** UMPC&lt;ref&gt;https://en.wikipedia.org/wiki/Ultra-mobile_PC&lt;/ref&gt;
-** pad, tablet,
-** notebook, netbook,
-** Raspberry Pi&lt;ref&gt;https://en.wikipedia.org/wiki/Raspberry_Pi&lt;/ref&gt; (Whonix User Help Forum: [https://sourceforge.net/p/whonix/discussion/general/thread/30381157/ Installing Whonix Gateway on Raspberry Pi]),
-** router &lt;ref&gt;something like OpenWRT&lt;/ref&gt;,
-** set top box,
-** etc.
-** how to utilize such a device as a linux server is beyond the scope of this guide, there are already better resources
-* anonymous 3G modem (see below) or anonymous wifi adapter (see below)
-* Whonix-Workstation
-** You get the idea. Use a device which suits you.
-
-= Prerequisites =
-
-* [[System Requirements]]
-* Whonix-Gateway: A device with at least two network adapters, at least one of them ethernet &lt;ref&gt;The other one may be either an [[Security_Guide#Anonymous_3G_modem|Anonymous 3G modem]]; [[Security_Guide#Anonymous_WiFi_adapter|Anonymous WiFi adapter]], another ethernet or wifi connected to your modem/router.&lt;/ref&gt;, capable of running Linux. It will run Debian. &lt;ref&gt;Theoretically you could use any OS that supports iptables or pf. If you don't want to use Debian you will have to edit the source code. This will be easy for Debian derivatives but much more difficult for *BSD for example. In any case, the choice of OS shouldn't really matter because this system isn't used for anything but running Tor. A cheap plug computer, something like Raspberry Pi or the hardware used by Torouter would be sufficient.&lt;/ref&gt;
-* Whonix-Workstation: A device connected via ethernet to the Whonix-Gateway. It must only have this one NIC and no other network connectivity! Must be connected by wire.&lt;ref&gt;If you don't connect by wire, you significantly weaken isolation and security. One the Whonix-Workstation were infected, it could jump onto another network and start leaking.&lt;/ref&gt; This will be the torified client system or Whonix-Workstation. It must be capable of running Debian.&lt;ref&gt;Any OS can be used. But this is not recommended! If you do anyway, read warning, especially for Windows: [https://trac.torproject.org/projects/tor/wiki/doc/TransparentProxyLeaks Transparent Proxy Leaks].&lt;/ref&gt;
-* We recommend to use a VM as the client, the same Whonix-Workstation, that most non Physical Isolation users use. &lt;ref&gt;From the [[Download]] page or build it yourself from source code.&lt;/ref&gt; &lt;ref&gt;A generic VM image can neither leak identifying hardware serial numbers nor unique software fingerprints. (e.g. trough [https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO#Softwareupdaters software updates]).&lt;/ref&gt; &lt;ref&gt;This ensures that you get the latest security features and most secure configurations. (Such as stream isolation that protects against Identity correlation through circuit sharing, XChat IRC hardening or Whonix's Protocol-Leak-Protection and Fingerprinting-Protection etc.)&lt;/ref&gt;
-* Host build environment has a working internet connection to Debian mirrors.
-
-= Installation =
-
-== General ==
-
-General advice from Build Documentation about [[Dev/BuildDocumentation 0.6.0#Build Security|Build Security]] and [[Dev/BuildDocumentation 0.6.0#Host preparation|Host Preparation]] applies.
-
-== How To Install Whonix-Gateway on hardware (RECOMMENDED) ==
-
-1. Download a Debian Wheezy 32 bit installation iso. (You could also use a Debian Wheezy 64 bit installation iso, these instructions should also work, but it's less tested.) Detailed instructions doing so are unfortunately not part of this guide. However, the [[Debian]] page contains some help.
-
-2. Install Debian Wheezy and chose following settings:
-
-&lt;pre&gt;
-In the boot menu press F4 and select &quot;Install a minimal system&quot;
-Language: English
-Country: United States
-keyboard layout: English (US) (don't autodetect)
-Primary network interface: eth0 (depends on hardware layout?)
-Hostname: host
-Full name for the new user: user
-Username for your account: user
-Choose a password for the new user: &lt;Set up a strong password&gt;
-encrypt home directory: No
-Timezone: UTC
-Partitioning: It's a good idea to set up cryptsetup based FDE at this point.
-No proxy
-No automatic updates 
-tasksel (Choose software to install): select nothing
-&lt;/pre&gt;
-
-3. The external interface (usually eth0) may need to be configured according to the requirements of your local network, e.g. static or simply left to use dhcp if the gateway is connected to a dhcp capable router. For wlan follow the upstream documentations: [http://wiki.debian.org/WiFi debian wiki], [https://help.ubuntu.com/community/WifiDocs/WiFiHowTo Ubuntu help].
-
-4. Make sure the internet is working.
-
-5. Install all security updates and reboot.
-
-&lt;pre&gt;
-## Become root.
-su
-
-## Refresh package lists.
-apt-get update
-
-## Upgrade.
-apt-get dist-upgrade
-
-## Back to normal user.
-exit
-&lt;/pre&gt;
-
-6. Install build dependencies. &lt;ref&gt;You need git to obtain the source code. Alternatively, you could also download a git tag as an archive using a (torified) browser: https://github.com/Whonix/Whonix/tags&lt;/ref&gt;
-
-&lt;pre&gt;
-sudo apt-get install git sudo
-&lt;/pre&gt;
-
-7. You must build as user &quot;user&quot; and that user must be a member of the &quot;sudo&quot; group.
-
-&lt;pre&gt;
-## Become root.
-su
-
-## adduser &quot;user&quot;
-adduser user
-
-## add &quot;user&quot; to sudo group
-addgroup user sudo
-
-## Back to normal user.
-exit
-&lt;/pre&gt;
-
-8. On your Whonix-Gateway: It is assumed you created user account named &quot;user&quot;.
-
-&lt;pre&gt;
-su user
-cd ~
-&lt;/pre&gt;
-
-9. Get the latest source code.
-
-&lt;pre&gt;
-git clone https://github.com/Whonix/Whonix
-&lt;/pre&gt;
-
-10. Get into Whonix source folder.
-
-&lt;pre&gt;
-cd Whonix
-&lt;/pre&gt;
-
-11. Verify the git tag you want to use.
-
-&lt;pre&gt;
-## 0.5.6 users
-git tag -v 0.5.6
-&lt;/pre&gt;
-
-12. Switch to the git tag you want to use.
-
-&lt;pre&gt;
-## 0.5.6 users
-git checkout 0.5.6
-&lt;/pre&gt;
-
-13. Make sure you have all packages installed which are listed in the file ''Whonix-Gateway_packages''.
-
-&lt;pre&gt;
-## If you are experimenting with 64 bit Whonix-Gateway,
-## you will have to comment out the package linux-image-486
-## in the file Whonix-Gateway_packages.
-sudo apt-get install $(grep -vE &quot;^\s*#&quot; Whonix-Gateway_packages | tr &quot;\n&quot; &quot; &quot;)
-&lt;/pre&gt;
-
-14. Before running the whonix_createvm &lt;ref&gt;Do not get concerned about the &quot;vm&quot; within whonix_createvm. The name is historical and the functionality for building a Whonix-Gateway featuring Physical Isolation has been added later.&lt;/ref&gt; script make sure eth1 and eth0 refer to the correct interfaces.
-
-&lt;pre&gt;
-## May be helpful.
-dmesg | grep eth
-&lt;/pre&gt;
-
-Otherwise you have to change the variables in the configuration files. To find the affected files, the following commands may be helpful. &lt;ref&gt;Should be really only a very few files. We used variables for eth0 and eth1 wherever possible.&lt;/ref&gt;
-
-&lt;pre&gt;
-grep -r eth0* *
-grep -r eth1* *
-&lt;/pre&gt;
-
-15. Most configuration files work well inside Virtual Machines and on hardware. Only minor things such as deactivating powersaving, passwordless reboot, shutdown etc. are only recommended for Virtual Machines. You can easily comment them out by putting a hash # in front of them. They are marked, to find them, grep can be used.
-
-&lt;pre&gt;
-grep -r VMONLY* *
-&lt;/pre&gt;
-
-16. Copy the files from the Whonix source folder to their correct place.
-
-&lt;pre&gt;
-## 0.5.6 users
-sudo ./whonix_createvm -tg-bare-metal
-&lt;/pre&gt;
-
-17. Start whonix_internal_install_script (&quot;chroot&quot; scripts).
-
-&lt;pre&gt;
-## 0.5.6 users
-sudo /usr/local/share/whonix/whonix_internal_install_script -install
-&lt;/pre&gt;
-
-18. Reboot.
-
-&lt;pre&gt;
-sudo reboot
-&lt;/pre&gt;
-
-19. You will autologin as new user &quot;user&quot;. (If you didn't install as user &quot;user&quot;, your old user and home folder does of course still exist.)
-
-20. Done.
-
-== How To Install Whonix-Gateway in a VM (UNTESTED / NOT RECOMMENDED) ==
-
-It is advised to install a new OS just for hosting the Gateway VM, any OS that can run VirtualBox works but we recommend an Open Source system.
-
-[[Download]] the Whonix-Gateway image. (Or [[Dev/Build Documentation|build it]] from source code.)
-
-Adapter 1 can be set up as a NAT network. Adapter 2 must either be set to NAT as well (but you will need to forward ports from the host to the guest) or much simpler: use bridged networking and set it to the second physical interface (the one that goes into the isolated network/point to point ethernet). See &quot;NAT vs Bridging&quot; below.
-
-This configuration is entirely untested and not recommended unless you need to run Tor through a VPN (can't that be done without VMs?) or an unsupported 3G modem and can't afford a 3rd physical device.
-
-When using NAT for a virtualized Gateway you need to set up port forwarding in VirtualBox. Using bridged network may be easier, but then the router may see the Whonix-Gateway MAC address which identifies as Whonix-Gateway. (Should not be of concern in home networks. Should be of concern in untrusted networks or when using a modem to connect.)
-
-== Install Whonix-Workstation in a VM (RECOMMENDED) ==
-
-=== First Steps ===
-
-Install and update a host operating system. On the host can run any OS that is capable of running VirtualBox, but be aware of [https://trac.torproject.org/projects/tor/wiki/doc/TransparentProxyLeaks Transparent Proxy Leaks]. It is recommended against to use Windows or another other commercial proprietary system as host operating system.
-
-[[Download]] the Whonix-Workstation image. (Or [[Dev/Build Documentation|build it]] from source code.)
-
-Note sure what we wanted to say with this sentence: If the physical network (between Whonix-Gateway and a router) uses 192.168.0.* you need to review and edit all shell scripts and switch the internal network to something else!
-
-=== Host Network Adapter ===
-
-The host has to be configured to use the static IP configuration.
-
-&lt;pre&gt;
-## Whonix-Workstation
-## /etc/network/interfaces for the host,
-## when using Physical Isolation,
-## with Whonix-Workstation in a VM.
-
-auto lo
-iface lo inet loopback
-
-auto eth0
-iface eth0 inet static
-   ## Increment last octet of address
-   ## on optional additional hosts.
-   address 192.168.0.11
-   netmask 255.255.255.0
-   gateway 192.168.0.10
-   #pre-up /usr/local/bin/whonix_firewall
-
-   ## Out commented.
-   ## For what do we require the network and broadcast
-   ## instances anyway?
-   #network 192.168.0.0
-   #broadcast 192.168.0.255
-
-#auto eth0
-#iface eth0 inet dhcp
-
-## end of /etc/network/interfaces
-&lt;/pre&gt;
-
-If the physical network (between Whonix-Gateway and a router) uses 192.168.0.* you need to review and edit all ''/etc/network/interfaces''.
-
-=== NAT vs Bridging ===
-
-==== Two Choices ====
-
-In the default Whonix VirtualBox image, the network adapter setting for Adapter 1 (eth0) is set to internal network and will therefore not work out of the box. There are two choices to fix this. NAT (recommended) or bridged network.
-
-==== NAT (RECOMMENDED) ====
-
-If you use NAT you will have to edit the ''/etc/network/interfaces/'' in Whonix-Workstation to use DHCP (easier, shown in the example below) or a static IP for VirtualBox NAT.
-
-&lt;pre&gt;
-sudo nano /etc/network/interfaces/
-&lt;/pre&gt;
-
-Replace it with.
-
-&lt;pre&gt;
-## Whonix-Workstation
-## /etc/network/interfaces in a VM
-## when using Physical Isolation.
-
-auto lo
-iface lo inet loopback
-
-auto eth0
-iface eth0 inet dhcp
-
-## end of /etc/network/interfaces
-&lt;/pre&gt;
-
-==== Bridged Network (UNTESTED / NOT RECOMMENDED) ====
-
-If you use bridged networking things will (or should, we haven't tested anything yet) just work.
-
-Since in the bridged network case, Whonix-Workstation can see the MAC address of whatever network adapter it is connected to, you should change the MAC address of the Workstation host and of the Whonix-Gateway.
-
-See [[Pre_Install_Advice#MAC_Address|Whonix in public networks]].
-
-== Install Whonix-Workstation on hardware (NOT RECOMMENDED) ==
-
-Install Whonix-Workstation on hardware without using a VM is recommended against, because hardware serials would be visible to Whonix-Workstation.
-
-The instructions are very similar, if not the very same, to those in &quot;How To Install Whonix-Gateway on hardware&quot; above. You have to use Whonix-Workstation_packages instead of Whonix-Gateway_packages and -t'''w'''-bare-metal instead of -tg-bare-metal.
-
-= Further required reading =
-
-[[Documentation]]. The host security chapter applies to both computers!
-
-= Extra packages for better hardware support =
-
-Some packages for bare metal may or may not be missing. Here is a probably incomplete list of packages, which may or may not be useful for better hardware support. Some suggestions.
-
-&lt;pre&gt;
-xorg
-xserver-xorg-input-all
-xserver-xorg-input-wacom
-xserver-xorg-input-geode
-xserver-xorg-input-vmmouse
-xserver-xephyr
-
-xserver-xorg-input-*
-xserver-xorg-*
-
-acpi-support-base
-acpid
-acpi
-
-discover
-discover-modprobe
-discover-data
-
-hwdata
-
-mdetect
-
-apt-cache show task-desktop
-apt-cache show task-kde-desktop
-apt-cache show task-laptop
-&lt;/pre&gt;
-
-If you have EFI bios.
-
-&lt;pre&gt;
-grub-efi-amd64
-&lt;/pre&gt;
-
-To get a more complete list, install Debian (with KDE) on bare metal using the regular Debian installer medium.
-
-* diff &quot;dpkg -l&quot; with Whonix
-* diff &quot;sudo lsmod&quot; with Whonix
-* contribute your findings
-
-* See also: http://wiki.debian.org/HardwareAutodetection
-
-= Footnotes / References =
-&lt;references/&gt;
+'''Deprecated. Old Article still available in the wiki history. No longer supported. Use the [[Physical Isolation]] page.'''
 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>fmd81j8crto22nk4wbf3lis3hzshhv5</sha1>
+      <sha1>d9e3nv9yzyu8i0y9ex5zm55kexgsbxh</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -49042,6 +48661,25 @@ Maybe this will help: Try convert the vmdk to vdi, remove the old vmdk from the 
       <comment>Created page with &quot;How do you &quot;import a Key&quot; in Windows 8.1&quot;</comment>
       <text xml:space="preserve" bytes="40">How do you &quot;import a Key&quot; in Windows 8.1</text>
       <sha1>du0cffsj254vq5c9qurtnyxrhyvdehe</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Verifiable Builds</title>
+    <ns>0</ns>
+    <id>530</id>
+    <redirect title="Trust" />
+    <revision>
+      <id>4104</id>
+      <timestamp>2013-11-28T16:09:07Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>Redirected page to [[Trust#Verifiable Builds]]</comment>
+      <text xml:space="preserve" bytes="37">#REDIRECT [[Trust#Verifiable Builds]]</text>
+      <sha1>htoe81vewsgmn5xh3mcnsgq2m1rjvd7</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
