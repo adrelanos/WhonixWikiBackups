@@ -15745,14 +15745,14 @@ Optional, for debugging if you have problems.
     <ns>0</ns>
     <id>139</id>
     <revision>
-      <id>3180</id>
-      <parentid>2773</parentid>
-      <timestamp>2013-10-11T11:56:23Z</timestamp>
+      <id>4112</id>
+      <parentid>3180</parentid>
+      <timestamp>2013-11-29T08:51:19Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <text xml:space="preserve" bytes="5449">&lt;!--
+      <comment>/* Verify the virtual machine images using the command line */  Added '-7' to reflect actual file download names.</comment>
+      <text xml:space="preserve" bytes="5457">&lt;!--
 Copyright:
 
    Whonix Verify_the_virtual_machine_images_using_the_command_line wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -15829,7 +15829,7 @@ Then, '''start the cryptographic verification''', it can take several minutes:
 
 &lt;pre&gt;
 cd [the virtual machine images directory]
-gpg --keyid-format long --verify Whonix-Gateway.ova.asc Whonix-Gateway.ova
+gpg --keyid-format long --verify Whonix-Gateway-7.ova.asc Whonix-Gateway-7.ova
 &lt;/pre&gt;
 
 '''If the Virtual Machine image is correct''' the output will tell you that the signature is good:
@@ -15862,7 +15862,7 @@ gpg: BAD signature from &quot;adrelanos &lt;adrelanos at riseup dot net&gt;&quot
 
 &lt;pre&gt;
 cd [the virtual machine images directory]
-gpg --keyid-format long --verify Whonix-Workstation.ova.asc Whonix-Workstation.ova
+gpg --keyid-format long --verify Whonix-Workstation-7.ova.asc Whonix-Workstation-7.ova
 &lt;/pre&gt;
 
 = License =
@@ -15879,7 +15879,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>5in3usk6z4gty1x2jyrymlos8f27kiu</sha1>
+      <sha1>otqk4kpriya6htakvutf0fvi34fmx70</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
