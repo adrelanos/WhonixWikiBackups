@@ -37337,15 +37337,15 @@ Therefore splitting them, appeared to be the only solution. Otherwise it would i
     <ns>0</ns>
     <id>311</id>
     <revision>
-      <id>3996</id>
-      <parentid>3918</parentid>
-      <timestamp>2013-11-07T14:22:33Z</timestamp>
+      <id>4114</id>
+      <parentid>4113</parentid>
+      <timestamp>2013-11-29T20:19:32Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Asked */</comment>
-      <text xml:space="preserve" bytes="14972">{{Header}}
+      <comment>/* Mirror Providers */</comment>
+      <text xml:space="preserve" bytes="15665">{{Header}}
 
 = Current Situation =
 == Introduction ==
@@ -37518,7 +37518,14 @@ In summary there where no open source hosting sites, which offer SSL everywhere 
 * Optional: SSL downloads?
 
 == Mirror Providers ==
-There is a [http://sourceforge.net/apps/trac/sourceforge/wiki/Mirrors#MirrorProviders list] of mirror providers. We could contact them and ask if there were willing to provide direct download links (hotlinking) (+SSL) for Whonix.
+There are a few lists
+
+* http://sourceforge.net/apps/trac/sourceforge/wiki/Mirrors#MirrorProviders
+* http://mirror.slitaz.org/mirrors
+* http://www.freebsd.org/doc/handbook/mirrors-rsync.html
+* http://www.debian.org/distrib/archive
+
+of mirror providers. We could contact them and ask if there were willing to provide direct download links (hotlinking) (+SSL) for Whonix.
 
 When they are able to sponsor sourceforge, in comparison, sponsoring Whonix would be only peanuts to them. The question is, if they provide service for individual requests.
 
@@ -37572,13 +37579,38 @@ and it may change in the future without any intervention from us.
 If you're happy with that situation then go ahead and link to us.
 &lt;/pre&gt;
 
+Answer to follow up email:
+
+&lt;pre&gt;
+We don't have any upload facilities I'm afraid. We only offer downloads.
+
+One solution is to run a private rsync server yourselves that only
+certain mirrors can access. It doesn't have to be that quick.
+
+You may find other mirrors do offer an upload facility though.
+&lt;/pre&gt;
+
+* November 2013: switch.ch
+** asked for an upload account
+** asked for master rsync capabilities
+
+Answer:
+
+&lt;pre&gt;
+Dear Sir 
+
+Thank you for your e-mail of 25th November 2013 regarding Whonix. 
+
+Sorry, we are not interested in your offer.
+&lt;/pre&gt;
+
 = Footnotes =
 &lt;references /&gt;
 
 [[Category:Design]]
 
 {{Footer}}</text>
-      <sha1>dvw9jqxvep56c0st7wqz7yn3uag7qzn</sha1>
+      <sha1>kd5gk83j1ljncvlj5oe3snt8eq1pgdg</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
