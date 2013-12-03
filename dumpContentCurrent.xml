@@ -11302,15 +11302,15 @@ What would have to be done:
     <ns>0</ns>
     <id>114</id>
     <revision>
-      <id>4082</id>
-      <parentid>4079</parentid>
-      <timestamp>2013-11-23T14:14:26Z</timestamp>
+      <id>4118</id>
+      <parentid>4117</parentid>
+      <timestamp>2013-12-03T03:08:38Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* SSH into Whonix-Workstation */</comment>
-      <text xml:space="preserve" bytes="9486">{{Header}}
+      <comment>/* SSH into Whonix-Gateway */</comment>
+      <text xml:space="preserve" bytes="9588">{{Header}}
 
 = Security Overview =
 
@@ -11401,7 +11401,6 @@ Note, if you USB device is formatted with NTFS, you need to install the ntfs-3g 
 See [[VirtualBox Guest Additions]] chapter.
 
 = SSH into Whonix-Gateway =
-
 '''Developers / experts only! Only for debugging!''' &lt;br /&gt;
 '''Untested in Whonix 6 (will probably work)'''
 
@@ -11457,13 +11456,19 @@ ssh root@127.0.0.1 -p 2200
 
 On the host: Or mount Whonix-Gateway as a folder.
 
+Create a folder which will be used to mount the image. It needs to exist before trying to mount.
+
+&lt;pre&gt;
+mkdir ~/mountgateway
+&lt;/pre&gt;
+
 &lt;pre&gt;
 ## On the host!
 
 ## as user
-sshfs user@127.0.0.1:/ -p 2200 /home/user/whonix_binary/whonix-Gateway_sshfs
+sshfs user@127.0.0.1:/ -p 2200 ~/mountgateway
 ## or as root
-sshfs root@127.0.0.1:/ -p 2200 /home/user/whonix_binary/whonix-Gateway_sshfs
+sshfs root@127.0.0.1:/ -p 2200 ~/mountgateway
 &lt;/pre&gt;
 
 = SSH into Whonix-Workstation =
@@ -11503,6 +11508,10 @@ ssh -t user@127.0.0.1 -p 2200 &quot;ssh.real user@192.168.0.11&quot;
 You can also mount the filesystem of Whonix-Workstation with two commands. SSH hopping is also possible for sshfs (a website [http://www.larkinweb.co.uk/computing/mounting_file_systems_over_two_ssh_hops.html told] ([http://www.webcitation.org/6FDYtApEP w]) me).
 
 &lt;pre&gt;
+mkdir ~/mountworkstation
+&lt;/pre&gt;
+
+&lt;pre&gt;
 ## On the host!
 
 ## or root@
@@ -11511,7 +11520,7 @@ You can also mount the filesystem of Whonix-Workstation with two commands. SSH h
 ssh -f user@127.0.0.1 -p 2200 -L 2222:192.168.0.11:22 -N
 
 ## Mount Whonix-Workstation folder on the host.
-sshfs -p 2222 user@localhost:/remote/path /mnt/localpath
+sshfs -p 2222 user@localhost:/ ~/mountworkstation
 &lt;/pre&gt;
 
 = Mount and inspect images =
@@ -11623,7 +11632,7 @@ sudo umount /mnt/whonix
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Development]]</text>
-      <sha1>cm07al6pblevuzdgauh1vuvlanxzxlw</sha1>
+      <sha1>ojex0ayq91eqrl9vlqcnpjmqhiyan5m</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
