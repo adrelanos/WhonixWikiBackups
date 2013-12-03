@@ -11302,15 +11302,14 @@ What would have to be done:
     <ns>0</ns>
     <id>114</id>
     <revision>
-      <id>4118</id>
-      <parentid>4117</parentid>
-      <timestamp>2013-12-03T03:08:38Z</timestamp>
+      <id>4119</id>
+      <parentid>4118</parentid>
+      <timestamp>2013-12-03T22:51:43Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
       <comment>/* SSH into Whonix-Gateway */</comment>
-      <text xml:space="preserve" bytes="9588">{{Header}}
+      <text xml:space="preserve" bytes="9586">{{Header}}
 
 = Security Overview =
 
@@ -11408,9 +11407,9 @@ On Whonix-Gateway.
 
 Look at the {{Code|/etc/whonix_firewall.d/30_default}} config file.
 
-Set GATEWAY_ALLOW_INCOMMING_SSH to 1.
+Set GATEWAY_ALLOW_INCOMING_SSH to 1.
 
-&lt;pre&gt;GATEWAY_ALLOW_INCOMMING_SSH=1&lt;/pre&gt;
+&lt;pre&gt;GATEWAY_ALLOW_INCOMING_SSH=1&lt;/pre&gt;
 
 Restart firewall.
 
@@ -11632,7 +11631,7 @@ sudo umount /mnt/whonix
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Development]]</text>
-      <sha1>ojex0ayq91eqrl9vlqcnpjmqhiyan5m</sha1>
+      <sha1>hy0l3orr6efd2od6j7mio0cnku983vf</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
