@@ -1299,14 +1299,14 @@ See also [[Security_in_Real_World | Whonix security in real world]], [[Security_
     <ns>0</ns>
     <id>24</id>
     <revision>
-      <id>4076</id>
-      <parentid>3909</parentid>
-      <timestamp>2013-11-22T18:44:32Z</timestamp>
+      <id>4125</id>
+      <parentid>4124</parentid>
+      <timestamp>2013-12-04T01:16:52Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="13386">&lt;!--
+      <text xml:space="preserve" bytes="13768">&lt;!--
 Copyright:
 
    Whonix Documentation wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -1453,7 +1453,7 @@ Anonymity is a complex problem without an easy solution, and security is only as
 * [[Software#Audio Editing|Audio]]
 * [[Software#Printing and Scanning|Printing and scanning]]
 
-'''Tunnel Support'''
+'''Tunnel Support / Chaining Support'''
 
 * [[Features#VPN_.2F_Tunnel_support|Tunnel Support]]
 * [[Tunnel_Tor_through_proxy_or_VPN_or_SSH|Tunnel Tor through proxy, VPN or SSH (proxy/VPN/SSH -&gt; Tor)]]
@@ -1465,6 +1465,7 @@ Anonymity is a complex problem without an easy solution, and security is only as
 ** [[Tunnel_Proxy_or_SSH_or_VPN_through_Tor|Tunnel SSH through Tor (Tor -&gt; SSH)]]
 ** [[Tunnel_Proxy_or_SSH_or_VPN_through_Tor|Tunnel VPN through Tor (Tor -&gt; VPN)]]
 * [[TestVPN|Example VPNs working with Whonix for testing purposes]]
+* [[Advanced_Security_Guide#Chaining_Anonymizing_Gateways|Chaining Anonymizing Gateways]]
 
 '''Misc'''
 
@@ -1492,8 +1493,10 @@ Anonymity is a complex problem without an easy solution, and security is only as
 * [[Download Security|Download Security]]
 * [[Tuning#Replacing Desktop Environment|Replacing desktop environment]]
 * [[Physical Isolation|Whonix using Physical Isolation, setup using two different computers AND virtualization. This is the most secure Tor configuration to date.]]
-* [[Multiple Whonix-Workstations|Using Multiple Whonix-Workstations]]
 * [[Advanced Security Guide|Advanced Security Guide]]
+* [[Multiple Whonix-Workstations|Using Multiple Whonix-Workstations]]
+* [[Multiple_Whonix-Workstations#Multiple_Whonix-Gateways|Using Multiple Whonix-Gateways]]
+* [[Advanced_Security_Guide#Chaining_Anonymizing_Gateways|Chaining Anonymizing Gateways]]
 * [[Hide Tor and Whonix from your ISP|Hide the fact that you are using Tor/Whonix]]
 * [[Connections_between_Whonix-Gateway_and_Whonix-Workstation|(encrypted) (authenticated) Connection Between Whonix-Gateway and Whonix-Workstation]]
 * [[Design|Technical Design]]
@@ -1517,6 +1520,7 @@ Anonymity is a complex problem without an easy solution, and security is only as
 ** [[File Transfer#Shared Folder|Shared Folder]]
 ** [[File Transfer#SSH into Whonix-Gateway|sshfs (or ssh) into Whonix-Gateway]]
 ** [[File_Transfer#SSH_into_Whonix-Workstation|sshfs (or ssh) into Whonix-Workstation]]
+** [[Sshfs_into_Whonix-Workstation||sshfs into Whonix-Workstation standalone instructions]]
 ** [[File Transfer#Mount and inspect images|Mount and inspect images, IMG, VDI]]
 * [[Tuning|Tuning]]
 ** [[Tuning|Introduction]]
@@ -1566,7 +1570,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>tl6hlgimp8u9yhda0w5dm5cr3yv0o3o</sha1>
+      <sha1>j8hku6z3is3uobxug4oimmgz2d3c86d</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -11302,13 +11306,13 @@ What would have to be done:
     <ns>0</ns>
     <id>114</id>
     <revision>
-      <id>4119</id>
-      <parentid>4118</parentid>
-      <timestamp>2013-12-03T22:51:43Z</timestamp>
+      <id>4120</id>
+      <parentid>4119</parentid>
+      <timestamp>2013-12-03T23:01:12Z</timestamp>
       <contributor>
         <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* SSH into Whonix-Gateway */</comment>
+      <comment>/* SSH into Whonix-Workstation */</comment>
       <text xml:space="preserve" bytes="9586">{{Header}}
 
 = Security Overview =
@@ -11519,7 +11523,7 @@ mkdir ~/mountworkstation
 ssh -f user@127.0.0.1 -p 2200 -L 2222:192.168.0.11:22 -N
 
 ## Mount Whonix-Workstation folder on the host.
-sshfs -p 2222 user@localhost:/ ~/mountworkstation
+sshfs -p 2222 user@127.0.0.1:/ ~/mountworkstation
 &lt;/pre&gt;
 
 = Mount and inspect images =
@@ -11631,7 +11635,7 @@ sudo umount /mnt/whonix
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Development]]</text>
-      <sha1>hy0l3orr6efd2od6j7mio0cnku983vf</sha1>
+      <sha1>6z1k9vcj9a7rqwglszvis5wd8mx7zmo</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -48718,6 +48722,93 @@ Maybe this will help: Try convert the vmdk to vdi, remove the old vmdk from the 
       <comment>Redirected page to [[Trust#Verifiable Builds]]</comment>
       <text xml:space="preserve" bytes="37">#REDIRECT [[Trust#Verifiable Builds]]</text>
       <sha1>htoe81vewsgmn5xh3mcnsgq2m1rjvd7</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Sshfs into Whonix-Workstation</title>
+    <ns>0</ns>
+    <id>531</id>
+    <revision>
+      <id>4121</id>
+      <timestamp>2013-12-04T01:05:02Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;{{Header}}  = Do Once = On the host. &lt;pre&gt; Import Whonix-Gateway 7 Import Whonix-Workstation 7 &lt;/pre&gt;  On the host. &lt;pre&gt; ## Caution if you did not name your VM &quot;Whonix-Gatewa...&quot;</comment>
+      <text xml:space="preserve" bytes="1412">{{Header}}
+
+= Do Once =
+On the host.
+&lt;pre&gt;
+Import Whonix-Gateway 7
+Import Whonix-Workstation 7
+&lt;/pre&gt;
+
+On the host.
+&lt;pre&gt;
+## Caution if you did not name your VM &quot;Whonix-Gateway&quot;!
+VBoxManage modifyvm &quot;Whonix-Gateway&quot; --natpf1 &quot;ssh&quot;,tcp,127.0.0.1,2200,,22
+&lt;/pre&gt;
+
+Whonix-Gateway AND Whonix-Workstation.
+&lt;pre&gt;
+sudo apt-get update
+sudo apt-get install openssh-server
+&lt;/pre&gt;
+
+On Whonix-Gateway.
+&lt;pre&gt;
+echo &quot;GATEWAY_ALLOW_INCOMING_SSH=1&quot; | sudo tee -a &quot;/etc/whonix_buildconfig.d/50_terminal_only&quot;
+sudo whonix_firewall
+&lt;/pre&gt;
+
+On Whonix-Gateway.
+&lt;pre&gt;
+ssh.real 192.168.0.11
+## yes (accept fingerprint)
+## Terminate ssh connection.
+exit
+&lt;/pre&gt;
+
+On the host.
+If you are using ssh on the host for other purposes, it might be better to switch to an extra user.
+
+On the host.
+Try this if you are having problems. This might not be neccessary.
+&lt;pre&gt;
+## THINK FIRST!
+killall ssh
+killall sshfs
+&lt;/pre&gt;
+
+On the host. Try this if you are having problems. This might not be neccessary. There seems to be a bug with existing ssh known_hosts files.
+&lt;pre&gt;
+## THINK FIRST!
+## or &quot;rm&quot; if you know what you are doing
+trash-put ~/.ssh/known_hosts
+trash-put ~/.ssh/known_hosts.old
+&lt;pre&gt;
+
+On the host.
+&lt;pre&gt;
+mkdir ~/mountworkstation
+&lt;/pre&gt;
+
+= Run =
+On the host.
+&lt;pre&gt;
+ssh -f user@127.0.0.1 -p 2200 -L 2222:192.168.0.11:22 -N
+sshfs -p 2222 user@127.0.0.1:/ ~/mountworkstation
+&lt;/pre&gt;
+
+== Footnotes ==
+&lt;references/&gt;
+
+[[Category:Documentation]]</text>
+      <sha1>4dfe7n0fx9f4qga2act2pwpc1i9dn0m</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
