@@ -43030,15 +43030,15 @@ sudo rm /etc/whonix_buildconfig.d/50_whonix_apt_repository
     <ns>10</ns>
     <id>483</id>
     <revision>
-      <id>3859</id>
-      <parentid>3851</parentid>
-      <timestamp>2013-10-26T01:09:27Z</timestamp>
+      <id>4129</id>
+      <parentid>3859</parentid>
+      <timestamp>2013-12-04T15:58:12Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Introduction (Optional) */</comment>
-      <text xml:space="preserve" bytes="2028">== Build Configuration (Optional) ==
+      <comment>/* Whonix APT Repository (Optional) */</comment>
+      <text xml:space="preserve" bytes="2112">== Build Configuration (Optional) ==
 === Introduction (Optional) ===
 &lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
 '''OPTIONAL.'''
@@ -43080,12 +43080,15 @@ It is recommended to copy and paste text when creating build configuration files
 === Whonix APT Repository (Optional) ===
 {{Build Documentation Whonix APT Repository}}
 
+=== Only Minimal Report (Optional) ===
+{{Build Documentation Only Minimal Report}}
+
 == Custom Build Tags ==
 {{Build Documentation Custom Build Tags}}
 
 == Source Code Changes ==
 {{Build Documentation Source Code Changes}}</text>
-      <sha1>bxkcb8yfw0g669dgsblxf6z3odhu06e</sha1>
+      <sha1>ffmdzva4aa3krgnajn9nty4qrtachyz</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -47163,16 +47166,15 @@ You have to replace {{Code2|7.3.7}} with the actual version you want to build. T
     <ns>10</ns>
     <id>493</id>
     <revision>
-      <id>3756</id>
-      <parentid>3754</parentid>
-      <timestamp>2013-10-19T10:17:40Z</timestamp>
+      <id>4132</id>
+      <parentid>3756</parentid>
+      <timestamp>2013-12-04T16:02:07Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Custom Build Tags */</comment>
-      <text xml:space="preserve" bytes="966">&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
-'''Only if you are using your own git tags!'''
+      <text xml:space="preserve" bytes="1009">&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+'''Only if you are using your own git tags! In that case click on Expand on the right.'''
 &lt;div class=&quot;mw-collapsible-content&quot;&gt;
 If you created for example a git tag &quot;8.1&quot; and want to receive Whonix News for &quot;8&quot;, apply this.
 
@@ -47196,7 +47198,7 @@ When you later update from Whonix debian packages from for example &quot;8.1&quo
 
 &lt;/div&gt;
 &lt;/div&gt;</text>
-      <sha1>giqh1gjlggm8915cojrz1yf20z8fixl</sha1>
+      <sha1>gg29n9cz3y1ysqngpnootkho1j74fud</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -47206,15 +47208,15 @@ When you later update from Whonix debian packages from for example &quot;8.1&quo
     <ns>10</ns>
     <id>494</id>
     <revision>
-      <id>3779</id>
-      <parentid>3757</parentid>
-      <timestamp>2013-10-19T12:28:44Z</timestamp>
+      <id>4131</id>
+      <parentid>3779</parentid>
+      <timestamp>2013-12-04T16:01:54Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="2376">&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
-'''Only in case you made changes to the Whonix source folder!''' &lt;br /&gt;
+      <text xml:space="preserve" bytes="2419">&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+'''Only in case you made changes to the Whonix source folder! In that case click on Expand on the right.''' &lt;br /&gt;
 '''Not required if you only added using your own build configuration in {{Code|/etc/whonix_buildconfig.d}} folder.'''
 &lt;div class=&quot;mw-collapsible-content&quot;&gt;
 If you made changes to the Whonix source code, those have to be git committed before building Whonix. Otherwise you'll get an error message. (Which looks like this: &lt;ref&gt;
@@ -47276,7 +47278,7 @@ git status
 &lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;</text>
-      <sha1>fb20oqd6n6bea5ronemrydvw9wqh2na</sha1>
+      <sha1>jbf2qpcwsfapys8gcd2bjy2amv8trbk</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -48731,14 +48733,15 @@ Maybe this will help: Try convert the vmdk to vdi, remove the old vmdk from the 
     <ns>0</ns>
     <id>531</id>
     <revision>
-      <id>4121</id>
-      <timestamp>2013-12-04T01:05:02Z</timestamp>
+      <id>4127</id>
+      <parentid>4126</parentid>
+      <timestamp>2013-12-04T13:31:28Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>Created page with &quot;{{Header}}  = Do Once = On the host. &lt;pre&gt; Import Whonix-Gateway 7 Import Whonix-Workstation 7 &lt;/pre&gt;  On the host. &lt;pre&gt; ## Caution if you did not name your VM &quot;Whonix-Gatewa...&quot;</comment>
-      <text xml:space="preserve" bytes="1412">{{Header}}
+      <comment>/* Do Once */</comment>
+      <text xml:space="preserve" bytes="1400">{{Header}}
 
 = Do Once =
 On the host.
@@ -48761,7 +48764,7 @@ sudo apt-get install openssh-server
 
 On Whonix-Gateway.
 &lt;pre&gt;
-echo &quot;GATEWAY_ALLOW_INCOMING_SSH=1&quot; | sudo tee -a &quot;/etc/whonix_buildconfig.d/50_terminal_only&quot;
+echo &quot;GATEWAY_ALLOW_INCOMING_SSH=1&quot; | sudo tee -a &quot;/etc/whonix_firewall.d/50_user&quot;
 sudo whonix_firewall
 &lt;/pre&gt;
 
@@ -48808,7 +48811,65 @@ sshfs -p 2222 user@127.0.0.1:/ ~/mountworkstation
 &lt;references/&gt;
 
 [[Category:Documentation]]</text>
-      <sha1>4dfe7n0fx9f4qga2act2pwpc1i9dn0m</sha1>
+      <sha1>brif3ght1isi58ey82spe9wl2kfqdqp</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Build Documentation Only Minimal Report</title>
+    <ns>10</ns>
+    <id>532</id>
+    <revision>
+      <id>4130</id>
+      <parentid>4128</parentid>
+      <timestamp>2013-12-04T16:00:00Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <text xml:space="preserve" bytes="1308">&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+'''OPTIONAL!'''
+
+By default Whonix's last build step creates a report file of all hdd contents. (See [[Verifiable Builds]] for details.) This step is optional. First introduced in Whonix 7.4.8. Whonix should work fine without that step. It is used for extra security. This step takes quite some time. This step is recommended. If you want to disable it, click on Expand on the right side.
+&lt;div class=&quot;mw-collapsible-content&quot;&gt;
+
+Do you want to &lt;u&gt;opt-out&lt;/u&gt; of the report creation build step? Then do these steps as it follows.
+
+Create {{Code2|/etc/whonix_buildconfig.d}} folder.
+
+&lt;pre&gt;
+sudo mkdir --parents /etc/whonix_buildconfig.d
+&lt;/pre&gt;
+
+Create {{Code2|/etc/whonix_buildconfig.d/50_no_report}} build config file.
+
+&lt;pre&gt;
+echo '# This file is part of Whonix
+# Copyright (C) 2012 - 2013 adrelanos &lt;adrelanos at riseup dot net&gt;
+# See the file COPYING for copying conditions.
+
+whonix_build_script_minimal_report=&quot;1&quot;
+' | sudo tee &quot;/etc/whonix_buildconfig.d/50_no_report&quot; &gt; /dev/null
+&lt;/pre&gt;
+
+Check.
+
+&lt;pre&gt;
+cat /etc/whonix_buildconfig.d/50_no_report
+&lt;/pre&gt;
+
+Should show what we echoed above.
+
+If you want to undo this build configuration, see footnote. &lt;ref&gt;
+&lt;pre&gt;
+sudo rm /etc/whonix_buildconfig.d/50_no_report
+&lt;/pre&gt;
+&lt;/ref&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;</text>
+      <sha1>mnqd7g700wsjwq55xihbvej6mlegktk</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
