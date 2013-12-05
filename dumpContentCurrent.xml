@@ -1299,14 +1299,14 @@ See also [[Security_in_Real_World | Whonix security in real world]], [[Security_
     <ns>0</ns>
     <id>24</id>
     <revision>
-      <id>4125</id>
-      <parentid>4124</parentid>
-      <timestamp>2013-12-04T01:16:52Z</timestamp>
+      <id>4137</id>
+      <parentid>4133</parentid>
+      <timestamp>2013-12-05T00:16:41Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="13768">&lt;!--
+      <text xml:space="preserve" bytes="13791">&lt;!--
 Copyright:
 
    Whonix Documentation wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -1487,6 +1487,7 @@ Anonymity is a complex problem without an easy solution, and security is only as
 
 * [[Whonix Configuration Files|Whonix modular flexible .d style configuration folders]]
 * [[Other Operating Systems|Other Operating Systems such as Windows, Ubuntu, etc. torified by Whonix-Gateway]]
+* [[Backup Whonix VMs]]
 * [[Manually Create Whonix VM Settings|Manually Create Whonix VM Settings, in case you want to restore a backup of .vdi hard disk image files]]
 * [[Manually Updating Tor Browser|Manually updating Tor Browser, temporary workaround, in case the torbrowser updater ever gets broken]]
 * [[Dev/Build Documentation|Build Documentation, How to build Whonix from Source Code, How to update Whonix from Source Code]]
@@ -1520,7 +1521,7 @@ Anonymity is a complex problem without an easy solution, and security is only as
 ** [[File Transfer#Shared Folder|Shared Folder]]
 ** [[File Transfer#SSH into Whonix-Gateway|sshfs (or ssh) into Whonix-Gateway]]
 ** [[File_Transfer#SSH_into_Whonix-Workstation|sshfs (or ssh) into Whonix-Workstation]]
-** [[Sshfs_into_Whonix-Workstation||sshfs into Whonix-Workstation standalone instructions]]
+** [[Sshfs_into_Whonix-Workstation|sshfs into Whonix-Workstation standalone instructions]]
 ** [[File Transfer#Mount and inspect images|Mount and inspect images, IMG, VDI]]
 * [[Tuning|Tuning]]
 ** [[Tuning|Introduction]]
@@ -1570,7 +1571,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>j8hku6z3is3uobxug4oimmgz2d3c86d</sha1>
+      <sha1>fngud0duk4ka72a4t7nn65vg0s30or6</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -11306,14 +11307,15 @@ What would have to be done:
     <ns>0</ns>
     <id>114</id>
     <revision>
-      <id>4120</id>
-      <parentid>4119</parentid>
-      <timestamp>2013-12-03T23:01:12Z</timestamp>
+      <id>4134</id>
+      <parentid>4120</parentid>
+      <timestamp>2013-12-04T23:35:29Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
       <comment>/* SSH into Whonix-Workstation */</comment>
-      <text xml:space="preserve" bytes="9586">{{Header}}
+      <text xml:space="preserve" bytes="9718">{{Header}}
 
 = Security Overview =
 
@@ -11526,6 +11528,8 @@ ssh -f user@127.0.0.1 -p 2200 -L 2222:192.168.0.11:22 -N
 sshfs -p 2222 user@127.0.0.1:/ ~/mountworkstation
 &lt;/pre&gt;
 
+If these instructions do not work for your, you can try the alternative standalone instructions [[Sshfs into Whonix-Workstation]].
+
 = Mount and inspect images =
 == Introduction ==
 '''Developers / experts only! Only for debugging!'''
@@ -11635,7 +11639,7 @@ sudo umount /mnt/whonix
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Development]]</text>
-      <sha1>6z1k9vcj9a7rqwglszvis5wd8mx7zmo</sha1>
+      <sha1>t0h75hqto4zb55blb7lx9tq6gbro3tm</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -48733,15 +48737,14 @@ Maybe this will help: Try convert the vmdk to vdi, remove the old vmdk from the 
     <ns>0</ns>
     <id>531</id>
     <revision>
-      <id>4127</id>
-      <parentid>4126</parentid>
-      <timestamp>2013-12-04T13:31:28Z</timestamp>
+      <id>4135</id>
+      <parentid>4127</parentid>
+      <timestamp>2013-12-04T23:39:11Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Do Once */</comment>
-      <text xml:space="preserve" bytes="1400">{{Header}}
+      <text xml:space="preserve" bytes="1412">{{Header}}
 
 = Do Once =
 On the host.
@@ -48810,8 +48813,10 @@ sshfs -p 2222 user@127.0.0.1:/ ~/mountworkstation
 == Footnotes ==
 &lt;references/&gt;
 
+{{Footer}}
+
 [[Category:Documentation]]</text>
-      <sha1>brif3ght1isi58ey82spe9wl2kfqdqp</sha1>
+      <sha1>euqrrgrbndye59i35x3nydxevj5xaxl</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -48870,6 +48875,60 @@ sudo rm /etc/whonix_buildconfig.d/50_no_report
 &lt;/div&gt;
 &lt;/div&gt;</text>
       <sha1>mnqd7g700wsjwq55xihbvej6mlegktk</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Backup Whonix VMs</title>
+    <ns>0</ns>
+    <id>533</id>
+    <revision>
+      <id>4136</id>
+      <timestamp>2013-12-05T00:16:12Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;{{Header}}  = Overview - Ways to Backup Whonix VMs = There isn't a great and simple way to make backups yet. Best you can do is either:  * [[File Transfer]] * and/or use the e...&quot;</comment>
+      <text xml:space="preserve" bytes="2541">{{Header}}
+
+= Overview - Ways to Backup Whonix VMs =
+There isn't a great and simple way to make backups yet. Best you can do is either:
+
+* [[File Transfer]]
+* and/or use the export feature of Virtual Box, that will create standalone .ova files which you should be able to easily import on any other machine and/or
+* Create a copy of your VM files. There is some important knowledge you have to be aware of, this is documented below.
+
+= General Important Recommendation =
+Creating backups is only the first step. You should do a test run if you are actually to restore your backup. Otherwise you may experience a nasty surprise that some files are missing for successful restore.
+
+= Important Knowledge =
+== ~/VirtualBox VMs Folder ==
+If you want to copy your Virtual Box's to another harddrive, only creating a backup of your &quot;~/VirtualBox VMs&quot; folder won't suffice. You have to remember to have a backup of your Virtual Box settings folder (~/.VirtualBox) as well, because manually re-creating that folder is difficult and undocumented by Virtual Box's documentation.
+
+== Using Virtual Box's VM Cloning Feature for Backups isn't Simple ==
+The clone feature of Virtual Box is not very user friendly for backups for the same reason as above. It works, for cloning VMs, but it's not very useful for easy backups, because general VM settings are still stored in your home folder (~/.VirtualBox) and these are difficult to restore as mentioned above. So if you use the clone feature and backup your VMs on a different harddrive, you have to remember to have a backup of your Virtual Box settings folder (~/.VirtualBox) as well.
+
+== Backup Virtual Box Settings Files ==
+Turn off Virtual Box before attempting to backup the Virtual Box's settings folder (~/.VirtualBox).
+
+When you change VM settings, add/remove VMs, add/remove virtual hdds, add/remove snapshots you should create a new backup.
+
+= Advanced Users =
+Adding your Virtual Box settings folder to a [https://en.wikipedia.org/wiki/Revision_control revision control system] such as [https://en.wikipedia.org/wiki/Git_(software) git] is a good additions to backups of Virtual Box's settings folder. Should Virtual Box damage your settings file and its backup file (happens sometimes), you can try a recent backup from an earlier git revision.
+
+= See Also =
+* [[Manually_Create_Whonix_VM_Settings|Manually Create Whonix VM Settings, in case you want to restore a backup of .vdi hard disk image files]]
+* [[File Transfer]]
+
+= Footnotes =
+&lt;references/&gt;
+
+{{Footer}}
+
+[[Category:Documentation]]</text>
+      <sha1>8efb1akamwln8iqqfrm9ib2r4tvrh6a</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
