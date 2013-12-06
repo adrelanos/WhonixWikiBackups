@@ -36619,14 +36619,14 @@ grep -r torbutton_send_ctrl_cmd *
     <ns>0</ns>
     <id>304</id>
     <revision>
-      <id>4087</id>
-      <parentid>4003</parentid>
-      <timestamp>2013-11-24T20:20:41Z</timestamp>
+      <id>4143</id>
+      <parentid>4087</parentid>
+      <timestamp>2013-12-06T13:49:16Z</timestamp>
       <contributor>
         <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* On Whonix-Workstation */</comment>
-      <text xml:space="preserve" bytes="16792">{{Header}}
+      <comment>/* On Whonix-Gateway */</comment>
+      <text xml:space="preserve" bytes="16806">{{Header}}
 &lt;!--
 Copyright:
 
@@ -36706,10 +36706,10 @@ TorChat won't be installed in Whonix by default because, see footnote...&lt;ref&
 Learn about [[Hidden Services]] in Whonix first and learn how to set up the hidden webserver. This will ease following this guide.
 
 ==== On Whonix-Gateway ====
-Open your {{Code2|/etc/tor/torrc}}.
+Open your {{Code2|/etc/tor/torrc.whonix}}.
 
 &lt;pre&gt;
-sudo nano /etc/tor/torrc
+sudo nano /etc/tor/torrc.whonix
 &lt;/pre&gt;
 
 And add.
@@ -36985,7 +36985,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>ku8exa1w8bmtg34motcbxrv565hmb6n</sha1>
+      <sha1>7f03rca2op4fmekv5f1agj97dcm4c9h</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
