@@ -656,15 +656,16 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>19</id>
     <revision>
-      <id>4090</id>
-      <parentid>3890</parentid>
-      <timestamp>2013-11-25T22:59:14Z</timestamp>
+      <id>4142</id>
+      <parentid>4090</parentid>
+      <timestamp>2013-12-06T00:54:26Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <username>X99</username>
+        <id>133</id>
       </contributor>
-      <comment>/* Known bugs */</comment>
-      <text xml:space="preserve" bytes="17053">{{Header}}
+      <minor/>
+      <comment>/* Virtual Box Shared Folder Issues */ minor corrections</comment>
+      <text xml:space="preserve" bytes="17060">{{Header}}
 &lt;!--
 Copyright:
 
@@ -881,7 +882,7 @@ Forum help thread:
 [[Special:AWCforum/st/id262/updating_TOR_browser_error...html]]
 
 === Virtual Box Shared Folder Issues ===
-Shared Folders aren’t working with the latest Linux kernel. (This is a Debian/Virtual Box not caused by Whonix. Has been already reported it upstream by a Debian user.)
+Shared Folders aren’t working with the latest Linux kernel. (This is a Debian/Virtual Box issue, not caused by Whonix. Has already been reported to upstream by a Debian user.)
 
 Possible workarounds, more information, etc. can be found in the Whonix User Help Forum discussion thread:
 [[Special:AWCforum/st/id261/VirtualBox_shared_directories_on....html]]
@@ -944,7 +945,7 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>5d2ilh9q376mwa30eyhow6qqxu8nmfx</sha1>
+      <sha1>rae3d1dn80nghgigregv1vrqpud0l9z</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -5266,14 +5267,16 @@ then choose etc (at the bottom) and then choose UTC.
     <ns>0</ns>
     <id>87</id>
     <revision>
-      <id>4010</id>
-      <parentid>3994</parentid>
-      <timestamp>2013-11-09T13:46:00Z</timestamp>
+      <id>4141</id>
+      <parentid>4140</parentid>
+      <timestamp>2013-12-06T00:44:24Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>X99</username>
+        <id>133</id>
       </contributor>
-      <comment>/* Recommendation to use a dedicated host */</comment>
-      <text xml:space="preserve" bytes="18993">&lt;!--
+      <minor/>
+      <comment>/* Using a personal computer (e.g. a laptop, wherever it happens) in a public network */ minor corrections</comment>
+      <text xml:space="preserve" bytes="18989">&lt;!--
 Copyright:
 
    Whonix Pre Install Advice wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -5360,7 +5363,7 @@ These are just a pointers, because due the hardware and host operating system sp
 
 This includes [https://en.wikipedia.org/wiki/BIOS BIOS] [http://wiki.gentoo.org/wiki/BIOS_Update updates], [https://en.wikipedia.org/wiki/Binary_blob non-free] drivers or [http://packages.debian.org/wheezy/firmware-linux-nonfree firmware] and [https://en.wikipedia.org/wiki/Microcode processor microcode] [https://wiki.archlinux.org/index.php/Microcode updates] (on Debian systems, depending on your processor, either the [http://packages.debian.org/jessie/intel-microcode intel-microcode] or the [http://packages.debian.org/jessie/amd-microcode amd-microcode] package).
 
-It may or may not improve security to get the latest updates. One one hand, you may fix vulnerabilities, on the other hand, an update may introduce a new backdoor. It is not really clear. If you know examples for the one or other other direction, please edit this chapter. See also the thread on the debian-security mailing list [http://lists.debian.org/debian-security/2013/09/msg00027.html How secure is an installation with with no non-free packages?] As an end user, using common [https://en.wikipedia.org/wiki/Proprietary_software non-Free] (as in Freedom, not price) hardware, not using [https://en.wikipedia.org/wiki/Free_software Free] hardware ([http://www.lemote.com/en/products/Notebook/2010/0310/112.html Lemote Yeeloong Notebook maybe?]), you unfortunately have to blindly trust the hardware producer anyway, so it is might better to get the non-Free updates.
+It may or may not improve security to get the latest updates. One one hand, you may fix vulnerabilities. On the other hand, an update may introduce a new backdoor. It is not really clear. If you know examples for one or the other, please edit this chapter. See also the thread on the debian-security mailing list [http://lists.debian.org/debian-security/2013/09/msg00027.html How secure is an installation with with no non-free packages?] As an end user, using common [https://en.wikipedia.org/wiki/Proprietary_software non-Free] (as in Freedom, not price) hardware, not using [https://en.wikipedia.org/wiki/Free_software Free] hardware ([http://www.lemote.com/en/products/Notebook/2010/0310/112.html Lemote Yeeloong Notebook maybe?]), you unfortunately have to blindly trust the hardware producer anyway, so it might be better to get the non-Free updates.
 
 === Windows Hosts ===
 
@@ -5441,7 +5444,7 @@ However, other computers on the network could log it, which then would provide p
 ==== Using your home connection ====
 
 Changing your MAC address is not required.
-However, when not using a VM, your physical MAC address could be revealed in case of a browser exploit. If you are already under suspicion, this would eventually proof your identity.
+However, when not using a VM, your physical MAC address could be revealed in case of a browser exploit. If you are already under suspicion, this would eventually provide proof of your identity.
 
 Changing the MAC address at least requires root access to find out the real physical address.
 (Note: This has to be tested)
@@ -5454,11 +5457,11 @@ The MAC address should not be changed, as it may bring undesired admin attention
 
 The MAC address should be changed, and /var/lib/tor/state should be removed so that a new set of guards is selected.
 
-Rather the admin may or may not find out, that you are using Tor. That depends on your your configuration, i.e. perhaps you are using obfsproxy or you tunnel your traffic SSH/VPN and on the adversaries skills.
+Rather the admin may or may not find out, that you are using Tor. That depends on your configuration, i.e. perhaps you are using obfsproxy or you tunnel your traffic SSH/VPN, and on the adversarie's skills.
 
 The MAC address and being a Tor user, depending on your personal threat model, might be a risk visiting that public network (again).
 
-If you are going to use the same public network again, you have to decide, depending on your threat model, if you are going to use the very same MAC address (and set of guards) or if you are going to create a new MAC address. In case you suspect, the admin has seen you and logged the MAC, perhaps you shouldn't change the MAC, since this could be suspicious. If you believe that public network is so public, that no one has seen you, you might decide to use a new MAC address (popular vendor id, random/unique second part) each time you step by.
+If you are going to use the same public network again, you have to decide, depending on your threat model, if you are going to use the very same MAC address (and set of guards) or if you are going to create a new MAC address. In case you suspect that the admin has seen you and logged the MAC, perhaps you shouldn't change the MAC, since this could be suspicious. If you believe that public network is so public, that no one has seen you, you might decide to use a new MAC address (popular vendor ID, random/unique second part) each time you stop by.
 
 For more discussion on that rather difficult topic, see [[Dev/MAC]].
 
@@ -5574,7 +5577,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>hleyc7g4j5e3001r58miqcrzbh94zxt</sha1>
+      <sha1>kxhwng6ryz7ata4luvxzagfjp4kub64</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -15760,14 +15763,14 @@ Optional, for debugging if you have problems.
     <ns>0</ns>
     <id>139</id>
     <revision>
-      <id>4112</id>
-      <parentid>3180</parentid>
-      <timestamp>2013-11-29T08:51:19Z</timestamp>
+      <id>4138</id>
+      <parentid>4112</parentid>
+      <timestamp>2013-12-06T00:06:52Z</timestamp>
       <contributor>
         <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* Verify the virtual machine images using the command line */  Added '-7' to reflect actual file download names.</comment>
-      <text xml:space="preserve" bytes="5457">&lt;!--
+      <comment>minor word missing</comment>
+      <text xml:space="preserve" bytes="5460">&lt;!--
 Copyright:
 
    Whonix Verify_the_virtual_machine_images_using_the_command_line wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -15834,7 +15837,7 @@ gpg:              unchanged: 1
 gpg: no ultimately trusted keys found
 &lt;/pre&gt;
 
-Analyse the other messages as usual: this extra message doesn't relate to the Whonix signing key that you downloaded and usually means that you didn't create an OpenPGP key for yourself yet, which of no importance to verify the virtual machine images.
+Analyse the other messages as usual: this extra message doesn't relate to the Whonix signing key that you downloaded and usually means that you didn't create an OpenPGP key for yourself yet, which is of no importance to verify the virtual machine images.
 
 Now, '''download the cryptographic signature''' corresponding to the virtual machine images you want to verify and save it in the same folder as the virtual machine images:
 
@@ -15894,7 +15897,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>otqk4kpriya6htakvutf0fvi34fmx70</sha1>
+      <sha1>s6ul0fl3sruihjg3em3svg1inoxnj05</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
