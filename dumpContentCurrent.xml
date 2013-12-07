@@ -14081,15 +14081,16 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
     <ns>0</ns>
     <id>128</id>
     <revision>
-      <id>2475</id>
-      <parentid>2303</parentid>
-      <timestamp>2013-08-30T00:57:45Z</timestamp>
+      <id>4144</id>
+      <parentid>2475</parentid>
+      <timestamp>2013-12-07T00:08:45Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <username>X99</username>
+        <id>133</id>
       </contributor>
-      <comment>/* Security Updates */</comment>
-      <text xml:space="preserve" bytes="2192">{{Header}}
+      <minor/>
+      <comment>minor corrections</comment>
+      <text xml:space="preserve" bytes="2213">{{Header}}
 
 == On Whonix-Gateway and Whonix-Workstation ==
 
@@ -14127,9 +14128,9 @@ When you use the pause/suspend/save/resume feature of VirtualBox or the hibernat
 Start Menu -&gt; Applications -&gt; System -&gt; Whonix TimeSync
 &lt;/pre&gt;
 
-Its recommended against to pause/suspend/save/hibernate Whonix-Gateway, because it will be difficult to restore the clock after resume.
+It's not recommended to pause/suspend/save/hibernate the Whonix-Gateway, because it'll be difficult to restore the clock after resume.
 
-If your host clock is more than 1 hour in past or more than 3 hour in future, Tor can't connect. In this case fix your host clock manually (right click on clock). (Check for empty battery.) Then power off Whonix-Gateway and power Whonix-Gateway on again, Tor should be able to connect again. If your host clock is even more off, you could get into trouble updating your host operating system so have an eye on it that it's somewhat accurate.
+If your host clock is more than 1 hour in the past or more than 3 hours in the future, Tor can't connect. In this case fix your host clock manually (right click on clock). (Check for empty battery.) Then power off Whonix-Gateway and power it back up again. Tor should be able to connect after that. If your host clock is even more off, you could get into trouble updating your host operating system, so keep an eye on it and make sure that it's somewhat accurate.
 
 This chapter is supposed to be as simple and short as possible to provide basic protection. You can achieve more security if you understand the [[Advanced_Security_Guide#Network_Time_Synchronization | Network Time Synchronization]] chapter from the Advanced Security Guide.
 
@@ -14143,7 +14144,7 @@ You can further improve the security, see the [[Security Guide]].
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>rdsb61wak4gj5gmmuvcndb51rp9ypa0</sha1>
+      <sha1>4adxa1bo3hfdmq8aagh4jeyr02jqnac</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -30854,14 +30855,14 @@ For technical stuff, see [[Dev/Mixmaster]].
     <ns>0</ns>
     <id>260</id>
     <revision>
-      <id>4074</id>
-      <parentid>4035</parentid>
-      <timestamp>2013-11-22T12:19:40Z</timestamp>
+      <id>4145</id>
+      <parentid>4074</parentid>
+      <timestamp>2013-12-07T06:22:42Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <text xml:space="preserve" bytes="6430">{{Header}}
+      <comment>/* Manually updating Tor Browser (TBB stable version) */ +new step: close the older version before starting the updated one.</comment>
+      <text xml:space="preserve" bytes="6597">{{Header}}
 
 = Introduction =
 The Pre Install Advice page contains a chapter [[Pre_Install_Advice#Tor_Browser_Bundle|recommending]] to learn the basics about torproject.org's TBB before starting with Whonix.
@@ -30917,7 +30918,9 @@ cd ~
 
 (14) If there is '''no''' green Vidalia icon in the task bar, everything is fine.
 
-(15) Start Tor Browser and run
+(15) If you still have the old version of TBB opened (because you are probably reading this from the old TBB), close it. (copy the next steps to Kwrite if necessary)
+
+(16) Start Tor Browser and run
 
 &lt;pre&gt;ps aux | grep tor&lt;/pre&gt;
 
@@ -30931,11 +30934,11 @@ Or.
 
 Something went wrong and you're running Tor over Tor, which is recommended against.
 
-(16) If the tests results are as expected, everything went fine.
+(17) If the tests results are as expected, everything went fine.
 
-(17) Don't forget to restart Whonix-Gateway, if you shut it down in step (13).
+(18) Don't forget to restart Whonix-Gateway, if you shut it down in step (13).
 
-(18) Done.
+(19) Done.
 
 = General information about Tor Browser in Whonix =
 See [[Tor Browser]].
@@ -30971,7 +30974,7 @@ See [[Tor Browser]].
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>glulm2h3wlf8ij6eauzzsjn4fs37bbs</sha1>
+      <sha1>2yd4q3hzligg9prfdkwytg32mfur71e</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
