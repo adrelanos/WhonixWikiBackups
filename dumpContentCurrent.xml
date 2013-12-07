@@ -2339,15 +2339,14 @@ Not compulsory, just nicely asking:
     <ns>0</ns>
     <id>56</id>
     <revision>
-      <id>3867</id>
-      <parentid>3444</parentid>
-      <timestamp>2013-10-27T16:04:39Z</timestamp>
+      <id>4156</id>
+      <parentid>3867</parentid>
+      <timestamp>2013-12-07T22:30:22Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* Is there a substitute for Whonix's lack of an Amnesic feature / Live CD/DVD? Forensics? */</comment>
-      <text xml:space="preserve" bytes="48898">{{Header}}
+      <comment>Fixed comma errors</comment>
+      <text xml:space="preserve" bytes="48892">{{Header}}
 = Why are the Whonix images so big? =
 
 Compared to other &quot;Tor-VM&quot; or &quot;Tor-LiveCD/DVD&quot; projects which sometimes use special minimal or stripped down Linux distributions (e.g. TinyCore, DSL, Puppy) Whonix is larger, both VMs together are currently almost 2 GB.
@@ -2424,7 +2423,7 @@ See [[Starting Whonix#PAE Crash|PAE crash]].
 
 Short answer: We discussed this with torproject.org and were allowed to do so.
 
-Long answer: We had a thread about this issue, [https://trac.torproject.org/projects/tor/wiki/doc/TorBOX/Dev/ArchivedDiscussion/DOCUMENTATION#updatesoverTorshouldnotwasteTorbandwidthDOCUMENTATIONSOLVED updates over Tor, should not waste Tor bandwidth]. Discussed thoroughly. We speculated a lot and thought about solutions, until we finally done, what we should have done in the first place. We asked torproject.org, see [https://lists.torproject.org/pipermail/tor-talk/2012-March/023486.html tor-talk Operating system updates / software installation behind Tor Transparent Proxy]. Click [https://lists.torproject.org/pipermail/tor-talk/2012-March/subject.html#23507 here] for an overview of all answers. Andrew Lewman ([https://www.torproject.org/about/corepeople.html.en Executive Director, Director, press contact]) does also download a lot of updates over Tor and [https://lists.torproject.org/pipermail/tor-talk/2012-March/023493.html did not complain].
+Long answer: We had a thread about this issue, [https://trac.torproject.org/projects/tor/wiki/doc/TorBOX/Dev/ArchivedDiscussion/DOCUMENTATION#updatesoverTorshouldnotwasteTorbandwidthDOCUMENTATIONSOLVED updates over Tor, should not waste Tor bandwidth]. Discussed thoroughly. We speculated a lot and thought about solutions until we finally did what we should have done in the first place. We asked torproject.org, see [https://lists.torproject.org/pipermail/tor-talk/2012-March/023486.html tor-talk Operating system updates / software installation behind Tor Transparent Proxy]. Click [https://lists.torproject.org/pipermail/tor-talk/2012-March/subject.html#23507 here] for an overview of all answers. Andrew Lewman ([https://www.torproject.org/about/corepeople.html.en Executive Director, Director, press contact]), too, downloads a lot of updates over Tor and [https://lists.torproject.org/pipermail/tor-talk/2012-March/023493.html did not complain].
 
 = Alpha? Beta? Stable? Development? Whonix version scheme =
 
@@ -2890,7 +2889,7 @@ Without performing these basics steps, the setup may sound clever, but may not w
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>e1be7ua38j5na1cbq7tkdn2i8nmd4re</sha1>
+      <sha1>5okws6n70r46y593seju44uvnh4u5m2</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -4078,16 +4077,15 @@ Hidden Services with Whonix are still safer than running Tor and the server soft
     <ns>0</ns>
     <id>75</id>
     <revision>
-      <id>3109</id>
-      <parentid>2726</parentid>
-      <timestamp>2013-10-08T00:44:01Z</timestamp>
+      <id>4154</id>
+      <parentid>3109</parentid>
+      <timestamp>2013-12-07T16:36:02Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <minor/>
-      <comment>Adrelanos moved page [[Dev]] to [[Dev/Archived Discussions]]</comment>
-      <text xml:space="preserve" bytes="33596">{{Header}}
+      <comment>/* Closed Tasks */</comment>
+      <text xml:space="preserve" bytes="33664">{{Header}}
 
 {{mbox
 | type       = critical
@@ -4303,6 +4301,9 @@ Hidden Services with Whonix are still safer than running Tor and the server soft
 * [https://trac.torproject.org/projects/tor/wiki/doc/TorBOX/Dev/ArchivedDiscussion The older archive.].&lt;br /&gt;
 * The newer archive: [Dev_old_1].
 
+= Archived Tasks =
+http://sourceforge.net/p/whonix/wiki/Dev_old_1/
+
 = Closed Tasks =
 === SECURITY Whonix Internal Updater OPEN NEEDS_DISCUSSION ===
 
@@ -4334,7 +4335,7 @@ Hidden Services with Whonix are still safer than running Tor and the server soft
 {{Footer}}
 
 [[Category:Deprecated]]</text>
-      <sha1>8ydn5cgok8m4ngvmdkisk0qsit3ko1u</sha1>
+      <sha1>ky25pikyj6nd6wrqktrvexyndjpeubh</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -11310,15 +11311,15 @@ What would have to be done:
     <ns>0</ns>
     <id>114</id>
     <revision>
-      <id>4134</id>
-      <parentid>4120</parentid>
-      <timestamp>2013-12-04T23:35:29Z</timestamp>
+      <id>4151</id>
+      <parentid>4134</parentid>
+      <timestamp>2013-12-07T16:18:50Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* SSH into Whonix-Workstation */</comment>
-      <text xml:space="preserve" bytes="9718">{{Header}}
+      <comment>/* Transfer files from the Host into Whonix-Gateway or Whonix-Workstation through ISO images */</comment>
+      <text xml:space="preserve" bytes="9722">{{Header}}
 
 = Security Overview =
 
@@ -11360,7 +11361,7 @@ Install genisoimage:
 
 To create an iso &quot;files.iso&quot; containing the content of &quot;folder&quot;:
 
-&lt;pre&gt;mkisofs -o files.iso /path/to/folder&lt;/pre&gt;
+&lt;pre&gt;genisoimage -o files.iso /path/to/folder&lt;/pre&gt;
 
 Use the VirtualBox graphical user interface to mount your newly created iso a virtual VM CD/DVD drive.
 
@@ -11642,7 +11643,7 @@ sudo umount /mnt/whonix
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Development]]</text>
-      <sha1>t0h75hqto4zb55blb7lx9tq6gbro3tm</sha1>
+      <sha1>n4zeiiyx008zpc7vqomxj8nh3zz24rw</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -15164,15 +15165,15 @@ Specifically for Whonix, [[whonixcheck]] and the [[Dev/News|Whonix News Format]]
     <ns>0</ns>
     <id>134</id>
     <revision>
-      <id>3948</id>
-      <parentid>3944</parentid>
-      <timestamp>2013-11-04T17:36:03Z</timestamp>
+      <id>4147</id>
+      <parentid>4146</parentid>
+      <timestamp>2013-12-07T15:43:06Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
       <comment>/* Installing i2p inside Whonix-Workstation (i2p over Tor) */</comment>
-      <text xml:space="preserve" bytes="4849">{{Header}}
+      <text xml:space="preserve" bytes="4991">{{Header}}
 
 = i2p anonymizing network =
 
@@ -15234,6 +15235,9 @@ Recommended settings:
 ** TCP: disable inbound (Firewalled) &lt;ref&gt;Only outgoing TCP supported by Tor.&lt;/ref&gt; &lt;ref&gt;If you know to use a hidden service, please add this information.&lt;/ref&gt;  &lt;ref&gt;Incoming connections are not possible, because [[Install_Software#Whonix-Workstation_is_firewalled|Whonix-Workstation is firewalled]].&lt;/ref&gt;
 * [http://127.0.0.1:7657/configtunnels i2p Tunnels Settings]
 ** length (all tunnels): inbound and outbound: 0 &lt;ref&gt;It's faster and less connection interrupts. Anonymity is already provided by Tor. No need to leech from Tor/i2p.&lt;/ref&gt;
+* [http://127.0.0.1:7657/configadvanced I2P Advanced Configuration]
+** Add: &lt;pre&gt;time.sntpServerList=localhost&lt;/pre&gt;
+** Click &quot;Safe Changes&quot;.
 
 NOTE: it is possible to avoid clock skews (I2P will notice those and complain about it) by switching '''sdwdate''' off:
 
@@ -15253,7 +15257,7 @@ Was just a development idea with some progress. Moved to [[Dev/Inspiration]].
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>drg3zy25xe65ljh3vdldae63b0vargx</sha1>
+      <sha1>lxlgmymq5i4tmz2xbiwcv8rbcboe0iu</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -17448,23 +17452,52 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
     <ns>0</ns>
     <id>155</id>
     <revision>
-      <id>3335</id>
-      <parentid>3334</parentid>
-      <timestamp>2013-10-12T02:42:16Z</timestamp>
+      <id>4155</id>
+      <parentid>4150</parentid>
+      <timestamp>2013-12-07T17:39:33Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Description */</comment>
-      <text xml:space="preserve" bytes="14555">{{Header}}
+      <comment>/* Whonix's Time Synchronization Mechanism */</comment>
+      <text xml:space="preserve" bytes="18127">{{Header}}
+&lt;!--
+Copyright:
 
+   Whonix TimeSync wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
+   Whonix TimeSync wiki page Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+   
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; either version 3 of the License, or
+   (at your option) any later version.
+         
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+      
+   You should have received a copy of the GNU General Public License
+   along with this program; if not, write to:
+
+    Free Software Foundation, Inc. 
+    51 Franklin St, Fifth Floor
+    Boston, MA 02110-1301, USA.
+
+On Debian GNU/Linux systems, the complete text of the GNU General Public
+License can be found in the /usr/share/common-licenses' directory.
+The complete text of the GNU General Public License can also be found online on gnu.org &lt;https://www.gnu.org/licenses/gpl.html&gt;, in Whonix virtual machine images in /usr/share/common-licenses/GPL-3 file or on Github &lt;https://github.com/Whonix/Whonix/blob/master/GPLv3&gt;.
+--&gt;
+&lt;!--
+This wiki page is a fork of the Tails Tor Bridge Mode page, from this exact source &lt;https://git-tails.immerda.ch/tails/commit/wiki/src/contribute/design/Time_syncing.mdwn?id=b27209b3673a0ea2d31b54b163aefd3025c8b39c&gt;.
+--&gt;
 [[Image:timesync_gui.png|TimeSync (Whonix) done|thumb]]
 
-= Time Synchronization Mechanism =
-
-== Description ==
+= Basic Knowledge =
+== Introduction ==
 The Post Install Advice is part of this design, therefore read [[Post Install Advice#Network Time Syncing|Network Time Syncing]] first. Also read the Advanced Security Guide chapter [[Advanced Security Guide#Network Time Synchronization|Network Time Synchronization]] as well.
 
+== VirtualBox's time synchronization features ==
 For understanding Whonix's Time Synchronization Mechanism, it is required to know VirtualBox's time synchronization features:
 
 * VirtualBox uses the host's time if it needs to correct the time for guests.
@@ -17474,24 +17507,29 @@ For understanding Whonix's Time Synchronization Mechanism, it is required to kno
 ** when they resume from suspension and
 ** when their clock is more than X minutes off.
 
-Facts: People have been using:
+== Facts ==
+People have been using:
 
 * Tor Browser and Mozilla Firefox in parallel
 * Tails inside VMs and Firefox on the host
 * Tor Browser inside Whonix-Workstation and Mozilla Firefox on the host
 
-Other facts:
-
+== Other Facts ==
 * Almost no one and no operating system is using Secure Network Time Synchronization or External Clocks by default. Most systems synchronize the system clock using unauthenticated NTP. An adversary tampering with NTP replies or malicious NTP server makes things even worse. Even if there was authenticated NTP, there is a requirement for a distributed trust model.
 * A system not using NTP or using authenticated NTP stands out from most other users.
 
-Definitions:
-
+== Definitions ==
 * Time Sanity Check in context of Whonix: Is an init.d script, which checks if the system clock is between build timestamp and expiration date (17 MAY 2033 10:00:00).
 
-==Attacks==
+== NTP authentication (autokey) is insecure ==
+* https://tools.ietf.org/html/draft-ietf-ntp-network-time-security-00
+* http://www.innovationslab.net/~brian/NTP/autokey-analysis.pdf
 
-A correct system clock is crucial for many reasons:
+== curl timeout ==
+[https://mailman.boum.org/pipermail/tails-dev/2013-February/002635.html Tails-dev Endless Data Attack and Defense]
+
+= Attacks =
+A correct system clock is crucial for many reasons (see footnotes for more):
 
 * '''Attack 1:''' Replay attacks &lt;ref&gt;Replay old Tor consensus, see [https://tails.boum.org/contribute/design/Time_syncing/ Tails: Time syncing] for detailed explanation.&lt;/ref&gt;
 * '''Attack 2:''' Feeding old/outdated/known vulnerable updates and (https) certificates &lt;ref&gt;Cryptographic verification depends on system clock, i.e. a clock two years in past will accept certificates/updates, which have been expired/revoked for two years.&lt;/ref&gt;
@@ -17499,8 +17537,8 @@ A correct system clock is crucial for many reasons:
 * '''Attack 4:''' Linking all sessions to the same pseudonym &lt;ref&gt;If the clock is too much off, it's also easy for an adversary's web-server to detect &quot;Oh, that's the Tor Browser user who's clock is X in past/future.&quot;, thus allowing the adversary to link all sessions to the same pseudonym. See Tor Browser upstream bug #3059: [https://trac.torproject.org/projects/tor/ticket/3059 Find some way to deal with time-based fingerprints].&lt;/ref&gt;
 * '''Attack 5:''' Locating hidden services. &lt;ref&gt;For hidden services a correct clock is crucial, see: [http://www.cl.cam.ac.uk/~sjm217/papers/ccs06hotornot.pdf Hot or Not: Revealing Hidden Services by their Clock Skew]; [http://caia.swin.edu.au/talks/CAIA-TALK-080728A.pdf An improved clock-skew measurement technique for revealing hidden services]; [http://people.cs.umass.edu/~elisha/Papers/SkewMask%20-%20final%20version.pdf SkewMask: Frustrating Clock Skew Fingerprinting Attempts]&lt;/ref&gt;
 
-Whonix's Time Synchronization Mechanism:
-
+= Whonix's Time Synchronization Mechanism =
+== Overview ==
 * Whonix leaves the host's system clock or time synchronization mechanism untouched.
 * Whonix-Gateway and Whonix-Workstation are based on VirtualBox and therefore have their own virtual hardware system clocks.
 * Most VirtualBox time synchronization features get disabled by Whonix.
@@ -17509,7 +17547,7 @@ Whonix's Time Synchronization Mechanism:
 * Whonix-Gateway and Whonix-Workstation
 ** When get powered on, they still get their time from the host. The user is advised to modify the biossystemtimeoffset in Advanced Security Guide, chapter [[Advanced Security Guide#Network Time Synchronization|Network Time Synchronization]]. &lt;ref&gt;Developer information: If we needed or wanted to render the hardware clock unusable, we could set VirtualBox ''--biossystemtimeoffset'' several decades in past or future.&lt;/ref&gt;
 ** {{Whonix6}} and above: Time Sanity Check before sdwdate will be executed, this ensures, that the host clock is sane and not slow in 1980. User gets advised to fix its host clock in such cases.
-** After they are connected to the Tor network, they use a modified [https://tails.boum.org/contribute/design/Time_syncing/ tails_htp] to set the system clock. &lt;ref&gt;Stream isolation has been added, for Whonix's sdwdate implementation i.e. people using Tor Browser prevent notifying their exit relay, that they are sdwdate or Whonix users.&lt;/ref&gt;
+** After they are connected to the Tor network, they use sdwdate (inspired by [https://tails.boum.org/contribute/design/Time_syncing/ tails_htp]) to set the system clock. &lt;ref&gt;Stream isolation has been added, for Whonix's sdwdate implementation i.e. people using Tor Browser prevent notifying their exit relay, that they are sdwdate or Whonix users.&lt;/ref&gt;
 ** {{Whonix6}} and above: Time Sanity Check after sdwdate was executed. This should catch eventual bigger bugs and attacks. User gets informed if it fails.
 * On Whonix-Workstation,
 ** Using Boot Clock Randomization (Whonix {{Whonix6}} and above), i.e. after boot, the clock is set randomly between 5 and 180 seconds into the past or future. This is useful to enforce the design goal, that the host clock and Whonix-Workstation clock should always slightly differ. It's also useful to obfuscate the clock when sdwdate itself is running, because naturally at this time, sdwdate hasn't finished.
@@ -17532,8 +17570,26 @@ Whonix's Time Synchronization Mechanism:
 * Implementation details are in Design-Shared, chapter [[Dev/Design-Shared#timesync|TimeSync]]
 * That will reach the design goal, that all clocks, the host's, Whonix-Gateway's and Whonix-Workstation's slightly differ.
 
-Thus:
+== sdwdate ==
+=== Authentication of Servers ===
+The custom /usr/bin/sdwdate we use only connects to HTTPS servers, and delegates TLS X.509 certificate verification to curl. It also uses several different pools of time sources, and if there are too many that fail for any given pool, e.g. because of failed certificate checking or being unreachable, the pool is considered to be potentially compromised and sdwdate aborts.
 
+curl is also directed to only use TLSv1 as a &quot;secure&quot; protocol.
+
+=== sdwdate source pools ===
+What sources should be trusted? This is of course also a problem with NTP.
+
+The sdwdate pools used by Whonix are based on stable and reliable webservers that get great amounts of traffic. They are categorized into three different pools according to their members' relationship to the members in the other pools; any member in a one pool should be unlikely to share logs (or other identifying data), or to agree to send fake time information, with a member from the the other pools. The pools are as follows:
+
+* The &quot;pal&quot; pool are run by groups that are likely to take great care of their visitors' privacy.
+* The &quot;foe&quot; pool are managed by adversaries of the &quot;pal&quot; pool.
+* The &quot;neutral&quot; pool members have a neutral raltionship to both the &quot;pal&quot; and &quot;foe&quot; pool.
+
+The pools are listed in {{Code2|whonix_shared/etc/sdwdate.d/30_sdwdate_default}}.
+
+Basically, sdwdate picks three random servers - one from each pool, and then builds the mediate of the three advertised dates.
+
+= Conclusions =
 * '''Attack 1''' is a general Tor problem. It is impossible to solve for Whonix. It is unsolved in other projects as well.
 * '''Attack 2''' gets partially defeated.
 ** Whonix-Gateway and Whonix-Workstation are immune.
@@ -17554,37 +17610,25 @@ An adversary tampering with the user's clock, while the user doesn't recognize t
 
 The reason for running TimeSync on Whonix-Gateway, is that hidden services can only be accessed if the clock is no more than 30 minutes slow or fast.&lt;ref&gt;https://trac.torproject.org/projects/tor/ticket/3582#comment:3&lt;/ref&gt; Running TimeSync ensures, that Whonix-Gateway's clock is reasonably accurate.
 
-== NTP autokey is insecure ==
-* https://tools.ietf.org/html/draft-ietf-ntp-network-time-security-00
-* http://www.innovationslab.net/~brian/NTP/autokey-analysis.pdf
-
-== curl timeout ==
-
-[https://mailman.boum.org/pipermail/tails-dev/2013-February/002635.html Tails-dev Endless Data Attack and Defense]
-
-== Previous Discussion ==
-
-* [https://lists.torproject.org/pipermail/tor-talk/2011-January/008551.html System time in anonymity oriented LiveCDs]
-
-== Other Projects ==
-
-* [https://tails.boum.org/contribute/design/Time_syncing/ Tails Design: Time syncing]
-* https://docs.google.com/a/chromium.org/document/d/1ylaCHabUIHoKRJQWhBxqQ5Vck270fX7XCWBdiJofHbU/edit
-
-== Comparison with Others ==
-
-[[Comparison with Others#Network Time related|Network Time related]]
-
-== External Clock ==
-
+= External Clock =
 This topic is still under research. Help is welcome.
 
 It might make sense to add an external clock, such as a GPS, or even better an atomic clock. (Can we get an atomic USB clock?) This clock should be added to the host and/or Whonix-Gateway and/or Whonix-Workstation?
 
 Open question: would the GPS/atomic clock be too accurate and would that make Whonix more fingerprintable?
 
-== Tickets ==
+= See Also =
+== Previous Discussion ==
+* [https://lists.torproject.org/pipermail/tor-talk/2011-January/008551.html System time in anonymity oriented LiveCDs]
 
+== Other Projects ==
+* [https://tails.boum.org/contribute/design/Time_syncing/ Tails Design: Time syncing]
+* https://docs.google.com/a/chromium.org/document/d/1ylaCHabUIHoKRJQWhBxqQ5Vck270fX7XCWBdiJofHbU/edit
+
+== Comparison with Others ==
+[[Comparison with Others#Network Time related|Network Time related]]
+
+== Tickets ==
 * [https://trac.torproject.org/projects/tor/ticket/6894 torproject.org #6894 answer network time requests]
 * [https://tails.boum.org/todo/robust_time_syncing/ Tails Todo: robust time syncing]
 * [https://tails.boum.org/todo/safer_tordate_parameters/ Tails Todo: safer tordate parameters (always use tordate)]
@@ -17594,10 +17638,18 @@ Open question: would the GPS/atomic clock be too accurate and would that make Wh
 == Footnotes ==
 &lt;references /&gt;
 
+= License =
+&lt;pre&gt;Whonix TimeSync wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
+Whonix TimeSync wiki page Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+
+This program comes with ABSOLUTELY NO WARRANTY; for details see the wiki source code.
+This is free software, and you are welcome to redistribute it
+under certain conditions; see the wiki source code for details.&lt;/pre&gt;
+
 {{Footer}}
 
 [[Category:Design]]</text>
-      <sha1>t8aywrkqrz29gtmgtxtnxnsay3yer9w</sha1>
+      <sha1>t4u6wjq8e2d8qp8mp7c7zz8hsfwiu12</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -18599,15 +18651,15 @@ It's possible with Whonix. (See [[Other Anonymizing Networks]] in case you're in
     <ns>0</ns>
     <id>170</id>
     <revision>
-      <id>2875</id>
-      <parentid>2406</parentid>
-      <timestamp>2013-09-25T16:46:51Z</timestamp>
+      <id>4153</id>
+      <parentid>4152</parentid>
+      <timestamp>2013-12-07T16:34:55Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* JonDonym as Tor replacement (JonDoBOX) */</comment>
-      <text xml:space="preserve" bytes="9099">{{Header}}
+      <comment>/* Installing i2p on Whonix-Gateway (i2pBOX) */</comment>
+      <text xml:space="preserve" bytes="9211">{{Header}}
 
 = WARNING =
 
@@ -18620,10 +18672,14 @@ See [[Other Anonymizing Networks]]
 = i2p =
 
 == Installing i2p on Whonix-Gateway (i2pBOX) ==
+Development stalled due to lack of interest from Whonix developers and ip2 community. See:
 
-Development stalled due to lack of interest from Whonix developers and ip2 community. Development thread: [Dev] &quot;Support for i2p WAIT for contributors/more mature upstream&quot;; [http://forum.i2p2.de/viewtopic.php?t#7037 i2p thread]. Anyone feel free it take it.
+* Development thread: [http://sourceforge.net/p/whonix/wiki/Dev_old_1/#optionalfeature-i2p-support-waitlooking-for-contributorsmore-mature-upstream Support for i2p WAIT for contributors/more mature upstream]
+* [http://forum.i2p/viewtopic.php?t=7037 i2p thread]
+* [[Dev/Anonymity Network#i2p]]
+* [[i2p]]
 
-See also [[Dev/Anonymity Network#i2p]] and [[i2p]].
+Anyone feel free it take it.
 
 = JonDonym =
 
@@ -18777,7 +18833,7 @@ In fact [http://retroshare.sourceforge.net RetroShare] is not an [https://en.wik
 {{Footer}}
 
 [[Category:Development]] [[Category:Deprecated]]</text>
-      <sha1>4cvium31qst47cunydvs5htoommkr3e</sha1>
+      <sha1>1kb9n3kc2spb0l7z26m8zoghmjkznbw</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
