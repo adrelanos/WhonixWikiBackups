@@ -5268,16 +5268,15 @@ then choose etc (at the bottom) and then choose UTC.
     <ns>0</ns>
     <id>87</id>
     <revision>
-      <id>4141</id>
-      <parentid>4140</parentid>
-      <timestamp>2013-12-06T00:44:24Z</timestamp>
+      <id>4157</id>
+      <parentid>4141</parentid>
+      <timestamp>2013-12-08T00:13:47Z</timestamp>
       <contributor>
-        <username>X99</username>
-        <id>133</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <minor/>
-      <comment>/* Using a personal computer (e.g. a laptop, wherever it happens) in a public network */ minor corrections</comment>
-      <text xml:space="preserve" bytes="18989">&lt;!--
+      <comment>/* Using a personal computer (e.g. a laptop, wherever it happens) in a public network */</comment>
+      <text xml:space="preserve" bytes="18988">&lt;!--
 Copyright:
 
    Whonix Pre Install Advice wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -5458,7 +5457,7 @@ The MAC address should not be changed, as it may bring undesired admin attention
 
 The MAC address should be changed, and /var/lib/tor/state should be removed so that a new set of guards is selected.
 
-Rather the admin may or may not find out, that you are using Tor. That depends on your configuration, i.e. perhaps you are using obfsproxy or you tunnel your traffic SSH/VPN, and on the adversarie's skills.
+Rather the admin may or may not find out, that you are using Tor. That depends on your configuration, i.e. perhaps you are using obfsproxy or you tunnel your traffic SSH/VPN, and on the adversary's skills.
 
 The MAC address and being a Tor user, depending on your personal threat model, might be a risk visiting that public network (again).
 
@@ -5578,7 +5577,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>kxhwng6ryz7ata4luvxzagfjp4kub64</sha1>
+      <sha1>rs5bny4ha4orul3nficj7rdmw433w6w</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -12507,15 +12506,15 @@ For even more Security, see [[Advanced Security Guide]].
     <ns>0</ns>
     <id>120</id>
     <revision>
-      <id>4109</id>
-      <parentid>4108</parentid>
-      <timestamp>2013-11-28T18:09:08Z</timestamp>
+      <id>4171</id>
+      <parentid>4170</parentid>
+      <timestamp>2013-12-08T01:47:02Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Possible Future Improvements */</comment>
-      <text xml:space="preserve" bytes="34286">&lt;!--
+      <comment>/* Introduction - What this Archives */</comment>
+      <text xml:space="preserve" bytes="39034">&lt;!--
 Copyright:
 
    Whonix Trust wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -12774,7 +12773,7 @@ Warning:
 For this feature adding security, it needs your help! Do not assume, that others are doing it for you.
 }}
 
-Whonix has a feature which allows the community to check that Whonix .ova&lt;ref&gt;https://en.wikipedia.org/wiki/Open_Virtualization_Format&lt;/ref&gt; releases are verifiably created from project's own source code. We call this verifiable builds. This only proves, that the person and machine&lt;ref&gt;Due to build machine compromise.&lt;/ref&gt; building Whonix has added nothing malicious, such as a backdoor&lt;ref&gt;https://en.wikipedia.org/wiki/Backdoor_(computing)&lt;/ref&gt;. It doesn't prove, that there are no backdoors in Debian. This isn't possible, because neither Debian&lt;ref&gt;Whonix is based on Debian.&lt;/ref&gt; nor any other operating system provides deterministic builds yet.&lt;ref&gt;Some Debian developres are working on it, see [https://wiki.debian.org/ReproducibleBuilds Reproducible Builds].&lt;/ref&gt; Rather this feature is no attempt to proof, that there aren't any vulnerabilities&lt;ref&gt;https://en.wikipedia.org/wiki/Vulnerability_(computing)&lt;/ref&gt; in Whonix's or Debian. An remotely exploitable&lt;ref&gt;https://en.wikipedia.org/wiki/Exploit_(computer_security)&lt;/ref&gt; bug in Whonix or Debian, a flaw in Whonix's firewall leaking traffic or code {{Code2|phoning home}}&lt;ref&gt;https://en.wikipedia.org/wiki/Phoning_home&lt;/ref&gt; the contents of your harddrive would still be fatal. A precondition so this feature can improve overall security is, that folks are checking Whonix's and Debian's source code in the first place. In summary, we believe this feature is useful and can improve security, but however isn't a magical answer to all computer security questions. The [[Comparison with Others#Verifiable Builds]] table makes it clear what this feature archives.
+Whonix has a feature which allows the community to check that Whonix .ova&lt;ref&gt;https://en.wikipedia.org/wiki/Open_Virtualization_Format&lt;/ref&gt; releases are verifiably created from project's own source code. We call this verifiable builds. This only proves, that the person and machine&lt;ref&gt;Due to build machine compromise.&lt;/ref&gt; building Whonix has added nothing malicious, such as a backdoor&lt;ref&gt;https://en.wikipedia.org/wiki/Backdoor_(computing)&lt;/ref&gt;. It doesn't prove, that there are no backdoors in Debian. This isn't possible, because neither Debian&lt;ref&gt;Whonix is based on Debian.&lt;/ref&gt; nor any other operating system provides deterministic builds yet.&lt;ref&gt;Some Debian developres are working on it, see [https://wiki.debian.org/ReproducibleBuilds Reproducible Builds].&lt;/ref&gt; Rather this feature is no attempt to proof, that there aren't any vulnerabilities&lt;ref&gt;https://en.wikipedia.org/wiki/Vulnerability_(computing)&lt;/ref&gt; in Whonix's or Debian. A remotely exploitable&lt;ref&gt;https://en.wikipedia.org/wiki/Exploit_(computer_security)&lt;/ref&gt; bug in Whonix or Debian, a flaw in Whonix's firewall leaking traffic or code {{Code2|phoning home}}&lt;ref&gt;https://en.wikipedia.org/wiki/Phoning_home&lt;/ref&gt; the contents of your harddrive would still be fatal. A precondition so this feature can improve overall security is, that the community is auditing Whonix's and Debian's source code for being free of backdoors and vulnerabilities in the first place. In summary, we believe this feature is useful and can improve security, but however isn't a magical answer to all computer security and trust questions. The [[Comparison with Others#Verifiable Builds]] table makes it clear what this feature archives.
 
 You might be curious, why Whonix is verifiable while neither Debian nor any other operating system is? This is because [[About#Based_on_Debian|Whonix is very simple]], to oversimplify it: Whonix is just a collection of configuration files and scripts, i.e. Whonix's source code does not contain any compiled code etc. On the other hand, Debian is a full operating system. And of course, without the great work of the Debian project and all the upstream projects, Whonix wouldn't exist.
 
@@ -12790,14 +12789,60 @@ Anyone building Whonix.ova images will hopefully end up with the same report. We
 == Current Limitations ==
 Our {{Code2|[https://github.com/adrelanos/Whonix/blob/master/help-steps/analyze_image help-steps/analyze_image]}} script does not check the contents of the image outside the file system. We're not aware of any method getting a backdoor activated by writing malicious data into those places. We might get rid of this limitation in future, see chapter Possible Future Improvements.
 
+We don't check GUID&lt;ref&gt;https://en.wikipedia.org/wiki/GUID_Partition_Table&lt;/ref&gt;, because we're not using GUID.
+
 == Attack Surface ==
 The {{Code2|/help-steps/analyze_image}} script is supposed to execute no code from the image you are analyzing. The risk running that script on images you did not create yourself such as on the official images should be low, but not non-existent. Audits of the analyzing script itself are most welcome. In order to analyze the image, tools which are available in Debian's repository are used. Such as extracting the .ova requires {{Code2|tar}}&lt;ref&gt;http://packages.debian.org/jessie/tar&lt;/ref&gt;. The .ova could be malformed in a way to exploit the auditor's machine while extracting it to coerce the auditor's machine create a legit report hiding the actual backdoor (and infecting the auditor's machine with a backdoor). To find out what other tools are used and for what, please have a look at the {{Code2|/help-steps/analyze_image}} script.
+
+== Theoretical Holes ==
+Unfortunately, we can not directly mount the .ova. We have to extract it first. Rather, Virtual Box does not support creating .ova's containing .img's (raw images). Img's would be ideal, since low level tools such as {{Code2|dd}} understand them. Even worse, .ova's created by Virtual Box always include .vmdk's. [https://forums.virtualbox.org/viewtopic.php?f=1&amp;t=58460 export VM using VDI instead of VMDK is not possible]. Rather [https://forums.virtualbox.org/viewtopic.php?f=7&amp;t=58461 Mounting VMDK's on Debian testing/jessie?] using Free Software is currently not possible since no software supports that. During the convert process ova -&gt; vmdk -&gt; vdi -&gt; img, the MBR, bootloader, VBR and/or other obscure differences could occur. There is no reason to believe that is actually the case, but we're not aware of any research on that topic.
 
 == Your Own Alternatives ==
 The {{Code2|/help-steps/analyze_image}} script is the tool which comes with Whonix's source code to audit Whonix.ova's. Nothing prevents you from cooking up your own custom method to verify Whonix.ova's. On the contrary, we'd be very happy to hear about your methods, source code and results. Since this hasn't ever happened in past, Whonix came up with its own {{Code2|/help-steps/analyze_image}} script.
 
 == Possible Future Improvements ==
 [https://github.com/sleuthkit/sleuthkit/ sleuthkit] could be an interesting addition or even replacement for our custom script. Then we could create a report using something like {{Code|fls -f ext4 ./Whonix-Gateway-7.img}}. Does {{Code|fls}} very similar results when run on very similar images or does it mess up the ordering? The version in Debian even in [http://packages.debian.org/sid/sleuthkit sid] is outdated and does unfortunately not include support for ext4 and our images are using ext4. More recent sleuthkit upstream releases do support ext4, but there are no signed git tags yet ([https://github.com/sleuthkit/sleuthkit/issues/264 reported an issue]), so getting sleuthkit is a bit difficult. (If we want to defeat sophisticated backdoors, we shouldn't encourage auditors to blindly trust github's SSL alone for sleuthkit's integrity.) We could think about bending our images, downgrading from ext4 to ext3.
+
+== Expected Differences ==
+* {{Code|(mount_folder) /boot/initrd.img*}} - Those are extracted to the {{Code|initrd_folder}} and diffed.
+* {{Code|(mount_folder) /etc/fstab}} - Will contains different uuids. We could make them uniform, but that would complicate the code, manually look at the diff.
+* {{Code|(mount_folder) /etc/shadow}} - Manually look at the diff. Users are advised to change their passwords anyway.
+* {{Code|(mount_folder) /etc/shadow-}} - Same as above.
+* {{Code|(mount_folder) /etc/init.d/.depend.boot}} - {{Code|/sbin/insserv}} (part of sysvinit) does not produce deterministic results. Gets copied to the {{Code|manual_analysis_folder}}. Manually review them. You just have to check, they're not containing anything sketchy. You most likely won't be able to tell, if some services are deliberately not started or in wrong order. This is not an issue, because when Whonix starts for the first time it executes {{Code|whonix_shared/usr/lib/whonix/first_run_initializer}}, which executes {{Code|/sbin/insserv}}, which recreates this file. &lt;ref&gt;We can not delete this file before redistributing Whonix, because then Whonix wouldn't start.&lt;/ref&gt;
+* {{Code|(mount_folder) /etc/init.d/.depend.start}} - Same as above.
+* {{Code|(mount_folder) /etc/init.d/.depend.stop}} - Same as above.
+* {{Code|(manual_analysis_folder) *.dd.1000000}} - The first ~1MB of the .img. Disk signature will differ.
+
+== Unexpected Differences ==
+There could be differences besides the expected differences, because this is still experimental as in a new feature. Remember, there are no deterministically built distributions yet. If you find any additional differences, keep calm, it's not necessarily a backdoor, report them, and if you can, diff and/or audit them.
+
+== Folder Overview ==
+Your report root folder can most likely be found in {{Code|/home/user/whonix_binary/$VMNAME-${whonix_build_whonix_version_new}_report_tempfolder}}.
+
+{{Code|extracted_ova_folder}} - Should contain 3 files. The vmdk, which you can ignore, that's what we unpack - if we could diff it in the first place we wouldn't have so much trouble. Since the contents of the extracted_ova_folder gets added to the file_list, it won't be possible, that there are any extra files - if there were, you could see them in the report and should be suspicious.
+
+{{Code|vdi_folder}} - Should only contain the .vdi. If we could diff it in the first place we wouldn't have so much trouble.
+
+{{Code|raw_folder}} - Should only contain the .img. Same as above.
+
+{{Code|auto_hash_folder}} - Are all added to the file_list and should contain no differences.
+
+{{Code|initrd_folder}} - The are the extracted {{Code|(mount_folder) /boot/initrd.img*}} files. Are all added to the file_list and should contain no differences.
+
+{{Code|manual_analysis_folder}} - Not hashed in the report file, because those will show differences anyway which we expect. Those have to be manually audited.
+
+{{Code|debug_folder}} - We copy these files out of the images just in case for convenience. Those have been already hashed as regular files within the (mount_folder). Feel free to ignore that folder. It's only in for debugging purposes.
+
+== How ==
+...
+
+Your report file can most likely be found at {{Code|/home/user/whonix_binary/$VMNAME-$whonix_build_whonix_version_new.report}}.
+
+Diff the virtual machine description file {{Code|(extracted_ova_folder) *.ovf}}. Only the uuids should differ.
+
+Diff the manifest file {{Code|(extracted_ova_folder) *.mf}}. Only the checksums should differ.
+
+Diff the first 1 MB of .img (contains MBR and bootloader) {{Code|(manual_analysis_folder) *.dd.1000000}} - Use for example {{Code|vbindiff}}. Only the disk signature should differ.
 
 = Footnotes / References =
 &lt;references/&gt;
@@ -12815,7 +12860,7 @@ Thanks to Qubes OS ([https://groups.google.com/forum/?fromgroups=#!topic/qubes-d
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>c9nrvj84x4d4dfq0h46c5aog3v2fe3d</sha1>
+      <sha1>h34pydp613wqxitbtknz4kltxvt3ba4</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -14082,16 +14127,15 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
     <ns>0</ns>
     <id>128</id>
     <revision>
-      <id>4144</id>
-      <parentid>2475</parentid>
-      <timestamp>2013-12-07T00:08:45Z</timestamp>
+      <id>4159</id>
+      <parentid>4144</parentid>
+      <timestamp>2013-12-08T00:21:57Z</timestamp>
       <contributor>
-        <username>X99</username>
-        <id>133</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <minor/>
-      <comment>minor corrections</comment>
-      <text xml:space="preserve" bytes="2213">{{Header}}
+      <comment>Instead of &quot;it's not recommended&quot;, I think &quot;it's recommended against&quot; has less of chance of getting misunderstood, since not using a negotiation. Please feel free to discuss this on whonix-devel mailing list or github issues if you want to discuss this.</comment>
+      <text xml:space="preserve" bytes="2217">{{Header}}
 
 == On Whonix-Gateway and Whonix-Workstation ==
 
@@ -14129,7 +14173,7 @@ When you use the pause/suspend/save/resume feature of VirtualBox or the hibernat
 Start Menu -&gt; Applications -&gt; System -&gt; Whonix TimeSync
 &lt;/pre&gt;
 
-It's not recommended to pause/suspend/save/hibernate the Whonix-Gateway, because it'll be difficult to restore the clock after resume.
+It's recommended against to pause/suspend/save/hibernate the Whonix-Gateway, because it'll be difficult to restore the clock after resume.
 
 If your host clock is more than 1 hour in the past or more than 3 hours in the future, Tor can't connect. In this case fix your host clock manually (right click on clock). (Check for empty battery.) Then power off Whonix-Gateway and power it back up again. Tor should be able to connect after that. If your host clock is even more off, you could get into trouble updating your host operating system, so keep an eye on it and make sure that it's somewhat accurate.
 
@@ -14145,7 +14189,7 @@ You can further improve the security, see the [[Security Guide]].
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>4adxa1bo3hfdmq8aagh4jeyr02jqnac</sha1>
+      <sha1>565xy84hg3clu9p3npz3ub26x15a3hl</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -30911,14 +30955,15 @@ For technical stuff, see [[Dev/Mixmaster]].
     <ns>0</ns>
     <id>260</id>
     <revision>
-      <id>4145</id>
-      <parentid>4074</parentid>
-      <timestamp>2013-12-07T06:22:42Z</timestamp>
+      <id>4161</id>
+      <parentid>4160</parentid>
+      <timestamp>2013-12-08T00:29:53Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>/* Manually updating Tor Browser (TBB stable version) */ +new step: close the older version before starting the updated one.</comment>
-      <text xml:space="preserve" bytes="6597">{{Header}}
+      <comment>/* Manually updating Tor Browser (TBB Alpha version) */</comment>
+      <text xml:space="preserve" bytes="6912">{{Header}}
 
 = Introduction =
 The Pre Install Advice page contains a chapter [[Pre_Install_Advice#Tor_Browser_Bundle|recommending]] to learn the basics about torproject.org's TBB before starting with Whonix.
@@ -30944,15 +30989,19 @@ At time of writing, there were never any errors in Tor Browser (such as when a p
 
 (5) Go into ''/home/user/'' with the file manger. (Dolphin)
 
-(6) Extract the Tor Browser Bundle. Right click on the downloaded archive -&gt; extract -&gt; extract archive here.
+(6) If you still have the old version of TBB opened (because you are probably reading this from the old TBB), close it. (copy the next steps to Kwrite if necessary)
 
-(7) In case you downloaded another version than ''en-US'', rename the tor-browser_''lang'' folder to ''tor-browser_en-US''. This is important, because the paths in the following script are hardcoded.
+(7) Rename your old TBB /home/user/tor-browser_en-US to something else.
 
-(8) Go into the ''/home/user/tor-browser_en-US'' folder.
+(8) Extract the Tor Browser Bundle. Right click on the downloaded archive -&gt; extract -&gt; extract archive here.
 
-(9) Delete ''start-tor-browser'' or move it to the ''/home/user/tor-browser_en-US/Docs'' folder.
+(9) In case you downloaded another version than ''en-US'', rename the tor-browser_''lang'' folder to ''tor-browser_en-US''. This is important, because the paths in the following script are hardcoded.
 
-(10) Create a new file within the ''/home/user/tor-browser_en-US/'' folder called ''start-tor-browser'' with the following content.
+(10) Go into the ''/home/user/tor-browser_en-US'' folder.
+
+(11) Delete ''start-tor-browser'' or move it to the ''/home/user/tor-browser_en-US/Docs'' folder.
+
+(12) Create a new file within the ''/home/user/tor-browser_en-US/'' folder called ''start-tor-browser'' with the following content.
 
 &lt;pre&gt;
 #!/bin/bash
@@ -30966,17 +31015,15 @@ cd ~
 ## End of Whonix Tor Browser start script
 &lt;/pre&gt;
 
-(11) Make the ''start-tor-browser'' script executable. Right click on ''start-tor-browser'' -&gt; Properties -&gt; Permissions -&gt; enable the ''Is executable'' box -&gt; ok.
+(13) Make the ''start-tor-browser'' script executable. Right click on ''start-tor-browser'' -&gt; Properties -&gt; Permissions -&gt; enable the ''Is executable'' box -&gt; ok.
 
-(12) If you want to make 100% sure you never have Tor over Tor, you must shut down Whonix-Gateway while doing the following.
+(14) If you want to make 100% sure you never have Tor over Tor, you must shut down Whonix-Gateway while doing the following.
 
-(13) Delete /home/user/my_tor-browser_en-US/App/tor.
+(15) Delete /home/user/my_tor-browser_en-US/App/tor.
 
-(14) If there is '''no''' green Vidalia icon in the task bar, everything is fine.
+(16) If there is '''no''' green Vidalia icon in the task bar, everything is fine.
 
-(15) If you still have the old version of TBB opened (because you are probably reading this from the old TBB), close it. (copy the next steps to Kwrite if necessary)
-
-(16) Start Tor Browser and run
+(17) Start Tor Browser and run
 
 &lt;pre&gt;ps aux | grep tor&lt;/pre&gt;
 
@@ -30990,11 +31037,11 @@ Or.
 
 Something went wrong and you're running Tor over Tor, which is recommended against.
 
-(17) If the tests results are as expected, everything went fine.
+(18) If the tests results are as expected, everything went fine.
 
-(18) Don't forget to restart Whonix-Gateway, if you shut it down in step (13).
+(19) Don't forget to restart Whonix-Gateway, if you shut it down in step (13).
 
-(19) Done.
+(20) Done.
 
 = General information about Tor Browser in Whonix =
 See [[Tor Browser]].
@@ -31012,11 +31059,15 @@ See [[Tor Browser]].
 
 (5) Go into ''/home/user/'' with the file manger. (Dolphin)
 
-(6) Extract the Tor Browser Bundle. Right click on the downloaded archive -&gt; extract -&gt; extract archive here.
+(6) If you still have the old version of TBB opened (because you are probably reading this from the old TBB), close it. (copy the next steps to Kwrite if necessary)
 
-(7) In case you downloaded another version than ''en-US'', rename the tor-browser_''lang'' folder to ''tor-browser_en-US''. This is important, because the paths are hardcoded.
+(7) Rename your old TBB /home/user/tor-browser_en-US to something else. 
 
-(8) Done.
+(8) Extract the Tor Browser Bundle. Right click on the downloaded archive -&gt; extract -&gt; extract archive here.
+
+(9) In case you downloaded another version than ''en-US'', rename the tor-browser_''lang'' folder to ''tor-browser_en-US''. This is important, because the paths are hardcoded.
+
+(10) Done.
 
 {{mbox
 | type       = notice
@@ -31030,7 +31081,7 @@ See [[Tor Browser]].
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>2yd4q3hzligg9prfdkwytg32mfur71e</sha1>
+      <sha1>oyqp0a2fb8c1344pegvdnxcd4t60aqs</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -36678,14 +36729,15 @@ grep -r torbutton_send_ctrl_cmd *
     <ns>0</ns>
     <id>304</id>
     <revision>
-      <id>4143</id>
-      <parentid>4087</parentid>
-      <timestamp>2013-12-06T13:49:16Z</timestamp>
+      <id>4158</id>
+      <parentid>4143</parentid>
+      <timestamp>2013-12-08T00:16:42Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>/* On Whonix-Gateway */</comment>
-      <text xml:space="preserve" bytes="16806">{{Header}}
+      <comment>Rejected the last text change (by [[Special:Contributions/127.0.0.1|127.0.0.1]]) and restored revision 4087 by 127.0.0.1: It is only called /etc/tor/torrc.whonix in Whonix's source code. On the actual system it will just be /etc/tor/torrc. We're using the</comment>
+      <text xml:space="preserve" bytes="16792">{{Header}}
 &lt;!--
 Copyright:
 
@@ -36765,10 +36817,10 @@ TorChat won't be installed in Whonix by default because, see footnote...&lt;ref&
 Learn about [[Hidden Services]] in Whonix first and learn how to set up the hidden webserver. This will ease following this guide.
 
 ==== On Whonix-Gateway ====
-Open your {{Code2|/etc/tor/torrc.whonix}}.
+Open your {{Code2|/etc/tor/torrc}}.
 
 &lt;pre&gt;
-sudo nano /etc/tor/torrc.whonix
+sudo nano /etc/tor/torrc
 &lt;/pre&gt;
 
 And add.
@@ -37044,7 +37096,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>7f03rca2op4fmekv5f1agj97dcm4c9h</sha1>
+      <sha1>ku8exa1w8bmtg34motcbxrv565hmb6n</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -37119,15 +37171,16 @@ Questions:
     <ns>0</ns>
     <id>306</id>
     <revision>
-      <id>3448</id>
-      <parentid>2674</parentid>
-      <timestamp>2013-10-14T19:19:31Z</timestamp>
+      <id>4162</id>
+      <parentid>3448</parentid>
+      <timestamp>2013-12-08T01:11:09Z</timestamp>
       <contributor>
-        <username>Grammard</username>
-        <id>50</id>
+        <username>X99</username>
+        <id>133</id>
       </contributor>
       <minor/>
-      <text xml:space="preserve" bytes="3713">&lt;!--
+      <comment>/* Why do you need anonymity? */ &quot;two-way comm&quot; is proper, but the other way still communicates the idea</comment>
+      <text xml:space="preserve" bytes="3712">&lt;!--
 Copyright:
 
    Whonix Anonymity wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -37166,7 +37219,7 @@ As you are probably aware of, we currently find ourselves in a state of steady e
 
 Without taking any precautions, your Internet service provider, the State, the police, and global surveillance systems like [http://en.wikipedia.org/wiki/ECHELON ECHELON] (which is '''not''' a conspiracy theory; see [http://www.fas.org/irp/program/process/rapport_echelon_en.pdf this report from the European Parliament]) can record what you do online: what you read, what you write, and with whom you communicate.
 
-This is possible since all messages sent over the Internet contain the [[Data_Collection_Techniques#IP_Address|IP addresses]] of both the sender and receiver, much like an ordinary mail sent through the postal system contains addresses of both sender and receiver for two-ways communication. IP addresses can easily be traced back to the physical location of the computers and their owners, and from that ultimately back to you.
+This is possible since all messages sent over the Internet contain the [[Data_Collection_Techniques#IP_Address|IP addresses]] of both the sender and receiver, much like an ordinary mail sent through the postal system contains addresses of both sender and receiver for two-way communication. IP addresses can easily be traced back to the physical location of the computers and their owners, and from that ultimately back to you.
 
 If you do not mind this fact, then more power to you, but if you do mind, then Whonix might be just what you need.
 
@@ -37193,7 +37246,7 @@ under certain conditions; see the wiki source code for details.
 [[Category:Documentation]]
 
 {{Footer}}</text>
-      <sha1>rw91iusawuwwvhitar2kaykphepfe3t</sha1>
+      <sha1>dmqyn3kpaix8eq07kruveux5fri56ze</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
