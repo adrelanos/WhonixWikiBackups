@@ -656,16 +656,15 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>19</id>
     <revision>
-      <id>4142</id>
-      <parentid>4090</parentid>
-      <timestamp>2013-12-06T00:54:26Z</timestamp>
+      <id>4175</id>
+      <parentid>4142</parentid>
+      <timestamp>2013-12-10T01:08:14Z</timestamp>
       <contributor>
-        <username>X99</username>
-        <id>133</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <minor/>
-      <comment>/* Virtual Box Shared Folder Issues */ minor corrections</comment>
-      <text xml:space="preserve" bytes="17060">{{Header}}
+      <comment>/* Verify the Whonix images */</comment>
+      <text xml:space="preserve" bytes="17404">{{Header}}
 &lt;!--
 Copyright:
 
@@ -791,8 +790,17 @@ Then, have a look at the [[About]], [[Warning]] and [[DoNot|Do Not]] pages to ma
 |}
 
 = Verify the Whonix images =
-
 It is important to check the integrity of the virtual machine images you downloaded to make sure no man-in-the-middle attack or file corruption happened. (See [[Download Security]].)
+
+{{mbox
+| type       = critical
+| image      = [[File:Ambox_warning_pn.svg.png|40px|alt=Question mark]]
+| text       = 
+Warning:
+
+Do not continue if verification failed! You risk using infected or erroneous files! The whole point of verification is verify file integrity. If it fails and you continue, you could have skipped the whole step.
+}}
+
 
 Whonix virtual machine images are cryptographically signed using OpenPGP&lt;ref&gt;OpenPGP is a standard for data encryption that provides cryptographic privacy and authentication through the use of keys owned by its users.&lt;/ref&gt; by Whonix developer adrelanos.
 
@@ -945,7 +953,7 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>rae3d1dn80nghgigregv1vrqpud0l9z</sha1>
+      <sha1>keid6zc2srrvj93b09gbn2pj2ech5sj</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -15812,14 +15820,14 @@ Optional, for debugging if you have problems.
     <ns>0</ns>
     <id>139</id>
     <revision>
-      <id>4138</id>
-      <parentid>4112</parentid>
-      <timestamp>2013-12-06T00:06:52Z</timestamp>
+      <id>4173</id>
+      <parentid>4138</parentid>
+      <timestamp>2013-12-10T00:49:15Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>minor word missing</comment>
-      <text xml:space="preserve" bytes="5460">&lt;!--
+      <text xml:space="preserve" bytes="5506">&lt;!--
 Copyright:
 
    Whonix Verify_the_virtual_machine_images_using_the_command_line wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -15895,7 +15903,7 @@ Now, '''download the cryptographic signature''' corresponding to the virtual mac
 Then, '''start the cryptographic verification''', it can take several minutes:
 
 &lt;pre&gt;
-cd [the virtual machine images directory]
+cd [the directory in which you downloaded the .ova and the .asc]
 gpg --keyid-format long --verify Whonix-Gateway-7.ova.asc Whonix-Gateway-7.ova
 &lt;/pre&gt;
 
@@ -15928,7 +15936,7 @@ gpg: BAD signature from &quot;adrelanos &lt;adrelanos at riseup dot net&gt;&quot
 '''Repeat these steps for Whonix-Workstation as well.'''
 
 &lt;pre&gt;
-cd [the virtual machine images directory]
+cd [the directory in which you downloaded the .ova and the .asc]
 gpg --keyid-format long --verify Whonix-Workstation-7.ova.asc Whonix-Workstation-7.ova
 &lt;/pre&gt;
 
@@ -15946,7 +15954,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>s6ul0fl3sruihjg3em3svg1inoxnj05</sha1>
+      <sha1>ohotjc1e98fwwdqjkq7nxq3d0bffrws</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -15974,16 +15982,14 @@ under certain conditions; see the wiki source code for details.
     <ns>0</ns>
     <id>141</id>
     <revision>
-      <id>2680</id>
-      <parentid>2613</parentid>
-      <timestamp>2013-09-05T04:56:43Z</timestamp>
+      <id>4174</id>
+      <parentid>2680</parentid>
+      <timestamp>2013-12-10T00:55:53Z</timestamp>
       <contributor>
-        <username>Anon</username>
-        <id>10</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <minor/>
-      <comment>Text replace - &quot;in Whonix wiki on &lt;https://sourceforge.net/p/whonix/wiki/GPLv3/&gt;&quot; to &quot;on Github &lt;https://github.com/Whonix/Whonix/blob/master/GPLv3&gt;&quot;</comment>
-      <text xml:space="preserve" bytes="3970">{{Header}}
+      <text xml:space="preserve" bytes="4008">{{Header}}
 &lt;!--
 Copyright:
 
@@ -16016,7 +16022,6 @@ The complete text of the GNU General Public License can also be found online on 
 This Whonix Verify_the_virtual_machine_images_using_Linux wiki page is a fork of the Tails Verify the ISO image using Linux with Gnome page, from this exact source &lt;http://git.immerda.ch/?p=amnesia.git;a=blob;f=wiki/src/doc/get/verify_the_iso_image_using_gnome.html;hb=13f804421097ba25fe9836d7df0fd59d0da3d1f6&gt;.
 --&gt;
 = Verify the virtual machine images using Linux =
-
 You need to have the ''kgpg'' package installed. If you're not sure or want to install it, under Debian, Ubuntu or Whonix you can issue the following commands:
 
 &lt;pre&gt;
@@ -16026,7 +16031,7 @@ sudo apt-get install kgpg
 
 First, download the [[Whonix Signing Key]].
 
-Open ''adrelanos.asc'' with kgpg.
+Open {{Code|adrelanos.asc}} with kgpg.
 
 You will get notified will the following message:
 
@@ -16038,11 +16043,11 @@ Or if you previously already imported the key:
 
 [[Image:kgpg_key_imported_unchanged.png]]
 
-Now, '''download the cryptographic signature''' corresponding to the virtual machine image you want to verify '''and store it in the same folder as the virtual machine image''':
+Now, '''download the cryptographic signature''' corresponding to the virtual machine image ({{Code2|.ova}}) you want to verify '''and store it in the same folder as the virtual machine image''':
 
 [[Download#Whonix_signature|Download Whonix Signature]]
 
-Start kgpg, go to kgpg -&gt; File -&gt; Open Editor -&gt; Signature -&gt; Verify Signature... -&gt; Choose the downloaded cryptographic signature.
+Start kgpg, go to kgpg -&gt; File -&gt; Open Editor -&gt; Signature -&gt; Verify Signature... -&gt; Choose the downloaded cryptographic signature ({{Code2|.asc}}).
 
 It will '''take a while''' and there is '''no progress meter'''. Please wait a few moments.
 
@@ -16072,7 +16077,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>aurk9p3h8hc5s2z26s1apov4vjaxouw</sha1>
+      <sha1>8ykm0k5c064cfo07nb89b57y72o7hvu</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
