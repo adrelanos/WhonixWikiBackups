@@ -15007,19 +15007,19 @@ See [[Dev/Leak Tests]].
     </revision>
   </page>
   <page>
-    <title>Dev/pdt</title>
+    <title>Dev/ptt</title>
     <ns>0</ns>
     <id>133</id>
     <revision>
-      <id>2754</id>
-      <parentid>2544</parentid>
-      <timestamp>2013-09-12T23:40:15Z</timestamp>
+      <id>4199</id>
+      <parentid>2754</parentid>
+      <timestamp>2013-12-11T22:16:41Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
       <minor/>
-      <comment>Text replace - &quot;exit node&quot; to &quot;exit relay&quot;</comment>
+      <comment>Adrelanos moved page [[Dev/pdt]] to [[Dev/ptt]]</comment>
       <text xml:space="preserve" bytes="7560">{{Header}}
 
 = Summary =
@@ -48768,14 +48768,14 @@ Maybe this will help: Try convert the vmdk to vdi, remove the old vmdk from the 
     <ns>0</ns>
     <id>530</id>
     <revision>
-      <id>4192</id>
-      <parentid>4189</parentid>
-      <timestamp>2013-12-10T21:40:33Z</timestamp>
+      <id>4197</id>
+      <parentid>4196</parentid>
+      <timestamp>2013-12-11T15:12:59Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="13664">{{Header}}
+      <text xml:space="preserve" bytes="14596">{{Header}}
 = Verifiable Builds =
 == Verifiable .ova's ==
 === Introduction - What this Archives ===
@@ -48843,7 +48843,7 @@ Your report root folder can most likely be found in {{Code|/home/user/whonix_bin
 === How-To ===
 First of all, you need to create your own Whonix.ova images from source code, refer to [[Dev/Build Documentation|Build Documentation]]. Your report file can most likely be found at {{Code|/home/user/whonix_binary/$VMNAME-$whonix_build_whonix_version_new.report}} and your report_tempfolder at {{Code|/home/user/whonix_binary/$VMNAME-${whonix_build_whonix_version_new}_tempfolder}}. That is your own analyzed {{Code2|.ova}}. To make space for another analysis for other builds (such as those from whonix.org), rename your whonix_binary folder to something else, such as {{Code2|whonix_binary1}}.
 
-If you've build for example Whonix 7.5.2, you have to download Whonix 7.5.2 as well. Place the {{Code2|.ova}} in {{Code|/home/user/whonix_binary/}}. Keep the original name. Then go to Whonix's source code folder ({{Code|cd /home/user/Whonix}} and analyze that image. Use.
+If you've build for example Whonix 7.5.4, you have to download Whonix 7.5.4 as well. Place the {{Code2|.ova}} in {{Code|/home/user/whonix_binary/}}. Keep the original name. Then go to Whonix's source code folder ({{Code|cd /home/user/Whonix}} and analyze that image. Use.
 
 &lt;pre&gt;
 sudo ./build-steps.d/2800_create-report --tor-gateway
@@ -48856,7 +48856,7 @@ Then you have two {{Code2|.report}} files and two report temp folders.
 Use your favorite diff viewer for huge files. For example {{Code2|meld}}. Diff the reports. For example, use.
 
 &lt;pre&gt;
-meld ./whonix_binary1/Whonix-Gateway-7.5.2.report ./whonix_binary/Whonix-Gateway-7.5.2.report
+meld ./whonix_binary1/Whonix-Gateway-7.5.4.report ./whonix_binary/Whonix-Gateway-7.5.4.report
 &lt;/pre&gt;
 
 These files should be very similar, expect for a few differences which we earlier mentioned in chapter Expected Differences. Look at the differences. Two of them (because we're installing two kernels) should look like this:
@@ -48896,13 +48896,22 @@ Shouldn't they match, you could also compare them using {{Code|debdiff}}.
 
 We don't have a script yet to automate that process.
 
+== Implementation ==
+In case you like to review the implementation, the related scripts can be found here:
+
+* Remove most non-deterministic parts (auto generated files which always look at bit different): https://github.com/Whonix/Whonix/blob/master/whonix_shared/usr/share/whonix/chroot-scripts-post.d/90_cleanup
+* Build step to create the report: https://github.com/Whonix/Whonix/blob/master/build-steps.d/2800_create-report
+* The analyze image script, which creates the report: https://github.com/adrelanos/Whonix/blob/master/help-steps/analyze_image
+* The user interface locally re-creating non-deterministic files when Whonix starts for the first time: https://github.com/Whonix/Whonix/blob/master/whonix_shared/usr/lib/whonix/first_run_initializer_gui
+* Re-creating non-deterministic files when Whonix starts for the first time: https://github.com/Whonix/Whonix/blob/master/whonix_shared/usr/lib/whonix/first_run_initializer
+
 = Footnotes / References =
 &lt;references/&gt;
 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>bew0jit4vjffzo4qrwxv8g32ree51et</sha1>
+      <sha1>3dd5mcvl7yhe7ha260e6izvz8ww28kp</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -49189,6 +49198,60 @@ This feature will hopefully be ready for Whonix 8. Only users who download a new
 
 Since Whonix 7.5.2, all Whonix Debian Packages are deterministically build. This means, if you build Whonix Debian Packages 7.5.2 from source code, then download 7.5.2 from Whonix's Debian repository, you can simply diff the checksum (for example the {{Code2|sha512sum}}) of those files and they should match.</text>
       <sha1>gn7srlppp7l79mjeqblf6kkpxtgmz87</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Dev/Iceweasel Local Homepage</title>
+    <ns>0</ns>
+    <id>537</id>
+    <revision>
+      <id>4198</id>
+      <timestamp>2013-12-11T19:08:45Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;{{Header}}  {{mbox | type       = critical | image      = [[File:Ambox_warning_pn.svg.png|40px|alt=Question mark]] | text       =  Warning:  Do not use this browser for anythi...&quot;</comment>
+      <text xml:space="preserve" bytes="578">{{Header}}
+
+{{mbox
+| type       = critical
+| image      = [[File:Ambox_warning_pn.svg.png|40px|alt=Question mark]]
+| text       = 
+Warning:
+
+Do not use this browser for anything else than downloading Tor Browser, unless you know what you are doing!
+}}
+
+&lt;br /&gt;&lt;hr&gt;
+
+&lt;font size=&quot;-3&quot;&gt;This file is stored locally on your hdd. Want to improve this page? Go to https://www.whonix.org/Dev/Iceweasel_Local_Homepage
+
+This  page is copyrighted by [mailto:adrelanos@riseupDOTnet adrelanos] and licensed under the same Free (as in speech) license as Whonix itself.
+
+Donate to Whonix!&lt;/font&gt;</text>
+      <sha1>94w7pcb3z2fe68h5b29iep75egvs35c</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Dev/pdt</title>
+    <ns>0</ns>
+    <id>538</id>
+    <redirect title="Dev/ptt" />
+    <revision>
+      <id>4200</id>
+      <timestamp>2013-12-11T22:16:41Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>Adrelanos moved page [[Dev/pdt]] to [[Dev/ptt]]</comment>
+      <text xml:space="preserve" bytes="21">#REDIRECT [[Dev/ptt]]</text>
+      <sha1>4vbbwqkbey0kaa6ddx5h683bdeg15jh</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
