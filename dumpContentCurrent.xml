@@ -656,15 +656,15 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>19</id>
     <revision>
-      <id>4176</id>
-      <parentid>4175</parentid>
-      <timestamp>2013-12-10T20:12:25Z</timestamp>
+      <id>4203</id>
+      <parentid>4176</parentid>
+      <timestamp>2013-12-13T18:38:13Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Verify the Whonix images */</comment>
-      <text xml:space="preserve" bytes="17334">{{Header}}
+      <comment>/* Minor */</comment>
+      <text xml:space="preserve" bytes="17611">{{Header}}
 &lt;!--
 Copyright:
 
@@ -913,6 +913,9 @@ https://addons.mozilla.org/en-us/thunderbird/addon/enigmail/
 Currently needs a workaround as well. Please see [[Special:AWCforum/st/id167/#post_700|forum]].
 
 == Minor ==
+=== Whonix-Gateway: Err: http://deb.torproject.org tor-0.2.4.x-jessie/main i386 Packages 404 Not Found ===
+See [https://anonymousoperatingsystem.wordpress.com/2013/12/13/whonix-gateway-err-httpdeb-torproject-org-tor-0-2-4-x-jessiemain-i386-packages-404-not-found/ blog post].
+
 === &quot;apt-get source package&quot; will show &quot;dpkg-source: warning: failed to verify signature&quot; ===
 More info [http://lists.debian.org/debian-derivatives/2013/08/msg00000.html here] (and in the following mails).
 
@@ -952,7 +955,7 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>bzaeldgzd0upajf27lo20jisjtneqv1</sha1>
+      <sha1>83qllb795d7ij55jyn4swdt52gc3hwt</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -8751,14 +8754,14 @@ Whether it's worth to combine Tor with a VPN, either as pre-Tor-VPN (user -&gt; 
     <ns>0</ns>
     <id>98</id>
     <revision>
-      <id>4005</id>
-      <parentid>3875</parentid>
-      <timestamp>2013-11-08T11:34:13Z</timestamp>
+      <id>4210</id>
+      <parentid>4005</parentid>
+      <timestamp>2013-12-13T21:51:40Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <text xml:space="preserve" bytes="20244">{{Header}}
+      <comment>/* Introduction */</comment>
+      <text xml:space="preserve" bytes="20246">{{Header}}
 
 = Stream Isolation =
 == Introduction ==
@@ -8793,7 +8796,7 @@ Applications in Whonix 0.2.1 and above configured to prevent {{Code2|identity co
 |style=&quot;background-color:{{Green}}&quot;|yes
 |style=&quot;background-color:{{Green}}&quot;|yes
 |socks proxy settings
-| -
+|9101
 |[[Chat]]
 |- 
 |style=&quot;background-color:#f9f9f9;height:27px&quot;|Thunderbird with TorBirdy
@@ -9130,7 +9133,7 @@ Stream Isolation Graphic has been contributed by: Cuan Knaggs – graphic and we
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Design]]</text>
-      <sha1>pi2v771djs3ajna5o8to040ave3issd</sha1>
+      <sha1>knp4gglbgqm8jsf0uy2di1929tw3x0e</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -9793,20 +9796,20 @@ Whonix's firewall on the Whonix-Gateway is very restrictive. You can make it eve
     <ns>0</ns>
     <id>106</id>
     <revision>
-      <id>3803</id>
-      <parentid>3802</parentid>
-      <timestamp>2013-10-20T01:15:42Z</timestamp>
+      <id>4204</id>
+      <parentid>3803</parentid>
+      <timestamp>2013-12-13T18:52:08Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Current Whonix Release */</comment>
-      <text xml:space="preserve" bytes="1057">{{Header}}
+      <comment>/* Next Whonix Release in Development */</comment>
+      <text xml:space="preserve" bytes="1058">{{Header}}
 {{forkme}}
 = Next Whonix Release in Development =
 
 * [[Dev/BuildDocumentation_8|Build Documentation for creating full images from source code]]
-* [[Dev/BuildDocumentation_8_deb|Build Documentation for updating Whonix debian packages from source code]]
+* [[Dev/BuildDocumentation_8_deb|Build Documentation for upgrading Whonix debian packages from source code]]
 * &lt;s&gt;[[Dev/BuildDocumentation_8_short|8 and 8 Build Documentation (short)]]&lt;/s&gt;
 
 = Other =
@@ -9830,7 +9833,7 @@ Whonix's firewall on the Whonix-Gateway is very restrictive. You can make it eve
 [[Category:Development]]
 
 {{Footer}}</text>
-      <sha1>g5dmta4jjnwq4hpfa4to1vuo51qt81u</sha1>
+      <sha1>kycle52u5po1tuxe5xw64kba2waqi9g</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -43251,20 +43254,20 @@ cat /etc/apt/sources.list.d/*
     <ns>0</ns>
     <id>487</id>
     <revision>
-      <id>4193</id>
-      <parentid>3845</parentid>
-      <timestamp>2013-12-10T22:53:51Z</timestamp>
+      <id>4209</id>
+      <parentid>4208</parentid>
+      <timestamp>2013-12-13T19:21:03Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Prerequisites */</comment>
-      <text xml:space="preserve" bytes="3038">{{Header}}
+      <comment>/* Upgrade Whonix Debian Packages */</comment>
+      <text xml:space="preserve" bytes="3379">{{Header}}
 {{forkme}}
 
 '''UNFINISHED!'''
 
-= Updating Whonix Deb Packages from Source Code =
+= Upgrading Whonix Deb Packages from Source Code =
 == Introduction ==
 This assumes you are updating Whonix's debian packages while you are using Whonix.
 
@@ -43275,6 +43278,12 @@ If you haven't done already, disable Whonix's APT repository. &lt;ref&gt;[[Whoni
 
 &lt;pre&gt;
 whonix_repository --disable
+&lt;/pre&gt;
+
+Upgrade from Debian packages.
+
+&lt;pre&gt;
+sudo apt-get update &amp;&amp; sudo apt-get --yes dist-upgrade
 &lt;/pre&gt;
 
 {{Build Documentation Get Source Code}}
@@ -43302,6 +43311,8 @@ For Whonix-Gateway.
 sudo ./debug-steps/locally-upgrade-whonix-debian-packages --bare-metal --tor-gateway
 &lt;/pre&gt;
 
+&lt;ref&gt;Why use &quot;--bare-metal&quot;? Technical explanation: &quot;--bare-metal&quot; in context of Whonix's source code means &quot;do it on the system currently running, i.e. do it directly on the root folder &quot;/[...]&quot;, don't do it inside &quot;vm_image/[...]&quot;.&lt;/ref&gt;
+
 For Whonix-Workstation.
 
 &lt;pre&gt;
@@ -43318,7 +43329,7 @@ If everything went well, you will see &lt;ref&gt;Or saying Whonix-Gateway respec
 ########################################################################
 &lt;/pre&gt;
 
-Last message will be probably &lt;ref&gt;&quot;probably&quot; means, if we don't change some messages in meanwhile and forget to update this page.&lt;/ref&gt;:
+Last message will probably&lt;ref&gt;&quot;probably&quot; means, if we don't change some messages in meanwhile and forget to update this page.&lt;/ref&gt; be:
 
 &lt;pre&gt;
 + true 'INFO: Skipping script, because BARE_METAL=1: /home/user/whonix_dot/Whonix/help-steps/unmount-img'
@@ -43345,7 +43356,7 @@ Lets hope it works well. Please get in [[Support|Contact]] should there be any i
 {{Footer}}
 
 [[Category:Development]]</text>
-      <sha1>041c1aozci48v37sxx92unx094lmrob</sha1>
+      <sha1>f5qzv9metcy3ry5uqygrld46kzbfuki</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -48768,14 +48779,14 @@ Maybe this will help: Try convert the vmdk to vdi, remove the old vmdk from the 
     <ns>0</ns>
     <id>530</id>
     <revision>
-      <id>4197</id>
-      <parentid>4196</parentid>
-      <timestamp>2013-12-11T15:12:59Z</timestamp>
+      <id>4207</id>
+      <parentid>4197</parentid>
+      <timestamp>2013-12-13T19:05:13Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="14596">{{Header}}
+      <text xml:space="preserve" bytes="15268">{{Header}}
 = Verifiable Builds =
 == Verifiable .ova's ==
 === Introduction - What this Archives ===
@@ -48791,6 +48802,8 @@ Anyone building {{Code2|Whonix.ova}} images will hopefully end up with the same 
 Below on this page is a longer How-To.
 
 === Current Limitations ===
+During the build process of Whonix-Gateway we are still using torproject.org's Tor repository for Debian testing&lt;ref&gt;http://deb.torproject.org/torproject.org/dists/testing/main/binary-i386/Packages&lt;/ref&gt;. Should that version get upgraded, this will create differences. In theory, old files could still be verified against torproject's signing keys, but that would require them to be archived somewhere. Whonix is currently only easily verifiable as long as torproject.org's repository does not get upgraded. In future, when Tor 0.2.4 migrates into Debian testing, this limitation may be lifted. We're happy to hear better solutions in meanwhile.
+
 Our {{Code2|[https://github.com/adrelanos/Whonix/blob/master/help-steps/analyze_image help-steps/analyze_image]}} script does not check the contents of the image outside the file system. We're not aware of any method getting a backdoor activated by writing malicious data into those places. We might get rid of this limitation in future, see chapter Possible Future Improvements.
 
 We don't check GUID&lt;ref&gt;https://en.wikipedia.org/wiki/GUID_Partition_Table&lt;/ref&gt;, because we're not using GUID. &lt;ref&gt;You can verify that by auditing Whonix's source code.&lt;/ref&gt;
@@ -48910,8 +48923,9 @@ In case you like to review the implementation, the related scripts can be found 
 
 {{Footer}}
 
-[[Category:Documentation]]</text>
-      <sha1>3dd5mcvl7yhe7ha260e6izvz8ww28kp</sha1>
+[[Category:Documentation]]
+[[Category:Development]]</text>
+      <sha1>7g2ha41mxailbf1qsp1nygl6q0ko91q</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
