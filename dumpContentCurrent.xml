@@ -49221,32 +49221,22 @@ Since Whonix 7.5.2, all Whonix Debian Packages are deterministically build. This
     <ns>0</ns>
     <id>537</id>
     <revision>
-      <id>4198</id>
-      <timestamp>2013-12-11T19:08:45Z</timestamp>
+      <id>4214</id>
+      <parentid>4213</parentid>
+      <timestamp>2013-12-15T02:02:48Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>Created page with &quot;{{Header}}  {{mbox | type       = critical | image      = [[File:Ambox_warning_pn.svg.png|40px|alt=Question mark]] | text       =  Warning:  Do not use this browser for anythi...&quot;</comment>
-      <text xml:space="preserve" bytes="578">{{Header}}
-
-{{mbox
+      <text xml:space="preserve" bytes="320">{{mbox
 | type       = critical
 | image      = [[File:Ambox_warning_pn.svg.png|40px|alt=Question mark]]
 | text       = 
 Warning:
 
-Do not use this browser for anything else than downloading Tor Browser, unless you know what you are doing!
-}}
-
-&lt;br /&gt;&lt;hr&gt;
-
-&lt;font size=&quot;-3&quot;&gt;This file is stored locally on your hdd. Want to improve this page? Go to https://www.whonix.org/Dev/Iceweasel_Local_Homepage
-
-This  page is copyrighted by [mailto:adrelanos@riseupDOTnet adrelanos] and licensed under the same Free (as in speech) license as Whonix itself.
-
-Donate to Whonix!&lt;/font&gt;</text>
-      <sha1>94w7pcb3z2fe68h5b29iep75egvs35c</sha1>
+[https://www.whonix.org/wiki/DoNot#Do_not_confuse_Anonymity_with_Pseudonymity. Do not use this browser for anything other than downloading Tor Browser, unless you know what you are doing!]
+}}</text>
+      <sha1>ko80x0jevxo05o5d1rde7fas665xafx</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
