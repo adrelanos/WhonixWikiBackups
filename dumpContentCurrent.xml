@@ -32215,14 +32215,13 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
     <ns>0</ns>
     <id>268</id>
     <revision>
-      <id>3889</id>
-      <parentid>3888</parentid>
-      <timestamp>2013-10-31T10:08:18Z</timestamp>
+      <id>4338</id>
+      <parentid>3889</parentid>
+      <timestamp>2013-12-18T01:36:32Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* Down */</comment>
+      <comment>ad filled page</comment>
       <text xml:space="preserve" bytes="3762">{{Header}}
 
 = Introduction =
@@ -32242,12 +32241,6 @@ There are many so called offshore or anonymous hosting companies. Most of those 
 The ones listed in the following list are Tor user friendly, accept anonymous registration and can be payed anonymously by BTC or prepaid cards.
 
 If you like to be added to this list or have improvements or corrections, please get in [[Contact]].
-
-http://bitcoin-hosting.com
-
-* Last Update: March 2013.
-* Looks promising, no though review yet by adrelanos.
-* Page unfortunately not reachable over valid SSL.
 
 http://prq.se/
 
@@ -32348,6 +32341,12 @@ http://bj6sy3n7tbt3ot2f.onion/
 * Can get copy of hidden service key: yes.
 * 5 BTC for &quot;life time
 
+http://bitcoin-hosting.com
+
+* Last Update: March 2013.
+* Looks promising, no though review yet by adrelanos.
+* Page unfortunately not reachable over valid SSL.
+
 = Related Articles =
 
 * [[Surfing Posting Blogging]]
@@ -32362,7 +32361,7 @@ http://bj6sy3n7tbt3ot2f.onion/
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>005ns7olks9ogs1farwbooiccgykuwn</sha1>
+      <sha1>42xkgz15cz873h7zzdvzm40adz88nr1</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
