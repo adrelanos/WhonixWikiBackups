@@ -2416,14 +2416,15 @@ Not compulsory, just nicely asking:
     <ns>0</ns>
     <id>56</id>
     <revision>
-      <id>4156</id>
-      <parentid>3867</parentid>
-      <timestamp>2013-12-07T22:30:22Z</timestamp>
+      <id>4349</id>
+      <parentid>4156</parentid>
+      <timestamp>2013-12-18T23:24:23Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>Fixed comma errors</comment>
-      <text xml:space="preserve" bytes="48892">{{Header}}
+      <comment>/* Graphical Whonix-Gateway? */</comment>
+      <text xml:space="preserve" bytes="49044">{{Header}}
 = Why are the Whonix images so big? =
 
 Compared to other &quot;Tor-VM&quot; or &quot;Tor-LiveCD/DVD&quot; projects which sometimes use special minimal or stripped down Linux distributions (e.g. TinyCore, DSL, Puppy) Whonix is larger, both VMs together are currently almost 2 GB.
@@ -2908,18 +2909,19 @@ Whonix aims to become as accessible in usability as possible. Sorry, if you're a
 
 As in Whonix 0.5.6 it was difficult for users who never used Linux before to do tasks such as upgrading or configure obfuscated bridges etc. Many things are simpler and more encouraging in a graphical desktop environment. Such as:
 
-* bridges / flashproxies
-* [[FAQ#What.27s_the_difference_of_installing_a_VPN_on_the_host_versus_installing_on_Whonix-Gateway.3F|tunneling only Whonix-Gateway's traffic through a VPN]]
+* setting up bridges / flashproxies
 * auditing logs
-* iptables and the system architecture in general
+* auditing iptables
+* auditing the system architecture in general
 * running [[Test]]s
 * running [[Dev/Leak_Tests|Leak Tests]]
-* editing {{Code2|/etc/tor/torrc}}
-* editing firewall settings
+* editing Tor configuration file {{Code2|/etc/tor/torrc}}
+* editing firewall settings folder {{Code2|/etc/whonxi_firewall.d}}
 * reading status messages (whonixcheck and timesync)
 * changing Tor circuit.
 * copying and pasting (configuration) commands, (error) messages and logs
 * running tshark / wireshark
+* [[FAQ#What.27s_the_difference_of_installing_a_VPN_on_the_host_versus_installing_on_Whonix-Gateway.3F|tunneling only Whonix-Gateway's traffic through a VPN]]
 
 And big black text-only window (terminal) looks scary. A graphical desktop environment is also a prerequisite for further planed improvements, such as a Whonix Controller, which will be a graphical Whonix Controller, where you have buttons such as
 
@@ -2932,7 +2934,7 @@ Also terminal-only environments are often unusable by users with disabilities. T
 
 If you think, the graphical Whonix-Gateway uses too much disk size and/or [[Special:AWCforum/st/id85/Possible_to_install_whonix_off_U....html|you want]] to do non-originally intended things, such as running Whonix completely in RAM, sorry to say. Whonix has never been developed with low size, low RAM or low system requirements in mind. See also [[#Why are the Whonix images so big?]] and [[#Will there be a Whonix Live CD or DVD?]].
 
-It would be relatively simple for Linux geeks to create a non-graphical Whonix-Gateway from Whonix source code, please get in contact if that is of interest to you.
+Advanced users can build Whonix from source code and use a build configuration to create a terminal-only version of Whonix-Gateway. (Refer to [[Dev/Build Documentation|Build Documentation]] in case that is of interest to you.)
 
 Last but not least, if there was a [[Contribute#Release_Manager|Release Manager]] contributing to The Whonix Project or at least someone willing to build terminal-only versions of Whonix-Gateway (which is not about developing, only about running the build script and uploading), we could easily provide a terminal-only version of Whonix-Gateway. As long very few people are contributing to The Whonix Project, this won't be possible.
 
@@ -2966,7 +2968,7 @@ Without performing these basics steps, the setup may sound clever, but may not w
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>5okws6n70r46y593seju44uvnh4u5m2</sha1>
+      <sha1>nijwm19gjzhm3svm5xn2htsbguen34o</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -30365,15 +30367,14 @@ For these reasons it's not a good idea to add popcon to Whonix. If you have sugg
     <ns>0</ns>
     <id>255</id>
     <revision>
-      <id>4026</id>
-      <parentid>3988</parentid>
-      <timestamp>2013-11-13T16:08:48Z</timestamp>
+      <id>4351</id>
+      <parentid>4350</parentid>
+      <timestamp>2013-12-19T01:29:54Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Advanced Topics */</comment>
-      <text xml:space="preserve" bytes="6642">&lt;!--
+      <text xml:space="preserve" bytes="7437">&lt;!--
 Copyright:
 
    Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -30406,12 +30407,22 @@ This wiki page is a fork of the Tails Trusting Tails signing key page, from this
 --&gt;
 {{Header}}
 = Introduction =
-
-To be written.
+'''TODO: To be written.'''
 
 = Related Tools =
-
 [[Software#Encrypt.2C_decrypt.2C_sign.2C_and_verify_text_using_OpenPGP.3B_GnuPG_frontend|Encrypt, decrypt, sign, and verify text using OpenPGP; GnuPG frontend]]
+
+= Links =
+== In English Language ==
+* [http://userbase.kde.org/Concepts/OpenPGP_For_Beginners OpenPGP For Beginners]
+* [http://userbase.kde.org/Concepts/OpenPGP_Getting_Started OpenPGP Getting Started]
+* [http://www.openpgp-courses.org/ Free OpenPGP Courses]
+* [http://userbase.kde.org/Concepts/OpenPGP_Help_Spread OpenPGP Help Spread]
+* See also if there are any [https://www.cryptoparty.in/location crypto parties] in your vicinity.
+* Try typing &quot;crypto party&quot; followed by the nearest city in a search engine of your choice.
+
+== In German Language ==
+[http://www.openpgp-schulungen.de/fuer/alle/ Informationen über OpenPGP] | [https://www.cryptoparty.in/location#germany kostenlose Schulungsangebote] | [http://www.openpgp-schulungen.de/fuer/unterstuetzer/ Förderung von OpenPGP]
 
 = Advanced Topics =
 == Air Gapped OpenPGP Key ==
@@ -30471,7 +30482,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>kf3lb977myfp7x72vcrx8u659p2li81</sha1>
+      <sha1>art7wqpeyq99xgt8kvss2b2mam93ygd</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
