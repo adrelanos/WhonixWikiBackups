@@ -6403,16 +6403,15 @@ You could try the [https://www.riseup.net/en/openvpn-linux#gnome riseup.net Open
     <ns>0</ns>
     <id>92</id>
     <revision>
-      <id>4347</id>
-      <parentid>4345</parentid>
-      <timestamp>2013-12-18T21:49:27Z</timestamp>
+      <id>4353</id>
+      <parentid>4352</parentid>
+      <timestamp>2013-12-19T11:26:58Z</timestamp>
       <contributor>
         <username>Jekyll</username>
         <id>161</id>
       </contributor>
-      <minor/>
-      <comment>/* Install Debian */</comment>
-      <text xml:space="preserve" bytes="18950">{{Header}}
+      <comment>/* Preparation */</comment>
+      <text xml:space="preserve" bytes="19241">{{Header}}
 
 '''WARNING''': Please don't forget reading the Warnings chapter.
 
@@ -6562,12 +6561,20 @@ The external interface (usually eth0) may need to be configured according to the
 
 Make sure the internet is working.
 
-== Upgrade Debian ==
-Install all security updates and reboot.
+== Logon and upgrade Debian ==
+Logon, install all security updates and reboot.
 
 &lt;pre&gt;
-## Become root.
-su
+## (host) login with &quot;root&quot;
+root
+
+## Edit sources list.
+nano /etc/apt/sources.list
+
+## Add a new source to the file.
+deb http://ftp.us.debian.org/debian/ jessie main
+
+## Press CTRL+X to exit, press Y to save,  press Enter to confirm the changes in the file
 
 ## Refresh package lists.
 apt-get update
@@ -6575,26 +6582,27 @@ apt-get update
 ## Upgrade.
 apt-get dist-upgrade
 
-## Back to normal user.
-exit
+## Reboot the system
+shutdown -r now
 &lt;/pre&gt;
 
 == Preparation ==
-Install sudo. &lt;ref&gt;You need git to obtain the source code. Alternatively, you could also download a git tag as an archive using a (torified) browser: https://github.com/Whonix/Whonix/tags&lt;/ref&gt;
+Logon and install sudo. &lt;ref&gt;You need git to obtain the source code. Alternatively, you could also download a git tag as an archive using a (torified) browser: https://github.com/Whonix/Whonix/tags&lt;/ref&gt;
 
 &lt;pre&gt;
-sudo apt-get install sudo
+## (host) login with &quot;user&quot;
+user
+
+## Become &quot;root&quot;.
+su
+
+## Install &quot;sudo&quot;.
+apt-get install sudo
 &lt;/pre&gt;
 
 You must build as user &quot;user&quot; and that user must be a member of the &quot;sudo&quot; group.
 
 &lt;pre&gt;
-## Become root.
-su
-
-## adduser &quot;user&quot;
-adduser user
-
 ## add &quot;user&quot; to &quot;sudo&quot; group
 addgroup user sudo
 
@@ -6822,7 +6830,7 @@ To get a more complete list, install Debian (with KDE) on bare metal using the r
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>n8vcdro8eqnp6gp91erwk9rqwmwp79q</sha1>
+      <sha1>dvg1hrdmrphrx33tviowdyt1eq3ts8u</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -39331,15 +39339,15 @@ Sourceforge support, ctsai-sf on freenode in #sourceforge said, they use GeoIP f
     <ns>0</ns>
     <id>378</id>
     <revision>
-      <id>4220</id>
-      <parentid>3801</parentid>
-      <timestamp>2013-12-15T16:13:57Z</timestamp>
+      <id>4355</id>
+      <parentid>4220</parentid>
+      <timestamp>2013-12-19T14:29:56Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <username>Jekyll</username>
+        <id>161</id>
       </contributor>
-      <comment>/* Introduction */</comment>
-      <text xml:space="preserve" bytes="9584">{{Header}}
+      <comment>/* VM Creation */</comment>
+      <text xml:space="preserve" bytes="9586">{{Header}}
 {{forkme}}
 = Build Documentation =
 == Introduction ==
@@ -39416,27 +39424,6 @@ See [[Dev/Redistribution#Pre_Building|Redistribution Pre Building]].
 {{Build_Configuration}}
 
 == VM Creation ==
-If you want to build for the second time, made changes or want to build a newer version, you have to reset debian/changelog &lt;ref&gt;Otherwise the .deb packages would not get rebuild.&lt;/ref&gt; and remove (or rename) any eventually already existing Whonix-Gateway and/or Whonix-Workstation in VirtualBox. Open a terminal (such as Konsole).
-
-Reset debian/changelog.
-
-&lt;pre&gt;
-git checkout -- debian/changelog
-&lt;/pre&gt;
-
-Delete eventually already existing Whonix-Gateway virtual machine. '''Warning''': This will delete a virtual machine named Whonix-Gateway from Virtual Box!
-
-&lt;pre&gt;
-sudo ~/Whonix/whonix_build --clean --tor-gateway
-&lt;/pre&gt;
-
-Delete eventually already existing Whonix-Workstation virtual machine. '''Warning''': This will delete a virtual machine named Whonix-Workstation from Virtual Box!
-
-&lt;pre&gt;
-sudo ~/Whonix/whonix_build --clean --tor-workstation
-&lt;/pre&gt;
-
-From now, you have two options. If you do not wish to use different build configurations for Whonix-Gateway and Whonix-Workstation (for example, if you do not wish to create a terminal-only Whonix-Gateway and a full Whonix-Workstation), you could use the {{Code|sudo ~/Whonix/whonix_build}} wrapper script to build both virtual machines at once. If you wish to use different build configurations, you must use the {{Code2|whonix_build}} script to build one after the other as described below.
 
 Build a Whonix-Gateway virtual machine image.
 
@@ -39457,6 +39444,29 @@ The resulting {{Code2|.ova}} images can be found in {{Code|~/whonix_binary}} fol
 Check if all went ok.
 
 Please report back any issues!
+
+
+If you want to build for the second time, made changes or want to build a newer version, you have to reset debian/changelog &lt;ref&gt;Otherwise the .deb packages would not get rebuild.&lt;/ref&gt; and remove (or rename) any eventually already existing Whonix-Gateway and/or Whonix-Workstation in VirtualBox. Open a terminal (such as Konsole).
+
+Reset debian/changelog.
+
+&lt;pre&gt;
+git checkout -- debian/changelog
+&lt;/pre&gt;
+
+Delete eventually already existing Whonix-Gateway virtual machine. '''Warning''': This will delete a virtual machine named Whonix-Gateway from Virtual Box!
+
+&lt;pre&gt;
+sudo ~/Whonix/whonix_build --clean --tor-gateway
+&lt;/pre&gt;
+
+Delete eventually already existing Whonix-Workstation virtual machine. '''Warning''': This will delete a virtual machine named Whonix-Workstation from Virtual Box!
+
+&lt;pre&gt;
+sudo ~/Whonix/whonix_build --clean --tor-workstation
+&lt;/pre&gt;
+
+From now, you have two options. If you do not wish to use different build configurations for Whonix-Gateway and Whonix-Workstation (for example, if you do not wish to create a terminal-only Whonix-Gateway and a full Whonix-Workstation), you could use the {{Code|sudo ~/Whonix/whonix_build}} wrapper script to build both virtual machines at once. If you wish to use different build configurations, you must use the {{Code2|whonix_build}} script to build one after the other as described above.
 
 == Cleanup ==
 {{Build_Documentation_Cleanup}}
@@ -39485,7 +39495,7 @@ To learn about adrelanos, the person who maintains Whonix, its OpenPGP key, see 
 {{Footer}}
 
 [[Category:Development]]</text>
-      <sha1>rn10lwyysbdxqpidtw9byqwq6zi9aoz</sha1>
+      <sha1>f0nlmwm4luw7y8co3r7vmx5g4d7ty8z</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -47232,23 +47242,26 @@ ii  zsh-common            5.0.2-4         all             architecture independe
     <ns>10</ns>
     <id>491</id>
     <revision>
-      <id>3785</id>
-      <parentid>3759</parentid>
-      <timestamp>2013-10-19T14:11:44Z</timestamp>
+      <id>4354</id>
+      <parentid>3785</parentid>
+      <timestamp>2013-12-19T11:48:56Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <username>Jekyll</username>
+        <id>161</id>
       </contributor>
-      <text xml:space="preserve" bytes="2604">== Get Whonix Source Code ==
+      <comment>/* Get Whonix Source Code */</comment>
+      <text xml:space="preserve" bytes="2741">== Get Whonix Source Code ==
 Install git.
 
 &lt;pre&gt;
 sudo apt-get install git
 &lt;/pre&gt;
 
-Get the Whonix source code. &lt;ref&gt;From https://github.com/adrelanos/Whonix and not from https://github.com/Whonix/Whonix, because only adrelanos/Whonix contains development version git tags (adretemp versions).&lt;/ref&gt;
+Get the Whonix source code.&lt;ref&gt;From https://github.com/adrelanos/Whonix and not from https://github.com/Whonix/Whonix, because only adrelanos/Whonix contains development version git tags (adretemp versions).&lt;/ref&gt;
 
 &lt;pre&gt;git clone https://github.com/adrelanos/Whonix&lt;/pre&gt;
+
+Remember it's '''W'''honix, not '''w'''honix! If you are prompted for a username for github, it means you have mistyped the web address.
 
 == Get Whonix Signing Key ==
 '''This chapter is recommended for better security, but not strictly required.''' (See [[Trust]])
@@ -47328,7 +47341,7 @@ git checkout 7.3.7
 &lt;/pre&gt;
 
 You have to replace {{Code2|7.3.7}} with the actual version you want to build. The stable version, the testers-only version or the developers version. You can learn about current versions reading [[Download#Stay_tuned|Whonix News Blogs]]. New versions are also announced on the [[Mailing_Lists#whonix-devel|whonix-devel mailing list]]. So you could alternatively check its archives. Signing up for whonix-devel is another way to get informed about new releases.</text>
-      <sha1>e5xjbuv20z9b8pds4akwf2k7n1cfpxx</sha1>
+      <sha1>j2752lu2fqkbz96mx2saifkfrtek5zz</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
