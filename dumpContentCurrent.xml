@@ -17235,15 +17235,15 @@ To get a new circuit, press.
     <ns>0</ns>
     <id>150</id>
     <revision>
-      <id>3815</id>
-      <parentid>3814</parentid>
-      <timestamp>2013-10-21T04:14:26Z</timestamp>
+      <id>4360</id>
+      <parentid>3815</parentid>
+      <timestamp>2013-12-20T01:11:08Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Remove Proxy Settings */</comment>
-      <text xml:space="preserve" bytes="14031">&lt;!--
+      <comment>/* Updating */</comment>
+      <text xml:space="preserve" bytes="13589">&lt;!--
 Copyright:
 
    Whonix Tor Browser wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -17400,15 +17400,7 @@ If the Tor Browser update script is ever broken, you are advised to update manua
 If you update Tor Browser in Whonix and there won't be [[DoNot#Prevent_Tor_over_Tor_scenarios.|Tor over Tor, which is recommended against]]. You can use either (choose one):
 
 * Whonix's {{Code|torbrowser}} updater which comes with Whonix &lt;ref&gt;Because it patches the start-tor-browser script.&lt;/ref&gt;
-* [[Manually Updating Tor Browser]] instructions &lt;ref&gt;Because it explains how to patch the start-tor-browser script.&lt;/ref&gt;
-* TBB 3.x (still Alpha) and above &lt;ref&gt;Because it includes tor-launcher, a Vidalia replacement as browser extension. To prevent Tor over Tor, the TOR_SKIP_LAUNCH=1 variable is set in /etc/profile.d/20_torbrowser.sh.
-
-&lt;pre&gt;
-## https://trac.torproject.org/projects/tor/ticket/6009
-## https://gitweb.torproject.org/tor-launcher.git
-export TOR_SKIP_LAUNCH=1
-&lt;/pre&gt;
-&lt;/ref&gt;
+* [[Manually Updating Tor Browser]] instructions
 
 = Browser Plugins / Flash / Java =
 
@@ -17453,7 +17445,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>jxpqppnp8it4zrwdmi0z0qvj03tmyne</sha1>
+      <sha1>6vihvtpkhv199y3jaib9vplicl8a4i4</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -30990,14 +30982,15 @@ For technical stuff, see [[Dev/Mixmaster]].
     <ns>0</ns>
     <id>260</id>
     <revision>
-      <id>4336</id>
-      <parentid>4161</parentid>
-      <timestamp>2013-12-16T18:05:06Z</timestamp>
+      <id>4361</id>
+      <parentid>4359</parentid>
+      <timestamp>2013-12-20T01:20:24Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="6996">{{Header}}
+      <comment>/* Manually updating Tor Browser (TBB Alpha version) */</comment>
+      <text xml:space="preserve" bytes="4414">{{Header}}
 
 = Introduction =
 The Pre Install Advice page contains a chapter [[Pre_Install_Advice#Tor_Browser_Bundle|recommending]] to learn the basics about torproject.org's TBB before starting with Whonix.
@@ -31015,75 +31008,10 @@ At time of writing, there were never any errors in Tor Browser (such as when a p
 = How to find out latest Tor Browser version? =
 Check https://blog.torproject.org.
 
-= Manually updating Tor Browser (TBB stable version) =
-(1) Go to https://www.torproject.org/ and/or http://idnxcnkne4qt76tg.onion/ and download the Tor Browser Bundle for Linux 32 bit. Store it in ''/home/user/''.
-
-(2) Read https://www.torproject.org/docs/verifying-signatures.html.en and/or http://idnxcnkne4qt76tg.onion/docs/verifying-signatures.html.en and learn about gpg verification.
-
-(3) Go to https://www.torproject.org/docs/signing-keys.html.en and/or http://idnxcnkne4qt76tg.onion/docs/signing-keys.html.en to get the gpg keys.
-
-(4) Verify the Tor Browser Bundle download.
-
-(5) Go into ''/home/user/'' with the file manger. (Dolphin)
-
-(6) If you still have the old version of TBB opened (because you are probably reading this from the old TBB), close it. (copy the next steps to Kwrite if necessary)
-
-(7) Rename your old TBB /home/user/tor-browser_en-US to something else.
-
-(8) Extract the Tor Browser Bundle. Right click on the downloaded archive -&gt; extract -&gt; extract archive here.
-
-(9) In case you downloaded another version than ''en-US'', rename the tor-browser_''lang'' folder to ''tor-browser_en-US''. This is important, because the paths in the following script are hardcoded.
-
-(10) Go into the ''/home/user/tor-browser_en-US'' folder.
-
-(11) Delete ''start-tor-browser'' or move it to the ''/home/user/tor-browser_en-US/Docs'' folder.
-
-(12) Create a new file within the ''/home/user/tor-browser_en-US/'' folder called ''start-tor-browser'' with the following content.
-
-&lt;pre&gt;
-#!/bin/bash
-## Whonix Tor Browser start script
-
-export TOR_SKIP_LAUNCH=1
-    
-cd ~
-~/tor-browser_en-US/App/Firefox/firefox --profile ~/tor-browser_en-US/Data/profile
-    
-## End of Whonix Tor Browser start script
-&lt;/pre&gt;
-
-(13) Make the ''start-tor-browser'' script executable. Right click on ''start-tor-browser'' -&gt; Properties -&gt; Permissions -&gt; enable the ''Is executable'' box -&gt; ok.
-
-(14) If you want to make 100% sure you never have Tor over Tor, you must shut down Whonix-Gateway while doing the following.
-
-(15) Delete /home/user/my_tor-browser_en-US/App/tor.
-
-(16) If there is '''no''' green Vidalia icon in the task bar, everything is fine.
-
-(17) Start Tor Browser and run
-
-&lt;pre&gt;ps aux | grep tor&lt;/pre&gt;
-
-If you see something like.
-
-&lt;pre&gt;109 /usr/sbin/tor&lt;/pre&gt;
-
-Or.
-
-&lt;pre&gt;/home/user/my_tor-browser_en-US/App/tor&lt;/pre&gt;
-
-Something went wrong and you're running Tor over Tor, which is recommended against.
-
-(18) If the tests results are as expected, everything went fine.
-
-(19) Don't forget to restart Whonix-Gateway, if you shut it down in step (13).
-
-(20) Done.
-
 = General information about Tor Browser in Whonix =
 See [[Tor Browser]].
 
-= Manually updating Tor Browser (TBB Alpha version) =
+= Manually updating Tor Browser =
 '''Only if you are using the Alpha version of TBB (Tor Browser Bundle 3.0alpha2 and above)!''' If you are using TBB Stable version (below TBB 3.0), please follow the instructions above.
 
 (1) Go to https://www.torproject.org/ and/or http://idnxcnkne4qt76tg.onion/ and download the Tor Browser Bundle for Linux 32 bit. Store it in ''/home/user/''.
@@ -31118,7 +31046,7 @@ See [[Tor Browser]].
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>g133hpwlxe5yqv6rw7o19v0lq0olxmb</sha1>
+      <sha1>9uw1rhvrfd9865arkmdkfpeh1h9oel7</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -35559,15 +35487,14 @@ Whonix-Example-Implementation:
     <ns>0</ns>
     <id>299</id>
     <revision>
-      <id>3436</id>
-      <parentid>3283</parentid>
-      <timestamp>2013-10-14T18:15:48Z</timestamp>
+      <id>4358</id>
+      <parentid>3436</parentid>
+      <timestamp>2013-12-20T01:09:19Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Footnotes */</comment>
-      <text xml:space="preserve" bytes="36377">{{Header}}
+      <text xml:space="preserve" bytes="38939">{{Header}}
 
 = About this page =
 
@@ -36333,6 +36260,71 @@ When running &lt;code&gt;torbrowser -update&lt;/code&gt;, the update script crea
 
 For better isolation of different identities. For advanced users. Moved to the [[Advanced_Security_Guide#More_than_one_Tor_Browser_in_Whonix|Advanced Security Guide]].
 
+= Manually updating Tor Browser (TBB stable version) =
+(1) Go to https://www.torproject.org/ and/or http://idnxcnkne4qt76tg.onion/ and download the Tor Browser Bundle for Linux 32 bit. Store it in ''/home/user/''.
+
+(2) Read https://www.torproject.org/docs/verifying-signatures.html.en and/or http://idnxcnkne4qt76tg.onion/docs/verifying-signatures.html.en and learn about gpg verification.
+
+(3) Go to https://www.torproject.org/docs/signing-keys.html.en and/or http://idnxcnkne4qt76tg.onion/docs/signing-keys.html.en to get the gpg keys.
+
+(4) Verify the Tor Browser Bundle download.
+
+(5) Go into ''/home/user/'' with the file manger. (Dolphin)
+
+(6) If you still have the old version of TBB opened (because you are probably reading this from the old TBB), close it. (copy the next steps to Kwrite if necessary)
+
+(7) Rename your old TBB /home/user/tor-browser_en-US to something else.
+
+(8) Extract the Tor Browser Bundle. Right click on the downloaded archive -&gt; extract -&gt; extract archive here.
+
+(9) In case you downloaded another version than ''en-US'', rename the tor-browser_''lang'' folder to ''tor-browser_en-US''. This is important, because the paths in the following script are hardcoded.
+
+(10) Go into the ''/home/user/tor-browser_en-US'' folder.
+
+(11) Delete ''start-tor-browser'' or move it to the ''/home/user/tor-browser_en-US/Docs'' folder.
+
+(12) Create a new file within the ''/home/user/tor-browser_en-US/'' folder called ''start-tor-browser'' with the following content.
+
+&lt;pre&gt;
+#!/bin/bash
+## Whonix Tor Browser start script
+
+export TOR_SKIP_LAUNCH=1
+    
+cd ~
+~/tor-browser_en-US/App/Firefox/firefox --profile ~/tor-browser_en-US/Data/profile
+    
+## End of Whonix Tor Browser start script
+&lt;/pre&gt;
+
+(13) Make the ''start-tor-browser'' script executable. Right click on ''start-tor-browser'' -&gt; Properties -&gt; Permissions -&gt; enable the ''Is executable'' box -&gt; ok.
+
+(14) If you want to make 100% sure you never have Tor over Tor, you must shut down Whonix-Gateway while doing the following.
+
+(15) Delete /home/user/my_tor-browser_en-US/App/tor.
+
+(16) If there is '''no''' green Vidalia icon in the task bar, everything is fine.
+
+(17) Start Tor Browser and run
+
+&lt;pre&gt;ps aux | grep tor&lt;/pre&gt;
+
+If you see something like.
+
+&lt;pre&gt;109 /usr/sbin/tor&lt;/pre&gt;
+
+Or.
+
+&lt;pre&gt;/home/user/my_tor-browser_en-US/App/tor&lt;/pre&gt;
+
+Something went wrong and you're running Tor over Tor, which is recommended against.
+
+(18) If the tests results are as expected, everything went fine.
+
+(19) Don't forget to restart Whonix-Gateway, if you shut it down in step (13).
+
+(20) Done.
+
 
 = Footnotes =
 &lt;references /&gt;
@@ -36340,7 +36332,7 @@ For better isolation of different identities. For advanced users. Moved to the [
 {{Footer}}
 
 [[Category:Deprecated]]</text>
-      <sha1>9eamisxps1pxt4xc5aizuu4fcw965c7</sha1>
+      <sha1>684ztp4b2ppnahwp9ux6ma7inkg9nt3</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -39339,15 +39331,15 @@ Sourceforge support, ctsai-sf on freenode in #sourceforge said, they use GeoIP f
     <ns>0</ns>
     <id>378</id>
     <revision>
-      <id>4355</id>
-      <parentid>4220</parentid>
-      <timestamp>2013-12-19T14:29:56Z</timestamp>
+      <id>4362</id>
+      <parentid>4355</parentid>
+      <timestamp>2013-12-20T05:25:59Z</timestamp>
       <contributor>
-        <username>Jekyll</username>
-        <id>161</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
       <comment>/* VM Creation */</comment>
-      <text xml:space="preserve" bytes="9586">{{Header}}
+      <text xml:space="preserve" bytes="9591">{{Header}}
 {{forkme}}
 = Build Documentation =
 == Introduction ==
@@ -39466,7 +39458,7 @@ Delete eventually already existing Whonix-Workstation virtual machine. '''Warnin
 sudo ~/Whonix/whonix_build --clean --tor-workstation
 &lt;/pre&gt;
 
-From now, you have two options. If you do not wish to use different build configurations for Whonix-Gateway and Whonix-Workstation (for example, if you do not wish to create a terminal-only Whonix-Gateway and a full Whonix-Workstation), you could use the {{Code|sudo ~/Whonix/whonix_build}} wrapper script to build both virtual machines at once. If you wish to use different build configurations, you must use the {{Code2|whonix_build}} script to build one after the other as described above.
+From now, you have two options. If you do not wish to use different build configurations for Whonix-Gateway and Whonix-Workstation (for example, if you do not wish to create a terminal-only Whonix-Gateway and a full Whonix-Workstation), you could use the {{Code|sudo ~/Whonix/whonix_build_both}} wrapper script to build both virtual machines at once. If you wish to use different build configurations, you must use the {{Code2|whonix_build}} script to build one after the other as described above.
 
 == Cleanup ==
 {{Build_Documentation_Cleanup}}
@@ -39495,7 +39487,7 @@ To learn about adrelanos, the person who maintains Whonix, its OpenPGP key, see 
 {{Footer}}
 
 [[Category:Development]]</text>
-      <sha1>f0nlmwm4luw7y8co3r7vmx5g4d7ty8z</sha1>
+      <sha1>hh415lmlbxwe0oig0kctj6mccxmnfme</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -47473,14 +47465,14 @@ git status
     <ns>10</ns>
     <id>495</id>
     <revision>
-      <id>3777</id>
-      <parentid>3773</parentid>
-      <timestamp>2013-10-19T12:26:12Z</timestamp>
+      <id>4363</id>
+      <parentid>3777</parentid>
+      <timestamp>2013-12-20T05:30:17Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="228">'''OPTIONAL!'''
+      <text xml:space="preserve" bytes="299">'''OPTIONAL!'''
 
 Reset {{Code2|debian/changelog}}.
 
@@ -47488,12 +47480,12 @@ Reset {{Code2|debian/changelog}}.
 git checkout -- debian/changelog
 &lt;/pre&gt;
 
-Remove temporary files from {{Code2|debian}} folder and delete debian packages from {{Code2|..}} folder.
+Remove temporary files from {{Code2|debian}} folder and delete debian packages from {{Code2|parent directory}}&lt;ref&gt;I.e. {{Code2|../}}, most likely {{Code2|/home/user}}.&lt;/ref&gt;.
 
 &lt;pre&gt;
 make clean
 &lt;/pre&gt;</text>
-      <sha1>eu2z9okuyfommmizrla50ug21kcxs2h</sha1>
+      <sha1>qun6o5oumwomm55suttomhtqh9aaj7v</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -50870,59 +50862,6 @@ Currently needs a workaround as well. Please see [[Special:AWCforum/st/id167/#po
     </revision>
   </page>
   <page>
-    <title>Translations:Tt/Page display title/en</title>
-    <ns>1198</ns>
-    <id>583</id>
-    <revision>
-      <id>4269</id>
-      <timestamp>2013-12-16T16:38:46Z</timestamp>
-      <contributor>
-        <username>FuzzyBot</username>
-        <id>37</id>
-      </contributor>
-      <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="2">Tt</text>
-      <sha1>s3d5cmz33k6ryaqlvfbzzwl65nuyw2c</sha1>
-      <model>wikitext</model>
-      <format>text/x-wiki</format>
-    </revision>
-  </page>
-  <page>
-    <title>Tt/en</title>
-    <ns>0</ns>
-    <id>584</id>
-    <revision>
-      <id>4334</id>
-      <parentid>4330</parentid>
-      <timestamp>2013-12-16T17:44:51Z</timestamp>
-      <contributor>
-        <username>FuzzyBot</username>
-        <id>37</id>
-      </contributor>
-      <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="604">&lt;languages /&gt;
-[[File:Torsö.jpg|thumb|A typical view of Fréttinga]]
-Fréttinga is a small municipality in MungoLand, located on the BaMungo island.
-It hosts a population of about 400 people. It has some agriculture and fishing and
-tourists like to visit it in the summer time. 
-It has marvelous beaches with a lot of [[Special:MyLanguage/Seagull|seagulls]].
-
-== Services ==
-
-It doesn't have many services. There is a shop and a car ferry visits the island
-from the mainland once a day.
-
-Main events:
-* The roof of the church fell down in 2009
-* New church was built in 1877 
-
-[[Category:Municipalities]]</text>
-      <sha1>aoky4hgimnfwuqmuhd8w3f4wv9mpudb</sha1>
-      <model>wikitext</model>
-      <format>text/x-wiki</format>
-    </revision>
-  </page>
-  <page>
     <title>Translations:Download/72/en</title>
     <ns>1198</ns>
     <id>585</id>
@@ -51025,26 +50964,6 @@ sudo ln -s /etc/dpkg/origins/whonix /etc/dpkg/origins/default
    You should have received a copy of the GNU General Public License
    along with this program; if not, write to:</text>
       <sha1>qp6ct8np6yom0sifu7khenzacxxk019</sha1>
-      <model>wikitext</model>
-      <format>text/x-wiki</format>
-    </revision>
-  </page>
-  <page>
-    <title>Translations:Tt/3/en</title>
-    <ns>1198</ns>
-    <id>590</id>
-    <revision>
-      <id>4333</id>
-      <parentid>4276</parentid>
-      <timestamp>2013-12-16T17:44:51Z</timestamp>
-      <contributor>
-        <username>FuzzyBot</username>
-        <id>37</id>
-      </contributor>
-      <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="110">It doesn't have many services. There is a shop and a car ferry visits the island
-from the mainland once a day.</text>
-      <sha1>eh0eufbw4gpunsperf6j2g6allbntor</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -51158,28 +51077,6 @@ Currently broken due to changes by torproject.org. You have to [[Manually Updati
       <text xml:space="preserve" bytes="177">Possible workarounds, more information, etc. can be found in the Whonix User Help Forum discussion thread:
 [[Special:AWCforum/st/id261/VirtualBox_shared_directories_on....html]]</text>
       <sha1>3mw03vp261tapw0cvdmmg4g61oo3mx8</sha1>
-      <model>wikitext</model>
-      <format>text/x-wiki</format>
-    </revision>
-  </page>
-  <page>
-    <title>Translations:Tt/1/en</title>
-    <ns>1198</ns>
-    <id>597</id>
-    <revision>
-      <id>4329</id>
-      <parentid>4284</parentid>
-      <timestamp>2013-12-16T17:44:31Z</timestamp>
-      <contributor>
-        <username>FuzzyBot</username>
-        <id>37</id>
-      </contributor>
-      <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="289">Fréttinga is a small municipality in MungoLand, located on the BaMungo island.
-It hosts a population of about 400 people. It has some agriculture and fishing and
-tourists like to visit it in the summer time. 
-It has marvelous beaches with a lot of [[Special:MyLanguage/Seagull|seagulls]].</text>
-      <sha1>jpyyc89w2zbsup5u5frc591lwb1t1uh</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -51875,24 +51772,6 @@ See [https://anonymousoperatingsystem.wordpress.com/2013/12/13/whonix-gateway-er
     </revision>
   </page>
   <page>
-    <title>Translations:Tt/2/en</title>
-    <ns>1198</ns>
-    <id>633</id>
-    <revision>
-      <id>4320</id>
-      <timestamp>2013-12-16T16:47:43Z</timestamp>
-      <contributor>
-        <username>FuzzyBot</username>
-        <id>37</id>
-      </contributor>
-      <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="14">== Services ==</text>
-      <sha1>d4z2tek2qjo4vwuzdxn09kpldk8v77i</sha1>
-      <model>wikitext</model>
-      <format>text/x-wiki</format>
-    </revision>
-  </page>
-  <page>
     <title>Translations:Download/66/en</title>
     <ns>1198</ns>
     <id>634</id>
@@ -51999,62 +51878,6 @@ License can be found in the /usr/share/common-licenses' directory.</text>
       <comment>Importing a new version from external source</comment>
       <text xml:space="preserve" bytes="16">== 2. Install ==</text>
       <sha1>0eithzzqwy6tl8tn86a5mks6td23u21</sha1>
-      <model>wikitext</model>
-      <format>text/x-wiki</format>
-    </revision>
-  </page>
-  <page>
-    <title>Translations:Tt/6/en</title>
-    <ns>1198</ns>
-    <id>640</id>
-    <revision>
-      <id>4331</id>
-      <timestamp>2013-12-16T17:44:42Z</timestamp>
-      <contributor>
-        <username>FuzzyBot</username>
-        <id>37</id>
-      </contributor>
-      <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="27">[[Category:Municipalities]]</text>
-      <sha1>4fum3xutw6ff4qwmm8xearhvfip2cji</sha1>
-      <model>wikitext</model>
-      <format>text/x-wiki</format>
-    </revision>
-  </page>
-  <page>
-    <title>Translations:Tt/5/en</title>
-    <ns>1198</ns>
-    <id>641</id>
-    <revision>
-      <id>4332</id>
-      <timestamp>2013-12-16T17:44:48Z</timestamp>
-      <contributor>
-        <username>FuzzyBot</username>
-        <id>37</id>
-      </contributor>
-      <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="86">Main events:
-* The roof of the church fell down in 2009
-* New church was built in 1877</text>
-      <sha1>mep09tq333a2ij1e47rbshmvrg8ua99</sha1>
-      <model>wikitext</model>
-      <format>text/x-wiki</format>
-    </revision>
-  </page>
-  <page>
-    <title>Translations:Tt/4/en</title>
-    <ns>1198</ns>
-    <id>642</id>
-    <revision>
-      <id>4335</id>
-      <timestamp>2013-12-16T17:44:56Z</timestamp>
-      <contributor>
-        <username>FuzzyBot</username>
-        <id>37</id>
-      </contributor>
-      <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="28">A typical view of Fréttinga</text>
-      <sha1>jo2cyw6m0duytzibd7jey0y8krkk1k6</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -52467,6 +52290,106 @@ To get a more complete list, install Debian (with KDE) on bare metal using the r
 
 [[Category:Documentation]]</text>
       <sha1>gf2p501lqzaqpibtc142wxry6apvfaz</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/2/fr</title>
+    <ns>1198</ns>
+    <id>644</id>
+    <revision>
+      <id>4356</id>
+      <timestamp>2013-12-20T00:32:00Z</timestamp>
+      <contributor>
+        <username>Fortasse</username>
+        <id>1</id>
+      </contributor>
+      <comment>Created page with &quot;[[Image:whonix.jpg|center|Whonix Concept|400px]]&quot;</comment>
+      <text xml:space="preserve" bytes="48">[[Image:whonix.jpg|center|Whonix Concept|400px]]</text>
+      <sha1>lpmn1wk92ov4dsbi6sutlgov3icqm42</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Main Page/fr</title>
+    <ns>0</ns>
+    <id>645</id>
+    <revision>
+      <id>4357</id>
+      <timestamp>2013-12-20T00:32:01Z</timestamp>
+      <contributor>
+        <username>Fortasse</username>
+        <id>1</id>
+      </contributor>
+      <comment>Created page with &quot;[[Image:whonix.jpg|center|Whonix Concept|400px]]&quot;</comment>
+      <text xml:space="preserve" bytes="4926">{{Header}}
+
+&lt;languages /&gt;
+{{Infobox OS
+| logo                   = [[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|alt=Download Whonix]]
+| name                   = Whonix
+| screenshot             = [[Image:kde0_5_0.png|Whonix-Workstation 0.5.6 with KDE Desktop|200px]]
+| caption                = Whonix-Workstation 0.5.6 with KDE Desktop
+| developer              = none / Whonix developers
+| family                 = [https://en.wikipedia.org/wiki/Unix-like Unix-like], based on [https://en.wikipedia.org/wiki/Debian Debian]
+| source_model           = [https://en.wikipedia.org/wiki/Open_source Open Source] 
+| working_state          = active
+| released               = 29 Feb 2012
+| latest_release_version = [[Download|{{Version}}]]
+| latest_release_date    = {{Start date and age|2013|10|11|df=yes}}
+| latest_test_version    = [[Dev/Build Documentation|{{DevTag}}]]
+| latest_test_date       = {{Start date and age|2013|09|26|df=yes}}
+| marketing target       = Anonymity; Privacy; Security; Personal computing; [[HostingLocationHiddenServices|Location Hidden Servers]]
+| kernel_type            = [https://en.wikipedia.org/wiki/Monolithic_kernel Monolithic] ([https://en.wikipedia.org/wiki/Linux_kernel Linux kernel])
+| ui                     = [https://en.wikipedia.org/wiki/KDE KDE]
+| license                = [https://en.wikipedia.org/wiki/Free_software Free software], mainly the [https://en.wikipedia.org/wiki/GNU_GPL GNU GPL], and other licenses&lt;ref&gt;{{cite web|url=http://www.debian.org/legal/licenses/|title=License information|publisher=Debian|accessdate=2009-02-28}}&lt;/ref&gt;
+| website                = [https://www.whonix.org https]; &lt;html&gt;&lt;a class=&quot;link-https&quot; style=&quot;color: #3366BB&quot; href=&quot;http://zo7fksnun4b4v4jv.onion&quot; rel=&quot;nofollow&quot;&gt;.onion&lt;/a&gt;&lt;/html&gt;
+| updatemodel            = [https://en.wikipedia.org/wiki/Advanced_Packaging_Tool APT] (several front-ends available)
+| preceded_by            = [https://trac.torproject.org/projects/tor/wiki/doc/JanusVM JanusVM]&lt;ref&gt;http://www.webcitation.org/6IA21tFaM&lt;/ref&gt;; [http://www.makeuseof.com/tag/browse-email-safely-anonymously-torbox/ TorBOX]&lt;ref&gt;http://www.webcitation.org/6IA20bIq5&lt;/ref&gt;
+| supported_platforms    = x86 compatible and/or VirtualBox + &lt;ref&gt;[[Other Operating Systems|Custom-Workstation]]: self made builds can run on any real or virtual hardware as long as they are behind a Whonix-Gateway. Tor Browser binaries are only available for a limited number of platforms (Windows, Linux, BSD, Mac).&lt;/ref&gt;
+}}
+
+[[Image:whonix.jpg|center|Whonix Concept|400px]]
+
+Whonix is an operating system focused on anonymity, privacy and security. It's based on the Tor anonymity network&lt;ref&gt;https://www.torproject.org/about/overview.html.en&lt;/ref&gt;, Debian GNU/Linux&lt;ref&gt;https://en.wikipedia.org/wiki/Debian&lt;/ref&gt; and security by isolation. DNS leaks are impossible, and not even malware with root privileges can find out the user's real IP. 
+
+Whonix consists of two parts: One solely runs Tor and acts as a gateway, which we call Whonix-Gateway. The other, which we call Whonix-Workstation, is on a completely isolated network. Only connections through Tor are possible.
+
+To learn more about security and anonymity under Whonix, please continue to the [[About|About Whonix]] page.
+
+[[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|alt=Download Whonix]]
+
+= Screenshots =
+&lt;gallery&gt;
+Image:kde0_5_0.png|Whonix-Workstation 0.5.6 with KDE Desktop
+Image:whonixcheck_gui.png|[[whonixcheck]]
+Image:timesync_gui.png|[[TimeSync]]
+Image:stream_isolation.1.0.jpg|[[Stream Isolation]]
+Image:mat.png|MAT - [[Metadata]] Anonymisation Toolkit
+Image:flash_leak_test.png|[[Browser Plugins|Flash]] Leak Test SocksPort and TransPort
+Image:Thunderbird_17.0.png|Mozilla Thunderbird (called Icedove in Debian) with TorBirdy, see [[E-Mail]]
+Image:xchat_screenshot_created_by_adrelanos.png|[[XChat]], IRC Chat Client
+Image:torbrowser.png|[[Tor Browser]], privacy by design. Fighting web fingerprinting and linkability.
+Image:shield_badge.png|Whonix is a member of the [http://internetdefenseleague.org Internet Defense League].
+Image:OIN_logo_200px.png|Whonix is a [http://www.openinventionnetwork.com/licensees.php licensee] of the [https://en.wikipedia.org/wiki/Open_Invention_Network Open Invention Network].
+Image:donate.png|link=Donate|[[Donate|Donate to Whonix!]]
+&lt;/gallery&gt;
+
+= Footnotes =
+Whonix is produced independently of, and carries no guarantee from, The Tor Project&lt;ref&gt;https://www.torproject.org&lt;/ref&gt;.
+
+&lt;references /&gt;
+
+Thanks to Tomchen1989 from Wikimedia Commons for the download button! [https://commons.wikimedia.org/wiki/File:Download_Button.svg 1] ([http://www.webcitation.org/6I2DQzdu0 w])
+Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_43.htm awxcnx.de]!
+&lt;!---
+&lt;a href=&quot;https://plus.google.com/108150429836421683225&quot; rel=&quot;publisher&quot;&gt;Google+&lt;/a&gt;
+---&gt;
+{{Footer}}
+[[Category:Documentation]]</text>
+      <sha1>e97mpcqj5ylqk74gpn9l2htm3u7o1ij</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
