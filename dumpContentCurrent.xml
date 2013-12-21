@@ -35,17 +35,16 @@
     <ns>0</ns>
     <id>1</id>
     <revision>
-      <id>4222</id>
-      <parentid>4221</parentid>
-      <timestamp>2013-12-16T16:30:49Z</timestamp>
+      <id>4414</id>
+      <parentid>4222</parentid>
+      <timestamp>2013-12-21T15:22:30Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>Marked this version for translation</comment>
-      <text xml:space="preserve" bytes="5062">{{Header}}
+      <text xml:space="preserve" bytes="5049">{{Header}}
 
-&lt;languages /&gt;&lt;translate&gt;
+&lt;translate&gt;
 
 &lt;!--T:1--&gt;
 {{Infobox OS
@@ -118,7 +117,7 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
 &lt;/translate&gt;
 {{Footer}}
 [[Category:Documentation]]</text>
-      <sha1>bsfqwc6e809q8bv173mc4dr1657j8yw</sha1>
+      <sha1>p9exud08r2r4s0iiwphlt0c36hd8e50</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -6402,15 +6401,15 @@ You could try the [https://www.riseup.net/en/openvpn-linux#gnome riseup.net Open
     <ns>0</ns>
     <id>92</id>
     <revision>
-      <id>4409</id>
-      <parentid>4408</parentid>
-      <timestamp>2013-12-21T10:08:05Z</timestamp>
+      <id>4433</id>
+      <parentid>4428</parentid>
+      <timestamp>2013-12-21T22:37:54Z</timestamp>
       <contributor>
-        <username>Jekyll</username>
-        <id>161</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>/* Preparation */</comment>
-      <text xml:space="preserve" bytes="19116">{{Header}}
+      <comment>/* Logon and upgrade Debian */</comment>
+      <text xml:space="preserve" bytes="19511">{{Header}}
 
 '''WARNING''': Please don't forget reading the Warnings chapter.
 
@@ -6573,6 +6572,10 @@ nano /etc/apt/sources.list
 ## Add a new source to the file.
 deb http://ftp.us.debian.org/debian/ jessie main
 
+## If you want to install VirtualBox, you also need to add the &quot;contrib&quot; repository to that file.
+## If you want to know why VirtualBox is in the contrib repository, see the footnote below.
+deb http://ftp.us.debian.org/debian/ jessie main contrib
+
 ## Press CTRL+X to exit, press Y to save,  press Enter to confirm the changes in the file
 
 ## Refresh package lists.
@@ -6581,6 +6584,8 @@ apt-get update
 ## Upgrade.
 apt-get dist-upgrade
 &lt;/pre&gt;
+
+&lt;ref&gt;Please see [[Dev/Virtualization_Platform#VirtualBox_no_longer_in_Debian_main]] for more information.&lt;/ref&gt;
 
 == Preparation ==
 Install sudo and git. &lt;ref&gt;You need git to obtain the source code. Alternatively, you could also download a git tag as an archive using a (torified) browser: https://github.com/Whonix/Whonix/tags&lt;/ref&gt;
@@ -6601,6 +6606,9 @@ addgroup user sudo
 
 ## Reboot the system
 shutdown -r now
+
+## (host) login with &quot;user&quot;
+user
 &lt;/pre&gt;
 
 '''Optional''': &lt;br /&gt;
@@ -6816,7 +6824,7 @@ To get a more complete list, install Debian (with KDE) on bare metal using the r
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>id5ftqi7a6uz3cufme7519jnxaab213</sha1>
+      <sha1>4wgsepctvw1twitw3okq8hgf3fyf79h</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -30975,15 +30983,15 @@ For technical stuff, see [[Dev/Mixmaster]].
     <ns>0</ns>
     <id>260</id>
     <revision>
-      <id>4361</id>
-      <parentid>4359</parentid>
-      <timestamp>2013-12-20T01:20:24Z</timestamp>
+      <id>4411</id>
+      <parentid>4361</parentid>
+      <timestamp>2013-12-21T14:32:06Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Manually updating Tor Browser (TBB Alpha version) */</comment>
-      <text xml:space="preserve" bytes="4414">{{Header}}
+      <comment>/* Manually updating Tor Browser */</comment>
+      <text xml:space="preserve" bytes="4227">{{Header}}
 
 = Introduction =
 The Pre Install Advice page contains a chapter [[Pre_Install_Advice#Tor_Browser_Bundle|recommending]] to learn the basics about torproject.org's TBB before starting with Whonix.
@@ -31005,8 +31013,6 @@ Check https://blog.torproject.org.
 See [[Tor Browser]].
 
 = Manually updating Tor Browser =
-'''Only if you are using the Alpha version of TBB (Tor Browser Bundle 3.0alpha2 and above)!''' If you are using TBB Stable version (below TBB 3.0), please follow the instructions above.
-
 (1) Go to https://www.torproject.org/ and/or http://idnxcnkne4qt76tg.onion/ and download the Tor Browser Bundle for Linux 32 bit. Store it in ''/home/user/''.
 
 (2) Read https://www.torproject.org/docs/verifying-signatures.html.en and/or http://idnxcnkne4qt76tg.onion/docs/verifying-signatures.html.en and learn about gpg verification.
@@ -31039,7 +31045,7 @@ See [[Tor Browser]].
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>9uw1rhvrfd9865arkmdkfpeh1h9oel7</sha1>
+      <sha1>clfj2tg1cfiyp2u85xgvllozczsg6qk</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -47240,20 +47246,20 @@ ii  zsh-common            5.0.2-4         all             architecture independe
     <ns>10</ns>
     <id>491</id>
     <revision>
-      <id>4410</id>
-      <parentid>4368</parentid>
-      <timestamp>2013-12-21T10:08:12Z</timestamp>
+      <id>4430</id>
+      <parentid>4427</parentid>
+      <timestamp>2013-12-21T21:22:51Z</timestamp>
       <contributor>
-        <username>Jekyll</username>
-        <id>161</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>/* Get Whonix Source Code */</comment>
-      <text xml:space="preserve" bytes="2742">== Get Whonix Source Code ==
-Logon and get the Whonix source code.&lt;ref&gt;From https://github.com/adrelanos/Whonix and not from https://github.com/Whonix/Whonix, because only adrelanos/Whonix contains git tags of the testers-only version.&lt;/ref&gt;
+      <comment>Rejected the last text change as requested</comment>
+      <text xml:space="preserve" bytes="2758">== Get Whonix Source Code ==
+Install git and get the Whonix's source code.&lt;ref&gt;From https://github.com/adrelanos/Whonix and not from https://github.com/Whonix/Whonix, because only adrelanos/Whonix contains git tags of the testers-only version.&lt;/ref&gt;
 
 &lt;pre&gt;
-## (host) login with &quot;user&quot;
-user
+## Install git.
+sudo apt-get install git
 
 ## Get source code.
 git clone https://github.com/adrelanos/Whonix
@@ -47339,7 +47345,7 @@ git checkout 7.3.7
 &lt;/pre&gt;
 
 You have to replace {{Code2|7.3.7}} with the actual version you want to build. The stable version, the testers-only version or the developers version. You can learn about current versions reading [[Download#Stay_tuned|Whonix News Blogs]]. New versions are also announced on the [[Mailing_Lists#whonix-devel|whonix-devel mailing list]]. So you could alternatively check its archives. Signing up for whonix-devel is another way to get informed about new releases.</text>
-      <sha1>22co61fo2hx7d85rjj22cq1xean5hx3</sha1>
+      <sha1>lplfu6xjbvyxcer3hwvc99bzciin2l3</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -47988,15 +47994,15 @@ Disadvantages:
     <ns>0</ns>
     <id>509</id>
     <revision>
-      <id>4407</id>
-      <parentid>4406</parentid>
-      <timestamp>2013-12-21T07:05:59Z</timestamp>
+      <id>4425</id>
+      <parentid>4424</parentid>
+      <timestamp>2013-12-21T16:00:55Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Creating your Initial Keypair */</comment>
-      <text xml:space="preserve" bytes="19656">{{Header}}
+      <comment>/* Creating your Signing Sub Key */</comment>
+      <text xml:space="preserve" bytes="19974">{{Header}}
 
 '''UNFINISHED!'''
 '''ADVANCED USERS ONLY!'''
@@ -48143,8 +48149,8 @@ gpg (GnuPG) 1.4.15; Copyright (C) 2013 Free Software Foundation, Inc.
 This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.
 
-gpg: keyring `ty/secring.gpg' created
-gpg: keyring `ty/pubring.gpg' created
+gpg: keyring `/home/user/gpg-master/secring.gpg' created
+gpg: keyring `/home/user/gpg-master/pubring.gpg' created
 Please select what kind of key you want:
    (1) RSA and RSA (default)
    (2) DSA and Elgamal
@@ -48161,7 +48167,7 @@ Please specify how long the key should be valid.
       &lt;n&gt;m = key expires in n months
       &lt;n&gt;y = key expires in n years
 Key is valid for? (0) 1y
-Key expires at Sat 20 Dec 2014 10:01:24 PM UTC
+Key expires at Sun 21 Dec 2014 03:51:23 PM UTC
 Is this correct? (y/N) y
 
 You need a user ID to identify your key; the software constructs the user ID
@@ -48177,17 +48183,19 @@ You selected this USER-ID:
 Change (N)ame, (C)omment, (E)mail or (O)kay/(Q)uit? o
 You need a Passphrase to protect your secret key.
 &lt;passphrase&gt;
+public and secret key created and signed.
 
 gpg: checking the trustdb
 gpg: 3 marginal(s) needed, 1 complete(s) needed, PGP trust model
 gpg: depth: 0  valid:   1  signed:   0  trust: 0-, 0q, 0n, 0m, 0f, 1u
-pub  4096R/488BA441 2013-03-13 [expires: 2014-12-21]
-      Key fingerprint = B878 1FB6 B187 B94C 3E52  2AFA EB1D B79A 488B A441
-uid                  Bilbo Baggins &lt;bilbo@shire.org&gt;
-sub  4096R/488BA441 2013-12-21 [expires: 2014-12-21]
+gpg: next trustdb check due at 2014-12-21
+pub   4096R/0x310F6FAD4BD6D42A 2013-12-21 [expires: 2014-12-21]
+      Key fingerprint = C451 1D27 531E 3B5F E84D  F579 310F 6FAD 4BD6 D42A
+uid                 [ultimate] Bilbo Baggins &lt;bilbo@shire.org&gt;
+sub   4096R/0x2516E552C8D4D937 2013-12-21 [expires: 2014-12-21]
 &lt;/pre&gt;
 
-Have a look at the &quot;pub  4096R/488BA441 2013-03-13&quot; line. In this example 0x488BA441 is your short key id, your key id will differ.
+Have a look at the &quot;pub  4096R/488BA441 2013-03-13&quot; line. In this example 0x2516E552C8D4D937 is your short key id, your key id will differ.
 
 == Creating your Signing Sub Key ==
 Now for the special sauce: let’s add our new signing subkey.
@@ -48195,19 +48203,16 @@ Now for the special sauce: let’s add our new signing subkey.
 Use the {{Code2|gpg ‐‐edit-key}} command. At the gpg&gt; prompt, enter the command addkey. Select RSA (sign only) and 4096 for the keysize. Don’t forget to save at the last gpg&gt; prompt:
 
 &lt;pre&gt;
-gpg --homedir ~/gpg-master --edit-key 0x488BA441
-gpg (GnuPG) 1.4.11; Copyright (C) 2010 Free Software Foundation, Inc.
+gpg --homedir ~/gpg-master --edit-key 0x2516E552C8D4D937
+gpg (GnuPG) 1.4.15; Copyright (C) 2013 Free Software Foundation, Inc.
 This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.
 
 Secret key is available.
 
-gpg: checking the trustdb
-gpg: 3 marginal(s) needed, 1 complete(s) needed, PGP trust model
-gpg: depth: 0  valid:   1  signed:   0  trust: 0-, 0q, 0n, 0m, 0f, 1u
-pub  4096R/488BA441  created: 2013-03-13  expires: never       usage: SC  
-                     trust: ultimate      validity: ultimate
-sub  4096R/69B0EA85  created: 2013-03-13  expires: never       usage: E   
+pub  4096R/0x310F6FAD4BD6D42A  created: 2013-12-21  expires: 2014-12-21  usage: SC  
+                               trust: ultimate      validity: ultimate
+sub  4096R/0x2516E552C8D4D937  created: 2013-12-21  expires: 2014-12-21  usage: E   
 [ultimate] (1). Bilbo Baggins &lt;bilbo@shire.org&gt;
 
 gpg&gt; addkey
@@ -48215,33 +48220,32 @@ Key is protected.
 
 You need a passphrase to unlock the secret key for
 user: &quot;Bilbo Baggins &lt;bilbo@shire.org&gt;&quot;
-4096-bit RSA key, ID 488BA441, created 2013-03-13
+4096-bit RSA key, ID 0x310F6FAD4BD6D42A, created 2013-12-21
 &lt;passphrase&gt;
-
 Please select what kind of key you want:
-    (3) DSA (sign only)
-    (4) RSA (sign only)
-    (5) Elgamal (encrypt only)
-    (6) RSA (encrypt only)
+   (3) DSA (sign only)
+   (4) RSA (sign only)
+   (5) Elgamal (encrypt only)
+   (6) RSA (encrypt only)
 Your selection? 4
 RSA keys may be between 1024 and 4096 bits long.
 What keysize do you want? (2048) 4096
 Requested keysize is 4096 bits
 Please specify how long the key should be valid.
-       0 = key does not expire
-    &lt;n&gt;  = key expires in n days
-    &lt;n&gt;w = key expires in n weeks
-    &lt;n&gt;m = key expires in n months
-    &lt;n&gt;y = key expires in n years
+         0 = key does not expire
+      &lt;n&gt;  = key expires in n days
+      &lt;n&gt;w = key expires in n weeks
+      &lt;n&gt;m = key expires in n months
+      &lt;n&gt;y = key expires in n years
 Key is valid for? (0) 1y
-Key expires at Sat 21 Dec 2014 10:01:24 PM UTC
+Key expires at Sun 21 Dec 2014 03:58:16 PM UTC
 Is this correct? (y/N) y
 Really create? (y/N) y
 
-pub  4096R/488BA441  created: 2013-03-13  expires: never       usage: SC  
-                     trust: ultimate      validity: ultimate
-sub  4096R/69B0EA85  created: 2013-03-13  expires: never       usage: E   
-sub  4096R/C24C2CDA  created: 2013-03-13  expires: never       usage: S   
+pub  4096R/0x310F6FAD4BD6D42A  created: 2013-12-21  expires: 2014-12-21  usage: SC  
+                               trust: ultimate      validity: ultimate
+sub  4096R/0x2516E552C8D4D937  created: 2013-12-21  expires: 2014-12-21  usage: E   
+sub  4096R/0x44FE8C6D8E9594FC  created: 2013-12-21  expires: 2014-12-21  usage: S   
 [ultimate] (1). Bilbo Baggins &lt;bilbo@shire.org&gt;
 
 gpg&gt; save
@@ -48251,20 +48255,20 @@ gpg&gt; save
 Now that your keypair has been created, let’s export it so that we can back it up:
 
 &lt;pre&gt;
-gpg --homedir ~/gpg-master --armor --export-secret-keys bilbo@shire.org &gt; bilbo@shire.org.private.gpg-key
-gpg --homedir ~/gpg-master --armor --export bilbo@shire.org &gt; bilbo@shire.org.public.gpg-key
+gpg --homedir ~/gpg-master --armor --export-secret-keys 0x2516E552C8D4D937 &gt; 0x2516E552C8D4D937.private.gpg-key
+gpg --homedir ~/gpg-master --armor --export 0x2516E552C8D4D937 &gt; 0x2516E552C8D4D937.public.gpg-key
 &lt;/pre&gt;
 
-This will create two files: your public key and your private key. Protect these two files, along with the revocation certificate file, as best as you can — don’t keep them on your every day operating system, keep them in a safe place. These three files are your master keypair.
+This will create two files: your public key and your private key. Backup these two files, as best as you can.
 
 = Creating your Slave Key =
 == Export Secret Subkeys ==
-Now we have our master keypair in our keyring, along with three files representing the master keypair plus the keypair’s revocation certificate. To derive our slave keypair from our master keypair, we have to create a copy of our master keypair and remove the master secret key.
+Now we have our master keypair in our keyring, along with two files representing the master keypair plus the keypair’s revocation certificate. To derive our slave keypair from our master keypair, we have to create a copy of our master keypair and remove the master secret key.
 
 Export all of the subkeys from our new keypair to a file:
 
 &lt;pre&gt;
-gpg --homedir ~/gpg-master --export-secret-subkeys bilbo@shire.org &gt; subkeys
+gpg --homedir ~/gpg-master --armor --export-secret-subkeys 0x2516E552C8D4D937 &gt; subkeys
 &lt;/pre&gt;
 
 == Create your Slave Key without Master Key ==
@@ -48284,7 +48288,16 @@ rm subkeys
 Re-import our public key we exported.
 
 &lt;pre&gt;
-gpg --import bilbo@shire.org.public.gpg-key
+gpg --import 0x2516E552C8D4D937.public.gpg-key
+&lt;/pre&gt;
+
+Set a new password for your slave key. Remember, you'll have two different passwords. One for your master key, one for your slave key.
+
+&lt;pre&gt;
+gpg --edit-key 0x2516E552C8D4D937
+passwd
+...
+save
 &lt;/pre&gt;
 
 That’s all! You can verify it worked by running:
@@ -48303,7 +48316,13 @@ See how the third line begins with “sec#”, not “sec”? The pound sign mea
 
 To make sure everything is alright, use switch gpg's homedir to {{Code|~/gpg-master}} and see if the secret master key is available.
 
-You can now copy your {{Code|~/.gnupg}} folder to an (encrypted) disk and then use it on your every day operating system's {{Code|~/.gnupg}}.
+Store your slave key in a file.
+
+&lt;pre&gt;
+gpg --armor --export-secret-subkeys 0x2516E552C8D4D937 &gt; 0x2516E552C8D4D937.secret-subkeys.gpg-key
+&lt;/pre&gt;
+
+You can now copy your public key, master key and slave key to a disk and import your public key and your slave key to your every day operating system(s).
 
 = In Case of Emergency =
 Should the worst happen and your slave keypair gets lost, compromised or stolen, we need to revoke the subkeys on that keypair.
@@ -48313,13 +48332,13 @@ Unlock your safe-deposit box and get your master keypair out.
 Boot a live USB of Debian or your distro of choice. Then, import your master keypair into the live USB’s keyring:
 
 &lt;pre&gt;
-gpg --import /path/to/bilbo@shire.org.public.gpg-key /path/to/bilbo@shire.org.private.gpg-key
+gpg --import /path/to/0x2516E552C8D4D937.public.gpg-key /path/to/0x2516E552C8D4D937.private.gpg-key
 &lt;/pre&gt;
 
 Now use {{Code2|gpg ‐‐edit-key}} to interactively revoke your subkeys:
 
 &lt;pre&gt;
-gpg --edit-key 0x488BA441
+gpg --edit-key 0x2516E552C8D4D937
 gpg (GnuPG) 1.4.11; Copyright (C) 2010 Free Software Foundation, Inc.
 This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.
@@ -48417,7 +48436,7 @@ Most of this text has been written by [https://alexcabal.com/creating-the-perfec
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>eav3zqq5lfz1ikmj7cug6v5vpt0uelv</sha1>
+      <sha1>p51qgmxrdqw03twbo6c00siawf1xgd4</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -51894,14 +51913,16 @@ License can be found in the /usr/share/common-licenses' directory.</text>
     <ns>0</ns>
     <id>643</id>
     <revision>
-      <id>4337</id>
-      <timestamp>2013-12-17T20:29:05Z</timestamp>
+      <id>4429</id>
+      <parentid>4337</parentid>
+      <timestamp>2013-12-21T18:50:57Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <username>Jekyll</username>
+        <id>161</id>
       </contributor>
-      <comment>Created page with &quot;{{Header}}  '''WARNING''': Please don't forget reading the Warnings chapter.  = Introduction = == Technical Introduction == When setting up Whonix in the form of two Virtual M...&quot;</comment>
-      <text xml:space="preserve" bytes="18211">{{Header}}
+      <text xml:space="preserve" bytes="18223">{{Header}}
+
+TEST CHECK
 
 '''WARNING''': Please don't forget reading the Warnings chapter.
 
@@ -52296,7 +52317,7 @@ To get a more complete list, install Debian (with KDE) on bare metal using the r
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>gf2p501lqzaqpibtc142wxry6apvfaz</sha1>
+      <sha1>b5z15mx46wvzi4p93pqgl5lfwnwbf67</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -52397,6 +52418,42 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
 {{Footer}}
 [[Category:Documentation]]</text>
       <sha1>e97mpcqj5ylqk74gpn9l2htm3u7o1ij</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Test1:Sandbox</title>
+    <ns>0</ns>
+    <id>646</id>
+    <revision>
+      <id>4431</id>
+      <timestamp>2013-12-21T22:10:20Z</timestamp>
+      <contributor>
+        <username>Test1</username>
+        <id>165</id>
+      </contributor>
+      <comment>Created page with &quot;test&quot;</comment>
+      <text xml:space="preserve" bytes="4">test</text>
+      <sha1>jrwjerxiekdtj9k82lg930wpkr6tq6r</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Adrelanos:Sandbox</title>
+    <ns>0</ns>
+    <id>647</id>
+    <revision>
+      <id>4432</id>
+      <timestamp>2013-12-21T22:27:37Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;test&quot;</comment>
+      <text xml:space="preserve" bytes="4">test</text>
+      <sha1>jrwjerxiekdtj9k82lg930wpkr6tq6r</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
