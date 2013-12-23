@@ -666,15 +666,15 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>19</id>
     <revision>
-      <id>4236</id>
-      <parentid>4235</parentid>
-      <timestamp>2013-12-16T16:35:30Z</timestamp>
+      <id>4449</id>
+      <parentid>4448</parentid>
+      <timestamp>2013-12-23T05:29:39Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>Marked this version for translation</comment>
-      <text xml:space="preserve" bytes="18516">{{Header}}
+      <comment>/* Whonix-Gateway: Err: http://deb.torproject.org tor-0.2.4.x-jessie/main i386 Packages 404 Not Found */</comment>
+      <text xml:space="preserve" bytes="20824">{{Header}}
 &lt;!--
 Copyright:
 
@@ -932,12 +932,49 @@ In case you are interested in Whonix source code updates, [[Dev/git#subscribe_to
 
 = Known bugs = &lt;!--T:55--&gt;
 == Normal ==
+=== Connection Issues - Tor stops working after an Upgrade and needs a Workaround ===
+When upgrading to Tor 0.2.4.19-1~d79.jessie+1 (using sudo apt-get dist-upgrade), your Tor connection may go down. There is a temporary workaround.
+
+Open /etc/default/tor.
+
+&lt;pre&gt;
+## If you are using a graphical Whonix-Gateway, use:
+kdesudo kate /etc/default/tor
+
+## Or alternatively, if you are using a terminal-only Whonix-Gateway, use:
+sudo nano /etc/default/tor
+&lt;/pre&gt;
+
+Scroll down, near bottom comment in (by removing the # in front of it).
+
+&lt;pre&gt;
+USE_AA_EXEC=&quot;no&quot;
+&lt;/pre&gt;
+
+Then try:
+
+&lt;pre&gt;
+sudo service tor restart
+&lt;/pre&gt;
+
+You should keep that in mind and undo that change when Whonix or Tor fixes that bug. We'll keep you posted. (See [[Download#Stay_tuned]] and [[Security_Guide#Recommendation_to_install_latest_security_updates_on_all_systems]].)
+
+Forum help thread:
+[[Special:AWCforum/st/id287/new_tor_and_debian_updates_today....html]]
+
 === Tor Browser Updater (Whonix) ===
 Currently broken due to changes by torproject.org. You have to [[Manually Updating Tor Browser|manually update Tor Browser]] in meanwhile.
 
 &lt;!--T:56--&gt;
 Forum help thread:
 [[Special:AWCforum/st/id262/updating_TOR_browser_error...html]]
+
+=== Tor Browser Starter (Whonix) ===
+After manually upgrading Tor Browser (see above)... To start Tor Browser, got to your /home/user/tor-browser_en-US folder and double click start-tor-browser. Or type in terminal (Konsole).
+
+&lt;pre&gt;
+/home/user/tor-browser_en-US/start-tor-browser
+&lt;/pre&gt;
 
 === Virtual Box Shared Folder Issues === &lt;!--T:57--&gt;
 Shared Folders aren’t working with the latest Linux kernel. (This is a Debian/Virtual Box issue, not caused by Whonix. Has already been reported to upstream by a Debian user.)
@@ -970,7 +1007,22 @@ Currently needs a workaround as well. Please see [[Special:AWCforum/st/id167/#po
 
 == Minor == &lt;!--T:65--&gt;
 === Whonix-Gateway: Err: http://deb.torproject.org tor-0.2.4.x-jessie/main i386 Packages 404 Not Found ===
-See [https://anonymousoperatingsystem.wordpress.com/2013/12/13/whonix-gateway-err-httpdeb-torproject-org-tor-0-2-4-x-jessiemain-i386-packages-404-not-found/ blog post].
+'''Short answer''': &lt;br /&gt;
+Update and upgrade your underlying Debian system (Whonix is a derivative of Debian).
+&lt;pre&gt;
+sudo apt-get update
+sudo apt-get dist-upgrade
+&lt;/pre&gt;
+
+See also [[Security_Guide#Recommendation_to_install_latest_security_updates_on_all_systems]]. This bug will be fixed with next Whonix upgrade (will take some time). No other action strictly required for now.
+
+'''Long answer''': &lt;br /&gt;
+This is because torproject deprecated that repository. That was to be expected. The repository we're using now is already preconfigured (in /etc/apt/sources.list.d/torproject.list).
+
+Taking action isn't important at this stage. You can comment it out (by putting a # in front of it) in /etc/apt/sources.list.d/torproject.list if you want. ({{Code|kdesudo kate /etc/apt/sources.list.d/torproject.list}} for graphical Whonix-Gateway or {{Code|sudo nano /etc/apt/sources.list.d/torproject.list}} for terminal-only Whonix-Gateway) If you don't do it, it will be auto fixed with next upgrade of Whonix.
+
+=== Defunct Desktop Shortcuts ===
+The desktop shortcuts Tor Browser, Contribute, Forum, Documentation, Donate won't work until there is an upgrade of Whonix. Please manually visit these pages. How to start Tor Browser has already been explained above.
 
 === &quot;apt-get source package&quot; will show &quot;dpkg-source: warning: failed to verify signature&quot; === &lt;!--T:66--&gt;
 More info [http://lists.debian.org/debian-derivatives/2013/08/msg00000.html here] (and in the following mails).
@@ -1017,7 +1069,7 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>oifr3g8qoz8rqa4sg61vd4xumhu42hj</sha1>
+      <sha1>2zl20e4dr3zzzwv3v9bwpz8uanuq6ju</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -12278,14 +12330,15 @@ for places where I could need more input. Also reviewing the whole source code o
     <ns>0</ns>
     <id>119</id>
     <revision>
-      <id>3800</id>
-      <parentid>3799</parentid>
-      <timestamp>2013-10-19T23:21:48Z</timestamp>
+      <id>4447</id>
+      <parentid>3800</parentid>
+      <timestamp>2013-12-23T05:23:11Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="16539">{{Header}}
+      <comment>/* Recommendation to install latest security updates on all systems */</comment>
+      <text xml:space="preserve" bytes="16580">{{Header}}
 = Basics =
 
 * [[Warning|Warnings]]
@@ -12313,10 +12366,16 @@ And if that's too much to read, just have a glimpse on the graphics.
 
 '''1. Important! Everything must stay current.'''
 
-Check at least at a daily base. Keep your host operating system updated. Update Whonix-Gateway and Whonix-Workstation.
+Check at least at a daily base. Keep your host operating system updated. Update Whonix-Gateway and Whonix-Workstation packages lists.
 
 &lt;pre&gt;
-sudo apt-get update &amp;&amp; sudo apt-get dist-upgrade
+sudo apt-get update
+&lt;/pre&gt;
+
+Then upgrade.
+
+&lt;pre&gt;
+sudo apt-get dist-upgrade
 &lt;/pre&gt;
 
 '''2.'''
@@ -12590,7 +12649,7 @@ For even more Security, see [[Advanced Security Guide]].
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>nsd5dzjyqohju2meodulnkjz8njkzxn</sha1>
+      <sha1>n7h2maknq0w0znxbnp54uk2m9c0u4zp</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -30973,15 +31032,15 @@ For technical stuff, see [[Dev/Mixmaster]].
     <ns>0</ns>
     <id>260</id>
     <revision>
-      <id>4411</id>
-      <parentid>4361</parentid>
-      <timestamp>2013-12-21T14:32:06Z</timestamp>
+      <id>4443</id>
+      <parentid>4411</parentid>
+      <timestamp>2013-12-23T05:04:48Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
       <comment>/* Manually updating Tor Browser */</comment>
-      <text xml:space="preserve" bytes="4227">{{Header}}
+      <text xml:space="preserve" bytes="4433">{{Header}}
 
 = Introduction =
 The Pre Install Advice page contains a chapter [[Pre_Install_Advice#Tor_Browser_Bundle|recommending]] to learn the basics about torproject.org's TBB before starting with Whonix.
@@ -31015,13 +31074,19 @@ See [[Tor Browser]].
 
 (6) If you still have the old version of TBB opened (because you are probably reading this from the old TBB), close it. (copy the next steps to Kwrite if necessary)
 
-(7) Rename your old TBB /home/user/tor-browser_en-US to something else. 
+(7) Rename your old TBB ''/home/user/tor-browser_en-US'' to something else. 
 
 (8) Extract the Tor Browser Bundle. Right click on the downloaded archive -&gt; extract -&gt; extract archive here.
 
 (9) In case you downloaded another version than ''en-US'', rename the tor-browser_''lang'' folder to ''tor-browser_en-US''. This is important, because the paths are hardcoded.
 
 (10) Done.
+
+(11) To start Tor Browser, got to your ''/home/user/tor-browser_en-US'' folder and double click ''start-tor-browser''. Or type in terminal.
+
+&lt;pre&gt;
+/home/user/tor-browser_en-US/start-tor-browser
+&lt;/pre&gt;
 
 {{mbox
 | type       = notice
@@ -31035,7 +31100,7 @@ See [[Tor Browser]].
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>clfj2tg1cfiyp2u85xgvllozczsg6qk</sha1>
+      <sha1>2edvo21gnt5vg36yp86iavksv65axju</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
