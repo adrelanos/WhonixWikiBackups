@@ -666,15 +666,15 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>19</id>
     <revision>
-      <id>4449</id>
-      <parentid>4448</parentid>
-      <timestamp>2013-12-23T05:29:39Z</timestamp>
+      <id>4453</id>
+      <parentid>4449</parentid>
+      <timestamp>2013-12-25T20:50:48Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Whonix-Gateway: Err: http://deb.torproject.org tor-0.2.4.x-jessie/main i386 Packages 404 Not Found */</comment>
-      <text xml:space="preserve" bytes="20824">{{Header}}
+      <comment>/* Normal */</comment>
+      <text xml:space="preserve" bytes="20955">{{Header}}
 &lt;!--
 Copyright:
 
@@ -1005,6 +1005,9 @@ https://addons.mozilla.org/en-us/thunderbird/addon/enigmail/
 === Mounting (CD/DVD) Devices === &lt;!--T:64--&gt;
 Currently needs a workaround as well. Please see [[Special:AWCforum/st/id167/#post_700|forum]].
 
+=== VLC / Video Player Crash ===
+For problem and workaround see forum thread: [[Special:AWCforum/st/id282/vlc_video_crash.html]].
+
 == Minor == &lt;!--T:65--&gt;
 === Whonix-Gateway: Err: http://deb.torproject.org tor-0.2.4.x-jessie/main i386 Packages 404 Not Found ===
 '''Short answer''': &lt;br /&gt;
@@ -1069,7 +1072,7 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>2zl20e4dr3zzzwv3v9bwpz8uanuq6ju</sha1>
+      <sha1>m7qc3ew3tq16pfg0omrgctrogm4ra9z</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -31665,14 +31668,14 @@ Undo Step 0 now!
     <ns>0</ns>
     <id>264</id>
     <revision>
-      <id>4116</id>
-      <parentid>3255</parentid>
-      <timestamp>2013-12-02T18:40:08Z</timestamp>
+      <id>4454</id>
+      <parentid>4116</parentid>
+      <timestamp>2013-12-25T21:04:54Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>/* Using dig */</comment>
-      <text xml:space="preserve" bytes="4979">{{Header}}
+      <text xml:space="preserve" bytes="5410">{{Header}}
 
 = Introduction =
 
@@ -31815,6 +31818,9 @@ If you are wondering, how this works and what that does, the old article, [[Dev/
 * Perhaps useful for similar projects.
 * Optional additional tests.
 
+= Integreated whonixcheck leaktest =
+Please also run {{Code|[[whonixcheck]]}} on Whonix-Gateway and Whonix-Workstation. It's Tor SocksPort and Tor TransPort test (the latter only on Whonix-Workstation &lt;ref&gt;Because Whonix-Gateway does not have a TransPort by default.&lt;/ref&gt;) are also doing leak testing. If {{Code|whonixcheck}} would report a big warning, if check.torproject.org couldn't detect Tor.
+
 = Other Leak Tests =
 
 A similar project published another leak test. Read [https://github.com/ra--/Tor-gateway/wiki/Faq How can I test if there is a leak in the setup respectively all traffic goes through Tor?]. Has not been tested with Whonix yet. If you do it, please share your results.
@@ -31823,10 +31829,13 @@ A similar project published another leak test. Read [https://github.com/ra--/Tor
 
 * [[Test]]
 
+= Footnotes =
+&lt;references /&gt;
+
 {{Footer}}
 
 [[Category:Development]] [[Category:Design]]</text>
-      <sha1>m5y9x8pg2ej6z62squwgakx6ryzuht4</sha1>
+      <sha1>hbgg0rrh1ee6oqcwn408v68p1j3grol</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
