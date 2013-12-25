@@ -2467,14 +2467,14 @@ Not compulsory, just nicely asking:
     <ns>0</ns>
     <id>56</id>
     <revision>
-      <id>4365</id>
-      <parentid>4349</parentid>
-      <timestamp>2013-12-20T17:01:15Z</timestamp>
+      <id>4452</id>
+      <parentid>4365</parentid>
+      <timestamp>2013-12-25T01:25:07Z</timestamp>
       <contributor>
         <ip>127.0.0.1</ip>
       </contributor>
-      <comment>Spelling</comment>
-      <text xml:space="preserve" bytes="49046">{{Header}}
+      <comment>/* Why don't you use OpenWRT, which is more secure?!? */</comment>
+      <text xml:space="preserve" bytes="49083">{{Header}}
 = Why are the Whonix images so big? =
 
 Compared to other &quot;Tor-VM&quot; or &quot;Tor-LiveCD/DVD&quot; projects which sometimes use special minimal or stripped down Linux distributions (e.g. TinyCore, DSL, Puppy) Whonix is larger, both VMs together are currently almost 2 GB.
@@ -2608,7 +2608,9 @@ Not finding anything doesn't mean there isn't something. The best way to get con
 So, if you believe that FreeBSD is a secure distribution, if you are even advocating that standpoint, then the burden of proof is on the person making the claim (you). It's up to you to come up with references that these security features are implemented. It is not up to the Whonix developers to spend a lot time, proving that these security features are non-existent. Or it's up to you to create such references by asking the distribution's developers. Another way would be coming up with arguments why these security features are unnecessary (this is unlikely in the specific case of package manager security). Until the claim of being a more secure distribution gets substantiated, please do not take offense by not considering that distribution. 
 
 = Why don't you use OpenWRT, which is more secure?!? =
-Same reasons as above for FreeBSD. 
+Same reasons as above for FreeBSD.
+
+OpenWRT do not have signed packages.
 
 = How is Whonix different from Tails? =
 
@@ -3018,7 +3020,7 @@ Without performing these basics steps, the setup may sound clever, but may not w
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>od0q0zr8ufymwjlqaio3ryrpldb7qx9</sha1>
+      <sha1>c0803m9w6d856lax9fj1avj254ez8p9</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
