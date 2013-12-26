@@ -7372,15 +7372,14 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
     <ns>0</ns>
     <id>96</id>
     <revision>
-      <id>4081</id>
-      <parentid>4009</parentid>
-      <timestamp>2013-11-23T03:20:51Z</timestamp>
+      <id>4455</id>
+      <parentid>4081</parentid>
+      <timestamp>2013-12-26T01:51:47Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* Verifiable Builds */</comment>
-      <text xml:space="preserve" bytes="71019">{{Header}}
+      <comment>Tails: +Incremental upgrades, +notifications (libnotify??)</comment>
+      <text xml:space="preserve" bytes="71108">{{Header}}
  
 = Introduction =
 This page contains the comparisons of Whonix, Tails, Tor Browser and Qubes OS TorVM. If anything here is incorrect or becomes outdated feel free to edit this page or [[contact]] us, we'll correct as soon as possible. See also [[#Statement about Neutrality of this Page]].
@@ -7577,7 +7576,7 @@ This page contains the comparisons of Whonix, Tails, Tor Browser and Qubes OS To
 |-
 | style=&quot;height: 27px;background-color: #f9f9f9&quot;| Operating System Updates
 | style=&quot;background-color: {{Green}}&quot;| persist once updated
-| style=&quot;background-color: {{Red}}&quot;| are lost after reboot
+| style=&quot;background-color: {{Yellow}}&quot;| Incremental upgrades in testing &lt;ref&gt;https://tails.boum.org/news/test_incremental_upgrades/index.en.html&lt;/ref&gt;
 | style=&quot;background-color: {{Green}}&quot;| persist once updated
 | style=&quot;background-color: {{Green}}&quot;| persist once updated
 |-
@@ -7691,7 +7690,7 @@ This page contains the comparisons of Whonix, Tails, Tor Browser and Qubes OS To
 |-
 | Important News Notifications
 | {{Yes}} &lt;ref&gt;See [[Download#Whonix_Version_Check_and_Whonix_News|Whonix News]].&lt;/ref&gt;
-| ? &lt;ref&gt;They could use their browser homepage?&lt;/ref&gt;
+| Gnome libnotify notification pops up with a link
 | ? &lt;ref&gt;They could use their browser https://check.torproject.org? They never did it, not even when there was this [https://blog.torproject.org/blog/tor-security-advisory-old-tor-browser-bundles-vulnerable popular exploit].&lt;/ref&gt;
 | ?
 |-
@@ -8488,7 +8487,7 @@ One has always to be very careful, when talking about others. Especially, when t
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Design]]</text>
-      <sha1>eb6hrdzvm1y2q00tfyno22cboy7p9v9</sha1>
+      <sha1>0jxm56altfk1oaqqjtc25sx9dlypppc</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
