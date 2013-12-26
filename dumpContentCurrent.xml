@@ -6458,15 +6458,15 @@ You could try the [https://www.riseup.net/en/openvpn-linux#gnome riseup.net Open
     <ns>0</ns>
     <id>92</id>
     <revision>
-      <id>4451</id>
-      <parentid>4433</parentid>
-      <timestamp>2013-12-23T22:12:54Z</timestamp>
+      <id>4510</id>
+      <parentid>4451</parentid>
+      <timestamp>2013-12-26T14:32:54Z</timestamp>
       <contributor>
         <username>Jekyll</username>
         <id>161</id>
       </contributor>
-      <comment>/* Logon and upgrade Debian */</comment>
-      <text xml:space="preserve" bytes="19443">{{Header}}
+      <comment>/* Install Debian */</comment>
+      <text xml:space="preserve" bytes="21713">{{Header}}
 
 '''WARNING''': Please don't forget reading the Warnings chapter.
 
@@ -6610,6 +6610,175 @@ Software selection: None; deselect all options (using Space)
 Install the GRUB boot loader: Yes (select the listed device in the next step)
 Finish the installation: Continue
 &lt;/pre&gt;
+
+ &lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+'''OPTIONAL.'''
+
+If you are interested in seeing a visual walk-through of the minimal installation of Debian Testing/Jessie, click on Expand on the right.
+
+&lt;div class=&quot;mw-collapsible-content&quot;&gt;
+===============================================================================================================================
+In the menu select &quot;Install&quot;
+
+[[Image:20.png|400px]]
+
+
+Set language as English.
+
+[[File:21.png|400px]]
+
+
+Set location as United Kingdom.
+
+[[File:22.png|400px]]
+
+
+Set keyboard as American English.
+
+[[File:23.png|400px]]
+
+
+Installing additional content.
+
+[[File:53.png|400px]]
+
+
+Network will auto-configure (hopefully).
+
+[[File:24.png|400px]]
+
+
+Set the hostname to &quot;host&quot;.
+
+[[File:25.png|400px]]
+
+
+Leave the domain name empty.
+
+[[File:26.png|400px]]
+
+
+Pick a strong root password.
+
+[[File:27.png|400px]]
+
+
+Reenter the password.
+
+[[File:28.png|400px]]
+
+
+Full name should should be &quot;user&quot;.
+
+[[File:29.png|400px]]
+
+
+Username should also be &quot;user&quot;.
+
+[[File:30.png|400px]]
+
+
+Enter a strong user password.
+
+[[File:31.png|400px]]
+
+
+Reenter the password.
+
+[[File:32.png|400px]]
+
+
+Network time procedure.
+
+[[File:33.png|400px]]
+
+
+Use a guided partitioning method with the whole disk (FDE is a good idea).
+
+[[File:34.png|400px]]
+
+
+Select the suggested disk.
+
+[[File:35.png|400px]]
+
+
+Partition all files in one partition.
+
+[[File:36.png|400px]]
+
+
+Finish partitioning.
+
+[[File:37.png|400px]]
+
+
+Confirm the changes.
+
+[[File:38.png|400px]]
+
+
+It takes a few minutes to get the base system installed.
+
+[[File:39.png|400px]]
+[[File:40.png|400px]]
+
+
+We don't need any extra packages so don't select a mirror, &quot;Go back&quot;.
+
+[[File:41.png|400px]]
+
+
+Confirm that you want to continue without a mirror.
+
+[[File:42.png|400px]]
+
+
+Configuring apt.
+
+[[File:43.png|400px]]
+
+
+&quot;No thanks&quot; to survey participation.
+
+[[File:44.png|400px]]
+
+
+Deselect (no star) the given option (using Space).
+
+[[File:45.png|400px]]
+[[File:46.png|400px]]
+
+
+Install GRUB.
+
+[[File:47.png|400px]]
+
+
+Select your disk.
+
+[[File:48.png|400px]]
+
+
+Finishing the installation.
+
+[[File:49.png|400px]]
+
+
+Done! The system will reboot.
+
+[[File:50.png|400px]]
+
+
+OS screen.
+
+[[File:51.png|400px]]
+
+
+Login screen.
+
+[[File:52.png|400px]]
+&lt;/div&gt;
 
 == Network Configuration ==
 The external interface (usually eth0) may need to be configured according to the requirements of your local network, e.g. static or simply left to use dhcp if the gateway is connected to a dhcp capable router. For wlan follow the upstream documentations: [http://wiki.debian.org/WiFi debian wiki], [https://help.ubuntu.com/community/WifiDocs/WiFiHowTo Ubuntu help].
@@ -6880,7 +7049,7 @@ To get a more complete list, install Debian (with KDE) on bare metal using the r
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>koq2axti2uqhierpqhlspqgqzfvwz1w</sha1>
+      <sha1>710bpxe1ivbbnsqoy3zg8uhihr5knki</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -52525,15 +52694,813 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
     <ns>0</ns>
     <id>649</id>
     <revision>
-      <id>4442</id>
-      <timestamp>2013-12-22T21:23:39Z</timestamp>
+      <id>4509</id>
+      <parentid>4508</parentid>
+      <timestamp>2013-12-26T14:29:07Z</timestamp>
       <contributor>
         <username>Jekyll</username>
         <id>161</id>
       </contributor>
-      <comment>Created page with &quot;Testing.&quot;</comment>
-      <text xml:space="preserve" bytes="8">Testing.</text>
-      <sha1>m6u0i0etgt8fi1nwghz03xj69tm2ule</sha1>
+      <text xml:space="preserve" bytes="2268"> &lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+'''OPTIONAL.'''
+
+If you are interested in seeing a visual walk-through of the minimal installation of Debian Testing/Jessie, click on Expand on the right.
+
+&lt;div class=&quot;mw-collapsible-content&quot;&gt;
+===============================================================================================================================
+In the menu select &quot;Install&quot;
+
+[[Image:20.png|400px]]
+
+
+Set language as English.
+
+[[File:21.png|400px]]
+
+
+Set location as United Kingdom.
+
+[[File:22.png|400px]]
+
+
+Set keyboard as American English.
+
+[[File:23.png|400px]]
+
+
+Installing additional content.
+
+[[File:53.png|400px]]
+
+
+Network will auto-configure (hopefully).
+
+[[File:24.png|400px]]
+
+
+Set the hostname to &quot;host&quot;.
+
+[[File:25.png|400px]]
+
+
+Leave the domain name empty.
+
+[[File:26.png|400px]]
+
+
+Pick a strong root password.
+
+[[File:27.png|400px]]
+
+
+Reenter the password.
+
+[[File:28.png|400px]]
+
+
+Full name should should be &quot;user&quot;.
+
+[[File:29.png|400px]]
+
+
+Username should also be &quot;user&quot;.
+
+[[File:30.png|400px]]
+
+
+Enter a strong user password.
+
+[[File:31.png|400px]]
+
+
+Reenter the password.
+
+[[File:32.png|400px]]
+
+
+Network time procedure.
+
+[[File:33.png|400px]]
+
+
+Use a guided partitioning method with the whole disk (FDE is a good idea).
+
+[[File:34.png|400px]]
+
+
+Select the suggested disk.
+
+[[File:35.png|400px]]
+
+
+Partition all files in one partition.
+
+[[File:36.png|400px]]
+
+
+Finish partitioning.
+
+[[File:37.png|400px]]
+
+
+Confirm the changes.
+
+[[File:38.png|400px]]
+
+
+It takes a few minutes to get the base system installed.
+
+[[File:39.png|400px]]
+[[File:40.png|400px]]
+
+
+We don't need any extra packages so don't select a mirror, &quot;Go back&quot;.
+
+[[File:41.png|400px]]
+
+
+Confirm that you want to continue without a mirror.
+
+[[File:42.png|400px]]
+
+
+Configuring apt.
+
+[[File:43.png|400px]]
+
+
+&quot;No thanks&quot; to survey participation.
+
+[[File:44.png|400px]]
+
+
+Deselect (no star) the given option (using Space).
+
+[[File:45.png|400px]]
+[[File:46.png|400px]]
+
+
+Install GRUB.
+
+[[File:47.png|400px]]
+
+
+Select your disk.
+
+[[File:48.png|400px]]
+
+
+Finishing the installation.
+
+[[File:49.png|400px]]
+
+
+Done! The system will reboot.
+
+[[File:50.png|400px]]
+
+
+OS screen.
+
+[[File:51.png|400px]]
+
+
+Login screen.
+
+[[File:52.png|400px]]
+&lt;/div&gt;</text>
+      <sha1>g185n6zbsnc5o9smlb8fjfyrx2rei86</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:20.png</title>
+    <ns>6</ns>
+    <id>650</id>
+    <revision>
+      <id>4456</id>
+      <timestamp>2013-12-26T12:09:17Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:51.png</title>
+    <ns>6</ns>
+    <id>651</id>
+    <revision>
+      <id>4457</id>
+      <timestamp>2013-12-26T12:10:08Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:53.png</title>
+    <ns>6</ns>
+    <id>652</id>
+    <revision>
+      <id>4458</id>
+      <timestamp>2013-12-26T12:10:12Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:24.png</title>
+    <ns>6</ns>
+    <id>653</id>
+    <revision>
+      <id>4459</id>
+      <timestamp>2013-12-26T12:10:18Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:33.png</title>
+    <ns>6</ns>
+    <id>654</id>
+    <revision>
+      <id>4460</id>
+      <timestamp>2013-12-26T12:10:21Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:40.png</title>
+    <ns>6</ns>
+    <id>655</id>
+    <revision>
+      <id>4461</id>
+      <timestamp>2013-12-26T12:10:26Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:49.png</title>
+    <ns>6</ns>
+    <id>656</id>
+    <revision>
+      <id>4462</id>
+      <timestamp>2013-12-26T12:10:33Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:43.png</title>
+    <ns>6</ns>
+    <id>657</id>
+    <revision>
+      <id>4463</id>
+      <timestamp>2013-12-26T12:10:35Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:39.png</title>
+    <ns>6</ns>
+    <id>658</id>
+    <revision>
+      <id>4464</id>
+      <timestamp>2013-12-26T12:10:39Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:52.png</title>
+    <ns>6</ns>
+    <id>659</id>
+    <revision>
+      <id>4465</id>
+      <timestamp>2013-12-26T12:10:41Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:21.png</title>
+    <ns>6</ns>
+    <id>660</id>
+    <revision>
+      <id>4466</id>
+      <timestamp>2013-12-26T12:10:44Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:41.png</title>
+    <ns>6</ns>
+    <id>661</id>
+    <revision>
+      <id>4467</id>
+      <timestamp>2013-12-26T12:10:47Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:27.png</title>
+    <ns>6</ns>
+    <id>662</id>
+    <revision>
+      <id>4468</id>
+      <timestamp>2013-12-26T12:10:52Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:23.png</title>
+    <ns>6</ns>
+    <id>663</id>
+    <revision>
+      <id>4469</id>
+      <timestamp>2013-12-26T12:10:56Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:37.png</title>
+    <ns>6</ns>
+    <id>664</id>
+    <revision>
+      <id>4470</id>
+      <timestamp>2013-12-26T12:10:59Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:22.png</title>
+    <ns>6</ns>
+    <id>665</id>
+    <revision>
+      <id>4471</id>
+      <timestamp>2013-12-26T12:11:03Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:44.png</title>
+    <ns>6</ns>
+    <id>666</id>
+    <revision>
+      <id>4472</id>
+      <timestamp>2013-12-26T12:11:10Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:47.png</title>
+    <ns>6</ns>
+    <id>667</id>
+    <revision>
+      <id>4473</id>
+      <timestamp>2013-12-26T12:11:20Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:34.png</title>
+    <ns>6</ns>
+    <id>668</id>
+    <revision>
+      <id>4474</id>
+      <timestamp>2013-12-26T12:11:24Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:38.png</title>
+    <ns>6</ns>
+    <id>669</id>
+    <revision>
+      <id>4475</id>
+      <timestamp>2013-12-26T12:11:28Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:48.png</title>
+    <ns>6</ns>
+    <id>670</id>
+    <revision>
+      <id>4476</id>
+      <timestamp>2013-12-26T12:11:32Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:29.png</title>
+    <ns>6</ns>
+    <id>671</id>
+    <revision>
+      <id>4477</id>
+      <timestamp>2013-12-26T12:11:37Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:36.png</title>
+    <ns>6</ns>
+    <id>672</id>
+    <revision>
+      <id>4478</id>
+      <timestamp>2013-12-26T12:11:40Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:25.png</title>
+    <ns>6</ns>
+    <id>673</id>
+    <revision>
+      <id>4479</id>
+      <timestamp>2013-12-26T12:11:43Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:26.png</title>
+    <ns>6</ns>
+    <id>674</id>
+    <revision>
+      <id>4480</id>
+      <timestamp>2013-12-26T12:11:45Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:30.png</title>
+    <ns>6</ns>
+    <id>675</id>
+    <revision>
+      <id>4481</id>
+      <timestamp>2013-12-26T12:11:49Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:50.png</title>
+    <ns>6</ns>
+    <id>676</id>
+    <revision>
+      <id>4482</id>
+      <timestamp>2013-12-26T12:11:55Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:45.png</title>
+    <ns>6</ns>
+    <id>677</id>
+    <revision>
+      <id>4491</id>
+      <parentid>4483</parentid>
+      <timestamp>2013-12-26T12:35:16Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>Jekyll uploaded a new version of &amp;quot;[[File:45.png]]&amp;quot;</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:46.png</title>
+    <ns>6</ns>
+    <id>678</id>
+    <revision>
+      <id>4484</id>
+      <timestamp>2013-12-26T12:12:05Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:42.png</title>
+    <ns>6</ns>
+    <id>679</id>
+    <revision>
+      <id>4485</id>
+      <timestamp>2013-12-26T12:12:10Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:35.png</title>
+    <ns>6</ns>
+    <id>680</id>
+    <revision>
+      <id>4486</id>
+      <timestamp>2013-12-26T12:12:16Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:31.png</title>
+    <ns>6</ns>
+    <id>681</id>
+    <revision>
+      <id>4487</id>
+      <timestamp>2013-12-26T12:12:19Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:28.png</title>
+    <ns>6</ns>
+    <id>682</id>
+    <revision>
+      <id>4488</id>
+      <timestamp>2013-12-26T12:12:24Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:32.png</title>
+    <ns>6</ns>
+    <id>683</id>
+    <revision>
+      <id>4489</id>
+      <timestamp>2013-12-26T12:12:28Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:Kde0 5.png</title>
+    <ns>6</ns>
+    <id>684</id>
+    <revision>
+      <id>4494</id>
+      <timestamp>2013-12-26T12:59:33Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
