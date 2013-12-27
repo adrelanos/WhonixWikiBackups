@@ -6458,15 +6458,14 @@ You could try the [https://www.riseup.net/en/openvpn-linux#gnome riseup.net Open
     <ns>0</ns>
     <id>92</id>
     <revision>
-      <id>4510</id>
-      <parentid>4451</parentid>
-      <timestamp>2013-12-26T14:32:54Z</timestamp>
+      <id>4525</id>
+      <parentid>4524</parentid>
+      <timestamp>2013-12-27T09:13:24Z</timestamp>
       <contributor>
         <username>Jekyll</username>
         <id>161</id>
       </contributor>
-      <comment>/* Install Debian */</comment>
-      <text xml:space="preserve" bytes="21713">{{Header}}
+      <text xml:space="preserve" bytes="21592">{{Header}}
 
 '''WARNING''': Please don't forget reading the Warnings chapter.
 
@@ -6617,7 +6616,6 @@ Finish the installation: Continue
 If you are interested in seeing a visual walk-through of the minimal installation of Debian Testing/Jessie, click on Expand on the right.
 
 &lt;div class=&quot;mw-collapsible-content&quot;&gt;
-===============================================================================================================================
 In the menu select &quot;Install&quot;
 
 [[Image:20.png|400px]]
@@ -6778,6 +6776,7 @@ OS screen.
 Login screen.
 
 [[File:52.png|400px]]
+&lt;/div&gt;
 &lt;/div&gt;
 
 == Network Configuration ==
@@ -7049,7 +7048,7 @@ To get a more complete list, install Debian (with KDE) on bare metal using the r
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>710bpxe1ivbbnsqoy3zg8uhihr5knki</sha1>
+      <sha1>9956gpmo4cmy9n0cvltfy65fgfj7196</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -7541,14 +7540,15 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
     <ns>0</ns>
     <id>96</id>
     <revision>
-      <id>4455</id>
-      <parentid>4081</parentid>
-      <timestamp>2013-12-26T01:51:47Z</timestamp>
+      <id>4515</id>
+      <parentid>4455</parentid>
+      <timestamp>2013-12-27T01:06:40Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>Tails: +Incremental upgrades, +notifications (libnotify??)</comment>
-      <text xml:space="preserve" bytes="71108">{{Header}}
+      <comment>/* Verifiable Builds */</comment>
+      <text xml:space="preserve" bytes="71334">{{Header}}
  
 = Introduction =
 This page contains the comparisons of Whonix, Tails, Tor Browser and Qubes OS TorVM. If anything here is incorrect or becomes outdated feel free to edit this page or [[contact]] us, we'll correct as soon as possible. See also [[#Statement about Neutrality of this Page]].
@@ -7883,7 +7883,6 @@ This page contains the comparisons of Whonix, Tails, Tor Browser and Qubes OS To
 |}
 
 == Verifiable Builds ==
-
 {| class=&quot;wikitable&quot; style=&quot;text-align: center; background-color: #fff&quot;
 |- style=&quot;background-color: #f9f9f9&quot;
 | style=&quot;height: 30px;width:220px&quot;|
@@ -7904,7 +7903,7 @@ Deterministic builds can detect backdoors. For more information on deterministic
 &lt;/ref&gt;
 | {{No}}
 | {{No}}
-| style=&quot;background-color: {{Yellow}}&quot;| Soon.&lt;ref&gt;Currently only the Alpha version is.&lt;/ref&gt;
+| {{Yes}} &lt;ref&gt;See [https://blog.torproject.org/blog/deterministic-builds-part-one-cyberwar-and-global-compromise Deterministic Builds Part One: Cyberwar and Global Compromise] and [https://blog.torproject.org/blog/deterministic-builds-part-two-technical-details Deterministic Builds Part Two: Technical Details].&lt;/ref&gt;
 | {{No}}
 |-
 | style=&quot;height: 27px;background-color: #f9f9f9&quot;| Based on a {{Code2|Deterministically Built}}&lt;ref name=deterministic /&gt; Operating System
@@ -8656,7 +8655,7 @@ One has always to be very careful, when talking about others. Especially, when t
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Design]]</text>
-      <sha1>0jxm56altfk1oaqqjtc25sx9dlypppc</sha1>
+      <sha1>e7rhjhop5eb36mdm43dmd0qkumliwjm</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -14775,36 +14774,32 @@ Thanks to intrigeri and anonym, who provided feedback and suggestions for this p
     <ns>0</ns>
     <id>130</id>
     <revision>
-      <id>3336</id>
-      <parentid>3164</parentid>
-      <timestamp>2013-10-12T02:43:26Z</timestamp>
+      <id>4523</id>
+      <parentid>4522</parentid>
+      <timestamp>2013-12-27T01:37:46Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Stable */</comment>
-      <text xml:space="preserve" bytes="12898">{{Header}}
-= Stable =
-{{Old-Stable-0.5.6}}
-
-TODO: Hasn't been updated for Whonix 7 yet. Nothing critical changed.
+      <text xml:space="preserve" bytes="11964">{{Header}}
 
 == Introduction ==
-
 Whonix can not do the impossible and magically prevent all kinds of [https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO#Protocolleaks protocol leaks]. However, it does offer best possible protection. It is a multi level protection always trying to prevent the worst.
 
 == Most dangerous leaks are protected ==
-
 Most dangerous leaks are protected. The following ones are in the most dangerous categorical, because they would lead remotely and directly to the users real identity.
 
-* Your real external non-Tor IP address is covered due to the whole Whonix design, isolated proxy usage and [[Install_Software#Whonix-Workstation_is_firewalled | the Whonix firewall]]. &lt;sup&gt;1&lt;/sup&gt;
-* The same as above goes for DNS&lt;sup&gt;1&lt;/sup&gt; requests, they are safe. &lt;sup&gt;2&lt;/sup&gt;
+* Your real external non-Tor IP address is covered due to the whole Whonix design, isolated proxy usage and [[Install_Software#Whonix-Workstation_is_firewalled|the Whonix firewall]]. &lt;ref name=one&gt;
+This does not cover application vulnerabilities and exploits, which escalate from the virtual machine to the host see [[Comparison_with_Others#Attacks|Attacks]]. However, by design, the Whonix-Workstation does not know its own external non-Tor IP address.
+&lt;/ref&gt;
+* The same as above goes for DNS&lt;ref name=one /&gt; requests, they are safe. &lt;ref&gt;
+''/etc/resolv.conf'' in Whonix-Workstation is configured to use the Whonix-Gateway as DNS resolver, which is routed through Tor.
+&lt;/ref&gt;
 
 == Many Whonix default applications are already configured, not to leak ==
-
 * Configured to use their own SocksPort ([[Stream Isolation]]), thus preventing Identity correlation through circuit sharing.
-* Browser fingerprinting: ''Whonix Example Implementation'' includes Tor Browser. Browser fingerprinting is as good/as worse, as you were using the normal Tor Browser Bundle.
-* GPG: is configured not to leak your operating system version (no-emit-version) and other stuff ([https://github.com/Whonix/Whonix/blob/stable/whonix_workstation/home/user/.gnupg/gpg.conf on github]).
+* Browser fingerprinting: ''Whonix Example Implementation'' [[Tor Browser|includes Tor Browser]]. The browser fingerprint is as good/as bad, as if you were using the normal Tor Browser Bundle from torproject.org.
+* GPG: /home/user/gpg.conf is optimized for privacy [https://github.com/ioerror/torbirdy/pull/11 recommended] as per [https://github.com/ioerror/torbirdy/blob/master/gpg.conf torbirdy github repository] not to leak your operating system version (no-emit-version) and other stuff ([https://github.com/Whonix/Whonix/blob/stable/whonix_workstation/home/user/.gnupg/gpg.conf on github]).
 * XChat: uses secure defaults as per [https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/XChat TorifyHOWTO/XChat] ([https://github.com/Whonix/Whonix/tree/stable/whonix_workstation/usr/local/share/whonix/xchat2 on github]). Identity can be reset using ''xchat-reset'' ([https://github.com/Whonix/Whonix/blob/stable/whonix_workstation/usr/local/bin/xchat-reset on github]) as documented on the [[XChat]] page.
 * ssh: Without Whonix, syntax for ssh is user@hostname [...], but if the user forgets to specific user before @hostname, the operating system user name will be used and if that is something identifiable, anonymity is broken. Since Whonix set the user name to ''user'', in worst case, only the username ''user'' can be leaked, which is harmless. He could just have copied the syntax from the manpage. In another, similar project, Tails, the username is set to amnesia, which is also not something the user entered and therefore safe.
 
@@ -14814,40 +14809,72 @@ Many protocol leaks are documented [[Documentation]] and [https://trac.torprojec
 
 These are also important identifiers, because they can be used for fingerprinting, narrow down the list of suspects (for example, the time zone) or even lead to directly to deanonymization (for example, if username were set to John Doe).
 
-* Desktop resolution is 1024x768 for all Whonix users. (Virtual) refresh rate is set to 60. &lt;sup&gt;a&lt;/sup&gt; &lt;sup&gt;c&lt;/sup&gt;
-* Color depth is the default 24 bit for all Whonix users. &lt;sup&gt;b&lt;/sup&gt; &lt;sup&gt;c&lt;/sup&gt;
-* All Whonix users have the same list of fonts installed. &lt;sup&gt;d&lt;/sup&gt; &lt;sup&gt;e&lt;/sup&gt; &lt;sup&gt;f&lt;/sup&gt;
-* Internal (virtual LAN) IP address is the same for all Whonix users.&lt;sup&gt;3&lt;/sup&gt;
+* Desktop resolution is 1024x768 for all Whonix users. (Virtual) refresh rate is set to 60. &lt;ref&gt;
+You can check the desktop resolution and refresh rate by running in console: 
+
+&lt;pre&gt;xrandr&lt;/pre&gt;
+&lt;/ref&gt; &lt;ref name=fontlist&gt;
+Note that you can not rely on https://ip-check.info or similar websites for checking desktop resolution and color depth, because Tor Button changes this values to improve your anonymity. See Tor Button specification and Tor trac for details. You can check installed fonts using: 
+
+&lt;pre&gt;fc-list&lt;/pre&gt;
+&lt;/ref&gt;
+* Color depth is the default 24 bit for all Whonix users. &lt;ref&gt;
+You can check color depth by running in console: 
+
+&lt;pre&gt;xdpyinfo | grep &quot;of root&quot;&lt;/pre&gt;
+&lt;/ref&gt; &lt;ref name=fontlist /&gt;
+* All Whonix users have the same list of fonts installed. &lt;ref&gt;
+As long you or any additional software packages do not install further packages.
+&lt;/ref&gt; &lt;ref&gt;
+Only 3 common fonts (monospace, serif, times new roman) for all Tor Browser / TBB users can be detected. &lt;/ref&gt; &lt;ref&gt;
+Robert Ransom suggested, if possible, to share the same list of fonts as Tails. Since Tor Browser does not leak, which fonts are installed anymore Whonix developer adrelanos fails to see the advantage of this. Follow-up inquiry ignored.
+&lt;/ref&gt;
+* Internal (virtual LAN) IP address is the same for all Whonix users.&lt;ref&gt;
+You can check your internal (virtual LAN) IP address using: 
+
+&lt;pre&gt;sudo ifconfig&lt;/pre&gt;
+&lt;/ref&gt;
 * Time
 ** Whonix-Workstation, Whonix-Gateway and the host time are all different from each other.
-** Time zone (local time) is set to UTC. &lt;sup&gt;15&lt;/sup&gt;
+** Time zone (local time) is set to UTC. &lt;ref&gt;
+You can check your time zone using: 
+
+&lt;pre&gt;cat /etc/timezone&lt;/pre&gt;
+&lt;/ref&gt;
 ** Hardware clock is set to UTC.
 ** See [[TimeSync|Whonix's Time Synchronization Mechanism]] for more information.
 * User name is set to user.
-* Hostname is set to host.
-* Long host name (FQDN) is set to host.localdomain.
+* Hostname is set to host. &lt;ref&gt;You can check that by running.
+
+&lt;pre&gt;
+host
+&lt;/pre&gt;
+&lt;/ref&gt;
+* Long host name (FQDN) is set to host.localdomain. &lt;ref&gt;You can check that by running.
+&lt;pre&gt;
+hostname --fqdn
+&lt;/pre&gt;
+&lt;/ref&gt;
 * Operating system (apt-get) updates are routed through their own circuit ([[Stream Isolation]]) to prevent accidentally leakage of your software packages and versions (if any custom software installed) which then could be correlated with other anonymous activity. See also [https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO#Softwareupdaters Software updaters] and [[Install Software | Software installation Whonix-Workstation]].
-* [https://en.wikipedia.org/wiki/MAC_address MAC address] is the same for all Whonix users. &lt;ref&gt;
+* [https://en.wikipedia.org/wiki/MAC_address MAC address] is different from the host &lt;ref&gt;
 You can check Whonix-Workstations MAC address using 
 
 &lt;pre&gt;sudo ifconfig | grep HWaddr&lt;/pre&gt;
 
-which is set to ''08:00:27:07:0b:08''. At build time it was set to ''080027070B08'' (just different format, without :) in whonix_createvm.
-&lt;/ref&gt; &lt;ref&gt;Disadvantages of shared MAC Addresses:
+inside Whonix-Workstation and then comparing with your host.
+&lt;/ref&gt; &lt;ref&gt;
+Disadvantages of shared MAC Addresses:
 
 * [[Multiple_Whonix-Workstations]] can not use the internet at the same time if they are using the same MAC address. It leads to confusing connection interruptions in the one or the other virtual machine.
-* The advantage of sharing MAC addresses among all Whonix versions are very little.
+* The advantage of sharing MAC addresses among all Whonix versions are very little. (That would be useful, in case an application leaks the MAC address or in case Whonix-Workstation got compromised.
 * The project maintainers have to explain and defend the design, which takes a lot time of such little gain. (Again, it's important not to expose the hosts, the real MAC address, but as long as the one inside the virtual machine is different, everything is in an acceptable state.)
 &lt;/ref&gt; &lt;ref&gt;
 Advantages of shared MAC addresses:
 
 * It may be easier to develop [[Connections_between_Whonix-Gateway_and_Whonix-Workstation#ARP_spoofing_defense|ARP spoofing defense]] to implement authenticated connections between Whonix-Gateway and Whonix-Workstation. (Only useful when using [[Multiple Whonix-Workstations]].) To understand the context, please read [[Connections_between_Whonix-Gateway_and_Whonix-Workstation]].
+* There are cases, were some applications gather your MAC address and send it to a remote server (proprietary license checks use the MAC for hardware fingerprinting) and we might be better off with a shared one then?
 &lt;/ref&gt;
-** Whonix-Workstation's MAC address is shared among all Whonix users. That is useful, in case an application leaks the MAC address or in case Whonix-Workstation got compromised.
-** Whonix-Workstation can also see Whonix-Gateway's MAC address.
-** Whonix-Gateways MAC address is also shared among all Whonix users. '''This may have side effects, were are still discussing, see [Dev].'''
-** There are cases, were some stupid applications gather your MAC address and send it to a remote server (proprietary license checks use the MAC for hardware fingerprinting). That's not an issue for Whonix, since all Whonix users share the same MAC address on Whonix-Workstation.
-* Worst case scenario: contents of your RAM (error reporting; RAM dump if infected with malware; [https://trac.torproject.org/projects/tor/wiki/doc/TransparentProxyLeaks Transparent Proxy Leaks]) would &quot;only&quot; contain the RAM of your Whonix-Workstation. All your non-anonymous stuff on your Host would stay safe.
+* Worst case scenario: contents of your RAM (error reporting software phoning home; RAM dump if infected with malware; [https://trac.torproject.org/projects/tor/wiki/doc/TransparentProxyLeaks Transparent Proxy Leaks]) would &quot;only&quot; contain the RAM of your Whonix-Workstation. All your non-anonymous stuff on your Host would stay safe.
 
 == Metadata ==
 
@@ -14859,59 +14886,13 @@ These identifiers are less important, because an adversary can only collect them
 
 Implemented:
 
-* Hardware serial numbers which any applications could collect are hidden due to the Virtual Machine.&lt;sup&gt;4&lt;/sup&gt;
-* CPU model and capabilities are hidden by VirtualBox &quot;Synthetic CPU&quot; option.
-** Unfortunately, the clock speed of your host CPU is visible to all code (applications or malware) inside Whonix-Workstation.&lt;sup&gt;5&lt;/sup&gt;
-* RAM is set to 768 MB.
-* Sensor information (cpu temperature, hdd temperature, [https://en.wikipedia.org/wiki/S.M.A.R.T. S.M.A.R.T.]) are hidden. &lt;sup&gt;6&lt;/sup&gt; Fortunately VirtualBox does hide them from the guest Virtual Machine by not implementing them.
-* Battery information is unfortunately not hidden by VirtualBox. &lt;sup&gt;7&lt;/sup&gt;
-* BIOS DMI information is hidden by VirtualBox. &lt;sup&gt;8&lt;/sup&gt;
-* Virtual BIOS DMI information and Virtual HDD and CD serial numbers are implemented by VirtualBox.
-** Even less important: Beginning with Whonix 0.4.4, we try to share those values among all Whonix users as well. See the whonix_createvm script if you are interested. &lt;sup&gt;8&lt;/sup&gt; &lt;sup&gt;9&lt;/sup&gt;
-* VM UUID, as in explained in [http://www.virtualbox.org/manual/ch08.html#vboxmanage-modifyvdi VBoxManage modifyhd] is shared among the same Whonix versions. (Implemented in 0.4.4 and above.) &lt;sup&gt;14&lt;/sup&gt;
-* [https://msdn.microsoft.com/en-us/library/windows/hardware/hh673514.aspx SLIC table] is empty by default inside VirtualBox. &lt;sup&gt;10&lt;/sup&gt;
-* HDD UUID is the same for all Whonix users. &lt;sup&gt;12&lt;/sup&gt;
-* CD-ROM UUID is the same for all Whonix users. &lt;sup&gt;13&lt;/sup&gt;
-* All Whonix users have by default the same set of software packages installed. - If you install software packages yourself, you give up that advantage. See also [https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO#Softwareupdaters Software updaters].
-* Disk uuids of the real hardware is of course hidden through VirtualBox.
-* The disk uuids of the virtual partitions have been set at build time and are shared among the same Whonix versions. (Introduced in Whonix 0.4.5.) ''/etc/fstab'' is shared among all Whonix users.
-* Related VirtualBox tickets:
-** [https://www.virtualbox.org/ticket/10976 document all virtual hardware serial numbers implemented by VirtualBox]
-** [https://www.virtualbox.org/ticket/10975 document which information from the host are visible to VMs]
+* Hardware serial numbers which any applications could collect are hidden due to the Virtual Machine.&lt;ref&gt;
+You can check the visible hardware yourself with 
 
-== Footnotes ==
-
-&lt;sup&gt;a&lt;/sup&gt; You can check the desktop resolution and refresh rate by running in console: 
-
-&lt;pre&gt;xrandr&lt;/pre&gt;
-
-&lt;sup&gt;b&lt;/sup&gt; You can check color depth by running in console: 
-
-&lt;pre&gt;xdpyinfo | grep &quot;of root&quot;&lt;/pre&gt;
-
-&lt;sup&gt;c&lt;/sup&gt; Note that you can not rely on https://ip-check.info or similar websites for checking desktop resolution and color depth, because Tor Button changes this values to improve your anonymity. See Tor Button specification and Tor trac for details. &lt;sup&gt;d&lt;/sup&gt; You can check installed fonts using: 
-
-&lt;pre&gt;fc-list&lt;/pre&gt;
-
-&lt;sup&gt;e&lt;/sup&gt; As long you or any additional software packages do not install further packages.
-
-&lt;sup&gt;f&lt;/sup&gt; Robert Ransom suggested, if possible, to share the same list of fonts as Tails. Since Tor Browser does not leak, which fonts are installed anymore
-
-&lt;sup&gt;g&lt;/sup&gt;, Whonix developer adrelanos fails to see the advantage of this. Follow-up inquiry ignored.
-
-&lt;sup&gt;g&lt;/sup&gt; Only 3 common fonts (monospace, serif, times new roman) for all Tor Browser / TBB users can be detected. 
-
-&lt;sup&gt;1&lt;/sup&gt; This does not cover application vulnerabilities and exploits, which escalate from the virtual machine to the host see [[Comparison_with_Others#Attacks | Attacks]]. However, by design, the Whonix-Workstation does not know its own external non-Tor IP address.
-
-&lt;sup&gt;2&lt;/sup&gt; ''/etc/resolv.conf'' in Whonix-Workstation is configured to use the Whonix-Gateway as DNS resolver, which is routed through Tor. 
-
-&lt;pre&gt;nano /etc/resolv.conf&lt;/pre&gt;
-
-&lt;sup&gt;3&lt;/sup&gt; You can check your internal (virtual LAN) IP address using: 
-
-&lt;pre&gt;sudo ifconfig&lt;/pre&gt;
-
-&lt;sup&gt;4&lt;/sup&gt; You can check the visible hardware yourself with 
+&lt;pre&gt;
+sudo apt-get update
+sudo apt-get install lshw
+&lt;/pre&gt;
 
 &lt;pre&gt;sudo lshw&lt;/pre&gt;
 
@@ -14921,16 +14902,24 @@ and
 
 If you have USB devices attached use: 
 
-&lt;pre&gt;sudo apt-get install usbutils
-sudo lsusb&lt;/pre&gt;
+&lt;pre&gt;
+sudo apt-get install usbutils
+sudo lsusb
+&lt;/pre&gt;
 
-&lt;sup&gt;5&lt;/sup&gt; This is due to the design of virtualization platforms (VirtualBox, VMware, etc.). Most virtualization platforms leak cpu model, capabilities and clock speed. VirtualBox (4.1+ if not earlier) can mask at least the model and capabilities of the CPU with the &quot;Synthetic CPU&quot; option. This option is activated by default on Whonix 0.2.1 and above. Check 
+and then comparing with your host.
+&lt;/ref&gt;
+* CPU model and capabilities are hidden by VirtualBox &quot;Synthetic CPU&quot; option.
+** Unfortunately, the clock speed of your host CPU is visible to all code (applications or malware) inside Whonix-Workstation.&lt;ref&gt;
+This is due to the design of virtualization platforms (VirtualBox, VMware, etc.). Most virtualization platforms leak CPU model, capabilities and clock speed. VirtualBox (4.1+ if not earlier) can mask at least the model and capabilities of the CPU with the &quot;Synthetic CPU&quot; option. This option is activated by default on Whonix 0.2.1 and above. Check 
 
 &lt;pre&gt;cat /proc/cpuinfo&lt;/pre&gt;
 
 If that is a still problem for you another workaround could be to use an emulator, such as [http://bochs.sourceforge.net/ bochs] or qemu. Unfortunately such emulators are slow and there might be other limitations. (Does Bochs support internal networking?)
-
-&lt;sup&gt;6&lt;/sup&gt; You can check the sensor information using: 
+&lt;/ref&gt;
+* RAM is set to 768 MB.
+* Sensor information (cpu temperature, hdd temperature, [https://en.wikipedia.org/wiki/S.M.A.R.T. S.M.A.R.T.]) are hidden. &lt;ref&gt;
+You can check the sensor information using: 
 
 &lt;pre&gt;
 sudo apt-get install hddtemp
@@ -14942,42 +14931,59 @@ sudo hddtemp /dev/sda
 
 &lt;pre&gt;sudo apt-get install lm-sensors
 sudo sensors-detect&lt;/pre&gt;
+&lt;/ref&gt; Fortunately VirtualBox does hide them from the guest Virtual Machine by not implementing them.
+* Battery information is unfortunately not hidden by VirtualBox. &lt;ref&gt;
+You can check the battery information using: 
 
-&lt;sup&gt;7&lt;/sup&gt; You can check the battery information using: 
+&lt;pre&gt;
+sudo apt-get install acpi
 
-&lt;pre&gt;acpi -V&lt;/pre&gt;
-
-&lt;sup&gt;8&lt;/sup&gt; You can check the BIOS DMI information using: 
+acpi -V
+&lt;/pre&gt;
+&lt;/ref&gt;
+* BIOS DMI information is hidden by VirtualBox. &lt;ref name=biosdmi&gt;
+You can check the BIOS DMI information using: 
 
 &lt;pre&gt;sudo dmidecode&lt;/pre&gt;
-
-&lt;sup&gt;9&lt;/sup&gt; You can disk ids using: 
+&lt;/ref&gt;
+* Virtual BIOS DMI information and Virtual HDD and CD serial numbers are implemented by VirtualBox. &lt;ref name=biosdmi /&gt; &lt;ref&gt;
+You can disk ids using: 
 
 &lt;pre&gt;sudo ls -la /dev/disk/by-id/&lt;/pre&gt;
-
-&lt;sup&gt;10&lt;/sup&gt; You can check the SILC table using: 
-
-&lt;pre&gt;sudo nano /sys/firmware/acpi/tables/SLIC&lt;/pre&gt;
-
-inside VirtualBox and on your host. On your host there may or may be not be a SLIC table. If there is none, it can't leak into VirtualBox. If there is one, you'll see, that it's not mirrored in VirtualBox, which is fine.
-
-&lt;sup&gt;12&lt;/sup&gt; You can check the HDD UUID using: 
-
-&lt;pre&gt;sudo hdparm -i /dev/sda&lt;/pre&gt;
-
-&lt;sup&gt;13&lt;/sup&gt; You can check the CD-ROM UUID using: 
-
-&lt;pre&gt;udisks --show-info /dev/cdrom&lt;/pre&gt;
-
-&lt;sup&gt;14&lt;/sup&gt; You can check the VM UUID using: 
+&lt;/ref&gt;
+* VM UUID, as in explained in [http://www.virtualbox.org/manual/ch08.html#vboxmanage-modifyvdi VBoxManage modifyhd] has no relation to your host by default. &lt;ref&gt;
+You can check the VM UUID using:
 
 &lt;pre&gt;sudo dmidecode&lt;/pre&gt;
+&lt;/ref&gt;
+* [https://msdn.microsoft.com/en-us/library/windows/hardware/hh673514.aspx SLIC table] is empty by default inside VirtualBox. &lt;ref&gt;
+You can check the SILC table using: 
 
-The UUID line should look like ''UUID: 9852BF98-B83C-49DB-A8DE-182C42C7226B''. It was set at build time by https://github.com/Whonix/Whonix/blob/master/build-steps.d/2500_create-vbox-vm.
+&lt;pre&gt;
+sudo cat /sys/firmware/acpi/tables/SLIC
+&lt;/pre&gt;
 
-&lt;sup&gt;15&lt;/sup&gt; You can check your time zone using: 
+inside VirtualBox and on your host. On your host there may or may be not be a SLIC table. If there is none, it can't leak into VirtualBox. If there is one, you'll see, that it's not mirrored in VirtualBox, which is fine.
+&lt;/ref&gt;
+* HDD UUIDs are different from your host. &lt;ref&gt;
+You can check the HDD UUID using: 
 
-&lt;pre&gt;cat /etc/timezone&lt;/pre&gt;
+&lt;pre&gt;
+sudo hdparm -i /dev/sda
+&lt;/pre&gt;
+&lt;/ref&gt;
+* CD-ROM UUID is the same for all Whonix users. &lt;ref&gt;
+You can check the CD-ROM UUID using: 
+
+&lt;pre&gt;
+udisks --show-info /dev/cdrom
+&lt;/pre&gt;
+&lt;/ref&gt;
+* All Whonix users have by default the same set of software packages installed. - If you install software packages yourself, you give up that advantage. See also [https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO#Softwareupdaters Software updaters].
+* Disk uuids of the real hardware are hidden through VirtualBox.
+* Related VirtualBox tickets:
+** [https://www.virtualbox.org/ticket/10976 document all virtual hardware serial numbers implemented by VirtualBox]
+** [https://www.virtualbox.org/ticket/10975 document which information from the host are visible to VMs]
 
 = Footnotes =
 &lt;references /&gt;
@@ -14985,7 +14991,7 @@ The UUID line should look like ''UUID: 9852BF98-B83C-49DB-A8DE-182C42C7226B''. I
 {{Footer}}
 
 [[Category:Design]]</text>
-      <sha1>lc6k3hpnccrkonb1li3tqm7hsu2v3tm</sha1>
+      <sha1>jxnqm1n2cc9asspajrytgv3w5e4ncl6</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
