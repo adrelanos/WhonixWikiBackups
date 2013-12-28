@@ -13692,15 +13692,15 @@ When you are using them at the same time, the risks explained in the introductio
     <ns>0</ns>
     <id>127</id>
     <revision>
-      <id>4029</id>
-      <parentid>3821</parentid>
-      <timestamp>2013-11-13T16:17:55Z</timestamp>
+      <id>4530</id>
+      <parentid>4528</parentid>
+      <timestamp>2013-12-28T22:54:49Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* About VirtualBox */</comment>
-      <text xml:space="preserve" bytes="36564">{{Header}}
+      <comment>/* More than one Tor Browser in Whonix */</comment>
+      <text xml:space="preserve" bytes="36038">{{Header}}
 &lt;!--
 Copyright:
 
@@ -14205,35 +14205,13 @@ Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/A
 * [https://github.com/adrelanos/Inoffical-TBB-AppArmor Inoffical-TBB-AppArmor]
 
 == More than one Tor Browser in Whonix ==
+These instructions only work with TBB 3.x and above.
 
 As the [[Warning]] page stated, [[Warning#Whonix_doesn.27t_magically_separate_your_different_contextual_identities | Whonix doesn't magically separate your different contextual identities]] and since Tor Browser and Tor Button do not yet solve this, for further separation of identities you could use [[Multiple Whonix-Workstations]], which would be more secure.
 
 Alternatively, less secure than Multiple Whonix-Workstations, you could start multiple instances of Tor Browser and run them through different SocksPorts. The instructions in the [[Manually Updating Tor Browser]] article need minimal changes.
 
-Instead of
-
-&lt;pre&gt;
-#!/bin/bash
-## Whonix Tor Browser start script
-
-~/tor-browser_en-US/App/Firefox/firefox --profile ~/tor-browser_en-US/Data/profile
-
-## End of Whonix Tor Browser start script
-&lt;/pre&gt;
-
-Use
-
-&lt;pre&gt;
-#!/bin/bash
-## Whonix Tor Browser start script
-
-## Adjust the path!
-~/tor-browser_2/App/Firefox/firefox --profile ~/tor-browser_2/Data/profile -no-remote
-
-## End of Whonix Tor Browser start script
-&lt;/pre&gt;
-
-Only {{Code2|-no-remote}} was added to the start script. Otherwise Tor Browser would connect to the already running Tor Browser and this isn't what you want. And don't forget to adjust the path to the other Tor Browser.
+You need to extract Tor Browser into a different folder.
 
 You also have to use a different SocksPort, see [[Tor_Browser#Change.2FRemove_Proxy_Settings|Change/Remove Proxy Settings]]. (See [[Stream Isolation]] page for explanation why you should use different SocksPorts.)
 
@@ -14363,7 +14341,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>10ozo7rlflv963gg7cnwyjrc6neyywt</sha1>
+      <sha1>lvlpg23awpspy7amalaacinbnkernjg</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -35725,14 +35703,15 @@ Whonix-Example-Implementation:
     <ns>0</ns>
     <id>299</id>
     <revision>
-      <id>4358</id>
-      <parentid>3436</parentid>
-      <timestamp>2013-12-20T01:09:19Z</timestamp>
+      <id>4531</id>
+      <parentid>4529</parentid>
+      <timestamp>2013-12-28T22:55:05Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="38939">{{Header}}
+      <comment>/* Manually updating Tor Browser (TBB stable version) */</comment>
+      <text xml:space="preserve" bytes="40523">{{Header}}
 
 = About this page =
 
@@ -36498,7 +36477,7 @@ When running &lt;code&gt;torbrowser -update&lt;/code&gt;, the update script crea
 
 For better isolation of different identities. For advanced users. Moved to the [[Advanced_Security_Guide#More_than_one_Tor_Browser_in_Whonix|Advanced Security Guide]].
 
-= Manually updating Tor Browser (TBB stable version) =
+= Manually updating Tor Browser =
 (1) Go to https://www.torproject.org/ and/or http://idnxcnkne4qt76tg.onion/ and download the Tor Browser Bundle for Linux 32 bit. Store it in ''/home/user/''.
 
 (2) Read https://www.torproject.org/docs/verifying-signatures.html.en and/or http://idnxcnkne4qt76tg.onion/docs/verifying-signatures.html.en and learn about gpg verification.
@@ -36563,6 +36542,39 @@ Something went wrong and you're running Tor over Tor, which is recommended again
 
 (20) Done.
 
+= More than one Tor Browser in Whonix =
+'''WARNING: &quot;More than one Tor Browser in Whonix&quot; instructions have not been updated for TBB 3.x yet!'''
+
+As the [[Warning]] page stated, [[Warning#Whonix_doesn.27t_magically_separate_your_different_contextual_identities | Whonix doesn't magically separate your different contextual identities]] and since Tor Browser and Tor Button do not yet solve this, for further separation of identities you could use [[Multiple Whonix-Workstations]], which would be more secure.
+
+Alternatively, less secure than Multiple Whonix-Workstations, you could start multiple instances of Tor Browser and run them through different SocksPorts. The instructions in the [[Manually Updating Tor Browser]] article need minimal changes.
+
+Instead of
+
+&lt;pre&gt;
+#!/bin/bash
+## Whonix Tor Browser start script
+
+~/tor-browser_en-US/App/Firefox/firefox --profile ~/tor-browser_en-US/Data/profile
+
+## End of Whonix Tor Browser start script
+&lt;/pre&gt;
+
+Use
+
+&lt;pre&gt;
+#!/bin/bash
+## Whonix Tor Browser start script
+
+## Adjust the path!
+~/tor-browser_2/App/Firefox/firefox --profile ~/tor-browser_2/Data/profile -no-remote
+
+## End of Whonix Tor Browser start script
+&lt;/pre&gt;
+
+Only {{Code2|-no-remote}} was added to the start script. Otherwise Tor Browser would connect to the already running Tor Browser and this isn't what you want. And don't forget to adjust the path to the other Tor Browser.
+
+You also have to use a different SocksPort, see [[Tor_Browser#Change.2FRemove_Proxy_Settings|Change/Remove Proxy Settings]]. (See [[Stream Isolation]] page for explanation why you should use different SocksPorts.)
 
 = Footnotes =
 &lt;references /&gt;
@@ -36570,7 +36582,7 @@ Something went wrong and you're running Tor over Tor, which is recommended again
 {{Footer}}
 
 [[Category:Deprecated]]</text>
-      <sha1>684ztp4b2ppnahwp9ux6ma7inkg9nt3</sha1>
+      <sha1>cgbb8voxwi2mldohk9xgkt0wi540mn4</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
