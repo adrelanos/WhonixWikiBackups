@@ -310,23 +310,23 @@ inspired by http://aboli.sh/
     <ns>10</ns>
     <id>15</id>
     <revision>
-      <id>2280</id>
-      <parentid>2279</parentid>
-      <timestamp>2013-08-10T20:09:53Z</timestamp>
+      <id>4554</id>
+      <parentid>4553</parentid>
+      <timestamp>2013-12-31T09:47:31Z</timestamp>
       <contributor>
-        <username>Anon</username>
-        <id>10</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="532">&lt;br /&gt;&lt;hr&gt;
+      <text xml:space="preserve" bytes="863">&lt;br /&gt;&lt;hr&gt;
 
-&lt;font size=&quot;-3&quot;&gt;This is a wiki. Want to improve this page? &lt;html&gt;&lt;a href=&quot;&lt;/html&gt;{{localurl:{{FULLPAGENAME}}|action=edit}}&lt;html&gt;&quot;&gt;Edit&lt;/a&gt;&lt;/html&gt; it! IP addresses are scrubbed, but editing over Tor is recommended. IP edits are held for moderation.
+&lt;font size=&quot;-3&quot;&gt;This is a wiki. Want to improve this page? See [https://github.com/Whonix/Whonix/blob/master/debian/copyright Conditions for Contributions to Whonix], then &lt;html&gt;&lt;a href=&quot;&lt;/html&gt;{{localurl:{{FULLPAGENAME}}|action=edit}}&lt;html&gt;&quot;&gt;Edit&lt;/a&gt;&lt;/html&gt; it! IP addresses are scrubbed, but editing over Tor is recommended. Edits are held for moderation.
 
-Unless otherwise noted above, content of this  page is copyrighted by [mailto:adrelanos@riseupDOTnet adrelanos] and licensed under the same Free (as in speech) license as Whonix itself.
+Whonix is a [http://www.openinventionnetwork.com/licensees.php licensee] of the [https://en.wikipedia.org/wiki/Open_Invention_Network Open Invention Network]. Unless otherwise noted above, content of this  page is copyrighted by [mailto:adrelanos@riseupDOTnet adrelanos] and licensed under the same Free (as in speech) [https://github.com/Whonix/Whonix/blob/master/debian/copyright license] as Whonix itself.
 
-Questions? [[Contact | Contact us!]]
+Questions? [[Contact|Contact us!]]
 
 [[Contribute#Donate|Donate to Whonix!]]&lt;/font&gt;</text>
-      <sha1>p8eeu3scr2hm4wp7uhmoqufqdmi5ck3</sha1>
+      <sha1>5rvf5rhjat6u69sxs53h7hwckdpgsdg</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -30587,15 +30587,15 @@ For these reasons it's not a good idea to add popcon to Whonix. If you have sugg
     <ns>0</ns>
     <id>255</id>
     <revision>
-      <id>4536</id>
-      <parentid>4437</parentid>
-      <timestamp>2013-12-29T00:41:06Z</timestamp>
+      <id>4550</id>
+      <parentid>4548</parentid>
+      <timestamp>2013-12-31T09:20:58Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
       <comment>/* The OpenPGP Web of Trust */</comment>
-      <text xml:space="preserve" bytes="8327">&lt;!--
+      <text xml:space="preserve" bytes="8476">&lt;!--
 Copyright:
 
    Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -30653,12 +30653,9 @@ See [[Air Gapped OpenPGP Key]].
 [http://lists.gnupg.org/pipermail/gnupg-users/2013-July/047118.html Clearsign text document with multiple keys?]
 
 == The OpenPGP Web of Trust ==
-The &quot;The OpenPGP Web of Trust&quot; chapter has been profread by Hauke Laging.
+[[File:hauke_laging_gepruefter_artikel.en.png|link=http://www.openpgp-schulungen.de/fuer/webautoren/]]
 
-[[File:hauke_laging_gepruefter_artikel.png]]
-The certification image (hauke_laging_gepruefter_artikel.png) is copyrighted by Hauke Laging. http://www.openpgp-schulungen.de/fuer/webautoren/
-
-Hauke Laging's clearsigned version of this text can be found here: [[OpenPGP_Certified]].
+(Hauke Laging's clearsigned version of this text can be found here: [[OpenPGP_Certified]].)
 
 If you want to be extra cautious and really authenticate a OpenPGP key in a stronger way than what standard HTTPS offers you, you could use the OpenPGP Web of Trust.
 
@@ -30696,6 +30693,9 @@ To further improve the situation the key holder can spread its fingerprint and/o
 Whonix developer adrelanos peruses the strategy to deploy its key through multiple (at time of writing 6) sources. Different websites reachable over http, http'''s''' or .onion. Hosted by both, known and anonymous people. This should make it much more expensive for an adversary to take them all down or to turn them all over and make this particular attack vector unprofitable. An example implementation of this strategy can be found on the [[Whonix Signing Key]] wiki page.
 
 = License =
+The [http://www.openpgp-schulungen.de/fuer/webautoren/ certification] image ([https://www.whonix.org/wiki/File:Hauke_laging_gepruefter_artikel.en.png hauke_laging_gepruefter_artikel.en.png]) is copyrighted by [http://www.hauke-laging.de/ Hauke Laging].
+
+The rest of this page is under the following license.
 
 &lt;pre&gt;Whonix OpenPGP wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
 Whonix OpenPGP wiki page Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
@@ -30707,7 +30707,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>0u2a5gt29e4o3ishhqci01t7gk8ok79</sha1>
+      <sha1>t0fa35xm3324g6vmfwscj3qhofekg11</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -53651,15 +53651,16 @@ Forum thread: [[Special:AWCforum/st/id306/]]
     <ns>0</ns>
     <id>687</id>
     <revision>
-      <id>4535</id>
-      <timestamp>2013-12-29T00:40:14Z</timestamp>
+      <id>4552</id>
+      <parentid>4551</parentid>
+      <timestamp>2013-12-31T09:22:51Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>Created page with &quot;[[File:hauke_laging_gepruefter_artikel.png]] The certification image (hauke_laging_gepruefter_artikel.png) is copyrighted by Hauke Laging. http://www.openpgp-schulungen.de/fue...&quot;</comment>
-      <text xml:space="preserve" bytes="2419">[[File:hauke_laging_gepruefter_artikel.png]]
-The certification image (hauke_laging_gepruefter_artikel.png) is copyrighted by Hauke Laging. http://www.openpgp-schulungen.de/fuer/webautoren/
+      <text xml:space="preserve" bytes="2651">{{Header}}
+
+[[File:hauke_laging_gepruefter_artikel.en.png|link=http://www.openpgp-schulungen.de/fuer/webautoren/]]
 
 &lt;pre&gt;
 -----BEGIN PGP SIGNED MESSAGE-----
@@ -53696,8 +53697,33 @@ qZ73ZrGX+t8Az+vPaH5HMOKkl7sDNZveW/Tim/vS5YF1OwXoQjqFnuFiPbZ2+Zrm
 yGRejc2x17UOpU26/OGzeO9ky/QBEqrt8ep5GTjn42Wdg0qq095flxvVvkT/SNo=
 =4B7I
 -----END PGP SIGNATURE-----
-&lt;/pre&gt;</text>
-      <sha1>95kfun2w0jwf2756u6d6m4sqc411pe9</sha1>
+&lt;/pre&gt;
+
+= License =
+The [http://www.openpgp-schulungen.de/fuer/webautoren/ certification] image ([https://www.whonix.org/wiki/File:Hauke_laging_gepruefter_artikel.en.png hauke_laging_gepruefter_artikel.en.png]) is copyrighted by [http://www.hauke-laging.de/ Hauke Laging].
+
+{{Footer}}
+
+[[Category:Documentation]]</text>
+      <sha1>0bj1ep61rmkfe3jbaooeuz1d7mt6eah</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:Hauke laging gepruefter artikel.en.png</title>
+    <ns>6</ns>
+    <id>688</id>
+    <revision>
+      <id>4544</id>
+      <parentid>4542</parentid>
+      <timestamp>2013-12-31T09:09:16Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <text xml:space="preserve" bytes="41">This file is copyrighted by Hauke Laging.</text>
+      <sha1>0m1tk1g918gfg10bkmshnnrifesc2ix</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
