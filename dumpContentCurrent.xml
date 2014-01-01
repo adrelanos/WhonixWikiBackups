@@ -5402,15 +5402,15 @@ then choose etc (at the bottom) and then choose UTC.
     <ns>0</ns>
     <id>87</id>
     <revision>
-      <id>4555</id>
-      <parentid>4541</parentid>
-      <timestamp>2013-12-31T23:43:18Z</timestamp>
+      <id>4557</id>
+      <parentid>4556</parentid>
+      <timestamp>2014-01-01T19:14:21Z</timestamp>
       <contributor>
-        <username>HulaHoop1</username>
-        <id>171</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>added refernces but removed thestatement about rng since I cannot remember the source. I am confident that it was mentioned though.</comment>
-      <text xml:space="preserve" bytes="20500">&lt;!--
+      <comment>/* Windows Hosts */</comment>
+      <text xml:space="preserve" bytes="20438">&lt;!--
 Copyright:
 
    Whonix Pre Install Advice wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -5500,20 +5500,19 @@ This includes [https://en.wikipedia.org/wiki/BIOS BIOS] [http://wiki.gentoo.org/
 It may or may not improve security to get the latest updates. One one hand, you may fix vulnerabilities. On the other hand, an update may introduce a new backdoor. It is not really clear. If you know examples for one or the other, please edit this chapter. See also the thread on the debian-security mailing list [http://lists.debian.org/debian-security/2013/09/msg00027.html How secure is an installation with with no non-free packages?] As an end user, using common [https://en.wikipedia.org/wiki/Proprietary_software non-Free] (as in Freedom, not price) hardware, not using [https://en.wikipedia.org/wiki/Free_software Free] hardware ([http://www.lemote.com/en/products/Notebook/2010/0310/112.html Lemote Yeeloong Notebook maybe?]), you unfortunately have to blindly trust the hardware producer anyway, so it might be better to get the non-Free updates.
 
 === Windows Hosts === 
-
+'''Short''': &lt;br /&gt;
 You are much better off using alternative host operating systems, such as GNU/Linux. If you are using Windows...
 
-Was Windows installed from legitimate media? Not some pirated iso found on the net that could include malware.
+'''Long''': &lt;br /&gt;
+Microsoft silently updates users' machines even if that runs counter to their wishes and they have Windows Update disabled. &lt;ref&gt;http://voices.washingtonpost.com/securityfix/2007/09/microsofts_stealth_update_come.html &lt;/ref&gt; &lt;ref&gt;http://www.zdnet.com/blog/hardware/confirmation-of-stealth-windows-update/779&lt;/ref&gt; 
 
-You shouldn't have any pirated software, this usually involves running unverified, possibly malicious binary cracks or key generators. 
+Windows as a host system is unsuitable for anonymity due to the large number of software that phones home that comes included in a default install and the leaks that result from this. &lt;ref&gt;https://trac.torproject.org/projects/tor/wiki/doc/TransparentProxyLeaks#Windows&lt;/ref&gt; Additional privacy risks not covered in the article have been introduced as part of the Windows 8. They include the smartscreen filter which reports to Microsoft what software you are running on your computer. &lt;ref&gt;http://log.nadim.cc/?p=78&lt;/ref&gt; It includes a kill switch that can allow Microsoft (or any one with an exploit for this mechanism) delete programs on your machine without your consent. &lt;ref&gt;http://www.pcmag.com/article2/0,2817,2400985,00.asp&lt;/ref&gt;
+
+Before patching Windows, Microsoft is known to consult with intelligence agencies about which security holes before they tell the public about them or fix them. &lt;ref&gt;https://www.techdirt.com/articles/20130614/02110223467/microsoft-said-to-give-zero-day-exploits-to-us-government-before-it-patches-them.shtml&lt;/ref&gt;
+
+If you insist on using a Windows host... Was Windows installed from legitimate media? Not some pirated iso found on the net that could include malware. You shouldn't have any pirated software, this usually involves running unverified, possibly malicious binary cracks or key generators. 
 
 Stick to renowned Open Source software, such as Firefox, Gimp, 7-zip, Libre Office, etc., which is more unlikely to contain malicious code. You should only download over https (SSL) and even better check the gpg signatures.
-
-The Windows Update mechanism has used weak cryptographic verification mechanisms which allowed nation-state actors and any entity with medium capabilities to send fake code posing as system patches to targets (see FLAME &lt;ref&gt;http://arstechnica.com/security/2012/06/flame-crypto-breakthrough/&lt;/ref&gt;). 
-
-Windows as a host system is unsuitable for anonymity due to the large number of software that phones home that comes included in a default install and the leaks that result from this &lt;ref&gt;https://trac.torproject.org/projects/tor/wiki/doc/TransparentProxyLeaks#Windows.&lt;/ref&gt; Additional privacy risks not covered in the article have been introduced as part of the Windows 8. They include the smartscreen filter which reports to Microsoft what software you are running on your computer &lt;ref&gt;http://log.nadim.cc/?p=78&lt;/ref&gt;. The windows app store and its kill switch remotely activated backdoor that can allow Microsoft or any one with an exploit for this mechanism to edit and delete programs on your machine without your consent &lt;ref&gt;http://www.pcmag.com/article2/0,2817,2400985,00.asp&lt;/ref&gt;. 
-
-Before patching Windows, Microsoft is known to consult with intelligence agencies about which security holes they should patch to avoid hindering targeted attacks. This is unethical behavior and runs counter to the proper security practice of full disclosure &lt;ref&gt;https://www.techdirt.com/articles/20130614/02110223467/microsoft-said-to-give-zero-day-exploits-to-us-government-before-it-patches-them.shtml&lt;/ref&gt;.
 
 === GNU/Linux Hosts ===
 
@@ -5717,7 +5716,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>gev5n6wg6bxgolxsylhvkjifqt0zw6y</sha1>
+      <sha1>3dg7t5eez74gvh6wncby36gqabp89q4</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -48265,16 +48264,15 @@ Disadvantages:
     <ns>0</ns>
     <id>509</id>
     <revision>
-      <id>4438</id>
-      <parentid>4434</parentid>
-      <timestamp>2013-12-22T00:09:11Z</timestamp>
+      <id>4558</id>
+      <parentid>4438</parentid>
+      <timestamp>2014-01-01T19:29:52Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="19831">{{Header}}
+      <text xml:space="preserve" bytes="19813">{{Header}}
 
-'''UNFINISHED!'''
 '''ADVANCED USERS ONLY!'''
 
 = Introduction =
@@ -48702,7 +48700,7 @@ Most of this text has been written by [https://alexcabal.com/creating-the-perfec
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>cbcm2l2ywgb34xmxu4mkqrd1gl928nu</sha1>
+      <sha1>q7fx0ts9sxck5ja911v4gsqjkj6sij8</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
