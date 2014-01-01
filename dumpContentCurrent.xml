@@ -5402,15 +5402,15 @@ then choose etc (at the bottom) and then choose UTC.
     <ns>0</ns>
     <id>87</id>
     <revision>
-      <id>4541</id>
-      <parentid>4157</parentid>
-      <timestamp>2013-12-30T04:31:22Z</timestamp>
+      <id>4555</id>
+      <parentid>4541</parentid>
+      <timestamp>2013-12-31T23:43:18Z</timestamp>
       <contributor>
         <username>HulaHoop1</username>
         <id>171</id>
       </contributor>
-      <comment>windows anonymity is a joke</comment>
-      <text xml:space="preserve" bytes="20290">&lt;!--
+      <comment>added refernces but removed thestatement about rng since I cannot remember the source. I am confident that it was mentioned though.</comment>
+      <text xml:space="preserve" bytes="20500">&lt;!--
 Copyright:
 
    Whonix Pre Install Advice wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -5509,11 +5509,11 @@ You shouldn't have any pirated software, this usually involves running unverifie
 
 Stick to renowned Open Source software, such as Firefox, Gimp, 7-zip, Libre Office, etc., which is more unlikely to contain malicious code. You should only download over https (SSL) and even better check the gpg signatures.
 
-The Windows Update mechanism has used weak cryptographic verification mechanisms which allowed nation-state actors and any entity with medium capabilities to send fake code posing as system patches to targets (see FLAME). 
+The Windows Update mechanism has used weak cryptographic verification mechanisms which allowed nation-state actors and any entity with medium capabilities to send fake code posing as system patches to targets (see FLAME &lt;ref&gt;http://arstechnica.com/security/2012/06/flame-crypto-breakthrough/&lt;/ref&gt;). 
 
-Windows as a host system is unsuitable for anonymity due to the large number of software that phones home that comes included in a default install and the leaks that result from this. For more information view: https://trac.torproject.org/projects/tor/wiki/doc/TransparentProxyLeaks#Windows. Additional privacy risks not covered in the article have been introduced as part of the Windows 8. They include the smartscreen filter which reports to Microsoft what software you are running on your computer. The windows app store and its kill switch remotely activated backdoor that can allow Microsoft or any one with an exploit for this mechanism to edit and delete programs on your machine without your consent. Also the widely covered inclusion of backdoored random number generators and cipher suites into Windows.
+Windows as a host system is unsuitable for anonymity due to the large number of software that phones home that comes included in a default install and the leaks that result from this &lt;ref&gt;https://trac.torproject.org/projects/tor/wiki/doc/TransparentProxyLeaks#Windows.&lt;/ref&gt; Additional privacy risks not covered in the article have been introduced as part of the Windows 8. They include the smartscreen filter which reports to Microsoft what software you are running on your computer &lt;ref&gt;http://log.nadim.cc/?p=78&lt;/ref&gt;. The windows app store and its kill switch remotely activated backdoor that can allow Microsoft or any one with an exploit for this mechanism to edit and delete programs on your machine without your consent &lt;ref&gt;http://www.pcmag.com/article2/0,2817,2400985,00.asp&lt;/ref&gt;. 
 
-Before patching Windows, Microsoft is known to consult with intelligence agencies about which security holes they should patch to avoid hindering targeted attacks. This is unethical behavior and runs counter to the proper security practice of full disclosure.
+Before patching Windows, Microsoft is known to consult with intelligence agencies about which security holes they should patch to avoid hindering targeted attacks. This is unethical behavior and runs counter to the proper security practice of full disclosure &lt;ref&gt;https://www.techdirt.com/articles/20130614/02110223467/microsoft-said-to-give-zero-day-exploits-to-us-government-before-it-patches-them.shtml&lt;/ref&gt;.
 
 === GNU/Linux Hosts ===
 
@@ -5717,7 +5717,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>fwm2swpqz5zkrbq5ocgblbi8wpznz52</sha1>
+      <sha1>gev5n6wg6bxgolxsylhvkjifqt0zw6y</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
