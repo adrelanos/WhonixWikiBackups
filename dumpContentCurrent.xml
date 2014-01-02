@@ -5402,15 +5402,15 @@ then choose etc (at the bottom) and then choose UTC.
     <ns>0</ns>
     <id>87</id>
     <revision>
-      <id>4557</id>
-      <parentid>4556</parentid>
-      <timestamp>2014-01-01T19:14:21Z</timestamp>
+      <id>4565</id>
+      <parentid>4564</parentid>
+      <timestamp>2014-01-02T19:59:20Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
       <comment>/* Windows Hosts */</comment>
-      <text xml:space="preserve" bytes="20438">&lt;!--
+      <text xml:space="preserve" bytes="21332">&lt;!--
 Copyright:
 
    Whonix Pre Install Advice wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -5508,7 +5508,9 @@ Microsoft silently updates users' machines even if that runs counter to their wi
 
 Windows as a host system is unsuitable for anonymity due to the large number of software that phones home that comes included in a default install and the leaks that result from this. &lt;ref&gt;https://trac.torproject.org/projects/tor/wiki/doc/TransparentProxyLeaks#Windows&lt;/ref&gt; Additional privacy risks not covered in the article have been introduced as part of the Windows 8. They include the smartscreen filter which reports to Microsoft what software you are running on your computer. &lt;ref&gt;http://log.nadim.cc/?p=78&lt;/ref&gt; It includes a kill switch that can allow Microsoft (or any one with an exploit for this mechanism) delete programs on your machine without your consent. &lt;ref&gt;http://www.pcmag.com/article2/0,2817,2400985,00.asp&lt;/ref&gt;
 
-Before patching Windows, Microsoft is known to consult with intelligence agencies about which security holes before they tell the public about them or fix them. &lt;ref&gt;https://www.techdirt.com/articles/20130614/02110223467/microsoft-said-to-give-zero-day-exploits-to-us-government-before-it-patches-them.shtml&lt;/ref&gt;
+Before patching Windows, Microsoft is known to consult with intelligence agencies about which security holes before they tell the public about them or fix them. &lt;ref&gt;https://www.techdirt.com/articles/20130614/02110223467/microsoft-said-to-give-zero-day-exploits-to-us-government-before-it-patches-them.shtml&lt;/ref&gt; Since the NSA also buys security holes from other companies &lt;ref&gt;https://threatpost.com/nsa-bought-exploit-service-from-vupen-contract-shows/102314&lt;/ref&gt; and uses them to gain unauthorized access in computer systems &lt;ref&gt;http://www.theguardian.com/world/2013/oct/04/tor-attacks-nsa-users-online-anonymity&lt;/ref&gt;, it is reasonable to assume, that the NSA also uses information supplied by Microsoft and that therefore Windows users are at higher risk.
+
+Microsoft update used weak cryptographic verification. The CMU Software Engineering Institute said about MD5 in 2009 about MD5 it &quot;should be considered cryptographically broken and unsuitable for further use&quot; &lt;ref&gt;https://en.wikipedia.org/wiki/MD5#cite_note-11&lt;/ref&gt; In 2012, the Flame malware exploited the weaknesses in MD5 to fake a Microsoft digital signature. &lt;ref&gt;http://arstechnica.com/security/2012/06/flame-crypto-breakthrough/&lt;/ref&gt;
 
 If you insist on using a Windows host... Was Windows installed from legitimate media? Not some pirated iso found on the net that could include malware. You shouldn't have any pirated software, this usually involves running unverified, possibly malicious binary cracks or key generators. 
 
@@ -5716,7 +5718,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>3dg7t5eez74gvh6wncby36gqabp89q4</sha1>
+      <sha1>jc8q3buzk8p9n2kxdqpcpidel1qn3dw</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -36936,15 +36938,15 @@ There is an extra chapter about the [[Pre Install Advice#MAC Address|MAC address
     <ns>0</ns>
     <id>303</id>
     <revision>
-      <id>3837</id>
-      <parentid>3836</parentid>
-      <timestamp>2013-10-22T03:22:30Z</timestamp>
+      <id>4566</id>
+      <parentid>3837</parentid>
+      <timestamp>2014-01-02T20:11:22Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Files */</comment>
-      <text xml:space="preserve" bytes="6995">{{Header}}
+      <comment>/* Introduction */</comment>
+      <text xml:space="preserve" bytes="7717">{{Header}}
 
 = Control Port Filter Proxy =
 == Introduction ==
@@ -36960,7 +36962,7 @@ Therefore all requirements, Whonix-Workstation having no way of finding its own 
 
 Control Port Filter Proxy has been implemented as a solution. It gives Whonix-Workstation access to a limited selection of Tor's control port commands, using white listing (not blacklisting). For example, it allows &quot;SIGNAL NEWNYM&quot; to make Tor Buttons New Identity feature available for users who use Tor Browser in Whonix-Workstation.
 
-Tor Button would get confused by the many SocksPorts Whonix-Gateway has open (for stream isolation) due to bug [https://trac.torproject.org/projects/tor/ticket/9224 TorButton about:tor fails when using additional socks listeners]. Therefore when Control Port Filter Proxy gets asked 'GETINFO net/listeners/socks', it lies, and answers '250-net/listeners/socks=&quot;127.0.0.1:9150&quot;'. This makes Tor Button happy and therefore it shows a &quot;Congratulations!&quot; (success) welcome page on its default homepage about:tor and not the failure page, which would confuse users.
+Therefore when Control Port Filter Proxy gets asked 'GETINFO net/listeners/socks', it lies, and answers '250-net/listeners/socks=&quot;127.0.0.1:9150&quot;'. This makes Tor Button happy and therefore it shows a &quot;Congratulations!&quot; (success) welcome page on its default homepage about:tor and not the failure page, which would confuse users. Since bug [https://trac.torproject.org/projects/tor/ticket/9224 TorButton about:tor fails when using additional socks listeners] has been fixed by Tor Tor Project, it that lie wouldn't be necessary anymore. &lt;font size=-3&gt;We're keeping it, because it is not necessary for Tor Button get a full list of all ports Tor is listening on. If an attacker compromised Whonix-Workstation, hiding that list has an advantage. The attacker can probe what ports are available to that Whonix-Workstation, but if the user added extra ports not available to the compromised Whonix-Workstation (only available to another Whonix-Workstation listening on another IP), at least those remain secret. (This is a bit theoretical, because a compromised Whonix-Workstation can spoof it's LAN IP and most likely very few users are using ARP spoofing defenses. Should we add ARP spoofing defenses by default at some point, we at least don't have to worry about this point.)&lt;/font&gt;
 
 For eventual further Tor control port access requirements by Tor Button, the configuration file of accepted commands has to be extended. If Tor Button would ever ask for anything which violates Whonix's design (Whonix-Workstation has no way of finding out its own external IP address in particular), such as &quot;GETINFO address&quot;, for example if Tor Button wanted to ensure, that the user isn't using its own external IP address, a new lie would have to be added to the Control Port Filter Proxy script. In case many more lies are required, lies should go into the config file as well, for now, hard coding is sufficient.
 
@@ -37019,7 +37021,7 @@ grep -r torbutton_send_ctrl_cmd *
 {{Footer}}
 
 [[Category:Design]]</text>
-      <sha1>m7kiiew5p0fwgvb6k5abhtnysul27rp</sha1>
+      <sha1>c1rjynr2neynrssh5jhnmbocab3rdit</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -53553,16 +53555,37 @@ Login screen.
     <ns>0</ns>
     <id>685</id>
     <revision>
-      <id>4540</id>
-      <parentid>4539</parentid>
-      <timestamp>2013-12-29T22:08:42Z</timestamp>
+      <id>4567</id>
+      <parentid>4540</parentid>
+      <timestamp>2014-01-02T21:39:05Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <username>HulaHoop1</username>
+        <id>171</id>
       </contributor>
-      <text xml:space="preserve" bytes="2963">{{Header}}
+      <comment>what is KVM and why use it over virtualbox</comment>
+      <text xml:space="preserve" bytes="6810">{{Header}}
 
 '''UNFINISHED!'''
+
+== What is KVM? ==
+For an openly developed, FOSS GPL licensed hypervisor not beholden to corporate interests, it is recommended you use KVM [Kernel Virtual Machine] that comes with the GNU/Linux OS. Performance is top notch, outdoing all hypervisors, according to the many benchmarks published on the web. Including the well renown phoronix.com, a Linux news and benchmarking site. Its inclusion in the mainline kernel, subjects it to rigorous security testing and scrutiny. Due to the high coding standards and number of eyeballs on the Linux kernel code, making it the most security audited software project in existence, which benefits KVM in that respect. For a detailed view on its security merits read the report issued by an independent security auditing firm: http://www.atsec.com/downloads/white-papers/kvm_security_comparison.pdf
+Advanced, enterprise grade features such as nested virtualization, USB 3.0 passthrough and SPICE give you the opportunity to experience the utmost cutting edge virtualization technology available today, on your personal computer. KVM combined with the VirtualMachineManager front-end should provide a familiar and intuitive, easy to use GUI. 
+
+== Why Use KVM Over VirtualBox? ==
+Recently, the VirtualBox developer team have taken the decision to switch out the BIOS in their hypervisor with one that requires compilation by a toolchain that does not meet the definition of Free Software as per the guidelines of the FSF. This move has been deemed problematic for free and open source software projects like Debian, on which Whonix is based. https://www.whonix.org/wiki/Dev/Virtualization_Platform#VirtualBox_no_longer_in_Debian_mai...
+
+The issues of the Open Watcom License are explained in this thread on the Debian Mailinglist: http://www.mail-archive.com/debian-legal@lists.debian.org/msg34687.html and can be summarized as issues surrounding the contradictory language of the license, the assertion of patents against software that relies on it and the placing of certain restrictions on uses of the software.
+
+For those who care about running Free Software and appreciate its ethical views, it is recommended that you avoid running VirtualBox, for that reason alone if nothing else.
+
+Besides this licensing issue which may or may not be of concern to users, a more tangible reason can be the security practices of Oracle, the corporation behind VirtualBox. Recent events and news (see Snowden leaks) have shown the urgent need for increased transparency and trust in the digital world. Oracle is infamous for their lack of transparency in disclosing security bugs details and for discouraging public full disclosure by third parties.
+http://www.oracle.com/us/support/assurance/vulnerability-remediation/disclosure/index.html &lt;&lt; security through obscurity is the modus operandi at Oracle.
+http://www.oracle.com/us/support/assurance/vulnerability-remediation/reporting-security-vu... &lt;&lt; Oracle calls it &quot;responsible disclosure&quot; which is actually security through obscurity. Not going public with a vulnerability and its details only leads to laziness and complacency on part of the company that fields the affected products.
+http://seclists.org/fulldisclosure/2012/Apr/343 &lt;&lt; A 0day reported privately to Oracle in 2008 by an independent security researcher has remained unfixed as of 2012 when this post was written.
+
+
+Furthermore VirtualBox contains significant functionality that is only available as a proprietary extension, such as USB and PCI passthrough and RDP connectivity. Seeing Oracle's unfriendly trackrecord with the free software community in the past; examples include OpenSolaris and OpenOffice, it would not be a strecth to imagine them charging money for the closed up features at some point in the future or simply abandoning the project if they cannot monetize it to their liking.
+
 
 == KVM Setup Instructions ==
 It is highly recommended you use the GUI VirtualMachineManager package to configure your vm for simplicity and ease of use.
@@ -53629,7 +53652,7 @@ Forum thread: [[Special:AWCforum/st/id306/]]
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>kaxb8580talyvvy5dgse1ts1nrgfl43</sha1>
+      <sha1>lx3ax86s50zxrc6vutq9hjdeusqd5mx</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
