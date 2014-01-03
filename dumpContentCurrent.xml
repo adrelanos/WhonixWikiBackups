@@ -23434,15 +23434,14 @@ Resolve DNS.
     <ns>8</ns>
     <id>220</id>
     <revision>
-      <id>1982</id>
-      <parentid>1981</parentid>
-      <timestamp>2013-07-31T20:55:55Z</timestamp>
+      <id>4573</id>
+      <parentid>1982</parentid>
+      <timestamp>2014-01-03T11:18:34Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <username>Fortasse</username>
+        <id>1</id>
       </contributor>
-      <comment>Undo revision 1979 by [[Special:Contributions/Adrelanos|Adrelanos]] ([[User talk:Adrelanos|talk]])</comment>
-      <text xml:space="preserve" bytes="39243">/* CSS placed here will be applied to all skins */
+      <text xml:space="preserve" bytes="39298">/* CSS placed here will be applied to all skins */
 /* Default styling for HTML elements */
 
  body.page-No_page_title h1.firstHeading, body.page-Main_Page h1.firstHeading
@@ -24854,8 +24853,15 @@ table#mw-prefixindex-nav-table {
 .UnicodeTime { font-family: Quivira, Symbola, &quot;Apple Color Emoji&quot;, Brampton, &quot;Segoe UI Symbol&quot;,   &quot;Arial Unicode MS&quot;, &quot;Lucida Sans Unicode&quot;; }
 .UnicodeUI { font-family: Symbola, Quivira, &quot;Segoe UI Symbol&quot;, &quot;Apple Color Emoji&quot;, FreeSerif, FreeMono, Brampton,   &quot;Arial Unicode MS&quot;, &quot;Lucida Sans Unicode&quot;; }
 .UnicodeWarning { font-family: Symbola, &quot;Segoe UI Symbol&quot;, Quivira, &quot;Apple Color Emoji&quot;, Brampton, FreeSerif, &quot;Arial Unicode MS&quot;,   &quot;Arial Unicode MS&quot;, &quot;Lucida Sans Unicode&quot;; }
-.UnicodeWeather  { font-family: Symbola, Quivira, &quot;Segoe UI Symbol&quot;, FreeSerif, &quot;Apple Color Emoji&quot;, Brampton,   &quot;Arial Unicode MS&quot;, &quot;Lucida Sans Unicode&quot;; }</text>
-      <sha1>dawaefnwyu5cxpb3i1hk49ip1da9h5j</sha1>
+.UnicodeWeather  { font-family: Symbola, Quivira, &quot;Segoe UI Symbol&quot;, FreeSerif, &quot;Apple Color Emoji&quot;, Brampton,   &quot;Arial Unicode MS&quot;, &quot;Lucida Sans Unicode&quot;; }
+
+
+/* improve &lt;pre&gt; tags */
+p
+{
+white-space:pre-line;
+}</text>
+      <sha1>1p6lweq9ge2logrzldn5fybynhxeshj</sha1>
       <model>css</model>
       <format>text/css</format>
     </revision>
@@ -54154,6 +54160,105 @@ The [http://www.openpgp-schulungen.de/fuer/webautoren/ certification] image ([ht
       </contributor>
       <text xml:space="preserve" bytes="41">This file is copyrighted by Hauke Laging.</text>
       <sha1>0m1tk1g918gfg10bkmshnnrifesc2ix</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Hidden Services Guides</title>
+    <ns>0</ns>
+    <id>689</id>
+    <revision>
+      <id>4578</id>
+      <parentid>4577</parentid>
+      <timestamp>2014-01-03T16:59:51Z</timestamp>
+      <contributor>
+        <username>HulaHoop1</username>
+        <id>171</id>
+      </contributor>
+      <comment>sparkleshare anonymous</comment>
+      <text xml:space="preserve" bytes="4397">{{Header}}
+
+= Global Leaks =
+
+Project main site: https://globaleaks.org/
+
+Guide: https://github.com/globaleaks/GlobaLeaks/wiki/Installation-guide
+
+This is a guide to help you set up your own secure and anonymous whistle blowing platform. Note that this is a standalone node and not part of a network, although you can optionally list yourself in the Global Leaks directory. &lt;ref&gt;http://leakdirectory.org/&lt;/ref&gt;
+
+
+= OnionCat =
+
+== Introduction ==
+
+'''Untested. Please leave feedback if it worked for you.'''
+
+Introduction into OnionCat:
+
+* [https://trac.torproject.org/projects/tor/wiki/doc/OnionCat torproject wiki about OnionCat] ([http://www.webcitation.org/6EQUoe9Cs w])
+* [http://www.cypherpunk.at/onioncat cypherpunk.at/onioncat] ([http://www.webcitation.org/6EQUqZawz w])
+* [https://cryptoanarchy.org/wiki/OnionCat cryptoanarchy.org about OnionCat] ([http://web.archive.org/web/20120810015004/https://cryptoanarchy.org/wiki/OnionCat webarchive]; [http://www.webcitation.org/6EQUZky7n webcitation])
+
+OnionCat (Tor) might work with Whonix. GarliCat (i2p) might partially work with Whonix.
+
+General debugging hints:
+
+* There at multiple sources for issues, you might stumble upon.
+* Therefore it's recommended, before you try using OnionCat with Whonix, if that doesn't endanger you, try first to successfully test OnionCat without Whonix.
+* As soon as you learnt that, it eliminated one source for possible issues (OnionCat) and can start learning how to use it with Whonix (which might introduce new issues, but enhanced security will be your reward).
+* You also have to learn first, how to use hidden services with Whonix, see [[Hidden Services|hosting hidden services]] for reference.
+
+== Over Tor ==
+
+As long you want to use OnionCat over Tor, it may work.
+
+IPv6 is currently disabled on Whonix-Gateway, because Tor doesn't support IPv6 yet, and we didn't see need for it. We also have no IPv6 firewall for Whonix-Gateway yet, because it's disabled. Anyway, that will probably not be an issue. IPv6 on Whonix-Workstation, where OnionCat will be running, is enabled. Since only OnionCat's underlying operating system requires IPv6, but not the Tor process there will probably be no problem. OnionCat on Whonix-Workstation will probably translate the IPv6 requests to IPv4 to the Tor process which is running on Whonix-Gateway. Therefore probably no IPv6 on Whonix-Gateway is required.
+
+There instructions on cryptoanarchy.org look very promising. To use them with Whonix, minor modifications are required. Follow the instructions on [https://cryptoanarchy.org/wiki/OnionCat cryptoanarchy.org] ([http://web.archive.org/web/20120810015004/https://cryptoanarchy.org/wiki/OnionCat webarchive]; [http://www.webcitation.org/6EQUZky7n webcitation]) but execute the steps on the correct machine, either on Whonix-Gateway or on Whonix-Workstation.
+
+(0). Install ocat &lt;-- on Whonix-Workstation
+
+&lt;pre&gt;
+sudo apt-get update
+sudo apt-get install onioncat
+&lt;/pre&gt;
+
+(1). Create a hidden service &lt;-- on Whonix-Gateway
+
+(2). Create the directory /etc/tor/ocat &lt;-- on Whonix-Gateway
+
+(3). Find the hostname of your hidden service &lt;-- on Whonix-Gateway Also possibly see [[Hidden Services|hosting hidden services]] for reference. Debugging: It's recommended to test if your hidden service is reachable first (for example, use test wise a hidden webserver), before you proceed with OnionCat.
+
+(4). Start ocat &lt;-- on Whonix-Workstation
+
+(5). Final nodes. &lt;-- on Whonix-Workstation
+
+== Over i2p ==
+
+GarliCat over i2p might only work, if you use [[i2p|ip2 over Tor]].
+
+There was the idea to create an [[Dev/Inspiration#i2pBOX|i2pBOX]], but it never came to live due to lack of community interest, which means GarliCat directly over i2p will not be supported by Whonix.
+
+As soon as i2p over Tor is working in Whonix-Workstation, you can probably follow the instructions on [https://cryptoanarchy.org/wiki/OnionCat cryptoanarchy.org] ([http://web.archive.org/web/20120810015004/https://cryptoanarchy.org/wiki/OnionCat webarchive]; [http://www.webcitation.org/6EQUZky7n webcitation]) without modifications.
+
+
+= Sparkleshare =
+For a private and anonymous DropBox alternative using TOR and Sparkleshare, use the guide below:
+
+https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-software/
+
+{{Footer}}
+
+[[Category:Documentation]]
+
+= References =
+&lt;references/&gt;
+
+{{Footer}}
+
+[[Category:Documentation]]</text>
+      <sha1>e74pftb7k7nnbhugh5lmsw5u57qejg6</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
