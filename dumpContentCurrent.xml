@@ -53564,22 +53564,19 @@ Login screen.
     <ns>0</ns>
     <id>685</id>
     <revision>
-      <id>4572</id>
-      <parentid>4571</parentid>
-      <timestamp>2014-01-03T10:41:40Z</timestamp>
+      <id>4586</id>
+      <parentid>4585</parentid>
+      <timestamp>2014-01-04T14:45:21Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <username>HulaHoop1</username>
+        <id>171</id>
       </contributor>
-      <minor/>
-      <comment>/* Why Use KVM Over VirtualBox? */</comment>
-      <text xml:space="preserve" bytes="6739">{{Header}}
+      <text xml:space="preserve" bytes="6595">{{Header}}
 
 '''UNFINISHED!'''
 
 == What is KVM? ==
-For an openly developed, FOSS GPL licensed hypervisor, it is recommended you use KVM [Kernel Virtual Machine] that comes with the GNU/Linux OS. Good performance according to the many benchmarks published on the web. Including the well renown phoronix.com, a Linux news and benchmarking site. Its inclusion in the mainline kernel, subjects it to rigorous security testing and scrutiny. High coding standards and number of eyeballs on the Linux kernel code, making it a security audited software project in existence, which benefits KVM in that respect. For a detailed view on its security merits read the report issued by an independent security auditing firm: http://www.atsec.com/downloads/white-papers/kvm_security_comparison.pdf
-Advanced, enterprise grade features such as nested virtualization, USB 3.0 passthrough and SPICE give you the opportunity to experience the utmost cutting edge virtualization technology available today, on your personal computer. KVM combined with the VirtualMachineManager front-end should provide a familiar and intuitive, easy to use GUI.
+For an openly developed, FOSS GPL licensed hypervisor, it is recommended you use KVM [Kernel Virtual Machine] that comes with the GNU/Linux OS. KVM combined with the VirtualMachineManager front-end should provide a familiar and intuitive, easy to use GUI.
 
 == Why Use KVM Over VirtualBox? ==
 Recently, the VirtualBox developer team have taken the decision to switch out the BIOS in their hypervisor with one that requires compilation by a toolchain that does not meet the definition of Free Software as per the guidelines of the Free Software Foundation. This move has been deemed problematic for free and open source software projects like Debian, on which Whonix is based. https://www.whonix.org/wiki/Dev/Virtualization_Platform#VirtualBox_no_longer_in_Debian_mai...
@@ -53654,13 +53651,25 @@ Clock disabling for vms on host is recommended by Adrelanos. Still haven't done 
 
 Forum thread: [[Special:AWCforum/st/id306/]]
 
+== Enabling SPICE == 
+SPICE allows accelerated graphics and clipboard sharing. Its implications for security are an open question that needs a detailed answer rather than a vague clear cut one.
+
+1. Enable SPICE by selecting it from the VMM GUI. (It is the default option if you decide not select VNC when creating the VM).
+ 
+Not enabling SPICE from the beginning, will prevent the spice channel device from being added which impacts performance. To fix this add a channel device and select SPICE. This steps is not necessary if you leave the defaults as they are at the beginning.
+
+2. QXL is the GPU model that should be attached.
+
+3. Install vdagent in guest and reboot.
+
+
 = Footnotes =
 &lt;references /&gt;
 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>0re7p06islv4cnds92w993p7nrd872k</sha1>
+      <sha1>2jmzk03cub70nt2t90p7kztqdqil7sh</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
