@@ -15848,14 +15848,15 @@ What's the point in using Skype if you and all your chat partners are also willi
     <ns>0</ns>
     <id>137</id>
     <revision>
-      <id>4341</id>
-      <parentid>4033</parentid>
-      <timestamp>2013-12-18T18:52:09Z</timestamp>
+      <id>4584</id>
+      <parentid>4583</parentid>
+      <timestamp>2014-01-04T09:47:51Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="3247">{{Header}}
+      <comment>/* Support Plan */</comment>
+      <text xml:space="preserve" bytes="3399">{{Header}}
 {{forkme}}
 = Introduction =
 ''Whonix Example Implementation'' is based on VirtualBox. There was a development discussion about switching to a more secure Virtualization Platform and help is required.
@@ -15876,12 +15877,13 @@ Important:
 
 Ideal:
 
-* Someone who creates, signs, uploads .ova images for VMware.
+* Someone who creates, signs, uploads .ova images for the other virtualization platform (such as VMware, KVM, etc.).
 
 == Partially Finished Attempts ==
 * [[VMware]] (proof of concept)
 * [http://qubes-os.org/ Qubes OS] as host operating system would be most interesting. It just needs someone sufficiently motivated to do a little work to make it reality, see blog post [https://sourceforge.net/p/whonix/featureblog/2013/02/running-whonix-on-top-of-qubes-os-anyone-interested-unpacking-ova-images/ Running Whonix on top of Qubes OS, anyone interested?.].
 * [https://sourceforge.net/p/whonix/discussion/general/thread/c0090dde/ Qemu / Virt-Manager] successful report in the forums
+* [[Dev/KVM]] Virt-Manager (Qemu) KVM successful report in the forums and development discussion
 
 = VirtualBox =
 == VirtualBox missing features ==
@@ -15907,7 +15909,7 @@ The following is non-ideal, because we can not warn when host operating sytems a
 {{Footer}}
 
 [[Category: Design]]</text>
-      <sha1>dinrzq1r5qyi23gfmmof66w6gzmhmed</sha1>
+      <sha1>qnx3p8f3ryrr3loixw84x48dw3hrz0x</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -18551,14 +18553,14 @@ When you go ahead now, and ask in a cracker forum, they probably won't spread a 
     <ns>0</ns>
     <id>162</id>
     <revision>
-      <id>4075</id>
-      <parentid>4015</parentid>
-      <timestamp>2013-11-22T18:43:49Z</timestamp>
+      <id>4582</id>
+      <parentid>4075</parentid>
+      <timestamp>2014-01-04T09:45:28Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="5182">{{Header}}
+      <text xml:space="preserve" bytes="5197">{{Header}}
 {{forkme}}
 * '''Technical Design'''
 ** [[Dev/Technical Introduction|Dev/Technical Introduction, Whonix Framework, Security Overview]]
@@ -18635,6 +18637,7 @@ When you go ahead now, and ask in a cracker forum, they probably won't spread a 
 ** [[Dev/DHCP|Consideration running a DHCP server on Whonix-Gateway and running a DHCP client in Whonix-Workstation]]
 ** [[Dev/0.5.6_Package_List]]
 ** [[Dev/7_Package_List]]
+** [[Dev/KVM]]
 
 * '''Other related'''
 ** [[Documentation|Documentation]]
@@ -18663,7 +18666,7 @@ When you go ahead now, and ask in a cracker forum, they probably won't spread a 
 [[Category:Design]]
 
 {{Footer}}</text>
-      <sha1>b125mafmrpw9yx0yj2jk9aevqfbtc94</sha1>
+      <sha1>3n32z9tkmxpbu90eryxg65h44kuk2k9</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -54259,6 +54262,52 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
 
 [[Category:Documentation]]</text>
       <sha1>e74pftb7k7nnbhugh5lmsw5u57qejg6</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>User:ShondaDreyer</title>
+    <ns>2</ns>
+    <id>690</id>
+    <revision>
+      <id>4579</id>
+      <timestamp>2014-01-04T08:44:11Z</timestamp>
+      <contributor>
+        <username>ShondaDreyer</username>
+        <id>185</id>
+      </contributor>
+      <comment>Created page with &quot;My hobby is mainly [http://www.Thefreedictionary.com/Weightlifting Weightlifting]. Seems boring? Not!&lt;br&gt;I also  to learn [http://www.Google.com/search?q=Turkish&amp;btnI=lucky Tu...&quot;</comment>
+      <text xml:space="preserve" bytes="314">My hobby is mainly [http://www.Thefreedictionary.com/Weightlifting Weightlifting]. Seems boring? Not!&lt;br&gt;I also  to learn [http://www.Google.com/search?q=Turkish&amp;btnI=lucky Turkish] in my free time.&lt;br&gt;&lt;br&gt;Have a look at my homepage [http://www.assassinscreedreview.com assassin's creed review - my honest opinion]</text>
+      <sha1>f7wlik0wkyk0jq56rpvs9173m3j1f9s</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Dev/KVM</title>
+    <ns>0</ns>
+    <id>691</id>
+    <revision>
+      <id>4581</id>
+      <parentid>4580</parentid>
+      <timestamp>2014-01-04T09:44:32Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <text xml:space="preserve" bytes="124">{{Header}}
+
+* [[Special:AWCforum/st/id306/]]
+* [[KVM]]
+
+= Footnotes =
+&lt;references /&gt;
+
+{{Footer}}
+
+[[Category:Documentation]]</text>
+      <sha1>b4ydadlj75jxvjpsrmku57bpmaa9njp</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
