@@ -15847,15 +15847,15 @@ What's the point in using Skype if you and all your chat partners are also willi
     <ns>0</ns>
     <id>137</id>
     <revision>
-      <id>4584</id>
-      <parentid>4583</parentid>
-      <timestamp>2014-01-04T09:47:51Z</timestamp>
+      <id>4604</id>
+      <parentid>4584</parentid>
+      <timestamp>2014-01-05T21:56:17Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Support Plan */</comment>
-      <text xml:space="preserve" bytes="3399">{{Header}}
+      <comment>/* VirtualBox */</comment>
+      <text xml:space="preserve" bytes="4022">{{Header}}
 {{forkme}}
 = Introduction =
 ''Whonix Example Implementation'' is based on VirtualBox. There was a development discussion about switching to a more secure Virtualization Platform and help is required.
@@ -15902,13 +15902,20 @@ The following is non-ideal, because we can not warn when host operating sytems a
 * https://www.virtualbox.org/ticket/12011
 * https://lists.torproject.org/pipermail/tor-talk/2013-September/029978.html
 
+== Arguments for keeping VirtualBox Support ==
+* KVM is not available to Windows users.
+* Simplicity, as in: VirtualBox has a VM import GUI feature.
+* Available to users not owning computer providing hardware virtualization. (KVM requires that. Qemu does not?)
+* Due to Windows users and simplicity it leads to greater popularity, which in theory attracts more users, developers, auditors, founding, etc and is therefore good for the overall health of the project.
+* Some Windows/VirtualBox users experimenting with their first Linux (Whonix) will one day become users who mainly use Linux as their host operating system.
+
 == See Also ==
 * [[Advanced_Security_Guide#About_VirtualBox]]
 
 {{Footer}}
 
 [[Category: Design]]</text>
-      <sha1>qnx3p8f3ryrr3loixw84x48dw3hrz0x</sha1>
+      <sha1>qkwvax2pvc513qtlj4tpjwuftykyri4</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -53563,19 +53570,22 @@ Login screen.
     <ns>0</ns>
     <id>685</id>
     <revision>
-      <id>4586</id>
-      <parentid>4585</parentid>
-      <timestamp>2014-01-04T14:45:21Z</timestamp>
+      <id>4602</id>
+      <parentid>4586</parentid>
+      <timestamp>2014-01-05T13:02:44Z</timestamp>
       <contributor>
-        <username>HulaHoop1</username>
-        <id>171</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="6595">{{Header}}
+      <comment>/* What is KVM? */</comment>
+      <text xml:space="preserve" bytes="6776">{{Header}}
 
 '''UNFINISHED!'''
 
 == What is KVM? ==
 For an openly developed, FOSS GPL licensed hypervisor, it is recommended you use KVM [Kernel Virtual Machine] that comes with the GNU/Linux OS. KVM combined with the VirtualMachineManager front-end should provide a familiar and intuitive, easy to use GUI.
+
+For a detailed view on its security merits read the report issued by an independent security auditing firm: http://www.atsec.com/downloads/white-papers/kvm_security_comparison.pdf
 
 == Why Use KVM Over VirtualBox? ==
 Recently, the VirtualBox developer team have taken the decision to switch out the BIOS in their hypervisor with one that requires compilation by a toolchain that does not meet the definition of Free Software as per the guidelines of the Free Software Foundation. This move has been deemed problematic for free and open source software projects like Debian, on which Whonix is based. https://www.whonix.org/wiki/Dev/Virtualization_Platform#VirtualBox_no_longer_in_Debian_mai...
@@ -53668,7 +53678,7 @@ Not enabling SPICE from the beginning, will prevent the spice channel device fro
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>2jmzk03cub70nt2t90p7kztqdqil7sh</sha1>
+      <sha1>apjd6cb7wdkzi8hrlpbtfr07gn1fpaq</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -54297,27 +54307,99 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
     <ns>0</ns>
     <id>691</id>
     <revision>
-      <id>4589</id>
-      <parentid>4588</parentid>
-      <timestamp>2014-01-05T10:56:13Z</timestamp>
+      <id>4607</id>
+      <parentid>4606</parentid>
+      <timestamp>2014-01-05T22:50:34Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="370">{{Header}}
+      <text xml:space="preserve" bytes="3294">{{Header}}
 
 = Links =
 * [[Special:AWCforum/st/id306/]]
 * [[KVM]]
 * [https://github.com/Whonix/Whonix/issues/121 KVM Support github ticket]
 
-= Blocker? =
-== How to adjust KVM to have clock=vm on host. ==
+= Blockers =
+== How to disable KVMClock? ==
+How to adjust KVM to have clock=vm on host.
+
+See http://www.linux-kvm.org/page/KVMClock
+
+http://libvirt.org/formatdomain.html#elementsTime
+
+https://www.redhat.com/archives/libvir-list/2010-March/msg01293.html
+
+https://doc.opensuse.org/products/draft/SLES/SLES-kvm_sd_draft/cha.qemu.running.html#cha.qemu.running.gen_opts.rtc
+
+ls /sys/devices/system/clocksource/clocksource0/current_clocksource
+
+
+To ensure that you have successfully isolated the vm clock form the host's you must run this in the vm:
+
+sudo chmod -x /etc/init.d/sdwdate
+
+You should verify then that no time changes on the host affect the vm.
+
+== Instructions include how to set clock to UTC? ==
+How to use -rtc clock=vm ?
+
+== Weaker warning against KVM in whonixcheck ==
+As soon as all blockers have been sorted out. We could recommend using [[KVM]] instructions.
 
 = Non-Blockers =
 == SPICE security implications ==
+http://lists.freedesktop.org/archives/spice-devel/2013-December/015810.html
+
+http://lists.freedesktop.org/archives/spice-devel/2014-January/015815.html
+
+== Enable virtio by default? ==
+Probably yes?
+
+https://wiki.debian.org/DebianKVMGuests
+
+== Do [[KVM]] instructions need changes to activate virtio? ==
 
 == How to get virtio running for storage? ==
+http://wiki.libvirt.org/page/Virtio
+
+What is http://www.linux-kvm.org/page/Boot_from_virtio_block_device good for? Required?
+
+== How to check if virtio storage access is in use or an eventually existing fallback driver? ==
+
+== How to check if virtio network is really in use or an eventually existing fallback driver? ==
+/sys/devices/virtio-pci/0/net/eth0/statistics/rx_bytes seems not to exist on Debian Wheezy.
+
+== How to enable AppArmor / SELinux for KVM on Debian? ==
+
+== How to add a random time offset? ==
+Having a small random offset (similar to [[Advanced_Security_Guide#Network_Time_Synchronization]]) would be a good thing.
+
+== Is it possible to add 64, 128 or even more MB to the virtual graphics card using the command line to boost graphics performance? ==
+
+== Script/automate creation of VM description files? ==
+So not following manual instructions is required anymore, but copy/paste some commands end up with the correct VM configuration.
+
+== Script/automate creation and upload of qcow2 images? ==
+
+== Script/automate creation and upload of raw images? ==
+Because raw images have better performance than raw images? http://www.linux-kvm.org/page/Qcow2
+
+== Verifiable Builds for qcow2 images==
+[[Verifiable Builds]] not implemented yet. The https://github.com/Whonix/Whonix/blob/master/help-steps/analyze_image requires support for qcow2 images.
+
+= Answered Questions =
+== Leak Tests? ==
+[[HulaHoop1]] sorted that out in [[Special:AWCforum/st/id306/]].
+
+== Hardware serials? ==
+[[HulaHoop1]] sorted that out in [[Special:AWCforum/st/id306/]].
+
+== whonixcheck KVMClock ==
+Whonixcheck should check if /sys/devices/system/clocksource/clocksource0/current_clocksource is kvm-clock and warn if it does.
+
+Implemented: https://github.com/Whonix/Whonix/commit/2584c3bdcd9a98181c7535f963a615d257e0fefd
 
 = Footnotes =
 &lt;references /&gt;
@@ -54325,7 +54407,7 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>rx0a60byby0la3gfpb0i6xjuxgll6zj</sha1>
+      <sha1>gchlxrlw7o37bvbfutp54mjysn41ee9</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
