@@ -13699,15 +13699,14 @@ When you are using them at the same time, the risks explained in the introductio
     <ns>0</ns>
     <id>127</id>
     <revision>
-      <id>4530</id>
-      <parentid>4528</parentid>
-      <timestamp>2013-12-28T22:54:49Z</timestamp>
+      <id>4587</id>
+      <parentid>4530</parentid>
+      <timestamp>2014-01-04T23:37:06Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* More than one Tor Browser in Whonix */</comment>
-      <text xml:space="preserve" bytes="36038">{{Header}}
+      <comment>/* Problematic Interfaces */</comment>
+      <text xml:space="preserve" bytes="36039">{{Header}}
 &lt;!--
 Copyright:
 
@@ -13972,7 +13971,7 @@ If you have a TPM chip, see [http://theinvisiblethings.blogspot.se/2011/09/anti-
 
 == Problematic Interfaces ==
 
-Some interfaces such as ExpressCard, PCMCIA, FireWire or Thunderbol may depending on the host operating system settings allow an attacker with physical access to read the RAM. You are advised to securely configure those interfaces, to disable them or to remove them.
+Some interfaces such as ExpressCard, PCMCIA, FireWire or Thunderbolt may depending on the host operating system settings allow an attacker with physical access to read the RAM. You are advised to securely configure those interfaces, to disable them or to remove them.
 
 = Operating System =
 
@@ -14348,7 +14347,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>lvlpg23awpspy7amalaacinbnkernjg</sha1>
+      <sha1>0q72iz3zd361c671khbvw3lwkz0upfy</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -54298,17 +54297,27 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
     <ns>0</ns>
     <id>691</id>
     <revision>
-      <id>4581</id>
-      <parentid>4580</parentid>
-      <timestamp>2014-01-04T09:44:32Z</timestamp>
+      <id>4589</id>
+      <parentid>4588</parentid>
+      <timestamp>2014-01-05T10:56:13Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="124">{{Header}}
+      <text xml:space="preserve" bytes="370">{{Header}}
 
+= Links =
 * [[Special:AWCforum/st/id306/]]
 * [[KVM]]
+* [https://github.com/Whonix/Whonix/issues/121 KVM Support github ticket]
+
+= Blocker? =
+== How to adjust KVM to have clock=vm on host. ==
+
+= Non-Blockers =
+== SPICE security implications ==
+
+== How to get virtio running for storage? ==
 
 = Footnotes =
 &lt;references /&gt;
@@ -54316,7 +54325,7 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>b4ydadlj75jxvjpsrmku57bpmaa9njp</sha1>
+      <sha1>rx0a60byby0la3gfpb0i6xjuxgll6zj</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
