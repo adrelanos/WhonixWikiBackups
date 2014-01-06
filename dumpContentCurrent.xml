@@ -18559,14 +18559,14 @@ When you go ahead now, and ask in a cracker forum, they probably won't spread a 
     <ns>0</ns>
     <id>162</id>
     <revision>
-      <id>4582</id>
-      <parentid>4075</parentid>
-      <timestamp>2014-01-04T09:45:28Z</timestamp>
+      <id>4611</id>
+      <parentid>4582</parentid>
+      <timestamp>2014-01-06T09:23:34Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="5197">{{Header}}
+      <text xml:space="preserve" bytes="5220">{{Header}}
 {{forkme}}
 * '''Technical Design'''
 ** [[Dev/Technical Introduction|Dev/Technical Introduction, Whonix Framework, Security Overview]]
@@ -18644,6 +18644,7 @@ When you go ahead now, and ask in a cracker forum, they probably won't spread a 
 ** [[Dev/0.5.6_Package_List]]
 ** [[Dev/7_Package_List]]
 ** [[Dev/KVM]]
+** [[Dev/Permissions]]
 
 * '''Other related'''
 ** [[Documentation|Documentation]]
@@ -18672,7 +18673,7 @@ When you go ahead now, and ask in a cracker forum, they probably won't spread a 
 [[Category:Design]]
 
 {{Footer}}</text>
-      <sha1>3n32z9tkmxpbu90eryxg65h44kuk2k9</sha1>
+      <sha1>oytdphk0ax712wzep9ol4ndhqiu76p5</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -33596,14 +33597,15 @@ See [[Dev/Build Documentation]].
     <ns>0</ns>
     <id>288</id>
     <revision>
-      <id>4041</id>
-      <parentid>4040</parentid>
-      <timestamp>2013-11-14T00:37:55Z</timestamp>
+      <id>4612</id>
+      <parentid>4041</parentid>
+      <timestamp>2014-01-06T09:31:05Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="3566">{{Header}}
+      <comment>/* Pre Building */</comment>
+      <text xml:space="preserve" bytes="3688">{{Header}}
 
 = Redistribution =
 See [https://github.com/Whonix/Whonix/tree/master/release Release Folder] in Whonix source code.
@@ -33643,6 +33645,14 @@ git tag -s version
 &lt;pre&gt;
 git push origin version
 &lt;/pre&gt;
+
+* Activate building of qcow2 images. Set
+
+&lt;pre&gt;
+whonix_build_script_create_qcow2=&quot;1&quot;
+&lt;/pre&gt;
+
+In ../buildconfig.d folder.
 
 == Post Building ==
 * OpenPGP sign the images.
@@ -33737,7 +33747,7 @@ Compress. Upload.
 {{Footer}}
 
 [[Category:Development]] [[Category:Design]]</text>
-      <sha1>e8bxwu0tht16llhl6898e8o06k5v6bx</sha1>
+      <sha1>4pmaw8d77didx5plwqiq4ez0rn6fwbb</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -54307,14 +54317,15 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
     <ns>0</ns>
     <id>691</id>
     <revision>
-      <id>4607</id>
-      <parentid>4606</parentid>
-      <timestamp>2014-01-05T22:50:34Z</timestamp>
+      <id>4608</id>
+      <parentid>4607</parentid>
+      <timestamp>2014-01-06T08:39:04Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="3294">{{Header}}
+      <comment>/* Non-Blockers */</comment>
+      <text xml:space="preserve" bytes="3646">{{Header}}
 
 = Links =
 * [[Special:AWCforum/st/id306/]]
@@ -54389,6 +54400,9 @@ Because raw images have better performance than raw images? http://www.linux-kvm
 == Verifiable Builds for qcow2 images==
 [[Verifiable Builds]] not implemented yet. The https://github.com/Whonix/Whonix/blob/master/help-steps/analyze_image requires support for qcow2 images.
 
+== Set cluster_size 512 - 2MB for better performance? ==
+HulaHoop1 wrote: The qcow2 defaults seem fine to me, however the one parameter of interest we should play with is image's : 'cluster_size' 512 - 2MB the larger the size the better performance but the size is bigger. I think we should try the largest and see if the image size stays reasonable.
+
 = Answered Questions =
 == Leak Tests? ==
 [[HulaHoop1]] sorted that out in [[Special:AWCforum/st/id306/]].
@@ -54407,7 +54421,56 @@ Implemented: https://github.com/Whonix/Whonix/commit/2584c3bdcd9a98181c7535f963a
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>gchlxrlw7o37bvbfutp54mjysn41ee9</sha1>
+      <sha1>e5vo6h1p9m398iv8fe8b3jjtp17y6o1</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Dev/Permissions</title>
+    <ns>0</ns>
+    <id>692</id>
+    <revision>
+      <id>4610</id>
+      <parentid>4609</parentid>
+      <timestamp>2014-01-06T09:01:07Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <text xml:space="preserve" bytes="2376">{{Header}}
+
+Whonix developer adrelanos doesn't believe in [https://en.wikipedia.org/wiki/File_system_permissions file system permissions] for containing malware having already infected a system and shares Joanna Rutkowska's opinion on that. The word &quot;believe&quot; in this context has been deliberately chosen, because putting permissions into questions might start a religiously heated discussion.
+
+[http://theinvisiblethings.blogspot.com/2013/06/qubes-os-r3-alpha-preview-odyssey-hal.html Quote Joanna Rutkowska] (computer security researched; Qubes OS developer; ...; [https://en.wikipedia.org/wiki/Joanna_Rutkowska wikipedia]):
+
+&lt;blockquote&gt;
+[...] &lt;br /&gt;
+&lt;br /&gt;
+One interesting thing about Qubes DB is that it get rids of the (overly complex and unnecessary) permission system that is used by xenstore, and instead uses the most simple approach: each VM has its separate Qubes DB daemon, and so a totally separate configuration/state namespace. This is inline with the rest of the Qubes philosophy, which basically says that: '''permissions is dead, long live separation!''' &lt;br /&gt;
+&lt;br /&gt;
+[...]&lt;br /&gt;
+&lt;br /&gt;
+Many old-school security people can't imagine a system without permissions, but if we think about it more, we might get to a conclusion that: 1) permissions are complex and so often difficult to understand and set correctly, 2) require often complex code to parse and make security decisions, and 3) often are absolutely unneeded. &lt;br /&gt;
+&lt;br /&gt;
+[...]&lt;br /&gt;
+&lt;br /&gt;
+As a practical example of how permissions schemes might sometime trick even (otherwise somehow smart) developers into making a mistake consider [http://git.qubes-os.org/?p=joanna/core-admin.git;a=commitdiff;h=59f71f634af596c8fe2ef507509bf1ae850286c7 this bug] in Qubes we made a long time ago when setting permissions on some xenstore key, which resulted in some information leak (not much of a security problem in general, but still). And just today, Xen.org has published [http://lists.xenproject.org/archives/html/xen-devel/2013-06/msg02123.html this advisory], that sounds pretty serious, again caused by bad permissions on some xenstore keys. &lt;br /&gt;
+&lt;br /&gt;
+[...]
+&lt;/blockquote&gt;
+
+The real solution is using strong isolation concepts, as Qubes OS is doing.
+
+Countless hours of Whonix development time were wasted on file permissions.
+
+= Footnotes =
+&lt;references /&gt;
+
+{{Footer}}
+
+[[Category:Documentation]]</text>
+      <sha1>ov7k1xni4m7vdbosi8t5nz8all405az</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
