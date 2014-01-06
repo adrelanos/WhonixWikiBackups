@@ -54317,15 +54317,15 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
     <ns>0</ns>
     <id>691</id>
     <revision>
-      <id>4608</id>
-      <parentid>4607</parentid>
-      <timestamp>2014-01-06T08:39:04Z</timestamp>
+      <id>4616</id>
+      <parentid>4615</parentid>
+      <timestamp>2014-01-06T14:37:23Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <username>HulaHoop1</username>
+        <id>171</id>
       </contributor>
-      <comment>/* Non-Blockers */</comment>
-      <text xml:space="preserve" bytes="3646">{{Header}}
+      <comment>/* Script/automate creation and upload of raw images? */</comment>
+      <text xml:space="preserve" bytes="4186">{{Header}}
 
 = Links =
 * [[Special:AWCforum/st/id306/]]
@@ -54384,10 +54384,16 @@ What is http://www.linux-kvm.org/page/Boot_from_virtio_block_device good for? Re
 
 == How to enable AppArmor / SELinux for KVM on Debian? ==
 
+Details on how to install, configure and enable SELinux enforcing mode:
+https://wiki.debian.org/SELinux/Setup#Steps_to_setup_SELinux
+
 == How to add a random time offset? ==
 Having a small random offset (similar to [[Advanced_Security_Guide#Network_Time_Synchronization]]) would be a good thing.
 
 == Is it possible to add 64, 128 or even more MB to the virtual graphics card using the command line to boost graphics performance? ==
+
+Yes. Can be realised by virsh command as per the steps in here:
+http://serverfault.com/questions/346301/how-to-increase-video-memory-in-libvirt-kvm-gui
 
 == Script/automate creation of VM description files? ==
 So not following manual instructions is required anymore, but copy/paste some commands end up with the correct VM configuration.
@@ -54396,6 +54402,9 @@ So not following manual instructions is required anymore, but copy/paste some co
 
 == Script/automate creation and upload of raw images? ==
 Because raw images have better performance than raw images? http://www.linux-kvm.org/page/Qcow2
+
+True that performance is better, but I don't think it supports snapshots AFAIK.
+For something that supports snapshots and has better performance than qcow2 there is QED. A format developed by IBM for the QEMU project recently, that promises just that.
 
 == Verifiable Builds for qcow2 images==
 [[Verifiable Builds]] not implemented yet. The https://github.com/Whonix/Whonix/blob/master/help-steps/analyze_image requires support for qcow2 images.
@@ -54421,7 +54430,7 @@ Implemented: https://github.com/Whonix/Whonix/commit/2584c3bdcd9a98181c7535f963a
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>e5vo6h1p9m398iv8fe8b3jjtp17y6o1</sha1>
+      <sha1>4noakqfbag3sxi3qyjua3qkitgziigu</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
