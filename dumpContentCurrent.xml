@@ -1431,14 +1431,14 @@ See also [[Security_in_Real_World | Whonix security in real world]], [[Security_
     <ns>0</ns>
     <id>24</id>
     <revision>
-      <id>4137</id>
-      <parentid>4133</parentid>
-      <timestamp>2013-12-05T00:16:41Z</timestamp>
+      <id>4618</id>
+      <parentid>4137</parentid>
+      <timestamp>2014-01-07T10:25:06Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="13791">&lt;!--
+      <text xml:space="preserve" bytes="13877">&lt;!--
 Copyright:
 
    Whonix Documentation wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -1619,6 +1619,7 @@ Anonymity is a complex problem without an easy solution, and security is only as
 
 * [[Whonix Configuration Files|Whonix modular flexible .d style configuration folders]]
 * [[Other Operating Systems|Other Operating Systems such as Windows, Ubuntu, etc. torified by Whonix-Gateway]]
+* [[Other_Desktop_Environments|Other Desktop Environments (Gnome, LXDE, Xfce, etc.)]]
 * [[Backup Whonix VMs]]
 * [[Manually Create Whonix VM Settings|Manually Create Whonix VM Settings, in case you want to restore a backup of .vdi hard disk image files]]
 * [[Manually Updating Tor Browser|Manually updating Tor Browser, temporary workaround, in case the torbrowser updater ever gets broken]]
@@ -1703,7 +1704,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>fngud0duk4ka72a4t7nn65vg0s30or6</sha1>
+      <sha1>f3edi3susvhl91nvxv22vg2rmb1gjbu</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -17073,14 +17074,15 @@ Moved to [Dev] Archive Tunneling UDP over Tor.
     <ns>0</ns>
     <id>147</id>
     <revision>
-      <id>2710</id>
-      <parentid>2706</parentid>
-      <timestamp>2013-09-06T06:03:37Z</timestamp>
+      <id>4619</id>
+      <parentid>2710</parentid>
+      <timestamp>2014-01-07T10:25:42Z</timestamp>
       <contributor>
-        <username>Anon</username>
-        <id>10</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="4248">{{Header}}
+      <comment>/* Replacing Desktop Environment */</comment>
+      <text xml:space="preserve" bytes="4256">{{Header}}
 
 = Tuning =
 
@@ -17103,10 +17105,7 @@ On systems with multi-core processors, if [[Protocol-Leak-Protection_and_Fingerp
 For example you could experiment with uninstalling Nepomuk and virtuoso.
 
 == Replacing Desktop Environment ==
-
-You could even uninstall KDE and use your own desktop environment or only cli.
-
-'''TODO''' This section could be a bit more verbose.
+You could even uninstall KDE and use your own desktop environment or only cli. See [[Other_Desktop_Environments|Other Desktop Environments]].
 
 == Synthetic CPU ==
 
@@ -17172,7 +17171,7 @@ Essentially this feature allows to directly use physical PCI devices on the host
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>5j7816h8h86joe3rf607gej3qw0tlmk</sha1>
+      <sha1>sexb1423hoa6izvtjft6iwsi9bsoq7v</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -54480,6 +54479,50 @@ Countless hours of Whonix development time were wasted on file permissions.
 
 [[Category:Documentation]]</text>
       <sha1>ov7k1xni4m7vdbosi8t5nz8all405az</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Other Desktop Environments</title>
+    <ns>0</ns>
+    <id>693</id>
+    <revision>
+      <id>4617</id>
+      <timestamp>2014-01-07T10:23:39Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;{{Header}}  = Current Situation = [[Download]]able Whonix versions come with KDE installed by default. It is possible to uninstall KDE, although doing so is a bit difficult, e...&quot;</comment>
+      <text xml:space="preserve" bytes="2278">{{Header}}
+
+= Current Situation =
+[[Download]]able Whonix versions come with KDE installed by default. It is possible to uninstall KDE, although doing so is a bit difficult, especially if you want to uninstall all of it and/or to to use a CLI version and/or to install their own desktop environment such as Gnome, LXDE, etc.
+
+Users who build Whonix from source code using [[Dev/Build Documentation]] can use optional Terminal-Only build configuration option. And then decide from there.
+
+= Risks =
+When installing your own desktop environment, you're on your own. In theory (also tested a little bit), everything should work except Whonix's link open confirmation (asking for confirmation, if you want to open a link you click outside the browser in Tor Browser to avoid linking) and perhaps Tor Browser won't be the default browser.
+
+Other desktop environments install other background services. We haven't researched the privacy implications of having these installed. For example, Gnome automatically installs [https://en.wikipedia.org/wiki/GeoClue GeoClue]. (Whonix prevents installation of that very package, but still...) And comes with a different collection of default applications that have not necessarily been checked for privacy. For example, Thunderbird/TorBirdy (as explained on the [[E-Mail]] page) is the only recommended mail client. Installing your own desktop environment may result in installing KMail, which isn't recommended, since there is no TorBirdy-like extension for KMail.
+
+= Future =
+At the moment unfortunately, &quot;Whonix should support other desktop environments&quot; is a synonym for &quot;adrelanos should support other desktop environments&quot;. Due to time constrains it won't be possible for Whonix developer adrelanos to maintain a second desktop environment next to maintaining the KDE desktop environment.
+
+Since Whonix is an Open Source / Free Software project, Whonix developers are hoping that other developers join the project and maintain other desktop environments. That someone could be you.
+
+Related FAQ:
+
+* [[FAQ#Why_is_KDE_.28big.29_the_default_desktop_environment.3F_Why_not_use_a_minimal_DE.3F|Why is KDE (big) the default desktop environment? Why not use a minimal DE?]]
+
+== Footnotes ==
+&lt;references/&gt;
+
+{{Footer}}
+
+[[Category:Documentation]]</text>
+      <sha1>twe6f6h6ovgybsq9yvjwiqmevnwgde6</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
