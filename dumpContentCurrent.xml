@@ -12329,16 +12329,14 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>118</id>
     <revision>
-      <id>4088</id>
-      <parentid>3878</parentid>
-      <timestamp>2013-11-25T03:57:34Z</timestamp>
+      <id>4621</id>
+      <parentid>4088</parentid>
+      <timestamp>2014-01-07T22:57:47Z</timestamp>
       <contributor>
-        <username>Fortasse</username>
-        <id>1</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <minor/>
-      <comment>Protected &quot;[[Contribute]]&quot;: prevent tampering of BTC address ([Edit=Allow only administrators] (indefinite) [Move=Allow only administrators] (indefinite))</comment>
-      <text xml:space="preserve" bytes="6257">{{Header}}
+      <text xml:space="preserve" bytes="6386">{{Header}}
 
 = Easy / Anyone =
 == General ==
@@ -12357,6 +12355,15 @@ Follow Whonix on [https://twitter.com/Whonix Twitter].
 Send [[Contact|feedback]] about Whonix.
 
 == Donate ==
+If you appreciate adrelanos's work on Whonix, want to say thanks and support further maintenance, support, development and hosting, please donate. It will keep adrelanos motivated. It is no secret, that the money could be spend on amusements as a tiny compensation for the countless hours of research and development.
+
+Adrelanos would like to buy better and more hardware for testing. This would speed up development and improve quality assurance.
+
+If you want to pay for getting a new feature, this may be possible as well, please get in [[Contact#For_private_inquiries|Contact]] to talk about the details.
+
+If you don't have any Bitcoins and want to donate non-anonymously, you could use a Web Wallet service such as [https://coinbase.com/ Coinbase]. While Coinbase requires a US bank account, there are other exchanges, which allow to easily pay by bank wire and to forward the money to the Bitcoin address of your choice. Please get in [[Contact#For_Donations|Contact]] if you would like to donate but don't know how.
+
+=== Bitcoin ===
 [[Image:BC_Rnd_64px.png|link=bitcoin:1JgzCCSox56Sh4NnQJqRiwoxKi8oVSZBEd]]
 
 Please send Bitcoins to this address to support Whonix:
@@ -12369,13 +12376,12 @@ bitcoin:1JgzCCSox56Sh4NnQJqRiwoxKi8oVSZBEd
 
 [[Image:whonix-donate-qr-code.gif]]
 
-If you appreciate adrelanos's work on Whonix, want to say thanks and support further maintenance, support, development and hosting, please donate. It will keep adrelanos motivated. It is no secret, that the money could be spend on amusements as a tiny compensation for the countless hours of research and development.
+=== Litecoin ===
+&lt;pre&gt;
+LW3wgQtZhtR2G5Uv48rSzonFd1arhUfjE9
+&lt;/pre&gt;
 
-Adrelanos would like to buy better and more hardware for testing. This would speed up development and improve quality assurance.
-
-If you want to pay for getting a new feature, this may be possible as well, please get in [[Contact#For_private_inquiries|Contact]] to talk about the details.
-
-If you don't have any Bitcoins and want to donate non-anonymously, you could use a Web Wallet service such as [https://coinbase.com/ Coinbase]. While Coinbase requires a US bank account, there are other exchanges, which allow to easily pay by bank wire and to forward the money to the Bitcoin address of your choice. Please get in [[Contact#For_Donations|Contact]] if you would like to donate but don't know how.
+litecoin:LW3wgQtZhtR2G5Uv48rSzonFd1arhUfjE9ff
 
 == Vote ==
 === Vote on sourceforge.net ===
@@ -12499,7 +12505,7 @@ for places where I could need more input. Also reviewing the whole source code o
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Development]]</text>
-      <sha1>re7ie8xkmw6fg3gu3gak15dt34s6l19</sha1>
+      <sha1>bb1obeoo77hiohvd05a07co5azdfig5</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -54316,15 +54322,15 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
     <ns>0</ns>
     <id>691</id>
     <revision>
-      <id>4616</id>
-      <parentid>4615</parentid>
-      <timestamp>2014-01-06T14:37:23Z</timestamp>
+      <id>4620</id>
+      <parentid>4616</parentid>
+      <timestamp>2014-01-07T17:58:43Z</timestamp>
       <contributor>
-        <username>HulaHoop1</username>
-        <id>171</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>/* Script/automate creation and upload of raw images? */</comment>
-      <text xml:space="preserve" bytes="4186">{{Header}}
+      <comment>/* How to enable AppArmor / SELinux for KVM on Debian? */</comment>
+      <text xml:space="preserve" bytes="4415">{{Header}}
 
 = Links =
 * [[Special:AWCforum/st/id306/]]
@@ -54384,7 +54390,7 @@ What is http://www.linux-kvm.org/page/Boot_from_virtio_block_device good for? Re
 == How to enable AppArmor / SELinux for KVM on Debian? ==
 
 Details on how to install, configure and enable SELinux enforcing mode:
-https://wiki.debian.org/SELinux/Setup#Steps_to_setup_SELinux
+https://wiki.debian.org/SELinux/Setup#Steps_to_setup_SELinux &lt;-- This is a start, but incomplete. When following these instructions it gets difficult at the &quot;audit2why -al&quot; step, because it shows a ton of policy violations which are non-trivial to fix without learning a lot about SELinux.
 
 == How to add a random time offset? ==
 Having a small random offset (similar to [[Advanced_Security_Guide#Network_Time_Synchronization]]) would be a good thing.
@@ -54429,7 +54435,7 @@ Implemented: https://github.com/Whonix/Whonix/commit/2584c3bdcd9a98181c7535f963a
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>4noakqfbag3sxi3qyjua3qkitgziigu</sha1>
+      <sha1>e59m83j5a9zd9jgvglovt0sikuoswev</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
