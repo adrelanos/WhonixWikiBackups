@@ -4940,15 +4940,15 @@ AyCDWXR3yKGMWHkJqfLu
     <ns>0</ns>
     <id>85</id>
     <revision>
-      <id>3044</id>
-      <parentid>2649</parentid>
-      <timestamp>2013-10-02T23:01:31Z</timestamp>
+      <id>4623</id>
+      <parentid>3044</parentid>
+      <timestamp>2014-01-08T20:51:11Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Sources */</comment>
-      <text xml:space="preserve" bytes="11810">{{Header}}
+      <comment>/* Contributors */</comment>
+      <text xml:space="preserve" bytes="11964">{{Header}}
 = DISCLAIMER =
 
 == General ==
@@ -5006,6 +5006,16 @@ In random order.
 '''anonymous'''
 
 * documentation feedback
+
+'''HulaHoop'''
+
+* KVM leak testing and instructions.
+
+'''Jason Ayala'''
+
+* Creative Consultant
+* Usability testing and feedback
+* English language fixes
 
 = Credits, Inspiration, Alternatives, Sources =
 
@@ -5146,7 +5156,7 @@ See license file in Whonix source code.
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Development]]</text>
-      <sha1>eaqfeeq1w8u7sujob8x91j7oni0tzh7</sha1>
+      <sha1>g6m6blh1yp32s51w4jetk8be41r1g2r</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -18962,15 +18972,15 @@ It's possible with Whonix. (See [[Other Anonymizing Networks]] in case you're in
     <ns>0</ns>
     <id>170</id>
     <revision>
-      <id>4153</id>
-      <parentid>4152</parentid>
-      <timestamp>2013-12-07T16:34:55Z</timestamp>
+      <id>4622</id>
+      <parentid>4153</parentid>
+      <timestamp>2014-01-08T16:19:52Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Installing i2p on Whonix-Gateway (i2pBOX) */</comment>
-      <text xml:space="preserve" bytes="9211">{{Header}}
+      <comment>/* Transparent Proxying Method */</comment>
+      <text xml:space="preserve" bytes="9287">{{Header}}
 
 = WARNING =
 
@@ -19119,6 +19129,10 @@ Sources:
 * Leonid Evdokimov (author of [https://github.com/darkk/redsocks redsocks]) on mailing list, [http://librelist.com/browser//redsocks/2012/5/15/transparent-proxy-dns-without-public-dns-server/#e8cb0f54932856f1c0cc9259e24cb089 Transparent Proxy, DNS, without public DNS server]
 * [http://tiggerswelt.net/Ueber%20uns/impressum/ Bernd Holzmüller] (author of [http://oss.tiggerswelt.net/transocks_ev/ transocks_ev]) by e-mail)
 
+Update:
+
+Maybe https://github.com/jtRIPper/dns-tcp-socks-proxy could help?
+
 === Proxy Settings Method ===
 
 '''Development stalled.''' '''Not finished.'''
@@ -19144,7 +19158,7 @@ In fact [http://retroshare.sourceforge.net RetroShare] is not an [https://en.wik
 {{Footer}}
 
 [[Category:Development]] [[Category:Deprecated]]</text>
-      <sha1>1kb9n3kc2spb0l7z26m8zoghmjkznbw</sha1>
+      <sha1>l0372u84s55pnw50mo2f6qaq19ay9a6</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
