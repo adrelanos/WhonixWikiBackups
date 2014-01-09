@@ -289,18 +289,19 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
     <ns>10</ns>
     <id>14</id>
     <revision>
-      <id>4340</id>
-      <parentid>4339</parentid>
-      <timestamp>2013-12-18T14:09:38Z</timestamp>
+      <id>4630</id>
+      <parentid>4340</parentid>
+      <timestamp>2014-01-09T20:17:25Z</timestamp>
       <contributor>
         <username>Fortasse</username>
         <id>1</id>
       </contributor>
-      <comment>i fixed it! :D</comment>
-      <text xml:space="preserve" bytes="546">&lt;font size=&quot;3&quot;&gt;[https://www.whonix.org{{localurl:{{FULLPAGENAME}}}} https] | &lt;html&gt;&lt;a class=&quot;link-https&quot; style=&quot;color: #3366BB&quot; href=&quot;http://kkkkkkkkkk63ava6.onion&lt;/html&gt;{{localurl:{{FULLPAGENAME}}}}&lt;html&gt;&quot; rel=&quot;nofollow&quot;&gt;.onion&lt;/a&gt;&lt;/html&gt;&lt;/font&gt; &lt;font size=&quot;1&quot;&gt;| [http://whonix.org.nyud.net{{localurl:{{FULLPAGENAME}}}} Mirror] | [https://kkkkkkkkkk63ava6.tor2web.org{{localurl:{{FULLPAGENAME}}}} Mirror] | [[Contribute#Donate|Donate to Whonix!]]&lt;/font&gt;&lt;!--
+      <text xml:space="preserve" bytes="701">&lt;font size=&quot;3&quot;&gt;[https://www.whonix.org{{localurl:{{FULLPAGENAME}}}} https] | &lt;html&gt;&lt;a class=&quot;link-https&quot; style=&quot;color: #3366BB&quot; href=&quot;http://kkkkkkkkkk63ava6.onion&lt;/html&gt;{{localurl:{{FULLPAGENAME}}}}&lt;html&gt;&quot; rel=&quot;nofollow&quot;&gt;.onion&lt;/a&gt;&lt;/html&gt;&lt;/font&gt; &lt;font size=&quot;1&quot;&gt;| [http://whonix.org.nyud.net{{localurl:{{FULLPAGENAME}}}} Mirror] | [https://kkkkkkkkkk63ava6.tor2web.org{{localurl:{{FULLPAGENAME}}}} Mirror] | [[Contribute#Donate|Donate to Whonix!]]&lt;/font&gt;&lt;!--
 inspired by http://aboli.sh/
-@cnpirates ssl(tor) ssl(i2p) coralcdn .sdns .onion .i2p--&gt;</text>
-      <sha1>pg8qs1uri4qjqyik6qo4p3a290g089u</sha1>
+@cnpirates ssl(tor) ssl(i2p) coralcdn .sdns .onion .i2p--&gt;
+&lt;font size=&quot;2&quot;&gt;We are making some DNS changes, so the site may be a little broken for a few days. 
+The .onion address should continue to work 100%.&lt;/font&gt;</text>
+      <sha1>8w9in22s9svdx7hztr52kprusd5tik1</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -6476,14 +6477,14 @@ You could try the [https://www.riseup.net/en/openvpn-linux#gnome riseup.net Open
     <ns>0</ns>
     <id>92</id>
     <revision>
-      <id>4525</id>
-      <parentid>4524</parentid>
-      <timestamp>2013-12-27T09:13:24Z</timestamp>
+      <id>4626</id>
+      <parentid>4625</parentid>
+      <timestamp>2014-01-09T11:20:16Z</timestamp>
       <contributor>
         <username>Jekyll</username>
         <id>161</id>
       </contributor>
-      <text xml:space="preserve" bytes="21592">{{Header}}
+      <text xml:space="preserve" bytes="21402">{{Header}}
 
 '''WARNING''': Please don't forget reading the Warnings chapter.
 
@@ -6809,22 +6810,12 @@ Logon, install all security updates and reboot.
 ## (host) login with &quot;root&quot;
 root
 
-## Edit sources list.
-nano /etc/apt/sources.list
+## Add a new repository source. 
+## If you want to install VirtualBox, you also need to add the &quot;contrib&quot; repository. See the footnote below.
+echo &quot;deb http://ftp.us.debian.org/debian/ jessie main contrib&quot; &gt;&gt; /etc/apt/sources.list
 
-## Add a new source to the file.
-deb http://ftp.us.debian.org/debian/ jessie main
-
-## If you want to install VirtualBox, you also need to add the &quot;contrib&quot; repository to that file. See the footnote below.
-deb http://ftp.us.debian.org/debian/ jessie main contrib
-
-## Press CTRL+X to exit, press Y to save,  press Enter to confirm the changes in the file
-
-## Refresh package lists.
-apt-get update
-
-## Upgrade.
-apt-get dist-upgrade
+## Refresh package lists and upgrade
+apt-get update &amp;&amp; apt-get dist-upgrade -y
 &lt;/pre&gt;
 
 &lt;ref&gt;Please see [[Dev/Virtualization_Platform#VirtualBox_no_longer_in_Debian_main]] for more information.&lt;/ref&gt;
@@ -6833,11 +6824,8 @@ apt-get dist-upgrade
 Install sudo and git. &lt;ref&gt;You need git to obtain the source code. Alternatively, you could also download a git tag as an archive using a (torified) browser: https://github.com/Whonix/Whonix/tags&lt;/ref&gt;
 
 &lt;pre&gt;
-## Install &quot;sudo&quot;.
-apt-get install sudo
-
-## Install git.
-apt-get install git
+## Install &quot;sudo&quot; and git.
+apt-get install sudo git -y
 &lt;/pre&gt;
 
 You must build as user &quot;user&quot; and that user must be a member of the &quot;sudo&quot; group. Rebooting applies the changes.
@@ -7066,7 +7054,7 @@ To get a more complete list, install Debian (with KDE) on bare metal using the r
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>9956gpmo4cmy9n0cvltfy65fgfj7196</sha1>
+      <sha1>jfwroudg0xd95y036xpvtls82ubrp2i</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -47562,20 +47550,21 @@ ii  zsh-common            5.0.2-4         all             architecture independe
     <ns>10</ns>
     <id>491</id>
     <revision>
-      <id>4430</id>
-      <parentid>4427</parentid>
-      <timestamp>2013-12-21T21:22:51Z</timestamp>
+      <id>4628</id>
+      <parentid>4627</parentid>
+      <timestamp>2014-01-09T11:22:04Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <username>Jekyll</username>
+        <id>161</id>
       </contributor>
-      <comment>Rejected the last text change as requested</comment>
-      <text xml:space="preserve" bytes="2758">== Get Whonix Source Code ==
-Install git and get the Whonix's source code.&lt;ref&gt;From https://github.com/adrelanos/Whonix and not from https://github.com/Whonix/Whonix, because only adrelanos/Whonix contains git tags of the testers-only version.&lt;/ref&gt;
+      <minor/>
+      <comment>/* Get Whonix Source Code */</comment>
+      <text xml:space="preserve" bytes="2777">== Get Whonix Source Code ==
+Install git and get the Whonix's source code from the git repository.&lt;ref&gt;From https://github.com/adrelanos/Whonix and not from https://github.com/Whonix/Whonix, because only adrelanos/Whonix contains git tags of the testers-only version.&lt;/ref&gt;
 
 &lt;pre&gt;
 ## Install git.
-sudo apt-get install git
+apt-get install git
 
 ## Get source code.
 git clone https://github.com/adrelanos/Whonix
@@ -47661,7 +47650,7 @@ git checkout 7.3.7
 &lt;/pre&gt;
 
 You have to replace {{Code2|7.3.7}} with the actual version you want to build. The stable version, the testers-only version or the developers version. You can learn about current versions reading [[Download#Stay_tuned|Whonix News Blogs]]. New versions are also announced on the [[Mailing_Lists#whonix-devel|whonix-devel mailing list]]. So you could alternatively check its archives. Signing up for whonix-devel is another way to get informed about new releases.</text>
-      <sha1>lplfu6xjbvyxcer3hwvc99bzciin2l3</sha1>
+      <sha1>qji22knl1be6shrij5g80l5p3voh71s</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -48819,39 +48808,166 @@ Most of this text has been written by [https://alexcabal.com/creating-the-perfec
     <ns>0</ns>
     <id>513</id>
     <revision>
-      <id>4328</id>
-      <parentid>4280</parentid>
-      <timestamp>2013-12-16T17:44:31Z</timestamp>
+      <id>4631</id>
+      <parentid>4328</parentid>
+      <timestamp>2014-01-09T21:18:53Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>Marked this version for translation</comment>
-      <text xml:space="preserve" bytes="718">&lt;languages /&gt;
-[[File:Torsö.jpg|thumb|&lt;translate&gt;&lt;!--T:4--&gt;
-A typical view of Fréttinga&lt;/translate&gt;]]
-&lt;translate&gt;
-&lt;!--T:1--&gt;
-Fréttinga is a small municipality in MungoLand, located on the BaMungo island.
-It hosts a population of about 400 people. It has some agriculture and fishing and
-tourists like to visit it in the summer time. 
-It has marvelous beaches with a lot of [[Special:MyLanguage/Seagull|seagulls]].
+      <text xml:space="preserve" bytes="6676">bug found in version: kpartx 0.4.9+git0.4dfdaf2b-7
 
-== Services == &lt;!--T:2--&gt;
+not affected by this bug: kpartx 0.4.9+git0.4dfdaf2b-6
 
-&lt;!--T:3--&gt;
-It doesn't have many services. There is a shop and a car ferry visits the island
-from the mainland once a day.
+It follows my test script. The command marked with &quot;xxx&quot; is the one causing the device being busy later.
 
-&lt;!--T:5--&gt;
-Main events:
-* The roof of the church fell down in 2009
-* New church was built in 1877 
+##########
 
-&lt;!--T:6--&gt;
-[[Category:Municipalities]]
-&lt;/translate&gt;</text>
-      <sha1>epuvfhvspdn17qzgh7ckf3ztw8atjg3</sha1>
+#!/bin/bash
+
+## starting with a clean state (freshyl rebooted)
+
+set -x
+set -e
+
+mount
+
+kpartx -av /home/user/whonix_binary/Whonix-Gateway.img
+
+mkdir --parents /home/user/whonix_binary/Whonix-Gateway_image
+
+mount /dev/mapper/loop0p1 /home/user/whonix_binary/Whonix-Gateway_image
+
+## xxx
+#umount /home/user/whonix_binary/Whonix-Gateway_image/etc/resolv.conf || true
+
+umount /home/user/whonix_binary/Whonix-Gateway_image
+
+kpartx -d /home/user/whonix_binary/Whonix-Gateway.img
+
+rm -r /home/user/whonix_binary/Whonix-Gateway_image
+
+mount
+
+##########
+
+In that form I can run that script. Here is the log.
+
+##########
+
+$ sudo ./bbbbbbbbbbb 
++ set -e
++ mount
+sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
+proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
+udev on /dev type devtmpfs (rw,relatime,size=10240k,nr_inodes=212969,mode=755)
+devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000)
+tmpfs on /run type tmpfs (rw,nosuid,noexec,relatime,size=414952k,mode=755)
+/dev/disk/by-uuid/8db75226-8f69-4861-b7a0-068db6da9584 on / type ext4 (rw,relatime,errors=remount-ro,data=ordered)
+tmpfs on /run/lock type tmpfs (rw,nosuid,nodev,noexec,relatime,size=5120k)
+pstore on /sys/fs/pstore type pstore (rw,relatime)
+tmpfs on /run/shm type tmpfs (rw,nosuid,nodev,noexec,relatime,size=829900k)
+none on /sys/kernel/security type securityfs (rw,relatime)
++ kpartx -av /home/user/whonix_binary/Whonix-Gateway.img
+add map loop0p1 (254:0): 0 209711104 linear /dev/loop0 4096
++ mkdir --parents /home/user/whonix_binary/Whonix-Gateway_image
++ mount /dev/mapper/loop0p1 /home/user/whonix_binary/Whonix-Gateway_image
++ umount /home/user/whonix_binary/Whonix-Gateway_image
++ kpartx -d /home/user/whonix_binary/Whonix-Gateway.img
+loop deleted : /dev/loop0
++ rm -r /home/user/whonix_binary/Whonix-Gateway_image
++ mount
+sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
+proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
+udev on /dev type devtmpfs (rw,relatime,size=10240k,nr_inodes=212969,mode=755)
+devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000)
+tmpfs on /run type tmpfs (rw,nosuid,noexec,relatime,size=414952k,mode=755)
+/dev/disk/by-uuid/8db75226-8f69-4861-b7a0-068db6da9584 on / type ext4 (rw,relatime,errors=remount-ro,data=ordered)
+tmpfs on /run/lock type tmpfs (rw,nosuid,nodev,noexec,relatime,size=5120k)
+pstore on /sys/fs/pstore type pstore (rw,relatime)
+tmpfs on /run/shm type tmpfs (rw,nosuid,nodev,noexec,relatime,size=829900k)
+none on /sys/kernel/security type securityfs (rw,relatime)
+
+##########
+
+I could run it over and over again. It would always work.
+
+Now I activate add one extra command (the one marked with xxx). Running it for the first time.
+
+Here is the log.
+
+##########
+
+user@host:~$ sudo ./bbbbbbbbbbb 
++ set -e
++ mount
+sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
+proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
+udev on /dev type devtmpfs (rw,relatime,size=10240k,nr_inodes=212969,mode=755)
+devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000)
+tmpfs on /run type tmpfs (rw,nosuid,noexec,relatime,size=414952k,mode=755)
+/dev/disk/by-uuid/8db75226-8f69-4861-b7a0-068db6da9584 on / type ext4 (rw,relatime,errors=remount-ro,data=ordered)
+tmpfs on /run/lock type tmpfs (rw,nosuid,nodev,noexec,relatime,size=5120k)
+pstore on /sys/fs/pstore type pstore (rw,relatime)
+tmpfs on /run/shm type tmpfs (rw,nosuid,nodev,noexec,relatime,size=829900k)
+none on /sys/kernel/security type securityfs (rw,relatime)
++ kpartx -av /home/user/whonix_binary/Whonix-Gateway.img
+add map loop0p1 (254:0): 0 209711104 linear /dev/loop0 4096
++ mkdir --parents /home/user/whonix_binary/Whonix-Gateway_image
++ mount /dev/mapper/loop0p1 /home/user/whonix_binary/Whonix-Gateway_image
++ umount /home/user/whonix_binary/Whonix-Gateway_image/etc/resolv.conf
+umount: /home/user/whonix_binary/Whonix-Gateway_image/etc/resolv.conf: not found
++ true
++ umount /home/user/whonix_binary/Whonix-Gateway_image
++ kpartx -d /home/user/whonix_binary/Whonix-Gateway.img
+loop deleted : /dev/loop0
++ rm -r /home/user/whonix_binary/Whonix-Gateway_image
++ mount
+sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
+proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
+udev on /dev type devtmpfs (rw,relatime,size=10240k,nr_inodes=212969,mode=755)
+devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000)
+tmpfs on /run type tmpfs (rw,nosuid,noexec,relatime,size=414952k,mode=755)
+/dev/disk/by-uuid/8db75226-8f69-4861-b7a0-068db6da9584 on / type ext4 (rw,relatime,errors=remount-ro,data=ordered)
+tmpfs on /run/lock type tmpfs (rw,nosuid,nodev,noexec,relatime,size=5120k)
+pstore on /sys/fs/pstore type pstore (rw,relatime)
+tmpfs on /run/shm type tmpfs (rw,nosuid,nodev,noexec,relatime,size=829900k)
+none on /sys/kernel/security type securityfs (rw,relatime)
+
+##########
+
+It worked. But when I run it for the second time, the device is busy. Log follows.
+
+##########
+
+user@host:~$ sudo ./bbbbbbbbbbb 
++ set -e
++ mount
+sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
+proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
+udev on /dev type devtmpfs (rw,relatime,size=10240k,nr_inodes=212969,mode=755)
+devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000)
+tmpfs on /run type tmpfs (rw,nosuid,noexec,relatime,size=414952k,mode=755)
+/dev/disk/by-uuid/8db75226-8f69-4861-b7a0-068db6da9584 on / type ext4 (rw,relatime,errors=remount-ro,data=ordered)
+tmpfs on /run/lock type tmpfs (rw,nosuid,nodev,noexec,relatime,size=5120k)
+pstore on /sys/fs/pstore type pstore (rw,relatime)
+tmpfs on /run/shm type tmpfs (rw,nosuid,nodev,noexec,relatime,size=829900k)
+none on /sys/kernel/security type securityfs (rw,relatime)
++ kpartx -av /home/user/whonix_binary/Whonix-Gateway.img
+add map loop0p1 (254:0): 0 209711104 linear /dev/loop0 4096
++ mkdir --parents /home/user/whonix_binary/Whonix-Gateway_image
++ mount /dev/mapper/loop0p1 /home/user/whonix_binary/Whonix-Gateway_image
++ umount /home/user/whonix_binary/Whonix-Gateway_image/etc/resolv.conf
+umount: /home/user/whonix_binary/Whonix-Gateway_image/etc/resolv.conf: not found
++ true
++ umount /home/user/whonix_binary/Whonix-Gateway_image
++ kpartx -d /home/user/whonix_binary/Whonix-Gateway.img
+device-mapper: remove ioctl on loop0p1 failed: Device or resource busy
+loop deleted : /dev/loop0
+
+##########
+
+Any idea why that is?</text>
+      <sha1>1oes51enoaa1x3hqp7fo8sucnestre0</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -54544,6 +54660,122 @@ Related FAQ:
 
 [[Category:Documentation]]</text>
       <sha1>twe6f6h6ovgybsq9yvjwiqmevnwgde6</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>User:Fortasse/draft</title>
+    <ns>2</ns>
+    <id>694</id>
+    <revision>
+      <id>4629</id>
+      <timestamp>2014-01-09T14:27:59Z</timestamp>
+      <contributor>
+        <username>Fortasse</username>
+        <id>1</id>
+      </contributor>
+      <comment>Created page with &quot;Running a mirror for Whonix can be immensely helpful, but takes some knowledge, proper configuration and adequate resources to be truly useful.  == Requirements ==  * A server...&quot;</comment>
+      <text xml:space="preserve" bytes="3963">Running a mirror for Whonix can be immensely helpful, but takes some knowledge, proper configuration and adequate resources to be truly useful.
+
+== Requirements ==
+
+* A server with a publicly accessibly IP address. You may already have one of these, but [http://lowendbox.com/ lowendbox] often has decent boxes at low prices. Look for ones with higher bandwidth caps, as you will be serving lots of data (~2.5GB for a download of Workstation+Gateway for Whonix 7). The load on your individual mirror will go down as more mirrors are added. If you exceed the allocated bandwidth, you may incur additional charges or even terminated service depending on your provider, so be careful, and overestimate on your bandwidth requirements.
+* SSH root access to that server (sudo is fine)
+* Recommended: Debian Wheezy as the operating system. You can use any distro you like, but this guide is written using Wheezy.
+
+== Install Apache ==
+
+# Install Apache:
+&lt;pre&gt;
+sudo apt-get install apache2
+&lt;/pre&gt;
+
+This will create the directory structure where we will put our mirrored copy of Whonix, as well as install Apache which will serve the mirrored content.
+
+== Getting Whonix ==
+
+Install rsync:
+&lt;pre&gt;
+sudo apt-get install rsync
+&lt;/pre&gt;
+
+and get Whonix from the rsync master:
+&lt;pre&gt;
+sudo rsync -rtv rsync://rsync.whonix.org/whonix /var/www/whonix
+&lt;/pre&gt;
+
+This will put the contents of http://rsync.whonix.org/ in your server's directory /var/www/whonix.
+
+== Automating updates from master ==
+
+So your mirror will be up to date whenever a new version of Whonix is released, we will add an entry to the crontab to check for updates every hour:
+&lt;pre&gt;
+sudo crontab -e
+&lt;/pre&gt;
+
+You will see the crontab opened in nano (at least on Wheezy 7.3). Hit &quot;Page Down&quot; or the down cursor key until you are on the last line (below &quot;m h  dom mon dow   command&quot;) and enter:
+&lt;pre&gt;
+  0 *   *   *   *    rsync -rt rsync://rsync.whonix.org/whonix /var/www/whonix
+&lt;/pre&gt;
+
+The numbers don't have to line up exactly with the heading, but it makes it easier to read.
+
+== Serving the Mirror Content ==
+
+Paste this into /etc/apache2/sites-available/mirror.whonix.org:
+&lt;pre&gt;
+#
+#  mirror.whonix.org (/etc/apache2/sites-available/mirror.whonix.org)
+#
+&lt;VirtualHost *:80&gt;
+        ServerAdmin &lt;YourContactEmail&gt;EDIT THIS
+        ServerName  mirror.whonix.org
+        DocumentRoot /var/www/whonix/
+        # Logfile
+        ErrorLog /var/log/apache2/whonix/error.log
+&lt;/VirtualHost&gt;
+&lt;/pre&gt;Modified from &lt;ref&gt;http://www.debian-administration.org/articles/412&lt;/ref&gt;
+Make the directory for the new logs:
+&lt;pre&gt;
+sudo mkdir /var/log/apache2/whonix
+&lt;/pre&gt;
+Once you filled in your contact email (it will throw errors otherwise), enable the site:
+&lt;pre&gt;
+sudo a2ensite mirror.whonix.org
+&lt;/pre&gt;
+You will be prompted to reload apache:
+&lt;pre&gt;
+sudo service apache2 reload
+&lt;/pre&gt;
+
+== Stripping User IPs ==
+
+While the config file above does not have an access log, user IPs can still be logged in error.log. It is therefore recommended to install mod-removeip to make Apache &quot;blind&quot; to the IP addresses of users. Install it:
+&lt;pre&gt;
+sudo apt-get install libapache2-mod-removeip
+&lt;/pre&gt;
+Activate it:
+&lt;pre&gt;
+sudo a2enmod removeip
+&lt;/pre&gt;
+and reload Apache
+&lt;pre&gt;
+sudo service apache2 restart
+&lt;/pre&gt;
+
+== Getting Your Mirror Added ==
+
+Email the IP address of your new mirror to [[Contact#For_website_issues | Fortasse]], and you will be notified when it has been added to the rotation. Due to the way DNS propagates, it may be up to 24 hours before your system starts seeing traffic.
+
+'''Thanks for your support!'''
+
+== Optional Customization ==
+
+You can customize the header and footer of your directory listing as explained [http://answers.oreilly.com/topic/118-how-to-display-a-standard-header-and-footer-on-directory-listings/ here]. Feel free to have something like &quot;Mirror provided by &lt;link to your blog or company&gt;&quot;, but please don't go overboard. Mirrors with blatant banner ads or user-tracking scripts will be rejected.
+
+&lt;references/&gt;</text>
+      <sha1>f3wg49fb824wpbuedlxxslk3er2pvz1</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
