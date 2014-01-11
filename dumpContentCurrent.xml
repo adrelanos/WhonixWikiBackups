@@ -1134,15 +1134,16 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
     <ns>0</ns>
     <id>23</id>
     <revision>
-      <id>4244</id>
-      <parentid>4048</parentid>
-      <timestamp>2013-12-16T16:35:59Z</timestamp>
+      <id>4648</id>
+      <parentid>4647</parentid>
+      <timestamp>2014-01-11T22:10:45Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <username>Whonix explorer</username>
+        <id>193</id>
       </contributor>
-      <comment>Marked this version for translation</comment>
-      <text xml:space="preserve" bytes="25797">&lt;languages /&gt;
+      <minor/>
+      <comment>/* Man-in-the-middle attacks */</comment>
+      <text xml:space="preserve" bytes="25810">&lt;languages /&gt;
 {{Header}}
 &lt;translate&gt;
 &lt;!--T:1--&gt;
@@ -1250,7 +1251,7 @@ Usually, this is automatically done through [https://en.wikipedia.org/wiki/Trans
 
 The eff has a fantastic [https://www.eff.org/pages/tor-and-https interactive illustration] who can see what when (not) using Tor and when (not) using SSL.
 
-But on top of that the certificate authorities model of trust on Internet is susceptible to various methods of compromise.
+But on top of that, the certificate authorities model of trust on the Internet is susceptible to various methods of compromise.
 
 For example, on March 15, 2011, Comodo, one of the major SSL certificates company, reported that a user account with an affiliate registration authority had been compromised. It was then used to create a new user account that issued nine certificate signing requests for seven domains: mail.google.com, login.live.com, www.google.com, login.yahoo.com (three certificates), login.skype.com, addons.mozilla.org, and global trustee. &lt;ref&gt;Source: [http://blogs.comodo.com/it-security/data-security/the-recent-ra-compromise/ Comodo: The Recent RA Compromise] ([http://www.webcitation.org/6EUyeEwBE w])&lt;/ref&gt;
 
@@ -1258,11 +1259,11 @@ Later in 2011, DigiNotar, a Dutch SSL certificate company, incorrectly issued ce
 
 '''This still leaves open the possibility of a man-in-the-middle attack even when your browser is trusting an HTTPS connection.'''
 
-There are alternatives to SSL, worth checking out if they may be useful for you. Unfortunately can not be used as a drop in replacement. Tools providing connection security include [http://web.monkeysphere.info/ Monkeysphere], [https://en.wikipedia.org/wiki/Convergence_%28SSL%29 Convergence], [http://perspectives-project.org/ Perspectives Project] and Tor hidden services&lt;ref&gt;[[Hidden Services]] are [[Hidden_Services#Notes_about_End-to-end_security_of_Hidden_Services|automatically encrypted end-to-end]]. (More specific: Tor to Tor)&lt;/ref&gt;.
+There are alternatives to SSL, worth checking out if they may be useful for you. Unfortunately, they cannot be used as a drop-in replacement. Tools providing connection security include [http://web.monkeysphere.info/ Monkeysphere], [https://en.wikipedia.org/wiki/Convergence_%28SSL%29 Convergence], [http://perspectives-project.org/ Perspectives Project] and Tor hidden services&lt;ref&gt;[[Hidden Services]] are [[Hidden_Services#Notes_about_End-to-end_security_of_Hidden_Services|automatically encrypted end-to-end]]. (More specific: Tor to Tor)&lt;/ref&gt;.
 
-On one hand, by providing anonymity, Tor makes it more difficult to perform a man-in-the-middle attack targeted at '''one specific person''' with the blessing of a rogue SSL certificate. But on the other end, Tor makes it easier for people or organizations running exit relays to perform large scale MitM attempts, or attacks targeted at '''a specific server''', and especially those among its users who happen to use Tor.
+On the one hand, by providing anonymity, Tor makes it more difficult to perform a man-in-the-middle attack targeted at '''one specific person''' with the blessing of a rogue SSL certificate. But on the other hand, Tor makes it easier for people or organizations running exit relays to perform large scale MitM attempts, or attacks targeted at '''a specific server''', and especially those among its users who happen to use Tor.
 
-In all cases, you are advised to use additional message encryption for encrypting your mails, chats and so on. Tools such as encrypted messengers (Covered on [[Chat]] page.), GPG [https://en.wikipedia.org/wiki/GNU_Privacy_Guard (wikipedia)], [[Software#Encrypt.2C_decrypt.2C_sign.2C_and_verify_text_using_OpenPGP.3B_GnuPG_frontend | KGpg]] and [[E-Mail | Mozilla Thunderbird with TorBirdy]] and enigmail (gpg add-on) may be useful.
+In all cases, you are advised to use additional message encryption for encrypting your mails, chats and so on. Tools such as encrypted messengers (Covered on the [[Chat]] page.), GPG [https://en.wikipedia.org/wiki/GNU_Privacy_Guard (wikipedia)], [[Software#Encrypt.2C_decrypt.2C_sign.2C_and_verify_text_using_OpenPGP.3B_GnuPG_frontend | KGpg]] and [[E-Mail | Mozilla Thunderbird with TorBirdy]] and enigmail (gpg add-on) may be useful.
 
 &lt;ref&gt; Quoted from [https://en.wikipedia.org/wiki/Man-in-the-middle_attack wikipedia Man-in-the-middle_attack] ([http://www.webcitation.org/6EUyk0IKX w]) and [https://blog.torproject.org/blog/detecting-certificate-authority-compromises-and-web-browser-collusion Tor Project: Detecting Certificate Authority compromises and web browser collusion] ([http://www.webcitation.org/6EUykcmES w]). &lt;/ref&gt;
 
@@ -1298,9 +1299,9 @@ For more information on this topic, see also: [[FAQ#Is_there_a_substitute_for_Wh
 
 Numerous files format store hidden data or metadata inside of the files. Text processors or PDF files could store the name of the author, the date and time of creation of the file, and sometimes even parts of the editing history of the fileâ€¦ those hidden data depend on the file format and the software used.
 
-Images file formats, like TIFF of JPEG, probably take the prize in this field. Those files, created by digital cameras or mobile phones, contain a metadata format called EXIF which can include the date, time and sometimes the GPS coordinates of the picture, the brand and serial number of the device which took it as well as a thumbnail of the original image. Image processing software tend to keep those data intact. Internet is full of cropped or blurred images for which the EXIF thumbnail still contains the full original picture.
+Images file formats, like TIFF of JPEG, probably take the prize in this field. Those files, created by digital cameras or mobile phones, contain a metadata format called EXIF which can include the date, time and sometimes the GPS coordinates of the picture, the brand and serial number of the device which took it as well as a thumbnail of the original image. Image processing software tend to keep those data intact. The internet is full of cropped or blurred images for which the EXIF thumbnail still contains the full original picture.
 
-'''Whonix doesn't clear the metadata of your files for you'''. Yet. Still it's in Whonix' design goal to help you do that. For example, Whonix already comes with [[Metadata |  MAT]], which is a Metadata Anonymisation Toolkit.
+'''Whonix doesn't clear the metadata of your files for you'''. Yet, it's still within the Whonix' design goal to help you do that. For example, Whonix already comes with [[Metadata |  MAT]], which is a Metadata Anonymisation Toolkit.
 
 = Whonix doesn't encrypt the Subject: and other headers of your encrypted e-mail messages =
 
@@ -1342,7 +1343,7 @@ Whonix can only be as secure as the host is. Of course you can simply use Whonix
 
 Easy: All anonymous activity should only happen inside Whonix-Workstation. Nowhere else.
 
-Explanation: The host operating system (the operating system running VirtualBox, the system you used before ever downloading Whonix) will NOT be torified. Do never do any anonymous tasks on your host.
+Explanation: The host operating system (the operating system running VirtualBox, the system you used before ever downloading Whonix) will NOT be torified. Never do any anonymous tasks on your host.
 
 The Whonix-Gateway's only purpose is running Tor and the firewall. In most cases there is no need to modify things on the Gateway. Minor modifications such as setting up bridges are documented.
 
@@ -1352,13 +1353,13 @@ Obviously, Whonix can't stop people from looking over your shoulder or stop (mob
 
 = Whonix doesn't prevent you from shooting your own feet =
 
-If you login into your personal Facebook account, which is bound to you real name, you are obviously not anonymous and other things.
+If you login to your personal Facebook account, which is bound to your real name, you are obviously not anonymous!
 
 This will be substantiated on the later page [[DoNot | Non technical steps staying anonymous]].
 
 = Whonix doesn't defeat Stylometry =
 
-Whonix does not obfuscate you writing style.
+Whonix does not obfuscate your writing style.
 
 This will be substantiated on the later page [[Surfing_Posting_Blogging | Anonymous Surfing, Posting and Blogging]].
 
@@ -1381,8 +1382,8 @@ Whonix in its current form does not:
 * Protect against global network adversaries.
 * Protect against hardware or software backdoors.
 * Automatically protect against MAC address fingerprinting on public networks.
-* Protect against the more skilled software attack, unless you use [PhysicalIsolation].
-* By default, protect you if Tor is somehow broken. You can improve that to some extend and with caveats by chaining Tor with SSH, proxies or VPNs.
+* Protect against the more skilled software attacks, unless you use [PhysicalIsolation].
+* By default, protect you if Tor is somehow broken. You can improve that to some extent (with caveats) by chaining Tor with SSH, proxies or VPNs.
 * By default, hide the fact that you are using Tor, though there is an optional feature, [[Hide_Tor_and_Whonix_from_your_ISP | Hide the fact you are using Tor/Whonix]].
 * Use all the possible hardening options like full PIE and grsecurity. It doesn't use AppArmor profiles for everything.
 * Obfuscate your writing style, defeat Stylometry.
@@ -1393,7 +1394,7 @@ If you want to help us improve the security of Whonix, please join the discussio
 
 = Whonix is a work in progress =
 
-Whonix, as well as all the software it includes, are on continuous development and might contain programming errors or security holes. [[Download#Stay_tuned | Stay tuned]] to Whonix development. Do not rely on it for strong anonymity.
+Whonix, as well as all the software it includes, are under continuous development and might contain programming errors or security holes. [[Download#Stay_tuned | Stay tuned]] to Whonix development. Do not rely on it for strong anonymity.
 
 The basic functionality is ready. You can use Whonix to browse the web and [[Hidden Services | host hidden services]], use email, IRC, ssh, etc. Development is still ongoing and more features are being added to Whonix. If you want join the development process or want to see what issues are still open, see our [https://github.com/Whonix/Whonix/issues Whonix github issues tracker].
 
@@ -1422,7 +1423,7 @@ See also [[Security_in_Real_World | Whonix security in real world]], [[Security_
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>e7l1hqe0s1lbzu4wbwz4anbeg1mazha</sha1>
+      <sha1>c6zumiyoocj1qohtutjyb34gchfrb7p</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -1432,14 +1433,16 @@ See also [[Security_in_Real_World | Whonix security in real world]], [[Security_
     <ns>0</ns>
     <id>24</id>
     <revision>
-      <id>4637</id>
-      <parentid>4618</parentid>
-      <timestamp>2014-01-10T14:53:46Z</timestamp>
+      <id>4651</id>
+      <parentid>4637</parentid>
+      <timestamp>2014-01-11T22:39:37Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <username>Whonix explorer</username>
+        <id>193</id>
       </contributor>
-      <text xml:space="preserve" bytes="13907">&lt;!--
+      <minor/>
+      <comment>/* Introduction */</comment>
+      <text xml:space="preserve" bytes="13911">&lt;!--
 Copyright:
 
    Whonix Documentation wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -1489,7 +1492,7 @@ Anonymity is a complex problem without an easy solution, and security is only as
 * [[Features|Features]]
 * [[System Requirements|System requirements]]
 * [[Warning|Warnings!]]
-* [[DoNot|Non technical steps staying anonymous]]
+* [[DoNot|Non-technical steps for staying anonymous]]
 * [[Security in Real World|Whonix Security in Real World]]
 * [[Whonix:Privacy_policy|Whonix.org Site Security]]
 * [[Comparison with Others|Comparison of Whonix, Tails, Tor Browser Bundle and TorVM]]
@@ -1706,7 +1709,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>fdahdoso35qnum8jz4oyuma5zkab3hm</sha1>
+      <sha1>k39qcl9bjutchm6kxwc0rn1cq57d4as</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -7547,15 +7550,16 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
     <ns>0</ns>
     <id>96</id>
     <revision>
-      <id>4515</id>
-      <parentid>4455</parentid>
-      <timestamp>2013-12-27T01:06:40Z</timestamp>
+      <id>4650</id>
+      <parentid>4649</parentid>
+      <timestamp>2014-01-11T22:36:50Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <username>Whonix explorer</username>
+        <id>193</id>
       </contributor>
-      <comment>/* Verifiable Builds */</comment>
-      <text xml:space="preserve" bytes="71334">{{Header}}
+      <minor/>
+      <comment>/* General */</comment>
+      <text xml:space="preserve" bytes="71371">{{Header}}
  
 = Introduction =
 This page contains the comparisons of Whonix, Tails, Tor Browser and Qubes OS TorVM. If anything here is incorrect or becomes outdated feel free to edit this page or [[contact]] us, we'll correct as soon as possible. See also [[#Statement about Neutrality of this Page]].
@@ -8090,14 +8094,14 @@ For more information about Flash and Browser Plugins in Whonix, see also [[Brows
 Knowledge assumed:
 
 * [[Comparison of different Whonix variants]].
-* Unsafe Browser: Tails and Liberte Linux contain a so called Unsafe Browser. The Unsafe Browser does not use Tor. Connects in the clear. It is useful to register on hotspots or to view content in the clear without Tor.
+* Unsafe Browser: Tails and Liberte Linux contain a so-called Unsafe Browser. The Unsafe Browser does not use Tor. It connects in the clear. It is useful to register on hotspots or to view content in the clear without Tor.
 * Exploit against physically isolated Whonix-Gateway: difficult against a bare metal physical isolated Whonix-Gateway. This is because Whonix-Workstation can only access Tor running on Whonix-Gateway. We minimized attack surface, hardening etc. See the whole Security and Hardening page for details.
 * TBB stands for Tor Browser Bundle.
 * In the following table,
 ** &quot;{{Code2|Fail}}&quot; is defined as &quot;IP/location of user is compromised.&quot;.
 ** &quot;{{Code2|Safe}}&quot; is defined as &quot;IP/location of user is hidden behind Tor.&quot;.
 
-Whonix protects against IP/location discovery through root exploits ([https://en.wikipedia.org/wiki/Malware Malware] with root rights) on the Workstation &lt;ref name=workstation /&gt;. This does not mean, risk to get infected with malware. Do not! It would still make all data inside Whonix-Workstation available to the attacker. Like said at other places as well, Whonix is not a perfect system. It can not be. Whonix is not unbreakable. What Whonix does, it higher the effort for an attacker to find out the user's real IP address, thus de-anonymizing the user. The following table shall visualize the various defense layers provided by Whonix.
+Whonix protects against IP/location discovery through root exploits ([https://en.wikipedia.org/wiki/Malware Malware] with root rights) on the Workstation &lt;ref name=workstation /&gt;. This does not mean you should deliberately place yourself at risk to become infected with malware. Do not! It would still make all data inside Whonix-Workstation available to the attacker. Again, Whonix is not a perfect system. It cannot be. Whonix is not unbreakable. What Whonix does is increase the effort required by an attacker to find out the user's real IP address, thus de-anonymizing the user. The following table visualizes the various defense layers provided by Whonix.
 
 {| class=&quot;wikitable&quot; style=&quot;text-align: center; background-color: #fff&quot;
 |- style=&quot;background-color: #f9f9f9&quot;
@@ -8642,9 +8646,9 @@ Different threat model, different implementation, different use cases, although 
 
 = Statement about Neutrality of this Page =
 == General ==
-It is difficult to make an 100% neutral comparison, if the main contributors to this page, are mostly Whonix users. We still believe, having this non-perfect page is better than having no such page. Please also keep in mind, that this page also could have been anonymously posted elsewhere (Wikipedia?). The contributors to this page decided to attach their pseudonyms.
+It is difficult to make an 100% neutral comparison since the main contributors to this page are mostly Whonix users. We still believe that having this non-perfect page is better than having no such page. Please also keep in mind that this page also could have been anonymously posted elsewhere (Wikipedia?). The contributors to this page decided to attach their pseudonyms.
 
-We allow anonymous edits, those are usually we approve edits within a short time. Should anything still be wrong, feel free to edit it right away. The whole article is under a Free (as in speech) license, under GPLv3+, so if anyone is interested to edit this page to a more neutral place (such as Wikipedia?), adrelanos would be fine with that. Adrelanos would also agree to dual/multi/re-licensing this page under a different Free (as in speech) license (such as GFDL or so), should that be required. Ironically, moving the article to Wikipedia wouldn't work so well (adrelanos would still be fine with that!), since Wikipedia does not allow edits made by Tor users, and most people interested in this article, are Tor users.
+We allow anonymous edits, and those we approve are usually published within a short time. Should anything still be wrong, feel free to edit it right away. The whole article is under a Free (as in speech) license, under GPLv3+, so if anyone is interested in editinig this page to a more neutral place (such as Wikipedia?), adrelanos would be fine with that. Adrelanos would also agree to dual/multi/re-licensing this page under a different Free (as in speech) license (such as GFDL or so), should that be required. Ironically, moving the article to Wikipedia wouldn't work so well (adrelanos would still be fine with that!), since Wikipedia does not allow edits made by Tor users, and most people interested in this article are Tor users.
 
 == Different views ==
 One has always to be very careful, when talking about others. Especially, when talking about advantages and disadvantages. Different opinions are accepted and listed here.
@@ -8662,7 +8666,7 @@ One has always to be very careful, when talking about others. Especially, when t
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Design]]</text>
-      <sha1>e7rhjhop5eb36mdm43dmd0qkumliwjm</sha1>
+      <sha1>ml5ssb7ucb3d2soal3dsqzmy2gdiq4e</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -14438,15 +14442,15 @@ You can further improve the security, see the [[Security Guide]].
     <ns>0</ns>
     <id>129</id>
     <revision>
-      <id>3846</id>
-      <parentid>3435</parentid>
-      <timestamp>2013-10-23T23:43:21Z</timestamp>
+      <id>4655</id>
+      <parentid>4654</parentid>
+      <timestamp>2014-01-11T23:00:28Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <username>Whonix explorer</username>
+        <id>193</id>
       </contributor>
-      <comment>/* Why this page? */</comment>
-      <text xml:space="preserve" bytes="23778">{{Header}}
+      <comment>/* Don't alternate Tor with open WiFi. */</comment>
+      <text xml:space="preserve" bytes="23826">{{Header}}
 
 = Things NOT to do =
 
@@ -14454,9 +14458,7 @@ You can further improve the security, see the [[Security Guide]].
 
 &quot;I wonder what my site looks like when I'm anonymous&quot; &lt;ref&gt;https://lists.torproject.org/pipermail/tor-dev/2012-April/003472.html&lt;/ref&gt;
 
-It's best not to visit your own personal website where real names or pseudonyms (which have been ever tied to a non-Tor connection/IP) are attached.
-
-This is because how many people are visiting your personal website? 90% of all Tor users or just you or just very few people? That's a weak anonymity. Once you visit a website your Tor circuit gets dirty. The exit relay knows that someone visited your website and if the site is not that popular, it's a good guess that this someone was you. It wouldn't be hard to assume that further connections originate that exit relay come from your machine.
+It's best not to visit your own personal website where either real names or pseudonyms (which have ever been tied to a non-Tor connection/IP) are attached. Because how many people are visiting your personal website? 90% of all Tor users, or just you, or just very few other people? That's weak anonymity. Once you visit a website your Tor circuit gets dirty. The exit relay knows that someone visited your website and if the site is not that popular, it's a good guess that 'someone' was you. It wouldn't be hard to assume that further connections originating from that exit relay come from your machine.
 
 Source: &lt;ref&gt;[https://trac.torproject.org/projects/tor/ticket/3455 Tor Browser should set SOCKS username for a request based on referer]&lt;/ref&gt;
 
@@ -14557,13 +14559,13 @@ Whonix developer adrelanos is not against using Tor for circumvention and/or loc
 
 == Don't alternate Tor with open WiFi. ==
 
-You may think open WiFi is faster and equally safe as Tor since the IP/location can not be tied to your real name?
+You may think open WiFi is faster and equally safe as Tor since the IP/location cannot be tied to your real name, right?
 
-Better use an open WiFi AND Tor, but not or.
+It's better to use an open WiFi ''AND'' Tor, but not an open WiFi ''OR'' Tor.
 
-The approximate location of any IP address can be tied down to a city, region or even a street. Even if you are already away, you still gave away your city or approximate location since most people don't switch the continent.
+The approximate location of any IP address can be tied down to a city, region or even a street. Even if you are away, you still gave away your city or approximate location since most people don't switch continents.
 
-While this doesn't break your anonymity, the circle of suspects decreased from the world, a continent or the country to a region. This strongly hurts your anonymity. Keep as many pieces of information for yourself.
+While this doesn't break your anonymity, the circle of suspect has decreased from the entire world, a continent, or the country to a region. This strongly hurts your anonymity. Keep as much information as possible to yourself.
 
 == Prevent Tor over Tor scenarios. ==
 
@@ -14757,7 +14759,7 @@ Thanks to intrigeri and anonym, who provided feedback and suggestions for this p
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>hmzyzw9uvwfoo92pmigmrpllmqrp0hu</sha1>
+      <sha1>q0wnjy35fswidlzc7fxf0hfke80a1sg</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -23063,16 +23065,16 @@ In case you need to [[#PAE_crash|disable PAE]], use the 486 kernel.
     <ns>0</ns>
     <id>217</id>
     <revision>
-      <id>2752</id>
-      <parentid>2205</parentid>
-      <timestamp>2013-09-12T23:40:12Z</timestamp>
+      <id>4653</id>
+      <parentid>4652</parentid>
+      <timestamp>2014-01-11T22:48:13Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <username>Whonix explorer</username>
+        <id>193</id>
       </contributor>
       <minor/>
-      <comment>Text replace - &quot;exit node&quot; to &quot;exit relay&quot;</comment>
-      <text xml:space="preserve" bytes="4061">{{Header}}
+      <comment>/* Whonix security in real world */</comment>
+      <text xml:space="preserve" bytes="4049">{{Header}}
 
 = Whonix security in real world =
 
@@ -23082,20 +23084,20 @@ In case you need to [[#PAE_crash|disable PAE]], use the 486 kernel.
 
 Some real world examples that are '''protected by using Whonix''':
 
-* Flash and Java, although recommended against, can also not leak IP/location. See [[Browser Plugins]] for details.
-* Skype, although recommended against, can also not leak IP/location. See [[Voip#skype|Skype]].
-* BitTorrent, when using ordinary proxyfication methods, has been [https://blog.torproject.org/blog/bittorrent-over-tor-isnt-good-idea reported to protocol IP leak] ([http://www.webcitation.org/6FDaBuhHi w]). Although recommended against due to excessive traffic and therefore harming the Tor network (see [[File Sharing]]), can also not leak IP/location. This is because the external ISP IP address is hidden from Whonix-Workstation.
-* [https://tails.boum.org/security/IP_address_leak_with_icedove/index.en.html Tails: Icedove (Thunderbird) leaks the real IP address] ([http://www.webcitation.org/6FDZcatic w]) - Whonix didn't exist at the time that bug existed. Such kinds of leaks are impossible in Whonix, since the Whonix-Workstation is unaware of its external IP. To be fair, such kind of leaks are now much less likely in Tails, since they are no longer using transparent proxying. ([https://mailman.boum.org/pipermail/tails-dev/2012-September/001704.html source] ([http://www.webcitation.org/6FDZe0ZXS w]))
-* [https://tails.boum.org/bugs/pidgin_leaks_the_real_IP/ pidgin leaks the real IP] ([http://www.webcitation.org/6FDZj1gpN w]) - Whonix didn't exist at the time that bug existed. Such kinds of leaks are not possible with Whonix, since the Whonix-Workstation is unaware of its external IP. To be fair, it has to be noted, that this bug existed only in the development source code. They spotted the bug and fixed it before the release. ([https://mailman.boum.org/pipermail/tails-dev/2012-September/001704.html source] ([http://www.webcitation.org/6FDZe0ZXS w]))
+* Flash and Java, although recommended against, cannot leak IP/location. See [[Browser Plugins]] for details.
+* Skype, although recommended against, cannot leak IP/location. See [[Voip#skype|Skype]].
+* BitTorrent, when using ordinary proxyfication methods, has been [https://blog.torproject.org/blog/bittorrent-over-tor-isnt-good-idea reported to protocol IP leak] ([http://www.webcitation.org/6FDaBuhHi w]). Although recommended against due to excessive traffic and therefore harming the Tor network (see [[File Sharing]]), cannot leak IP/location. This is because the external ISP IP address is hidden from Whonix-Workstation.
+* [https://tails.boum.org/security/IP_address_leak_with_icedove/index.en.html Tails: Icedove (Thunderbird) leaks the real IP address] ([http://www.webcitation.org/6FDZcatic w]) - Whonix didn't exist at the time that bug existed. These kinds of leaks are impossible in Whonix, since the Whonix-Workstation is unaware of its external IP. To be fair, these kinds of leaks are now much less likely in Tails, since they are no longer using transparent proxying. ([https://mailman.boum.org/pipermail/tails-dev/2012-September/001704.html source] ([http://www.webcitation.org/6FDZe0ZXS w]))
+* [https://tails.boum.org/bugs/pidgin_leaks_the_real_IP/ pidgin leaks the real IP] ([http://www.webcitation.org/6FDZj1gpN w]) - Whonix didn't exist at the time that bug existed. These kinds of leaks are not possible with Whonix, since the Whonix-Workstation is unaware of its external IP. To be fair, it should be noted that this bug existed only in the development source code. They spotted the bug and fixed it before the release. ([https://mailman.boum.org/pipermail/tails-dev/2012-September/001704.html source] ([http://www.webcitation.org/6FDZe0ZXS w]))
 * [https://blog.torproject.org/blog/firefox-security-bug-proxy-bypass-current-tbbs Tor Browser Bundle: Firefox security bug (proxy-bypass)] ([http://www.webcitation.org/6FDZlP2Ht w]) - This vulnerability was circumvented by Whonix. Any proxy bypass may have only emitted traffic through Tor's TransPort. All that could have been leaked is the IP address of another Tor exit relay, which is harmless.
-* clock skew attack ([http://www.reddit.com/r/onions/comments/10usgv/clock_skewing_a_clever_unconventional_means_of/ link]) ([http://www.webcitation.org/6FDZnhH5j w]) brief summary: The adversary gets the time of a hidden server (example: http header) and measures the skew. Then the adversary compares with Tor relays or other public reachable (web) servers. If they have the same skew, it's very likely, it's hosted on the same server. - Although recommended against to run a Tor relay/public reachable server and a hidden service on the same server (because that opens up for a lot other attacks (bandwidth, DDOS related)), Whonix 0.4.4 and above circumvent this attack. To be fair, when this attack was first described, Whonix didn't exist, but it would circumvent it now.
+* clock skew attack ([http://www.reddit.com/r/onions/comments/10usgv/clock_skewing_a_clever_unconventional_means_of/ link]) ([http://www.webcitation.org/6FDZnhH5j w]) brief summary: The adversary gets the time of a hidden server (example: http header) and measures the skew. Then the adversary compares with Tor relays or other publicly reachable (web) servers. If they have the same skew, it's very likely it's hosted on the same server. - Although it's recommended against to run a Tor relay/publicly reachable server and a hidden service on the same server (because that opens up a lot other attacks (bandwidth, DDOS related)), Whonix 0.4.4 and above circumvent this attack. To be fair, when this attack was first described Whonix didn't exist, but it would circumvent it now.
 * [http://hal.inria.fr/inria-00574178/en/ Exploiting P2P Applications to Trace and Profile Tor Users] ([http://www.webcitation.org/6FVK6WpNu w]) - Whonix didn't exist at the time that attack was first described. This attack gets defeated by Whonix, since the Whonix-Workstation is unaware of its external IP and because Whonix makes extensive use of [[Stream Isolation]].
 * [https://lists.torproject.org/pipermail/tor-announce/2013-August/000089.html Tor security advisory: Old Tor Browser Bundles vulnerable] A vulnerability opened up for remote code execution in Firefox and Tor Browser if JavaScript was enabled (which was the default setting in Firefox and Tor Browser at time of writing). TODO: expand. See also [[Special:AWCforum/st/id50|Forum discussion]].
 
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Design]]</text>
-      <sha1>pv2sp2exu803po5ilav37oxm9hqr5q9</sha1>
+      <sha1>smbtpxltdss833xmocx0yue3fc3e9kq</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
