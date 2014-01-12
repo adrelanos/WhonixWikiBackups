@@ -4844,23 +4844,22 @@ Use at your own risk.
     <ns>4</ns>
     <id>84</id>
     <revision>
-      <id>4085</id>
-      <parentid>4083</parentid>
-      <timestamp>2013-11-23T23:30:44Z</timestamp>
+      <id>4659</id>
+      <parentid>4085</parentid>
+      <timestamp>2014-01-12T02:11:24Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* Whonix.org Site Security */</comment>
-      <text xml:space="preserve" bytes="4200">{{Header}}
+      <comment>/* Whonix.org Privacy Policy */</comment>
+      <text xml:space="preserve" bytes="4188">{{Header}}
 
 = Whonix.org Privacy Policy =
 
-The website whonix.org, takes your privacy serious and collect as little as information as possible. IP logs are disabled, we are using apache mod-removeip &lt;ref&gt;https://we.riseup.net/debian/apache#mod_removeip&lt;/ref&gt;. In case its required (such as spamming or abuse), we may need to re-enable IP logging. 
+The website whonix.org, takes your privacy seriously and collects as little as information as possible. IP logs are disabled, we are using apache mod-removeip &lt;ref&gt;https://we.riseup.net/debian/apache#mod_removeip&lt;/ref&gt;. If it becomes necessary (such as spamming or abuse), we may need to re-enable IP logging. 
 
-In any case, we recommend visiting this website using the Tor Browser in Whonix or using the Tor Browser Bundle. This is because we rent this server from a reputable server provider, but can't audit their logging policy.
+In any case, we recommend visiting this website using the Tor Browser in Whonix or using the Tor Browser Bundle. Although we rent this server from a reputable server provider, but can't audit their logging policy.
 
-A written privacy policy isn't worth so much anyway, since its only privacy by policy. That is why anonymity preserving tools such as Whonix and Tor Browser have been created in the first place, because they offer privacy by design.
+A written privacy policy isn't worth much anyway, since its only privacy by policy. That is why anonymity preserving tools such as Whonix and Tor Browser have been created in the first place. They offer privacy by design.
 
 = Whonix.org Site Security =
 
@@ -4935,7 +4934,7 @@ AyCDWXR3yKGMWHkJqfLu
 
 {{Footer}}
 [[Category:Documentation]] [[Category:Design]]</text>
-      <sha1>50gv41n02mdhmon0xbybadvwp6i15qt</sha1>
+      <sha1>or6ys24w3x1gxhkn61lq17q82stxpb5</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -5418,15 +5417,16 @@ then choose etc (at the bottom) and then choose UTC.
     <ns>0</ns>
     <id>87</id>
     <revision>
-      <id>4565</id>
-      <parentid>4564</parentid>
-      <timestamp>2014-01-02T19:59:20Z</timestamp>
+      <id>4660</id>
+      <parentid>4565</parentid>
+      <timestamp>2014-01-12T02:20:34Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <username>Whonix explorer</username>
+        <id>193</id>
       </contributor>
-      <comment>/* Windows Hosts */</comment>
-      <text xml:space="preserve" bytes="21332">&lt;!--
+      <minor/>
+      <comment>/* Status of MAC Address chapter */</comment>
+      <text xml:space="preserve" bytes="21344">&lt;!--
 Copyright:
 
    Whonix Pre Install Advice wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -5590,7 +5590,7 @@ External webcams should be unplugged, that's even safer. If its a built-in webca
 
 ==== Status of MAC Address chapter ====
 
-This is nowhere well solved. Neither in Whonix, Tails, Liberte Linux or the Tor Browser Bundle. It's still an open research problem. This chapter will give you all existing information.
+No one has a good answer for this problem yet - not Whonix, Tails, Liberte Linux or the Tor Browser Bundle. It's still an open research problem. This chapter will give you all existing information.
 
 ==== Introduction ====
 
@@ -5734,7 +5734,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>jc8q3buzk8p9n2kxdqpcpidel1qn3dw</sha1>
+      <sha1>m18vlmlr0bt64r4q7l6ejv9ux043ksx</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -14442,15 +14442,15 @@ You can further improve the security, see the [[Security Guide]].
     <ns>0</ns>
     <id>129</id>
     <revision>
-      <id>4655</id>
-      <parentid>4654</parentid>
-      <timestamp>2014-01-11T23:00:28Z</timestamp>
+      <id>4658</id>
+      <parentid>4657</parentid>
+      <timestamp>2014-01-11T23:10:54Z</timestamp>
       <contributor>
         <username>Whonix explorer</username>
         <id>193</id>
       </contributor>
-      <comment>/* Don't alternate Tor with open WiFi. */</comment>
-      <text xml:space="preserve" bytes="23826">{{Header}}
+      <comment>/* Don't do (mobile) phone verification. */</comment>
+      <text xml:space="preserve" bytes="23878">{{Header}}
 
 = Things NOT to do =
 
@@ -14714,20 +14714,20 @@ Maxim Kammerer, developer of Liberté Linux &lt;ref&gt;http://dee.su/liberte&lt;
 
 == Don't be the first one to spread your own link. ==
 
-You created anonymously a blog or hidden service? Great. You have a twitter account with lots of followers, run a big clearnet news page or similar? Great. Do not get tempted to be one of the first ones who advertise your new anonymous project! The more you separate identities, the better. Of course, at some point you may or even must be &quot;naturally&quot; aware of it, but be very careful at this point.
+You created an anonymous blog or hidden service? Great. You have a twitter account with lots of followers, run a big clearnet news page or similar? Great. Do not be tempted to be one of the first ones to advertise your new anonymous project! The more you separate identities, the better. Of course, at some point you may or even must be &quot;naturally&quot; aware of it, but be very careful at this point.
 
 == Don't open random files or links. ==
 
-Someone send you an pdf by mail or gave you a link to a pdf? That sender/mailbox/account/key could be compromised and the pdf could be prepared to infect your system. Don't open it with the tool you were expected to open it with. For example, don't open a pdf with a pdf viewer. If the content is public anyway, try using a free online pdf viewer.
+Someone sent you an pdf by mail or gave you a link to a pdf? That sender/mailbox/account/key could be compromised and the pdf could be prepared to infect your system. Don't open it with the default tool you were expected use with by the creator. For example, don't open a pdf with a pdf viewer. If the content is public anyway, try using a free online pdf viewer.
 
 == Don't do (mobile) phone verification. ==
 
-Websites such as Google, Facebook and others will ask for a (mobile) phone number if you login over Tor. Unless, you are really clever or have an alternative, you shouldn't do it.
+Websites such as Google, Facebook and others will ask for a (mobile) phone number if you login over Tor. Unless you are really clever or have an alternative, you shouldn't do it.
 
-Reason: The number you give away will be logged. The SIM card is most likely registered on your name. And even if not, receiving an SMS gives away your location. Even if you anonymously bought a SIM card and do it from a point far away from your home, there is still a risk. The phone. Each time the phone logs into the mobile network, the provider will log the SIM card serial number &lt;ref&gt;[https://en.wikipedia.org/wiki/International_mobile_subscriber_identity IMSI]
-&lt;/ref&gt; AND the phone serial number &lt;ref&gt;[https://en.wikipedia.org/wiki/International_Mobile_Station_Equipment_Identity IMEI]&lt;/ref&gt;. If you bought the SIM card anonymously, but not the phone, it's not anonymous, because these two serials will get linked. If you want to do it, you need a spot far away from your home, a fresh phone, a fresh SIM card, and you must turn of the phone, leave and burn the phone and the SIM card right after doing it.
+Reason: The number you give away will be logged. The SIM card is most likely registered on your name. And even if not, receiving an SMS gives away your location. Even if you anonymously bought a SIM card and do it from a point far away from your home, there is still a risk: the phone itself. Each time the phone logs into the mobile network, the provider will log the SIM card serial number &lt;ref&gt;[https://en.wikipedia.org/wiki/International_mobile_subscriber_identity IMSI]
+&lt;/ref&gt; AND the phone serial number &lt;ref&gt;[https://en.wikipedia.org/wiki/International_Mobile_Station_Equipment_Identity IMEI]&lt;/ref&gt;. If you bought the SIM card anonymously, but not the phone, it's not anonymous, because these two serials will get linked. If you really want to do mobile verification, you need a spot far away from your home, a fresh phone, and a fresh SIM card. Afterwards, you must turn off the phone, and burn both the phone and the SIM card right after doing it.
 
-You could try to find an online service receiving SMS for you. That would work and would be anonymous. The problem is, that it most likely won't work for Google and Facebook, because they actively blacklist such numbers for verification. Or you could try to find someone else receiving the SMS for you, but that would only mitigate the risk from you to the other person.
+You could try to find an online service receiving SMS for you. That would work and would be anonymous. The problem is, that it most likely won't work for Google and Facebook, because they actively blacklist such numbers for verification. Or you could try to find someone else receiving the SMS for you, but that would only shift the risk from you to the other person.
 
 == Why this page? ==
 
@@ -14759,7 +14759,7 @@ Thanks to intrigeri and anonym, who provided feedback and suggestions for this p
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>q0wnjy35fswidlzc7fxf0hfke80a1sg</sha1>
+      <sha1>qzapplh8el5zbw93x62n8j5y9yijn63</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
