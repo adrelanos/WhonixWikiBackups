@@ -2,7 +2,7 @@
   <siteinfo>
     <sitename>Whonix</sitename>
     <base>http://localhost/wiki/Main_Page</base>
-    <generator>MediaWiki 1.21.3</generator>
+    <generator>MediaWiki 1.21.4</generator>
     <case>first-letter</case>
     <namespaces>
       <namespace key="-2" case="first-letter">Media</namespace>
@@ -35,16 +35,16 @@
     <ns>0</ns>
     <id>1</id>
     <revision>
-      <id>4414</id>
-      <parentid>4222</parentid>
-      <timestamp>2013-12-21T15:22:30Z</timestamp>
+      <id>4705</id>
+      <parentid>4688</parentid>
+      <timestamp>2014-01-14T15:21:55Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="5049">{{Header}}
+      <text xml:space="preserve" bytes="5029">{{Header}}
 
-&lt;translate&gt;
+&lt;languages /&gt;&lt;translate&gt;
 
 &lt;!--T:1--&gt;
 {{Infobox OS
@@ -59,8 +59,8 @@
 | released               = 29 Feb 2012
 | latest_release_version = [[Download|{{Version}}]]
 | latest_release_date    = {{Start date and age|2013|10|11|df=yes}}
-| latest_test_version    = [[Dev/Build Documentation|{{DevTag}}]]
-| latest_test_date       = {{Start date and age|2013|09|26|df=yes}}
+| latest_test_version    = 7.7.2
+| latest_test_date       = {{Start date and age|2014|01|13|df=yes}}
 | marketing target       = Anonymity; Privacy; Security; Personal computing; [[HostingLocationHiddenServices|Location Hidden Servers]]
 | kernel_type            = [https://en.wikipedia.org/wiki/Monolithic_kernel Monolithic] ([https://en.wikipedia.org/wiki/Linux_kernel Linux kernel])
 | ui                     = [https://en.wikipedia.org/wiki/KDE KDE]
@@ -117,7 +117,7 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
 &lt;/translate&gt;
 {{Footer}}
 [[Category:Documentation]]</text>
-      <sha1>p9exud08r2r4s0iiwphlt0c36hd8e50</sha1>
+      <sha1>ir4xqjc3pmcirntvhi3lagfwhs7khno</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -309,23 +309,23 @@ inspired by http://aboli.sh/
     <ns>10</ns>
     <id>15</id>
     <revision>
-      <id>4554</id>
-      <parentid>4553</parentid>
-      <timestamp>2013-12-31T09:47:31Z</timestamp>
+      <id>4763</id>
+      <parentid>4554</parentid>
+      <timestamp>2014-01-14T17:43:45Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="863">&lt;br /&gt;&lt;hr&gt;
+      <text xml:space="preserve" bytes="869">&lt;br /&gt;&lt;hr&gt;
 
 &lt;font size=&quot;-3&quot;&gt;This is a wiki. Want to improve this page? See [https://github.com/Whonix/Whonix/blob/master/debian/copyright Conditions for Contributions to Whonix], then &lt;html&gt;&lt;a href=&quot;&lt;/html&gt;{{localurl:{{FULLPAGENAME}}|action=edit}}&lt;html&gt;&quot;&gt;Edit&lt;/a&gt;&lt;/html&gt; it! IP addresses are scrubbed, but editing over Tor is recommended. Edits are held for moderation.
 
-Whonix is a [http://www.openinventionnetwork.com/licensees.php licensee] of the [https://en.wikipedia.org/wiki/Open_Invention_Network Open Invention Network]. Unless otherwise noted above, content of this  page is copyrighted by [mailto:adrelanos@riseupDOTnet adrelanos] and licensed under the same Free (as in speech) [https://github.com/Whonix/Whonix/blob/master/debian/copyright license] as Whonix itself.
+Whonix is a [http://www.openinventionnetwork.com/licensees.php licensee] of the [https://en.wikipedia.org/wiki/Open_Invention_Network Open Invention Network]. Unless otherwise noted above, content of this  page is copyrighted by [mailto:adrelanos@riseup.net Patrick Schleizer] and licensed under the same Free (as in speech) [https://github.com/Whonix/Whonix/blob/master/debian/copyright license] as Whonix itself.
 
 Questions? [[Contact|Contact us!]]
 
 [[Contribute#Donate|Donate to Whonix!]]&lt;/font&gt;</text>
-      <sha1>5rvf5rhjat6u69sxs53h7hwckdpgsdg</sha1>
+      <sha1>khny3c1m11ssk5ma8ikjndvnryb0b27</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -335,20 +335,20 @@ Questions? [[Contact|Contact us!]]
     <ns>0</ns>
     <id>16</id>
     <revision>
-      <id>2682</id>
-      <parentid>2655</parentid>
-      <timestamp>2013-09-05T04:56:43Z</timestamp>
+      <id>4740</id>
+      <parentid>2682</parentid>
+      <timestamp>2014-01-14T17:38:39Z</timestamp>
       <contributor>
-        <username>Anon</username>
-        <id>10</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
       <minor/>
-      <comment>Text replace - &quot;in Whonix wiki on &lt;https://sourceforge.net/p/whonix/wiki/GPLv3/&gt;&quot; to &quot;on Github &lt;https://github.com/Whonix/Whonix/blob/master/GPLv3&gt;&quot;</comment>
-      <text xml:space="preserve" bytes="5770">&lt;!--
+      <comment>Text replace - &quot;Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;&quot; to &quot;Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;&quot;</comment>
+      <text xml:space="preserve" bytes="5766">&lt;!--
 Copyright:
 
    Whonix About wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-   Whonix About wiki page Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+   Whonix About wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
    
    This program is free software; you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -447,7 +447,7 @@ See [[Authorship]].
 = License =
 
 &lt;pre&gt;Whonix About wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-Whonix About wiki page Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+Whonix About wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
 
 This program comes with ABSOLUTELY NO WARRANTY; for details see the wiki source code.
 This is free software, and you are welcome to redistribute it
@@ -457,7 +457,7 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>2n24ebkwag0bq1yl421svihdt3rabnf</sha1>
+      <sha1>cm3wavorr6j51wg77knmokghh3u27x7</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -665,20 +665,19 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>19</id>
     <revision>
-      <id>4453</id>
-      <parentid>4449</parentid>
-      <timestamp>2013-12-25T20:50:48Z</timestamp>
+      <id>4764</id>
+      <parentid>4738</parentid>
+      <timestamp>2014-01-14T17:45:37Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Normal */</comment>
-      <text xml:space="preserve" bytes="20955">{{Header}}
+      <text xml:space="preserve" bytes="20484">{{Header}}
 &lt;!--
 Copyright:
 
    Whonix Download wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-   Whonix Download wiki page Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+   Whonix Download wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
    
    This program is free software; you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -829,7 +828,7 @@ Do not continue if verification failed! You risk using infected or erroneous fil
 }}
 
 &lt;!--T:20--&gt;
-Whonix virtual machine images are cryptographically signed using OpenPGP&lt;ref&gt;OpenPGP is a standard for data encryption that provides cryptographic privacy and authentication through the use of keys owned by its users.&lt;/ref&gt; by Whonix developer adrelanos.
+Whonix virtual machine images are cryptographically signed using OpenPGP&lt;ref&gt;OpenPGP is a standard for data encryption that provides cryptographic privacy and authentication through the use of keys owned by its users.&lt;/ref&gt; by Whonix developer Patrick Schleizer.
 
 &lt;!--T:21--&gt;
 If you know how to use an OpenPGP key, download the [[Whonix Signing Key]] and the [[#Download Whonix|Whonix signatures]] straight away.
@@ -913,13 +912,7 @@ Furthermore you will be automatically notified about new Whonix versions by {{Co
 There are some [[Official Whonix Online Profiles|Whonix Social Media Profiles]], but please don't rely on them for getting Whonix News and please don't use them to contact Whonix developers. (See [[Contact]] for contact information.)
 
 &lt;!--T:49--&gt;
-Because some people will do so even though it is not recommended, messages from the Whonix Feature Blog will be automatically mirrored to [https://twitter.com/Whonix Whonix Twitter Profile] and to [https://plus.google.com/108150429836421683225/about Whonix Google+ Profile].
-
-&lt;!--T:50--&gt;
-[https://www.facebook.com/pages/Whonix/369240439779108 Whonix Facebook Profile] won't get any updates, because {{Code|Facebook is asking for governmental issued photo ID}}.&lt;ref&gt;https://sourceforge.net/p/whonix/featureblog/2013/01/facebook-asking-for-government-issued-photo-id-ex-passport-drivers-license---whonix-facebook-account-permanently-blocked/&lt;/ref&gt;
-
-&lt;!--T:51--&gt;
-identi.ca's mirroring feature is still down,&lt;ref&gt;http://status.net/open-source/issues/3581&lt;/ref&gt; therefore no mirroring to [https://identi.ca/whonix Whonix identi.ca Profile]
+Because some people will do so even though it is not recommended, messages from the Whonix Feature Blog will be automatically mirrored to [https://twitter.com/Whonix Whonix Twitter Profile], to [https://www.facebook.com/pages/Whonix/369240439779108 Whonix Facebook Profile] and to [https://plus.google.com/108150429836421683225/about Whonix Google+ Profile].
 
 &lt;!--T:52--&gt;
 If you won't get into trouble by letting others learn about Whonix, feel free to follow or like those profiles (with your anonymous account) as a little way to [[Contribute]].
@@ -1059,7 +1052,7 @@ sudo ln -s /etc/dpkg/origins/whonix /etc/dpkg/origins/default
 = License =
 &lt;pre&gt;
 Whonix Download wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-Whonix Download wiki page Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+Whonix Download wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
 
 This program comes with ABSOLUTELY NO WARRANTY; for details see the wiki source code.
 This is free software, and you are welcome to redistribute it
@@ -1071,7 +1064,7 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>m7qc3ew3tq16pfg0omrgctrogm4ra9z</sha1>
+      <sha1>8tk4aur6plfhoanex7btdac95xbnj2m</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -1132,16 +1125,16 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
     <ns>0</ns>
     <id>23</id>
     <revision>
-      <id>4648</id>
-      <parentid>4647</parentid>
-      <timestamp>2014-01-11T22:10:45Z</timestamp>
+      <id>4723</id>
+      <parentid>4648</parentid>
+      <timestamp>2014-01-14T17:37:20Z</timestamp>
       <contributor>
-        <username>Whonix explorer</username>
-        <id>193</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
       <minor/>
-      <comment>/* Man-in-the-middle attacks */</comment>
-      <text xml:space="preserve" bytes="25810">&lt;languages /&gt;
+      <comment>Text replace - &quot;Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;&quot; to &quot;Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;&quot;</comment>
+      <text xml:space="preserve" bytes="25806">&lt;languages /&gt;
 {{Header}}
 &lt;translate&gt;
 &lt;!--T:1--&gt;
@@ -1150,7 +1143,7 @@ Copyright:
 
    &lt;!--T:2--&gt;
 Whonix Warning wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-   Whonix Warning wiki page Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+   Whonix Warning wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
    
    This program is free software; you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -1188,7 +1181,7 @@ Even though we're doing our best to offer you good tools to protect your privacy
 = License =
 
 &lt;pre&gt;Whonix Warning wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-Whonix Warning wiki page Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+Whonix Warning wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
 
 This program comes with ABSOLUTELY NO WARRANTY; for details see the wiki source code.
 This is free software, and you are welcome to redistribute it
@@ -1421,7 +1414,7 @@ See also [[Security_in_Real_World | Whonix security in real world]], [[Security_
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>c6zumiyoocj1qohtutjyb34gchfrb7p</sha1>
+      <sha1>7885111er1ply4bbwy8848ipyf3qoo4</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -1431,20 +1424,20 @@ See also [[Security_in_Real_World | Whonix security in real world]], [[Security_
     <ns>0</ns>
     <id>24</id>
     <revision>
-      <id>4651</id>
-      <parentid>4637</parentid>
-      <timestamp>2014-01-11T22:39:37Z</timestamp>
+      <id>4718</id>
+      <parentid>4651</parentid>
+      <timestamp>2014-01-14T17:37:01Z</timestamp>
       <contributor>
-        <username>Whonix explorer</username>
-        <id>193</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
       <minor/>
-      <comment>/* Introduction */</comment>
-      <text xml:space="preserve" bytes="13911">&lt;!--
+      <comment>Text replace - &quot;Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;&quot; to &quot;Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;&quot;</comment>
+      <text xml:space="preserve" bytes="13907">&lt;!--
 Copyright:
 
    Whonix Documentation wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-   Whonix Documentation wiki page Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+   Whonix Documentation wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
    
    This program is free software; you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -1697,7 +1690,7 @@ Anonymity is a complex problem without an easy solution, and security is only as
 
 &lt;pre&gt;
 Whonix Documentation wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-Whonix Documentation wiki page Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+Whonix Documentation wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
 
 This program comes with ABSOLUTELY NO WARRANTY; for details see the wiki source code.
 This is free software, and you are welcome to redistribute it
@@ -1707,7 +1700,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>k39qcl9bjutchm6kxwc0rn1cq57d4as</sha1>
+      <sha1>aowbunkaf41r2mjdeymctdq9lujs60j</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -3057,14 +3050,16 @@ Without performing these basics steps, the setup may sound clever, but may not w
     <ns>0</ns>
     <id>58</id>
     <revision>
-      <id>4045</id>
-      <parentid>3502</parentid>
-      <timestamp>2013-11-14T22:59:19Z</timestamp>
+      <id>4758</id>
+      <parentid>4045</parentid>
+      <timestamp>2014-01-14T17:42:32Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="1892">{{Header}}
+      <minor/>
+      <comment>Text replace - &quot;adrelanos at riseup dot net&quot; to &quot;adrelanos@riseup.net&quot;</comment>
+      <text xml:space="preserve" bytes="1871">{{Header}}
 
 = Contact =
 Please do use e-mail for reporting security vulnerabilities!
@@ -3078,18 +3073,18 @@ See [[Support]].
 &lt;html&gt;&lt;a href=&quot;/cgi-bin/mailman/listinfo/whonix-devel&quot;&gt;Developer Mailing List&lt;/a&gt;&lt;/html&gt;
 
 == For Press ==
-'''Email:''' ''adrelanos at riseup dot net'' &lt;ref name=OpenPGP&gt;E-mail encryption available. [[Trusting Whonix Signing Key | Whonix OpenPGP key information]]&lt;/ref&gt;
+'''Email:''' ''adrelanos@riseup.net'' &lt;ref name=OpenPGP&gt;E-mail encryption available. [[Trusting Whonix Signing Key | Whonix OpenPGP key information]]&lt;/ref&gt;
 
 I would appreciate if you could send me your draft before publishing articles about Whonix. This is not a request. It's an offer. I would proofread it, state where I think something is incorrect and add sources to my claims. I dislike to pressure press. You are free to write what you want. I feel free to post my standpoint in public if I feel otherwise about something.
 
 == For Donations ==
 '''[[Donate]]''' &lt;br /&gt;&lt;br /&gt;
-'''Email:''' ''adrelanos at riseup dot net'' &lt;ref name=OpenPGP /&gt;
+'''Email:''' ''adrelanos@riseup.net'' &lt;ref name=OpenPGP /&gt;
 
 == For Private Inquiries ==
 Is it really a private inquiry? Please double check, if any of the [[Support]] places is applicable. '''No support for questions which could be asked in public places as well!'''
 
-'''Email:''' ''adrelanos at riseup dot net'' &lt;ref name=OpenPGP /&gt;
+'''Email:''' ''adrelanos@riseup.net'' &lt;ref name=OpenPGP /&gt;
 
 == For website issues ==
 Requests for permissions, bug reports, or other website related communications:
@@ -3105,7 +3100,7 @@ If you don't get into trouble, by letting others to know, that you like or use W
 &lt;references/&gt;
 
 [[Category:Documentation]]</text>
-      <sha1>6ph78w9j2ciyxnlwn9dum1ltcxy0ktl</sha1>
+      <sha1>9ecj4wvtqhub9rhykzgev08848ty6xv</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -3115,20 +3110,21 @@ If you don't get into trouble, by letting others to know, that you like or use W
     <ns>0</ns>
     <id>59</id>
     <revision>
-      <id>3473</id>
-      <parentid>3275</parentid>
-      <timestamp>2013-10-15T05:24:47Z</timestamp>
+      <id>4730</id>
+      <parentid>3473</parentid>
+      <timestamp>2014-01-14T17:37:38Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Flash Proxy Bridges (testers-only version!) */</comment>
-      <text xml:space="preserve" bytes="8089">{{Header}}
+      <minor/>
+      <comment>Text replace - &quot;Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;&quot; to &quot;Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;&quot;</comment>
+      <text xml:space="preserve" bytes="8085">{{Header}}
 &lt;!--
 Copyright:
 
    Whonix Bridges wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-   Whonix Bridges wiki page Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+   Whonix Bridges wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
    
    This program is free software; you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -3244,7 +3240,7 @@ https://trac.torproject.org/projects/tor/wiki/FlashProxyHowto#Settingupportforwa
 
 = License =
 &lt;pre&gt;Whonix Bridges wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-Whonix Bridges wiki page Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+Whonix Bridges wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
 
 This program comes with ABSOLUTELY NO WARRANTY; for details see the wiki source code.
 This is free software, and you are welcome to redistribute it
@@ -3253,7 +3249,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>i9aidza9j5jo49v9mcelumm9o5lro5u</sha1>
+      <sha1>btdtn91ty7x25pxl7fjdt0rdtced0l0</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -4943,15 +4939,14 @@ AyCDWXR3yKGMWHkJqfLu
     <ns>0</ns>
     <id>85</id>
     <revision>
-      <id>4623</id>
-      <parentid>3044</parentid>
-      <timestamp>2014-01-08T20:51:11Z</timestamp>
+      <id>4765</id>
+      <parentid>4747</parentid>
+      <timestamp>2014-01-14T17:47:51Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Contributors */</comment>
-      <text xml:space="preserve" bytes="11964">{{Header}}
+      <text xml:space="preserve" bytes="11966">{{Header}}
 = DISCLAIMER =
 
 == General ==
@@ -4964,9 +4959,9 @@ See [[Whonix:General_disclaimer#Whonix_VPN_disclaimer]].
 
 '''Current Maintainers'''
 
-At the moment only adrelanos develops and maintains Whonix. Help is welcome!
+At the moment only Patrick Schleizer writes code for Whonix. Help is welcome!
 
-* adrelanos (adrelanos at riseup dot net): anonymous author; see disclaimer; initially researched extensively and compiled all information floating around the web into a guide; Later created the Whonix build scripts, binary images, extended documentation.
+* Patrick Schleizer (adrelanos@riseup.net): iinitially researched extensively and compiled all information floating around the web into a guide; Later created the Whonix build scripts, binary images, extended documentation, see [[History]].
 
 '''Past Code Contributors'''
 
@@ -5032,7 +5027,7 @@ In random order.
 * [http://www.ubuntu.com/ Ubuntu GNU/Linux]
 * Debian GNU/Linux
 * [http://tails.boum.org/ Tails]
-* Some documentation pages forked from [http://tails.boum.org/ Tails] by adrelanos for Whonix. See [[Dev/Tails Doc Fork]] for a list, which documentation pages have been forked.
+* Some documentation pages forked from [http://tails.boum.org/ Tails] by Patrick Schleizer for Whonix. See [[Dev/Tails Doc Fork]] for a list, which documentation pages have been forked.
 * The Tor Project
 * help-bash Mailing List
 
@@ -5049,7 +5044,7 @@ Misc things.
 
 == Sources ==
 
-Sources I (adrelanos) learned from:
+Sources I (Patrick Schleizer) learned from:
 
 In random order.
 
@@ -5159,7 +5154,7 @@ See license file in Whonix source code.
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Development]]</text>
-      <sha1>g6m6blh1yp32s51w4jetk8be41r1g2r</sha1>
+      <sha1>ng0zmms777wl9cc8l8alr74kozh8fz3</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -5416,20 +5411,20 @@ then choose etc (at the bottom) and then choose UTC.
     <ns>0</ns>
     <id>87</id>
     <revision>
-      <id>4660</id>
-      <parentid>4565</parentid>
-      <timestamp>2014-01-12T02:20:34Z</timestamp>
+      <id>4731</id>
+      <parentid>4660</parentid>
+      <timestamp>2014-01-14T17:37:39Z</timestamp>
       <contributor>
-        <username>Whonix explorer</username>
-        <id>193</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
       <minor/>
-      <comment>/* Status of MAC Address chapter */</comment>
-      <text xml:space="preserve" bytes="21344">&lt;!--
+      <comment>Text replace - &quot;Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;&quot; to &quot;Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;&quot;</comment>
+      <text xml:space="preserve" bytes="21340">&lt;!--
 Copyright:
 
    Whonix Pre Install Advice wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-   Whonix Pre Install Advice wiki page Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+   Whonix Pre Install Advice wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
    
    This program is free software; you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -5724,7 +5719,7 @@ After reading and applying Pre Install Advice, [[Download|download]], [[Download
 = License =
 
 &lt;pre&gt;Whonix Pre Install Advice wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-Whonix Pre Install Advice wiki page Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+Whonix Pre Install Advice wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
 
 This program comes with ABSOLUTELY NO WARRANTY; for details see the wiki source code.
 This is free software, and you are welcome to redistribute it
@@ -5733,7 +5728,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>m18vlmlr0bt64r4q7l6ejv9ux043ksx</sha1>
+      <sha1>8vp1f1gdfy7vmcmnovcf8t0agng8k8g</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -7067,19 +7062,20 @@ To get a more complete list, install Debian (with KDE) on bare metal using the r
     <ns>0</ns>
     <id>93</id>
     <revision>
-      <id>2833</id>
-      <parentid>2677</parentid>
-      <timestamp>2013-09-20T01:47:38Z</timestamp>
+      <id>4737</id>
+      <parentid>2833</parentid>
+      <timestamp>2014-01-14T17:38:18Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* For your Entry Guard or Bridge */</comment>
-      <text xml:space="preserve" bytes="7147">&lt;!--
+      <minor/>
+      <comment>Text replace - &quot;Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;&quot; to &quot;Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;&quot;</comment>
+      <text xml:space="preserve" bytes="7143">&lt;!--
 Copyright:
 
    Whonix Anonymity wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-   Whonix Anonymity wiki page Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+   Whonix Anonymity wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
    
    This program is free software; you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -7150,7 +7146,7 @@ In conclusion, if your ISP or local network administrator can determine someone 
 = License =
 
 &lt;pre&gt;Whonix Fingerprint wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-Whonix Fingerprint wiki page Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+Whonix Fingerprint wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
 
 This program comes with ABSOLUTELY NO WARRANTY; for details see the wiki source code.
 This is free software, and you are welcome to redistribute it
@@ -7159,7 +7155,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Design]]</text>
-      <sha1>or675odufioskivoo4c5im7rpwcql1v</sha1>
+      <sha1>qn4eus44b9ehy9p11hanq32mz6y2aa8</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -7218,20 +7214,19 @@ If you are going to use VirtualBox inside VirtualBox, be sure to change your hos
     <ns>0</ns>
     <id>95</id>
     <revision>
-      <id>3947</id>
-      <parentid>3946</parentid>
-      <timestamp>2013-11-04T17:35:02Z</timestamp>
+      <id>4767</id>
+      <parentid>4743</parentid>
+      <timestamp>2014-01-14T17:49:20Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Bitmessage */</comment>
-      <text xml:space="preserve" bytes="22995">{{Header}}
+      <text xml:space="preserve" bytes="23059">{{Header}}
 &lt;!--
 Copyright:
 
 Liberte Linux Philosophy page Copyright (C) 2013 Maxim Kammerer &lt;mk at dee dot su&gt;
-Whonix E-Mail wiki page Copyright (C) 2013 adrelanos &lt;adrelanos at riseup dot net&gt;
+Whonix E-Mail wiki page Copyright (C) 2013 - 2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
@@ -7349,7 +7344,7 @@ See [[Remailer]].
 
 == Introduction ==
 
-Adrelanos has been asked whether i2pmail is safer than tormail, riseup, gmail and so on. The ''Threats'' chapter above states &quot;''e-mail is always a single point of failure''&quot;. It doesn't really matter, apart from privacy by policy, no e-mail provider can significantly improve privacy by design. The most important thing about e-mail providers you should ask about e-mail providers is: Will they tolerate me signing up by Tor and exclusively using the e-mail service over Tor? Will they suspend my e-mail account because I speak against someone and they get forced to suspend my account? The latter question applies more, if you run a project, movement or something like that and less for accounts, which barely anyone knows.
+Patrick Schleizer has been asked whether i2pmail is safer than tormail, riseup, gmail and so on. The ''Threats'' chapter above states &quot;''e-mail is always a single point of failure''&quot;. It doesn't really matter, apart from privacy by policy, no e-mail provider can significantly improve privacy by design. The most important thing about e-mail providers you should ask about e-mail providers is: Will they tolerate me signing up by Tor and exclusively using the e-mail service over Tor? Will they suspend my e-mail account because I speak against someone and they get forced to suspend my account? The latter question applies more, if you run a project, movement or something like that and less for accounts, which barely anyone knows.
 
 Other than privacy by design, privacy by policy is always a weak protection. An exception might be services, which are not classical e-mail and therefore incompatible, but e-mail alike services such as Usenet (see below), I2P-Bote (see below), RetroShare or TorChat (See [[Chat]]).
 
@@ -7417,7 +7412,7 @@ Once we see that your account has a track record of being successfully accessed 
 
 == Anonymity Friendly E-Mail Provider List ==
 
-Another anonymity network provider (JonDos), maintains a list of their recommended e-mail providers. Whonix developer adrelanos does NOT check this list. Might still be useful. See [https://anonymous-proxy-servers.net/en/help/thunderbird.html list], look for &quot;Recommended Mail Provider&quot;.
+Another anonymity network provider (JonDos), maintains a list of their recommended e-mail providers. Whonix developer Patrick Schleizer does NOT check this list. Might still be useful. See [https://anonymous-proxy-servers.net/en/help/thunderbird.html list], look for &quot;Recommended Mail Provider&quot;.
 
 = Bitmessage =
 [https://bitmessage.org Bitmesage] might be another alternative to e-mail. See also [[Special:AWCforum/st/id239/Did_bitmassage_work_in_whonix%3F.html|Forum discussion]]. Not yet tested by Whonix developers, because [https://github.com/Bitmessage/PyBitmessage/issues/108 Bitmessage developers do not yet sign their their source code].
@@ -7428,7 +7423,7 @@ Quoted from wikipedia I2P&lt;ref&gt;https://en.wikipedia.org/wiki/I2P&lt;/ref&gt
 
 &quot;''I2P-Bote is an I2P-internal, fully decentralized and distributed e-mail system. It supports different identities and does not expose e-mail headers. Currently, it is still alpha software and can only be accessed via its web interface, but POP support is planned. All bote-mails are transparently end-to-end encrypted and, optionally, signed by the sender's public key, thus removing the need for PGP or other privacy software. I2P-Bote offers additional anonymity by allowing for the use of mail relays with variable length delays. As it is decentralized, there is no e-mail server that could link different e-mail identities as communicating with each other (profiling): Even the nodes relaying the mails do not know the sender, and apart from sender and receiver, only the end of the high-latency mail route and the storing nodes will know to whom (which I2P node - the user's IP is still hidden by I2P) the mail is destined. The original sender can have gone offline long before the mail becomes available on the other side.''&quot;
 
-Not yet reviewed by adrelanos, looks promising.
+Not yet reviewed by Patrick Schleizer, looks promising.
 
 = Usenet =
 
@@ -7485,13 +7480,13 @@ Further information:
 * [http://www.iusmentis.com/technology/remailers/nym.html Nym creation and use for mere mortals]
 * [http://remailer.paranoici.org/nym.php paranoia remailer]
 
-Please note that Whonix developer adrelanos can not answer support requests related to Nym servers. This possibility has just been pointed out and wasn't tested in practice. It's a whole different thing than Whonix and very technical, difficult with many stumble points. Please look for another way, if you need support. Setting up Nym is not Whonix specific. Success stories, use cases, comments, improved documentation etc. however is welcome.
+Please note that Whonix developer Patrick Schleizer can not answer support requests related to Nym servers. This possibility has just been pointed out and wasn't tested in practice. It's a whole different thing than Whonix and very technical, difficult with many stumble points. Please look for another way, if you need support. Setting up Nym is not Whonix specific. Success stories, use cases, comments, improved documentation etc. however is welcome.
 
 == Quicksilver Lite in Whonix / creating a Mixmin nym ==
 
 mirimir&lt;ref&gt;http://www.wilderssecurity.com/member.php?u=121604&lt;/ref&gt; posted a guide to wilderssecurity.com forum, see [http://www.wilderssecurity.com/showthread.php?p=2210463 Installing Quicksilver Lite in Whonix and creating a Mixmin nym].
 
-Please note that Whonix developer adrelanos can not answer support requests related to Nym servers. This possibility has just been pointed out and wasn't tested in practice. It's a whole different thing than Whonix and very technical, difficult with many stumble points. Please look for another way, if you need support. Setting up Nym is not Whonix specific. Success stories, use cases, comments, improved documentation etc. however is welcome.
+Please note that Whonix developer Patrick Schleizer can not answer support requests related to Nym servers. This possibility has just been pointed out and wasn't tested in practice. It's a whole different thing than Whonix and very technical, difficult with many stumble points. Please look for another way, if you need support. Setting up Nym is not Whonix specific. Success stories, use cases, comments, improved documentation etc. however is welcome.
 
 == Nym server URL Retrieval ==
 
@@ -7501,7 +7496,7 @@ Further information:
 
 * [http://www.mixnym.net/ Is Not My Name Nymserver]
 
-Please note that, Whonix developer adrelanos can not answer support requests related to Nym servers. This possibility has just been pointed out and wasn't tested in practice. It's a whole different thing than Whonix and very technical, difficult with many stumble points. Please look for another way, if you need support. Setting up Nym is not Whonix specific. Success stories, use cases, comments, improved documentation etc. however is welcome.
+Please note that, Whonix developer Patrick Schleizer can not answer support requests related to Nym servers. This possibility has just been pointed out and wasn't tested in practice. It's a whole different thing than Whonix and very technical, difficult with many stumble points. Please look for another way, if you need support. Setting up Nym is not Whonix specific. Success stories, use cases, comments, improved documentation etc. however is welcome.
 
 == Discussion ==
 
@@ -7531,7 +7526,7 @@ I haven't got NNTPS (SSL encrypted connection to the NNTP server) to work. &lt;c
 = License =
 
 &lt;pre&gt;Liberte Linux Philosophy page Copyright (C) 2013 Maxim Kammerer &lt;mk at dee dot su&gt;
-Whonix Anonymity wiki page Copyright (C) 2013 adrelanos &lt;adrelanos at riseup dot net&gt;
+Whonix Anonymity wiki page Copyright (C) 2013 - 2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
 
 This program with ABSOLUTELY NO WARRANTY; for details see the wiki source code.
 This is free software, and you are welcome to redistribute it
@@ -7539,7 +7534,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>pxopltx32top8oag3ibe5jeymak5unc</sha1>
+      <sha1>g9u81u97dcs24mwidihue7dgngd1bve</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -9647,19 +9642,20 @@ You can also read the scripts and only run the commands you find sensible manual
     <ns>0</ns>
     <id>102</id>
     <revision>
-      <id>3252</id>
-      <parentid>3210</parentid>
-      <timestamp>2013-10-11T17:34:30Z</timestamp>
+      <id>4725</id>
+      <parentid>3252</parentid>
+      <timestamp>2014-01-14T17:37:29Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* scurl - SSL command line downloader */</comment>
-      <text xml:space="preserve" bytes="9203">&lt;!--
+      <minor/>
+      <comment>Text replace - &quot;Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;&quot; to &quot;Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;&quot;</comment>
+      <text xml:space="preserve" bytes="9199">&lt;!--
 Copyright:
 
    Whonix Software wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-   Whonix Software wiki page Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+   Whonix Software wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
    
    This program is free software; you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -9913,7 +9909,7 @@ If you'd like to turn off curl's verification of the certificate, use
 
 &lt;pre&gt;
 Whonix Software wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-Whonix Software wiki page Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+Whonix Software wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
 
 This program comes with ABSOLUTELY NO WARRANTY; for details see the wiki source code.
 This is free software, and you are welcome to redistribute it
@@ -9923,7 +9919,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>45gyk7we6c33bk2qem4jrlzjgcajaxl</sha1>
+      <sha1>0zw6nq5hq00q71a5l3beo2w77dnbg0h</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -10559,16 +10555,16 @@ Reboot both VMs. Please read the [Readme Readme]!
     <ns>0</ns>
     <id>109</id>
     <revision>
-      <id>3114</id>
-      <parentid>2622</parentid>
-      <timestamp>2013-10-08T00:46:10Z</timestamp>
+      <id>4760</id>
+      <parentid>3114</parentid>
+      <timestamp>2014-01-14T17:42:37Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
       <minor/>
-      <comment>Text replace - &quot;[[Dev]]&quot; to &quot;[[Dev/Archived Discussions]]&quot;</comment>
-      <text xml:space="preserve" bytes="14627">{{Header}}
+      <comment>Text replace - &quot;adrelanos (at) riseup (dot) net&quot; to &quot;adrelanos@riseup.net&quot;</comment>
+      <text xml:space="preserve" bytes="14616">{{Header}}
 
 '''This is an outdated version. Go to [[Dev/Build Documentation]].'''
 '''(NOT FINISHED!)'''
@@ -10579,7 +10575,7 @@ Reboot both VMs. Please read the [Readme Readme]!
 
 &lt;pre&gt;# Copyright:
 # adrelanos (aka proper)
-# adrelanos (at) riseup (dot) net
+# adrelanos@riseup.net
 #
 # License:
 # GPL v3 or any later
@@ -10823,7 +10819,7 @@ Reboot both VMs. Please read the Readme!
 {{Footer}}
 
 [[Category:Deprecated]]</text>
-      <sha1>owkyhdpmuoowljrnm3uw4r2ww362bnh</sha1>
+      <sha1>j08ed32hojzlinxtyty78lh600v3cem</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -10833,16 +10829,16 @@ Reboot both VMs. Please read the Readme!
     <ns>0</ns>
     <id>110</id>
     <revision>
-      <id>3115</id>
-      <parentid>2583</parentid>
-      <timestamp>2013-10-08T00:46:20Z</timestamp>
+      <id>4759</id>
+      <parentid>3115</parentid>
+      <timestamp>2014-01-14T17:42:34Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
       <minor/>
-      <comment>Text replace - &quot;[[Dev]]&quot; to &quot;[[Dev/Archived Discussions]]&quot;</comment>
-      <text xml:space="preserve" bytes="8417">{{Header}}
+      <comment>Text replace - &quot;adrelanos (at) riseup (dot) net&quot; to &quot;adrelanos@riseup.net&quot;</comment>
+      <text xml:space="preserve" bytes="8406">{{Header}}
 
 '''This is an outdated version. Go to [[Dev/Build Documentation]].'''
 
@@ -10852,7 +10848,7 @@ Reboot both VMs. Please read the Readme!
 
 &lt;pre&gt;# Copyright:
 # adrelanos (aka proper)
-# adrelanos (at) riseup (dot) net
+# adrelanos@riseup.net
 #
 # License:
 # GPL v3 or any later
@@ -11035,7 +11031,7 @@ See [https://github.com/Whonix/Whonix/tree/master/release Release Folder] in Who
 {{Footer}}
 
 [[Category:Deprecated]]</text>
-      <sha1>oa6keo9jbo4x4wuhf1papdm45ncmbct</sha1>
+      <sha1>5n1b2g4mcb3plvp8j7hebxnc2ay1lco</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -11045,16 +11041,16 @@ See [https://github.com/Whonix/Whonix/tree/master/release Release Folder] in Who
     <ns>0</ns>
     <id>111</id>
     <revision>
-      <id>3112</id>
-      <parentid>2602</parentid>
-      <timestamp>2013-10-08T00:46:07Z</timestamp>
+      <id>4749</id>
+      <parentid>3112</parentid>
+      <timestamp>2014-01-14T17:41:00Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
       <minor/>
-      <comment>Text replace - &quot;[[Dev]]&quot; to &quot;[[Dev/Archived Discussions]]&quot;</comment>
-      <text xml:space="preserve" bytes="11908">{{Header}}
+      <comment>Text replace - &quot;adrelanos at riseup dot net&quot; to &quot;adrelanos@riseup.net&quot;</comment>
+      <text xml:space="preserve" bytes="11894">{{Header}}
 {{forkme}}
 = Introduction =
 
@@ -11203,8 +11199,8 @@ This is recommended but not required. See [[Trust]].
 
 &lt;p&gt;git tag -v 0.5.6&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Output should look like the following.&lt;/p&gt;
-&lt;p&gt;object 13870efc29018065267788f9f23026e6ff489684 type commit tag 0.5.6 tagger adrelanos &lt;adrelanos at riseup dot net&gt; 1348681401 -0400&lt;/p&gt;
-&lt;p&gt;0.5.6 gpg: Signature made Wed Sep 26 17:43:26 2012 UTC using RSA key ID 713AAEEF gpg: Good signature from &quot;adrelanos &lt;adrelanos at riseup dot net&quot;&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;
+&lt;p&gt;object 13870efc29018065267788f9f23026e6ff489684 type commit tag 0.5.6 tagger adrelanos &lt;adrelanos@riseup.net&gt; 1348681401 -0400&lt;/p&gt;
+&lt;p&gt;0.5.6 gpg: Signature made Wed Sep 26 17:43:26 2012 UTC using RSA key ID 713AAEEF gpg: Good signature from &quot;adrelanos &lt;adrelanos@riseup.net&quot;&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;
 
 The warning.
 
@@ -11324,7 +11320,7 @@ Pack. Upload.
 {{Footer}}
 
 [[Category:Development]]</text>
-      <sha1>kmw8q3n84e7kt36ogbukbmv18fxifph</sha1>
+      <sha1>rdddry175r10iqist3noswx0lljgsbi</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -12852,19 +12848,20 @@ For even more Security, see [[Advanced Security Guide]].
     <ns>0</ns>
     <id>120</id>
     <revision>
-      <id>4191</id>
-      <parentid>4184</parentid>
-      <timestamp>2013-12-10T21:39:04Z</timestamp>
+      <id>4734</id>
+      <parentid>4191</parentid>
+      <timestamp>2014-01-14T17:38:05Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Verifiable Builds */</comment>
-      <text xml:space="preserve" bytes="27387">&lt;!--
+      <minor/>
+      <comment>Text replace - &quot;Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;&quot; to &quot;Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;&quot;</comment>
+      <text xml:space="preserve" bytes="27383">&lt;!--
 Copyright:
 
    Whonix Trust wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-   Whonix Trust wiki page Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+   Whonix Trust wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
    
    This program is free software; you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -13118,7 +13115,7 @@ It's a bit safer to use Whonix-Default-Download version and to disable Whonix's 
 = License =
 
 &lt;pre&gt;Whonix Trust wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-Whonix Trust wiki page Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+Whonix Trust wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
 
 This program comes with ABSOLUTELY NO WARRANTY; for details see the wiki source code.
 This is free software, and you are welcome to redistribute it
@@ -13128,7 +13125,7 @@ Thanks to Qubes OS ([https://groups.google.com/forum/?fromgroups=#!topic/qubes-d
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>47t1933t23bn1oubjcy8gatuydhwn8p</sha1>
+      <sha1>iry602h3n7zzhwydfu5sxhntuxenw4l</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -13714,19 +13711,21 @@ When you are using them at the same time, the risks explained in the introductio
     <ns>0</ns>
     <id>127</id>
     <revision>
-      <id>4587</id>
-      <parentid>4530</parentid>
-      <timestamp>2014-01-04T23:37:06Z</timestamp>
+      <id>4741</id>
+      <parentid>4587</parentid>
+      <timestamp>2014-01-14T17:38:52Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>/* Problematic Interfaces */</comment>
-      <text xml:space="preserve" bytes="36039">{{Header}}
+      <minor/>
+      <comment>Text replace - &quot;Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;&quot; to &quot;Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;&quot;</comment>
+      <text xml:space="preserve" bytes="36035">{{Header}}
 &lt;!--
 Copyright:
 
    Whonix Advanced Security Guide wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-   Whonix Advanced Security Guide wiki page Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+   Whonix Advanced Security Guide wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
    
    This program is free software; you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -14353,7 +14352,7 @@ Last, but definitely not least.
 = License =
 
 &lt;pre&gt;Whonix Advanced Security Guide wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-Whonix Advanced Security Guide wiki page Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+Whonix Advanced Security Guide wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
 
 This program comes with ABSOLUTELY NO WARRANTY; for details see the wiki source code.
 This is free software, and you are welcome to redistribute it
@@ -14362,7 +14361,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>0q72iz3zd361c671khbvw3lwkz0upfy</sha1>
+      <sha1>5r7cbgdrl6ytvqdzgmxbppzaxlucb6g</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -16091,18 +16090,20 @@ Optional, for debugging if you have problems.
     <ns>0</ns>
     <id>139</id>
     <revision>
-      <id>4173</id>
-      <parentid>4138</parentid>
-      <timestamp>2013-12-10T00:49:15Z</timestamp>
+      <id>4761</id>
+      <parentid>4727</parentid>
+      <timestamp>2014-01-14T17:42:46Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="5506">&lt;!--
+      <minor/>
+      <comment>Text replace - &quot;adrelanos at riseup dot net&quot; to &quot;adrelanos@riseup.net&quot;</comment>
+      <text xml:space="preserve" bytes="5474">&lt;!--
 Copyright:
 
    Whonix Verify_the_virtual_machine_images_using_the_command_line wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-   Whonix Verify_the_virtual_machine_images_using_the_command_line wiki page Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+   Whonix Verify_the_virtual_machine_images_using_the_command_line wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
    
    This program is free software; you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -16146,7 +16147,7 @@ cat adrelanos.asc | gpg --keyid-format long --import
 The output should tell you that the key was imported:
 
 &lt;pre&gt;
-gpg: key 9C131AD3713AAEEF: public key &quot;adrelanos &lt;adrelanos at riseup dot net&gt;&quot; imported
+gpg: key 9C131AD3713AAEEF: public key &quot;adrelanos &lt;adrelanos@riseup.net&gt;&quot; imported
 gpg: Total number processed: 1
 gpg:               imported: 1  (RSA: 1)
 &lt;/pre&gt;
@@ -16154,7 +16155,7 @@ gpg:               imported: 1  (RSA: 1)
 '''If you had already imported Whonix signing key in the past''', the output should tell you that the key was not changed:
 
 &lt;pre&gt;
-gpg: key 9C131AD3713AAEEF: &quot;adrelanos &lt;adrelanos at riseup dot net&gt;&quot; not changed
+gpg: key 9C131AD3713AAEEF: &quot;adrelanos &lt;adrelanos@riseup.net&gt;&quot; not changed
 gpg: Total number processed: 1
 gpg:              unchanged: 1
 &lt;/pre&gt;
@@ -16183,7 +16184,7 @@ gpg --keyid-format long --verify Whonix-Gateway-7.ova.asc Whonix-Gateway-7.ova
 &lt;pre&gt;
 gpg: Signature made Sun Nov 25 21:48:54 2012 UTC
 gpg:                using RSA key 9C131AD3713AAEEF
-gpg: Good signature from &quot;adrelanos &lt;adrelanos at riseup dot net&quot;
+gpg: Good signature from &quot;adrelanos &lt;adrelanos@riseup.net&quot;
 &lt;/pre&gt;
 
 This might be followed by a warning saying:
@@ -16201,7 +16202,7 @@ This doesn't alter the validity of the signature according to the key you downlo
 &lt;pre&gt;
 gpg: Signature made Sun Nov 25 21:48:54 2012 UTC
 gpg:                using RSA key 9C131AD3713AAEEF
-gpg: BAD signature from &quot;adrelanos &lt;adrelanos at riseup dot net&gt;&quot;
+gpg: BAD signature from &quot;adrelanos &lt;adrelanos@riseup.net&gt;&quot;
 &lt;/pre&gt;
 
 '''Repeat these steps for Whonix-Workstation as well.'''
@@ -16215,7 +16216,7 @@ gpg --keyid-format long --verify Whonix-Workstation-7.ova.asc Whonix-Workstation
 
 &lt;code&gt;
 Whonix Verify_the_virtual_machine_images_using_the_command_line wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-Whonix Verify_the_virtual_machine_images_using_the_command_line wiki page Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+Whonix Verify_the_virtual_machine_images_using_the_command_line wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
 
 This program comes with ABSOLUTELY NO WARRANTY; for details see the wiki source code.
 This is free software, and you are welcome to redistribute it
@@ -16225,7 +16226,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>ohotjc1e98fwwdqjkq7nxq3d0bffrws</sha1>
+      <sha1>oo9shha35pg7r9sqzgly6eec2n1ggje</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -16253,19 +16254,21 @@ under certain conditions; see the wiki source code for details.
     <ns>0</ns>
     <id>141</id>
     <revision>
-      <id>4174</id>
-      <parentid>2680</parentid>
-      <timestamp>2013-12-10T00:55:53Z</timestamp>
+      <id>4732</id>
+      <parentid>4174</parentid>
+      <timestamp>2014-01-14T17:37:51Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="4008">{{Header}}
+      <minor/>
+      <comment>Text replace - &quot;Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;&quot; to &quot;Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;&quot;</comment>
+      <text xml:space="preserve" bytes="4004">{{Header}}
 &lt;!--
 Copyright:
 
    Whonix Verify_the_virtual_machine_images_using_Linux wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-   Whonix Verify_the_virtual_machine_images_using_Linux wiki page Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+   Whonix Verify_the_virtual_machine_images_using_Linux wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
    
    This program is free software; you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -16338,7 +16341,7 @@ It will '''take a while''' and there is '''no progress meter'''. Please wait a f
 
 &lt;code&gt;
 Whonix Verify_the_virtual_machine_images_using_Linux wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-Whonix Verify_the_virtual_machine_images_using_Linux wiki page Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+Whonix Verify_the_virtual_machine_images_using_Linux wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
 
 This program comes with ABSOLUTELY NO WARRANTY; for details see the wiki source code.
 This is free software, and you are welcome to redistribute it
@@ -16348,7 +16351,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>8ykm0k5c064cfo07nb89b57y72o7hvu</sha1>
+      <sha1>gmffb08nq2d5vr9bvn5a71bze1dwzgu</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -16358,19 +16361,21 @@ under certain conditions; see the wiki source code for details.
     <ns>0</ns>
     <id>142</id>
     <revision>
-      <id>3838</id>
-      <parentid>2685</parentid>
-      <timestamp>2013-10-22T06:05:10Z</timestamp>
+      <id>4724</id>
+      <parentid>3838</parentid>
+      <timestamp>2014-01-14T17:37:28Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="3905">{{Header}}
+      <minor/>
+      <comment>Text replace - &quot;Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;&quot; to &quot;Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;&quot;</comment>
+      <text xml:space="preserve" bytes="3901">{{Header}}
 &lt;!--
 Copyright:
 
    Whonix Verify_the_virtual_machine_images_using_other_operating_systems wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-   Whonix Verify_the_virtual_machine_images_using_other_operating_systems wiki page Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+   Whonix Verify_the_virtual_machine_images_using_other_operating_systems wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
    
    This program is free software; you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -16427,7 +16432,7 @@ After installing GPGTools, you should be able to follow the instruction for [[Ve
 
 &lt;code&gt;
 Whonix Verify_the_virtual_machine_images_using_other_operating_systems wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-Whonix Verify_the_virtual_machine_images_using_other_operating_systems wiki page Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+Whonix Verify_the_virtual_machine_images_using_other_operating_systems wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
 
 This program comes with ABSOLUTELY NO WARRANTY; for details see the wiki source code.
 This is free software, and you are welcome to redistribute it
@@ -16437,7 +16442,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>tnalz573wlcwb9r5x823jzoocck71ui</sha1>
+      <sha1>thb8onq25fopmyvi5k9svn42dj9ibhd</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -17193,18 +17198,20 @@ Essentially this feature allows to directly use physical PCI devices on the host
     <ns>0</ns>
     <id>148</id>
     <revision>
-      <id>3737</id>
-      <parentid>3736</parentid>
-      <timestamp>2013-10-19T08:27:27Z</timestamp>
+      <id>4752</id>
+      <parentid>4717</parentid>
+      <timestamp>2014-01-14T17:41:42Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="7723">&lt;!--
+      <minor/>
+      <comment>Text replace - &quot;adrelanos at riseup dot net&quot; to &quot;adrelanos@riseup.net&quot;</comment>
+      <text xml:space="preserve" bytes="7691">&lt;!--
 Copyright:
 
    Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-   Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+   Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
    
    This program is free software; you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -17261,7 +17268,7 @@ Should show:
 &lt;pre&gt;
 pub   4096R/713AAEEF 2012-03-02
       Key fingerprint = 9B15 7153 925C 303A 4225  3AFB 9C13 1AD3 713A AEEF
-uid                  adrelanos &lt;adrelanos at riseup dot net&gt;
+uid                  adrelanos &lt;adrelanos@riseup.net&gt;
 sub   4096R/794279C4 2012-03-02
 &lt;/pre&gt;
 
@@ -17332,7 +17339,7 @@ Should show.
 &lt;pre&gt;
 pub   4096R/713AAEEF 2012-03-02
       Key fingerprint = 9B15 7153 925C 303A 4225  3AFB 9C13 1AD3 713A AEEF
-uid                  adrelanos &lt;adrelanos at riseup dot net&gt;
+uid                  adrelanos &lt;adrelanos@riseup.net&gt;
 sub   4096R/794279C4 2012-03-02
 &lt;/pre&gt;
 
@@ -17348,7 +17355,7 @@ gpg --import adrelanos2.asc
 It should always show:
 
 &lt;pre&gt;
-gpg: key 713AAEEF: &quot;adrelanos &lt;adrelanos at riseup dot net&gt;&quot; not changed
+gpg: key 713AAEEF: &quot;adrelanos &lt;adrelanos@riseup.net&gt;&quot; not changed
 gpg: Total number processed: 1
 gpg:              unchanged: 1
 &lt;/pre&gt;
@@ -17364,7 +17371,7 @@ Should always show the same fingerprint and only contain: (Besides keys you impo
 &lt;pre&gt;
 pub   4096R/713AAEEF 2012-03-02
       Key fingerprint = 9B15 7153 925C 303A 4225  3AFB 9C13 1AD3 713A AEEF
-uid                  adrelanos &lt;adrelanos at riseup dot net&gt;
+uid                  adrelanos &lt;adrelanos@riseup.net&gt;
 sub   4096R/794279C4 2012-03-02
 &lt;/pre&gt;
 
@@ -17388,7 +17395,7 @@ Unless the new key is signed with the old key, something fishy is going on.
 = License =
 &lt;pre&gt;
 Whonix Trusting Whonix Signing Key wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-Whonix Trusting Whonix Signing Key wiki page Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+Whonix Trusting Whonix Signing Key wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
 
 This program comes with ABSOLUTELY NO WARRANTY; for details see the wiki source code.
 This is free software, and you are welcome to redistribute it
@@ -17398,7 +17405,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>j64sce2ifgu97vj41mmvivj1abhdn2r</sha1>
+      <sha1>nr2zt2o1i35xg72jxtd70bcs52r78nx</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -17470,19 +17477,20 @@ To get a new circuit, press.
     <ns>0</ns>
     <id>150</id>
     <revision>
-      <id>4532</id>
-      <parentid>4391</parentid>
-      <timestamp>2013-12-28T23:43:22Z</timestamp>
+      <id>4726</id>
+      <parentid>4532</parentid>
+      <timestamp>2014-01-14T17:37:35Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Change/Remove Proxy Settings */</comment>
-      <text xml:space="preserve" bytes="13839">&lt;!--
+      <minor/>
+      <comment>Text replace - &quot;Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;&quot; to &quot;Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;&quot;</comment>
+      <text xml:space="preserve" bytes="13835">&lt;!--
 Copyright:
 
    Whonix Tor Browser wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-   Whonix Tor Browser wiki page Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+   Whonix Tor Browser wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
    
    This program is free software; you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -17676,7 +17684,7 @@ and reboot.
 = License =
 
 &lt;pre&gt;Whonix Tor Browser wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-Whonix Tor Browser wiki page Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+Whonix Tor Browser wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
 
 This program comes with ABSOLUTELY NO WARRANTY; for details see the wiki source code.
 This is free software, and you are welcome to redistribute it
@@ -17685,7 +17693,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>ftx4syn1bmict60p3qtzwjvhj41viky</sha1>
+      <sha1>1fqkxj1pr0aqifemyz5fp9bbgw40wkj</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -17767,20 +17775,19 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
     <ns>0</ns>
     <id>155</id>
     <revision>
-      <id>4155</id>
-      <parentid>4150</parentid>
-      <timestamp>2013-12-07T17:39:33Z</timestamp>
+      <id>4766</id>
+      <parentid>4745</parentid>
+      <timestamp>2014-01-14T17:48:11Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Whonix's Time Synchronization Mechanism */</comment>
-      <text xml:space="preserve" bytes="18127">{{Header}}
+      <text xml:space="preserve" bytes="18151">{{Header}}
 &lt;!--
 Copyright:
 
    Whonix TimeSync wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-   Whonix TimeSync wiki page Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+   Whonix TimeSync wiki page Copyright (C) 2012 - 2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
    
    This program is free software; you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -17857,7 +17864,7 @@ A correct system clock is crucial for many reasons (see footnotes for more):
 * Whonix leaves the host's system clock or time synchronization mechanism untouched.
 * Whonix-Gateway and Whonix-Workstation are based on VirtualBox and therefore have their own virtual hardware system clocks.
 * Most VirtualBox time synchronization features get disabled by Whonix.
-** Guest additions time synchronization gets disabled in ''/etc/init.d/htpdate'' at run time. See VirtualBox bug report [https://www.virtualbox.org/ticket/10828 VBoxService --disable-timesync broken]. They say it's actually not a bug. It's a missing feature, that running instances of VBoxService can not be modified in their settings. Whonix would need to edit ''/etc/init.d/vboxadd-service'' by adding ''--disable-timesync'' &lt;ref&gt;[https://www.virtualbox.org/ticket/2928 source]&lt;/ref&gt;. Whonix developer adrelanos does not see a reliable way to do so. If the guest additions get automatically updated in future the option would get overwritten. That's why Whonix added a line in ''/etc/init.d/htpdate'' to turn it off completely. Guest additions time synchronization gets disabled, but the rest of the guest additions continue to work fine. Unless you have a better idea, it's an acceptable workaround.
+** Guest additions time synchronization gets disabled in ''/etc/init.d/htpdate'' at run time. See VirtualBox bug report [https://www.virtualbox.org/ticket/10828 VBoxService --disable-timesync broken]. They say it's actually not a bug. It's a missing feature, that running instances of VBoxService can not be modified in their settings. Whonix would need to edit ''/etc/init.d/vboxadd-service'' by adding ''--disable-timesync'' &lt;ref&gt;[https://www.virtualbox.org/ticket/2928 source]&lt;/ref&gt;. Whonix developer Patrick Schleizer does not see a reliable way to do so. If the guest additions get automatically updated in future the option would get overwritten. That's why Whonix added a line in ''/etc/init.d/htpdate'' to turn it off completely. Guest additions time synchronization gets disabled, but the rest of the guest additions continue to work fine. Unless you have a better idea, it's an acceptable workaround.
 ** built in time synchronization features get disabled by ''VBoxManage setextradata &quot;$VMNAME&quot; &quot;VBoxInternal/Devices/VMMDev/0/Config/GetHostTimeDisabled&quot; &quot;1&quot;'' at build time.
 * Whonix-Gateway and Whonix-Workstation
 ** When get powered on, they still get their time from the host. The user is advised to modify the biossystemtimeoffset in Advanced Security Guide, chapter [[Advanced Security Guide#Network Time Synchronization|Network Time Synchronization]]. &lt;ref&gt;Developer information: If we needed or wanted to render the hardware clock unusable, we could set VirtualBox ''--biossystemtimeoffset'' several decades in past or future.&lt;/ref&gt;
@@ -17955,7 +17962,7 @@ Open question: would the GPS/atomic clock be too accurate and would that make Wh
 
 = License =
 &lt;pre&gt;Whonix TimeSync wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-Whonix TimeSync wiki page Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+Whonix TimeSync wiki page Copyright (C) 2012 - 2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
 
 This program comes with ABSOLUTELY NO WARRANTY; for details see the wiki source code.
 This is free software, and you are welcome to redistribute it
@@ -17964,7 +17971,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Design]]</text>
-      <sha1>t4u6wjq8e2d8qp8mp7c7zz8hsfwiu12</sha1>
+      <sha1>7jc14i769ybps08ynjl9uyr9t4m9h7n</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -19165,14 +19172,16 @@ In fact [http://retroshare.sourceforge.net RetroShare] is not an [https://en.wik
     <ns>0</ns>
     <id>171</id>
     <revision>
-      <id>2701</id>
-      <parentid>2586</parentid>
-      <timestamp>2013-09-05T05:53:34Z</timestamp>
+      <id>4755</id>
+      <parentid>2701</parentid>
+      <timestamp>2014-01-14T17:41:53Z</timestamp>
       <contributor>
-        <username>Anon</username>
-        <id>10</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="26506">{{Header}}
+      <minor/>
+      <comment>Text replace - &quot;adrelanos at riseup dot net&quot; to &quot;adrelanos@riseup.net&quot;</comment>
+      <text xml:space="preserve" bytes="26499">{{Header}}
 
 = Next =
 
@@ -19197,7 +19206,7 @@ Whonix-Gateway and Whonix-Workstation
 * whonix_release: Removed sha sums. New versions will no longer contain sha sums. A more secure method, gpg signatures are provided.
 * Enabled auto login on tty1 for Whonix-Gateway and Whonix-Workstation.
 * Added haveged, which is an entropy gathering daemon.
-* adrelanos.asc: changed e-mail address from proper at secure-mail dot biz to adrelanos at riseup dot net. Key otherwise unchanged. Fingerprint remains the same. There is no need to update. Just mail to the my current riseup e-mail address.
+* adrelanos.asc: changed e-mail address from proper at secure-mail dot biz to adrelanos@riseup.net. Key otherwise unchanged. Fingerprint remains the same. There is no need to update. Just mail to the my current riseup e-mail address.
 * Installing command-not-found.&lt;br /&gt;
 * Removed redundant mdadm and lvm2 from package selection. Physical Isolation and other advanced users most likely know if they need those packages.
 
@@ -19584,7 +19593,7 @@ Testers release with same goals as Whonix 0.4.5-fix2, but didn't work.
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Development]]</text>
-      <sha1>4i5xxisb694o2dz54ltcrmibrjhspxm</sha1>
+      <sha1>g63ykc2737k8ermpta8t5gm32gm14oh</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -22877,18 +22886,20 @@ Twitter's business model is selling access to its database. Twitter is providing
     <ns>0</ns>
     <id>214</id>
     <revision>
-      <id>3583</id>
-      <parentid>3475</parentid>
-      <timestamp>2013-10-18T00:05:48Z</timestamp>
+      <id>4742</id>
+      <parentid>3583</parentid>
+      <timestamp>2014-01-14T17:39:00Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="3647">&lt;!--
+      <minor/>
+      <comment>Text replace - &quot;Copyright (C) 2013 adrelanos &lt;adrelanos at riseup dot net&gt;&quot; to &quot;Copyright (C) 2013 - 2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;&quot;</comment>
+      <text xml:space="preserve" bytes="3663">&lt;!--
 Copyright:
 
 Liberte Linux Philosophy page Copyright (C) 2013 Maxim Kammerer &lt;mk at dee dot su&gt;
-Whonix E-Mail wiki page Copyright (C) 2013 adrelanos &lt;adrelanos at riseup dot net&gt;
+Whonix E-Mail wiki page Copyright (C) 2013 - 2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
@@ -22933,7 +22944,7 @@ However, the non-technological resources of an adversary are definitely limited.
 = License =
 
 &lt;pre&gt;Liberte Linux Philosophy page Copyright (C) 2013 Maxim Kammerer &lt;mk at dee dot su&gt;
-Whonix Anonymity wiki page Copyright (C) 2013 adrelanos &lt;adrelanos at riseup dot net&gt;
+Whonix Anonymity wiki page Copyright (C) 2013 - 2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
 
 This program with ABSOLUTELY NO WARRANTY; for details see the wiki source code.
 This is free software, and you are welcome to redistribute it
@@ -22942,7 +22953,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>rh66arzz3fhqf75x3z753ehzoxzej85</sha1>
+      <sha1>rh0rvzjwdia3doetpt9ccg1yj8xro11</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -30120,20 +30131,20 @@ Although there is a big Cypherpunk remailer wikipedia article&lt;ref&gt;https://
     <ns>0</ns>
     <id>251</id>
     <revision>
-      <id>2688</id>
-      <parentid>2645</parentid>
-      <timestamp>2013-09-05T04:59:55Z</timestamp>
+      <id>4733</id>
+      <parentid>2688</parentid>
+      <timestamp>2014-01-14T17:37:53Z</timestamp>
       <contributor>
-        <username>Anon</username>
-        <id>10</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
       <minor/>
-      <comment>Text replace - &quot;in Whonix wiki on &lt;https://sourceforge.net/p/whonix/wiki/GPLv3/&gt;&quot; to &quot;on Github &lt;https://github.com/Whonix/Whonix/blob/master/GPLv3&gt;&quot;</comment>
-      <text xml:space="preserve" bytes="5394">&lt;!--
+      <comment>Text replace - &quot;Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;&quot; to &quot;Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;&quot;</comment>
+      <text xml:space="preserve" bytes="5390">&lt;!--
 Copyright:
 
    Whonix RelationshipWithUpstream wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-   Whonix RelationshipWithUpstream wiki page Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+   Whonix RelationshipWithUpstream wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
    
    This program is free software; you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -30234,7 +30245,7 @@ The same goes for wishlist/enhancement requests.
 = License =
 
 &lt;pre&gt;Whonix RelationshipWithUpstream wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-Whonix RelationshipWithUpstream wiki page Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+Whonix RelationshipWithUpstream wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
 
 This program comes with ABSOLUTELY NO WARRANTY; for details see the wiki source code.
 This is free software, and you are welcome to redistribute it
@@ -30243,7 +30254,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Design]]</text>
-      <sha1>spnf74pfzy5485ocdhv0vwu67rlllab</sha1>
+      <sha1>ti4rkl7cwpfcb8bn9tl6nqc8rtf85s9</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -30619,19 +30630,20 @@ For these reasons it's not a good idea to add popcon to Whonix. If you have sugg
     <ns>0</ns>
     <id>255</id>
     <revision>
-      <id>4563</id>
-      <parentid>4550</parentid>
-      <timestamp>2014-01-02T06:32:25Z</timestamp>
+      <id>4719</id>
+      <parentid>4563</parentid>
+      <timestamp>2014-01-14T17:37:06Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* The OpenPGP Web of Trust */</comment>
-      <text xml:space="preserve" bytes="8783">&lt;!--
+      <minor/>
+      <comment>Text replace - &quot;Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;&quot; to &quot;Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;&quot;</comment>
+      <text xml:space="preserve" bytes="8779">&lt;!--
 Copyright:
 
    Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-   Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+   Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
    
    This program is free software; you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -30730,7 +30742,7 @@ The [http://www.openpgp-schulungen.de/fuer/webautoren/ certification] image ([ht
 The rest of this page is under the following license.
 
 &lt;pre&gt;Whonix OpenPGP wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-Whonix OpenPGP wiki page Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+Whonix OpenPGP wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
 
 This program comes with ABSOLUTELY NO WARRANTY; for details see the wiki source code.
 This is free software, and you are welcome to redistribute it
@@ -30739,7 +30751,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>omq25j3o7yj5cejnb13zyuivg5hzkez</sha1>
+      <sha1>ojvtgwsimefgz2qixveyg4kkzld4v97</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -30749,15 +30761,15 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
     <ns>0</ns>
     <id>256</id>
     <revision>
-      <id>4022</id>
-      <parentid>4002</parentid>
-      <timestamp>2013-11-11T13:55:39Z</timestamp>
+      <id>4716</id>
+      <parentid>4022</parentid>
+      <timestamp>2014-01-14T16:56:35Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
       <comment>/* Whonix Social Media Profiles */</comment>
-      <text xml:space="preserve" bytes="3026">{{Header}}
+      <text xml:space="preserve" bytes="2918">{{Header}}
 = Whonix Social Media Profiles =
 
 There are some Whonix Social Media Profiles, but please don't rely on them for getting Whonix News (See [[Download#Stay Tuned|News]] for how to get Whonix related news.) and please don't use them to contact Whonix developers. (See [[Contact]] for contact information.)
@@ -30767,7 +30779,7 @@ If you don't get into trouble, by letting others to know, that you like or use W
 * [https://twitter.com/Whonix Twitter Whonix]
 * [https://plus.google.com/108150429836421683225/about Google+ Whonix] &lt;font size=&quot;-3&quot;&gt;(registered by contributor, maintained by adrelanos)&lt;/font&gt;
 * [https://www.youtube.com/user/adrelanos YouTube Whonix] &lt;font size=&quot;-3&quot;&gt;(registered by contributor, maintained by adrelanos)&lt;/font&gt;
-* [https://www.facebook.com/pages/Whonix/622399681135624 Facebook Whonix] &lt;font size=&quot;-3&quot;&gt;(admin is [https://www.facebook.com/jasonjayala Jason Ayala] (Jason@JasonAyala.com))&lt;/font&gt;
+* [https://www.facebook.com/pages/Whonix/622399681135624 Facebook Whonix]
 
 = Other Accounts =
 == Project Accounts ==
@@ -30800,7 +30812,7 @@ If you don't get into trouble, by letting others to know, that you like or use W
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>3fs45scuq9mbw4cj3nzde6tm3len7zj</sha1>
+      <sha1>ry86eo2udmh1wpygrze2wct30pva9tm</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -31430,20 +31442,20 @@ The user enters a word and using that word will result in creating the same macc
     <ns>0</ns>
     <id>262</id>
     <revision>
-      <id>2684</id>
-      <parentid>2634</parentid>
-      <timestamp>2013-09-05T04:57:59Z</timestamp>
+      <id>4735</id>
+      <parentid>2684</parentid>
+      <timestamp>2014-01-14T17:38:07Z</timestamp>
       <contributor>
-        <username>Anon</username>
-        <id>10</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
       <minor/>
-      <comment>Text replace - &quot;in Whonix wiki on &lt;https://sourceforge.net/p/whonix/wiki/GPLv3/&gt;&quot; to &quot;on Github &lt;https://github.com/Whonix/Whonix/blob/master/GPLv3&gt;&quot;</comment>
-      <text xml:space="preserve" bytes="3613">&lt;!--
+      <comment>Text replace - &quot;Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;&quot; to &quot;Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;&quot;</comment>
+      <text xml:space="preserve" bytes="3609">&lt;!--
 Copyright:
 
    Whonix Warning wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-   Whonix Warning wiki page Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+   Whonix Warning wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
    
    This program is free software; you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -31489,7 +31501,7 @@ In meanwhile you could use a third machine, which has access to clearnet or boot
 = License =
 
 &lt;pre&gt;Whonix Logging in to captive portals wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-Whonix Logging in to captive portals wiki page Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+Whonix Logging in to captive portals wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
 
 This program comes with ABSOLUTELY NO WARRANTY; for details see the wiki source code.
 This is free software, and you are welcome to redistribute it
@@ -31498,7 +31510,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>qx4694vch7bh45bzltvx7wb7h8duox8</sha1>
+      <sha1>e0vjufc9jl1lwayiiewwf6cnk7bys3u</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -32375,20 +32387,20 @@ Start menu button -&gt; search -&gt; keyboard -&gt; layout -&gt; add yours and r
     <ns>0</ns>
     <id>267</id>
     <revision>
-      <id>4450</id>
-      <parentid>2681</parentid>
-      <timestamp>2013-12-23T21:25:55Z</timestamp>
+      <id>4739</id>
+      <parentid>4450</parentid>
+      <timestamp>2014-01-14T17:38:25Z</timestamp>
       <contributor>
-        <username>Grammard</username>
-        <id>50</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
       <minor/>
-      <comment>Many grammar. Wow.</comment>
-      <text xml:space="preserve" bytes="4671">&lt;!--
+      <comment>Text replace - &quot;Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;&quot; to &quot;Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;&quot;</comment>
+      <text xml:space="preserve" bytes="4667">&lt;!--
 Copyright:
 
    Whonix Introduction wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-   Whonix Introduction wiki page Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+   Whonix Introduction wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
    
    This program is free software; you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -32435,7 +32447,7 @@ Introduction chapters should be read. Let's suppose you are interested in &quot;
 
 = License =
 &lt;pre&gt;Whonix Introduction wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-Whonix Introduction wiki page Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+Whonix Introduction wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
 
 This program comes with ABSOLUTELY NO WARRANTY; for details see the wiki source code.
 This is free software, and you are welcome to redistribute it
@@ -32444,7 +32456,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>kgqjqekdkmnyb04cv85gnf3mnb8hgtp</sha1>
+      <sha1>73zdlei3nqzlhp3pbl0jwm0dodd7w03</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -37072,20 +37084,21 @@ grep -r torbutton_send_ctrl_cmd *
     <ns>0</ns>
     <id>304</id>
     <revision>
-      <id>4158</id>
-      <parentid>4143</parentid>
-      <timestamp>2013-12-08T00:16:42Z</timestamp>
+      <id>4751</id>
+      <parentid>4720</parentid>
+      <timestamp>2014-01-14T17:41:27Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>Rejected the last text change (by [[Special:Contributions/127.0.0.1|127.0.0.1]]) and restored revision 4087 by 127.0.0.1: It is only called /etc/tor/torrc.whonix in Whonix's source code. On the actual system it will just be /etc/tor/torrc. We're using the</comment>
-      <text xml:space="preserve" bytes="16792">{{Header}}
+      <minor/>
+      <comment>Text replace - &quot;adrelanos at riseup dot net&quot; to &quot;adrelanos@riseup.net&quot;</comment>
+      <text xml:space="preserve" bytes="16781">{{Header}}
 &lt;!--
 Copyright:
 
    Whonix Chat wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-   Whonix Chat wiki page Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+   Whonix Chat wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
    
    This program is free software; you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -37231,7 +37244,7 @@ And add the following content. (Won't be necessary in Whonix 7.3.7 anymore.)
 #!/bin/bash
 
 # This file is part of Whonix
-# Copyright (C) 2012 - 2013 adrelanos &lt;adrelanos at riseup dot net&gt;
+# Copyright (C) 2012 - 2013 adrelanos &lt;adrelanos@riseup.net&gt;
 # See the file COPYING for copying conditions.
 
 ## dummytor
@@ -37429,7 +37442,7 @@ See [[XChat]].
 
 &lt;pre&gt;
 Whonix Chat wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-Whonix Chat wiki page Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+Whonix Chat wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
 
 This program comes with ABSOLUTELY NO WARRANTY; for details see the wiki source code.
 This is free software, and you are welcome to redistribute it
@@ -37439,7 +37452,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>ku8exa1w8bmtg34motcbxrv565hmb6n</sha1>
+      <sha1>9z4mm8f2ss0rdl5rd070yluuy3synfk</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -37514,20 +37527,20 @@ Questions:
     <ns>0</ns>
     <id>306</id>
     <revision>
-      <id>4162</id>
-      <parentid>3448</parentid>
-      <timestamp>2013-12-08T01:11:09Z</timestamp>
+      <id>4736</id>
+      <parentid>4162</parentid>
+      <timestamp>2014-01-14T17:38:12Z</timestamp>
       <contributor>
-        <username>X99</username>
-        <id>133</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
       <minor/>
-      <comment>/* Why do you need anonymity? */ &quot;two-way comm&quot; is proper, but the other way still communicates the idea</comment>
-      <text xml:space="preserve" bytes="3712">&lt;!--
+      <comment>Text replace - &quot;Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;&quot; to &quot;Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;&quot;</comment>
+      <text xml:space="preserve" bytes="3708">&lt;!--
 Copyright:
 
    Whonix Anonymity wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-   Whonix Anonymity wiki page Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+   Whonix Anonymity wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
    
    This program is free software; you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -37579,7 +37592,7 @@ Further reading on that topic:
 
 &lt;pre&gt;
 Whonix Anonymity wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-Whonix Anonymity wiki page Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+Whonix Anonymity wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
 
 This program comes with ABSOLUTELY NO WARRANTY; for details see the wiki source code.
 This is free software, and you are welcome to redistribute it
@@ -37589,7 +37602,7 @@ under certain conditions; see the wiki source code for details.
 [[Category:Documentation]]
 
 {{Footer}}</text>
-      <sha1>dmqyn3kpaix8eq07kruveux5fri56ze</sha1>
+      <sha1>iom88qi7or2vnsiipemwvxlcocimvt6</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -42639,17 +42652,18 @@ Modifications coming with Whonix will always fall back to reasonable defaults, i
     <ns>0</ns>
     <id>468</id>
     <revision>
-      <id>3566</id>
-      <parentid>3565</parentid>
-      <timestamp>2013-10-17T13:21:01Z</timestamp>
+      <id>4746</id>
+      <parentid>3566</parentid>
+      <timestamp>2014-01-14T17:40:52Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Build Status */</comment>
-      <text xml:space="preserve" bytes="3556">&lt;!--
+      <minor/>
+      <comment>Text replace - &quot;adrelanos at riseup dot net&quot; to &quot;adrelanos@riseup.net&quot;</comment>
+      <text xml:space="preserve" bytes="3549">&lt;!--
 # This file is part of Whonix
-# Copyright (C) 2012 - 2013 adrelanos &lt;adrelanos at riseup dot net&gt;
+# Copyright (C) 2012 - 2013 adrelanos &lt;adrelanos@riseup.net&gt;
 # See the file COPYING for copying conditions.
 --&gt;
 &lt;!--
@@ -42684,7 +42698,7 @@ Please do not fix the picture links with html tags. This file gets copied to htt
 * Status: &lt;img src=&quot;https://travis-ci.org/Whonix/Whonix.png?branch=minimal-workstation-travis&quot; alt=&quot;loading...&quot;&gt; | Branch: minimal-workstation-travis (Minimal Physically Isolated Whonix-Workstation) ([https://www.whonix.org/wiki/Dev/Continuous_Integration#Travis_CI Travis CI]) ([https://travis-ci.org/Whonix/Whonix/branches Log])
 * Status: No such CI service available. | Branch: - (Whonix-Gateway VM) ([https://www.whonix.org/wiki/Dev/Continuous_Integration CI]) (-)
 * Status: No such CI service available. | Branch: - (Whonix-Workstation VM) ([https://www.whonix.org/wiki/Dev/Continuous_Integration CI]) (-)</text>
-      <sha1>0ygwdk85zm0oxi246iasmcuah679ggk</sha1>
+      <sha1>2t3hzdn0nw8wk321bticxg5zmyry5o5</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -43235,14 +43249,16 @@ The reason you can't just get higher resolutions using {{Code2|xrandr}} &quot;{{
     <ns>10</ns>
     <id>479</id>
     <revision>
-      <id>3699</id>
-      <parentid>3631</parentid>
-      <timestamp>2013-10-19T04:12:44Z</timestamp>
+      <id>4762</id>
+      <parentid>3699</parentid>
+      <timestamp>2014-01-14T17:42:48Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="1805">&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+      <minor/>
+      <comment>Text replace - &quot;adrelanos at riseup dot net&quot; to &quot;adrelanos@riseup.net&quot;</comment>
+      <text xml:space="preserve" bytes="1798">&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
 '''OPTIONAL!'''
 
 Advanced users can create 64bit instead of 32bit builds.
@@ -43262,7 +43278,7 @@ Create {{Code2|/etc/whonix_buildconfig.d/50_target_arch}} build config file.
 
 &lt;pre&gt;
 echo '# This file is part of Whonix
-# Copyright (C) 2012 - 2013 adrelanos &lt;adrelanos at riseup dot net&gt;
+# Copyright (C) 2012 - 2013 adrelanos &lt;adrelanos@riseup.net&gt;
 # See the file COPYING for copying conditions.
 
 ## NOTE: It is impossible to create 64 bit builds on 32 bit hosts.
@@ -43301,7 +43317,7 @@ sudo rm /etc/whonix_buildconfig.d/50_target_arch
 
 &lt;/div&gt;
 &lt;/div&gt;</text>
-      <sha1>d4ft07rlo7hc9o9flpxoavnxxa7uffh</sha1>
+      <sha1>sf2opg4fduhrjdhul78vvgzpa1vea34</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -43311,14 +43327,16 @@ sudo rm /etc/whonix_buildconfig.d/50_target_arch
     <ns>10</ns>
     <id>480</id>
     <revision>
-      <id>3828</id>
-      <parentid>3768</parentid>
-      <timestamp>2013-10-21T15:48:56Z</timestamp>
+      <id>4754</id>
+      <parentid>3828</parentid>
+      <timestamp>2014-01-14T17:41:48Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="1372">&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+      <minor/>
+      <comment>Text replace - &quot;adrelanos at riseup dot net&quot; to &quot;adrelanos@riseup.net&quot;</comment>
+      <text xml:space="preserve" bytes="1365">&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
 '''OPTIONAL!'''
 
 Advanced users can build a no-default-gui / no-KDE / terminal-only Whonix-Gateway and/or Whonix-Workstation.
@@ -43340,7 +43358,7 @@ Create {{Code2|/etc/whonix_buildconfig.d/50_terminal_only}} build config file.
 
 &lt;pre&gt;
 echo '# This file is part of Whonix
-# Copyright (C) 2012 - 2013 adrelanos &lt;adrelanos at riseup dot net&gt;
+# Copyright (C) 2012 - 2013 adrelanos &lt;adrelanos@riseup.net&gt;
 # See the file COPYING for copying conditions.
 
 whonix_build_script_whonix_package+=&quot; whonix-shared-desktop &quot;
@@ -43365,7 +43383,7 @@ sudo rm /etc/whonix_buildconfig.d/50_terminal_only
 
 &lt;/div&gt;
 &lt;/div&gt;</text>
-      <sha1>hkqadxr5pa75914bvvjjan9ewyvcmw5</sha1>
+      <sha1>7ht5061v88vyoyte3sakiztsygnt1is</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -43375,14 +43393,16 @@ sudo rm /etc/whonix_buildconfig.d/50_terminal_only
     <ns>10</ns>
     <id>481</id>
     <revision>
-      <id>3827</id>
-      <parentid>3766</parentid>
-      <timestamp>2013-10-21T15:48:39Z</timestamp>
+      <id>4757</id>
+      <parentid>3827</parentid>
+      <timestamp>2014-01-14T17:42:20Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="2164">&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+      <minor/>
+      <comment>Text replace - &quot;adrelanos at riseup dot net&quot; to &quot;adrelanos@riseup.net&quot;</comment>
+      <text xml:space="preserve" bytes="2157">&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
 '''OPTIONAL!'''
 
 Advanced users can install fewer {{Code2|recommended}} packages to make the resulting build smaller and more customizable. ({{Code2|recommended}} as in useful to have, not necessary to have them for some other reason.)
@@ -43410,7 +43430,7 @@ Create {{Code2|/etc/whonix_buildconfig.d/50_no_default_apps}} build config file.
 
 &lt;pre&gt;
 echo '# This file is part of Whonix
-# Copyright (C) 2012 - 2013 adrelanos &lt;adrelanos at riseup dot net&gt;
+# Copyright (C) 2012 - 2013 adrelanos &lt;adrelanos@riseup.net&gt;
 # See the file COPYING for copying conditions.
 
 whonix_build_script_whonix_package+=&quot; whonix-shared-packages-recommended &quot;
@@ -43436,7 +43456,7 @@ sudo rm /etc/whonix_buildconfig.d/50_no_default_apps
 
 &lt;/div&gt;
 &lt;/div&gt;</text>
-      <sha1>c1bblhsdgo2jwkxrp9c9n05w2ydi7wv</sha1>
+      <sha1>g2lhpc3l7ozwz5mduqjiwouwsj39p8l</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -43446,14 +43466,16 @@ sudo rm /etc/whonix_buildconfig.d/50_no_default_apps
     <ns>10</ns>
     <id>482</id>
     <revision>
-      <id>3829</id>
-      <parentid>3738</parentid>
-      <timestamp>2013-10-21T15:49:08Z</timestamp>
+      <id>4753</id>
+      <parentid>3829</parentid>
+      <timestamp>2014-01-14T17:41:46Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="1946">&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+      <minor/>
+      <comment>Text replace - &quot;adrelanos at riseup dot net&quot; to &quot;adrelanos@riseup.net&quot;</comment>
+      <text xml:space="preserve" bytes="1939">&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
 '''OPTIONAL!'''
 
 &lt;u&gt;Whonix's APT Repository&lt;/u&gt; is &lt;u&gt;disabled by default&lt;/u&gt; since Whonix 7.3.3. You may enjoy this for [[Trust]] reasons. You can later update Whonix debian packages from source code if you want. If you are interested in enabling Whonix's APT repository right after building (you could do that also after booting your build for the first time if you wanted) for convenience while sacrificing the extra security of not updating from source code, click on Expand on the right side.
@@ -43471,7 +43493,7 @@ Create {{Code2|/etc/whonix_buildconfig.d/50_whonix_apt_repository}} build config
 
 &lt;pre&gt;
 echo '# This file is part of Whonix
-# Copyright (C) 2012 - 2013 adrelanos &lt;adrelanos at riseup dot net&gt;
+# Copyright (C) 2012 - 2013 adrelanos &lt;adrelanos@riseup.net&gt;
 # See the file COPYING for copying conditions.
 
 ## Do use or do not use Whonix APT Repository.
@@ -43507,7 +43529,7 @@ sudo rm /etc/whonix_buildconfig.d/50_whonix_apt_repository
 
 &lt;/div&gt;
 &lt;/div&gt;</text>
-      <sha1>rxn7tv3c013v1ytbwp4lp0qg3i023il</sha1>
+      <sha1>eruzhforrdf0gf4umo2mv5rfljdno0j</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -47559,15 +47581,16 @@ ii  zsh-common            5.0.2-4         all             architecture independe
     <ns>10</ns>
     <id>491</id>
     <revision>
-      <id>4635</id>
-      <parentid>4628</parentid>
-      <timestamp>2014-01-10T13:38:10Z</timestamp>
+      <id>4750</id>
+      <parentid>4635</parentid>
+      <timestamp>2014-01-14T17:41:17Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Get Whonix Source Code */</comment>
-      <text xml:space="preserve" bytes="2782">== Get Whonix Source Code ==
+      <minor/>
+      <comment>Text replace - &quot;adrelanos at riseup dot net&quot; to &quot;adrelanos@riseup.net&quot;</comment>
+      <text xml:space="preserve" bytes="2761">== Get Whonix Source Code ==
 Install git and get the Whonix's source code from the git repository.&lt;ref&gt;From https://github.com/adrelanos/Whonix and not from https://github.com/Whonix/Whonix, because only adrelanos/Whonix contains git tags of the testers-only version.&lt;/ref&gt;
 
 &lt;pre&gt;
@@ -47606,7 +47629,7 @@ Should show.
 &lt;pre&gt;
 pub   4096R/713AAEEF 2012-03-02
       Key fingerprint = 9B15 7153 925C 303A 4225  3AFB 9C13 1AD3 713A AEEF
-uid                  adrelanos &lt;adrelanos at riseup dot net&gt;
+uid                  adrelanos &lt;adrelanos@riseup.net&gt;
 sub   4096R/794279C4 2012-03-02
 &lt;/pre&gt;
 
@@ -47632,11 +47655,11 @@ Output should look similar to this.
 object 13870efc29018065267788f9f23026e6ff489684
 type commit
 tag 7.3.7
-tagger adrelanos &lt;adrelanos at riseup dot net&gt; 1348681401 -0400
+tagger adrelanos &lt;adrelanos@riseup.net&gt; 1348681401 -0400
 
 7.3.7
 gpg: Signature made Wed Sep 26 17:43:26 2012 UTC using RSA key ID 713AAEEF
-gpg: Good signature from &quot;adrelanos &lt;adrelanos at riseup dot net&quot;
+gpg: Good signature from &quot;adrelanos &lt;adrelanos@riseup.net&quot;
 &lt;/pre&gt;
 
 The warning.
@@ -47658,7 +47681,7 @@ git checkout 7.3.7
 &lt;/pre&gt;
 
 You have to replace {{Code2|7.3.7}} with the actual version you want to build. The stable version, the testers-only version or the developers version. You can learn about current versions reading [[Download#Stay_tuned|Whonix News Blogs]]. New versions are also announced on the [[Mailing_Lists#whonix-devel|whonix-devel mailing list]]. So you could alternatively check its archives. Signing up for whonix-devel is another way to get informed about new releases.</text>
-      <sha1>6soz3nokglk1q1orbkd7pmfxk26yj5z</sha1>
+      <sha1>a0bw72dh63fv9wgxl8bhhuy0r6v6q5v</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -47905,14 +47928,16 @@ git fetch
     <ns>10</ns>
     <id>500</id>
     <revision>
-      <id>3992</id>
-      <parentid>3866</parentid>
-      <timestamp>2013-11-06T12:51:16Z</timestamp>
+      <id>4756</id>
+      <parentid>3992</parentid>
+      <timestamp>2014-01-14T17:42:09Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="4510">&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+      <minor/>
+      <comment>Text replace - &quot;adrelanos at riseup dot net&quot; to &quot;adrelanos@riseup.net&quot;</comment>
+      <text xml:space="preserve" bytes="4503">&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
 '''OPTIONAL!'''
 '''Whonix 7.4.0 and above only!'''
 
@@ -47953,7 +47978,7 @@ Create {{Code2|/etc/whonix_buildconfig.d/50_no_default_apps}} build config file.
 
 &lt;pre&gt;
 echo '# This file is part of Whonix
-# Copyright (C) 2012 - 2013 adrelanos &lt;adrelanos at riseup dot net&gt;
+# Copyright (C) 2012 - 2013 adrelanos &lt;adrelanos@riseup.net&gt;
 # See the file COPYING for copying conditions.
 
 ## For more technical comments, see:
@@ -47987,7 +48012,7 @@ Footnotes:
 &lt;references group=&quot;currentsources&quot;/&gt;
 &lt;/div&gt;
 &lt;/div&gt;</text>
-      <sha1>goxylx1i3zy6oc4l9qqn3fi2g40uzz7</sha1>
+      <sha1>d0e88jzrjgwybhppk5ztohuyfuta1sp</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -49434,14 +49459,16 @@ sshfs -p 2222 user@127.0.0.1:/ ~/mountworkstation
     <ns>10</ns>
     <id>532</id>
     <revision>
-      <id>4130</id>
-      <parentid>4128</parentid>
-      <timestamp>2013-12-04T16:00:00Z</timestamp>
+      <id>4748</id>
+      <parentid>4130</parentid>
+      <timestamp>2014-01-14T17:40:58Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="1308">&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+      <minor/>
+      <comment>Text replace - &quot;adrelanos at riseup dot net&quot; to &quot;adrelanos@riseup.net&quot;</comment>
+      <text xml:space="preserve" bytes="1301">&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
 '''OPTIONAL!'''
 
 By default Whonix's last build step creates a report file of all hdd contents. (See [[Verifiable Builds]] for details.) This step is optional. First introduced in Whonix 7.4.8. Whonix should work fine without that step. It is used for extra security. This step takes quite some time. This step is recommended. If you want to disable it, click on Expand on the right side.
@@ -49459,7 +49486,7 @@ Create {{Code2|/etc/whonix_buildconfig.d/50_no_report}} build config file.
 
 &lt;pre&gt;
 echo '# This file is part of Whonix
-# Copyright (C) 2012 - 2013 adrelanos &lt;adrelanos at riseup dot net&gt;
+# Copyright (C) 2012 - 2013 adrelanos &lt;adrelanos@riseup.net&gt;
 # See the file COPYING for copying conditions.
 
 whonix_build_script_minimal_report=&quot;1&quot;
@@ -49482,7 +49509,7 @@ sudo rm /etc/whonix_buildconfig.d/50_no_report
 
 &lt;/div&gt;
 &lt;/div&gt;</text>
-      <sha1>mnqd7g700wsjwq55xihbvej6mlegktk</sha1>
+      <sha1>t7edu1qfmi3f1agigao504okx7vxohp</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -49713,14 +49740,15 @@ Whonix is produced independently of, and carries no guarantee from, The Tor Proj
     <ns>0</ns>
     <id>541</id>
     <revision>
-      <id>4224</id>
-      <timestamp>2013-12-16T16:30:53Z</timestamp>
+      <id>4714</id>
+      <parentid>4692</parentid>
+      <timestamp>2014-01-14T15:36:29Z</timestamp>
       <contributor>
         <username>FuzzyBot</username>
         <id>37</id>
       </contributor>
       <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="4926">{{Header}}
+      <text xml:space="preserve" bytes="4893">{{Header}}
 
 &lt;languages /&gt;
 {{Infobox OS
@@ -49735,8 +49763,8 @@ Whonix is produced independently of, and carries no guarantee from, The Tor Proj
 | released               = 29 Feb 2012
 | latest_release_version = [[Download|{{Version}}]]
 | latest_release_date    = {{Start date and age|2013|10|11|df=yes}}
-| latest_test_version    = [[Dev/Build Documentation|{{DevTag}}]]
-| latest_test_date       = {{Start date and age|2013|09|26|df=yes}}
+| latest_test_version    = 7.7.2
+| latest_test_date       = {{Start date and age|2014|01|13|df=yes}}
 | marketing target       = Anonymity; Privacy; Security; Personal computing; [[HostingLocationHiddenServices|Location Hidden Servers]]
 | kernel_type            = [https://en.wikipedia.org/wiki/Monolithic_kernel Monolithic] ([https://en.wikipedia.org/wiki/Linux_kernel Linux kernel])
 | ui                     = [https://en.wikipedia.org/wiki/KDE KDE]
@@ -49785,7 +49813,7 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
 ---&gt;
 {{Footer}}
 [[Category:Documentation]]</text>
-      <sha1>e97mpcqj5ylqk74gpn9l2htm3u7o1ij</sha1>
+      <sha1>jsvaklek0y9mrakl12p17v3r2wi09db</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -49889,14 +49917,15 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
     <ns>1198</ns>
     <id>547</id>
     <revision>
-      <id>4230</id>
-      <timestamp>2013-12-16T16:31:24Z</timestamp>
+      <id>4691</id>
+      <parentid>4230</parentid>
+      <timestamp>2014-01-14T15:12:58Z</timestamp>
       <contributor>
         <username>FuzzyBot</username>
         <id>37</id>
       </contributor>
       <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="2478">{{Infobox OS
+      <text xml:space="preserve" bytes="2445">{{Infobox OS
 | logo                   = [[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|alt=Download Whonix]]
 | name                   = Whonix
 | screenshot             = [[Image:kde0_5_0.png|Whonix-Workstation 0.5.6 with KDE Desktop|200px]]
@@ -49908,8 +49937,8 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
 | released               = 29 Feb 2012
 | latest_release_version = [[Download|{{Version}}]]
 | latest_release_date    = {{Start date and age|2013|10|11|df=yes}}
-| latest_test_version    = [[Dev/Build Documentation|{{DevTag}}]]
-| latest_test_date       = {{Start date and age|2013|09|26|df=yes}}
+| latest_test_version    = 7.7.2
+| latest_test_date       = {{Start date and age|2014|01|13|df=yes}}
 | marketing target       = Anonymity; Privacy; Security; Personal computing; [[HostingLocationHiddenServices|Location Hidden Servers]]
 | kernel_type            = [https://en.wikipedia.org/wiki/Monolithic_kernel Monolithic] ([https://en.wikipedia.org/wiki/Linux_kernel Linux kernel])
 | ui                     = [https://en.wikipedia.org/wiki/KDE KDE]
@@ -49919,7 +49948,7 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
 | preceded_by            = [https://trac.torproject.org/projects/tor/wiki/doc/JanusVM JanusVM]&lt;ref&gt;http://www.webcitation.org/6IA21tFaM&lt;/ref&gt;; [http://www.makeuseof.com/tag/browse-email-safely-anonymously-torbox/ TorBOX]&lt;ref&gt;http://www.webcitation.org/6IA20bIq5&lt;/ref&gt;
 | supported_platforms    = x86 compatible and/or VirtualBox + &lt;ref&gt;[[Other Operating Systems|Custom-Workstation]]: self made builds can run on any real or virtual hardware as long as they are behind a Whonix-Gateway. Tor Browser binaries are only available for a limited number of platforms (Windows, Linux, BSD, Mac).&lt;/ref&gt;
 }}</text>
-      <sha1>cvn05b12sz1rdu1ob4as780nj63eqxo</sha1>
+      <sha1>slbybpuuu7yrlt8wlgryd9zubfdon25</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -50051,19 +50080,21 @@ Image:donate.png|link=Donate|[[Donate|Donate to Whonix!]]
     <ns>0</ns>
     <id>554</id>
     <revision>
-      <id>4239</id>
-      <timestamp>2013-12-16T16:35:35Z</timestamp>
+      <id>4721</id>
+      <parentid>4239</parentid>
+      <timestamp>2014-01-14T17:37:15Z</timestamp>
       <contributor>
-        <username>FuzzyBot</username>
-        <id>37</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="17624">{{Header}}
+      <minor/>
+      <comment>Text replace - &quot;Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;&quot; to &quot;Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;&quot;</comment>
+      <text xml:space="preserve" bytes="17620">{{Header}}
 &lt;!--
 Copyright:
 
    Whonix Download wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-   Whonix Download wiki page Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+   Whonix Download wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
    
    This program is free software; you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -50337,7 +50368,7 @@ sudo ln -s /etc/dpkg/origins/whonix /etc/dpkg/origins/default
 = License =
 &lt;pre&gt;
 Whonix Download wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-Whonix Download wiki page Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+Whonix Download wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
 
 This program comes with ABSOLUTELY NO WARRANTY; for details see the wiki source code.
 This is free software, and you are welcome to redistribute it
@@ -50349,7 +50380,7 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>3axd2cdw8hdfyr2614eh8jspuim1lk1</sha1>
+      <sha1>q34uwk7iasj42bj0oh1vphdx0gdhsw1</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -50548,20 +50579,22 @@ There are two ways to get news. Choose at your preference.</text>
     <ns>0</ns>
     <id>566</id>
     <revision>
-      <id>4252</id>
-      <timestamp>2013-12-16T16:36:16Z</timestamp>
+      <id>4744</id>
+      <parentid>4729</parentid>
+      <timestamp>2014-01-14T17:39:27Z</timestamp>
       <contributor>
-        <username>FuzzyBot</username>
-        <id>37</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="25717">&lt;languages /&gt;
+      <minor/>
+      <comment>Text replace - &quot;Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;&quot; to &quot;Copyright (C) 2012 - 2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;&quot;</comment>
+      <text xml:space="preserve" bytes="25723">&lt;languages /&gt;
 {{Header}}
 &lt;!--
 Copyright:
 
    Whonix Warning wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-   Whonix Warning wiki page Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+   Whonix Warning wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
    
    This program is free software; you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -50595,7 +50628,7 @@ Even though we're doing our best to offer you good tools to protect your privacy
 = License =
 
 &lt;pre&gt;Whonix Warning wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-Whonix Warning wiki page Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+Whonix Warning wiki page Portions Copyright (C) 2012 - 2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
 
 This program comes with ABSOLUTELY NO WARRANTY; for details see the wiki source code.
 This is free software, and you are welcome to redistribute it
@@ -50828,7 +50861,7 @@ See also [[Security_in_Real_World | Whonix security in real world]], [[Security_
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>nruj1fc7xgc8xq8mmyfbfundsbi1l70</sha1>
+      <sha1>1m6yxcmcdttvv36x10sih2cl4t2ahtl</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -51224,15 +51257,17 @@ sudo ln -s /etc/dpkg/origins/whonix /etc/dpkg/origins/default
     <ns>1198</ns>
     <id>589</id>
     <revision>
-      <id>4275</id>
-      <timestamp>2013-12-16T16:40:14Z</timestamp>
+      <id>4728</id>
+      <parentid>4275</parentid>
+      <timestamp>2014-01-14T17:37:38Z</timestamp>
       <contributor>
-        <username>FuzzyBot</username>
-        <id>37</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="802">Whonix Warning wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-   Whonix Warning wiki page Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+      <minor/>
+      <comment>Text replace - &quot;Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;&quot; to &quot;Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;&quot;</comment>
+      <text xml:space="preserve" bytes="800">Whonix Warning wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
+   Whonix Warning wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
    
    This program is free software; you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -51246,7 +51281,7 @@ sudo ln -s /etc/dpkg/origins/whonix /etc/dpkg/origins/default
       
    You should have received a copy of the GNU General Public License
    along with this program; if not, write to:</text>
-      <sha1>qp6ct8np6yom0sifu7khenzacxxk019</sha1>
+      <sha1>96nbam8hkvsk1r9qrim3wvmx8hsw217</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -52602,14 +52637,15 @@ To get a more complete list, install Debian (with KDE) on bare metal using the r
     <ns>0</ns>
     <id>645</id>
     <revision>
-      <id>4357</id>
-      <timestamp>2013-12-20T00:32:01Z</timestamp>
+      <id>4713</id>
+      <parentid>4689</parentid>
+      <timestamp>2014-01-14T15:36:26Z</timestamp>
       <contributor>
-        <username>Fortasse</username>
-        <id>1</id>
+        <username>FuzzyBot</username>
+        <id>37</id>
       </contributor>
-      <comment>Created page with &quot;[[Image:whonix.jpg|center|Whonix Concept|400px]]&quot;</comment>
-      <text xml:space="preserve" bytes="4926">{{Header}}
+      <comment>Updating to match new version of source page</comment>
+      <text xml:space="preserve" bytes="4893">{{Header}}
 
 &lt;languages /&gt;
 {{Infobox OS
@@ -52624,8 +52660,8 @@ To get a more complete list, install Debian (with KDE) on bare metal using the r
 | released               = 29 Feb 2012
 | latest_release_version = [[Download|{{Version}}]]
 | latest_release_date    = {{Start date and age|2013|10|11|df=yes}}
-| latest_test_version    = [[Dev/Build Documentation|{{DevTag}}]]
-| latest_test_date       = {{Start date and age|2013|09|26|df=yes}}
+| latest_test_version    = 7.7.2
+| latest_test_date       = {{Start date and age|2014|01|13|df=yes}}
 | marketing target       = Anonymity; Privacy; Security; Personal computing; [[HostingLocationHiddenServices|Location Hidden Servers]]
 | kernel_type            = [https://en.wikipedia.org/wiki/Monolithic_kernel Monolithic] ([https://en.wikipedia.org/wiki/Linux_kernel Linux kernel])
 | ui                     = [https://en.wikipedia.org/wiki/KDE KDE]
@@ -52674,7 +52710,7 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
 ---&gt;
 {{Footer}}
 [[Category:Documentation]]</text>
-      <sha1>e97mpcqj5ylqk74gpn9l2htm3u7o1ij</sha1>
+      <sha1>jsvaklek0y9mrakl12p17v3r2wi09db</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -55315,15 +55351,15 @@ Quelle: &lt;html&gt;&lt;a href=&quot;http://www.juraforum.de/impressum-generator
     <ns>0</ns>
     <id>698</id>
     <revision>
-      <id>4681</id>
-      <parentid>4678</parentid>
-      <timestamp>2014-01-14T00:58:36Z</timestamp>
+      <id>4715</id>
+      <parentid>4687</parentid>
+      <timestamp>2014-01-14T16:55:45Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
       <comment>/* Geltungsbereich */</comment>
-      <text xml:space="preserve" bytes="2808">[[Impressum]] | [[Datenschutz|Datenschutzerklärung]] | [[Disclaimer|Haftungsausschluss]]
+      <text xml:space="preserve" bytes="3382">[[Impressum]] | [[Datenschutz|Datenschutzerklärung]] | [[Disclaimer|Haftungsausschluss]]
 
 = Impressum =
 == Angaben (gemäß § 5 TMG) ==
@@ -55348,9 +55384,16 @@ Dieses Impressum gilt auch für:
 * Twitter WhonixSource: https://twitter.com/WhonixSource
 * Google+ Whonix: https://plus.google.com/108150429836421683225/about
 * Google+ adrelanos: https://plus.google.com/u/0/102912938397451649726/about
-* YouTube Whonix: https://www.youtube.com/user/adrelanos
+* Google+ Patrick Schleizer: https://plus.google.com/u/0/112678569435063398972/about
+* YouTube adrelanos: https://www.youtube.com/user/adrelanos
+* YouTube Patrick Schleizer: http://www.youtube.com/channel/UC4_4e5cN5zhCS13W8v_d4nw
 * wordpress: https://anonymousoperatingsystem.wordpress.com/
 * about.me: http://about.me/Whonix/
+* freecode.com: https://freecode.com/projects/whonix/
+* bitcointalk.org: https://bitcointalk.org/index.php?action=profile;u=69869
+* Facebook:
+** Whonix: https://www.facebook.com/pages/Whonix/369240439779108
+** Patrick Schleizer: https://www.facebook.com/patrick.schleizer
 * sourceforge:
 ** https://sourceforge.net/p/whonix/
 ** https://sourceforge.net/p/whonixoldarchivedreleases/
@@ -55377,13 +55420,294 @@ Bitte beachten Sie, dass dieses Impressum gilt nicht für:
 
 * alle restlichen Inhalte auf https://www.whonix.org / http://kkkkkkkkkk63ava6.onion (z.B. nicht für das Forum oder die Mailingliste). Der Eigentümer der domain whonix.org und kkkkkkkkkk63ava6.onion ist fortasse, welcher [[Contact#For_website_issues|hier]] kontaktiert werden kann. Fortasse ist auch der/die-jenige welche, der den Server adminstriert und bezahlt. Dieser ist mir nur unter Pseudonym &quot;fortasse&quot; bekannt und lebt laut eigenen Angaben nicht in Deutschland, ist daher nicht der deutschen Impressumspflicht unterworfen.
 * Diaspora http://domesticempire.files.wordpress.com/2011/11/diaspora_button_94x16_blk.png (wird von Sean betrieben)
+* ohloh.net: https://www.ohloh.net/p/Whonix/ Admin ist [https://www.facebook.com/jasonjayala Jason Ayala] (Jason@JasonAyala.com)
 
 = Datenschutz =
 Die Datenschutzerklärung finden Sie [[Datenschutz|hier]].
 
 = Haftungsausschluss (Disclaimer) =
 Den Haftungsausschluss (Disclaimer) finden Sie [[Disclaimer|hier]].</text>
-      <sha1>ctqaevxuvo6a5ijivivu9rkc4uyzl85</sha1>
+      <sha1>ia29vfrsv3rrl6bwd3auj2cjk8bw3bk</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/Page display title/de</title>
+    <ns>1198</ns>
+    <id>699</id>
+    <revision>
+      <id>4693</id>
+      <timestamp>2014-01-14T15:13:43Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;Homepage&quot;</comment>
+      <text xml:space="preserve" bytes="8">Homepage</text>
+      <sha1>k3ee2ndae3fpwzx3k1xv9qivwabcc1g</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Main Page/de</title>
+    <ns>0</ns>
+    <id>700</id>
+    <revision>
+      <id>4712</id>
+      <parentid>4711</parentid>
+      <timestamp>2014-01-14T15:36:25Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Updating to match new version of source page</comment>
+      <text xml:space="preserve" bytes="4813">{{Header}}
+
+&lt;languages /&gt;
+{{Infobox OS
+| logo                   = [[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|alt=Download Whonix]]
+| name                   = Whonix
+| screenshot             = [[Image:kde0_5_0.png|Whonix-Workstation 0.5.6 with KDE Desktop|200px]]
+| caption                = Whonix-Workstation 0.5.6 with KDE Desktop
+| developer              = none / Whonix developers
+| family                 = [https://en.wikipedia.org/wiki/Unix-like Unix-like], based on [https://en.wikipedia.org/wiki/Debian Debian]
+| source_model           = [https://en.wikipedia.org/wiki/Open_source Open Source] 
+| working_state          = active
+| released               = 29 Feb 2012
+| latest_release_version = [[Download|{{Version}}]]
+| latest_release_date    = {{Start date and age|2013|10|11|df=yes}}
+| latest_test_version    = 7.7.2
+| latest_test_date       = {{Start date and age|2014|01|13|df=yes}}
+| marketing target       = Anonymity; Privacy; Security; Personal computing; [[HostingLocationHiddenServices|Location Hidden Servers]]
+| kernel_type            = [https://en.wikipedia.org/wiki/Monolithic_kernel Monolithic] ([https://en.wikipedia.org/wiki/Linux_kernel Linux kernel])
+| ui                     = [https://en.wikipedia.org/wiki/KDE KDE]
+| license                = [https://en.wikipedia.org/wiki/Free_software Free software], mainly the [https://en.wikipedia.org/wiki/GNU_GPL GNU GPL], and other licenses&lt;ref&gt;{{cite web|url=http://www.debian.org/legal/licenses/|title=License information|publisher=Debian|accessdate=2009-02-28}}&lt;/ref&gt;
+| website                = [https://www.whonix.org https]; &lt;html&gt;&lt;a class=&quot;link-https&quot; style=&quot;color: #3366BB&quot; href=&quot;http://zo7fksnun4b4v4jv.onion&quot; rel=&quot;nofollow&quot;&gt;.onion&lt;/a&gt;&lt;/html&gt;
+| updatemodel            = [https://en.wikipedia.org/wiki/Advanced_Packaging_Tool APT] (several front-ends available)
+| preceded_by            = [https://trac.torproject.org/projects/tor/wiki/doc/JanusVM JanusVM]&lt;ref&gt;http://www.webcitation.org/6IA21tFaM&lt;/ref&gt;; [http://www.makeuseof.com/tag/browse-email-safely-anonymously-torbox/ TorBOX]&lt;ref&gt;http://www.webcitation.org/6IA20bIq5&lt;/ref&gt;
+| supported_platforms    = x86 compatible and/or VirtualBox + &lt;ref&gt;[[Other Operating Systems|Custom-Workstation]]: self made builds can run on any real or virtual hardware as long as they are behind a Whonix-Gateway. Tor Browser binaries are only available for a limited number of platforms (Windows, Linux, BSD, Mac).&lt;/ref&gt;
+}}
+
+[[Image:whonix.jpg|center|Whonix Konzept|400px]]
+
+Whonix ist ein Betriebssystem mit Fokus auf Anonymität, Privatsphäre und Sicherheit. Es basiert auf dem Tor Anonymitätsnetzwerk und Sicherheit durch Isolation. DNS Leaks sind unmöglich, nicht mal Malware mit Rootrechten kann die echte IP des Benutzers herausfinden. 
+
+Whonix besteht aus zwei Teilen: Auf einem läuft Tor und fungiert als ein Tunnel, diesen nennen wir Whonix-Gateway. Der andere, welchen wir Whonix-Workstation nennen befindet sich in einem völlig isolierten Netzwerk. Nur Verbindungen durch Tor sind möglich.
+
+Um mehr über Sicherheit und Anonymität in Whonix zu lernen, fahren sie bitte fort zur Seite [[About|Über Whonix]].
+
+[[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|alt=Download Whonix]]
+
+= Screenshots =
+&lt;gallery&gt;
+Image:kde0_5_0.png|Whonix-Workstation 0.5.6 mit KDE Desktop
+Image:whonixcheck_gui.png|[[whonixcheck]]
+Image:timesync_gui.png|[[TimeSync]]
+Image:stream_isolation.1.0.jpg|[[Stream Isolation]]
+Image:mat.png|MAT - [[Metadata]] Anonymisation Toolkit
+Image:flash_leak_test.png|[[Browser Plugins|Flash]] Leak Test SocksPort and TransPort
+Image:Thunderbird_17.0.png|Mozilla Thunderbird (Icedove genannt in Debian) mit TorBirdy, siehe [[E-Mail]]
+Image:xchat_screenshot_created_by_adrelanos.png|[[XChat]], IRC Chat Client
+Image:torbrowser.png|[[Tor Browser]], Privatsphäre per Design. Bekämpft Browserverfolgung.
+Image:shield_badge.png|Whonix ist Mitglied der [http://internetdefenseleague.org Internet Defense League].
+Image:OIN_logo_200px.png|Whonix ist [http://www.openinventionnetwork.com/licensees.php Lizenznehmer] des [https://en.wikipedia.org/wiki/Open_Invention_Network Open Invention Network].
+Image:donate.png|link=Donate|[[Donate|Spenden an Whonix!]]
+&lt;/gallery&gt;
+
+Whonix wird unabhängig und ohne jegliche Garantien von The Tor Project&lt;ref&gt;https://www.torproject.org&lt;/ref&gt; hergestellt.
+
+&lt;references /&gt;
+
+Danke an Tomchen1989 von Wikimedia Commons für den Downloadbutton! [https://commons.wikimedia.org/wiki/File:Download_Button.svg 1] ([http://www.webcitation.org/6I2DQzdu0 w])
+Thanks für den MAT public domain screenshot an [https://www.awxcnx.de/handbuch_43.htm awxcnx.de]!
+&lt;!---
+&lt;a href=&quot;https://plus.google.com/108150429836421683225&quot; rel=&quot;publisher&quot;&gt;Google+&lt;/a&gt;
+---&gt;
+{{Footer}}
+[[Category:Documentation]]</text>
+      <sha1>9fca0z8r7n98vjzha1svf55s0p2yhc3</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/3/de</title>
+    <ns>1198</ns>
+    <id>701</id>
+    <revision>
+      <id>4695</id>
+      <timestamp>2014-01-14T15:15:56Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;Whonix ist ein Betriebssystem mit Fokus auf Anonymität, Privatsphäre und Sicherheit. Es basiert auf dem Tor Anonymitätsnetzwerk und Sicherheit durch Isolation. DNS Leaks si...&quot;</comment>
+      <text xml:space="preserve" bytes="269">Whonix ist ein Betriebssystem mit Fokus auf Anonymität, Privatsphäre und Sicherheit. Es basiert auf dem Tor Anonymitätsnetzwerk und Sicherheit durch Isolation. DNS Leaks sind unmöglich, nicht mal Malware mit Rootrechten kann die echte IP des Benutzers herausfinden.</text>
+      <sha1>96tk2eohg91ie0bx1wqfp223ylmhmn1</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/4/de</title>
+    <ns>1198</ns>
+    <id>702</id>
+    <revision>
+      <id>4697</id>
+      <timestamp>2014-01-14T15:17:51Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;Whonix besteht aus zwei Teilen: Auf einem läuft Tor und fungiert als ein Tunnel, diesen nennen wir Whonix-Gateway. Der andere, welchen wir Whonix-Workstation nennen befindet ...&quot;</comment>
+      <text xml:space="preserve" bytes="259">Whonix besteht aus zwei Teilen: Auf einem läuft Tor und fungiert als ein Tunnel, diesen nennen wir Whonix-Gateway. Der andere, welchen wir Whonix-Workstation nennen befindet sich in einem völlig isolierten Netzwerk. Nur Verbindungen durch Tor sind möglich.</text>
+      <sha1>ho9hww123csr6p4sspsuav8fnp1cip3</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/5/de</title>
+    <ns>1198</ns>
+    <id>703</id>
+    <revision>
+      <id>4699</id>
+      <timestamp>2014-01-14T15:18:59Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;Um mehr über Sicherheit und Anonymität in Whonix zu lernen, fahren sie bitte fort zur Seite [[About|Über Whonix]].&quot;</comment>
+      <text xml:space="preserve" bytes="117">Um mehr über Sicherheit und Anonymität in Whonix zu lernen, fahren sie bitte fort zur Seite [[About|Über Whonix]].</text>
+      <sha1>775l7m3w1vigd4gev7daoe3zx7qm3ot</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/6/de</title>
+    <ns>1198</ns>
+    <id>704</id>
+    <revision>
+      <id>4701</id>
+      <timestamp>2014-01-14T15:19:09Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;[[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|alt=Download Whonix]]&quot;</comment>
+      <text xml:space="preserve" bytes="98">[[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|alt=Download Whonix]]</text>
+      <sha1>6hmk5unwt3k4xodhz7i46aw262nb28f</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/8/de</title>
+    <ns>1198</ns>
+    <id>705</id>
+    <revision>
+      <id>4702</id>
+      <timestamp>2014-01-14T15:20:10Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;Whonix wird unabhängig und ohne jegliche Garantien von The Tor Project&lt;ref&gt;https://www.torproject.org&lt;/ref&gt; hergestellt.&quot;</comment>
+      <text xml:space="preserve" bytes="121">Whonix wird unabhängig und ohne jegliche Garantien von The Tor Project&lt;ref&gt;https://www.torproject.org&lt;/ref&gt; hergestellt.</text>
+      <sha1>htg37t8cfhj4tdc1kz36mgadbxemzv7</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/9/de</title>
+    <ns>1198</ns>
+    <id>706</id>
+    <revision>
+      <id>4704</id>
+      <timestamp>2014-01-14T15:20:15Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;&lt;references /&gt;&quot;</comment>
+      <text xml:space="preserve" bytes="14">&lt;references /&gt;</text>
+      <sha1>2ekfb946zgmfx87udlheroym7cul1vu</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/7/de</title>
+    <ns>1198</ns>
+    <id>707</id>
+    <revision>
+      <id>4706</id>
+      <timestamp>2014-01-14T15:30:49Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;= Screenshots = &lt;gallery&gt; Image:kde0_5_0.png|Whonix-Workstation 0.5.6 mit KDE Desktop Image:whonixcheck_gui.png|[[whonixcheck]] Image:timesync_gui.png|[[TimeSync]] Image:strea...&quot;</comment>
+      <text xml:space="preserve" bytes="991">= Screenshots =
+&lt;gallery&gt;
+Image:kde0_5_0.png|Whonix-Workstation 0.5.6 mit KDE Desktop
+Image:whonixcheck_gui.png|[[whonixcheck]]
+Image:timesync_gui.png|[[TimeSync]]
+Image:stream_isolation.1.0.jpg|[[Stream Isolation]]
+Image:mat.png|MAT - [[Metadata]] Anonymisation Toolkit
+Image:flash_leak_test.png|[[Browser Plugins|Flash]] Leak Test SocksPort and TransPort
+Image:Thunderbird_17.0.png|Mozilla Thunderbird (Icedove genannt in Debian) mit TorBirdy, siehe [[E-Mail]]
+Image:xchat_screenshot_created_by_adrelanos.png|[[XChat]], IRC Chat Client
+Image:torbrowser.png|[[Tor Browser]], Privatsphäre per Design. Bekämpft Browserverfolgung.
+Image:shield_badge.png|Whonix ist Mitglied der [http://internetdefenseleague.org Internet Defense League].
+Image:OIN_logo_200px.png|Whonix ist [http://www.openinventionnetwork.com/licensees.php Lizenznehmer] des [https://en.wikipedia.org/wiki/Open_Invention_Network Open Invention Network].
+Image:donate.png|link=Donate|[[Donate|Spenden an Whonix!]]
+&lt;/gallery&gt;</text>
+      <sha1>2i04nma73j7fyu09ogga4p61gm13s4n</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/2/de</title>
+    <ns>1198</ns>
+    <id>708</id>
+    <revision>
+      <id>4708</id>
+      <timestamp>2014-01-14T15:31:03Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;[[Image:whonix.jpg|center|Whonix Konzept|400px]]&quot;</comment>
+      <text xml:space="preserve" bytes="48">[[Image:whonix.jpg|center|Whonix Konzept|400px]]</text>
+      <sha1>azk2ezzyeu04m1pq9rvpahpspqyrw10</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/10/de</title>
+    <ns>1198</ns>
+    <id>709</id>
+    <revision>
+      <id>4710</id>
+      <timestamp>2014-01-14T15:31:53Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;Danke an Tomchen1989 von Wikimedia Commons für den Downloadbutton! [https://commons.wikimedia.org/wiki/File:Download_Button.svg 1] ([http://www.webcitation.org/6I2DQzdu0 w]) ...&quot;</comment>
+      <text xml:space="preserve" bytes="368">Danke an Tomchen1989 von Wikimedia Commons für den Downloadbutton! [https://commons.wikimedia.org/wiki/File:Download_Button.svg 1] ([http://www.webcitation.org/6I2DQzdu0 w])
+Thanks für den MAT public domain screenshot an [https://www.awxcnx.de/handbuch_43.htm awxcnx.de]!
+&lt;!---
+&lt;a href=&quot;https://plus.google.com/108150429836421683225&quot; rel=&quot;publisher&quot;&gt;Google+&lt;/a&gt;
+---&gt;</text>
+      <sha1>3j5z57vj6rkv6kmr632dkre8fjvpelk</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
