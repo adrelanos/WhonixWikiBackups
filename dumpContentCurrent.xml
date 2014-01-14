@@ -289,19 +289,17 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
     <ns>10</ns>
     <id>14</id>
     <revision>
-      <id>4630</id>
-      <parentid>4340</parentid>
-      <timestamp>2014-01-09T20:17:25Z</timestamp>
+      <id>4671</id>
+      <parentid>4630</parentid>
+      <timestamp>2014-01-13T23:24:36Z</timestamp>
       <contributor>
-        <username>Fortasse</username>
-        <id>1</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="701">&lt;font size=&quot;3&quot;&gt;[https://www.whonix.org{{localurl:{{FULLPAGENAME}}}} https] | &lt;html&gt;&lt;a class=&quot;link-https&quot; style=&quot;color: #3366BB&quot; href=&quot;http://kkkkkkkkkk63ava6.onion&lt;/html&gt;{{localurl:{{FULLPAGENAME}}}}&lt;html&gt;&quot; rel=&quot;nofollow&quot;&gt;.onion&lt;/a&gt;&lt;/html&gt;&lt;/font&gt; &lt;font size=&quot;1&quot;&gt;| [http://whonix.org.nyud.net{{localurl:{{FULLPAGENAME}}}} Mirror] | [https://kkkkkkkkkk63ava6.tor2web.org{{localurl:{{FULLPAGENAME}}}} Mirror] | [[Contribute#Donate|Donate to Whonix!]]&lt;/font&gt;&lt;!--
+      <text xml:space="preserve" bytes="638">&lt;font size=&quot;3&quot;&gt;[https://www.whonix.org{{localurl:{{FULLPAGENAME}}}} https] | &lt;html&gt;&lt;a class=&quot;link-https&quot; style=&quot;color: #3366BB&quot; href=&quot;http://kkkkkkkkkk63ava6.onion&lt;/html&gt;{{localurl:{{FULLPAGENAME}}}}&lt;html&gt;&quot; rel=&quot;nofollow&quot;&gt;.onion&lt;/a&gt;&lt;/html&gt;&lt;/font&gt; &lt;font size=&quot;1&quot;&gt;| [http://whonix.org.nyud.net{{localurl:{{FULLPAGENAME}}}} Mirror] | [https://kkkkkkkkkk63ava6.tor2web.org{{localurl:{{FULLPAGENAME}}}} Mirror] | [[Contribute#Donate|Donate to Whonix!]]&lt;/font&gt; | [[Impressum]] | [[Datenschutz|Datenschutzerklärung]] | [[Disclaimer|Haftungsausschluss]]&lt;!--
 inspired by http://aboli.sh/
-@cnpirates ssl(tor) ssl(i2p) coralcdn .sdns .onion .i2p--&gt;
-&lt;font size=&quot;2&quot;&gt;We are making some DNS changes, so the site may be a little broken for a few days. 
-The .onion address should continue to work 100%.&lt;/font&gt;</text>
-      <sha1>8w9in22s9svdx7hztr52kprusd5tik1</sha1>
+@cnpirates ssl(tor) ssl(i2p) coralcdn .sdns .onion .i2p--&gt;</text>
+      <sha1>bog7bkq8xpfv9ot083w6abkf1meqiel</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -4844,14 +4842,15 @@ Use at your own risk.
     <ns>4</ns>
     <id>84</id>
     <revision>
-      <id>4659</id>
-      <parentid>4085</parentid>
-      <timestamp>2014-01-12T02:11:24Z</timestamp>
+      <id>4676</id>
+      <parentid>4659</parentid>
+      <timestamp>2014-01-14T00:25:59Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>/* Whonix.org Privacy Policy */</comment>
-      <text xml:space="preserve" bytes="4188">{{Header}}
+      <comment>/* Whonix.org Site Security */</comment>
+      <text xml:space="preserve" bytes="4135">{{Header}}
 
 = Whonix.org Privacy Policy =
 
@@ -4869,7 +4868,7 @@ A written privacy policy isn't worth much anyway, since its only privacy by poli
 |Yes, from startssl.com. &lt;ref&gt;https://startssl.com/&lt;/ref&gt;
 |-
 |HTTPS Everywhere &lt;ref&gt;https://www.eff.org/https-everywhere&lt;/ref&gt; inclusion
-|Next update of https everywhere will probable include it. &lt;ref&gt;https://trac.torproject.org/projects/tor/ticket/9143&lt;/ref&gt;
+|Yes. &lt;ref&gt;https://trac.torproject.org/projects/tor/ticket/9143&lt;/ref&gt;
 |-
 |OpenPGP signed fingerprint of whonix.org's SSL certificate
 |Yes. &lt;ref name=fingerprint /&gt;
@@ -4934,7 +4933,7 @@ AyCDWXR3yKGMWHkJqfLu
 
 {{Footer}}
 [[Category:Documentation]] [[Category:Design]]</text>
-      <sha1>or6ys24w3x1gxhkn61lq17q82stxpb5</sha1>
+      <sha1>mvkhc59oc8w09slj2jg07qqg2rd8bit</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -7550,16 +7549,15 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
     <ns>0</ns>
     <id>96</id>
     <revision>
-      <id>4650</id>
-      <parentid>4649</parentid>
-      <timestamp>2014-01-11T22:36:50Z</timestamp>
+      <id>4675</id>
+      <parentid>4650</parentid>
+      <timestamp>2014-01-14T00:14:15Z</timestamp>
       <contributor>
-        <username>Whonix explorer</username>
-        <id>193</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <minor/>
       <comment>/* General */</comment>
-      <text xml:space="preserve" bytes="71371">{{Header}}
+      <text xml:space="preserve" bytes="71372">{{Header}}
  
 = Introduction =
 This page contains the comparisons of Whonix, Tails, Tor Browser and Qubes OS TorVM. If anything here is incorrect or becomes outdated feel free to edit this page or [[contact]] us, we'll correct as soon as possible. See also [[#Statement about Neutrality of this Page]].
@@ -7713,7 +7711,7 @@ This page contains the comparisons of Whonix, Tails, Tor Browser and Qubes OS To
 |{{Yes}}
 |-
 | style=&quot;height: 27px;background-color: #f9f9f9&quot;| Non-Anonymous Developers &lt;ref&gt;Why does this matter? As long as {{Code2|Deterministic Builds}} (discussed below) are not standard, (non-)anonymous developers might imply trust. Also related to reputation, formal education and expertise.&lt;/ref&gt;
-|{{No}}
+|{{Yes}}
 |{{No}}
 |{{Yes}}
 |{{Yes}}
@@ -8666,7 +8664,7 @@ One has always to be very careful, when talking about others. Especially, when t
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Design]]</text>
-      <sha1>ml5ssb7ucb3d2soal3dsqzmy2gdiq4e</sha1>
+      <sha1>qurvqrljgip3pijzbm6e6pdv5gt77en</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -54749,13 +54747,15 @@ You can customize the header and footer of your directory listing as explained [
     <ns>0</ns>
     <id>696</id>
     <revision>
-      <id>4665</id>
-      <timestamp>2014-01-13T22:13:25Z</timestamp>
+      <id>4680</id>
+      <parentid>4665</parentid>
+      <timestamp>2014-01-14T00:40:39Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>Created page with &quot;&lt;!-- NOTE TO WIKI EDITORS: Do not add the default footer! Do not edit without asking Patrick Schleizer beforehand! --&gt;  [[Impressum]] | [[Datenschutz|Datenschutzerklärung]] |...&quot;</comment>
+      <minor/>
+      <comment>Protected &quot;[[Datenschutz]]&quot; ([Edit=Allow only administrators] (indefinite) [Move=Allow only administrators] (indefinite))</comment>
       <text xml:space="preserve" bytes="32257">&lt;!--
 NOTE TO WIKI EDITORS:
 Do not add the default footer!
@@ -55208,13 +55208,15 @@ Do not edit without asking Patrick Schleizer beforehand!
     <ns>0</ns>
     <id>697</id>
     <revision>
-      <id>4666</id>
-      <timestamp>2014-01-13T22:13:43Z</timestamp>
+      <id>4679</id>
+      <parentid>4666</parentid>
+      <timestamp>2014-01-14T00:40:34Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>Created page with &quot;[[Impressum]] | [[Datenschutz|Datenschutzerklärung]] | [[Disclaimer|Haftungsausschluss]]  = Haftungsausschluss (Disclaimer) – rechtliche Hinweise =  == Haftung für Inhalte...&quot;</comment>
+      <minor/>
+      <comment>Protected &quot;[[Disclaimer]]&quot; ([Edit=Allow only administrators] (indefinite) [Move=Allow only administrators] (indefinite))</comment>
       <text xml:space="preserve" bytes="5491">[[Impressum]] | [[Datenschutz|Datenschutzerklärung]] | [[Disclaimer|Haftungsausschluss]]
 
 = Haftungsausschluss (Disclaimer) – rechtliche Hinweise =
@@ -55313,15 +55315,17 @@ Quelle: &lt;html&gt;&lt;a href=&quot;http://www.juraforum.de/impressum-generator
     <ns>0</ns>
     <id>698</id>
     <revision>
-      <id>4668</id>
-      <parentid>4667</parentid>
-      <timestamp>2014-01-13T22:25:25Z</timestamp>
+      <id>4681</id>
+      <parentid>4678</parentid>
+      <timestamp>2014-01-14T00:58:36Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
       <comment>/* Geltungsbereich */</comment>
-      <text xml:space="preserve" bytes="1547">= Impressum =
+      <text xml:space="preserve" bytes="2808">[[Impressum]] | [[Datenschutz|Datenschutzerklärung]] | [[Disclaimer|Haftungsausschluss]]
+
+= Impressum =
 == Angaben (gemäß § 5 TMG) ==
 Patrick Schleizer &lt;br /&gt;
 Waldzieststr. 16 &lt;br /&gt;
@@ -55341,8 +55345,33 @@ Dieses Impressum gilt auch für:
 
 * Alle Artikel auf https://www.whonix.org / http://kkkkkkkkkk63ava6.onion, in denen dieses Impressum verlinkt ist.
 * Twitter Whonix: https://twitter.com/Whonix
+* Twitter WhonixSource: https://twitter.com/WhonixSource
 * Google+ Whonix: https://plus.google.com/108150429836421683225/about
+* Google+ adrelanos: https://plus.google.com/u/0/102912938397451649726/about
 * YouTube Whonix: https://www.youtube.com/user/adrelanos
+* wordpress: https://anonymousoperatingsystem.wordpress.com/
+* about.me: http://about.me/Whonix/
+* sourceforge:
+** https://sourceforge.net/p/whonix/
+** https://sourceforge.net/p/whonixoldarchivedreleases/
+** https://sourceforge.net/p/whonixdevelopermetafiles/
+* github:
+** https://github.com/Whonix/Whonix
+** https://github.com/adrelanos/nothing-to-see
+** https://github.com/adrelanos/Inoffical-TBB-AppArmor
+** https://github.com/adrelanos/WhonixWikiBackups
+** https://github.com/adrelanos/VPN-Firewall
+** https://github.com/adrelanos/haveged-test
+** https://github.com/adrelanos/gpg-key-creation-test
+** https://github.com/adrelanos/minimal-grml-debootstrap-test
+** https://github.com/adrelanos/Whonix-documentation
+** https://github.com/adrelanos/tor-ctrl
+** https://github.com/adrelanos/timeprivacy
+** https://github.com/adrelanos/tbb-scripts
+** https://github.com/adrelanos/PasswordTrainer
+** https://github.com/adrelanos/grml-debootstraptest
+** https://github.com/adrelanos/sdwdate
+** https://github.com/adrelanos/popcon-benchmark
 
 Bitte beachten Sie, dass dieses Impressum gilt nicht für:
 
@@ -55354,7 +55383,7 @@ Die Datenschutzerklärung finden Sie [[Datenschutz|hier]].
 
 = Haftungsausschluss (Disclaimer) =
 Den Haftungsausschluss (Disclaimer) finden Sie [[Disclaimer|hier]].</text>
-      <sha1>rlrty6zxrs56y1wtvz0xlh87gmotfyv</sha1>
+      <sha1>ctqaevxuvo6a5ijivivu9rkc4uyzl85</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
