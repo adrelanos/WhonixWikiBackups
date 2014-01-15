@@ -665,9 +665,9 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>19</id>
     <revision>
-      <id>4764</id>
-      <parentid>4738</parentid>
-      <timestamp>2014-01-14T17:45:37Z</timestamp>
+      <id>4773</id>
+      <parentid>4764</parentid>
+      <timestamp>2014-01-15T16:09:19Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
@@ -912,7 +912,7 @@ Furthermore you will be automatically notified about new Whonix versions by {{Co
 There are some [[Official Whonix Online Profiles|Whonix Social Media Profiles]], but please don't rely on them for getting Whonix News and please don't use them to contact Whonix developers. (See [[Contact]] for contact information.)
 
 &lt;!--T:49--&gt;
-Because some people will do so even though it is not recommended, messages from the Whonix Feature Blog will be automatically mirrored to [https://twitter.com/Whonix Whonix Twitter Profile], to [https://www.facebook.com/pages/Whonix/369240439779108 Whonix Facebook Profile] and to [https://plus.google.com/108150429836421683225/about Whonix Google+ Profile].
+Because some people will do so even though it is not recommended, messages from the Whonix Feature Blog will be automatically mirrored to [https://twitter.com/Whonix Whonix Twitter Profile], to [https://www.facebook.com/pages/Whonix/622399681135624 Whonix Facebook Profile] and to [https://plus.google.com/108150429836421683225/about Whonix Google+ Profile].
 
 &lt;!--T:52--&gt;
 If you won't get into trouble by letting others learn about Whonix, feel free to follow or like those profiles (with your anonymous account) as a little way to [[Contribute]].
@@ -1064,7 +1064,7 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>8tk4aur6plfhoanex7btdac95xbnj2m</sha1>
+      <sha1>ji8squjgkzbkoffqanbkjtlrmqbuplk</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -5164,15 +5164,15 @@ See license file in Whonix source code.
     <ns>0</ns>
     <id>86</id>
     <revision>
-      <id>4115</id>
-      <parentid>2619</parentid>
-      <timestamp>2013-12-02T14:06:44Z</timestamp>
+      <id>4771</id>
+      <parentid>4769</parentid>
+      <timestamp>2014-01-15T15:59:52Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
       <comment>/* History of Whonix */</comment>
-      <text xml:space="preserve" bytes="17695">{{Header}}
+      <text xml:space="preserve" bytes="17931">{{Header}}
 
 = History of Whonix =
 
@@ -5184,7 +5184,7 @@ Quickly other contributors improved the article. You can check that using [https
 
 The shell scripts grew steady because more and more knowledge has been researched, more and more things had to be done to make TorBOX even safer or to add even more functionality. After the release of TorBOX 0.1.3 there was no one willing to create new images, because the process of creation was tiresome. Installing the operating system manually, putting the scripts into the virtual machines and running them for every improvement seemed boring and time consuming. The TorBOX developers agreed to make the build process fully automated. It became also clear, that TorBOX may no longer consist of only two shell scripts. The big scripts had to be spitted to many more files. Rather it became clear, that a wiki is no longer suited for lots of development related discussion and source code commits. Also a dedicated TorBOX website became required.
 
-Andrew Lewman told adrelanos in private mail, that it would be better if TorBOX was renamed. Even though it was announced on the website that it's unaffiliated with the Tor project, people confused TorBOX with the Tor project. A new name for the project had to be found. In a rush adrelanos renamed to project to aos, which stud of anonymous operating system. The name was a suboptimal choice. Searching for it in search engines did not bring up any results because it was already used for too many other things. Also a name starting with a small character is suboptimal, because at the beginning of a sentence it must be a big character. Adrelanos asked on the tor-talk mailing list for ideas for an anonymous operating system project and got lots of suggested. Whonix was suggested and one of the very few unused terms in search engines, therefore it was chosen as new project name by adrelanos.
+Andrew Lewman told adrelanos in private mail, that it would be better if TorBOX was renamed. Even though it was announced on the website that it's unaffiliated with the Tor project, people confused TorBOX with the Tor project. A new name for the project had to be found. In a rush adrelanos renamed to project to aos, which stud of anonymous operating system. The name was a suboptimal choice. Searching for it in search engines did not bring up any results because it was already used for too many other things. Also a name starting with a small character is suboptimal, because at the beginning of a sentence it must be a big character. Adrelanos asked on the tor-talk mailing list for ideas for an anonymous operating system project and got lots of suggested. Whonix was suggested and one of the very few unused terms in search engines, therefore it was chosen as new project name by adrelanos. The name is a combination of two words, who and nix. Who as in who and nix as in nothing. You could also think of it as &quot;no one&quot;. Whonix should be pronounced &quot;Who Nix&quot;. It seems many people don't expect the &quot;W&quot; in Whonix the be silent.
 
 TransPort, SocksPort, Transparent Proxy, Isolating Proxy, ...
 
@@ -5401,7 +5401,7 @@ then choose etc (at the bottom) and then choose UTC.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>3xzkmf9tvmp6jnwxza6avndn56ojatr</sha1>
+      <sha1>0b0tmyhd4tqu0hy4plz6he33dc3tpup</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -17477,16 +17477,15 @@ To get a new circuit, press.
     <ns>0</ns>
     <id>150</id>
     <revision>
-      <id>4726</id>
-      <parentid>4532</parentid>
-      <timestamp>2014-01-14T17:37:35Z</timestamp>
+      <id>4768</id>
+      <parentid>4726</parentid>
+      <timestamp>2014-01-15T13:02:05Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <minor/>
-      <comment>Text replace - &quot;Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;&quot; to &quot;Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;&quot;</comment>
-      <text xml:space="preserve" bytes="13835">&lt;!--
+      <comment>/* Change/Remove Proxy Settings */</comment>
+      <text xml:space="preserve" bytes="13585">&lt;!--
 Copyright:
 
    Whonix Tor Browser wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -17655,14 +17654,9 @@ If you want the browser interface in a different language than English, see [[La
 = Change/Remove Proxy Settings =
 '''This is an advanced topic. You most likely only need it for advanced tunneling scenarios.'''
 
-'''Seems difficult for TBB 3.x. Instructions not finished, not fully tested yet!'''
-
-Changes in TBB currently make this difficult, see:
-[https://trac.torproject.org/projects/tor/ticket/10509 skip TOR_SKIP_LAUNCH=1 environment variable not honored]
-
 You could either:
 
-* Use Tor Button's settings dialog to set it to any other proxy or no proxy. {{Code2|Transparent Torification}} means, &quot;no proxy&quot; or in other words it means &quot;use whatever the system system provides&quot;.
+* Use Tor Button's -&gt; Preferences to set it to any other proxy or no proxy. {{Code2|Transparent Torification}} means, &quot;no proxy&quot; or in other words it means &quot;use whatever the system system provides&quot;.
 * For an alternative method, setting {{Code2|Transparent Torification}} which does not involve Tor Button's graphical user interface, see footnote &lt;ref&gt;
 &lt;!--Keeping that, in case Tor Button's settings dialog breaks again.--&gt;
 If you want to set it to no proxy, you could either:
@@ -17693,7 +17687,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>1fqkxj1pr0aqifemyz5fp9bbgw40wkj</sha1>
+      <sha1>rz4cwuxqt8zf78hzw6wpa4mzwzosbjy</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -43041,18 +43035,17 @@ Do not remove {{Code2|...-postinst}} packages.
     <ns>0</ns>
     <id>475</id>
     <revision>
-      <id>4072</id>
-      <parentid>4001</parentid>
-      <timestamp>2013-11-21T13:33:50Z</timestamp>
+      <id>4770</id>
+      <parentid>4072</parentid>
+      <timestamp>2014-01-15T15:29:24Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Support */</comment>
-      <text xml:space="preserve" bytes="3437">{{Header}}
+      <text xml:space="preserve" bytes="3639">{{Header}}
 
 = Support =
-* When the Tor Browser download script is failing, use the [[Special:AWCforum|Whonix User Forum]]. Since many users are affected when it breaks, there is probably already an existing topic. Use that.
+* When the Tor Browser download script is failing, use the [https://www.whonix.org/forum/ Whonix User Forum]. Since many users are affected when it breaks, there is probably already an existing topic. Use that.
 
 * Linux/Debian related questions, are {{Code2|welcome}}&lt;ref&gt;http://meta.unix.stackexchange.com/questions/1461/would-you-be-happy-to-welcome-whonix-gnu-linux-users-on-unix-se&lt;/ref&gt; on http://unix.stackexchange.com. Add the {{Code2|whonix}} tag. This will result in Whonix developers getting informed about your question and answering (if there wasn't a correct answer earlier) and/or commenting on your questions/other answers if necessary.
 
@@ -43062,7 +43055,9 @@ Do not remove {{Code2|...-postinst}} packages.
 
 * Whonix specific Tor questions are {{Code2|welcome}}&lt;ref&gt;http://meta.tor.stackexchange.com/questions/119/would-you-be-happy-to-welcome-whonix-gnu-linux-users-on-tor-se&lt;/ref&gt; on http://tor.stackexchange.com. Add the {{Code2|whonix}} tag. This will result in Whonix developers getting informed about your question and answering (if there wasn't a correct answer earlier) and/or commenting on your questions/other answers if necessary.
 
-* For Whonix specific questions not suitable for the stackexchange Q/A format, use the [[Special:AWCforum|Whonix User Forum]]. Or, see footnote. &lt;ref&gt;Use the &lt;html&gt;&lt;a href=&quot;/cgi-bin/mailman/listinfo/whonix-users&quot;&gt;Whonix Users Mailing List&lt;/a&gt;&lt;/html&gt;. But do not use the forum and the mailing list to discuss the same problem at the same time. Again as recommended on security recommendations, be careful what you say in public places that are archived.&lt;/ref&gt;
+* For Whonix specific questions not suitable for the stackexchange Q/A format, use the [https://www.whonix.org/forum Whonix User Forum]. Or, see footnote. &lt;ref&gt;Use the &lt;html&gt;&lt;a href=&quot;/cgi-bin/mailman/listinfo/whonix-users&quot;&gt;Whonix Users Mailing List&lt;/a&gt;&lt;/html&gt;. But do not use the forum and the mailing list to discuss the same problem at the same time. Again as recommended on security recommendations, be careful what you say in public places that are archived.&lt;/ref&gt;
+
+* Our [[Special:AWCforum|OLD Whonix User Forum]] can still be used to discuss existing topics, please no new topics, use [https://www.whonix.org/forum Whonix User Forum] for that.
 
 * General questions about computer security could be on topic on http://security.stackexchange.com/.
 
@@ -43096,7 +43091,7 @@ Be careful with the advice you are getting in public places. Do not run commands
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>7avbg98076ribsi9ql50b56r1fwc64r</sha1>
+      <sha1>tv4z5y221zmjn35ahjnkclpfx539wch</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -55351,9 +55346,9 @@ Quelle: &lt;html&gt;&lt;a href=&quot;http://www.juraforum.de/impressum-generator
     <ns>0</ns>
     <id>698</id>
     <revision>
-      <id>4715</id>
-      <parentid>4687</parentid>
-      <timestamp>2014-01-14T16:55:45Z</timestamp>
+      <id>4772</id>
+      <parentid>4715</parentid>
+      <timestamp>2014-01-15T16:08:47Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
@@ -55392,7 +55387,7 @@ Dieses Impressum gilt auch für:
 * freecode.com: https://freecode.com/projects/whonix/
 * bitcointalk.org: https://bitcointalk.org/index.php?action=profile;u=69869
 * Facebook:
-** Whonix: https://www.facebook.com/pages/Whonix/369240439779108
+** Whonix: https://www.facebook.com/pages/Whonix/622399681135624
 ** Patrick Schleizer: https://www.facebook.com/patrick.schleizer
 * sourceforge:
 ** https://sourceforge.net/p/whonix/
@@ -55427,7 +55422,7 @@ Die Datenschutzerklärung finden Sie [[Datenschutz|hier]].
 
 = Haftungsausschluss (Disclaimer) =
 Den Haftungsausschluss (Disclaimer) finden Sie [[Disclaimer|hier]].</text>
-      <sha1>ia29vfrsv3rrl6bwd3auj2cjk8bw3bk</sha1>
+      <sha1>7mouf13fz0pfyd8iwfnfyqd95vzq6vp</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
