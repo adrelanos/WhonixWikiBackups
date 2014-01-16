@@ -12330,14 +12330,15 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>118</id>
     <revision>
-      <id>4638</id>
-      <parentid>4621</parentid>
-      <timestamp>2014-01-10T14:54:30Z</timestamp>
+      <id>4775</id>
+      <parentid>4774</parentid>
+      <timestamp>2014-01-15T23:24:21Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <username>JasonJAyalaP</username>
+        <id>9</id>
       </contributor>
-      <text xml:space="preserve" bytes="6435">{{Header}}
+      <comment>Contribute -- &quot;Answer Questions&quot; -- Added Stack Exchange links and forum and irc links</comment>
+      <text xml:space="preserve" bytes="6312">{{Header}}
 
 = Easy / Anyone =
 == General ==
@@ -12354,6 +12355,11 @@ Follow Whonix on [https://twitter.com/Whonix Twitter].
 
 == Feedback ==
 Send [[Contact|feedback]] about Whonix.
+
+== Answer Questions ==
+Help other users on Stack Exchange by [http://blog.stackoverflow.com/2010/12/subscribe-to-tags-via-emai/ subscribing] to the {{Code2|whonix}} tag in [http://tor.stackexchange.com/questions/tagged/whonix tor.se] and [http://tor.stackexchange.com/questions/tagged/whonix unix.se].
+
+Join the [https://www.whonix.org/forum/ Whonix User Forum] or IRC room (#Whonix on irc.oftc.net).
 
 == Donate ==
 If you appreciate adrelanos's work on Whonix, want to say thanks and support further maintenance, support, development and hosting, please donate. It will keep adrelanos motivated. It is no secret, that the money could be spend on amusements as a tiny compensation for the countless hours of research and development.
@@ -12465,21 +12471,6 @@ Your task could include, depending on your interest:
 * [[Dev/Redistribution]]
 * [[Test]]ing (will be easy and fast as soon we add a script)
 
-= Spokesperson =
-
-Whonix developer adrelanos currently prefers to stay anonymous for reasons listed on the [[Trust]] page.
-
-Truly anonymous development prevents various things:
-
-* Buying cheap and reliable servers. (Virtual Private Server For a better, multilingual website.)
-* Buying a cheap domain.
-* More trustworthy binary builds.
-* Videos with human speech.
-* Voice, video or real interviews.
-* Attending conferences.
-
-If you have no problem having your real name connected to the Whonix project and Tor, please apply.
-
 = Lawyer =
 
 Either answering some small questions or filling one piece of paperwork would be immensely helpful.
@@ -12509,7 +12500,7 @@ for places where I could need more input. Also reviewing the whole source code o
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Development]]</text>
-      <sha1>m7tqiebk8pbur8386vbx4b5q94fuinm</sha1>
+      <sha1>heuzijqv41r5qr22sdh89904kmt9mo1</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -43035,50 +43026,50 @@ Do not remove {{Code2|...-postinst}} packages.
     <ns>0</ns>
     <id>475</id>
     <revision>
-      <id>4770</id>
-      <parentid>4072</parentid>
-      <timestamp>2014-01-15T15:29:24Z</timestamp>
+      <id>4778</id>
+      <parentid>4777</parentid>
+      <timestamp>2014-01-15T23:48:35Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <username>JasonJAyalaP</username>
+        <id>9</id>
       </contributor>
-      <text xml:space="preserve" bytes="3639">{{Header}}
+      <comment>More organization, more advice.</comment>
+      <text xml:space="preserve" bytes="2658">{{Header}}
 
 = Support =
-* When the Tor Browser download script is failing, use the [https://www.whonix.org/forum/ Whonix User Forum]. Since many users are affected when it breaks, there is probably already an existing topic. Use that.
+* When the Tor Browser download script is failing, use the [https://www.whonix.org/forum/ Whonix User Forum]. Since many users are affected when it breaks, there is probably already an existing topic.
 
-* Linux/Debian related questions, are {{Code2|welcome}}&lt;ref&gt;http://meta.unix.stackexchange.com/questions/1461/would-you-be-happy-to-welcome-whonix-gnu-linux-users-on-unix-se&lt;/ref&gt; on http://unix.stackexchange.com. Add the {{Code2|whonix}} tag. This will result in Whonix developers getting informed about your question and answering (if there wasn't a correct answer earlier) and/or commenting on your questions/other answers if necessary.
+* Linux/Debian related questions, are welcomed&lt;ref&gt;http://meta.unix.stackexchange.com/questions/1461/would-you-be-happy-to-welcome-whonix-gnu-linux-users-on-unix-se&lt;/ref&gt; on http://unix.stackexchange.com. Add the {{Code2|whonix}} tag, which will alert Whonix developers and followers.
 
-* If you want to help out others, please [http://blog.stackoverflow.com/2010/12/subscribe-to-tags-via-emai/ subscribe] to the [http://tor.stackexchange.com/questions/tagged/whonix tor.se] and the [http://tor.stackexchange.com/questions/tagged/whonix unix.se] {{Code2|whonix}} tag
+* For general Tor questions not directly related to Whonix (e.g. &quot;What are end-to-end correlation attacks?&quot;), use http://tor.stackexchange.com; the [https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-talk tor-talk mailing list]; or [irc://irc.oftc.net/tor IRC]
 
-* General Tor questions with no relation to Whonix, use http://tor.stackexchange.com, the [https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-talk tor-talk mailing list] or IRC: #Tor on irc.oftc.net. (Such as &quot;What are end-to-end correlation attacks.)
+* General questions about computer security can be discussed at http://security.stackexchange.com/
 
-* Whonix specific Tor questions are {{Code2|welcome}}&lt;ref&gt;http://meta.tor.stackexchange.com/questions/119/would-you-be-happy-to-welcome-whonix-gnu-linux-users-on-tor-se&lt;/ref&gt; on http://tor.stackexchange.com. Add the {{Code2|whonix}} tag. This will result in Whonix developers getting informed about your question and answering (if there wasn't a correct answer earlier) and/or commenting on your questions/other answers if necessary.
+* Whonix specific Tor questions are welcomed&lt;ref&gt;http://meta.tor.stackexchange.com/questions/119/would-you-be-happy-to-welcome-whonix-gnu-linux-users-on-tor-se&lt;/ref&gt; on http://tor.stackexchange.com. Add the {{Code2|whonix}} tag, which will alert Whonix developers and followers.
 
-* For Whonix specific questions not suitable for the stackexchange Q/A format, use the [https://www.whonix.org/forum Whonix User Forum]. Or, see footnote. &lt;ref&gt;Use the &lt;html&gt;&lt;a href=&quot;/cgi-bin/mailman/listinfo/whonix-users&quot;&gt;Whonix Users Mailing List&lt;/a&gt;&lt;/html&gt;. But do not use the forum and the mailing list to discuss the same problem at the same time. Again as recommended on security recommendations, be careful what you say in public places that are archived.&lt;/ref&gt;
+* For Whonix specific questions not suitable for the stackexchange Q/A format, use the [https://www.whonix.org/forum Whonix User Forum]. Or, use the &lt;html&gt;&lt;a href=&quot;/cgi-bin/mailman/listinfo/whonix-users&quot;&gt;Whonix Users Mailing List&lt;/a&gt;&lt;/html&gt;. 
 
-* Our [[Special:AWCforum|OLD Whonix User Forum]] can still be used to discuss existing topics, please no new topics, use [https://www.whonix.org/forum Whonix User Forum] for that.
+* [irc://irc.oftc.net/whonix #Whonix on irc.oftc.net]
 
-* General questions about computer security could be on topic on http://security.stackexchange.com/.
-
-* IRC: #Whonix on irc.oftc.net '''User to user support! Whonix developers seldom available on IRC.'''
+* Our [[Special:AWCforum|OLD Whonix User Forum]] has an archive of old topics.
 
 * [https://github.com/Whonix/Whonix/issues Bug Reports / Feature Requests]
 
 = Safety Advice =
-Visit these places anonymously over Tor. Either using [[Tor Browser]] in Whonix-Workstation of if Whonix doesn't work for you yet, get the [https://www.torproject.org/projects/torbrowser.html.en Tor Browser Bundle] from The Tor Project.
 
-When asking in public places, be careful with what you are sending, and what it can reveal about yourself:
+Be careful what you say! Especially in public places that are archived! What you say may reveal information about you: 
 
-* location
-* IP address
-* email subject
-* content
-* etc.
+* Location / IP Address
+* Personality
+* Skills, Aims, Goals
+* Personal Details
+* Etc.
 
-It might be advisable to get a separate e-mail address and separate account names just for this purpose. Don't use an existing OpenID. Create a new one.
+To keep your IP address hidden, visit these places anonymously over Tor, using either the Whonix-Workstation or the [https://www.torproject.org/projects/torbrowser.html.en Tor Browser Bundle] from The Tor Project.
 
-Be careful with the advice you are getting in public places. Do not run commands / steps which you totally do not understand. Always good to cross check if it is sane.
+To not link your questions to an existing email or OpenID, use a separate e-mail address, OpenID, and user names just for this purpose.
+
+Be careful with the advice you are getting in public places. Get a second opinion, and do not run commands or perform steps which you do not understand.
 
 = General Advice =
 * [http://www.catb.org/esr/faqs/smart-questions.html How to Ask Smart Questions]
@@ -43091,7 +43082,7 @@ Be careful with the advice you are getting in public places. Do not run commands
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>tv4z5y221zmjn35ahjnkclpfx539wch</sha1>
+      <sha1>qpzexugktufsfks6h8vuvjzwqstf27p</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
