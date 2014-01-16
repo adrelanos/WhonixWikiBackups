@@ -289,12 +289,12 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
     <ns>10</ns>
     <id>14</id>
     <revision>
-      <id>4671</id>
-      <parentid>4630</parentid>
-      <timestamp>2014-01-13T23:24:36Z</timestamp>
+      <id>4783</id>
+      <parentid>4782</parentid>
+      <timestamp>2014-01-16T19:54:23Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <username>Fortasse</username>
+        <id>1</id>
       </contributor>
       <text xml:space="preserve" bytes="638">&lt;font size=&quot;3&quot;&gt;[https://www.whonix.org{{localurl:{{FULLPAGENAME}}}} https] | &lt;html&gt;&lt;a class=&quot;link-https&quot; style=&quot;color: #3366BB&quot; href=&quot;http://kkkkkkkkkk63ava6.onion&lt;/html&gt;{{localurl:{{FULLPAGENAME}}}}&lt;html&gt;&quot; rel=&quot;nofollow&quot;&gt;.onion&lt;/a&gt;&lt;/html&gt;&lt;/font&gt; &lt;font size=&quot;1&quot;&gt;| [http://whonix.org.nyud.net{{localurl:{{FULLPAGENAME}}}} Mirror] | [https://kkkkkkkkkk63ava6.tor2web.org{{localurl:{{FULLPAGENAME}}}} Mirror] | [[Contribute#Donate|Donate to Whonix!]]&lt;/font&gt; | [[Impressum]] | [[Datenschutz|Datenschutzerklärung]] | [[Disclaimer|Haftungsausschluss]]&lt;!--
 inspired by http://aboli.sh/
@@ -7544,15 +7544,14 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
     <ns>0</ns>
     <id>96</id>
     <revision>
-      <id>4675</id>
-      <parentid>4650</parentid>
-      <timestamp>2014-01-14T00:14:15Z</timestamp>
+      <id>4786</id>
+      <parentid>4785</parentid>
+      <timestamp>2014-01-16T20:05:27Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* General */</comment>
-      <text xml:space="preserve" bytes="71372">{{Header}}
+      <comment>/* Last update */</comment>
+      <text xml:space="preserve" bytes="71406">{{Header}}
  
 = Introduction =
 This page contains the comparisons of Whonix, Tails, Tor Browser and Qubes OS TorVM. If anything here is incorrect or becomes outdated feel free to edit this page or [[contact]] us, we'll correct as soon as possible. See also [[#Statement about Neutrality of this Page]].
@@ -7564,13 +7563,13 @@ This page contains the comparisons of Whonix, Tails, Tor Browser and Qubes OS To
 |-
 | style=&quot;height:35px;width:70px;background-color: #f9f9f9&quot;| Version &lt;ref&gt;At the time of comparing.&lt;/ref&gt;
 | style=&quot;background-color: {{Green}}&quot;| 7
-| style=&quot;background-color: {{Yellow}}&quot;| 0.16 &lt;ref name=old&gt;There is a newer version. The information on this page could be outdated.&lt;/ref&gt;
+| style=&quot;background-color: {{Green}}&quot;| 0.22 &lt;ref name=old&gt;There is a newer version. The information on this page could be outdated.&lt;/ref&gt;
 | style=&quot;background-color: {{Green}}&quot;| 2.3.25-11
 | style=&quot;background-color: {{Yellow}}&quot;| 0.1.beta1 &lt;ref name=old /&gt;
 |-
 | Status
 | This wiki page is up to date.
-| There is a newer version. The information on this page could be outdated.
+| Newest version (released 2013-12-11). Although this wiki page might not list all updates and/or changes yet!
 | This wiki page is up to date.
 | There is a newer version. The information on this page could be outdated.
 |}
@@ -8659,7 +8658,7 @@ One has always to be very careful, when talking about others. Especially, when t
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Design]]</text>
-      <sha1>qurvqrljgip3pijzbm6e6pdv5gt77en</sha1>
+      <sha1>mrajhoyk25hy88bykx0b0m5wfc7co9l</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -30746,15 +30745,15 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
     <ns>0</ns>
     <id>256</id>
     <revision>
-      <id>4716</id>
-      <parentid>4022</parentid>
-      <timestamp>2014-01-14T16:56:35Z</timestamp>
+      <id>4781</id>
+      <parentid>4716</parentid>
+      <timestamp>2014-01-16T17:11:36Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
       <comment>/* Whonix Social Media Profiles */</comment>
-      <text xml:space="preserve" bytes="2918">{{Header}}
+      <text xml:space="preserve" bytes="2896">{{Header}}
 = Whonix Social Media Profiles =
 
 There are some Whonix Social Media Profiles, but please don't rely on them for getting Whonix News (See [[Download#Stay Tuned|News]] for how to get Whonix related news.) and please don't use them to contact Whonix developers. (See [[Contact]] for contact information.)
@@ -30764,7 +30763,7 @@ If you don't get into trouble, by letting others to know, that you like or use W
 * [https://twitter.com/Whonix Twitter Whonix]
 * [https://plus.google.com/108150429836421683225/about Google+ Whonix] &lt;font size=&quot;-3&quot;&gt;(registered by contributor, maintained by adrelanos)&lt;/font&gt;
 * [https://www.youtube.com/user/adrelanos YouTube Whonix] &lt;font size=&quot;-3&quot;&gt;(registered by contributor, maintained by adrelanos)&lt;/font&gt;
-* [https://www.facebook.com/pages/Whonix/622399681135624 Facebook Whonix]
+* [https://www.facebook.com/Whonix Facebook Whonix]
 
 = Other Accounts =
 == Project Accounts ==
@@ -30797,7 +30796,7 @@ If you don't get into trouble, by letting others to know, that you like or use W
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>ry86eo2udmh1wpygrze2wct30pva9tm</sha1>
+      <sha1>b5i8vt8terds76j31nopk1uzx9jochr</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -55337,15 +55336,15 @@ Quelle: &lt;html&gt;&lt;a href=&quot;http://www.juraforum.de/impressum-generator
     <ns>0</ns>
     <id>698</id>
     <revision>
-      <id>4772</id>
-      <parentid>4715</parentid>
-      <timestamp>2014-01-15T16:08:47Z</timestamp>
+      <id>4780</id>
+      <parentid>4779</parentid>
+      <timestamp>2014-01-16T17:10:46Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
       <comment>/* Geltungsbereich */</comment>
-      <text xml:space="preserve" bytes="3382">[[Impressum]] | [[Datenschutz|Datenschutzerklärung]] | [[Disclaimer|Haftungsausschluss]]
+      <text xml:space="preserve" bytes="3457">[[Impressum]] | [[Datenschutz|Datenschutzerklärung]] | [[Disclaimer|Haftungsausschluss]]
 
 = Impressum =
 == Angaben (gemäß § 5 TMG) ==
@@ -55365,7 +55364,7 @@ Waldzieststr. 16 &lt;br /&gt;
 == Geltungsbereich ==
 Dieses Impressum gilt auch für:
 
-* Alle Artikel auf https://www.whonix.org / http://kkkkkkkkkk63ava6.onion, in denen dieses Impressum verlinkt ist.
+* Alle Artikel auf https://www.whonix.org / http://zo7fksnun4b4v4jv.onion / http://kkkkkkkkkk63ava6.onion, in denen dieses Impressum verlinkt ist.
 * Twitter Whonix: https://twitter.com/Whonix
 * Twitter WhonixSource: https://twitter.com/WhonixSource
 * Google+ Whonix: https://plus.google.com/108150429836421683225/about
@@ -55379,6 +55378,7 @@ Dieses Impressum gilt auch für:
 * bitcointalk.org: https://bitcointalk.org/index.php?action=profile;u=69869
 * Facebook:
 ** Whonix: https://www.facebook.com/pages/Whonix/622399681135624
+** Whonix: https://www.facebook.com/Whonix
 ** Patrick Schleizer: https://www.facebook.com/patrick.schleizer
 * sourceforge:
 ** https://sourceforge.net/p/whonix/
@@ -55413,7 +55413,7 @@ Die Datenschutzerklärung finden Sie [[Datenschutz|hier]].
 
 = Haftungsausschluss (Disclaimer) =
 Den Haftungsausschluss (Disclaimer) finden Sie [[Disclaimer|hier]].</text>
-      <sha1>7mouf13fz0pfyd8iwfnfyqd95vzq6vp</sha1>
+      <sha1>idc5ov7z266m0xamduwbv9ib2reuf73</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
