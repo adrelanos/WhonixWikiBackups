@@ -49355,14 +49355,14 @@ In case you like to review the implementation, the related scripts can be found 
     <ns>0</ns>
     <id>531</id>
     <revision>
-      <id>4135</id>
-      <parentid>4127</parentid>
-      <timestamp>2013-12-04T23:39:11Z</timestamp>
+      <id>4787</id>
+      <parentid>4135</parentid>
+      <timestamp>2014-01-17T01:07:18Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="1412">{{Header}}
+      <text xml:space="preserve" bytes="1413">{{Header}}
 
 = Do Once =
 On the host.
@@ -49414,7 +49414,7 @@ On the host. Try this if you are having problems. This might not be neccessary. 
 ## or &quot;rm&quot; if you know what you are doing
 trash-put ~/.ssh/known_hosts
 trash-put ~/.ssh/known_hosts.old
-&lt;pre&gt;
+&lt;/pre&gt;
 
 On the host.
 &lt;pre&gt;
@@ -49434,7 +49434,7 @@ sshfs -p 2222 user@127.0.0.1:/ ~/mountworkstation
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>euqrrgrbndye59i35x3nydxevj5xaxl</sha1>
+      <sha1>13byz762u4cjd7kg4d1u6cf0qeozq5k</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
