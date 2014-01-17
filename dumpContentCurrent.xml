@@ -39640,16 +39640,29 @@ Sourceforge support, ctsai-sf on freenode in #sourceforge said, they use GeoIP f
     <ns>0</ns>
     <id>378</id>
     <revision>
-      <id>4370</id>
-      <parentid>4362</parentid>
-      <timestamp>2013-12-20T20:02:27Z</timestamp>
+      <id>4788</id>
+      <parentid>4370</parentid>
+      <timestamp>2014-01-17T14:04:27Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Building Whonix in Whonix */</comment>
-      <text xml:space="preserve" bytes="9544">{{Header}}
+      <text xml:space="preserve" bytes="10186">{{Header}}
 {{forkme}}
+
+{{mbox
+| type       = critical
+| image      = [[File:Ambox_warning_pn.svg.png|40px|alt=Question mark]]
+| text       = 
+
+Building full images from source code is currently broken (or at least very difficult), due to two bugs which have been recently introduced in Debian testing.
+
+* http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=734794
+* http://ml.grml.org/pipermail/grml/2014-January/011547.html
+
+It might take a while until these get fixed. It is planed to base next Whonix version on Debian stable instead of Debian testing to avoid that kind of build bugs and other bugs such as the AppArmor bug, that prevented Tor from starting.
+}}
+
 = Build Documentation =
 == Introduction ==
 This page documents how to build Whonix VirtualBox images. If you have any questions or need help, get in Contact.
@@ -39800,7 +39813,7 @@ To learn about adrelanos, the person who maintains Whonix, its OpenPGP key, see 
 {{Footer}}
 
 [[Category:Development]]</text>
-      <sha1>s3xicy2zd02gwsy4pynk03spaml18yw</sha1>
+      <sha1>6cyzo23aof0dxk0l7xaizzp75whr2bh</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -42692,16 +42705,29 @@ Please do not fix the picture links with html tags. This file gets copied to htt
     <ns>0</ns>
     <id>469</id>
     <revision>
-      <id>4389</id>
-      <parentid>4388</parentid>
-      <timestamp>2013-12-20T22:43:38Z</timestamp>
+      <id>4789</id>
+      <parentid>4389</parentid>
+      <timestamp>2014-01-17T14:04:34Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>VM Creation EDITORS NOTE</comment>
-      <text xml:space="preserve" bytes="10154">{{Header}}
+      <text xml:space="preserve" bytes="10796">{{Header}}
 {{forkme}}
+
+{{mbox
+| type       = critical
+| image      = [[File:Ambox_warning_pn.svg.png|40px|alt=Question mark]]
+| text       = 
+
+Building full images from source code is currently broken (or at least very difficult), due to two bugs which have been recently introduced in Debian testing.
+
+* http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=734794
+* http://ml.grml.org/pipermail/grml/2014-January/011547.html
+
+It might take a while until these get fixed. It is planed to base next Whonix version on Debian stable instead of Debian testing to avoid that kind of build bugs and other bugs such as the AppArmor bug, that prevented Tor from starting.
+}}
+
 = Build Documentation =
 == Introduction ==
 This page documents how to build Whonix VirtualBox images. If you have any questions or need help, get in Contact.
@@ -42858,7 +42884,7 @@ To learn about adrelanos, the person who maintains Whonix, its OpenPGP key, see 
 {{Footer}}
 
 [[Category:Development]]</text>
-      <sha1>0yq2m3mn8crleihffz0bff25ub7em20</sha1>
+      <sha1>1q4inh0wnlatdqw2hqopfz8qzae153e</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
