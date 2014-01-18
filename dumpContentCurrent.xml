@@ -127,9 +127,9 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
     <ns>8</ns>
     <id>3</id>
     <revision>
-      <id>4021</id>
-      <parentid>3504</parentid>
-      <timestamp>2013-11-11T13:52:07Z</timestamp>
+      <id>4794</id>
+      <parentid>4793</parentid>
+      <timestamp>2014-01-18T17:33:27Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
@@ -6475,14 +6475,15 @@ You could try the [https://www.riseup.net/en/openvpn-linux#gnome riseup.net Open
     <ns>0</ns>
     <id>92</id>
     <revision>
-      <id>4626</id>
-      <parentid>4625</parentid>
-      <timestamp>2014-01-09T11:20:16Z</timestamp>
+      <id>4795</id>
+      <parentid>4626</parentid>
+      <timestamp>2014-01-18T18:23:15Z</timestamp>
       <contributor>
-        <username>Jekyll</username>
-        <id>161</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="21402">{{Header}}
+      <comment>/* Logon and upgrade Debian */</comment>
+      <text xml:space="preserve" bytes="21490">{{Header}}
 
 '''WARNING''': Please don't forget reading the Warnings chapter.
 
@@ -6805,6 +6806,11 @@ Make sure the internet is working.
 Logon, install all security updates and reboot.
 
 &lt;pre&gt;
+## Open /etc/apt/sources.list
+## Remove line starting with &quot;deb cdrom...&quot;
+&lt;/pre&gt;
+
+&lt;pre&gt;
 ## (host) login with &quot;root&quot;
 root
 
@@ -7052,7 +7058,7 @@ To get a more complete list, install Debian (with KDE) on bare metal using the r
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>jfwroudg0xd95y036xpvtls82ubrp2i</sha1>
+      <sha1>acip0ew960f8827j7ah0ujqzq4uflpm</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -37068,16 +37074,15 @@ grep -r torbutton_send_ctrl_cmd *
     <ns>0</ns>
     <id>304</id>
     <revision>
-      <id>4751</id>
-      <parentid>4720</parentid>
-      <timestamp>2014-01-14T17:41:27Z</timestamp>
+      <id>4797</id>
+      <parentid>4796</parentid>
+      <timestamp>2014-01-18T22:42:56Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <minor/>
-      <comment>Text replace - &quot;adrelanos at riseup dot net&quot; to &quot;adrelanos@riseup.net&quot;</comment>
-      <text xml:space="preserve" bytes="16781">{{Header}}
+      <comment>/* On Whonix-Workstation */</comment>
+      <text xml:space="preserve" bytes="16596">{{Header}}
 &lt;!--
 Copyright:
 
@@ -37194,7 +37199,7 @@ cat /var/lib/tor/torchat/hostname
 Backup your key, if you want to ever restore it one another machine, a newer Whonix-Workstation or after hdd failure. If you don't care to get a new TorChat ID, you can skip this step. (Your have to manually do this! If you want to do this, the file you would have to backup is {{Code2|/var/lib/tor/torchat/private_key}}.
 
 ==== On Whonix-Workstation ====
-(This step won't be necessary in Whonix 7.3.7 and anymore.) 
+(The following step won't be necessary in Whonix 7.3.7 and above anymore.) 
 
 &lt;pre&gt;
 sudo apt-get update
@@ -37204,25 +37209,29 @@ sudo apt-get update
 sudo apt-get install realpath
 &lt;/pre&gt;
 
-(This step won't be necessary in Whonix 7.3.7 anymore.) 
+(The following step won't be necessary in Whonix 7.3.7 and above anymore.) 
 
 &lt;pre&gt;
 dpkg-divert --add --rename --divert /usr/sbin/tor.real /usr/sbin/tor
 &lt;/pre&gt;
 
-(This step won't be necessary in Whonix 7.3.7 anymore.) 
+(The following step won't be necessary in Whonix 7.3.7 and above anymore.) 
 
 &lt;pre&gt;
 dpkg-divert --add --rename --divert /usr/bin/tor.real /usr/bin/tor
 &lt;/pre&gt;
 
-Create a file {{Code2|/usr/bin/tor}}. (Won't be necessary in Whonix 7.3.7 anymore.) 
+(The following step won't be necessary in Whonix 7.3.7 and above anymore.) 
+
+Create a file {{Code2|/usr/bin/tor}}.
 
 &lt;pre&gt;
 kdesudo kwrite /usr/bin/tor
 &lt;/pre&gt;
 
-And add the following content. (Won't be necessary in Whonix 7.3.7 anymore.) 
+(The following step won't be necessary in Whonix 7.3.7 and above anymore.) 
+
+And add the following content.
 
 &lt;pre&gt;
 #!/bin/bash
@@ -37267,16 +37276,6 @@ own_hostname = idnxcnkne4qt76tg
 &lt;/pre&gt;
 
 Save.
-
-Warning! If you later want to update Whonix you must undo the dpkg diversions. Do not run these commands right now. Run them when apt-get prompts you to install new Whonix packages.
-
-&lt;pre&gt;
-dpkg-divert --remove --rename /usr/sbin/tor
-&lt;/pre&gt;
-
-&lt;pre&gt;
-dpkg-divert --remove --rename /usr/bin/tor
-&lt;/pre&gt;
 
 === Starting ===
 
@@ -37436,7 +37435,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>9z4mm8f2ss0rdl5rd070yluuy3synfk</sha1>
+      <sha1>my9frxanddfc24yjqfq5mdqxmjk9xiz</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
