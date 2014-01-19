@@ -7550,14 +7550,15 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
     <ns>0</ns>
     <id>96</id>
     <revision>
-      <id>4786</id>
-      <parentid>4785</parentid>
-      <timestamp>2014-01-16T20:05:27Z</timestamp>
+      <id>4799</id>
+      <parentid>4798</parentid>
+      <timestamp>2014-01-19T01:27:22Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
       <comment>/* Last update */</comment>
-      <text xml:space="preserve" bytes="71406">{{Header}}
+      <text xml:space="preserve" bytes="71366">{{Header}}
  
 = Introduction =
 This page contains the comparisons of Whonix, Tails, Tor Browser and Qubes OS TorVM. If anything here is incorrect or becomes outdated feel free to edit this page or [[contact]] us, we'll correct as soon as possible. See also [[#Statement about Neutrality of this Page]].
@@ -7569,13 +7570,13 @@ This page contains the comparisons of Whonix, Tails, Tor Browser and Qubes OS To
 |-
 | style=&quot;height:35px;width:70px;background-color: #f9f9f9&quot;| Version &lt;ref&gt;At the time of comparing.&lt;/ref&gt;
 | style=&quot;background-color: {{Green}}&quot;| 7
-| style=&quot;background-color: {{Green}}&quot;| 0.22 &lt;ref name=old&gt;There is a newer version. The information on this page could be outdated.&lt;/ref&gt;
-| style=&quot;background-color: {{Green}}&quot;| 2.3.25-11
+| style=&quot;background-color: {{Yellow}}&quot;| 0.16 &lt;ref name=old&gt;There is a newer version. The information on this page could be outdated.&lt;/ref&gt;
+| style=&quot;background-color: {{Green}}&quot;| 3.5
 | style=&quot;background-color: {{Yellow}}&quot;| 0.1.beta1 &lt;ref name=old /&gt;
 |-
 | Status
 | This wiki page is up to date.
-| Newest version (released 2013-12-11). Although this wiki page might not list all updates and/or changes yet!
+| There is a newer version. The information on this page could be outdated.
 | This wiki page is up to date.
 | There is a newer version. The information on this page could be outdated.
 |}
@@ -8664,7 +8665,7 @@ One has always to be very careful, when talking about others. Especially, when t
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Design]]</text>
-      <sha1>mrajhoyk25hy88bykx0b0m5wfc7co9l</sha1>
+      <sha1>m8ueuucohi2w80gau1u10dgods3p39o</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -42967,15 +42968,15 @@ To learn about adrelanos, the person who maintains Whonix, its OpenPGP key, see 
     <ns>0</ns>
     <id>474</id>
     <revision>
-      <id>3855</id>
-      <parentid>3657</parentid>
-      <timestamp>2013-10-25T12:15:54Z</timestamp>
+      <id>4802</id>
+      <parentid>4801</parentid>
+      <timestamp>2014-01-19T02:32:20Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Whonix Debian Packages */</comment>
-      <text xml:space="preserve" bytes="2084">{{Header}}
+      <comment>/* What other packages do Whonix meta packages install? */</comment>
+      <text xml:space="preserve" bytes="2281">{{Header}}
 
 {{Stable}}
 
@@ -43005,9 +43006,13 @@ sudo apt-get autoremove
 &lt;/pre&gt;
 
 == What other packages do Whonix meta packages install? ==
-See {{Code2|debian/control}} in Whonix source code folder.
+See {{Code2|debian/control}} in Whonix source code folder or [https://github.com/Whonix/Whonix/blob/master/debian/control debian/control on github].
 
-Or use for example {{Code|apt-cache show whonix-workstation-default-applications}}.
+Or use for example.
+
+&lt;pre&gt;
+apt-cache show whonix-workstation-default-applications
+&lt;/pre&gt;
 
 == Which packages should never be removed? ==
 Do not remove {{Code2|...-dependencies}} packages.
@@ -43029,9 +43034,9 @@ Do not remove {{Code2|...-postinst}} packages.
 * whonix-workstation-postinst
 
 == Why is package X installed? ==
-* https://github.com/Whonix/Whonix/blob/master/development/Whonix-Shared_packages
-* https://github.com/Whonix/Whonix/blob/master/development/Whonix-Gateway_packages
-* https://github.com/Whonix/Whonix/blob/master/development/Whonix-Workstation_packages
+* https://github.com/adrelanos/whonix-developer-meta-files/blob/master/package_documentation/Whonix-Shared_packages
+* https://github.com/adrelanos/whonix-developer-meta-files/blob/master/package_documentation/Whonix-Gateway_packages
+* https://github.com/adrelanos/whonix-developer-meta-files/blob/master/package_documentation/Whonix-Workstation_packages
 
 = See Also =
 * [[Whonix-APT-Repository|Whonix's APT Repository, how to enable/disable it?]]
@@ -43040,7 +43045,7 @@ Do not remove {{Code2|...-postinst}} packages.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>dihvylu6fw0svt8fvlqszn7795vr0kg</sha1>
+      <sha1>mb0dcv60pn3grasgedymfautbyvv70n</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -43636,14 +43641,15 @@ It is recommended to copy and paste text when creating build configuration files
     <ns>0</ns>
     <id>485</id>
     <revision>
-      <id>3795</id>
-      <parentid>3793</parentid>
-      <timestamp>2013-10-19T22:07:51Z</timestamp>
+      <id>4803</id>
+      <parentid>3795</parentid>
+      <timestamp>2014-01-19T02:33:46Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="2341">{{Header}}
+      <comment>/* Verify Disabled Whonix Apt Repository */</comment>
+      <text xml:space="preserve" bytes="2343">{{Header}}
 
 {{Testing}}
 [[Image:Whonixrepo.png|Whonix Repository Tool|thumb]]
@@ -43682,7 +43688,7 @@ It should not show any Whonix specific keys, it should not show adrelanos's Open
 Have a look if {{Code2|/etc/apt/sources.list.d/whonix.list}} exists. If it doesn't exist, everything is fine.
 
 If you are extra paranoid, see footnote. &lt;ref&gt;
-The following isn't necessary, because the whonix_repository tool has never wrote another sources.list file other than {{Code2|/etc/apt/sources.list.d/whonix.list}}.
+The following isn't necessary, because the whonix_repository tool has never written another sources.list file other than {{Code2|/etc/apt/sources.list.d/whonix.list}}.
 
 Examine your {{Code2|/etc/apt/sources.list}}.
 
@@ -43710,7 +43716,7 @@ cat /etc/apt/sources.list.d/*
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>4urdq79j7gq3ldd3sddvdquf4a6q15l</sha1>
+      <sha1>qhzwlnbms7aqg6dkf6y40wrkvi3pn15</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
