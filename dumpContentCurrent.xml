@@ -43582,15 +43582,14 @@ sudo rm /etc/whonix_buildconfig.d/50_whonix_apt_repository
     <ns>10</ns>
     <id>483</id>
     <revision>
-      <id>4129</id>
-      <parentid>3859</parentid>
-      <timestamp>2013-12-04T15:58:12Z</timestamp>
+      <id>4825</id>
+      <parentid>4129</parentid>
+      <timestamp>2014-01-20T19:04:38Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Whonix APT Repository (Optional) */</comment>
-      <text xml:space="preserve" bytes="2112">== Build Configuration (Optional) ==
+      <text xml:space="preserve" bytes="2165">== Build Configuration (Optional) ==
 === Introduction (Optional) ===
 &lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
 '''OPTIONAL.'''
@@ -43635,12 +43634,15 @@ It is recommended to copy and paste text when creating build configuration files
 === Only Minimal Report (Optional) ===
 {{Build Documentation Only Minimal Report}}
 
+=== apt-cache ===
+{{Build Documentation apt-cache}}
+
 == Custom Build Tags ==
 {{Build Documentation Custom Build Tags}}
 
 == Source Code Changes ==
 {{Build Documentation Source Code Changes}}</text>
-      <sha1>ffmdzva4aa3krgnajn9nty4qrtachyz</sha1>
+      <sha1>9q9cfhhbk145pcxj2ikpbrq9ers5s0l</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -55897,6 +55899,61 @@ E13Z1DJRfRPaW7cbNubq
       <comment>MsUpload</comment>
       <text xml:space="preserve" bytes="8">MsUpload</text>
       <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Build Documentation apt-cache</title>
+    <ns>10</ns>
+    <id>712</id>
+    <revision>
+      <id>4824</id>
+      <timestamp>2014-01-20T19:02:55Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt; '''OPTIONAL!'''  When building with --bare-metal option in a virtual machine, builders can use their o...&quot;</comment>
+      <text xml:space="preserve" bytes="1262">&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+'''OPTIONAL!'''
+
+When building with --bare-metal option in a virtual machine, builders can use their own http proxy (apt cache) on the host, which will greatly improve build speed when building several times in a row (debugging, development).
+
+If you are interested, click on Expand on the right.
+&lt;div class=&quot;mw-collapsible-content&quot;&gt;
+This isn't required when you are building virtual machine images, because then apt-cacher-ng is automatically set up for you. Only useful when using --bare-metal in a virtual machine.
+
+Requires Whonix 7.7.3.7 or above.
+
+Example.
+
+On the host.
+
+&lt;pre&gt;
+sudo apt-get install apt-cacher-ng
+&lt;/pre&gt;
+
+Be sure to have a firewall, so not the whole internet can use your apt-cacher-ng service.
+
+Inside your Virtual Machine.
+
+Don't forget to replace 192.168.0.1 with your host's internal IP (use &quot;sudo ifconfig&quot; on your host to find out what your internal IP is).
+
+&lt;pre&gt;
+export http_proxy=http://192.168.0.1:3142
+&lt;/pre&gt;
+
+Don't forget to add -E to sudo, so environment variables are preserved. Examples.
+
+&lt;pre&gt;
+sudo -E ./whonix_build --bare-metal --tor-gateway --build
+sudo -E ./build-steps.d/1100_prepare-build-machine --bare-metal --tor-gateway
+&lt;/pre&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;</text>
+      <sha1>c077yacrm92mx032vcqdr6qqe9wpj6n</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
