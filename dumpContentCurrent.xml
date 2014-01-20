@@ -12336,22 +12336,19 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>118</id>
     <revision>
-      <id>4812</id>
-      <parentid>4811</parentid>
-      <timestamp>2014-01-19T22:59:26Z</timestamp>
+      <id>4823</id>
+      <parentid>4822</parentid>
+      <timestamp>2014-01-20T01:31:28Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Donate */</comment>
-      <text xml:space="preserve" bytes="6571">{{Header}}
+      <comment>/* Review on sourceforge.net */</comment>
+      <text xml:space="preserve" bytes="7611">{{Header}}
 
 = Easy / Anyone =
 == General ==
 Feel free to do any or all of them. Any help is welcome. Your own protection and safety is first priority.
-
-== Subscribe ==
-Please subscribe to our [[Mailing Lists]] and say hello.
 
 == Spread ==
 Tell about Whonix to your friends. Post news about Whonix on your website or blog.
@@ -12365,21 +12362,50 @@ Send [[Contact|feedback]] about Whonix.
 == Answer Questions ==
 Help other users on Stack Exchange by [http://blog.stackoverflow.com/2010/12/subscribe-to-tags-via-emai/ subscribing] to the {{Code2|whonix}} tag in [http://tor.stackexchange.com/questions/tagged/whonix tor.se] and [http://tor.stackexchange.com/questions/tagged/whonix unix.se].
 
-Join the [https://www.whonix.org/forum/ Whonix User Forum] or IRC room (#Whonix on irc.oftc.net).
+Join the [https://www.whonix.org/forum/ Whonix User Forum] or IRC room ([irc://irc.oftc.net/whonix #Whonix on irc.oftc.net]).
 
 == Donate ==
-If you appreciate Patrick Schleizer's work on Whonix, want to say thanks and support further maintenance, support, development and hosting, please donate. It will keep Patrick Schleizer motivated. It is no secret, that the money could be spend on amusements as a tiny compensation for the countless hours of research and development.
+__NOTOC__
 
-Patrick Schleizer would like to buy better and more hardware for testing. This would speed up development and improve quality assurance.
+&lt;!-------------------------bank wire, PayPal------------------------&gt;
+{|style=&quot;border-spacing:8px; margin:0px -8px;&quot;
+|class=&quot;MainPageBG&quot; style=&quot;width:55%; border:1px solid #cef2e0; background:#f5fffa; vertical-align:top; color:#000;&quot;|
+{|width=&quot;100%&quot; cellpadding=&quot;2&quot; cellspacing=&quot;5&quot; style=&quot;vertical-align:top; background:#f5fffa;&quot;
+! &lt;h2 style=&quot;margin:0; background:#cef2e0; font-size:120%; font-weight:bold; border:1px solid #a3bfb1; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;bank wire&lt;/h2&gt;
+|-
+|style=&quot;color:#000;&quot;| 
+&lt;pre&gt;
+Patrick Schleizer
+IBAN: DE77500100600320473603
+BIC: PBNKDEFF
+&lt;/pre&gt;
+|-
+! &lt;h2 style=&quot;margin:0; background:#cef2e0; font-size:120%; font-weight:bold; border:1px solid #a3bfb1; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;PayPal&lt;/h2&gt;
+|-
+|style=&quot;color:#000;&quot;| 
+&lt;pre&gt;
+patrick_schleizer@web.de
+&lt;/pre&gt;
+|-
+! &lt;h2 style=&quot;margin:0; background:#cef2e0; font-size:120%; font-weight:bold; border:1px solid #a3bfb1; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Other method?&lt;/h2&gt;
+|-
+|style=&quot;color:#000;&quot;| 
+Ask [mailto:patrick_schleizer@web.de Patrick Schleizer] if available.
+&lt;pre&gt;
+patrick_schleizer@web.de
+&lt;/pre&gt;
+|-
 
-If you want to pay for getting a new feature, this may be possible as well, please get in [[Contact#For_private_inquiries|Contact]] to talk about the details.
+|-
+|}&lt;!--
 
-If you don't have any Bitcoins and want to donate non-anonymously, you could use a Web Wallet service such as [https://coinbase.com/ Coinbase]. While Coinbase requires a US bank account, there are other exchanges, which allow to easily pay by bank wire and to forward the money to the Bitcoin address of your choice. Please get in [[Contact#For_Donations|Contact]] if you would like to donate but don't know how.
-
-=== Bitcoin ===
-[[Image:BC_Rnd_64px.png|link=bitcoin:1JgzCCSox56Sh4NnQJqRiwoxKi8oVSZBEd]]
-
-Please send Bitcoins to this address to support Whonix:
+&lt;--------------------------------Bitcoin, Litecoin-------------------------------&gt;
+|class=&quot;MainPageBG&quot; style=&quot;width:45%; border:1px solid #cedff2; background:#f5faff; vertical-align:top&quot;|
+{| width=&quot;100%&quot; cellpadding=&quot;2&quot; cellspacing=&quot;5&quot; style=&quot;vertical-align:top; background:#f5faff;&quot;
+! &lt;h2 style=&quot;margin:0; background:#cedff2; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Bitcoin&lt;/h2&gt;
+|-
+|style=&quot;color:#000;&quot;|
+[[Image:BC_Rnd_64px.png|150px|link=bitcoin:1JgzCCSox56Sh4NnQJqRiwoxKi8oVSZBEd]] [[File:whonix-donate-qr-code.gif|QR Code|100px]]
 
 bitcoin:1JgzCCSox56Sh4NnQJqRiwoxKi8oVSZBEd
 
@@ -12387,40 +12413,28 @@ bitcoin:1JgzCCSox56Sh4NnQJqRiwoxKi8oVSZBEd
 1JgzCCSox56Sh4NnQJqRiwoxKi8oVSZBEd
 &lt;/pre&gt;
 
-[[Image:whonix-donate-qr-code.gif]]
+|-
+! &lt;h2 style=&quot;margin:0; background:#cedff2; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Litecoin&lt;/h2&gt;
+|-
+|style=&quot;color:#000;&quot;| 
+[[File:Litecoin_Accepted_Here.png|150px|link=litecoin:LW3wgQtZhtR2G5Uv48rSzonFd1arhUfjE9ff]]
 
-=== Litecoin ===
 &lt;pre&gt;
 LW3wgQtZhtR2G5Uv48rSzonFd1arhUfjE9
 &lt;/pre&gt;
 
 litecoin:LW3wgQtZhtR2G5Uv48rSzonFd1arhUfjE9ff
+|-
+|}
+|}
 
-=== PayPal ===
-&lt;pre&gt;
-patrick_schleizer@web.de
-&lt;/pre&gt;
+If you appreciate Patrick Schleizer's work on Whonix, want to say thanks and support further maintenance, support, development and hosting, please donate. It will keep Patrick Schleizer motivated. It is no secret, that the money could be spend on amusements as a tiny compensation for the countless hours of research and development.
 
-== Vote ==
-=== Vote on sourceforge.net ===
-Requires an account on sourceforge.
+Patrick Schleizer would like to buy better and more hardware for testing. This would speed up development and improve quality assurance.
 
-[https://sourceforge.net/projects/whonix/reviews/ Thumb up Whonix on sourceforge.net].
+If you want to pay for getting a new feature, this may be possible as well, please get in [[Contact#For_private_inquiries|Contact]] to talk about the details.
 
-=== Vote Ideas on Sourceforge ===
-Requires an account on sourceforge.
-
-[http://sourceforge.net/apps/ideatorrent/sourceforge/ideatorrent/idea/721/ Idea #721: Allow SSL for SourceForge pages whenever possible]
-
-=== &lt;s&gt;Vote Whonix on stackoverflow&lt;/s&gt; ===
-&lt;s&gt;Requires an account on stackoverflow, google, facebook, wordpress, openid or whatever.&lt;/s&gt;
-
-&lt;s&gt;http://meta.stackoverflow.com/a/175357&lt;/s&gt;
-
-== Review on sourceforge.net ==
-Requires an account on sourceforge.
-
-[https://sourceforge.net/projects/whonix/reviews/ Write a review about Whonix on sourceforge.net].
+If you don't have any Bitcoins and want to donate non-anonymously, you could use a Web Wallet service such as [https://coinbase.com/ Coinbase]. While Coinbase requires a US bank account, there are other exchanges, which allow to easily pay by bank wire and to forward the money to the Bitcoin address of your choice. Please get in [[Contact#For_Donations|Contact]] if you would like to donate but don't know how.
 
 = Testing =
 Whonix needs more people to test new Whonix features, bug fixes and so on.
@@ -12516,7 +12530,7 @@ for places where I could need more input. Also reviewing the whole source code o
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Development]]</text>
-      <sha1>r4bj7wplgzn47aniu2qgnyp1h5crcm9</sha1>
+      <sha1>psrx9l3f48kbizc6d2j48lx636wyxdg</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -55865,6 +55879,24 @@ E13Z1DJRfRPaW7cbNubq
 -----END PGP SIGNATURE-----
 &lt;/pre&gt;</text>
       <sha1>p3069aiue4tki9dntmy0jt4e3lm75ko</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:Litecoin Accepted Here.png</title>
+    <ns>6</ns>
+    <id>711</id>
+    <revision>
+      <id>4817</id>
+      <timestamp>2014-01-20T00:54:11Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
