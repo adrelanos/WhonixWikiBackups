@@ -23027,14 +23027,15 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>216</id>
     <revision>
-      <id>3856</id>
-      <parentid>2169</parentid>
-      <timestamp>2013-10-25T14:42:59Z</timestamp>
+      <id>4831</id>
+      <parentid>3856</parentid>
+      <timestamp>2014-01-22T23:01:05Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>/* PAE crash */</comment>
-      <text xml:space="preserve" bytes="1837">{{Header}}
+      <comment>/* Whonix does not start? */</comment>
+      <text xml:space="preserve" bytes="2179">{{Header}}
 
 = Starting Whonix =
 
@@ -23053,10 +23054,9 @@ If you still need help, please go to the [[Special:AWCforum|Whonix User Help For
 '''The default password is:''' '''''changeme'''''
 
 = Whonix does not start? =
-
 == PAE crash ==
-
-If Whonix does not start because PAE is missing: Right Click on Whonix-Gateway -&gt; Settings -&gt; Processor -&gt; Disable the ''Enable PAE/NX'' Box -&gt; OK.
+If Whonix does not start because PAE is missing:
+Virtual Box -&gt; Right Click on Whonix-Gateway -&gt; Settings -&gt; Processor -&gt; Disable the ''Enable PAE/NX'' Box -&gt; OK.
 
 Repeat that for Whonix-Workstation as well.
 
@@ -23065,11 +23065,13 @@ Read the [[#Boot Options|Boot Options]] chapter and use the 486 kernel.
 == VERR_SSM_FIELD_NOT_CONSECUTIVE ==
 If you see &quot;{{Code2|Failed to load unit 'PATM' (VERR_SSM_FIELD_NOT_CONSECUTIVE).}}&quot;, please enable VT-x in BIOS.
 
-== Other reasons ==
+== Kernel Panic ==
+This probably similar to PAE crash and VERR_SSM_FIELD_NOT_CONSECUTIVE issues above. If you can, enable VT-x in BIOS. If you can't deactivate PAE/NX in VirtualBox (see PAE crash above for instructions on how to do so) and then read the [[#Boot Options|Boot Options]] chapter and use the 486 kernel.
 
+== Other reasons ==
 Please have a look at the [[Download]] page. It contains instructions on how to properly download and verify the Whonix virtual machine images. There is also help available in form of screenshot or video instructions.
 
-If you still need help, please go to the [[Special:AWCforum|Whonix User Help Forum]].
+If you still need help, please go to the [[https://www.whonix.org/forum Whonix User Help Forum]].
 
 = Boot Options =
 
@@ -23085,7 +23087,7 @@ In case you need to [[#PAE_crash|disable PAE]], use the 486 kernel.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>9z7z6iqmtedg0m0xbqq1tvem04sy89p</sha1>
+      <sha1>0ge9ccmnh2oq6bzepzfjvkhgsrdiyhm</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -42735,28 +42737,16 @@ Please do not fix the picture links with html tags. This file gets copied to htt
     <ns>0</ns>
     <id>469</id>
     <revision>
-      <id>4789</id>
-      <parentid>4389</parentid>
-      <timestamp>2014-01-17T14:04:34Z</timestamp>
+      <id>4830</id>
+      <parentid>4829</parentid>
+      <timestamp>2014-01-22T21:34:17Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="10796">{{Header}}
+      <comment>/* Building Whonix in Whonix */</comment>
+      <text xml:space="preserve" bytes="10304">{{Header}}
 {{forkme}}
-
-{{mbox
-| type       = critical
-| image      = [[File:Ambox_warning_pn.svg.png|40px|alt=Question mark]]
-| text       = 
-
-Building full images from source code is currently broken (or at least very difficult), due to two bugs which have been recently introduced in Debian testing.
-
-* http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=734794
-* http://ml.grml.org/pipermail/grml/2014-January/011547.html
-
-It might take a while until these get fixed. It is planed to base next Whonix version on Debian stable instead of Debian testing to avoid that kind of build bugs and other bugs such as the AppArmor bug, that prevented Tor from starting.
-}}
 
 = Build Documentation =
 == Introduction ==
@@ -42804,7 +42794,7 @@ EDITORS NOTE: The following host preparation text is duplicated on 3 pages.
 When making changes here, please consider also making changes there.
 (Not using a template, because it would probably require a version specific template.)
 --&gt;
-* You need to build on '''Debian Testing (Jessie)'''. (How to obtain Debian safely: &lt;ref&gt;[[Debian|Debian ISO OpenPGP verification]]&lt;/ref&gt;) &lt;ref&gt;The build scripts could be adapted to run on other {{Code2|*NIX}} systems as well but currently they assume {{Code2|apt-get}} and {{Code2|grml-debootstrap}} to be available. You need about 15 GB of free space.&lt;/ref&gt;
+* You need to build on '''Debian &lt;u&gt;stable&lt;/u&gt; (currently: wheezy)'''. (How to obtain Debian safely: &lt;ref&gt;[[Debian|Debian ISO OpenPGP verification]]&lt;/ref&gt;) &lt;ref&gt;The build scripts could be adapted to run on other {{Code2|*NIX}} systems as well but currently they assume {{Code2|apt-get}} and {{Code2|grml-debootstrap}} to be available. You need about 15 GB of free space.&lt;/ref&gt;
 * Build dependencies and configurations get automatically applied, so you don't have to worry about that. &lt;ref&gt;By {{Code2|[https://github.com/Whonix/Whonix/blob/master/build-steps.d/1100_prepare-build-machine build-steps.d/1100_prepare-build-machine]}}.))&lt;/ref&gt;
 * It is recommended to set your terminal (for example Konsole) to unlimited scrollback, so you can watch the full build log.
 
@@ -42814,7 +42804,9 @@ When making changes here, please consider also making changes there.
 If you are interested, click on Expand on the right.
 &lt;div class=&quot;mw-collapsible-content&quot;&gt;
 
-Building Whonix in Whonix is possible as well (if the Whonix version you are using as host is also based on Debian Testing (Jessie)). Unfortunately, apt-cacher-ng does not like Whonix's apt repository on sourceforge.net. Adrelanos already reported a bug. As long as this bug isn't fixed, you need to disable Whonix's apt repository while building Whonix. You can do this using the {{Code2|whonix_repository}} tool.
+Currently probably not possible, because there is no existing Whonix release based on Debian stable (currently: wheezy).
+
+Building Whonix in Whonix is possible as well (if the Whonix version you are using as host is also based on Debian stable (currently: wheezy)). Unfortunately, apt-cacher-ng does not like Whonix's apt repository on sourceforge.net. Adrelanos already reported a bug. As long as this bug isn't fixed, you need to disable Whonix's apt repository while building Whonix. You can do this using the {{Code2|whonix_repository}} tool.
 
 &lt;pre&gt;
 sudo whonix_repository --disable
@@ -42914,7 +42906,7 @@ To learn about adrelanos, the person who maintains Whonix, its OpenPGP key, see 
 {{Footer}}
 
 [[Category:Development]]</text>
-      <sha1>1q4inh0wnlatdqw2hqopfz8qzae153e</sha1>
+      <sha1>qtwq28xx9zwqgwwe6n2yny7kjkkvees</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
