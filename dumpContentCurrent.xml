@@ -665,14 +665,14 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>19</id>
     <revision>
-      <id>4773</id>
-      <parentid>4764</parentid>
-      <timestamp>2014-01-15T16:09:19Z</timestamp>
+      <id>4827</id>
+      <parentid>4773</parentid>
+      <timestamp>2014-01-22T01:50:37Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <text xml:space="preserve" bytes="20484">{{Header}}
+      <comment>Fixed enigmail installation method, it IS in Debian/Jessie.</comment>
+      <text xml:space="preserve" bytes="20396">{{Header}}
 &lt;!--
 Copyright:
 
@@ -988,11 +988,10 @@ sudo apt-get dist-upgrade
 &lt;/pre&gt;
 
 &lt;!--T:62--&gt;
-You can then download enigmail from here: &lt;br /&gt;
-https://addons.mozilla.org/en-us/thunderbird/addon/enigmail/
-
-&lt;!--T:63--&gt;
-(Enigmail is at the moment not in Debian Testing/Jessie.)
+You should then install enigmail as usual: &lt;br /&gt;
+&lt;pre&gt;
+sudo apt-get install enigmail
+&lt;/pre&gt;
 
 === Mounting (CD/DVD) Devices === &lt;!--T:64--&gt;
 Currently needs a workaround as well. Please see [[Special:AWCforum/st/id167/#post_700|forum]].
@@ -1064,7 +1063,7 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>ji8squjgkzbkoffqanbkjtlrmqbuplk</sha1>
+      <sha1>84akn0q7657qhczcsza51amk4kmmvup</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
