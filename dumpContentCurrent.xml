@@ -23027,15 +23027,15 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>216</id>
     <revision>
-      <id>4831</id>
-      <parentid>3856</parentid>
-      <timestamp>2014-01-22T23:01:05Z</timestamp>
+      <id>4832</id>
+      <parentid>4831</parentid>
+      <timestamp>2014-01-22T23:01:49Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Whonix does not start? */</comment>
-      <text xml:space="preserve" bytes="2179">{{Header}}
+      <comment>/* Other reasons */</comment>
+      <text xml:space="preserve" bytes="2177">{{Header}}
 
 = Starting Whonix =
 
@@ -23071,7 +23071,7 @@ This probably similar to PAE crash and VERR_SSM_FIELD_NOT_CONSECUTIVE issues abo
 == Other reasons ==
 Please have a look at the [[Download]] page. It contains instructions on how to properly download and verify the Whonix virtual machine images. There is also help available in form of screenshot or video instructions.
 
-If you still need help, please go to the [[https://www.whonix.org/forum Whonix User Help Forum]].
+If you still need help, please go to the [https://www.whonix.org/forum Whonix User Help Forum].
 
 = Boot Options =
 
@@ -23087,7 +23087,7 @@ In case you need to [[#PAE_crash|disable PAE]], use the 486 kernel.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>0ge9ccmnh2oq6bzepzfjvkhgsrdiyhm</sha1>
+      <sha1>ajzze6uf2lce4zd04eqtemfs8itw6de</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
