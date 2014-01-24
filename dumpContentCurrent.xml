@@ -127,14 +127,14 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
     <ns>8</ns>
     <id>3</id>
     <revision>
-      <id>4794</id>
-      <parentid>4793</parentid>
-      <timestamp>2014-01-18T17:33:27Z</timestamp>
+      <id>4834</id>
+      <parentid>4794</parentid>
+      <timestamp>2014-01-24T01:20:08Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="1578">
+      <text xml:space="preserve" bytes="1556">
 * users
 ** Main Page|Homepage
 ** About|About
@@ -166,7 +166,7 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
 ** Official Whonix Online Profiles|Social Media Profiles
 ** https://twitter.com/Whonix|@Whonix Twitter
 ** https://plus.google.com/108150429836421683225|Google+
-** https://www.facebook.com/pages/Whonix/622399681135624|Facebook
+** https://www.facebook.com/Whonix|Facebook
 
 * Developers
 ** Mailing Lists#whonix-devel|Development Mailing List
@@ -186,7 +186,7 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
 ** helppage|help
 
 * LANGUAGES</text>
-      <sha1>hgdv0jux06uklm3vu7prn0f03wij3h5</sha1>
+      <sha1>lp2t4tcrg4332t86dwy6vg0uhliimb2</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -54701,20 +54701,22 @@ You can customize the header and footer of your directory listing as explained [
     <ns>0</ns>
     <id>695</id>
     <revision>
-      <id>4634</id>
-      <parentid>4633</parentid>
-      <timestamp>2014-01-10T13:33:35Z</timestamp>
+      <id>4833</id>
+      <parentid>4634</parentid>
+      <timestamp>2014-01-23T23:34:28Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <username>Fortasse</username>
+        <id>1</id>
       </contributor>
+      <minor/>
+      <comment>/* Requirements */ minor typo fix</comment>
       <text xml:space="preserve" bytes="4030">{{Header}}
 
 Running a mirror for Whonix can be immensely helpful, but takes some knowledge, proper configuration and adequate resources to be truly useful.
 
 == Requirements ==
 
-* A server with a publicly accessibly IP address. You may already have one of these, but [http://lowendbox.com/ lowendbox] often has decent boxes at low prices. Look for ones with higher bandwidth caps, as you will be serving lots of data (~2.5GB for a download of Workstation+Gateway for Whonix 7). The load on your individual mirror will go down as more mirrors are added. If you exceed the allocated bandwidth, you may incur additional charges or even terminated service depending on your provider, so be careful, and overestimate on your bandwidth requirements.
+* A server with a publicly accessible IP address. You may already have one of these, but [http://lowendbox.com/ lowendbox] often has decent boxes at low prices. Look for ones with higher bandwidth caps, as you will be serving lots of data (~2.5GB for a download of Workstation+Gateway for Whonix 7). The load on your individual mirror will go down as more mirrors are added. If you exceed the allocated bandwidth, you may incur additional charges or even terminated service depending on your provider, so be careful, and overestimate on your bandwidth requirements.
 * SSH root access to that server (sudo is fine)
 * Recommended: Debian Wheezy as the operating system. You can use any distro you like, but this guide is written using Wheezy.
 
@@ -54813,7 +54815,7 @@ You can customize the header and footer of your directory listing as explained [
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>5qwygzu8s8nuqno1pi5kocnnpjkmsen</sha1>
+      <sha1>qzvki83o3z9k7ebk741p7itihwt8jb5</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
