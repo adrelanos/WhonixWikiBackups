@@ -34670,12 +34670,11 @@ That's it. Link to Whonix is inside the video description.
     <ns>0</ns>
     <id>295</id>
     <revision>
-      <id>3781</id>
-      <parentid>3284</parentid>
-      <timestamp>2013-10-19T13:43:24Z</timestamp>
+      <id>4836</id>
+      <parentid>4835</parentid>
+      <timestamp>2014-01-25T08:41:34Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
       <comment>/* Disable Auto Login */</comment>
       <text xml:space="preserve" bytes="4098">{{Header}}
