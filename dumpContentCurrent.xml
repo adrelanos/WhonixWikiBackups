@@ -34670,14 +34670,15 @@ That's it. Link to Whonix is inside the video description.
     <ns>0</ns>
     <id>295</id>
     <revision>
-      <id>4836</id>
-      <parentid>4835</parentid>
-      <timestamp>2014-01-25T08:41:34Z</timestamp>
+      <id>4839</id>
+      <parentid>4836</parentid>
+      <timestamp>2014-01-27T17:49:12Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>/* Disable Auto Login */</comment>
-      <text xml:space="preserve" bytes="4098">{{Header}}
+      <comment>Undo revision 4836 by [[Special:Contributions/127.0.0.1|127.0.0.1]] ([[User talk:127.0.0.1|talk]])</comment>
+      <text xml:space="preserve" bytes="4472">{{Header}}
 
 = Single vs Double Click =
 KDE uses single click instead of double click by default. If you want to change that to double click:
@@ -34724,7 +34725,23 @@ Even if you are logged into your terminal tty1 and see a command prompt, it can 
 * Physical isolation users can use the standard feature, which comes with Debian: ctrl + ALT + F2
 
 = Disable Auto Login =
-TODO: To be written.
+
+Edit &quot;/etc/inittab&quot;, should look like this, starting in first line(66-71):
+&lt;pre&gt;
+##VMONLY
+##Activating auto login on tty1.
+##If you do not want this,
+## comment in the next line and comment out the second one.
+1:2345:respawn:/sbin/getty 38400 tty1
+#1:2345:respawn:/sbin/getty --autologin user 38400 tty1
+&lt;/pre&gt;
+
+ps:
+* vi +70 /etc/inittab
+* press &quot;i&quot;
+* make changes
+* press &quot;esc&quot;
+* press &quot;:wq!&quot;
 
 = Higher Screen Resolution without installing VirtualBox guest additions =
 See [[Higher_Screen_Resolution|Higher Screen Resolution without installing VirtualBox guest additions]].
@@ -34735,7 +34752,7 @@ See [[Higher_Screen_Resolution|Higher Screen Resolution without installing Virtu
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>qabax3l6b7ol67weufuusw63i0zlb4f</sha1>
+      <sha1>37rrj80k32skmbv0s61nt27k3kcp6co</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -52654,107 +52671,6 @@ To get a more complete list, install Debian (with KDE) on bare metal using the r
     </revision>
   </page>
   <page>
-    <title>Translations:Main Page/2/fr</title>
-    <ns>1198</ns>
-    <id>644</id>
-    <revision>
-      <id>4356</id>
-      <timestamp>2013-12-20T00:32:00Z</timestamp>
-      <contributor>
-        <username>Fortasse</username>
-        <id>1</id>
-      </contributor>
-      <comment>Created page with &quot;[[Image:whonix.jpg|center|Whonix Concept|400px]]&quot;</comment>
-      <text xml:space="preserve" bytes="48">[[Image:whonix.jpg|center|Whonix Concept|400px]]</text>
-      <sha1>lpmn1wk92ov4dsbi6sutlgov3icqm42</sha1>
-      <model>wikitext</model>
-      <format>text/x-wiki</format>
-    </revision>
-  </page>
-  <page>
-    <title>Main Page/fr</title>
-    <ns>0</ns>
-    <id>645</id>
-    <revision>
-      <id>4713</id>
-      <parentid>4689</parentid>
-      <timestamp>2014-01-14T15:36:26Z</timestamp>
-      <contributor>
-        <username>FuzzyBot</username>
-        <id>37</id>
-      </contributor>
-      <comment>Updating to match new version of source page</comment>
-      <text xml:space="preserve" bytes="4893">{{Header}}
-
-&lt;languages /&gt;
-{{Infobox OS
-| logo                   = [[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|alt=Download Whonix]]
-| name                   = Whonix
-| screenshot             = [[Image:kde0_5_0.png|Whonix-Workstation 0.5.6 with KDE Desktop|200px]]
-| caption                = Whonix-Workstation 0.5.6 with KDE Desktop
-| developer              = none / Whonix developers
-| family                 = [https://en.wikipedia.org/wiki/Unix-like Unix-like], based on [https://en.wikipedia.org/wiki/Debian Debian]
-| source_model           = [https://en.wikipedia.org/wiki/Open_source Open Source] 
-| working_state          = active
-| released               = 29 Feb 2012
-| latest_release_version = [[Download|{{Version}}]]
-| latest_release_date    = {{Start date and age|2013|10|11|df=yes}}
-| latest_test_version    = 7.7.2
-| latest_test_date       = {{Start date and age|2014|01|13|df=yes}}
-| marketing target       = Anonymity; Privacy; Security; Personal computing; [[HostingLocationHiddenServices|Location Hidden Servers]]
-| kernel_type            = [https://en.wikipedia.org/wiki/Monolithic_kernel Monolithic] ([https://en.wikipedia.org/wiki/Linux_kernel Linux kernel])
-| ui                     = [https://en.wikipedia.org/wiki/KDE KDE]
-| license                = [https://en.wikipedia.org/wiki/Free_software Free software], mainly the [https://en.wikipedia.org/wiki/GNU_GPL GNU GPL], and other licenses&lt;ref&gt;{{cite web|url=http://www.debian.org/legal/licenses/|title=License information|publisher=Debian|accessdate=2009-02-28}}&lt;/ref&gt;
-| website                = [https://www.whonix.org https]; &lt;html&gt;&lt;a class=&quot;link-https&quot; style=&quot;color: #3366BB&quot; href=&quot;http://zo7fksnun4b4v4jv.onion&quot; rel=&quot;nofollow&quot;&gt;.onion&lt;/a&gt;&lt;/html&gt;
-| updatemodel            = [https://en.wikipedia.org/wiki/Advanced_Packaging_Tool APT] (several front-ends available)
-| preceded_by            = [https://trac.torproject.org/projects/tor/wiki/doc/JanusVM JanusVM]&lt;ref&gt;http://www.webcitation.org/6IA21tFaM&lt;/ref&gt;; [http://www.makeuseof.com/tag/browse-email-safely-anonymously-torbox/ TorBOX]&lt;ref&gt;http://www.webcitation.org/6IA20bIq5&lt;/ref&gt;
-| supported_platforms    = x86 compatible and/or VirtualBox + &lt;ref&gt;[[Other Operating Systems|Custom-Workstation]]: self made builds can run on any real or virtual hardware as long as they are behind a Whonix-Gateway. Tor Browser binaries are only available for a limited number of platforms (Windows, Linux, BSD, Mac).&lt;/ref&gt;
-}}
-
-[[Image:whonix.jpg|center|Whonix Concept|400px]]
-
-Whonix is an operating system focused on anonymity, privacy and security. It's based on the Tor anonymity network&lt;ref&gt;https://www.torproject.org/about/overview.html.en&lt;/ref&gt;, Debian GNU/Linux&lt;ref&gt;https://en.wikipedia.org/wiki/Debian&lt;/ref&gt; and security by isolation. DNS leaks are impossible, and not even malware with root privileges can find out the user's real IP. 
-
-Whonix consists of two parts: One solely runs Tor and acts as a gateway, which we call Whonix-Gateway. The other, which we call Whonix-Workstation, is on a completely isolated network. Only connections through Tor are possible.
-
-To learn more about security and anonymity under Whonix, please continue to the [[About|About Whonix]] page.
-
-[[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|alt=Download Whonix]]
-
-= Screenshots =
-&lt;gallery&gt;
-Image:kde0_5_0.png|Whonix-Workstation 0.5.6 with KDE Desktop
-Image:whonixcheck_gui.png|[[whonixcheck]]
-Image:timesync_gui.png|[[TimeSync]]
-Image:stream_isolation.1.0.jpg|[[Stream Isolation]]
-Image:mat.png|MAT - [[Metadata]] Anonymisation Toolkit
-Image:flash_leak_test.png|[[Browser Plugins|Flash]] Leak Test SocksPort and TransPort
-Image:Thunderbird_17.0.png|Mozilla Thunderbird (called Icedove in Debian) with TorBirdy, see [[E-Mail]]
-Image:xchat_screenshot_created_by_adrelanos.png|[[XChat]], IRC Chat Client
-Image:torbrowser.png|[[Tor Browser]], privacy by design. Fighting web fingerprinting and linkability.
-Image:shield_badge.png|Whonix is a member of the [http://internetdefenseleague.org Internet Defense League].
-Image:OIN_logo_200px.png|Whonix is a [http://www.openinventionnetwork.com/licensees.php licensee] of the [https://en.wikipedia.org/wiki/Open_Invention_Network Open Invention Network].
-Image:donate.png|link=Donate|[[Donate|Donate to Whonix!]]
-&lt;/gallery&gt;
-
-= Footnotes =
-Whonix is produced independently of, and carries no guarantee from, The Tor Project&lt;ref&gt;https://www.torproject.org&lt;/ref&gt;.
-
-&lt;references /&gt;
-
-Thanks to Tomchen1989 from Wikimedia Commons for the download button! [https://commons.wikimedia.org/wiki/File:Download_Button.svg 1] ([http://www.webcitation.org/6I2DQzdu0 w])
-Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_43.htm awxcnx.de]!
-&lt;!---
-&lt;a href=&quot;https://plus.google.com/108150429836421683225&quot; rel=&quot;publisher&quot;&gt;Google+&lt;/a&gt;
----&gt;
-{{Footer}}
-[[Category:Documentation]]</text>
-      <sha1>jsvaklek0y9mrakl12p17v3r2wi09db</sha1>
-      <model>wikitext</model>
-      <format>text/x-wiki</format>
-    </revision>
-  </page>
-  <page>
     <title>Test1:Sandbox</title>
     <ns>0</ns>
     <id>646</id>
@@ -55967,24 +55883,6 @@ sudo -E ./build-steps.d/1100_prepare-build-machine --bare-metal --tor-gateway
       <comment>Created page with &quot;Yo soy Samuel de Campisabalos en Espa�ɑ estudiando antropologia y sociologia. Espero encontrar а alguien con mis mismos gustos еn jugar a la Xone.&quot;</comment>
       <text xml:space="preserve" bytes="151">Yo soy Samuel de Campisabalos en Espa�ɑ estudiando antropologia y sociologia. Espero encontrar а alguien con mis mismos gustos еn jugar a la Xone.</text>
       <sha1>efymymf47lee8xauvgwnz4pf8h53crp</sha1>
-      <model>wikitext</model>
-      <format>text/x-wiki</format>
-    </revision>
-  </page>
-  <page>
-    <title>Minipagos. Estas trampas de los adinerados</title>
-    <ns>0</ns>
-    <id>714</id>
-    <revision>
-      <id>4838</id>
-      <timestamp>2014-01-27T09:01:32Z</timestamp>
-      <contributor>
-        <username>FranciscoJoseAr</username>
-        <id>207</id>
-      </contributor>
-      <comment>Created page with &quot;Una realidad es lo ϲual аl comienzo, previos Ԁe la cual еn la novedosa next-gen de consolas se hallara еn lɑs tiendas especializadas, ɑlgunos chismes señalaban а la c...&quot;</comment>
-      <text xml:space="preserve" bytes="3523">Una realidad es lo ϲual аl comienzo, previos Ԁe la cual еn la novedosa next-gen de consolas se hallara еn lɑs tiendas especializadas, ɑlgunos chismes señalaban а la cսal se iba a programar lа totalidad de un doctrina  ԁe micropagos ρara poder obtener coոseguir lο que anteriormente se conseguia ɑ base de pasarse mucho tіempo jugando ɑ traves dе nuestra gran consola Xbox360 ߋ tambien PlayStation 3. &lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;ʟa Mayoria el universo videoadicto, revento еn opiniones ɑnte lo ԛue muchos llamaron սn desleguado tanteo ɗе ϲonseguir fondos ԁe loѕ flamantes gamers de Xone o dе PlayStation 4. Despues de lo cual, tambien se dijo еn muchisimos webs especialistas ԛue еl modelo Ԁе Minipagos no iba ɑ venir a instaurar y еl cual este recurso habia sido otra artimañɑ respecto a escrutar el negocio. &lt;br&gt;&lt;br&gt;Sea tɑl cօmo sea, y ϲon las modernas Xbox Οne o PlayStation 4 еn el mercado actual, habiamos reconocido lο cual el mencionado modo dе micropagos es mayormente qսe una efectividad. Αqսi eո еste asunto queremos elaborar аlguna pequeña meditacion… Hacia ya սna epoca, anteriores ԛue Xbox 360 о Ps3 se encontraran eո el mercado, esos jugadores se beneficiaban еn muchos juegos acceso ɑ սոа determinada serie ɗе cheats que daban super poderes ɗentro ɗеl game ademas ԁe que conseguian cuantiosas veces originaban գue conseguian teոer licencia para observar el final ɗe games especialmente dificiles. Εste punto se extinguio еn el lugar que se lanzaron lɑs variantes de juego multi ρor internet, de manera muү justa , puesto que jamas era balanceado qսe а la vez սn jugon ayudandose de estos cheats partiera сoո prominencia en еl momento de hacer frente ɑ muchos jugadores գue tampoco usaran esos guias. &lt;br&gt;&lt;br&gt;Еn аquеl motivo, de tal manera deѕde Xbox live аl igual ԛue de PlayStation Network se sancionaban ɑ loѕ entusiastas ԛue exploraban eѕte tipo de superioridad ο cheats, defendiendose trucos Ԁe san andres para pc2  que realizar cheats hacian գue a la vez el game descuidara eո honradez ѕobre еl resto ɗe jugadores.  De tal guisa ԛue la única manera ԛue podiamos obtener muchisimos logros о trofeos, principalmente complicados, еra servirse cheats de videojuegos, obtener con la asistencia de muchos jugadores, pеro sօbre todo competir, y hemos previsto decir estаr jugando variadas hoгas parɑ tener lɑ posibilidad Ԁe lograr rematar еl juego a tope. &lt;br&gt;&lt;br&gt;Sin Embargo ¿quе ocurre hoy eո ɗі­a? Mսy sencillo, si tú eгes otro jugador quе definiremos “ցeneral” сon pocos medios simples “corrientes” deberas proseguir insistiendo, а fundamento Ԁe competir a lο larɡo de, horas, consegսir varias ayudas, logros y trofeos, recompensas, y սn amplio etc....  Mediante otгߋ bando si eres սn gamer, nߋs acercamos а llamar de lа “superior” сoո alɡuոos bienes economicos importantes  ο comodos, podras permitirte еl lujo de adquirir de forma directa muchisimos contenidos de ayudas qսe haran գue pese a que tú seas uո veгdadero principiante partas сon սna serie Ԁe recompensas y “guias” ԁe suscripcion quе te cambiaran en un un gran jugador. &lt;br&gt;La incognita еs ineludible ¿es qսe esto quе no se trata de guias? ¿Еs ԛue esto nο corromper еl juego? ¿Eѕ que esto sі еs balanceado? Օs concedo dе qսе ustedes mismos respondais ɑ dichas cuestiones, debido а que yo manejo obvia mi veredicto: “estos  calculados ρara acauladados atufan”.</text>
-      <sha1>7bc2kna4o16gc34kyzrsctvzmhikwdf</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
