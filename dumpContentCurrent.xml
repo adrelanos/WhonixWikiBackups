@@ -2,7 +2,7 @@
   <siteinfo>
     <sitename>Whonix</sitename>
     <base>http://localhost/wiki/Main_Page</base>
-    <generator>MediaWiki 1.21.4</generator>
+    <generator>MediaWiki 1.21.5</generator>
     <case>first-letter</case>
     <namespaces>
       <namespace key="-2" case="first-letter">Media</namespace>
@@ -34670,15 +34670,15 @@ That's it. Link to Whonix is inside the video description.
     <ns>0</ns>
     <id>295</id>
     <revision>
-      <id>4839</id>
-      <parentid>4836</parentid>
-      <timestamp>2014-01-27T17:49:12Z</timestamp>
+      <id>4842</id>
+      <parentid>4839</parentid>
+      <timestamp>2014-01-28T18:18:48Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>Undo revision 4836 by [[Special:Contributions/127.0.0.1|127.0.0.1]] ([[User talk:127.0.0.1|talk]])</comment>
-      <text xml:space="preserve" bytes="4472">{{Header}}
+      <comment>Rejected the last text change (by [[Special:Contributions/Adrelanos|Adrelanos]]) and restored revision 4836 by 127.0.0.1</comment>
+      <text xml:space="preserve" bytes="4098">{{Header}}
 
 = Single vs Double Click =
 KDE uses single click instead of double click by default. If you want to change that to double click:
@@ -34725,23 +34725,7 @@ Even if you are logged into your terminal tty1 and see a command prompt, it can 
 * Physical isolation users can use the standard feature, which comes with Debian: ctrl + ALT + F2
 
 = Disable Auto Login =
-
-Edit &quot;/etc/inittab&quot;, should look like this, starting in first line(66-71):
-&lt;pre&gt;
-##VMONLY
-##Activating auto login on tty1.
-##If you do not want this,
-## comment in the next line and comment out the second one.
-1:2345:respawn:/sbin/getty 38400 tty1
-#1:2345:respawn:/sbin/getty --autologin user 38400 tty1
-&lt;/pre&gt;
-
-ps:
-* vi +70 /etc/inittab
-* press &quot;i&quot;
-* make changes
-* press &quot;esc&quot;
-* press &quot;:wq!&quot;
+TODO: To be written.
 
 = Higher Screen Resolution without installing VirtualBox guest additions =
 See [[Higher_Screen_Resolution|Higher Screen Resolution without installing VirtualBox guest additions]].
@@ -34752,7 +34736,7 @@ See [[Higher_Screen_Resolution|Higher Screen Resolution without installing Virtu
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>37rrj80k32skmbv0s61nt27k3kcp6co</sha1>
+      <sha1>qabax3l6b7ol67weufuusw63i0zlb4f</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -55866,24 +55850,6 @@ sudo -E ./build-steps.d/1100_prepare-build-machine --bare-metal --tor-gateway
 &lt;/div&gt;
 &lt;/div&gt;</text>
       <sha1>c077yacrm92mx032vcqdr6qqe9wpj6n</sha1>
-      <model>wikitext</model>
-      <format>text/x-wiki</format>
-    </revision>
-  </page>
-  <page>
-    <title>User:FranciscoJoseAr</title>
-    <ns>2</ns>
-    <id>713</id>
-    <revision>
-      <id>4837</id>
-      <timestamp>2014-01-27T09:01:26Z</timestamp>
-      <contributor>
-        <username>FranciscoJoseAr</username>
-        <id>207</id>
-      </contributor>
-      <comment>Created page with &quot;Yo soy Samuel de Campisabalos en Espa�ɑ estudiando antropologia y sociologia. Espero encontrar а alguien con mis mismos gustos еn jugar a la Xone.&quot;</comment>
-      <text xml:space="preserve" bytes="151">Yo soy Samuel de Campisabalos en Espa�ɑ estudiando antropologia y sociologia. Espero encontrar а alguien con mis mismos gustos еn jugar a la Xone.</text>
-      <sha1>efymymf47lee8xauvgwnz4pf8h53crp</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
