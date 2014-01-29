@@ -9499,14 +9499,13 @@ SSL certificates, especially for https://check.torproject.org (check.tpo) are no
     <ns>0</ns>
     <id>100</id>
     <revision>
-      <id>4662</id>
-      <parentid>4661</parentid>
-      <timestamp>2014-01-12T13:23:00Z</timestamp>
+      <id>4843</id>
+      <parentid>4662</parentid>
+      <timestamp>2014-01-29T06:05:19Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* Introduction */</comment>
+      <comment>Changed &quot;quite&quot; to &quot;quiet&quot; when applicable</comment>
       <text xml:space="preserve" bytes="7288">{{Header}}
 
 [[Image:whonixcheck_gui.png|thumb|whonixcheck done]]
@@ -9531,10 +9530,10 @@ Some users wish to hide the fact from their ISP, they they are using Tor and Who
 
 = Checks =
 * If run either on bare metal ([[Physical Isolation]]) or inside VirtualBox. Warns when using an unsupported (by Whonix developers) virtualizer.
-* Whonix 7.7.1.1 and above: checks if the clock source is KVMClock and warns if that is the case. Might probably only happen for users using the [[KVM]] instructions. Reports only if KVMClock is detected. Otherwise quite.
-* Check the validity of Tor's config files by using &quot;sudo tor --verify-config&quot;. Whonix-Gateway only. Reports only error. Otherwise quite.
+* Whonix 7.7.1.1 and above: checks if the clock source is KVMClock and warns if that is the case. Might probably only happen for users using the [[KVM]] instructions. Reports only if KVMClock is detected. Otherwise quiet.
+* Check the validity of Tor's config files by using &quot;sudo tor --verify-config&quot;. Whonix-Gateway only. Reports only error. Otherwise quiet.
 * Whonix 7.7.1.1 and above: Check if a package manager is currently running. Waits as long as a package manager is running until it continues. It waits, because the Tor package or [[Dev/CPFP]] is currently upgraded, connection checks would fail.
-* Check if the Tor process is running. Only on Whonix-Gateway. Reports error if not. Quite otherwise.
+* Check if the Tor process is running. Only on Whonix-Gateway. Reports error if not. Quiet otherwise.
 * Tor connection / IP
 ** Tor Bootstrap Status
 ** downloads https://check.torproject.org with curl through extra SocksPort
@@ -9574,7 +9573,7 @@ cat /var/lib/whonix/whonixcheck/whonixcheck_message_x
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Design]]</text>
-      <sha1>ak4zr5cgabfc0z04wfpsnsutzwm0fhd</sha1>
+      <sha1>i1pfz9fnjgwxbxcz5g40stfmwwzftcc</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
