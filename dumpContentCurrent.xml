@@ -5410,16 +5410,14 @@ then choose etc (at the bottom) and then choose UTC.
     <ns>0</ns>
     <id>87</id>
     <revision>
-      <id>4731</id>
-      <parentid>4660</parentid>
-      <timestamp>2014-01-14T17:37:39Z</timestamp>
+      <id>4844</id>
+      <parentid>4731</parentid>
+      <timestamp>2014-01-30T19:31:40Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <minor/>
-      <comment>Text replace - &quot;Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;&quot; to &quot;Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;&quot;</comment>
-      <text xml:space="preserve" bytes="21340">&lt;!--
+      <comment>/* Introduction */</comment>
+      <text xml:space="preserve" bytes="21339">&lt;!--
 Copyright:
 
    Whonix Pre Install Advice wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -5477,7 +5475,7 @@ If you can not get the Tor Browser Bundle to work, you will most certainly not g
 
 If the host is compromised by Malware&lt;ref&gt;https://en.wikipedia.org/wiki/Malware&lt;/ref&gt; so is every virtual machine with Whonix, Tor and all anonymous communication. In essence, Malware can see your desktop, everything you do, type, send, receive, etc.
 
-Antivirus products and personal firewalls&lt;ref&gt;https://en.wikipedia.org/wiki/Personal_firewall&lt;/ref&gt; are '''not''' drop in solutions for a secure host. Malware often stays undetected. Polymorphic code&lt;ref&gt;https://en.wikipedia.org/wiki/Polymorphic_code&lt;/ref&gt; and Rootkits&lt;ref&gt;https://en.wikipedia.org/wiki/Rootkit&lt;/ref&gt;) pretty much render Antivirus products helpless. Personal firewalls often get circumvented.
+Antivirus products and personal firewalls&lt;ref&gt;https://en.wikipedia.org/wiki/Personal_firewall&lt;/ref&gt; are '''not''' drop in solutions for a secure host. Malware often stays undetected. Polymorphic code&lt;ref&gt;https://en.wikipedia.org/wiki/Polymorphic_code&lt;/ref&gt; and Rootkits&lt;ref&gt;https://en.wikipedia.org/wiki/Rootkit&lt;/ref&gt; pretty much render Antivirus products helpless. Personal firewalls often get circumvented.
 
 The '''only''' promising approach is not to get infected by Malware in the first place. Once malicious code is on a system, it's next to impossible to contain. Not saying Antivirus scanning and firewalls are useless. They are not. Refer to them as your very last line of defense. If you ever find malware on your system, which is not a false positive, it only demonstrates, that your precautions didn't work. It is the precautions that matter (hardening, secure host operating system, using signed software, etc.), not the detection.
 
@@ -5727,7 +5725,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>8vp1f1gdfy7vmcmnovcf8t0agng8k8g</sha1>
+      <sha1>cac9xpkflfzu7yp0d7u0kd6ipf18zb7</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -9499,13 +9497,13 @@ SSL certificates, especially for https://check.torproject.org (check.tpo) are no
     <ns>0</ns>
     <id>100</id>
     <revision>
-      <id>4843</id>
-      <parentid>4662</parentid>
-      <timestamp>2014-01-29T06:05:19Z</timestamp>
+      <id>4845</id>
+      <parentid>4843</parentid>
+      <timestamp>2014-01-30T19:40:53Z</timestamp>
       <contributor>
         <ip>127.0.0.1</ip>
       </contributor>
-      <comment>Changed &quot;quite&quot; to &quot;quiet&quot; when applicable</comment>
+      <comment>/* Introduction */</comment>
       <text xml:space="preserve" bytes="7288">{{Header}}
 
 [[Image:whonixcheck_gui.png|thumb|whonixcheck done]]
@@ -9518,7 +9516,7 @@ SSL certificates, especially for https://check.torproject.org (check.tpo) are no
 
 [[Desktop#whonixcheck.2Ftimesync_writing_to_tty1|Automatically started whonixcheck writing to tty1.]]]]
 = Introduction =
-{{Code2|whonixcheck}} is a bash script, checking many important things. Supports to be run in console and also has a grapical progress meter and graphical info popup for the results. It's stored in {{Code|/usr/bin/whonixcheck}} and in {{Code|/usr/lib/whonix/whonixcheck/}}. Whonix will also work without that script. It's only checks things, it doesn't change thigns. Nothing is compiled, it's just a script and anyone can read the source code.
+{{Code2|whonixcheck}} is a bash script, checking many important things. Supports to be run in console and also has a grapical progress meter and graphical info popup for the results. It's stored in {{Code|/usr/bin/whonixcheck}} and in {{Code|/usr/lib/whonix/whonixcheck/}}. Whonix will also work without that script. It's only checks things, it doesn't change things. Nothing is compiled, it's just a script and anyone can read the source code.
 
 The whonixcheck script was inspired by https://check.torproject.org. In past when people were still recommended to use proxy settings to torify web browsers, it was an important check. While manual torification of web browsers is nowadays recommended against, the Tor Browser Bundle, which is securely pre-configured, still visits check.tpo and checks if everything is okay. Check.tpo also checks if the Tor Browser Bundle version is up to date (technically Tor Button downloads version information and checks locally).
 
@@ -9573,7 +9571,7 @@ cat /var/lib/whonix/whonixcheck/whonixcheck_message_x
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Design]]</text>
-      <sha1>i1pfz9fnjgwxbxcz5g40stfmwwzftcc</sha1>
+      <sha1>ghctr2szvxa0xe6djo23wp5u6l6z2o4</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
