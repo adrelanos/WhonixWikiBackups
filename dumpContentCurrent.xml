@@ -33644,15 +33644,15 @@ See [[Dev/Build Documentation]].
     <ns>0</ns>
     <id>288</id>
     <revision>
-      <id>4612</id>
-      <parentid>4041</parentid>
-      <timestamp>2014-01-06T09:31:05Z</timestamp>
+      <id>4846</id>
+      <parentid>4612</parentid>
+      <timestamp>2014-01-31T02:42:57Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Pre Building */</comment>
-      <text xml:space="preserve" bytes="3688">{{Header}}
+      <comment>/* Post Building */</comment>
+      <text xml:space="preserve" bytes="3603">{{Header}}
 
 = Redistribution =
 See [https://github.com/Whonix/Whonix/tree/master/release Release Folder] in Whonix source code.
@@ -33708,7 +33708,7 @@ In ../buildconfig.d folder.
 ./release/sign_images
 &lt;/pre&gt;
 
-* Upload the images. (sf.net shell fingerprint: {{Code|80:1c:ee:50:14:cd:ef:28:3e:82:c6:ef:44:55:d7:74}})
+* Upload the images.
 
 &lt;pre&gt;
 ./release/upload_images
@@ -33794,7 +33794,7 @@ Compress. Upload.
 {{Footer}}
 
 [[Category:Development]] [[Category:Design]]</text>
-      <sha1>4pmaw8d77didx5plwqiq4ez0rn6fwbb</sha1>
+      <sha1>3pl0qg0oj8z7d52rvksc5ijsid9i7ch</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
