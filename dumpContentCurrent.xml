@@ -18591,14 +18591,14 @@ When you go ahead now, and ask in a cracker forum, they probably won't spread a 
     <ns>0</ns>
     <id>162</id>
     <revision>
-      <id>4636</id>
-      <parentid>4611</parentid>
-      <timestamp>2014-01-10T14:53:32Z</timestamp>
+      <id>4855</id>
+      <parentid>4848</parentid>
+      <timestamp>2014-02-01T03:39:56Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="5251">{{Header}}
+      <text xml:space="preserve" bytes="5690">{{Header}}
 {{forkme}}
 * '''Technical Design'''
 ** [[Dev/Technical Introduction|Dev/Technical Introduction, Whonix Framework, Security Overview]]
@@ -18683,6 +18683,9 @@ When you go ahead now, and ask in a cracker forum, they probably won't spread a 
 ** [[Documentation|Documentation]]
 ** [[Dev/Build Documentation|Build Documentation, How to build Whonix from Source Code, How to update Whonix from Source Code]]
 ** [https://github.com/Whonix/Whonix Whonix Source Code]
+** [https://github.com/Whonix/whonix-developer-meta-files/tree/master/release Whonix Developer Meta Files, Scripts for managing the Whonix GNU/Linux Distribution]
+** [[Dev/Redistribution#Pre_Building|Redistribution Pre Building]] (Only required if you want to redistribute (official) Whonix builds.)
+** [[Dev/Redistribution#Post_Building|Redistribution Post Building]] (Only required if you want to redistribute (official) Whonix builds.)
 ** [[Test|Tests before Release]]
 ** [[Dev/Vision‎|Whonix² Project Vision]]
 
@@ -18706,7 +18709,7 @@ When you go ahead now, and ask in a cracker forum, they probably won't spread a 
 [[Category:Design]]
 
 {{Footer}}</text>
-      <sha1>tszir14b5l7933p8f526cxf7nur09fy</sha1>
+      <sha1>2j4xr5c3siwf3zgjogbrpkyh5620ru6</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -33644,20 +33647,19 @@ See [[Dev/Build Documentation]].
     <ns>0</ns>
     <id>288</id>
     <revision>
-      <id>4846</id>
-      <parentid>4612</parentid>
-      <timestamp>2014-01-31T02:42:57Z</timestamp>
+      <id>4856</id>
+      <parentid>4854</parentid>
+      <timestamp>2014-02-01T03:49:19Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
       <comment>/* Post Building */</comment>
-      <text xml:space="preserve" bytes="3603">{{Header}}
-
-= Redistribution =
-See [https://github.com/Whonix/Whonix/tree/master/release Release Folder] in Whonix source code.
+      <text xml:space="preserve" bytes="3834">{{Header}}
 
 == Pre Building ==
+'''Only required if you want to redistribute (official) Whonix builds.'''
+
 Clean source code
 
 * &lt;ref&gt;get rid of .directory files inside the source code: dolphin -&gt; preferences -&gt; general -&gt; behavior -&gt; use common view properties for all folders&lt;/ref&gt;
@@ -33702,6 +33704,12 @@ whonix_build_script_create_qcow2=&quot;1&quot;
 In ../buildconfig.d folder.
 
 == Post Building ==
+'''Only required if you want to redistribute (official) Whonix builds.'''
+
+See [https://github.com/Whonix/whonix-developer-meta-files/tree/master/release Release Folder] in whonix-developer-meta-files source code.
+
+* [[Dev/APT Repository]]
+
 * OpenPGP sign the images.
 
 &lt;pre&gt;
@@ -33725,6 +33733,7 @@ In ../buildconfig.d folder.
 
 &lt;pre&gt;
 ./release/upload_whonix_news_v3
+./release/upload_whonix_news_v4
 &lt;/pre&gt;
 
 === Testing ===
@@ -33794,7 +33803,7 @@ Compress. Upload.
 {{Footer}}
 
 [[Category:Development]] [[Category:Design]]</text>
-      <sha1>3pl0qg0oj8z7d52rvksc5ijsid9i7ch</sha1>
+      <sha1>6bs68lean4dkvtvqehhpbats004owiy</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -42734,15 +42743,14 @@ Please do not fix the picture links with html tags. This file gets copied to htt
     <ns>0</ns>
     <id>469</id>
     <revision>
-      <id>4830</id>
-      <parentid>4829</parentid>
-      <timestamp>2014-01-22T21:34:17Z</timestamp>
+      <id>4847</id>
+      <parentid>4830</parentid>
+      <timestamp>2014-02-01T03:29:07Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* Building Whonix in Whonix */</comment>
-      <text xml:space="preserve" bytes="10304">{{Header}}
+      <comment>/* Warning */</comment>
+      <text xml:space="preserve" bytes="10631">{{Header}}
 {{forkme}}
 
 = Build Documentation =
@@ -42766,6 +42774,10 @@ How to use the resulting images, is documented in the [[Documentation]].
 * &lt;u&gt;'''Short'''&lt;/u&gt;: '''Gnome user? Please disable device auto mounter. You can do this by running the following command.''' (If you don't know if you are a Gnome user or not, just run this command, it won't hurt.) ''Long'': &lt;ref&gt;Otherwise a file manager may be opened while building Whonix which could lead to issues.&lt;/ref&gt;
 &lt;pre&gt;
 gsettings set org.gnome.desktop.media-handling automount-open false
+&lt;/pre&gt;
+* &lt;u&gt;'''Short'''&lt;/u&gt;: '''KDE user? It is recommended to disable nepomuk.You can do this by running the following command.''' ''Long'': &lt;ref&gt;Nepomuk indexing the whonix_binary folder wastes some time indexing.&lt;/ref&gt;
+&lt;pre&gt;
+Start menu -&gt; System Settings -&gt; Desktop Search -&gt; uncheck Enable Nepomuk Sematic Desktop -&gt; Apply
 &lt;/pre&gt;
 * &lt;u&gt;'''Short'''&lt;/u&gt;: '''Make sure there aren't any VMs in VirtualBox already called Whonix-Gateway or Whonix-Workstation!''' &lt;br /&gt;''Long'': &lt;ref&gt;Because the build script would fail, because it tries to create VMs either named Whonix-Gateway or Whonix-Workstation.&lt;/ref&gt;
 * &lt;u&gt;'''Short'''&lt;/u&gt;: '''Check if the [[Dev/SourceCodeIntro#OpenPGP Keys|OpenPGP public keys]] are still up to date. If you are in luck, you never have to update the keys yourself and the Whonix maintainer will keep them updated.''' &lt;br /&gt;''Long'': For better security.
@@ -42903,7 +42915,7 @@ To learn about adrelanos, the person who maintains Whonix, its OpenPGP key, see 
 {{Footer}}
 
 [[Category:Development]]</text>
-      <sha1>qtwq28xx9zwqgwwe6n2yny7kjkkvees</sha1>
+      <sha1>rywifsjn48981mpc5rquy89dh4c01ba</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
