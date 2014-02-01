@@ -127,21 +127,21 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
     <ns>8</ns>
     <id>3</id>
     <revision>
-      <id>4834</id>
-      <parentid>4794</parentid>
-      <timestamp>2014-01-24T01:20:08Z</timestamp>
+      <id>4858</id>
+      <parentid>4834</parentid>
+      <timestamp>2014-02-01T18:32:32Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="1556">
+      <text xml:space="preserve" bytes="1536">
 * users
 ** Main Page|Homepage
 ** About|About
 ** Features|Features
 ** Download|Downloads
 ** Documentation|Documentation
-** https://anonymousoperatingsystem.wordpress.com/|News Blog
+** https://www.whonix.org/blog|News Blog
 ** Screenshots|Screenshots
 ** Videos|Videos
 ** Security Guide|Security Guide
@@ -186,7 +186,7 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
 ** helppage|help
 
 * LANGUAGES</text>
-      <sha1>lp2t4tcrg4332t86dwy6vg0uhliimb2</sha1>
+      <sha1>f2d9nrcnfjrrsnboa55t5yn0jh27gqk</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -665,14 +665,13 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>19</id>
     <revision>
-      <id>4827</id>
-      <parentid>4773</parentid>
-      <timestamp>2014-01-22T01:50:37Z</timestamp>
+      <id>4857</id>
+      <parentid>4827</parentid>
+      <timestamp>2014-02-01T15:33:25Z</timestamp>
       <contributor>
         <ip>127.0.0.1</ip>
       </contributor>
-      <comment>Fixed enigmail installation method, it IS in Debian/Jessie.</comment>
-      <text xml:space="preserve" bytes="20396">{{Header}}
+      <text xml:space="preserve" bytes="20284">{{Header}}
 &lt;!--
 Copyright:
 
@@ -842,11 +841,6 @@ Otherwise, follow the instructions:
 * [[Verify_the_virtual_machine_images_using_other_operating systems|For Windows or Mac]]
 
 = Install Whonix = &lt;!--T:24--&gt;
-
-== 1. Before installing == &lt;!--T:25--&gt;
-
-&lt;!--T:26--&gt;
-Read and apply the [[Pre_Install_Advice|Security Advice]].
 
 == 2. Install == &lt;!--T:27--&gt;
 
@@ -1063,7 +1057,7 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>84akn0q7657qhczcsza51amk4kmmvup</sha1>
+      <sha1>3hapev79tjvgozglrrk920onl1avoy3</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
