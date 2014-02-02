@@ -54270,15 +54270,14 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
     <ns>0</ns>
     <id>691</id>
     <revision>
-      <id>4620</id>
-      <parentid>4616</parentid>
-      <timestamp>2014-01-07T17:58:43Z</timestamp>
+      <id>4860</id>
+      <parentid>4620</parentid>
+      <timestamp>2014-02-02T13:54:42Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* How to enable AppArmor / SELinux for KVM on Debian? */</comment>
-      <text xml:space="preserve" bytes="4415">{{Header}}
+      <text xml:space="preserve" bytes="4428">{{Header}}
 
 = Links =
 * [[Special:AWCforum/st/id306/]]
@@ -54351,16 +54350,11 @@ http://serverfault.com/questions/346301/how-to-increase-video-memory-in-libvirt-
 == Script/automate creation of VM description files? ==
 So not following manual instructions is required anymore, but copy/paste some commands end up with the correct VM configuration.
 
-== Script/automate creation and upload of qcow2 images? ==
-
 == Script/automate creation and upload of raw images? ==
 Because raw images have better performance than raw images? http://www.linux-kvm.org/page/Qcow2
 
 True that performance is better, but I don't think it supports snapshots AFAIK.
 For something that supports snapshots and has better performance than qcow2 there is QED. A format developed by IBM for the QEMU project recently, that promises just that.
-
-== Verifiable Builds for qcow2 images==
-[[Verifiable Builds]] not implemented yet. The https://github.com/Whonix/Whonix/blob/master/help-steps/analyze_image requires support for qcow2 images.
 
 == Set cluster_size 512 - 2MB for better performance? ==
 HulaHoop1 wrote: The qcow2 defaults seem fine to me, however the one parameter of interest we should play with is image's : 'cluster_size' 512 - 2MB the larger the size the better performance but the size is bigger. I think we should try the largest and see if the image size stays reasonable.
@@ -54377,13 +54371,19 @@ Whonixcheck should check if /sys/devices/system/clocksource/clocksource0/current
 
 Implemented: https://github.com/Whonix/Whonix/commit/2584c3bdcd9a98181c7535f963a615d257e0fefd
 
+== Script/automate creation and upload of qcow2 images? ==
+Done.
+
+== Verifiable Builds for qcow2 images==
+The https://github.com/Whonix/Whonix/blob/master/help-steps/analyze_image requires supports raw, qcow, vdi, vmdki and qcow2 images as well as ova applicances.
+
 = Footnotes =
 &lt;references /&gt;
 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>e59m83j5a9zd9jgvglovt0sikuoswev</sha1>
+      <sha1>bwtols91yrvbn884dp66hpomgy80ke4</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
