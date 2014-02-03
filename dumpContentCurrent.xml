@@ -15870,15 +15870,15 @@ What's the point in using Skype if you and all your chat partners are also willi
     <ns>0</ns>
     <id>137</id>
     <revision>
-      <id>4604</id>
-      <parentid>4584</parentid>
-      <timestamp>2014-01-05T21:56:17Z</timestamp>
+      <id>4862</id>
+      <parentid>4861</parentid>
+      <timestamp>2014-02-03T15:00:22Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* VirtualBox */</comment>
-      <text xml:space="preserve" bytes="4022">{{Header}}
+      <comment>/* VirtualBox missing features */</comment>
+      <text xml:space="preserve" bytes="4990">{{Header}}
 {{forkme}}
 = Introduction =
 ''Whonix Example Implementation'' is based on VirtualBox. There was a development discussion about switching to a more secure Virtualization Platform and help is required.
@@ -15905,7 +15905,9 @@ Ideal:
 * [[VMware]] (proof of concept)
 * [http://qubes-os.org/ Qubes OS] as host operating system would be most interesting. It just needs someone sufficiently motivated to do a little work to make it reality, see blog post [https://sourceforge.net/p/whonix/featureblog/2013/02/running-whonix-on-top-of-qubes-os-anyone-interested-unpacking-ova-images/ Running Whonix on top of Qubes OS, anyone interested?.].
 * [https://sourceforge.net/p/whonix/discussion/general/thread/c0090dde/ Qemu / Virt-Manager] successful report in the forums
-* [[Dev/KVM]] Virt-Manager (Qemu) KVM successful report in the forums and development discussion
+* KVM
+** [[Dev/KVM]] - Virt-Manager (Qemu) KVM successful report in the forums and development discussion.
+** [[KVM]] partially finished instructions.
 
 = VirtualBox =
 == VirtualBox missing features ==
@@ -15917,6 +15919,13 @@ The following is non-ideal for [[Comparison_with_Others#Verifiable_Builds|verifi
 The following is non-ideal, because we can not warn when host operating sytems are being used we don't think are the right tool for hosting Whonix VMs:
 
 * [https://forums.virtualbox.org/viewtopic.php?f=1&amp;t=58498 Can a guest find out its host operating system?]: seems not possible.
+
+* Virtual Box uses VMDK version 3. This is non-ideal, because working with these images is difficult.
+** Converting these images is difficult.
+*** qemu-img version 1.6.1 ({{Code|qemu-img convert &quot;vmdk_file&quot; -O RAW &quot;vdi_file&quot;}}) fails with: {{Code2|qemu-img: 'image' uses a vmdk feature which is not supported by this qemu version: VMDK version 3}}, which is a [https://bugs.launchpad.net/qemu/+bug/1253465 known issue in qemu].
+*** Therefore it is required to convert them with VBoxManage to .vdi first. ({{Code|VBoxManage clonehd --format VDI &quot;vmdk_file&quot; &quot;vdi_file&quot;}})
+** Therefore the Free guestmount doesn't support mounting VMDK version 3 as well (because it internally uses qemu-img).
+** It requires proprietary software to mount them, such as the proprietary nbdkit plugin [https://github.com/libguestfs/nbdkit/blob/master/plugins/vddk/README.VDDK vddk]. We're not aware of a Free Software alternative yet.
 
 == VirtualBox no longer in Debian main ==
 * http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=709899
@@ -15938,7 +15947,7 @@ The following is non-ideal, because we can not warn when host operating sytems a
 {{Footer}}
 
 [[Category: Design]]</text>
-      <sha1>qkwvax2pvc513qtlj4tpjwuftykyri4</sha1>
+      <sha1>ss5mm1zbab8ru3m6x0khfi80iue3vxm</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -42737,14 +42746,15 @@ Please do not fix the picture links with html tags. This file gets copied to htt
     <ns>0</ns>
     <id>469</id>
     <revision>
-      <id>4847</id>
-      <parentid>4830</parentid>
-      <timestamp>2014-02-01T03:29:07Z</timestamp>
+      <id>4864</id>
+      <parentid>4863</parentid>
+      <timestamp>2014-02-03T15:18:28Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>/* Warning */</comment>
-      <text xml:space="preserve" bytes="10631">{{Header}}
+      <comment>/* Host Preparation */</comment>
+      <text xml:space="preserve" bytes="11165">{{Header}}
 {{forkme}}
 
 = Build Documentation =
@@ -42797,9 +42807,10 @@ EDITORS NOTE: The following host preparation text is duplicated on 3 pages.
 When making changes here, please consider also making changes there.
 (Not using a template, because it would probably require a version specific template.)
 --&gt;
-* You need to build on '''Debian &lt;u&gt;stable&lt;/u&gt; (currently: wheezy)'''. (How to obtain Debian safely: &lt;ref&gt;[[Debian|Debian ISO OpenPGP verification]]&lt;/ref&gt;) &lt;ref&gt;The build scripts could be adapted to run on other {{Code2|*NIX}} systems as well but currently they assume {{Code2|apt-get}} and {{Code2|grml-debootstrap}} to be available. You need about 15 GB of free space.&lt;/ref&gt;
+* You need to build on '''Debian &lt;u&gt;stable&lt;/u&gt; (currently: wheezy)'''. (How to obtain Debian safely: &lt;ref&gt;[[Debian|Debian ISO OpenPGP verification]]&lt;/ref&gt;) &lt;ref&gt;The build scripts could be adapted to run on other {{Code2|*NIX}} systems as well but currently they assume {{Code2|apt-get}} and {{Code2|grml-debootstrap}} to be available.&lt;/ref&gt;
 * Build dependencies and configurations get automatically applied, so you don't have to worry about that. &lt;ref&gt;By {{Code2|[https://github.com/Whonix/Whonix/blob/master/build-steps.d/1100_prepare-build-machine build-steps.d/1100_prepare-build-machine]}}.))&lt;/ref&gt;
 * It is recommended to set your terminal (for example Konsole) to unlimited scrollback, so you can watch the full build log.
+* You need ~ 30 GB free disk space. When you build inside a Virtual Machine using sparse files such as VirtualBox, consider assigning 100 GB free space. (Sparse files will grow as space is actually used. Won't take up space if it's not used. Easier to have the option to use more space than growing the image later.) More info: &lt;ref&gt;~ 25 GB might suffice as well. We haven't messured that in detail yet. Less space required, if you only want to build either Whonix-Gateway or Whonix-Workstation. Less space for Whonix-Gateway required than for Whonix-Workstation.&lt;/ref&gt;
 
 == Building Whonix in Whonix ==
 &lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
@@ -42909,7 +42920,7 @@ To learn about adrelanos, the person who maintains Whonix, its OpenPGP key, see 
 {{Footer}}
 
 [[Category:Development]]</text>
-      <sha1>rywifsjn48981mpc5rquy89dh4c01ba</sha1>
+      <sha1>c5tg5ntyuqtbcx7f94kgzkczoacar2w</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
