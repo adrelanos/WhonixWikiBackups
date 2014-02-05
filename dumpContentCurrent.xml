@@ -3451,15 +3451,15 @@ Anonymous Third Party Hosts for VPS hosting involve anonymous money, which is di
     <ns>0</ns>
     <id>61</id>
     <revision>
-      <id>3939</id>
-      <parentid>3934</parentid>
-      <timestamp>2013-11-03T12:55:03Z</timestamp>
+      <id>4973</id>
+      <parentid>3939</parentid>
+      <timestamp>2014-02-05T15:40:52Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <username>Jekyll</username>
+        <id>161</id>
       </contributor>
-      <comment>/* Easiest */</comment>
-      <text xml:space="preserve" bytes="9492">{{Header}}
+      <comment>/* Debian */</comment>
+      <text xml:space="preserve" bytes="9430">{{Header}}
 
 = Introduction =
 The Whonix Framework&lt;ref&gt;[[Technical_Introduction#Whonix_Framework]]&lt;/ref&gt; supports any operating system.
@@ -3573,7 +3573,7 @@ Moved to [[Ubuntu]].
 
 = Debian =
 
-Whonix-Default/Download-Version is already based on Debian jessie / testing. In case you want to build on top of stable, sid or whatever, you may be interested to read:
+Whonix-Default/Download-Version is already based on Debian Wheezy / Stable. You may be interested to read:
 
 * How to obtain Debian safely: [[Debian|Debian ISO gpg verification]]
 
@@ -3701,7 +3701,7 @@ A Whonix-Custom-Workstation ''can be made'' (Your responsibility!) as secure as 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>b58i68vxwusgcbawdzch5r4g2x3pnfj</sha1>
+      <sha1>07v58nfmgtsgj1h2s6477fjnpphvu74</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -11631,15 +11631,15 @@ What would have to be done:
     <ns>0</ns>
     <id>114</id>
     <revision>
-      <id>4151</id>
-      <parentid>4134</parentid>
-      <timestamp>2013-12-07T16:18:50Z</timestamp>
+      <id>4974</id>
+      <parentid>4151</parentid>
+      <timestamp>2014-02-05T15:41:49Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <username>Jekyll</username>
+        <id>161</id>
       </contributor>
-      <comment>/* Transfer files from the Host into Whonix-Gateway or Whonix-Workstation through ISO images */</comment>
-      <text xml:space="preserve" bytes="9722">{{Header}}
+      <comment>Removed Jessie ref</comment>
+      <text xml:space="preserve" bytes="9558">{{Header}}
 
 = Security Overview =
 
@@ -11923,7 +11923,7 @@ This step is optional. You can skip this step and come back to it if the next st
 sudo apt-get update
 &lt;/pre&gt;
 
-Install the VirtualBox vdfuse utility. Note: this only works up to Debian Wheezy. '''TODO: How to do it on Debian Testing/Jessie? [http://packages.debian.org/sid/libguestfs0 libguestfs0] could work. But it is not in Debian Testing/Jessie yet.'''
+Install the VirtualBox vdfuse utility. Note: this only works up to Debian Wheezy.
 &lt;pre&gt;
 sudo apt-get install virtualbox-fuse
 &lt;/pre&gt;
@@ -11963,7 +11963,7 @@ sudo umount /mnt/whonix
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Development]]</text>
-      <sha1>n4zeiiyx008zpc7vqomxj8nh3zz24rw</sha1>
+      <sha1>7p2d5eq281tvszs7lwcy9h16hv0gend</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -30516,15 +30516,15 @@ You can also attempt [LeakTests Leak Testing] to verify that no packets are leak
     <ns>0</ns>
     <id>254</id>
     <revision>
-      <id>4826</id>
-      <parentid>4640</parentid>
-      <timestamp>2014-01-20T23:13:12Z</timestamp>
+      <id>4976</id>
+      <parentid>4975</parentid>
+      <timestamp>2014-02-05T15:46:35Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <username>Jekyll</username>
+        <id>161</id>
       </contributor>
-      <comment>/* Why based on Testing, not stable? */</comment>
-      <text xml:space="preserve" bytes="12037">{{Header}}
+      <comment>Tense, future to now, change to reflect Wheezy migration</comment>
+      <text xml:space="preserve" bytes="12034">{{Header}}
 
 = Operating System =
 
@@ -30606,13 +30606,14 @@ Related:
 * [http://wiki.debian.org/Derivatives/Census/Whonix Derivatives Census Whonix]
 * [[Dev/Relationship With Upstream]]
 
-=== Why is Whonix 7 based on Debian Testing, not Debian Stable? ===
+=== Why was Whonix 7 based on Debian Testing, not Debian Stable? ===
+
 * Contains [http://packages.debian.org/python-stem python-stem], which is a Tor controller library. It is in use to ask for Tor's bootstrap status. This is required for whonixcheck (diagnosing connection issues) and [[Dev/TimeSync|TimeSync]] (TimeSync starts as soon as Tor is bootstrapped). See this [https://github.com/Whonix/Whonix/issues/60 ticket] for more details. The alternative, uploading python-stem to Whonix's APT Repository isn't doable given Whonix's contributor size. (It would require keeping up with the original package and updating when they update. And implementing the feature, allowing builders to build Whonix from source code without touching Whonix's APT repository for [[Trust]] reasons would also have been more difficult.)
 * Being based on stable and incorporating a few packages from testing is difficult, see this [https://github.com/Whonix/Whonix/issues/60 ticket] for details.
 * Contains build dependency [http://packages.debian.org/jessie/config-package-dev config-package-dev] &lt;u&gt;with&lt;/u&gt; debhelper support. (We could probably build on stable and just get the config-package-dev &lt;u&gt;with&lt;/u&gt; debhelper support elsewhere, but it's simpler just to require Debian testing as build operating system.
 * Stable (Wheezy) contains only obfs2 (obfsproxy [http://packages.debian.org/wheezy/obfsproxy 0.1.4]), while Testing (Jessie) contains obfs3 (obfsproxy [http://packages.debian.org/jessie/obfsproxy 0.2.3]), and obfsproxy has been recently removed from torproject's apt repository.
 
-=== Why will Whonix 8 be based on Debian Stable, not Debian Testing? ===
+=== Why is Whonix 8 based on Debian Stable, not Debian Testing? ===
 * obfs3 (obfsproxy 0.2.3) is [http://deb.torproject.org/torproject.org/dists/stable/main/binary-i386/Packages available] again in torproject's repository.
 
 === Popularity Contest ===
@@ -30645,7 +30646,7 @@ For these reasons it's not a good idea to add popcon to Whonix. If you have sugg
 {{Footer}}
 
 [[Category:Design]]</text>
-      <sha1>2sb2l662rz19fxvbt1y9v3f0rlxqf47</sha1>
+      <sha1>kujccnuzify91ktszbqgafqxwr8ycw2</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -52729,14 +52730,15 @@ To get a more complete list, install Debian (with KDE) on bare metal using the r
     <ns>0</ns>
     <id>649</id>
     <revision>
-      <id>4958</id>
-      <parentid>4957</parentid>
-      <timestamp>2014-02-04T20:10:41Z</timestamp>
+      <id>4978</id>
+      <parentid>4972</parentid>
+      <timestamp>2014-02-05T16:14:00Z</timestamp>
       <contributor>
         <username>Jekyll</username>
         <id>161</id>
       </contributor>
-      <text xml:space="preserve" bytes="8605">= 7.7.6.4 Build Documentation (short) =
+      <comment>/* Building from source */</comment>
+      <text xml:space="preserve" bytes="8894">= 7.7.6.4 Build Documentation (short) =
 
 This is a short set of instructions for building 7.7.6.4 testers-only version of Whonix (later to be modified for Whonix 8) inside VirtualBox (as opposed to the traditional process of running these commands on a system that is installed directly on the hardware).
 
@@ -53057,7 +53059,7 @@ root
 ## Take an image of your installation in case the build script fails in the middle. &quot;Machine / Take snapshot&quot;.
 
 ## Add a new repository source. 
-echo &quot;deb http://ftp.us.debian.org/debian/ wheezy main contrib&quot; &gt;&gt; /etc/apt/sources.list
+echo &quot;deb http://ftp.us.debian.org/debian/ wheezy main&quot; &gt;&gt; /etc/apt/sources.list
 
 ## Refresh package lists and upgrade
 apt-get update &amp;&amp; apt-get dist-upgrade -y
@@ -53082,6 +53084,13 @@ If you are interested in seeing a visual walk-through of the system preparation,
 Logging as root.
 
 [[File:1b.png|400px]]
+
+
+Taking a snapshot of the VM.
+
+[[File:2b.png|400px]]
+
+[[File:2bb.png|200px]]
 
 
 Adding repository to sources and running update &amp; upgrade.
@@ -53114,16 +53123,18 @@ Rebooting.
 ## (host) login with &quot;user&quot;
 user
 
+## Here you can take another snapshot to avoiding doing system preparation again next time when you build. &quot;Machine / Take snapshot&quot;.
+
 #Get source code.
 git clone https://github.com/adrelanos/nothing-to-see
 
 ## Go into the git directory
 cd nothing-to-see
 
-#Get a list of available git tags.
+## Get a list of available git tags.
 git tag
 
-#Choose which version you want to build.
+## Choose which version you want to build.
 git checkout 7.7.6.4
 &lt;/pre&gt;
 
@@ -53136,6 +53147,13 @@ If you are interested in seeing a visual walk-through of the build from source, 
 Logging as user.
 
 [[File:10b.png|400px]]
+
+
+Taking a snapshot of the VM.
+
+[[File:2b.png|400px]]
+
+[[File:12bbb.png|200px]]
 
 
 Cloning the git source.
@@ -53193,7 +53211,7 @@ Provide sudo password
 [[File:18b.png|400px]]
 &lt;/div&gt;
 &lt;/div&gt;</text>
-      <sha1>3591fidvzeo8hno78r2a60y27a3r7gd</sha1>
+      <sha1>frc9ylxlgr1s0hr9xrm5ibs1j6b7ong</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -55964,14 +55982,14 @@ Thanks für den MAT public domain screenshot an [https://www.awxcnx.de/handbuch_
     <ns>0</ns>
     <id>710</id>
     <revision>
-      <id>4810</id>
-      <timestamp>2014-01-19T19:07:27Z</timestamp>
+      <id>4979</id>
+      <parentid>4810</parentid>
+      <timestamp>2014-02-05T16:39:03Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>Created page with &quot;= Singed by New Key =  &lt;pre&gt; -----BEGIN PGP SIGNED MESSAGE----- Hash: SHA512  My old key was:  pub   4096R/0x9C131AD3713AAEEF 2012-03-02       Key fingerprint = 9B15 7153 925C...&quot;</comment>
-      <text xml:space="preserve" bytes="4412">= Singed by New Key =
+      <comment>Title typo &quot;singed&quot;</comment>
+      <text xml:space="preserve" bytes="4412">= Signed by New Key =
 
 &lt;pre&gt;
 -----BEGIN PGP SIGNED MESSAGE-----
@@ -56080,7 +56098,7 @@ E13Z1DJRfRPaW7cbNubq
 =uJW+
 -----END PGP SIGNATURE-----
 &lt;/pre&gt;</text>
-      <sha1>p3069aiue4tki9dntmy0jt4e3lm75ko</sha1>
+      <sha1>r50qehp6qtczlkcazxczpkpbja547uw</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -56838,6 +56856,61 @@ sudo -E ./build-steps.d/1100_prepare-build-machine --bare-metal --tor-gateway
     <revision>
       <id>4950</id>
       <timestamp>2014-02-04T19:37:06Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:2b.png</title>
+    <ns>6</ns>
+    <id>751</id>
+    <revision>
+      <id>4963</id>
+      <timestamp>2014-02-05T15:29:51Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:2bb.png</title>
+    <ns>6</ns>
+    <id>752</id>
+    <revision>
+      <id>4969</id>
+      <parentid>4967</parentid>
+      <timestamp>2014-02-05T15:37:18Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>Jekyll uploaded a new version of &amp;quot;[[File:2bb.png]]&amp;quot;: MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:12bbb.png</title>
+    <ns>6</ns>
+    <id>753</id>
+    <revision>
+      <id>4977</id>
+      <timestamp>2014-02-05T16:13:49Z</timestamp>
       <contributor>
         <username>Jekyll</username>
         <id>161</id>
