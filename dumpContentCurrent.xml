@@ -30787,15 +30787,16 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
     <ns>0</ns>
     <id>256</id>
     <revision>
-      <id>4781</id>
-      <parentid>4716</parentid>
-      <timestamp>2014-01-16T17:11:36Z</timestamp>
+      <id>4981</id>
+      <parentid>4980</parentid>
+      <timestamp>2014-02-06T06:11:37Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <username>Psychonot</username>
+        <id>216</id>
       </contributor>
-      <comment>/* Whonix Social Media Profiles */</comment>
-      <text xml:space="preserve" bytes="2896">{{Header}}
+      <minor/>
+      <comment>Fixing link again because I suck at wiki editting :3</comment>
+      <text xml:space="preserve" bytes="2862">{{Header}}
 = Whonix Social Media Profiles =
 
 There are some Whonix Social Media Profiles, but please don't rely on them for getting Whonix News (See [[Download#Stay Tuned|News]] for how to get Whonix related news.) and please don't use them to contact Whonix developers. (See [[Contact]] for contact information.)
@@ -30813,7 +30814,7 @@ If you don't get into trouble, by letting others to know, that you like or use W
 * '''Twitter''': [https://twitter.com/WhonixSource Secondary Twitter Account for alternative Source Code Commit Notifications]
 * '''freecode.com''': [https://freecode.com/projects/whonix/ Whonix]
 * '''ohloh''': [https://www.ohloh.net/p/Whonix/ Whonix]
-* '''wordpress''': [https://anonymousoperatingsystem.wordpress.com/ anonymousoperatingsystem]
+* '''wordpress''': [https://www.whonix.org/blog/ News Blog]
 * '''about.me''': [http://about.me/Whonix about.me/Whonix]
 * '''[http://wzrtr6gpencksu3d.onion/ gittor]''': [http://wzrtr6gpencksu3d.onion/gitlab/whonix/whonix whonix/whonix]
 
@@ -30838,7 +30839,7 @@ If you don't get into trouble, by letting others to know, that you like or use W
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>b5i8vt8terds76j31nopk1uzx9jochr</sha1>
+      <sha1>qabvecug2ceiefmm0egywlud9sd27uk</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
