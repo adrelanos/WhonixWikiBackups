@@ -1,4 +1,6 @@
- <mediawiki xmlns="http://www.mediawiki.org/xml/export-0.8/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.8/ http://www.mediawiki.org/xml/export-0.8.xsd" version="0.8" xml:lang="en">
+ 
+
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.8/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.8/ http://www.mediawiki.org/xml/export-0.8.xsd" version="0.8" xml:lang="en">
   <siteinfo>
     <sitename>Whonix</sitename>
     <base>http://localhost/wiki/Main_Page</base>
@@ -41839,41 +41841,19 @@ The Tor Project never managed to get such a downloader up and running, see {{Cod
     <ns>0</ns>
     <id>437</id>
     <revision>
-      <id>4097</id>
-      <parentid>4096</parentid>
-      <timestamp>2013-11-27T23:24:36Z</timestamp>
+      <id>4983</id>
+      <parentid>4982</parentid>
+      <timestamp>2014-02-06T21:33:45Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>Marked this version for translation</comment>
-      <text xml:space="preserve" bytes="725">{| class=&quot;mw-collapsible mw-collapsed wikitable&quot;
-! The header || remains visible
-|-
-| This  content || is hidden
-|-
-| at first || load time
-|}
+      <text xml:space="preserve" bytes="308">&lt;rss number=10 title=off desc=off&gt;https://www.whonix.org/blog/feed/rss2/&lt;/rss&gt;
 
-&lt;languages /&gt;
-&lt;translate&gt;
-&lt;!--T:1--&gt;
-Fréttinga is a small municipality in MungoLand, located on the BaMungo island.
-It hosts a population of about 400 people. It has some agriculture and fishing.
-Tourists like to visit it in the summer time. 
-It has marvelous beaches with a lot of seagulls.
+&lt;rss number=10 title=off desc=off&gt;https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10&lt;/rss&gt;
 
-== Services == &lt;!--T:2--&gt;
-
-&lt;!--T:3--&gt;
-It doesn't have many services. There is a shop and car ferry visits the island
-from mainland once a day.
-
-&lt;!--T:4--&gt;
-In 2009 January the roof of the church in the island fell down. It was rebuilt
-collaboratively in the following summer.
-&lt;/translate&gt;</text>
-      <sha1>dh1997focn9usdvbjb78zf5i248pz6g</sha1>
+&lt;rss number=10 title=off desc=off&gt;https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10;sa=news&lt;/rss&gt;</text>
+      <sha1>6hqj7bt569r7vm80oyi26h3jj72rqnk</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
