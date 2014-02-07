@@ -667,15 +667,14 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>19</id>
     <revision>
-      <id>4960</id>
-      <parentid>4857</parentid>
-      <timestamp>2014-02-05T04:44:56Z</timestamp>
+      <id>4984</id>
+      <parentid>4960</parentid>
+      <timestamp>2014-02-07T12:28:29Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>Rejected the last text change (by [[Special:Contributions/127.0.0.1|127.0.0.1]]) and restored revision 4827 by 127.0.0.1</comment>
-      <text xml:space="preserve" bytes="20396">{{Header}}
+      <comment>+file sizes</comment>
+      <text xml:space="preserve" bytes="20426">{{Header}}
 &lt;!--
 Copyright:
 
@@ -749,8 +748,8 @@ Then, have a look at the [[About]], [[Warning]] and [[DoNot|Do Not]] pages to ma
 {| class=&quot;wikitable&quot; style=&quot;text-align: center;background-color: #fff&quot;
 |- {{GrayBackground}}
 | style=&quot;height: 47px;&quot;|
-| style=&quot;white-space: nowrap; width: 137px;&quot;|'''Whonix-Gateway'''
-| style=&quot;white-space: nowrap; width: 137px;&quot;|'''Whonix-Workstation'''
+| style=&quot;white-space: nowrap; width: 137px;&quot;|'''Whonix-Gateway'''&lt;br /&gt;(1.2 GiB)
+| style=&quot;white-space: nowrap; width: 137px;&quot;|'''Whonix-Workstation'''&lt;br /&gt;(1.3 GiB)
 | style=&quot;white-space: nowrap; width: 140px;&quot;|'''[[Hide Tor and Whonix from your ISP|Anonymous Download]]&lt;br /&gt; possible &lt;ref name=anonymousdownload&gt;By using the [https://www.torproject.org/download/download-easy.html.en Tor Browser Bundle] (TBB). For an introduction, see [[Tor Browser]]. See also [[Hide Tor and Whonix from your ISP]].&lt;/ref&gt;'''
 | style=&quot;width: 135px;&quot;|'''[[Download Security]]&lt;br /&gt; without [[#Verify the Whonix images|Verification]]'''
 | style=&quot;width: 135px;&quot;|'''[[Download Security]]&lt;br /&gt; with [[#Verify the Whonix images|Verification]]'''
@@ -1066,7 +1065,7 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>84akn0q7657qhczcsza51amk4kmmvup</sha1>
+      <sha1>pqgy3blzlkbeeevlke573ragczjv03i</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -30518,15 +30517,15 @@ You can also attempt [LeakTests Leak Testing] to verify that no packets are leak
     <ns>0</ns>
     <id>254</id>
     <revision>
-      <id>4976</id>
-      <parentid>4975</parentid>
-      <timestamp>2014-02-05T15:46:35Z</timestamp>
+      <id>4985</id>
+      <parentid>4976</parentid>
+      <timestamp>2014-02-07T18:35:47Z</timestamp>
       <contributor>
-        <username>Jekyll</username>
-        <id>161</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>Tense, future to now, change to reflect Wheezy migration</comment>
-      <text xml:space="preserve" bytes="12034">{{Header}}
+      <comment>/* Why is Whonix 8 based on Debian Stable, not Debian Testing? */</comment>
+      <text xml:space="preserve" bytes="13124">{{Header}}
 
 = Operating System =
 
@@ -30616,6 +30615,11 @@ Related:
 * Stable (Wheezy) contains only obfs2 (obfsproxy [http://packages.debian.org/wheezy/obfsproxy 0.1.4]), while Testing (Jessie) contains obfs3 (obfsproxy [http://packages.debian.org/jessie/obfsproxy 0.2.3]), and obfsproxy has been recently removed from torproject's apt repository.
 
 === Why is Whonix 8 based on Debian Stable, not Debian Testing? ===
+* Sometimes severe bugs are introduced in Debian testing, such as the AppArmor [http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=732578 bug], which prevented Tor from starting for everyone until a workaround was applied.
+* Sometimes bugs are introduced which break Whonix's build script, such as [http://ml.grml.org/pipermail/grml/2014-January/011546.html this] bug related to mount, which breaks grml-debootstrap and therefore Whonix's build script or [http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=734794 this] kpartx bug.
+* Often other disturbing bugs are introduced, such as the grub bug (not able to reproduce and report upstream yet), non-functional VirtualBox Guest Additions or [http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=728399 issues] with shared folders.
+* Sometimes packages get entirely removed from Debian testing, such as enigmail wasn't available for a while in Debian testing. This is confusing and constantly creating support requests.
+* Too often, too many packages are upgraded (not just security fixes) (costs lots of time to keep up, bandwidth, system load).
 * obfs3 (obfsproxy 0.2.3) is [http://deb.torproject.org/torproject.org/dists/stable/main/binary-i386/Packages available] again in torproject's repository.
 
 === Popularity Contest ===
@@ -30648,7 +30652,7 @@ For these reasons it's not a good idea to add popcon to Whonix. If you have sugg
 {{Footer}}
 
 [[Category:Design]]</text>
-      <sha1>kujccnuzify91ktszbqgafqxwr8ycw2</sha1>
+      <sha1>dc7mqq2f2425tod3giq7oka03hvf9im</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
