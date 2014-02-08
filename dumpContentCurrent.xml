@@ -49781,15 +49781,14 @@ Whonix is produced independently of, and carries no guarantee from, The Tor Proj
     <ns>0</ns>
     <id>541</id>
     <revision>
-      <id>4714</id>
-      <parentid>4692</parentid>
-      <timestamp>2014-01-14T15:36:29Z</timestamp>
+      <id>5007</id>
+      <parentid>4714</parentid>
+      <timestamp>2014-02-08T16:03:25Z</timestamp>
       <contributor>
-        <username>FuzzyBot</username>
-        <id>37</id>
+        <username>Username</username>
+        <id>217</id>
       </contributor>
-      <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="4893">{{Header}}
+      <text xml:space="preserve" bytes="4900">{{Header}}
 
 &lt;languages /&gt;
 {{Infobox OS
@@ -49816,7 +49815,7 @@ Whonix is produced independently of, and carries no guarantee from, The Tor Proj
 | supported_platforms    = x86 compatible and/or VirtualBox + &lt;ref&gt;[[Other Operating Systems|Custom-Workstation]]: self made builds can run on any real or virtual hardware as long as they are behind a Whonix-Gateway. Tor Browser binaries are only available for a limited number of platforms (Windows, Linux, BSD, Mac).&lt;/ref&gt;
 }}
 
-[[Image:whonix.jpg|center|Whonix Concept|400px]]
+[[Image:whonix.jpg|center|Замысел Whonix|400px]]
 
 Whonix is an operating system focused on anonymity, privacy and security. It's based on the Tor anonymity network&lt;ref&gt;https://www.torproject.org/about/overview.html.en&lt;/ref&gt;, Debian GNU/Linux&lt;ref&gt;https://en.wikipedia.org/wiki/Debian&lt;/ref&gt; and security by isolation. DNS leaks are impossible, and not even malware with root privileges can find out the user's real IP. 
 
@@ -49854,7 +49853,7 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
 ---&gt;
 {{Footer}}
 [[Category:Documentation]]</text>
-      <sha1>jsvaklek0y9mrakl12p17v3r2wi09db</sha1>
+      <sha1>7ygsw2xnnmu0xfmerzpa3vopdx2hjff</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -49999,15 +49998,15 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
     <ns>1198</ns>
     <id>548</id>
     <revision>
-      <id>4231</id>
-      <timestamp>2013-12-16T16:31:38Z</timestamp>
+      <id>5006</id>
+      <parentid>4231</parentid>
+      <timestamp>2014-02-08T16:03:24Z</timestamp>
       <contributor>
-        <username>FuzzyBot</username>
-        <id>37</id>
+        <username>Username</username>
+        <id>217</id>
       </contributor>
-      <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="48">[[Image:whonix.jpg|center|Whonix Concept|400px]]</text>
-      <sha1>lpmn1wk92ov4dsbi6sutlgov3icqm42</sha1>
+      <text xml:space="preserve" bytes="55">[[Image:whonix.jpg|center|Замысел Whonix|400px]]</text>
+      <sha1>pfe7varu949wov7buelm41y8f5yycrw</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -56903,6 +56902,273 @@ sudo -E ./build-steps.d/1100_prepare-build-machine --bare-metal --tor-gateway
       <comment>MsUpload</comment>
       <text xml:space="preserve" bytes="8">MsUpload</text>
       <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/Page display title/ru</title>
+    <ns>1198</ns>
+    <id>754</id>
+    <revision>
+      <id>4986</id>
+      <timestamp>2014-02-08T14:36:48Z</timestamp>
+      <contributor>
+        <username>Username</username>
+        <id>217</id>
+      </contributor>
+      <comment>Created page with &quot;Главная&quot;</comment>
+      <text xml:space="preserve" bytes="14">Главная</text>
+      <sha1>tvyxel72t5emdeosh9jii71l2ix6hoj</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Main Page/ru</title>
+    <ns>0</ns>
+    <id>755</id>
+    <revision>
+      <id>5005</id>
+      <parentid>5003</parentid>
+      <timestamp>2014-02-08T15:56:52Z</timestamp>
+      <contributor>
+        <username>Username</username>
+        <id>217</id>
+      </contributor>
+      <text xml:space="preserve" bytes="6716">{{Header}}
+
+&lt;languages /&gt;
+{{Infobox OS
+| logo                   = [[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|alt=Download Whonix]]
+| name                   = Whonix
+| screenshot             = [[Image:kde0_5_0.png|Whonix-Workstation 0.5.6 с рабочим столом KDE |200px]]
+| caption                = Whonix-Workstation 0.5.6 с рабочим столом KDE 
+| разработчик              = none / Разработчики Whonix 
+| тип                 = [https://en.wikipedia.org/wiki/Unix-like Unix-like], на основе [https://en.wikipedia.org/wiki/Debian Debian]
+| тип_исходного_кода           = [https://en.wikipedia.org/wiki/Open_source Open Source] 
+| текущее_состояние          = разрабатывается
+| выпущено               = 29 февраля 2012
+| последняя_версия = [[Загрузить|{{Версия}}]]
+| дата_последней_версии    = {{Начальная дата и срок|2013|10|11|df=да}}
+| последняя_тестовая_версия    = 7.7.2
+| дата_последней_тестовой версии       = {{Начальная дата и срок|2014|01|13|df=да}}
+| цель распространения       = Анонимность; Конфиденциальность; Безопасность; Приватность; [[HostingLocationHiddenServices|Location Hidden Servers]]
+| тип_ядра            = [https://en.wikipedia.org/wiki/Monolithic_kernel Монолитное] ([https://en.wikipedia.org/wiki/Linux_kernel Ядро Linux])
+| интерфейс                     = [https://en.wikipedia.org/wiki/KDE KDE]
+| лицензия                = [https://en.wikipedia.org/wiki/Free_software Свободное ПО], главным образом [https://en.wikipedia.org/wiki/GNU_GPL GNU GPL], и другие лицензии &lt;ref&gt;{{cite web|url=http://www.debian.org/legal/licenses/|title=License information|publisher=Debian|accessdate=2009-02-28}}&lt;/ref&gt;
+| website                = [https://www.whonix.org https]; &lt;html&gt;&lt;a class=&quot;link-https&quot; style=&quot;color: #3366BB&quot; href=&quot;http://zo7fksnun4b4v4jv.onion&quot; rel=&quot;nofollow&quot;&gt;.onion&lt;/a&gt;&lt;/html&gt;
+| способ обновления            = [https://en.wikipedia.org/wiki/Advanced_Packaging_Tool APT] (имеется несколько программ для обновления)
+| ранее было            = [https://trac.torproject.org/projects/tor/wiki/doc/JanusVM JanusVM]&lt;ref&gt;http://www.webcitation.org/6IA21tFaM&lt;/ref&gt;; [http://www.makeuseof.com/tag/browse-email-safely-anonymously-torbox/ TorBOX]&lt;ref&gt;http://www.webcitation.org/6IA20bIq5&lt;/ref&gt;
+| поддерживаемые_платформы    = совместимые с x86 и/или VirtualBox + &lt;ref&gt;[[Другие операционные системы|сконфигурированные под себя рабочие станции]]: собственные сборки могут работать на любом реальном или виртуальном программном обеспечении при условии, что они работают через Whonix-Gateway. Запускаемые файлы Tor-браузера доступны только для ограниченного числа платформ (Windows, Linux, BSD, Mac).&lt;/ref&gt;
+}}
+
+[[Image:whonix.jpg|center|Замысел Whonix|400px]]
+
+Whonix является операционной системой, нацеленной на обеспечение анонимности, приватности и безопасности данных. В её основе лежит Сеть Анонимизации Tor&lt;ref&gt;https://www.torproject.org/about/overview.html.en&lt;/ref&gt;, Debian GNU/Linux&lt;ref&gt;https://en.wikipedia.org/wiki/Debian&lt;/ref&gt; и безопасность за счёт изоляции потоков. Утечки DNS-запросов невозможны, и даже программы-шпионы с правами корневого пользователя не способны выяснить реальный IP пользователя. 
+
+Whonix состоит из двух частей: первая обеспечивает соединение с/работу Tor и действует как шлюз, поэтому и называется Whonix-Gateway (Whonix-шлюз). Вторая, именуемая Whonix-Workstation (Whonix-Рабочая станция), находится в совершенно изолированной сети. Любые соединения возможны только через Tor.
+
+Для получения дополнительной информации по безопасности данных и анонимности, обеспечиваемых в ОС Whonix, обратитесь к странице [[О|О Whonix]]
+
+[[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|alt=Загрузить Whonix]]
+
+= Screenshots =
+&lt;gallery&gt;
+Image:kde0_5_0.png|Whonix-Workstation 0.5.6 with KDE Desktop
+Image:whonixcheck_gui.png|[[whonixcheck]]
+Image:timesync_gui.png|[[TimeSync]]
+Image:stream_isolation.1.0.jpg|[[Stream Isolation]]
+Image:mat.png|MAT - [[Metadata]] Anonymisation Toolkit
+Image:flash_leak_test.png|[[Browser Plugins|Flash]] Leak Test SocksPort and TransPort
+Image:Thunderbird_17.0.png|Mozilla Thunderbird (called Icedove in Debian) with TorBirdy, see [[E-Mail]]
+Image:xchat_screenshot_created_by_adrelanos.png|[[XChat]], IRC Chat Client
+Image:torbrowser.png|[[Tor Browser]], privacy by design. Fighting web fingerprinting and linkability.
+Image:shield_badge.png|Whonix is a member of the [http://internetdefenseleague.org Internet Defense League].
+Image:OIN_logo_200px.png|Whonix is a [http://www.openinventionnetwork.com/licensees.php licensee] of the [https://en.wikipedia.org/wiki/Open_Invention_Network Open Invention Network].
+Image:donate.png|link=Donate|[[Donate|Donate to Whonix!]]
+&lt;/gallery&gt;
+
+= Сноски =
+ОС Whonix выпускается независимо от Проекта Tor, и последний не предоставляет никаких гарантий в отношении её&lt;ref&gt;https://www.torproject.org&lt;/ref&gt;.
+
+&lt;ссылки /&gt;
+
+Thanks to Tomchen1989 from Wikimedia Commons for the download button! [https://commons.wikimedia.org/wiki/File:Download_Button.svg 1] ([http://www.webcitation.org/6I2DQzdu0 w])
+Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_43.htm awxcnx.de]!
+&lt;!---
+&lt;a href=&quot;https://plus.google.com/108150429836421683225&quot; rel=&quot;publisher&quot;&gt;Google+&lt;/a&gt;
+---&gt;
+{{Footer}}
+[[Category:Documentation]]</text>
+      <sha1>q0j2eol2gh0twn4eeep3ljjdurl468d</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/1/ru</title>
+    <ns>1198</ns>
+    <id>756</id>
+    <revision>
+      <id>4988</id>
+      <timestamp>2014-02-08T14:56:19Z</timestamp>
+      <contributor>
+        <username>Username</username>
+        <id>217</id>
+      </contributor>
+      <comment>Created page with &quot;{{Infobox OS | logo                   = [[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|alt=Download Whonix]] | name                   = Whonix | ...&quot;</comment>
+      <text xml:space="preserve" bytes="3378">{{Infobox OS
+| logo                   = [[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|alt=Download Whonix]]
+| name                   = Whonix
+| screenshot             = [[Image:kde0_5_0.png|Whonix-Workstation 0.5.6 с рабочим столом KDE |200px]]
+| caption                = Whonix-Workstation 0.5.6 с рабочим столом KDE 
+| разработчик              = none / Разработчики Whonix 
+| тип                 = [https://en.wikipedia.org/wiki/Unix-like Unix-like], на основе [https://en.wikipedia.org/wiki/Debian Debian]
+| тип_исходного_кода           = [https://en.wikipedia.org/wiki/Open_source Open Source] 
+| текущее_состояние          = разрабатывается
+| выпущено               = 29 февраля 2012
+| последняя_версия = [[Загрузить|{{Версия}}]]
+| дата_последней_версии    = {{Начальная дата и срок|2013|10|11|df=да}}
+| последняя_тестовая_версия    = 7.7.2
+| дата_последней_тестовой версии       = {{Начальная дата и срок|2014|01|13|df=да}}
+| цель распространения       = Анонимность; Конфиденциальность; Безопасность; Приватность; [[HostingLocationHiddenServices|Location Hidden Servers]]
+| тип_ядра            = [https://en.wikipedia.org/wiki/Monolithic_kernel Монолитное] ([https://en.wikipedia.org/wiki/Linux_kernel Ядро Linux])
+| интерфейс                     = [https://en.wikipedia.org/wiki/KDE KDE]
+| лицензия                = [https://en.wikipedia.org/wiki/Free_software Свободное ПО], главным образом [https://en.wikipedia.org/wiki/GNU_GPL GNU GPL], и другие лицензии &lt;ref&gt;{{cite web|url=http://www.debian.org/legal/licenses/|title=License information|publisher=Debian|accessdate=2009-02-28}}&lt;/ref&gt;
+| website                = [https://www.whonix.org https]; &lt;html&gt;&lt;a class=&quot;link-https&quot; style=&quot;color: #3366BB&quot; href=&quot;http://zo7fksnun4b4v4jv.onion&quot; rel=&quot;nofollow&quot;&gt;.onion&lt;/a&gt;&lt;/html&gt;
+| способ обновления            = [https://en.wikipedia.org/wiki/Advanced_Packaging_Tool APT] (имеется несколько программ для обновления)
+| ранее было            = [https://trac.torproject.org/projects/tor/wiki/doc/JanusVM JanusVM]&lt;ref&gt;http://www.webcitation.org/6IA21tFaM&lt;/ref&gt;; [http://www.makeuseof.com/tag/browse-email-safely-anonymously-torbox/ TorBOX]&lt;ref&gt;http://www.webcitation.org/6IA20bIq5&lt;/ref&gt;
+| поддерживаемые_платформы    = совместимые с x86 и/или VirtualBox + &lt;ref&gt;[[Другие операционные системы|сконфигурированные под себя рабочие станции]]: собственные сборки могут работать на любом реальном или виртуальном программном обеспечении при условии, что они работают через Whonix-Gateway. Запускаемые файлы Tor-браузера доступны только для ограниченного числа платформ (Windows, Linux, BSD, Mac).&lt;/ref&gt;
+}}</text>
+      <sha1>qcrarzmegzmj0hx0bj4x6w3x42lgwkn</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/3/ru</title>
+    <ns>1198</ns>
+    <id>757</id>
+    <revision>
+      <id>4990</id>
+      <timestamp>2014-02-08T15:01:53Z</timestamp>
+      <contributor>
+        <username>Username</username>
+        <id>217</id>
+      </contributor>
+      <comment>Created page with &quot;Whonix является операционной системой, нацеленной на обеспечение анонимности, приватности и безо...&quot;</comment>
+      <text xml:space="preserve" bytes="721">Whonix является операционной системой, нацеленной на обеспечение анонимности, приватности и безопасности данных. В её основе лежит Сеть Анонимизации Tor&lt;ref&gt;https://www.torproject.org/about/overview.html.en&lt;/ref&gt;, Debian GNU/Linux&lt;ref&gt;https://en.wikipedia.org/wiki/Debian&lt;/ref&gt; и безопасность за счёт изоляции потоков. Утечки DNS-запросов невозможны, и даже программы-шпионы с правами корневого пользователя не способны выяснить реальный IP пользователя.</text>
+      <sha1>2gjp9hx278vbkjtosyxek6ptcfetdto</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/5/ru</title>
+    <ns>1198</ns>
+    <id>758</id>
+    <revision>
+      <id>4992</id>
+      <timestamp>2014-02-08T15:04:57Z</timestamp>
+      <contributor>
+        <username>Username</username>
+        <id>217</id>
+      </contributor>
+      <comment>Created page with &quot;Для получения дополнительной информации по безопасности данных и анонимности, обеспечиваемых ...&quot;</comment>
+      <text xml:space="preserve" bytes="248">Для получения дополнительной информации по безопасности данных и анонимности, обеспечиваемых в ОС Whonix, обратитесь к странице [[О|О Whonix]]</text>
+      <sha1>o3ijd4im2tchu3vs5gzzdzad2fq2bzc</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/8/ru</title>
+    <ns>1198</ns>
+    <id>759</id>
+    <revision>
+      <id>5004</id>
+      <parentid>4994</parentid>
+      <timestamp>2014-02-08T15:56:51Z</timestamp>
+      <contributor>
+        <username>Username</username>
+        <id>217</id>
+      </contributor>
+      <text xml:space="preserve" bytes="248">= Сноски =
+ОС Whonix выпускается независимо от Проекта Tor, и последний не предоставляет никаких гарантий в отношении её&lt;ref&gt;https://www.torproject.org&lt;/ref&gt;.</text>
+      <sha1>rji23zr5rk3mdg0qb80prxlr58egzbf</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/9/ru</title>
+    <ns>1198</ns>
+    <id>760</id>
+    <revision>
+      <id>4996</id>
+      <timestamp>2014-02-08T15:28:54Z</timestamp>
+      <contributor>
+        <username>Username</username>
+        <id>217</id>
+      </contributor>
+      <comment>Created page with &quot;&lt;ссылки /&gt;&quot;</comment>
+      <text xml:space="preserve" bytes="16">&lt;ссылки /&gt;</text>
+      <sha1>copgo7oy2auam71lfr4dprl1gpm0sok</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/6/ru</title>
+    <ns>1198</ns>
+    <id>761</id>
+    <revision>
+      <id>4998</id>
+      <timestamp>2014-02-08T15:29:57Z</timestamp>
+      <contributor>
+        <username>Username</username>
+        <id>217</id>
+      </contributor>
+      <comment>Created page with &quot;[[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|alt=Загрузить Whonix]]&quot;</comment>
+      <text xml:space="preserve" bytes="108">[[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|alt=Загрузить Whonix]]</text>
+      <sha1>ax7nuvz87o2rf1coa813y2rl4z03r09</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/2/ru</title>
+    <ns>1198</ns>
+    <id>762</id>
+    <revision>
+      <id>5000</id>
+      <timestamp>2014-02-08T15:31:35Z</timestamp>
+      <contributor>
+        <username>Username</username>
+        <id>217</id>
+      </contributor>
+      <comment>Created page with &quot;[[Image:whonix.jpg|center|Замысел Whonix|400px]]&quot;</comment>
+      <text xml:space="preserve" bytes="55">[[Image:whonix.jpg|center|Замысел Whonix|400px]]</text>
+      <sha1>pfe7varu949wov7buelm41y8f5yycrw</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/4/ru</title>
+    <ns>1198</ns>
+    <id>763</id>
+    <revision>
+      <id>5002</id>
+      <timestamp>2014-02-08T15:36:38Z</timestamp>
+      <contributor>
+        <username>Username</username>
+        <id>217</id>
+      </contributor>
+      <comment>Created page with &quot;Whonix состоит из двух частей: первая обеспечивает соединение с/работу Tor и действует как шлюз, поэ...&quot;</comment>
+      <text xml:space="preserve" bytes="490">Whonix состоит из двух частей: первая обеспечивает соединение с/работу Tor и действует как шлюз, поэтому и называется Whonix-Gateway (Whonix-шлюз). Вторая, именуемая Whonix-Workstation (Whonix-Рабочая станция), находится в совершенно изолированной сети. Любые соединения возможны только через Tor.</text>
+      <sha1>012ztsaijkcyg8y4t90ab0mc3zx542f</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
