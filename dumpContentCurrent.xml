@@ -50146,15 +50146,14 @@ Image:donate.png|link=Donate|[[Donate|Donate to Whonix!]]
     <ns>0</ns>
     <id>554</id>
     <revision>
-      <id>5137</id>
-      <parentid>5134</parentid>
-      <timestamp>2014-02-10T01:06:18Z</timestamp>
+      <id>5246</id>
+      <parentid>5244</parentid>
+      <timestamp>2014-02-10T18:44:47Z</timestamp>
       <contributor>
-        <username>FuzzyBot</username>
-        <id>37</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="20600">{{Header}}
+      <text xml:space="preserve" bytes="21695">{{Header}}
 &lt;!--
 Copyright:
 
@@ -50358,17 +50357,22 @@ You should regularly check for operating system updates on your host operating s
 
 [[Image:whonixcheck_gui.png|[[whonixcheck]]|thumb]]
 
-There is no auto-update feature for Tor Browser. You will be notified about new Tor Browser versions by [[whonixcheck]]. Tor Browser's built in update check mechanism also works in Whonix. For instructions how to update the browser, see [[Tor Browser]]. Additionally it might also be wise to subscribe to https://blog.torproject.org for news.
+Функция автоматического обновления Tor-браузера не внедрена.
+[[whonixcheck|whonix-проверка]] будет уведомлять вас о наличии новых
+версий Tor-браузера. Встроенный в Tor-браузер механизм проверки наличия
+новых версий работает и в Whonix. Для получения информации по конкретным
+действиям по обновлению браузера, см. [[Tor Browser|Tor-браузер]]. Также имеет смысл
+подписаться на новости на сайте https://blog.torproject.org.
 
-== Whonix Version Check and Whonix News ==
-[[File:whonixcheck created by adrelanos.png|thumb|{{Code|Whonix Version Check}} (first rectangle in black) and&lt;br /&gt;{{Code|Whonix News}} &lt;br /&gt;(second rectangle in green)]]
-Furthermore you will be automatically notified about new Whonix versions by {{Code|Whonix Version Check}} and about the most important occurrences&lt;ref&gt;Such as when a version becomes unsupported, if manual action is required, if major features break, or if security vulnerabilities are found. The policy is to use {{Code|Whonix News}} as rarely as possible.&lt;/ref&gt; by {{Code|Whonix News}}, both of which are part of [[whonixcheck]].
+[[File:whonixcheck created by adrelanos.png|thumb|{{Code|Проверка версии Whonix}} (первый прямоугольник чёрного цвета) и&lt;br /&gt;{{Code|Новости
+Whonix}} &lt;br /&gt;(второй прямоугольник зелёного цвета)]] Также, благодаря {{Code|Проверке версии Whonix}} вы будете получать автоматические уведомления о новых версиях и о самых важных событиях &lt;ref&gt;, например, о том, что версия перестала поддерживаться, или о том, что требуется какое-либо действие, перестали работать какие-либо функции или были обнаружены уязвимости в системе обеспечения безопасности. Согласно замыслу необходимость в пользовании {{Code|Новостями Whonix}} сведена к минимуму.&lt;/ref&gt; за счёт {{Code|Новостей Whonix}}, они являются частью [[whonixcheck|whonix-проверки]].
 
 == Social Media Profiles ==
 
 There are some [[Official Whonix Online Profiles|Whonix Social Media Profiles]], but please don't rely on them for getting Whonix News and please don't use them to contact Whonix developers. (See [[Contact]] for contact information.)
 
-Because some people will do so even though it is not recommended, messages from the Whonix Feature Blog will be automatically mirrored to [https://twitter.com/Whonix Whonix Twitter Profile], to [https://www.facebook.com/Whonix Whonix Facebook Profile] and to [https://plus.google.com/108150429836421683225/ Whonix Google+ Profile].
+Поскольку некоторые люди будут пользоваться названными группами вопреки нашим рекомендациям, постольку сообщения из Блога Функций Whonix будут
+автоматически отображаться в [https://twitter.com/Whonix Twitter группе Whonix], в [https://www.facebook.com/Whonix Facebook группе Whonix] и в [https://plus.google.com/108150429836421683225/ Google+ группе Whonix].
 
 If you won't get into trouble by letting others learn about Whonix, feel free to follow or like those profiles (with your anonymous account) as a little way to [[Contribute]].
 
@@ -50505,7 +50509,7 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>hy1bz5lhv4vjoke85kc1my2ungjpc5n</sha1>
+      <sha1>mqic6ynjziv6gmy5d49piumjexz8509</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -51052,17 +51056,16 @@ See also [[Security_in_Real_World | Whonix security in real world]], [[Security_
     <ns>1198</ns>
     <id>570</id>
     <revision>
-      <id>4256</id>
-      <timestamp>2013-12-16T16:36:32Z</timestamp>
+      <id>5245</id>
+      <parentid>4256</parentid>
+      <timestamp>2014-02-10T18:44:46Z</timestamp>
       <contributor>
-        <username>FuzzyBot</username>
-        <id>37</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="646">== Whonix Version Check and Whonix News ==
-[[File:whonixcheck created by adrelanos.png|thumb|{{Code|Whonix Version Check}} (first rectangle in black) and&lt;br /&gt;{{Code|Whonix News}} &lt;br /&gt;(second rectangle in green)]]
-Furthermore you will be automatically notified about new Whonix versions by {{Code|Whonix Version Check}} and about the most important occurrences&lt;ref&gt;Such as when a version becomes unsupported, if manual action is required, if major features break, or if security vulnerabilities are found. The policy is to use {{Code|Whonix News}} as rarely as possible.&lt;/ref&gt; by {{Code|Whonix News}}, both of which are part of [[whonixcheck]].</text>
-      <sha1>q7uiwbvevrfku5k7g5y5v1iq3kz13cf</sha1>
+      <text xml:space="preserve" bytes="1191">[[File:whonixcheck created by adrelanos.png|thumb|{{Code|Проверка версии Whonix}} (первый прямоугольник чёрного цвета) и&lt;br /&gt;{{Code|Новости
+Whonix}} &lt;br /&gt;(второй прямоугольник зелёного цвета)]] Также, благодаря {{Code|Проверке версии Whonix}} вы будете получать автоматические уведомления о новых версиях и о самых важных событиях &lt;ref&gt;, например, о том, что версия перестала поддерживаться, или о том, что требуется какое-либо действие, перестали работать какие-либо функции или были обнаружены уязвимости в системе обеспечения безопасности. Согласно замыслу необходимость в пользовании {{Code|Новостями Whonix}} сведена к минимуму.&lt;/ref&gt; за счёт {{Code|Новостей Whonix}}, они являются частью [[whonixcheck|whonix-проверки]].</text>
+      <sha1>1litiql5zwo674jjhi1bnf7syqlgfzn</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -51274,15 +51277,20 @@ sudo apt-get dist-upgrade
     <ns>1198</ns>
     <id>581</id>
     <revision>
-      <id>4267</id>
-      <timestamp>2013-12-16T16:38:23Z</timestamp>
+      <id>5241</id>
+      <parentid>4267</parentid>
+      <timestamp>2014-02-10T18:34:37Z</timestamp>
       <contributor>
-        <username>FuzzyBot</username>
-        <id>37</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="342">There is no auto-update feature for Tor Browser. You will be notified about new Tor Browser versions by [[whonixcheck]]. Tor Browser's built in update check mechanism also works in Whonix. For instructions how to update the browser, see [[Tor Browser]]. Additionally it might also be wise to subscribe to https://blog.torproject.org for news.</text>
-      <sha1>9hqse0lzce5vp9lcw6yyric03e0vobz</sha1>
+      <text xml:space="preserve" bytes="699">Функция автоматического обновления Tor-браузера не внедрена.
+[[whonixcheck|whonix-проверка]] будет уведомлять вас о наличии новых
+версий Tor-браузера. Встроенный в Tor-браузер механизм проверки наличия
+новых версий работает и в Whonix. Для получения информации по конкретным
+действиям по обновлению браузера, см. [[Tor Browser|Tor-браузер]]. Также имеет смысл
+подписаться на новости на сайте https://blog.torproject.org.</text>
+      <sha1>ks17fqr3ncfb2lg6r7c4ra78kf9jd0p</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -52251,16 +52259,16 @@ More info [http://lists.debian.org/debian-derivatives/2013/08/msg00000.html here
     <ns>1198</ns>
     <id>635</id>
     <revision>
-      <id>5130</id>
-      <parentid>5107</parentid>
-      <timestamp>2014-02-10T00:57:11Z</timestamp>
+      <id>5243</id>
+      <parentid>5130</parentid>
+      <timestamp>2014-02-10T18:36:00Z</timestamp>
       <contributor>
-        <username>FuzzyBot</username>
-        <id>37</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="331">Because some people will do so even though it is not recommended, messages from the Whonix Feature Blog will be automatically mirrored to [https://twitter.com/Whonix Whonix Twitter Profile], to [https://www.facebook.com/Whonix Whonix Facebook Profile] and to [https://plus.google.com/108150429836421683225/ Whonix Google+ Profile].</text>
-      <sha1>bbpupckyja81kto3eus92z3tszvde6c</sha1>
+      <text xml:space="preserve" bytes="524">Поскольку некоторые люди будут пользоваться названными группами вопреки нашим рекомендациям, постольку сообщения из Блога Функций Whonix будут
+автоматически отображаться в [https://twitter.com/Whonix Twitter группе Whonix], в [https://www.facebook.com/Whonix Facebook группе Whonix] и в [https://plus.google.com/108150429836421683225/ Google+ группе Whonix].</text>
+      <sha1>hsefed8bq9w1i3eu79mjpqia2q8p84c</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -57096,38 +57104,39 @@ sudo -E ./build-steps.d/1100_prepare-build-machine --bare-metal --tor-gateway
     <ns>0</ns>
     <id>755</id>
     <revision>
-      <id>5178</id>
-      <parentid>5176</parentid>
-      <timestamp>2014-02-10T10:31:45Z</timestamp>
+      <id>5240</id>
+      <parentid>5238</parentid>
+      <timestamp>2014-02-10T18:29:44Z</timestamp>
       <contributor>
-        <username>Username</username>
-        <id>217</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="7315">{{Header}}
+      <text xml:space="preserve" bytes="6958">{{Header}}
 
 &lt;languages /&gt;
 {{Infobox OS
 | logo                   = [[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|alt=Download Whonix]]
 | name                   = Whonix
-| screenshot             = [[Image:kde0_5_0.png|Whonix-Workstation 0.5.6 с рабочим столом KDE |200px]]
-| caption                = Whonix-Workstation 0.5.6 с рабочим столом KDE 
-| разработчик              = нет / Разработчики Whonix 
-| тип                 = [https://en.wikipedia.org/wiki/Unix-like Unix-like], на основе [https://en.wikipedia.org/wiki/Debian Debian]
-| тип_исходного_кода           = [https://en.wikipedia.org/wiki/Open_source Open Source] 
-| текущее_состояние          = разрабатывается
-| выпущено               = 29 февраля 2012
-| последняя_версия = [[Загрузить|{{Версия}}]]
-| дата_последней_версии    = {{Начальная дата и срок|2013|10|11|df=да}}
-| последняя_тестовая_версия    = 7.7.2
-| дата_последней_тестовой версии       = {{Начальная дата и срок|2014|01|13|df=да}}
-| цель распространения       = Анонимность; Конфиденциальность; Безопасность; Приватность; [[HostingLocationHiddenServices|Location Hidden Servers]]
-| тип_ядра            = [https://en.wikipedia.org/wiki/Monolithic_kernel Монолитное] ([https://en.wikipedia.org/wiki/Linux_kernel Ядро Linux])
-| интерфейс                     = [https://en.wikipedia.org/wiki/KDE KDE]
-| лицензия                = [https://en.wikipedia.org/wiki/Free_software Свободное ПО], главным образом [https://en.wikipedia.org/wiki/GNU_GPL GNU GPL], и другие лицензии &lt;ref&gt;{{cite web|url=http://www.debian.org/legal/licenses/|title=License information|publisher=Debian|accessdate=2009-02-28}}&lt;/ref&gt;
+| screenshot             = [[Image:kde0_5_0.png|Whonix-Workstation 0.5.6 с рабочим столом KDE|200px]]
+| caption                = Whonix-Workstation 0.5.6 с рабочим столом KDE
+| developer              = нет / Разработчики Whonix
+| family                 = [https://en.wikipedia.org/wiki/Unix-like Unix-подобная], на основе [https://en.wikipedia.org/wiki/Debian Debian]
+| source_model           = [https://en.wikipedia.org/wiki/Open_source
+Открытый исходный код]
+| working_state          = разрабатывается
+| released               = 29 февраля 2012
+| latest_release_version = [[Download|{{Version}}]]
+| latest_release_date    = {{Start date and age|2013|10|11|df=yes}}
+| latest_test_version    = 7.7.2
+| latest_test_date       = {{Start date and age|2014|01|13|df=yes}}
+| marketing target       = marketing target       = Анонимность; Конфиденциальность; Безопасность; Приватность; [[HostingLocationHiddenServices|Location Hidden Servers]]
+| kernel_type            = [https://en.wikipedia.org/wiki/Monolithic_kernel Монолитное] ([https://en.wikipedia.org/wiki/Linux_kernel Ядро Linux])
+| ui                     = [https://en.wikipedia.org/wiki/KDE KDE]
+| license                = [https://en.wikipedia.org/wiki/Free_software Свободное ПО], главным образом [https://en.wikipedia.org/wiki/GNU_GPL GNU GPL], и другие лицензии &lt;ref&gt;{{cite web|url=http://www.debian.org/legal/licenses/|title=License information|publisher=Debian|accessdate=2009-02-28}}&lt;/ref&gt;
 | website                = [https://www.whonix.org https]; &lt;html&gt;&lt;a class=&quot;link-https&quot; style=&quot;color: #3366BB&quot; href=&quot;http://zo7fksnun4b4v4jv.onion&quot; rel=&quot;nofollow&quot;&gt;.onion&lt;/a&gt;&lt;/html&gt;
-| способ обновления            = [https://en.wikipedia.org/wiki/Advanced_Packaging_Tool APT] (имеется несколько программ для обновления)
-| ранее было            = [https://trac.torproject.org/projects/tor/wiki/doc/JanusVM JanusVM]&lt;ref&gt;http://www.webcitation.org/6IA21tFaM&lt;/ref&gt;; [http://www.makeuseof.com/tag/browse-email-safely-anonymously-torbox/ TorBOX]&lt;ref&gt;http://www.webcitation.org/6IA20bIq5&lt;/ref&gt;
-| поддерживаемые_платформы    = совместимые с x86 и/или VirtualBox + &lt;ref&gt;[[Другие операционные системы|сконфигурированные под себя рабочие станции]]: собственные сборки могут работать на любом реальном или виртуальном программном обеспечении при условии, что они работают через Whonix-Gateway. Запускаемые файлы Tor-браузера доступны только для ограниченного числа платформ (Windows, Linux, BSD, Mac).&lt;/ref&gt;
+| updatemodel            = [https://en.wikipedia.org/wiki/Advanced_Packaging_Tool APT] (имеется несколько программ для обновления)
+| preceded_by            = [https://trac.torproject.org/projects/tor/wiki/doc/JanusVM JanusVM]&lt;ref&gt;http://www.webcitation.org/6IA21tFaM&lt;/ref&gt;; [http://www.makeuseof.com/tag/browse-email-safely-anonymously-torbox/ TorBOX]&lt;ref&gt;http://www.webcitation.org/6IA20bIq5&lt;/ref&gt;
+| supported_platforms    = x86 compatible and/or VirtualBox + &lt;ref&gt;[[Other Operating Systems|Workstation-собственной-сборки]]: собственные сборки могут работать на любом реальном или виртуальном аппаратном обеспечении при условии, что они соединяются с Интернетом через Whonix-Gateway (Whonix-шлюз). Уже скомпилированные запускаемые файлы предлагаются только для ограниченного числа платформ (Windows, Linux, BSD, Mac).&lt;/ref&gt;
 }}
 
 [[Image:whonix.jpg|center|Замысел Whonix|400px]]
@@ -57140,34 +57149,19 @@ Whonix состоит из двух частей: первая обеспечи�
 
 [[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|alt=Загрузить Whonix]]
 
-
-
-
-I don't know why but I cannot save any changes to the Screenshots
-section of the main page.
-
-Maybe u can do it
-
 = Скриншоты =
 &lt;gallery&gt;
 Image:kde0_5_0.png|Whonix-Workstation 0.5.6 с рабочим столом KDE
-Image:whonixcheck_gui.png|[[whonix-проверка]]
-Image:timesync_gui.png|[[Синхронизация времени]]
-Image:stream_isolation.1.0.jpg|[[Изоляция потоков]]
-Image:mat.png|MAT - Набор инструментов анонимизации [[Метаданных]]
-Image:flash_leak_test.png|[[Дополнения браузера|Флэш]] Проверка утечек
-через SocksPort и TransPort
-Image:Thunderbird_17.0.png|Mozilla Thunderbird (именуемая &quot;Icedove&quot; в ОС
-Debian) с TorBirdy, см. [[E-Mail]]
+Image:whonixcheck_gui.png|[[whonixcheck|whonix-проверка]]
+Image:timesync_gui.png|[[TimeSync|Синхронизация времени]]
+Image:stream_isolation.1.0.jpg|[[Stream Isolation|Изоляция потоков]]
+Image:mat.png|MAT - Набор инструментов анонимизации [[Metadata|Метаданных]]
+Image:flash_leak_test.png|[[Browser Plugins|Флэш]] Проверка утечек через SocksPort и TransPort
+Image:Thunderbird_17.0.png|Mozilla Thunderbird (именуемая &quot;Icedove&quot; в ОС Debian) с TorBirdy, см. [[E-Mail]]
 Image:xchat_screenshot_created_by_adrelanos.png|[[XChat]], Чат-клиент IRC
-Image:torbrowser.png|[[Tor-браузер]], приватность за счёт конструкции.
-Борьба c отпечатками пальцев и распознаванием корреляцией.
-Image:shield_badge.png|Whonix состоит в
-[http://internetdefenseleague.org Лиге защиты в Интернете].
-Image:OIN_logo_200px.png|Whonix является
-[http://www.openinventionnetwork.com/licensees.php лицензиатом]
-[https://en.wikipedia.org/wiki/Open_Invention_Network Сети открытых
-изобретений].
+Image:torbrowser.png|[[Tor Browser|Tor-браузер]], приватность за счёт конструкции. Борьба c отпечатками пальцев и распознаванием корреляцией.
+Image:shield_badge.png|Whonix состоит в [http://internetdefenseleague.org Лиге защиты в Интернете].
+Image:OIN_logo_200px.png|Whonix является [http://www.openinventionnetwork.com/licensees.php лицензиатом] [https://en.wikipedia.org/wiki/Open_Invention_Network Сети открытых изобретений].
 Image:donate.png|link=Donate|[[Donate|Финансово поддержать Whonix!]]
 &lt;/gallery&gt;
 
@@ -57184,7 +57178,7 @@ Image:donate.png|link=Donate|[[Donate|Финансово поддержать Wh
 &lt;!--- &lt;a href=&quot;https://plus.google.com/108150429836421683225&quot; rel=&quot;publisher&quot;&gt;Google+&lt;/a&gt; ---&gt;
 {{Footer}}
 [[Category:Documentation]]</text>
-      <sha1>5ndus50ii5spqf53zytotqwykp0rrib</sha1>
+      <sha1>hmm4bjizjqhs1zh915pxzn9ott2vkff</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -57194,37 +57188,38 @@ Image:donate.png|link=Donate|[[Donate|Финансово поддержать Wh
     <ns>1198</ns>
     <id>756</id>
     <revision>
-      <id>5177</id>
-      <parentid>4988</parentid>
-      <timestamp>2014-02-10T10:31:45Z</timestamp>
+      <id>5239</id>
+      <parentid>5237</parentid>
+      <timestamp>2014-02-10T18:29:43Z</timestamp>
       <contributor>
-        <username>Username</username>
-        <id>217</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="3380">{{Infobox OS
+      <text xml:space="preserve" bytes="3101">{{Infobox OS
 | logo                   = [[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|alt=Download Whonix]]
 | name                   = Whonix
-| screenshot             = [[Image:kde0_5_0.png|Whonix-Workstation 0.5.6 с рабочим столом KDE |200px]]
-| caption                = Whonix-Workstation 0.5.6 с рабочим столом KDE 
-| разработчик              = нет / Разработчики Whonix 
-| тип                 = [https://en.wikipedia.org/wiki/Unix-like Unix-like], на основе [https://en.wikipedia.org/wiki/Debian Debian]
-| тип_исходного_кода           = [https://en.wikipedia.org/wiki/Open_source Open Source] 
-| текущее_состояние          = разрабатывается
-| выпущено               = 29 февраля 2012
-| последняя_версия = [[Загрузить|{{Версия}}]]
-| дата_последней_версии    = {{Начальная дата и срок|2013|10|11|df=да}}
-| последняя_тестовая_версия    = 7.7.2
-| дата_последней_тестовой версии       = {{Начальная дата и срок|2014|01|13|df=да}}
-| цель распространения       = Анонимность; Конфиденциальность; Безопасность; Приватность; [[HostingLocationHiddenServices|Location Hidden Servers]]
-| тип_ядра            = [https://en.wikipedia.org/wiki/Monolithic_kernel Монолитное] ([https://en.wikipedia.org/wiki/Linux_kernel Ядро Linux])
-| интерфейс                     = [https://en.wikipedia.org/wiki/KDE KDE]
-| лицензия                = [https://en.wikipedia.org/wiki/Free_software Свободное ПО], главным образом [https://en.wikipedia.org/wiki/GNU_GPL GNU GPL], и другие лицензии &lt;ref&gt;{{cite web|url=http://www.debian.org/legal/licenses/|title=License information|publisher=Debian|accessdate=2009-02-28}}&lt;/ref&gt;
+| screenshot             = [[Image:kde0_5_0.png|Whonix-Workstation 0.5.6 с рабочим столом KDE|200px]]
+| caption                = Whonix-Workstation 0.5.6 с рабочим столом KDE
+| developer              = нет / Разработчики Whonix
+| family                 = [https://en.wikipedia.org/wiki/Unix-like Unix-подобная], на основе [https://en.wikipedia.org/wiki/Debian Debian]
+| source_model           = [https://en.wikipedia.org/wiki/Open_source
+Открытый исходный код]
+| working_state          = разрабатывается
+| released               = 29 февраля 2012
+| latest_release_version = [[Download|{{Version}}]]
+| latest_release_date    = {{Start date and age|2013|10|11|df=yes}}
+| latest_test_version    = 7.7.2
+| latest_test_date       = {{Start date and age|2014|01|13|df=yes}}
+| marketing target       = marketing target       = Анонимность; Конфиденциальность; Безопасность; Приватность; [[HostingLocationHiddenServices|Location Hidden Servers]]
+| kernel_type            = [https://en.wikipedia.org/wiki/Monolithic_kernel Монолитное] ([https://en.wikipedia.org/wiki/Linux_kernel Ядро Linux])
+| ui                     = [https://en.wikipedia.org/wiki/KDE KDE]
+| license                = [https://en.wikipedia.org/wiki/Free_software Свободное ПО], главным образом [https://en.wikipedia.org/wiki/GNU_GPL GNU GPL], и другие лицензии &lt;ref&gt;{{cite web|url=http://www.debian.org/legal/licenses/|title=License information|publisher=Debian|accessdate=2009-02-28}}&lt;/ref&gt;
 | website                = [https://www.whonix.org https]; &lt;html&gt;&lt;a class=&quot;link-https&quot; style=&quot;color: #3366BB&quot; href=&quot;http://zo7fksnun4b4v4jv.onion&quot; rel=&quot;nofollow&quot;&gt;.onion&lt;/a&gt;&lt;/html&gt;
-| способ обновления            = [https://en.wikipedia.org/wiki/Advanced_Packaging_Tool APT] (имеется несколько программ для обновления)
-| ранее было            = [https://trac.torproject.org/projects/tor/wiki/doc/JanusVM JanusVM]&lt;ref&gt;http://www.webcitation.org/6IA21tFaM&lt;/ref&gt;; [http://www.makeuseof.com/tag/browse-email-safely-anonymously-torbox/ TorBOX]&lt;ref&gt;http://www.webcitation.org/6IA20bIq5&lt;/ref&gt;
-| поддерживаемые_платформы    = совместимые с x86 и/или VirtualBox + &lt;ref&gt;[[Другие операционные системы|сконфигурированные под себя рабочие станции]]: собственные сборки могут работать на любом реальном или виртуальном программном обеспечении при условии, что они работают через Whonix-Gateway. Запускаемые файлы Tor-браузера доступны только для ограниченного числа платформ (Windows, Linux, BSD, Mac).&lt;/ref&gt;
+| updatemodel            = [https://en.wikipedia.org/wiki/Advanced_Packaging_Tool APT] (имеется несколько программ для обновления)
+| preceded_by            = [https://trac.torproject.org/projects/tor/wiki/doc/JanusVM JanusVM]&lt;ref&gt;http://www.webcitation.org/6IA21tFaM&lt;/ref&gt;; [http://www.makeuseof.com/tag/browse-email-safely-anonymously-torbox/ TorBOX]&lt;ref&gt;http://www.webcitation.org/6IA20bIq5&lt;/ref&gt;
+| supported_platforms    = x86 compatible and/or VirtualBox + &lt;ref&gt;[[Other Operating Systems|Workstation-собственной-сборки]]: собственные сборки могут работать на любом реальном или виртуальном аппаратном обеспечении при условии, что они соединяются с Интернетом через Whonix-Gateway (Whonix-шлюз). Уже скомпилированные запускаемые файлы предлагаются только для ограниченного числа платформ (Windows, Linux, BSD, Mac).&lt;/ref&gt;
 }}</text>
-      <sha1>2mkf265taywf6q62jn5fq6pocg14csd</sha1>
+      <sha1>advgo9pwsyyqvf7ma7isguvc412mibm</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -57379,14 +57374,15 @@ Image:donate.png|link=Donate|[[Donate|Финансово поддержать Wh
     <ns>0</ns>
     <id>765</id>
     <revision>
-      <id>5162</id>
-      <parentid>5160</parentid>
-      <timestamp>2014-02-10T07:03:40Z</timestamp>
+      <id>5234</id>
+      <parentid>5232</parentid>
+      <timestamp>2014-02-10T12:53:25Z</timestamp>
       <contributor>
-        <username>УчастникOpenID2</username>
-        <id>220</id>
+        <username>Username</username>
+        <id>217</id>
       </contributor>
-      <text xml:space="preserve" bytes="24155">{{Header}}
+      <comment>Created page with &quot;Ветка помощи на форуме: [[Special:AWCforum/st/id287/new_tor_and_debian_updates_today....html]]&quot;</comment>
+      <text xml:space="preserve" bytes="26670">{{Header}}
 &lt;!--
 Copyright:
 
@@ -57591,62 +57587,62 @@ Whonix virtual machine images are cryptographically signed using OpenPGP&lt;ref&
 
 Около '''Tor Browser Recommended''', вы можете увидеть ярлык на рабочем столе, см. [[Image:important.png|r]], он запустит оба {{Code|Новостных блога Whonix}} с сохранением вашей анонимности. В случае нехватки времени рекомендуется периодически читать хотя бы {{Code|Важный блог Whonix}}. Если вас вообще интересуют вопросы анонимности/приватности/безопасности или вы хотите узнать о текущих разработках по Whonix, посетите {{Code|Блог функций Whonix}}.
 
-== Operating System Updates ==
+== Обновления операционной системы ==
 
-You should regularly check for operating system updates on your host operating system, on Whonix-Workstation and on Whonix-Gateway as highly recommended in the [[Security Guide]].
+Необходимо регулярно проверять наличие обновлений для вашей основной (негостевой) операционной системы, Whonix-Workstation (Whonix-Рабочей станции) и Whonix-Gateway (Whonix-шлюза) в соответствии с рекомендациями  [[Руководства по безопасности]]
 
-== Tor Browser ==
+== Tor-браузер ==
 
-[[Image:whonixcheck_gui.png|[[whonixcheck]]|thumb]]
+[[Image:whonixcheck_gui.png|[[whonix-проверка]]|thumb]]
 
 There is no auto-update feature for Tor Browser. You will be notified about new Tor Browser versions by [[whonixcheck]]. Tor Browser's built in update check mechanism also works in Whonix. For instructions how to update the browser, see [[Tor Browser]]. Additionally it might also be wise to subscribe to https://blog.torproject.org for news.
 
-== Whonix Version Check and Whonix News ==
-[[File:whonixcheck created by adrelanos.png|thumb|{{Code|Whonix Version Check}} (first rectangle in black) and&lt;br /&gt;{{Code|Whonix News}} &lt;br /&gt;(second rectangle in green)]]
-Furthermore you will be automatically notified about new Whonix versions by {{Code|Whonix Version Check}} and about the most important occurrences&lt;ref&gt;Such as when a version becomes unsupported, if manual action is required, if major features break, or if security vulnerabilities are found. The policy is to use {{Code|Whonix News}} as rarely as possible.&lt;/ref&gt; by {{Code|Whonix News}}, both of which are part of [[whonixcheck]].
+== Проверка версии Whonix и Новости Whonix ==
+[[File:whonixcheck created by adrelanos.png|thumb|{{Code|Проверка версии Whonix}} (первый прямоугольник чёрного цвета) и&lt;br /&gt;{{Code|Новости Whonix}} &lt;br /&gt;(второй прямоугольник зелёного цвета)]]
+Также, благодаря {{Code|Проверке версии Whonix}} вы будете получать автоматические уведомления о новых версиях и о самых важных событиях &lt;ref&gt;, например, о том, что версия перестала поддерживаться, или о том, что требуется какое-либо действие, перестали работать какие-либо функции или были обнаружены уязвимости в системе обеспечения безопасности. Согласно замыслу необходимость в пользовании {{Code|Новостями Whonix}} сведена к минимуму.&lt;/ref&gt; за счёт {{Code|Новостей Whonix}}, они являются частью [[whonix-проверки]].
 
-== Social Media Profiles ==
+== Группы в социальных сетях ==
 
-There are some [[Official Whonix Online Profiles|Whonix Social Media Profiles]], but please don't rely on them for getting Whonix News and please don't use them to contact Whonix developers. (See [[Contact]] for contact information.)
+Существует несколько [[Official Whonix Online Profiles|Групп Whonix в социальных сетях]], однако не полагайтесь на них в плане получения Новостей Whonix, и по мере возможности избегайте использовать их для связи с разработчиками Whonix.  (См. [[Контакты]] для получения контактной информации.)
 
 Because some people will do so even though it is not recommended, messages from the Whonix Feature Blog will be automatically mirrored to [https://twitter.com/Whonix Whonix Twitter Profile], to [https://www.facebook.com/Whonix Whonix Facebook Profile] and to [https://plus.google.com/108150429836421683225/ Whonix Google+ Profile].
 
-If you won't get into trouble by letting others learn about Whonix, feel free to follow or like those profiles (with your anonymous account) as a little way to [[Contribute]].
+Если распространение вами информации о Whonix не несёт для вас никакой угрозы, можете свободно пользоваться этими группами и ставить им оценки &quot;нравится&quot; (используя анонимную учётную запись), чтобы [[Внести вклад]] для поддержания ОС Whonix.
 
-== Source Code ==
+== Исходный код ==
 
-In case you are interested in Whonix source code updates, [[Dev/git#subscribe_to_code_changes|subscribe to code changes]].
+Если вас интересуют обновления исходного кода Whonix, [[Dev/git#subscribe_to_code_changes|подпишитесь на получение информации по изменениям в исходном коде]].
 
-= Known bugs =
-== Normal ==
-=== Connection Issues - Tor stops working after an Upgrade and needs a Workaround ===
-When upgrading to Tor 0.2.4.19-1~d79.jessie+1 (using sudo apt-get dist-upgrade), your Tor connection may go down. There is a temporary workaround.
+= Известные программные ошибки =
+== Типичные ==
+=== Проблемы с соединением - После обновления Tor перестаёт работать и требуется обходное решение ===
+При обновлении Tor до 0.2.4.19-1~d79.jessie+1 (командой sudo apt-get dist-upgrade), соединение с Tor может перестать работать. Существует временный метод обхода этой проблемы.
 
-Open /etc/default/tor.
+Откройте /etc/default/tor.
 
 &lt;pre&gt;
-## If you are using a graphical Whonix-Gateway, use:
+## Если вы используете Whonix-Gateway с графическим интерфейсом, введите команду:
 kdesudo kate /etc/default/tor
 
-## Or alternatively, if you are using a terminal-only Whonix-Gateway, use:
+## Если вы используете Whonix-Gateway без графического интерфейса (графической оболочки окон), введите команду:
 sudo nano /etc/default/tor
 &lt;/pre&gt;
 
-Scroll down, near bottom comment in (by removing the # in front of it).
+Выполните прокрутку вниз, около нижней части удалите символ комментирования (символ # в начале строки).
 
 &lt;pre&gt;
 USE_AA_EXEC=&quot;no&quot;
 &lt;/pre&gt;
 
-Then try:
+Затем введите:
 
 &lt;pre&gt;
 sudo service tor restart
 &lt;/pre&gt;
 
-You should keep that in mind and undo that change when Whonix or Tor fixes that bug. We'll keep you posted. (See [[Download#Stay_tuned]] and [[Security_Guide#Recommendation_to_install_latest_security_updates_on_all_systems]].)
+Помните, что после устранения этой программной ошибки разработчиком Whonix или Tor необходимо будет вернуть изменённую строку в прежнее состояние до изменения. Когда эта программная ошибка будет исправлена, мы уведомим вас об этом. (См. [[Download#Stay_tuned]] и [[Security_Guide#Recommendation_to_install_latest_security_updates_on_all_systems]].)
 
-Forum help thread:
+Ветка помощи на форуме:
 [[Special:AWCforum/st/id287/new_tor_and_debian_updates_today....html]]
 
 === Tor Browser Updater (Whonix) ===
@@ -57746,7 +57742,7 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>mtsmhhtju3gnrhatu9xg698voc88q6c</sha1>
+      <sha1>bhifrlyxnz7q272cew0nzfq6t1gcjuk</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -58511,44 +58507,29 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
     <ns>1198</ns>
     <id>804</id>
     <revision>
-      <id>5175</id>
-      <parentid>5173</parentid>
-      <timestamp>2014-02-10T10:15:17Z</timestamp>
+      <id>5235</id>
+      <parentid>5215</parentid>
+      <timestamp>2014-02-10T18:26:02Z</timestamp>
       <contributor>
-        <username>Username</username>
-        <id>217</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="1540">
-
-
-I don't know why but I cannot save any changes to the Screenshots
-section of the main page.
-
-Maybe u can do it
-
-= Скриншоты =
+      <text xml:space="preserve" bytes="1462">= Скриншоты =
 &lt;gallery&gt;
 Image:kde0_5_0.png|Whonix-Workstation 0.5.6 с рабочим столом KDE
-Image:whonixcheck_gui.png|[[whonix-проверка]]
-Image:timesync_gui.png|[[Синхронизация времени]]
-Image:stream_isolation.1.0.jpg|[[Изоляция потоков]]
-Image:mat.png|MAT - Набор инструментов анонимизации [[Метаданных]]
-Image:flash_leak_test.png|[[Дополнения браузера|Флэш]] Проверка утечек
-через SocksPort и TransPort
-Image:Thunderbird_17.0.png|Mozilla Thunderbird (именуемая &quot;Icedove&quot; в ОС
-Debian) с TorBirdy, см. [[E-Mail]]
+Image:whonixcheck_gui.png|[[whonixcheck|whonix-проверка]]
+Image:timesync_gui.png|[[TimeSync|Синхронизация времени]]
+Image:stream_isolation.1.0.jpg|[[Stream Isolation|Изоляция потоков]]
+Image:mat.png|MAT - Набор инструментов анонимизации [[Metadata|Метаданных]]
+Image:flash_leak_test.png|[[Browser Plugins|Флэш]] Проверка утечек через SocksPort и TransPort
+Image:Thunderbird_17.0.png|Mozilla Thunderbird (именуемая &quot;Icedove&quot; в ОС Debian) с TorBirdy, см. [[E-Mail]]
 Image:xchat_screenshot_created_by_adrelanos.png|[[XChat]], Чат-клиент IRC
-Image:torbrowser.png|[[Tor-браузер]], приватность за счёт конструкции.
-Борьба c отпечатками пальцев и распознаванием корреляцией.
-Image:shield_badge.png|Whonix состоит в
-[http://internetdefenseleague.org Лиге защиты в Интернете].
-Image:OIN_logo_200px.png|Whonix является
-[http://www.openinventionnetwork.com/licensees.php лицензиатом]
-[https://en.wikipedia.org/wiki/Open_Invention_Network Сети открытых
-изобретений].
+Image:torbrowser.png|[[Tor Browser|Tor-браузер]], приватность за счёт конструкции. Борьба c отпечатками пальцев и распознаванием корреляцией.
+Image:shield_badge.png|Whonix состоит в [http://internetdefenseleague.org Лиге защиты в Интернете].
+Image:OIN_logo_200px.png|Whonix является [http://www.openinventionnetwork.com/licensees.php лицензиатом] [https://en.wikipedia.org/wiki/Open_Invention_Network Сети открытых изобретений].
 Image:donate.png|link=Donate|[[Donate|Финансово поддержать Whonix!]]
 &lt;/gallery&gt;</text>
-      <sha1>pt3bgrhvg9h08u0bbatu1dfagd09vp3</sha1>
+      <sha1>0cwisj7d7bvbrey5mfgmpzjvcb886je</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -58946,6 +58927,380 @@ After manually upgrading Tor Browser (see above)... To start Tor Browser, got to
 | style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification&gt;It does not matter if you did the bulk download over an insecure channel, if you use OpenPGP verification at the end.&lt;/ref&gt;
 |- style=&quot;height: 47px&quot;</text>
       <sha1>p8pht9zziznxns549oa86agwgw9s4g8</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/41/ru</title>
+    <ns>1198</ns>
+    <id>825</id>
+    <revision>
+      <id>5179</id>
+      <timestamp>2014-02-10T11:05:09Z</timestamp>
+      <contributor>
+        <username>Username</username>
+        <id>217</id>
+      </contributor>
+      <comment>Created page with &quot;== Обновления операционной системы ==&quot;</comment>
+      <text xml:space="preserve" bytes="66">== Обновления операционной системы ==</text>
+      <sha1>rli11cnil6bzs9ifdjfsfmwz3yy2hs1</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/42/ru</title>
+    <ns>1198</ns>
+    <id>826</id>
+    <revision>
+      <id>5181</id>
+      <timestamp>2014-02-10T11:07:47Z</timestamp>
+      <contributor>
+        <username>Username</username>
+        <id>217</id>
+      </contributor>
+      <comment>Created page with &quot;Необходимо регулярно проверять наличие обновлений для вашей основной (негостевой) операционно...&quot;</comment>
+      <text xml:space="preserve" bytes="407">Необходимо регулярно проверять наличие обновлений для вашей основной (негостевой) операционной системы, Whonix-Workstation (Whonix-Рабочей станции) и Whonix-Gateway (Whonix-шлюза) в соответствии с рекомендациями  [[Руководства по безопасности]]</text>
+      <sha1>cfpbn6s3fljjjsvk4u37yvssd4504ub</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/43/ru</title>
+    <ns>1198</ns>
+    <id>827</id>
+    <revision>
+      <id>5183</id>
+      <timestamp>2014-02-10T11:08:30Z</timestamp>
+      <contributor>
+        <username>Username</username>
+        <id>217</id>
+      </contributor>
+      <comment>Created page with &quot;== Tor-браузер ==&quot;</comment>
+      <text xml:space="preserve" bytes="24">== Tor-браузер ==</text>
+      <sha1>47hf7vjocb78aptowmihw0raq8btzaz</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/44/ru</title>
+    <ns>1198</ns>
+    <id>828</id>
+    <revision>
+      <id>5185</id>
+      <timestamp>2014-02-10T11:09:11Z</timestamp>
+      <contributor>
+        <username>Username</username>
+        <id>217</id>
+      </contributor>
+      <comment>Created page with &quot;[[Image:whonixcheck_gui.png|[[whonix-проверка]]|thumb]]&quot;</comment>
+      <text xml:space="preserve" bytes="63">[[Image:whonixcheck_gui.png|[[whonix-проверка]]|thumb]]</text>
+      <sha1>8wd5b6xj0t4erjxccc16yyj9gb0qsis</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/46/ru</title>
+    <ns>1198</ns>
+    <id>829</id>
+    <revision>
+      <id>5187</id>
+      <timestamp>2014-02-10T11:34:15Z</timestamp>
+      <contributor>
+        <username>Username</username>
+        <id>217</id>
+      </contributor>
+      <comment>Created page with &quot;== Проверка версии Whonix и Новости Whonix == File:whonixcheck created by adrelanos.png|thumb|{{Code|Проверка версии Whonix}} (первы...&quot;</comment>
+      <text xml:space="preserve" bytes="1247">== Проверка версии Whonix и Новости Whonix ==
+[[File:whonixcheck created by adrelanos.png|thumb|{{Code|Проверка версии Whonix}} (первый прямоугольник чёрного цвета) и&lt;br /&gt;{{Code|Новости Whonix}} &lt;br /&gt;(второй прямоугольник зелёного цвета)]]
+Также, благодаря {{Code|Проверке версии Whonix}} вы будете получать автоматические уведомления о новых версиях и о самых важных событиях &lt;ref&gt;, например, о том, что версия перестала поддерживаться, или о том, что требуется какое-либо действие, перестали работать какие-либо функции или были обнаружены уязвимости в системе обеспечения безопасности. Согласно замыслу необходимость в пользовании {{Code|Новостями Whonix}} сведена к минимуму.&lt;/ref&gt; за счёт {{Code|Новостей Whonix}}, они являются частью [[whonix-проверки]].</text>
+      <sha1>34uyrhtpu9jhsswckwwc4mdoklun2b1</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/47/ru</title>
+    <ns>1198</ns>
+    <id>830</id>
+    <revision>
+      <id>5189</id>
+      <timestamp>2014-02-10T11:37:47Z</timestamp>
+      <contributor>
+        <username>Username</username>
+        <id>217</id>
+      </contributor>
+      <comment>Created page with &quot;== Группы в социальных сетях ==&quot;</comment>
+      <text xml:space="preserve" bytes="53">== Группы в социальных сетях ==</text>
+      <sha1>lppyprqhmaqyqae5qa9pulmx1jim6yv</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/48/ru</title>
+    <ns>1198</ns>
+    <id>831</id>
+    <revision>
+      <id>5191</id>
+      <timestamp>2014-02-10T11:42:43Z</timestamp>
+      <contributor>
+        <username>Username</username>
+        <id>217</id>
+      </contributor>
+      <comment>Created page with &quot;Существует несколько [[Official Whonix Online Profiles|Групп Whonix в социальных сетях]], однако не полагайтесь на...&quot;</comment>
+      <text xml:space="preserve" bytes="486">Существует несколько [[Official Whonix Online Profiles|Групп Whonix в социальных сетях]], однако не полагайтесь на них в плане получения Новостей Whonix, и по мере возможности избегайте использовать их для связи с разработчиками Whonix.  (См. [[Контакты]] для получения контактной информации.)</text>
+      <sha1>6agahjfyy8anztpenphxnllped7te05</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/52/ru</title>
+    <ns>1198</ns>
+    <id>832</id>
+    <revision>
+      <id>5193</id>
+      <timestamp>2014-02-10T11:54:40Z</timestamp>
+      <contributor>
+        <username>Username</username>
+        <id>217</id>
+      </contributor>
+      <comment>Created page with &quot;Если распространение вами информации о Whonix не несёт для вас никакой угрозы, можете свободно пол...&quot;</comment>
+      <text xml:space="preserve" bytes="427">Если распространение вами информации о Whonix не несёт для вас никакой угрозы, можете свободно пользоваться этими группами и ставить им оценки &quot;нравится&quot; (используя анонимную учётную запись), чтобы [[Внести вклад]] для поддержания ОС Whonix.</text>
+      <sha1>muglwj9cbggjjye4g9gzua0234gmwxl</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/53/ru</title>
+    <ns>1198</ns>
+    <id>833</id>
+    <revision>
+      <id>5195</id>
+      <timestamp>2014-02-10T11:55:23Z</timestamp>
+      <contributor>
+        <username>Username</username>
+        <id>217</id>
+      </contributor>
+      <comment>Created page with &quot;== Исходный код ==&quot;</comment>
+      <text xml:space="preserve" bytes="29">== Исходный код ==</text>
+      <sha1>pnmcnxxd5u0oe733nxrjavyi4uyav4p</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/54/ru</title>
+    <ns>1198</ns>
+    <id>834</id>
+    <revision>
+      <id>5197</id>
+      <timestamp>2014-02-10T11:58:27Z</timestamp>
+      <contributor>
+        <username>Username</username>
+        <id>217</id>
+      </contributor>
+      <comment>Created page with &quot;Если вас интересуют обновления исходного кода Whonix, Dev/git#subscribe_to_code_changes|подпишитесь на получени...&quot;</comment>
+      <text xml:space="preserve" bytes="255">Если вас интересуют обновления исходного кода Whonix, [[Dev/git#subscribe_to_code_changes|подпишитесь на получение информации по изменениям в исходном коде]].</text>
+      <sha1>g3r4u7ormoseccp3tty9l4lydhclqqd</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/55/ru</title>
+    <ns>1198</ns>
+    <id>835</id>
+    <revision>
+      <id>5201</id>
+      <timestamp>2014-02-10T12:07:39Z</timestamp>
+      <contributor>
+        <username>Username</username>
+        <id>217</id>
+      </contributor>
+      <comment>Created page with &quot;= Известные программные ошибки = == Типичные == === Проблемы с соединением - После обновления Tor пере...&quot;</comment>
+      <text xml:space="preserve" bytes="534">= Известные программные ошибки =
+== Типичные ==
+=== Проблемы с соединением - После обновления Tor перестаёт работать и требуется обходное решение ===
+При обновлении Tor до 0.2.4.19-1~d79.jessie+1 (командой sudo apt-get dist-upgrade), соединение с Tor может перестать работать. Существует временный метод обхода этой проблемы.</text>
+      <sha1>p0qqytj90moo5i2f4ixewd1wn4h9g7q</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/74/ru</title>
+    <ns>1198</ns>
+    <id>836</id>
+    <revision>
+      <id>5219</id>
+      <timestamp>2014-02-10T12:37:53Z</timestamp>
+      <contributor>
+        <username>Username</username>
+        <id>217</id>
+      </contributor>
+      <comment>Created page with &quot;Откройте /etc/default/tor.&quot;</comment>
+      <text xml:space="preserve" bytes="34">Откройте /etc/default/tor.</text>
+      <sha1>fndvdsw1flt9hmmoayvldxlhaf9sspt</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/75/ru</title>
+    <ns>1198</ns>
+    <id>837</id>
+    <revision>
+      <id>5221</id>
+      <timestamp>2014-02-10T12:39:26Z</timestamp>
+      <contributor>
+        <username>Username</username>
+        <id>217</id>
+      </contributor>
+      <comment>Created page with &quot;&lt;pre&gt; ## Если вы используете Whonix-Gateway с графическим интерфейсом, введите команду: kdesudo kate /etc/default/tor&quot;</comment>
+      <text xml:space="preserve" bytes="171">&lt;pre&gt;
+## Если вы используете Whonix-Gateway с графическим интерфейсом, введите команду:
+kdesudo kate /etc/default/tor</text>
+      <sha1>jfuabnwck2oicig8hx8b9kb5y750yel</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/76/ru</title>
+    <ns>1198</ns>
+    <id>838</id>
+    <revision>
+      <id>5223</id>
+      <timestamp>2014-02-10T12:41:37Z</timestamp>
+      <contributor>
+        <username>Username</username>
+        <id>217</id>
+      </contributor>
+      <comment>Created page with &quot;## Если вы используете Whonix-Gateway без графического интерфейса (графической оболочки окон), введите ...&quot;</comment>
+      <text xml:space="preserve" bytes="224">## Если вы используете Whonix-Gateway без графического интерфейса (графической оболочки окон), введите команду:
+sudo nano /etc/default/tor
+&lt;/pre&gt;</text>
+      <sha1>iynuezd0y26t9yzfxpwrka0i0rewi6m</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/77/ru</title>
+    <ns>1198</ns>
+    <id>839</id>
+    <revision>
+      <id>5225</id>
+      <timestamp>2014-02-10T12:45:31Z</timestamp>
+      <contributor>
+        <username>Username</username>
+        <id>217</id>
+      </contributor>
+      <comment>Created page with &quot;Выполните прокрутку вниз, около нижней части удалите символ комментирования (символ # в начале ...&quot;</comment>
+      <text xml:space="preserve" bytes="188">Выполните прокрутку вниз, около нижней части удалите символ комментирования (символ # в начале строки).</text>
+      <sha1>asfluyt09tj7ya77w6gp4rz2yue8637</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/78/ru</title>
+    <ns>1198</ns>
+    <id>840</id>
+    <revision>
+      <id>5227</id>
+      <timestamp>2014-02-10T12:46:06Z</timestamp>
+      <contributor>
+        <username>Username</username>
+        <id>217</id>
+      </contributor>
+      <comment>Created page with &quot;&lt;pre&gt; USE_AA_EXEC=&quot;no&quot; &lt;/pre&gt;&quot;</comment>
+      <text xml:space="preserve" bytes="29">&lt;pre&gt;
+USE_AA_EXEC=&quot;no&quot;
+&lt;/pre&gt;</text>
+      <sha1>hlb6mskjxizsjyckwnh9m60dpjbjmpi</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/79/ru</title>
+    <ns>1198</ns>
+    <id>841</id>
+    <revision>
+      <id>5228</id>
+      <timestamp>2014-02-10T12:46:26Z</timestamp>
+      <contributor>
+        <username>Username</username>
+        <id>217</id>
+      </contributor>
+      <comment>Created page with &quot;Затем введите:&quot;</comment>
+      <text xml:space="preserve" bytes="26">Затем введите:</text>
+      <sha1>4fdynpkaw72s7r6ftld0ymahbih8sgv</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/80/ru</title>
+    <ns>1198</ns>
+    <id>842</id>
+    <revision>
+      <id>5230</id>
+      <timestamp>2014-02-10T12:46:31Z</timestamp>
+      <contributor>
+        <username>Username</username>
+        <id>217</id>
+      </contributor>
+      <comment>Created page with &quot;&lt;pre&gt; sudo service tor restart &lt;/pre&gt;&quot;</comment>
+      <text xml:space="preserve" bytes="37">&lt;pre&gt;
+sudo service tor restart
+&lt;/pre&gt;</text>
+      <sha1>ehdp0ym52xxutdoqj2w1nfl1v03493d</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/81/ru</title>
+    <ns>1198</ns>
+    <id>843</id>
+    <revision>
+      <id>5231</id>
+      <timestamp>2014-02-10T12:51:58Z</timestamp>
+      <contributor>
+        <username>Username</username>
+        <id>217</id>
+      </contributor>
+      <comment>Created page with &quot;Помните, что после устранения этой программной ошибки разработчиком Whonix или Tor необходимо буде...&quot;</comment>
+      <text xml:space="preserve" bytes="538">Помните, что после устранения этой программной ошибки разработчиком Whonix или Tor необходимо будет вернуть изменённую строку в прежнее состояние до изменения. Когда эта программная ошибка будет исправлена, мы уведомим вас об этом. (См. [[Download#Stay_tuned]] и [[Security_Guide#Recommendation_to_install_latest_security_updates_on_all_systems]].)</text>
+      <sha1>gex614c863oy4hk0t9yghmwyzn8mf0a</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/82/ru</title>
+    <ns>1198</ns>
+    <id>844</id>
+    <revision>
+      <id>5233</id>
+      <timestamp>2014-02-10T12:53:24Z</timestamp>
+      <contributor>
+        <username>Username</username>
+        <id>217</id>
+      </contributor>
+      <comment>Created page with &quot;Ветка помощи на форуме: [[Special:AWCforum/st/id287/new_tor_and_debian_updates_today....html]]&quot;</comment>
+      <text xml:space="preserve" bytes="113">Ветка помощи на форуме:
+[[Special:AWCforum/st/id287/new_tor_and_debian_updates_today....html]]</text>
+      <sha1>p0xhr4mfidmflzp37r34pueiw2z39o1</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
