@@ -667,14 +667,15 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>19</id>
     <revision>
-      <id>4984</id>
-      <parentid>4960</parentid>
-      <timestamp>2014-02-07T12:28:29Z</timestamp>
+      <id>5136</id>
+      <parentid>5135</parentid>
+      <timestamp>2014-02-10T01:06:13Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>+file sizes</comment>
-      <text xml:space="preserve" bytes="20426">{{Header}}
+      <comment>Marked this version for translation</comment>
+      <text xml:space="preserve" bytes="21672">{{Header}}
 &lt;!--
 Copyright:
 
@@ -755,6 +756,24 @@ Then, have a look at the [[About]], [[Warning]] and [[DoNot|Do Not]] pages to ma
 | style=&quot;width: 135px;&quot;|'''[[Download Security]]&lt;br /&gt; with [[#Verify the Whonix images|Verification]]'''
 |- style=&quot;height: 47px&quot;
 
+&lt;!--T:91--&gt;
+| {{GrayBackground}}| [[File:HTTP.png|40px]] {{Anchor|Whonix_signature}}
+| &lt;html&gt;&lt;a href=&quot;http://mirror.whonix.org/Whonix-&lt;/html&gt;{{Version}}&lt;html&gt;/Whonix-Gateway-&lt;/html&gt;{{Version}}&lt;html&gt;.ova&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
+| &lt;html&gt;&lt;a href=&quot;http://mirror.whonix.org/Whonix-&lt;/html&gt;{{Version}}&lt;html&gt;/Whonix-Workstation-&lt;/html&gt;{{Version}}&lt;html&gt;.ova&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
+|{{Yes}} &lt;ref name=anonymousdownload /&gt;
+| style=&quot;background-color: {{Red}}&quot;| Very Low &lt;ref&gt;[[Warning#Man-in-the-middle_attacks|Man-in-the-middle attacks]] could poison the download.&lt;/ref&gt;
+| style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification&gt;It does not matter if you did the bulk download over an insecure channel, if you use OpenPGP verification at the end.&lt;/ref&gt;
+|- style=&quot;height: 47px&quot;
+
+&lt;!--T:15--&gt;
+| {{GrayBackground}}| [[File:HTTP.png|40px]] {{Anchor|Whonix_signature}}
+| &lt;html&gt;&lt;a href=&quot;http://sourceforge.net/projects/whonix/files/current/&lt;/html&gt;{{Version}}&lt;html&gt;/Whonix-Gateway-&lt;/html&gt;{{Version}}&lt;html&gt;.ova/download&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
+| &lt;html&gt;&lt;a href=&quot;http://sourceforge.net/projects/whonix/files/current/&lt;/html&gt;{{Version}}&lt;html&gt;/Whonix-Workstation-&lt;/html&gt;{{Version}}&lt;html&gt;.ova/download&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
+|{{Yes}} &lt;ref name=anonymousdownload /&gt;
+| style=&quot;background-color: {{Red}}&quot;| Very Low &lt;ref&gt;[[Warning#Man-in-the-middle_attacks|Man-in-the-middle attacks]] could poison the download.&lt;/ref&gt;
+| style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification&gt;It does not matter if you did the bulk download over an insecure channel, if you use OpenPGP verification at the end.&lt;/ref&gt;
+|- style=&quot;height: 47px&quot;
+
 &lt;!--T:10--&gt;
 | {{GrayBackground}}| [[File:SSL_Symbol.png|40px]] {{Anchor|Whonix_signature}}
 | &lt;html&gt;&lt;a href=&quot;https://jhcloos.com/whonix/7/Whonix-Gateway-7.ova&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
@@ -799,20 +818,12 @@ Then, have a look at the [[About]], [[Warning]] and [[DoNot|Do Not]] pages to ma
 | style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification /&gt;
 |- style=&quot;height: 47px&quot;
 
-&lt;!--T:15--&gt;
-| {{GrayBackground}}| [[File:HTTP.png|40px]] {{Anchor|Whonix_signature}}
-| &lt;html&gt;&lt;a href=&quot;http://sourceforge.net/projects/whonix/files/current/&lt;/html&gt;{{Version}}&lt;html&gt;/Whonix-Gateway-&lt;/html&gt;{{Version}}&lt;html&gt;.ova/download&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
-| &lt;html&gt;&lt;a href=&quot;http://sourceforge.net/projects/whonix/files/current/&lt;/html&gt;{{Version}}&lt;html&gt;/Whonix-Workstation-&lt;/html&gt;{{Version}}&lt;html&gt;.ova/download&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
-|{{Yes}} &lt;ref name=anonymousdownload /&gt;
-| style=&quot;background-color: {{Red}}&quot;| Very Low &lt;ref&gt;[[Warning#Man-in-the-middle_attacks|Man-in-the-middle attacks]] could poison the download.&lt;/ref&gt;
-| style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification&gt;It does not matter if you did the bulk download over an insecure channel, if you use OpenPGP verification at the end.&lt;/ref&gt;
-|- style=&quot;height: 47px&quot;
-
 &lt;!--T:16--&gt;
 | {{GrayBackground}}| [[File:template_source.png|25px]]
 | colspan=&quot;2&quot;|[[Dev/Build Documentation|Build from source code]]
 | See [[Dev/Build Anonymity|Build Anonymity]]
-|colspan=&quot;2&quot; style=&quot;background-color: {{Green}}&quot;| Excellent &lt;ref&gt;When you build from source code, audit the source code for being non-malicious and reasonably bug free, you do not have to [[Trust]] the developers, the website or the SSL certificate authorities.&lt;/ref&gt;
+| style=&quot;background-color: {{Green}}&quot;| Very High &lt;ref name=fromsourcecode&gt;When you build from source code, audit the source code for being non-malicious and reasonably bug free, you do not have to [[Trust]] the developers, the website or the SSL certificate authorities.&lt;/ref&gt;
+| style=&quot;background-color: {{Green}}&quot;| Best &lt;ref name=fromsourcecode /&gt; &lt;ref&gt;By additional verification that you got the source code from the original authors and by ensuring you're using the same source code as others you get better security.&lt;/ref&gt;
 |}
 
 = Verify the Whonix images = &lt;!--T:17--&gt;
@@ -914,7 +925,7 @@ Furthermore you will be automatically notified about new Whonix versions by {{Co
 There are some [[Official Whonix Online Profiles|Whonix Social Media Profiles]], but please don't rely on them for getting Whonix News and please don't use them to contact Whonix developers. (See [[Contact]] for contact information.)
 
 &lt;!--T:49--&gt;
-Because some people will do so even though it is not recommended, messages from the Whonix Feature Blog will be automatically mirrored to [https://twitter.com/Whonix Whonix Twitter Profile], to [https://www.facebook.com/pages/Whonix/622399681135624 Whonix Facebook Profile] and to [https://plus.google.com/108150429836421683225/about Whonix Google+ Profile].
+Because some people will do so even though it is not recommended, messages from the Whonix Feature Blog will be automatically mirrored to [https://twitter.com/Whonix Whonix Twitter Profile], to [https://www.facebook.com/Whonix Whonix Facebook Profile] and to [https://plus.google.com/108150429836421683225/ Whonix Google+ Profile].
 
 &lt;!--T:52--&gt;
 If you won't get into trouble by letting others learn about Whonix, feel free to follow or like those profiles (with your anonymous account) as a little way to [[Contribute]].
@@ -929,43 +940,53 @@ In case you are interested in Whonix source code updates, [[Dev/git#subscribe_to
 === Connection Issues - Tor stops working after an Upgrade and needs a Workaround ===
 When upgrading to Tor 0.2.4.19-1~d79.jessie+1 (using sudo apt-get dist-upgrade), your Tor connection may go down. There is a temporary workaround.
 
+&lt;!--T:74--&gt;
 Open /etc/default/tor.
 
+&lt;!--T:75--&gt;
 &lt;pre&gt;
 ## If you are using a graphical Whonix-Gateway, use:
 kdesudo kate /etc/default/tor
 
+&lt;!--T:76--&gt;
 ## Or alternatively, if you are using a terminal-only Whonix-Gateway, use:
 sudo nano /etc/default/tor
 &lt;/pre&gt;
 
+&lt;!--T:77--&gt;
 Scroll down, near bottom comment in (by removing the # in front of it).
 
+&lt;!--T:78--&gt;
 &lt;pre&gt;
 USE_AA_EXEC=&quot;no&quot;
 &lt;/pre&gt;
 
+&lt;!--T:79--&gt;
 Then try:
 
+&lt;!--T:80--&gt;
 &lt;pre&gt;
 sudo service tor restart
 &lt;/pre&gt;
 
+&lt;!--T:81--&gt;
 You should keep that in mind and undo that change when Whonix or Tor fixes that bug. We'll keep you posted. (See [[Download#Stay_tuned]] and [[Security_Guide#Recommendation_to_install_latest_security_updates_on_all_systems]].)
 
+&lt;!--T:82--&gt;
 Forum help thread:
 [[Special:AWCforum/st/id287/new_tor_and_debian_updates_today....html]]
 
-=== Tor Browser Updater (Whonix) ===
+=== Tor Browser Updater (Whonix) === &lt;!--T:83--&gt;
 Currently broken due to changes by torproject.org. You have to [[Manually Updating Tor Browser|manually update Tor Browser]] in meanwhile.
 
 &lt;!--T:56--&gt;
 Forum help thread:
 [[Special:AWCforum/st/id262/updating_TOR_browser_error...html]]
 
-=== Tor Browser Starter (Whonix) ===
+=== Tor Browser Starter (Whonix) === &lt;!--T:84--&gt;
 After manually upgrading Tor Browser (see above)... To start Tor Browser, got to your /home/user/tor-browser_en-US folder and double click start-tor-browser. Or type in terminal (Konsole).
 
+&lt;!--T:85--&gt;
 &lt;pre&gt;
 /home/user/tor-browser_en-US/start-tor-browser
 &lt;/pre&gt;
@@ -998,7 +1019,7 @@ sudo apt-get install enigmail
 === Mounting (CD/DVD) Devices === &lt;!--T:64--&gt;
 Currently needs a workaround as well. Please see [[Special:AWCforum/st/id167/#post_700|forum]].
 
-=== VLC / Video Player Crash ===
+=== VLC / Video Player Crash === &lt;!--T:86--&gt;
 For problem and workaround see forum thread: [[Special:AWCforum/st/id282/vlc_video_crash.html]].
 
 == Minor == &lt;!--T:65--&gt;
@@ -1010,14 +1031,17 @@ sudo apt-get update
 sudo apt-get dist-upgrade
 &lt;/pre&gt;
 
+&lt;!--T:87--&gt;
 See also [[Security_Guide#Recommendation_to_install_latest_security_updates_on_all_systems]]. This bug will be fixed with next Whonix upgrade (will take some time). No other action strictly required for now.
 
+&lt;!--T:88--&gt;
 '''Long answer''': &lt;br /&gt;
 This is because torproject deprecated that repository. That was to be expected. The repository we're using now is already preconfigured (in /etc/apt/sources.list.d/torproject.list).
 
+&lt;!--T:89--&gt;
 Taking action isn't important at this stage. You can comment it out (by putting a # in front of it) in /etc/apt/sources.list.d/torproject.list if you want. ({{Code|kdesudo kate /etc/apt/sources.list.d/torproject.list}} for graphical Whonix-Gateway or {{Code|sudo nano /etc/apt/sources.list.d/torproject.list}} for terminal-only Whonix-Gateway) If you don't do it, it will be auto fixed with next upgrade of Whonix.
 
-=== Defunct Desktop Shortcuts ===
+=== Defunct Desktop Shortcuts === &lt;!--T:90--&gt;
 The desktop shortcuts Tor Browser, Contribute, Forum, Documentation, Donate won't work until there is an upgrade of Whonix. Please manually visit these pages. How to start Tor Browser has already been explained above.
 
 === &quot;apt-get source package&quot; will show &quot;dpkg-source: warning: failed to verify signature&quot; === &lt;!--T:66--&gt;
@@ -1065,7 +1089,7 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>pqgy3blzlkbeeevlke573ragczjv03i</sha1>
+      <sha1>mxvocroor4k7bfog52gljaaf9zw5ipn</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -12326,15 +12350,15 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>118</id>
     <revision>
-      <id>4962</id>
-      <parentid>4823</parentid>
-      <timestamp>2014-02-05T05:44:20Z</timestamp>
+      <id>5144</id>
+      <parentid>5143</parentid>
+      <timestamp>2014-02-10T02:42:53Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Answer Questions */</comment>
-      <text xml:space="preserve" bytes="7804">{{Header}}
+      <comment>/* Donate */</comment>
+      <text xml:space="preserve" bytes="7774">{{Header}}
 
 = Easy / Anyone =
 == General ==
@@ -12356,13 +12380,11 @@ Help other users on Stack Exchange by subscribing to the {{Code2|whonix}} tag in
 Join the [https://www.whonix.org/forum/ Whonix User Forum] or IRC room ([irc://irc.oftc.net/whonix #Whonix on irc.oftc.net]).
 
 == Donate ==
-__NOTOC__
-
 &lt;!-------------------------bank wire, PayPal------------------------&gt;
 {|style=&quot;border-spacing:8px; margin:0px -8px;&quot;
 |class=&quot;MainPageBG&quot; style=&quot;width:55%; border:1px solid #cef2e0; background:#f5fffa; vertical-align:top; color:#000;&quot;|
 {|width=&quot;100%&quot; cellpadding=&quot;2&quot; cellspacing=&quot;5&quot; style=&quot;vertical-align:top; background:#f5fffa;&quot;
-! &lt;h2 style=&quot;margin:0; background:#cef2e0; font-size:120%; font-weight:bold; border:1px solid #a3bfb1; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;bank wire&lt;/h2&gt;
+! &lt;h3 style=&quot;margin:0; background:#cef2e0; font-size:120%; font-weight:bold; border:1px solid #a3bfb1; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;bank wire&lt;/h3&gt;
 |-
 |style=&quot;color:#000;&quot;| 
 &lt;pre&gt;
@@ -12371,14 +12393,14 @@ IBAN: DE77500100600320473603
 BIC: PBNKDEFF
 &lt;/pre&gt;
 |-
-! &lt;h2 style=&quot;margin:0; background:#cef2e0; font-size:120%; font-weight:bold; border:1px solid #a3bfb1; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;PayPal&lt;/h2&gt;
+! &lt;h3 style=&quot;margin:0; background:#cef2e0; font-size:120%; font-weight:bold; border:1px solid #a3bfb1; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;PayPal&lt;/h3&gt;
 |-
 |style=&quot;color:#000;&quot;| 
 &lt;pre&gt;
 patrick_schleizer@web.de
 &lt;/pre&gt;
 |-
-! &lt;h2 style=&quot;margin:0; background:#cef2e0; font-size:120%; font-weight:bold; border:1px solid #a3bfb1; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Other method?&lt;/h2&gt;
+! &lt;h3 style=&quot;margin:0; background:#cef2e0; font-size:120%; font-weight:bold; border:1px solid #a3bfb1; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Other method?&lt;/h3&gt;
 |-
 |style=&quot;color:#000;&quot;| 
 Ask [mailto:patrick_schleizer@web.de Patrick Schleizer] if available.
@@ -12393,7 +12415,7 @@ patrick_schleizer@web.de
 &lt;--------------------------------Bitcoin, Litecoin-------------------------------&gt;
 |class=&quot;MainPageBG&quot; style=&quot;width:45%; border:1px solid #cedff2; background:#f5faff; vertical-align:top&quot;|
 {| width=&quot;100%&quot; cellpadding=&quot;2&quot; cellspacing=&quot;5&quot; style=&quot;vertical-align:top; background:#f5faff;&quot;
-! &lt;h2 style=&quot;margin:0; background:#cedff2; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Bitcoin&lt;/h2&gt;
+! &lt;h3 style=&quot;margin:0; background:#cedff2; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Bitcoin&lt;/h3&gt;
 |-
 |style=&quot;color:#000;&quot;|
 [[Image:BC_Rnd_64px.png|150px|link=bitcoin:1JgzCCSox56Sh4NnQJqRiwoxKi8oVSZBEd]] [[File:whonix-donate-qr-code.gif|QR Code|100px]]
@@ -12405,7 +12427,7 @@ bitcoin:1JgzCCSox56Sh4NnQJqRiwoxKi8oVSZBEd
 &lt;/pre&gt;
 
 |-
-! &lt;h2 style=&quot;margin:0; background:#cedff2; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Litecoin&lt;/h2&gt;
+! &lt;h3 style=&quot;margin:0; background:#cedff2; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Litecoin&lt;/h3&gt;
 |-
 |style=&quot;color:#000;&quot;| 
 [[File:Litecoin_Accepted_Here.png|150px|link=litecoin:LW3wgQtZhtR2G5Uv48rSzonFd1arhUfjE9ff]]
@@ -12431,7 +12453,7 @@ If you don't have any Bitcoins and want to donate non-anonymously, you could use
 Whonix needs more people to test new Whonix features, bug fixes and so on.
 
 Latest testers-wanted posts can be found here: &lt;br /&gt;
-https://anonymousoperatingsystem.wordpress.com/category/testers-wanted/
+https://www.whonix.org/blog/category/testers-wanted/
 
 = Backup Whonix =
 Run [[WhonixBackupScript]].
@@ -12521,7 +12543,7 @@ for places where I could need more input. Also reviewing the whole source code o
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Development]]</text>
-      <sha1>m3147gwv3zh4httinl7tv2mtz2791sj</sha1>
+      <sha1>30udba94cpa8iw9i3trio6w667nw7nx</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -15871,15 +15893,15 @@ What's the point in using Skype if you and all your chat partners are also willi
     <ns>0</ns>
     <id>137</id>
     <revision>
-      <id>4862</id>
-      <parentid>4861</parentid>
-      <timestamp>2014-02-03T15:00:22Z</timestamp>
+      <id>5148</id>
+      <parentid>4862</parentid>
+      <timestamp>2014-02-10T03:31:23Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* VirtualBox missing features */</comment>
-      <text xml:space="preserve" bytes="4990">{{Header}}
+      <comment>/* VirtualBox */</comment>
+      <text xml:space="preserve" bytes="5098">{{Header}}
 {{forkme}}
 = Introduction =
 ''Whonix Example Implementation'' is based on VirtualBox. There was a development discussion about switching to a more secure Virtualization Platform and help is required.
@@ -15942,13 +15964,16 @@ The following is non-ideal, because we can not warn when host operating sytems a
 * Due to Windows users and simplicity it leads to greater popularity, which in theory attracts more users, developers, auditors, founding, etc and is therefore good for the overall health of the project.
 * Some Windows/VirtualBox users experimenting with their first Linux (Whonix) will one day become users who mainly use Linux as their host operating system.
 
+== Why Use KVM Over VirtualBox? ==
+See [[KVM#Why_Use_KVM_Over_VirtualBox.3F|Why Use KVM Over VirtualBox?]]
+
 == See Also ==
 * [[Advanced_Security_Guide#About_VirtualBox]]
 
 {{Footer}}
 
 [[Category: Design]]</text>
-      <sha1>ss5mm1zbab8ru3m6x0khfi80iue3vxm</sha1>
+      <sha1>idme5wuamd7gb75ufpikpjf6w70zgfy</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -18190,16 +18215,15 @@ Source: http://www.howtoforge.com/how-to-set-up-a-tor-middlebox-routing-all-virt
     <ns>0</ns>
     <id>159</id>
     <revision>
-      <id>2611</id>
-      <parentid>2608</parentid>
-      <timestamp>2013-09-04T03:42:47Z</timestamp>
+      <id>5140</id>
+      <parentid>2611</parentid>
+      <timestamp>2014-02-10T01:15:34Z</timestamp>
       <contributor>
-        <username>Anon</username>
-        <id>10</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <minor/>
-      <comment>Text replace - &quot;&amp;lt;&quot; to &quot;&lt;&quot;</comment>
-      <text xml:space="preserve" bytes="8551">{{Header}}
+      <comment>/* Overview */</comment>
+      <text xml:space="preserve" bytes="8594">{{Header}}
 
 = DRAFT! =
 
@@ -18208,6 +18232,8 @@ Source: http://www.howtoforge.com/how-to-set-up-a-tor-middlebox-routing-all-virt
 = How to create a Hardened Gentoo based Whonix-Gateway =
 
 == Overview ==
+
+* Perhaps useful? http://www.securix.org/
 
 * Install Gentoo build environment (how-to is for installation in a chroot but you can also use a full gentoo installation)
 * Build Whonix-Gateway kernel and userland
@@ -18442,7 +18468,7 @@ exit #build-chroot&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Deprecated]]</text>
-      <sha1>25u243ltmt69no6t65uirp7tjm5x0go</sha1>
+      <sha1>isgnryches3a8vgr7vptzejckzd65a9</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -50120,16 +50146,15 @@ Image:donate.png|link=Donate|[[Donate|Donate to Whonix!]]
     <ns>0</ns>
     <id>554</id>
     <revision>
-      <id>4721</id>
-      <parentid>4239</parentid>
-      <timestamp>2014-01-14T17:37:15Z</timestamp>
+      <id>5137</id>
+      <parentid>5134</parentid>
+      <timestamp>2014-02-10T01:06:18Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <username>FuzzyBot</username>
+        <id>37</id>
       </contributor>
-      <minor/>
-      <comment>Text replace - &quot;Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;&quot; to &quot;Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;&quot;</comment>
-      <text xml:space="preserve" bytes="17620">{{Header}}
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="20600">{{Header}}
 &lt;!--
 Copyright:
 
@@ -50195,11 +50220,27 @@ Then, have a look at the [[About]], [[Warning]] and [[DoNot|Do Not]] pages to ma
 {| class=&quot;wikitable&quot; style=&quot;text-align: center;background-color: #fff&quot;
 |- {{GrayBackground}}
 | style=&quot;height: 47px;&quot;|
-| style=&quot;white-space: nowrap; width: 137px;&quot;|'''Whonix-Gateway'''
-| style=&quot;white-space: nowrap; width: 137px;&quot;|'''Whonix-Workstation'''
+| style=&quot;white-space: nowrap; width: 137px;&quot;|'''Whonix-Gateway'''&lt;br /&gt;(1.2 GiB)
+| style=&quot;white-space: nowrap; width: 137px;&quot;|'''Whonix-Workstation'''&lt;br /&gt;(1.3 GiB)
 | style=&quot;white-space: nowrap; width: 140px;&quot;|'''[[Hide Tor and Whonix from your ISP|Anonymous Download]]&lt;br /&gt; possible &lt;ref name=anonymousdownload&gt;By using the [https://www.torproject.org/download/download-easy.html.en Tor Browser Bundle] (TBB). For an introduction, see [[Tor Browser]]. See also [[Hide Tor and Whonix from your ISP]].&lt;/ref&gt;'''
 | style=&quot;width: 135px;&quot;|'''[[Download Security]]&lt;br /&gt; without [[#Verify the Whonix images|Verification]]'''
 | style=&quot;width: 135px;&quot;|'''[[Download Security]]&lt;br /&gt; with [[#Verify the Whonix images|Verification]]'''
+|- style=&quot;height: 47px&quot;
+
+| {{GrayBackground}}| [[File:HTTP.png|40px]] {{Anchor|Whonix_signature}}
+| &lt;html&gt;&lt;a href=&quot;http://mirror.whonix.org/Whonix-&lt;/html&gt;{{Version}}&lt;html&gt;/Whonix-Gateway-&lt;/html&gt;{{Version}}&lt;html&gt;.ova&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
+| &lt;html&gt;&lt;a href=&quot;http://mirror.whonix.org/Whonix-&lt;/html&gt;{{Version}}&lt;html&gt;/Whonix-Workstation-&lt;/html&gt;{{Version}}&lt;html&gt;.ova&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
+|{{Yes}} &lt;ref name=anonymousdownload /&gt;
+| style=&quot;background-color: {{Red}}&quot;| Very Low &lt;ref&gt;[[Warning#Man-in-the-middle_attacks|Man-in-the-middle attacks]] could poison the download.&lt;/ref&gt;
+| style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification&gt;It does not matter if you did the bulk download over an insecure channel, if you use OpenPGP verification at the end.&lt;/ref&gt;
+|- style=&quot;height: 47px&quot;
+
+| {{GrayBackground}}| [[File:HTTP.png|40px]] {{Anchor|Whonix_signature}}
+| &lt;html&gt;&lt;a href=&quot;http://sourceforge.net/projects/whonix/files/current/&lt;/html&gt;{{Version}}&lt;html&gt;/Whonix-Gateway-&lt;/html&gt;{{Version}}&lt;html&gt;.ova/download&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
+| &lt;html&gt;&lt;a href=&quot;http://sourceforge.net/projects/whonix/files/current/&lt;/html&gt;{{Version}}&lt;html&gt;/Whonix-Workstation-&lt;/html&gt;{{Version}}&lt;html&gt;.ova/download&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
+|{{Yes}} &lt;ref name=anonymousdownload /&gt;
+| style=&quot;background-color: {{Red}}&quot;| Very Low &lt;ref&gt;[[Warning#Man-in-the-middle_attacks|Man-in-the-middle attacks]] could poison the download.&lt;/ref&gt;
+| style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification&gt;It does not matter if you did the bulk download over an insecure channel, if you use OpenPGP verification at the end.&lt;/ref&gt;
 |- style=&quot;height: 47px&quot;
 
 | {{GrayBackground}}| [[File:SSL_Symbol.png|40px]] {{Anchor|Whonix_signature}}
@@ -50241,18 +50282,11 @@ Then, have a look at the [[About]], [[Warning]] and [[DoNot|Do Not]] pages to ma
 | style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification /&gt;
 |- style=&quot;height: 47px&quot;
 
-| {{GrayBackground}}| [[File:HTTP.png|40px]] {{Anchor|Whonix_signature}}
-| &lt;html&gt;&lt;a href=&quot;http://sourceforge.net/projects/whonix/files/current/&lt;/html&gt;{{Version}}&lt;html&gt;/Whonix-Gateway-&lt;/html&gt;{{Version}}&lt;html&gt;.ova/download&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
-| &lt;html&gt;&lt;a href=&quot;http://sourceforge.net/projects/whonix/files/current/&lt;/html&gt;{{Version}}&lt;html&gt;/Whonix-Workstation-&lt;/html&gt;{{Version}}&lt;html&gt;.ova/download&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
-|{{Yes}} &lt;ref name=anonymousdownload /&gt;
-| style=&quot;background-color: {{Red}}&quot;| Very Low &lt;ref&gt;[[Warning#Man-in-the-middle_attacks|Man-in-the-middle attacks]] could poison the download.&lt;/ref&gt;
-| style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification&gt;It does not matter if you did the bulk download over an insecure channel, if you use OpenPGP verification at the end.&lt;/ref&gt;
-|- style=&quot;height: 47px&quot;
-
 | {{GrayBackground}}| [[File:template_source.png|25px]]
 | colspan=&quot;2&quot;|[[Dev/Build Documentation|Build from source code]]
 | See [[Dev/Build Anonymity|Build Anonymity]]
-|colspan=&quot;2&quot; style=&quot;background-color: {{Green}}&quot;| Excellent &lt;ref&gt;When you build from source code, audit the source code for being non-malicious and reasonably bug free, you do not have to [[Trust]] the developers, the website or the SSL certificate authorities.&lt;/ref&gt;
+| style=&quot;background-color: {{Green}}&quot;| Very High &lt;ref name=fromsourcecode&gt;When you build from source code, audit the source code for being non-malicious and reasonably bug free, you do not have to [[Trust]] the developers, the website or the SSL certificate authorities.&lt;/ref&gt;
+| style=&quot;background-color: {{Green}}&quot;| Best &lt;ref name=fromsourcecode /&gt; &lt;ref&gt;By additional verification that you got the source code from the original authors and by ensuring you're using the same source code as others you get better security.&lt;/ref&gt;
 |}
 
 = Verify the Whonix images =
@@ -50267,7 +50301,7 @@ Warning:
 Do not continue if verification failed! You risk using infected or erroneous files! The whole point of verification is verify file integrity.
 }}
 
-Whonix virtual machine images are cryptographically signed using OpenPGP&lt;ref&gt;OpenPGP is a standard for data encryption that provides cryptographic privacy and authentication through the use of keys owned by its users.&lt;/ref&gt; by Whonix developer adrelanos.
+Whonix virtual machine images are cryptographically signed using OpenPGP&lt;ref&gt;OpenPGP is a standard for data encryption that provides cryptographic privacy and authentication through the use of keys owned by its users.&lt;/ref&gt; by Whonix developer Patrick Schleizer.
 
 If you know how to use an OpenPGP key, download the [[Whonix Signing Key]] and the [[#Download Whonix|Whonix signatures]] straight away.
 
@@ -50334,11 +50368,7 @@ Furthermore you will be automatically notified about new Whonix versions by {{Co
 
 There are some [[Official Whonix Online Profiles|Whonix Social Media Profiles]], but please don't rely on them for getting Whonix News and please don't use them to contact Whonix developers. (See [[Contact]] for contact information.)
 
-Because some people will do so even though it is not recommended, messages from the Whonix Feature Blog will be automatically mirrored to [https://twitter.com/Whonix Whonix Twitter Profile] and to [https://plus.google.com/108150429836421683225/about Whonix Google+ Profile].
-
-[https://www.facebook.com/pages/Whonix/369240439779108 Whonix Facebook Profile] won't get any updates, because {{Code|Facebook is asking for governmental issued photo ID}}.&lt;ref&gt;https://sourceforge.net/p/whonix/featureblog/2013/01/facebook-asking-for-government-issued-photo-id-ex-passport-drivers-license---whonix-facebook-account-permanently-blocked/&lt;/ref&gt;
-
-identi.ca's mirroring feature is still down,&lt;ref&gt;http://status.net/open-source/issues/3581&lt;/ref&gt; therefore no mirroring to [https://identi.ca/whonix Whonix identi.ca Profile]
+Because some people will do so even though it is not recommended, messages from the Whonix Feature Blog will be automatically mirrored to [https://twitter.com/Whonix Whonix Twitter Profile], to [https://www.facebook.com/Whonix Whonix Facebook Profile] and to [https://plus.google.com/108150429836421683225/ Whonix Google+ Profile].
 
 If you won't get into trouble by letting others learn about Whonix, feel free to follow or like those profiles (with your anonymous account) as a little way to [[Contribute]].
 
@@ -50348,11 +50378,48 @@ In case you are interested in Whonix source code updates, [[Dev/git#subscribe_to
 
 = Known bugs =
 == Normal ==
+=== Connection Issues - Tor stops working after an Upgrade and needs a Workaround ===
+When upgrading to Tor 0.2.4.19-1~d79.jessie+1 (using sudo apt-get dist-upgrade), your Tor connection may go down. There is a temporary workaround.
+
+Open /etc/default/tor.
+
+&lt;pre&gt;
+## If you are using a graphical Whonix-Gateway, use:
+kdesudo kate /etc/default/tor
+
+## Or alternatively, if you are using a terminal-only Whonix-Gateway, use:
+sudo nano /etc/default/tor
+&lt;/pre&gt;
+
+Scroll down, near bottom comment in (by removing the # in front of it).
+
+&lt;pre&gt;
+USE_AA_EXEC=&quot;no&quot;
+&lt;/pre&gt;
+
+Then try:
+
+&lt;pre&gt;
+sudo service tor restart
+&lt;/pre&gt;
+
+You should keep that in mind and undo that change when Whonix or Tor fixes that bug. We'll keep you posted. (See [[Download#Stay_tuned]] and [[Security_Guide#Recommendation_to_install_latest_security_updates_on_all_systems]].)
+
+Forum help thread:
+[[Special:AWCforum/st/id287/new_tor_and_debian_updates_today....html]]
+
 === Tor Browser Updater (Whonix) ===
 Currently broken due to changes by torproject.org. You have to [[Manually Updating Tor Browser|manually update Tor Browser]] in meanwhile.
 
 Forum help thread:
 [[Special:AWCforum/st/id262/updating_TOR_browser_error...html]]
+
+=== Tor Browser Starter (Whonix) ===
+After manually upgrading Tor Browser (see above)... To start Tor Browser, got to your /home/user/tor-browser_en-US folder and double click start-tor-browser. Or type in terminal (Konsole).
+
+&lt;pre&gt;
+/home/user/tor-browser_en-US/start-tor-browser
+&lt;/pre&gt;
 
 === Virtual Box Shared Folder Issues ===
 Shared Folders aren’t working with the latest Linux kernel. (This is a Debian/Virtual Box issue, not caused by Whonix. Has already been reported to upstream by a Debian user.)
@@ -50370,17 +50437,35 @@ sudo apt-get update
 sudo apt-get dist-upgrade
 &lt;/pre&gt;
 
-You can then download enigmail from here: &lt;br /&gt;
-https://addons.mozilla.org/en-us/thunderbird/addon/enigmail/
-
-(Enigmail is at the moment not in Debian Testing/Jessie.)
+You should then install enigmail as usual: &lt;br /&gt;
+&lt;pre&gt;
+sudo apt-get install enigmail
+&lt;/pre&gt;
 
 === Mounting (CD/DVD) Devices ===
 Currently needs a workaround as well. Please see [[Special:AWCforum/st/id167/#post_700|forum]].
 
+=== VLC / Video Player Crash ===
+For problem and workaround see forum thread: [[Special:AWCforum/st/id282/vlc_video_crash.html]].
+
 == Minor ==
 === Whonix-Gateway: Err: http://deb.torproject.org tor-0.2.4.x-jessie/main i386 Packages 404 Not Found ===
-See [https://anonymousoperatingsystem.wordpress.com/2013/12/13/whonix-gateway-err-httpdeb-torproject-org-tor-0-2-4-x-jessiemain-i386-packages-404-not-found/ blog post].
+'''Short answer''': &lt;br /&gt;
+Update and upgrade your underlying Debian system (Whonix is a derivative of Debian).
+&lt;pre&gt;
+sudo apt-get update
+sudo apt-get dist-upgrade
+&lt;/pre&gt;
+
+See also [[Security_Guide#Recommendation_to_install_latest_security_updates_on_all_systems]]. This bug will be fixed with next Whonix upgrade (will take some time). No other action strictly required for now.
+
+'''Long answer''': &lt;br /&gt;
+This is because torproject deprecated that repository. That was to be expected. The repository we're using now is already preconfigured (in /etc/apt/sources.list.d/torproject.list).
+
+Taking action isn't important at this stage. You can comment it out (by putting a # in front of it) in /etc/apt/sources.list.d/torproject.list if you want. ({{Code|kdesudo kate /etc/apt/sources.list.d/torproject.list}} for graphical Whonix-Gateway or {{Code|sudo nano /etc/apt/sources.list.d/torproject.list}} for terminal-only Whonix-Gateway) If you don't do it, it will be auto fixed with next upgrade of Whonix.
+
+=== Defunct Desktop Shortcuts ===
+The desktop shortcuts Tor Browser, Contribute, Forum, Documentation, Donate won't work until there is an upgrade of Whonix. Please manually visit these pages. How to start Tor Browser has already been explained above.
 
 === &quot;apt-get source package&quot; will show &quot;dpkg-source: warning: failed to verify signature&quot; ===
 More info [http://lists.debian.org/debian-derivatives/2013/08/msg00000.html here] (and in the following mails).
@@ -50420,7 +50505,7 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>q34uwk7iasj42bj0oh1vphdx0gdhsw1</sha1>
+      <sha1>hy1bz5lhv4vjoke85kc1my2ungjpc5n</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -50468,16 +50553,19 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
     <ns>1198</ns>
     <id>558</id>
     <revision>
-      <id>4242</id>
-      <timestamp>2013-12-16T16:35:53Z</timestamp>
+      <id>5118</id>
+      <parentid>4242</parentid>
+      <timestamp>2014-02-10T00:44:01Z</timestamp>
       <contributor>
         <username>FuzzyBot</username>
         <id>37</id>
       </contributor>
       <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="109">You can then download enigmail from here: &lt;br /&gt;
-https://addons.mozilla.org/en-us/thunderbird/addon/enigmail/</text>
-      <sha1>hh9z0xu0c897tjticiumvebrs5au1w9</sha1>
+      <text xml:space="preserve" bytes="92">You should then install enigmail as usual: &lt;br /&gt;
+&lt;pre&gt;
+sudo apt-get install enigmail
+&lt;/pre&gt;</text>
+      <sha1>ia5ebj79kuzc4notjklelkhzd2pylyx</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -50619,16 +50707,15 @@ There are two ways to get news. Choose at your preference.</text>
     <ns>0</ns>
     <id>566</id>
     <revision>
-      <id>4744</id>
-      <parentid>4729</parentid>
-      <timestamp>2014-01-14T17:39:27Z</timestamp>
+      <id>5101</id>
+      <parentid>4744</parentid>
+      <timestamp>2014-02-10T00:35:01Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <username>FuzzyBot</username>
+        <id>37</id>
       </contributor>
-      <minor/>
-      <comment>Text replace - &quot;Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;&quot; to &quot;Copyright (C) 2012 - 2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;&quot;</comment>
-      <text xml:space="preserve" bytes="25723">&lt;languages /&gt;
+      <comment>Updating to match new version of source page</comment>
+      <text xml:space="preserve" bytes="25726">&lt;languages /&gt;
 {{Header}}
 &lt;!--
 Copyright:
@@ -50668,7 +50755,7 @@ Even though we're doing our best to offer you good tools to protect your privacy
 = License =
 
 &lt;pre&gt;Whonix Warning wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-Whonix Warning wiki page Portions Copyright (C) 2012 - 2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
+Whonix Warning wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
 
 This program comes with ABSOLUTELY NO WARRANTY; for details see the wiki source code.
 This is free software, and you are welcome to redistribute it
@@ -50729,7 +50816,7 @@ Usually, this is automatically done through [https://en.wikipedia.org/wiki/Trans
 
 The eff has a fantastic [https://www.eff.org/pages/tor-and-https interactive illustration] who can see what when (not) using Tor and when (not) using SSL.
 
-But on top of that the certificate authorities model of trust on Internet is susceptible to various methods of compromise.
+But on top of that, the certificate authorities model of trust on the Internet is susceptible to various methods of compromise.
 
 For example, on March 15, 2011, Comodo, one of the major SSL certificates company, reported that a user account with an affiliate registration authority had been compromised. It was then used to create a new user account that issued nine certificate signing requests for seven domains: mail.google.com, login.live.com, www.google.com, login.yahoo.com (three certificates), login.skype.com, addons.mozilla.org, and global trustee. &lt;ref&gt;Source: [http://blogs.comodo.com/it-security/data-security/the-recent-ra-compromise/ Comodo: The Recent RA Compromise] ([http://www.webcitation.org/6EUyeEwBE w])&lt;/ref&gt;
 
@@ -50737,11 +50824,11 @@ Later in 2011, DigiNotar, a Dutch SSL certificate company, incorrectly issued ce
 
 '''This still leaves open the possibility of a man-in-the-middle attack even when your browser is trusting an HTTPS connection.'''
 
-There are alternatives to SSL, worth checking out if they may be useful for you. Unfortunately can not be used as a drop in replacement. Tools providing connection security include [http://web.monkeysphere.info/ Monkeysphere], [https://en.wikipedia.org/wiki/Convergence_%28SSL%29 Convergence], [http://perspectives-project.org/ Perspectives Project] and Tor hidden services&lt;ref&gt;[[Hidden Services]] are [[Hidden_Services#Notes_about_End-to-end_security_of_Hidden_Services|automatically encrypted end-to-end]]. (More specific: Tor to Tor)&lt;/ref&gt;.
+There are alternatives to SSL, worth checking out if they may be useful for you. Unfortunately, they cannot be used as a drop-in replacement. Tools providing connection security include [http://web.monkeysphere.info/ Monkeysphere], [https://en.wikipedia.org/wiki/Convergence_%28SSL%29 Convergence], [http://perspectives-project.org/ Perspectives Project] and Tor hidden services&lt;ref&gt;[[Hidden Services]] are [[Hidden_Services#Notes_about_End-to-end_security_of_Hidden_Services|automatically encrypted end-to-end]]. (More specific: Tor to Tor)&lt;/ref&gt;.
 
-On one hand, by providing anonymity, Tor makes it more difficult to perform a man-in-the-middle attack targeted at '''one specific person''' with the blessing of a rogue SSL certificate. But on the other end, Tor makes it easier for people or organizations running exit relays to perform large scale MitM attempts, or attacks targeted at '''a specific server''', and especially those among its users who happen to use Tor.
+On the one hand, by providing anonymity, Tor makes it more difficult to perform a man-in-the-middle attack targeted at '''one specific person''' with the blessing of a rogue SSL certificate. But on the other hand, Tor makes it easier for people or organizations running exit relays to perform large scale MitM attempts, or attacks targeted at '''a specific server''', and especially those among its users who happen to use Tor.
 
-In all cases, you are advised to use additional message encryption for encrypting your mails, chats and so on. Tools such as encrypted messengers (Covered on [[Chat]] page.), GPG [https://en.wikipedia.org/wiki/GNU_Privacy_Guard (wikipedia)], [[Software#Encrypt.2C_decrypt.2C_sign.2C_and_verify_text_using_OpenPGP.3B_GnuPG_frontend | KGpg]] and [[E-Mail | Mozilla Thunderbird with TorBirdy]] and enigmail (gpg add-on) may be useful.
+In all cases, you are advised to use additional message encryption for encrypting your mails, chats and so on. Tools such as encrypted messengers (Covered on the [[Chat]] page.), GPG [https://en.wikipedia.org/wiki/GNU_Privacy_Guard (wikipedia)], [[Software#Encrypt.2C_decrypt.2C_sign.2C_and_verify_text_using_OpenPGP.3B_GnuPG_frontend | KGpg]] and [[E-Mail | Mozilla Thunderbird with TorBirdy]] and enigmail (gpg add-on) may be useful.
 
 &lt;ref&gt; Quoted from [https://en.wikipedia.org/wiki/Man-in-the-middle_attack wikipedia Man-in-the-middle_attack] ([http://www.webcitation.org/6EUyk0IKX w]) and [https://blog.torproject.org/blog/detecting-certificate-authority-compromises-and-web-browser-collusion Tor Project: Detecting Certificate Authority compromises and web browser collusion] ([http://www.webcitation.org/6EUykcmES w]). &lt;/ref&gt;
 
@@ -50777,9 +50864,9 @@ For more information on this topic, see also: [[FAQ#Is_there_a_substitute_for_Wh
 
 Numerous files format store hidden data or metadata inside of the files. Text processors or PDF files could store the name of the author, the date and time of creation of the file, and sometimes even parts of the editing history of the fileâ€¦ those hidden data depend on the file format and the software used.
 
-Images file formats, like TIFF of JPEG, probably take the prize in this field. Those files, created by digital cameras or mobile phones, contain a metadata format called EXIF which can include the date, time and sometimes the GPS coordinates of the picture, the brand and serial number of the device which took it as well as a thumbnail of the original image. Image processing software tend to keep those data intact. Internet is full of cropped or blurred images for which the EXIF thumbnail still contains the full original picture.
+Images file formats, like TIFF of JPEG, probably take the prize in this field. Those files, created by digital cameras or mobile phones, contain a metadata format called EXIF which can include the date, time and sometimes the GPS coordinates of the picture, the brand and serial number of the device which took it as well as a thumbnail of the original image. Image processing software tend to keep those data intact. The internet is full of cropped or blurred images for which the EXIF thumbnail still contains the full original picture.
 
-'''Whonix doesn't clear the metadata of your files for you'''. Yet. Still it's in Whonix' design goal to help you do that. For example, Whonix already comes with [[Metadata |  MAT]], which is a Metadata Anonymisation Toolkit.
+'''Whonix doesn't clear the metadata of your files for you'''. Yet, it's still within the Whonix' design goal to help you do that. For example, Whonix already comes with [[Metadata |  MAT]], which is a Metadata Anonymisation Toolkit.
 
 = Whonix doesn't encrypt the Subject: and other headers of your encrypted e-mail messages =
 
@@ -50821,7 +50908,7 @@ Whonix can only be as secure as the host is. Of course you can simply use Whonix
 
 Easy: All anonymous activity should only happen inside Whonix-Workstation. Nowhere else.
 
-Explanation: The host operating system (the operating system running VirtualBox, the system you used before ever downloading Whonix) will NOT be torified. Do never do any anonymous tasks on your host.
+Explanation: The host operating system (the operating system running VirtualBox, the system you used before ever downloading Whonix) will NOT be torified. Never do any anonymous tasks on your host.
 
 The Whonix-Gateway's only purpose is running Tor and the firewall. In most cases there is no need to modify things on the Gateway. Minor modifications such as setting up bridges are documented.
 
@@ -50831,13 +50918,13 @@ Obviously, Whonix can't stop people from looking over your shoulder or stop (mob
 
 = Whonix doesn't prevent you from shooting your own feet =
 
-If you login into your personal Facebook account, which is bound to you real name, you are obviously not anonymous and other things.
+If you login to your personal Facebook account, which is bound to your real name, you are obviously not anonymous!
 
 This will be substantiated on the later page [[DoNot | Non technical steps staying anonymous]].
 
 = Whonix doesn't defeat Stylometry =
 
-Whonix does not obfuscate you writing style.
+Whonix does not obfuscate your writing style.
 
 This will be substantiated on the later page [[Surfing_Posting_Blogging | Anonymous Surfing, Posting and Blogging]].
 
@@ -50860,8 +50947,8 @@ Whonix in its current form does not:
 * Protect against global network adversaries.
 * Protect against hardware or software backdoors.
 * Automatically protect against MAC address fingerprinting on public networks.
-* Protect against the more skilled software attack, unless you use [PhysicalIsolation].
-* By default, protect you if Tor is somehow broken. You can improve that to some extend and with caveats by chaining Tor with SSH, proxies or VPNs.
+* Protect against the more skilled software attacks, unless you use [PhysicalIsolation].
+* By default, protect you if Tor is somehow broken. You can improve that to some extent (with caveats) by chaining Tor with SSH, proxies or VPNs.
 * By default, hide the fact that you are using Tor, though there is an optional feature, [[Hide_Tor_and_Whonix_from_your_ISP | Hide the fact you are using Tor/Whonix]].
 * Use all the possible hardening options like full PIE and grsecurity. It doesn't use AppArmor profiles for everything.
 * Obfuscate your writing style, defeat Stylometry.
@@ -50872,7 +50959,7 @@ If you want to help us improve the security of Whonix, please join the discussio
 
 = Whonix is a work in progress =
 
-Whonix, as well as all the software it includes, are on continuous development and might contain programming errors or security holes. [[Download#Stay_tuned | Stay tuned]] to Whonix development. Do not rely on it for strong anonymity.
+Whonix, as well as all the software it includes, are under continuous development and might contain programming errors or security holes. [[Download#Stay_tuned | Stay tuned]] to Whonix development. Do not rely on it for strong anonymity.
 
 The basic functionality is ready. You can use Whonix to browse the web and [[Hidden Services | host hidden services]], use email, IRC, ssh, etc. Development is still ongoing and more features are being added to Whonix. If you want join the development process or want to see what issues are still open, see our [https://github.com/Whonix/Whonix/issues Whonix github issues tracker].
 
@@ -50901,7 +50988,7 @@ See also [[Security_in_Real_World | Whonix security in real world]], [[Security_
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>1m6yxcmcdttvv36x10sih2cl4t2ahtl</sha1>
+      <sha1>sej0m8zm8bd2ezl7us9fpw7q9zzwy05</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -51048,23 +51135,24 @@ sudo apt-get dist-upgrade
     <ns>1198</ns>
     <id>574</id>
     <revision>
-      <id>4260</id>
-      <timestamp>2013-12-16T16:36:46Z</timestamp>
+      <id>5129</id>
+      <parentid>4260</parentid>
+      <timestamp>2014-02-10T00:54:16Z</timestamp>
       <contributor>
         <username>FuzzyBot</username>
         <id>37</id>
       </contributor>
       <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="838">{| class=&quot;wikitable&quot; style=&quot;text-align: center;background-color: #fff&quot;
+      <text xml:space="preserve" bytes="868">{| class=&quot;wikitable&quot; style=&quot;text-align: center;background-color: #fff&quot;
 |- {{GrayBackground}}
 | style=&quot;height: 47px;&quot;|
-| style=&quot;white-space: nowrap; width: 137px;&quot;|'''Whonix-Gateway'''
-| style=&quot;white-space: nowrap; width: 137px;&quot;|'''Whonix-Workstation'''
+| style=&quot;white-space: nowrap; width: 137px;&quot;|'''Whonix-Gateway'''&lt;br /&gt;(1.2 GiB)
+| style=&quot;white-space: nowrap; width: 137px;&quot;|'''Whonix-Workstation'''&lt;br /&gt;(1.3 GiB)
 | style=&quot;white-space: nowrap; width: 140px;&quot;|'''[[Hide Tor and Whonix from your ISP|Anonymous Download]]&lt;br /&gt; possible &lt;ref name=anonymousdownload&gt;By using the [https://www.torproject.org/download/download-easy.html.en Tor Browser Bundle] (TBB). For an introduction, see [[Tor Browser]]. See also [[Hide Tor and Whonix from your ISP]].&lt;/ref&gt;'''
 | style=&quot;width: 135px;&quot;|'''[[Download Security]]&lt;br /&gt; without [[#Verify the Whonix images|Verification]]'''
 | style=&quot;width: 135px;&quot;|'''[[Download Security]]&lt;br /&gt; with [[#Verify the Whonix images|Verification]]'''
 |- style=&quot;height: 47px&quot;</text>
-      <sha1>gdcu2n6hjrcccudchrgsx73c0a28h9w</sha1>
+      <sha1>bwsyue790a0iffqk2pol8aon4uiiyq7</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -51074,15 +51162,16 @@ sudo apt-get dist-upgrade
     <ns>1198</ns>
     <id>575</id>
     <revision>
-      <id>4261</id>
-      <timestamp>2013-12-16T16:37:04Z</timestamp>
+      <id>5112</id>
+      <parentid>4261</parentid>
+      <timestamp>2014-02-10T00:40:21Z</timestamp>
       <contributor>
         <username>FuzzyBot</username>
         <id>37</id>
       </contributor>
       <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="254">Whonix virtual machine images are cryptographically signed using OpenPGP&lt;ref&gt;OpenPGP is a standard for data encryption that provides cryptographic privacy and authentication through the use of keys owned by its users.&lt;/ref&gt; by Whonix developer adrelanos.</text>
-      <sha1>bg8mq7tniwnqsdrh1kleoug7r6k77u5</sha1>
+      <text xml:space="preserve" bytes="262">Whonix virtual machine images are cryptographically signed using OpenPGP&lt;ref&gt;OpenPGP is a standard for data encryption that provides cryptographic privacy and authentication through the use of keys owned by its users.&lt;/ref&gt; by Whonix developer Patrick Schleizer.</text>
+      <sha1>a29sd0ei1bqark6fqvx9azfm0nmzm6s</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -51368,18 +51457,19 @@ When using OpenPGP encryption in Icedove / Enigmail you might get &quot;encrypti
     <ns>1198</ns>
     <id>593</id>
     <revision>
-      <id>4279</id>
-      <timestamp>2013-12-16T16:41:06Z</timestamp>
+      <id>5133</id>
+      <parentid>4279</parentid>
+      <timestamp>2014-02-10T00:59:08Z</timestamp>
       <contributor>
         <username>FuzzyBot</username>
         <id>37</id>
       </contributor>
       <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="203">= Known bugs =
+      <text xml:space="preserve" bytes="260">= Known bugs =
 == Normal ==
-=== Tor Browser Updater (Whonix) ===
-Currently broken due to changes by torproject.org. You have to [[Manually Updating Tor Browser|manually update Tor Browser]] in meanwhile.</text>
-      <sha1>gefyo4ik0gd77io6n8ayqlelle8dp9b</sha1>
+=== Connection Issues - Tor stops working after an Upgrade and needs a Workaround ===
+When upgrading to Tor 0.2.4.19-1~d79.jessie+1 (using sudo apt-get dist-upgrade), your Tor connection may go down. There is a temporary workaround.</text>
+      <sha1>et9nm9s0dq7fqjnzucc4b8nq458ch8h</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -51701,19 +51791,21 @@ Copyright:</text>
     <ns>1198</ns>
     <id>611</id>
     <revision>
-      <id>4298</id>
-      <timestamp>2013-12-16T16:43:57Z</timestamp>
+      <id>5139</id>
+      <parentid>4298</parentid>
+      <timestamp>2014-02-10T01:15:00Z</timestamp>
       <contributor>
         <username>FuzzyBot</username>
         <id>37</id>
       </contributor>
       <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="437">| {{GrayBackground}}| [[File:template_source.png|25px]]
+      <text xml:space="preserve" bytes="696">| {{GrayBackground}}| [[File:template_source.png|25px]]
 | colspan=&quot;2&quot;|[[Dev/Build Documentation|Build from source code]]
 | See [[Dev/Build Anonymity|Build Anonymity]]
-|colspan=&quot;2&quot; style=&quot;background-color: {{Green}}&quot;| Excellent &lt;ref&gt;When you build from source code, audit the source code for being non-malicious and reasonably bug free, you do not have to [[Trust]] the developers, the website or the SSL certificate authorities.&lt;/ref&gt;
+| style=&quot;background-color: {{Green}}&quot;| Very High &lt;ref name=fromsourcecode&gt;When you build from source code, audit the source code for being non-malicious and reasonably bug free, you do not have to [[Trust]] the developers, the website or the SSL certificate authorities.&lt;/ref&gt;
+| style=&quot;background-color: {{Green}}&quot;| Best &lt;ref name=fromsourcecode /&gt; &lt;ref&gt;By additional verification that you got the source code from the original authors and by ensuring you're using the same source code as others you get better security.&lt;/ref&gt;
 |}</text>
-      <sha1>arojji4x05zjihiimq99pl5e3v534dv</sha1>
+      <sha1>kxoo6jtmtd6sfllfg98fq9wu4fjigjo</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -51994,17 +52086,23 @@ Warning:</text>
     <ns>1198</ns>
     <id>626</id>
     <revision>
-      <id>4313</id>
-      <timestamp>2013-12-16T16:46:34Z</timestamp>
+      <id>5122</id>
+      <parentid>4313</parentid>
+      <timestamp>2014-02-10T00:46:16Z</timestamp>
       <contributor>
         <username>FuzzyBot</username>
         <id>37</id>
       </contributor>
       <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="287">== Minor ==
+      <text xml:space="preserve" bytes="289">== Minor ==
 === Whonix-Gateway: Err: http://deb.torproject.org tor-0.2.4.x-jessie/main i386 Packages 404 Not Found ===
-See [https://anonymousoperatingsystem.wordpress.com/2013/12/13/whonix-gateway-err-httpdeb-torproject-org-tor-0-2-4-x-jessiemain-i386-packages-404-not-found/ blog post].</text>
-      <sha1>87i2eamznx9dq6q2pd085l9ayvfwp60</sha1>
+'''Short answer''': &lt;br /&gt;
+Update and upgrade your underlying Debian system (Whonix is a derivative of Debian).
+&lt;pre&gt;
+sudo apt-get update
+sudo apt-get dist-upgrade
+&lt;/pre&gt;</text>
+      <sha1>jrqb5h3js1z3lzesoinngiykhjo5z7s</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -52153,15 +52251,16 @@ More info [http://lists.debian.org/debian-derivatives/2013/08/msg00000.html here
     <ns>1198</ns>
     <id>635</id>
     <revision>
-      <id>4322</id>
-      <timestamp>2013-12-16T16:48:33Z</timestamp>
+      <id>5130</id>
+      <parentid>5107</parentid>
+      <timestamp>2014-02-10T00:57:11Z</timestamp>
       <contributor>
         <username>FuzzyBot</username>
         <id>37</id>
       </contributor>
       <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="274">Because some people will do so even though it is not recommended, messages from the Whonix Feature Blog will be automatically mirrored to [https://twitter.com/Whonix Whonix Twitter Profile] and to [https://plus.google.com/108150429836421683225/about Whonix Google+ Profile].</text>
-      <sha1>o9y09z5p3o024c2vvsw0d0cbeny30c4</sha1>
+      <text xml:space="preserve" bytes="331">Because some people will do so even though it is not recommended, messages from the Whonix Feature Blog will be automatically mirrored to [https://twitter.com/Whonix Whonix Twitter Profile], to [https://www.facebook.com/Whonix Whonix Facebook Profile] and to [https://plus.google.com/108150429836421683225/ Whonix Google+ Profile].</text>
+      <sha1>bbpupckyja81kto3eus92z3tszvde6c</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -53836,15 +53935,15 @@ Provide sudo password
     <ns>0</ns>
     <id>685</id>
     <revision>
-      <id>4602</id>
-      <parentid>4586</parentid>
-      <timestamp>2014-01-05T13:02:44Z</timestamp>
+      <id>5149</id>
+      <parentid>5147</parentid>
+      <timestamp>2014-02-10T04:19:39Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* What is KVM? */</comment>
-      <text xml:space="preserve" bytes="6776">{{Header}}
+      <comment>/* KVM Setup Instructions */</comment>
+      <text xml:space="preserve" bytes="7244">{{Header}}
 
 '''UNFINISHED!'''
 
@@ -53868,7 +53967,20 @@ http://seclists.org/fulldisclosure/2012/Apr/343 &lt;&lt; A 0day reported private
 Furthermore VirtualBox contains significant functionality that is only available as a proprietary extension, such as USB and PCI passthrough and RDP connectivity. Seeing Oracle's unfriendly trackrecord with the free software community in the past; examples include OpenSolaris and OpenOffice, it would not be a strecth to imagine them charging money for the closed up features at some point in the future or simply abandoning the project if they cannot monetize it to their liking.
 
 == KVM Setup Instructions ==
+{{mbox
+| type       = critical
+| image      = [[File:Ambox_warning_pn.svg.png|40px|alt=Question mark]]
+| text       = 
+Warning:
+
+These instructions are incomplete. Please see [[Dev/KVM]] and help us completing Whonix KVM support!
+}}
+
 It is highly recommended you use the GUI VirtualMachineManager package to configure your vm for simplicity and ease of use.
+
+=== Convert ===
+Converting is only required if you want to use the stable version of Whonix. No longer required for testers-only versions, see: &lt;br /&gt;
+https://www.whonix.org/blog/category/testers-wanted/
 
 1. Extract the downloaded Whonix ova images to obtain the VMDK virtual storage files.
 
@@ -53890,6 +54002,7 @@ VBoxManage clonehd --format VDI vmdk_file vdi_file
 qemu-img convert -p -O qcow2 ~/whonix.vdi ~/whonix.qcow2
 &lt;/pre&gt;
 
+=== Other Required Steps ===
 3. Before starting the new vm wizard we must create an internal isolated network that connects the workstation with the gateway.
 
 Go to the VMM GUI --&gt; Edit --&gt; Connection Details --&gt; Add button
@@ -53944,7 +54057,7 @@ Not enabling SPICE from the beginning, will prevent the spice channel device fro
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>apjd6cb7wdkzi8hrlpbtfr07gn1fpaq</sha1>
+      <sha1>s4j4mqdqndsztmgy0denilch5ib6ny2</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -54573,18 +54686,18 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
     <ns>0</ns>
     <id>691</id>
     <revision>
-      <id>4860</id>
-      <parentid>4620</parentid>
-      <timestamp>2014-02-02T13:54:42Z</timestamp>
+      <id>5158</id>
+      <parentid>5157</parentid>
+      <timestamp>2014-02-10T06:19:00Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <text xml:space="preserve" bytes="4428">{{Header}}
+      <comment>/* Set cluster_size 512 - 2MB for better performance? */</comment>
+      <text xml:space="preserve" bytes="6254">{{Header}}
 
 = Links =
 * [[Special:AWCforum/st/id306/]]
-* [[KVM]]
+* [[KVM|KVM instructions work in progress]]
 * [https://github.com/Whonix/Whonix/issues/121 KVM Support github ticket]
 
 = Blockers =
@@ -54625,14 +54738,17 @@ Probably yes?
 
 https://wiki.debian.org/DebianKVMGuests
 
-== Do [[KVM]] instructions need changes to activate virtio? ==
+== Do KVM instructions need changes to activate virtio? ==
+Do [[KVM]] instructions need changes to activate virtio?
 
 == How to get virtio running for storage? ==
 http://wiki.libvirt.org/page/Virtio
 
+== Boot from virtio block device? ==
 What is http://www.linux-kvm.org/page/Boot_from_virtio_block_device good for? Required?
 
 == How to check if virtio storage access is in use or an eventually existing fallback driver? ==
+How to check if virtio storage access is in use or an eventually existing fallback driver?
 
 == How to check if virtio network is really in use or an eventually existing fallback driver? ==
 /sys/devices/virtio-pci/0/net/eth0/statistics/rx_bytes seems not to exist on Debian Wheezy.
@@ -54662,6 +54778,50 @@ For something that supports snapshots and has better performance than qcow2 ther
 == Set cluster_size 512 - 2MB for better performance? ==
 HulaHoop1 wrote: The qcow2 defaults seem fine to me, however the one parameter of interest we should play with is image's : 'cluster_size' 512 - 2MB the larger the size the better performance but the size is bigger. I think we should try the largest and see if the image size stays reasonable.
 
+adrelanos wrote:
+
+When using (Whonix 7.7.8.0):
+      qemu-img \
+         convert \
+            -p \
+            -O qcow2 \
+            -o preallocation=metadata \
+            &quot;$WHONIX_BINARY/$VMNAME.img&quot; \
+            &quot;$WHONIX_BINARY/$VMNAME-$whonix_build_whonix_version_new.qcow2&quot;
+
+du -h --apparent-size file.img &lt;br /&gt;
+100 GB
+
+du -h file.img &lt;br /&gt;
+2,5 GB
+
+When using (Whonix 7.7.8.0):
+      qemu-img \
+         convert \
+            -p \
+            -O qcow2 \
+            -o cluster_size=2M \
+            -o preallocation=metadata \
+            &quot;$WHONIX_BINARY/$VMNAME.img&quot; \
+            &quot;$WHONIX_BINARY/$VMNAME-$whonix_build_whonix_version_new.qcow2&quot;
+
+du -h --apparent-size file.img &lt;br /&gt;
+2,9 GB
+
+du -h file.img &lt;br /&gt;
+2,9 GB
+
+File size grew a bit. Not too much. We could use this.
+
+It remains to be tested, if the images work well using these settings. (The apparent size should be shown as 100 GB, but is only 2,9 GB. Needs testing if 100 GB can be used after the image is in use.)
+
+&quot;qemu-img info file.img&quot; however, shows 2,9 GB actual size and 100 GB virtual size.
+
+git tag 7.8.0.1 and above will be using the &quot;-o cluster_size=2M&quot; option.
+
+== KVM Instructions recommend to use a no cache policy? ==
+As per [http://www.ilsistemista.net/index.php/virtualization/11-kvm-io-slowness-on-rhel-6.html?start=7 blog post] it is recommended to use a no cache policy. Do our KVM instructions need changes to incorporate this?
+
 = Answered Questions =
 == Leak Tests? ==
 [[HulaHoop1]] sorted that out in [[Special:AWCforum/st/id306/]].
@@ -54678,7 +54838,10 @@ Implemented: https://github.com/Whonix/Whonix/commit/2584c3bdcd9a98181c7535f963a
 Done.
 
 == Verifiable Builds for qcow2 images==
-The https://github.com/Whonix/Whonix/blob/master/help-steps/analyze_image requires supports raw, qcow, vdi, vmdki and qcow2 images as well as ova applicances.
+The https://github.com/Whonix/Whonix/blob/master/help-steps/analyze_image requires supports raw, vdi, vmdk, qcow and qcow2 images as well as .ova appliances.
+
+== metadata preallocated images ==
+For better performance. (As per [http://www.ilsistemista.net/index.php/virtualization/11-kvm-io-slowness-on-rhel-6.html blog post].) Done in 7.7.8.0.
 
 = Footnotes =
 &lt;references /&gt;
@@ -54686,7 +54849,7 @@ The https://github.com/Whonix/Whonix/blob/master/help-steps/analyze_image requir
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>bwtols91yrvbn884dp66hpomgy80ke4</sha1>
+      <sha1>74wbk1664ewbydkhagijtbw9ppnpsmj</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -56092,15 +56255,19 @@ E13Z1DJRfRPaW7cbNubq
     <ns>6</ns>
     <id>711</id>
     <revision>
-      <id>4817</id>
-      <timestamp>2014-01-20T00:54:11Z</timestamp>
+      <id>5146</id>
+      <parentid>4817</parentid>
+      <timestamp>2014-02-10T02:47:24Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>MsUpload</comment>
-      <text xml:space="preserve" bytes="8">MsUpload</text>
-      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <text xml:space="preserve" bytes="210">https://commons.wikimedia.org/wiki/File:Litecoin_Accepted_Here.png
+http://www.webcitation.org/6NGwb758y
+
+https://github.com/litecoin-project/litecoin/blob/master-0.8/COPYING
+http://www.webcitation.org/6NGwjP4X9</text>
+      <sha1>12z95arv552vdzjs0ycljdtqsbzfzg1</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -56929,14 +57096,14 @@ sudo -E ./build-steps.d/1100_prepare-build-machine --bare-metal --tor-gateway
     <ns>0</ns>
     <id>755</id>
     <revision>
-      <id>5005</id>
-      <parentid>5003</parentid>
-      <timestamp>2014-02-08T15:56:52Z</timestamp>
+      <id>5178</id>
+      <parentid>5176</parentid>
+      <timestamp>2014-02-10T10:31:45Z</timestamp>
       <contributor>
         <username>Username</username>
         <id>217</id>
       </contributor>
-      <text xml:space="preserve" bytes="6716">{{Header}}
+      <text xml:space="preserve" bytes="7315">{{Header}}
 
 &lt;languages /&gt;
 {{Infobox OS
@@ -56944,7 +57111,7 @@ sudo -E ./build-steps.d/1100_prepare-build-machine --bare-metal --tor-gateway
 | name                   = Whonix
 | screenshot             = [[Image:kde0_5_0.png|Whonix-Workstation 0.5.6 с рабочим столом KDE |200px]]
 | caption                = Whonix-Workstation 0.5.6 с рабочим столом KDE 
-| разработчик              = none / Разработчики Whonix 
+| разработчик              = нет / Разработчики Whonix 
 | тип                 = [https://en.wikipedia.org/wiki/Unix-like Unix-like], на основе [https://en.wikipedia.org/wiki/Debian Debian]
 | тип_исходного_кода           = [https://en.wikipedia.org/wiki/Open_source Open Source] 
 | текущее_состояние          = разрабатывается
@@ -56973,35 +57140,51 @@ Whonix состоит из двух частей: первая обеспечи�
 
 [[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|alt=Загрузить Whonix]]
 
-= Screenshots =
+
+
+
+I don't know why but I cannot save any changes to the Screenshots
+section of the main page.
+
+Maybe u can do it
+
+= Скриншоты =
 &lt;gallery&gt;
-Image:kde0_5_0.png|Whonix-Workstation 0.5.6 with KDE Desktop
-Image:whonixcheck_gui.png|[[whonixcheck]]
-Image:timesync_gui.png|[[TimeSync]]
-Image:stream_isolation.1.0.jpg|[[Stream Isolation]]
-Image:mat.png|MAT - [[Metadata]] Anonymisation Toolkit
-Image:flash_leak_test.png|[[Browser Plugins|Flash]] Leak Test SocksPort and TransPort
-Image:Thunderbird_17.0.png|Mozilla Thunderbird (called Icedove in Debian) with TorBirdy, see [[E-Mail]]
-Image:xchat_screenshot_created_by_adrelanos.png|[[XChat]], IRC Chat Client
-Image:torbrowser.png|[[Tor Browser]], privacy by design. Fighting web fingerprinting and linkability.
-Image:shield_badge.png|Whonix is a member of the [http://internetdefenseleague.org Internet Defense League].
-Image:OIN_logo_200px.png|Whonix is a [http://www.openinventionnetwork.com/licensees.php licensee] of the [https://en.wikipedia.org/wiki/Open_Invention_Network Open Invention Network].
-Image:donate.png|link=Donate|[[Donate|Donate to Whonix!]]
+Image:kde0_5_0.png|Whonix-Workstation 0.5.6 с рабочим столом KDE
+Image:whonixcheck_gui.png|[[whonix-проверка]]
+Image:timesync_gui.png|[[Синхронизация времени]]
+Image:stream_isolation.1.0.jpg|[[Изоляция потоков]]
+Image:mat.png|MAT - Набор инструментов анонимизации [[Метаданных]]
+Image:flash_leak_test.png|[[Дополнения браузера|Флэш]] Проверка утечек
+через SocksPort и TransPort
+Image:Thunderbird_17.0.png|Mozilla Thunderbird (именуемая &quot;Icedove&quot; в ОС
+Debian) с TorBirdy, см. [[E-Mail]]
+Image:xchat_screenshot_created_by_adrelanos.png|[[XChat]], Чат-клиент IRC
+Image:torbrowser.png|[[Tor-браузер]], приватность за счёт конструкции.
+Борьба c отпечатками пальцев и распознаванием корреляцией.
+Image:shield_badge.png|Whonix состоит в
+[http://internetdefenseleague.org Лиге защиты в Интернете].
+Image:OIN_logo_200px.png|Whonix является
+[http://www.openinventionnetwork.com/licensees.php лицензиатом]
+[https://en.wikipedia.org/wiki/Open_Invention_Network Сети открытых
+изобретений].
+Image:donate.png|link=Donate|[[Donate|Финансово поддержать Whonix!]]
 &lt;/gallery&gt;
 
 = Сноски =
 ОС Whonix выпускается независимо от Проекта Tor, и последний не предоставляет никаких гарантий в отношении её&lt;ref&gt;https://www.torproject.org&lt;/ref&gt;.
 
-&lt;ссылки /&gt;
+&lt;references /&gt;
 
-Thanks to Tomchen1989 from Wikimedia Commons for the download button! [https://commons.wikimedia.org/wiki/File:Download_Button.svg 1] ([http://www.webcitation.org/6I2DQzdu0 w])
-Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_43.htm awxcnx.de]!
-&lt;!---
-&lt;a href=&quot;https://plus.google.com/108150429836421683225&quot; rel=&quot;publisher&quot;&gt;Google+&lt;/a&gt;
----&gt;
+Благодарим Tomchen1989 из Wikimedia Commons за кнопку загрузки!
+[https://commons.wikimedia.org/wiki/File:Download_Button.svg 1]
+([http://www.webcitation.org/6I2DQzdu0 w])
+Благодарим за скриншот публичного домена MAT к
+[https://www.awxcnx.de/handbuch_43.htm awxcnx.de]!
+&lt;!--- &lt;a href=&quot;https://plus.google.com/108150429836421683225&quot; rel=&quot;publisher&quot;&gt;Google+&lt;/a&gt; ---&gt;
 {{Footer}}
 [[Category:Documentation]]</text>
-      <sha1>q0j2eol2gh0twn4eeep3ljjdurl468d</sha1>
+      <sha1>5ndus50ii5spqf53zytotqwykp0rrib</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -57011,19 +57194,19 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
     <ns>1198</ns>
     <id>756</id>
     <revision>
-      <id>4988</id>
-      <timestamp>2014-02-08T14:56:19Z</timestamp>
+      <id>5177</id>
+      <parentid>4988</parentid>
+      <timestamp>2014-02-10T10:31:45Z</timestamp>
       <contributor>
         <username>Username</username>
         <id>217</id>
       </contributor>
-      <comment>Created page with &quot;{{Infobox OS | logo                   = [[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|alt=Download Whonix]] | name                   = Whonix | ...&quot;</comment>
-      <text xml:space="preserve" bytes="3378">{{Infobox OS
+      <text xml:space="preserve" bytes="3380">{{Infobox OS
 | logo                   = [[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|alt=Download Whonix]]
 | name                   = Whonix
 | screenshot             = [[Image:kde0_5_0.png|Whonix-Workstation 0.5.6 с рабочим столом KDE |200px]]
 | caption                = Whonix-Workstation 0.5.6 с рабочим столом KDE 
-| разработчик              = none / Разработчики Whonix 
+| разработчик              = нет / Разработчики Whonix 
 | тип                 = [https://en.wikipedia.org/wiki/Unix-like Unix-like], на основе [https://en.wikipedia.org/wiki/Debian Debian]
 | тип_исходного_кода           = [https://en.wikipedia.org/wiki/Open_source Open Source] 
 | текущее_состояние          = разрабатывается
@@ -57041,7 +57224,7 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
 | ранее было            = [https://trac.torproject.org/projects/tor/wiki/doc/JanusVM JanusVM]&lt;ref&gt;http://www.webcitation.org/6IA21tFaM&lt;/ref&gt;; [http://www.makeuseof.com/tag/browse-email-safely-anonymously-torbox/ TorBOX]&lt;ref&gt;http://www.webcitation.org/6IA20bIq5&lt;/ref&gt;
 | поддерживаемые_платформы    = совместимые с x86 и/или VirtualBox + &lt;ref&gt;[[Другие операционные системы|сконфигурированные под себя рабочие станции]]: собственные сборки могут работать на любом реальном или виртуальном программном обеспечении при условии, что они работают через Whonix-Gateway. Запускаемые файлы Tor-браузера доступны только для ограниченного числа платформ (Windows, Linux, BSD, Mac).&lt;/ref&gt;
 }}</text>
-      <sha1>qcrarzmegzmj0hx0bj4x6w3x42lgwkn</sha1>
+      <sha1>2mkf265taywf6q62jn5fq6pocg14csd</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -57106,15 +57289,15 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
     <ns>1198</ns>
     <id>760</id>
     <revision>
-      <id>4996</id>
-      <timestamp>2014-02-08T15:28:54Z</timestamp>
+      <id>5165</id>
+      <parentid>4996</parentid>
+      <timestamp>2014-02-10T09:44:34Z</timestamp>
       <contributor>
         <username>Username</username>
         <id>217</id>
       </contributor>
-      <comment>Created page with &quot;&lt;ссылки /&gt;&quot;</comment>
-      <text xml:space="preserve" bytes="16">&lt;ссылки /&gt;</text>
-      <sha1>copgo7oy2auam71lfr4dprl1gpm0sok</sha1>
+      <text xml:space="preserve" bytes="14">&lt;references /&gt;</text>
+      <sha1>2ekfb946zgmfx87udlheroym7cul1vu</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -57196,19 +57379,19 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
     <ns>0</ns>
     <id>765</id>
     <revision>
-      <id>5083</id>
-      <parentid>5081</parentid>
-      <timestamp>2014-02-09T17:02:48Z</timestamp>
+      <id>5162</id>
+      <parentid>5160</parentid>
+      <timestamp>2014-02-10T07:03:40Z</timestamp>
       <contributor>
-        <username>Username</username>
-        <id>217</id>
+        <username>УчастникOpenID2</username>
+        <id>220</id>
       </contributor>
-      <text xml:space="preserve" bytes="20896">{{Header}}
+      <text xml:space="preserve" bytes="24155">{{Header}}
 &lt;!--
 Copyright:
 
    Whonix Download wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-   Whonix Download wiki page Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+   Whonix Download wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
    
    This program is free software; you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -57269,11 +57452,27 @@ Then, have a look at the [[About]], [[Warning]] and [[DoNot|Do Not]] pages to ma
 {| class=&quot;wikitable&quot; style=&quot;text-align: center;background-color: #fff&quot;
 |- {{GrayBackground}}
 | style=&quot;height: 47px;&quot;|
-| style=&quot;white-space: nowrap; width: 137px;&quot;|'''Whonix-Gateway'''
-| style=&quot;white-space: nowrap; width: 137px;&quot;|'''Whonix-Workstation'''
+| style=&quot;white-space: nowrap; width: 137px;&quot;|'''Whonix-Gateway'''&lt;br /&gt;(1.2 GiB)
+| style=&quot;white-space: nowrap; width: 137px;&quot;|'''Whonix-Workstation'''&lt;br /&gt;(1.3 GiB)
 | style=&quot;white-space: nowrap; width: 140px;&quot;|'''[[Hide Tor and Whonix from your ISP|Anonymous Download]]&lt;br /&gt; possible &lt;ref name=anonymousdownload&gt;By using the [https://www.torproject.org/download/download-easy.html.en Tor Browser Bundle] (TBB). For an introduction, see [[Tor Browser]]. See also [[Hide Tor and Whonix from your ISP]].&lt;/ref&gt;'''
 | style=&quot;width: 135px;&quot;|'''[[Download Security]]&lt;br /&gt; without [[#Verify the Whonix images|Verification]]'''
 | style=&quot;width: 135px;&quot;|'''[[Download Security]]&lt;br /&gt; with [[#Verify the Whonix images|Verification]]'''
+|- style=&quot;height: 47px&quot;
+
+| {{GrayBackground}}| [[File:HTTP.png|40px]] {{Anchor|Whonix_signature}}
+| &lt;html&gt;&lt;a href=&quot;http://mirror.whonix.org/Whonix-&lt;/html&gt;{{Version}}&lt;html&gt;/Whonix-Gateway-&lt;/html&gt;{{Version}}&lt;html&gt;.ova&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
+| &lt;html&gt;&lt;a href=&quot;http://mirror.whonix.org/Whonix-&lt;/html&gt;{{Version}}&lt;html&gt;/Whonix-Workstation-&lt;/html&gt;{{Version}}&lt;html&gt;.ova&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
+|{{Yes}} &lt;ref name=anonymousdownload /&gt;
+| style=&quot;background-color: {{Red}}&quot;| Very Low &lt;ref&gt;[[Warning#Man-in-the-middle_attacks|Man-in-the-middle attacks]] could poison the download.&lt;/ref&gt;
+| style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification&gt;It does not matter if you did the bulk download over an insecure channel, if you use OpenPGP verification at the end.&lt;/ref&gt;
+|- style=&quot;height: 47px&quot;
+
+| {{GrayBackground}}| [[File:HTTP.png|40px]] {{Anchor|Подпись_Whonix}}
+| &lt;html&gt;&lt;a href=&quot;http://sourceforge.net/projects/whonix/files/current/&lt;/html&gt;{{Version}}&lt;html&gt;/Whonix-Gateway-&lt;/html&gt;{{Version}}&lt;html&gt;.ova/download&quot; target=&quot;_blank&quot;&gt;Скачать&lt;/a&gt;&lt;/html&gt;
+| &lt;html&gt;&lt;a href=&quot;http://sourceforge.net/projects/whonix/files/current/&lt;/html&gt;{{Version}}&lt;html&gt;/Whonix-Workstation-&lt;/html&gt;{{Version}}&lt;html&gt;.ova/download&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
+|{{Yes}} &lt;ref name=anonymousdownload /&gt;
+| style=&quot;background-color: {{Red}}&quot;| Very Low &lt;ref&gt;[[Предупреждение#Атаки_Противник-в-середине|таки_Противник-в-середине]] могут привести к закачке неподлинного файла.&lt;/ref&gt;
+| style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification&gt;Если вы использовали небезопасный канал для загрузки, это не представляет угрозы в случае, если после загрузки вы использовали проверку подлинности с помощью OpenPGP.&lt;/ref&gt;
 |- style=&quot;height: 47px&quot;
 
 | {{GrayBackground}}| [[File:SSL_Symbol.png|40px]] {{Anchor|Whonix_подпись}}
@@ -57293,7 +57492,7 @@ Then, have a look at the [[About]], [[Warning]] and [[DoNot|Do Not]] pages to ma
 |- style=&quot;height: 47px&quot;
 
 | {{GrayBackground}}| [[File:Crypto_key.png|25px]]
-| colspan=&quot;2&quot;|Проверьте подлинность образов с помощью [[Ключа подписи Whonix|Ключа подписания]]
+| colspan=&quot;2&quot;|Проверьте подлинность образов с помощью [[Whonix Signing Key|Ключа подписания]]
 |{{Yes}} &lt;ref name=anonymousdownload /&gt;
 | -
 | -
@@ -57315,18 +57514,11 @@ Then, have a look at the [[About]], [[Warning]] and [[DoNot|Do Not]] pages to ma
 | style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification /&gt;
 |- style=&quot;height: 47px&quot;
 
-| {{GrayBackground}}| [[File:HTTP.png|40px]] {{Anchor|Подпись_Whonix}}
-| &lt;html&gt;&lt;a href=&quot;http://sourceforge.net/projects/whonix/files/current/&lt;/html&gt;{{Version}}&lt;html&gt;/Whonix-Gateway-&lt;/html&gt;{{Version}}&lt;html&gt;.ova/download&quot; target=&quot;_blank&quot;&gt;Скачать&lt;/a&gt;&lt;/html&gt;
-| &lt;html&gt;&lt;a href=&quot;http://sourceforge.net/projects/whonix/files/current/&lt;/html&gt;{{Version}}&lt;html&gt;/Whonix-Workstation-&lt;/html&gt;{{Version}}&lt;html&gt;.ova/download&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
-|{{Yes}} &lt;ref name=anonymousdownload /&gt;
-| style=&quot;background-color: {{Red}}&quot;| Very Low &lt;ref&gt;[[Предупреждение#Атаки_Противник-в-середине|таки_Противник-в-середине]] могут привести к закачке неподлинного файла.&lt;/ref&gt;
-| style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification&gt;Если вы использовали небезопасный канал для загрузки, это не представляет угрозы в случае, если после загрузки вы использовали проверку подлинности с помощью OpenPGP.&lt;/ref&gt;
-|- style=&quot;height: 47px&quot;
-
 | {{GrayBackground}}| [[File:template_source.png|25px]]
 | colspan=&quot;2&quot;|[[Dev/Build Documentation|Build from source code]]
 | See [[Dev/Build Anonymity|Build Anonymity]]
-|colspan=&quot;2&quot; style=&quot;background-color: {{Green}}&quot;| Excellent &lt;ref&gt;When you build from source code, audit the source code for being non-malicious and reasonably bug free, you do not have to [[Trust]] the developers, the website or the SSL certificate authorities.&lt;/ref&gt;
+| style=&quot;background-color: {{Green}}&quot;| Very High &lt;ref name=fromsourcecode&gt;When you build from source code, audit the source code for being non-malicious and reasonably bug free, you do not have to [[Trust]] the developers, the website or the SSL certificate authorities.&lt;/ref&gt;
+| style=&quot;background-color: {{Green}}&quot;| Best &lt;ref name=fromsourcecode /&gt; &lt;ref&gt;By additional verification that you got the source code from the original authors and by ensuring you're using the same source code as others you get better security.&lt;/ref&gt;
 |}
 
 Важно проверить целостность образов для виртуальной машины, которые вы скачали, для того, чтобы убедиться, что во время закачки не произошла атака &quot;противник в середине&quot; или порча файла. (см. [[Безопасность загрузки]].)
@@ -57340,9 +57532,9 @@ Warning:
 Do not continue if verification failed! You risk using infected or erroneous files! The whole point of verification is verify file integrity.
 }}
 
-Образы Whonix для виртуальной машины криптографически подписаны OpenPGP&lt;ref&gt;OpenPGP является стандартом шифрования данных, обеспечивающим криптографическую приватность и идентификацию посредством использования ключей, находящихся у пользователей.&lt;/ref&gt; разработчиком Whonix.
+Whonix virtual machine images are cryptographically signed using OpenPGP&lt;ref&gt;OpenPGP is a standard for data encryption that provides cryptographic privacy and authentication through the use of keys owned by its users.&lt;/ref&gt; by Whonix developer Patrick Schleizer.
 
-Если вы знаете, как пользоваться ключом OpenPGP, сразу скачайте [[Ключ подписи Whonix]] и [[#Download Whonix|подписи Whonix]].
+Если вы знаете, как пользоваться ключом OpenPGP, сразу скачайте [[Whonix Signing Key]] и [[#Download Whonix|подписи Whonix]].
 
 В противном случае следуйте следующим указаниям:
 
@@ -57385,8 +57577,17 @@ Do not continue if verification failed! You risk using infected or erroneous fil
 [[File:Whonix News Blog opened offline created by adrelanos.png|thumb|{{Code|Whonix News Blogs}}]]
 Есть два способа получения новостей. Сделайте выбор по своему усмотрению.
 
-# [https://anonymousoperatingsystem.wordpress.com/category/important/ {{Code|Whonix Important Blog}}] - Most important stuff only. Security vulnerabilities and new stable versions only. For people with very limited time and interest in Whonix development and news.
-# [https://anonymousoperatingsystem.wordpress.com/ {{Code|Whonix Feature Blog}}] - Includes everything from {{Code|Whonix Important Blog}}. Also testers-only and developers versions are announced. Has a relaxed posting policy. Also blog posts about updated articles, new features, future features, development, call for testing, general project thoughts and so on will be published.
+     {{Code|Важный блог Whonix}} - Здесь публикуется наиболее важная
+информация. Главным образом, это информация об уязвимостях и новых
+стабильных версиях. Этот блог предназначен для людей с недостатком
+времени или отсутствием интереса к разработке Whonix и связанным с ОС
+новостям.
+    {{Code|Блог функций Whonix}} - Включает в себя всю информацию из
+{{Code|Важного блога Whonix}}. Рассматриваются только версии для
+тестировщиков и разработчиков. Обновляется по мере наличия у
+разработчника свободного времени. Содержит также информацию об
+обновлениях статей, новых функциях, будущих функциях, разработке,
+предложения к тестированию, общие мысли о проекте и тому подобное.
 
 Около '''Tor Browser Recommended''', вы можете увидеть ярлык на рабочем столе, см. [[Image:important.png|r]], он запустит оба {{Code|Новостных блога Whonix}} с сохранением вашей анонимности. В случае нехватки времени рекомендуется периодически читать хотя бы {{Code|Важный блог Whonix}}. Если вас вообще интересуют вопросы анонимности/приватности/безопасности или вы хотите узнать о текущих разработках по Whonix, посетите {{Code|Блог функций Whonix}}.
 
@@ -57408,11 +57609,7 @@ Furthermore you will be automatically notified about new Whonix versions by {{Co
 
 There are some [[Official Whonix Online Profiles|Whonix Social Media Profiles]], but please don't rely on them for getting Whonix News and please don't use them to contact Whonix developers. (See [[Contact]] for contact information.)
 
-Because some people will do so even though it is not recommended, messages from the Whonix Feature Blog will be automatically mirrored to [https://twitter.com/Whonix Whonix Twitter Profile] and to [https://plus.google.com/108150429836421683225/about Whonix Google+ Profile].
-
-[https://www.facebook.com/pages/Whonix/369240439779108 Whonix Facebook Profile] won't get any updates, because {{Code|Facebook is asking for governmental issued photo ID}}.&lt;ref&gt;https://sourceforge.net/p/whonix/featureblog/2013/01/facebook-asking-for-government-issued-photo-id-ex-passport-drivers-license---whonix-facebook-account-permanently-blocked/&lt;/ref&gt;
-
-identi.ca's mirroring feature is still down,&lt;ref&gt;http://status.net/open-source/issues/3581&lt;/ref&gt; therefore no mirroring to [https://identi.ca/whonix Whonix identi.ca Profile]
+Because some people will do so even though it is not recommended, messages from the Whonix Feature Blog will be automatically mirrored to [https://twitter.com/Whonix Whonix Twitter Profile], to [https://www.facebook.com/Whonix Whonix Facebook Profile] and to [https://plus.google.com/108150429836421683225/ Whonix Google+ Profile].
 
 If you won't get into trouble by letting others learn about Whonix, feel free to follow or like those profiles (with your anonymous account) as a little way to [[Contribute]].
 
@@ -57422,11 +57619,48 @@ In case you are interested in Whonix source code updates, [[Dev/git#subscribe_to
 
 = Known bugs =
 == Normal ==
+=== Connection Issues - Tor stops working after an Upgrade and needs a Workaround ===
+When upgrading to Tor 0.2.4.19-1~d79.jessie+1 (using sudo apt-get dist-upgrade), your Tor connection may go down. There is a temporary workaround.
+
+Open /etc/default/tor.
+
+&lt;pre&gt;
+## If you are using a graphical Whonix-Gateway, use:
+kdesudo kate /etc/default/tor
+
+## Or alternatively, if you are using a terminal-only Whonix-Gateway, use:
+sudo nano /etc/default/tor
+&lt;/pre&gt;
+
+Scroll down, near bottom comment in (by removing the # in front of it).
+
+&lt;pre&gt;
+USE_AA_EXEC=&quot;no&quot;
+&lt;/pre&gt;
+
+Then try:
+
+&lt;pre&gt;
+sudo service tor restart
+&lt;/pre&gt;
+
+You should keep that in mind and undo that change when Whonix or Tor fixes that bug. We'll keep you posted. (See [[Download#Stay_tuned]] and [[Security_Guide#Recommendation_to_install_latest_security_updates_on_all_systems]].)
+
+Forum help thread:
+[[Special:AWCforum/st/id287/new_tor_and_debian_updates_today....html]]
+
 === Tor Browser Updater (Whonix) ===
 Currently broken due to changes by torproject.org. You have to [[Manually Updating Tor Browser|manually update Tor Browser]] in meanwhile.
 
 Forum help thread:
 [[Special:AWCforum/st/id262/updating_TOR_browser_error...html]]
+
+=== Tor Browser Starter (Whonix) ===
+After manually upgrading Tor Browser (see above)... To start Tor Browser, got to your /home/user/tor-browser_en-US folder and double click start-tor-browser. Or type in terminal (Konsole).
+
+&lt;pre&gt;
+/home/user/tor-browser_en-US/start-tor-browser
+&lt;/pre&gt;
 
 === Virtual Box Shared Folder Issues ===
 Shared Folders aren’t working with the latest Linux kernel. (This is a Debian/Virtual Box issue, not caused by Whonix. Has already been reported to upstream by a Debian user.)
@@ -57444,17 +57678,35 @@ sudo apt-get update
 sudo apt-get dist-upgrade
 &lt;/pre&gt;
 
-You can then download enigmail from here: &lt;br /&gt;
-https://addons.mozilla.org/en-us/thunderbird/addon/enigmail/
-
-(Enigmail is at the moment not in Debian Testing/Jessie.)
+You should then install enigmail as usual: &lt;br /&gt;
+&lt;pre&gt;
+sudo apt-get install enigmail
+&lt;/pre&gt;
 
 === Mounting (CD/DVD) Devices ===
 Currently needs a workaround as well. Please see [[Special:AWCforum/st/id167/#post_700|forum]].
 
+=== VLC / Video Player Crash ===
+For problem and workaround see forum thread: [[Special:AWCforum/st/id282/vlc_video_crash.html]].
+
 == Minor ==
 === Whonix-Gateway: Err: http://deb.torproject.org tor-0.2.4.x-jessie/main i386 Packages 404 Not Found ===
-See [https://anonymousoperatingsystem.wordpress.com/2013/12/13/whonix-gateway-err-httpdeb-torproject-org-tor-0-2-4-x-jessiemain-i386-packages-404-not-found/ blog post].
+'''Short answer''': &lt;br /&gt;
+Update and upgrade your underlying Debian system (Whonix is a derivative of Debian).
+&lt;pre&gt;
+sudo apt-get update
+sudo apt-get dist-upgrade
+&lt;/pre&gt;
+
+See also [[Security_Guide#Recommendation_to_install_latest_security_updates_on_all_systems]]. This bug will be fixed with next Whonix upgrade (will take some time). No other action strictly required for now.
+
+'''Long answer''': &lt;br /&gt;
+This is because torproject deprecated that repository. That was to be expected. The repository we're using now is already preconfigured (in /etc/apt/sources.list.d/torproject.list).
+
+Taking action isn't important at this stage. You can comment it out (by putting a # in front of it) in /etc/apt/sources.list.d/torproject.list if you want. ({{Code|kdesudo kate /etc/apt/sources.list.d/torproject.list}} for graphical Whonix-Gateway or {{Code|sudo nano /etc/apt/sources.list.d/torproject.list}} for terminal-only Whonix-Gateway) If you don't do it, it will be auto fixed with next upgrade of Whonix.
+
+=== Defunct Desktop Shortcuts ===
+The desktop shortcuts Tor Browser, Contribute, Forum, Documentation, Donate won't work until there is an upgrade of Whonix. Please manually visit these pages. How to start Tor Browser has already been explained above.
 
 === &quot;apt-get source package&quot; will show &quot;dpkg-source: warning: failed to verify signature&quot; ===
 More info [http://lists.debian.org/debian-derivatives/2013/08/msg00000.html here] (and in the following mails).
@@ -57482,7 +57734,7 @@ sudo ln -s /etc/dpkg/origins/whonix /etc/dpkg/origins/default
 = License =
 &lt;pre&gt;
 Whonix Download wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
-Whonix Download wiki page Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;
+Whonix Download wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
 
 This program comes with ABSOLUTELY NO WARRANTY; for details see the wiki source code.
 This is free software, and you are welcome to redistribute it
@@ -57494,7 +57746,7 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>28wrtrk9cagwhdcnc7efxpyi8ga093c</sha1>
+      <sha1>mtsmhhtju3gnrhatu9xg698voc88q6c</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -57736,20 +57988,20 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
     <ns>1198</ns>
     <id>777</id>
     <revision>
-      <id>5029</id>
-      <timestamp>2014-02-09T15:10:13Z</timestamp>
+      <id>5161</id>
+      <parentid>5029</parentid>
+      <timestamp>2014-02-10T07:03:39Z</timestamp>
       <contributor>
-        <username>Username</username>
-        <id>217</id>
+        <username>УчастникOpenID2</username>
+        <id>220</id>
       </contributor>
-      <comment>Created page with &quot;| {{GrayBackground}}| [[File:Crypto_key.png|25px]] | colspan=&quot;2&quot;|Проверьте подлинность образов с помощью Ключа подписи Whonix|...&quot;</comment>
-      <text xml:space="preserve" bytes="280">| {{GrayBackground}}| [[File:Crypto_key.png|25px]]
-| colspan=&quot;2&quot;|Проверьте подлинность образов с помощью [[Ключа подписи Whonix|Ключа подписания]]
+      <text xml:space="preserve" bytes="266">| {{GrayBackground}}| [[File:Crypto_key.png|25px]]
+| colspan=&quot;2&quot;|Проверьте подлинность образов с помощью [[Whonix Signing Key|Ключа подписания]]
 |{{Yes}} &lt;ref name=anonymousdownload /&gt;
 | -
 | -
 |- style=&quot;height: 47px&quot;</text>
-      <sha1>pug6s0721kc2kd5nll3yc8ezy8k18mt</sha1>
+      <sha1>fpuvtu7ilohpmaxh82q4fcz8ej0q37r</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -57930,15 +58182,15 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
     <ns>1198</ns>
     <id>786</id>
     <revision>
-      <id>5044</id>
-      <timestamp>2014-02-09T15:49:48Z</timestamp>
+      <id>5159</id>
+      <parentid>5044</parentid>
+      <timestamp>2014-02-10T07:03:27Z</timestamp>
       <contributor>
-        <username>Username</username>
-        <id>217</id>
+        <username>УчастникOpenID2</username>
+        <id>220</id>
       </contributor>
-      <comment>Created page with &quot;Если вы знаете, как пользоваться ключом OpenPGP, сразу скачайте [[Ключ подписи Whonix]] и #Download Whonix|подп...&quot;</comment>
-      <text xml:space="preserve" bytes="191">Если вы знаете, как пользоваться ключом OpenPGP, сразу скачайте [[Ключ подписи Whonix]] и [[#Download Whonix|подписи Whonix]].</text>
-      <sha1>kxmgy7wove683f9s7uwba4vpfl7b90w</sha1>
+      <text xml:space="preserve" bytes="179">Если вы знаете, как пользоваться ключом OpenPGP, сразу скачайте [[Whonix Signing Key]] и [[#Download Whonix|подписи Whonix]].</text>
+      <sha1>ij3bjz9lswlj8w4oir2yu4sttu0namu</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -58250,6 +58502,450 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
       <comment>Created page with &quot;Около '''Tor Browser Recommended''', вы можете увидеть ярлык на рабочем столе, см. [[Image:important.png|r]], он запустит о...&quot;</comment>
       <text xml:space="preserve" bytes="738">Около '''Tor Browser Recommended''', вы можете увидеть ярлык на рабочем столе, см. [[Image:important.png|r]], он запустит оба {{Code|Новостных блога Whonix}} с сохранением вашей анонимности. В случае нехватки времени рекомендуется периодически читать хотя бы {{Code|Важный блог Whonix}}. Если вас вообще интересуют вопросы анонимности/приватности/безопасности или вы хотите узнать о текущих разработках по Whonix, посетите {{Code|Блог функций Whonix}}.</text>
       <sha1>to63qdx1avszzqzb8osy0tswur01z7x</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/7/ru</title>
+    <ns>1198</ns>
+    <id>804</id>
+    <revision>
+      <id>5175</id>
+      <parentid>5173</parentid>
+      <timestamp>2014-02-10T10:15:17Z</timestamp>
+      <contributor>
+        <username>Username</username>
+        <id>217</id>
+      </contributor>
+      <text xml:space="preserve" bytes="1540">
+
+
+I don't know why but I cannot save any changes to the Screenshots
+section of the main page.
+
+Maybe u can do it
+
+= Скриншоты =
+&lt;gallery&gt;
+Image:kde0_5_0.png|Whonix-Workstation 0.5.6 с рабочим столом KDE
+Image:whonixcheck_gui.png|[[whonix-проверка]]
+Image:timesync_gui.png|[[Синхронизация времени]]
+Image:stream_isolation.1.0.jpg|[[Изоляция потоков]]
+Image:mat.png|MAT - Набор инструментов анонимизации [[Метаданных]]
+Image:flash_leak_test.png|[[Дополнения браузера|Флэш]] Проверка утечек
+через SocksPort и TransPort
+Image:Thunderbird_17.0.png|Mozilla Thunderbird (именуемая &quot;Icedove&quot; в ОС
+Debian) с TorBirdy, см. [[E-Mail]]
+Image:xchat_screenshot_created_by_adrelanos.png|[[XChat]], Чат-клиент IRC
+Image:torbrowser.png|[[Tor-браузер]], приватность за счёт конструкции.
+Борьба c отпечатками пальцев и распознаванием корреляцией.
+Image:shield_badge.png|Whonix состоит в
+[http://internetdefenseleague.org Лиге защиты в Интернете].
+Image:OIN_logo_200px.png|Whonix является
+[http://www.openinventionnetwork.com/licensees.php лицензиатом]
+[https://en.wikipedia.org/wiki/Open_Invention_Network Сети открытых
+изобретений].
+Image:donate.png|link=Donate|[[Donate|Финансово поддержать Whonix!]]
+&lt;/gallery&gt;</text>
+      <sha1>pt3bgrhvg9h08u0bbatu1dfagd09vp3</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/10/ru</title>
+    <ns>1198</ns>
+    <id>805</id>
+    <revision>
+      <id>5163</id>
+      <parentid>5092</parentid>
+      <timestamp>2014-02-10T09:43:12Z</timestamp>
+      <contributor>
+        <username>Username</username>
+        <id>217</id>
+      </contributor>
+      <text xml:space="preserve" bytes="428">Благодарим Tomchen1989 из Wikimedia Commons за кнопку загрузки!
+[https://commons.wikimedia.org/wiki/File:Download_Button.svg 1]
+([http://www.webcitation.org/6I2DQzdu0 w])
+Благодарим за скриншот публичного домена MAT к
+[https://www.awxcnx.de/handbuch_43.htm awxcnx.de]!
+&lt;!--- &lt;a href=&quot;https://plus.google.com/108150429836421683225&quot; rel=&quot;publisher&quot;&gt;Google+&lt;/a&gt; ---&gt;</text>
+      <sha1>e2qfjaadbnqgf46d3d38x212rh1orf0</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/39/ru</title>
+    <ns>1198</ns>
+    <id>806</id>
+    <revision>
+      <id>5094</id>
+      <timestamp>2014-02-09T23:32:05Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;     {{Code|Важный блог Whonix}} - Здесь публикуется наиболее важная информация. Главным образом, это инф...&quot;</comment>
+      <text xml:space="preserve" bytes="1185">     {{Code|Важный блог Whonix}} - Здесь публикуется наиболее важная
+информация. Главным образом, это информация об уязвимостях и новых
+стабильных версиях. Этот блог предназначен для людей с недостатком
+времени или отсутствием интереса к разработке Whonix и связанным с ОС
+новостям.
+    {{Code|Блог функций Whonix}} - Включает в себя всю информацию из
+{{Code|Важного блога Whonix}}. Рассматриваются только версии для
+тестировщиков и разработчиков. Обновляется по мере наличия у
+разработчника свободного времени. Содержит также информацию об
+обновлениях статей, новых функциях, будущих функциях, разработке,
+предложения к тестированию, общие мысли о проекте и тому подобное.</text>
+      <sha1>d7aho2t270qr171uux0ztd5nlwfu1qx</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/75/en</title>
+    <ns>1198</ns>
+    <id>807</id>
+    <revision>
+      <id>5098</id>
+      <timestamp>2014-02-10T00:34:35Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="88">&lt;pre&gt;
+## If you are using a graphical Whonix-Gateway, use:
+kdesudo kate /etc/default/tor</text>
+      <sha1>kxzvdywnj4mzv0n4gauxdwsgywicdlf</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/79/en</title>
+    <ns>1198</ns>
+    <id>808</id>
+    <revision>
+      <id>5099</id>
+      <timestamp>2014-02-10T00:34:42Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="9">Then try:</text>
+      <sha1>agom9bt495qqxoqzhjvfl3usentg9er</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/86/en</title>
+    <ns>1198</ns>
+    <id>809</id>
+    <revision>
+      <id>5102</id>
+      <timestamp>2014-02-10T00:35:31Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="129">=== VLC / Video Player Crash ===
+For problem and workaround see forum thread: [[Special:AWCforum/st/id282/vlc_video_crash.html]].</text>
+      <sha1>jwfgsv469k0i4pmzny9lx1ou51d5cx4</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/81/en</title>
+    <ns>1198</ns>
+    <id>810</id>
+    <revision>
+      <id>5103</id>
+      <timestamp>2014-02-10T00:36:00Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="226">You should keep that in mind and undo that change when Whonix or Tor fixes that bug. We'll keep you posted. (See [[Download#Stay_tuned]] and [[Security_Guide#Recommendation_to_install_latest_security_updates_on_all_systems]].)</text>
+      <sha1>otl4uo08lwl30ozd9mqx2pitw2bia03</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/88/en</title>
+    <ns>1198</ns>
+    <id>811</id>
+    <revision>
+      <id>5105</id>
+      <timestamp>2014-02-10T00:36:52Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="207">'''Long answer''': &lt;br /&gt;
+This is because torproject deprecated that repository. That was to be expected. The repository we're using now is already preconfigured (in /etc/apt/sources.list.d/torproject.list).</text>
+      <sha1>dw747slkceg6dr86zv06jrotvyl7kjm</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/85/en</title>
+    <ns>1198</ns>
+    <id>812</id>
+    <revision>
+      <id>5106</id>
+      <timestamp>2014-02-10T00:37:41Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="59">&lt;pre&gt;
+/home/user/tor-browser_en-US/start-tor-browser
+&lt;/pre&gt;</text>
+      <sha1>404o513nnqavxa8z4vhoept0wvwfs9s</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/77/en</title>
+    <ns>1198</ns>
+    <id>813</id>
+    <revision>
+      <id>5110</id>
+      <timestamp>2014-02-10T00:39:18Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="71">Scroll down, near bottom comment in (by removing the # in front of it).</text>
+      <sha1>i62ihto9t9ndl4u6laf4174ibhsm0nr</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/80/en</title>
+    <ns>1198</ns>
+    <id>814</id>
+    <revision>
+      <id>5111</id>
+      <timestamp>2014-02-10T00:39:30Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="37">&lt;pre&gt;
+sudo service tor restart
+&lt;/pre&gt;</text>
+      <sha1>ehdp0ym52xxutdoqj2w1nfl1v03493d</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/76/en</title>
+    <ns>1198</ns>
+    <id>815</id>
+    <revision>
+      <id>5115</id>
+      <timestamp>2014-02-10T00:41:22Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="108">## Or alternatively, if you are using a terminal-only Whonix-Gateway, use:
+sudo nano /etc/default/tor
+&lt;/pre&gt;</text>
+      <sha1>gcxh20svaqxqqq25sy8y0j1cvkdq4pl</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/87/en</title>
+    <ns>1198</ns>
+    <id>816</id>
+    <revision>
+      <id>5116</id>
+      <timestamp>2014-02-10T00:42:24Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="207">See also [[Security_Guide#Recommendation_to_install_latest_security_updates_on_all_systems]]. This bug will be fixed with next Whonix upgrade (will take some time). No other action strictly required for now.</text>
+      <sha1>3ho0gfrbc13tbfkmnm10xfay0coez2b</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/83/en</title>
+    <ns>1198</ns>
+    <id>817</id>
+    <revision>
+      <id>5117</id>
+      <timestamp>2014-02-10T00:43:55Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="175">=== Tor Browser Updater (Whonix) ===
+Currently broken due to changes by torproject.org. You have to [[Manually Updating Tor Browser|manually update Tor Browser]] in meanwhile.</text>
+      <sha1>14q2nrefhwybl7a8alfab5vlxrbehv4</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/89/en</title>
+    <ns>1198</ns>
+    <id>818</id>
+    <revision>
+      <id>5120</id>
+      <timestamp>2014-02-10T00:44:25Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="414">Taking action isn't important at this stage. You can comment it out (by putting a # in front of it) in /etc/apt/sources.list.d/torproject.list if you want. ({{Code|kdesudo kate /etc/apt/sources.list.d/torproject.list}} for graphical Whonix-Gateway or {{Code|sudo nano /etc/apt/sources.list.d/torproject.list}} for terminal-only Whonix-Gateway) If you don't do it, it will be auto fixed with next upgrade of Whonix.</text>
+      <sha1>s0nvzggbghl3q13h7bhmvv1ag16f83k</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/90/en</title>
+    <ns>1198</ns>
+    <id>819</id>
+    <revision>
+      <id>5121</id>
+      <timestamp>2014-02-10T00:45:20Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="251">=== Defunct Desktop Shortcuts ===
+The desktop shortcuts Tor Browser, Contribute, Forum, Documentation, Donate won't work until there is an upgrade of Whonix. Please manually visit these pages. How to start Tor Browser has already been explained above.</text>
+      <sha1>9wzn71hnk097fpdio9z6wjpfss5zm7s</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/82/en</title>
+    <ns>1198</ns>
+    <id>820</id>
+    <revision>
+      <id>5124</id>
+      <timestamp>2014-02-10T00:51:12Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="89">Forum help thread:
+[[Special:AWCforum/st/id287/new_tor_and_debian_updates_today....html]]</text>
+      <sha1>rqjw3ourcvrcdbalxr6uu9j2z6dsim9</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/74/en</title>
+    <ns>1198</ns>
+    <id>821</id>
+    <revision>
+      <id>5125</id>
+      <timestamp>2014-02-10T00:52:51Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="22">Open /etc/default/tor.</text>
+      <sha1>oyf8z5i2jt6gwmzoaqb6acv6x20rsd7</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/78/en</title>
+    <ns>1198</ns>
+    <id>822</id>
+    <revision>
+      <id>5126</id>
+      <timestamp>2014-02-10T00:53:29Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="29">&lt;pre&gt;
+USE_AA_EXEC=&quot;no&quot;
+&lt;/pre&gt;</text>
+      <sha1>hlb6mskjxizsjyckwnh9m60dpjbjmpi</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/84/en</title>
+    <ns>1198</ns>
+    <id>823</id>
+    <revision>
+      <id>5127</id>
+      <timestamp>2014-02-10T00:53:31Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="225">=== Tor Browser Starter (Whonix) ===
+After manually upgrading Tor Browser (see above)... To start Tor Browser, got to your /home/user/tor-browser_en-US folder and double click start-tor-browser. Or type in terminal (Konsole).</text>
+      <sha1>rttqhafflkrzr7k76bdlbnkuq653ek0</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/91/en</title>
+    <ns>1198</ns>
+    <id>824</id>
+    <revision>
+      <id>5141</id>
+      <timestamp>2014-02-10T01:16:42Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="796">| {{GrayBackground}}| [[File:HTTP.png|40px]] {{Anchor|Whonix_signature}}
+| &lt;html&gt;&lt;a href=&quot;http://mirror.whonix.org/Whonix-&lt;/html&gt;{{Version}}&lt;html&gt;/Whonix-Gateway-&lt;/html&gt;{{Version}}&lt;html&gt;.ova&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
+| &lt;html&gt;&lt;a href=&quot;http://mirror.whonix.org/Whonix-&lt;/html&gt;{{Version}}&lt;html&gt;/Whonix-Workstation-&lt;/html&gt;{{Version}}&lt;html&gt;.ova&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
+|{{Yes}} &lt;ref name=anonymousdownload /&gt;
+| style=&quot;background-color: {{Red}}&quot;| Very Low &lt;ref&gt;[[Warning#Man-in-the-middle_attacks|Man-in-the-middle attacks]] could poison the download.&lt;/ref&gt;
+| style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification&gt;It does not matter if you did the bulk download over an insecure channel, if you use OpenPGP verification at the end.&lt;/ref&gt;
+|- style=&quot;height: 47px&quot;</text>
+      <sha1>p8pht9zziznxns549oa86agwgw9s4g8</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
