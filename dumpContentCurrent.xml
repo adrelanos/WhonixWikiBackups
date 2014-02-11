@@ -37,16 +37,20 @@
     <ns>0</ns>
     <id>1</id>
     <revision>
-      <id>4705</id>
-      <parentid>4688</parentid>
-      <timestamp>2014-01-14T15:21:55Z</timestamp>
+      <id>5310</id>
+      <parentid>5294</parentid>
+      <timestamp>2014-02-11T14:12:03Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="5029">{{Header}}
+      <text xml:space="preserve" bytes="5120">{{Header}}
 
-&lt;languages /&gt;&lt;translate&gt;
+&lt;languages /&gt;
+&lt;translate&gt;
+{{#seo:
+|description=Privacy protection. Anonymity online. Anonymous Operating System.
+}}
 
 &lt;!--T:1--&gt;
 {{Infobox OS
@@ -119,7 +123,7 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
 &lt;/translate&gt;
 {{Footer}}
 [[Category:Documentation]]</text>
-      <sha1>ir4xqjc3pmcirntvhi3lagfwhs7khno</sha1>
+      <sha1>ehwihysmbhy1tbuiyowye83rzp3278r</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -291,17 +295,24 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
     <ns>10</ns>
     <id>14</id>
     <revision>
-      <id>4783</id>
-      <parentid>4782</parentid>
-      <timestamp>2014-01-16T19:54:23Z</timestamp>
+      <id>5289</id>
+      <parentid>5288</parentid>
+      <timestamp>2014-02-11T12:59:04Z</timestamp>
       <contributor>
-        <username>Fortasse</username>
-        <id>1</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="638">&lt;font size=&quot;3&quot;&gt;[https://www.whonix.org{{localurl:{{FULLPAGENAME}}}} https] | &lt;html&gt;&lt;a class=&quot;link-https&quot; style=&quot;color: #3366BB&quot; href=&quot;http://kkkkkkkkkk63ava6.onion&lt;/html&gt;{{localurl:{{FULLPAGENAME}}}}&lt;html&gt;&quot; rel=&quot;nofollow&quot;&gt;.onion&lt;/a&gt;&lt;/html&gt;&lt;/font&gt; &lt;font size=&quot;1&quot;&gt;| [http://whonix.org.nyud.net{{localurl:{{FULLPAGENAME}}}} Mirror] | [https://kkkkkkkkkk63ava6.tor2web.org{{localurl:{{FULLPAGENAME}}}} Mirror] | [[Contribute#Donate|Donate to Whonix!]]&lt;/font&gt; | [[Impressum]] | [[Datenschutz|Datenschutzerklärung]] | [[Disclaimer|Haftungsausschluss]]&lt;!--
+      <text xml:space="preserve" bytes="877">&lt;font size=&quot;3&quot;&gt;[https://www.whonix.org{{localurl:{{FULLPAGENAME}}}} https] | &lt;html&gt;&lt;a class=&quot;link-https&quot; style=&quot;color: #3366BB&quot; href=&quot;http://kkkkkkkkkk63ava6.onion&lt;/html&gt;{{localurl:{{FULLPAGENAME}}}}&lt;html&gt;&quot; rel=&quot;nofollow&quot;&gt;.onion&lt;/a&gt;&lt;/html&gt;&lt;/font&gt; &lt;font size=&quot;1&quot;&gt;| [http://whonix.org.nyud.net{{localurl:{{FULLPAGENAME}}}} Mirror] | [https://kkkkkkkkkk63ava6.tor2web.org{{localurl:{{FULLPAGENAME}}}} Mirror] | [[Contribute#Donate|Donate to Whonix!]]&lt;/font&gt; | [[Impressum]] | [[Datenschutz|Datenschutzerklärung]] | [[Disclaimer|Haftungsausschluss]]&lt;!--
 inspired by http://aboli.sh/
-@cnpirates ssl(tor) ssl(i2p) coralcdn .sdns .onion .i2p--&gt;</text>
-      <sha1>bog7bkq8xpfv9ot083w6abkf1meqiel</sha1>
+@cnpirates ssl(tor) ssl(i2p) coralcdn .sdns .onion .i2p--&gt;
+{{#seo:
+|metakeywords=anonymity
+|og:type=website
+|article:publisher=https://www.facebook.com/Whonix
+|article:author=https://www.facebook.com/patrick.schleizer
+|og:image=https://www.whonix.org/blog/wp-content/uploads/2014/01/Banner2.png
+}}</text>
+      <sha1>jplcmamvukdtnvlr1opqqm2lp131m3y</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -667,15 +678,14 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>19</id>
     <revision>
-      <id>5136</id>
-      <parentid>5135</parentid>
-      <timestamp>2014-02-10T01:06:13Z</timestamp>
+      <id>5285</id>
+      <parentid>5283</parentid>
+      <timestamp>2014-02-11T12:35:32Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>Marked this version for translation</comment>
-      <text xml:space="preserve" bytes="21672">{{Header}}
+      <text xml:space="preserve" bytes="21751">{{Header}}
 &lt;!--
 Copyright:
 
@@ -709,6 +719,9 @@ This wiki page is a fork of the Tails Download page, from this exact source &lt;
 --&gt;
 &lt;languages /&gt;
 &lt;translate&gt;
+{{#seo:
+|description=Download Whonix. Anonymity online. Privacy protection.
+}}
 = First time user? = &lt;!--T:1--&gt;
 {{Anchor|Landing}}
 
@@ -1089,7 +1102,7 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>mxvocroor4k7bfog52gljaaf9zw5ipn</sha1>
+      <sha1>30ly6xzpfx5dp44l3e8r4nk8flgdb3e</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -1449,16 +1462,14 @@ See also [[Security_in_Real_World | Whonix security in real world]], [[Security_
     <ns>0</ns>
     <id>24</id>
     <revision>
-      <id>4718</id>
-      <parentid>4651</parentid>
-      <timestamp>2014-01-14T17:37:01Z</timestamp>
+      <id>5287</id>
+      <parentid>4718</parentid>
+      <timestamp>2014-02-11T12:42:26Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <minor/>
-      <comment>Text replace - &quot;Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;&quot; to &quot;Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;&quot;</comment>
-      <text xml:space="preserve" bytes="13907">&lt;!--
+      <text xml:space="preserve" bytes="14009">&lt;!--
 Copyright:
 
    Whonix Documentation wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -1490,6 +1501,9 @@ The complete text of the GNU General Public License can also be found online on 
 The Whonix Documentation wiki page is forked from the Tails Documentation page, from this exact source &lt;http://git.immerda.ch/?p=amnesia.git;a=blob;f=wiki/src/doc.mdwn;hb=920ef988d1e8ed552f4e97d1423e0038e1bfbbf4&gt;.
 --&gt;
 {{Header}}
+{{#seo:
+|description=Whonix Documentation. Crash Course in Anonymity and Security on the Internet.
+}}
 
 = Introduction =
 
@@ -1725,7 +1739,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>aowbunkaf41r2mjdeymctdq9lujs60j</sha1>
+      <sha1>c8euabitd43wp442jnxy40wxhl5lesf</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -2493,14 +2507,17 @@ Not compulsory, just nicely asking:
     <ns>0</ns>
     <id>56</id>
     <revision>
-      <id>4452</id>
-      <parentid>4365</parentid>
-      <timestamp>2013-12-25T01:25:07Z</timestamp>
+      <id>5286</id>
+      <parentid>4452</parentid>
+      <timestamp>2014-02-11T12:40:09Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>/* Why don't you use OpenWRT, which is more secure?!? */</comment>
-      <text xml:space="preserve" bytes="49083">{{Header}}
+      <text xml:space="preserve" bytes="49140">{{Header}}
+{{#seo:
+|description=FAQ. Frequently Asked Questions.
+}}
 = Why are the Whonix images so big? =
 
 Compared to other &quot;Tor-VM&quot; or &quot;Tor-LiveCD/DVD&quot; projects which sometimes use special minimal or stripped down Linux distributions (e.g. TinyCore, DSL, Puppy) Whonix is larger, both VMs together are currently almost 2 GB.
@@ -3046,7 +3063,7 @@ Without performing these basics steps, the setup may sound clever, but may not w
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>c0803m9w6d856lax9fj1avj254ez8p9</sha1>
+      <sha1>jflkhkn7nsw73zsux7qpg29u78346w3</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -41871,19 +41888,42 @@ The Tor Project never managed to get such a downloader up and running, see {{Cod
     <ns>0</ns>
     <id>437</id>
     <revision>
-      <id>4983</id>
-      <parentid>4982</parentid>
-      <timestamp>2014-02-06T21:33:45Z</timestamp>
+      <id>5309</id>
+      <parentid>5308</parentid>
+      <timestamp>2014-02-11T13:55:42Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="308">&lt;rss number=10 title=off desc=off&gt;https://www.whonix.org/blog/feed/rss2/&lt;/rss&gt;
+      <text xml:space="preserve" bytes="715">&lt;metakey&gt;ListOfKeywords,word1,word2&lt;/metakey&gt;
+
+
+= a = 
+
+
+title=&quot;word1,word2&quot;
+metakeywords=&quot;word3,word4&quot;
+metadescription=&quot;word5,word6&quot;
+test=&quot;word7,word8&quot;
+
+
+= y =
+og&amp;#58;type=&quot;website&quot;
+article:publisher=&quot;https://www.facebook.com/Whonix&quot;
+article:author=&quot;https://www.facebook.com/patrick.schleizer&quot;
+og:image=&quot;https://www.whonix.org/blog/wp-content/uploads/2014/01/Banner2.png&quot;
+
+= x =
+&lt;html&gt;
+test &amp;#58;
+&lt;/html&gt;
+
+&lt;rss number=10 title=off desc=off&gt;https://www.whonix.org/blog/feed/rss2/&lt;/rss&gt;
 
 &lt;rss number=10 title=off desc=off&gt;https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10&lt;/rss&gt;
 
 &lt;rss number=10 title=off desc=off&gt;https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10;sa=news&lt;/rss&gt;</text>
-      <sha1>6hqj7bt569r7vm80oyi26h3jj72rqnk</sha1>
+      <sha1>abmlag20o0z0n11qby48eldvyg2odd5</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -57374,14 +57414,14 @@ Image:donate.png|link=Donate|[[Donate|Финансово поддержать Wh
     <ns>0</ns>
     <id>765</id>
     <revision>
-      <id>5280</id>
-      <parentid>5278</parentid>
-      <timestamp>2014-02-11T03:38:21Z</timestamp>
+      <id>5293</id>
+      <parentid>5291</parentid>
+      <timestamp>2014-02-11T13:10:58Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <username>Username</username>
+        <id>217</id>
       </contributor>
-      <text xml:space="preserve" bytes="26675">{{Header}}
+      <text xml:space="preserve" bytes="26936">{{Header}}
 &lt;!--
 Copyright:
 
@@ -57458,8 +57498,8 @@ Then, have a look at the [[About]], [[Warning]] and [[DoNot|Do Not]] pages to ma
 | &lt;html&gt;&lt;a href=&quot;http://mirror.whonix.org/Whonix-&lt;/html&gt;{{Version}}&lt;html&gt;/Whonix-Gateway-&lt;/html&gt;{{Version}}&lt;html&gt;.ova&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
 | &lt;html&gt;&lt;a href=&quot;http://mirror.whonix.org/Whonix-&lt;/html&gt;{{Version}}&lt;html&gt;/Whonix-Workstation-&lt;/html&gt;{{Version}}&lt;html&gt;.ova&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
 |{{Yes}} &lt;ref name=anonymousdownload /&gt;
-| style=&quot;background-color: {{Red}}&quot;| Very Low &lt;ref&gt;[[Warning#Man-in-the-middle_attacks|Man-in-the-middle attacks]] could poison the download.&lt;/ref&gt;
-| style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification&gt;It does not matter if you did the bulk download over an insecure channel, if you use OpenPGP verification at the end.&lt;/ref&gt;
+| style=&quot;background-color: {{Red}}&quot;| Very Low &lt;ref&gt;[[Warning#Man-in-the-middle_attacks|Man-in-the-middle attacks]] (атаки &quot;Противник-в-середине&quot;) могут привести к загрузке неподлинных образов.&lt;/ref&gt;
+| style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification&gt;Если OpenPGP-проверка подтверждает подлинность образов ОС, то можно не обращать внимания на тот факт, что они загружались через небезопасный канал.&lt;/ref&gt;
 |- style=&quot;height: 47px&quot;
 
 | {{GrayBackground}}| [[File:HTTP.png|40px]] {{Anchor|Подпись_Whonix}}
@@ -57741,7 +57781,7 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>jjpifc8r727b4eromkj9wjiowdqrsoh</sha1>
+      <sha1>mr2hgm2ok4xc60ew03cjuz00wpyo26q</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -57909,23 +57949,23 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
     <ns>1198</ns>
     <id>774</id>
     <revision>
-      <id>5272</id>
-      <parentid>5024</parentid>
-      <timestamp>2014-02-11T03:29:38Z</timestamp>
+      <id>5295</id>
+      <parentid>5272</parentid>
+      <timestamp>2014-02-11T13:16:05Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <username>Username</username>
+        <id>217</id>
       </contributor>
-      <text xml:space="preserve" bytes="1245">{| class=&quot;wikitable&quot; style=&quot;text-align: center;background-color: #fff&quot;
+      <text xml:space="preserve" bytes="1263">{| class=&quot;wikitable&quot; style=&quot;text-align: center;background-color: #fff&quot;
 |- {{GrayBackground}}
 | style=&quot;height: 47px;&quot;|
 | style=&quot;white-space: nowrap; width: 137px;&quot;|'''Whonix-Gateway'''
 | style=&quot;white-space: nowrap; width: 137px;&quot;|'''Whonix-Workstation'''
 | style=&quot;white-space: nowrap; width: 140px;&quot;|'''[[Hide Tor and Whonix from your ISP|Анонимная загрузка]]&lt;br /&gt; возможна &lt;ref name=anonymousdownload&gt;посредством использования [https://www.torproject.org/download/download-easy.html.en Tor Browser Bundle] (TBB). Для ознакомления см. [[Tor Browser]]. Также см. [[Hide Tor and Whonix from your ISP|Спрячьте факт использования Tor и Whonix от вашего интернет-провайдера]].&lt;/ref&gt;'''
-| style=&quot;width: 135px;&quot;|'''[[Download Security|Базопасность загрузки]]&lt;br /&gt; без [[#Verify the Whonix images|Проверить подлинность образов Whonix Проверка]]'''
-| style=&quot;width: 135px;&quot;|'''[[Безопасность загрузки]]&lt;br /&gt; with [[#Verify the Whonix images|Проверить подлинность образов Whonix Проверка]]'''
+| style=&quot;width: 135px;&quot;|'''[[Download Security|Безопасность загрузки]]&lt;br /&gt; без [[#Verify the Whonix images|Проверить подлинность образов Whonix Проверка]]'''
+| style=&quot;width: 135px;&quot;|'''[[Download Security|Безопасность загрузки]]&lt;br /&gt; with [[#Verify the Whonix images|Проверить подлинность образов Whonix Проверка]]'''
 |- style=&quot;height: 47px&quot;</text>
-      <sha1>memb00t3zo0njmfgwts95qj1u612m4e</sha1>
+      <sha1>mpc9t6jqplesgdyqw07u7usbf4322cx</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -59300,6 +59340,30 @@ sudo service tor restart
       <text xml:space="preserve" bytes="113">Ветка помощи на форуме:
 [[Special:AWCforum/st/id287/new_tor_and_debian_updates_today....html]]</text>
       <sha1>p0xhr4mfidmflzp37r34pueiw2z39o1</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/91/ru</title>
+    <ns>1198</ns>
+    <id>845</id>
+    <revision>
+      <id>5292</id>
+      <parentid>5290</parentid>
+      <timestamp>2014-02-11T13:10:57Z</timestamp>
+      <contributor>
+        <username>Username</username>
+        <id>217</id>
+      </contributor>
+      <text xml:space="preserve" bytes="1057">| {{GrayBackground}}| [[File:HTTP.png|40px]] {{Anchor|Whonix_signature}}
+| &lt;html&gt;&lt;a href=&quot;http://mirror.whonix.org/Whonix-&lt;/html&gt;{{Version}}&lt;html&gt;/Whonix-Gateway-&lt;/html&gt;{{Version}}&lt;html&gt;.ova&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
+| &lt;html&gt;&lt;a href=&quot;http://mirror.whonix.org/Whonix-&lt;/html&gt;{{Version}}&lt;html&gt;/Whonix-Workstation-&lt;/html&gt;{{Version}}&lt;html&gt;.ova&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
+|{{Yes}} &lt;ref name=anonymousdownload /&gt;
+| style=&quot;background-color: {{Red}}&quot;| Very Low &lt;ref&gt;[[Warning#Man-in-the-middle_attacks|Man-in-the-middle attacks]] (атаки &quot;Противник-в-середине&quot;) могут привести к загрузке неподлинных образов.&lt;/ref&gt;
+| style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification&gt;Если OpenPGP-проверка подтверждает подлинность образов ОС, то можно не обращать внимания на тот факт, что они загружались через небезопасный канал.&lt;/ref&gt;
+|- style=&quot;height: 47px&quot;</text>
+      <sha1>khhdgiwlq5mjnn9pvru0dy0iwenhzjb</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
