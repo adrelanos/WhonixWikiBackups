@@ -57374,15 +57374,14 @@ Image:donate.png|link=Donate|[[Donate|Финансово поддержать Wh
     <ns>0</ns>
     <id>765</id>
     <revision>
-      <id>5234</id>
-      <parentid>5232</parentid>
-      <timestamp>2014-02-10T12:53:25Z</timestamp>
+      <id>5280</id>
+      <parentid>5278</parentid>
+      <timestamp>2014-02-11T03:38:21Z</timestamp>
       <contributor>
-        <username>Username</username>
-        <id>217</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>Created page with &quot;Ветка помощи на форуме: [[Special:AWCforum/st/id287/new_tor_and_debian_updates_today....html]]&quot;</comment>
-      <text xml:space="preserve" bytes="26670">{{Header}}
+      <text xml:space="preserve" bytes="26675">{{Header}}
 &lt;!--
 Copyright:
 
@@ -57438,10 +57437,10 @@ Warning:
 Then, have a look at the [[About]], [[Warning]] and [[DoNot|Do Not]] pages to make sure that Whonix is the right tool for you and you understand well its limitations.
 }}
 
-{{anchor|Загрузить образы Whonix для виртуальной машины}}
+{{anchor|Download Whonix virtual machine images}}
 
 = Загрузить Whonix =
-&lt;big&gt;Версия: &lt;span style=&quot;color: green&quot;&gt;{{Версия}}&lt;/span&gt;&lt;/big&gt;
+&lt;big&gt;Версия: &lt;span style=&quot;color: green&quot;&gt;{{Version}}&lt;/span&gt;&lt;/big&gt;
 
 '''Примечание:''' Вам необходимо скачать оба образа для виртуальной машины: Gateway и Workstation.
 
@@ -57467,7 +57466,7 @@ Then, have a look at the [[About]], [[Warning]] and [[DoNot|Do Not]] pages to ma
 | &lt;html&gt;&lt;a href=&quot;http://sourceforge.net/projects/whonix/files/current/&lt;/html&gt;{{Version}}&lt;html&gt;/Whonix-Gateway-&lt;/html&gt;{{Version}}&lt;html&gt;.ova/download&quot; target=&quot;_blank&quot;&gt;Скачать&lt;/a&gt;&lt;/html&gt;
 | &lt;html&gt;&lt;a href=&quot;http://sourceforge.net/projects/whonix/files/current/&lt;/html&gt;{{Version}}&lt;html&gt;/Whonix-Workstation-&lt;/html&gt;{{Version}}&lt;html&gt;.ova/download&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
 |{{Yes}} &lt;ref name=anonymousdownload /&gt;
-| style=&quot;background-color: {{Red}}&quot;| Very Low &lt;ref&gt;[[Предупреждение#Атаки_Противник-в-середине|таки_Противник-в-середине]] могут привести к закачке неподлинного файла.&lt;/ref&gt;
+| style=&quot;background-color: {{Red}}&quot;| Very Low &lt;ref&gt;[[Warning#Man-in-the-middle_attacks|Атаки_Противник-в-середине таки_Противник-в-середине]] могут привести к закачке неподлинного файла.&lt;/ref&gt;
 | style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification&gt;Если вы использовали небезопасный канал для загрузки, это не представляет угрозы в случае, если после загрузки вы использовали проверку подлинности с помощью OpenPGP.&lt;/ref&gt;
 |- style=&quot;height: 47px&quot;
 
@@ -57475,12 +57474,12 @@ Then, have a look at the [[About]], [[Warning]] and [[DoNot|Do Not]] pages to ma
 | &lt;html&gt;&lt;a href=&quot;https://jhcloos.com/whonix/7/Whonix-Gateway-7.ova&quot; target=&quot;_blank&quot;&gt;Скачать&lt;/a&gt;&lt;/html&gt;
 | &lt;html&gt;&lt;a href=&quot;https://jhcloos.com/whonix/7/Whonix-Workstation-7.ova&quot; target=&quot;_blank&quot;&gt;Скачать&lt;/a&gt;&lt;/html&gt;
 |{{Yes}} &lt;ref name=anonymousdownload /&gt;
-| style=&quot;background-color: {{Red}}&quot;| Low &lt;ref&gt;[[Предупреждение#Man-in-the-middle_attacks|Атаки &quot;противник в середине&quot;]] могут привести к закачке инфицированных образов.&lt;/ref&gt;
+| style=&quot;background-color: {{Red}}&quot;| Low &lt;ref&gt;[[Warning#Man-in-the-middle_attacks|Атаки &quot;противник в середине&quot;]] могут привести к закачке инфицированных образов.&lt;/ref&gt;
 | style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification&gt;Если вы производили загрузку образов через небезопасный канал, можно не волноваться, если подлинность образов подтверждается посредством OpenPGP-проверки.&lt;/ref&gt;
 |- style=&quot;height: 47px&quot;
 
 | {{GrayBackground}}| [[File:Button_sig.png|25px]]
-| white-space: nowrap;&quot;|&lt;html&gt;&lt;a href=&quot;/download/current/&lt;/html&gt;{{Версия}}&lt;html&gt;-sig/Whonix-Gateway-&lt;/html&gt;{{Версия}}&lt;html&gt;.ova.asc&quot;&gt;Подпись OpenPGP&lt;/a&gt;&lt;/html&gt;
+| white-space: nowrap;&quot;|&lt;html&gt;&lt;a href=&quot;/download/current/&lt;/html&gt;{{Version}}&lt;html&gt;-sig/Whonix-Gateway-&lt;/html&gt;{{Version}}&lt;html&gt;.ova.asc&quot;&gt;Подпись OpenPGP&lt;/a&gt;&lt;/html&gt;
 | white-space: nowrap;&quot;|&lt;html&gt;&lt;a href=&quot;/download/current/&lt;/html&gt;{{Version}}&lt;html&gt;-sig/Whonix-Workstation-&lt;/html&gt;{{Version}}&lt;html&gt;.ova.asc&quot;&gt;Подпись OpenPGP&lt;/a&gt;&lt;/html&gt;
 |{{Yes}} &lt;ref name=anonymousdownload /&gt;
 | -
@@ -57517,7 +57516,7 @@ Then, have a look at the [[About]], [[Warning]] and [[DoNot|Do Not]] pages to ma
 | style=&quot;background-color: {{Green}}&quot;| Best &lt;ref name=fromsourcecode /&gt; &lt;ref&gt;By additional verification that you got the source code from the original authors and by ensuring you're using the same source code as others you get better security.&lt;/ref&gt;
 |}
 
-Важно проверить целостность образов для виртуальной машины, которые вы скачали, для того, чтобы убедиться, что во время закачки не произошла атака &quot;противник в середине&quot; или порча файла. (см. [[Безопасность загрузки]].)
+Важно проверить целостность образов для виртуальной машины, которые вы скачали, для того, чтобы убедиться, что во время закачки не произошла атака &quot;противник в середине&quot; или порча файла. (см. [[Download Security|Безопасность загрузки]].)
 
 {{mbox
 | type       = critical
@@ -57543,7 +57542,7 @@ Whonix virtual machine images are cryptographically signed using OpenPGP&lt;ref&
 == 1. До установки ==
 
 Прочтите и используйте
-[[Советы_до_установки|Советы по безопасности]].
+[[Pre_Install_Advice|Советы по безопасности]].
 
 == 2. Установка ==
 
@@ -57553,15 +57552,15 @@ Whonix virtual machine images are cryptographically signed using OpenPGP&lt;ref&
 
 === Нужна помощь? ===
 
-Имеется руководство со скриншотами, см. [[Установка]].
+Имеется руководство со скриншотами, см. [[Install|Установка]].
 
-Имеются также [[Videos | видеоруководства]].
+Имеются также [[Videos|видеоруководства]].
 
 Если всё ещё возникают вопросы, обратитесь в [[Special:AWCforum|Форум помощи пользователям]].
 
 == 3. После установки ==
 
-Ознакомьтесь с/воспользуйтесь [[Советами по действиям после установки]].
+Ознакомьтесь с/воспользуйтесь [[Post Install Advice|Советами по действиям после установки]].
 
 = Будьте в курсе событий =
 
@@ -57573,12 +57572,12 @@ Whonix virtual machine images are cryptographically signed using OpenPGP&lt;ref&
 [[File:Whonix News Blog opened offline created by adrelanos.png|thumb|{{Code|Whonix News Blogs}}]]
 Есть два способа получения новостей. Сделайте выбор по своему усмотрению.
 
-     {{Code|Важный блог Whonix}} - Здесь публикуется наиболее важная
+# {{Code|Важный блог Whonix}} - Здесь публикуется наиболее важная
 информация. Главным образом, это информация об уязвимостях и новых
 стабильных версиях. Этот блог предназначен для людей с недостатком
 времени или отсутствием интереса к разработке Whonix и связанным с ОС
 новостям.
-    {{Code|Блог функций Whonix}} - Включает в себя всю информацию из
+# {{Code|Блог функций Whonix}} - Включает в себя всю информацию из
 {{Code|Важного блога Whonix}}. Рассматриваются только версии для
 тестировщиков и разработчиков. Обновляется по мере наличия у
 разработчника свободного времени. Содержит также информацию об
@@ -57589,25 +57588,25 @@ Whonix virtual machine images are cryptographically signed using OpenPGP&lt;ref&
 
 == Обновления операционной системы ==
 
-Необходимо регулярно проверять наличие обновлений для вашей основной (негостевой) операционной системы, Whonix-Workstation (Whonix-Рабочей станции) и Whonix-Gateway (Whonix-шлюза) в соответствии с рекомендациями  [[Руководства по безопасности]]
+Необходимо регулярно проверять наличие обновлений для вашей основной (негостевой) операционной системы, Whonix-Workstation (Whonix-Рабочей станции) и Whonix-Gateway (Whonix-шлюза) в соответствии с рекомендациями  [[Security Guide|Руководства по безопасности]]
 
 == Tor-браузер ==
 
-[[Image:whonixcheck_gui.png|[[whonix-проверка]]|thumb]]
+[[Image:whonixcheck_gui.png|[[whonixcheck|whonix-проверка]]|thumb]]
 
 There is no auto-update feature for Tor Browser. You will be notified about new Tor Browser versions by [[whonixcheck]]. Tor Browser's built in update check mechanism also works in Whonix. For instructions how to update the browser, see [[Tor Browser]]. Additionally it might also be wise to subscribe to https://blog.torproject.org for news.
 
 == Проверка версии Whonix и Новости Whonix ==
 [[File:whonixcheck created by adrelanos.png|thumb|{{Code|Проверка версии Whonix}} (первый прямоугольник чёрного цвета) и&lt;br /&gt;{{Code|Новости Whonix}} &lt;br /&gt;(второй прямоугольник зелёного цвета)]]
-Также, благодаря {{Code|Проверке версии Whonix}} вы будете получать автоматические уведомления о новых версиях и о самых важных событиях &lt;ref&gt;, например, о том, что версия перестала поддерживаться, или о том, что требуется какое-либо действие, перестали работать какие-либо функции или были обнаружены уязвимости в системе обеспечения безопасности. Согласно замыслу необходимость в пользовании {{Code|Новостями Whonix}} сведена к минимуму.&lt;/ref&gt; за счёт {{Code|Новостей Whonix}}, они являются частью [[whonix-проверки]].
+Также, благодаря {{Code|Проверке версии Whonix}} вы будете получать автоматические уведомления о новых версиях и о самых важных событиях &lt;ref&gt;, например, о том, что версия перестала поддерживаться, или о том, что требуется какое-либо действие, перестали работать какие-либо функции или были обнаружены уязвимости в системе обеспечения безопасности. Согласно замыслу необходимость в пользовании {{Code|Новостями Whonix}} сведена к минимуму.&lt;/ref&gt; за счёт {{Code|Новостей Whonix}}, они являются частью [[whonixcheck|whonix-проверки]].
 
 == Группы в социальных сетях ==
 
-Существует несколько [[Official Whonix Online Profiles|Групп Whonix в социальных сетях]], однако не полагайтесь на них в плане получения Новостей Whonix, и по мере возможности избегайте использовать их для связи с разработчиками Whonix.  (См. [[Контакты]] для получения контактной информации.)
+Существует несколько [[Official Whonix Online Profiles|Групп Whonix в социальных сетях]], однако не полагайтесь на них в плане получения Новостей Whonix, и по мере возможности избегайте использовать их для связи с разработчиками Whonix.  (См. [[Contact|Контакты]] для получения контактной информации.)
 
 Because some people will do so even though it is not recommended, messages from the Whonix Feature Blog will be automatically mirrored to [https://twitter.com/Whonix Whonix Twitter Profile], to [https://www.facebook.com/Whonix Whonix Facebook Profile] and to [https://plus.google.com/108150429836421683225/ Whonix Google+ Profile].
 
-Если распространение вами информации о Whonix не несёт для вас никакой угрозы, можете свободно пользоваться этими группами и ставить им оценки &quot;нравится&quot; (используя анонимную учётную запись), чтобы [[Внести вклад]] для поддержания ОС Whonix.
+Если распространение вами информации о Whonix не несёт для вас никакой угрозы, можете свободно пользоваться этими группами и ставить им оценки &quot;нравится&quot; (используя анонимную учётную запись), чтобы [[Contribute|Внести вклад]] для поддержания ОС Whonix.
 
 == Исходный код ==
 
@@ -57742,7 +57741,7 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>bhifrlyxnz7q272cew0nzfq6t1gcjuk</sha1>
+      <sha1>jjpifc8r727b4eromkj9wjiowdqrsoh</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -57836,16 +57835,16 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
     <ns>1198</ns>
     <id>770</id>
     <revision>
-      <id>5017</id>
-      <timestamp>2014-02-09T14:49:42Z</timestamp>
+      <id>5271</id>
+      <parentid>5017</parentid>
+      <timestamp>2014-02-11T03:25:56Z</timestamp>
       <contributor>
-        <username>Username</username>
-        <id>217</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>Created page with &quot;Тогда посетите раздел [[О Whonix]], [[Предупреждение]] и страницы [[НеДелайте|НеДелайте]] для того, что...&quot;</comment>
-      <text xml:space="preserve" bytes="373">Тогда посетите раздел [[О Whonix]], [[Предупреждение]] и страницы [[НеДелайте|НеДелайте]] для того, чтобы убедиться в том, что Whonix является подходящим для вас инструментом и вы хорошо понимаете его возможности.
+      <text xml:space="preserve" bytes="370">Тогда посетите раздел [[About|About]], [[Warning|Предупреждение]] и страницы [[DoNot|НеДелайте]] для того, чтобы убедиться в том, что Whonix является подходящим для вас инструментом и вы хорошо понимаете его возможности.
 }}</text>
-      <sha1>ff4u423k6pbp1i2awfxvev0x9r1v6mj</sha1>
+      <sha1>26stjqn9oxk4ucfgvjfr2g9vg81ktim</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -57855,15 +57854,15 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
     <ns>1198</ns>
     <id>771</id>
     <revision>
-      <id>5018</id>
-      <timestamp>2014-02-09T14:50:47Z</timestamp>
+      <id>5251</id>
+      <parentid>5018</parentid>
+      <timestamp>2014-02-11T03:12:58Z</timestamp>
       <contributor>
-        <username>Username</username>
-        <id>217</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>Created page with &quot;{{anchor|Загрузить образы Whonix для виртуальной машины}}&quot;</comment>
-      <text xml:space="preserve" bytes="92">{{anchor|Загрузить образы Whonix для виртуальной машины}}</text>
-      <sha1>pxo7k7jzlpk2x6nze18ys069fe0uacb</sha1>
+      <text xml:space="preserve" bytes="49">{{anchor|Download Whonix virtual machine images}}</text>
+      <sha1>lvzoffwg0p7hv1tpqj6zpdsmxbjuthv</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -57873,16 +57872,16 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
     <ns>1198</ns>
     <id>772</id>
     <revision>
-      <id>5020</id>
-      <timestamp>2014-02-09T14:51:11Z</timestamp>
+      <id>5253</id>
+      <parentid>5020</parentid>
+      <timestamp>2014-02-11T03:14:12Z</timestamp>
       <contributor>
-        <username>Username</username>
-        <id>217</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>Created page with &quot;= Загрузить Whonix = &lt;big&gt;Версия: &lt;span style=&quot;color: green&quot;&gt;{{Версия}}&lt;/span&gt;&lt;/big&gt;&quot;</comment>
-      <text xml:space="preserve" bytes="105">= Загрузить Whonix =
-&lt;big&gt;Версия: &lt;span style=&quot;color: green&quot;&gt;{{Версия}}&lt;/span&gt;&lt;/big&gt;</text>
-      <sha1>slxg75qai2lgxibfi973bwjft1fi7ed</sha1>
+      <text xml:space="preserve" bytes="100">= Загрузить Whonix =
+&lt;big&gt;Версия: &lt;span style=&quot;color: green&quot;&gt;{{Version}}&lt;/span&gt;&lt;/big&gt;</text>
+      <sha1>fh5jjhpzt3ikb8eazit7g5ruugaw3wm</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -57910,23 +57909,23 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
     <ns>1198</ns>
     <id>774</id>
     <revision>
-      <id>5024</id>
-      <timestamp>2014-02-09T14:57:33Z</timestamp>
+      <id>5272</id>
+      <parentid>5024</parentid>
+      <timestamp>2014-02-11T03:29:38Z</timestamp>
       <contributor>
-        <username>Username</username>
-        <id>217</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>Created page with &quot;{| class=&quot;wikitable&quot; style=&quot;text-align: center;background-color: #fff&quot; |- {{GrayBackground}} | style=&quot;height: 47px;&quot;| | style=&quot;white-space: nowrap; width: 137px;&quot;|'''Whonix-Ga...&quot;</comment>
-      <text xml:space="preserve" bytes="1232">{| class=&quot;wikitable&quot; style=&quot;text-align: center;background-color: #fff&quot;
+      <text xml:space="preserve" bytes="1245">{| class=&quot;wikitable&quot; style=&quot;text-align: center;background-color: #fff&quot;
 |- {{GrayBackground}}
 | style=&quot;height: 47px;&quot;|
 | style=&quot;white-space: nowrap; width: 137px;&quot;|'''Whonix-Gateway'''
 | style=&quot;white-space: nowrap; width: 137px;&quot;|'''Whonix-Workstation'''
-| style=&quot;white-space: nowrap; width: 140px;&quot;|'''[[Спрячьте факт использования Tor и Whonix от вашего интернет-провайдера|Анонимная загрузка]]&lt;br /&gt; возможна &lt;ref name=anonymousdownload&gt;посредством использования [https://www.torproject.org/download/download-easy.html.en Tor Browser Bundle] (TBB). Для ознакомления см. [[Tor Browser]]. Также см. [[Спрячьте факт использования Tor и Whonix от вашего интернет-провайдера]].&lt;/ref&gt;'''
-| style=&quot;width: 135px;&quot;|'''[[Базопасность загрузки]]&lt;br /&gt; без [[#Проверить подлинность образов Whonix|Проверка]]'''
-| style=&quot;width: 135px;&quot;|'''[[Безопасность загрузки]]&lt;br /&gt; with [[#Проверить подлинность образов Whonix|Проверка]]'''
+| style=&quot;white-space: nowrap; width: 140px;&quot;|'''[[Hide Tor and Whonix from your ISP|Анонимная загрузка]]&lt;br /&gt; возможна &lt;ref name=anonymousdownload&gt;посредством использования [https://www.torproject.org/download/download-easy.html.en Tor Browser Bundle] (TBB). Для ознакомления см. [[Tor Browser]]. Также см. [[Hide Tor and Whonix from your ISP|Спрячьте факт использования Tor и Whonix от вашего интернет-провайдера]].&lt;/ref&gt;'''
+| style=&quot;width: 135px;&quot;|'''[[Download Security|Базопасность загрузки]]&lt;br /&gt; без [[#Verify the Whonix images|Проверить подлинность образов Whonix Проверка]]'''
+| style=&quot;width: 135px;&quot;|'''[[Безопасность загрузки]]&lt;br /&gt; with [[#Verify the Whonix images|Проверить подлинность образов Whonix Проверка]]'''
 |- style=&quot;height: 47px&quot;</text>
-      <sha1>e5hofzn8kvjxjy8ytdtf3ks3kf0dbt4</sha1>
+      <sha1>memb00t3zo0njmfgwts95qj1u612m4e</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -57936,21 +57935,21 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
     <ns>1198</ns>
     <id>775</id>
     <revision>
-      <id>5025</id>
-      <timestamp>2014-02-09T15:03:32Z</timestamp>
+      <id>5279</id>
+      <parentid>5025</parentid>
+      <timestamp>2014-02-11T03:38:20Z</timestamp>
       <contributor>
-        <username>Username</username>
-        <id>217</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>Created page with &quot;| {{GrayBackground}}| [[File:SSL_Symbol.png|40px]] {{Anchor|Whonix_подпись}} | &lt;html&gt;&lt;a href=&quot;https://jhcloos.com/whonix/7/Whonix-Gateway-7.ova&quot; target=&quot;_blank&quot;&gt;Ска...&quot;</comment>
-      <text xml:space="preserve" bytes="987">| {{GrayBackground}}| [[File:SSL_Symbol.png|40px]] {{Anchor|Whonix_подпись}}
+      <text xml:space="preserve" bytes="966">| {{GrayBackground}}| [[File:SSL_Symbol.png|40px]] {{Anchor|Whonix_подпись}}
 | &lt;html&gt;&lt;a href=&quot;https://jhcloos.com/whonix/7/Whonix-Gateway-7.ova&quot; target=&quot;_blank&quot;&gt;Скачать&lt;/a&gt;&lt;/html&gt;
 | &lt;html&gt;&lt;a href=&quot;https://jhcloos.com/whonix/7/Whonix-Workstation-7.ova&quot; target=&quot;_blank&quot;&gt;Скачать&lt;/a&gt;&lt;/html&gt;
 |{{Yes}} &lt;ref name=anonymousdownload /&gt;
-| style=&quot;background-color: {{Red}}&quot;| Low &lt;ref&gt;[[Предупреждение#Man-in-the-middle_attacks|Атаки &quot;противник в середине&quot;]] могут привести к закачке инфицированных образов.&lt;/ref&gt;
+| style=&quot;background-color: {{Red}}&quot;| Low &lt;ref&gt;[[Warning#Man-in-the-middle_attacks|Атаки &quot;противник в середине&quot;]] могут привести к закачке инфицированных образов.&lt;/ref&gt;
 | style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification&gt;Если вы производили загрузку образов через небезопасный канал, можно не волноваться, если подлинность образов подтверждается посредством OpenPGP-проверки.&lt;/ref&gt;
 |- style=&quot;height: 47px&quot;</text>
-      <sha1>cf3ax1z186lrl3vdyqrg84lap6hzjy9</sha1>
+      <sha1>mb4orcp89tpbseu6on1qpk9ik395zxc</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -57960,21 +57959,21 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
     <ns>1198</ns>
     <id>776</id>
     <revision>
-      <id>5027</id>
-      <timestamp>2014-02-09T15:09:09Z</timestamp>
+      <id>5273</id>
+      <parentid>5027</parentid>
+      <timestamp>2014-02-11T03:32:38Z</timestamp>
       <contributor>
-        <username>Username</username>
-        <id>217</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>Created page with &quot;| {{GrayBackground}}| [[File:Button_sig.png|25px]] | white-space: nowrap;&quot;|&lt;html&gt;&lt;a href=&quot;/download/current/&lt;/html&gt;{{Версия}}&lt;html&gt;-sig/Whonix-Gateway-&lt;/html&gt;{{Верс...&quot;</comment>
-      <text xml:space="preserve" bytes="474">| {{GrayBackground}}| [[File:Button_sig.png|25px]]
-| white-space: nowrap;&quot;|&lt;html&gt;&lt;a href=&quot;/download/current/&lt;/html&gt;{{Версия}}&lt;html&gt;-sig/Whonix-Gateway-&lt;/html&gt;{{Версия}}&lt;html&gt;.ova.asc&quot;&gt;Подпись OpenPGP&lt;/a&gt;&lt;/html&gt;
+      <text xml:space="preserve" bytes="464">| {{GrayBackground}}| [[File:Button_sig.png|25px]]
+| white-space: nowrap;&quot;|&lt;html&gt;&lt;a href=&quot;/download/current/&lt;/html&gt;{{Version}}&lt;html&gt;-sig/Whonix-Gateway-&lt;/html&gt;{{Version}}&lt;html&gt;.ova.asc&quot;&gt;Подпись OpenPGP&lt;/a&gt;&lt;/html&gt;
 | white-space: nowrap;&quot;|&lt;html&gt;&lt;a href=&quot;/download/current/&lt;/html&gt;{{Version}}&lt;html&gt;-sig/Whonix-Workstation-&lt;/html&gt;{{Version}}&lt;html&gt;.ova.asc&quot;&gt;Подпись OpenPGP&lt;/a&gt;&lt;/html&gt;
 |{{Yes}} &lt;ref name=anonymousdownload /&gt;
 | -
 | -
 |- style=&quot;height: 47px&quot;</text>
-      <sha1>nchug6izb8yihx2nbw8r7f40hgw3abc</sha1>
+      <sha1>ldccydqy3ct6i38ds7d91psxo8gw3bt</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -58055,21 +58054,21 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
     <ns>1198</ns>
     <id>780</id>
     <revision>
-      <id>5035</id>
-      <timestamp>2014-02-09T15:30:38Z</timestamp>
+      <id>5277</id>
+      <parentid>5035</parentid>
+      <timestamp>2014-02-11T03:37:10Z</timestamp>
       <contributor>
-        <username>Username</username>
-        <id>217</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>Created page with &quot;| {{GrayBackground}}| [[File:HTTP.png|40px]] {{Anchor|Подпись_Whonix}} | &lt;html&gt;&lt;a href=&quot;http://sourceforge.net/projects/whonix/files/current/&lt;/html&gt;{{Version}}&lt;html&gt;/Wh...&quot;</comment>
-      <text xml:space="preserve" bytes="1173">| {{GrayBackground}}| [[File:HTTP.png|40px]] {{Anchor|Подпись_Whonix}}
+      <text xml:space="preserve" bytes="1178">| {{GrayBackground}}| [[File:HTTP.png|40px]] {{Anchor|Подпись_Whonix}}
 | &lt;html&gt;&lt;a href=&quot;http://sourceforge.net/projects/whonix/files/current/&lt;/html&gt;{{Version}}&lt;html&gt;/Whonix-Gateway-&lt;/html&gt;{{Version}}&lt;html&gt;.ova/download&quot; target=&quot;_blank&quot;&gt;Скачать&lt;/a&gt;&lt;/html&gt;
 | &lt;html&gt;&lt;a href=&quot;http://sourceforge.net/projects/whonix/files/current/&lt;/html&gt;{{Version}}&lt;html&gt;/Whonix-Workstation-&lt;/html&gt;{{Version}}&lt;html&gt;.ova/download&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
 |{{Yes}} &lt;ref name=anonymousdownload /&gt;
-| style=&quot;background-color: {{Red}}&quot;| Very Low &lt;ref&gt;[[Предупреждение#Атаки_Противник-в-середине|таки_Противник-в-середине]] могут привести к закачке неподлинного файла.&lt;/ref&gt;
+| style=&quot;background-color: {{Red}}&quot;| Very Low &lt;ref&gt;[[Warning#Man-in-the-middle_attacks|Атаки_Противник-в-середине таки_Противник-в-середине]] могут привести к закачке неподлинного файла.&lt;/ref&gt;
 | style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification&gt;Если вы использовали небезопасный канал для загрузки, это не представляет угрозы в случае, если после загрузки вы использовали проверку подлинности с помощью OpenPGP.&lt;/ref&gt;
 |- style=&quot;height: 47px&quot;</text>
-      <sha1>1bte1rho5d559tztc3w0r02sus64h9s</sha1>
+      <sha1>hgnv8olxkf3lrgw1jt7tsqaof00met5</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -58101,15 +58100,15 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
     <ns>1198</ns>
     <id>782</id>
     <revision>
-      <id>5038</id>
-      <timestamp>2014-02-09T15:38:22Z</timestamp>
+      <id>5275</id>
+      <parentid>5038</parentid>
+      <timestamp>2014-02-11T03:34:11Z</timestamp>
       <contributor>
-        <username>Username</username>
-        <id>217</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>Created page with &quot;Важно проверить целостность образов для виртуальной машины, которые вы скачали, для того, чтобы...&quot;</comment>
-      <text xml:space="preserve" bytes="394">Важно проверить целостность образов для виртуальной машины, которые вы скачали, для того, чтобы убедиться, что во время закачки не произошла атака &quot;противник в середине&quot; или порча файла. (см. [[Безопасность загрузки]].)</text>
-      <sha1>lgvl4nvxwn7e5clxqdrg80jugxhzng5</sha1>
+      <text xml:space="preserve" bytes="412">Важно проверить целостность образов для виртуальной машины, которые вы скачали, для того, чтобы убедиться, что во время закачки не произошла атака &quot;противник в середине&quot; или порча файла. (см. [[Download Security|Безопасность загрузки]].)</text>
+      <sha1>k9mmxw9hf1vcdvi4ekh3ayaxv6qdwev</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -58270,16 +58269,16 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
     <ns>1198</ns>
     <id>791</id>
     <revision>
-      <id>5054</id>
-      <timestamp>2014-02-09T15:53:09Z</timestamp>
+      <id>5255</id>
+      <parentid>5054</parentid>
+      <timestamp>2014-02-11T03:18:11Z</timestamp>
       <contributor>
-        <username>Username</username>
-        <id>217</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>Created page with &quot;Прочтите и используйте [[Советы_до_установки|Советы по безопасности]].&quot;</comment>
-      <text xml:space="preserve" bytes="127">Прочтите и используйте
-[[Советы_до_установки|Советы по безопасности]].</text>
-      <sha1>mx8yg885gyorl9lgsiz5st7d38qdqib</sha1>
+      <text xml:space="preserve" bytes="109">Прочтите и используйте
+[[Pre_Install_Advice|Советы по безопасности]].</text>
+      <sha1>f9kadon6ddfgg5safrvud0oct7c70mh</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -58325,15 +58324,15 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
     <ns>1198</ns>
     <id>794</id>
     <revision>
-      <id>5060</id>
-      <timestamp>2014-02-09T16:03:08Z</timestamp>
+      <id>5257</id>
+      <parentid>5060</parentid>
+      <timestamp>2014-02-11T03:19:05Z</timestamp>
       <contributor>
-        <username>Username</username>
-        <id>217</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>Created page with &quot;Имеется руководство со скриншотами, см. [[Установка]].&quot;</comment>
-      <text xml:space="preserve" bytes="96">Имеется руководство со скриншотами, см. [[Установка]].</text>
-      <sha1>1fbucbjpn4zzx5zk6jy3gfs7ow14ndc</sha1>
+      <text xml:space="preserve" bytes="104">Имеется руководство со скриншотами, см. [[Install|Установка]].</text>
+      <sha1>7wa9d73kqvv38xjrnfw8aapqn9ilhbg</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -58343,15 +58342,15 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
     <ns>1198</ns>
     <id>795</id>
     <revision>
-      <id>5062</id>
-      <timestamp>2014-02-09T16:04:11Z</timestamp>
+      <id>5259</id>
+      <parentid>5062</parentid>
+      <timestamp>2014-02-11T03:20:15Z</timestamp>
       <contributor>
-        <username>Username</username>
-        <id>217</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>Created page with &quot;Имеются также [[Videos | видеоруководства]].&quot;</comment>
-      <text xml:space="preserve" bytes="72">Имеются также [[Videos | видеоруководства]].</text>
-      <sha1>metgrbfmyk0d2imnwgh4nhv2h76v4ba</sha1>
+      <text xml:space="preserve" bytes="70">Имеются также [[Videos|видеоруководства]].</text>
+      <sha1>ogkde95rvg1krsqan70iiz41mhxoo23</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -58397,15 +58396,15 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
     <ns>1198</ns>
     <id>798</id>
     <revision>
-      <id>5068</id>
-      <timestamp>2014-02-09T16:07:49Z</timestamp>
+      <id>5261</id>
+      <parentid>5068</parentid>
+      <timestamp>2014-02-11T03:20:33Z</timestamp>
       <contributor>
-        <username>Username</username>
-        <id>217</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>Created page with &quot;Ознакомьтесь с/воспользуйтесь [[Советами по действиям после установки]].&quot;</comment>
-      <text xml:space="preserve" bytes="132">Ознакомьтесь с/воспользуйтесь [[Советами по действиям после установки]].</text>
-      <sha1>b8w73dxh3s9q63412vxdbaqtstrqv1b</sha1>
+      <text xml:space="preserve" bytes="152">Ознакомьтесь с/воспользуйтесь [[Post Install Advice|Советами по действиям после установки]].</text>
+      <sha1>rlc855pyqqv36j58nzpvkxrcz7kub0c</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -58562,25 +58561,25 @@ Image:donate.png|link=Donate|[[Donate|Финансово поддержать Wh
     <ns>1198</ns>
     <id>806</id>
     <revision>
-      <id>5094</id>
-      <timestamp>2014-02-09T23:32:05Z</timestamp>
+      <id>5263</id>
+      <parentid>5094</parentid>
+      <timestamp>2014-02-11T03:21:17Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>Created page with &quot;     {{Code|Важный блог Whonix}} - Здесь публикуется наиболее важная информация. Главным образом, это инф...&quot;</comment>
-      <text xml:space="preserve" bytes="1185">     {{Code|Важный блог Whonix}} - Здесь публикуется наиболее важная
+      <text xml:space="preserve" bytes="1180"># {{Code|Важный блог Whonix}} - Здесь публикуется наиболее важная
 информация. Главным образом, это информация об уязвимостях и новых
 стабильных версиях. Этот блог предназначен для людей с недостатком
 времени или отсутствием интереса к разработке Whonix и связанным с ОС
 новостям.
-    {{Code|Блог функций Whonix}} - Включает в себя всю информацию из
+# {{Code|Блог функций Whonix}} - Включает в себя всю информацию из
 {{Code|Важного блога Whonix}}. Рассматриваются только версии для
 тестировщиков и разработчиков. Обновляется по мере наличия у
 разработчника свободного времени. Содержит также информацию об
 обновлениях статей, новых функциях, будущих функциях, разработке,
 предложения к тестированию, общие мысли о проекте и тому подобное.</text>
-      <sha1>d7aho2t270qr171uux0ztd5nlwfu1qx</sha1>
+      <sha1>hrq30mfzsqbcnkgxlul8scb9awoqrnc</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -58954,15 +58953,15 @@ After manually upgrading Tor Browser (see above)... To start Tor Browser, got to
     <ns>1198</ns>
     <id>826</id>
     <revision>
-      <id>5181</id>
-      <timestamp>2014-02-10T11:07:47Z</timestamp>
+      <id>5265</id>
+      <parentid>5181</parentid>
+      <timestamp>2014-02-11T03:21:50Z</timestamp>
       <contributor>
-        <username>Username</username>
-        <id>217</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>Created page with &quot;Необходимо регулярно проверять наличие обновлений для вашей основной (негостевой) операционно...&quot;</comment>
-      <text xml:space="preserve" bytes="407">Необходимо регулярно проверять наличие обновлений для вашей основной (негостевой) операционной системы, Whonix-Workstation (Whonix-Рабочей станции) и Whonix-Gateway (Whonix-шлюза) в соответствии с рекомендациями  [[Руководства по безопасности]]</text>
-      <sha1>cfpbn6s3fljjjsvk4u37yvssd4504ub</sha1>
+      <text xml:space="preserve" bytes="422">Необходимо регулярно проверять наличие обновлений для вашей основной (негостевой) операционной системы, Whonix-Workstation (Whonix-Рабочей станции) и Whonix-Gateway (Whonix-шлюза) в соответствии с рекомендациями  [[Security Guide|Руководства по безопасности]]</text>
+      <sha1>5zjpoqf37qpcla4d126cgkidtqhhn0h</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -58990,15 +58989,15 @@ After manually upgrading Tor Browser (see above)... To start Tor Browser, got to
     <ns>1198</ns>
     <id>828</id>
     <revision>
-      <id>5185</id>
-      <timestamp>2014-02-10T11:09:11Z</timestamp>
+      <id>5249</id>
+      <parentid>5185</parentid>
+      <timestamp>2014-02-11T03:11:29Z</timestamp>
       <contributor>
-        <username>Username</username>
-        <id>217</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>Created page with &quot;[[Image:whonixcheck_gui.png|[[whonix-проверка]]|thumb]]&quot;</comment>
-      <text xml:space="preserve" bytes="63">[[Image:whonixcheck_gui.png|[[whonix-проверка]]|thumb]]</text>
-      <sha1>8wd5b6xj0t4erjxccc16yyj9gb0qsis</sha1>
+      <text xml:space="preserve" bytes="75">[[Image:whonixcheck_gui.png|[[whonixcheck|whonix-проверка]]|thumb]]</text>
+      <sha1>bd8xy5trfa37rd7zgurmuamyu3v94o9</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -59008,17 +59007,17 @@ After manually upgrading Tor Browser (see above)... To start Tor Browser, got to
     <ns>1198</ns>
     <id>829</id>
     <revision>
-      <id>5187</id>
-      <timestamp>2014-02-10T11:34:15Z</timestamp>
+      <id>5247</id>
+      <parentid>5187</parentid>
+      <timestamp>2014-02-11T03:09:43Z</timestamp>
       <contributor>
-        <username>Username</username>
-        <id>217</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>Created page with &quot;== Проверка версии Whonix и Новости Whonix == File:whonixcheck created by adrelanos.png|thumb|{{Code|Проверка версии Whonix}} (первы...&quot;</comment>
-      <text xml:space="preserve" bytes="1247">== Проверка версии Whonix и Новости Whonix ==
+      <text xml:space="preserve" bytes="1259">== Проверка версии Whonix и Новости Whonix ==
 [[File:whonixcheck created by adrelanos.png|thumb|{{Code|Проверка версии Whonix}} (первый прямоугольник чёрного цвета) и&lt;br /&gt;{{Code|Новости Whonix}} &lt;br /&gt;(второй прямоугольник зелёного цвета)]]
-Также, благодаря {{Code|Проверке версии Whonix}} вы будете получать автоматические уведомления о новых версиях и о самых важных событиях &lt;ref&gt;, например, о том, что версия перестала поддерживаться, или о том, что требуется какое-либо действие, перестали работать какие-либо функции или были обнаружены уязвимости в системе обеспечения безопасности. Согласно замыслу необходимость в пользовании {{Code|Новостями Whonix}} сведена к минимуму.&lt;/ref&gt; за счёт {{Code|Новостей Whonix}}, они являются частью [[whonix-проверки]].</text>
-      <sha1>34uyrhtpu9jhsswckwwc4mdoklun2b1</sha1>
+Также, благодаря {{Code|Проверке версии Whonix}} вы будете получать автоматические уведомления о новых версиях и о самых важных событиях &lt;ref&gt;, например, о том, что версия перестала поддерживаться, или о том, что требуется какое-либо действие, перестали работать какие-либо функции или были обнаружены уязвимости в системе обеспечения безопасности. Согласно замыслу необходимость в пользовании {{Code|Новостями Whonix}} сведена к минимуму.&lt;/ref&gt; за счёт {{Code|Новостей Whonix}}, они являются частью [[whonixcheck|whonix-проверки]].</text>
+      <sha1>pu0zhsih494vsufddgu6raa7y55c40e</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -59046,15 +59045,15 @@ After manually upgrading Tor Browser (see above)... To start Tor Browser, got to
     <ns>1198</ns>
     <id>831</id>
     <revision>
-      <id>5191</id>
-      <timestamp>2014-02-10T11:42:43Z</timestamp>
+      <id>5267</id>
+      <parentid>5191</parentid>
+      <timestamp>2014-02-11T03:22:35Z</timestamp>
       <contributor>
-        <username>Username</username>
-        <id>217</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>Created page with &quot;Существует несколько [[Official Whonix Online Profiles|Групп Whonix в социальных сетях]], однако не полагайтесь на...&quot;</comment>
-      <text xml:space="preserve" bytes="486">Существует несколько [[Official Whonix Online Profiles|Групп Whonix в социальных сетях]], однако не полагайтесь на них в плане получения Новостей Whonix, и по мере возможности избегайте использовать их для связи с разработчиками Whonix.  (См. [[Контакты]] для получения контактной информации.)</text>
-      <sha1>6agahjfyy8anztpenphxnllped7te05</sha1>
+      <text xml:space="preserve" bytes="494">Существует несколько [[Official Whonix Online Profiles|Групп Whonix в социальных сетях]], однако не полагайтесь на них в плане получения Новостей Whonix, и по мере возможности избегайте использовать их для связи с разработчиками Whonix.  (См. [[Contact|Контакты]] для получения контактной информации.)</text>
+      <sha1>k60901f7wbw60mg8792krpgwoth7rhg</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -59064,15 +59063,15 @@ After manually upgrading Tor Browser (see above)... To start Tor Browser, got to
     <ns>1198</ns>
     <id>832</id>
     <revision>
-      <id>5193</id>
-      <timestamp>2014-02-10T11:54:40Z</timestamp>
+      <id>5269</id>
+      <parentid>5193</parentid>
+      <timestamp>2014-02-11T03:22:49Z</timestamp>
       <contributor>
-        <username>Username</username>
-        <id>217</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>Created page with &quot;Если распространение вами информации о Whonix не несёт для вас никакой угрозы, можете свободно пол...&quot;</comment>
-      <text xml:space="preserve" bytes="427">Если распространение вами информации о Whonix не несёт для вас никакой угрозы, можете свободно пользоваться этими группами и ставить им оценки &quot;нравится&quot; (используя анонимную учётную запись), чтобы [[Внести вклад]] для поддержания ОС Whonix.</text>
-      <sha1>muglwj9cbggjjye4g9gzua0234gmwxl</sha1>
+      <text xml:space="preserve" bytes="438">Если распространение вами информации о Whonix не несёт для вас никакой угрозы, можете свободно пользоваться этими группами и ставить им оценки &quot;нравится&quot; (используя анонимную учётную запись), чтобы [[Contribute|Внести вклад]] для поддержания ОС Whonix.</text>
+      <sha1>h08q7ukybx73zgcm6m5jh5ye2kpeunm</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
