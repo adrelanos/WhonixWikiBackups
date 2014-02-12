@@ -295,14 +295,14 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
     <ns>10</ns>
     <id>14</id>
     <revision>
-      <id>5289</id>
-      <parentid>5288</parentid>
-      <timestamp>2014-02-11T12:59:04Z</timestamp>
+      <id>5330</id>
+      <parentid>5289</parentid>
+      <timestamp>2014-02-12T03:00:19Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="877">&lt;font size=&quot;3&quot;&gt;[https://www.whonix.org{{localurl:{{FULLPAGENAME}}}} https] | &lt;html&gt;&lt;a class=&quot;link-https&quot; style=&quot;color: #3366BB&quot; href=&quot;http://kkkkkkkkkk63ava6.onion&lt;/html&gt;{{localurl:{{FULLPAGENAME}}}}&lt;html&gt;&quot; rel=&quot;nofollow&quot;&gt;.onion&lt;/a&gt;&lt;/html&gt;&lt;/font&gt; &lt;font size=&quot;1&quot;&gt;| [http://whonix.org.nyud.net{{localurl:{{FULLPAGENAME}}}} Mirror] | [https://kkkkkkkkkk63ava6.tor2web.org{{localurl:{{FULLPAGENAME}}}} Mirror] | [[Contribute#Donate|Donate to Whonix!]]&lt;/font&gt; | [[Impressum]] | [[Datenschutz|Datenschutzerklärung]] | [[Disclaimer|Haftungsausschluss]]&lt;!--
+      <text xml:space="preserve" bytes="1263">&lt;font size=&quot;3&quot;&gt;[https://www.whonix.org{{localurl:{{FULLPAGENAME}}}} https] | &lt;html&gt;&lt;a class=&quot;link-https&quot; style=&quot;color: #3366BB&quot; href=&quot;http://kkkkkkkkkk63ava6.onion&lt;/html&gt;{{localurl:{{FULLPAGENAME}}}}&lt;html&gt;&quot; rel=&quot;nofollow&quot;&gt;.onion&lt;/a&gt;&lt;/html&gt;&lt;/font&gt; &lt;font size=&quot;1&quot;&gt;| [http://whonix.org.nyud.net{{localurl:{{FULLPAGENAME}}}} Mirror] | [https://kkkkkkkkkk63ava6.tor2web.org{{localurl:{{FULLPAGENAME}}}} Mirror] | [[Contribute#Donate|Donate to Whonix!]]&lt;/font&gt; | [[Impressum]] | [[Datenschutz|Datenschutzerklärung]] | [[Disclaimer|Haftungsausschluss]]&lt;!--
 inspired by http://aboli.sh/
 @cnpirates ssl(tor) ssl(i2p) coralcdn .sdns .onion .i2p--&gt;
 {{#seo:
@@ -311,8 +311,15 @@ inspired by http://aboli.sh/
 |article:publisher=https://www.facebook.com/Whonix
 |article:author=https://www.facebook.com/patrick.schleizer
 |og:image=https://www.whonix.org/blog/wp-content/uploads/2014/01/Banner2.png
-}}</text>
-      <sha1>jplcmamvukdtnvlr1opqqm2lp131m3y</sha1>
+}}
+&lt;html&gt;
+&lt;!--[if !(lt IE 8)]&gt;&lt;!--&gt;
+   &lt;script type=&quot;text/javascript&quot;&gt;
+     (function(){var e=document.createElement(&quot;script&quot;);e.type=&quot;text/javascript&quot;;e.async=true;e.src=document.location.protocol+&quot;//d1agz031tafz8n.cloudfront.net/thedaywefightback.js/widget.min.js&quot;;var t=document.getElementsByTagName(&quot;script&quot;)[0];t.parentNode.insertBefore(e,t)})()
+   &lt;/script&gt;
+&lt;!--&lt;![endif]--&gt;
+&lt;/html&gt;</text>
+      <sha1>juq3z41ke3dqouhbczp6sf29d8rmmdt</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -41888,16 +41895,14 @@ The Tor Project never managed to get such a downloader up and running, see {{Cod
     <ns>0</ns>
     <id>437</id>
     <revision>
-      <id>5309</id>
-      <parentid>5308</parentid>
-      <timestamp>2014-02-11T13:55:42Z</timestamp>
+      <id>5329</id>
+      <parentid>5328</parentid>
+      <timestamp>2014-02-12T02:59:50Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="715">&lt;metakey&gt;ListOfKeywords,word1,word2&lt;/metakey&gt;
-
-
+      <text xml:space="preserve" bytes="668">
 = a = 
 
 
@@ -41923,7 +41928,7 @@ test &amp;#58;
 &lt;rss number=10 title=off desc=off&gt;https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10&lt;/rss&gt;
 
 &lt;rss number=10 title=off desc=off&gt;https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10;sa=news&lt;/rss&gt;</text>
-      <sha1>abmlag20o0z0n11qby48eldvyg2odd5</sha1>
+      <sha1>5ulkt0u2vv40c5zy8l79qfii69o6s2p</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -42799,15 +42804,15 @@ Please do not fix the picture links with html tags. This file gets copied to htt
     <ns>0</ns>
     <id>469</id>
     <revision>
-      <id>4864</id>
-      <parentid>4863</parentid>
-      <timestamp>2014-02-03T15:18:28Z</timestamp>
+      <id>5333</id>
+      <parentid>5332</parentid>
+      <timestamp>2014-02-12T07:15:35Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Host Preparation */</comment>
-      <text xml:space="preserve" bytes="11165">{{Header}}
+      <comment>/* Warning */</comment>
+      <text xml:space="preserve" bytes="12107">{{Header}}
 {{forkme}}
 
 = Build Documentation =
@@ -42826,19 +42831,63 @@ in contact.
 How to use the resulting images, is documented in the [[Documentation]].
 
 == Warning ==
-* &lt;u&gt;'''Short'''&lt;/u&gt;: '''Better build in a virtual machine!''' &lt;br /&gt;''Long'':{{Code|/dev/mapper/loop0p1}} (and {{Code|/dev/nbd0}}) (used for mounting the images) is hard coded inside Whonix build scripts. Beware if you are using such devices. It may conflict with TrueCrypt. (And possibly other tools relying on {{Code|/dev/mapper/loop0p1}} (and {{Code|/dev/nbd0}}).) To avoid damage to your host system, it may be wise to build Whonix inside a Virtual Machine.
-* &lt;u&gt;'''Short'''&lt;/u&gt;: '''Don't add private files to Whonix's source code folder!''' &lt;br /&gt;''Long'': Technically, it would work. Everything in whonix_gateway folder will get installed on Whonix-Gateway, whonix_workstation folder respectively, whonix_shared folder goes to both Whonix machines. This is recommended against. Those files would get managed by either the whonix-gateway-files, whonix-workstation-files or the whonix-shared-files package. When you later update Whonix debian packages, your files would get deleted by the package manager. Also adding private files to Whonix's source code folder, later contributing to Whonix's development and accidentally pushing the wrong git branch would be a disaster. Better add your private files to Whonix after building Whonix. Or add a custom build step adding your files, which then get copied from a folder outside of Whonix's source folder.
-* &lt;u&gt;'''Short'''&lt;/u&gt;: '''Gnome user? Please disable device auto mounter. You can do this by running the following command.''' (If you don't know if you are a Gnome user or not, just run this command, it won't hurt.) ''Long'': &lt;ref&gt;Otherwise a file manager may be opened while building Whonix which could lead to issues.&lt;/ref&gt;
+* &lt;u&gt;'''Short'''&lt;/u&gt;: '''Better build in a virtual machine!'''
+
+&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+For more information, click on Expand on the right.
+&lt;div class=&quot;mw-collapsible-content&quot;&gt;
+''Long'':{{Code|/dev/mapper/loop0p1}} (and {{Code|/dev/nbd0}}) (used for mounting the images) is hard coded inside Whonix build scripts. Beware if you are using such devices. It may conflict with TrueCrypt. (And possibly other tools relying on {{Code|/dev/mapper/loop0p1}} (and {{Code|/dev/nbd0}}).) To avoid damage to your host system, it may be wise to build Whonix inside a Virtual Machine.
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br /&gt;
+* &lt;u&gt;'''Short'''&lt;/u&gt;: '''Don't add private files to Whonix's source code folder!'''
+&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+&lt;div class=&quot;mw-collapsible-content&quot;&gt;
+''Long'': Technically, it would work. Everything in whonix_gateway folder will get installed on Whonix-Gateway, whonix_workstation folder respectively, whonix_shared folder goes to both Whonix machines. This is recommended against. Those files would get managed by either the whonix-gateway-files, whonix-workstation-files or the whonix-shared-files package. When you later update Whonix debian packages, your files would get deleted by the package manager. Also adding private files to Whonix's source code folder, later contributing to Whonix's development and accidentally pushing the wrong git branch would be a disaster. Better add your private files to Whonix after building Whonix. Or add a custom build step adding your files, which then get copied from a folder outside of Whonix's source folder.
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br /&gt;
+* &lt;u&gt;'''Short'''&lt;/u&gt;: '''Gnome user? Please disable device auto mounter. You can do this by running the following command.''' (If you don't know if you are a Gnome user or not, just run this command, it won't hurt.)
+&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+&lt;div class=&quot;mw-collapsible-content&quot;&gt;
+''Long'': &lt;ref&gt;Otherwise a file manager may be opened while building Whonix which could lead to issues.&lt;/ref&gt;
 &lt;pre&gt;
 gsettings set org.gnome.desktop.media-handling automount-open false
 &lt;/pre&gt;
-* &lt;u&gt;'''Short'''&lt;/u&gt;: '''KDE user? It is recommended to disable nepomuk.You can do this by running the following command.''' ''Long'': &lt;ref&gt;Nepomuk indexing the whonix_binary folder wastes some time indexing.&lt;/ref&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br /&gt;
+* &lt;u&gt;'''Short'''&lt;/u&gt;: '''KDE user? It is recommended to disable nepomuk.You can do this by running the following command.'''
+&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+&lt;div class=&quot;mw-collapsible-content&quot;&gt;
+''Long'': &lt;ref&gt;Nepomuk indexing the whonix_binary folder wastes some time indexing.&lt;/ref&gt;
 &lt;pre&gt;
 Start menu -&gt; System Settings -&gt; Desktop Search -&gt; uncheck Enable Nepomuk Sematic Desktop -&gt; Apply
 &lt;/pre&gt;
-* &lt;u&gt;'''Short'''&lt;/u&gt;: '''Make sure there aren't any VMs in VirtualBox already called Whonix-Gateway or Whonix-Workstation!''' &lt;br /&gt;''Long'': &lt;ref&gt;Because the build script would fail, because it tries to create VMs either named Whonix-Gateway or Whonix-Workstation.&lt;/ref&gt;
-* &lt;u&gt;'''Short'''&lt;/u&gt;: '''Check if the [[Dev/SourceCodeIntro#OpenPGP Keys|OpenPGP public keys]] are still up to date. If you are in luck, you never have to update the keys yourself and the Whonix maintainer will keep them updated.''' &lt;br /&gt;''Long'': For better security.
-* &lt;u&gt;'''Short'''&lt;/u&gt;: '''Do not try to build Whonix-Gateway and Whonix-Workstation at the same time!''' &lt;br /&gt;''Long'': Building Whonix-Gateway and Whonix-Workstation at the same time is not supported due to limitations in the build script. In other words, do not try to run {{Code|sudo ~/Whonix/whonix_build --build --tor-gateway}} and {{Code|sudo ~/Whonix/whonix_build --build --tor-workstation}} at the same time. The build would probably fail.
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br /&gt;
+* &lt;u&gt;'''Short'''&lt;/u&gt;: '''Make sure there aren't any VMs in VirtualBox already called Whonix-Gateway or Whonix-Workstation!''' 
+&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+&lt;div class=&quot;mw-collapsible-content&quot;&gt;
+''Long'': &lt;ref&gt;Because the build script would fail, because it tries to create VMs either named Whonix-Gateway or Whonix-Workstation.&lt;/ref&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br /&gt;
+* &lt;u&gt;'''Short'''&lt;/u&gt;: '''Check if the [[Dev/SourceCodeIntro#OpenPGP Keys|OpenPGP public keys]] are still up to date. If you are in luck, you never have to update the keys yourself and the Whonix maintainer will keep them updated.''' 
+&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+&lt;div class=&quot;mw-collapsible-content&quot;&gt;
+''Long'': For better security.
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br /&gt;
+* &lt;u&gt;'''Short'''&lt;/u&gt;: '''Do not try to build Whonix-Gateway and Whonix-Workstation at the same time!'''
+&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+&lt;div class=&quot;mw-collapsible-content&quot;&gt;
+''Long'': Building Whonix-Gateway and Whonix-Workstation at the same time is not supported due to limitations in the build script. In other words, do not try to run {{Code|sudo ~/Whonix/whonix_build --build --tor-gateway}} and {{Code|sudo ~/Whonix/whonix_build --build --tor-workstation}} at the same time. The build would probably fail.
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br /&gt;
 
 == Build Anonymity ==
 While downloading the required tools for building Whonix your internet service provider could if he want notice that you want to build Whonix. This is especially interesting, if you want to redistribute Whonix, but still want to stay anonymous. The full story can be read in the chapter [[Build Anonymity]].
@@ -42973,7 +43022,7 @@ To learn about adrelanos, the person who maintains Whonix, its OpenPGP key, see 
 {{Footer}}
 
 [[Category:Development]]</text>
-      <sha1>c5tg5ntyuqtbcx7f94kgzkczoacar2w</sha1>
+      <sha1>76b6crgnej218mek104b3nutnnicetk</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -43144,15 +43193,15 @@ Do not remove {{Code2|...-postinst}} packages.
     <ns>0</ns>
     <id>475</id>
     <revision>
-      <id>4961</id>
-      <parentid>4778</parentid>
-      <timestamp>2014-02-05T05:36:47Z</timestamp>
+      <id>5331</id>
+      <parentid>4961</parentid>
+      <timestamp>2014-02-12T05:01:54Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
       <comment>/* Support */</comment>
-      <text xml:space="preserve" bytes="2785">{{Header}}
+      <text xml:space="preserve" bytes="2843">{{Header}}
 
 = Support =
 * When the Tor Browser download script is failing, use the [https://www.whonix.org/forum/ Whonix User Forum]. Since many users are affected when it breaks, there is probably already an existing topic.
@@ -43167,7 +43216,7 @@ Do not remove {{Code2|...-postinst}} packages.
 
 * For Whonix specific questions not suitable for the stackexchange Q/A format, use the [https://www.whonix.org/forum Whonix User Forum]. Or, use the &lt;html&gt;&lt;a href=&quot;/cgi-bin/mailman/listinfo/whonix-users&quot;&gt;Whonix Users Mailing List&lt;/a&gt;&lt;/html&gt;. 
 
-* [irc://irc.oftc.net/whonix #Whonix on irc.oftc.net]
+* [irc://irc.oftc.net/whonix #Whonix on irc.oftc.net] ([https://webirc.oftc.net:8443/?channels=Whonix Webchat])
 
 * Our [[Special:AWCforum|OLD Whonix User Forum]] has an archive of old topics.
 
@@ -43200,7 +43249,7 @@ Be careful with the advice you are getting in public places. Get a second opinio
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>3wl4pfusfv4mmfjtzmqsm3jrt5g2gvh</sha1>
+      <sha1>pr3i9hqssxzbxkftb91jitdgl59kzf3</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -57414,14 +57463,14 @@ Image:donate.png|link=Donate|[[Donate|Финансово поддержать Wh
     <ns>0</ns>
     <id>765</id>
     <revision>
-      <id>5293</id>
-      <parentid>5291</parentid>
-      <timestamp>2014-02-11T13:10:58Z</timestamp>
+      <id>5316</id>
+      <parentid>5314</parentid>
+      <timestamp>2014-02-12T01:42:54Z</timestamp>
       <contributor>
-        <username>Username</username>
-        <id>217</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="26936">{{Header}}
+      <text xml:space="preserve" bytes="27368">{{Header}}
 &lt;!--
 Copyright:
 
@@ -57586,9 +57635,11 @@ Whonix virtual machine images are cryptographically signed using OpenPGP&lt;ref&
 
 == 2. Установка ==
 
-* Download and install [https://www.virtualbox.org/wiki/Downloads VirtualBox]. &lt;ref&gt;You could alternatively search for a Portable VirtualBox&lt;/ref&gt;
-* [[#Download Whonix|Download Whonix]] and import both Whonix images&lt;ref&gt;You need both Whonix-Gateway.ova and Whonix-Workstation.ova images. Whonix is a two machine setup.&lt;/ref&gt; into VirtualBox. Do not change any settings when importing!
-* Take a snapshot for both Whonix-Gateway and Whonix-Workstation on VirtualBox. So you can easily restore the original snapshot whenever you need a clean state.
+* Скачайте и установите [https://www.virtualbox.org/wiki/Downloads VirtualBox]. &lt;ref&gt;Или же можно найти и установить портативную сборку
+VirtualBox&lt;/ref&gt;
+* [[#Download Whonix|Загрузить Whonix]], после чего нужно импортировать оба образа Whonix&lt;ref&gt;Требуются ОБА образа: Whonix-Gateway.ova и
+Whonix-Workstation.ova. Whonix состоит из двух виртуальных машин.&lt;/ref&gt; в VirtualBox. Не меняйте никакие настройки во время процесса импорта!
+* Сделайте снимок системы в VirtualBox для обоих машин: для Whonix-Gateway и Whonix-Workstation. Позднее из этих снимков вы сможете в любое время с лёгкостью восстановить систему до первоначального состояния.
 
 === Нужна помощь? ===
 
@@ -57781,7 +57832,7 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>mr2hgm2ok4xc60ew03cjuz00wpyo26q</sha1>
+      <sha1>egpf2c1bmvrvfz9mehd2qiakenxssqf</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -59364,6 +59415,28 @@ sudo service tor restart
 | style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification&gt;Если OpenPGP-проверка подтверждает подлинность образов ОС, то можно не обращать внимания на тот факт, что они загружались через небезопасный канал.&lt;/ref&gt;
 |- style=&quot;height: 47px&quot;</text>
       <sha1>khhdgiwlq5mjnn9pvru0dy0iwenhzjb</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/28/ru</title>
+    <ns>1198</ns>
+    <id>846</id>
+    <revision>
+      <id>5315</id>
+      <parentid>5313</parentid>
+      <timestamp>2014-02-12T01:42:52Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <text xml:space="preserve" bytes="977">* Скачайте и установите [https://www.virtualbox.org/wiki/Downloads VirtualBox]. &lt;ref&gt;Или же можно найти и установить портативную сборку
+VirtualBox&lt;/ref&gt;
+* [[#Download Whonix|Загрузить Whonix]], после чего нужно импортировать оба образа Whonix&lt;ref&gt;Требуются ОБА образа: Whonix-Gateway.ova и
+Whonix-Workstation.ova. Whonix состоит из двух виртуальных машин.&lt;/ref&gt; в VirtualBox. Не меняйте никакие настройки во время процесса импорта!
+* Сделайте снимок системы в VirtualBox для обоих машин: для Whonix-Gateway и Whonix-Workstation. Позднее из этих снимков вы сможете в любое время с лёгкостью восстановить систему до первоначального состояния.</text>
+      <sha1>d20bhpeu17tur7vh91jlk41pxwdlz3n</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
