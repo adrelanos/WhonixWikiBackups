@@ -295,14 +295,14 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
     <ns>10</ns>
     <id>14</id>
     <revision>
-      <id>5330</id>
-      <parentid>5289</parentid>
-      <timestamp>2014-02-12T03:00:19Z</timestamp>
+      <id>5334</id>
+      <parentid>5330</parentid>
+      <timestamp>2014-02-12T15:09:22Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="1263">&lt;font size=&quot;3&quot;&gt;[https://www.whonix.org{{localurl:{{FULLPAGENAME}}}} https] | &lt;html&gt;&lt;a class=&quot;link-https&quot; style=&quot;color: #3366BB&quot; href=&quot;http://kkkkkkkkkk63ava6.onion&lt;/html&gt;{{localurl:{{FULLPAGENAME}}}}&lt;html&gt;&quot; rel=&quot;nofollow&quot;&gt;.onion&lt;/a&gt;&lt;/html&gt;&lt;/font&gt; &lt;font size=&quot;1&quot;&gt;| [http://whonix.org.nyud.net{{localurl:{{FULLPAGENAME}}}} Mirror] | [https://kkkkkkkkkk63ava6.tor2web.org{{localurl:{{FULLPAGENAME}}}} Mirror] | [[Contribute#Donate|Donate to Whonix!]]&lt;/font&gt; | [[Impressum]] | [[Datenschutz|Datenschutzerklärung]] | [[Disclaimer|Haftungsausschluss]]&lt;!--
+      <text xml:space="preserve" bytes="877">&lt;font size=&quot;3&quot;&gt;[https://www.whonix.org{{localurl:{{FULLPAGENAME}}}} https] | &lt;html&gt;&lt;a class=&quot;link-https&quot; style=&quot;color: #3366BB&quot; href=&quot;http://kkkkkkkkkk63ava6.onion&lt;/html&gt;{{localurl:{{FULLPAGENAME}}}}&lt;html&gt;&quot; rel=&quot;nofollow&quot;&gt;.onion&lt;/a&gt;&lt;/html&gt;&lt;/font&gt; &lt;font size=&quot;1&quot;&gt;| [http://whonix.org.nyud.net{{localurl:{{FULLPAGENAME}}}} Mirror] | [https://kkkkkkkkkk63ava6.tor2web.org{{localurl:{{FULLPAGENAME}}}} Mirror] | [[Contribute#Donate|Donate to Whonix!]]&lt;/font&gt; | [[Impressum]] | [[Datenschutz|Datenschutzerklärung]] | [[Disclaimer|Haftungsausschluss]]&lt;!--
 inspired by http://aboli.sh/
 @cnpirates ssl(tor) ssl(i2p) coralcdn .sdns .onion .i2p--&gt;
 {{#seo:
@@ -311,15 +311,8 @@ inspired by http://aboli.sh/
 |article:publisher=https://www.facebook.com/Whonix
 |article:author=https://www.facebook.com/patrick.schleizer
 |og:image=https://www.whonix.org/blog/wp-content/uploads/2014/01/Banner2.png
-}}
-&lt;html&gt;
-&lt;!--[if !(lt IE 8)]&gt;&lt;!--&gt;
-   &lt;script type=&quot;text/javascript&quot;&gt;
-     (function(){var e=document.createElement(&quot;script&quot;);e.type=&quot;text/javascript&quot;;e.async=true;e.src=document.location.protocol+&quot;//d1agz031tafz8n.cloudfront.net/thedaywefightback.js/widget.min.js&quot;;var t=document.getElementsByTagName(&quot;script&quot;)[0];t.parentNode.insertBefore(e,t)})()
-   &lt;/script&gt;
-&lt;!--&lt;![endif]--&gt;
-&lt;/html&gt;</text>
-      <sha1>juq3z41ke3dqouhbczp6sf29d8rmmdt</sha1>
+}}</text>
+      <sha1>jplcmamvukdtnvlr1opqqm2lp131m3y</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
