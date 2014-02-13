@@ -5454,14 +5454,14 @@ then choose etc (at the bottom) and then choose UTC.
     <ns>0</ns>
     <id>87</id>
     <revision>
-      <id>4844</id>
-      <parentid>4731</parentid>
-      <timestamp>2014-01-30T19:31:40Z</timestamp>
+      <id>5335</id>
+      <parentid>4844</parentid>
+      <timestamp>2014-02-13T08:48:44Z</timestamp>
       <contributor>
         <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* Introduction */</comment>
-      <text xml:space="preserve" bytes="21339">&lt;!--
+      <comment>usage correction; suspicious/suspect</comment>
+      <text xml:space="preserve" bytes="21343">&lt;!--
 Copyright:
 
    Whonix Pre Install Advice wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -5653,7 +5653,7 @@ Rather the admin may or may not find out, that you are using Tor. That depends o
 
 The MAC address and being a Tor user, depending on your personal threat model, might be a risk visiting that public network (again).
 
-If you are going to use the same public network again, you have to decide, depending on your threat model, if you are going to use the very same MAC address (and set of guards) or if you are going to create a new MAC address. In case you suspect that the admin has seen you and logged the MAC, perhaps you shouldn't change the MAC, since this could be suspicious. If you believe that public network is so public, that no one has seen you, you might decide to use a new MAC address (popular vendor ID, random/unique second part) each time you stop by.
+If you are going to use the same public network again, you have to decide, depending on your threat model, if you are going to use the very same MAC address (and set of guards) or if you are going to create a new MAC address. In case you suspect that the admin has seen you and logged the MAC, perhaps you shouldn't change the MAC, since this could be appear suspect. If you believe that public network is so public, that no one has seen you, you might decide to use a new MAC address (popular vendor ID, random/unique second part) each time you stop by.
 
 For more discussion on that rather difficult topic, see [[Dev/MAC]].
 
@@ -5769,7 +5769,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>cac9xpkflfzu7yp0d7u0kd6ipf18zb7</sha1>
+      <sha1>rhi5o8l1is96pt8o3gxhwppr7t7b6ou</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -43186,22 +43186,22 @@ Do not remove {{Code2|...-postinst}} packages.
     <ns>0</ns>
     <id>475</id>
     <revision>
-      <id>5331</id>
-      <parentid>4961</parentid>
-      <timestamp>2014-02-12T05:01:54Z</timestamp>
+      <id>5336</id>
+      <parentid>5331</parentid>
+      <timestamp>2014-02-13T10:33:16Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
       <comment>/* Support */</comment>
-      <text xml:space="preserve" bytes="2843">{{Header}}
+      <text xml:space="preserve" bytes="2901">{{Header}}
 
 = Support =
 * When the Tor Browser download script is failing, use the [https://www.whonix.org/forum/ Whonix User Forum]. Since many users are affected when it breaks, there is probably already an existing topic.
 
 * Linux/Debian related questions, are welcomed&lt;ref&gt;http://meta.unix.stackexchange.com/questions/1461/would-you-be-happy-to-welcome-whonix-gnu-linux-users-on-unix-se&lt;/ref&gt; on http://unix.stackexchange.com. Add the {{Code2|whonix}} tag&lt;ref&gt;http://tor.stackexchange.com/questions/tagged/whonix&lt;/ref&gt;, which will alert Whonix developers and followers.
 
-* For general Tor questions not directly related to Whonix (e.g. &quot;What are end-to-end correlation attacks?&quot;), use http://tor.stackexchange.com; the [https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-talk tor-talk mailing list]; or [irc://irc.oftc.net/tor IRC]
+* For general Tor questions not directly related to Whonix (e.g. &quot;What are end-to-end correlation attacks?&quot;), use http://tor.stackexchange.com; the [https://lists.torproject.org/cgi-bin/mailman/listinfo/tor-talk tor-talk mailing list]; or [irc://irc.oftc.net/tor IRC] ([https://webirc.oftc.net:8443/?channels=Whonix Webchat])
 
 * General questions about computer security can be discussed at http://security.stackexchange.com/
 
@@ -43242,7 +43242,7 @@ Be careful with the advice you are getting in public places. Get a second opinio
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>pr3i9hqssxzbxkftb91jitdgl59kzf3</sha1>
+      <sha1>qp92qhf9gcaesx62i91g8b2bh1sczdt</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
