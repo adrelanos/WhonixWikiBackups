@@ -678,14 +678,14 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>19</id>
     <revision>
-      <id>5285</id>
-      <parentid>5283</parentid>
-      <timestamp>2014-02-11T12:35:32Z</timestamp>
+      <id>5337</id>
+      <parentid>5285</parentid>
+      <timestamp>2014-02-13T17:58:18Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="21751">{{Header}}
+      <text xml:space="preserve" bytes="22332">{{Header}}
 &lt;!--
 Copyright:
 
@@ -1054,6 +1054,27 @@ This is because torproject deprecated that repository. That was to be expected. 
 &lt;!--T:89--&gt;
 Taking action isn't important at this stage. You can comment it out (by putting a # in front of it) in /etc/apt/sources.list.d/torproject.list if you want. ({{Code|kdesudo kate /etc/apt/sources.list.d/torproject.list}} for graphical Whonix-Gateway or {{Code|sudo nano /etc/apt/sources.list.d/torproject.list}} for terminal-only Whonix-Gateway) If you don't do it, it will be auto fixed with next upgrade of Whonix.
 
+=== There is no public key available for the following key IDs ===
+The message &quot;{{Code2|There is no public key available for the following key IDs}}&quot; is not necessarily an error. It might be just a warning/information.
+
+&lt;pre&gt;
+sudo apt-get update
+...
+Reading package lists... Done
+...
+W: There is no public key available for the following key IDs:
+9C131AD3713AAEEF
+&lt;/pre&gt;
+
+Check the exit code of apt-get.
+
+&lt;pre&gt;
+echo $?
+0
+&lt;/pre&gt;
+
+When it's 0, there is no problem. This is due to key transition, because Whonix's repository is currently signed with the old and the new signing key.
+
 === Defunct Desktop Shortcuts === &lt;!--T:90--&gt;
 The desktop shortcuts Tor Browser, Contribute, Forum, Documentation, Donate won't work until there is an upgrade of Whonix. Please manually visit these pages. How to start Tor Browser has already been explained above.
 
@@ -1102,7 +1123,7 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>30ly6xzpfx5dp44l3e8r4nk8flgdb3e</sha1>
+      <sha1>5cwoez33ep8cz04mwf1tsgvw8dpjl8i</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
