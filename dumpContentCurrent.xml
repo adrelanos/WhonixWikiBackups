@@ -15531,15 +15531,15 @@ Specifically for Whonix, [[whonixcheck]] and the [[Dev/News|Whonix News Format]]
     <ns>0</ns>
     <id>134</id>
     <revision>
-      <id>4147</id>
-      <parentid>4146</parentid>
-      <timestamp>2013-12-07T15:43:06Z</timestamp>
+      <id>5353</id>
+      <parentid>4147</parentid>
+      <timestamp>2014-02-14T16:31:52Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
       <comment>/* Installing i2p inside Whonix-Workstation (i2p over Tor) */</comment>
-      <text xml:space="preserve" bytes="4991">{{Header}}
+      <text xml:space="preserve" bytes="5377">{{Header}}
 
 = i2p anonymizing network =
 
@@ -15575,6 +15575,8 @@ List of i2p inproxies:
 * &lt;s&gt;or simply add '.to' after '.i2p'. For example, instant of ''http://forum.i2p'' you can use ''http://forum.i2p.to''.&lt;/s&gt;
 
 == Installing i2p inside Whonix-Workstation (i2p over Tor) ==
+'''Update''': &lt;br /&gt;
+Accessing i2p's webinterface on 127.0.0.1 using Tor Browser is no longer possible due to a [https://trac.torproject.org/projects/tor/ticket/10419 change] in Tor Browser by The Tor Project. You could set to transparent torification, but then you would be vulnerable fingerprinting issues. See [https://trac.torproject.org/projects/tor/ticket/10419 ticket] for more.
 
 It is possible to run i2p inside the Whonix-Workstation. Advantages:
 
@@ -15623,7 +15625,7 @@ Was just a development idea with some progress. Moved to [[Dev/Inspiration]].
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>lxlgmymq5i4tmz2xbiwcv8rbcboe0iu</sha1>
+      <sha1>qfizatv659akk2iqnn17s3o232kcn3j</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
