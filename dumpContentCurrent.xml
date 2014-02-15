@@ -10175,19 +10175,20 @@ Whonix's firewall on the Whonix-Gateway is very restrictive. You can make it eve
     <ns>0</ns>
     <id>106</id>
     <revision>
-      <id>4929</id>
-      <parentid>4219</parentid>
-      <timestamp>2014-02-04T18:28:57Z</timestamp>
+      <id>5357</id>
+      <parentid>4929</parentid>
+      <timestamp>2014-02-15T10:53:41Z</timestamp>
       <contributor>
         <username>Jekyll</username>
         <id>161</id>
       </contributor>
-      <comment>Building from source is broken, we've moved on to Weezy so we should discourage people from building 7.3.7 images and use this space to prepare the wiki for release 8</comment>
-      <text xml:space="preserve" bytes="1099">{{Header}}
+      <comment>Adding link for the inside-VM build instructions. =&lt;s&gt; since it's not done yet. Plan to do it this weekend</comment>
+      <text xml:space="preserve" bytes="1231">{{Header}}
 {{forkme}}
 = Next Whonix Release in Development =
 * [[Dev/BuildDocumentation_8|8 Build Documentation for creating full images from source code]]
 * [[Dev/BuildDocumentation_8_deb|8 Build Documentation for upgrading Whonix debian packages from source code]]
+* &lt;s&gt;[[Dev/BuildDocumentation_8_RC|8 Build Documentation for building Whonix 8 Release candidate (Whonix 7.7.8.7) inside a VM]]&lt;/s&gt;
 * &lt;s&gt;[[Dev/BuildDocumentation_8_short|8 Build Documentation (short)]]&lt;/s&gt;
 
 = Current Whonix Release =
@@ -10208,7 +10209,7 @@ Whonix's firewall on the Whonix-Gateway is very restrictive. You can make it eve
 [[Category:Development]]
 
 {{Footer}}</text>
-      <sha1>9c5jh1mc6jniced9he9putt5umzjkye</sha1>
+      <sha1>kvhcxpkqs6cp6k8eo0r1mw0f8hrpwhr</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -12389,15 +12390,15 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>118</id>
     <revision>
-      <id>5144</id>
-      <parentid>5143</parentid>
-      <timestamp>2014-02-10T02:42:53Z</timestamp>
+      <id>5356</id>
+      <parentid>5354</parentid>
+      <timestamp>2014-02-15T06:02:19Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Donate */</comment>
-      <text xml:space="preserve" bytes="7774">{{Header}}
+      <comment>/* Development */</comment>
+      <text xml:space="preserve" bytes="8406">{{Header}}
 
 = Easy / Anyone =
 == General ==
@@ -12416,7 +12417,9 @@ Send [[Contact|feedback]] about Whonix.
 Help other users on Stack Exchange by subscribing to the {{Code2|whonix}} tag in [http://tor.stackexchange.com/questions/tagged/whonix tor.se] and [http://tor.stackexchange.com/questions/tagged/whonix unix.se] either [http://blog.stackoverflow.com/2010/12/subscribe-to-tags-via-emai/ by e-mail] or by rss ([http://tor.stackexchange.com/feeds/tag?tagnames=whonix&amp;sort=newest tor.se rss]; 
 [http://unix.stackexchange.com/feeds/tag?tagnames=whonix&amp;sort=newest unix.se rss]).
 
-Join the [https://www.whonix.org/forum/ Whonix User Forum] or IRC room ([irc://irc.oftc.net/whonix #Whonix on irc.oftc.net]).
+Join the [https://www.whonix.org/forum/ Whonix User Forum]. You could subscribe by [http://blog.onlineinstitute.com/forum-hosting/email-notifications-new-posts-ismf/ e-mail] or by RSS ([https://www.whonix.org/forum/index.php?action=.xml;type=rss;sa=recent;limit=20 recent posts] or [https://www.whonix.org/forum/index.php?action=.xml;type=rss;sa=news;limit=20 recent topics] [[http://www.simplemachines.org/community/index.php?topic=25009.0 more rss options]]).
+
+Join IRC room [irc://irc.oftc.net/whonix #Whonix on irc.oftc.net] ([https://webirc.oftc.net:8443/?channels=Whonix Webchat]).
 
 == Donate ==
 &lt;!-------------------------bank wire, PayPal------------------------&gt;
@@ -12558,10 +12561,13 @@ Your task could include, depending on your interest:
 Either answering some small questions or filling one piece of paperwork would be immensely helpful.
 
 = Development =
-
 [[Image:Whonix-ad.png|frame|none|alt=| Looking for developers!]]
 
-Whonix is as [[FAQ#How_difficult_is_it_to_develop_Whonix.3F | easy]] as shell scripting (bash). We need developers! Join Whonix Development Mailing List!
+Whonix is as [[FAQ#How_difficult_is_it_to_develop_Whonix.3F|easy]] as shell scripting (bash). We need developers!
+
+Join [[Mailing_Lists#whonix-devel|Whonix Development Mailing List]]!
+
+Login on github, go to https://github.com/Whonix/Whonix/issues and press &quot;watch&quot; to get notified about discussions on Whonix github issues.
 
 = KDE Desktop Developer =
 
@@ -12582,7 +12588,7 @@ for places where I could need more input. Also reviewing the whole source code o
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Development]]</text>
-      <sha1>30udba94cpa8iw9i3trio6w667nw7nx</sha1>
+      <sha1>hldrdw5ou8t4fqrpkwinx6s2ylsrvua</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -43210,15 +43216,15 @@ Do not remove {{Code2|...-postinst}} packages.
     <ns>0</ns>
     <id>475</id>
     <revision>
-      <id>5336</id>
-      <parentid>5331</parentid>
-      <timestamp>2014-02-13T10:33:16Z</timestamp>
+      <id>5355</id>
+      <parentid>5336</parentid>
+      <timestamp>2014-02-15T05:58:34Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
       <comment>/* Support */</comment>
-      <text xml:space="preserve" bytes="2901">{{Header}}
+      <text xml:space="preserve" bytes="2989">{{Header}}
 
 = Support =
 * When the Tor Browser download script is failing, use the [https://www.whonix.org/forum/ Whonix User Forum]. Since many users are affected when it breaks, there is probably already an existing topic.
@@ -43238,6 +43244,8 @@ Do not remove {{Code2|...-postinst}} packages.
 * Our [[Special:AWCforum|OLD Whonix User Forum]] has an archive of old topics.
 
 * [https://github.com/Whonix/Whonix/issues Bug Reports / Feature Requests]
+
+* Help others, [[Contribute#Answer_Questions|subscribe]] to Whonix's support channels.
 
 = Safety Advice =
 
@@ -43266,7 +43274,7 @@ Be careful with the advice you are getting in public places. Get a second opinio
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>qp92qhf9gcaesx62i91g8b2bh1sczdt</sha1>
+      <sha1>d6hau2qm56mtskttgmwiqg01r74z8io</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
