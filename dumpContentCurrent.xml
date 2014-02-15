@@ -6538,17 +6538,25 @@ You could try the [https://www.riseup.net/en/openvpn-linux#gnome riseup.net Open
     <ns>0</ns>
     <id>92</id>
     <revision>
-      <id>4935</id>
-      <parentid>4933</parentid>
-      <timestamp>2014-02-04T19:10:26Z</timestamp>
+      <id>5407</id>
+      <parentid>4935</parentid>
+      <timestamp>2014-02-15T22:45:02Z</timestamp>
       <contributor>
-        <username>Jekyll</username>
-        <id>161</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>More Jessie to Wheezy Changes</comment>
-      <text xml:space="preserve" bytes="21325">{{Header}}
+      <text xml:space="preserve" bytes="21668">{{Header}}
 
 '''WARNING''': Please don't forget reading the Warnings chapter.
+
+{{mbox
+| type       = critical
+| image      = [[File:Ambox_warning_pn.svg.png|40px|alt=Question mark]]
+| text       = 
+Warning:
+
+This article currently only applies to the '''testers-only''' version of Whonix. There currently is no stable version of it. Once testing is done, this article will be blessed stable. Estimated time: ~2 weeks.
+}}
 
 = Introduction =
 == Technical Introduction ==
@@ -7112,7 +7120,7 @@ To get a more complete list, install Debian (with KDE) on bare metal using the r
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>bi4g5ra3s5ga4a2ums167d5s1wedeu0</sha1>
+      <sha1>2wiz1z3yrzsck4rd337qtp4gp4feiyj</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -16183,15 +16191,13 @@ Optional, for debugging if you have problems.
     <ns>0</ns>
     <id>139</id>
     <revision>
-      <id>4761</id>
-      <parentid>4727</parentid>
-      <timestamp>2014-01-14T17:42:46Z</timestamp>
+      <id>5397</id>
+      <parentid>4761</parentid>
+      <timestamp>2014-02-15T16:30:42Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <minor/>
-      <comment>Text replace - &quot;adrelanos at riseup dot net&quot; to &quot;adrelanos@riseup.net&quot;</comment>
+      <comment>New GPG key references. I didn't update the Images part..</comment>
       <text xml:space="preserve" bytes="5474">&lt;!--
 Copyright:
 
@@ -16240,7 +16246,7 @@ cat adrelanos.asc | gpg --keyid-format long --import
 The output should tell you that the key was imported:
 
 &lt;pre&gt;
-gpg: key 9C131AD3713AAEEF: public key &quot;adrelanos &lt;adrelanos@riseup.net&gt;&quot; imported
+gpg: key 2EEACCDA: public key &quot;Patrick Schleizer &lt;adrelanos@riseup.net&gt;&quot; imported
 gpg: Total number processed: 1
 gpg:               imported: 1  (RSA: 1)
 &lt;/pre&gt;
@@ -16248,7 +16254,7 @@ gpg:               imported: 1  (RSA: 1)
 '''If you had already imported Whonix signing key in the past''', the output should tell you that the key was not changed:
 
 &lt;pre&gt;
-gpg: key 9C131AD3713AAEEF: &quot;adrelanos &lt;adrelanos@riseup.net&gt;&quot; not changed
+gpg: key 2EEACCDA: &quot;Patrick Schleizer &lt;adrelanos@riseup.net&gt;&quot; not changed
 gpg: Total number processed: 1
 gpg:              unchanged: 1
 &lt;/pre&gt;
@@ -16319,7 +16325,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>oo9shha35pg7r9sqzgly6eec2n1ggje</sha1>
+      <sha1>rdg2znuqg6hts72zpu4ihkfafm1xw4a</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -17291,16 +17297,15 @@ Essentially this feature allows to directly use physical PCI devices on the host
     <ns>0</ns>
     <id>148</id>
     <revision>
-      <id>4752</id>
-      <parentid>4717</parentid>
-      <timestamp>2014-01-14T17:41:42Z</timestamp>
+      <id>5405</id>
+      <parentid>5404</parentid>
+      <timestamp>2014-02-15T22:26:51Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <minor/>
-      <comment>Text replace - &quot;adrelanos at riseup dot net&quot; to &quot;adrelanos@riseup.net&quot;</comment>
-      <text xml:space="preserve" bytes="7691">&lt;!--
+      <comment>/* Download the key */</comment>
+      <text xml:space="preserve" bytes="4113">&lt;!--
 Copyright:
 
    Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -17340,7 +17345,7 @@ Since all Whonix releases are signed with the same key, you will not have to ver
 This page is strongly related to the [[Trust]] page.
 
 = Download the key =
-1. Download adrelanos' OpenPGP key: &lt;html&gt;&lt;a class=&quot;link-https&quot; href=&quot;/adrelanos.asc&quot;&gt;adrelanos.asc&lt;/a&gt;&lt;/html&gt; (Right click &amp; Save)
+1. Download Patrick Schleizer's (adrelanos') OpenPGP key: &lt;html&gt;&lt;a class=&quot;link-https&quot; href=&quot;/adrelanos.asc&quot;&gt;adrelanos.asc&lt;/a&gt;&lt;/html&gt; (Right click &amp; Save)
 
 2. Store it as adrelanos.asc.
 
@@ -17353,132 +17358,36 @@ gpg --import adrelanos.asc
 4. Verify the key using this fingerprint:
 
 &lt;pre&gt;
-gpg --fingerprint 9B157153925C303A42253AFB9C131AD3713AAEEF
+gpg --fingerprint 916B8D99C38EAF5E8ADC7A2A8D66066A2EEACCDA
 &lt;/pre&gt;
 
 Should show:
 
 &lt;pre&gt;
-pub   4096R/713AAEEF 2012-03-02
-      Key fingerprint = 9B15 7153 925C 303A 4225  3AFB 9C13 1AD3 713A AEEF
-uid                  adrelanos &lt;adrelanos@riseup.net&gt;
-sub   4096R/794279C4 2012-03-02
+pub   4096R/2EEACCDA 2014-01-16 [expires: 2015-01-16]
+      Key fingerprint = 916B 8D99 C38E AF5E 8ADC  7A2A 8D66 066A 2EEA CCDA
+uid                 [ unknown] Patrick Schleizer &lt;adrelanos@riseup.net&gt;
+sub   4096R/0x3B1E6942CE998547 2014-01-16 [expires: 2015-01-16]
+sub   4096R/0x10FDAC53119B3FD6 2014-01-16 [expires: 2015-01-16]
+sub   4096R/0xCB8D50BB77BB3C48 2014-01-16 [expires: 2015-01-16]
 &lt;/pre&gt;
 
 5. For better security, read below.
 
-= Trusting the key =
-
+= Trusting the Key =
 == Download the key from multiple sources ==
+Was a flawed concept. [[Deprecated#Download_the_key_from_multiple_sources|Deprecated]].
 
-A simple technique to increase the trust you can put in the Whonix signing key would be to download it several times, from several locations, several computers, possibly several countries, etc.
+== Web of Trust ==
+No one signed Patrick Schleizer's (adrelanos') key yet. If you're active in the Free Software community and in the vicinity of Leipzig, Germany, please meet up with Patrick Schleizer for key signing.
 
-You could also use this technique to compare keys downloaded by your friends or other people you trust.
-
-Downloading the key from the same server only lowers the possibility of a man-in-the-middle attack for a part of the route. The following figure illustrates that best:
-
-&lt;pre&gt;
-user &lt;-&gt; user ISP &lt;-&gt; internet &lt;-&gt; sourceforge.net ISP &lt;-&gt; sourceforge.net server
-MITM less likely for this route |  no help for this route
-&lt;/pre&gt;
-
-For this reasons adrelanos' homepage, which describes and contains adrelanos' OpenPGP key is mirrored at six different places. Download adrelanos' key from all those places and store it as ''adrelanos1.asc'', ''adrelanos2.asc'', ''adrelanos3.asc'', etc.
-
-1. [https://github.com/Whonix/Whonix/blob/master/adrelanos.mediawiki adrelanos' homepage on github]; ([https://raw.github.com/Whonix/Whonix/master/adrelanos.asc key download])
-
-Github.com is accessible over SSL. &lt;ref name=ssl&gt; See [[SSL]] for comments on SSL (in)security.&lt;/ref&gt;
-
-2. [https://sourceforge.net/p/whonix/code/ci/b5e205ccb19a11e901124fe7f101fcb0c71b0c8c/tree/adrelanos.asc adrelanos' key page on sourceforge]; ([https://sourceforge.net/p/whonix/code/ci/b5e205ccb19a11e901124fe7f101fcb0c71b0c8c/tree/adrelanos.asc?format=raw key download])
-
-SSL available for users logged into sourceforge.net. &lt;ref name=ssl&gt;&lt;/ref&gt;
-
-3. [https://gitorious.org/whonix/whonix/blobs/master/adrelanos.mediawiki adrelanos' homepage on gitorious]; ([https://gitorious.org/whonix/whonix/blobs/raw/master/adrelanos.asc key download])
-
-Gitorious.org is accessible over SSL. &lt;ref name=ssl /&gt;
-
-4. [https://trac.torproject.org/projects/tor/wiki/doc/proper adrelanos' homepage on torproject.org wiki]
-
-SSL available. &lt;ref name=ssl /&gt; Anyone can edit the torproject.org wiki and exchange content with malicious one. Therefore check the history feature. Obviously, I do trust Tor and torproject.org. My wiki account &quot;''proper''&quot; should be genuine, therefore changes by &quot;''proper''&quot; should be legit.
-
-5. [https://savannah.gnu.org/people/viewgpg.php?user_id=89289 adrelanos OpenPGP key mirror on savannah.gnu.org profile page]
-
-SSL available. &lt;ref name=ssl /&gt; The following command is recommended to enforce downloading the key over SSL:
-
-&lt;pre&gt;
-## Not forced through Tor, unless you are using Whonix, torsocks or similar.
-curl --tlsv1 --proto =https --output adrelanos.asc.4 https://savannah.gnu.org/people/viewgpg.php?user_id=89289
-&lt;/pre&gt;
-
-6. adrelanos' OpenPGP key mirror on OpenPGP keyserver
-
-No SSL. Should really be only used as a mirror.
-
-&lt;pre&gt;
-## Not forced through Tor, unless you are using Whonix, torsocks or similar.
-gpg --keyserver x-hkp://pool.sks-keyservers.net --recv-keys 9B157153925C303A42253AFB9C131AD3713AAEEF
-&lt;/pre&gt;
-
-7. adrelanos' OpenPGP key in Whonix 6 and above
-
-&lt;pre&gt;
-gpg --import /usr/share/whonix/keys/whonix-keys.d/adrelanos.asc
-&lt;/pre&gt;
-
-Verify:
-
-&lt;pre&gt;gpg --fingerprint 9B157153925C303A42253AFB9C131AD3713AAEEF&lt;/pre&gt;
-Should show.
-
-&lt;pre&gt;
-pub   4096R/713AAEEF 2012-03-02
-      Key fingerprint = 9B15 7153 925C 303A 4225  3AFB 9C13 1AD3 713A AEEF
-uid                  adrelanos &lt;adrelanos@riseup.net&gt;
-sub   4096R/794279C4 2012-03-02
-&lt;/pre&gt;
-
-Each time you re-import the key from a different source:
-
-&lt;pre&gt;
-gpg --import adrelanos.asc 
-gpg --import adrelanos1.asc 
-gpg --import adrelanos2.asc 
-...
-&lt;/pre&gt;
-
-It should always show:
-
-&lt;pre&gt;
-gpg: key 713AAEEF: &quot;adrelanos &lt;adrelanos@riseup.net&gt;&quot; not changed
-gpg: Total number processed: 1
-gpg:              unchanged: 1
-&lt;/pre&gt;
-
-And:
-
-&lt;pre&gt;
-gpg --fingerprint
-&lt;/pre&gt;
-
-Should always show the same fingerprint and only contain: (Besides keys you imported knowingly earlier, perhaps your friends keys.)
-
-&lt;pre&gt;
-pub   4096R/713AAEEF 2012-03-02
-      Key fingerprint = 9B15 7153 925C 303A 4225  3AFB 9C13 1AD3 713A AEEF
-uid                  adrelanos &lt;adrelanos@riseup.net&gt;
-sub   4096R/794279C4 2012-03-02
-&lt;/pre&gt;
-
-Unless the new key is signed with the old key, something fishy is going on.
-
-== Further reading on OpenPGP ==
-
+= Further reading on OpenPGP =
 * [https://en.wikipedia.org/wiki/GNU_Privacy_Guard GnuPG wikipedia], a free OpenPGP software
 * [http://www.apache.org/dev/openpgp.html Apache: How To OpenPGP]
 * [http://www.debian.org/events/keysigning Debian: Keysigning], a tutorial on signing keys of other people
 * [http://www.rubin.ch/pgp/weboftrust.en.html rubin.ch: Explanation of the web of trust of PGP]
 
-== See Also ==
-
+= See Also =
 * [[Trust]]
 * [[OpenPGP|OpenPGP key distribution strategies]]
 
@@ -17498,7 +17407,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>nr2zt2o1i35xg72jxtd70bcs52r78nx</sha1>
+      <sha1>p2j5b03j5y36kvhzide6i4jora8djdd</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -35888,15 +35797,14 @@ Whonix-Example-Implementation:
     <ns>0</ns>
     <id>299</id>
     <revision>
-      <id>4531</id>
-      <parentid>4529</parentid>
-      <timestamp>2013-12-28T22:55:05Z</timestamp>
+      <id>5400</id>
+      <parentid>4531</parentid>
+      <timestamp>2014-02-15T22:20:35Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Manually updating Tor Browser (TBB stable version) */</comment>
-      <text xml:space="preserve" bytes="40523">{{Header}}
+      <text xml:space="preserve" bytes="45105">{{Header}}
 
 = About this page =
 
@@ -36761,13 +36669,119 @@ Only {{Code2|-no-remote}} was added to the start script. Otherwise Tor Browser w
 
 You also have to use a different SocksPort, see [[Tor_Browser#Change.2FRemove_Proxy_Settings|Change/Remove Proxy Settings]]. (See [[Stream Isolation]] page for explanation why you should use different SocksPorts.)
 
+= Trusting the key =
+== Download the key from multiple sources ==
+A simple technique to increase the trust you can put in the Whonix signing key would be to download it several times, from several locations, several computers, possibly several countries, etc.
+
+You could also use this technique to compare keys downloaded by your friends or other people you trust.
+
+Downloading the key from the same server only lowers the possibility of a man-in-the-middle attack for a part of the route. The following figure illustrates that best:
+
+&lt;pre&gt;
+user &lt;-&gt; user ISP &lt;-&gt; internet &lt;-&gt; sourceforge.net ISP &lt;-&gt; sourceforge.net server
+MITM less likely for this route |  no help for this route
+&lt;/pre&gt;
+
+For this reasons adrelanos' homepage, which describes and contains adrelanos' OpenPGP key is mirrored at six different places. Download adrelanos' key from all those places and store it as ''adrelanos1.asc'', ''adrelanos2.asc'', ''adrelanos3.asc'', etc.
+
+1. [https://github.com/Whonix/Whonix/blob/master/adrelanos.mediawiki adrelanos' homepage on github]; ([https://raw.github.com/Whonix/Whonix/master/adrelanos.asc key download])
+
+Github.com is accessible over SSL. &lt;ref name=ssl&gt; See [[SSL]] for comments on SSL (in)security.&lt;/ref&gt;
+
+2. [https://sourceforge.net/p/whonix/code/ci/b5e205ccb19a11e901124fe7f101fcb0c71b0c8c/tree/adrelanos.asc adrelanos' key page on sourceforge]; ([https://sourceforge.net/p/whonix/code/ci/b5e205ccb19a11e901124fe7f101fcb0c71b0c8c/tree/adrelanos.asc?format=raw key download])
+
+SSL available for users logged into sourceforge.net. &lt;ref name=ssl&gt;&lt;/ref&gt;
+
+3. [https://gitorious.org/whonix/whonix/blobs/master/adrelanos.mediawiki adrelanos' homepage on gitorious]; ([https://gitorious.org/whonix/whonix/blobs/raw/master/adrelanos.asc key download])
+
+Gitorious.org is accessible over SSL. &lt;ref name=ssl /&gt;
+
+4. [https://trac.torproject.org/projects/tor/wiki/doc/proper adrelanos' homepage on torproject.org wiki]
+
+SSL available. &lt;ref name=ssl /&gt; Anyone can edit the torproject.org wiki and exchange content with malicious one. Therefore check the history feature. Obviously, I do trust Tor and torproject.org. My wiki account &quot;''proper''&quot; should be genuine, therefore changes by &quot;''proper''&quot; should be legit.
+
+5. [https://savannah.gnu.org/people/viewgpg.php?user_id=89289 adrelanos OpenPGP key mirror on savannah.gnu.org profile page]
+
+SSL available. &lt;ref name=ssl /&gt; The following command is recommended to enforce downloading the key over SSL:
+
+&lt;pre&gt;
+## Not forced through Tor, unless you are using Whonix, torsocks or similar.
+curl --tlsv1 --proto =https --output adrelanos.asc.4 https://savannah.gnu.org/people/viewgpg.php?user_id=89289
+&lt;/pre&gt;
+
+6. adrelanos' OpenPGP key mirror on OpenPGP keyserver
+
+No SSL. Should really be only used as a mirror.
+
+&lt;pre&gt;
+## Not forced through Tor, unless you are using Whonix, torsocks or similar.
+gpg --keyserver x-hkp://pool.sks-keyservers.net --recv-key 916B8D99C38EAF5E8ADC7A2A8D66066A2EEACCDA
+&lt;/pre&gt;
+
+7. adrelanos' OpenPGP key in Whonix 6 and above
+
+&lt;pre&gt;
+gpg --import /usr/share/whonix/keys/whonix-keys.d/adrelanos.asc
+&lt;/pre&gt;
+
+Verify:
+
+&lt;pre&gt;gpg --recv-key 916B8D99C38EAF5E8ADC7A2A8D66066A2EEACCDA&lt;/pre&gt;
+Should show.
+
+&lt;pre&gt;
+pub   4096R/2EEACCDA 2014-01-16 [expires: 2015-01-16]
+      Key fingerprint = 916B 8D99 C38E AF5E 8ADC  7A2A 8D66 066A 2EEA CCDA
+uid                 [ unknown] Patrick Schleizer &lt;adrelanos@riseup.net&gt;
+sub   4096R/0x3B1E6942CE998547 2014-01-16 [expires: 2015-01-16]
+sub   4096R/0x10FDAC53119B3FD6 2014-01-16 [expires: 2015-01-16]
+sub   4096R/0xCB8D50BB77BB3C48 2014-01-16 [expires: 2015-01-16]
+&lt;/pre&gt;
+
+Each time you re-import the key from a different source:
+
+&lt;pre&gt;
+gpg --import adrelanos.asc 
+gpg --import adrelanos1.asc 
+gpg --import adrelanos2.asc 
+...
+&lt;/pre&gt;
+
+It should always show:
+
+&lt;pre&gt;
+gpg: key 2EEACCDA: &quot;Patrick Schleizer &lt;adrelanos@riseup.net&gt;&quot; not changed
+gpg: Total number processed: 1
+gpg:              unchanged: 1
+&lt;/pre&gt;
+
+And:
+
+&lt;pre&gt;
+gpg --fingerprint
+&lt;/pre&gt;
+
+Should always show the same fingerprint and only contain: (Besides keys you imported knowingly earlier, perhaps your friends keys.)
+
+&lt;pre&gt;
+pub   4096R/0x8D66066A2EEACCDA 2014-01-16 [expires: 2015-01-16]
+      Key fingerprint = 916B 8D99 C38E AF5E 8ADC  7A2A 8D66 066A 2EEA CCDA
+uid                 [ unknown] Patrick Schleizer &lt;adrelanos@riseup.net&gt;
+sub   4096R/0x3B1E6942CE998547 2014-01-16 [expires: 2015-01-16]
+sub   4096R/0x10FDAC53119B3FD6 2014-01-16 [expires: 2015-01-16]
+sub   4096R/0xCB8D50BB77BB3C48 2014-01-16 [expires: 2015-01-16]
+&lt;/pre&gt;
+
+Unless the new key is signed with the old key, something fishy is going on.
+
+
 = Footnotes =
 &lt;references /&gt;
 
 {{Footer}}
 
 [[Category:Deprecated]]</text>
-      <sha1>cgbb8voxwi2mldohk9xgkt0wi540mn4</sha1>
+      <sha1>eqh8mdb6o6sfpsilvwhldzcewrx39bg</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -36777,15 +36791,23 @@ You also have to use a different SocksPort, see [[Tor_Browser#Change.2FRemove_Pr
     <ns>0</ns>
     <id>300</id>
     <revision>
-      <id>4871</id>
-      <parentid>4439</parentid>
-      <timestamp>2014-02-04T13:03:17Z</timestamp>
+      <id>5406</id>
+      <parentid>5358</parentid>
+      <timestamp>2014-02-15T22:43:52Z</timestamp>
       <contributor>
-        <username>Jekyll</username>
-        <id>161</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>changed jessie refs to wheezy and DVD refs to netinst</comment>
-      <text xml:space="preserve" bytes="5343">{{Header}}
+      <text xml:space="preserve" bytes="5688">{{Header}}
+
+{{mbox
+| type       = critical
+| image      = [[File:Ambox_warning_pn.svg.png|40px|alt=Question mark]]
+| text       = 
+Warning:
+
+This article currently only applies to the '''testers-only''' version of Whonix. There currently is no stable version of it. Once testing is done, this article will be blessed stable. Estimated time: ~2 weeks.
+}}
 
 = Download and Verification =
 
@@ -36803,7 +36825,7 @@ We'll be using a 32-bit network installation (netinst) CD for the following exam
 
 * SHA512SUMS
 * SHA512SUMS.sign 
-* debian-7.3.0-i386-netinst.iso
+* debian-7.4.0-i386-netinst.iso 
 
 (3) Install the debian-keyring package, which contains the signing key. This is because the [http://www.debian.org/CD/verify Debian Verify] instructions are not accessible over SSL, neither the debian-keyring package can be downloaded over SSL. Downloading the debian-keyring package from the repository, let's apt-get verify its integrity.
 
@@ -36811,7 +36833,7 @@ We'll be using a 32-bit network installation (netinst) CD for the following exam
 sudo apt-get install debian-keyring
 &lt;/pre&gt;
 
-(4) Open a terminal and get into the folder where you downloaded SHA512SUMS and SHA512SUMS.sign (and debian-7.3.0-i386-netinst.iso).
+(4) Open a terminal and get into the folder where you downloaded SHA512SUMS and SHA512SUMS.sign (and debian-7.4.0-i386-netinst.iso ).
 
 (5) Verify the SHA512SUMS file.
 
@@ -36915,7 +36937,7 @@ Some useful links. Parts of it are outdated (old Debian versions). Some stuff do
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>71tzyd0tf90xw4o6vhhqkfezn0u5bnx</sha1>
+      <sha1>8c4fn9zsbxe049tngwj2v144435lqon</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -43328,14 +43350,14 @@ Be careful with the advice you are getting in public places. Get a second opinio
     <ns>0</ns>
     <id>478</id>
     <revision>
-      <id>3993</id>
-      <parentid>3858</parentid>
-      <timestamp>2013-11-06T16:29:44Z</timestamp>
+      <id>5399</id>
+      <parentid>3993</parentid>
+      <timestamp>2014-02-15T21:02:32Z</timestamp>
       <contributor>
-        <username>Greenwhonix</username>
-        <id>79</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <text xml:space="preserve" bytes="3474">{{Header}}
+      <comment>Added a tip to work with extra resolutions on Virtualbox</comment>
+      <text xml:space="preserve" bytes="3670">{{Header}}
 
 = Higher Screen Resolution without installing VirtualBox guest additions =
 '''This is still experimental.''' As in tested by few people. You should always be able to undo these changes. Doesn't hurt to always have a recent backup, just in case. This is an alternative to [[VirtualBox Guest Additions]], which are [[VirtualBox_Guest_Additions#Warning|recommended against]]. See also [[#Security Considerations]].
@@ -43385,7 +43407,11 @@ This will make Whonix come up in 1600x1200 mode by default.
 
 You can change the default mode by changing the &quot;{{Code2|PreferredMode}}&quot; option in the &quot;{{Code2|Monitor}}&quot; section. You can dynamically switch modes from the command line with &quot;{{Code2|xrandr --output default --mode [whatever]}}&quot;, and you can see a list of available modes with plain &quot;{{Code2|xrandr}}&quot;.
 
-You can also change screen resolution using the KDE graphical user interface, go to Start Menu -&gt; System Settings -&gt; Display and Monitor.
+You can also change screen resolution using the KDE graphical user interface, go to Start Menu -&gt; System Settings -&gt; Display and Monitor. If you want some screen resolution that isn't listed there (e.g. 1440x900), you can can try the next on your host:
+
+&lt;pre&gt;
+vboxmanage setextradata &quot;VM Name&quot; &quot;CustomVideoMode1&quot; &quot;1440x900x32&quot;
+&lt;/pre&gt;
 
 If you do not see your Start Menu button anymore (because it's outside the screen), you can start Konsole and manually start System Settings by running {{Code2|systemsettings}}.
 
@@ -43417,7 +43443,7 @@ The reason you can't just get higher resolutions using {{Code2|xrandr}} &quot;{{
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>8etyh72d9bt48b4cs0hksk67lj0xa1r</sha1>
+      <sha1>mds9tweol3ae9jt3n0a1izy014khiuo</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -43717,14 +43743,15 @@ sudo rm /etc/whonix_buildconfig.d/50_whonix_apt_repository
     <ns>10</ns>
     <id>483</id>
     <revision>
-      <id>4825</id>
-      <parentid>4129</parentid>
-      <timestamp>2014-01-20T19:04:38Z</timestamp>
+      <id>5360</id>
+      <parentid>4825</parentid>
+      <timestamp>2014-02-15T11:14:55Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="2165">== Build Configuration (Optional) ==
+      <comment>/* apt-cache */</comment>
+      <text xml:space="preserve" bytes="2176">== Build Configuration (Optional) ==
 === Introduction (Optional) ===
 &lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
 '''OPTIONAL.'''
@@ -43769,7 +43796,7 @@ It is recommended to copy and paste text when creating build configuration files
 === Only Minimal Report (Optional) ===
 {{Build Documentation Only Minimal Report}}
 
-=== apt-cache ===
+=== APT Cache (Optional) ===
 {{Build Documentation apt-cache}}
 
 == Custom Build Tags ==
@@ -43777,7 +43804,7 @@ It is recommended to copy and paste text when creating build configuration files
 
 == Source Code Changes ==
 {{Build Documentation Source Code Changes}}</text>
-      <sha1>9q9cfhhbk145pcxj2ikpbrq9ers5s0l</sha1>
+      <sha1>lg76lchqb60rvehqmr5dacbw5ddxz5l</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -47762,16 +47789,14 @@ ii  zsh-common            5.0.2-4         all             architecture independe
     <ns>10</ns>
     <id>491</id>
     <revision>
-      <id>4928</id>
-      <parentid>4750</parentid>
-      <timestamp>2014-02-04T18:11:57Z</timestamp>
+      <id>5395</id>
+      <parentid>4928</parentid>
+      <timestamp>2014-02-15T16:14:18Z</timestamp>
       <contributor>
-        <username>Jekyll</username>
-        <id>161</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <minor/>
-      <comment>/* Get Whonix Source Code */</comment>
-      <text xml:space="preserve" bytes="2757">== Get Whonix Source Code ==
+      <comment>New key update</comment>
+      <text xml:space="preserve" bytes="2957">== Get Whonix Source Code ==
 Install git and get Whonix's source code from the git repository.&lt;ref&gt;From https://github.com/adrelanos/Whonix and not from https://github.com/Whonix/Whonix, because only adrelanos/Whonix contains git tags of the testers-only version.&lt;/ref&gt;
 
 &lt;pre&gt;
@@ -47802,16 +47827,18 @@ gpg --import adrelanos.asc
 Verify.
 
 &lt;pre&gt;
-gpg --fingerprint 9B157153925C303A42253AFB9C131AD3713AAEEF
+gpg --fingerprint 916B8D99C38EAF5E8ADC7A2A8D66066A2EEACCDA
 &lt;/pre&gt;
 
 Should show.
 
 &lt;pre&gt;
-pub   4096R/713AAEEF 2012-03-02
-      Key fingerprint = 9B15 7153 925C 303A 4225  3AFB 9C13 1AD3 713A AEEF
-uid                  adrelanos &lt;adrelanos@riseup.net&gt;
-sub   4096R/794279C4 2012-03-02
+pub   4096R/2EEACCDA 2014-01-16 [expires: 2015-01-16]
+      Key fingerprint = 916B 8D99 C38E AF5E 8ADC  7A2A 8D66 066A 2EEA CCDA
+uid                 [ unknown] Patrick Schleizer &lt;adrelanos@riseup.net&gt;
+sub   4096R/0x3B1E6942CE998547 2014-01-16 [expires: 2015-01-16]
+sub   4096R/0x10FDAC53119B3FD6 2014-01-16 [expires: 2015-01-16]
+sub   4096R/0xCB8D50BB77BB3C48 2014-01-16 [expires: 2015-01-16]
 &lt;/pre&gt;
 
 Only getting the signing key from one source, from the download you want to verify isn't safe. For better security, [[Whonix Signing Key|Learn about Whonix Signing Key]].
@@ -47862,7 +47889,7 @@ git checkout 7.3.7
 &lt;/pre&gt;
 
 You have to replace {{Code2|7.3.7}} with the actual version you want to build. The stable version, the testers-only version or the developers version. You can learn about current versions reading [[Download#Stay_tuned|Whonix News Blogs]]. New versions are also announced on the [[Mailing_Lists#whonix-devel|whonix-devel mailing list]]. So you could alternatively check its archives. Signing up for whonix-devel is another way to get informed about new releases.</text>
-      <sha1>ehxivrfx0wqpjjgulnbdtz8sgeqtldj</sha1>
+      <sha1>5kvrmaks9ql45sktwgfw4gd3y6al7zz</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -52941,17 +52968,15 @@ To get a more complete list, install Debian (with KDE) on bare metal using the r
     <ns>0</ns>
     <id>649</id>
     <revision>
-      <id>4978</id>
-      <parentid>4972</parentid>
-      <timestamp>2014-02-05T16:14:00Z</timestamp>
+      <id>5394</id>
+      <parentid>5393</parentid>
+      <timestamp>2014-02-15T15:12:37Z</timestamp>
       <contributor>
-        <username>Jekyll</username>
-        <id>161</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* Building from source */</comment>
-      <text xml:space="preserve" bytes="8894">= 7.7.6.4 Build Documentation (short) =
+      <text xml:space="preserve" bytes="12300">= 7.7.8.7 Build Documentation (short) =
 
-This is a short set of instructions for building 7.7.6.4 testers-only version of Whonix (later to be modified for Whonix 8) inside VirtualBox (as opposed to the traditional process of running these commands on a system that is installed directly on the hardware).
+This is a short set of instructions for building 7.7.8.7 testers-only version of Whonix (later to be modified for Whonix 8) inside VirtualBox (as opposed to the traditional process of running these commands on a system that is installed directly on the hardware).
 
 Advantages of this approach are that you can build Whonix on any OS that can run VirtualBox (you need Debian Stable for hardware type build) and that any potential system damage is limited to the VM. Using shapshots you can quickly revert a faulty state or a failed build and start again.
 
@@ -52977,7 +53002,7 @@ Storage on physical hard drive: Dynamically allocated / Next
 File location and size: 50 GB / Create
 &lt;/pre&gt;
 
-Start the newly created virtual machine, select the ISO of Debian 7.3 stable (debian-7.3.0-i386-netinst.iso) and click Start.
+Start the newly created virtual machine, select the ISO of Debian 7.4 stable (debian-7.4.0-i386-netinst.iso) and click Start.
 
 &lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
 '''OPTIONAL.'''
@@ -53267,7 +53292,7 @@ Login screen.
 ## (host) login with &quot;root&quot;
 root
 
-## Take an image of your installation in case the build script fails in the middle. &quot;Machine / Take snapshot&quot;.
+## Take an image of your installation in case the build script fails in the middle. &quot;Machine / Take snapshot&quot;. Name it &quot;Snapshot 1&quot;.
 
 ## Add a new repository source. 
 echo &quot;deb http://ftp.us.debian.org/debian/ wheezy main&quot; &gt;&gt; /etc/apt/sources.list
@@ -53334,25 +53359,25 @@ Rebooting.
 ## (host) login with &quot;user&quot;
 user
 
-## Here you can take another snapshot to avoiding doing system preparation again next time when you build. &quot;Machine / Take snapshot&quot;.
+## Here you can take another snapshot to avoiding doing system preparation again next time when you build. &quot;Machine / Take snapshot&quot;. Name it &quot;Snapshot 2&quot;.
 
 #Get source code.
-git clone https://github.com/adrelanos/nothing-to-see
+git clone https://github.com/Whonix/Whonix
 
 ## Go into the git directory
-cd nothing-to-see
+cd Whonix
 
 ## Get a list of available git tags.
 git tag
 
 ## Choose which version you want to build.
-git checkout 7.7.6.4
+git checkout 7.7.8.7
 &lt;/pre&gt;
 
  &lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
 '''OPTIONAL.'''
 
-If you are interested in seeing a visual walk-through of the build from source, click on Expand on the right.
+If you are interested in seeing a visual walk-through of the build from source, click on Expand on the right. Pictures are shown using the tag 7.7.6.4 but you must use 7.7.8.7
 
 &lt;div class=&quot;mw-collapsible-content&quot;&gt;
 Logging as user.
@@ -53382,7 +53407,7 @@ All available tags displayed.
 [[File:14b.png|400px]]
 
 
-Checkout out 7.7.6.4
+Checkout out 7.7.8.7
 
 [[File:15b.png|400px]]
 &lt;/div&gt;
@@ -53405,6 +53430,21 @@ sudo ./whonix_build --build --tor-workstation
 
 The resulting {{Code2|.ova}} images can be found in {{Code|~/whonix_binary}} folder.
 
+
+If you want to create a log of the build process (very useful for debugging) use the following commands but be aware that all output will be redirected to a file, meaning nothing will appear on the screen. This will create a text log in /home/user/log. 
+
+
+For Workstation
+
+&lt;pre&gt;
+sudo ./nothing-to-see/whonix_build --build --tor-workstation &gt;&gt; /home/user/log-workstation 2&gt;&gt; /home/user/log-workstation
+&lt;/pre&gt;
+
+For Gateway
+
+&lt;pre&gt;
+sudo ./nothing-to-see/whonix_build --build --tor-gateway &gt;&gt; /home/user/log-gateway 2&gt;&gt; /home/user/log-gateway
+&lt;/pre&gt;
  &lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
 '''OPTIONAL.'''
 
@@ -53421,8 +53461,63 @@ Provide sudo password
 
 [[File:18b.png|400px]]
 &lt;/div&gt;
-&lt;/div&gt;</text>
-      <sha1>frc9ylxlgr1s0hr9xrm5ibs1j6b7ong</sha1>
+&lt;/div&gt;
+
+== VM image export == 
+
+After a few hours (depending on your disk speed, CPU clock rate, available download bandwidth, ...) the image (either Workstation or Gateway) will be created in {{Code|~/whonix_binary}} directory. This will take from 3 to 7 hours per image.
+
+You need to export the OVA image and then [[Install  |use it in VirtualBox]].
+
+To transfer the images you can use VirtualBox's Shared Folders Functionality or USB transfer.  
+
+==== Export to a shared folder ====   
+
+To use shared folder functionality you must have [[VirtualBox_Guest_Additions|Guest Additions]] installed.
+
+Before installing Guest Additions read the [https://www.virtualbox.org/manual/ch04.html official manual page] and Whonix's [[VirtualBox_Guest_Additions|wiki page]].
+
+If you still want to use it, [http://download.virtualbox.org/virtualbox/4.3.6/ download the ISO] (VBoxGuestAdditions_4.3.6.iso) and set up folder as described in the manual.
+
+==== Export via USB ====
+
+Unless you install VirtualBox Extension Pack, USB 2.0 won't be supported. USB 1.1 transfer speed is very low, usually 0,5 - 1 MB/s.
+
+===== Extension pack install (optional) =====
+Before installing the extension pack read the [https://www.virtualbox.org/manual/ch01.html#intro-installing official manual page].
+
+To proceed, [https://www.virtualbox.org/wiki/Downloads download] the vbox file (Oracle_VM_VirtualBox_Extension_Pack-4.3.6-91406.vbox-extpack). Import the file in VirtualBox (File/Preferences/Extensions then locate the file). After installing, &quot;Oracle VM VirtualBOx Extension Pack&quot; entry will appear as &quot;Active&quot;, resulting in a green arrow icon in front of the name.
+
+===== USB transfer=====
+Make your USB key available to the VM through selecting it in the Devices/USB devices menu. Plug it in first of course ;)
+
+&lt;pre&gt;
+## Install usbmount that will automatically mount your USB to media/usb0
+sudo apt-get install usbmount
+
+## Check if the USB is present and mounted
+cd /media/usb0
+
+## Copy the OVA file to USB. 
+sudo cp /home/user/whonix_binary/Whonix-Workstation-7.7.8.7.ova /media/usb0
+
+## or if you have been building the Gateway
+sudo cp /home/user/whonix_binary/Whonix-Gateway-7.7.8.7.ova /media/usb0
+
+## Unmount the USB
+sudo umount /media/usb0
+&lt;/pre&gt;
+
+Deselect your USB key in the VM's Devices/USB devices menu to make it available to your host system again.
+
+== Finishing up == 
+
+You are done! OVA file is now on your USB key/in your shared folder. All you have to do is [[Install  |use it in VirtualBox]].
+
+If you want to build another image (presuming you have build only Workstation or Gateway this time) revert the VM state to [[Jekyll:Sandbox#Building_from_source|Snapshot 2]].
+
+From there follow the steps as you previously did and build the image you still need Workstation or Gateway.</text>
+      <sha1>9e5cwp5sikk2yr0tb4tw9muqvdzcxuh</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
