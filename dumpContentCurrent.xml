@@ -6538,15 +6538,14 @@ You could try the [https://www.riseup.net/en/openvpn-linux#gnome riseup.net Open
     <ns>0</ns>
     <id>92</id>
     <revision>
-      <id>5408</id>
-      <parentid>5407</parentid>
-      <timestamp>2014-02-15T23:13:42Z</timestamp>
+      <id>5447</id>
+      <parentid>5446</parentid>
+      <timestamp>2014-02-16T21:57:06Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* Network Verification */</comment>
-      <text xml:space="preserve" bytes="21666">{{Header}}
+      <comment>security.debian.org is present either way,  no need to add it..</comment>
+      <text xml:space="preserve" bytes="21477">{{Header}}
 
 '''WARNING''': Please don't forget reading the Warnings chapter.
 
@@ -6673,8 +6672,8 @@ In the installer boot menu of Debian Stable (Wheezy) press &quot;Install&quot; a
 
 &lt;pre&gt;
 Select a language: English
-Select your location: United Kingdom
-Configure the keyboard: American English
+Select your location: United States
+Configure the keyboard: (select yours)
 Hostname: host
 Domain name: (empty)
 Root password: (set up a strong password)
@@ -6712,12 +6711,12 @@ Set language as English.
 [[File:21.png|400px]]
 
 
-Set location as United Kingdom.
+Set location as United States. '''This is wrong in the picture below!'''
 
 [[File:22.png|400px]]
 
 
-Set keyboard as American English.
+Select your keyboard.
 
 [[File:23.png|400px]]
 
@@ -6877,15 +6876,12 @@ Logon, install all security updates and reboot.
 ## (host) login with &quot;root&quot;
 root
 
-## Add a new repository source. 
-## To install VirtualBox, you need to add the &quot;contrib&quot; repository. See the footnote below.
-echo &quot;deb http://ftp.us.debian.org/debian/ jessie main contrib&quot; &gt;&gt; /etc/apt/sources.list
+## Add a new repository source.
+echo &quot;deb http://ftp.us.debian.org/debian stable main&quot; &gt;&gt; /etc/apt/sources.list
 
 ## Refresh package lists and upgrade
 apt-get update &amp;&amp; apt-get dist-upgrade -y
 &lt;/pre&gt;
-
-&lt;ref&gt;Please see [[Dev/Virtualization_Platform#VirtualBox_no_longer_in_Debian_main]] for more information.&lt;/ref&gt;
 
 == Preparation ==
 Install sudo and git. &lt;ref&gt;You need git to obtain the source code. Alternatively, you could also download a git tag as an archive using a (torified) browser: https://github.com/Whonix/Whonix/tags&lt;/ref&gt;
@@ -7121,7 +7117,7 @@ To get a more complete list, install Debian (with KDE) on bare metal using the r
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>899al8w4b7x8lphhavcl05hhkb3a7a0</sha1>
+      <sha1>9yijzrh5yh8i7pqivein99z8gn7zh2a</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -7613,15 +7609,15 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
     <ns>0</ns>
     <id>96</id>
     <revision>
-      <id>4799</id>
-      <parentid>4798</parentid>
-      <timestamp>2014-01-19T01:27:22Z</timestamp>
+      <id>5420</id>
+      <parentid>4799</parentid>
+      <timestamp>2014-02-16T14:01:06Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Last update */</comment>
-      <text xml:space="preserve" bytes="71366">{{Header}}
+      <comment>/* Verifiable Builds */</comment>
+      <text xml:space="preserve" bytes="71332">{{Header}}
  
 = Introduction =
 This page contains the comparisons of Whonix, Tails, Tor Browser and Qubes OS TorVM. If anything here is incorrect or becomes outdated feel free to edit this page or [[contact]] us, we'll correct as soon as possible. See also [[#Statement about Neutrality of this Page]].
@@ -8015,7 +8011,7 @@ Therefore it is impossible to claim that non-trivial source code is backdoor fre
 | style=&quot;height: 27px;background-color: #f9f9f9&quot;| Project's binary builds verifiably created from project's own source code (no {{Code2|hidden source code}}&lt;ref name=hidden-source-code /&gt; in the project's own source code)
 | {{No}}, planned. &lt;ref&gt;See [[Trust#Verifiable Builds]].&lt;/ref&gt;
 | {{No}}
-| Soon, deterministically built. See above.
+| {{Yes}}
 | ?
 |}
 
@@ -8728,7 +8724,7 @@ One has always to be very careful, when talking about others. Especially, when t
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Design]]</text>
-      <sha1>m8ueuucohi2w80gau1u10dgods3p39o</sha1>
+      <sha1>p45xkrutgwsfnbd2tz7k9wl69b9nb3v</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -10184,20 +10180,21 @@ Whonix's firewall on the Whonix-Gateway is very restrictive. You can make it eve
     <ns>0</ns>
     <id>106</id>
     <revision>
-      <id>5357</id>
-      <parentid>4929</parentid>
-      <timestamp>2014-02-15T10:53:41Z</timestamp>
+      <id>5410</id>
+      <parentid>5357</parentid>
+      <timestamp>2014-02-16T11:27:15Z</timestamp>
       <contributor>
         <username>Jekyll</username>
         <id>161</id>
       </contributor>
-      <comment>Adding link for the inside-VM build instructions. =&lt;s&gt; since it's not done yet. Plan to do it this weekend</comment>
-      <text xml:space="preserve" bytes="1231">{{Header}}
+      <minor/>
+      <comment>Removed  &lt;s&gt; since the page now exists</comment>
+      <text xml:space="preserve" bytes="1224">{{Header}}
 {{forkme}}
 = Next Whonix Release in Development =
 * [[Dev/BuildDocumentation_8|8 Build Documentation for creating full images from source code]]
 * [[Dev/BuildDocumentation_8_deb|8 Build Documentation for upgrading Whonix debian packages from source code]]
-* &lt;s&gt;[[Dev/BuildDocumentation_8_RC|8 Build Documentation for building Whonix 8 Release candidate (Whonix 7.7.8.7) inside a VM]]&lt;/s&gt;
+* [[Dev/BuildDocumentation_8_RC|8 Build Documentation for building Whonix 8 Release candidate (Whonix 7.7.8.7) inside a VM]]
 * &lt;s&gt;[[Dev/BuildDocumentation_8_short|8 Build Documentation (short)]]&lt;/s&gt;
 
 = Current Whonix Release =
@@ -10218,7 +10215,7 @@ Whonix's firewall on the Whonix-Gateway is very restrictive. You can make it eve
 [[Category:Development]]
 
 {{Footer}}</text>
-      <sha1>kvhcxpkqs6cp6k8eo0r1mw0f8hrpwhr</sha1>
+      <sha1>5n5nb7onf6xivwrhmiucy5ptzr88h6e</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -39968,14 +39965,14 @@ To learn about adrelanos, the person who maintains Whonix, its OpenPGP key, see 
     <ns>0</ns>
     <id>380</id>
     <revision>
-      <id>4027</id>
-      <parentid>1952</parentid>
-      <timestamp>2013-11-13T16:10:29Z</timestamp>
+      <id>5431</id>
+      <parentid>4027</parentid>
+      <timestamp>2014-02-16T14:51:58Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="836">{{Header}}
+      <text xml:space="preserve" bytes="787">{{Header}}
 {{forkme}}
 = Location =
 http://sourceforge.net/projects/whonixdevelopermetafiles/files/internal/
@@ -39996,13 +39993,13 @@ Upload repository to sourceforge.
 Migrate from developers APT repository to testers APT repository.
 
 &lt;pre&gt;
-./debug-steps/reprepro-wrapper copymatched testers developers &quot;*&quot;
+./release/migrate_to_testers_repository
 &lt;/pre&gt;
 
 Migrate from testers APT repository to stable APT repository.
 
 &lt;pre&gt;
-./debug-steps/reprepro-wrapper copymatched stable testers &quot;*&quot;
+./release/migrate_to_stable_repository
 &lt;/pre&gt;
 
 = Misc =
@@ -40013,7 +40010,7 @@ We might need this for key transition:
 {{Footer}}
 
 [[Category: Development]]</text>
-      <sha1>6l4x7a0xunxbiaviwhemfcll01ds8wu</sha1>
+      <sha1>3wj0hxx5e9e9h0ix98ar7q6bpbas7hl</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -42850,15 +42847,15 @@ Please do not fix the picture links with html tags. This file gets copied to htt
     <ns>0</ns>
     <id>469</id>
     <revision>
-      <id>5333</id>
-      <parentid>5332</parentid>
-      <timestamp>2014-02-12T07:15:35Z</timestamp>
+      <id>5450</id>
+      <parentid>5333</parentid>
+      <timestamp>2014-02-16T22:25:27Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
       <comment>/* Warning */</comment>
-      <text xml:space="preserve" bytes="12107">{{Header}}
+      <text xml:space="preserve" bytes="11466">{{Header}}
 {{forkme}}
 
 = Build Documentation =
@@ -42877,15 +42874,6 @@ in contact.
 How to use the resulting images, is documented in the [[Documentation]].
 
 == Warning ==
-* &lt;u&gt;'''Short'''&lt;/u&gt;: '''Better build in a virtual machine!'''
-
-&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
-For more information, click on Expand on the right.
-&lt;div class=&quot;mw-collapsible-content&quot;&gt;
-''Long'':{{Code|/dev/mapper/loop0p1}} (and {{Code|/dev/nbd0}}) (used for mounting the images) is hard coded inside Whonix build scripts. Beware if you are using such devices. It may conflict with TrueCrypt. (And possibly other tools relying on {{Code|/dev/mapper/loop0p1}} (and {{Code|/dev/nbd0}}).) To avoid damage to your host system, it may be wise to build Whonix inside a Virtual Machine.
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;br /&gt;
 * &lt;u&gt;'''Short'''&lt;/u&gt;: '''Don't add private files to Whonix's source code folder!'''
 &lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
 &lt;div class=&quot;mw-collapsible-content&quot;&gt;
@@ -43068,7 +43056,7 @@ To learn about adrelanos, the person who maintains Whonix, its OpenPGP key, see 
 {{Footer}}
 
 [[Category:Development]]</text>
-      <sha1>76b6crgnej218mek104b3nutnnicetk</sha1>
+      <sha1>6gipxd6m10yff6h3rn6lizr0gkkwums</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -47790,14 +47778,15 @@ ii  zsh-common            5.0.2-4         all             architecture independe
     <ns>10</ns>
     <id>491</id>
     <revision>
-      <id>5395</id>
-      <parentid>4928</parentid>
-      <timestamp>2014-02-15T16:14:18Z</timestamp>
+      <id>5441</id>
+      <parentid>5440</parentid>
+      <timestamp>2014-02-16T17:21:12Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>New key update</comment>
-      <text xml:space="preserve" bytes="2957">== Get Whonix Source Code ==
+      <comment>/* Choose Whonix Version */</comment>
+      <text xml:space="preserve" bytes="2989">== Get Whonix Source Code ==
 Install git and get Whonix's source code from the git repository.&lt;ref&gt;From https://github.com/adrelanos/Whonix and not from https://github.com/Whonix/Whonix, because only adrelanos/Whonix contains git tags of the testers-only version.&lt;/ref&gt;
 
 &lt;pre&gt;
@@ -47805,7 +47794,7 @@ Install git and get Whonix's source code from the git repository.&lt;ref&gt;From
 sudo apt-get install git
 
 ## Get source code.
-git clone https://github.com/adrelanos/Whonix
+git clone https://github.com/Whonix/Whonix
 &lt;/pre&gt;
 
 Remember it's '''W'''honix, not '''w'''honix! If you are prompted for a username for github, it means you have mistyped the web address.
@@ -47855,20 +47844,20 @@ Verify the tag you want to build.
 
 &lt;pre&gt;
 ## ... Replace with tag you want to build.
-git tag -v 7.3.7
+git tag -v 7.7.8.7
 &lt;/pre&gt;
 
 Output should look similar to this.
 
 &lt;pre&gt;
-object 13870efc29018065267788f9f23026e6ff489684
+object 1844108109a5f2f8bddcf2257b9f3675be5cfb22
 type commit
-tag 7.3.7
-tagger adrelanos &lt;adrelanos@riseup.net&gt; 1348681401 -0400
+tag 7.7.8.7
+tagger Patrick Schleizer &lt;adrelanos@riseup.net&gt; 1392320095 +0000
 
-7.3.7
-gpg: Signature made Wed Sep 26 17:43:26 2012 UTC using RSA key ID 713AAEEF
-gpg: Good signature from &quot;adrelanos &lt;adrelanos@riseup.net&quot;
+.
+gpg: Signature made Thu 13 Feb 2014 07:34:55 PM UTC using RSA key ID 77BB3C48
+gpg: Good signature from &quot;Patrick Schleizer &lt;adrelanos@riseup.net&gt;&quot; [ultimate]
 &lt;/pre&gt;
 
 The warning.
@@ -47886,11 +47875,11 @@ Git checkout, which version (or [[Dev/git|git branch]]) you want to build.
 In case you want to build a specific git tag.
 
 &lt;pre&gt;
-git checkout 7.3.7
+git checkout 7.7.8.7
 &lt;/pre&gt;
 
-You have to replace {{Code2|7.3.7}} with the actual version you want to build. The stable version, the testers-only version or the developers version. You can learn about current versions reading [[Download#Stay_tuned|Whonix News Blogs]]. New versions are also announced on the [[Mailing_Lists#whonix-devel|whonix-devel mailing list]]. So you could alternatively check its archives. Signing up for whonix-devel is another way to get informed about new releases.</text>
-      <sha1>5kvrmaks9ql45sktwgfw4gd3y6al7zz</sha1>
+You have to replace {{Code2|7.7.8.7}} with the actual version you want to build. The stable version, the testers-only version or the developers version. You can learn about current versions reading [[Download#Stay_tuned|Whonix News Blogs]]. New versions are also announced on the [[Mailing_Lists#whonix-devel|whonix-devel mailing list]]. So you could alternatively check its archives. Signing up for whonix-devel is another way to get informed about new releases.</text>
+      <sha1>o7xx4gvv4pizfosmlpefx2o5utdr56t</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -50294,14 +50283,14 @@ Image:donate.png|link=Donate|[[Donate|Donate to Whonix!]]
     <ns>0</ns>
     <id>554</id>
     <revision>
-      <id>5246</id>
-      <parentid>5244</parentid>
-      <timestamp>2014-02-10T18:44:47Z</timestamp>
+      <id>5428</id>
+      <parentid>5426</parentid>
+      <timestamp>2014-02-16T14:22:28Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="21695">{{Header}}
+      <text xml:space="preserve" bytes="21982">{{Header}}
 &lt;!--
 Copyright:
 
@@ -50505,12 +50494,12 @@ You should regularly check for operating system updates on your host operating s
 
 [[Image:whonixcheck_gui.png|[[whonixcheck]]|thumb]]
 
-Функция автоматического обновления Tor-браузера не внедрена.
-[[whonixcheck|whonix-проверка]] будет уведомлять вас о наличии новых
-версий Tor-браузера. Встроенный в Tor-браузер механизм проверки наличия
-новых версий работает и в Whonix. Для получения информации по конкретным
-действиям по обновлению браузера, см. [[Tor Browser|Tor-браузер]]. Также имеет смысл
-подписаться на новости на сайте https://blog.torproject.org.
+Функция автообновления Tor-браузера на данный момент не реализована.
+[[whonixcheck]] будет информировать вас о появлении новых версий
+Tor-браузера. Встроенный в Tor-браузер механизм проверки наличия
+обновлений также работает и в Whonix. Для получения инструкций по
+обновлению браузера см. [[Tor Browser]]. Дополнительно также советуем
+подписаться на новости по ссылке https://blog.torproject.org.
 
 [[File:whonixcheck created by adrelanos.png|thumb|{{Code|Проверка версии Whonix}} (первый прямоугольник чёрного цвета) и&lt;br /&gt;{{Code|Новости
 Whonix}} &lt;br /&gt;(второй прямоугольник зелёного цвета)]] Также, благодаря {{Code|Проверке версии Whonix}} вы будете получать автоматические уведомления о новых версиях и о самых важных событиях &lt;ref&gt;, например, о том, что версия перестала поддерживаться, или о том, что требуется какое-либо действие, перестали работать какие-либо функции или были обнаружены уязвимости в системе обеспечения безопасности. Согласно замыслу необходимость в пользовании {{Code|Новостями Whonix}} сведена к минимуму.&lt;/ref&gt; за счёт {{Code|Новостей Whonix}}, они являются частью [[whonixcheck|whonix-проверки]].
@@ -50519,8 +50508,12 @@ Whonix}} &lt;br /&gt;(второй прямоугольник зелёного �
 
 There are some [[Official Whonix Online Profiles|Whonix Social Media Profiles]], but please don't rely on them for getting Whonix News and please don't use them to contact Whonix developers. (See [[Contact]] for contact information.)
 
-Поскольку некоторые люди будут пользоваться названными группами вопреки нашим рекомендациям, постольку сообщения из Блога Функций Whonix будут
-автоматически отображаться в [https://twitter.com/Whonix Twitter группе Whonix], в [https://www.facebook.com/Whonix Facebook группе Whonix] и в [https://plus.google.com/108150429836421683225/ Google+ группе Whonix].
+Вследствие того, что некоторые люди будут пользоваться группами
+социальных сетей даже вопреки нашим рекомендациям, сообщения Блога
+функций Whonix будут автоматически отражаться на
+[https://twitter.com/Whonix Whonix Twitter Profile],
+[https://www.facebook.com/Whonix Whonix Facebook Profile] и на
+[https://plus.google.com/108150429836421683225/ Whonix Google+ Profile].
 
 If you won't get into trouble by letting others learn about Whonix, feel free to follow or like those profiles (with your anonymous account) as a little way to [[Contribute]].
 
@@ -50573,10 +50566,13 @@ After manually upgrading Tor Browser (see above)... To start Tor Browser, got to
 /home/user/tor-browser_en-US/start-tor-browser
 &lt;/pre&gt;
 
-=== Virtual Box Shared Folder Issues ===
-Shared Folders aren’t working with the latest Linux kernel. (This is a Debian/Virtual Box issue, not caused by Whonix. Has already been reported to upstream by a Debian user.)
+=== Проблемы с использованием Общих папок в VirtualBox ===
+С последним ядром Linux функция &quot;Общие папки&quot; не работает. (Корень
+проблемы в связке Debian/Virtual Box, а не в Whonix). (Информация о
+проблеме уже была направлена соответствующим людям пользователем ОС Debian.)
 
-Possible workarounds, more information, etc. can be found in the Whonix User Help Forum discussion thread:
+Существующие способы обхода, дополнительная информация и др. изложены в
+Форуме помощи пользователю Whonix в ветке:
 [[Special:AWCforum/st/id261/VirtualBox_shared_directories_on....html]]
 
 === Enigmail Encryption ===
@@ -50657,7 +50653,7 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>mqic6ynjziv6gmy5d49piumjexz8509</sha1>
+      <sha1>oe6arnf25wama0gf3kjiu5alf3rue38</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -51425,20 +51421,20 @@ sudo apt-get dist-upgrade
     <ns>1198</ns>
     <id>581</id>
     <revision>
-      <id>5241</id>
-      <parentid>4267</parentid>
-      <timestamp>2014-02-10T18:34:37Z</timestamp>
+      <id>5421</id>
+      <parentid>5241</parentid>
+      <timestamp>2014-02-16T14:21:00Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="699">Функция автоматического обновления Tor-браузера не внедрена.
-[[whonixcheck|whonix-проверка]] будет уведомлять вас о наличии новых
-версий Tor-браузера. Встроенный в Tor-браузер механизм проверки наличия
-новых версий работает и в Whonix. Для получения информации по конкретным
-действиям по обновлению браузера, см. [[Tor Browser|Tor-браузер]]. Также имеет смысл
-подписаться на новости на сайте https://blog.torproject.org.</text>
-      <sha1>ks17fqr3ncfb2lg6r7c4ra78kf9jd0p</sha1>
+      <text xml:space="preserve" bytes="666">Функция автообновления Tor-браузера на данный момент не реализована.
+[[whonixcheck]] будет информировать вас о появлении новых версий
+Tor-браузера. Встроенный в Tor-браузер механизм проверки наличия
+обновлений также работает и в Whonix. Для получения инструкций по
+обновлению браузера см. [[Tor Browser]]. Дополнительно также советуем
+подписаться на новости по ссылке https://blog.torproject.org.</text>
+      <sha1>4hm05l7mvhr2ca66i5qubtw6tlje6ut</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -51671,16 +51667,17 @@ When upgrading to Tor 0.2.4.19-1~d79.jessie+1 (using sudo apt-get dist-upgrade),
     <ns>1198</ns>
     <id>596</id>
     <revision>
-      <id>4283</id>
-      <timestamp>2013-12-16T16:42:00Z</timestamp>
+      <id>5427</id>
+      <parentid>4283</parentid>
+      <timestamp>2014-02-16T14:22:27Z</timestamp>
       <contributor>
-        <username>FuzzyBot</username>
-        <id>37</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="177">Possible workarounds, more information, etc. can be found in the Whonix User Help Forum discussion thread:
+      <text xml:space="preserve" bytes="276">Существующие способы обхода, дополнительная информация и др. изложены в
+Форуме помощи пользователю Whonix в ветке:
 [[Special:AWCforum/st/id261/VirtualBox_shared_directories_on....html]]</text>
-      <sha1>3mw03vp261tapw0cvdmmg4g61oo3mx8</sha1>
+      <sha1>ei5yz5gifzjb7xy1w58qip3xdp7equs</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -52160,16 +52157,18 @@ It is important to check the integrity of the virtual machine images you downloa
     <ns>1198</ns>
     <id>622</id>
     <revision>
-      <id>4309</id>
-      <timestamp>2013-12-16T16:46:21Z</timestamp>
+      <id>5425</id>
+      <parentid>4309</parentid>
+      <timestamp>2014-02-16T14:22:03Z</timestamp>
       <contributor>
-        <username>FuzzyBot</username>
-        <id>37</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="218">=== Virtual Box Shared Folder Issues ===
-Shared Folders aren’t working with the latest Linux kernel. (This is a Debian/Virtual Box issue, not caused by Whonix. Has already been reported to upstream by a Debian user.)</text>
-      <sha1>b40z1yed0h1cjxln7x5oyd50zxoayoe</sha1>
+      <text xml:space="preserve" bytes="442">=== Проблемы с использованием Общих папок в VirtualBox ===
+С последним ядром Linux функция &quot;Общие папки&quot; не работает. (Корень
+проблемы в связке Debian/Virtual Box, а не в Whonix). (Информация о
+проблеме уже была направлена соответствующим людям пользователем ОС Debian.)</text>
+      <sha1>4ffw4mjig1ophml2ugssr5mh8ya7648</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -52407,16 +52406,20 @@ More info [http://lists.debian.org/debian-derivatives/2013/08/msg00000.html here
     <ns>1198</ns>
     <id>635</id>
     <revision>
-      <id>5243</id>
-      <parentid>5130</parentid>
-      <timestamp>2014-02-10T18:36:00Z</timestamp>
+      <id>5423</id>
+      <parentid>5243</parentid>
+      <timestamp>2014-02-16T14:21:22Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="524">Поскольку некоторые люди будут пользоваться названными группами вопреки нашим рекомендациям, постольку сообщения из Блога Функций Whonix будут
-автоматически отображаться в [https://twitter.com/Whonix Twitter группе Whonix], в [https://www.facebook.com/Whonix Facebook группе Whonix] и в [https://plus.google.com/108150429836421683225/ Google+ группе Whonix].</text>
-      <sha1>hsefed8bq9w1i3eu79mjpqia2q8p84c</sha1>
+      <text xml:space="preserve" bytes="521">Вследствие того, что некоторые люди будут пользоваться группами
+социальных сетей даже вопреки нашим рекомендациям, сообщения Блога
+функций Whonix будут автоматически отражаться на
+[https://twitter.com/Whonix Whonix Twitter Profile],
+[https://www.facebook.com/Whonix Whonix Facebook Profile] и на
+[https://plus.google.com/108150429836421683225/ Whonix Google+ Profile].</text>
+      <sha1>i9pvx95ihyq91whncxstoqdayqpy3t8</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -52491,420 +52494,6 @@ License can be found in the /usr/share/common-licenses' directory.</text>
       <comment>Importing a new version from external source</comment>
       <text xml:space="preserve" bytes="16">== 2. Install ==</text>
       <sha1>0eithzzqwy6tl8tn86a5mks6td23u21</sha1>
-      <model>wikitext</model>
-      <format>text/x-wiki</format>
-    </revision>
-  </page>
-  <page>
-    <title>Physical Isolation temp</title>
-    <ns>0</ns>
-    <id>643</id>
-    <revision>
-      <id>4429</id>
-      <parentid>4337</parentid>
-      <timestamp>2013-12-21T18:50:57Z</timestamp>
-      <contributor>
-        <username>Jekyll</username>
-        <id>161</id>
-      </contributor>
-      <text xml:space="preserve" bytes="18223">{{Header}}
-
-TEST CHECK
-
-'''WARNING''': Please don't forget reading the Warnings chapter.
-
-= Introduction =
-== Technical Introduction ==
-When setting up Whonix in the form of two Virtual Machines running on the same physical host, exploits targeting the VM implementation or the host can still break out of the torified Client VM and expose the IP of a user. Malware running on the host has full control over all VMs. To protect such attacks we need a different approach: In this context we called it Physical Isolation, because the gateway system is installed on separate hardware. This drastically reduces the TCB&lt;ref&gt;https://en.wikipedia.org/wiki/Trusted_computing_base&lt;/ref&gt; by more than the half.
-
-In total we'll be installing and configuring two computers and set up an isolated point to point network between them (you could also set up a an ordinary, completely isolated, LAN behind the Whonix-Gateway). One computer acts as the client or &quot;Whonix-Workstation&quot;, the other as a proxy or &quot;Whonix-Gateway&quot; which will transparently route all of the Whonix-Workstation's traffic through Tor.
-
-The Whonix-Gateway on its own physical device can either run directly on hardware or inside a virtual machine. Both options have advantages and disadvantages. We recommend to use no additional Virtual Machine for the Whonix-Gateway.
-
-The Whonix-Workstation should always be installed in a Virtual Machine: A VM hides hardware serial numbers. See also [[Security_Guide#Recommendation_to_use_multiple_VM_Snapshots|Recommendation to use multiple VM Snapshots]].
-
-The host operating system(s) should only be used for downloading operating system updating, hosting Whonix-Gateway or Whonix-Workstation and nothing else.
-
-Bonus points if the physical systems are exclusively used for hosting Whonix, or if storage devices are separated for Whonix and non-Whonix use cases, to avoid a Whonix hard drive getting infected by a another operating system.
-
-== Warnings ==
-'''WARNING''': Less tested than VM builds. Needs your help for more rigid testing!
-
-'''WARNING''': Instructions are difficult. Only advanced Linux users can understand them.
-
-'''WARNING''': [[Dev/Build Anonymity]] has not been considered for this article.
-
-'''WARNING''': Do also read the [[Dev/BuildDocumentation_8#Warning|warnings]] in the [[Dev/BuildDocumentation|latest build instructions for VM images]]. Some of them, {{Code2|Don't add private files to Whonix's source code folder!}} and {{Code2|Check if the OpenPGP public keys are still up to date.}} also applies to the physical isolation page.
-
-'''WARNING''': This article currently lacks information about Whonix-Gateway's and Whonix-Workstation's MAC address. See also
-
-* [[Protocol-Leak-Protection and Fingerprinting-Protection]]
-* [[Pre_Install_Advice#MAC_Address|Whonix in public networks / MAC Address]]
-
-== Using spare hardware + Virtual Machine ==
-
-Advantages:
-
-* You can install a graphical host.
-* Use the Whonix download version.
-* You can use the graphical network manager on the host, for example to connect to WiFi.
-* You can setup easily a VPN on the host. Tor will be tunneled through the VPN.
-
-Disadvantages:
-
-* Higher attack surface, because the Virtual Machine code get's involved.
-
-== Using spare hardware without Virtual Machine ==
-
-Advantages:
-
-* More secure, because less code is involved.
-
-Disadvantages:
-
-* Slightly more complicated setup
-* More difficult to set up VPN
-* More difficult to set up 3G networking compared to using a Windows host
-
-== Hardware ==
-
-=== General ===
-
-We recommend that you use two dedicated computers for Whonix that are never used for activities that could lead back to your identity. Alternatively you can use an already existing and otherwise used computer for the Whonix-Gateway. To offer some isolation you should disconnect all internal and external drives and boot from a eSATA, USB or another internal drive into a clean environment.
-
-=== non-anonymous use ===
-
-* non-anonymous box (leave it as it is, like you want)
-* non-anonymous home dial up internet router (leave it as it is, like you want)
-
-=== anonymous use ===
-
-* Whonix-Gateway
-** This really does not have to be a big desktop computer or ordinary server. There are alternatives.
-** smartphone &lt;ref name=one&gt;Just some hints to get started. It is difficult and beyond the scope of Whonix, because you don't have an Ethernet interface. Some (after market) firmwares support USB-host. (You can plug USB devices into your phone, such as an USB ethernet card. For example some rooted android smartphones can [http://android.galoula.com/en/LinuxInstall/ install] Debian Linux.&lt;/ref&gt;,
-** UMPC&lt;ref&gt;https://en.wikipedia.org/wiki/Ultra-mobile_PC&lt;/ref&gt;
-** pad, tablet,
-** notebook, netbook,
-** Raspberry Pi&lt;ref&gt;https://en.wikipedia.org/wiki/Raspberry_Pi&lt;/ref&gt; (Whonix User Help Forum, older thread for old version Whonix 0.5.6: [https://sourceforge.net/p/whonix/discussion/general/thread/30381157/ Installing Whonix Gateway on Raspberry Pi]),
-** router &lt;ref&gt;something like OpenWRT&lt;/ref&gt;,
-** set top box,
-** etc.
-** how to utilize such a device as a linux server is beyond the scope of this guide, there are already better resources
-* anonymous 3G modem (see below) or anonymous wifi adapter (see below)
-* Whonix-Workstation
-** You get the idea. Use a device which suits you.
-
-= Prerequisites =
-* [[System Requirements]]
-* Whonix-Gateway: A device with at least two network adapters, at least one of them ethernet &lt;ref&gt;The other one may be either an [[Security_Guide#Anonymous_3G_modem|Anonymous 3G modem]]; [[Security_Guide#Anonymous_WiFi_adapter|Anonymous WiFi adapter]], another ethernet or wifi connected to your modem/router.&lt;/ref&gt;, capable of running Linux. It will run Debian. &lt;ref&gt;Theoretically you could use any OS that supports iptables or pf. If you don't want to use Debian you will have to edit the source code. This will be easy for Debian derivatives but much more difficult for *BSD for example. In any case, the choice of OS shouldn't really matter because this system isn't used for anything but running Tor. A cheap plug computer, something like Raspberry Pi or the hardware used by Torouter would be sufficient.&lt;/ref&gt;
-* Whonix-Workstation: A device connected via ethernet to the Whonix-Gateway. It must only have this one NIC and no other network connectivity! Must be connected by wire.&lt;ref&gt;If you don't connect by wire, you significantly weaken isolation and security. One the Whonix-Workstation were infected, it could jump onto another network and start leaking.&lt;/ref&gt; This will be the torified client system or Whonix-Workstation. It must be capable of running Debian.&lt;ref&gt;Any OS can be used. But this is not recommended! If you do anyway, read warning, especially for Windows: [https://trac.torproject.org/projects/tor/wiki/doc/TransparentProxyLeaks Transparent Proxy Leaks].&lt;/ref&gt;
-* We recommend to use a VM as the client, the same Whonix-Workstation, that most non Physical Isolation users use. &lt;ref&gt;From the [[Download]] page or build it yourself from source code.&lt;/ref&gt; &lt;ref&gt;A generic VM image can neither leak identifying hardware serial numbers nor unique software fingerprints. (e.g. trough [https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO#Softwareupdaters software updates]).&lt;/ref&gt; &lt;ref&gt;This ensures that you get the latest security features and most secure configurations. (Such as stream isolation that protects against Identity correlation through circuit sharing, XChat IRC hardening or Whonix's Protocol-Leak-Protection and Fingerprinting-Protection etc.)&lt;/ref&gt;
-* Host build environment has a working internet connection to Debian mirrors.
-* General advice from Build Documentation about [[Dev/BuildDocumentation_8#Build_Security|Build Security]] applies
-
-= Host Preparation =
-&lt;!--
-EDITORS NOTE: The following host preparation text is duplicated on 3 pages.
-(1) [[Physical Isolation]]
-(2) [[Dev/Build Documentation]] for VM images
-(3) Whonix debian packages.
-When making changes here, please consider also making changes there.
---&gt;
-* You need to build on '''Debian Testing (Jessie)'''. (How to obtain Debian safely: &lt;ref&gt;[[Debian|Debian ISO OpenPGP verification]]&lt;/ref&gt;) &lt;ref&gt;The build scripts could be adapted to run on other {{Code2|*NIX}} systems as well but currently they assume {{Code2|apt-get}} and {{Code2|grml-debootstrap}} to be available. You need about 15 GB of free space.&lt;/ref&gt;
-* Build dependencies and configurations get automatically applied, so you don't have to worry about that. &lt;ref&gt;By {{Code2|[https://github.com/Whonix/Whonix/blob/master/build-steps.d/1100_prepare-build-machine build-steps.d/1100_prepare-build-machine]}}.))&lt;/ref&gt;
-* It is recommended to set your terminal (for example Konsole) to unlimited scrollback, so you can watch the full build log.
-
-= How To Install Whonix-Gateway on Hardware (RECOMMENDED) =
-== Get Debian ==
-Download a Debian Testing/Jessie 32 bit installation iso. Detailed instructions doing so are unfortunately not part of this guide. However, the [[Debian]] page contains some help. (You could also use a Debian Testing/Jessie 64 bit installation iso, these instructions should also work, but it's less tested.)
-
-== Install Debian ==
-Install Debian Testing/Jessie and chose following settings:
-
-&lt;pre&gt;
-In the boot menu press F4 and select &quot;Install a minimal system&quot;
-Language: English
-Country: United States
-keyboard layout: English (US) (don't autodetect)
-Primary network interface: eth0 (depends on hardware layout?)
-Hostname: host
-Full name for the new user: user
-Username for your account: user
-Choose a password for the new user: &lt;Set up a strong password&gt;
-encrypt home directory: No
-Timezone: UTC
-Partitioning: It's a good idea to set up cryptsetup based FDE at this point.
-No proxy
-No automatic updates 
-tasksel (Choose software to install): select nothing
-&lt;/pre&gt;
-
-== Network Configuration ==
-The external interface (usually eth0) may need to be configured according to the requirements of your local network, e.g. static or simply left to use dhcp if the gateway is connected to a dhcp capable router. For wlan follow the upstream documentations: [http://wiki.debian.org/WiFi debian wiki], [https://help.ubuntu.com/community/WifiDocs/WiFiHowTo Ubuntu help].
-
-Make sure the internet is working.
-
-== Upgrade Debian ==
-Install all security updates and reboot.
-
-&lt;pre&gt;
-## Become root.
-su
-
-## Refresh package lists.
-apt-get update
-
-## Upgrade.
-apt-get dist-upgrade
-
-## Back to normal user.
-exit
-&lt;/pre&gt;
-
-== Preparation ==
-Install sudo. &lt;ref&gt;You need git to obtain the source code. Alternatively, you could also download a git tag as an archive using a (torified) browser: https://github.com/Whonix/Whonix/tags&lt;/ref&gt;
-
-&lt;pre&gt;
-sudo apt-get install sudo
-&lt;/pre&gt;
-
-You must build as user &quot;user&quot; and that user must be a member of the &quot;sudo&quot; group.
-
-&lt;pre&gt;
-## Become root.
-su
-
-## adduser &quot;user&quot;
-adduser user
-
-## add &quot;user&quot; to &quot;sudo&quot; group
-addgroup user sudo
-
-## Back to normal user.
-exit
-&lt;/pre&gt;
-
-On your Whonix-Gateway: It is assumed you created user account named &quot;user&quot;.
-
-&lt;pre&gt;
-su user
-cd ~
-&lt;/pre&gt;
-
-'''Optional''': &lt;br /&gt;
-You may want to take an image of your installation in case the build script fails in the middle.
-
-{{Build Documentation Get Source Code}}
-
-{{Build Configuration}}
-
-== Install Basic Packages ==
-Make sure you have all packages installed which are listed in the file {{Code2|grml_packages}}. You can do that using the following command.
-
-&lt;pre&gt;
-sudo apt-get install $(grep -vE &quot;^\s*#&quot; grml_packages | tr &quot;\n&quot; &quot; &quot;)
-&lt;/pre&gt;
-
-== Network Verification ==
-Before running the {{Code2|whonix_build}} script make sure eth1 and eth0 refer to the correct interfaces.
-
-&lt;pre&gt;
-## May be helpful.
-dmesg | grep eth
-&lt;/pre&gt;
-
-Otherwise you have to change the variables in the configuration files. To find the affected files, the following commands may be helpful. &lt;ref&gt;Should be really only a very few files. We used variables for eth0 and eth1 wherever possible.&lt;/ref&gt;
-
-&lt;pre&gt;
-grep -r eth0* *
-grep -r eth1* *
-&lt;/pre&gt;
-
-== Minor Things ==
-&lt;s&gt;Most configuration files work well inside Virtual Machines and on hardware. Only minor things such as deactivating powersaving, passwordless reboot, shutdown etc. are only recommended for Virtual Machines. You can easily comment them out by putting a hash # in front of them. They are marked, to find them, grep can be used.&lt;/s&gt; Skip this for now. You can change these files later after building Whonix. (Simpler.)
-
-&lt;pre&gt;
-grep -r VMONLY* *
-&lt;/pre&gt;
-
-== Run Build Script ==
-&lt;pre&gt;
-sudo ./whonix_build --tor-gateway --bare-metal --build
-&lt;/pre&gt;
-
-== Final Steps ==
-Reboot.
-
-&lt;pre&gt;
-sudo reboot
-&lt;/pre&gt;
-
-You will autologin as new user &quot;user&quot;. (If you didn't install as user &quot;user&quot;, your old user and home folder does of course still exist.)
-
-Done.
-
-== Cleanup ==
-{{Build Documentation Cleanup}}
-
-= How To Install Whonix-Gateway in a VM (UNTESTED / NOT RECOMMENDED) =
-
-It is advised to install a new OS just for hosting the Gateway VM, any OS that can run VirtualBox works but we recommend an Open Source system.
-
-[[Download]] the Whonix-Gateway image. (Or [[Dev/Build Documentation|build it]] from source code.)
-
-Adapter 1 can be set up as a NAT network. Adapter 2 must either be set to NAT as well (but you will need to forward ports from the host to the guest) or much simpler: use bridged networking and set it to the second physical interface (the one that goes into the isolated network/point to point ethernet). See &quot;NAT vs Bridging&quot; below.
-
-This configuration is entirely untested and not recommended unless you need to run Tor through a VPN (can't that be done without VMs?) or an unsupported 3G modem and can't afford a 3rd physical device.
-
-When using NAT for a virtualized Gateway you need to set up port forwarding in VirtualBox. Using bridged network may be easier, but then the router may see the Whonix-Gateway MAC address which identifies as Whonix-Gateway. (Should not be of concern in home networks. Should be of concern in untrusted networks or when using a modem to connect.)
-
-= Install Whonix-Workstation in a VM (RECOMMENDED) =
-
-=== First Steps ===
-
-Install and update a host operating system. On the host can run any OS that is capable of running VirtualBox, but be aware of [https://trac.torproject.org/projects/tor/wiki/doc/TransparentProxyLeaks Transparent Proxy Leaks]. It is recommended against to use Windows or another other commercial proprietary system as host operating system.
-
-[[Download]] the Whonix-Workstation image. (Or [[Dev/Build Documentation|build it]] from source code.)
-
-Note sure what we wanted to say with this sentence: If the physical network (between Whonix-Gateway and a router) uses 192.168.0.* you need to review and edit all shell scripts and switch the internal network to something else!
-
-=== Host Network Adapter ===
-
-The host has to be configured to use the static IP configuration.
-
-&lt;pre&gt;
-## Whonix-Workstation
-## /etc/network/interfaces for the host,
-## when using Physical Isolation,
-## with Whonix-Workstation in a VM.
-
-auto lo
-iface lo inet loopback
-
-auto eth0
-iface eth0 inet static
-   ## Increment last octet of address
-   ## on optional additional hosts.
-   address 192.168.0.11
-   netmask 255.255.255.0
-   gateway 192.168.0.10
-   #pre-up /usr/bin/whonix_firewall
-
-   ## Out commented.
-   ## For what do we require the network and broadcast
-   ## instances anyway?
-   #network 192.168.0.0
-   #broadcast 192.168.0.255
-
-#auto eth0
-#iface eth0 inet dhcp
-
-## end of /etc/network/interfaces
-&lt;/pre&gt;
-
-If the physical network (between Whonix-Gateway and a router) uses 192.168.0.* you need to review and edit all ''/etc/network/interfaces''.
-
-=== NAT vs Bridging ===
-
-==== Two Choices ====
-
-In the default Whonix VirtualBox image, the network adapter setting for Adapter 1 (eth0) is set to internal network and will therefore not work out of the box. There are two choices to fix this. NAT (recommended) or bridged network.
-
-==== NAT (RECOMMENDED) ====
-
-If you use NAT you will have to edit the ''/etc/network/interfaces/'' in Whonix-Workstation to use DHCP (easier, shown in the example below) or a static IP for VirtualBox NAT.
-
-&lt;pre&gt;
-sudo nano /etc/network/interfaces/
-&lt;/pre&gt;
-
-Replace it with.
-
-&lt;pre&gt;
-## Whonix-Workstation
-## /etc/network/interfaces in a VM
-## when using Physical Isolation.
-
-auto lo
-iface lo inet loopback
-
-auto eth0
-iface eth0 inet dhcp
-
-## end of /etc/network/interfaces
-&lt;/pre&gt;
-
-==== Bridged Network (UNTESTED / NOT RECOMMENDED) ====
-
-If you use bridged networking things will (or should, we haven't tested anything yet) just work.
-
-Since in the bridged network case, Whonix-Workstation can see the MAC address of whatever network adapter it is connected to, you should change the MAC address of the Workstation host and of the Whonix-Gateway.
-
-See [[Pre_Install_Advice#MAC_Address|Whonix in public networks]].
-
-= Install Whonix-Workstation on hardware (NOT RECOMMENDED) =
-
-Install Whonix-Workstation on hardware without using a VM is recommended against, because hardware serials would be visible to Whonix-Workstation.
-
-The instructions are very similar, if not the very same, to those in &quot;How To Install Whonix-Gateway on hardware&quot; above. You have to use {{Code2|--tor-workstation}} instead of {{Code2|--tor-gateway}}.
-
-= Further required reading =
-
-[[Documentation]]. The host security chapter applies to both computers!
-
-= Extra packages for better hardware support =
-
-Some packages for bare metal may or may not be missing. Here is a probably incomplete list of packages, which may or may not be useful for better hardware support. Some suggestions.
-
-&lt;pre&gt;
-xorg
-xserver-xorg-input-all
-xserver-xorg-input-wacom
-xserver-xorg-input-geode
-xserver-xorg-input-vmmouse
-xserver-xephyr
-
-xserver-xorg-input-*
-xserver-xorg-*
-
-acpi-support-base
-acpid
-acpi
-
-discover
-discover-modprobe
-discover-data
-
-hwdata
-
-mdetect
-
-apt-cache show task-desktop
-apt-cache show task-kde-desktop
-apt-cache show task-laptop
-&lt;/pre&gt;
-
-If you have EFI bios.
-
-&lt;pre&gt;
-grub-efi-amd64
-&lt;/pre&gt;
-
-To get a more complete list, install Debian (with KDE) on bare metal using the regular Debian installer medium.
-
-* diff &quot;dpkg -l&quot; with Whonix
-* diff &quot;sudo lsmod&quot; with Whonix
-* contribute your findings
-
-* See also: http://wiki.debian.org/HardwareAutodetection
-
-= Footnotes / References =
-&lt;references/&gt;
-
-{{Footer}}
-
-[[Category:Documentation]]</text>
-      <sha1>b5z15mx46wvzi4p93pqgl5lfwnwbf67</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -57602,14 +57191,14 @@ Image:donate.png|link=Donate|[[Donate|Финансово поддержать Wh
     <ns>0</ns>
     <id>765</id>
     <revision>
-      <id>5316</id>
-      <parentid>5314</parentid>
-      <timestamp>2014-02-12T01:42:54Z</timestamp>
+      <id>5430</id>
+      <parentid>5417</parentid>
+      <timestamp>2014-02-16T14:24:17Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="27368">{{Header}}
+      <text xml:space="preserve" bytes="27985">{{Header}}
 &lt;!--
 Copyright:
 
@@ -57874,21 +57463,21 @@ sudo service tor restart
 Ветка помощи на форуме:
 [[Special:AWCforum/st/id287/new_tor_and_debian_updates_today....html]]
 
-=== Tor Browser Updater (Whonix) ===
-Currently broken due to changes by torproject.org. You have to [[Manually Updating Tor Browser|manually update Tor Browser]] in meanwhile.
+=== Механизм обновления Tor-браузера (Whonix) ===
+В настоящее время этот механизм не работает вследствие изменений, внесённых разработчиками torproject.org. Вам придётся пока что [[Manually Updating Tor Browser|обновлять Tor-браузер вручную]].
 
-Forum help thread:
+Ветка помощи на форуме:
 [[Special:AWCforum/st/id262/updating_TOR_browser_error...html]]
 
-=== Tor Browser Starter (Whonix) ===
-After manually upgrading Tor Browser (see above)... To start Tor Browser, got to your /home/user/tor-browser_en-US folder and double click start-tor-browser. Or type in terminal (Konsole).
+=== Запуск Tor-браузера (Whonix) ===
+После ручного обновления Tor-браузера (см. выше)... для запуска Tor-браузера зайдите в папку /home/user/tor-browser_en-US и двойным щелчком мыши нажмите на start-tor-browser. Или введите в терминале (консоли).
 
 &lt;pre&gt;
 /home/user/tor-browser_en-US/start-tor-browser
 &lt;/pre&gt;
 
-=== Virtual Box Shared Folder Issues ===
-Shared Folders aren’t working with the latest Linux kernel. (This is a Debian/Virtual Box issue, not caused by Whonix. Has already been reported to upstream by a Debian user.)
+=== Проблемы с использованием Общих папок в VirtualBox ===
+С последним ядром Linux функция &quot;Общие папки&quot; не работает. (Корень проблемы в связке Debian/Virtual Box, а не в Whonix. Информация о проблеме уже была направлена соответствующим людям пользователем ОС Debian.)
 
 Possible workarounds, more information, etc. can be found in the Whonix User Help Forum discussion thread:
 [[Special:AWCforum/st/id261/VirtualBox_shared_directories_on....html]]
@@ -57971,7 +57560,7 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>egpf2c1bmvrvfz9mehd2qiakenxssqf</sha1>
+      <sha1>8tiyb8cyueke3oaa9zfp4zjv7arr21j</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -59623,6 +59212,693 @@ inspired by http://aboli.sh/
 |description=Privacy protection. Anonymity online. Anonymous Operating System.
 }}</text>
       <sha1>s53vrydpgflojouqr8wmmc2z8tdd91w</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Dev/BuildDocumentation 8 in VM</title>
+    <ns>0</ns>
+    <id>849</id>
+    <revision>
+      <id>5448</id>
+      <parentid>5411</parentid>
+      <timestamp>2014-02-16T22:16:31Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <minor/>
+      <comment>Adrelanos moved page [[Dev/BuildDocumentation 8 RC]] to [[Dev/BuildDocumentation 8 in VM]]</comment>
+      <text xml:space="preserve" bytes="12348">= Documentation =
+
+
+This is a short set of instructions for building 7.7.8.7 testers-only version of Whonix (later to be modified for Whonix 8) inside VirtualBox (as opposed to the traditional process of running these commands on a system that is installed directly on the hardware).
+
+Advantages of this approach are that you can build Whonix on any OS that can run VirtualBox (you need Debian Stable for hardware type build) and that any potential system damage is limited to the VM. Using shapshots you can quickly revert a faulty state or a failed build and start again.
+
+The focus here is to show the simplest way to build Whonix from source. Various security precautions such as GPG key verification are omitted.
+
+Please read the full [[Dev/BuildDocumentation_8#Build_Documentation.|documentation]] in order to understand the process better.
+
+== Get and prepare Debian and VirtualBox ==
+[[Debian#Download_and_Verification|Download and verify]] Debian Stable/Wheezy 32 bit network install (netinst) ISO.
+
+[https://www.virtualbox.org/wiki/Downloads Download] the latest version of VirtualBox and verify the downloaded packages by [http://dlc.sun.com.edgesuite.net/virtualbox/4.3.6/SHA256SUMS comparing SHA256 checksums].
+
+After you install VirtualBox create a new virtual machine with the following specifics:
+
+&lt;pre&gt;
+Name: Debian
+Type: Linux
+Version: Debian
+Memory size: (go with recommended memory size) / Next
+Hard Drive: Create a virtual hard drive now / Create
+Hard drive file type: VDI (VirtualBox Disk Image) / Next
+Storage on physical hard drive: Dynamically allocated / Next
+File location and size: 50 GB / Create
+&lt;/pre&gt;
+
+Start the newly created virtual machine, select the ISO of Debian 7.4 stable (debian-7.4.0-i386-netinst.iso) and click Start.
+
+&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+'''OPTIONAL.'''
+
+If you are interested in seeing a visual walk-through of the Virtual Machine preparation, click on Expand on the right.
+
+&lt;div class=&quot;mw-collapsible-content&quot;&gt;
+
+
+Create a new virtual machine by clicking &quot;New&quot;.
+
+[[File:1a.png|400px]]
+
+
+Click &quot;Next&quot;.
+
+[[File:2a.png|400px]]
+
+
+Set name to &quot;Debian&quot;.
+
+[[File:3a.png|400px]]
+
+
+Leave the memory as recommended.
+
+[[File:4aa.png|400px]]
+
+
+New hard disk.
+
+[[File:5a.png|400px]]
+
+
+&quot;VDI&quot;.
+
+[[File:6a.png|400px]]
+
+
+Choose &quot;Dynamically allocated&quot;
+
+[[File:7a.png|400px]]
+
+
+Set the size to 50GB. You won't use all of it.
+
+[[File:8aa.png|400px]]
+
+
+Check if all is correct.
+
+[[File:9aa.png|400px]]
+
+
+Create the virtual machine.
+
+[[File:10aa.png|400px]]
+
+
+Start the VM.
+
+[[File:11aa.png|400px]]
+
+
+Capture notification.
+
+[[File:12a.png|400px]]
+
+
+Welcome screen.
+
+[[File:13a.png|400px]]
+
+
+Locate Wheezy netinst ISO. 
+
+[[File:13aa.png|400px]]
+
+
+Check if all is correct.
+
+[[File:14aa.png|400px]]
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+== Install Debian ==
+In the installer boot menu of Debian Stable (Wheezy) press &quot;Install&quot; and choose following settings:
+
+&lt;pre&gt;
+Select a language: English
+Select your location: United Kingdom
+Configure the keyboard: American English
+Hostname: host
+Domain name: (empty)
+Root password: (set up a strong password)
+Full name for the new user: user
+Username for your account: user
+Password for the new user: (choose a good password, different from root password)
+Partitioning method: Guided - use entire disk
+Partitioning scheme: All files in one partition (select the listed device in the next step)
+Partition disks/overview: Finish partitioning
+Write changes to disk: Yes
+
+Debian archive mirror country: Go back
+Continue without a network mirror: Yes
+
+Use a network mirror: No
+Participate in the package usage survey: No
+Software selection: None; deselect all options (using Space)
+Install the GRUB boot loader: Yes (select the listed device in the next step)
+Finish the installation: Continue
+&lt;/pre&gt;
+
+ &lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+'''OPTIONAL.'''
+
+If you are interested in seeing a visual walk-through of the minimal installation of Debian Stable Wheezy, click on Expand on the right.
+
+&lt;div class=&quot;mw-collapsible-content&quot;&gt;
+In the menu select &quot;Install&quot;
+
+[[Image:20.png|400px]]
+
+
+Set language as English.
+
+[[File:21.png|400px]]
+
+
+Set location as United Kingdom.
+
+[[File:22.png|400px]]
+
+
+Set keyboard as American English.
+
+[[File:23.png|400px]]
+
+
+Installing additional content.
+
+[[File:53.png|400px]]
+
+
+Network will auto-configure (hopefully).
+
+[[File:24.png|400px]]
+
+
+Set the hostname to &quot;host&quot;.
+
+[[File:25.png|400px]]
+
+
+Leave the domain name empty.
+
+[[File:26.png|400px]]
+
+
+Pick a strong root password.
+
+[[File:27.png|400px]]
+
+
+Reenter the password.
+
+[[File:28.png|400px]]
+
+
+Full name should should be &quot;user&quot;.
+
+[[File:29.png|400px]]
+
+
+Username should also be &quot;user&quot;.
+
+[[File:30.png|400px]]
+
+
+Enter a strong user password.
+
+[[File:31.png|400px]]
+
+
+Reenter the password.
+
+[[File:32.png|400px]]
+
+
+Network time procedure.
+
+[[File:33.png|400px]]
+
+
+Use a guided partitioning method with the whole disk (FDE is a good idea).
+
+[[File:34.png|400px]]
+
+
+Select the suggested disk.
+
+[[File:35.png|400px]]
+
+
+Partition all files in one partition.
+
+[[File:36.png|400px]]
+
+
+Finish partitioning.
+
+[[File:37.png|400px]]
+
+
+Confirm the changes.
+
+[[File:38.png|400px]]
+
+
+It takes a few minutes to get the base system installed.
+
+[[File:39.png|400px]]
+[[File:40.png|400px]]
+
+
+We don't need any extra packages so don't select a mirror, &quot;Go back&quot;.
+
+[[File:41.png|400px]]
+
+
+Confirm that you want to continue without a mirror.
+
+[[File:42.png|400px]]
+
+
+Configuring apt.
+
+[[File:43.png|400px]]
+
+
+&quot;No thanks&quot; to survey participation.
+
+[[File:44.png|400px]]
+
+
+Deselect (no star) the given option (using Space).
+
+[[File:45.png|400px]]
+[[File:46.png|400px]]
+
+
+Install GRUB.
+
+[[File:47.png|400px]]
+
+
+Select your disk.
+
+[[File:48.png|400px]]
+
+
+Finishing the installation.
+
+[[File:49.png|400px]]
+
+
+Done! The system will reboot.
+
+[[File:50.png|400px]]
+
+
+OS screen.
+
+[[File:51.png|400px]]
+
+
+Login screen.
+
+[[File:52a.png|400px]]
+&lt;/div&gt;
+&lt;/div&gt;
+
+== Preparing the system for build ==
+
+&lt;pre&gt;
+## (host) login with &quot;root&quot;
+root
+
+## Take an image of your installation in case the build script fails in the middle. &quot;Machine / Take snapshot&quot;. Name it &quot;Snapshot 1&quot;.
+
+## Add a new repository source. 
+echo &quot;deb http://ftp.us.debian.org/debian/ wheezy main&quot; &gt;&gt; /etc/apt/sources.list
+
+## Refresh package lists and upgrade
+apt-get update &amp;&amp; apt-get dist-upgrade -y
+
+## Install &quot;sudo&quot; and git.
+apt-get install sudo git -y
+
+## Add &quot;user&quot; to &quot;sudo&quot; group
+addgroup user sudo
+
+## Reboot the system to apply the changes
+shutdown -r now
+&lt;/pre&gt;
+
+ &lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+'''OPTIONAL.'''
+
+If you are interested in seeing a visual walk-through of the system preparation, click on Expand on the right.
+
+&lt;div class=&quot;mw-collapsible-content&quot;&gt;
+
+Logging as root.
+
+[[File:1b.png|400px]]
+
+
+Taking a snapshot of the VM.
+
+[[File:2b.png|400px]]
+
+[[File:2bb.png|200px]]
+
+
+Adding repository to sources and running update &amp; upgrade.
+
+[[File:3b.png|400px]]
+[[File:4b.png|400px]]
+
+
+Installing git and sudo.
+
+[[File:5b.png|400px]]
+[[File:6b.png|400px]]
+[[File:7b.png|400px]]
+
+
+Adding &quot;user to &quot;sudo&quot; group
+
+[[File:8b.png|400px]]
+
+
+Rebooting.
+
+[[File:9b.png|400px]]
+&lt;/div&gt;
+&lt;/div&gt;
+
+== Building from source ==
+
+&lt;pre&gt;
+## (host) login with &quot;user&quot;
+user
+
+## Here you can take another snapshot to avoiding doing system preparation again next time when you build. &quot;Machine / Take snapshot&quot;. Name it &quot;Snapshot 2&quot;.
+
+#Get source code.
+git clone https://github.com/Whonix/Whonix
+
+## Go into the git directory
+cd Whonix
+
+## Get a list of available git tags.
+git tag
+
+## Choose which version you want to build.
+git checkout 7.7.8.7
+&lt;/pre&gt;
+
+ &lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+'''OPTIONAL.'''
+
+If you are interested in seeing a visual walk-through of the build from source, click on Expand on the right. Pictures are shown using the tag 7.7.6.4 but you must use 7.7.8.7
+
+&lt;div class=&quot;mw-collapsible-content&quot;&gt;
+Logging as user.
+
+[[File:10b.png|400px]]
+
+
+Taking a snapshot of the VM.
+
+[[File:2b.png|400px]]
+
+[[File:12bbb.png|200px]]
+
+
+Cloning the git source.
+
+[[File:12b.png|400px]]
+
+
+Entering the git directory and getting git tags.
+
+[[File:13b.png|400px]]
+
+
+All available tags displayed.
+
+[[File:14b.png|400px]]
+
+
+Checkout out 7.7.8.7
+
+[[File:15b.png|400px]]
+&lt;/div&gt;
+&lt;/div&gt;
+
+== VM Creation ==
+
+Build a Whonix-Gateway virtual machine image.
+
+&lt;pre&gt;
+sudo ./whonix_build --build --tor-gateway 
+&lt;/pre&gt;
+
+
+Build a Whonix-Workstation virtual machine image.
+
+&lt;pre&gt;
+sudo ./whonix_build --build --tor-workstation
+&lt;/pre&gt;
+
+The resulting {{Code2|.ova}} images can be found in {{Code|~/whonix_binary}} folder.
+
+
+If you want to create a log of the build process (very useful for debugging) use the following commands but be aware that all output will be redirected to a file, meaning nothing will appear on the screen. This will create a text log in /home/user/log. 
+
+
+For Workstation
+
+&lt;pre&gt;
+sudo ./nothing-to-see/whonix_build --build --tor-workstation &gt;&gt; /home/user/log-workstation 2&gt;&gt; /home/user/log-workstation
+&lt;/pre&gt;
+
+For Gateway
+
+&lt;pre&gt;
+sudo ./nothing-to-see/whonix_build --build --tor-gateway &gt;&gt; /home/user/log-gateway 2&gt;&gt; /home/user/log-gateway
+&lt;/pre&gt;
+ &lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+'''OPTIONAL.'''
+
+If you are interested in seeing a visual walk-through of the VM creation, click on Expand on the right.
+
+&lt;div class=&quot;mw-collapsible-content&quot;&gt;
+
+Enter the Gateway build command
+
+[[File:16b.png|400px]]
+
+
+Provide sudo password
+
+[[File:18b.png|400px]]
+&lt;/div&gt;
+&lt;/div&gt;
+
+== VM image export == 
+
+After a few hours (depending on your disk speed, CPU clock rate, available download bandwidth, ...) the image (either Workstation or Gateway) will be created in {{Code|~/whonix_binary}} directory. This will take from 3 to 7 hours per image.
+
+You need to export the OVA image and then [[Install  |use it in VirtualBox]].
+
+To transfer the images you can use VirtualBox's Shared Folders Functionality or USB transfer.  
+
+==== Export to a shared folder ====   
+
+To use shared folder functionality you must have [[VirtualBox_Guest_Additions|Guest Additions]] installed.
+
+Before installing Guest Additions read the [https://www.virtualbox.org/manual/ch04.html official manual page] and Whonix's [[VirtualBox_Guest_Additions|wiki page]].
+
+If you still want to use it, [http://download.virtualbox.org/virtualbox/4.3.6/ download the ISO] (VBoxGuestAdditions_4.3.6.iso) and set up folder as described in the manual.
+
+==== Export via USB ====
+
+Unless you install VirtualBox Extension Pack, USB 2.0 won't be supported. USB 1.1 transfer speed is very low, usually 0,5 - 1 MB/s.
+
+===== Extension pack install (optional) =====
+Before installing the extension pack read the [https://www.virtualbox.org/manual/ch01.html#intro-installing official manual page].
+
+To proceed, [https://www.virtualbox.org/wiki/Downloads download] the vbox file (Oracle_VM_VirtualBox_Extension_Pack-4.3.6-91406.vbox-extpack). Import the file in VirtualBox (File/Preferences/Extensions then locate the file). After installing, &quot;Oracle VM VirtualBOx Extension Pack&quot; entry will appear as &quot;Active&quot;, resulting in a green arrow icon in front of the name.
+
+===== USB transfer=====
+Make your USB key available to the VM through selecting it in the Devices/USB devices menu. Plug it in first of course ;)
+
+&lt;pre&gt;
+## Install usbmount that will automatically mount your USB to media/usb0
+sudo apt-get install usbmount
+
+## Check if the USB is present and mounted
+cd /media/usb0
+
+## Copy the OVA file to USB. 
+sudo cp /home/user/whonix_binary/Whonix-Workstation-7.7.8.7.ova /media/usb0
+
+## or if you have been building the Gateway
+sudo cp /home/user/whonix_binary/Whonix-Gateway-7.7.8.7.ova /media/usb0
+
+## Unmount the USB
+sudo umount /media/usb0
+&lt;/pre&gt;
+
+Deselect your USB key in the VM's Devices/USB devices menu to make it available to your host system again.
+
+== Finishing up == 
+
+You are done! OVA file is now on your USB key/in your shared folder. All you have to do is [[Install  |use it in VirtualBox]].
+
+If you want to build another image (presuming you have build only Workstation or Gateway this time) revert the VM state to [[Jekyll:Sandbox#Building_from_source|Snapshot 2]].
+
+From there follow the steps as you previously did and build the image you still need Workstation or Gateway.
+
+
+= Footnotes =
+
+&lt;references/&gt;
+
+{{Footer}}
+
+[[Category:Development]]</text>
+      <sha1>0ng8ocqrfjeqszo269zjja7yyktqiw6</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/83/ru</title>
+    <ns>1198</ns>
+    <id>850</id>
+    <revision>
+      <id>5412</id>
+      <timestamp>2014-02-16T13:19:17Z</timestamp>
+      <contributor>
+        <username>Username</username>
+        <id>217</id>
+      </contributor>
+      <comment>Created page with &quot;=== Механизм обновления Tor-браузера (Whonix) === В настоящее время этот механизм не работает вследстви...&quot;</comment>
+      <text xml:space="preserve" bytes="389">=== Механизм обновления Tor-браузера (Whonix) ===
+В настоящее время этот механизм не работает вследствие изменений, внесённых разработчиками torproject.org. Вам придётся пока что [[Manually Updating Tor Browser|обновлять Tor-браузер вручную]].</text>
+      <sha1>5o0g77ymn8f04aingmf6l49yjzsa37d</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/56/ru</title>
+    <ns>1198</ns>
+    <id>851</id>
+    <revision>
+      <id>5414</id>
+      <timestamp>2014-02-16T13:20:28Z</timestamp>
+      <contributor>
+        <username>Username</username>
+        <id>217</id>
+      </contributor>
+      <comment>Created page with &quot;Ветка помощи на форуме: [[Special:AWCforum/st/id262/updating_TOR_browser_error...html]]&quot;</comment>
+      <text xml:space="preserve" bytes="106">Ветка помощи на форуме:
+[[Special:AWCforum/st/id262/updating_TOR_browser_error...html]]</text>
+      <sha1>ber9hno96aqbz8wa2a0gahpgrfss8ju</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/84/ru</title>
+    <ns>1198</ns>
+    <id>852</id>
+    <revision>
+      <id>5416</id>
+      <timestamp>2014-02-16T13:24:39Z</timestamp>
+      <contributor>
+        <username>Username</username>
+        <id>217</id>
+      </contributor>
+      <comment>Created page with &quot;=== Запуск Tor-браузера (Whonix) === После ручного обновления Tor-браузера (см. выше)... для запуска Tor-брауз...&quot;</comment>
+      <text xml:space="preserve" bytes="382">=== Запуск Tor-браузера (Whonix) ===
+После ручного обновления Tor-браузера (см. выше)... для запуска Tor-браузера зайдите в папку /home/user/tor-browser_en-US и двойным щелчком мыши нажмите на start-tor-browser. Или введите в терминале (консоли).</text>
+      <sha1>s7y9teu6i3pxl3x31h0irrq183hblrr</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/85/ru</title>
+    <ns>1198</ns>
+    <id>853</id>
+    <revision>
+      <id>5418</id>
+      <timestamp>2014-02-16T13:35:51Z</timestamp>
+      <contributor>
+        <username>Username</username>
+        <id>217</id>
+      </contributor>
+      <comment>Created page with &quot;&lt;pre&gt; /home/user/tor-browser_en-US/start-tor-browser &lt;/pre&gt;&quot;</comment>
+      <text xml:space="preserve" bytes="59">&lt;pre&gt;
+/home/user/tor-browser_en-US/start-tor-browser
+&lt;/pre&gt;</text>
+      <sha1>404o513nnqavxa8z4vhoept0wvwfs9s</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/57/ru</title>
+    <ns>1198</ns>
+    <id>854</id>
+    <revision>
+      <id>5429</id>
+      <parentid>5419</parentid>
+      <timestamp>2014-02-16T14:24:16Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <text xml:space="preserve" bytes="440">=== Проблемы с использованием Общих папок в VirtualBox ===
+С последним ядром Linux функция &quot;Общие папки&quot; не работает. (Корень проблемы в связке Debian/Virtual Box, а не в Whonix. Информация о проблеме уже была направлена соответствующим людям пользователем ОС Debian.)</text>
+      <sha1>532v96its74czbf95ioa7v66k6c6kbn</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Dev/BuildDocumentation 8 RC</title>
+    <ns>0</ns>
+    <id>856</id>
+    <redirect title="Dev/BuildDocumentation 8 in VM" />
+    <revision>
+      <id>5449</id>
+      <timestamp>2014-02-16T22:16:32Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>Adrelanos moved page [[Dev/BuildDocumentation 8 RC]] to [[Dev/BuildDocumentation 8 in VM]]</comment>
+      <text xml:space="preserve" bytes="44">#REDIRECT [[Dev/BuildDocumentation 8 in VM]]</text>
+      <sha1>dn7hmlw8mxdymd2vl4idn5o1ikjsf2v</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
