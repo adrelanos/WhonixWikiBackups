@@ -6538,14 +6538,15 @@ You could try the [https://www.riseup.net/en/openvpn-linux#gnome riseup.net Open
     <ns>0</ns>
     <id>92</id>
     <revision>
-      <id>5407</id>
-      <parentid>4935</parentid>
-      <timestamp>2014-02-15T22:45:02Z</timestamp>
+      <id>5408</id>
+      <parentid>5407</parentid>
+      <timestamp>2014-02-15T23:13:42Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="21668">{{Header}}
+      <comment>/* Network Verification */</comment>
+      <text xml:space="preserve" bytes="21666">{{Header}}
 
 '''WARNING''': Please don't forget reading the Warnings chapter.
 
@@ -6932,8 +6933,8 @@ dmesg | grep eth
 Otherwise you have to change the variables in the configuration files. To find the affected files, the following commands may be helpful. &lt;ref&gt;Should be really only a very few files. We used variables for eth0 and eth1 wherever possible.&lt;/ref&gt;
 
 &lt;pre&gt;
-grep -r eth0* *
-grep -r eth1* *
+grep -r eth0 *
+grep -r eth1 *
 &lt;/pre&gt;
 
 == Minor Things ==
@@ -7120,7 +7121,7 @@ To get a more complete list, install Debian (with KDE) on bare metal using the r
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>2wiz1z3yrzsck4rd337qtp4gp4feiyj</sha1>
+      <sha1>899al8w4b7x8lphhavcl05hhkb3a7a0</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
