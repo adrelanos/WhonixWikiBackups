@@ -2529,14 +2529,15 @@ Not compulsory, just nicely asking:
     <ns>0</ns>
     <id>56</id>
     <revision>
-      <id>5286</id>
-      <parentid>4452</parentid>
-      <timestamp>2014-02-11T12:40:09Z</timestamp>
+      <id>5462</id>
+      <parentid>5461</parentid>
+      <timestamp>2014-02-17T10:57:56Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="49140">{{Header}}
+      <comment>/* Graphical Whonix-Gateway? */</comment>
+      <text xml:space="preserve" bytes="49282">{{Header}}
 {{#seo:
 |description=FAQ. Frequently Asked Questions.
 }}
@@ -2585,6 +2586,8 @@ I recognize, that this is a non-ideal situation. Inspired by [http://www.browser
 If there were contributors, we could maybe also include other desktop environments by default or offer alternative Whonix builds with different default desktop environments or ideally implement a &quot;choose your desktop&quot; option after first boot of Whonix.
 
 Please also read [[#Why are the Whonix images so big?]] above, the same applies here.
+
+See also [[Other Desktop Environments]] for workarounds/alternatives.
 
 = Why not use a Live CD/DVD as Whonix-Workstation operating system? =
 
@@ -3055,6 +3058,8 @@ Advanced users can build Whonix from source code and use a build configuration t
 
 Last but not least, if there was a [[Contribute#Release_Manager|Release Manager]] contributing to The Whonix Project or at least someone willing to build terminal-only versions of Whonix-Gateway (which is not about developing, only about running the build script and uploading), we could easily provide a terminal-only version of Whonix-Gateway. As long very few people are contributing to The Whonix Project, this won't be possible.
 
+See also [[Other Desktop Environments]] for workarounds/alternatives.
+
 = Is there a substitute for Whonix's lack of an Amnesic feature / Live CD/DVD? Forensics? =
 '''Short answer''': &lt;br /&gt;
 No.
@@ -3085,7 +3090,7 @@ Without performing these basics steps, the setup may sound clever, but may not w
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>jflkhkn7nsw73zsux7qpg29u78346w3</sha1>
+      <sha1>7l72p7jm74zxgdnerc268fqxk75r0pf</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -10180,22 +10185,21 @@ Whonix's firewall on the Whonix-Gateway is very restrictive. You can make it eve
     <ns>0</ns>
     <id>106</id>
     <revision>
-      <id>5410</id>
-      <parentid>5357</parentid>
-      <timestamp>2014-02-16T11:27:15Z</timestamp>
+      <id>5457</id>
+      <parentid>5456</parentid>
+      <timestamp>2014-02-16T23:25:21Z</timestamp>
       <contributor>
-        <username>Jekyll</username>
-        <id>161</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <minor/>
-      <comment>Removed  &lt;s&gt; since the page now exists</comment>
-      <text xml:space="preserve" bytes="1224">{{Header}}
+      <comment>/* Next Whonix Release in Development */</comment>
+      <text xml:space="preserve" bytes="1265">{{Header}}
 {{forkme}}
 = Next Whonix Release in Development =
-* [[Dev/BuildDocumentation_8|8 Build Documentation for creating full images from source code]]
+* [[Dev/BuildDocumentation_8|8 Build Documentation for creating full images from source code long]]
+* [[Dev/BuildDocumentation_8_short|8 Build Documentation for creating full images from source code short]]
+* [[Dev/BuildDocumentation_8_in_VM|8 Build Documentation for building Whonix 8 Release candidate (Whonix 7.7.8.7) inside a VM]]
 * [[Dev/BuildDocumentation_8_deb|8 Build Documentation for upgrading Whonix debian packages from source code]]
-* [[Dev/BuildDocumentation_8_RC|8 Build Documentation for building Whonix 8 Release candidate (Whonix 7.7.8.7) inside a VM]]
-* &lt;s&gt;[[Dev/BuildDocumentation_8_short|8 Build Documentation (short)]]&lt;/s&gt;
 
 = Current Whonix Release =
 
@@ -10215,7 +10219,7 @@ Whonix's firewall on the Whonix-Gateway is very restrictive. You can make it eve
 [[Category:Development]]
 
 {{Footer}}</text>
-      <sha1>5n5nb7onf6xivwrhmiucy5ptzr88h6e</sha1>
+      <sha1>fxfychlppntpwdyc6z2nb94c3t4h46l</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -42791,16 +42795,15 @@ Modifications coming with Whonix will always fall back to reasonable defaults, i
     <ns>0</ns>
     <id>468</id>
     <revision>
-      <id>4746</id>
-      <parentid>3566</parentid>
-      <timestamp>2014-01-14T17:40:52Z</timestamp>
+      <id>5454</id>
+      <parentid>5452</parentid>
+      <timestamp>2014-02-16T23:19:47Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <minor/>
-      <comment>Text replace - &quot;adrelanos at riseup dot net&quot; to &quot;adrelanos@riseup.net&quot;</comment>
-      <text xml:space="preserve" bytes="3549">&lt;!--
+      <comment>add header, footer</comment>
+      <text xml:space="preserve" bytes="2917">&lt;!--
 # This file is part of Whonix
 # Copyright (C) 2012 - 2013 adrelanos &lt;adrelanos@riseup.net&gt;
 # See the file COPYING for copying conditions.
@@ -42809,35 +42812,111 @@ Modifications coming with Whonix will always fall back to reasonable defaults, i
 EDITORS NOTE:
 Please do not use relative links here, because this file is mirrored on github https://github.com/Whonix/Whonix/blob/master/README.mediawiki and relative links won't work there.
 --&gt;
-= About Whonix =
-Whonix is an operating system focused on anonymity, privacy and security. It's based on the Tor anonymity network, Debian GNU/Linux and security by isolation. DNS leaks are impossible, and not even malware with root privileges can find out the user's real IP.
+{{Header}}
+= Build Documentation =
+== Introduction ==
+This page documents how to build Whonix VirtualBox images.
 
-Whonix consists of two parts: One solely runs Tor and acts as a gateway, which we call Whonix-Gateway. The other, which we call Whonix-Workstation, is on a completely isolated network. Only connections through Tor are possible.
+It documents how to build the '''testers-only''' of Whonix (version 7.7.8.7 is used in the examples below). 
 
-To learn more about security and anonymity under Whonix, please continue to the [https://www.whonix.org/wiki/About About Whonix] page.
 
-'''[https://www.whonix.org/wiki/Download Download Whonix]'''
+Build prerequisites:
 
-= Build Whonix =
-Verbose build instructions and steps for redistribution can be found [https://www.whonix.org/wiki/Dev/Build_Documentation here].
+- working internet connection.
 
-= Contribute =
-Either work on any of the [https://github.com/Whonix/Whonix/issues open tickets] or suggest and implement any of your own ideas. Report issues you may find with Whonix or with the building process. Sign up for the [https://www.whonix.org/cgi-bin/mailman/listinfo/whonix-devel whonix-devel mailing list] and say hi. For any questions/discussion, mail whonix-devel.
+- system with Debian Stable (Wheezy) installed
 
-= Build Status =
-&lt;!--
-EDITORS NOTE:
-Please do not fix the picture links with html tags. This file gets copied to https://github.com/Whonix/Whonix and github would show the html tags as plain text.
---&gt;
+- 25GB of free disk space
 
-* Status: &lt;img src=&quot;https://drone.io/github.com/Whonix/Whonix/status.png&quot; alt=&quot;loading...&quot;&gt; | Branch: master (Whonix Debian Packages) ([https://www.whonix.org/wiki/Dev/Continuous_Integration#drone.io drone.io]) ([https://drone.io/github.com/Whonix/Whonix Log])
-* Status: &lt;img src=&quot;https://travis-ci.org/Whonix/Whonix.png?branch=gateway-travis&quot; alt=&quot;loading...&quot;&gt; | Branch: gateway-travis (Physically Isolated Whonix-Gateway) ([[Dev/Continuous_Integration#Travis_CI|Travis CI]]) ([https://travis-ci.org/Whonix/Whonix/branches  Log])
-* Status: &lt;img src=&quot;https://travis-ci.org/Whonix/Whonix.png?branch=minimal-gateway-travis&quot; alt=&quot;loading...&quot;&gt; | Branch: minimal-gateway-travis (Minimal Physically Isolated Whonix-Gateway) ([https://www.whonix.org/wiki/Dev/Continuous_Integration#Travis_CI Travis CI]) ([https://travis-ci.org/Whonix/Whonix/branches Log])
-* Status: &lt;img src=&quot;https://travis-ci.org/Whonix/Whonix.png?branch=workstation-travis&quot; alt=&quot;loading...&quot;&gt; | Branch: workstation-travis (Physically Isolated Whonix-Workstation) ([https://www.whonix.org/wiki/Dev/Continuous_Integration#Travis_CI Travis CI]) ([https://travis-ci.org/Whonix/Whonix/branches Log])
-* Status: &lt;img src=&quot;https://travis-ci.org/Whonix/Whonix.png?branch=minimal-workstation-travis&quot; alt=&quot;loading...&quot;&gt; | Branch: minimal-workstation-travis (Minimal Physically Isolated Whonix-Workstation) ([https://www.whonix.org/wiki/Dev/Continuous_Integration#Travis_CI Travis CI]) ([https://travis-ci.org/Whonix/Whonix/branches Log])
-* Status: No such CI service available. | Branch: - (Whonix-Gateway VM) ([https://www.whonix.org/wiki/Dev/Continuous_Integration CI]) (-)
-* Status: No such CI service available. | Branch: - (Whonix-Workstation VM) ([https://www.whonix.org/wiki/Dev/Continuous_Integration CI]) (-)</text>
-      <sha1>2t3hzdn0nw8wk321bticxg5zmyry5o5</sha1>
+
+The focus here is to show the simplest way to build Whonix from source. Various security precautions such as GPG key verification are omitted.
+
+Please read the [[Dev/Build_Documentation|full build documentation]] in order to understand the process better.
+
+== Preparing the system for build ==
+
+&lt;pre&gt;
+## (host) login with &quot;root&quot;
+root
+
+## Add a new repository source if not already present
+echo &quot;deb http://ftp.us.debian.org/debian/ wheezy main&quot; &gt;&gt; /etc/apt/sources.list
+
+## Refresh package lists and upgrade
+apt-get update &amp;&amp; apt-get dist-upgrade -y
+
+## Install &quot;sudo&quot; and git if not already installed
+apt-get install sudo git -y
+
+## Add &quot;user&quot; to &quot;sudo&quot; group
+addgroup user sudo
+
+## Reboot the system to apply the changes
+shutdown -r now
+&lt;/pre&gt;
+
+
+== Building from source ==
+
+&lt;pre&gt;
+## (host) login with &quot;user&quot;
+user
+
+#Get source code.
+git clone https://github.com/Whonix/Whonix
+
+## Go into the git directory
+cd Whonix
+
+## Get a list of available git tags.
+git tag
+
+## Choose which version you want to build.
+git checkout 7.7.8.7
+&lt;/pre&gt;
+
+
+== VM Creation ==
+
+Build a Whonix-Gateway virtual machine image.
+
+&lt;pre&gt;
+sudo ./whonix_build --build --tor-gateway 
+&lt;/pre&gt;
+
+
+Build a Whonix-Workstation virtual machine image.
+
+&lt;pre&gt;
+sudo ./whonix_build --build --tor-workstation
+&lt;/pre&gt;
+
+The resulting {{Code2|.ova}} images can be found in {{Code|~/whonix_binary}} folder.
+
+
+If you want to create a log of the build process (very useful for debugging) use the following commands but be aware that all output will be redirected to a file, meaning nothing will appear on the screen. This will create a text log in /home/user/log. 
+
+
+For Workstation
+
+&lt;pre&gt;
+sudo ./nothing-to-see/whonix_build --build --tor-workstation &gt;&gt; /home/user/log-workstation 2&gt;&gt; /home/user/log-workstation
+&lt;/pre&gt;
+
+For Gateway
+
+&lt;pre&gt;
+sudo ./nothing-to-see/whonix_build --build --tor-gateway &gt;&gt; /home/user/log-gateway 2&gt;&gt; /home/user/log-gateway
+&lt;/pre&gt;
+
+== Finish == 
+
+After a few hours (depending on your disk speed, CPU clock rate, available download bandwidth, ...) the image (either Workstation or Gateway) will be created in {{Code|~/whonix_binary}} directory. This will take from 3 to 7 hours per image.
+
+OVA image can now be used in VirtualBox.
+
+{{Footer}}</text>
+      <sha1>7k296j0m5xf6phgss17lvaqr67hvktq</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -48011,27 +48090,22 @@ git status
     <ns>10</ns>
     <id>495</id>
     <revision>
-      <id>4363</id>
-      <parentid>3777</parentid>
-      <timestamp>2013-12-20T05:30:17Z</timestamp>
+      <id>5455</id>
+      <parentid>4363</parentid>
+      <timestamp>2014-02-16T23:22:26Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="299">'''OPTIONAL!'''
-
-Reset {{Code2|debian/changelog}}.
-
-&lt;pre&gt;
-git checkout -- debian/changelog
-&lt;/pre&gt;
+      <comment>reset debian/changelog no longer required</comment>
+      <text xml:space="preserve" bytes="217">'''OPTIONAL!'''
 
 Remove temporary files from {{Code2|debian}} folder and delete debian packages from {{Code2|parent directory}}&lt;ref&gt;I.e. {{Code2|../}}, most likely {{Code2|/home/user}}.&lt;/ref&gt;.
 
 &lt;pre&gt;
 make clean
 &lt;/pre&gt;</text>
-      <sha1>qun6o5oumwomm55suttomhtqh9aaj7v</sha1>
+      <sha1>hnwcech4ubrvv9m0oafkpo9vfw9p4je</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -54724,19 +54798,20 @@ Countless hours of Whonix development time were wasted on file permissions.
     <ns>0</ns>
     <id>693</id>
     <revision>
-      <id>4617</id>
-      <timestamp>2014-01-07T10:23:39Z</timestamp>
+      <id>5460</id>
+      <parentid>4617</parentid>
+      <timestamp>2014-02-17T10:56:57Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>Created page with &quot;{{Header}}  = Current Situation = [[Download]]able Whonix versions come with KDE installed by default. It is possible to uninstall KDE, although doing so is a bit difficult, e...&quot;</comment>
-      <text xml:space="preserve" bytes="2278">{{Header}}
+      <comment>/* Current Situation */</comment>
+      <text xml:space="preserve" bytes="2342">{{Header}}
 
 = Current Situation =
 [[Download]]able Whonix versions come with KDE installed by default. It is possible to uninstall KDE, although doing so is a bit difficult, especially if you want to uninstall all of it and/or to to use a CLI version and/or to install their own desktop environment such as Gnome, LXDE, etc.
 
-Users who build Whonix from source code using [[Dev/Build Documentation]] can use optional Terminal-Only build configuration option. And then decide from there.
+Users who build Whonix from source code using [[Dev/Build Documentation]] can use an optional Terminal-Only build configuration option. And then decide from there, if they want to install a desktop environment and which one.
 
 = Risks =
 When installing your own desktop environment, you're on your own. In theory (also tested a little bit), everything should work except Whonix's link open confirmation (asking for confirmation, if you want to open a link you click outside the browser in Tor Browser to avoid linking) and perhaps Tor Browser won't be the default browser.
@@ -54758,7 +54833,7 @@ Related FAQ:
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>twe6f6h6ovgybsq9yvjwiqmevnwgde6</sha1>
+      <sha1>8rl12qky57lnna0wqs4vaqc3vjsayra</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -59221,18 +59296,17 @@ inspired by http://aboli.sh/
     <ns>0</ns>
     <id>849</id>
     <revision>
-      <id>5448</id>
-      <parentid>5411</parentid>
-      <timestamp>2014-02-16T22:16:31Z</timestamp>
+      <id>5459</id>
+      <parentid>5458</parentid>
+      <timestamp>2014-02-16T23:40:24Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <minor/>
-      <comment>Adrelanos moved page [[Dev/BuildDocumentation 8 RC]] to [[Dev/BuildDocumentation 8 in VM]]</comment>
-      <text xml:space="preserve" bytes="12348">= Documentation =
+      <comment>set to US</comment>
+      <text xml:space="preserve" bytes="12355">{{Header}}
 
-
+= Documentation =
 This is a short set of instructions for building 7.7.8.7 testers-only version of Whonix (later to be modified for Whonix 8) inside VirtualBox (as opposed to the traditional process of running these commands on a system that is installed directly on the hardware).
 
 Advantages of this approach are that you can build Whonix on any OS that can run VirtualBox (you need Debian Stable for hardware type build) and that any potential system damage is limited to the VM. Using shapshots you can quickly revert a faulty state or a failed build and start again.
@@ -59351,8 +59425,8 @@ In the installer boot menu of Debian Stable (Wheezy) press &quot;Install&quot; a
 
 &lt;pre&gt;
 Select a language: English
-Select your location: United Kingdom
-Configure the keyboard: American English
+Select your location: United States
+Configure the keyboard: (choose yours)
 Hostname: host
 Domain name: (empty)
 Root password: (set up a strong password)
@@ -59783,7 +59857,7 @@ From there follow the steps as you previously did and build the image you still 
 {{Footer}}
 
 [[Category:Development]]</text>
-      <sha1>0ng8ocqrfjeqszo269zjja7yyktqiw6</sha1>
+      <sha1>kjolpb84wybxl1ohjlchzdt5npijtqo</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
