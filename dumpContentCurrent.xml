@@ -37,14 +37,14 @@
     <ns>0</ns>
     <id>1</id>
     <revision>
-      <id>5348</id>
-      <parentid>5341</parentid>
-      <timestamp>2014-02-14T10:18:11Z</timestamp>
+      <id>5477</id>
+      <parentid>5348</parentid>
+      <timestamp>2014-02-17T15:57:15Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="5132">{{Header}}
+      <text xml:space="preserve" bytes="5126">{{Header}}
 
 &lt;languages /&gt;
 &lt;translate&gt;
@@ -57,7 +57,7 @@
 {{Infobox OS
 | logo                   = [[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|alt=Download Whonix]]
 | name                   = Whonix
-| screenshot             = [[Image:kde0_5_0.png|Whonix-Workstation 0.5.6 with KDE Desktop|200px]]
+| screenshot             = [[Image:kde0_5_0.png|Whonix-Workstation with KDE Desktop|200px]]
 | caption                = Whonix-Workstation 0.5.6 with KDE Desktop
 | developer              = none / Whonix developers
 | family                 = [https://en.wikipedia.org/wiki/Unix-like Unix-like], based on [https://en.wikipedia.org/wiki/Debian Debian]
@@ -124,7 +124,7 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
 &lt;/translate&gt;
 {{Footer}}
 [[Category:Documentation]]</text>
-      <sha1>jdjy16g3tgyaijdhwobd4a9ggzrzyo4</sha1>
+      <sha1>cqqpjd8oao5rqbc1h6284eiqngnst84</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -2529,15 +2529,15 @@ Not compulsory, just nicely asking:
     <ns>0</ns>
     <id>56</id>
     <revision>
-      <id>5462</id>
-      <parentid>5461</parentid>
-      <timestamp>2014-02-17T10:57:56Z</timestamp>
+      <id>5486</id>
+      <parentid>5462</parentid>
+      <timestamp>2014-02-17T22:24:00Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Graphical Whonix-Gateway? */</comment>
-      <text xml:space="preserve" bytes="49282">{{Header}}
+      <comment>/* Why can't I ping the Whonix-Gateway? */</comment>
+      <text xml:space="preserve" bytes="49409">{{Header}}
 {{#seo:
 |description=FAQ. Frequently Asked Questions.
 }}
@@ -2825,9 +2825,9 @@ There is a [[Pre_Install_Advice#Recommendation_to_use_a_dedicated_host_operating
 It's the user's responsibility to honor that advice.
 
 = Why can't I ping the Whonix-Gateway? =
-Whonix-Gateway is firewalled (see ''{{WhonixFirewall}}'' or in Whonix source code) and does not answer to ping (-like) commands for security reasons. You don't need to ping the Gateway.
+Whonix-Gateway is firewalled (see ''{{WhonixFirewall}}'' or in Whonix source code) and does not answer to ping (-like) commands for security reasons. In most cases, you don't need to ping the Gateway.
 
-If you really want to ping the Gateway and really want some uber special setup you can test wise clear all firewall rules with the ''dev_clearnet'' script (only in Whonix source code). It's only for experts and you need to comment out the ''exit 0'' at the beginning.
+If you really want to ping the Gateway or really want some uber special setup you can test wise clear all firewall rules with the [https://github.com/Whonix/whonix-developer-meta-files/blob/master/dangerous_scripts/dev_clearnet dev_clearnet] script (or hack Whonix's firewall to not load at all). It's only for experts and you need to comment out the ''exit 0'' at the beginning.
 
 = You should add full disk encryption to Whonix! =
 
@@ -3090,7 +3090,7 @@ Without performing these basics steps, the setup may sound clever, but may not w
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>7l72p7jm74zxgdnerc268fqxk75r0pf</sha1>
+      <sha1>i7qwcimc6mn5xj64rmh1ngi9jrpxid2</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -6543,14 +6543,15 @@ You could try the [https://www.riseup.net/en/openvpn-linux#gnome riseup.net Open
     <ns>0</ns>
     <id>92</id>
     <revision>
-      <id>5447</id>
-      <parentid>5446</parentid>
-      <timestamp>2014-02-16T21:57:06Z</timestamp>
+      <id>5484</id>
+      <parentid>5483</parentid>
+      <timestamp>2014-02-17T22:02:37Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>security.debian.org is present either way,  no need to add it..</comment>
-      <text xml:space="preserve" bytes="21477">{{Header}}
+      <comment>/* Prerequisites */</comment>
+      <text xml:space="preserve" bytes="22310">{{Header}}
 
 '''WARNING''': Please don't forget reading the Warnings chapter.
 
@@ -6651,6 +6652,7 @@ We recommend that you use two dedicated computers for Whonix that are never used
 * We recommend to use a VM as the client, the same Whonix-Workstation, that most non Physical Isolation users use. &lt;ref&gt;From the [[Download]] page or build it yourself from source code.&lt;/ref&gt; &lt;ref&gt;A generic VM image can neither leak identifying hardware serial numbers nor unique software fingerprints. (e.g. trough [https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO#Softwareupdaters software updates]).&lt;/ref&gt; &lt;ref&gt;This ensures that you get the latest security features and most secure configurations. (Such as stream isolation that protects against Identity correlation through circuit sharing, XChat IRC hardening or Whonix's Protocol-Leak-Protection and Fingerprinting-Protection etc.)&lt;/ref&gt;
 * Host build environment has a working internet connection to Debian mirrors.
 * General advice from Build Documentation about [[Dev/BuildDocumentation_8#Build_Security|Build Security]] applies
+* Optionally, it would be useful, if you knew how to open a second [[Desktop#Virtual_Consoles|virtual console]].
 
 = Host Preparation =
 &lt;!--
@@ -6716,9 +6718,9 @@ Set language as English.
 [[File:21.png|400px]]
 
 
-Set location as United States. '''This is wrong in the picture below!'''
+Set location as United States.
 
-[[File:22.png|400px]]
+[[File:22a.png|400px]]
 
 
 Select your keyboard.
@@ -6946,6 +6948,22 @@ grep -r VMONLY* *
 &lt;/pre&gt;
 
 == Run Build Script ==
+It is recommended that you create a log of the build process by redirecting all the output to a log file. Be aware that by doing so no build progress will appear on the screen - instead a text log file will be created in your home folder. 
+
+&lt;pre&gt;
+sudo ./whonix_build --tor-gateway --bare-metal --build &gt;&gt; ~/log-bare-metal 2&gt;&amp;1
+&lt;/pre&gt;
+
+To optionally watch the progress, open a second [[Desktop#Virtual_Consoles|virtual console]] and type.
+
+&lt;pre&gt;
+tail -f ~/log-bare-metal
+&lt;/pre&gt;
+
+If don't want to create a log of the build process (the build progress will then appear on screen) use the following command. 
+
+'''This is not recommended because if anything goes wrong during the build, it will be harder to pinpoint the exact error without the actual log file.'''
+
 &lt;pre&gt;
 sudo ./whonix_build --tor-gateway --bare-metal --build
 &lt;/pre&gt;
@@ -7122,7 +7140,7 @@ To get a more complete list, install Debian (with KDE) on bare metal using the r
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>9yijzrh5yh8i7pqivein99z8gn7zh2a</sha1>
+      <sha1>8v4xzm7fe65fuzkby0qqga735zup2xi</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -10185,19 +10203,20 @@ Whonix's firewall on the Whonix-Gateway is very restrictive. You can make it eve
     <ns>0</ns>
     <id>106</id>
     <revision>
-      <id>5457</id>
-      <parentid>5456</parentid>
-      <timestamp>2014-02-16T23:25:21Z</timestamp>
+      <id>5481</id>
+      <parentid>5457</parentid>
+      <timestamp>2014-02-17T17:14:50Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <username>Jekyll</username>
+        <id>161</id>
       </contributor>
-      <comment>/* Next Whonix Release in Development */</comment>
-      <text xml:space="preserve" bytes="1265">{{Header}}
+      <minor/>
+      <comment>() add</comment>
+      <text xml:space="preserve" bytes="1269">{{Header}}
 {{forkme}}
 = Next Whonix Release in Development =
-* [[Dev/BuildDocumentation_8|8 Build Documentation for creating full images from source code long]]
-* [[Dev/BuildDocumentation_8_short|8 Build Documentation for creating full images from source code short]]
+* [[Dev/BuildDocumentation_8|8 Build Documentation for creating full images from source code (long)]]
+* [[Dev/BuildDocumentation_8_short|8 Build Documentation for creating full images from source code (short)]]
 * [[Dev/BuildDocumentation_8_in_VM|8 Build Documentation for building Whonix 8 Release candidate (Whonix 7.7.8.7) inside a VM]]
 * [[Dev/BuildDocumentation_8_deb|8 Build Documentation for upgrading Whonix debian packages from source code]]
 
@@ -10219,7 +10238,7 @@ Whonix's firewall on the Whonix-Gateway is very restrictive. You can make it eve
 [[Category:Development]]
 
 {{Footer}}</text>
-      <sha1>fxfychlppntpwdyc6z2nb94c3t4h46l</sha1>
+      <sha1>fs8x7t33e6om3p58lxiljvc0n14uoee</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -34671,15 +34690,15 @@ That's it. Link to Whonix is inside the video description.
     <ns>0</ns>
     <id>295</id>
     <revision>
-      <id>4842</id>
-      <parentid>4839</parentid>
-      <timestamp>2014-01-28T18:18:48Z</timestamp>
+      <id>5482</id>
+      <parentid>4842</parentid>
+      <timestamp>2014-02-17T21:58:49Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>Rejected the last text change (by [[Special:Contributions/Adrelanos|Adrelanos]]) and restored revision 4836 by 127.0.0.1</comment>
-      <text xml:space="preserve" bytes="4098">{{Header}}
+      <comment>/* Virtual Consoles */</comment>
+      <text xml:space="preserve" bytes="4165">{{Header}}
 
 = Single vs Double Click =
 KDE uses single click instead of double click by default. If you want to change that to double click:
@@ -34694,8 +34713,10 @@ It's advised to work in full-screen. This feature is also inherited from Virtual
 &lt;/ref&gt; and press F. That will activate full-screen. You end up with Whonix (and Debian) default resolution and color depth 1024x768x24&lt;ref&gt;As per [[Protocol-Leak-Protection and Fingerprinting-Protection]].&lt;/ref&gt;. To disable it the same key combination can be used.
 
 = Virtual Consoles =
+This feature is inherited from Debian GNU/Linux. It's noted here, because not many people are aware of it. The Debian (not Whonix) feature is to press {{Code2|alt + crtl + F1}} or F2, F3, etc. to get for additional text consoles or F7 for graphical console.
 
-This feature is inherited from Debian GNU/Linux and VirtualBox. It's noted in Readme because not many people are aware of it. The Debian (not Whonix) feature is to press alt + crtl + F1 or F2, F3, etc. for additional text consoles or F7 for graphical console. Because Debian already registered alt + ctrl keys. Instant of alt + ctrl, use the VirtualBox Host Key&lt;ref name=vboxhostkey /&gt;. That means, use Host Key + F1, F2, F7, etc. to do the same inside VirtualBox.
+When being inside VirtualBox, the {{Code2|alt + ctrl}} keys are already registred by the host operating system.
+Instead of alt + ctrl, you can use the VirtualBox Host Key&lt;ref name=vboxhostkey /&gt;. That means, use Host Key + F1, F2, F7, etc. to do the same inside VirtualBox.
 
 = Shut down the Whonix-Gateway =
 
@@ -34737,7 +34758,7 @@ See [[Higher_Screen_Resolution|Higher Screen Resolution without installing Virtu
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>qabax3l6b7ol67weufuusw63i0zlb4f</sha1>
+      <sha1>dlhjgypz87pu9ebc0ipv7horezdsiop</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -42795,15 +42816,15 @@ Modifications coming with Whonix will always fall back to reasonable defaults, i
     <ns>0</ns>
     <id>468</id>
     <revision>
-      <id>5454</id>
-      <parentid>5452</parentid>
-      <timestamp>2014-02-16T23:19:47Z</timestamp>
+      <id>5479</id>
+      <parentid>5473</parentid>
+      <timestamp>2014-02-17T17:10:30Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <username>Jekyll</username>
+        <id>161</id>
       </contributor>
-      <comment>add header, footer</comment>
-      <text xml:space="preserve" bytes="2917">&lt;!--
+      <comment>New log command, log warning</comment>
+      <text xml:space="preserve" bytes="3271">&lt;!--
 # This file is part of Whonix
 # Copyright (C) 2012 - 2013 adrelanos &lt;adrelanos@riseup.net&gt;
 # See the file COPYING for copying conditions.
@@ -42813,6 +42834,12 @@ EDITORS NOTE:
 Please do not use relative links here, because this file is mirrored on github https://github.com/Whonix/Whonix/blob/master/README.mediawiki and relative links won't work there.
 --&gt;
 {{Header}}
+
+= Warning =
+The instruction are still in alpha phase meaning there might be errors that will cause the script to break.
+
+Best way to get help is to make a thread in the forum.
+
 = Build Documentation =
 == Introduction ==
 This page documents how to build Whonix VirtualBox images.
@@ -42878,35 +42905,41 @@ git checkout 7.7.8.7
 
 == VM Creation ==
 
+It is recommended that you create a log of the build process by redirecting all the output to a log file. Be aware that by doing so no build progress will appear on the screen - instead a text log file will be created in your home folder. 
+
+
 Build a Whonix-Gateway virtual machine image.
 
 &lt;pre&gt;
-sudo ./whonix_build --build --tor-gateway 
+sudo ./whonix_build --build --tor-gateway &gt;&gt; ~/log-gateway 2&gt;&amp;1
 &lt;/pre&gt;
 
 
 Build a Whonix-Workstation virtual machine image.
 
 &lt;pre&gt;
-sudo ./whonix_build --build --tor-workstation
+sudo ./whonix_build --build --tor-workstation &gt;&gt; ~/log-workstation 2&gt;&amp;1
 &lt;/pre&gt;
 
 The resulting {{Code2|.ova}} images can be found in {{Code|~/whonix_binary}} folder.
 
 
-If you want to create a log of the build process (very useful for debugging) use the following commands but be aware that all output will be redirected to a file, meaning nothing will appear on the screen. This will create a text log in /home/user/log. 
+If don't want to create a log of the build process (the build progress will then appear on screen) use the following commands. 
+
+
+'''This is not recommended because if anything goes wrong during the build, it will be harder to pinpoint the exact error without the actual log file.'''
 
 
 For Workstation
 
 &lt;pre&gt;
-sudo ./nothing-to-see/whonix_build --build --tor-workstation &gt;&gt; /home/user/log-workstation 2&gt;&gt; /home/user/log-workstation
+sudo ./whonix_build --build --tor-workstation 
 &lt;/pre&gt;
 
 For Gateway
 
 &lt;pre&gt;
-sudo ./nothing-to-see/whonix_build --build --tor-gateway &gt;&gt; /home/user/log-gateway 2&gt;&gt; /home/user/log-gateway
+sudo ./whonix_build --build --tor-gateway
 &lt;/pre&gt;
 
 == Finish == 
@@ -42916,7 +42949,7 @@ After a few hours (depending on your disk speed, CPU clock rate, available downl
 OVA image can now be used in VirtualBox.
 
 {{Footer}}</text>
-      <sha1>7k296j0m5xf6phgss17lvaqr67hvktq</sha1>
+      <sha1>4zuxo95whkf1i954raj5w4otv0hbhm5</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -42926,15 +42959,15 @@ OVA image can now be used in VirtualBox.
     <ns>0</ns>
     <id>469</id>
     <revision>
-      <id>5450</id>
-      <parentid>5333</parentid>
-      <timestamp>2014-02-16T22:25:27Z</timestamp>
+      <id>5485</id>
+      <parentid>5450</parentid>
+      <timestamp>2014-02-17T22:06:18Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Warning */</comment>
-      <text xml:space="preserve" bytes="11466">{{Header}}
+      <comment>/* VM Creation */</comment>
+      <text xml:space="preserve" bytes="11110">{{Header}}
 {{forkme}}
 
 = Build Documentation =
@@ -43063,13 +43096,7 @@ EDITORS NOTE:
 I am not sure it is a great idea to first tell builders how to build Whonix and later how to clean up to prepare for another build. Running the cleanup steps before the creation steps may be unnecessary when running these steps for the first time, but doesn't hurt either. An important thing this does archive is creating fewer support requests and bug reports from people running these steps for the second time without remembering they have to clean up first. If you want to discuss this, please open a new discussion.
 --&gt;
 
-If you want to build for the second time, made changes or want to build a newer version, you have to &quot;make clean&quot; &lt;ref&gt;Otherwise the .deb packages would not get rebuild.&lt;/ref&gt; and remove (or rename) any eventually already existing Whonix-Gateway and/or Whonix-Workstation in VirtualBox. Open a terminal (such as Konsole).
-
-Cleanup eventually existing .deb packages.
-
-&lt;pre&gt;
-make clean
-&lt;/pre&gt;
+Open a terminal (such as Konsole).
 
 Delete eventually already existing Whonix-Gateway virtual machine. '''Warning''': This will delete a virtual machine named Whonix-Gateway from Virtual Box!
 
@@ -43135,7 +43162,7 @@ To learn about adrelanos, the person who maintains Whonix, its OpenPGP key, see 
 {{Footer}}
 
 [[Category:Development]]</text>
-      <sha1>6gipxd6m10yff6h3rn6lizr0gkkwums</sha1>
+      <sha1>pehblzpdc6cge0j7ibdnpetzwz4muu5</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -52632,13 +52659,14 @@ License can be found in the /usr/share/common-licenses' directory.</text>
     <ns>0</ns>
     <id>649</id>
     <revision>
-      <id>5394</id>
-      <parentid>5393</parentid>
-      <timestamp>2014-02-15T15:12:37Z</timestamp>
+      <id>5469</id>
+      <parentid>5467</parentid>
+      <timestamp>2014-02-17T12:43:44Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Jekyll</username>
+        <id>161</id>
       </contributor>
-      <text xml:space="preserve" bytes="12300">= 7.7.8.7 Build Documentation (short) =
+      <text xml:space="preserve" bytes="12298">= 7.7.8.7 Build Documentation (short) =
 
 This is a short set of instructions for building 7.7.8.7 testers-only version of Whonix (later to be modified for Whonix 8) inside VirtualBox (as opposed to the traditional process of running these commands on a system that is installed directly on the hardware).
 
@@ -52758,8 +52786,8 @@ In the installer boot menu of Debian Stable (Wheezy) press &quot;Install&quot; a
 
 &lt;pre&gt;
 Select a language: English
-Select your location: United Kingdom
-Configure the keyboard: American English
+Select your location: United States
+Configure the keyboard: (select your layout)
 Hostname: host
 Domain name: (empty)
 Root password: (set up a strong password)
@@ -52797,12 +52825,12 @@ Set language as English.
 [[File:21.png|400px]]
 
 
-Set location as United Kingdom.
+Set location as United States.
 
-[[File:22.png|400px]]
+[[File:22a.png|400px]]
 
 
-Set keyboard as American English.
+Select your keyboard layout.
 
 [[File:23.png|400px]]
 
@@ -53181,7 +53209,7 @@ You are done! OVA file is now on your USB key/in your shared folder. All you hav
 If you want to build another image (presuming you have build only Workstation or Gateway this time) revert the VM state to [[Jekyll:Sandbox#Building_from_source|Snapshot 2]].
 
 From there follow the steps as you previously did and build the image you still need Workstation or Gateway.</text>
-      <sha1>9e5cwp5sikk2yr0tb4tw9muqvdzcxuh</sha1>
+      <sha1>o9djl2finzbjynlx5c7nehroiyolws4</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -53461,13 +53489,14 @@ From there follow the steps as you previously did and build the image you still 
     <ns>6</ns>
     <id>665</id>
     <revision>
-      <id>4471</id>
-      <timestamp>2013-12-26T12:11:03Z</timestamp>
+      <id>5466</id>
+      <parentid>4471</parentid>
+      <timestamp>2014-02-17T12:37:04Z</timestamp>
       <contributor>
         <username>Jekyll</username>
         <id>161</id>
       </contributor>
-      <comment>MsUpload</comment>
+      <comment>Jekyll uploaded a new version of &amp;quot;[[File:22.png]]&amp;quot;: MsUpload</comment>
       <text xml:space="preserve" bytes="8">MsUpload</text>
       <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
       <model>wikitext</model>
@@ -57266,14 +57295,15 @@ Image:donate.png|link=Donate|[[Donate|Финансово поддержать Wh
     <ns>0</ns>
     <id>765</id>
     <revision>
-      <id>5430</id>
-      <parentid>5417</parentid>
-      <timestamp>2014-02-16T14:24:17Z</timestamp>
+      <id>5476</id>
+      <parentid>5430</parentid>
+      <timestamp>2014-02-17T15:03:47Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="27985">{{Header}}
+      <comment>Created page with &quot;Существующие способы обхода, дополнительная информация и др. изложены в Форуме помощи пользова...&quot;</comment>
+      <text xml:space="preserve" bytes="28084">{{Header}}
 &lt;!--
 Copyright:
 
@@ -57554,8 +57584,7 @@ sudo service tor restart
 === Проблемы с использованием Общих папок в VirtualBox ===
 С последним ядром Linux функция &quot;Общие папки&quot; не работает. (Корень проблемы в связке Debian/Virtual Box, а не в Whonix. Информация о проблеме уже была направлена соответствующим людям пользователем ОС Debian.)
 
-Possible workarounds, more information, etc. can be found in the Whonix User Help Forum discussion thread:
-[[Special:AWCforum/st/id261/VirtualBox_shared_directories_on....html]]
+Существующие способы обхода, дополнительная информация и др. изложены в Форуме помощи пользователю Whonix в ветке: [[Special:AWCforum/st/id261/VirtualBox_shared_directories_on....html]]
 
 === Enigmail Encryption ===
 When using OpenPGP encryption in Icedove / Enigmail you might get &quot;encryption command failed&quot;.
@@ -57635,7 +57664,7 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>8tiyb8cyueke3oaa9zfp4zjv7arr21j</sha1>
+      <sha1>n73i6nhsqidm6l183o7ac8zd3fjqy0w</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -59296,15 +59325,15 @@ inspired by http://aboli.sh/
     <ns>0</ns>
     <id>849</id>
     <revision>
-      <id>5459</id>
-      <parentid>5458</parentid>
-      <timestamp>2014-02-16T23:40:24Z</timestamp>
+      <id>5478</id>
+      <parentid>5474</parentid>
+      <timestamp>2014-02-17T17:07:44Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <username>Jekyll</username>
+        <id>161</id>
       </contributor>
-      <comment>set to US</comment>
-      <text xml:space="preserve" bytes="12355">{{Header}}
+      <comment>log command change, log warning</comment>
+      <text xml:space="preserve" bytes="12527">{{Header}}
 
 = Documentation =
 This is a short set of instructions for building 7.7.8.7 testers-only version of Whonix (later to be modified for Whonix 8) inside VirtualBox (as opposed to the traditional process of running these commands on a system that is installed directly on the hardware).
@@ -59464,12 +59493,12 @@ Set language as English.
 [[File:21.png|400px]]
 
 
-Set location as United Kingdom.
+Set location as United States.
 
-[[File:22.png|400px]]
+[[File:22a.png|400px]]
 
 
-Set keyboard as American English.
+Select your keyboard. layout.
 
 [[File:23.png|400px]]
 
@@ -59746,35 +59775,41 @@ Checkout out 7.7.8.7
 
 == VM Creation ==
 
+It is recommended that you create a log of the build process by redirecting all the output to a log file. Be aware that by doing so no build progress will appear on the screen - instead a text log file will be created in your home folder. 
+
+
 Build a Whonix-Gateway virtual machine image.
 
 &lt;pre&gt;
-sudo ./whonix_build --build --tor-gateway 
+sudo ./whonix_build --build --tor-gateway &gt;&gt; ~/log-gateway 2&gt;&amp;1
 &lt;/pre&gt;
 
 
 Build a Whonix-Workstation virtual machine image.
 
 &lt;pre&gt;
-sudo ./whonix_build --build --tor-workstation
+sudo ./whonix_build --build --tor-workstation &gt;&gt; ~/log-workstation 2&gt;&amp;1
 &lt;/pre&gt;
 
 The resulting {{Code2|.ova}} images can be found in {{Code|~/whonix_binary}} folder.
 
 
-If you want to create a log of the build process (very useful for debugging) use the following commands but be aware that all output will be redirected to a file, meaning nothing will appear on the screen. This will create a text log in /home/user/log. 
+If don't want to create a log of the build process (the build progress will then appear on screen) use the following commands. 
+
+
+'''This is not recommended because if anything goes wrong during the build, it will be harder to pinpoint the exact error without the actual log file.'''
 
 
 For Workstation
 
 &lt;pre&gt;
-sudo ./nothing-to-see/whonix_build --build --tor-workstation &gt;&gt; /home/user/log-workstation 2&gt;&gt; /home/user/log-workstation
+sudo ./whonix_build --build --tor-workstation 
 &lt;/pre&gt;
 
 For Gateway
 
 &lt;pre&gt;
-sudo ./nothing-to-see/whonix_build --build --tor-gateway &gt;&gt; /home/user/log-gateway 2&gt;&gt; /home/user/log-gateway
+sudo ./whonix_build --build --tor-gateway
 &lt;/pre&gt;
  &lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
 '''OPTIONAL.'''
@@ -59857,7 +59892,7 @@ From there follow the steps as you previously did and build the image you still 
 {{Footer}}
 
 [[Category:Development]]</text>
-      <sha1>kjolpb84wybxl1ohjlchzdt5npijtqo</sha1>
+      <sha1>li4iath0txsskk6861edcrk4gzdc12p</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -59973,6 +60008,43 @@ From there follow the steps as you previously did and build the image you still 
       <comment>Adrelanos moved page [[Dev/BuildDocumentation 8 RC]] to [[Dev/BuildDocumentation 8 in VM]]</comment>
       <text xml:space="preserve" bytes="44">#REDIRECT [[Dev/BuildDocumentation 8 in VM]]</text>
       <sha1>dn7hmlw8mxdymd2vl4idn5o1ikjsf2v</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:22a.png</title>
+    <ns>6</ns>
+    <id>857</id>
+    <revision>
+      <id>5468</id>
+      <parentid>5465</parentid>
+      <timestamp>2014-02-17T12:42:58Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>Jekyll uploaded a new version of &amp;quot;[[File:22a.png]]&amp;quot;: MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/58/ru</title>
+    <ns>1198</ns>
+    <id>858</id>
+    <revision>
+      <id>5475</id>
+      <timestamp>2014-02-17T15:03:46Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;Существующие способы обхода, дополнительная информация и др. изложены в Форуме помощи пользова...&quot;</comment>
+      <text xml:space="preserve" bytes="276">Существующие способы обхода, дополнительная информация и др. изложены в Форуме помощи пользователю Whonix в ветке: [[Special:AWCforum/st/id261/VirtualBox_shared_directories_on....html]]</text>
+      <sha1>ptbe7hdlywzazt4zu9jatosbua90ez3</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
