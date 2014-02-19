@@ -12067,15 +12067,14 @@ sudo umount /mnt/whonix
     <ns>0</ns>
     <id>115</id>
     <revision>
-      <id>3870</id>
-      <parentid>3869</parentid>
-      <timestamp>2013-10-28T07:29:31Z</timestamp>
+      <id>5495</id>
+      <parentid>5494</parentid>
+      <timestamp>2014-02-19T08:52:02Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* Warning */</comment>
-      <text xml:space="preserve" bytes="4697">{{Header}}
+      <comment>This is more up-to-date and accurate.</comment>
+      <text xml:space="preserve" bytes="5516">{{Header}}
 
 == Warning ==
 '''Warning: Not recommended!'''
@@ -12092,6 +12091,16 @@ sudo umount /mnt/whonix
 * To get a higher screen resolution without installing guest additions, see [[Higher Screen Resolution]]
 
 == Installing VirtualBox Guest Additions ==
+=== Instructions for Whonix 7.7.8.6 (Debian Wheezy) ===
+
+Follow instructions for Debian Wheezy below.
+
+=== Instructions for Debian Jessie ===
+
+Recommend avoid for Guest Additionsǃ This version is difficult to get working with guest additions and vbox shares. Debian Jessie has the issue that Whonix installs with Kernel 3.10 and the distro is at 3.12, and the 3.10 headers are not available. Therefore, it is dangerous (and unsafe) to get the Kernel headers on a different repository. Additionally, there are reports that updating the kernel can cause issues (and is also unsafe). Therefore, instead install experimental version 7.7.8.6 located at https://www.whonix.org/blog/
+
+Noteː It has been reported that reverting Virtualbox 2 versions back with 3.10 can also solve issues. Update this wiki with your results.
+
 === New Instructions for Debian Wheezy ===
 Very simple.
 
@@ -12179,7 +12188,7 @@ Safe and reboot. Done.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>8lit4ous950rb61xtg3qbu5rd6dqiwd</sha1>
+      <sha1>6842vupb18lavnrlihv3tabnd5trf69</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -17318,15 +17327,15 @@ Essentially this feature allows to directly use physical PCI devices on the host
     <ns>0</ns>
     <id>148</id>
     <revision>
-      <id>5489</id>
-      <parentid>5405</parentid>
-      <timestamp>2014-02-18T08:17:40Z</timestamp>
+      <id>5500</id>
+      <parentid>5499</parentid>
+      <timestamp>2014-02-19T10:53:07Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
       <comment>/* Download the key */</comment>
-      <text xml:space="preserve" bytes="4142">&lt;!--
+      <text xml:space="preserve" bytes="4632">&lt;!--
 Copyright:
 
    Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -17366,7 +17375,9 @@ Since all Whonix releases are signed with the same key, you will not have to ver
 This page is strongly related to the [[Trust]] page.
 
 = Download the key =
-1. Copy and paste Patrick Schleizer's (adrelanos') OpenPGP key: [[Adrelanos]]
+1. Copy and paste Patrick Schleizer's (adrelanos') OpenPGP key.
+* For Whonix 7: [[Adrelanos#Old_Key_.28Signed_Whonix_7.29|key Whonix 7]]
+* For Whonix 8 (currently only testers-only version): [[Adrelanos#New_Key_.28Signed_Whonix_8_testers-only.29|key Whonix 8]]
 &lt;!--
 &lt;html&gt;&lt;a class=&quot;link-https&quot; href=&quot;/adrelanos.asc&quot;&gt;adrelanos.asc&lt;/a&gt;&lt;/html&gt; (Right click &amp; Save)
 --&gt;
@@ -17376,18 +17387,29 @@ This page is strongly related to the [[Trust]] page.
 3. Import the key:
 
 &lt;pre&gt;
-gpg --import adrelanos.asc
+gpg --import patrick.asc
 &lt;/pre&gt;
 
 4. Verify the key using this fingerprint:
 
 &lt;pre&gt;
+## Whonix 7
+gpg --fingerprint 9B157153925C303A42253AFB9C131AD3713AAEEF
+
+## Whonix 8
 gpg --fingerprint 916B8D99C38EAF5E8ADC7A2A8D66066A2EEACCDA
 &lt;/pre&gt;
 
 Should show:
 
 &lt;pre&gt;
+## Whonix 7
+pub   4096R/713AAEEF 2012-03-02
+      Key fingerprint = 9B15 7153 925C 303A 4225  3AFB 9C13 1AD3 713A AEEF
+uid                  adrelanos &lt;adrelanos@riseup.net&gt;
+sub   4096R/794279C4 2012-03-02
+
+## Whonix 8
 pub   4096R/2EEACCDA 2014-01-16 [expires: 2015-01-16]
       Key fingerprint = 916B 8D99 C38E AF5E 8ADC  7A2A 8D66 066A 2EEA CCDA
 uid                 [ unknown] Patrick Schleizer &lt;adrelanos@riseup.net&gt;
@@ -17396,7 +17418,7 @@ sub   4096R/0x10FDAC53119B3FD6 2014-01-16 [expires: 2015-01-16]
 sub   4096R/0xCB8D50BB77BB3C48 2014-01-16 [expires: 2015-01-16]
 &lt;/pre&gt;
 
-5. For better security, read below.
+&lt;s&gt;5. For better security, read below.&lt;/s&gt;
 
 = Trusting the Key =
 == Download the key from multiple sources ==
@@ -17431,7 +17453,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>mq8tqk739w4skox7hkz4vpphmktyo96</sha1>
+      <sha1>5zrpids2yxypd8cnc2s4hy7il12bhpg</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -60362,6 +60384,42 @@ From there follow the steps as you previously did and build the image you still 
       <comment>Created page with &quot;Существующие способы обхода, дополнительная информация и др. изложены в Форуме помощи пользова...&quot;</comment>
       <text xml:space="preserve" bytes="276">Существующие способы обхода, дополнительная информация и др. изложены в Форуме помощи пользователю Whonix в ветке: [[Special:AWCforum/st/id261/VirtualBox_shared_directories_on....html]]</text>
       <sha1>ptbe7hdlywzazt4zu9jatosbua90ez3</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>User:ValentinFernnde</title>
+    <ns>2</ns>
+    <id>859</id>
+    <revision>
+      <id>5491</id>
+      <timestamp>2014-02-19T01:24:08Z</timestamp>
+      <contributor>
+        <username>ValentinFernnde</username>
+        <id>227</id>
+      </contributor>
+      <comment>Created page with &quot;Mі nombre es Antοnio Manuel , estoy estudiando рolitica comρɑrada y educaϲion especial en Santa cruz de la Sierra Boliviа.&quot;</comment>
+      <text xml:space="preserve" bytes="129">Mі nombre es Antοnio Manuel , estoy estudiando рolitica comρɑrada y educaϲion especial en Santa cruz de la Sierra Boliviа.</text>
+      <sha1>56htpfy496qkkr0ijq888q34sfd79oz</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>User:MiloHovell</title>
+    <ns>2</ns>
+    <id>860</id>
+    <revision>
+      <id>5496</id>
+      <timestamp>2014-02-19T09:55:04Z</timestamp>
+      <contributor>
+        <username>MiloHovell</username>
+        <id>228</id>
+      </contributor>
+      <comment>Created page with &quot;I'm a 47 years old and working at the high school (Environmental Studies).&lt;br&gt;In my free time I try to learn English. I've been twicethere and look forward to returning someti...&quot;</comment>
+      <text xml:space="preserve" bytes="507">I'm a 47 years old and working at the high school (Environmental Studies).&lt;br&gt;In my free time I try to learn English. I've been twicethere and look forward to returning sometime in the future. I love to read, preferably on my ipad. I really love to watch Game of Thrones and Family Guy as well as documentaries about nature. I love Games Club - Dungeons and Dragons, Monopoly, Etc..&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;Feel free to visit my web-site :: [http://www.smartquicktips.com/3-signs-a-man-is-in-love/ relationship tips]</text>
+      <sha1>gostjfkmhy7q6ek9oo7k6f5tcjzkekc</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
