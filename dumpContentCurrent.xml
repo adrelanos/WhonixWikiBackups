@@ -2276,15 +2276,15 @@ under certain conditions; see the wiki source code for details.
     <ns>0</ns>
     <id>53</id>
     <revision>
-      <id>4959</id>
-      <parentid>4859</parentid>
-      <timestamp>2014-02-05T04:44:15Z</timestamp>
+      <id>5511</id>
+      <parentid>5510</parentid>
+      <timestamp>2014-02-19T20:28:46Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <username>Jekyll</username>
+        <id>161</id>
       </contributor>
-      <comment>Rejected the last text change (by [[Special:Contributions/127.0.0.1|127.0.0.1]]) and restored revision 2410 by Anonymous014</comment>
-      <text xml:space="preserve" bytes="5718">Scroll down...
+      <comment>Added LXDE and Xfce images. This edit supersedes the previous one.</comment>
+      <text xml:space="preserve" bytes="5918">Scroll down...
 
 = Link to folder =
 
@@ -2418,6 +2418,14 @@ Thanks to [https://www.torproject.org/projects/arm.html.en torproject.org] for t
 
 [[Image:shot24.png|Custom Whonix-Xfce-Desktop]]
 
+[[Image:xfce4.png|Custom Whonix-Xfce-Desktop]]
+
+= Custom Whonix-LXDE-Workstation =
+
+[[Image:LXDE1.png|Custom Whonix-LXDE-Desktop Terminal]]
+
+[[Image:LXDE2.png|Custom Whonix-LXDE-Desktop-2 Terminal]]
+
 = Installation Screenshots =
 
 See [[Install]].
@@ -2440,7 +2448,7 @@ Not compulsory, just nicely asking:
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>noglymuzk9gkyaeos6vquu9xwfwtshe</sha1>
+      <sha1>3v0snce9ghe9lry873ladfjukz5mvo6</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -6543,15 +6551,14 @@ You could try the [https://www.riseup.net/en/openvpn-linux#gnome riseup.net Open
     <ns>0</ns>
     <id>92</id>
     <revision>
-      <id>5484</id>
-      <parentid>5483</parentid>
-      <timestamp>2014-02-17T22:02:37Z</timestamp>
+      <id>5512</id>
+      <parentid>5484</parentid>
+      <timestamp>2014-02-19T22:50:45Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Prerequisites */</comment>
-      <text xml:space="preserve" bytes="22310">{{Header}}
+      <text xml:space="preserve" bytes="22761">{{Header}}
 
 '''WARNING''': Please don't forget reading the Warnings chapter.
 
@@ -7134,13 +7141,17 @@ To get a more complete list, install Debian (with KDE) on bare metal using the r
 
 * See also: http://wiki.debian.org/HardwareAutodetection
 
+= Troubleshooting =
+* Slow network speed? Eventually it's the fault of your wifi driver? We had such a [https://www.whonix.org/forum/index.php/topic,63.0.html report] in the forum.
+* No connection between Whonix-Gateway and Whonix-Workstation? Could have something to do with [https://en.wikipedia.org/wiki/Medium_Dependent_Interface Auto-MDIX]. We had such a [https://www.whonix.org/forum/index.php/topic,48.msg520.html#msg520 report] in the forum.
+
 = Footnotes / References =
 &lt;references/&gt;
 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>8v4xzm7fe65fuzkby0qqga735zup2xi</sha1>
+      <sha1>qsjvt8uv8sifot4wjhzb6p9d8w12md6</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -12067,14 +12078,14 @@ sudo umount /mnt/whonix
     <ns>0</ns>
     <id>115</id>
     <revision>
-      <id>5495</id>
-      <parentid>5494</parentid>
-      <timestamp>2014-02-19T08:52:02Z</timestamp>
+      <id>5504</id>
+      <parentid>5503</parentid>
+      <timestamp>2014-02-19T12:26:10Z</timestamp>
       <contributor>
         <ip>127.0.0.1</ip>
       </contributor>
-      <comment>This is more up-to-date and accurate.</comment>
-      <text xml:space="preserve" bytes="5516">{{Header}}
+      <comment>formatting</comment>
+      <text xml:space="preserve" bytes="5993">{{Header}}
 
 == Warning ==
 '''Warning: Not recommended!'''
@@ -12125,6 +12136,17 @@ Reboot. And you're done.
 Alternatively, if this fails, you could also refer to the upstream documentation, [https://www.virtualbox.org/manual/ch04.html VirtualBox: Chapter 4. Guest Additions].
 
 NOTE: Sometimes after reboot the Workstation guest fails to pick up a new resolution. Try to change the screen resolution manually a few times, from KDE settings. Once it succeeds to change to fullscreen, the change will stay persistent across reboots.
+
+NOTE: If installation of virtualbox-guest-dkms finishes without error, but there is no kernel module generated you're probably missing the kernel-headers. 
+Do the following:
+In 
+&lt;pre&gt;/etc/apt/sources.list #uncomment the two lines starting with &quot;deb-src&quot;&lt;/pre&gt; 
+This will make linux sources available in apt-get.
+&lt;pre&gt;
+sudo apt-get install linux-headers-$(uname -r)
+sudo apt-get install --reinstall virtualbox-guest-dkms
+&lt;/pre&gt;
+Restart VM (to make the kernel module available)
 
 === Old instructions for Ubuntu Precise ===
 Moved to [[Ubuntu]].
@@ -12188,7 +12210,7 @@ Safe and reboot. Done.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>6842vupb18lavnrlihv3tabnd5trf69</sha1>
+      <sha1>o7d6g81h7yuk86dokf6crr0ns4c19ak</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -43573,14 +43595,14 @@ The reason you can't just get higher resolutions using {{Code2|xrandr}} &quot;{{
     <ns>10</ns>
     <id>479</id>
     <revision>
-      <id>5490</id>
-      <parentid>4762</parentid>
-      <timestamp>2014-02-18T08:49:15Z</timestamp>
+      <id>5506</id>
+      <parentid>5505</parentid>
+      <timestamp>2014-02-19T15:32:52Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="2120">&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+      <text xml:space="preserve" bytes="2261">&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
 '''OPTIONAL!'''
 
 Advanced users can create 64bit instead of 32bit builds.
@@ -43627,8 +43649,10 @@ export WHONIX_BUILD_SKIP_SCRIPTS+=&quot; 70_install_486_kernel &quot;
 ## Deactivate installation of 686-pae kernel.
 export WHONIX_BUILD_SKIP_SCRIPTS+=&quot; 71_install_686_pae_kernel &quot;
 
-## Deactivate installation of amd64 kernel.
-#export WHONIX_BUILD_SKIP_SCRIPTS+=&quot; 71_install_amd64_kernel &quot;
+## Enable installation of 64 bit kernel by removing
+## 71_install_amd64_kernel from WHONIX_BUILD_SKIP_SCRIPTS.
+WHONIX_BUILD_SKIP_SCRIPTS=&quot;$(echo &quot;$WHONIX_BUILD_SKIP_SCRIPTS&quot; | sed s/&quot; 71_install_amd64_kernel &quot;//g)&quot;
+export WHONIX_BUILD_SKIP_SCRIPTS
 ' | sudo tee &quot;/etc/whonix_buildconfig.d/50_target_arch&quot; &gt; /dev/null
 &lt;/pre&gt;
 
@@ -43648,7 +43672,7 @@ sudo rm /etc/whonix_buildconfig.d/50_target_arch
 
 &lt;/div&gt;
 &lt;/div&gt;</text>
-      <sha1>mp8j818jqcu6gewf4zelubo7a85n6mo</sha1>
+      <sha1>sjow7m0f818octpsrscuvhik7jwcuk4</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -47916,15 +47940,15 @@ ii  zsh-common            5.0.2-4         all             architecture independe
     <ns>10</ns>
     <id>491</id>
     <revision>
-      <id>5441</id>
-      <parentid>5440</parentid>
-      <timestamp>2014-02-16T17:21:12Z</timestamp>
+      <id>5501</id>
+      <parentid>5441</parentid>
+      <timestamp>2014-02-19T11:14:53Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Choose Whonix Version */</comment>
-      <text xml:space="preserve" bytes="2989">== Get Whonix Source Code ==
+      <comment>fix gpg key import path</comment>
+      <text xml:space="preserve" bytes="3039">== Get Whonix Source Code ==
 Install git and get Whonix's source code from the git repository.&lt;ref&gt;From https://github.com/adrelanos/Whonix and not from https://github.com/Whonix/Whonix, because only adrelanos/Whonix contains git tags of the testers-only version.&lt;/ref&gt;
 
 &lt;pre&gt;
@@ -47949,7 +47973,7 @@ cd Whonix
 Import the key.
 
 &lt;pre&gt;
-gpg --import adrelanos.asc
+gpg --import ./whonix_shared/usr/share/whonix/keys/whonix-keys.d/patrick.asc
 &lt;/pre&gt;
 
 Verify.
@@ -48017,7 +48041,7 @@ git checkout 7.7.8.7
 &lt;/pre&gt;
 
 You have to replace {{Code2|7.7.8.7}} with the actual version you want to build. The stable version, the testers-only version or the developers version. You can learn about current versions reading [[Download#Stay_tuned|Whonix News Blogs]]. New versions are also announced on the [[Mailing_Lists#whonix-devel|whonix-devel mailing list]]. So you could alternatively check its archives. Signing up for whonix-devel is another way to get informed about new releases.</text>
-      <sha1>o7xx4gvv4pizfosmlpefx2o5utdr56t</sha1>
+      <sha1>805r7u8ued7l9g9rcygnq5wawp5nshb</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -60420,6 +60444,60 @@ From there follow the steps as you previously did and build the image you still 
       <comment>Created page with &quot;I'm a 47 years old and working at the high school (Environmental Studies).&lt;br&gt;In my free time I try to learn English. I've been twicethere and look forward to returning someti...&quot;</comment>
       <text xml:space="preserve" bytes="507">I'm a 47 years old and working at the high school (Environmental Studies).&lt;br&gt;In my free time I try to learn English. I've been twicethere and look forward to returning sometime in the future. I love to read, preferably on my ipad. I really love to watch Game of Thrones and Family Guy as well as documentaries about nature. I love Games Club - Dungeons and Dragons, Monopoly, Etc..&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;Feel free to visit my web-site :: [http://www.smartquicktips.com/3-signs-a-man-is-in-love/ relationship tips]</text>
       <sha1>gostjfkmhy7q6ek9oo7k6f5tcjzkekc</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:LXDE2.png</title>
+    <ns>6</ns>
+    <id>861</id>
+    <revision>
+      <id>5507</id>
+      <timestamp>2014-02-19T20:21:31Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:LXDE1.png</title>
+    <ns>6</ns>
+    <id>862</id>
+    <revision>
+      <id>5508</id>
+      <timestamp>2014-02-19T20:21:36Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:Xfce4.png</title>
+    <ns>6</ns>
+    <id>863</id>
+    <revision>
+      <id>5509</id>
+      <timestamp>2014-02-19T20:21:40Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
