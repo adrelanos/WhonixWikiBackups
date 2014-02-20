@@ -43984,18 +43984,24 @@ It is recommended to copy and paste text when creating build configuration files
     <ns>0</ns>
     <id>485</id>
     <revision>
-      <id>4803</id>
-      <parentid>3795</parentid>
-      <timestamp>2014-01-19T02:33:46Z</timestamp>
+      <id>5513</id>
+      <parentid>4803</parentid>
+      <timestamp>2014-02-19T23:55:01Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Verify Disabled Whonix Apt Repository */</comment>
-      <text xml:space="preserve" bytes="2343">{{Header}}
+      <text xml:space="preserve" bytes="3556">{{Header}}
 
 {{Testing}}
 [[Image:Whonixrepo.png|Whonix Repository Tool|thumb]]
+= Whonix APT Repository Overview =
+Whonix's &lt;u&gt;developers&lt;/u&gt; APT repository likely contain untested changes. It's recommended against to use it unless you are in touch with the development team. When we are reasonably sure, that these changes won't break Whonix's update system, they may be migrated to Whonix's testers repository where a wider audience is supposed to test them.
+
+Whonix's &lt;u&gt;testers&lt;/u&gt; APT repository is for testers-only. Even though briefly tested by Whonix developers, it may may break apt-get during upgrade. Eventually running a few manual commands are required to fix it. Making a snapshot and be prepared to roll back in case anything goes wrong is recommended. After testing by a wider audience, packages are migrated to Whonix's stable repository.
+
+Whonix's &lt;u&gt;stable&lt;/u&gt; APT repository is recommended for most users. Even if you're not using your production system to test Whonix's testers-only packages, you're encouraged to run separate Whonix-Gateway and Whonix-Workstation, that use Whonix's testers repository. This is because, if too few people are actually testing Whonix, it might happen that changes that are migrated to Whonix's stable repository are still causing issues.
+
 = Disable Whonix APT Repository =
 == Introduction ==
 For [[Trust]] reasons you may prefer not to use Whonix's APT Repository. You can still [[Dev/BuildDocumentation|update Whonix's debian packages from source code]]. It is just less convenient.
@@ -44059,7 +44065,7 @@ cat /etc/apt/sources.list.d/*
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>qhzwlnbms7aqg6dkf6y40wrkvi3pn15</sha1>
+      <sha1>rvnhirn079pflf7ibnauprycr81hvom</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -60426,24 +60432,6 @@ From there follow the steps as you previously did and build the image you still 
       <comment>Created page with &quot;Mі nombre es Antοnio Manuel , estoy estudiando рolitica comρɑrada y educaϲion especial en Santa cruz de la Sierra Boliviа.&quot;</comment>
       <text xml:space="preserve" bytes="129">Mі nombre es Antοnio Manuel , estoy estudiando рolitica comρɑrada y educaϲion especial en Santa cruz de la Sierra Boliviа.</text>
       <sha1>56htpfy496qkkr0ijq888q34sfd79oz</sha1>
-      <model>wikitext</model>
-      <format>text/x-wiki</format>
-    </revision>
-  </page>
-  <page>
-    <title>User:MiloHovell</title>
-    <ns>2</ns>
-    <id>860</id>
-    <revision>
-      <id>5496</id>
-      <timestamp>2014-02-19T09:55:04Z</timestamp>
-      <contributor>
-        <username>MiloHovell</username>
-        <id>228</id>
-      </contributor>
-      <comment>Created page with &quot;I'm a 47 years old and working at the high school (Environmental Studies).&lt;br&gt;In my free time I try to learn English. I've been twicethere and look forward to returning someti...&quot;</comment>
-      <text xml:space="preserve" bytes="507">I'm a 47 years old and working at the high school (Environmental Studies).&lt;br&gt;In my free time I try to learn English. I've been twicethere and look forward to returning sometime in the future. I love to read, preferably on my ipad. I really love to watch Game of Thrones and Family Guy as well as documentaries about nature. I love Games Club - Dungeons and Dragons, Monopoly, Etc..&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;Feel free to visit my web-site :: [http://www.smartquicktips.com/3-signs-a-man-is-in-love/ relationship tips]</text>
-      <sha1>gostjfkmhy7q6ek9oo7k6f5tcjzkekc</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
