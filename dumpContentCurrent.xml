@@ -2276,15 +2276,15 @@ under certain conditions; see the wiki source code for details.
     <ns>0</ns>
     <id>53</id>
     <revision>
-      <id>5511</id>
-      <parentid>5510</parentid>
-      <timestamp>2014-02-19T20:28:46Z</timestamp>
+      <id>5542</id>
+      <parentid>5511</parentid>
+      <timestamp>2014-02-21T19:41:13Z</timestamp>
       <contributor>
         <username>Jekyll</username>
         <id>161</id>
       </contributor>
-      <comment>Added LXDE and Xfce images. This edit supersedes the previous one.</comment>
-      <text xml:space="preserve" bytes="5918">Scroll down...
+      <comment>Added some new pictures and modified the table of contents with custom builds breakdown. Should Ubuntu entry really say Unity?</comment>
+      <text xml:space="preserve" bytes="6181">Scroll down...
 
 = Link to folder =
 
@@ -2406,13 +2406,17 @@ Thanks to [https://www.torproject.org/projects/arm.html.en torproject.org] for t
 [http://www.atagar.com/arm/screenshots.php Other screenshots of Arm]
 [https://www.torproject.org/projects/arm.html.en Arm project page]
 
-= Custom Whonix-Ubuntu-Workstation =
+= Custom builds =
+
+== Whonix Workstation ==
+
+===  On Ubuntu === 
 
 [[Image:Workspace_1_001.png|Custom Whonix-Ubuntu-Workstation Desktop]]
 
 [[Image:Workspace_1_002.png|Custom Whonix-Ubuntu-Workstation Tor Browser Recommended]]
 
-= Custom Whonix-Xfce-Desktop =
+===  On Xfce === 
 
 [[Image:shot23.png|Custom Whonix-Xfce-Desktop Terminal]]
 
@@ -2420,15 +2424,29 @@ Thanks to [https://www.torproject.org/projects/arm.html.en torproject.org] for t
 
 [[Image:xfce4.png|Custom Whonix-Xfce-Desktop]]
 
-= Custom Whonix-LXDE-Workstation =
+[[Image:Workstation Xfce full.png]]
+
+===  On LXDE === 
 
 [[Image:LXDE1.png|Custom Whonix-LXDE-Desktop Terminal]]
 
 [[Image:LXDE2.png|Custom Whonix-LXDE-Desktop-2 Terminal]]
 
+[[Image:Workstation LXDE full.png]]
+
+== Whonix Gateway ==
+
+===  On Xfce === 
+
+[[Image:Gateway Xfce full.png]]
+
+===  On LXDE === 
+[[Image:Gateway LXDE full.png]]
+
+
 = Installation Screenshots =
 
-See [[Install]].
+See [[Install]] and https://www.whonix.org/wiki/Physical_Isolation#Install_Debian
 
 = Videos =
 
@@ -2448,7 +2466,7 @@ Not compulsory, just nicely asking:
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>3v0snce9ghe9lry873ladfjukz5mvo6</sha1>
+      <sha1>ghcmdm01ty7lhagu09h085j2n1rwe9q</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -60671,6 +60689,78 @@ From there follow the steps as you previously did and build the image you still 
     <revision>
       <id>5509</id>
       <timestamp>2014-02-19T20:21:40Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:Gateway LXDE full.png</title>
+    <ns>6</ns>
+    <id>864</id>
+    <revision>
+      <id>5538</id>
+      <timestamp>2014-02-21T19:30:43Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:Workstation LXDE full.png</title>
+    <ns>6</ns>
+    <id>865</id>
+    <revision>
+      <id>5539</id>
+      <timestamp>2014-02-21T19:30:48Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:Gateway Xfce full.png</title>
+    <ns>6</ns>
+    <id>866</id>
+    <revision>
+      <id>5540</id>
+      <timestamp>2014-02-21T19:30:53Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:Workstation Xfce full.png</title>
+    <ns>6</ns>
+    <id>867</id>
+    <revision>
+      <id>5541</id>
+      <timestamp>2014-02-21T19:30:57Z</timestamp>
       <contributor>
         <username>Jekyll</username>
         <id>161</id>
