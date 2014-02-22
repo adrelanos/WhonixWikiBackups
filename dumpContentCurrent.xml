@@ -134,14 +134,14 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
     <ns>8</ns>
     <id>3</id>
     <revision>
-      <id>4858</id>
-      <parentid>4834</parentid>
-      <timestamp>2014-02-01T18:32:32Z</timestamp>
+      <id>5564</id>
+      <parentid>5561</parentid>
+      <timestamp>2014-02-22T02:32:13Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="1536">
+      <text xml:space="preserve" bytes="1514">
 * users
 ** Main Page|Homepage
 ** About|About
@@ -163,8 +163,8 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
 
 * Frequently Asked Features
 ** Bridges|Bridges Support
-** Features#VPN / Tunnel support|VPN/Tunnel Support
-** HostingLocationHiddenServices|Location/IP Hidden Servers
+** Features#VPN_and_Tunnel_Support|VPN/Tunnel Support
+** Hosting_Location_Hidden_Services|Location/IP Hidden Servers
 ** Other Operating Systems|Windows Support
 ** Browser Plugins|Flash Support
 ** Physical Isolation|Physical Isolation
@@ -182,7 +182,6 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
 ** https://github.com/Whonix/Whonix/|Source Code
 ** Dev/Developer Portal|Developer Portal / Hacking
 ** https://github.com/Whonix/Whonix/issues|Development Tickets
-** Dev/Changelog|Changelog
 ** Authorship|Authorship
 
 * SEARCH
@@ -193,7 +192,7 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
 ** helppage|help
 
 * LANGUAGES</text>
-      <sha1>f2d9nrcnfjrrsnboa55t5yn0jh27gqk</sha1>
+      <sha1>hsyijhyhxfa1sfgomd8f0e87ysrzh59</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -349,16 +348,14 @@ Questions? [[Contact|Contact us!]]
     <ns>0</ns>
     <id>16</id>
     <revision>
-      <id>4740</id>
-      <parentid>2682</parentid>
-      <timestamp>2014-01-14T17:38:39Z</timestamp>
+      <id>5551</id>
+      <parentid>4740</parentid>
+      <timestamp>2014-02-22T02:13:34Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <minor/>
-      <comment>Text replace - &quot;Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;&quot; to &quot;Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;&quot;</comment>
-      <text xml:space="preserve" bytes="5766">&lt;!--
+      <text xml:space="preserve" bytes="5888">&lt;!--
 Copyright:
 
    Whonix About wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -389,6 +386,9 @@ The complete text of the GNU General Public License can also be found online on 
 &lt;!--
 This wiki page is a fork of the Tails About page, from this exact source &lt;http://git.immerda.ch/?p=amnesia.git;a=blob;f=wiki/src/about.mdwn;hb=9ff23c529b206f6f3d637257f8f1f2aa434f3d27&gt;.
 --&gt;
+{{#seo:
+|description=Whoniy Summary, what who is, Anonymity online through Tor, Security by Isolation, Based on Debian
+}}
 {{Header}}
 = Introduction =
 Whonix aims at preserving your privacy and anonymity by helping you use your applications anonymously. A [[Tor Browser|web browser]], [[XChat|IRC client]], word processor, and more come pre-configured with security in mind.
@@ -471,7 +471,7 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>cm3wavorr6j51wg77knmokghh3u27x7</sha1>
+      <sha1>98r12gem75wdsrrjlnn3io93bbf08dt</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -521,15 +521,18 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>18</id>
     <revision>
-      <id>3310</id>
-      <parentid>3190</parentid>
-      <timestamp>2013-10-11T18:52:21Z</timestamp>
+      <id>5560</id>
+      <parentid>5554</parentid>
+      <timestamp>2014-02-22T02:29:23Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
       <comment>/* Disadvantages of Whonix */</comment>
-      <text xml:space="preserve" bytes="10794">{{Header}}
+      <text xml:space="preserve" bytes="10873">{{#seo:
+|description=Whonix Feature List
+}}
+{{Header}}
 
 = Whonix Features =
 Whonix is an Anonymous Operating System. It hides your IP/location and uses Tor to anonymize your data traffic. This means that neither the contacted server, nor any eavesdropper on your connections, nor the operators of the Tor network themselves can realize which webservice you use.
@@ -636,6 +639,8 @@ Everything is explained in [[Documentation]].
 * Updating OS and applications behind the Tor proxy is slow.
 * Higher maintenance required. &lt;ref&gt;{{note}} You need to maintain three instead of one OS. You need to remember several passwords and update at least three systems.&lt;/ref&gt;
 
+{{Anchor|VPN and Tunnel Support}}
+
 = VPN / Tunnel support =
 All kinds of tunnels is possible and tested. Route something through Tor; or route through something before connecting to Tor; or both.
 
@@ -669,7 +674,7 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>sp65oc3k7sgmgldsex00k7hp2oyjcsq</sha1>
+      <sha1>cxqz05qwsh3l2u7s742p7t04aqpmsuw</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -2276,15 +2281,17 @@ under certain conditions; see the wiki source code for details.
     <ns>0</ns>
     <id>53</id>
     <revision>
-      <id>5542</id>
-      <parentid>5511</parentid>
-      <timestamp>2014-02-21T19:41:13Z</timestamp>
+      <id>5544</id>
+      <parentid>5542</parentid>
+      <timestamp>2014-02-22T01:59:29Z</timestamp>
       <contributor>
-        <username>Jekyll</username>
-        <id>161</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>Added some new pictures and modified the table of contents with custom builds breakdown. Should Ubuntu entry really say Unity?</comment>
-      <text xml:space="preserve" bytes="6181">Scroll down...
+      <text xml:space="preserve" bytes="6271">{{#seo:
+|description=Privacy protection. Anonymity online. Anonymous Operating System.
+}}
+Scroll down...
 
 = Link to folder =
 
@@ -2466,7 +2473,7 @@ Not compulsory, just nicely asking:
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>ghcmdm01ty7lhagu09h085j2n1rwe9q</sha1>
+      <sha1>rzbovke8p4pe8rd6qhrzoz64abi6cuj</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -2476,15 +2483,17 @@ Not compulsory, just nicely asking:
     <ns>0</ns>
     <id>54</id>
     <revision>
-      <id>3989</id>
-      <parentid>2199</parentid>
-      <timestamp>2013-11-05T14:33:01Z</timestamp>
+      <id>5553</id>
+      <parentid>3989</parentid>
+      <timestamp>2014-02-22T02:16:19Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Download Videos */</comment>
-      <text xml:space="preserve" bytes="1160">{{Header}}
+      <text xml:space="preserve" bytes="1207">{{#seo:
+|description=Whonix Tutorial Videos
+}}
+{{Header}}
 
 = Tutorial Videos =
 
@@ -2525,7 +2534,7 @@ Not compulsory, just nicely asking:
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>i9xt6bg5nv60i2u9dv7si31k4z8rfay</sha1>
+      <sha1>3hu721pn8kualla8vzl1sjh5hoyqqqc</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -3146,16 +3155,17 @@ Without performing these basics steps, the setup may sound clever, but may not w
     <ns>0</ns>
     <id>58</id>
     <revision>
-      <id>4758</id>
-      <parentid>4045</parentid>
-      <timestamp>2014-01-14T17:42:32Z</timestamp>
+      <id>5570</id>
+      <parentid>4758</parentid>
+      <timestamp>2014-02-22T02:50:35Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <minor/>
-      <comment>Text replace - &quot;adrelanos at riseup dot net&quot; to &quot;adrelanos@riseup.net&quot;</comment>
-      <text xml:space="preserve" bytes="1871">{{Header}}
+      <text xml:space="preserve" bytes="1962">{{#seo:
+|description=Contact Whonix developers and whonix.org webmaster. Press contact.
+}}
+{{Header}}
 
 = Contact =
 Please do use e-mail for reporting security vulnerabilities!
@@ -3196,7 +3206,7 @@ If you don't get into trouble, by letting others to know, that you like or use W
 &lt;references/&gt;
 
 [[Category:Documentation]]</text>
-      <sha1>9ecj4wvtqhub9rhykzgev08848ty6xv</sha1>
+      <sha1>s8ugf8x83d4m13wl75rg4b70vkk7ziy</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -3351,78 +3361,22 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
     </revision>
   </page>
   <page>
-    <title>HostingLocationHiddenServices</title>
+    <title>Hosting Location Hidden Services</title>
     <ns>0</ns>
     <id>60</id>
     <revision>
-      <id>4047</id>
-      <parentid>4006</parentid>
-      <timestamp>2013-11-18T17:42:34Z</timestamp>
+      <id>5566</id>
+      <parentid>5565</parentid>
+      <timestamp>2014-02-22T02:37:22Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="8704">{{Header}}
-
-= Hosting Location/IP Hidden Servers =
-
-== Introduction ==
-
-If you are only interested in Tor hidden services, move on to [[Hidden Services]]. This page discusses and compares different kinds of Location/IP Hidden Servers.
-
-There are three different ways to run location hidden servers. Tor Hidden Services, pagekite. .onion webspace and Anonymous Third Party Hosts. Below is an overview.
-
-If you don't know which one to use, probably Tor Hidden Services are most easy and most anonymous. Below is also a conclusion and a comparison table.
-
-== Tor Hidden Services ==
-
-* censor resistant, no one can take the .onion domain offline &lt;ref&gt;Besides compromising of the host and / or flood attack.&lt;/ref&gt;
-* additionally accessible over tor2web over http &lt;ref&gt;Which doesn't offer as much censor resistance as the .onion domain does&lt;/ref&gt;
-* they are completely free
-* no sign up required
-* and don't require any additional software besides of course the server software you want to anonymize.
-* Can be run at home; on any server you physically own; or on (anonymous) third party hosts.
-* Has its own wiki page, see [[Hidden Services]].
-
-== VPN with Remote Port Forwarding ==
-
-* censor resistance depends on the VPN provider
-* reachable by clients, which do not have to use Tor
-* there are probably no free VPN services providing [http://security.stackexchange.com/questions/16627/does-portforwarding-present-a-risk-to-anonymity Remote Port Forwarding]
-* probably sign up required
-* Can be run at home; on any server you physically own; or on (anonymous) third party hosts.
-
-== pagekite ==
-
-* alternative service called [https://pagekite.net/ pagekite]
-* must comply with [https://pagekite.net/humans.txt pagekite terms of service]
-* requires registration and an (anonymous) [[E-Mail]] address
-* free for Free Software authors; can apply for a free account; or subscription based service
-* known to work inside Whonix-Workstation out of the box
-* less tested by Whonix developers
-* there is no documentation besides this chapter, however, usage is simple and their service is well documented. See [https://pagekite.net/wiki/Howto/PageKiteOverTor/ Running PageKite over Tor].
-** Instead of localhost you could use the Whonix-Gateway IP 192.168.0.10 and a custom port such as 9159, i.e. replace &quot;''--torify=localhost:9050''&quot; with &quot;''--torify=192.168.0.10:9159''&quot;.
-** Or you could drop the &quot;''--torify''&quot; switch at all and even follow the default pagekite GNU/Linux tutorial, because ''misc traffic'' in Whonix-Workstation gets automatically routed through Tor's TransPort.
-** See [[Stream Isolation]] for an explanation of ''misc traffic'', custom Socks Ports and Tor's TransPort in Whonix.
-
-== Anonymous Third Party Hosts ==
-
-* Has its own wiki page, see [[Hosting]].
-* There are some free .onion web hosting services. Also paid ones.
-* There are also anonymous VPS servers, although no free ones, which would require [[Money|anonymous money]].
-
-== Conclusion ==
-
-Each way to run location hidden servers has its own advantages and disadvantages.
-
-With Tor Hidden Services, you don't have to learn and obtain anonymous money, which is difficult on its own. You have to trust no one, but your own skills setting up a server. No one can censor the server, there is no signup, no terms of service. Disadvantage is, if someone compromises your hidden service either by an successful attack against Tor hidden services are by an successful attack against your server software and breaking out of Whonix, it's game over. It's only accessible over .onion (visitors need Tor) and tor2web does not get indexed by search engines. Tor Hidden Services are only online as long as your server is online.
-
-A free (or paid) .onion web space host can steal your domain any time and take it over. You don't have to worry about server security and successful attacks against the Tor hidden services won't lead to your location or IP address.
-
-Anonymous Third Party Hosts for VPS hosting involve anonymous money, which is difficult on its own. They can provide clearnet domains and/or you can use them to host Tor hidden services. You don't have to worry about server security and successful attacks against Tor hidden services won't lead to your location or IP address.
-
+      <text xml:space="preserve" bytes="8820">{{#seo:
+|description=Anonymous Hosting, Comparison Table of Tor Hidden Services, VPN with Remote Port Forwarding, pagekite and Anonymous Third Party Hosts
+}}
+{{Header}}
 == Comparison Table ==
-
 {|   class=&quot;wikitable&quot;
 | 
 | Tor Hidden Services
@@ -3530,13 +3484,68 @@ Anonymous Third Party Hosts for VPS hosting involve anonymous money, which is di
 | [[Hosting|Anonymous Third Party Hosts]]
 |}
 
+== Introduction ==
+
+If you are only interested in Tor hidden services, move on to [[Hidden Services]]. This page discusses and compares different kinds of Location/IP Hidden Servers.
+
+There are three different ways to run location hidden servers. Tor Hidden Services, pagekite. .onion webspace and Anonymous Third Party Hosts. Below is an overview.
+
+If you don't know which one to use, probably Tor Hidden Services are most easy and most anonymous. Below is also a conclusion and a comparison table.
+
+== Tor Hidden Services ==
+
+* censor resistant, no one can take the .onion domain offline &lt;ref&gt;Besides compromising of the host and / or flood attack.&lt;/ref&gt;
+* additionally accessible over tor2web over http &lt;ref&gt;Which doesn't offer as much censor resistance as the .onion domain does&lt;/ref&gt;
+* they are completely free
+* no sign up required
+* and don't require any additional software besides of course the server software you want to anonymize.
+* Can be run at home; on any server you physically own; or on (anonymous) third party hosts.
+* Has its own wiki page, see [[Hidden Services]].
+
+== VPN with Remote Port Forwarding ==
+
+* censor resistance depends on the VPN provider
+* reachable by clients, which do not have to use Tor
+* there are probably no free VPN services providing [http://security.stackexchange.com/questions/16627/does-portforwarding-present-a-risk-to-anonymity Remote Port Forwarding]
+* probably sign up required
+* Can be run at home; on any server you physically own; or on (anonymous) third party hosts.
+
+== pagekite ==
+
+* alternative service called [https://pagekite.net/ pagekite]
+* must comply with [https://pagekite.net/humans.txt pagekite terms of service]
+* requires registration and an (anonymous) [[E-Mail]] address
+* free for Free Software authors; can apply for a free account; or subscription based service
+* known to work inside Whonix-Workstation out of the box
+* less tested by Whonix developers
+* there is no documentation besides this chapter, however, usage is simple and their service is well documented. See [https://pagekite.net/wiki/Howto/PageKiteOverTor/ Running PageKite over Tor].
+** Instead of localhost you could use the Whonix-Gateway IP 192.168.0.10 and a custom port such as 9159, i.e. replace &quot;''--torify=localhost:9050''&quot; with &quot;''--torify=192.168.0.10:9159''&quot;.
+** Or you could drop the &quot;''--torify''&quot; switch at all and even follow the default pagekite GNU/Linux tutorial, because ''misc traffic'' in Whonix-Workstation gets automatically routed through Tor's TransPort.
+** See [[Stream Isolation]] for an explanation of ''misc traffic'', custom Socks Ports and Tor's TransPort in Whonix.
+
+== Anonymous Third Party Hosts ==
+
+* Has its own wiki page, see [[Hosting]].
+* There are some free .onion web hosting services. Also paid ones.
+* There are also anonymous VPS servers, although no free ones, which would require [[Money|anonymous money]].
+
+== Conclusion ==
+
+Each way to run location hidden servers has its own advantages and disadvantages.
+
+With Tor Hidden Services, you don't have to learn and obtain anonymous money, which is difficult on its own. You have to trust no one, but your own skills setting up a server. No one can censor the server, there is no signup, no terms of service. Disadvantage is, if someone compromises your hidden service either by an successful attack against Tor hidden services are by an successful attack against your server software and breaking out of Whonix, it's game over. It's only accessible over .onion (visitors need Tor) and tor2web does not get indexed by search engines. Tor Hidden Services are only online as long as your server is online.
+
+A free (or paid) .onion web space host can steal your domain any time and take it over. You don't have to worry about server security and successful attacks against the Tor hidden services won't lead to your location or IP address.
+
+Anonymous Third Party Hosts for VPS hosting involve anonymous money, which is difficult on its own. They can provide clearnet domains and/or you can use them to host Tor hidden services. You don't have to worry about server security and successful attacks against Tor hidden services won't lead to your location or IP address.
+
 = References =
 &lt;references/&gt;
 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>5w5c9mvchekg4e9y1mwhw3roalf48r1</sha1>
+      <sha1>b3sywdprxzlsw6bpasnz0g609r2lwhl</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -3881,15 +3890,17 @@ As soon as i2p over Tor is working in Whonix-Workstation, you can probably follo
     <ns>0</ns>
     <id>63</id>
     <revision>
-      <id>3999</id>
-      <parentid>3998</parentid>
-      <timestamp>2013-11-07T22:52:48Z</timestamp>
+      <id>5567</id>
+      <parentid>3999</parentid>
+      <timestamp>2014-02-22T02:39:36Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Setup */</comment>
-      <text xml:space="preserve" bytes="10182">{{Header}}
+      <text xml:space="preserve" bytes="10273">{{#seo:
+|description=Anonymously Hosting any Tor Hidden Services any Server with Whonix
+}}
+{{Header}}
 = Tor Hidden Services - EASY =
 
 == Introduction ==
@@ -4055,7 +4066,7 @@ Hidden Services with Whonix are still safer than running Tor and the server soft
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>2tk18t4uvore967dqdusmd5fdtxpcip</sha1>
+      <sha1>548eobldzd96wjk8av7cexi57odmg6x</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -12657,15 +12668,17 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>118</id>
     <revision>
-      <id>5356</id>
-      <parentid>5354</parentid>
-      <timestamp>2014-02-15T06:02:19Z</timestamp>
+      <id>5568</id>
+      <parentid>5356</parentid>
+      <timestamp>2014-02-22T02:41:52Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Development */</comment>
-      <text xml:space="preserve" bytes="8406">{{Header}}
+      <text xml:space="preserve" bytes="8534">{{#seo:
+|description=Donate, Spread, Follow, Mirror, Translate, Develop, Testing. Contribute to Free Software / Open Source.
+}}
+{{Header}}
 
 = Easy / Anyone =
 == General ==
@@ -12855,7 +12868,7 @@ for places where I could need more input. Also reviewing the whole source code o
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Development]]</text>
-      <sha1>hldrdw5ou8t4fqrpkwinx6s2ylsrvua</sha1>
+      <sha1>03sv7y9m3u8anz8w1fwxtlwqt4ka80o</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -18275,14 +18288,17 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
     <ns>0</ns>
     <id>157</id>
     <revision>
-      <id>1597</id>
-      <parentid>1100</parentid>
-      <timestamp>2013-07-24T02:10:49Z</timestamp>
+      <id>5546</id>
+      <parentid>1597</parentid>
+      <timestamp>2014-02-22T02:10:33Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>Grammar fix</comment>
-      <text xml:space="preserve" bytes="2572">{{Header}}
+      <text xml:space="preserve" bytes="2696">{{#seo:
+|description=Comparison of Whonix in a VM vs Whonix with Physical Isolation with and without virtualized Gateway
+}}
+{{Header}}
 
 = Comparison of different Whonix variants =
 
@@ -18350,7 +18366,7 @@ Unless otherwise stated, the documentation and design is about the Default-Downl
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Design]]</text>
-      <sha1>l5yxy7ipirhm45zf6jgdmhc7phef1qi</sha1>
+      <sha1>rxwkrc3mkhcrhb1sociddeeq714pi6u</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -18852,14 +18868,17 @@ When you go ahead now, and ask in a cracker forum, they probably won't spread a 
     <ns>0</ns>
     <id>162</id>
     <revision>
-      <id>4855</id>
-      <parentid>4848</parentid>
-      <timestamp>2014-02-01T03:39:56Z</timestamp>
+      <id>5545</id>
+      <parentid>4855</parentid>
+      <timestamp>2014-02-22T02:06:45Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="5690">{{Header}}
+      <text xml:space="preserve" bytes="5787">{{#seo:
+|description=Technical Design and Conception of the Whonix Anonymous Operating System
+}}
+{{Header}}
 {{forkme}}
 * '''Technical Design'''
 ** [[Dev/Technical Introduction|Dev/Technical Introduction, Whonix Framework, Security Overview]]
@@ -18970,7 +18989,7 @@ When you go ahead now, and ask in a cracker forum, they probably won't spread a 
 [[Category:Design]]
 
 {{Footer}}</text>
-      <sha1>2j4xr5c3siwf3zgjogbrpkyh5620ru6</sha1>
+      <sha1>2icf3kskrc7jmmgb2nyrctgzrt4fbds</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -31050,16 +31069,17 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
     <ns>0</ns>
     <id>256</id>
     <revision>
-      <id>4981</id>
-      <parentid>4980</parentid>
-      <timestamp>2014-02-06T06:11:37Z</timestamp>
+      <id>5556</id>
+      <parentid>4981</parentid>
+      <timestamp>2014-02-22T02:23:32Z</timestamp>
       <contributor>
-        <username>Psychonot</username>
-        <id>216</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <minor/>
-      <comment>Fixing link again because I suck at wiki editting :3</comment>
-      <text xml:space="preserve" bytes="2862">{{Header}}
+      <text xml:space="preserve" bytes="2961">{{Header}}
+{{#seo:
+|description=Twitter, Facebook, G+ and other Official Social Network Profiles by Whonix
+}}
 = Whonix Social Media Profiles =
 
 There are some Whonix Social Media Profiles, but please don't rely on them for getting Whonix News (See [[Download#Stay Tuned|News]] for how to get Whonix related news.) and please don't use them to contact Whonix developers. (See [[Contact]] for contact information.)
@@ -31102,7 +31122,7 @@ If you don't get into trouble, by letting others to know, that you like or use W
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>qabvecug2ceiefmm0egywlud9sd27uk</sha1>
+      <sha1>nvg5iki4b4vpaxv3f8v57n0witud6sx</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -33863,14 +33883,17 @@ SIGQUIT (Issued if the user sends a quit signal (Ctrl + D).) Well, I think Ctrl 
     <ns>0</ns>
     <id>287</id>
     <revision>
-      <id>3065</id>
-      <parentid>3063</parentid>
-      <timestamp>2013-10-04T03:40:17Z</timestamp>
+      <id>5558</id>
+      <parentid>3065</parentid>
+      <timestamp>2014-02-22T02:26:35Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="1282">{{Header}}
+      <text xml:space="preserve" bytes="1312">{{#seo:
+|description=Whonix Developer Portal, Hacking Whonix, Developing Whonix
+}}
+{{Header}}
 {{forkme}}
 = Building =
 
@@ -33895,8 +33918,6 @@ See [[Dev/Build Documentation]].
 ** [[Dev/Design-Gateway]]
 ** [[Dev/Design-Workstation]]
 * [[Design|Technical Design]]
-* [[Dev/Changelog]]
-* [[Dev/Changelog Next Version]]
 * [[Dev/Source_Code_Intro#Debugging|Useful stuff for debugging]]
 * [[Dev/Redistribution|Redistributing Whonix]]
 * [[Dev/Source_Code_Intro#Porting|Porting (some random notes interesting for someone planing to port Whonix update debs to rpm)]]
@@ -33905,7 +33926,7 @@ See [[Dev/Build Documentation]].
 {{Footer}}
 
 [[Category:Development]]</text>
-      <sha1>szvk4q6ypsx07lg496su3b8h60k8cyq</sha1>
+      <sha1>81jm0mng1revjr285f5947vbj7qolwq</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -41490,14 +41511,17 @@ if (window.attachEvent) window.attachEvent('onload', async_load); else window.ad
     <ns>0</ns>
     <id>413</id>
     <revision>
-      <id>2234</id>
-      <parentid>2052</parentid>
-      <timestamp>2013-08-10T11:17:22Z</timestamp>
+      <id>5557</id>
+      <parentid>2234</parentid>
+      <timestamp>2014-02-22T02:24:30Z</timestamp>
       <contributor>
-        <username>Anon</username>
-        <id>10</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="671">{{Header}}
+      <text xml:space="preserve" bytes="779">{{#seo:
+|description=Whonix Public Mailing Lists (mailman), Development Mailing List, Users Mailing List
+}}
+{{Header}}
 
 === whonix-users ===
 The user focused mailing list.
@@ -41516,7 +41540,7 @@ The development focused mailing list.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>kn89z3u7mm9iisfmung87h14hupxgse</sha1>
+      <sha1>3boz86fq6cl1tf6ioyzm87vnty45sdq</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -43590,15 +43614,17 @@ Do not remove {{Code2|...-postinst}} packages.
     <ns>0</ns>
     <id>475</id>
     <revision>
-      <id>5355</id>
-      <parentid>5336</parentid>
-      <timestamp>2014-02-15T05:58:34Z</timestamp>
+      <id>5555</id>
+      <parentid>5355</parentid>
+      <timestamp>2014-02-22T02:19:44Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Support */</comment>
-      <text xml:space="preserve" bytes="2989">{{Header}}
+      <text xml:space="preserve" bytes="3050">{{#seo:
+|description=Various Ways to get Help with Whonix
+}}
+{{Header}}
 
 = Support =
 * When the Tor Browser download script is failing, use the [https://www.whonix.org/forum/ Whonix User Forum]. Since many users are affected when it breaks, there is probably already an existing topic.
@@ -43648,7 +43674,7 @@ Be careful with the advice you are getting in public places. Get a second opinio
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>d6hau2qm56mtskttgmwiqg01r74z8io</sha1>
+      <sha1>mqs93zvbix7n7sazm599mrurc49f2yn</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -43702,13 +43728,14 @@ Be careful with the advice you are getting in public places. Get a second opinio
     <ns>0</ns>
     <id>478</id>
     <revision>
-      <id>5399</id>
-      <parentid>3993</parentid>
-      <timestamp>2014-02-15T21:02:32Z</timestamp>
+      <id>5571</id>
+      <parentid>5569</parentid>
+      <timestamp>2014-02-22T02:51:53Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>Added a tip to work with extra resolutions on Virtualbox</comment>
+      <comment>answered</comment>
       <text xml:space="preserve" bytes="3670">{{Header}}
 
 = Higher Screen Resolution without installing VirtualBox guest additions =
@@ -50311,15 +50338,15 @@ Whonix is produced independently of, and carries no guarantee from, The Tor Proj
     <ns>0</ns>
     <id>541</id>
     <revision>
-      <id>5350</id>
-      <parentid>5347</parentid>
-      <timestamp>2014-02-14T10:19:37Z</timestamp>
+      <id>5550</id>
+      <parentid>5350</parentid>
+      <timestamp>2014-02-22T02:12:47Z</timestamp>
       <contributor>
         <username>FuzzyBot</username>
         <id>37</id>
       </contributor>
       <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="4984">{{Header}}
+      <text xml:space="preserve" bytes="4978">{{Header}}
 
 &lt;languages /&gt;
 {{#seo:
@@ -50329,7 +50356,7 @@ Whonix is produced independently of, and carries no guarantee from, The Tor Proj
 {{Infobox OS
 | logo                   = [[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|alt=Download Whonix]]
 | name                   = Whonix
-| screenshot             = [[Image:kde0_5_0.png|Whonix-Workstation 0.5.6 with KDE Desktop|200px]]
+| screenshot             = [[Image:kde0_5_0.png|Whonix-Workstation with KDE Desktop|200px]]
 | caption                = Whonix-Workstation 0.5.6 with KDE Desktop
 | developer              = none / Whonix developers
 | family                 = [https://en.wikipedia.org/wiki/Unix-like Unix-like], based on [https://en.wikipedia.org/wiki/Debian Debian]
@@ -50388,7 +50415,7 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
 ---&gt;
 {{Footer}}
 [[Category:Documentation]]</text>
-      <sha1>htx4jk9jy49l0p3cgqy9v6m29ji87d5</sha1>
+      <sha1>8p5oguk2q96r7f5ls350zcbfh25yro4</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -50492,18 +50519,18 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
     <ns>1198</ns>
     <id>547</id>
     <revision>
-      <id>5349</id>
-      <parentid>4691</parentid>
-      <timestamp>2014-02-14T10:19:37Z</timestamp>
+      <id>5549</id>
+      <parentid>5349</parentid>
+      <timestamp>2014-02-22T02:12:47Z</timestamp>
       <contributor>
         <username>FuzzyBot</username>
         <id>37</id>
       </contributor>
       <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="2445">{{Infobox OS
+      <text xml:space="preserve" bytes="2439">{{Infobox OS
 | logo                   = [[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|alt=Download Whonix]]
 | name                   = Whonix
-| screenshot             = [[Image:kde0_5_0.png|Whonix-Workstation 0.5.6 with KDE Desktop|200px]]
+| screenshot             = [[Image:kde0_5_0.png|Whonix-Workstation with KDE Desktop|200px]]
 | caption                = Whonix-Workstation 0.5.6 with KDE Desktop
 | developer              = none / Whonix developers
 | family                 = [https://en.wikipedia.org/wiki/Unix-like Unix-like], based on [https://en.wikipedia.org/wiki/Debian Debian]
@@ -50523,7 +50550,7 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
 | preceded_by            = [https://trac.torproject.org/projects/tor/wiki/doc/JanusVM JanusVM]&lt;ref&gt;http://www.webcitation.org/6IA21tFaM&lt;/ref&gt;; [http://www.makeuseof.com/tag/browse-email-safely-anonymously-torbox/ TorBOX]&lt;ref&gt;http://www.webcitation.org/6IA20bIq5&lt;/ref&gt;
 | supported_platforms    = x86 compatible and/or VirtualBox + &lt;ref&gt;[[Other Operating Systems|Custom-Workstation]]: self made builds can run on any real or virtual hardware as long as they are behind a Whonix-Gateway. Tor Browser binaries are only available for a limited number of platforms (Windows, Linux, BSD, Mac).&lt;/ref&gt;
 }}</text>
-      <sha1>7rpye88dh3oltmwmj3x68v5yo70zarr</sha1>
+      <sha1>mmsi3bej8hvewmnxnoh6iovmp3rr9fh</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -56059,15 +56086,15 @@ Den Haftungsausschluss (Disclaimer) finden Sie [[Disclaimer|hier]].</text>
     <ns>0</ns>
     <id>700</id>
     <revision>
-      <id>5351</id>
-      <parentid>5343</parentid>
-      <timestamp>2014-02-14T10:19:55Z</timestamp>
+      <id>5548</id>
+      <parentid>5351</parentid>
+      <timestamp>2014-02-22T02:11:48Z</timestamp>
       <contributor>
         <username>FuzzyBot</username>
         <id>37</id>
       </contributor>
       <comment>Updating to match new version of source page</comment>
-      <text xml:space="preserve" bytes="4904">{{Header}}
+      <text xml:space="preserve" bytes="4898">{{Header}}
 
 &lt;languages /&gt;
 {{#seo:
@@ -56077,7 +56104,7 @@ Den Haftungsausschluss (Disclaimer) finden Sie [[Disclaimer|hier]].</text>
 {{Infobox OS
 | logo                   = [[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|alt=Download Whonix]]
 | name                   = Whonix
-| screenshot             = [[Image:kde0_5_0.png|Whonix-Workstation 0.5.6 with KDE Desktop|200px]]
+| screenshot             = [[Image:kde0_5_0.png|Whonix-Workstation with KDE Desktop|200px]]
 | caption                = Whonix-Workstation 0.5.6 with KDE Desktop
 | developer              = none / Whonix developers
 | family                 = [https://en.wikipedia.org/wiki/Unix-like Unix-like], based on [https://en.wikipedia.org/wiki/Debian Debian]
@@ -56135,7 +56162,7 @@ Thanks für den MAT public domain screenshot an [https://www.awxcnx.de/handbuch_
 ---&gt;
 {{Footer}}
 [[Category:Documentation]]</text>
-      <sha1>glebn8wv45urb5vnaf26nqqi8968qbp</sha1>
+      <sha1>q7h6wbhmspk287ulwgn48hgr9izlo2x</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -57599,15 +57626,15 @@ sudo -E ./build-steps.d/1100_prepare-build-machine --bare-metal --tor-gateway
     <ns>0</ns>
     <id>755</id>
     <revision>
-      <id>5344</id>
-      <parentid>5240</parentid>
-      <timestamp>2014-02-14T09:18:38Z</timestamp>
+      <id>5547</id>
+      <parentid>5344</parentid>
+      <timestamp>2014-02-22T02:11:29Z</timestamp>
       <contributor>
         <username>FuzzyBot</username>
         <id>37</id>
       </contributor>
       <comment>Updating to match new version of source page</comment>
-      <text xml:space="preserve" bytes="7049">{{Header}}
+      <text xml:space="preserve" bytes="6387">{{Header}}
 
 &lt;languages /&gt;
 {{#seo:
@@ -57617,26 +57644,25 @@ sudo -E ./build-steps.d/1100_prepare-build-machine --bare-metal --tor-gateway
 {{Infobox OS
 | logo                   = [[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|alt=Download Whonix]]
 | name                   = Whonix
-| screenshot             = [[Image:kde0_5_0.png|Whonix-Workstation 0.5.6 с рабочим столом KDE|200px]]
-| caption                = Whonix-Workstation 0.5.6 с рабочим столом KDE
-| developer              = нет / Разработчики Whonix
-| family                 = [https://en.wikipedia.org/wiki/Unix-like Unix-подобная], на основе [https://en.wikipedia.org/wiki/Debian Debian]
-| source_model           = [https://en.wikipedia.org/wiki/Open_source
-Открытый исходный код]
-| working_state          = разрабатывается
-| released               = 29 февраля 2012
+| screenshot             = [[Image:kde0_5_0.png|Whonix-Workstation with KDE Desktop|200px]]
+| caption                = Whonix-Workstation 0.5.6 with KDE Desktop
+| developer              = none / Whonix developers
+| family                 = [https://en.wikipedia.org/wiki/Unix-like Unix-like], based on [https://en.wikipedia.org/wiki/Debian Debian]
+| source_model           = [https://en.wikipedia.org/wiki/Open_source Open Source] 
+| working_state          = active
+| released               = 29 Feb 2012
 | latest_release_version = [[Download|{{Version}}]]
 | latest_release_date    = {{Start date and age|2013|10|11|df=yes}}
 | latest_test_version    = 7.7.2
 | latest_test_date       = {{Start date and age|2014|01|13|df=yes}}
-| marketing target       = marketing target       = Анонимность; Конфиденциальность; Безопасность; Приватность; [[HostingLocationHiddenServices|Location Hidden Servers]]
-| kernel_type            = [https://en.wikipedia.org/wiki/Monolithic_kernel Монолитное] ([https://en.wikipedia.org/wiki/Linux_kernel Ядро Linux])
+| marketing target       = Anonymity; Privacy; Security; Personal computing; [[HostingLocationHiddenServices|Location Hidden Servers]]
+| kernel_type            = [https://en.wikipedia.org/wiki/Monolithic_kernel Monolithic] ([https://en.wikipedia.org/wiki/Linux_kernel Linux kernel])
 | ui                     = [https://en.wikipedia.org/wiki/KDE KDE]
-| license                = [https://en.wikipedia.org/wiki/Free_software Свободное ПО], главным образом [https://en.wikipedia.org/wiki/GNU_GPL GNU GPL], и другие лицензии &lt;ref&gt;{{cite web|url=http://www.debian.org/legal/licenses/|title=License information|publisher=Debian|accessdate=2009-02-28}}&lt;/ref&gt;
-| website                = [https://www.whonix.org https]; &lt;html&gt;&lt;a class=&quot;link-https&quot; style=&quot;color: #3366BB&quot; href=&quot;http://zo7fksnun4b4v4jv.onion&quot; rel=&quot;nofollow&quot;&gt;.onion&lt;/a&gt;&lt;/html&gt;
-| updatemodel            = [https://en.wikipedia.org/wiki/Advanced_Packaging_Tool APT] (имеется несколько программ для обновления)
+| license                = [https://en.wikipedia.org/wiki/Free_software Free software], mainly the [https://en.wikipedia.org/wiki/GNU_GPL GNU GPL], and other licenses&lt;ref&gt;{{cite web|url=http://www.debian.org/legal/licenses/|title=License information|publisher=Debian|accessdate=2009-02-28}}&lt;/ref&gt;
+| website                = [https://www.whonix.org https]; &lt;html&gt;&lt;a class=&quot;link-https&quot; style=&quot;color: #3366BB&quot; href=&quot;http://kkkkkkkkkk63ava6.onion&quot; rel=&quot;nofollow&quot;&gt;.onion&lt;/a&gt;&lt;/html&gt;
+| updatemodel            = [https://en.wikipedia.org/wiki/Advanced_Packaging_Tool APT] (several front-ends available)
 | preceded_by            = [https://trac.torproject.org/projects/tor/wiki/doc/JanusVM JanusVM]&lt;ref&gt;http://www.webcitation.org/6IA21tFaM&lt;/ref&gt;; [http://www.makeuseof.com/tag/browse-email-safely-anonymously-torbox/ TorBOX]&lt;ref&gt;http://www.webcitation.org/6IA20bIq5&lt;/ref&gt;
-| supported_platforms    = x86 compatible and/or VirtualBox + &lt;ref&gt;[[Other Operating Systems|Workstation-собственной-сборки]]: собственные сборки могут работать на любом реальном или виртуальном аппаратном обеспечении при условии, что они соединяются с Интернетом через Whonix-Gateway (Whonix-шлюз). Уже скомпилированные запускаемые файлы предлагаются только для ограниченного числа платформ (Windows, Linux, BSD, Mac).&lt;/ref&gt;
+| supported_platforms    = x86 compatible and/or VirtualBox + &lt;ref&gt;[[Other Operating Systems|Custom-Workstation]]: self made builds can run on any real or virtual hardware as long as they are behind a Whonix-Gateway. Tor Browser binaries are only available for a limited number of platforms (Windows, Linux, BSD, Mac).&lt;/ref&gt;
 }}
 
 [[Image:whonix.jpg|center|Замысел Whonix|400px]]
@@ -57678,7 +57704,7 @@ Image:donate.png|link=Donate|[[Donate|Финансово поддержать Wh
 &lt;!--- &lt;a href=&quot;https://plus.google.com/108150429836421683225&quot; rel=&quot;publisher&quot;&gt;Google+&lt;/a&gt; ---&gt;
 {{Footer}}
 [[Category:Documentation]]</text>
-      <sha1>lmif271wvfm1twzu53b6ppd5mgzpiz0</sha1>
+      <sha1>6e8hzdefecczv9xss93zgo2ja98bbsb</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -60768,6 +60794,25 @@ From there follow the steps as you previously did and build the image you still 
       <comment>MsUpload</comment>
       <text xml:space="preserve" bytes="8">MsUpload</text>
       <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>HostingLocationHiddenServices</title>
+    <ns>0</ns>
+    <id>868</id>
+    <redirect title="Hosting Location Hidden Services" />
+    <revision>
+      <id>5563</id>
+      <timestamp>2014-02-22T02:31:52Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>Adrelanos moved page [[HostingLocationHiddenServices]] to [[Hosting Location Hidden Services]]</comment>
+      <text xml:space="preserve" bytes="46">#REDIRECT [[Hosting Location Hidden Services]]</text>
+      <sha1>fvp3bg55pv143z6zbu0vu24h0dh9ysb</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
