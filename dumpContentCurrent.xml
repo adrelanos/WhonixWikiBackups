@@ -14069,16 +14069,15 @@ When you are using them at the same time, the risks explained in the introductio
     <ns>0</ns>
     <id>127</id>
     <revision>
-      <id>4741</id>
-      <parentid>4587</parentid>
-      <timestamp>2014-01-14T17:38:52Z</timestamp>
+      <id>5582</id>
+      <parentid>4741</parentid>
+      <timestamp>2014-02-23T21:40:15Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <username>Troubadour</username>
+        <id>230</id>
       </contributor>
-      <minor/>
-      <comment>Text replace - &quot;Portions Copyright (C) 2012 adrelanos &lt;adrelanos at riseup dot net&gt;&quot; to &quot;Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;&quot;</comment>
-      <text xml:space="preserve" bytes="36035">{{Header}}
+      <comment>Added an AppArmor profile for TBB.</comment>
+      <text xml:space="preserve" bytes="39621">{{Header}}
 &lt;!--
 Copyright:
 
@@ -14576,6 +14575,147 @@ Run.
 
 That's it.
 
+=== Tor Browser Bundle (TBB) ===
+Create a file /etc/apparmor.d/home.user.tor-browser_en-US.Browser.firefox.
+
+&lt;pre&gt;
+kdesudo kwrite /etc/apparmor.d/home.user.tor-browser_en-US.Browser.firefox
+&lt;/pre&gt;
+
+&lt;pre&gt;
+#include &lt;tunables/global&gt;
+
+/home/user/tor-browser_en-US/Browser/firefox {
+	#include &lt;abstractions/base&gt;
+	#include &lt;abstractions/user-tmp&gt;
+	#include &lt;abstractions/bash&gt;
+	
+	capability sys_ptrace,
+
+	network,
+	network tcp,
+
+	deny /etc/host.conf r,
+	deny /etc/hosts r,
+	deny /etc/nsswitch.conf r,
+	deny /etc/resolv.conf r,
+	deny /proc/9881/mountinfo r,
+	deny @{HOME}/.config/user-dirs.dirs r,
+	deny @{HOME}/.gtk-bookmarks r,
+	deny @{HOME}/.local/share/recently-used.xbel* rw,
+
+	/bin/dash rix,
+	/bin/open rix,
+	/bin/ps rix,		
+	
+	/dev/dri/card0 rw,
+	/dev/vboxuser rw,
+	/dev/tty r,
+
+	/etc/drirc r,
+	/etc/X11/cursors/* r,
+	/etc/fonts/** r,
+	/etc/mime.types r,
+	/etc/mailcap r,
+	deny /etc/passwd r,
+	deny /etc/resolv.conf.whonix r,
+	deny /etc/hosts.whonix r,
+	/etc/pkcs11/modules/ r,
+	/etc/pkcs11/modules/* r,
+
+	owner @{HOME}/tor-browser_en-US/ r,
+	owner @{HOME}/tor-browser_en-US/.cache/ cx,
+	owner @{HOME}/tor-browser_en-US/* rw, 
+	owner @{HOME}/tor-browser_en-US/.mozilla/ w,
+	owner @{HOME}/tor-browser_en-US/.mozilla/*/ w,
+	owner @{HOME}/tor-browser_en-US/Browser/** r,
+	owner @{HOME}/tor-browser_en-US/Browser/*.so mr,
+	owner @{HOME}/tor-browser_en-US/Browser/browser/components/*.so mr,
+	owner @{HOME}/tor-browser_en-US/Browser/components/*.so mr,
+	owner @{HOME}/tor-browser_en-US/Browser/firefox rix,
+	owner @{HOME}/tor-browser_en-US/Data/Browser/ r,
+	owner @{HOME}/tor-browser_en-US/Data/Browser/** rwk,
+	owner @{HOME}/tor-browser_en-US/Desktop/ rw,
+	owner @{HOME}/tor-browser_en-US/Desktop/** rw,
+	owner @{HOME}/tor-browser_en-US/Downloads/ rw,
+	owner @{HOME}/tor-browser_en-US/Downloads/** rw,
+	owner @{HOME}/tor-browser_en-US/Tor/tor Px,
+
+	
+	/sys/devices/system/cpu/ r,
+	/sys/devices/system/cpu/* r,
+
+	/tmp/.X0-lock r,
+
+	## Looks like a nvidia audio driver.
+	deny /usr/lib/i386-linux-gnu/dri/swrast_dri.so m,
+
+	## Alphabets libraries (32bit).
+	/usr/lib/i386-linux-gnu/pango/1.6.0/modules/* m,
+
+	/usr/lib/i386-linux-gnu/pkcs11/* m,
+	/usr/bin/kde4-config rix,
+	
+	/usr/share/ r,
+	/usr/share/fonts/ r,
+	/usr/share/fonts/** r,
+	/usr/share/icons/ r,
+	/usr/share/icons/** r,
+	/usr/share/mime/ r,
+	/usr/share/mime/** r,
+	/usr/share/pixmaps/ r,
+	/usr/share/pixmaps/** r,
+	/usr/share/themes/ r,
+	/usr/share/themes/** r,
+
+	/usr/share/kde4/config/kdeglobals r,
+	/usr/share/whonix/kde/share/config/kdeglobals r,
+
+	deny /usr/share/applications/** r,
+
+	/var/cache/fontconfig/* r,
+
+	/var/lib/dbus/machine-id r,
+
+	## In 'Edit/Preferences', set 'Saves files to' -&gt; 'Downloads'.	
+	owner @{HOME}/Downloads/* rw,
+
+	owner @{HOME}/.Xauthority r,
+	owner @{HOME}/.local/share/applications/mimeapps.list r,
+	owner @{HOME}/.icons/ r,
+	owner @{HOME}/.icons/** r,
+	owner @{HOME}/.local/share/icons/ r,
+	owner @{HOME}/.themes/** r,
+	deny owner @{HOME}/.local/share/gvfs-metadata/home r,
+	owner @{HOME}/.cache/ r,
+	owner @{HOME}/.cache/* rwk,
+	/home/user/.kde/share/config/gtkrc-2.0 r,
+
+	@{PROC} r,
+	@{PROC}/[0-9]*/maps r,
+	@{PROC}/tty/drivers r,
+	deny @{PROC}/[0-9]*/mounts r,
+	deny @{PROC}/[0-9]*/mountinfo r,
+	@{PROC}/[0-9]*/stat r,
+	@{PROC}/[0-9]*/status r,
+	@{PROC}/[0-9]*/task/*/stat r,
+	@{PROC}/[0-9]*/cmdline r,
+	@{PROC}/[0-9]*/fd/ r,
+	@{PROC}/cpuinfo r,
+	@{PROC}/filesystems r,
+	@{PROC}/meminfo r,
+	@{PROC}/stat r,
+	@{PROC}/sys/kernel/pid_max r,
+	@{PROC}/uptime r,
+}
+&lt;/pre&gt;
+
+&lt;pre&gt;
+sudo aa-enforce /etc/apparmor.d/home.user.tor-browser_en-US.Browser.firefox
+&lt;/pre&gt;
+
+The profile is in use (under test).
+
 === Additional inspiration ===
 Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/AppArmor in Debian]):
 
@@ -14719,7 +14859,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>5r7cbgdrl6ytvqdzgmxbppzaxlucb6g</sha1>
+      <sha1>o4ptlngj1zqicezntvxk2kskqk37s4e</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -54152,15 +54292,15 @@ From there follow the steps as you previously did and build the image you still 
     <ns>0</ns>
     <id>685</id>
     <revision>
-      <id>5149</id>
-      <parentid>5147</parentid>
-      <timestamp>2014-02-10T04:19:39Z</timestamp>
+      <id>5580</id>
+      <parentid>5149</parentid>
+      <timestamp>2014-02-23T13:22:00Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
       <comment>/* KVM Setup Instructions */</comment>
-      <text xml:space="preserve" bytes="7244">{{Header}}
+      <text xml:space="preserve" bytes="7312">{{Header}}
 
 '''UNFINISHED!'''
 
@@ -54194,6 +54334,11 @@ These instructions are incomplete. Please see [[Dev/KVM]] and help us completing
 }}
 
 It is highly recommended you use the GUI VirtualMachineManager package to configure your vm for simplicity and ease of use.
+
+&lt;pre&gt;
+sudo apt-get update
+sudo apt-get install virt-manager
+&lt;/pre&gt;
 
 === Convert ===
 Converting is only required if you want to use the stable version of Whonix. No longer required for testers-only versions, see: &lt;br /&gt;
@@ -54274,7 +54419,7 @@ Not enabling SPICE from the beginning, will prevent the spice channel device fro
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>s4j4mqdqndsztmgy0denilch5ib6ny2</sha1>
+      <sha1>96fk4kxoz5rqxit8v29j0s1y481zm0z</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -55128,15 +55273,14 @@ Countless hours of Whonix development time were wasted on file permissions.
     <ns>0</ns>
     <id>693</id>
     <revision>
-      <id>5460</id>
-      <parentid>4617</parentid>
-      <timestamp>2014-02-17T10:56:57Z</timestamp>
+      <id>5581</id>
+      <parentid>5460</parentid>
+      <timestamp>2014-02-23T16:50:56Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Current Situation */</comment>
-      <text xml:space="preserve" bytes="2342">{{Header}}
+      <text xml:space="preserve" bytes="2438">{{Header}}
 
 = Current Situation =
 [[Download]]able Whonix versions come with KDE installed by default. It is possible to uninstall KDE, although doing so is a bit difficult, especially if you want to uninstall all of it and/or to to use a CLI version and/or to install their own desktop environment such as Gnome, LXDE, etc.
@@ -55157,13 +55301,16 @@ Related FAQ:
 
 * [[FAQ#Why_is_KDE_.28big.29_the_default_desktop_environment.3F_Why_not_use_a_minimal_DE.3F|Why is KDE (big) the default desktop environment? Why not use a minimal DE?]]
 
-== Footnotes ==
+= See Also =
+* [[Whonix Debian Packages|Whonix Debian Packages, which ones are safe to remove?]]
+
+= Footnotes =
 &lt;references/&gt;
 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>8rl12qky57lnna0wqs4vaqc3vjsayra</sha1>
+      <sha1>jw0c3dt3jhy5jrnz0azp4tgdcaw3a71</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
