@@ -14069,15 +14069,15 @@ When you are using them at the same time, the risks explained in the introductio
     <ns>0</ns>
     <id>127</id>
     <revision>
-      <id>5582</id>
-      <parentid>4741</parentid>
-      <timestamp>2014-02-23T21:40:15Z</timestamp>
+      <id>5588</id>
+      <parentid>5587</parentid>
+      <timestamp>2014-02-24T10:11:41Z</timestamp>
       <contributor>
-        <username>Troubadour</username>
-        <id>230</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>Added an AppArmor profile for TBB.</comment>
-      <text xml:space="preserve" bytes="39621">{{Header}}
+      <comment>/* Tor Browser Bundle (TBB) */</comment>
+      <text xml:space="preserve" bytes="39620">{{Header}}
 &lt;!--
 Copyright:
 
@@ -14437,9 +14437,9 @@ We must not end up with non-standard desktop resolution, as per [[Protocol-Leak-
 === Introduction ===
 Whonix isn't a perfectly hardened system. Additional hardening would be very welcome. At the same time, hardening by default is very difficult. That's why this is outside the scope of the Whonix Anonymous Operating System project, unless the project gets serious amounts of help with it. Hardening is left to the upstream operating system. See [[Dev/Operating System]] for details.
 
-'''Experimental.''' The worst thing that can happen is probably, that Pidgin won't work, but since you can always remove the profile, no big deal. If you value your application data profiles, backup them beforehand.
-
 === Pidgin ===
+{{AppArmorProfileWarning}}
+
 Create a file /etc/apparmor.d/usr.bin.pidgin.
 
 &lt;pre&gt;
@@ -14576,6 +14576,8 @@ Run.
 That's it.
 
 === Tor Browser Bundle (TBB) ===
+{{AppArmorProfileWarning}}
+
 Create a file /etc/apparmor.d/home.user.tor-browser_en-US.Browser.firefox.
 
 &lt;pre&gt;
@@ -14710,11 +14712,12 @@ kdesudo kwrite /etc/apparmor.d/home.user.tor-browser_en-US.Browser.firefox
 }
 &lt;/pre&gt;
 
+Run
 &lt;pre&gt;
 sudo aa-enforce /etc/apparmor.d/home.user.tor-browser_en-US.Browser.firefox
 &lt;/pre&gt;
 
-The profile is in use (under test).
+[https://www.whonix.org/forum/index.php?action=profile;u=24 troubadour] created this profile. You can discuss it in this [https://www.whonix.org/forum/index.php/topic,24.0.html forum thread].
 
 === Additional inspiration ===
 Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/AppArmor in Debian]):
@@ -14859,7 +14862,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>o4ptlngj1zqicezntvxk2kskqk37s4e</sha1>
+      <sha1>34n0b271vt0jjwufge5lyxw9p1sblfw</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -60983,6 +60986,30 @@ From there follow the steps as you previously did and build the image you still 
       <comment>Adrelanos moved page [[HostingLocationHiddenServices]] to [[Hosting Location Hidden Services]]</comment>
       <text xml:space="preserve" bytes="46">#REDIRECT [[Hosting Location Hidden Services]]</text>
       <sha1>fvp3bg55pv143z6zbu0vu24h0dh9ysb</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:AppArmorProfileWarning</title>
+    <ns>10</ns>
+    <id>869</id>
+    <revision>
+      <id>5585</id>
+      <timestamp>2014-02-24T09:49:25Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;{{mbox | type       = critical | image      = [[File:Ambox_warning_pn.svg.png|40px|alt=Warning]] | text       =  Experimental: The following AppArmor profile is still experime...&quot;</comment>
+      <text xml:space="preserve" bytes="379">{{mbox
+| type       = critical
+| image      = [[File:Ambox_warning_pn.svg.png|40px|alt=Warning]]
+| text       = 
+Experimental:
+The following AppArmor profile is still experimental. The worst thing that can happen is probably, that Pidgin won't work, but since you can always remove the profile, no big deal. If you value your application data profiles, backup them beforehand.
+}}</text>
+      <sha1>b0249wt7tbs6s2q4bzmsexuuhvtddt6</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
