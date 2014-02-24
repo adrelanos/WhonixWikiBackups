@@ -684,14 +684,14 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>19</id>
     <revision>
-      <id>5337</id>
-      <parentid>5285</parentid>
-      <timestamp>2014-02-13T17:58:18Z</timestamp>
+      <id>5655</id>
+      <parentid>5622</parentid>
+      <timestamp>2014-02-24T19:34:47Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <text xml:space="preserve" bytes="22332">{{Header}}
+      <comment>/* apt-get Hash Sum mismatch */</comment>
+      <text xml:space="preserve" bytes="23223">{{Header}}
 &lt;!--
 Copyright:
 
@@ -746,12 +746,12 @@ This wiki page is a fork of the Tails Download page, from this exact source &lt;
 | text       = 
 Warning:
 
-&lt;!--T:4--&gt;
+&lt;!--T:92--&gt;
 * If you don't know what a metadata or a man-in-the-middle attack is.
 * If you think nobody can eavesdrop on your communications because you are using Tor.
 * If you have no idea about how Whonix works.
 
-&lt;!--T:5--&gt;
+&lt;!--T:93--&gt;
 Then, have a look at the [[About]], [[Warning]] and [[DoNot|Do Not]] pages to make sure that Whonix is the right tool for you and you understand well its limitations.
 }}
 
@@ -956,7 +956,31 @@ In case you are interested in Whonix source code updates, [[Dev/git#subscribe_to
 
 = Known bugs = &lt;!--T:55--&gt;
 == Normal ==
-=== Connection Issues - Tor stops working after an Upgrade and needs a Workaround ===
+=== apt-get Hash Sum mismatch ===
+If you get a hash sum mismatch when updating through sudo apt-get update then deleting the package lists should solve it. A hash sum mismatch can look like:
+
+&lt;pre&gt;
+W: Failed to fetch http://ftp.us.debian.org/debian/dists/testing/contrib/i18n/Translation-enIndex  Hash Sum mismatch
+&lt;/pre&gt;
+
+&lt;!--T:94--&gt;
+To delete the package lists, run:
+&lt;pre&gt;
+sudo rm -fR /var/lib/apt/lists/*
+&lt;/pre&gt;
+
+&lt;!--T:95--&gt;
+To make sure everything works like it should, update your package lists and upgrade your distro. Chances are that your previous update/upgrade attempts have failed due to the mismatch.
+
+&lt;!--T:96--&gt;
+&lt;pre&gt;
+sudo apt-get update &amp;&amp; apt-get dist-upgrade
+&lt;/pre&gt;
+
+&lt;!--T:97--&gt;
+(Source &lt;ref&gt;http://askubuntu.com/questions/41605/trouble-downloading-updates-due-to-hash-sum-mismatch-error&lt;/ref&gt;)
+
+=== Connection Issues - Tor stops working after an Upgrade and needs a Workaround === &lt;!--T:98--&gt;
 When upgrading to Tor 0.2.4.19-1~d79.jessie+1 (using sudo apt-get dist-upgrade), your Tor connection may go down. There is a temporary workaround.
 
 &lt;!--T:74--&gt;
@@ -1060,9 +1084,10 @@ This is because torproject deprecated that repository. That was to be expected. 
 &lt;!--T:89--&gt;
 Taking action isn't important at this stage. You can comment it out (by putting a # in front of it) in /etc/apt/sources.list.d/torproject.list if you want. ({{Code|kdesudo kate /etc/apt/sources.list.d/torproject.list}} for graphical Whonix-Gateway or {{Code|sudo nano /etc/apt/sources.list.d/torproject.list}} for terminal-only Whonix-Gateway) If you don't do it, it will be auto fixed with next upgrade of Whonix.
 
-=== There is no public key available for the following key IDs ===
+=== There is no public key available for the following key IDs === &lt;!--T:99--&gt;
 The message &quot;{{Code2|There is no public key available for the following key IDs}}&quot; is not necessarily an error. It might be just a warning/information.
 
+&lt;!--T:100--&gt;
 &lt;pre&gt;
 sudo apt-get update
 ...
@@ -1072,13 +1097,16 @@ W: There is no public key available for the following key IDs:
 9C131AD3713AAEEF
 &lt;/pre&gt;
 
+&lt;!--T:101--&gt;
 Check the exit code of apt-get.
 
+&lt;!--T:102--&gt;
 &lt;pre&gt;
 echo $?
 0
 &lt;/pre&gt;
 
+&lt;!--T:103--&gt;
 When it's 0, there is no problem. This is due to key transition, because Whonix's repository is currently signed with the old and the new signing key.
 
 === Defunct Desktop Shortcuts === &lt;!--T:90--&gt;
@@ -1129,7 +1157,7 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>5cwoez33ep8cz04mwf1tsgvw8dpjl8i</sha1>
+      <sha1>lmcz12dq3hs291cocdda0edu5ign99c</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -7675,15 +7703,14 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
     <ns>0</ns>
     <id>96</id>
     <revision>
-      <id>5537</id>
-      <parentid>5536</parentid>
-      <timestamp>2014-02-20T21:19:30Z</timestamp>
+      <id>5657</id>
+      <parentid>5656</parentid>
+      <timestamp>2014-02-24T19:43:44Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Circumvention */</comment>
-      <text xml:space="preserve" bytes="77445">{{Header}}
+      <text xml:space="preserve" bytes="77859">{{Header}}
 {{#seo:
 |description=Comparison of Whonix, Tails, Tor Browser Bundle, QubesOS TorVM and corridor. About anonymity, privacy, security, circumvention, attacks, fingerprinting, usability, features, etc.
 }}
@@ -7935,19 +7962,19 @@ This page contains the comparisons of Whonix, Tails, Tor Browser and Qubes OS To
 | Manually
 | {{Yes}} 
 |-
-| style=&quot;height: 27px;background-color: #f9f9f9&quot;| Enforces Stream Isolation when one of X workstations are compromised in default configuration &lt;ref name=xworkstations&gt;In case workstation x1, x2, ..., xn are behind the same gateway y.&lt;/ref&gt;
+| style=&quot;height: 27px;background-color: #f9f9f9&quot;| Enforces Stream Isolation when one of X Workstations behind the same Gateway are compromised in default configuration &lt;ref name=xworkstations&gt;In case workstation x1, x2, ..., xn are behind the same gateway y.&lt;/ref&gt;
 | {{No}}
-| {{No}}
-| {{No}}
+| {{BlueBackground}} Not a gateway.
+| {{BlueBackground}} Not a gateway.
 | {{No}}
 | {{Yes}} &lt;ref name=uptotheclienttobuildtorcircuits&gt;Since it's up to the clients behind corridor-Gateway to build their own Tor circuits.&lt;/ref&gt;
 |-
 | style=&quot;height: 27px;background-color: #f9f9f9&quot;| Can enforce Stream Isolation when one of X workstations are compromised with special configuration &lt;ref name=xworkstations /&gt;
 | {{Yes}} &lt;ref&gt;By using [[Multiple_Whonix-Workstations#Multiple_Whonix-Gateways|Multiple Whonix-Gateways]] or by using [[Connections_between_Whonix-Gateway_and_Whonix-Workstation|encrypted and/or authenticated Connection Between Whonix-Gateway and Whonix-Workstation]].&lt;/ref&gt;
-| (?)
-| {{No}}
+| {{BlueBackground}} Not a gateway.
+| {{BlueBackground}} Not a gateway.
 | {{Yes}} &lt;ref&gt;By running multiple TorVMs.&lt;/ref&gt;
-| {{Yes}} &lt;ref&gt;Enforces Stream Isolation when one of X workstations are compromised in default configuration, see above.&lt;/ref&gt;
+| {{Yes}} &lt;ref&gt;Enforces Stream Isolation when one of X Workstations behind the same Gateway are compromised in default configuration, see above.&lt;/ref&gt;
 |-
 | style=&quot;height: 27px;background-color: #f9f9f9&quot;| Stream isolation in Tor Browser
 | {{No}} &lt;ref name=browser /&gt;
@@ -8800,7 +8827,7 @@ Knowledge assumed:
 | {{Yes}}
 | {{Yes}}
 | {{Yes}}
-| ?
+| {{No}} &lt;ref name=qubessystemrequriements&gt;[http://www.qubes-os.org/trac/wiki/SystemRequirements Qubes OS system requirements]&lt;/ref&gt;
 |-
 | style=&quot;height: 27px;background-color: #f9f9f9&quot;| Works on 64 bit PCs
 | {{Yes}}
@@ -8812,7 +8839,7 @@ Knowledge assumed:
 | {{Yes}}
 | {{Yes}}
 | {{Yes}}
-| ?
+| {{No}} &lt;ref name=qubessystemrequriements /&gt;
 |-
 | style=&quot;height: 27px;background-color: #f9f9f9&quot;| 64 bit builds
 | style=&quot;height: 27px;background-color:{{Yellow}}&quot;| Could be manually created. &lt;ref&gt;TODO: Still lacks 64 bit guest builds. 64 bit builds would offer more ALSR entropy, would safe some memory ([https://www.virtualbox.org/manual/ch04.html#guestadd-pagefusion page fusion?]) and provide more performance.&lt;/ref&gt; &lt;ref name=64bitfromsourcecode /&gt;
@@ -8824,7 +8851,7 @@ Knowledge assumed:
 | {{Yes}} &lt;ref name=64bitfromsourcecode&gt;Building them from source is already supported, see [[Dev/Source_Code_Intro#Debugging|Build Configuration]].&lt;/ref&gt;
 | ?
 | ?
-| ?
+| {{Yes}} &lt;ref&gt;[http://www.qubes-os.org/trac/wiki/QubesBuilder QubesBuilder]&lt;/ref&gt;
 |-
 | style=&quot;height: 27px;background-color: #f9f9f9&quot;| Host Kernel
 | When using VMs, can be any supporting VirtualBox.; When using Physical Isolation: Not applicable.
@@ -8836,7 +8863,7 @@ Knowledge assumed:
 | {{Yes}}
 | {{Yes}}
 | {{BlueBackground}} Not an operating system. Up to the user.
-| ?
+| {{No}}
 |-
 | style=&quot;height: 27px;background-color: #f9f9f9&quot;| 686-pae Kernel
 | {{Yes}}
@@ -8976,7 +9003,7 @@ One has always to be very careful, when talking about others. Especially, when t
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Design]]</text>
-      <sha1>77rdi67n1n7rn2tq03e98rbmhekrpnc</sha1>
+      <sha1>hykuf85asxdxm1c3ab4wbjh6uwv8293</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -12667,14 +12694,15 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>118</id>
     <revision>
-      <id>5568</id>
-      <parentid>5356</parentid>
-      <timestamp>2014-02-22T02:41:52Z</timestamp>
+      <id>5616</id>
+      <parentid>5602</parentid>
+      <timestamp>2014-02-24T15:22:41Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="8534">{{#seo:
+      <comment>/* Donate */</comment>
+      <text xml:space="preserve" bytes="5247">{{#seo:
 |description=Donate, Spread, Follow, Mirror, Translate, Develop, Testing. Contribute to Free Software / Open Source.
 }}
 {{Header}}
@@ -12701,74 +12729,7 @@ Join the [https://www.whonix.org/forum/ Whonix User Forum]. You could subscribe 
 Join IRC room [irc://irc.oftc.net/whonix #Whonix on irc.oftc.net] ([https://webirc.oftc.net:8443/?channels=Whonix Webchat]).
 
 == Donate ==
-&lt;!-------------------------bank wire, PayPal------------------------&gt;
-{|style=&quot;border-spacing:8px; margin:0px -8px;&quot;
-|class=&quot;MainPageBG&quot; style=&quot;width:55%; border:1px solid #cef2e0; background:#f5fffa; vertical-align:top; color:#000;&quot;|
-{|width=&quot;100%&quot; cellpadding=&quot;2&quot; cellspacing=&quot;5&quot; style=&quot;vertical-align:top; background:#f5fffa;&quot;
-! &lt;h3 style=&quot;margin:0; background:#cef2e0; font-size:120%; font-weight:bold; border:1px solid #a3bfb1; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;bank wire&lt;/h3&gt;
-|-
-|style=&quot;color:#000;&quot;| 
-&lt;pre&gt;
-Patrick Schleizer
-IBAN: DE77500100600320473603
-BIC: PBNKDEFF
-&lt;/pre&gt;
-|-
-! &lt;h3 style=&quot;margin:0; background:#cef2e0; font-size:120%; font-weight:bold; border:1px solid #a3bfb1; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;PayPal&lt;/h3&gt;
-|-
-|style=&quot;color:#000;&quot;| 
-&lt;pre&gt;
-patrick_schleizer@web.de
-&lt;/pre&gt;
-|-
-! &lt;h3 style=&quot;margin:0; background:#cef2e0; font-size:120%; font-weight:bold; border:1px solid #a3bfb1; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Other method?&lt;/h3&gt;
-|-
-|style=&quot;color:#000;&quot;| 
-Ask [mailto:patrick_schleizer@web.de Patrick Schleizer] if available.
-&lt;pre&gt;
-patrick_schleizer@web.de
-&lt;/pre&gt;
-|-
-
-|-
-|}&lt;!--
-
-&lt;--------------------------------Bitcoin, Litecoin-------------------------------&gt;
-|class=&quot;MainPageBG&quot; style=&quot;width:45%; border:1px solid #cedff2; background:#f5faff; vertical-align:top&quot;|
-{| width=&quot;100%&quot; cellpadding=&quot;2&quot; cellspacing=&quot;5&quot; style=&quot;vertical-align:top; background:#f5faff;&quot;
-! &lt;h3 style=&quot;margin:0; background:#cedff2; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Bitcoin&lt;/h3&gt;
-|-
-|style=&quot;color:#000;&quot;|
-[[Image:BC_Rnd_64px.png|150px|link=bitcoin:1JgzCCSox56Sh4NnQJqRiwoxKi8oVSZBEd]] [[File:whonix-donate-qr-code.gif|QR Code|100px]]
-
-bitcoin:1JgzCCSox56Sh4NnQJqRiwoxKi8oVSZBEd
-
-&lt;pre&gt;
-1JgzCCSox56Sh4NnQJqRiwoxKi8oVSZBEd
-&lt;/pre&gt;
-
-|-
-! &lt;h3 style=&quot;margin:0; background:#cedff2; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Litecoin&lt;/h3&gt;
-|-
-|style=&quot;color:#000;&quot;| 
-[[File:Litecoin_Accepted_Here.png|150px|link=litecoin:LW3wgQtZhtR2G5Uv48rSzonFd1arhUfjE9ff]]
-
-&lt;pre&gt;
-LW3wgQtZhtR2G5Uv48rSzonFd1arhUfjE9
-&lt;/pre&gt;
-
-litecoin:LW3wgQtZhtR2G5Uv48rSzonFd1arhUfjE9ff
-|-
-|}
-|}
-
-If you appreciate Patrick Schleizer's work on Whonix, want to say thanks and support further maintenance, support, development and hosting, please donate. It will keep Patrick Schleizer motivated. It is no secret, that the money could be spend on amusements as a tiny compensation for the countless hours of research and development.
-
-Patrick Schleizer would like to buy better and more hardware for testing. This would speed up development and improve quality assurance.
-
-If you want to pay for getting a new feature, this may be possible as well, please get in [[Contact#For_private_inquiries|Contact]] to talk about the details.
-
-If you don't have any Bitcoins and want to donate non-anonymously, you could use a Web Wallet service such as [https://coinbase.com/ Coinbase]. While Coinbase requires a US bank account, there are other exchanges, which allow to easily pay by bank wire and to forward the money to the Bitcoin address of your choice. Please get in [[Contact#For_Donations|Contact]] if you would like to donate but don't know how.
+{{Donate}}
 
 = Testing =
 Whonix needs more people to test new Whonix features, bug fixes and so on.
@@ -12867,7 +12828,7 @@ for places where I could need more input. Also reviewing the whole source code o
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Development]]</text>
-      <sha1>03sv7y9m3u8anz8w1fwxtlwqt4ka80o</sha1>
+      <sha1>gwqfh0liy39gzla31xb35hq2bb73s12</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -40150,17 +40111,21 @@ Sourceforge support, ctsai-sf on freenode in #sourceforge said, they use GeoIP f
     <title>Donate</title>
     <ns>0</ns>
     <id>374</id>
-    <redirect title="Contribute" />
     <revision>
-      <id>1474</id>
-      <timestamp>2013-07-17T19:21:10Z</timestamp>
+      <id>5610</id>
+      <parentid>5606</parentid>
+      <timestamp>2014-02-24T12:56:55Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>Redirected page to [[Contribute#Donate]]</comment>
-      <text xml:space="preserve" bytes="31">#REDIRECT [[Contribute#Donate]]</text>
-      <sha1>ha46tareo9m60i3z6nk7acvv39q5j2z</sha1>
+      <text xml:space="preserve" bytes="44">__NOTOC__
+{{Header}}
+
+{{Donate}}
+
+{{Footer}}</text>
+      <sha1>r0zyu3wgdadqwbm3dpkvbjem8n7j2zh</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -50824,14 +50789,15 @@ Image:donate.png|link=Donate|[[Donate|Donate to Whonix!]]
     <ns>0</ns>
     <id>554</id>
     <revision>
-      <id>5428</id>
-      <parentid>5426</parentid>
-      <timestamp>2014-02-16T14:22:28Z</timestamp>
+      <id>5650</id>
+      <parentid>5642</parentid>
+      <timestamp>2014-02-24T16:54:01Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <username>FuzzyBot</username>
+        <id>37</id>
       </contributor>
-      <text xml:space="preserve" bytes="21982">{{Header}}
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="21544">{{Header}}
 &lt;!--
 Copyright:
 
@@ -50864,6 +50830,9 @@ The complete text of the GNU General Public License can also be found online on 
 This wiki page is a fork of the Tails Download page, from this exact source &lt;http://git.immerda.ch/?p=amnesia.git;a=blob;f=wiki/src/download.html;hb=19d48ad8b7d23548aae126ed6cb873c91255f876&gt;.
 --&gt;
 &lt;languages /&gt;
+{{#seo:
+|description=Download Whonix. Anonymity online. Privacy protection.
+}}
 = First time user? =
 {{Anchor|Landing}}
 
@@ -51035,26 +51004,17 @@ You should regularly check for operating system updates on your host operating s
 
 [[Image:whonixcheck_gui.png|[[whonixcheck]]|thumb]]
 
-Функция автообновления Tor-браузера на данный момент не реализована.
-[[whonixcheck]] будет информировать вас о появлении новых версий
-Tor-браузера. Встроенный в Tor-браузер механизм проверки наличия
-обновлений также работает и в Whonix. Для получения инструкций по
-обновлению браузера см. [[Tor Browser]]. Дополнительно также советуем
-подписаться на новости по ссылке https://blog.torproject.org.
+There is no auto-update feature for Tor Browser. You will be notified about new Tor Browser versions by [[whonixcheck]]. Tor Browser's built in update check mechanism also works in Whonix. For instructions how to update the browser, see [[Tor Browser]]. Additionally it might also be wise to subscribe to https://blog.torproject.org for news.
 
-[[File:whonixcheck created by adrelanos.png|thumb|{{Code|Проверка версии Whonix}} (первый прямоугольник чёрного цвета) и&lt;br /&gt;{{Code|Новости
-Whonix}} &lt;br /&gt;(второй прямоугольник зелёного цвета)]] Также, благодаря {{Code|Проверке версии Whonix}} вы будете получать автоматические уведомления о новых версиях и о самых важных событиях &lt;ref&gt;, например, о том, что версия перестала поддерживаться, или о том, что требуется какое-либо действие, перестали работать какие-либо функции или были обнаружены уязвимости в системе обеспечения безопасности. Согласно замыслу необходимость в пользовании {{Code|Новостями Whonix}} сведена к минимуму.&lt;/ref&gt; за счёт {{Code|Новостей Whonix}}, они являются частью [[whonixcheck|whonix-проверки]].
+== Whonix Version Check and Whonix News ==
+[[File:whonixcheck created by adrelanos.png|thumb|{{Code|Whonix Version Check}} (first rectangle in black) and&lt;br /&gt;{{Code|Whonix News}} &lt;br /&gt;(second rectangle in green)]]
+Furthermore you will be automatically notified about new Whonix versions by {{Code|Whonix Version Check}} and about the most important occurrences&lt;ref&gt;Such as when a version becomes unsupported, if manual action is required, if major features break, or if security vulnerabilities are found. The policy is to use {{Code|Whonix News}} as rarely as possible.&lt;/ref&gt; by {{Code|Whonix News}}, both of which are part of [[whonixcheck]].
 
 == Social Media Profiles ==
 
 There are some [[Official Whonix Online Profiles|Whonix Social Media Profiles]], but please don't rely on them for getting Whonix News and please don't use them to contact Whonix developers. (See [[Contact]] for contact information.)
 
-Вследствие того, что некоторые люди будут пользоваться группами
-социальных сетей даже вопреки нашим рекомендациям, сообщения Блога
-функций Whonix будут автоматически отражаться на
-[https://twitter.com/Whonix Whonix Twitter Profile],
-[https://www.facebook.com/Whonix Whonix Facebook Profile] и на
-[https://plus.google.com/108150429836421683225/ Whonix Google+ Profile].
+Because some people will do so even though it is not recommended, messages from the Whonix Feature Blog will be automatically mirrored to [https://twitter.com/Whonix Whonix Twitter Profile], to [https://www.facebook.com/Whonix Whonix Facebook Profile] and to [https://plus.google.com/108150429836421683225/ Whonix Google+ Profile].
 
 If you won't get into trouble by letting others learn about Whonix, feel free to follow or like those profiles (with your anonymous account) as a little way to [[Contribute]].
 
@@ -51064,6 +51024,21 @@ In case you are interested in Whonix source code updates, [[Dev/git#subscribe_to
 
 = Known bugs =
 == Normal ==
+=== apt-get Hash Sum mismatch ===
+Deleting package lists should solve it.
+
+&lt;pre&gt;
+sudo rm -fR /var/lib/apt/lists/*
+&lt;/pre&gt;
+
+Then run.
+
+&lt;pre&gt;
+sudo apt-get update
+&lt;/pre&gt;
+
+(Source &lt;ref&gt;http://askubuntu.com/questions/41605/trouble-downloading-updates-due-to-hash-sum-mismatch-error&lt;/ref&gt;)
+
 === Connection Issues - Tor stops working after an Upgrade and needs a Workaround ===
 When upgrading to Tor 0.2.4.19-1~d79.jessie+1 (using sudo apt-get dist-upgrade), your Tor connection may go down. There is a temporary workaround.
 
@@ -51107,13 +51082,10 @@ After manually upgrading Tor Browser (see above)... To start Tor Browser, got to
 /home/user/tor-browser_en-US/start-tor-browser
 &lt;/pre&gt;
 
-=== Проблемы с использованием Общих папок в VirtualBox ===
-С последним ядром Linux функция &quot;Общие папки&quot; не работает. (Корень
-проблемы в связке Debian/Virtual Box, а не в Whonix). (Информация о
-проблеме уже была направлена соответствующим людям пользователем ОС Debian.)
+=== Virtual Box Shared Folder Issues ===
+Shared Folders aren’t working with the latest Linux kernel. (This is a Debian/Virtual Box issue, not caused by Whonix. Has already been reported to upstream by a Debian user.)
 
-Существующие способы обхода, дополнительная информация и др. изложены в
-Форуме помощи пользователю Whonix в ветке:
+Possible workarounds, more information, etc. can be found in the Whonix User Help Forum discussion thread:
 [[Special:AWCforum/st/id261/VirtualBox_shared_directories_on....html]]
 
 === Enigmail Encryption ===
@@ -51152,6 +51124,27 @@ See also [[Security_Guide#Recommendation_to_install_latest_security_updates_on_a
 This is because torproject deprecated that repository. That was to be expected. The repository we're using now is already preconfigured (in /etc/apt/sources.list.d/torproject.list).
 
 Taking action isn't important at this stage. You can comment it out (by putting a # in front of it) in /etc/apt/sources.list.d/torproject.list if you want. ({{Code|kdesudo kate /etc/apt/sources.list.d/torproject.list}} for graphical Whonix-Gateway or {{Code|sudo nano /etc/apt/sources.list.d/torproject.list}} for terminal-only Whonix-Gateway) If you don't do it, it will be auto fixed with next upgrade of Whonix.
+
+=== There is no public key available for the following key IDs ===
+The message &quot;{{Code2|There is no public key available for the following key IDs}}&quot; is not necessarily an error. It might be just a warning/information.
+
+&lt;pre&gt;
+sudo apt-get update
+...
+Reading package lists... Done
+...
+W: There is no public key available for the following key IDs:
+9C131AD3713AAEEF
+&lt;/pre&gt;
+
+Check the exit code of apt-get.
+
+&lt;pre&gt;
+echo $?
+0
+&lt;/pre&gt;
+
+When it's 0, there is no problem. This is due to key transition, because Whonix's repository is currently signed with the old and the new signing key.
 
 === Defunct Desktop Shortcuts ===
 The desktop shortcuts Tor Browser, Contribute, Forum, Documentation, Donate won't work until there is an upgrade of Whonix. Please manually visit these pages. How to start Tor Browser has already been explained above.
@@ -51194,7 +51187,7 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>oe6arnf25wama0gf3kjiu5alf3rue38</sha1>
+      <sha1>kjhd613rd52mgrxgq3xtqnr29ydvj3z</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -51741,16 +51734,18 @@ See also [[Security_in_Real_World | Whonix security in real world]], [[Security_
     <ns>1198</ns>
     <id>570</id>
     <revision>
-      <id>5245</id>
-      <parentid>4256</parentid>
-      <timestamp>2014-02-10T18:44:46Z</timestamp>
+      <id>5639</id>
+      <parentid>5245</parentid>
+      <timestamp>2014-02-24T16:44:57Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <username>FuzzyBot</username>
+        <id>37</id>
       </contributor>
-      <text xml:space="preserve" bytes="1191">[[File:whonixcheck created by adrelanos.png|thumb|{{Code|Проверка версии Whonix}} (первый прямоугольник чёрного цвета) и&lt;br /&gt;{{Code|Новости
-Whonix}} &lt;br /&gt;(второй прямоугольник зелёного цвета)]] Также, благодаря {{Code|Проверке версии Whonix}} вы будете получать автоматические уведомления о новых версиях и о самых важных событиях &lt;ref&gt;, например, о том, что версия перестала поддерживаться, или о том, что требуется какое-либо действие, перестали работать какие-либо функции или были обнаружены уязвимости в системе обеспечения безопасности. Согласно замыслу необходимость в пользовании {{Code|Новостями Whonix}} сведена к минимуму.&lt;/ref&gt; за счёт {{Code|Новостей Whonix}}, они являются частью [[whonixcheck|whonix-проверки]].</text>
-      <sha1>1litiql5zwo674jjhi1bnf7syqlgfzn</sha1>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="646">== Whonix Version Check and Whonix News ==
+[[File:whonixcheck created by adrelanos.png|thumb|{{Code|Whonix Version Check}} (first rectangle in black) and&lt;br /&gt;{{Code|Whonix News}} &lt;br /&gt;(second rectangle in green)]]
+Furthermore you will be automatically notified about new Whonix versions by {{Code|Whonix Version Check}} and about the most important occurrences&lt;ref&gt;Such as when a version becomes unsupported, if manual action is required, if major features break, or if security vulnerabilities are found. The policy is to use {{Code|Whonix News}} as rarely as possible.&lt;/ref&gt; by {{Code|Whonix News}}, both of which are part of [[whonixcheck]].</text>
+      <sha1>q7uiwbvevrfku5k7g5y5v1iq3kz13cf</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -51943,16 +51938,20 @@ sudo apt-get dist-upgrade
     <ns>1198</ns>
     <id>580</id>
     <revision>
-      <id>4266</id>
-      <timestamp>2013-12-16T16:37:40Z</timestamp>
+      <id>5641</id>
+      <parentid>4266</parentid>
+      <timestamp>2014-02-24T16:47:04Z</timestamp>
       <contributor>
         <username>FuzzyBot</username>
         <id>37</id>
       </contributor>
       <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="39">= First time user? =
+      <text xml:space="preserve" bytes="118">{{#seo:
+|description=Download Whonix. Anonymity online. Privacy protection.
+}}
+= First time user? =
 {{Anchor|Landing}}</text>
-      <sha1>54fboyfqfj7gidv0gr0aix74t1hnipf</sha1>
+      <sha1>mvpndpww4i25ujkvtnymovlueq4xrb2</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -51962,20 +51961,16 @@ sudo apt-get dist-upgrade
     <ns>1198</ns>
     <id>581</id>
     <revision>
-      <id>5421</id>
-      <parentid>5241</parentid>
-      <timestamp>2014-02-16T14:21:00Z</timestamp>
+      <id>5637</id>
+      <parentid>5421</parentid>
+      <timestamp>2014-02-24T16:44:03Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <username>FuzzyBot</username>
+        <id>37</id>
       </contributor>
-      <text xml:space="preserve" bytes="666">Функция автообновления Tor-браузера на данный момент не реализована.
-[[whonixcheck]] будет информировать вас о появлении новых версий
-Tor-браузера. Встроенный в Tor-браузер механизм проверки наличия
-обновлений также работает и в Whonix. Для получения инструкций по
-обновлению браузера см. [[Tor Browser]]. Дополнительно также советуем
-подписаться на новости по ссылке https://blog.torproject.org.</text>
-      <sha1>4hm05l7mvhr2ca66i5qubtw6tlje6ut</sha1>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="342">There is no auto-update feature for Tor Browser. You will be notified about new Tor Browser versions by [[whonixcheck]]. Tor Browser's built in update check mechanism also works in Whonix. For instructions how to update the browser, see [[Tor Browser]]. Additionally it might also be wise to subscribe to https://blog.torproject.org for news.</text>
+      <sha1>9hqse0lzce5vp9lcw6yyric03e0vobz</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -52150,19 +52145,19 @@ When using OpenPGP encryption in Icedove / Enigmail you might get &quot;encrypti
     <ns>1198</ns>
     <id>593</id>
     <revision>
-      <id>5133</id>
-      <parentid>4279</parentid>
-      <timestamp>2014-02-10T00:59:08Z</timestamp>
+      <id>5635</id>
+      <parentid>5133</parentid>
+      <timestamp>2014-02-24T16:43:48Z</timestamp>
       <contributor>
         <username>FuzzyBot</username>
         <id>37</id>
       </contributor>
       <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="260">= Known bugs =
+      <text xml:space="preserve" bytes="101">= Known bugs =
 == Normal ==
-=== Connection Issues - Tor stops working after an Upgrade and needs a Workaround ===
-When upgrading to Tor 0.2.4.19-1~d79.jessie+1 (using sudo apt-get dist-upgrade), your Tor connection may go down. There is a temporary workaround.</text>
-      <sha1>et9nm9s0dq7fqjnzucc4b8nq458ch8h</sha1>
+=== apt-get Hash Sum mismatch ===
+Deleting package lists should solve it.</text>
+      <sha1>7qct5g4n7gxtvk1wrb7ri28z47evhk5</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -52208,17 +52203,17 @@ When upgrading to Tor 0.2.4.19-1~d79.jessie+1 (using sudo apt-get dist-upgrade),
     <ns>1198</ns>
     <id>596</id>
     <revision>
-      <id>5427</id>
-      <parentid>4283</parentid>
-      <timestamp>2014-02-16T14:22:27Z</timestamp>
+      <id>5649</id>
+      <parentid>5427</parentid>
+      <timestamp>2014-02-24T16:54:00Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <username>FuzzyBot</username>
+        <id>37</id>
       </contributor>
-      <text xml:space="preserve" bytes="276">Существующие способы обхода, дополнительная информация и др. изложены в
-Форуме помощи пользователю Whonix в ветке:
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="177">Possible workarounds, more information, etc. can be found in the Whonix User Help Forum discussion thread:
 [[Special:AWCforum/st/id261/VirtualBox_shared_directories_on....html]]</text>
-      <sha1>ei5yz5gifzjb7xy1w58qip3xdp7equs</sha1>
+      <sha1>3mw03vp261tapw0cvdmmg4g61oo3mx8</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -52698,18 +52693,17 @@ It is important to check the integrity of the virtual machine images you downloa
     <ns>1198</ns>
     <id>622</id>
     <revision>
-      <id>5425</id>
-      <parentid>4309</parentid>
-      <timestamp>2014-02-16T14:22:03Z</timestamp>
+      <id>5631</id>
+      <parentid>5425</parentid>
+      <timestamp>2014-02-24T16:37:10Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <username>FuzzyBot</username>
+        <id>37</id>
       </contributor>
-      <text xml:space="preserve" bytes="442">=== Проблемы с использованием Общих папок в VirtualBox ===
-С последним ядром Linux функция &quot;Общие папки&quot; не работает. (Корень
-проблемы в связке Debian/Virtual Box, а не в Whonix). (Информация о
-проблеме уже была направлена соответствующим людям пользователем ОС Debian.)</text>
-      <sha1>4ffw4mjig1ophml2ugssr5mh8ya7648</sha1>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="218">=== Virtual Box Shared Folder Issues ===
+Shared Folders aren’t working with the latest Linux kernel. (This is a Debian/Virtual Box issue, not caused by Whonix. Has already been reported to upstream by a Debian user.)</text>
+      <sha1>b40z1yed0h1cjxln7x5oyd50zxoayoe</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -52947,20 +52941,16 @@ More info [http://lists.debian.org/debian-derivatives/2013/08/msg00000.html here
     <ns>1198</ns>
     <id>635</id>
     <revision>
-      <id>5423</id>
-      <parentid>5243</parentid>
-      <timestamp>2014-02-16T14:21:22Z</timestamp>
+      <id>5625</id>
+      <parentid>5423</parentid>
+      <timestamp>2014-02-24T16:35:35Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <username>FuzzyBot</username>
+        <id>37</id>
       </contributor>
-      <text xml:space="preserve" bytes="521">Вследствие того, что некоторые люди будут пользоваться группами
-социальных сетей даже вопреки нашим рекомендациям, сообщения Блога
-функций Whonix будут автоматически отражаться на
-[https://twitter.com/Whonix Whonix Twitter Profile],
-[https://www.facebook.com/Whonix Whonix Facebook Profile] и на
-[https://plus.google.com/108150429836421683225/ Whonix Google+ Profile].</text>
-      <sha1>i9pvx95ihyq91whncxstoqdayqpy3t8</sha1>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="331">Because some people will do so even though it is not recommended, messages from the Whonix Feature Blog will be automatically mirrored to [https://twitter.com/Whonix Whonix Twitter Profile], to [https://www.facebook.com/Whonix Whonix Facebook Profile] and to [https://plus.google.com/108150429836421683225/ Whonix Google+ Profile].</text>
+      <sha1>bbpupckyja81kto3eus92z3tszvde6c</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -55227,14 +55217,14 @@ For better performance. (As per [http://www.ilsistemista.net/index.php/virtualiz
     <ns>0</ns>
     <id>692</id>
     <revision>
-      <id>4610</id>
-      <parentid>4609</parentid>
-      <timestamp>2014-01-06T09:01:07Z</timestamp>
+      <id>5659</id>
+      <parentid>4610</parentid>
+      <timestamp>2014-02-24T20:05:11Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="2376">{{Header}}
+      <text xml:space="preserve" bytes="2602">{{Header}}
 
 Whonix developer adrelanos doesn't believe in [https://en.wikipedia.org/wiki/File_system_permissions file system permissions] for containing malware having already infected a system and shares Joanna Rutkowska's opinion on that. The word &quot;believe&quot; in this context has been deliberately chosen, because putting permissions into questions might start a religiously heated discussion.
 
@@ -55260,13 +55250,17 @@ The real solution is using strong isolation concepts, as Qubes OS is doing.
 
 Countless hours of Whonix development time were wasted on file permissions.
 
+http://theinvisiblethings.blogspot.fr/2011/04/linux-security-circus-on-gui-isolation.html
+
+http://git.qubes-os.org/?p=joanna/core-agent-linux.git;a=blob;f=misc/qubes.sudoers;h=8087a90a8c0a6f81d4fe45905a6aa9462de2a7ce;hb=HEAD
+
 = Footnotes =
 &lt;references /&gt;
 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>ov7k1xni4m7vdbosi8t5nz8all405az</sha1>
+      <sha1>i5x8mbwsrgu2pdrxp9tzq5fb98r6poq</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -58052,15 +58046,14 @@ Image:donate.png|link=Donate|[[Donate|Финансово поддержать Wh
     <ns>0</ns>
     <id>765</id>
     <revision>
-      <id>5476</id>
-      <parentid>5430</parentid>
-      <timestamp>2014-02-17T15:03:47Z</timestamp>
+      <id>5629</id>
+      <parentid>5624</parentid>
+      <timestamp>2014-02-24T16:37:08Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>Created page with &quot;Существующие способы обхода, дополнительная информация и др. изложены в Форуме помощи пользова...&quot;</comment>
-      <text xml:space="preserve" bytes="28084">{{Header}}
+      <text xml:space="preserve" bytes="29113">{{Header}}
 &lt;!--
 Copyright:
 
@@ -58109,9 +58102,9 @@ This wiki page is a fork of the Tails Download page, from this exact source &lt;
 | text       = 
 Warning:
 
-* Если вы не знаете, что такое метаданные или атака &quot;подслушивающей в середине&quot;.
-* Если вы думаете, что никто не может прослушивать ваши соединения вследствие того, что вы пользуетесь  Tor.
-* Если вы не понимаете того, как работает Whonix.
+* If you don't know what a metadata or a man-in-the-middle attack is.
+* If you think nobody can eavesdrop on your communications because you are using Tor.
+* If you have no idea about how Whonix works.
 
 Then, have a look at the [[About]], [[Warning]] and [[DoNot|Do Not]] pages to make sure that Whonix is the right tool for you and you understand well its limitations.
 }}
@@ -58206,7 +58199,7 @@ Warning:
 Do not continue if verification failed! You risk using infected or erroneous files! The whole point of verification is verify file integrity.
 }}
 
-Whonix virtual machine images are cryptographically signed using OpenPGP&lt;ref&gt;OpenPGP is a standard for data encryption that provides cryptographic privacy and authentication through the use of keys owned by its users.&lt;/ref&gt; by Whonix developer Patrick Schleizer.
+Образы Whonix для виртуальной машины криптографически подписаны OpenPGP &lt;ref&gt;OpenPGP является стандартом шифрования данных, обеспечивающим криптографическую приватность и идентификацию посредством использования ключей, находящихся у пользователей.&lt;/ref&gt; разработчиком Whonix.
 
 Если вы знаете, как пользоваться ключом OpenPGP, сразу скачайте [[Whonix Signing Key]] и [[#Download Whonix|подписи Whonix]].
 
@@ -58298,6 +58291,21 @@ Because some people will do so even though it is not recommended, messages from 
 === Проблемы с соединением - После обновления Tor перестаёт работать и требуется обходное решение ===
 При обновлении Tor до 0.2.4.19-1~d79.jessie+1 (командой sudo apt-get dist-upgrade), соединение с Tor может перестать работать. Существует временный метод обхода этой проблемы.
 
+&lt;pre&gt;
+sudo rm -fR /var/lib/apt/lists/*
+&lt;/pre&gt;
+
+Then run.
+
+&lt;pre&gt;
+sudo apt-get update
+&lt;/pre&gt;
+
+(Source &lt;ref&gt;http://askubuntu.com/questions/41605/trouble-downloading-updates-due-to-hash-sum-mismatch-error&lt;/ref&gt;)
+
+=== Connection Issues - Tor stops working after an Upgrade and needs a Workaround ===
+When upgrading to Tor 0.2.4.19-1~d79.jessie+1 (using sudo apt-get dist-upgrade), your Tor connection may go down. There is a temporary workaround.
+
 Откройте /etc/default/tor.
 
 &lt;pre&gt;
@@ -58380,6 +58388,27 @@ This is because torproject deprecated that repository. That was to be expected. 
 
 Taking action isn't important at this stage. You can comment it out (by putting a # in front of it) in /etc/apt/sources.list.d/torproject.list if you want. ({{Code|kdesudo kate /etc/apt/sources.list.d/torproject.list}} for graphical Whonix-Gateway or {{Code|sudo nano /etc/apt/sources.list.d/torproject.list}} for terminal-only Whonix-Gateway) If you don't do it, it will be auto fixed with next upgrade of Whonix.
 
+=== There is no public key available for the following key IDs ===
+The message &quot;{{Code2|There is no public key available for the following key IDs}}&quot; is not necessarily an error. It might be just a warning/information.
+
+&lt;pre&gt;
+sudo apt-get update
+...
+Reading package lists... Done
+...
+W: There is no public key available for the following key IDs:
+9C131AD3713AAEEF
+&lt;/pre&gt;
+
+Check the exit code of apt-get.
+
+&lt;pre&gt;
+echo $?
+0
+&lt;/pre&gt;
+
+When it's 0, there is no problem. This is due to key transition, because Whonix's repository is currently signed with the old and the new signing key.
+
 === Defunct Desktop Shortcuts ===
 The desktop shortcuts Tor Browser, Contribute, Forum, Documentation, Donate won't work until there is an upgrade of Whonix. Please manually visit these pages. How to start Tor Browser has already been explained above.
 
@@ -58421,7 +58450,7 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>n73i6nhsqidm6l183o7ac8zd3fjqy0w</sha1>
+      <sha1>tp4yhyqe3wkkxv1wdsdy5l7rppvzamv</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -58515,16 +58544,15 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
     <ns>1198</ns>
     <id>770</id>
     <revision>
-      <id>5271</id>
-      <parentid>5017</parentid>
-      <timestamp>2014-02-11T03:25:56Z</timestamp>
+      <id>5619</id>
+      <parentid>5271</parentid>
+      <timestamp>2014-02-24T16:27:34Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="370">Тогда посетите раздел [[About|About]], [[Warning|Предупреждение]] и страницы [[DoNot|НеДелайте]] для того, чтобы убедиться в том, что Whonix является подходящим для вас инструментом и вы хорошо понимаете его возможности.
-}}</text>
-      <sha1>26stjqn9oxk4ucfgvjfr2g9vg81ktim</sha1>
+      <text xml:space="preserve" bytes="367">Тогда посетите раздел [[About|About]], [[Warning|Предупреждение]] и страницы [[DoNot|НеДелайте]] для того, чтобы убедиться в том, что Whonix является подходящим для вас инструментом и вы хорошо понимаете его возможности.</text>
+      <sha1>3u6d4kfo2w2lluofs2rhyw67f5xnb3t</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -58839,15 +58867,15 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
     <ns>1198</ns>
     <id>785</id>
     <revision>
-      <id>5042</id>
-      <timestamp>2014-02-09T15:46:33Z</timestamp>
+      <id>5628</id>
+      <parentid>5042</parentid>
+      <timestamp>2014-02-24T16:37:07Z</timestamp>
       <contributor>
-        <username>Username</username>
-        <id>217</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>Created page with &quot;Образы Whonix для виртуальной машины криптографически подписаны OpenPGP&lt;ref&gt;OpenPGP является стандартом ш...&quot;</comment>
-      <text xml:space="preserve" bytes="483">Образы Whonix для виртуальной машины криптографически подписаны OpenPGP&lt;ref&gt;OpenPGP является стандартом шифрования данных, обеспечивающим криптографическую приватность и идентификацию посредством использования ключей, находящихся у пользователей.&lt;/ref&gt; разработчиком Whonix.</text>
-      <sha1>23hpp6uvle0naswt3bs162acucoabqh</sha1>
+      <text xml:space="preserve" bytes="484">Образы Whonix для виртуальной машины криптографически подписаны OpenPGP &lt;ref&gt;OpenPGP является стандартом шифрования данных, обеспечивающим криптографическую приватность и идентификацию посредством использования ключей, находящихся у пользователей.&lt;/ref&gt; разработчиком Whonix.</text>
+      <sha1>phyw1cpas7lqdxfb3l6zhnistdlynnr</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -60995,21 +61023,674 @@ From there follow the steps as you previously did and build the image you still 
     <ns>10</ns>
     <id>869</id>
     <revision>
-      <id>5585</id>
-      <timestamp>2014-02-24T09:49:25Z</timestamp>
+      <id>5611</id>
+      <parentid>5585</parentid>
+      <timestamp>2014-02-24T13:17:19Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>Created page with &quot;{{mbox | type       = critical | image      = [[File:Ambox_warning_pn.svg.png|40px|alt=Warning]] | text       =  Experimental: The following AppArmor profile is still experime...&quot;</comment>
-      <text xml:space="preserve" bytes="379">{{mbox
+      <text xml:space="preserve" bytes="389">{{mbox
 | type       = critical
 | image      = [[File:Ambox_warning_pn.svg.png|40px|alt=Warning]]
 | text       = 
 Experimental:
-The following AppArmor profile is still experimental. The worst thing that can happen is probably, that Pidgin won't work, but since you can always remove the profile, no big deal. If you value your application data profiles, backup them beforehand.
+The following AppArmor profile is still experimental. The worst thing that can happen is probably, that your application won't work, but since you can always remove the profile, no big deal. If you value your application data profiles, backup them beforehand.
 }}</text>
-      <sha1>b0249wt7tbs6s2q4bzmsexuuhvtddt6</sha1>
+      <sha1>cupzk88sis6pv6cgv5fvn68k7byajov</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Sitenotice</title>
+    <ns>8</ns>
+    <id>870</id>
+    <revision>
+      <id>5660</id>
+      <parentid>5658</parentid>
+      <timestamp>2014-02-24T20:07:55Z</timestamp>
+      <contributor>
+        <username>Fortasse</username>
+        <id>1</id>
+      </contributor>
+      <text xml:space="preserve" bytes="991">&lt;html&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+
+#banner {
+ position: relative;
+ overflow: hidden;
+ background-image:url('/w/images/0/0d/Gray-gradient1.png') bottom repeat-x;
+ margin-bottom: 0.5em !important;
+ margin-top: 0.5em !important;
+ background-color:#EEEEEE;
+ border: solid 1px #aaaaaa; 
+ height:66px;
+}
+
+#banner a.cn-full-banner-click {
+ display:block;
+ height:100%;
+ width:100%;
+ cursor: pointer;
+}
+
+
+#banner-logo {
+ position: absolute;
+ top: 8px;
+ left: 15px;
+ background-image: url(/w/images/d/d0/Donate50.png);
+ height: 50px;
+ width: 50px;
+ background-repeat: no-repeat;
+}
+
+#banner #black-text {
+ font-size: 1.1em;
+ color: black;
+ padding: 0.5em 40px 0.4em 60px;
+ line-height: 1.3em;
+ text-align: center;
+ font-weight:bold;
+}
+&lt;/style&gt;
+
+&lt;div id=&quot;banner&quot;&gt;
+
+  &lt;a class=&quot;cn-full-banner-click&quot; href=&quot;/wiki/Donate&quot; title=&quot;&quot;&gt;
+&lt;div id=&quot;banner-logo&quot;&gt;&lt;/div&gt;
+    &lt;div id=&quot;black-text&quot;&gt;
+   Whonix fundraising campaign. &lt;br /&gt; Please consider donating one dollar per month!
+     &lt;/div&gt;
+  &lt;/a&gt;
+
+
+&lt;/div&gt;
+&lt;/html&gt;</text>
+      <sha1>2ezcud1ttt03wh41djemp2g03tkwi0x</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Tt</title>
+    <ns>0</ns>
+    <id>871</id>
+    <revision>
+      <id>5590</id>
+      <timestamp>2014-02-24T11:26:00Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;&lt;html&gt; &lt;style type=&quot;text/css&quot;&gt;  #centralNotice.collapsed #{{{banner}}} {  display: none; }  #{{{banner}}} {  position: relative;  overflow: hidden;  background: url(//upload.w...&quot;</comment>
+      <text xml:space="preserve" bytes="2032">&lt;html&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+
+#centralNotice.collapsed #{{{banner}}} {
+ display: none;
+}
+
+#{{{banner}}} {
+ position: relative;
+ overflow: hidden;
+ background: url(//upload.wikimedia.org/wikipedia/commons/0/0d/Gray-gradient1.png) bottom repeat-x;
+ margin-bottom: 0.5em !important;
+ margin-top: 0.5em !important;
+ background-color:#FFFFFF;
+ border: solid 1px #aaaaaa; 
+ height:66px;
+}
+
+#{{{banner}}} a.cn-full-banner-click {
+ display:block;
+ height:100%;
+ width:100%;
+ cursor: pointer;
+}
+
+
+#{{{banner}}}-logo {
+ position: absolute;
+ top: 8px;
+ left: 15px;
+ background-image: url(//upload.wikimedia.org/wikipedia/commons/thumb/1/12/Wikimedia_logo_text_RGB.svg/50px-Wikimedia_logo_text_RGB.svg.png);
+ height: 50px;
+ width: 50px;
+ background-repeat: no-repeat;
+}
+
+#{{{banner}}} #black-text {
+ font-size: 1.1em;
+ color: black;
+ padding: 0.5em 40px 0.4em 60px;
+ line-height: 1.3em;
+ text-align: center;
+ font-weight:bold;
+}
+
+
+#{{{banner}}} div#cn-toggle-box {
+ position: absolute;
+ z-index: 98;
+ top: 2px;
+ right: 6px;
+}
+
+#{{{banner}}} div#cn-translation-link {
+ position:absolute;
+ z-index:50;
+ bottom: -4px;
+ right: 6px;
+ font-size: 0.7em;
+}
+
+#{{{banner}}} #calltoaction {
+ padding-top: 5px;
+ color: #0645ad;
+}
+
+#cn-translation-link a:link, 
+#cn-translation-link a:visited, 
+#cn-translation-link a:hover { 
+ color: black; 
+} 
+
+&lt;/style&gt;
+
+&lt;div id=&quot;{{{banner}}}&quot;&gt;
+
+  &lt;a class=&quot;cn-full-banner-click&quot; href=&quot;{{{link}}}&quot; title=&quot;&quot;&gt;
+&lt;div id=&quot;{{{banner}}}-logo&quot;&gt;&lt;/div&gt;
+    &lt;div id=&quot;black-text&quot;&gt;
+   This is a Test. &lt;br /&gt; And this is line two.
+     &lt;/div&gt;
+  &lt;/a&gt;
+&lt;div id=&quot;cn-translation-link&quot;&gt;
+&lt;a href=&quot;//meta.wikimedia.org/w/index.php?title=Special:Translate&amp;group=Centralnotice-tgroup-ChangeToU2014_v1&amp;filter=&quot; class=&quot;black-text2&quot;&gt;
+			[ {{int:centralnotice-shared-help-translate}} ]
+		&lt;/a&gt;
+&lt;/div&gt;
+ &lt;div id=&quot;cn-toggle-box&quot;&gt;
+  &lt;a href=&quot;#&quot; title=&quot;Close&quot; onclick=&quot;mw.centralNotice.hideBanner();return false;&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;//upload.wikimedia.org/wikipedia/foundation/2/20/CloseWindow19x19.png&quot; alt=&quot;{{{close}}}&quot;&gt;&lt;/a&gt;  
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;/html&gt;</text>
+      <sha1>15qi8ga83c9w4ld91xysocnqnm7c9ct</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:CloseWindow19x19.png</title>
+    <ns>6</ns>
+    <id>872</id>
+    <revision>
+      <id>5593</id>
+      <timestamp>2014-02-24T11:34:41Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:Gray-gradient1.png</title>
+    <ns>6</ns>
+    <id>873</id>
+    <revision>
+      <id>5594</id>
+      <timestamp>2014-02-24T11:34:43Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:Donate50.png</title>
+    <ns>6</ns>
+    <id>874</id>
+    <revision>
+      <id>5597</id>
+      <timestamp>2014-02-24T11:48:52Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Donate</title>
+    <ns>10</ns>
+    <id>875</id>
+    <revision>
+      <id>5617</id>
+      <parentid>5615</parentid>
+      <timestamp>2014-02-24T15:26:53Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <text xml:space="preserve" bytes="3682">Donations are used to allow Whonix developer Patrick Schleizer to work full time on Whonix and to pay for whonix.org server cost. Small monthly donations are preferred. Please consider donating 1 $ or € per month. With enough small monthly donations, this will be possible.
+
+&lt;!-------------------------bank wire, PayPal------------------------&gt;
+{|style=&quot;border-spacing:8px; margin:0px -8px;&quot;
+|class=&quot;MainPageBG&quot; style=&quot;width:55%; border:1px solid #cef2e0; background:#f5fffa; vertical-align:top; color:#000;&quot;|
+{|width=&quot;100%&quot; cellpadding=&quot;2&quot; cellspacing=&quot;5&quot; style=&quot;vertical-align:top; background:#f5fffa;&quot;
+! &lt;h3 style=&quot;margin:0; background:#cef2e0; font-size:120%; font-weight:bold; border:1px solid #a3bfb1; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;bank wire&lt;/h3&gt;
+|-
+|style=&quot;color:#000;&quot;| 
+&lt;pre&gt;
+Patrick Schleizer
+IBAN: DE77500100600320473603
+BIC: PBNKDEFF
+&lt;/pre&gt;
+|-
+! &lt;h3 style=&quot;margin:0; background:#cef2e0; font-size:120%; font-weight:bold; border:1px solid #a3bfb1; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;PayPal Subscription&lt;/h3&gt;
+|-
+|style=&quot;color:#000;&quot;| 
+{{Donate by PayPal Subscription}}
+|-
+! &lt;h3 style=&quot;margin:0; background:#cef2e0; font-size:120%; font-weight:bold; border:1px solid #a3bfb1; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;PayPal Mail Address&lt;/h3&gt;
+|-
+|style=&quot;color:#000;&quot;| 
+&lt;pre&gt;
+patrick_schleizer@web.de
+&lt;/pre&gt;
+|-
+
+! &lt;h3 style=&quot;margin:0; background:#cef2e0; font-size:120%; font-weight:bold; border:1px solid #a3bfb1; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Other method?&lt;/h3&gt;
+|-
+|style=&quot;color:#000;&quot;| 
+Ask [mailto:patrick_schleizer@web.de Patrick Schleizer] if available.
+&lt;pre&gt;
+patrick_schleizer@web.de
+&lt;/pre&gt;
+|-
+
+|-
+|}&lt;!--
+
+&lt;--------------------------------Bitcoin, Litecoin-------------------------------&gt;
+|class=&quot;MainPageBG&quot; style=&quot;width:45%; border:1px solid #cedff2; background:#f5faff; vertical-align:top&quot;|
+{| width=&quot;100%&quot; cellpadding=&quot;2&quot; cellspacing=&quot;5&quot; style=&quot;vertical-align:top; background:#f5faff;&quot;
+! &lt;h3 style=&quot;margin:0; background:#cedff2; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Bitcoin&lt;/h3&gt;
+|-
+|style=&quot;color:#000;&quot;|
+[[Image:BC_Rnd_64px.png|150px|link=bitcoin:1JgzCCSox56Sh4NnQJqRiwoxKi8oVSZBEd]] [[File:whonix-donate-qr-code.gif|QR Code|100px]]
+
+bitcoin:1JgzCCSox56Sh4NnQJqRiwoxKi8oVSZBEd
+
+&lt;pre&gt;
+1JgzCCSox56Sh4NnQJqRiwoxKi8oVSZBEd
+&lt;/pre&gt;
+
+|-
+! &lt;h3 style=&quot;margin:0; background:#cedff2; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Litecoin&lt;/h3&gt;
+|-
+|style=&quot;color:#000;&quot;| 
+[[File:Litecoin_Accepted_Here.png|150px|link=litecoin:LW3wgQtZhtR2G5Uv48rSzonFd1arhUfjE9ff]]
+
+&lt;pre&gt;
+LW3wgQtZhtR2G5Uv48rSzonFd1arhUfjE9
+&lt;/pre&gt;
+
+litecoin:LW3wgQtZhtR2G5Uv48rSzonFd1arhUfjE9ff
+|-
+|}
+|}
+
+Donating Whonix full time would require ~1300 $ (or in €, ~1000 €) per month. This might sound like a lot money. It's not. Germany is expensive. ~240 € per month for rent at the town's edge, ~350 € for compulsory health insurance, 30 € electricity, ~20 € internet flatrate, ~18 € compulsory public TV (gez, rundfunkbeitrag), food, clothes, transportation, whonix.org server cost... Isn't a lot money in comparison.
+
+If you want to pay for getting a new feature, this may be possible as well, please get in [[Contact#For_private_inquiries|Contact]] to talk about the details.
+
+Please get in [[Contact#For_Donations|Contact]] if you would like to donate but don't know how.
+
+Donations aren't tax-deducible, because Whonix isn't a (non-profit) company yet.
+
+To leave feedback, you could join the [https://www.whonix.org/forum/index.php/topic,76.0.html Forum Discussion about Donations].</text>
+      <sha1>bt5kvockvn5i84uwt95xeoq7ezfv0su</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Donate by PayPal Subscription</title>
+    <ns>10</ns>
+    <id>876</id>
+    <revision>
+      <id>5614</id>
+      <parentid>5613</parentid>
+      <timestamp>2014-02-24T15:18:29Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <minor/>
+      <comment>Protected &quot;[[Template:Donate by PayPal Subscription]]&quot; ([Edit=Allow only administrators] (indefinite) [Move=Allow only administrators] (indefinite))</comment>
+      <text xml:space="preserve" bytes="4135">&lt;html&gt;
+&lt;form action=&quot;https://www.paypal.com/cgi-bin/webscr&quot; method=&quot;post&quot; target=&quot;_top&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;cmd&quot; value=&quot;_xclick-subscriptions&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;business&quot; value=&quot;patrick_schleizer@web.de&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;lc&quot; value=&quot;US&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;item_name&quot; value=&quot;Whonix Prefered Support&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;no_note&quot; value=&quot;1&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;src&quot; value=&quot;1&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;currency_code&quot; value=&quot;USD&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;bn&quot; value=&quot;PP-SubscriptionsBF:btn_subscribeCC_LG.gif:NonHostedGuest&quot;&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;input type=&quot;hidden&quot; name=&quot;on0&quot; value=&quot;Choose Your Support Level&quot;&gt;Choose Your Support Level&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;select name=&quot;os0&quot;&gt;
+	&lt;option value=&quot;Level 1&quot;&gt;Level 1 : $1.00 USD - monthly&lt;/option&gt;
+	&lt;option value=&quot;Level 2&quot;&gt;Level 2 : $2.00 USD - monthly&lt;/option&gt;
+	&lt;option value=&quot;Level 5&quot;&gt;Level 5 : $5.00 USD - monthly&lt;/option&gt;
+	&lt;option value=&quot;Level 10&quot;&gt;Level 10 : $10.00 USD - monthly&lt;/option&gt;
+	&lt;option value=&quot;Level 20&quot;&gt;Level 20 : $20.00 USD - monthly&lt;/option&gt;
+	&lt;option value=&quot;Level 50&quot;&gt;Level 50 : $50.00 USD - monthly&lt;/option&gt;
+	&lt;option value=&quot;Level 100&quot;&gt;Level 100 : $100.00 USD - monthly&lt;/option&gt;
+	&lt;option value=&quot;Level 500&quot;&gt;Level 500 : $500.00 USD - monthly&lt;/option&gt;
+	&lt;option value=&quot;Level 1000&quot;&gt;Level 1000 : $1,000.00 USD - monthly&lt;/option&gt;
+	&lt;option value=&quot;Level 2000&quot;&gt;Level 2000 : $2,000.00 USD - monthly&lt;/option&gt;
+&lt;/select&gt; &lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;currency_code&quot; value=&quot;USD&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_select0&quot; value=&quot;Level 1&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_amount0&quot; value=&quot;1.00&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_period0&quot; value=&quot;M&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_frequency0&quot; value=&quot;1&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_select1&quot; value=&quot;Level 2&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_amount1&quot; value=&quot;2.00&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_period1&quot; value=&quot;M&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_frequency1&quot; value=&quot;1&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_select2&quot; value=&quot;Level 5&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_amount2&quot; value=&quot;5.00&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_period2&quot; value=&quot;M&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_frequency2&quot; value=&quot;1&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_select3&quot; value=&quot;Level 10&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_amount3&quot; value=&quot;10.00&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_period3&quot; value=&quot;M&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_frequency3&quot; value=&quot;1&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_select4&quot; value=&quot;Level 20&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_amount4&quot; value=&quot;20.00&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_period4&quot; value=&quot;M&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_frequency4&quot; value=&quot;1&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_select5&quot; value=&quot;Level 50&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_amount5&quot; value=&quot;50.00&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_period5&quot; value=&quot;M&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_frequency5&quot; value=&quot;1&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_select6&quot; value=&quot;Level 100&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_amount6&quot; value=&quot;100.00&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_period6&quot; value=&quot;M&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_frequency6&quot; value=&quot;1&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_select7&quot; value=&quot;Level 500&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_amount7&quot; value=&quot;500.00&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_period7&quot; value=&quot;M&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_frequency7&quot; value=&quot;1&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_select8&quot; value=&quot;Level 1000&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_amount8&quot; value=&quot;1000.00&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_period8&quot; value=&quot;M&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_frequency8&quot; value=&quot;1&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_select9&quot; value=&quot;Level 2000&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_amount9&quot; value=&quot;2000.00&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_period9&quot; value=&quot;M&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_frequency9&quot; value=&quot;1&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_index&quot; value=&quot;0&quot;&gt;
+&lt;input type=&quot;image&quot; src=&quot;https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif&quot; border=&quot;0&quot; name=&quot;submit&quot; alt=&quot;PayPal - The safer, easier way to pay online!&quot;&gt;
+&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;https://www.paypalobjects.com/en_US/i/scr/pixel.gif&quot; width=&quot;1&quot; height=&quot;1&quot;&gt;
+&lt;/form&gt;
+&lt;/html&gt;</text>
+      <sha1>6yu1epwx8ij2v117z7w6fvpukmok49n</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/100/en</title>
+    <ns>1198</ns>
+    <id>877</id>
+    <revision>
+      <id>5627</id>
+      <timestamp>2014-02-24T16:36:00Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="150">&lt;pre&gt;
+sudo apt-get update
+...
+Reading package lists... Done
+...
+W: There is no public key available for the following key IDs:
+9C131AD3713AAEEF
+&lt;/pre&gt;</text>
+      <sha1>2qkgincw8d2b3dbtewbue542h1rwvir</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/99/en</title>
+    <ns>1198</ns>
+    <id>878</id>
+    <revision>
+      <id>5630</id>
+      <timestamp>2014-02-24T16:37:10Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="218">=== There is no public key available for the following key IDs ===
+The message &quot;{{Code2|There is no public key available for the following key IDs}}&quot; is not necessarily an error. It might be just a warning/information.</text>
+      <sha1>rt0i9pgh1n0mf3kupyf531465zvehyc</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/92/en</title>
+    <ns>1198</ns>
+    <id>879</id>
+    <revision>
+      <id>5633</id>
+      <timestamp>2014-02-24T16:37:39Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="201">* If you don't know what a metadata or a man-in-the-middle attack is.
+* If you think nobody can eavesdrop on your communications because you are using Tor.
+* If you have no idea about how Whonix works.</text>
+      <sha1>85vauh3mubd18b4p9ttjwk4dw33zqmg</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/102/en</title>
+    <ns>1198</ns>
+    <id>880</id>
+    <revision>
+      <id>5634</id>
+      <timestamp>2014-02-24T16:42:21Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="22">&lt;pre&gt;
+echo $?
+0
+&lt;/pre&gt;</text>
+      <sha1>4b2fm6q2uluo1cenrbjtjvg2ealq4yk</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/95/en</title>
+    <ns>1198</ns>
+    <id>881</id>
+    <revision>
+      <id>5643</id>
+      <timestamp>2014-02-24T16:48:35Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="9">Then run.</text>
+      <sha1>944xuv6fsbsm1saxja920ib5izsc123</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/93/en</title>
+    <ns>1198</ns>
+    <id>882</id>
+    <revision>
+      <id>5644</id>
+      <timestamp>2014-02-24T16:48:59Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="169">Then, have a look at the [[About]], [[Warning]] and [[DoNot|Do Not]] pages to make sure that Whonix is the right tool for you and you understand well its limitations.
+}}</text>
+      <sha1>en97xpcrihfnfk847xr278249whq6wr</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/96/en</title>
+    <ns>1198</ns>
+    <id>883</id>
+    <revision>
+      <id>5645</id>
+      <timestamp>2014-02-24T16:49:46Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="32">&lt;pre&gt;
+sudo apt-get update
+&lt;/pre&gt;</text>
+      <sha1>4x68tk7yxcss2tt67vccjb5dcmpzh47</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/103/en</title>
+    <ns>1198</ns>
+    <id>884</id>
+    <revision>
+      <id>5646</id>
+      <timestamp>2014-02-24T16:50:12Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="150">When it's 0, there is no problem. This is due to key transition, because Whonix's repository is currently signed with the old and the new signing key.</text>
+      <sha1>8606dh70w0fcbe0hraqr4vydl6sf2oi</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/97/en</title>
+    <ns>1198</ns>
+    <id>885</id>
+    <revision>
+      <id>5647</id>
+      <timestamp>2014-02-24T16:50:45Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="115">(Source &lt;ref&gt;http://askubuntu.com/questions/41605/trouble-downloading-updates-due-to-hash-sum-mismatch-error&lt;/ref&gt;)</text>
+      <sha1>5nlvejq36c0lkys3v3axf2iogianit8</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/98/en</title>
+    <ns>1198</ns>
+    <id>886</id>
+    <revision>
+      <id>5648</id>
+      <timestamp>2014-02-24T16:52:34Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="232">=== Connection Issues - Tor stops working after an Upgrade and needs a Workaround ===
+When upgrading to Tor 0.2.4.19-1~d79.jessie+1 (using sudo apt-get dist-upgrade), your Tor connection may go down. There is a temporary workaround.</text>
+      <sha1>e9xrk4mqfuoivajisiz415lohlua5iy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/101/en</title>
+    <ns>1198</ns>
+    <id>887</id>
+    <revision>
+      <id>5651</id>
+      <timestamp>2014-02-24T16:55:40Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="31">Check the exit code of apt-get.</text>
+      <sha1>lql06j58zobv6g8bjiwho6gut86nvb1</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/94/en</title>
+    <ns>1198</ns>
+    <id>888</id>
+    <revision>
+      <id>5652</id>
+      <timestamp>2014-02-24T16:56:13Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="45">&lt;pre&gt;
+sudo rm -fR /var/lib/apt/lists/*
+&lt;/pre&gt;</text>
+      <sha1>llwjdrjdwq3kz7k22l9v65ml1dx66i9</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
