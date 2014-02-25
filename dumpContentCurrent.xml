@@ -30900,15 +30900,15 @@ You can also attempt [LeakTests Leak Testing] to verify that no packets are leak
     <ns>0</ns>
     <id>254</id>
     <revision>
-      <id>4985</id>
-      <parentid>4976</parentid>
-      <timestamp>2014-02-07T18:35:47Z</timestamp>
+      <id>5676</id>
+      <parentid>4985</parentid>
+      <timestamp>2014-02-25T22:25:13Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Why is Whonix 8 based on Debian Stable, not Debian Testing? */</comment>
-      <text xml:space="preserve" bytes="13124">{{Header}}
+      <comment>/* Why don't you use  for Whonix? */</comment>
+      <text xml:space="preserve" bytes="13345">{{Header}}
 
 = Operating System =
 
@@ -30933,6 +30933,8 @@ Debian is a good compromise of security and usability.
 
 By the way, this chapter won't only include examples which fall through Whonix's threat model.
 
+Why not use a minimal Linux distribution? See [[FAQ#Why_are_the_Whonix_images_so_big.3F|Why are the Whonix images so big?]]
+
 There might be more secure operating systems, such as [http://wiki.gentoo.org/wiki/Hardened_Gentoo Hardenend] [http://www.gentoo.org/proj/en/hardened/ Genntoo], but in adrelanos' opinion mortal users are unlikely to learn how to use them. More paranoids (and others) are welcome to use them for example as host operating system and leave feedback.
 
 OpenBSD is recommended against, because it completely falls through the Whonix threat model, see FAQ entry: [[FAQ#Why_aren.27t_you_using_OpenBSD.2C_it.27s_the_most_secure_OS_ever.21.21.211.21|Why aren't you using OpenBSD, it's the most secure OS ever!!!1!]]
@@ -30946,7 +30948,7 @@ Ubuntu isn't used as Whonix-Gateway/Workstation operating system for legal reaso
 
 Mac OS X can not be used for legal reasons. Even if that were not a problem, it's still a proprietary, closed source operating system, I don't like their attitude and how they (not) communicate with the security community. Also also see: [https://krebsonsecurity.com/2011/11/apple-took-3-years-to-fix-finfisher-trojan-hole/ Apple Took 3+ Years to Fix FinFisher Trojan Hole].
 
-Alpine Linux [http://bugs.alpinelinux.org/issues/1067 doesn't package Tor yet]. Other than that, I didn't look thoroughly into it.
+[http://alpinelinux.org/ Alpine Linux] on first sight appears to have interesting security features. But they [http://bugs.alpinelinux.org/issues/1067 don't package Tor yet]. Other than that, we didn't look thoroughly into it.
 
 Fedora yet did '''not''' fall through Whonix's threat model and could be considered as host and future or alternative Whonix-Gateway/Workstation operating system. Also Qubes OS, an operating system focusing on security by isolation, is based on Fedora. Started considering it, help welcome, see [[Dev/Fedora]].
 
@@ -31035,7 +31037,7 @@ For these reasons it's not a good idea to add popcon to Whonix. If you have sugg
 {{Footer}}
 
 [[Category:Design]]</text>
-      <sha1>dc7mqq2f2425tod3giq7oka03hvf9im</sha1>
+      <sha1>kbe6t8br2po0g3boez0gqgsrsm4h0vr</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -40116,20 +40118,23 @@ Sourceforge support, ctsai-sf on freenode in #sourceforge said, they use GeoIP f
     <ns>0</ns>
     <id>374</id>
     <revision>
-      <id>5610</id>
-      <parentid>5606</parentid>
-      <timestamp>2014-02-24T12:56:55Z</timestamp>
+      <id>5670</id>
+      <parentid>5610</parentid>
+      <timestamp>2014-02-25T13:13:57Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="44">__NOTOC__
+      <text xml:space="preserve" bytes="173">__NOTOC__
 {{Header}}
 
 {{Donate}}
 
+= License =
+The subscribe button (subscribeCC_LG.gif) is copyrighted by PayPal. The pixel (pixel.gif) is copyrighted by PayPal.
+
 {{Footer}}</text>
-      <sha1>r0zyu3wgdadqwbm3dpkvbjem8n7j2zh</sha1>
+      <sha1>lu9l3l28sue5si4wr3hdmutoqzfl3xc</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -48587,14 +48592,14 @@ make clean
     <ns>0</ns>
     <id>499</id>
     <revision>
-      <id>3840</id>
-      <timestamp>2013-10-22T06:31:43Z</timestamp>
+      <id>5673</id>
+      <parentid>3840</parentid>
+      <timestamp>2014-02-25T14:13:29Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>Created page with &quot;{{Header}}  Please run the Whonix backup script every now and then. Check if the Whonix backup script changed every now and then.  &lt;pre&gt; #!/bin/bash  sudo apt-get update sudo ...&quot;</comment>
-      <text xml:space="preserve" bytes="712">{{Header}}
+      <text xml:space="preserve" bytes="866">{{Header}}
 
 Please run the Whonix backup script every now and then. Check if the Whonix backup script changed every now and then.
 
@@ -48618,6 +48623,11 @@ cd ~/whonix_backup/Whonix
 git fetch
 
 mkdir --parents ~/whonix_backup
+git clone https://github.com/Whonix/whonix-developer-meta-files
+cd ~/whonix_backup/whonix-developer-meta-files
+git fetch
+
+mkdir --parents ~/whonix_backup
 git clone https://github.com/WhonixBOT/WhonixWikiBackups
 cd ~/whonix_backup/WhonixWikiBackups
 git fetch
@@ -48626,7 +48636,7 @@ git fetch
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Development]]</text>
-      <sha1>ctjbrskdy6fvbmpbeaxkd1zkvp67ou3</sha1>
+      <sha1>np64m5otrsdj82a552pallupq9f4iwn</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -60114,14 +60124,15 @@ inspired by http://aboli.sh/
     <ns>0</ns>
     <id>849</id>
     <revision>
-      <id>5661</id>
-      <parentid>5577</parentid>
-      <timestamp>2014-02-24T23:10:49Z</timestamp>
+      <id>5672</id>
+      <parentid>5671</parentid>
+      <timestamp>2014-02-25T13:49:40Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>/* VM Creation */</comment>
-      <text xml:space="preserve" bytes="13240">{{Header}}
+      <comment>Log command doesn't work well, see: https://www.whonix.org/forum/index.php/topic,70.msg631.html#msg631</comment>
+      <text xml:space="preserve" bytes="13309">{{Header}}
 
 = Documentation =
 This is a short set of instructions for building 7.7.9.8 testers-only version of Whonix (later to be modified for Whonix 8) inside VirtualBox (as opposed to the traditional process of running these commands on a system that is installed directly on the hardware).
@@ -60563,19 +60574,20 @@ Checkout out 7.7.9.8
 
 == VM Creation ==
 
-It is recommended that you create a log of the build process by redirecting all the output to a log file. A text log file will be created in your home folder. 
+It is recommended that you create a log of the build process by redirecting all the output to a log file. Be aware that by doing so no build progress will appear on the screen - instead a text log file will be created in your home folder. 
+
 
 Build a Whonix-Gateway virtual machine image.
 
 &lt;pre&gt;
-sudo ./whonix_build --build --tor-gateway | tee -a ~/log-gateway 2&gt;&amp;1
+sudo ./whonix_build --build --tor-gateway &gt;&gt; ~/log-gateway 2&gt;&amp;1
 &lt;/pre&gt;
 
 
 Build a Whonix-Workstation virtual machine image.
 
 &lt;pre&gt;
-sudo ./whonix_build --build --tor-workstation | tee -a ~/log-workstation 2&gt;&amp;1
+sudo ./whonix_build --build --tor-workstation &gt;&gt; ~/log-workstation 2&gt;&amp;1
 &lt;/pre&gt;
 
 The resulting {{Code2|.ova}} images can be found in {{Code|~/whonix_binary}} folder.
@@ -60700,7 +60712,7 @@ From there follow the steps as you previously did and build the image you still 
 {{Footer}}
 
 [[Category:Development]]</text>
-      <sha1>tbe57so87h6iud70ujo67hqdniugdz7</sha1>
+      <sha1>8mp22xbjk2zxy6alknsewp02x2zutie</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -61378,16 +61390,14 @@ To leave feedback, you could join the [https://www.whonix.org/forum/index.php/to
     <ns>10</ns>
     <id>876</id>
     <revision>
-      <id>5614</id>
-      <parentid>5613</parentid>
-      <timestamp>2014-02-24T15:18:29Z</timestamp>
+      <id>5669</id>
+      <parentid>5614</parentid>
+      <timestamp>2014-02-25T13:10:10Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <minor/>
-      <comment>Protected &quot;[[Template:Donate by PayPal Subscription]]&quot; ([Edit=Allow only administrators] (indefinite) [Move=Allow only administrators] (indefinite))</comment>
-      <text xml:space="preserve" bytes="4135">&lt;html&gt;
+      <text xml:space="preserve" bytes="4081">&lt;html&gt;
 &lt;form action=&quot;https://www.paypal.com/cgi-bin/webscr&quot; method=&quot;post&quot; target=&quot;_top&quot;&gt;
 &lt;input type=&quot;hidden&quot; name=&quot;cmd&quot; value=&quot;_xclick-subscriptions&quot;&gt;
 &lt;input type=&quot;hidden&quot; name=&quot;business&quot; value=&quot;patrick_schleizer@web.de&quot;&gt;
@@ -61453,11 +61463,11 @@ To leave feedback, you could join the [https://www.whonix.org/forum/index.php/to
 &lt;input type=&quot;hidden&quot; name=&quot;option_period9&quot; value=&quot;M&quot;&gt;
 &lt;input type=&quot;hidden&quot; name=&quot;option_frequency9&quot; value=&quot;1&quot;&gt;
 &lt;input type=&quot;hidden&quot; name=&quot;option_index&quot; value=&quot;0&quot;&gt;
-&lt;input type=&quot;image&quot; src=&quot;https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif&quot; border=&quot;0&quot; name=&quot;submit&quot; alt=&quot;PayPal - The safer, easier way to pay online!&quot;&gt;
-&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;https://www.paypalobjects.com/en_US/i/scr/pixel.gif&quot; width=&quot;1&quot; height=&quot;1&quot;&gt;
+&lt;input type=&quot;image&quot; src=&quot;/w/images/6/69/Btn_subscribeCC_LG.gif&quot; border=&quot;0&quot; name=&quot;submit&quot; alt=&quot;PayPal - The safer, easier way to pay online!&quot;&gt;
+&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;/w/images/c/cd/Pixel.gif&quot; width=&quot;1&quot; height=&quot;1&quot;&gt;
 &lt;/form&gt;
 &lt;/html&gt;</text>
-      <sha1>6yu1epwx8ij2v117z7w6fvpukmok49n</sha1>
+      <sha1>h2orq9s1jll4qxa2e3s6k8vgk2qcx9b</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -61693,6 +61703,79 @@ When upgrading to Tor 0.2.4.19-1~d79.jessie+1 (using sudo apt-get dist-upgrade),
 sudo rm -fR /var/lib/apt/lists/*
 &lt;/pre&gt;</text>
       <sha1>llwjdrjdwq3kz7k22l9v65ml1dx66i9</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:Btn subscribeCC LG.gif</title>
+    <ns>6</ns>
+    <id>889</id>
+    <revision>
+      <id>5666</id>
+      <parentid>5665</parentid>
+      <timestamp>2014-02-25T13:05:47Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <text xml:space="preserve" bytes="67">The subscribe button (subscribeCC_LG.gif) is copyrighted by PayPal.</text>
+      <sha1>lid1d16z9ov28byjat5ci16hmedf6p5</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:Pixel.gif</title>
+    <ns>6</ns>
+    <id>890</id>
+    <revision>
+      <id>5668</id>
+      <parentid>5667</parentid>
+      <timestamp>2014-02-25T13:08:21Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <text xml:space="preserve" bytes="47">The pixel (pixel.gif) is copyrighted by PayPal.</text>
+      <sha1>ngdvqwputznjhic8nv4xeyvvkb55gdu</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>AppArmor</title>
+    <ns>0</ns>
+    <id>891</id>
+    <revision>
+      <id>5674</id>
+      <timestamp>2014-02-25T15:35:55Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>created page</comment>
+      <text xml:space="preserve" bytes="22">{{Header}}
+
+{{Footer}}</text>
+      <sha1>cqacdx6a8fi72i7nstmmasxqx0c5f29</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Category talk:Documentation</title>
+    <ns>15</ns>
+    <id>892</id>
+    <revision>
+      <id>5675</id>
+      <timestamp>2014-02-25T16:59:49Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>hey everyone</comment>
+      <text xml:space="preserve" bytes="5">hello</text>
+      <sha1>jywkymwk5kel4plcu17bdqhwzuuz3nx</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
