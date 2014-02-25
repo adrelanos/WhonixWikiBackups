@@ -9413,20 +9413,20 @@ Whether it's worth to combine Tor with a VPN, either as pre-Tor-VPN (user -&gt; 
     <ns>0</ns>
     <id>98</id>
     <revision>
-      <id>4210</id>
-      <parentid>4005</parentid>
-      <timestamp>2013-12-13T21:51:40Z</timestamp>
+      <id>5662</id>
+      <parentid>4210</parentid>
+      <timestamp>2014-02-25T03:04:44Z</timestamp>
       <contributor>
         <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* Introduction */</comment>
-      <text xml:space="preserve" bytes="20246">{{Header}}
+      <comment>too many commas!</comment>
+      <text xml:space="preserve" bytes="20243">{{Header}}
 
 = Stream Isolation =
 == Introduction ==
-If you do not explicitly take action against this and install custom applications, you risk, that different activities, let's say Web (Chromium or similar) or IRC (mIRC or similar) go through the same Tor circuit and exit relay. Even though, you would still be anonymous, i.e. the Tor exit relay would still not know your real IP/location, they can easily correlate those activities issued by different applications to the same pseudonym.
+If you do not explicitly take action against this and install custom applications, you risk that different activities, let's say Web (Chromium or similar) or IRC (mIRC or similar) go through the same Tor circuit and exit relay. Even though you would still be anonymous, i.e. the Tor exit relay would still not know your real IP/location, they can easily correlate those activities issued by different applications to the same pseudonym.
 
-The following graphic illustrates, the difference of using Tor SocksPort's compared to using Tor's TransPort. Using dedicated SocksPort's per application results in taking different routes through the Tor network per application. Not necessarily all nodes (first, second, third) get replaced by Tor. Sometimes just the first, sometimes just the second, sometimes just the third, and sometimes multiple nodes change.
+The following graphic illustrates the difference of using Tor SocksPort's compared to using Tor's TransPort. Using dedicated SocksPort's per application results in taking different routes through the Tor network per application. Not necessarily all nodes (first, second, third) get replaced by Tor. Sometimes just the first, sometimes just the second, sometimes just the third, and sometimes multiple nodes change.
 
 [[Image:stream_isolation.1.0.jpg|frame|none|alt=|Stream Isolation Graphic]]
 
@@ -9792,7 +9792,7 @@ Stream Isolation Graphic has been contributed by: Cuan Knaggs – graphic and we
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Design]]</text>
-      <sha1>knp4gglbgqm8jsf0uy2di1929tw3x0e</sha1>
+      <sha1>rrdnd5vy5a7isayx7m0zp1oehqlhkqs</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -14030,15 +14030,15 @@ When you are using them at the same time, the risks explained in the introductio
     <ns>0</ns>
     <id>127</id>
     <revision>
-      <id>5588</id>
-      <parentid>5587</parentid>
-      <timestamp>2014-02-24T10:11:41Z</timestamp>
+      <id>5663</id>
+      <parentid>5588</parentid>
+      <timestamp>2014-02-25T08:38:20Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <username>Troubadour</username>
+        <id>230</id>
       </contributor>
-      <comment>/* Tor Browser Bundle (TBB) */</comment>
-      <text xml:space="preserve" bytes="39620">{{Header}}
+      <comment>Added lines 5 lines in the porfile (# 101 to 105)</comment>
+      <text xml:space="preserve" bytes="39797">{{Header}}
 &lt;!--
 Copyright:
 
@@ -14644,6 +14644,10 @@ kdesudo kwrite /etc/apparmor.d/home.user.tor-browser_en-US.Browser.firefox
 	owner @{HOME}/Downloads/* rw,
 
 	owner @{HOME}/.Xauthority r,
+       	owner @{HOME}/.local/share/ r,
+	owner @{HOME}/.local/share/mime/ r,
+	owner @{HOME}/.local/share/mime/** r,
+	owner @{HOME}/.local/share/applications/mimeinfo.cache r,
 	owner @{HOME}/.local/share/applications/mimeapps.list r,
 	owner @{HOME}/.icons/ r,
 	owner @{HOME}/.icons/** r,
@@ -14652,7 +14656,7 @@ kdesudo kwrite /etc/apparmor.d/home.user.tor-browser_en-US.Browser.firefox
 	deny owner @{HOME}/.local/share/gvfs-metadata/home r,
 	owner @{HOME}/.cache/ r,
 	owner @{HOME}/.cache/* rwk,
-	/home/user/.kde/share/config/gtkrc-2.0 r,
+	owner @{HOME}/.kde/share/config/gtkrc-2.0 r,
 
 	@{PROC} r,
 	@{PROC}/[0-9]*/maps r,
@@ -14823,7 +14827,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>34n0b271vt0jjwufge5lyxw9p1sblfw</sha1>
+      <sha1>2dz74pkcuq0ier7s26nlp6qd9r9xop0</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -60110,15 +60114,14 @@ inspired by http://aboli.sh/
     <ns>0</ns>
     <id>849</id>
     <revision>
-      <id>5577</id>
-      <parentid>5478</parentid>
-      <timestamp>2014-02-22T18:41:17Z</timestamp>
+      <id>5661</id>
+      <parentid>5577</parentid>
+      <timestamp>2014-02-24T23:10:49Z</timestamp>
       <contributor>
-        <username>Jekyll</username>
-        <id>161</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>Added usbmount slow speed warning, 7.7.9.8 tag</comment>
-      <text xml:space="preserve" bytes="13309">{{Header}}
+      <comment>/* VM Creation */</comment>
+      <text xml:space="preserve" bytes="13240">{{Header}}
 
 = Documentation =
 This is a short set of instructions for building 7.7.9.8 testers-only version of Whonix (later to be modified for Whonix 8) inside VirtualBox (as opposed to the traditional process of running these commands on a system that is installed directly on the hardware).
@@ -60560,20 +60563,19 @@ Checkout out 7.7.9.8
 
 == VM Creation ==
 
-It is recommended that you create a log of the build process by redirecting all the output to a log file. Be aware that by doing so no build progress will appear on the screen - instead a text log file will be created in your home folder. 
-
+It is recommended that you create a log of the build process by redirecting all the output to a log file. A text log file will be created in your home folder. 
 
 Build a Whonix-Gateway virtual machine image.
 
 &lt;pre&gt;
-sudo ./whonix_build --build --tor-gateway &gt;&gt; ~/log-gateway 2&gt;&amp;1
+sudo ./whonix_build --build --tor-gateway | tee -a ~/log-gateway 2&gt;&amp;1
 &lt;/pre&gt;
 
 
 Build a Whonix-Workstation virtual machine image.
 
 &lt;pre&gt;
-sudo ./whonix_build --build --tor-workstation &gt;&gt; ~/log-workstation 2&gt;&amp;1
+sudo ./whonix_build --build --tor-workstation | tee -a ~/log-workstation 2&gt;&amp;1
 &lt;/pre&gt;
 
 The resulting {{Code2|.ova}} images can be found in {{Code|~/whonix_binary}} folder.
@@ -60698,7 +60700,7 @@ From there follow the steps as you previously did and build the image you still 
 {{Footer}}
 
 [[Category:Development]]</text>
-      <sha1>8mp22xbjk2zxy6alknsewp02x2zutie</sha1>
+      <sha1>tbe57so87h6iud70ujo67hqdniugdz7</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
