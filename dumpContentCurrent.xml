@@ -684,14 +684,14 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>19</id>
     <revision>
-      <id>5655</id>
-      <parentid>5622</parentid>
-      <timestamp>2014-02-24T19:34:47Z</timestamp>
+      <id>5678</id>
+      <parentid>5655</parentid>
+      <timestamp>2014-02-26T13:34:01Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>/* apt-get Hash Sum mismatch */</comment>
-      <text xml:space="preserve" bytes="23223">{{Header}}
+      <text xml:space="preserve" bytes="15925">{{Header}}
 &lt;!--
 Copyright:
 
@@ -758,92 +758,8 @@ Then, have a look at the [[About]], [[Warning]] and [[DoNot|Do Not]] pages to ma
 &lt;!--T:6--&gt;
 {{anchor|Download Whonix virtual machine images}}
 
-= Download Whonix = &lt;!--T:7--&gt;
-&lt;big&gt;Version: &lt;span style=&quot;color: green&quot;&gt;{{Version}}&lt;/span&gt;&lt;/big&gt;
-
-&lt;!--T:8--&gt;
-'''Note:''' You need to download both Gateway and Workstation virtual machine images.
-
-&lt;!--T:9--&gt;
-{| class=&quot;wikitable&quot; style=&quot;text-align: center;background-color: #fff&quot;
-|- {{GrayBackground}}
-| style=&quot;height: 47px;&quot;|
-| style=&quot;white-space: nowrap; width: 137px;&quot;|'''Whonix-Gateway'''&lt;br /&gt;(1.2 GiB)
-| style=&quot;white-space: nowrap; width: 137px;&quot;|'''Whonix-Workstation'''&lt;br /&gt;(1.3 GiB)
-| style=&quot;white-space: nowrap; width: 140px;&quot;|'''[[Hide Tor and Whonix from your ISP|Anonymous Download]]&lt;br /&gt; possible &lt;ref name=anonymousdownload&gt;By using the [https://www.torproject.org/download/download-easy.html.en Tor Browser Bundle] (TBB). For an introduction, see [[Tor Browser]]. See also [[Hide Tor and Whonix from your ISP]].&lt;/ref&gt;'''
-| style=&quot;width: 135px;&quot;|'''[[Download Security]]&lt;br /&gt; without [[#Verify the Whonix images|Verification]]'''
-| style=&quot;width: 135px;&quot;|'''[[Download Security]]&lt;br /&gt; with [[#Verify the Whonix images|Verification]]'''
-|- style=&quot;height: 47px&quot;
-
-&lt;!--T:91--&gt;
-| {{GrayBackground}}| [[File:HTTP.png|40px]] {{Anchor|Whonix_signature}}
-| &lt;html&gt;&lt;a href=&quot;http://mirror.whonix.org/Whonix-&lt;/html&gt;{{Version}}&lt;html&gt;/Whonix-Gateway-&lt;/html&gt;{{Version}}&lt;html&gt;.ova&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
-| &lt;html&gt;&lt;a href=&quot;http://mirror.whonix.org/Whonix-&lt;/html&gt;{{Version}}&lt;html&gt;/Whonix-Workstation-&lt;/html&gt;{{Version}}&lt;html&gt;.ova&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
-|{{Yes}} &lt;ref name=anonymousdownload /&gt;
-| style=&quot;background-color: {{Red}}&quot;| Very Low &lt;ref&gt;[[Warning#Man-in-the-middle_attacks|Man-in-the-middle attacks]] could poison the download.&lt;/ref&gt;
-| style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification&gt;It does not matter if you did the bulk download over an insecure channel, if you use OpenPGP verification at the end.&lt;/ref&gt;
-|- style=&quot;height: 47px&quot;
-
-&lt;!--T:15--&gt;
-| {{GrayBackground}}| [[File:HTTP.png|40px]] {{Anchor|Whonix_signature}}
-| &lt;html&gt;&lt;a href=&quot;http://sourceforge.net/projects/whonix/files/current/&lt;/html&gt;{{Version}}&lt;html&gt;/Whonix-Gateway-&lt;/html&gt;{{Version}}&lt;html&gt;.ova/download&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
-| &lt;html&gt;&lt;a href=&quot;http://sourceforge.net/projects/whonix/files/current/&lt;/html&gt;{{Version}}&lt;html&gt;/Whonix-Workstation-&lt;/html&gt;{{Version}}&lt;html&gt;.ova/download&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
-|{{Yes}} &lt;ref name=anonymousdownload /&gt;
-| style=&quot;background-color: {{Red}}&quot;| Very Low &lt;ref&gt;[[Warning#Man-in-the-middle_attacks|Man-in-the-middle attacks]] could poison the download.&lt;/ref&gt;
-| style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification&gt;It does not matter if you did the bulk download over an insecure channel, if you use OpenPGP verification at the end.&lt;/ref&gt;
-|- style=&quot;height: 47px&quot;
-
-&lt;!--T:10--&gt;
-| {{GrayBackground}}| [[File:SSL_Symbol.png|40px]] {{Anchor|Whonix_signature}}
-| &lt;html&gt;&lt;a href=&quot;https://jhcloos.com/whonix/7/Whonix-Gateway-7.ova&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
-| &lt;html&gt;&lt;a href=&quot;https://jhcloos.com/whonix/7/Whonix-Workstation-7.ova&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
-|{{Yes}} &lt;ref name=anonymousdownload /&gt;
-| style=&quot;background-color: {{Red}}&quot;| Low &lt;ref&gt;[[Warning#Man-in-the-middle_attacks|Man-in-the-middle attacks]] could poison the download.&lt;/ref&gt;
-| style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification&gt;It does not matter if you did the bulk download over an insecure channel, if you use OpenPGP verification at the end.&lt;/ref&gt;
-|- style=&quot;height: 47px&quot;
-
-&lt;!--T:11--&gt;
-| {{GrayBackground}}| [[File:Button_sig.png|25px]]
-| white-space: nowrap;&quot;|&lt;html&gt;&lt;a href=&quot;/download/current/&lt;/html&gt;{{Version}}&lt;html&gt;-sig/Whonix-Gateway-&lt;/html&gt;{{Version}}&lt;html&gt;.ova.asc&quot;&gt;OpenPGP Signature&lt;/a&gt;&lt;/html&gt;
-| white-space: nowrap;&quot;|&lt;html&gt;&lt;a href=&quot;/download/current/&lt;/html&gt;{{Version}}&lt;html&gt;-sig/Whonix-Workstation-&lt;/html&gt;{{Version}}&lt;html&gt;.ova.asc&quot;&gt;OpenPGP Signature&lt;/a&gt;&lt;/html&gt;
-|{{Yes}} &lt;ref name=anonymousdownload /&gt;
-| -
-| -
-|- style=&quot;height: 47px&quot;
-
-&lt;!--T:12--&gt;
-| {{GrayBackground}}| [[File:Crypto_key.png|25px]]
-| colspan=&quot;2&quot;|Verify the images using the [[Whonix Signing Key|Signing Key]]
-|{{Yes}} &lt;ref name=anonymousdownload /&gt;
-| -
-| -
-|- style=&quot;height: 47px&quot;
-
-&lt;!--T:13--&gt;
-| {{GrayBackground}}| [[File:btorrent-icon.png|25px]]&lt;ref&gt;Torrent clients known to work: transmission, Vuze, Deluge. Check this [https://en.wikipedia.org/wiki/Magnet_URI_scheme#Clients_table clients table]. If nobody is [http://wiki.answers.com/Q/What_are_seeders_and_leechers seeding] at the time, only clients with the [https://en.wikipedia.org/wiki/Magnet_URI_scheme#Normal_.28as.29 &quot;as&quot;] feature can be used, because we are providing a [https://en.wikipedia.org/wiki/BitTorrent#Web_seeding webseed].&lt;/ref&gt;
-| &lt;html&gt;&lt;a href=&quot;/download/&lt;/html&gt;{{Version}}&lt;html&gt;-torrent/Whonix-Gateway-&lt;/html&gt;{{Version}}&lt;html&gt;.ova.torrent&quot;&gt;Torrent Download&lt;/a&gt;&lt;/html&gt;
-| &lt;html&gt;&lt;a href=&quot;/download/&lt;/html&gt;{{Version}}&lt;html&gt;-torrent/Whonix-Workstation-&lt;/html&gt;{{Version}}&lt;html&gt;.ova.torrent&quot;&gt;Torrent Download&lt;/a&gt;&lt;/html&gt;
-|{{No}}
-| style=&quot;background-color: {{Yellow}}&quot;| Medium &lt;ref name=atleastssl&gt;It's at least as secure as [[SSL]] and [https://en.wikipedia.org/wiki/SHA-1 SHA-1], better than plain http. This is because you get the torrent file or magnet link over https and the torrent/magnet client checks the SHA-1 checksum at the end. Using OpenPGP verification would be safer.&lt;/ref&gt;
-| style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification /&gt;
-|- style=&quot;height: 47px&quot;
-
-&lt;!--T:14--&gt;
-| {{GrayBackground}}| [[File:Magnet_icon.svg.png|20px]] &lt;ref&gt;Magnet link clients known to work: gtk-gnutella. Check this [https://en.wikipedia.org/wiki/Magnet_URI_scheme#Clients_table clients table]. If nobody is [http://wiki.answers.com/Q/What_are_seeders_and_leechers seeding] at the time, only clients with the [https://en.wikipedia.org/wiki/Magnet_URI_scheme#Normal_.28as.29 &quot;as&quot;] feature can be used, because we are providing a [https://en.wikipedia.org/wiki/BitTorrent#Web_seeding webseed].&lt;/ref&gt;
-| &lt;html&gt;&lt;a href=&quot;magnet:?xt=urn:btih:405e051b5309fb66fd7ba9a04066936de64ce478&amp;dn=Whonix-Gateway-7.ova&amp;tr=http%3A%2F%2Fannounce.torrentsmd.com%3A6969%2Fannounce&amp;as=http%3A%2F%2Fwebseed.whonix.org%3A8008%2FWhonix-Gateway-7.ova&quot;&gt;Magnet Link&lt;/a&gt;&lt;/html&gt;
-| &lt;html&gt;&lt;a href=&quot;magnet:?xt=urn:btih:13ec8c33dd9b58fe4e5120002dad7b4c683c2b78&amp;dn=Whonix-Workstation-7.ova&amp;tr=http%3A%2F%2Fannounce.torrentsmd.com%3A6969%2Fannounce&amp;as=http%3A%2F%2Fwebseed.whonix.org%3A8008%2FWhonix-Workstation-7.ova&quot;&gt;Magnet Link&lt;/a&gt;&lt;/html&gt;
-|{{No}}
-| style=&quot;background-color: {{Yellow}}&quot;| Medium &lt;ref name=atleastssl /&gt;
-| style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification /&gt;
-|- style=&quot;height: 47px&quot;
-
-&lt;!--T:16--&gt;
-| {{GrayBackground}}| [[File:template_source.png|25px]]
-| colspan=&quot;2&quot;|[[Dev/Build Documentation|Build from source code]]
-| See [[Dev/Build Anonymity|Build Anonymity]]
-| style=&quot;background-color: {{Green}}&quot;| Very High &lt;ref name=fromsourcecode&gt;When you build from source code, audit the source code for being non-malicious and reasonably bug free, you do not have to [[Trust]] the developers, the website or the SSL certificate authorities.&lt;/ref&gt;
-| style=&quot;background-color: {{Green}}&quot;| Best &lt;ref name=fromsourcecode /&gt; &lt;ref&gt;By additional verification that you got the source code from the original authors and by ensuring you're using the same source code as others you get better security.&lt;/ref&gt;
-|}
+= Download Whonix =
+{{DownloadTable}}
 
 = Verify the Whonix images = &lt;!--T:17--&gt;
 It is important to check the integrity of the virtual machine images you downloaded to make sure no man-in-the-middle attack or file corruption happened. (See [[Download Security]].)
@@ -1157,7 +1073,7 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>lmcz12dq3hs291cocdda0edu5ign99c</sha1>
+      <sha1>qjvd8qbe710bstxrgekd932rlfxn1j6</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -34045,15 +33961,15 @@ See [[Dev/Build Documentation]].
     <ns>0</ns>
     <id>288</id>
     <revision>
-      <id>4856</id>
-      <parentid>4854</parentid>
-      <timestamp>2014-02-01T03:49:19Z</timestamp>
+      <id>5694</id>
+      <parentid>4856</parentid>
+      <timestamp>2014-02-26T19:24:01Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Post Building */</comment>
-      <text xml:space="preserve" bytes="3834">{{Header}}
+      <comment>/* Wiki Page Updates */</comment>
+      <text xml:space="preserve" bytes="3910">{{Header}}
 
 == Pre Building ==
 '''Only required if you want to redistribute (official) Whonix builds.'''
@@ -34143,7 +34059,8 @@ See [https://github.com/Whonix/whonix-developer-meta-files/tree/master/release R
 === Wiki Page Updates ===
 
 * Check, if [[Manually Updating Tor Browser]] is still up to date. (If not, fixing is task of coders, not release manager.)
-* Update [[Download]].
+* Update [[Download#Download_Whonix|Download Table]].
+* Update [[Download#Known_bugs|Known Bugs]].
 * See if [[Documentation]] still makes sense.
 * Search the wiki for [[Special:WhatLinksHere/Template:Stable]] and [[Special:WhatLinksHere/Template:Testing]] and act accordingly. (Can also be done by coders, not release manager.)
 * Update [[Physical Isolation]].
@@ -34201,7 +34118,7 @@ Compress. Upload.
 {{Footer}}
 
 [[Category:Development]] [[Category:Design]]</text>
-      <sha1>6bs68lean4dkvtvqehhpbats004owiy</sha1>
+      <sha1>maqzwov7l24u29oi7ti6stqjecagy3k</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -36204,14 +36121,14 @@ Whonix-Example-Implementation:
     <ns>0</ns>
     <id>299</id>
     <revision>
-      <id>5400</id>
-      <parentid>4531</parentid>
-      <timestamp>2014-02-15T22:20:35Z</timestamp>
+      <id>5686</id>
+      <parentid>5400</parentid>
+      <timestamp>2014-02-26T13:44:58Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="45105">{{Header}}
+      <text xml:space="preserve" bytes="52462">{{Header}}
 
 = About this page =
 
@@ -37181,6 +37098,93 @@ sub   4096R/0xCB8D50BB77BB3C48 2014-01-16 [expires: 2015-01-16]
 
 Unless the new key is signed with the old key, something fishy is going on.
 
+= Whonix 7 Download Table (Deprecated) =
+&lt;!--T:7--&gt;
+&lt;big&gt;Version: &lt;span style=&quot;color: green&quot;&gt;{{Version}}&lt;/span&gt;&lt;/big&gt;
+
+&lt;!--T:8--&gt;
+'''Note:''' You need to download both Gateway and Workstation virtual machine images.
+
+&lt;!--T:9--&gt;
+{| class=&quot;wikitable&quot; style=&quot;text-align: center;background-color: #fff&quot;
+|- {{GrayBackground}}
+| style=&quot;height: 47px;&quot;|
+| style=&quot;white-space: nowrap; width: 137px;&quot;|'''Whonix-Gateway'''&lt;br /&gt;(1.2 GiB)
+| style=&quot;white-space: nowrap; width: 137px;&quot;|'''Whonix-Workstation'''&lt;br /&gt;(1.3 GiB)
+| style=&quot;white-space: nowrap; width: 140px;&quot;|'''[[Hide Tor and Whonix from your ISP|Anonymous Download]]&lt;br /&gt; possible &lt;ref name=anonymousdownload&gt;By using the [https://www.torproject.org/download/download-easy.html.en Tor Browser Bundle] (TBB). For an introduction, see [[Tor Browser]]. See also [[Hide Tor and Whonix from your ISP]].&lt;/ref&gt;'''
+| style=&quot;width: 135px;&quot;|'''[[Download Security]]&lt;br /&gt; without [[#Verify the Whonix images|Verification]]'''
+| style=&quot;width: 135px;&quot;|'''[[Download Security]]&lt;br /&gt; with [[#Verify the Whonix images|Verification]]'''
+|- style=&quot;height: 47px&quot;
+
+&lt;!--T:91--&gt;
+| {{GrayBackground}}| [[File:HTTP.png|40px]] {{Anchor|Whonix_signature}}
+| &lt;html&gt;&lt;a href=&quot;http://mirror.whonix.org/Whonix-&lt;/html&gt;{{Version}}&lt;html&gt;/Whonix-Gateway-&lt;/html&gt;{{Version}}&lt;html&gt;.ova&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
+| &lt;html&gt;&lt;a href=&quot;http://mirror.whonix.org/Whonix-&lt;/html&gt;{{Version}}&lt;html&gt;/Whonix-Workstation-&lt;/html&gt;{{Version}}&lt;html&gt;.ova&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
+|{{Yes}} &lt;ref name=anonymousdownload /&gt;
+| style=&quot;background-color: {{Red}}&quot;| Very Low &lt;ref&gt;[[Warning#Man-in-the-middle_attacks|Man-in-the-middle attacks]] could poison the download.&lt;/ref&gt;
+| style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification&gt;It does not matter if you did the bulk download over an insecure channel, if you use OpenPGP verification at the end.&lt;/ref&gt;
+|- style=&quot;height: 47px&quot;
+
+&lt;!--T:15--&gt;
+| {{GrayBackground}}| [[File:HTTP.png|40px]] {{Anchor|Whonix_signature}}
+| &lt;html&gt;&lt;a href=&quot;http://sourceforge.net/projects/whonix/files/current/&lt;/html&gt;{{Version}}&lt;html&gt;/Whonix-Gateway-&lt;/html&gt;{{Version}}&lt;html&gt;.ova/download&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
+| &lt;html&gt;&lt;a href=&quot;http://sourceforge.net/projects/whonix/files/current/&lt;/html&gt;{{Version}}&lt;html&gt;/Whonix-Workstation-&lt;/html&gt;{{Version}}&lt;html&gt;.ova/download&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
+|{{Yes}} &lt;ref name=anonymousdownload /&gt;
+| style=&quot;background-color: {{Red}}&quot;| Very Low &lt;ref&gt;[[Warning#Man-in-the-middle_attacks|Man-in-the-middle attacks]] could poison the download.&lt;/ref&gt;
+| style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification&gt;It does not matter if you did the bulk download over an insecure channel, if you use OpenPGP verification at the end.&lt;/ref&gt;
+|- style=&quot;height: 47px&quot;
+
+&lt;!--T:10--&gt;
+| {{GrayBackground}}| [[File:SSL_Symbol.png|40px]] {{Anchor|Whonix_signature}}
+| &lt;html&gt;&lt;a href=&quot;https://jhcloos.com/whonix/7/Whonix-Gateway-7.ova&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
+| &lt;html&gt;&lt;a href=&quot;https://jhcloos.com/whonix/7/Whonix-Workstation-7.ova&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
+|{{Yes}} &lt;ref name=anonymousdownload /&gt;
+| style=&quot;background-color: {{Red}}&quot;| Low &lt;ref&gt;[[Warning#Man-in-the-middle_attacks|Man-in-the-middle attacks]] could poison the download.&lt;/ref&gt;
+| style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification&gt;It does not matter if you did the bulk download over an insecure channel, if you use OpenPGP verification at the end.&lt;/ref&gt;
+|- style=&quot;height: 47px&quot;
+
+&lt;!--T:11--&gt;
+| {{GrayBackground}}| [[File:Button_sig.png|25px]]
+| white-space: nowrap;&quot;|&lt;html&gt;&lt;a href=&quot;/download/current/&lt;/html&gt;{{Version}}&lt;html&gt;-sig/Whonix-Gateway-&lt;/html&gt;{{Version}}&lt;html&gt;.ova.asc&quot;&gt;OpenPGP Signature&lt;/a&gt;&lt;/html&gt;
+| white-space: nowrap;&quot;|&lt;html&gt;&lt;a href=&quot;/download/current/&lt;/html&gt;{{Version}}&lt;html&gt;-sig/Whonix-Workstation-&lt;/html&gt;{{Version}}&lt;html&gt;.ova.asc&quot;&gt;OpenPGP Signature&lt;/a&gt;&lt;/html&gt;
+|{{Yes}} &lt;ref name=anonymousdownload /&gt;
+| -
+| -
+|- style=&quot;height: 47px&quot;
+
+&lt;!--T:12--&gt;
+| {{GrayBackground}}| [[File:Crypto_key.png|25px]]
+| colspan=&quot;2&quot;|Verify the images using the [[Whonix Signing Key|Signing Key]]
+|{{Yes}} &lt;ref name=anonymousdownload /&gt;
+| -
+| -
+|- style=&quot;height: 47px&quot;
+
+&lt;!--T:13--&gt;
+| {{GrayBackground}}| [[File:btorrent-icon.png|25px]]&lt;ref&gt;Torrent clients known to work: transmission, Vuze, Deluge. Check this [https://en.wikipedia.org/wiki/Magnet_URI_scheme#Clients_table clients table]. If nobody is [http://wiki.answers.com/Q/What_are_seeders_and_leechers seeding] at the time, only clients with the [https://en.wikipedia.org/wiki/Magnet_URI_scheme#Normal_.28as.29 &quot;as&quot;] feature can be used, because we are providing a [https://en.wikipedia.org/wiki/BitTorrent#Web_seeding webseed].&lt;/ref&gt;
+| &lt;html&gt;&lt;a href=&quot;/download/&lt;/html&gt;{{Version}}&lt;html&gt;-torrent/Whonix-Gateway-&lt;/html&gt;{{Version}}&lt;html&gt;.ova.torrent&quot;&gt;Torrent Download&lt;/a&gt;&lt;/html&gt;
+| &lt;html&gt;&lt;a href=&quot;/download/&lt;/html&gt;{{Version}}&lt;html&gt;-torrent/Whonix-Workstation-&lt;/html&gt;{{Version}}&lt;html&gt;.ova.torrent&quot;&gt;Torrent Download&lt;/a&gt;&lt;/html&gt;
+|{{No}}
+| style=&quot;background-color: {{Yellow}}&quot;| Medium &lt;ref name=atleastssl&gt;It's at least as secure as [[SSL]] and [https://en.wikipedia.org/wiki/SHA-1 SHA-1], better than plain http. This is because you get the torrent file or magnet link over https and the torrent/magnet client checks the SHA-1 checksum at the end. Using OpenPGP verification would be safer.&lt;/ref&gt;
+| style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification /&gt;
+|- style=&quot;height: 47px&quot;
+
+&lt;!--T:14--&gt;
+| {{GrayBackground}}| [[File:Magnet_icon.svg.png|20px]] &lt;ref&gt;Magnet link clients known to work: gtk-gnutella. Check this [https://en.wikipedia.org/wiki/Magnet_URI_scheme#Clients_table clients table]. If nobody is [http://wiki.answers.com/Q/What_are_seeders_and_leechers seeding] at the time, only clients with the [https://en.wikipedia.org/wiki/Magnet_URI_scheme#Normal_.28as.29 &quot;as&quot;] feature can be used, because we are providing a [https://en.wikipedia.org/wiki/BitTorrent#Web_seeding webseed].&lt;/ref&gt;
+| &lt;html&gt;&lt;a href=&quot;magnet:?xt=urn:btih:405e051b5309fb66fd7ba9a04066936de64ce478&amp;dn=Whonix-Gateway-7.ova&amp;tr=http%3A%2F%2Fannounce.torrentsmd.com%3A6969%2Fannounce&amp;as=http%3A%2F%2Fwebseed.whonix.org%3A8008%2FWhonix-Gateway-7.ova&quot;&gt;Magnet Link&lt;/a&gt;&lt;/html&gt;
+| &lt;html&gt;&lt;a href=&quot;magnet:?xt=urn:btih:13ec8c33dd9b58fe4e5120002dad7b4c683c2b78&amp;dn=Whonix-Workstation-7.ova&amp;tr=http%3A%2F%2Fannounce.torrentsmd.com%3A6969%2Fannounce&amp;as=http%3A%2F%2Fwebseed.whonix.org%3A8008%2FWhonix-Workstation-7.ova&quot;&gt;Magnet Link&lt;/a&gt;&lt;/html&gt;
+|{{No}}
+| style=&quot;background-color: {{Yellow}}&quot;| Medium &lt;ref name=atleastssl /&gt;
+| style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification /&gt;
+|- style=&quot;height: 47px&quot;
+
+&lt;!--T:16--&gt;
+| {{GrayBackground}}| [[File:template_source.png|25px]]
+| colspan=&quot;2&quot;|[[Dev/Build Documentation|Build from source code]]
+| See [[Dev/Build Anonymity|Build Anonymity]]
+| style=&quot;background-color: {{Green}}&quot;| Very High &lt;ref name=fromsourcecode&gt;When you build from source code, audit the source code for being non-malicious and reasonably bug free, you do not have to [[Trust]] the developers, the website or the SSL certificate authorities.&lt;/ref&gt;
+| style=&quot;background-color: {{Green}}&quot;| Best &lt;ref name=fromsourcecode /&gt; &lt;ref&gt;By additional verification that you got the source code from the original authors and by ensuring you're using the same source code as others you get better security.&lt;/ref&gt;
+|}
 
 = Footnotes =
 &lt;references /&gt;
@@ -37188,7 +37192,7 @@ Unless the new key is signed with the old key, something fishy is going on.
 {{Footer}}
 
 [[Category:Deprecated]]</text>
-      <sha1>eqh8mdb6o6sfpsilvwhldzcewrx39bg</sha1>
+      <sha1>gk4nwm2y1dl8yjhzy0rwbp527oz6oe0</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -42535,14 +42539,16 @@ from mainland once a day.
     <ns>0</ns>
     <id>445</id>
     <revision>
-      <id>3381</id>
-      <parentid>3380</parentid>
-      <timestamp>2013-10-12T12:09:35Z</timestamp>
+      <id>5689</id>
+      <parentid>3381</parentid>
+      <timestamp>2014-02-26T18:56:16Z</timestamp>
       <contributor>
-        <username>Anon</username>
-        <id>10</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="3683">&lt;pre&gt;
+      <text xml:space="preserve" bytes="3707">{{Header}}
+
+&lt;pre&gt;
 Whonix Anonymous Operating System Version 7 Released!
 &lt;/pre&gt;
 
@@ -42602,8 +42608,10 @@ Whonix 7 Changelog:
 
 * Moved blog to wordpress.com, better than sourceforge, because wordpress.com supports SSL, closed #23.
 
-* Lots of other improvements and bug fixes which can be found under the git log.</text>
-      <sha1>mo3e51hej1p3zu2aq1svszbkaf3re1t</sha1>
+* Lots of other improvements and bug fixes which can be found under the git log.
+
+{{Footer}}</text>
+      <sha1>7fnw46zz3avx6c7hkjgfwegzppnib8r</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -43210,15 +43218,14 @@ Modifications coming with Whonix will always fall back to reasonable defaults, i
     <ns>0</ns>
     <id>468</id>
     <revision>
-      <id>5576</id>
-      <parentid>5575</parentid>
-      <timestamp>2014-02-22T18:31:11Z</timestamp>
+      <id>5698</id>
+      <parentid>5576</parentid>
+      <timestamp>2014-02-26T21:26:20Z</timestamp>
       <contributor>
-        <username>Jekyll</username>
-        <id>161</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>7.7.9.8 tag</comment>
-      <text xml:space="preserve" bytes="3270">&lt;!--
+      <comment>Whonix 8</comment>
+      <text xml:space="preserve" bytes="3250">&lt;!--
 # This file is part of Whonix
 # Copyright (C) 2012 - 2013 adrelanos &lt;adrelanos@riseup.net&gt;
 # See the file COPYING for copying conditions.
@@ -43238,7 +43245,7 @@ Best way to get help is to make a thread in the forum.
 == Introduction ==
 This page documents how to build Whonix VirtualBox images.
 
-It documents how to build the '''testers-only''' of Whonix (version 7.7.9.8 is used in the examples below). 
+It documents how to build the Whonix 8 (version 7.7.9.8 is used in the examples below). 
 
 
 Build prerequisites:
@@ -43342,7 +43349,7 @@ After a few hours (depending on your disk speed, CPU clock rate, available downl
 OVA image can now be used in VirtualBox.
 
 {{Footer}}</text>
-      <sha1>t3045uxt1vnexi7cu76g3xnlp6blc3j</sha1>
+      <sha1>hgu32si8nfe3hd5e15mq8fvb7l3e653</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -61748,17 +61755,316 @@ sudo rm -fR /var/lib/apt/lists/*
     <ns>0</ns>
     <id>891</id>
     <revision>
-      <id>5674</id>
-      <timestamp>2014-02-25T15:35:55Z</timestamp>
+      <id>5697</id>
+      <parentid>5674</parentid>
+      <timestamp>2014-02-26T20:14:16Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <username>Troubadour</username>
+        <id>230</id>
       </contributor>
-      <comment>created page</comment>
-      <text xml:space="preserve" bytes="22">{{Header}}
+      <text xml:space="preserve" bytes="7931">{{Header}}
+
+The following AppArmor profiles are currently under evaluation with Whonix 8 pre-release (7.7.9.8). When considered sufficiently tested, they will be checked for backward compatibility with Whonix 7.
+
+=== Pidgin ===
+{{AppArmorProfileWarning}}
+
+Create a file /etc/apparmor.d/usr.bin.pidgin.
+
+&lt;pre&gt;
+kdesudo kwrite /etc/apparmor.d/usr.bin.pidgin
+&lt;/pre&gt;
+
+Credit for this AppArmor profile goes to [http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=676849 intrigeri].
+
+&lt;pre&gt;
+# vim:syntax=apparmor
+
+#include &lt;tunables/global&gt;
+
+/usr/bin/pidgin {
+  #include &lt;abstractions/audio&gt;
+  #include &lt;abstractions/aspell&gt;
+  #include &lt;abstractions/base&gt;
+  #include &lt;abstractions/bash&gt;
+  #include &lt;abstractions/consoles&gt;
+  #include &lt;abstractions/dbus&gt;
+  #include &lt;abstractions/dbus-session&gt;
+  #include &lt;abstractions/fonts&gt;
+  #include &lt;abstractions/freedesktop.org&gt;
+  #include &lt;abstractions/gnome&gt;
+  #include &lt;abstractions/launchpad-integration&gt;
+  #include &lt;abstractions/nameservice&gt;
+  #include &lt;abstractions/private-files-strict&gt;
+  #include &lt;abstractions/ubuntu-browsers&gt;
+  #include &lt;abstractions/ubuntu-console-browsers&gt;
+  #include &lt;abstractions/user-download&gt;
+  #include &lt;abstractions/user-tmp&gt;
+  #include &lt;abstractions/ibus&gt;
+  #include &lt;abstractions/X&gt;
+
+  deny capability sys_ptrace,
+
+  deny @{HOME}/.bash* rw,
+  deny @{HOME}/.cshrc rw,
+  deny @{HOME}/.profile rw,
+  deny @{HOME}/.zshrc rw,
+
+  owner @{HOME}/.cache/dconf/user rw,
+  owner @{HOME}/.config/dconf/user r,
+  owner @{HOME}/.config/enchant/ rw,
+  owner @{HOME}/.config/enchant/* rwk,
+  owner @{HOME}/.local/share/icons/ r,
+  owner @{HOME}/.local/share/mime/* r,
+  owner @{HOME}/.gnome2/nautilus-sendto/** rw,
+  owner @{HOME}/.gstreamer*/ rw,
+  owner @{HOME}/.gstreamer*/** rw,
+  owner @{HOME}/.pulse/ rw,
+  owner @{HOME}/.pulse/** rw,
+  owner @{HOME}/.pulse-cookie rwk,
+  owner @{HOME}/.purple/ rw,
+  owner @{HOME}/.purple/** rwk,
+
+  /bin/dash rix,
+
+  /{dev,run}/shm/ r,
+  /{dev,run}/shm/* rw,
+
+  /etc/ r,
+  /etc/pulse/client.conf r,
+  /etc/ssl/certs/ r,
+  /etc/ssl/certs/** r,
+  /etc/ssl/certs/ssl-cert-snakeoil.pem r,
+
+  owner /tmp/orbit-*/* w,
+  owner /tmp/pulse-*/* w,
+
+  /usr/bin/gconftool-2 rix,
+  /usr/bin/gnome-default-applications-properties ix,
+  /usr/bin/gnome-network-preferences ix,
+  /usr/bin/gnome-open rmix,
+  /usr/bin/gsettings rix,
+  /usr/bin/pidgin r,
+  /usr/bin/xdg-open rmix,
+  /bin/which rix,
+  /usr/bin/gvfs-open rmix,
+
+  /usr/share/glib-2.0/schemas/gschemas.compiled r,
+
+  /usr/lib/ r,
+  /usr/lib/frei0r-1/*.so rm,
+  /usr/lib/libvisual-*/**.so rm,
+  /usr/lib/pidgin/*.so rm,
+  /usr/lib/purple*/*.so rm,
+
+  /usr/share/ca-certificates/*/** r,
+  /usr/share/enchant/enchant.ordering r,
+  /usr/share/locale-langpack/** rm,
+  /usr/share/purple/ca-certs/ r,
+  /usr/share/purple/ca-certs/** r,
+  /usr/share/myspell/dicts/ r,
+  /usr/share/myspell/dicts/** r,
+  /usr/share/tcltk/** r,
+
+  /usr/share/themes/ r,
+  /usr/share/themes/** r,
+
+  /usr/share/hunspell/ r,
+  /usr/share/hunspell/** r,
+
+  deny @{PROC}/** r,
+
+  # Site-specific additions and overrides. See local/README for details.
+  #include &lt;local/usr.bin.pidgin&gt;
+}
+&lt;/pre&gt;
+
+Create a file /etc/apparmor.d/local/usr.bin/pidgin.
+
+&lt;pre&gt;
+kdesudo kwrite /etc/apparmor.d/local/usr.bin/pidgin
+&lt;/pre&gt;
+
+&lt;pre&gt;
+/etc/resolv.conf.whonix r,
+/etc/hosts.whonix r,
+&lt;/pre&gt;
+
+Run.
+
+&lt;pre&gt;
+sudo apparmor_parser -r -W -T /etc/apparmor.d/usr.bin.pidgin
+&lt;/pre&gt;
+
+&lt;pre&gt;
+sudo aa-enforce /etc/apparmor.d/usr.bin.pidgin
+&lt;/pre&gt;
+
+Run.
+
+That's it.
+
+=== Tor Browser Bundle (TBB) ===
+{{AppArmorProfileWarning}}
+
+Create a file /etc/apparmor.d/home.user.tor-browser_en-US.Browser.firefox.
+
+&lt;pre&gt;
+kdesudo kwrite /etc/apparmor.d/home.user.tor-browser_en-US.Browser.firefox
+&lt;/pre&gt;
+
+&lt;pre&gt;
+#include &lt;tunables/global&gt;
+
+/home/user/tor-browser_en-US/Browser/firefox {
+	#include &lt;abstractions/base&gt;
+	#include &lt;abstractions/user-tmp&gt;
+	#include &lt;abstractions/bash&gt;
+	#include &lt;abstractions/fonts&gt;
+	
+	capability sys_ptrace,
+
+	network,
+	network tcp,
+
+	deny /etc/host.conf r,
+	deny /etc/hosts r,
+	deny /etc/nsswitch.conf r,
+	deny /etc/resolv.conf r,
+	deny /etc/passwd r,
+	deny /etc/resolv.conf.whonix r,
+	deny /etc/hosts.whonix r,
+#	deny /proc/9881/mountinfo r,
+	deny @{PROC}/[0-9]*/mounts r,
+	deny @{PROC}/[0-9]*/mountinfo r,
+	deny @{HOME}/.config/user-dirs.dirs r,
+	deny @{HOME}/.gtk-bookmarks r,
+	deny @{HOME}/.local/share/recently-used.xbel* rw,
+	deny owner @{HOME}/.local/share/gvfs-metadata/home r,
+	deny owner @{HOME}/.cache/ rw,
+	deny /usr/share/applications/** r,
+
+	/bin/dash rix,
+	/bin/open rix,
+	/bin/ps rix,
+	
+	/dev/dri/card0 rw,
+	/dev/vboxuser rw,
+	/dev/tty r,
+
+	/etc/drirc r,
+	/etc/X11/cursors/* r,
+	/etc/fonts/** r,
+	/etc/mime.types r,
+	/etc/mailcap r,
+	/etc/pkcs11/modules/ r,
+	/etc/pkcs11/modules/* r,
+
+	/etc/gnome-vfs-2.0/modules/ r,	# not in my copy of 7.7.8.9
+	/etc/gnome-vfs-2.0/modules/* r,	# not in my copy of 7.7.8.9
+	
+	owner @{HOME}/tor-browser_en-US/ r,
+	owner @{HOME}/tor-browser_en-US/.cache/ cx,
+	owner @{HOME}/tor-browser_en-US/* rw, 
+	owner @{HOME}/tor-browser_en-US/.mozilla/ w,
+	owner @{HOME}/tor-browser_en-US/.mozilla/*/ w,
+	owner @{HOME}/tor-browser_en-US/Browser/** r,
+	owner @{HOME}/tor-browser_en-US/Browser/*.so mr,
+	owner @{HOME}/tor-browser_en-US/Browser/browser/components/*.so mr,
+	owner @{HOME}/tor-browser_en-US/Browser/components/*.so mr,
+	owner @{HOME}/tor-browser_en-US/Browser/firefox rix,
+	owner @{HOME}/tor-browser_en-US/Data/Browser/ r,
+	owner @{HOME}/tor-browser_en-US/Data/Browser/** rwk,
+	owner @{HOME}/tor-browser_en-US/Desktop/ rw,
+	owner @{HOME}/tor-browser_en-US/Desktop/** rw,
+	owner @{HOME}/tor-browser_en-US/Downloads/ rw,
+	owner @{HOME}/tor-browser_en-US/Downloads/** rw,
+	owner @{HOME}/tor-browser_en-US/Tor/tor Px,
+
+	
+	/sys/devices/system/cpu/ r,
+	/sys/devices/system/cpu/* r,
+
+	/tmp/.X0-lock r,
+
+	## Looks like a nvidia audio driver.
+	deny /usr/lib/i386-linux-gnu/dri/swrast_dri.so m,
+
+	## Alphabets libraries (32bit).
+	/usr/lib/i386-linux-gnu/pango/1.6.0/modules/* m,
+
+	/usr/lib/i386-linux-gnu/pkcs11/* m,
+	/usr/bin/kde4-config rix,
+	
+	/usr/share/ r,
+	/usr/share/fonts/ r,
+	/usr/share/fonts/** r,
+	/usr/share/icons/ r,
+	/usr/share/icons/** r,
+	/usr/share/mime/ r,
+	/usr/share/mime/** r,
+	/usr/share/pixmaps/ r,
+	/usr/share/pixmaps/** r,
+	/usr/share/themes/ r,
+	/usr/share/themes/** r,
+
+	/usr/share/kde4/config/kdeglobals r,
+	/usr/share/whonix/kde/share/config/kdeglobals r,
+
+	/var/cache/fontconfig/* r,
+
+	/var/lib/dbus/machine-id r,
+
+	## In 'Edit/Preferences', set 'Saves files to' -&gt; 'Downloads'.	
+	owner @{HOME}/Downloads/* rw,
+
+	owner @{HOME}/.Xauthority r,
+
+	owner @{HOME}/.local/share/ r,
+	owner @{HOME}/.local/share/applications/mimeinfo.cache r,
+	owner @{HOME}/.local/share/mime/ r,
+	owner @{HOME}/.local/share/mime/** r,
+	owner @{HOME}/.local/share/applications/mimeapps.list r,
+	owner @{HOME}/.icons/ r,
+	owner @{HOME}/.icons/** r,
+	owner @{HOME}/.local/share/icons/ r,
+	owner @{HOME}/.themes/** r,
+	owner @{HOME}/.kde/share/config/gtkrc-2.0 r,
+	owner @{HOME}/.kde/share/config/kdeglobals r,
+	owner @{HOME}/.config/oxygen-gtk/argb-apps.conf rw,
+	
+	@{PROC} r,
+	@{PROC}/[0-9]*/maps r,
+	@{PROC}/tty/drivers r,
+	@{PROC}/[0-9]*/stat r,
+	@{PROC}/[0-9]*/status r,
+	@{PROC}/[0-9]*/task/*/stat r,
+	@{PROC}/[0-9]*/cmdline r,
+	@{PROC}/[0-9]*/fd/ r,
+	@{PROC}/cpuinfo r,
+	@{PROC}/filesystems r,
+	@{PROC}/meminfo r,
+	@{PROC}/stat r,
+	@{PROC}/sys/kernel/pid_max r,
+	@{PROC}/uptime r,
+}
+&lt;/pre&gt;
+
+Run
+&lt;pre&gt;
+sudo aa-enforce /etc/apparmor.d/home.user.tor-browser_en-US.Browser.firefox
+&lt;/pre&gt;
+
+[https://www.whonix.org/forum/index.php?action=profile;u=24 troubadour] created this profile. You can discuss it in this [https://www.whonix.org/forum/index.php/topic,24.0.html forum thread].
+
+=== Additional inspiration ===
+Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/AppArmor in Debian]):
+
+* [https://trac.torproject.org/projects/tor/wiki/doc/AppArmorForTBB AppArmor Profile for TBB]
+* [https://github.com/adrelanos/Inoffical-TBB-AppArmor Inoffical-TBB-AppArmor]
 
 {{Footer}}</text>
-      <sha1>cqacdx6a8fi72i7nstmmasxqx0c5f29</sha1>
+      <sha1>nadqoylr8gxdxnw0abnwovpy7hjyuga</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -61776,6 +62082,535 @@ sudo rm -fR /var/lib/apt/lists/*
       <comment>hey everyone</comment>
       <text xml:space="preserve" bytes="5">hello</text>
       <sha1>jywkymwk5kel4plcu17bdqhwzuuz3nx</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:DownloadTable</title>
+    <ns>10</ns>
+    <id>893</id>
+    <revision>
+      <id>5691</id>
+      <parentid>5688</parentid>
+      <timestamp>2014-02-26T19:01:36Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <text xml:space="preserve" bytes="7385">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
+
+&lt;!--T:7--&gt;
+&lt;big&gt;Version: &lt;span style=&quot;color: green&quot;&gt;{{Version}}&lt;/span&gt;&lt;/big&gt;
+
+&lt;!--T:8--&gt;
+'''Note:''' You need to download both Gateway and Workstation virtual machine images.
+
+&lt;!--T:9--&gt;
+{| class=&quot;wikitable&quot; style=&quot;text-align: center;background-color: #fff&quot;
+|- {{GrayBackground}}
+| style=&quot;height: 47px;&quot;|
+| style=&quot;white-space: nowrap; width: 137px;&quot;|'''Whonix-Gateway'''&lt;br /&gt;(1.2 GiB)
+| style=&quot;white-space: nowrap; width: 137px;&quot;|'''Whonix-Workstation'''&lt;br /&gt;(1.3 GiB)
+| style=&quot;white-space: nowrap; width: 140px;&quot;|'''[[Hide Tor and Whonix from your ISP|Anonymous Download]]&lt;br /&gt; possible &lt;ref name=anonymousdownload&gt;By using the [https://www.torproject.org/download/download-easy.html.en Tor Browser Bundle] (TBB). For an introduction, see [[Tor Browser]]. See also [[Hide Tor and Whonix from your ISP]].&lt;/ref&gt;'''
+| style=&quot;width: 135px;&quot;|'''[[Download Security]]&lt;br /&gt; without [[#Verify the Whonix images|Verification]]'''
+| style=&quot;width: 135px;&quot;|'''[[Download Security]]&lt;br /&gt; with [[#Verify the Whonix images|Verification]]'''
+|- style=&quot;height: 47px&quot;
+
+&lt;!--T:91--&gt;
+| {{GrayBackground}}| [[File:HTTP.png|40px]] {{Anchor|Whonix_signature}}
+| &lt;html&gt;&lt;a href=&quot;http://mirror.whonix.org/Whonix-&lt;/html&gt;{{Version}}&lt;html&gt;/Whonix-Gateway-&lt;/html&gt;{{Version}}&lt;html&gt;.ova&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
+| &lt;html&gt;&lt;a href=&quot;http://mirror.whonix.org/Whonix-&lt;/html&gt;{{Version}}&lt;html&gt;/Whonix-Workstation-&lt;/html&gt;{{Version}}&lt;html&gt;.ova&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
+|{{Yes}} &lt;ref name=anonymousdownload /&gt;
+| style=&quot;background-color: {{Red}}&quot;| Very Low &lt;ref&gt;[[Warning#Man-in-the-middle_attacks|Man-in-the-middle attacks]] could poison the download.&lt;/ref&gt;
+| style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification&gt;It does not matter if you did the bulk download over an insecure channel, if you use OpenPGP verification at the end.&lt;/ref&gt;
+|- style=&quot;height: 47px&quot;
+
+&lt;!--T:15--&gt;
+| {{GrayBackground}}| [[File:HTTP.png|40px]] {{Anchor|Whonix_signature}}
+| &lt;html&gt;&lt;a href=&quot;http://sourceforge.net/projects/whonix/files/current/&lt;/html&gt;{{Version}}&lt;html&gt;/Whonix-Gateway-&lt;/html&gt;{{Version}}&lt;html&gt;.ova/download&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
+| &lt;html&gt;&lt;a href=&quot;http://sourceforge.net/projects/whonix/files/current/&lt;/html&gt;{{Version}}&lt;html&gt;/Whonix-Workstation-&lt;/html&gt;{{Version}}&lt;html&gt;.ova/download&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
+|{{Yes}} &lt;ref name=anonymousdownload /&gt;
+| style=&quot;background-color: {{Red}}&quot;| Very Low &lt;ref&gt;[[Warning#Man-in-the-middle_attacks|Man-in-the-middle attacks]] could poison the download.&lt;/ref&gt;
+| style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification&gt;It does not matter if you did the bulk download over an insecure channel, if you use OpenPGP verification at the end.&lt;/ref&gt;
+|- style=&quot;height: 47px&quot;
+
+&lt;!--T:10--&gt;
+| {{GrayBackground}}| [[File:SSL_Symbol.png|40px]] {{Anchor|Whonix_signature}}
+| &lt;html&gt;&lt;a href=&quot;https://jhcloos.com/whonix/7/Whonix-Gateway-7.ova&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
+| &lt;html&gt;&lt;a href=&quot;https://jhcloos.com/whonix/7/Whonix-Workstation-7.ova&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
+|{{Yes}} &lt;ref name=anonymousdownload /&gt;
+| style=&quot;background-color: {{Red}}&quot;| Low &lt;ref&gt;[[Warning#Man-in-the-middle_attacks|Man-in-the-middle attacks]] could poison the download.&lt;/ref&gt;
+| style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification&gt;It does not matter if you did the bulk download over an insecure channel, if you use OpenPGP verification at the end.&lt;/ref&gt;
+|- style=&quot;height: 47px&quot;
+
+&lt;!--T:11--&gt;
+| {{GrayBackground}}| [[File:Button_sig.png|25px]]
+| white-space: nowrap;&quot;|&lt;html&gt;&lt;a href=&quot;/download/current/&lt;/html&gt;{{Version}}&lt;html&gt;-sig/Whonix-Gateway-&lt;/html&gt;{{Version}}&lt;html&gt;.ova.asc&quot;&gt;OpenPGP Signature&lt;/a&gt;&lt;/html&gt;
+| white-space: nowrap;&quot;|&lt;html&gt;&lt;a href=&quot;/download/current/&lt;/html&gt;{{Version}}&lt;html&gt;-sig/Whonix-Workstation-&lt;/html&gt;{{Version}}&lt;html&gt;.ova.asc&quot;&gt;OpenPGP Signature&lt;/a&gt;&lt;/html&gt;
+|{{Yes}} &lt;ref name=anonymousdownload /&gt;
+| -
+| -
+|- style=&quot;height: 47px&quot;
+
+&lt;!--T:12--&gt;
+| {{GrayBackground}}| [[File:Crypto_key.png|25px]]
+| colspan=&quot;2&quot;|Verify the images using the [[Whonix Signing Key|Signing Key]]
+|{{Yes}} &lt;ref name=anonymousdownload /&gt;
+| -
+| -
+|- style=&quot;height: 47px&quot;
+
+&lt;!--T:13--&gt;
+| {{GrayBackground}}| [[File:btorrent-icon.png|25px]]&lt;ref&gt;Torrent clients known to work: transmission, Vuze, Deluge. Check this [https://en.wikipedia.org/wiki/Magnet_URI_scheme#Clients_table clients table]. If nobody is [http://wiki.answers.com/Q/What_are_seeders_and_leechers seeding] at the time, only clients with the [https://en.wikipedia.org/wiki/Magnet_URI_scheme#Normal_.28as.29 &quot;as&quot;] feature can be used, because we are providing a [https://en.wikipedia.org/wiki/BitTorrent#Web_seeding webseed].&lt;/ref&gt;
+| &lt;html&gt;&lt;a href=&quot;/download/&lt;/html&gt;{{Version}}&lt;html&gt;-torrent/Whonix-Gateway-&lt;/html&gt;{{Version}}&lt;html&gt;.ova.torrent&quot;&gt;Torrent Download&lt;/a&gt;&lt;/html&gt;
+| &lt;html&gt;&lt;a href=&quot;/download/&lt;/html&gt;{{Version}}&lt;html&gt;-torrent/Whonix-Workstation-&lt;/html&gt;{{Version}}&lt;html&gt;.ova.torrent&quot;&gt;Torrent Download&lt;/a&gt;&lt;/html&gt;
+|{{No}}
+| style=&quot;background-color: {{Yellow}}&quot;| Medium &lt;ref name=atleastssl&gt;It's at least as secure as [[SSL]] and [https://en.wikipedia.org/wiki/SHA-1 SHA-1], better than plain http. This is because you get the torrent file or magnet link over https and the torrent/magnet client checks the SHA-1 checksum at the end. Using OpenPGP verification would be safer.&lt;/ref&gt;
+| style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification /&gt;
+|- style=&quot;height: 47px&quot;
+
+&lt;!--T:14--&gt;
+| {{GrayBackground}}| [[File:Magnet_icon.svg.png|20px]] &lt;ref&gt;Magnet link clients known to work: gtk-gnutella. Check this [https://en.wikipedia.org/wiki/Magnet_URI_scheme#Clients_table clients table]. If nobody is [http://wiki.answers.com/Q/What_are_seeders_and_leechers seeding] at the time, only clients with the [https://en.wikipedia.org/wiki/Magnet_URI_scheme#Normal_.28as.29 &quot;as&quot;] feature can be used, because we are providing a [https://en.wikipedia.org/wiki/BitTorrent#Web_seeding webseed].&lt;/ref&gt;
+| &lt;html&gt;&lt;a href=&quot;magnet:?xt=urn:btih:405e051b5309fb66fd7ba9a04066936de64ce478&amp;dn=Whonix-Gateway-7.ova&amp;tr=http%3A%2F%2Fannounce.torrentsmd.com%3A6969%2Fannounce&amp;as=http%3A%2F%2Fwebseed.whonix.org%3A8008%2FWhonix-Gateway-7.ova&quot;&gt;Magnet Link&lt;/a&gt;&lt;/html&gt;
+| &lt;html&gt;&lt;a href=&quot;magnet:?xt=urn:btih:13ec8c33dd9b58fe4e5120002dad7b4c683c2b78&amp;dn=Whonix-Workstation-7.ova&amp;tr=http%3A%2F%2Fannounce.torrentsmd.com%3A6969%2Fannounce&amp;as=http%3A%2F%2Fwebseed.whonix.org%3A8008%2FWhonix-Workstation-7.ova&quot;&gt;Magnet Link&lt;/a&gt;&lt;/html&gt;
+|{{No}}
+| style=&quot;background-color: {{Yellow}}&quot;| Medium &lt;ref name=atleastssl /&gt;
+| style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification /&gt;
+|- style=&quot;height: 47px&quot;
+
+&lt;!--T:16--&gt;
+| {{GrayBackground}}| [[File:template_source.png|25px]]
+| colspan=&quot;2&quot;|[[Dev/Build Documentation|Build from source code]]
+| See [[Dev/Build Anonymity|Build Anonymity]]
+| style=&quot;background-color: {{Green}}&quot;| Very High &lt;ref name=fromsourcecode&gt;When you build from source code, audit the source code for being non-malicious and reasonably bug free, you do not have to [[Trust]] the developers, the website or the SSL certificate authorities.&lt;/ref&gt;
+| style=&quot;background-color: {{Green}}&quot;| Best &lt;ref name=fromsourcecode /&gt; &lt;ref&gt;By additional verification that you got the source code from the original authors and by ensuring you're using the same source code as others you get better security.&lt;/ref&gt;
+|}
+
+&lt;noinclude&gt;{{Footer}}&lt;/noinclude&gt;</text>
+      <sha1>54unxp1vnn1ixl186xgw0ker6bc7x8k</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:DownloadTableNew</title>
+    <ns>10</ns>
+    <id>894</id>
+    <revision>
+      <id>5696</id>
+      <parentid>5695</parentid>
+      <timestamp>2014-02-26T19:53:14Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <text xml:space="preserve" bytes="7521">&lt;noinclude&gt;{{Header}}&lt;noinclude&gt;
+
+&lt;!--T:7--&gt;
+&lt;big&gt;Version: &lt;span style=&quot;color: green&quot;&gt;{{VersionNew}}&lt;/span&gt;&lt;/big&gt;
+
+&lt;!--T:8--&gt;
+'''Note:''' You need to download both Gateway and Workstation virtual machine images.
+
+&lt;!--T:9--&gt;
+{| class=&quot;wikitable&quot; style=&quot;text-align: center;background-color: #fff&quot;
+|- {{GrayBackground}}
+| style=&quot;height: 47px;&quot;|
+| style=&quot;white-space: nowrap; width: 137px;&quot;|'''Whonix-Gateway'''&lt;br /&gt;(1.2 GiB)
+| style=&quot;white-space: nowrap; width: 137px;&quot;|'''Whonix-Workstation'''&lt;br /&gt;(1.3 GiB)
+| style=&quot;white-space: nowrap; width: 140px;&quot;|'''[[Hide Tor and Whonix from your ISP|Anonymous Download]]&lt;br /&gt; possible &lt;ref name=anonymousdownload&gt;By using the [https://www.torproject.org/download/download-easy.html.en Tor Browser Bundle] (TBB). For an introduction, see [[Tor Browser]]. See also [[Hide Tor and Whonix from your ISP]].&lt;/ref&gt;'''
+| style=&quot;width: 135px;&quot;|'''[[Download Security]]&lt;br /&gt; without [[#Verify the Whonix images|Verification]]'''
+| style=&quot;width: 135px;&quot;|'''[[Download Security]]&lt;br /&gt; with [[#Verify the Whonix images|Verification]]'''
+|- style=&quot;height: 47px&quot;
+
+&lt;!--T:91--&gt;
+| {{GrayBackground}}| [[File:HTTP.png|40px]] {{Anchor|Whonix_signature}}
+| &lt;html&gt;&lt;a href=&quot;http://mirror.whonix.org/&lt;/html&gt;{{VersionNew}}&lt;html&gt;/Whonix-Gateway-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
+| &lt;html&gt;&lt;a href=&quot;http://mirror.whonix.org/&lt;/html&gt;{{VersionNew}}&lt;html&gt;/Whonix-Workstation-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
+|{{Yes}} &lt;ref name=anonymousdownload /&gt;
+| style=&quot;background-color: {{Red}}&quot;| Very Low &lt;ref&gt;[[Warning#Man-in-the-middle_attacks|Man-in-the-middle attacks]] could poison the download.&lt;/ref&gt;
+| style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification&gt;It does not matter if you did the bulk download over an insecure channel, if you use OpenPGP verification at the end.&lt;/ref&gt;
+|- style=&quot;height: 47px&quot;
+
+&lt;!--T:15--&gt;
+| {{GrayBackground}}| [[File:HTTP.png|40px]] {{Anchor|Whonix_signature}}
+| &lt;html&gt;&lt;a href=&quot;http://sourceforge.net/projects/whonix/files/current/&lt;/html&gt;{{VersionNew}}&lt;html&gt;/Whonix-Gateway-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova/download&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
+| &lt;html&gt;&lt;a href=&quot;http://sourceforge.net/projects/whonix/files/current/&lt;/html&gt;{{VersionNew}}&lt;html&gt;/Whonix-Workstation-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova/download&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
+|{{Yes}} &lt;ref name=anonymousdownload /&gt;
+| style=&quot;background-color: {{Red}}&quot;| Very Low &lt;ref&gt;[[Warning#Man-in-the-middle_attacks|Man-in-the-middle attacks]] could poison the download.&lt;/ref&gt;
+| style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification&gt;It does not matter if you did the bulk download over an insecure channel, if you use OpenPGP verification at the end.&lt;/ref&gt;
+|- style=&quot;height: 47px&quot;
+
+&lt;!--T:10--&gt;
+| {{GrayBackground}}| [[File:SSL_Symbol.png|40px]] {{Anchor|Whonix_signature}}
+| &lt;html&gt;&lt;a href=&quot;https://jhcloos.com/whonix/Whonix-&lt;/html&gt;{{VersionNew}}&lt;html&gt;/Whonix-Gateway-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
+| &lt;html&gt;&lt;a href=&quot;https://jhcloos.com/whonix/Whonix-&lt;/html&gt;{{VersionNew}}&lt;html&gt;/Whonix-Workstation-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
+|{{Yes}} &lt;ref name=anonymousdownload /&gt;
+| style=&quot;background-color: {{Red}}&quot;| Low &lt;ref&gt;[[Warning#Man-in-the-middle_attacks|Man-in-the-middle attacks]] could poison the download.&lt;/ref&gt;
+| style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification&gt;It does not matter if you did the bulk download over an insecure channel, if you use OpenPGP verification at the end.&lt;/ref&gt;
+|- style=&quot;height: 47px&quot;
+
+&lt;!--T:11--&gt;
+| {{GrayBackground}}| [[File:Button_sig.png|25px]]
+| white-space: nowrap;&quot;|&lt;html&gt;&lt;a href=&quot;/download/&lt;/html&gt;{{VersionNew}}&lt;html&gt;-sig/Whonix-Gateway-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova.asc&quot;&gt;OpenPGP Signature&lt;/a&gt;&lt;/html&gt;
+| white-space: nowrap;&quot;|&lt;html&gt;&lt;a href=&quot;/download/&lt;/html&gt;{{VersionNew}}&lt;html&gt;-sig/Whonix-Workstation-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova.asc&quot;&gt;OpenPGP Signature&lt;/a&gt;&lt;/html&gt;
+|{{Yes}} &lt;ref name=anonymousdownload /&gt;
+| -
+| -
+|- style=&quot;height: 47px&quot;
+
+&lt;!--T:12--&gt;
+| {{GrayBackground}}| [[File:Crypto_key.png|25px]]
+| colspan=&quot;2&quot;|Verify the images using the [[Whonix Signing Key|Signing Key]]
+|{{Yes}} &lt;ref name=anonymousdownload /&gt;
+| -
+| -
+|- style=&quot;height: 47px&quot;
+
+&lt;!--T:13--&gt;
+| {{GrayBackground}}| [[File:btorrent-icon.png|25px]]&lt;ref&gt;Torrent clients known to work: transmission, Vuze, Deluge. Check this [https://en.wikipedia.org/wiki/Magnet_URI_scheme#Clients_table clients table]. If nobody is [http://wiki.answers.com/Q/What_are_seeders_and_leechers seeding] at the time, only clients with the [https://en.wikipedia.org/wiki/Magnet_URI_scheme#Normal_.28as.29 &quot;as&quot;] feature can be used, because we are providing a [https://en.wikipedia.org/wiki/BitTorrent#Web_seeding webseed].&lt;/ref&gt;
+| &lt;html&gt;&lt;a href=&quot;/download/&lt;/html&gt;{{VersionNew}}&lt;html&gt;-torrent/Whonix-Gateway-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova.torrent&quot;&gt;Torrent Download&lt;/a&gt;&lt;/html&gt;
+| &lt;html&gt;&lt;a href=&quot;/download/&lt;/html&gt;{{VersionNew}}&lt;html&gt;-torrent/Whonix-Workstation-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova.torrent&quot;&gt;Torrent Download&lt;/a&gt;&lt;/html&gt;
+|{{No}}
+| style=&quot;background-color: {{Yellow}}&quot;| Medium &lt;ref name=atleastssl&gt;It's at least as secure as [[SSL]] and [https://en.wikipedia.org/wiki/SHA-1 SHA-1], better than plain http. This is because you get the torrent file or magnet link over https and the torrent/magnet client checks the SHA-1 checksum at the end. Using OpenPGP verification would be safer.&lt;/ref&gt;
+| style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification /&gt;
+|- style=&quot;height: 47px&quot;
+
+&lt;!--T:14--&gt;
+| {{GrayBackground}}| [[File:Magnet_icon.svg.png|20px]] &lt;ref&gt;Magnet link clients known to work: gtk-gnutella. Check this [https://en.wikipedia.org/wiki/Magnet_URI_scheme#Clients_table clients table]. If nobody is [http://wiki.answers.com/Q/What_are_seeders_and_leechers seeding] at the time, only clients with the [https://en.wikipedia.org/wiki/Magnet_URI_scheme#Normal_.28as.29 &quot;as&quot;] feature can be used, because we are providing a [https://en.wikipedia.org/wiki/BitTorrent#Web_seeding webseed].&lt;/ref&gt;
+| &lt;html&gt;&lt;a href=&quot;magnet:?xt=urn:btih:b8969f87015c994f2c4dd93b3ed7c62861c27477&amp;dn=Whonix-Gateway-8.ova&amp;tr=http%3A%2F%2Fannounce.torrentsmd.com%3A6969%2Fannounce&amp;as=http%3A%2F%2Fwebseed.whonix.org%3A8008%2FWhonix-Gateway-8.ova&quot;&gt;Magnet Link&lt;/a&gt;&lt;/html&gt;
+| &lt;html&gt;&lt;a href=&quot;magnet:?xt=urn:btih:7a6a5294ebebef5e5edcb05aa2caf66ebaeaf300&amp;dn=Whonix-Workstation-8.ova&amp;tr=http%3A%2F%2Fannounce.torrentsmd.com%3A6969%2Fannounce&amp;as=http%3A%2F%2Fwebseed.whonix.org%3A8008%2FWhonix-Workstation-8.ova&quot;&gt;Magnet Link&lt;/a&gt;&lt;/html&gt;
+|{{No}}
+| style=&quot;background-color: {{Yellow}}&quot;| Medium &lt;ref name=atleastssl /&gt;
+| style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification /&gt;
+|- style=&quot;height: 47px&quot;
+
+&lt;!--T:16--&gt;
+| {{GrayBackground}}| [[File:template_source.png|25px]]
+| colspan=&quot;2&quot;|[[Dev/Build Documentation|Build from source code]]
+| See [[Dev/Build Anonymity|Build Anonymity]]
+| style=&quot;background-color: {{Green}}&quot;| Very High &lt;ref name=fromsourcecode&gt;When you build from source code, audit the source code for being non-malicious and reasonably bug free, you do not have to [[Trust]] the developers, the website or the SSL certificate authorities.&lt;/ref&gt;
+| style=&quot;background-color: {{Green}}&quot;| Best &lt;ref name=fromsourcecode /&gt; &lt;ref&gt;By additional verification that you got the source code from the original authors and by ensuring you're using the same source code as others you get better security.&lt;/ref&gt;
+|}
+&lt;noinclude&gt;{{Footer}}&lt;noinclude&gt;</text>
+      <sha1>hbx196wmrm7d17fbvv1sp50hg8ojysc</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:VersionNew</title>
+    <ns>10</ns>
+    <id>895</id>
+    <revision>
+      <id>5681</id>
+      <timestamp>2014-02-26T13:36:53Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;8&quot;</comment>
+      <text xml:space="preserve" bytes="1">8</text>
+      <sha1>tpnsk00419wba6vjh1upif21qtst1cv</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>8</title>
+    <ns>0</ns>
+    <id>896</id>
+    <revision>
+      <id>5692</id>
+      <parentid>5690</parentid>
+      <timestamp>2014-02-26T19:03:35Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <text xml:space="preserve" bytes="12680">{{Header}}
+
+{{mbox
+| type       = critical
+| image      = [[File:Ambox_warning_pn.svg.png|40px|alt=Question mark]]
+| text       = Warning: This is a work in progress! Not the final release announcement!
+}}
+
+Will be posted by e-mail and blog post.
+
+Subject:
+
+&lt;pre&gt;
+Whonix Anonymous Operating System Version 8 Released!
+&lt;/pre&gt;
+
+Body:
+
+&lt;pre&gt;
+Whonix is an operating system focused on anonymity, privacy and
+security. It's based on the Tor anonymity network, Debian GNU/Linux and
+security by isolation. DNS leaks are impossible, and not even malware
+with root privileges can find out the user's real IP.
+
+Whonix consists of two parts: One solely runs Tor and acts as a gateway,
+which we call Whonix-Gateway. The other, which we call
+Whonix-Workstation, is on a completely isolated network. Only
+connections through Tor are possible.
+
+Download Whonix for VirtualBox
+##############################
+
+https://www.whonix.org/wiki/Download
+
+Download Whonxi for KVM / Qemu
+##############################
+
+Experimental. See below.
+
+Users of Whonix 7 and below
+###########################
+
+There is no upgrade path from Whonix 7 to Whonix 8, sorry. You
+have to manually download new Whonix images.
+
+Call for Help
+#############
+
+- If you know shell scripting (/bin/bash) and linux sysadmin, please
+join us! There are plenty of ways to make Whonix safer.
+- We are also looking for a download mirros.
+- For https://www.whonix.org we need some help with css, html,
+mediawiki, wordpress, webdesign.
+
+Download Whonix for KVM / Qemu
+##############################
+
+Entirely untested! This is only useful if you have a developers mindset!
+
+This is the first time .qcow2 images are available (as .tar.gz, qcow2
+image must be unpacked):
+http://sourceforge.net/projects/whonix/files/current/8/
+
+We have unfinished(!) instructions for KVM:
+https://www.whonix.org/wiki/KVM
+
+There are still a few blockers before using Whonix with KVM can be
+considered sane:
+https://www.whonix.org/wiki/Dev/KVM
+
+Please help out solving them. Whonix also needs a maintainer to
+support using Whonix with KVM.
+
+If you want to upgrade existing Whonix version using Whonix's APT
+repository
+################################################################
+
+Sorry, upgrading from existing Whonix version (0.5.6, 7, etc.) to Whonix
+8 is not be possible.
+
+Updating from the previous testers-only version 7.7.8.6 or 7.7.9.8
+should be possible when you have Whonix's (stable) APT repository
+enabled. See:
+https://www.whonix.org/wiki/Whonix-APT-Repository
+
+(Whonix 7.7.9.8 is the same version as Whonix 8, just a different
+version number.)
+
+If you want to upgrade existing Whonix version from source code
+###############################################################
+
+Sorry, upgrading from existing Whonix version (0.5.6, 7, etc.) to Whonix
+8 is not be possible.
+
+Updating from the previous testers-only version 7.7.8.6 or 7.7.9.8
+should be possible, see:
+https://www.whonix.org/wiki/Dev/BuildDocumentation_8_deb
+
+(Whonix 7.7.9.8 is the same version as Whonix 8, just a different
+version number.)
+
+If you want to build images from source code
+############################################
+
+See https://www.whonix.org/wiki/Dev/BuildDocumentation.
+
+Physical Isolation users
+########################
+
+See https://www.whonix.org/wiki/Physical_Isolation.
+
+Changelog between Whonix 7 and Whonix 8
+#######################################
+
+* Whonix is now based on Debian stable instead of Debian testing.
+* In new installations, automatic updates of Whonix's debian packages
+are disabled by default. During first start, users can decide if they
+want to enable Whonix's APT repository or want to leave it disabled.
+* Fixed Whonix's Tor Browser download and start script for TBB 3.5.
+* Fixed physical isolation build script.
+* Verifiable Builds. Whonix now has a feature which allows the community
+to check that Whonix .ova releases are verifiably created from project's
+own source code. Also made ade Whonix's APT repository verifiable (even
+deterministic!). Please see
+https://www.whonix.org/wiki/Verifiable_Builds for details.
+* Made Whonix build script configurable (can now build terminal-only
+Whonix-Gateway's and/or Whonix-Workstations; 64 bit builds and more)
+* Improved Whonix News's security. All Whonix News Files are now inside
+one tarball, which is signed. This stops leaking how many users are
+using a particular version.
+* whonixcheck's Whonix News download now checks if Whonix News are still
+valid (currently up to 4 weeks) and therefore detects indefinite freeze
+and replay attacks.
+* whonix_repository tool now has a graphical user interface; added more
+command line switches.
+* Set default locale to en_US.UTF-8.
+* Simplified custom user installation of TorChat, thanks to dummytor.
+(Protecting from Tor over Tor.)
+* Removed apper and synaptic from default installation, because they are
+too confusing / have too many bugs, do not always work in all cases for
+all users, #104, can still be manually installed if wanted, see also
+https://www.whonix.org/wiki/Dev/Automatic_Updates
+* whonixcheck: more configuration options, any function can now be
+disabled, this is useful for users who wish to disable control port
+filter proxy, they can disable the check_tor_bootstrap function
+* whonixcheck: added protection against possibly malicious strings from
+check.torproject.org (in case of a bug, compromise of check.tpo server
+or CA compromise), IP strings are now max 50 characters long. User will
+be warned in case the limit is exceeded.
+* Whonix-Workstation: no longer installing Tor Browser by default, this
+simplified implementing verifiable builds (#113), installing iceweasel
+by default, which can be used to download Tor Browser, added local
+iceweasel browser homepage saying that iceweasel should not be used for
+anything other than downloading Tor Browser, unless one knows what one
+is doing.
+* Removed galternatives from whonix-workstation-default-applications
+because galternatives has been (temporarily) removed from Debian testing
+* Building Whonix from frozen repository, from snapshot.debian.org to
+make the build script more resistant from upstream changes and also to
+make Whonix verifiable.
+* The Whonix Team can now use separate keys for Whonix's APT Repository
+and Whonix News.
+* Added technical documentation about keys in Whonix
+whonix_shared/usr/share/whonix/keys/readme.
+* new man page: man/whonix_shared/sdwdate.8.ronn
+* Deactivated Maximizing Windows by dragging them to the top of the
+screen to prevent users from accidentally maximizing their browser
+window when they are using resolutions higher than 1024x768. See
+https://www.whonix.org/wiki/Higher_Screen_Resolution ;
+https://github.com/Whonix/Whonix/issues/110 and
+https://trac.torproject.org/projects/tor/ticket/7255 for more
+information. #108
+* added udisks to whonix-shared-packages-recommended for mounting
+removable drives
+* KDE settings changes, set to oxygen as suggested by scarp in
+&quot;[Whonix-devel] Plastique kwin style &amp; Widget Style&quot;
+* whonixcheck: increased timeout for the tor bootstrap.py utility from 5
+to 10 seconds to make it compatible with slow systems as per bug
+reporthttps://www.whonix.org/wiki/Special:AWCforum/st/id248/whonixcheck%3A_tor_bootstrap_statu....html
+* whonixcheck: Whonix News File is now deterministic
+* whonixcheck: Whonix News added timeout for gpg and tar
+* added secure-delete, because it contains sfill, which can be used to
+zero out free space, which is required for disk shrinking
+* Deactivated running update-command-not-found during build, since not
+deterministic (verifiable). Manually running is of course still possible.
+* whonix_shared/etc/apt/sources.list.d/torproject.list: removed the &quot;deb
+http://deb.torproject.org/torproject.org tor-0.2.4.x-jessie main&quot;
+repository, since that repository has been removed by The Tor Project
+(Tor is now in their Debian testing repository, which is already added)
+* fixed a bug reported by scarp,
+whonix_shared/usr/share/whonix/postinst.d/70_disable_kdm_autostart: was
+not disabling other display managers other than kdm. Now using the more
+generic /usr/lib/whonix/display-manager-dpkg-post-invoke.
+* msgcollector: fix race condition not always closing progress bar when
+it reached 100%
+* Whonix-Gateway: Workaround for
+http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=732578
+https://www.whonix.org/wiki/Download#Connection_Issues_-_Tor_stops_working_after_an_Upgrade_and_needs_a_Workaround
+https://www.whonix.org/wiki/Special:AWCforum/st/id287/new_tor_and_debian_updates_today....html
+Set in /etc/default/tor:
+USE_AA_EXEC=&quot;no&quot; Can be commented out when that bug gets fixed.
+* optionally (opt-in) building qcow2 images, first rudimentary
+implementation, build target (VirtualBox or qcow2 or both) should
+probably be configurable in whonix_build script (#122)
+* Whonix News Blog Download / Whonix News: Whonix News Blogs (Whonix
+Feature Blog and Whonix Important Blog) are now deployed over the same
+mechanism as Whonix News.
+* Whonix-Workstation: better implementation of dummytor using
+config-package-dev (might break compatibility with Whonix 7)
+* removed adrelanos' old key; removed
+whonix_shared/usr/share/whonix/postinst.d/70_legacy (breaks
+compatiblity with Whonix 7)
+* Re-implemented uwt and dummytor using config-package-dev instead of
+custom dpkg-diversions. Breaks compatibly with Whonix 7.
+* Removed rawdog and pandoc since no longer required.
+* moved misc scripts (Scripts for managing Whonix's offical repository
+and Whonix News; debug scripts; developer documentation and deprecated
+code) to https://github.com/Whonix/whonix-developer-meta-files
+* whonixcheck: do not show output of gpg for Whonix News verification
+* whonixcheck: do not start whonixcheck, if whonixsetup hasn't
+finished yet
+* whonixcheck: new --verbose / --debug options
+* whonixcheck: Check that /proc/sys/net/ipv4/ip_forward and
+/proc/sys/net/ipv6/ip_forward aren't set to 1 to prevent users from
+shooting their own feet.
+* whonixcheck: Whonix News can now optionally be signed with two keys,
+as long as either one is still valid, will be accepted
+* whonixcheck: whonix_shared/etc/init.d/whonixcheckd: on stop, give
+whonixcheck time to gracefully shut down so it can close any still
+eventually open progress bars
+* whonixcheck: fix, exit cleanly (close progress bar) when killed by
+other instance of whonixcheck
+* whonixsetup: start whonixcheck at the end of whonixsetup on
+Whonix-Workstation
+* torbrowser: hide output of gpg import; ask &quot;Start Tor Browser yes/no&quot;
+after upgrading&quot;
+* torbrowser: added timeout to gpg to prevent endless data attacks
+* torbrowser/whonixcheck: alternative method detecting locally installed
+Tor Browser version. When $tbb_folder/Docs/version does not exist, i.e.
+when the user manually downloaded Tor Browser, try to detect version
+number from ~/tor-browser_en-US/Docs/sources/versions.; comment
+* desktop: higher resolution icons for whonix_repository, whonixcheck,
+contribute and donate, whonix gateway firewall, tb recommend, important
+blog and torbrowser
+* ram adjusted desktop starter: fixed lightdm (/usr/sbin/...) auto
+detection
+* qcow2 images: added metadata preallocation
+* qcow2 images: added &quot;-o cluster_size=2M&quot; to &quot;qemu-img&quot; for better
+performance
+* build script: fix &quot;sudo: unable to resolve host debian&quot;
+* build script: added --no-options to gpg to avoid conflict with user's
+gpg config files
+* build script: added benchmarking
+* build script: whonix_build_both: support extra parameter
+* build script: got rid of grml_config by using grml-debootstrap's new
+environment variables feature
+* build script: skip backup-img-after-grml-debootstrap and
+backup-img-after-meta-package-install build steps by default, can be
+re-enabled by builder
+* build script: allow running build-steps.d/2400_convert-img-to-qcow2
+without root
+* build script: improved error handling, when error is detected, wait
+until builder presses enter before cleanup and exit to make it simpler
+to read error messages when building in cli
+* build script: fixed update-locale bug
+build script: Avoiding &quot;perl: warning: Setting locale failed.&quot; as
+suggested on     https://wiki.ubuntu.com/DebootstrapChroot and
+https://lists.debian.org/debian-amd64/2005/08/msg00249.html by setting
+    export LANG=&quot;C&quot;
+* verifiable builds: new build step build-steps.d/2350_cleanup; Get rid
+of /dev folder inside the vm image. This is only required for verifiable
+builds. Otherwise this could be skipped. For example, &quot;sudo
+sha512sum /dev/xconsole&quot; or &quot;sudo sha512sum /dev/initctl&quot; would run
+forever. The /dev folder gets recreated by the kernel upon first boot.
+* Improved messages.
+* Lots of smaller fixes.
+* Code refactoring.
+* For more details, see the git log.
+&lt;/pre&gt;
+
+{{Footer}}</text>
+      <sha1>pfjytewxcfn7w51dh1epxegjloflmcz</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
