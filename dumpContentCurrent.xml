@@ -40122,14 +40122,14 @@ Sourceforge support, ctsai-sf on freenode in #sourceforge said, they use GeoIP f
     <ns>0</ns>
     <id>374</id>
     <revision>
-      <id>5670</id>
-      <parentid>5610</parentid>
-      <timestamp>2014-02-25T13:13:57Z</timestamp>
+      <id>5708</id>
+      <parentid>5670</parentid>
+      <timestamp>2014-02-27T10:06:44Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="173">__NOTOC__
+      <text xml:space="preserve" bytes="201">__NOTOC__
 {{Header}}
 
 {{Donate}}
@@ -40137,8 +40137,10 @@ Sourceforge support, ctsai-sf on freenode in #sourceforge said, they use GeoIP f
 = License =
 The subscribe button (subscribeCC_LG.gif) is copyrighted by PayPal. The pixel (pixel.gif) is copyrighted by PayPal.
 
-{{Footer}}</text>
-      <sha1>lu9l3l28sue5si4wr3hdmutoqzfl3xc</sha1>
+{{Footer}}
+
+[[Category:Documentation]]</text>
+      <sha1>76h7letn9ghipkpj28nkn53kvqlv5r3</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -40489,14 +40491,14 @@ The second part below every headline is Whonix's Example Implementation, how exa
     <ns>0</ns>
     <id>386</id>
     <revision>
-      <id>2545</id>
-      <parentid>1849</parentid>
-      <timestamp>2013-09-03T04:12:28Z</timestamp>
+      <id>5716</id>
+      <parentid>2545</parentid>
+      <timestamp>2014-02-27T10:09:23Z</timestamp>
       <contributor>
-        <username>Anon</username>
-        <id>10</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="3213">{{Header}}
+      <text xml:space="preserve" bytes="3239">{{Header}}
 
 = OpenPGP Signed Website =
 Has been requested in the forum.&lt;ref&gt;http://sourceforge.net/p/whonix/discussion/general/thread/6d7344a5/&lt;/ref&gt; Having an OpenPGP Signed Website would be desirable. But that would require a software, which does not exist yet.
@@ -40559,8 +40561,10 @@ It's an interesting idea, but outside the scope of Whonix to invent such a solut
 = Footnotes =
 &lt;references/&gt;
 
-{{Footer}}</text>
-      <sha1>r68o8pm4t2ywd9o2nrfemqy0jzrjnsg</sha1>
+{{Footer}}
+
+[[Category:Development]]</text>
+      <sha1>99ofz5052yn3j48kdflr3baijwftt4g</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -42289,14 +42293,14 @@ window.pg || $(document).ready( function($) {
     <ns>0</ns>
     <id>433</id>
     <revision>
-      <id>2542</id>
-      <timestamp>2013-09-03T03:03:30Z</timestamp>
+      <id>5717</id>
+      <parentid>2542</parentid>
+      <timestamp>2014-02-27T10:09:34Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>Created page with &quot;{{Header}}  '''Unfinished!'''  = Introduction = Securing downloads may be better when written as a general purpose tool (not specific to Whonix).  No other projects such as Fi...&quot;</comment>
-      <text xml:space="preserve" bytes="1961">{{Header}}
+      <text xml:space="preserve" bytes="1987">{{Header}}
 
 '''Unfinished!'''
 
@@ -42332,8 +42336,10 @@ The Tor Project never managed to get such a downloader up and running, see {{Cod
 = Footnotes =
 &lt;references /&gt;
 
-{{Footer}}</text>
-      <sha1>qld35pliqt4ktkkt3qa4m21vtthw4u9</sha1>
+{{Footer}}
+
+[[Category:Development]]</text>
+      <sha1>ls7dul58g2xv4dva2a1bfdum0gaex3d</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -42539,14 +42545,14 @@ from mainland once a day.
     <ns>0</ns>
     <id>445</id>
     <revision>
-      <id>5689</id>
-      <parentid>3381</parentid>
-      <timestamp>2014-02-26T18:56:16Z</timestamp>
+      <id>5701</id>
+      <parentid>5689</parentid>
+      <timestamp>2014-02-27T10:03:15Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="3707">{{Header}}
+      <text xml:space="preserve" bytes="3735">{{Header}}
 
 &lt;pre&gt;
 Whonix Anonymous Operating System Version 7 Released!
@@ -42610,8 +42616,10 @@ Whonix 7 Changelog:
 
 * Lots of other improvements and bug fixes which can be found under the git log.
 
-{{Footer}}</text>
-      <sha1>7fnw46zz3avx6c7hkjgfwegzppnib8r</sha1>
+{{Footer}}
+
+[[Category:Documentation]]</text>
+      <sha1>hbcys4b0ybc9kukt1ehxg9vm9ywruk4</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -43068,14 +43076,14 @@ ping google.com
     <ns>0</ns>
     <id>461</id>
     <revision>
-      <id>3321</id>
-      <timestamp>2013-10-12T02:12:33Z</timestamp>
+      <id>5706</id>
+      <parentid>3321</parentid>
+      <timestamp>2014-02-27T10:06:29Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>Created page with &quot;= Skipping Postinst Scripts = '''Advanced users only!'''  Let's say for example you don't like the &lt;code&gt;/usr/share/whonix/postinst.d/70_desktopicons&lt;/code&gt; postinst script cr...&quot;</comment>
-      <text xml:space="preserve" bytes="970">= Skipping Postinst Scripts =
+      <text xml:space="preserve" bytes="998">= Skipping Postinst Scripts =
 '''Advanced users only!'''
 
 Let's say for example you don't like the &lt;code&gt;/usr/share/whonix/postinst.d/70_desktopicons&lt;/code&gt; postinst script creating Desktop icons each time an update from Whonix apt repository comes.
@@ -43096,8 +43104,10 @@ WHONIX_BUILD_SKIP_SCRIPTS=&quot;70_desktopicons 70_knetattach 70_whonix_apt_key&
 
 After changing &lt;code&gt;/etc/environment&lt;/code&gt;, you need to reboot.
 
-In case this feature is of interest to you, a solution for not requiring reboot and adding them to a config file in &lt;code&gt;/etc/whonix.d&lt;/code&gt; could be easily and quickly added. Just make a feature request in that case.</text>
-      <sha1>pk10s6nkvj5eimk4pm4kajq8b79jq5j</sha1>
+In case this feature is of interest to you, a solution for not requiring reboot and adding them to a config file in &lt;code&gt;/etc/whonix.d&lt;/code&gt; could be easily and quickly added. Just make a feature request in that case.
+
+[[Category:Documentation]]</text>
+      <sha1>njmy14edj80q5b21pkynh47uw85g6z4</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -43218,14 +43228,14 @@ Modifications coming with Whonix will always fall back to reasonable defaults, i
     <ns>0</ns>
     <id>468</id>
     <revision>
-      <id>5698</id>
-      <parentid>5576</parentid>
-      <timestamp>2014-02-26T21:26:20Z</timestamp>
+      <id>5714</id>
+      <parentid>5698</parentid>
+      <timestamp>2014-02-27T10:08:43Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>Whonix 8</comment>
-      <text xml:space="preserve" bytes="3250">&lt;!--
+      <text xml:space="preserve" bytes="3276">&lt;!--
 # This file is part of Whonix
 # Copyright (C) 2012 - 2013 adrelanos &lt;adrelanos@riseup.net&gt;
 # See the file COPYING for copying conditions.
@@ -43348,8 +43358,10 @@ After a few hours (depending on your disk speed, CPU clock rate, available downl
 
 OVA image can now be used in VirtualBox.
 
-{{Footer}}</text>
-      <sha1>hgu32si8nfe3hd5e15mq8fvb7l3e653</sha1>
+{{Footer}}
+
+[[Category:Development]]</text>
+      <sha1>gfdq3z4dohuvjgmy1gnyjhgurnaj40y</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -44546,14 +44558,14 @@ Lets hope it works well. Please get in [[Support|Contact]] should there be any i
     <ns>0</ns>
     <id>488</id>
     <revision>
-      <id>3710</id>
-      <parentid>3709</parentid>
-      <timestamp>2013-10-19T04:56:26Z</timestamp>
+      <id>5712</id>
+      <parentid>3710</parentid>
+      <timestamp>2014-02-27T10:08:07Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="94059">Here is log of all packets from clean non modified workstation:
+      <text xml:space="preserve" bytes="94085">Here is log of all packets from clean non modified workstation:
 
 = Short =
 
@@ -46251,8 +46263,10 @@ ii  zenity                3.4.0-2         i386            Display graphical dial
 ii  zenity-common         3.4.0-2         all             Display graphical dialog boxes from shell script
 ii  zlib1g:i386           1:1.2.7.dfsg-13 i386            compression library - runtime
 ii  zsh                   4.3.17-1        i386            shell with lots of features
-&lt;/pre&gt;</text>
-      <sha1>sqkgoilznrrb7mmop6e5qkkpv20i4lv</sha1>
+&lt;/pre&gt;
+
+[[Category:Development]]</text>
+      <sha1>7c3osc23vcpe4bg8ck3kckkqu5wyagq</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -46262,14 +46276,14 @@ ii  zsh                   4.3.17-1        i386            shell with lots of fea
     <ns>0</ns>
     <id>489</id>
     <revision>
-      <id>3711</id>
-      <parentid>3708</parentid>
-      <timestamp>2013-10-19T04:57:49Z</timestamp>
+      <id>5713</id>
+      <parentid>3711</parentid>
+      <timestamp>2014-02-27T10:08:31Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="111600">Here is log of packets from clean machine:
+      <text xml:space="preserve" bytes="111626">Here is log of packets from clean machine:
 
 = Short =
 
@@ -48275,8 +48289,10 @@ ii  zip                   3.0-7           i386            Archiver for .zip file
 ii  zlib1g:i386           1:1.2.8.dfsg-1  i386            compression library - runtime
 ii  zsh                   5.0.2-4         i386            shell with lots of features
 ii  zsh-common            5.0.2-4         all             architecture independent files for Zsh
-&lt;/pre&gt;</text>
-      <sha1>bibs71vh8oskqd85oegn5yefpy88p04</sha1>
+&lt;/pre&gt;
+
+[[Category:Development]]</text>
+      <sha1>q7summ6k6y91ylbi9x3lctrgk1pkrwe</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -50383,22 +50399,28 @@ Since Whonix 7.5.2, all Whonix Debian Packages are deterministically build. This
     <ns>0</ns>
     <id>537</id>
     <revision>
-      <id>4214</id>
-      <parentid>4213</parentid>
-      <timestamp>2013-12-15T02:02:48Z</timestamp>
+      <id>5715</id>
+      <parentid>4214</parentid>
+      <timestamp>2014-02-27T10:09:11Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="320">{{mbox
+      <text xml:space="preserve" bytes="370">{{Header}}
+
+{{mbox
 | type       = critical
 | image      = [[File:Ambox_warning_pn.svg.png|40px|alt=Question mark]]
 | text       = 
 Warning:
 
 [https://www.whonix.org/wiki/DoNot#Do_not_confuse_Anonymity_with_Pseudonymity. Do not use this browser for anything other than downloading Tor Browser, unless you know what you are doing!]
-}}</text>
-      <sha1>ko80x0jevxo05o5d1rde7fas665xafx</sha1>
+}}
+
+{{Footer}}
+
+[[Category:Development]]</text>
+      <sha1>n1eyqizx30z3xk3ealx4boj1po8kz3v</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -53069,24 +53091,6 @@ License can be found in the /usr/share/common-licenses' directory.</text>
     </revision>
   </page>
   <page>
-    <title>Adrelanos:Sandbox</title>
-    <ns>0</ns>
-    <id>647</id>
-    <revision>
-      <id>4432</id>
-      <timestamp>2013-12-21T22:27:37Z</timestamp>
-      <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
-      </contributor>
-      <comment>Created page with &quot;test&quot;</comment>
-      <text xml:space="preserve" bytes="4">test</text>
-      <sha1>jrwjerxiekdtj9k82lg930wpkr6tq6r</sha1>
-      <model>wikitext</model>
-      <format>text/x-wiki</format>
-    </revision>
-  </page>
-  <page>
     <title>New:Sandbox</title>
     <ns>0</ns>
     <id>648</id>
@@ -55579,21 +55583,18 @@ You can customize the header and footer of your directory listing as explained [
     <ns>0</ns>
     <id>696</id>
     <revision>
-      <id>4680</id>
-      <parentid>4665</parentid>
-      <timestamp>2014-01-14T00:40:39Z</timestamp>
+      <id>5711</id>
+      <parentid>5710</parentid>
+      <timestamp>2014-02-27T10:07:23Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <minor/>
-      <comment>Protected &quot;[[Datenschutz]]&quot; ([Edit=Allow only administrators] (indefinite) [Move=Allow only administrators] (indefinite))</comment>
-      <text xml:space="preserve" bytes="32257">&lt;!--
+      <text xml:space="preserve" bytes="32284">&lt;!--
 NOTE TO WIKI EDITORS:
 Do not add the default footer!
 Do not edit without asking Patrick Schleizer beforehand!
 --&gt;
-
 [[Impressum]] | [[Datenschutz|Datenschutzerklärung]] | [[Disclaimer|Haftungsausschluss]]
 
 = Datenschutz =
@@ -56029,8 +56030,10 @@ löschen, müssen Sie das Opt-Out-Cookie erneut setzen.
 NOTE TO WIKI EDITORS:
 Do not add the default footer!
 Do not edit without asking Patrick Schleizer beforehand!
---&gt;</text>
-      <sha1>qm21ar1bnv4t6u30k7smtuqxfz6865q</sha1>
+--&gt;
+
+[[Category:Documentation]]</text>
+      <sha1>3jx7yvteif8cbfemmaq75h7mid8gef1</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -56040,16 +56043,14 @@ Do not edit without asking Patrick Schleizer beforehand!
     <ns>0</ns>
     <id>697</id>
     <revision>
-      <id>4679</id>
-      <parentid>4666</parentid>
-      <timestamp>2014-01-14T00:40:34Z</timestamp>
+      <id>5709</id>
+      <parentid>4679</parentid>
+      <timestamp>2014-02-27T10:06:54Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <minor/>
-      <comment>Protected &quot;[[Disclaimer]]&quot; ([Edit=Allow only administrators] (indefinite) [Move=Allow only administrators] (indefinite))</comment>
-      <text xml:space="preserve" bytes="5491">[[Impressum]] | [[Datenschutz|Datenschutzerklärung]] | [[Disclaimer|Haftungsausschluss]]
+      <text xml:space="preserve" bytes="5519">[[Impressum]] | [[Datenschutz|Datenschutzerklärung]] | [[Disclaimer|Haftungsausschluss]]
 
 = Haftungsausschluss (Disclaimer) – rechtliche Hinweise =
 
@@ -56136,8 +56137,10 @@ vorgenannten Paragraphen abweichen, wird an entsprechender Stelle ausdrücklich
 darauf hingewiesen. In diesem Falle gelten im jeweiligen Einzelfall die
 besonderen Nutzungsbedingungen.
 
-Quelle: &lt;html&gt;&lt;a href=&quot;http://www.juraforum.de/impressum-generator/&quot;&gt;Impressum Vorlage&lt;/a&gt; und &lt;a href=&quot;http://www.juraforum.de/rechtsanwalt/anwalt-leipzig/&quot;&gt;Anwalt Leipzig&lt;/a&gt;&lt;/html&gt; von Juraforum.de</text>
-      <sha1>1bi6p4jotxxn0t62w2hfii58yhkkpe5</sha1>
+Quelle: &lt;html&gt;&lt;a href=&quot;http://www.juraforum.de/impressum-generator/&quot;&gt;Impressum Vorlage&lt;/a&gt; und &lt;a href=&quot;http://www.juraforum.de/rechtsanwalt/anwalt-leipzig/&quot;&gt;Anwalt Leipzig&lt;/a&gt;&lt;/html&gt; von Juraforum.de
+
+[[Category:Documentation]]</text>
+      <sha1>cpz1ajgaz5pa8puyncns3w45s4iqs43</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -56147,15 +56150,14 @@ Quelle: &lt;html&gt;&lt;a href=&quot;http://www.juraforum.de/impressum-generator
     <ns>0</ns>
     <id>698</id>
     <revision>
-      <id>4841</id>
-      <parentid>4840</parentid>
-      <timestamp>2014-01-28T02:45:35Z</timestamp>
+      <id>5707</id>
+      <parentid>4841</parentid>
+      <timestamp>2014-02-27T10:06:38Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Geltungsbereich */</comment>
-      <text xml:space="preserve" bytes="3730">[[Impressum]] | [[Datenschutz|Datenschutzerklärung]] | [[Disclaimer|Haftungsausschluss]]
+      <text xml:space="preserve" bytes="3758">[[Impressum]] | [[Datenschutz|Datenschutzerklärung]] | [[Disclaimer|Haftungsausschluss]]
 
 = Impressum =
 == Angaben (gemäß § 5 TMG) ==
@@ -56224,8 +56226,10 @@ Bitte beachten Sie, dass dieses Impressum gilt nicht für:
 Die Datenschutzerklärung finden Sie [[Datenschutz|hier]].
 
 = Haftungsausschluss (Disclaimer) =
-Den Haftungsausschluss (Disclaimer) finden Sie [[Disclaimer|hier]].</text>
-      <sha1>1zvgb613d4b6ymdv8gxsj9reuok77uu</sha1>
+Den Haftungsausschluss (Disclaimer) finden Sie [[Disclaimer|hier]].
+
+[[Category:Documentation]]</text>
+      <sha1>d6wj1ynjcp8vc3dq1ziwr0gbufxhecc</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -56519,14 +56523,14 @@ Thanks für den MAT public domain screenshot an [https://www.awxcnx.de/handbuch_
     <ns>0</ns>
     <id>710</id>
     <revision>
-      <id>5488</id>
-      <parentid>5487</parentid>
-      <timestamp>2014-02-18T08:15:33Z</timestamp>
+      <id>5704</id>
+      <parentid>5488</parentid>
+      <timestamp>2014-02-27T10:06:18Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="23378">{{Header}}
+      <text xml:space="preserve" bytes="23406">{{Header}}
 
 = Keys =
 == New Key (Signed Whonix 8 testers-only) ==
@@ -56941,8 +56945,10 @@ NmCCrJh+tk9MxaRF9kzUgCfTDKH2++ffDoRMaz4h/yXQkTd4pJTsMYcTwIv8h5D4
 E13Z1DJRfRPaW7cbNubq
 =uJW+
 -----END PGP SIGNATURE-----
-&lt;/pre&gt;</text>
-      <sha1>fxifho64553rmdwyeq11h5o6sjgqd1b</sha1>
+&lt;/pre&gt;
+
+[[Category:Documentation]]</text>
+      <sha1>5be4znsphe1xlk6q5gvptf6swag7u4j</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -61755,156 +61761,20 @@ sudo rm -fR /var/lib/apt/lists/*
     <ns>0</ns>
     <id>891</id>
     <revision>
-      <id>5697</id>
-      <parentid>5674</parentid>
-      <timestamp>2014-02-26T20:14:16Z</timestamp>
+      <id>5722</id>
+      <parentid>5721</parentid>
+      <timestamp>2014-02-27T10:57:28Z</timestamp>
       <contributor>
-        <username>Troubadour</username>
-        <id>230</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="7931">{{Header}}
-
+      <comment>/* Pidgin */</comment>
+      <text xml:space="preserve" bytes="8013">{{Header}}
+__FORCETOC__
+= Introduction =
 The following AppArmor profiles are currently under evaluation with Whonix 8 pre-release (7.7.9.8). When considered sufficiently tested, they will be checked for backward compatibility with Whonix 7.
 
-=== Pidgin ===
-{{AppArmorProfileWarning}}
-
-Create a file /etc/apparmor.d/usr.bin.pidgin.
-
-&lt;pre&gt;
-kdesudo kwrite /etc/apparmor.d/usr.bin.pidgin
-&lt;/pre&gt;
-
-Credit for this AppArmor profile goes to [http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=676849 intrigeri].
-
-&lt;pre&gt;
-# vim:syntax=apparmor
-
-#include &lt;tunables/global&gt;
-
-/usr/bin/pidgin {
-  #include &lt;abstractions/audio&gt;
-  #include &lt;abstractions/aspell&gt;
-  #include &lt;abstractions/base&gt;
-  #include &lt;abstractions/bash&gt;
-  #include &lt;abstractions/consoles&gt;
-  #include &lt;abstractions/dbus&gt;
-  #include &lt;abstractions/dbus-session&gt;
-  #include &lt;abstractions/fonts&gt;
-  #include &lt;abstractions/freedesktop.org&gt;
-  #include &lt;abstractions/gnome&gt;
-  #include &lt;abstractions/launchpad-integration&gt;
-  #include &lt;abstractions/nameservice&gt;
-  #include &lt;abstractions/private-files-strict&gt;
-  #include &lt;abstractions/ubuntu-browsers&gt;
-  #include &lt;abstractions/ubuntu-console-browsers&gt;
-  #include &lt;abstractions/user-download&gt;
-  #include &lt;abstractions/user-tmp&gt;
-  #include &lt;abstractions/ibus&gt;
-  #include &lt;abstractions/X&gt;
-
-  deny capability sys_ptrace,
-
-  deny @{HOME}/.bash* rw,
-  deny @{HOME}/.cshrc rw,
-  deny @{HOME}/.profile rw,
-  deny @{HOME}/.zshrc rw,
-
-  owner @{HOME}/.cache/dconf/user rw,
-  owner @{HOME}/.config/dconf/user r,
-  owner @{HOME}/.config/enchant/ rw,
-  owner @{HOME}/.config/enchant/* rwk,
-  owner @{HOME}/.local/share/icons/ r,
-  owner @{HOME}/.local/share/mime/* r,
-  owner @{HOME}/.gnome2/nautilus-sendto/** rw,
-  owner @{HOME}/.gstreamer*/ rw,
-  owner @{HOME}/.gstreamer*/** rw,
-  owner @{HOME}/.pulse/ rw,
-  owner @{HOME}/.pulse/** rw,
-  owner @{HOME}/.pulse-cookie rwk,
-  owner @{HOME}/.purple/ rw,
-  owner @{HOME}/.purple/** rwk,
-
-  /bin/dash rix,
-
-  /{dev,run}/shm/ r,
-  /{dev,run}/shm/* rw,
-
-  /etc/ r,
-  /etc/pulse/client.conf r,
-  /etc/ssl/certs/ r,
-  /etc/ssl/certs/** r,
-  /etc/ssl/certs/ssl-cert-snakeoil.pem r,
-
-  owner /tmp/orbit-*/* w,
-  owner /tmp/pulse-*/* w,
-
-  /usr/bin/gconftool-2 rix,
-  /usr/bin/gnome-default-applications-properties ix,
-  /usr/bin/gnome-network-preferences ix,
-  /usr/bin/gnome-open rmix,
-  /usr/bin/gsettings rix,
-  /usr/bin/pidgin r,
-  /usr/bin/xdg-open rmix,
-  /bin/which rix,
-  /usr/bin/gvfs-open rmix,
-
-  /usr/share/glib-2.0/schemas/gschemas.compiled r,
-
-  /usr/lib/ r,
-  /usr/lib/frei0r-1/*.so rm,
-  /usr/lib/libvisual-*/**.so rm,
-  /usr/lib/pidgin/*.so rm,
-  /usr/lib/purple*/*.so rm,
-
-  /usr/share/ca-certificates/*/** r,
-  /usr/share/enchant/enchant.ordering r,
-  /usr/share/locale-langpack/** rm,
-  /usr/share/purple/ca-certs/ r,
-  /usr/share/purple/ca-certs/** r,
-  /usr/share/myspell/dicts/ r,
-  /usr/share/myspell/dicts/** r,
-  /usr/share/tcltk/** r,
-
-  /usr/share/themes/ r,
-  /usr/share/themes/** r,
-
-  /usr/share/hunspell/ r,
-  /usr/share/hunspell/** r,
-
-  deny @{PROC}/** r,
-
-  # Site-specific additions and overrides. See local/README for details.
-  #include &lt;local/usr.bin.pidgin&gt;
-}
-&lt;/pre&gt;
-
-Create a file /etc/apparmor.d/local/usr.bin/pidgin.
-
-&lt;pre&gt;
-kdesudo kwrite /etc/apparmor.d/local/usr.bin/pidgin
-&lt;/pre&gt;
-
-&lt;pre&gt;
-/etc/resolv.conf.whonix r,
-/etc/hosts.whonix r,
-&lt;/pre&gt;
-
-Run.
-
-&lt;pre&gt;
-sudo apparmor_parser -r -W -T /etc/apparmor.d/usr.bin.pidgin
-&lt;/pre&gt;
-
-&lt;pre&gt;
-sudo aa-enforce /etc/apparmor.d/usr.bin.pidgin
-&lt;/pre&gt;
-
-Run.
-
-That's it.
-
-=== Tor Browser Bundle (TBB) ===
+= Tor Browser Bundle (TBB) =
 {{AppArmorProfileWarning}}
 
 Create a file /etc/apparmor.d/home.user.tor-browser_en-US.Browser.firefox.
@@ -62057,14 +61927,156 @@ sudo aa-enforce /etc/apparmor.d/home.user.tor-browser_en-US.Browser.firefox
 
 [https://www.whonix.org/forum/index.php?action=profile;u=24 troubadour] created this profile. You can discuss it in this [https://www.whonix.org/forum/index.php/topic,24.0.html forum thread].
 
-=== Additional inspiration ===
+= Pidgin =
+{{AppArmorProfileWarning}}
+
+Credit for this AppArmor profile goes to [http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=676849 intrigeri].
+
+Create a file /etc/apparmor.d/usr.bin.pidgin.
+
+&lt;pre&gt;
+kdesudo kwrite /etc/apparmor.d/usr.bin.pidgin
+&lt;/pre&gt;
+
+Paste the following content.
+
+&lt;pre&gt;
+# vim:syntax=apparmor
+
+#include &lt;tunables/global&gt;
+
+/usr/bin/pidgin {
+  #include &lt;abstractions/audio&gt;
+  #include &lt;abstractions/aspell&gt;
+  #include &lt;abstractions/base&gt;
+  #include &lt;abstractions/bash&gt;
+  #include &lt;abstractions/consoles&gt;
+  #include &lt;abstractions/dbus&gt;
+  #include &lt;abstractions/dbus-session&gt;
+  #include &lt;abstractions/fonts&gt;
+  #include &lt;abstractions/freedesktop.org&gt;
+  #include &lt;abstractions/gnome&gt;
+  #include &lt;abstractions/launchpad-integration&gt;
+  #include &lt;abstractions/nameservice&gt;
+  #include &lt;abstractions/private-files-strict&gt;
+  #include &lt;abstractions/ubuntu-browsers&gt;
+  #include &lt;abstractions/ubuntu-console-browsers&gt;
+  #include &lt;abstractions/user-download&gt;
+  #include &lt;abstractions/user-tmp&gt;
+  #include &lt;abstractions/ibus&gt;
+  #include &lt;abstractions/X&gt;
+
+  deny capability sys_ptrace,
+
+  deny @{HOME}/.bash* rw,
+  deny @{HOME}/.cshrc rw,
+  deny @{HOME}/.profile rw,
+  deny @{HOME}/.zshrc rw,
+
+  owner @{HOME}/.cache/dconf/user rw,
+  owner @{HOME}/.config/dconf/user r,
+  owner @{HOME}/.config/enchant/ rw,
+  owner @{HOME}/.config/enchant/* rwk,
+  owner @{HOME}/.local/share/icons/ r,
+  owner @{HOME}/.local/share/mime/* r,
+  owner @{HOME}/.gnome2/nautilus-sendto/** rw,
+  owner @{HOME}/.gstreamer*/ rw,
+  owner @{HOME}/.gstreamer*/** rw,
+  owner @{HOME}/.pulse/ rw,
+  owner @{HOME}/.pulse/** rw,
+  owner @{HOME}/.pulse-cookie rwk,
+  owner @{HOME}/.purple/ rw,
+  owner @{HOME}/.purple/** rwk,
+
+  /bin/dash rix,
+
+  /{dev,run}/shm/ r,
+  /{dev,run}/shm/* rw,
+
+  /etc/ r,
+  /etc/pulse/client.conf r,
+  /etc/ssl/certs/ r,
+  /etc/ssl/certs/** r,
+  /etc/ssl/certs/ssl-cert-snakeoil.pem r,
+
+  owner /tmp/orbit-*/* w,
+  owner /tmp/pulse-*/* w,
+
+  /usr/bin/gconftool-2 rix,
+  /usr/bin/gnome-default-applications-properties ix,
+  /usr/bin/gnome-network-preferences ix,
+  /usr/bin/gnome-open rmix,
+  /usr/bin/gsettings rix,
+  /usr/bin/pidgin r,
+  /usr/bin/xdg-open rmix,
+  /bin/which rix,
+  /usr/bin/gvfs-open rmix,
+
+  /usr/share/glib-2.0/schemas/gschemas.compiled r,
+
+  /usr/lib/ r,
+  /usr/lib/frei0r-1/*.so rm,
+  /usr/lib/libvisual-*/**.so rm,
+  /usr/lib/pidgin/*.so rm,
+  /usr/lib/purple*/*.so rm,
+
+  /usr/share/ca-certificates/*/** r,
+  /usr/share/enchant/enchant.ordering r,
+  /usr/share/locale-langpack/** rm,
+  /usr/share/purple/ca-certs/ r,
+  /usr/share/purple/ca-certs/** r,
+  /usr/share/myspell/dicts/ r,
+  /usr/share/myspell/dicts/** r,
+  /usr/share/tcltk/** r,
+
+  /usr/share/themes/ r,
+  /usr/share/themes/** r,
+
+  /usr/share/hunspell/ r,
+  /usr/share/hunspell/** r,
+
+  deny @{PROC}/** r,
+
+  # Site-specific additions and overrides. See local/README for details.
+  #include &lt;local/usr.bin.pidgin&gt;
+}
+&lt;/pre&gt;
+
+Create a file /etc/apparmor.d/local/usr.bin/pidgin.
+
+&lt;pre&gt;
+kdesudo kwrite /etc/apparmor.d/local/usr.bin/pidgin
+&lt;/pre&gt;
+
+&lt;pre&gt;
+/etc/resolv.conf.whonix r,
+/etc/hosts.whonix r,
+&lt;/pre&gt;
+
+Run.
+
+&lt;pre&gt;
+sudo apparmor_parser -r -W -T /etc/apparmor.d/usr.bin.pidgin
+&lt;/pre&gt;
+
+&lt;pre&gt;
+sudo aa-enforce /etc/apparmor.d/usr.bin.pidgin
+&lt;/pre&gt;
+
+Run Pidgin.
+
+That's it.
+
+= Additional inspiration =
 Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/AppArmor in Debian]):
 
 * [https://trac.torproject.org/projects/tor/wiki/doc/AppArmorForTBB AppArmor Profile for TBB]
 * [https://github.com/adrelanos/Inoffical-TBB-AppArmor Inoffical-TBB-AppArmor]
 
-{{Footer}}</text>
-      <sha1>nadqoylr8gxdxnw0abnwovpy7hjyuga</sha1>
+{{Footer}}
+
+[[Category:Documentation]]</text>
+      <sha1>84qp24755gbh5uh8k9w8dmcunbtjvu9</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -62198,14 +62210,14 @@ Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/A
     <ns>10</ns>
     <id>894</id>
     <revision>
-      <id>5696</id>
-      <parentid>5695</parentid>
-      <timestamp>2014-02-26T19:53:14Z</timestamp>
+      <id>5700</id>
+      <parentid>5696</parentid>
+      <timestamp>2014-02-27T09:56:54Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="7521">&lt;noinclude&gt;{{Header}}&lt;noinclude&gt;
+      <text xml:space="preserve" bytes="7539">&lt;noinclude&gt;{{Header}}&lt;noinclude&gt;
 
 &lt;!--T:7--&gt;
 &lt;big&gt;Version: &lt;span style=&quot;color: green&quot;&gt;{{VersionNew}}&lt;/span&gt;&lt;/big&gt;
@@ -62226,8 +62238,8 @@ Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/A
 
 &lt;!--T:91--&gt;
 | {{GrayBackground}}| [[File:HTTP.png|40px]] {{Anchor|Whonix_signature}}
-| &lt;html&gt;&lt;a href=&quot;http://mirror.whonix.org/&lt;/html&gt;{{VersionNew}}&lt;html&gt;/Whonix-Gateway-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
-| &lt;html&gt;&lt;a href=&quot;http://mirror.whonix.org/&lt;/html&gt;{{VersionNew}}&lt;html&gt;/Whonix-Workstation-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
+| &lt;html&gt;&lt;a href=&quot;http://mirror.whonix.org.nyud.net/&lt;/html&gt;{{VersionNew}}&lt;html&gt;/Whonix-Gateway-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
+| &lt;html&gt;&lt;a href=&quot;http://mirror.whonix.org.nyud.net/&lt;/html&gt;{{VersionNew}}&lt;html&gt;/Whonix-Workstation-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
 |{{Yes}} &lt;ref name=anonymousdownload /&gt;
 | style=&quot;background-color: {{Red}}&quot;| Very Low &lt;ref&gt;[[Warning#Man-in-the-middle_attacks|Man-in-the-middle attacks]] could poison the download.&lt;/ref&gt;
 | style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification&gt;It does not matter if you did the bulk download over an insecure channel, if you use OpenPGP verification at the end.&lt;/ref&gt;
@@ -62294,7 +62306,7 @@ Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/A
 | style=&quot;background-color: {{Green}}&quot;| Best &lt;ref name=fromsourcecode /&gt; &lt;ref&gt;By additional verification that you got the source code from the original authors and by ensuring you're using the same source code as others you get better security.&lt;/ref&gt;
 |}
 &lt;noinclude&gt;{{Footer}}&lt;noinclude&gt;</text>
-      <sha1>hbx196wmrm7d17fbvv1sp50hg8ojysc</sha1>
+      <sha1>oeiqun78cw5kw0wcigerz3kp65tj6dt</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -62322,14 +62334,14 @@ Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/A
     <ns>0</ns>
     <id>896</id>
     <revision>
-      <id>5692</id>
-      <parentid>5690</parentid>
-      <timestamp>2014-02-26T19:03:35Z</timestamp>
+      <id>5702</id>
+      <parentid>5692</parentid>
+      <timestamp>2014-02-27T10:05:06Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="12680">{{Header}}
+      <text xml:space="preserve" bytes="12708">{{Header}}
 
 {{mbox
 | type       = critical
@@ -62609,8 +62621,68 @@ forever. The /dev folder gets recreated by the kernel upon first boot.
 * For more details, see the git log.
 &lt;/pre&gt;
 
-{{Footer}}</text>
-      <sha1>pfjytewxcfn7w51dh1epxegjloflmcz</sha1>
+{{Footer}}
+
+[[Category:Documentation]]</text>
+      <sha1>qbdz9n0s450arwtohxgd0dikwdytkti</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Verification Assets</title>
+    <ns>0</ns>
+    <id>897</id>
+    <revision>
+      <id>5705</id>
+      <parentid>5699</parentid>
+      <timestamp>2014-02-27T10:06:23Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <text xml:space="preserve" bytes="50">{{Header}}
+
+{{Footer}}
+
+[[Category:Documentation]]</text>
+      <sha1>hakh93j8jydx61kmaz7tsx00fq688ok</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>User:GuidoMohokvwqxz</title>
+    <ns>2</ns>
+    <id>898</id>
+    <revision>
+      <id>5718</id>
+      <timestamp>2014-02-27T10:41:37Z</timestamp>
+      <contributor>
+        <username>GuidoMohokvwqxz</username>
+        <id>236</id>
+      </contributor>
+      <comment>Created page with &quot;Me gusta los [http://trucos.hobbyconsolas.com/ trucos] y juegos&quot;</comment>
+      <text xml:space="preserve" bytes="63">Me gusta los [http://trucos.hobbyconsolas.com/ trucos] y juegos</text>
+      <sha1>6hflg7te1tme4m7t5rr53d3nctvsksd</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Trucos de videojuegos trucos trucos</title>
+    <ns>0</ns>
+    <id>899</id>
+    <revision>
+      <id>5719</id>
+      <timestamp>2014-02-27T10:41:43Z</timestamp>
+      <contributor>
+        <username>GuidoMohokvwqxz</username>
+        <id>236</id>
+      </contributor>
+      <comment>Created page with &quot;Trucos trucos trucos [http://trucos.hobbyconsolas.com/ trucos] trucos trucos trucos &lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;1. Origination :&lt;br&gt;&lt;br&gt;Today, video games are portion of recreational liv...&quot;</comment>
+      <text xml:space="preserve" bytes="14825">Trucos trucos trucos [http://trucos.hobbyconsolas.com/ trucos] trucos trucos trucos &lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;1. Origination :&lt;br&gt;&lt;br&gt;Today, video games are portion of recreational liveliness of the vast absolute majority of hoi polloi. Since this is unitary component of technology, we regard it appropriate and useful to break down the potentiality that video games could be in the educational process , so that their wont contributes to improve and raise the select of the procedure.&lt;br&gt;&lt;br&gt; &lt;br&gt;&lt;br&gt;Deuce . Trouble :&lt;br&gt;&lt;br&gt;Faced with the efforts made in Holocene age to clarify the utilisation of picture games , it is essential to analyse the significant features that make to be applied in breeding. It is from around reflections on the versatile studies (Lin and Lepper , 1987 ; Fileni , 1988 , Ebullition , 1995, Levis, 1997 ; Calvo , 1997 ) facts almost video recording games , it is requisite to pass water decisions just about them, in sexual relation to its benefits and losings , which is wherefore it is important to ready decisions if we take to think of video recording games as a field of study textile and didactic educational respect :&lt;br&gt;&lt;br&gt;What public opinion is of telecasting games, this beingness an activeness so far-flung and vivid practise ? What benefits for the shaver act picture games ? What is the office of the educator ( parent, teacher, etc. . ) , Ahead the plot , and this is a recreational repair ? What negative aspects of television games ? Below what conditions should be developed in unpaid activities involving television games? What are the pick criteria should persist when buying telecasting games and particularly to bring home the bacon them to children and adolescents ? What skills and abilities conduce to underdeveloped video recording games related to those needful in the teaching-acquisition summons ? Does organism video recording games cataloged resources in young technologies What are their learning potential difference ?&lt;br&gt;&lt;br&gt; &lt;br&gt;&lt;br&gt;Tierce . Television Construct .&lt;br&gt;&lt;br&gt;If always on that point were boundaries 'tween the concepts of multimedia system and video games , they get begun to crumple apace. Great corporations betrothed in former activities related to the public of freshly technologies just with no have in the domain of figurer amusement , are more and more to a greater extent concerned in having an active agent function in the video recording gritty food market particularly in regards to telecasting games household . ( Levi's , 1997 )&lt;br&gt;&lt;br&gt;Due to the in a higher place and in rules of order to nonobjective the positive aspects of telecasting games, is our lieu that defines the videojuegso as a crossbreed scheme , interactive multimedia system games, ( Levi's ), consisting in games whose vulgar device characteristic is her halfway secondhand and not the capacity of the mettlesome ( Flare-up , 1995 ) . Therefore, scorn its constantly changing, we give the axe pronounce that television games are playful instruments that postulate an physics metier , viz. an physics gaming political platform ( home cabinet , PC , gambling machines , etc. . ) ( Maldonado , 1999 ) .&lt;br&gt;&lt;br&gt;From Hera you can categorize or class telecasting games as follows ( Flare-up ) :&lt;br&gt;&lt;br&gt;Character OF Stake&lt;br&gt;&lt;br&gt;METHODS&lt;br&gt;&lt;br&gt;Colonnade&lt;br&gt;&lt;br&gt;Labyrinths&lt;br&gt;&lt;br&gt;sports&lt;br&gt;&lt;br&gt;Sack and Forget&lt;br&gt;&lt;br&gt;Simulators&lt;br&gt;&lt;br&gt;instrumental&lt;br&gt;&lt;br&gt;Situations&lt;br&gt;&lt;br&gt;sports&lt;br&gt;&lt;br&gt;strategy&lt;br&gt;&lt;br&gt; &lt;br&gt;&lt;br&gt;Pictorial Adventures&lt;br&gt;&lt;br&gt;Roleplaying&lt;br&gt;&lt;br&gt;Warfare Games&lt;br&gt;&lt;br&gt;other Games&lt;br&gt;&lt;br&gt;Table Games&lt;br&gt;&lt;br&gt;Circuit board &amp; Chess game&lt;br&gt;&lt;br&gt; &lt;br&gt;&lt;br&gt;April . CONTRIBUTIONS ON THE Utilize OF VIDEO GAMES :&lt;br&gt;&lt;br&gt;We went then to leaning around conclusions reached by the researchers ; Burst 1995 ; Levis, 1997 ; Calvo , 1997 , Etxeberría , 1999, Maldonado and Jariego , 1999 , Hector Hevodidbon , 1999 , which is presently perusal the halt , both in the learning , sociological and science :&lt;br&gt;&lt;br&gt;4.1. What feeling is of video games, this being an natural action so widespread and vivid exercise ?&lt;br&gt;&lt;br&gt;Respective studies stimulate shown that bias and ideas that you get regarding picture games are bad, they stimulate been infernal chiefly to keep apart the instrumentalist , egg on fury and grounds addiction . ( Ebullition , 1995, Lin and Lepper 1987 ) .&lt;br&gt;&lt;br&gt;However, former researchers on this subject , ( Etxeberría , 1999, Maldonado and Jariego , 1999 , Andres Martinez 1999 , Levi's , 1997 , Calvo , 1997 ) have got ended crucial to found boundaries that line the benefits and amends to manipulate picture games and even deliberate his unveiling to pedagogy and pedagogy resources for technological, that arse serve as an learning putz in the teaching-scholarship serve .&lt;br&gt;&lt;br&gt;Video games are regarded as the Best known case of plot whose usual characteristic is the path it is victimised. As mentioned in a higher place , we practice a fend for political program or physical science gamy , so it should be understood that telecasting games are a whole beingness included in this chemical group utmost old age games equivalent Pacman to the stream CD Read-only storage , telecasting games and gameboy .&lt;br&gt;&lt;br&gt;4.2. What benefits for the kid romp picture games ?&lt;br&gt;&lt;br&gt;We bang that when the tyke plays, he full develops biopsicológico floor , strong-arm and elite ( Garaigordobil , 1990 ) . Likewise, founded on the researchers mentioned , it was plant that when the child plays video recording games have abilities and skills developed in sociable psychological science that charm the teaching-learnedness treat , of which the chase are mentioned :&lt;br&gt;&lt;br&gt;Your ability to enjoyment symbols increases because through with these games, pot act dissimilar phenomena , analyse their conscious experiences , plan, reckon and human activity with foresight .&lt;br&gt;The musician uses its self-regulatory processes so that you posterior master , pick out and mastermind outside influences so that is non special to amateur react to situations that hold during the punt.&lt;br&gt;The subject field interacts with the surroundings , so that during the game the mortal handles the reins of the post and sets the limits of their self-direction.&lt;br&gt;Need and sensory system and sense modality foreplay video gritty allows the thespian the closure of dissimilar levels of problems and difficulties , which is obtained mastery of skills and abilities of the applied science itself .&lt;br&gt;4.3. What is the role of the pedagog ( parent, teacher, etc. . ) , Before the gimpy , and this is a recreational fall back ?&lt;br&gt;&lt;br&gt;Since it has been proved that telecasting games put up to and impress the developing of the person , it is important that the big has noesis around the cocksure aspects with the Games and that its apply lavatory bear on beneficially , science and cognitive exploitation of the fry.&lt;br&gt;&lt;br&gt;Piece it is admittedly that on that point are red video recording games , it is likewise authoritative to eminence the existence of telecasting games the thespian innocuous hence not reserve to pronounce television games as noxious elements , since the core of the purpose therefrom bequeath depend on the bring materials , ie games that bequeath get and ply the kid. It is for this that , from these investigations , number together the undermentioned recommendations , focalization particularly on the utilise of video recording games and engagement with , parents with their children and educators with their students :&lt;br&gt;&lt;br&gt;It is authoritative to have intercourse the contented of telecasting games is acquired and their operating instructions , which will helper us to pick out those to the highest degree apt games for every eld.&lt;br&gt;We advocate the apply of video games on the grocery , not male chauvinist , crimson or racist .&lt;br&gt;Promote the function of television games that allow for the involution of Thomas More than peerless actor .&lt;br&gt;Limitation the clip the manipulation of television games. It is recommended that you make for betwixt 30-60 minutes a twenty-four hours , depending on the child's maturate .&lt;br&gt;Do non block that the gritty and its resources should deviate , thus the full-grown the kid will attempt to broaden the secret plan and biz objects .&lt;br&gt;Wish must be interpreted during the employment of television games and many early playfulness activities , parents and teachers are convoluted in the biz , so to be partakers in this bodily process .&lt;br&gt;The expend of television games as , fundament arise in the small fry , skills valued by today's order , so that your personality bequeath be positively reinforced .&lt;br&gt;&lt;br&gt;Many parents imagine that games wager an amusement boast , which speeds up the reflexes and the psyche , only the vast legal age , still , consider that television games injure those World Health Organization employment , isolating or sensational his thinker . To slim the doubt of this case of game, and then sum up the positive aspects of the lame to those World Health Organization cause total to trust studies this reflexion :&lt;br&gt;&lt;br&gt;More often than not citizenry who wager picture games are knotty in a learning treat covered, that allows convention subjects repress ohmic resistance to be dinner dress scholarship , and multisensory agency of learning, using pictures, sounds and kinaesthetic modalities facilitates Thomas More instruction.&lt;br&gt;Appropriate the practice of the imagination, without spatial or feature limitations .&lt;br&gt;Ply access code to &quot; other worlds &quot; and sharing each early through the charts.&lt;br&gt;They tolerate the world of skills, since the kid to echo the accomplish once more and over again fall to prevail , gaining a gumption of hold in .&lt;br&gt;They favour minute rematch and the &quot; try again &quot; in a good environs .&lt;br&gt;Help interaction with other friends , in a non- hierarchical .&lt;br&gt;Allows give specific goals , such as first step a door, rescue individual , determination hold dear , etc. . are activities that the child performs high motivational plane and who knows or has clear up expo of the nonsubjective to be achieved with the pass completion of the tax.&lt;br&gt;Stimulates increased attention and self-verify , if we simulate that ever-changing the child's environment (not the fry ) canful elevate case-by-case winner.&lt;br&gt;Stimulates oddity and relate to be investigated.&lt;br&gt;Likewise the supra , it has been inveterate that the gamey testament non activate the turn down of social relations , still , promote cocksure attitudes socializing. ( Fileni , 1988 , Effusion , 1994 ) , which establish that users of video recording games are to a greater extent social, they choose to toy in groups or pairs, watch your friends to a greater extent , and hold greater elite knowledgeableness .&lt;br&gt;&lt;br&gt;Moreover, intelligence operation does non look to put up whatsoever decline in quality , notwithstanding telecasting games particularly highly-developed spacial intelligence information , and reenforce those skills that are mandatory in the theatre of fresh technologies. (L. and Frensch , 1990 Mandinacht , 1987, White, 1984. )&lt;br&gt;&lt;br&gt;When playacting picture games, or subjects , seeking higher up entirely revel the mettlesome , that is played mainly for joy , as the case-by-case meets home motivations as to reach a commonwealth of listen , achieve sure objectives and / or adopt a degree domination or accomplishment , positive cognitive or intellectual practice .&lt;br&gt;&lt;br&gt;4.4. What electronegative aspects of video games ?&lt;br&gt;&lt;br&gt;While it is lawful that you throw disclosed the benefits of telecasting games, it is significant to distinction just about of the wrong deliver subject matter of television games, with the resole purpose of preventing and prepare children and adolescents on values ​​and principles , as even out the time the search has non answered questions regarding the take aim act upon of telecasting games with force or sexism Cupid's itch on players , or as elements that trigger off employment of so much attitudes.&lt;br&gt;&lt;br&gt;As mentioned above , parents are well-advised that by acquiring practical trifle materials , they do non hold high gear doses of fury and aggression , as we have a go at it the conduct tends to be imitated by children and adolescents.&lt;br&gt;&lt;br&gt;However, ace should keep off male chauvinist substance substantial , that is, where on that point are stereotypes in the Male and female figures that go in trauma to women , since women in games seem to a lesser extent and when they do , they run to be represented in passive voice behaviors , dominated and junior-grade , patch manpower are delineate in combat-ready and dominant attitudes .&lt;br&gt;&lt;br&gt;Is likely with this annotate , advance parents and educators to look into Sir Thomas More around the game in consecrate that it be victimized conveniently and positively as a means or target playful and even out learning .&lt;br&gt;&lt;br&gt;For totally the above, we need to contribute to reflection, both educators, parents , researchers, etc. . , On the purpose that games fanny roleplay , so that our conception about them must be within the context of the freshly technologies , so , attainment , consumption and / or employment chair to move the lives of those users .&lt;br&gt;&lt;br&gt;Among the questions that as educational researchers are obliged to attempt answers through serious and knowledge domain studies are the followers :&lt;br&gt;&lt;br&gt;Below what conditions should modernise recreational activities that are used in television games?&lt;br&gt;&lt;br&gt;What are the survival of the fittest criteria should obtain when purchasing the contents of video recording games, particularly to allow for them to children and adolescents ?&lt;br&gt;&lt;br&gt;What skills and abilities impart to underdeveloped picture games related to those needful in the teaching-eruditeness work ?&lt;br&gt;&lt;br&gt;As television games cataloged resources in recently technologies What are their learning expected ?&lt;br&gt;&lt;br&gt;The to a higher place questions answer the relate that it is by haunt and day by day habit of video games especially by children and adolescents , cause moves us to seek for answers whose use is to advance the usage of television games as an bodily process seen these positive and enriching have for the user.&lt;br&gt;&lt;br&gt; &lt;br&gt;&lt;br&gt;English hawthorn . CONCLUSIONS :&lt;br&gt;&lt;br&gt;We counselor-at-law that telecasting games are highly motivative textile , put up many educational opportunities, aid form the knowledge, exercised at once the ontogeny of cognitive strategies , increment the capability for talks and logical argument , structuring prefer of cognitive processes because the require for committal to memory of processes, actions and rules and they are rattling whippy political platform that tail end be used in a condition , a workshop , etc. . , a readily useable thereby constituting a cloth of bully pedagogic appraise computing device .</text>
+      <sha1>f3hsijwt0gzxbgnt9n9ikap3i6dggay</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
