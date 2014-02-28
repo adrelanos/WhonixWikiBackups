@@ -322,23 +322,23 @@ inspired by http://aboli.sh/
     <ns>10</ns>
     <id>15</id>
     <revision>
-      <id>4763</id>
-      <parentid>4554</parentid>
-      <timestamp>2014-01-14T17:43:45Z</timestamp>
+      <id>6093</id>
+      <parentid>4763</parentid>
+      <timestamp>2014-02-28T00:15:01Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="869">&lt;br /&gt;&lt;hr&gt;
+      <text xml:space="preserve" bytes="910">&lt;br /&gt;&lt;hr&gt;
 
 &lt;font size=&quot;-3&quot;&gt;This is a wiki. Want to improve this page? See [https://github.com/Whonix/Whonix/blob/master/debian/copyright Conditions for Contributions to Whonix], then &lt;html&gt;&lt;a href=&quot;&lt;/html&gt;{{localurl:{{FULLPAGENAME}}|action=edit}}&lt;html&gt;&quot;&gt;Edit&lt;/a&gt;&lt;/html&gt; it! IP addresses are scrubbed, but editing over Tor is recommended. Edits are held for moderation.
 
-Whonix is a [http://www.openinventionnetwork.com/licensees.php licensee] of the [https://en.wikipedia.org/wiki/Open_Invention_Network Open Invention Network]. Unless otherwise noted above, content of this  page is copyrighted by [mailto:adrelanos@riseup.net Patrick Schleizer] and licensed under the same Free (as in speech) [https://github.com/Whonix/Whonix/blob/master/debian/copyright license] as Whonix itself.
+Whonix is a [http://www.openinventionnetwork.com/licensees.php licensee] of the [[File:OIN_logo_200px.png|link=https://en.wikipedia.org/wiki/Open_Invention_Network|alt=Open Invention Network|140px]]. Unless otherwise noted above, content of this  page is copyrighted by [mailto:adrelanos@riseup.net Patrick Schleizer] and licensed under the same Free (as in speech) [https://github.com/Whonix/Whonix/blob/master/debian/copyright license] as Whonix itself.
 
 Questions? [[Contact|Contact us!]]
 
 [[Contribute#Donate|Donate to Whonix!]]&lt;/font&gt;</text>
-      <sha1>khny3c1m11ssk5ma8ikjndvnryb0b27</sha1>
+      <sha1>ndh4mjh2ysd3cxb1fwcoswdl4wwndx6</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -684,14 +684,15 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>19</id>
     <revision>
-      <id>6015</id>
-      <parentid>6003</parentid>
-      <timestamp>2014-02-27T22:52:51Z</timestamp>
+      <id>6041</id>
+      <parentid>6040</parentid>
+      <timestamp>2014-02-27T23:09:21Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="11304">{{Header}}
+      <comment>Marked this version for translation</comment>
+      <text xml:space="preserve" bytes="11362">{{Header}}
 &lt;!--
 Copyright:
 
@@ -729,27 +730,28 @@ This wiki page is a fork of the Tails Download page, from this exact source &lt;
 |description=Download Whonix. Anonymity online. Privacy protection.
 }}
 = First time user? = &lt;!--T:1--&gt;
+&lt;/translate&gt;
 {{Anchor|Landing}}
 
-&lt;!--T:204--&gt;
-{{mbox
 
-&lt;!--T:205--&gt;
+{{mbox
 | type       = notice
 | image      = [[File:Ambox_notice.png|40px|alt=Info]]
-| text       = '''The default username is:''' '''''user''''' &lt;br /&gt;
+| text       =
+&lt;translate&gt;
+&lt;!--T:210--&gt;
+'''The default username is:''' '''''user''''' &lt;br /&gt;
 '''The default password is:''' '''''changeme'''''
-
-&lt;!--T:206--&gt;
+&lt;/translate&gt;
 }}
 
-&lt;!--T:207--&gt;
 {{mbox
 
-&lt;!--T:208--&gt;
 | type       = critical
 | image      = [[File:Ambox_warning_pn.svg.png|40px|alt=Question mark]]
 | text       = 
+&lt;translate&gt;
+&lt;!--T:208--&gt;
 Warning:
 
 &lt;!--T:92--&gt;
@@ -759,31 +761,35 @@ Warning:
 
 &lt;!--T:93--&gt;
 Then, have a look at the [[About]], [[Warning]] and [[DoNot|Do Not]] pages to make sure that Whonix is the right tool for you and you understand well its limitations.
-
-&lt;!--T:209--&gt;
+&lt;/translate&gt;
 }}
 
 &lt;!--T:6--&gt;
 {{anchor|Download Whonix virtual machine images}}
 
+&lt;translate&gt;
 = Download Whonix = &lt;!--T:104--&gt;
 {{DownloadTableNew}}
 
 = Verify the Whonix images = &lt;!--T:17--&gt;
 It is important to check the integrity of the virtual machine images you downloaded to make sure no man-in-the-middle attack or file corruption happened. (See [[Download Security]].)
+&lt;/translate&gt;
 
-&lt;!--T:200--&gt;
 {{mbox
 | type       = critical
 | image      = [[File:Ambox_warning_pn.svg.png|40px|alt=Question mark]]
-| text       = Warning:
+| text       =
+&lt;translate&gt;
+&lt;!--T:200--&gt;
+Warning:
 
 &lt;!--T:201--&gt;
 Do not continue if verification failed! You risk using infected or erroneous files! The whole point of verification is verify file integrity.
 
-&lt;!--T:116--&gt;
+&lt;/translate&gt;
 }}
 
+&lt;translate&gt;
 &lt;!--T:20--&gt;
 Whonix virtual machine images are cryptographically signed using OpenPGP&lt;ref&gt;OpenPGP is a standard for data encryption that provides cryptographic privacy and authentication through the use of keys owned by its users.&lt;/ref&gt; by Whonix developer Patrick Schleizer.
 
@@ -958,7 +964,7 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>agi90udgng89pz6p15v2v8oimne7b8p</sha1>
+      <sha1>ats2h4ik6ok6mzh1tbgud3upwqse8nk</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -19506,9 +19512,9 @@ In fact [http://retroshare.sourceforge.net RetroShare] is not an [https://en.wik
     <ns>0</ns>
     <id>171</id>
     <revision>
-      <id>5738</id>
-      <parentid>5737</parentid>
-      <timestamp>2014-02-27T11:29:59Z</timestamp>
+      <id>6092</id>
+      <parentid>5738</parentid>
+      <timestamp>2014-02-27T23:51:51Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
@@ -20032,7 +20038,7 @@ Whonix-Workstation
 * easier to install TorBirdy
 * pre-installed rawdog, an rss reader to read Whonix News Blogs
 * autologin for kde user
-* added [[Dev/Dummy Tor/Dummy Tor]] package
+* added [[Dev/Dummy Tor|Dummy Tor]] package
 * whonixcheck: runs once a day.
 * Leaktest script fixed.
 * Added icons for whonix online readme, torbrowser, whonixcheck and timesync.
@@ -20408,7 +20414,7 @@ Testers release with same goals as Whonix 0.4.5-fix2, but didn't work.
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Development]]</text>
-      <sha1>qnnlabofad13islxijoozhgmkeia7sc</sha1>
+      <sha1>nwuaz5wc03jz16m0cwu915dmey5yjn8</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -33558,12 +33564,12 @@ Implemented in three ways on Whonix-Workstation.
     <ns>10</ns>
     <id>279</id>
     <revision>
-      <id>2122</id>
-      <parentid>2121</parentid>
-      <timestamp>2013-08-09T05:43:53Z</timestamp>
+      <id>6074</id>
+      <parentid>6060</parentid>
+      <timestamp>2014-02-27T23:26:39Z</timestamp>
       <contributor>
-        <username>Anon</username>
-        <id>10</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
       <text xml:space="preserve" bytes="40">style=&quot;background-color: {{Green}}&quot;| Yes</text>
       <sha1>l0giy6jopp6xc4o4w20iyilaqpikzia</sha1>
@@ -33576,12 +33582,12 @@ Implemented in three ways on Whonix-Workstation.
     <ns>10</ns>
     <id>280</id>
     <revision>
-      <id>2123</id>
-      <parentid>2068</parentid>
-      <timestamp>2013-08-09T05:44:12Z</timestamp>
+      <id>6076</id>
+      <parentid>6061</parentid>
+      <timestamp>2014-02-27T23:26:58Z</timestamp>
       <contributor>
-        <username>Anon</username>
-        <id>10</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
       <text xml:space="preserve" bytes="37">style=&quot;background-color: {{Red}}&quot;| No</text>
       <sha1>cd8pma2bc80lo9zxe8m8jhbtgi1pd21</sha1>
@@ -51185,15 +51191,15 @@ Image:donate.png|link=Donate|[[Donate|Donate to Whonix!]]
     <ns>0</ns>
     <id>554</id>
     <revision>
-      <id>6018</id>
-      <parentid>6011</parentid>
-      <timestamp>2014-02-27T22:53:34Z</timestamp>
+      <id>6088</id>
+      <parentid>6067</parentid>
+      <timestamp>2014-02-27T23:44:22Z</timestamp>
       <contributor>
         <username>FuzzyBot</username>
         <id>37</id>
       </contributor>
-      <comment>Updating to match new version of source page</comment>
-      <text xml:space="preserve" bytes="10505">{{Header}}
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="10514">{{Header}}
 &lt;!--
 Copyright:
 
@@ -51232,13 +51238,13 @@ This wiki page is a fork of the Tails Download page, from this exact source &lt;
 = First time user? =
 {{Anchor|Landing}}
 
-{{mbox
 
+{{mbox
 | type       = notice
 | image      = [[File:Ambox_notice.png|40px|alt=Info]]
-| text       = '''The default username is:''' '''''user''''' &lt;br /&gt;
+| text       =
+'''The default username is:''' '''''user''''' &lt;br /&gt;
 '''The default password is:''' '''''changeme'''''
-
 }}
 
 {{mbox
@@ -51253,9 +51259,9 @@ Warning:
 * If you have no idea about how Whonix works.
 
 Then, have a look at the [[About]], [[Warning]] and [[DoNot|Do Not]] pages to make sure that Whonix is the right tool for you and you understand well its limitations.
-
 }}
 
+&lt;!--T:6--&gt;
 {{anchor|Download Whonix virtual machine images}}
 
 = Download Whonix =
@@ -51267,7 +51273,8 @@ It is important to check the integrity of the virtual machine images you downloa
 {{mbox
 | type       = critical
 | image      = [[File:Ambox_warning_pn.svg.png|40px|alt=Question mark]]
-| text       = Warning:
+| text       =
+Warning:
 
 Do not continue if verification failed! You risk using infected or erroneous files! The whole point of verification is verify file integrity.
 
@@ -51416,7 +51423,7 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>bj8fbc076ncq8r2sytbtnxallqdsfv4</sha1>
+      <sha1>kmj3f975banghs120uojlqnpyp7c9cq</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -52167,20 +52174,19 @@ sudo apt-get dist-upgrade
     <ns>1198</ns>
     <id>580</id>
     <revision>
-      <id>5641</id>
-      <parentid>4266</parentid>
-      <timestamp>2014-02-24T16:47:04Z</timestamp>
+      <id>6087</id>
+      <parentid>5641</parentid>
+      <timestamp>2014-02-27T23:44:21Z</timestamp>
       <contributor>
         <username>FuzzyBot</username>
         <id>37</id>
       </contributor>
       <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="118">{{#seo:
+      <text xml:space="preserve" bytes="99">{{#seo:
 |description=Download Whonix. Anonymity online. Privacy protection.
 }}
-= First time user? =
-{{Anchor|Landing}}</text>
-      <sha1>mvpndpww4i25ujkvtnymovlueq4xrb2</sha1>
+= First time user? =</text>
+      <sha1>kbeyv6tf3q08prfyaxiu0c74tk0tgzb</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -58251,15 +58257,15 @@ Image:donate.png|link=Donate|[[Donate|Финансово поддержать Wh
     <ns>0</ns>
     <id>765</id>
     <revision>
-      <id>6035</id>
-      <parentid>6032</parentid>
-      <timestamp>2014-02-27T22:57:55Z</timestamp>
+      <id>6042</id>
+      <parentid>6035</parentid>
+      <timestamp>2014-02-27T23:09:26Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <username>FuzzyBot</username>
+        <id>37</id>
       </contributor>
-      <comment>Created page with &quot;Предупреждение: В случае неудачной проверки подлинности не совершайте никаких последующих дей...&quot;</comment>
-      <text xml:space="preserve" bytes="15138">{{Header}}
+      <comment>Updating to match new version of source page</comment>
+      <text xml:space="preserve" bytes="15309">{{Header}}
 &lt;!--
 Copyright:
 
@@ -58294,18 +58300,22 @@ This wiki page is a fork of the Tails Download page, from this exact source &lt;
 &lt;languages /&gt;
 = Новичок? =
 {{Anchor|Landing}}
+{{Anchor|Landing}}
+
 
 {{mbox
-
 | type       = notice
 | image      = [[File:Ambox_notice.png|40px|alt=Info]]
-| text       = '''Именем пользователя по умолчанию является:''' '''''user''''' &lt;br /&gt;
-'''Паролем по умолчанию является:''' '''''changeme'''''
-
+| text       =
+'''The default username is:''' '''''user''''' &lt;br /&gt;
+'''The default password is:''' '''''changeme'''''
 }}
 
 {{mbox
 
+| type       = critical
+| image      = [[File:Ambox_warning_pn.svg.png|40px|alt=Question mark]]
+| text       = 
 | type       = critical
 | image      = [[File:Ambox_warning_pn.svg.png|40px|alt=Question mark]]
 | text       = 
@@ -58316,9 +58326,9 @@ This wiki page is a fork of the Tails Download page, from this exact source &lt;
 Если вы не понимаете, как работает Whonix.
 
 Then, have a look at the [[About]], [[Warning]] and [[DoNot|Do Not]] pages to make sure that Whonix is the right tool for you and you understand well its limitations.
-
 }}
 
+&lt;!--T:6--&gt;
 {{anchor|Download Whonix virtual machine images}}
 
 = Download Whonix =
@@ -58326,6 +58336,10 @@ Then, have a look at the [[About]], [[Warning]] and [[DoNot|Do Not]] pages to ma
 
 Важно проверить целостность образов для виртуальной машины, которые вы скачали, для того, чтобы убедиться, что во время закачки не произошла атака &quot;противник в середине&quot; или порча файла. (см. [[Download Security|Безопасность загрузки]].)
 
+{{mbox
+| type       = critical
+| image      = [[File:Ambox_warning_pn.svg.png|40px|alt=Question mark]]
+| text       =
 | type       = critical
 | image      = [[File:Ambox_warning_pn.svg.png|40px|alt=Question mark]]
 | text       = Предупреждение:
@@ -58489,7 +58503,7 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>achei5w2kn9c9wo3q4uc6w6vl0xstq5</sha1>
+      <sha1>snrg23cqz0kqkqrio1bj7v61zmav62k</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -61501,16 +61515,17 @@ echo $?
     <ns>1198</ns>
     <id>882</id>
     <revision>
-      <id>6024</id>
-      <parentid>5644</parentid>
-      <timestamp>2014-02-27T22:56:12Z</timestamp>
+      <id>6052</id>
+      <parentid>6024</parentid>
+      <timestamp>2014-02-27T23:18:04Z</timestamp>
       <contributor>
         <username>FuzzyBot</username>
         <id>37</id>
       </contributor>
       <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="166">Then, have a look at the [[About]], [[Warning]] and [[DoNot|Do Not]] pages to make sure that Whonix is the right tool for you and you understand well its limitations.</text>
-      <sha1>999znzpasqbub00x2u328ds2jus2hey</sha1>
+      <text xml:space="preserve" bytes="169">Then, have a look at the [[About]], [[Warning]] and [[DoNot|Do Not]] pages to make sure that Whonix is the right tool for you and you understand well its limitations.
+}}</text>
+      <sha1>en97xpcrihfnfk847xr278249whq6wr</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -61669,15 +61684,15 @@ sudo rm -fR /var/lib/apt/lists/*
     <ns>0</ns>
     <id>891</id>
     <revision>
-      <id>5988</id>
-      <parentid>5987</parentid>
-      <timestamp>2014-02-27T20:32:46Z</timestamp>
+      <id>6094</id>
+      <parentid>5988</parentid>
+      <timestamp>2014-02-28T07:09:27Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <username>Troubadour</username>
+        <id>230</id>
       </contributor>
-      <comment>/* Tor Browser Bundle (TBB) */</comment>
-      <text xml:space="preserve" bytes="8024">{{Header}}
+      <comment>TBB profile changes (network rules, gnome modules issue)</comment>
+      <text xml:space="preserve" bytes="8074">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
@@ -61707,9 +61722,6 @@ Paste the following content.
 	
 	capability sys_ptrace,
 
-	network,
-	network tcp,
-
 	deny /etc/host.conf r,
 	deny /etc/hosts r,
 	deny /etc/nsswitch.conf r,
@@ -61720,7 +61732,7 @@ Paste the following content.
 	deny @{PROC}/[0-9]*/mounts r,
 	deny @{PROC}/[0-9]*/mountinfo r,
 	deny @{HOME}/.config/user-dirs.dirs r,
-	deny @{HOME}/.gtk-bookmarks r,
+	deny@{HOME}/.gtk-bookmarks r,
 	deny @{HOME}/.local/share/recently-used.xbel* rw,
 	deny owner @{HOME}/.local/share/gvfs-metadata/home r,
 	deny owner @{HOME}/.cache/ rw,
@@ -61729,6 +61741,11 @@ Paste the following content.
 	deny owner @{HOME}/.kde/share/config/kdeglobals rw,
 	deny owner @{HOME}/.config/oxygen-gtk/argb-apps.conf rw,
 	deny /usr/share/applications/** r,
+
+	#######################################
+	deny /etc/gnome-vfs-2.0/modules/ rw,	
+	deny /etc/gnome-vfs-2.0/modules/* rw,	
+	#######################################
 
 	/bin/dash rix,
 	/bin/open rix,
@@ -61745,8 +61762,6 @@ Paste the following content.
 	/etc/pkcs11/modules/ r,
 	/etc/pkcs11/modules/* r,
 
-	/etc/gnome-vfs-2.0/modules/ r,	# not in my copy of 7.7.8.9
-	/etc/gnome-vfs-2.0/modules/* r,	# not in my copy of 7.7.8.9
 	
 	owner @{HOME}/tor-browser_en-US/ r,
 	owner @{HOME}/tor-browser_en-US/* rw, 
@@ -61765,7 +61780,6 @@ Paste the following content.
 	owner @{HOME}/tor-browser_en-US/Downloads/** rw,
 	owner @{HOME}/tor-browser_en-US/Tor/tor Px,
 
-	
 	/sys/devices/system/cpu/ r,
 	/sys/devices/system/cpu/* r,
 
@@ -61818,6 +61832,9 @@ Paste the following content.
 	@{PROC}/[0-9]*/task/*/stat r,
 	@{PROC}/[0-9]*/cmdline r,
 	@{PROC}/[0-9]*/fd/ r,
+	/proc/*/net/ r,
+	/proc/*/net/** r,
+
 	@{PROC}/cpuinfo r,
 	@{PROC}/filesystems r,
 	@{PROC}/meminfo r,
@@ -61983,7 +62000,7 @@ Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/A
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>k9irj1pbh6rkzrtibqu9p7n1lans53l</sha1>
+      <sha1>5tcat5wxa5d4rrwzrynrceto1z3y1mz</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -62117,28 +62134,33 @@ Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/A
     <ns>10</ns>
     <id>894</id>
     <revision>
-      <id>5928</id>
-      <parentid>5700</parentid>
-      <timestamp>2014-02-27T16:06:09Z</timestamp>
+      <id>6053</id>
+      <parentid>6049</parentid>
+      <timestamp>2014-02-27T23:18:17Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="7472">&lt;!--T:7--&gt;
-&lt;big&gt;Version: &lt;span style=&quot;color: green&quot;&gt;{{VersionNew}}&lt;/span&gt;&lt;/big&gt;
+      <text xml:space="preserve" bytes="7693">&lt;!--T:7--&gt;
+&lt;big&gt;&lt;translate&gt;&lt;!--T:9--&gt;
+Version:&lt;/translate&gt; &lt;span style=&quot;color: green&quot;&gt;{{VersionNew}}&lt;/span&gt;&lt;/big&gt;
 
+&lt;translate&gt;
 &lt;!--T:8--&gt;
 '''Note:''' You need to download both Gateway and Workstation virtual machine images.
+&lt;/translate&gt;
 
 &lt;!--T:9--&gt;
 {| class=&quot;wikitable&quot; style=&quot;text-align: center;background-color: #fff&quot;
 |- {{GrayBackground}}
 | style=&quot;height: 47px;&quot;|
-| style=&quot;white-space: nowrap; width: 137px;&quot;|'''Whonix-Gateway'''&lt;br /&gt;(1.2 GiB)
-| style=&quot;white-space: nowrap; width: 137px;&quot;|'''Whonix-Workstation'''&lt;br /&gt;(1.3 GiB)
-| style=&quot;white-space: nowrap; width: 140px;&quot;|'''[[Hide Tor and Whonix from your ISP|Anonymous Download]]&lt;br /&gt; possible &lt;ref name=anonymousdownload&gt;By using the [https://www.torproject.org/download/download-easy.html.en Tor Browser Bundle] (TBB). For an introduction, see [[Tor Browser]]. See also [[Hide Tor and Whonix from your ISP]].&lt;/ref&gt;'''
-| style=&quot;width: 135px;&quot;|'''[[Download Security]]&lt;br /&gt; without [[#Verify the Whonix images|Verification]]'''
-| style=&quot;width: 135px;&quot;|'''[[Download Security]]&lt;br /&gt; with [[#Verify the Whonix images|Verification]]'''
+| style=&quot;white-space: nowrap; width: 137px;&quot;|'''&lt;translate&gt;&lt;!--T:10--&gt;
+Whonix-Gateway&lt;/translate&gt;'''&lt;br /&gt;(1.2 GiB)
+| style=&quot;white-space: nowrap; width: 137px;&quot;|'''&lt;translate&gt;&lt;!--T:11--&gt;
+Whonix-Workstation&lt;/translate&gt;'''&lt;br /&gt;(1.3 GiB)
+| style=&quot;white-space: nowrap; width: 140px;&quot;|'''[[Hide Tor and Whonix from your ISP|Anonymous Download]]&lt;br /&gt; possible &lt;ref name=anonymousdownload&gt;By using the [https://www.torproject.org/download/download-easy.html.en Tor Browser Bundle] (TBB). For an introduction, see [[Tor Browser|Tor Browser]]. See also [[Hide Tor and Whonix from your ISP|Hide Tor and Whonix from your ISP]].&lt;/ref&gt;'''
+| style=&quot;width: 135px;&quot;|'''[[Download Security|Download Security]]&lt;br /&gt; without [[#Verify the Whonix images|Verification]]'''
+| style=&quot;width: 135px;&quot;|'''[[Download Security|Download Security]]&lt;br /&gt; with [[#Verify the Whonix images|Verification]]'''
 |- style=&quot;height: 47px&quot;
 
 &lt;!--T:91--&gt;
@@ -62190,7 +62212,7 @@ Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/A
 | &lt;html&gt;&lt;a href=&quot;/download/&lt;/html&gt;{{VersionNew}}&lt;html&gt;-torrent/Whonix-Gateway-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova.torrent&quot;&gt;Torrent Download&lt;/a&gt;&lt;/html&gt;
 | &lt;html&gt;&lt;a href=&quot;/download/&lt;/html&gt;{{VersionNew}}&lt;html&gt;-torrent/Whonix-Workstation-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova.torrent&quot;&gt;Torrent Download&lt;/a&gt;&lt;/html&gt;
 |{{No}}
-| style=&quot;background-color: {{Yellow}}&quot;| Medium &lt;ref name=atleastssl&gt;It's at least as secure as [[SSL]] and [https://en.wikipedia.org/wiki/SHA-1 SHA-1], better than plain http. This is because you get the torrent file or magnet link over https and the torrent/magnet client checks the SHA-1 checksum at the end. Using OpenPGP verification would be safer.&lt;/ref&gt;
+| style=&quot;background-color: {{Yellow}}&quot;| Medium &lt;ref name=atleastssl&gt;It's at least as secure as [[SSL|SSL]] and [https://en.wikipedia.org/wiki/SHA-1 SHA-1], better than plain http. This is because you get the torrent file or magnet link over https and the torrent/magnet client checks the SHA-1 checksum at the end. Using OpenPGP verification would be safer.&lt;/ref&gt;
 | style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification /&gt;
 |- style=&quot;height: 47px&quot;
 
@@ -62207,10 +62229,10 @@ Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/A
 | {{GrayBackground}}| [[File:template_source.png|25px]]
 | colspan=&quot;2&quot;|[[Dev/Build Documentation|Build from source code]]
 | See [[Dev/Build Anonymity|Build Anonymity]]
-| style=&quot;background-color: {{Green}}&quot;| Very High &lt;ref name=fromsourcecode&gt;When you build from source code, audit the source code for being non-malicious and reasonably bug free, you do not have to [[Trust]] the developers, the website or the SSL certificate authorities.&lt;/ref&gt;
+| style=&quot;background-color: {{Green}}&quot;| Very High &lt;ref name=fromsourcecode&gt;When you build from source code, audit the source code for being non-malicious and reasonably bug free, you do not have to [[Trust|Trust]] the developers, the website or the SSL certificate authorities.&lt;/ref&gt;
 | style=&quot;background-color: {{Green}}&quot;| Best &lt;ref name=fromsourcecode /&gt; &lt;ref&gt;By additional verification that you got the source code from the original authors and by ensuring you're using the same source code as others you get better security.&lt;/ref&gt;
 |}</text>
-      <sha1>h8qlt3rfcqdujzrj47on5z1cw1aqxy4</sha1>
+      <sha1>m2dpkvnff6fnv3jyfqnvjgvahsz4bmf</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -62808,19 +62830,16 @@ sudo ln -s /etc/dpkg/origins/whonix /etc/dpkg/origins/default
     <ns>1198</ns>
     <id>916</id>
     <revision>
-      <id>6000</id>
-      <parentid>5996</parentid>
-      <timestamp>2014-02-27T22:25:41Z</timestamp>
+      <id>6066</id>
+      <parentid>6044</parentid>
+      <timestamp>2014-02-27T23:24:35Z</timestamp>
       <contributor>
         <username>FuzzyBot</username>
         <id>37</id>
       </contributor>
       <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="126">{{mbox
-| type       = critical
-| image      = [[File:Ambox_warning_pn.svg.png|40px|alt=Question mark]]
-| text       = Warning:</text>
-      <sha1>myho1qy636xah96vodq6tnwamu87f7m</sha1>
+      <text xml:space="preserve" bytes="8">Warning:</text>
+      <sha1>5univkdolamn9vgj88mnkoyy29892ov</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -62887,18 +62906,16 @@ sudo ln -s /etc/dpkg/origins/whonix /etc/dpkg/origins/default
     <ns>1198</ns>
     <id>920</id>
     <revision>
-      <id>6016</id>
-      <timestamp>2014-02-27T22:53:14Z</timestamp>
+      <id>6057</id>
+      <parentid>6016</parentid>
+      <timestamp>2014-02-27T23:22:10Z</timestamp>
       <contributor>
         <username>FuzzyBot</username>
         <id>37</id>
       </contributor>
       <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="120">| type       = critical
-| image      = [[File:Ambox_warning_pn.svg.png|40px|alt=Question mark]]
-| text       = 
-Warning:</text>
-      <sha1>pvqzyr55inex8usf8zyfs6zfbtfde38</sha1>
+      <text xml:space="preserve" bytes="8">Warning:</text>
+      <sha1>5univkdolamn9vgj88mnkoyy29892ov</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -63162,6 +63179,477 @@ Warning:</text>
       <comment>Importing a new version from external source</comment>
       <text xml:space="preserve" bytes="2">}}</text>
       <sha1>8fjf3hjuj07tdh6aq0z1wcya5rson4p</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/210/en</title>
+    <ns>1198</ns>
+    <id>935</id>
+    <revision>
+      <id>6046</id>
+      <timestamp>2014-02-27T23:11:51Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="102">'''The default username is:''' '''''user''''' &lt;br /&gt;
+'''The default password is:''' '''''changeme'''''</text>
+      <sha1>5auds5fxvw4oe8b85a75fqjokvc9gmz</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/204/en</title>
+    <ns>1198</ns>
+    <id>936</id>
+    <revision>
+      <id>6048</id>
+      <timestamp>2014-02-27T23:14:58Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="6">{{mbox</text>
+      <sha1>rpbmki33ob3jvx5nsbpl83q1fifk6rb</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Template:DownloadTableNew/8/en</title>
+    <ns>1198</ns>
+    <id>937</id>
+    <revision>
+      <id>6050</id>
+      <timestamp>2014-02-27T23:17:17Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="85">'''Note:''' You need to download both Gateway and Workstation virtual machine images.</text>
+      <sha1>dwqm1x9527pia3plpogyjpe2a4yzu0z</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:DownloadTableNew/en</title>
+    <ns>10</ns>
+    <id>938</id>
+    <revision>
+      <id>6051</id>
+      <timestamp>2014-02-27T23:17:17Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="7461">&lt;!--T:7--&gt;
+&lt;big&gt;Version: &lt;span style=&quot;color: green&quot;&gt;{{VersionNew}}&lt;/span&gt;&lt;/big&gt;
+
+'''Note:''' You need to download both Gateway and Workstation virtual machine images.
+
+&lt;!--T:9--&gt;
+{| class=&quot;wikitable&quot; style=&quot;text-align: center;background-color: #fff&quot;
+|- {{GrayBackground}}
+| style=&quot;height: 47px;&quot;|
+| style=&quot;white-space: nowrap; width: 137px;&quot;|'''Whonix-Gateway'''&lt;br /&gt;(1.2 GiB)
+| style=&quot;white-space: nowrap; width: 137px;&quot;|'''Whonix-Workstation'''&lt;br /&gt;(1.3 GiB)
+| style=&quot;white-space: nowrap; width: 140px;&quot;|'''[[Hide Tor and Whonix from your ISP|Anonymous Download]]&lt;br /&gt; possible &lt;ref name=anonymousdownload&gt;By using the [https://www.torproject.org/download/download-easy.html.en Tor Browser Bundle] (TBB). For an introduction, see [[Tor Browser]]. See also [[Hide Tor and Whonix from your ISP]].&lt;/ref&gt;'''
+| style=&quot;width: 135px;&quot;|'''[[Download Security]]&lt;br /&gt; without [[#Verify the Whonix images|Verification]]'''
+| style=&quot;width: 135px;&quot;|'''[[Download Security]]&lt;br /&gt; with [[#Verify the Whonix images|Verification]]'''
+|- style=&quot;height: 47px&quot;
+
+&lt;!--T:91--&gt;
+| {{GrayBackground}}| [[File:HTTP.png|40px]] {{Anchor|Whonix_signature}}
+| &lt;html&gt;&lt;a href=&quot;http://mirror.whonix.org.nyud.net/&lt;/html&gt;{{VersionNew}}&lt;html&gt;/Whonix-Gateway-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
+| &lt;html&gt;&lt;a href=&quot;http://mirror.whonix.org.nyud.net/&lt;/html&gt;{{VersionNew}}&lt;html&gt;/Whonix-Workstation-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
+|{{Yes}} &lt;ref name=anonymousdownload /&gt;
+| style=&quot;background-color: {{Red}}&quot;| Very Low &lt;ref&gt;[[Warning#Man-in-the-middle_attacks|Man-in-the-middle attacks]] could poison the download.&lt;/ref&gt;
+| style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification&gt;It does not matter if you did the bulk download over an insecure channel, if you use OpenPGP verification at the end.&lt;/ref&gt;
+|- style=&quot;height: 47px&quot;
+
+&lt;!--T:15--&gt;
+| {{GrayBackground}}| [[File:HTTP.png|40px]] {{Anchor|Whonix_signature}}
+| &lt;html&gt;&lt;a href=&quot;http://sourceforge.net/projects/whonix/files/current/&lt;/html&gt;{{VersionNew}}&lt;html&gt;/Whonix-Gateway-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova/download&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
+| &lt;html&gt;&lt;a href=&quot;http://sourceforge.net/projects/whonix/files/current/&lt;/html&gt;{{VersionNew}}&lt;html&gt;/Whonix-Workstation-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova/download&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
+|{{Yes}} &lt;ref name=anonymousdownload /&gt;
+| style=&quot;background-color: {{Red}}&quot;| Very Low &lt;ref&gt;[[Warning#Man-in-the-middle_attacks|Man-in-the-middle attacks]] could poison the download.&lt;/ref&gt;
+| style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification&gt;It does not matter if you did the bulk download over an insecure channel, if you use OpenPGP verification at the end.&lt;/ref&gt;
+|- style=&quot;height: 47px&quot;
+
+&lt;!--T:10--&gt;
+| {{GrayBackground}}| [[File:SSL_Symbol.png|40px]] {{Anchor|Whonix_signature}}
+| &lt;html&gt;&lt;a href=&quot;https://jhcloos.com/whonix/Whonix-&lt;/html&gt;{{VersionNew}}&lt;html&gt;/Whonix-Gateway-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
+| &lt;html&gt;&lt;a href=&quot;https://jhcloos.com/whonix/Whonix-&lt;/html&gt;{{VersionNew}}&lt;html&gt;/Whonix-Workstation-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
+|{{Yes}} &lt;ref name=anonymousdownload /&gt;
+| style=&quot;background-color: {{Red}}&quot;| Low &lt;ref&gt;[[Warning#Man-in-the-middle_attacks|Man-in-the-middle attacks]] could poison the download.&lt;/ref&gt;
+| style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification&gt;It does not matter if you did the bulk download over an insecure channel, if you use OpenPGP verification at the end.&lt;/ref&gt;
+|- style=&quot;height: 47px&quot;
+
+&lt;!--T:11--&gt;
+| {{GrayBackground}}| [[File:Button_sig.png|25px]]
+| white-space: nowrap;&quot;|&lt;html&gt;&lt;a href=&quot;/download/&lt;/html&gt;{{VersionNew}}&lt;html&gt;-sig/Whonix-Gateway-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova.asc&quot;&gt;OpenPGP Signature&lt;/a&gt;&lt;/html&gt;
+| white-space: nowrap;&quot;|&lt;html&gt;&lt;a href=&quot;/download/&lt;/html&gt;{{VersionNew}}&lt;html&gt;-sig/Whonix-Workstation-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova.asc&quot;&gt;OpenPGP Signature&lt;/a&gt;&lt;/html&gt;
+|{{Yes}} &lt;ref name=anonymousdownload /&gt;
+| -
+| -
+|- style=&quot;height: 47px&quot;
+
+&lt;!--T:12--&gt;
+| {{GrayBackground}}| [[File:Crypto_key.png|25px]]
+| colspan=&quot;2&quot;|Verify the images using the [[Whonix Signing Key|Signing Key]]
+|{{Yes}} &lt;ref name=anonymousdownload /&gt;
+| -
+| -
+|- style=&quot;height: 47px&quot;
+
+&lt;!--T:13--&gt;
+| {{GrayBackground}}| [[File:btorrent-icon.png|25px]]&lt;ref&gt;Torrent clients known to work: transmission, Vuze, Deluge. Check this [https://en.wikipedia.org/wiki/Magnet_URI_scheme#Clients_table clients table]. If nobody is [http://wiki.answers.com/Q/What_are_seeders_and_leechers seeding] at the time, only clients with the [https://en.wikipedia.org/wiki/Magnet_URI_scheme#Normal_.28as.29 &quot;as&quot;] feature can be used, because we are providing a [https://en.wikipedia.org/wiki/BitTorrent#Web_seeding webseed].&lt;/ref&gt;
+| &lt;html&gt;&lt;a href=&quot;/download/&lt;/html&gt;{{VersionNew}}&lt;html&gt;-torrent/Whonix-Gateway-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova.torrent&quot;&gt;Torrent Download&lt;/a&gt;&lt;/html&gt;
+| &lt;html&gt;&lt;a href=&quot;/download/&lt;/html&gt;{{VersionNew}}&lt;html&gt;-torrent/Whonix-Workstation-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova.torrent&quot;&gt;Torrent Download&lt;/a&gt;&lt;/html&gt;
+|{{No}}
+| style=&quot;background-color: {{Yellow}}&quot;| Medium &lt;ref name=atleastssl&gt;It's at least as secure as [[SSL]] and [https://en.wikipedia.org/wiki/SHA-1 SHA-1], better than plain http. This is because you get the torrent file or magnet link over https and the torrent/magnet client checks the SHA-1 checksum at the end. Using OpenPGP verification would be safer.&lt;/ref&gt;
+| style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification /&gt;
+|- style=&quot;height: 47px&quot;
+
+&lt;!--T:14--&gt;
+| {{GrayBackground}}| [[File:Magnet_icon.svg.png|20px]] &lt;ref&gt;Magnet link clients known to work: gtk-gnutella. Check this [https://en.wikipedia.org/wiki/Magnet_URI_scheme#Clients_table clients table]. If nobody is [http://wiki.answers.com/Q/What_are_seeders_and_leechers seeding] at the time, only clients with the [https://en.wikipedia.org/wiki/Magnet_URI_scheme#Normal_.28as.29 &quot;as&quot;] feature can be used, because we are providing a [https://en.wikipedia.org/wiki/BitTorrent#Web_seeding webseed].&lt;/ref&gt;
+| &lt;html&gt;&lt;a href=&quot;magnet:?xt=urn:btih:b8969f87015c994f2c4dd93b3ed7c62861c27477&amp;dn=Whonix-Gateway-8.ova&amp;tr=http%3A%2F%2Fannounce.torrentsmd.com%3A6969%2Fannounce&amp;as=http%3A%2F%2Fwebseed.whonix.org%3A8008%2FWhonix-Gateway-8.ova&quot;&gt;Magnet Link&lt;/a&gt;&lt;/html&gt;
+| &lt;html&gt;&lt;a href=&quot;magnet:?xt=urn:btih:7a6a5294ebebef5e5edcb05aa2caf66ebaeaf300&amp;dn=Whonix-Workstation-8.ova&amp;tr=http%3A%2F%2Fannounce.torrentsmd.com%3A6969%2Fannounce&amp;as=http%3A%2F%2Fwebseed.whonix.org%3A8008%2FWhonix-Workstation-8.ova&quot;&gt;Magnet Link&lt;/a&gt;&lt;/html&gt;
+|{{No}}
+| style=&quot;background-color: {{Yellow}}&quot;| Medium &lt;ref name=atleastssl /&gt;
+| style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification /&gt;
+|- style=&quot;height: 47px&quot;
+
+&lt;!--T:16--&gt;
+| {{GrayBackground}}| [[File:template_source.png|25px]]
+| colspan=&quot;2&quot;|[[Dev/Build Documentation|Build from source code]]
+| See [[Dev/Build Anonymity|Build Anonymity]]
+| style=&quot;background-color: {{Green}}&quot;| Very High &lt;ref name=fromsourcecode&gt;When you build from source code, audit the source code for being non-malicious and reasonably bug free, you do not have to [[Trust]] the developers, the website or the SSL certificate authorities.&lt;/ref&gt;
+| style=&quot;background-color: {{Green}}&quot;| Best &lt;ref name=fromsourcecode /&gt; &lt;ref&gt;By additional verification that you got the source code from the original authors and by ensuring you're using the same source code as others you get better security.&lt;/ref&gt;
+|}</text>
+      <sha1>c89wf15kbsbygtnz838jrqywzlhk6h9</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Template:DownloadTableNew/11/en</title>
+    <ns>1198</ns>
+    <id>939</id>
+    <revision>
+      <id>6054</id>
+      <timestamp>2014-02-27T23:20:08Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="18">Whonix-Workstation</text>
+      <sha1>f41cboiz902g01i3vov6j4hsgop42k5</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Template:DownloadTableNew/9/en</title>
+    <ns>1198</ns>
+    <id>940</id>
+    <revision>
+      <id>6055</id>
+      <timestamp>2014-02-27T23:21:31Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="8">Version:</text>
+      <sha1>ilts9xparw2bxu5st3fi7rohclbgbsa</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Template:No/1/en</title>
+    <ns>1198</ns>
+    <id>941</id>
+    <revision>
+      <id>6064</id>
+      <parentid>6062</parentid>
+      <timestamp>2014-02-27T23:24:13Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <text xml:space="preserve" bytes="2">No</text>
+      <sha1>f490ikj01ramiqee4hfmjbhihco0kqr</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:No/en</title>
+    <ns>10</ns>
+    <id>942</id>
+    <revision>
+      <id>6065</id>
+      <parentid>6063</parentid>
+      <timestamp>2014-02-27T23:24:13Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <text xml:space="preserve" bytes="37">style=&quot;background-color: {{Red}}&quot;| No</text>
+      <sha1>cd8pma2bc80lo9zxe8m8jhbtgi1pd21</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Template:No/1/de</title>
+    <ns>1198</ns>
+    <id>943</id>
+    <revision>
+      <id>6069</id>
+      <timestamp>2014-02-27T23:24:37Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;Nein&quot;</comment>
+      <text xml:space="preserve" bytes="4">Nein</text>
+      <sha1>d6296d3wkgae7uu9dvkbexe6vg5bhpu</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:No/de</title>
+    <ns>10</ns>
+    <id>944</id>
+    <revision>
+      <id>6070</id>
+      <timestamp>2014-02-27T23:24:37Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;Nein&quot;</comment>
+      <text xml:space="preserve" bytes="39">style=&quot;background-color: {{Red}}&quot;| Nein</text>
+      <sha1>re4ja4mpsmcip5lyidvu7hgvl0hsg64</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Template:Yes/1/de</title>
+    <ns>1198</ns>
+    <id>945</id>
+    <revision>
+      <id>6072</id>
+      <timestamp>2014-02-27T23:24:57Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;Ja&quot;</comment>
+      <text xml:space="preserve" bytes="2">Ja</text>
+      <sha1>4p78kmtnnbjla68bphlq22rh87x3hzl</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Yes/de</title>
+    <ns>10</ns>
+    <id>946</id>
+    <revision>
+      <id>6073</id>
+      <timestamp>2014-02-27T23:24:58Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;Ja&quot;</comment>
+      <text xml:space="preserve" bytes="39">style=&quot;background-color: {{Green}}&quot;| Ja</text>
+      <sha1>ofnnnq8bbxas1c3ijx3cjxjmzzcklor</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Template:No/Page display title/en</title>
+    <ns>1198</ns>
+    <id>947</id>
+    <revision>
+      <id>6075</id>
+      <timestamp>2014-02-27T23:26:39Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="11">Template:No</text>
+      <sha1>qw43df7201y58y7346ciz92nom6bplx</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>T3</title>
+    <ns>0</ns>
+    <id>948</id>
+    <revision>
+      <id>6085</id>
+      <parentid>6077</parentid>
+      <timestamp>2014-02-27T23:38:37Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <text xml:space="preserve" bytes="46">{{Header}}
+
+'''Test page'''
+{{TX}}
+
+{{Footer}}</text>
+      <sha1>mxuvzmr6bj2ci4eg0fx6f4kk8aqaqas</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:TX</title>
+    <ns>10</ns>
+    <id>949</id>
+    <revision>
+      <id>6084</id>
+      <parentid>6083</parentid>
+      <timestamp>2014-02-27T23:37:24Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <text xml:space="preserve" bytes="96">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
+'''Test template content.'''
+&lt;noinclude&gt;{{Footer}}&lt;/noinclude&gt;</text>
+      <sha1>o4armwqvcfibwuokhwup3tlgmdx6200</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Template:Yes/Page display title/en</title>
+    <ns>1198</ns>
+    <id>950</id>
+    <revision>
+      <id>6081</id>
+      <timestamp>2014-02-27T23:34:43Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="12">Template:Yes</text>
+      <sha1>py4p50z63953e72y6j7qfz9z8ybb4zr</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Yes/en</title>
+    <ns>10</ns>
+    <id>951</id>
+    <revision>
+      <id>6082</id>
+      <timestamp>2014-02-27T23:34:43Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="40">style=&quot;background-color: {{Green}}&quot;| Yes</text>
+      <sha1>l0giy6jopp6xc4o4w20iyilaqpikzia</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Template:DownloadTableNew/10/en</title>
+    <ns>1198</ns>
+    <id>952</id>
+    <revision>
+      <id>6086</id>
+      <timestamp>2014-02-27T23:41:13Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="14">Whonix-Gateway</text>
+      <sha1>blgukfohxhf7ih2xb6kluexqffvroth</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Template:DownloadTableNew/Page display title/en</title>
+    <ns>1198</ns>
+    <id>953</id>
+    <revision>
+      <id>6089</id>
+      <timestamp>2014-02-27T23:45:36Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="25">Template:DownloadTableNew</text>
+      <sha1>n66gajq0r1jl0stn5erq61olwcfhd9o</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Template:Yes/1/en</title>
+    <ns>1198</ns>
+    <id>954</id>
+    <revision>
+      <id>6090</id>
+      <timestamp>2014-02-27T23:45:37Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="3">Yes</text>
+      <sha1>9riye5y7bapchn97ue08dfw82028uy6</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Whonix:Administrators</title>
+    <ns>4</ns>
+    <id>955</id>
+    <redirect title="Contact" />
+    <revision>
+      <id>6091</id>
+      <timestamp>2014-02-27T23:49:41Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>Redirected page to [[Contact]]</comment>
+      <text xml:space="preserve" bytes="21">#REDIRECT [[Contact]]</text>
+      <sha1>nuntettk0rpwiqpconmi4985hj0krjj</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
