@@ -1325,14 +1325,14 @@ See also [[Security_in_Real_World | Whonix security in real world]], [[Security_
     <ns>0</ns>
     <id>24</id>
     <revision>
-      <id>5287</id>
-      <parentid>4718</parentid>
-      <timestamp>2014-02-11T12:42:26Z</timestamp>
+      <id>6105</id>
+      <parentid>5287</parentid>
+      <timestamp>2014-02-28T22:13:46Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="14009">&lt;!--
+      <text xml:space="preserve" bytes="14065">&lt;!--
 Copyright:
 
    Whonix Documentation wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -1524,6 +1524,7 @@ Anonymity is a complex problem without an easy solution, and security is only as
 * [[Download Security|Download Security]]
 * [[Tuning#Replacing Desktop Environment|Replacing desktop environment]]
 * [[Physical Isolation|Whonix using Physical Isolation, setup using two different computers AND virtualization. This is the most secure Tor configuration to date.]]
+* [[AppArmor|Harding using Whonix's AppArmor Profiles]]
 * [[Advanced Security Guide|Advanced Security Guide]]
 * [[Multiple Whonix-Workstations|Using Multiple Whonix-Workstations]]
 * [[Multiple_Whonix-Workstations#Multiple_Whonix-Gateways|Using Multiple Whonix-Gateways]]
@@ -1602,7 +1603,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>c8euabitd43wp442jnxy40wxhl5lesf</sha1>
+      <sha1>2o7i5yxfuqsu2tq6m55uz65dx3212gt</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -9253,14 +9254,14 @@ Whether it's worth to combine Tor with a VPN, either as pre-Tor-VPN (user -&gt; 
     <ns>0</ns>
     <id>98</id>
     <revision>
-      <id>5791</id>
-      <parentid>5662</parentid>
-      <timestamp>2014-02-27T12:25:17Z</timestamp>
+      <id>6107</id>
+      <parentid>5791</parentid>
+      <timestamp>2014-02-28T22:39:05Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="20350">{{Header}}
+      <text xml:space="preserve" bytes="20937">{{Header}}
 {{#seo:
 |description=Prevent Identity Correlation through Circuit Sharing by using Tor Stream Isolation
 }}
@@ -9291,7 +9292,7 @@ Applications in Whonix 0.2.1 and above configured to prevent {{Code2|identity co
 |style=&quot;background-color:{{Green}}&quot;|yes
 |style=&quot;background-color:{{Green}}&quot;|yes
 |socks proxy settings
-|9100
+|9150 &lt;ref&gt;Whonix-Workstation 127.0.0.1:9150 gets redirected to 192.168.0.10:9150 by rinetd. See on Whonix-Workstation file /etc/rinetd. Changing proxy settings in Tor Browser has proven to be unreliable. At some point Tor Button may change its internals and therefore break something again. Keeping the default settings and not requiring any changes in Tor Browser seems like the best way to support compatibility in long run and also is simplest in case {{Code|update-torbrowser}} breaks and [[Manually_Updating_Tor_Browser|manually updating Tor Browser]] is required again in future.&lt;/ref&gt;
 |[[Tor Browser]]
 |-
 |style=&quot;background-color:#f9f9f9;height:27px&quot;|XChat
@@ -9561,7 +9562,7 @@ sudo nano /etc/tor/torrc
 Add.
 
 &lt;pre&gt;
-SocksPort 192.168.0.10:9100 IsolateDestAddr IsolateDestPort
+SocksPort 192.168.0.10:9150 IsolateDestAddr IsolateDestPort
 &lt;/pre&gt;
 
 Save.
@@ -9635,7 +9636,7 @@ Stream Isolation Graphic has been contributed by: Cuan Knaggs – graphic and we
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Design]]</text>
-      <sha1>r5xf1siagnmpo8jvvv31or21kdubw4e</sha1>
+      <sha1>ew72zhkw52yy3amft8f5rb9cx8kc1ux</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -12190,14 +12191,15 @@ sudo umount /mnt/whonix
     <ns>0</ns>
     <id>115</id>
     <revision>
-      <id>5918</id>
-      <parentid>5504</parentid>
-      <timestamp>2014-02-27T14:21:46Z</timestamp>
+      <id>6095</id>
+      <parentid>5918</parentid>
+      <timestamp>2014-02-28T14:25:19Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="6123">{{Header}}
+      <comment>/* Installing VirtualBox Guest Additions */</comment>
+      <text xml:space="preserve" bytes="6064">{{Header}}
 {{#seo:
 |description=Instructions for installing VirtualBox Guest Additions in Whonix. Shared Folders, Mouse Integration, etc.
 }}
@@ -12217,22 +12219,14 @@ sudo umount /mnt/whonix
 * To get a higher screen resolution without installing guest additions, see [[Higher Screen Resolution]]
 
 == Installing VirtualBox Guest Additions ==
-=== Instructions for Whonix 7.7.8.6 (Debian Wheezy) ===
-
-Follow instructions for Debian Wheezy below.
-
-=== Instructions for Debian Jessie ===
-
-Recommend avoid for Guest Additionsǃ This version is difficult to get working with guest additions and vbox shares. Debian Jessie has the issue that Whonix installs with Kernel 3.10 and the distro is at 3.12, and the 3.10 headers are not available. Therefore, it is dangerous (and unsafe) to get the Kernel headers on a different repository. Additionally, there are reports that updating the kernel can cause issues (and is also unsafe). Therefore, instead install experimental version 7.7.8.6 located at https://www.whonix.org/blog/
-
-Noteː It has been reported that reverting Virtualbox 2 versions back with 3.10 can also solve issues. Update this wiki with your results.
-
 === New Instructions for Debian Wheezy ===
 Very simple.
 
-Searching&lt;ref&gt;http://packages.debian.org/search?searchon=names&amp;keywords=virtualbox&lt;/ref&gt; for Debian packages containing VirtualBox was a wise thing. In past it was sometimes a real pain to install the guest additions. The search brought up, that honorable people created a debian package with the tools. Simply do:
+Searching&lt;ref&gt;http://packages.debian.org/search?searchon=names&amp;keywords=virtualbox&lt;/ref&gt; for Debian packages containing VirtualBox was a wise thing. In past it was sometimes a real pain to install the guest additions. The search brought up, that honorable people created a debian package with the tools. Inside your Whonix Virtual Machine, simply do:
 
-&lt;pre&gt;sudo apt-get update &amp;&amp; sudo apt-get dist-upgrade&lt;/pre&gt;
+&lt;pre&gt;
+sudo apt-get update &amp;&amp; sudo apt-get dist-upgrade
+&lt;/pre&gt;
 
 Followed by.
 
@@ -12255,13 +12249,24 @@ NOTE: Sometimes after reboot the Workstation guest fails to pick up a new resolu
 NOTE: If installation of virtualbox-guest-dkms finishes without error, but there is no kernel module generated you're probably missing the kernel-headers. 
 Do the following:
 In 
-&lt;pre&gt;/etc/apt/sources.list #uncomment the two lines starting with &quot;deb-src&quot;&lt;/pre&gt; 
+
+&lt;pre&gt;
+/etc/apt/sources.list #uncomment the two lines starting with &quot;deb-src&quot;
+&lt;/pre&gt;
+
 This will make linux sources available in apt-get.
+
 &lt;pre&gt;
 sudo apt-get install linux-headers-$(uname -r)
 sudo apt-get install --reinstall virtualbox-guest-dkms
 &lt;/pre&gt;
+
 Restart VM (to make the kernel module available)
+
+=== (Instructions for Debian Jessie) ===
+Recommend avoid for Guest Additionsǃ This version is difficult to get working with guest additions and vbox shares. Debian Jessie has the issue that Whonix installs with Kernel 3.10 and the distro is at 3.12, and the 3.10 headers are not available. Therefore, it is dangerous (and unsafe) to get the Kernel headers on a different repository. Additionally, there are reports that updating the kernel can cause issues (and is also unsafe). Therefore, instead install experimental version 7.7.8.6 located at https://www.whonix.org/blog/
+
+Noteː It has been reported that reverting Virtualbox 2 versions back with 3.10 can also solve issues. Update this wiki with your results.
 
 === Old instructions for Ubuntu Precise ===
 Moved to [[Ubuntu]].
@@ -12325,7 +12330,7 @@ Safe and reboot. Done.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>6othp797f8pqibnwa2gq127pk6glvb4</sha1>
+      <sha1>qb8m6nmjafezww6rgp6d2lzaln0cw47</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -12711,14 +12716,15 @@ for places where I could need more input. Also reviewing the whole source code o
     <ns>0</ns>
     <id>119</id>
     <revision>
-      <id>5857</id>
-      <parentid>4447</parentid>
-      <timestamp>2014-02-27T13:29:32Z</timestamp>
+      <id>6104</id>
+      <parentid>5857</parentid>
+      <timestamp>2014-02-28T22:12:38Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="16673">{{Header}}
+      <comment>/* Whonix-Workstation Security */</comment>
+      <text xml:space="preserve" bytes="16813">{{Header}}
 {{#seo:
 |description=Computer Security Guide for Whonix Linux for Users, Whonix Hardening
 }}
@@ -12997,6 +13003,9 @@ The warning of VMware Host Only networking may also apply to Whonix:
 
 In case 3 and 4, you would weaken isolation between the host and Whonix-Workstation.
 
+== Hardening: AppArmor ==
+Eventually check out Whonix's [[AppArmor]] profiles. Still in testing, not that difficult and considerable gain.
+
 = Installing additional software =
 
 See [[Install Software]].
@@ -13032,7 +13041,7 @@ For even more Security, see [[Advanced Security Guide]].
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>1pb2tlkl0rqy20092ecswadtujht4y2</sha1>
+      <sha1>g560l3noquzoc7m60jjhqve4ez39uvx</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -13908,14 +13917,15 @@ When you are using them at the same time, the risks explained in the introductio
     <ns>0</ns>
     <id>127</id>
     <revision>
-      <id>5724</id>
-      <parentid>5663</parentid>
-      <timestamp>2014-02-27T11:16:32Z</timestamp>
+      <id>6103</id>
+      <parentid>5724</parentid>
+      <timestamp>2014-02-28T22:10:41Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="39899">{{Header}}
+      <comment>/* Hardening */</comment>
+      <text xml:space="preserve" bytes="32524">{{Header}}
 &lt;!--
 Copyright:
 
@@ -14278,297 +14288,8 @@ We must not end up with non-standard desktop resolution, as per [[Protocol-Leak-
 === Introduction ===
 Whonix isn't a perfectly hardened system. Additional hardening would be very welcome. At the same time, hardening by default is very difficult. That's why this is outside the scope of the Whonix Anonymous Operating System project, unless the project gets serious amounts of help with it. Hardening is left to the upstream operating system. See [[Dev/Operating System]] for details.
 
-=== Pidgin ===
-{{AppArmorProfileWarning}}
-
-Create a file /etc/apparmor.d/usr.bin.pidgin.
-
-&lt;pre&gt;
-kdesudo kwrite /etc/apparmor.d/usr.bin.pidgin
-&lt;/pre&gt;
-
-Credit for this AppArmor profile goes to [http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=676849 intrigeri].
-
-&lt;pre&gt;
-# vim:syntax=apparmor
-
-#include &lt;tunables/global&gt;
-
-/usr/bin/pidgin {
-  #include &lt;abstractions/audio&gt;
-  #include &lt;abstractions/aspell&gt;
-  #include &lt;abstractions/base&gt;
-  #include &lt;abstractions/bash&gt;
-  #include &lt;abstractions/consoles&gt;
-  #include &lt;abstractions/dbus&gt;
-  #include &lt;abstractions/dbus-session&gt;
-  #include &lt;abstractions/fonts&gt;
-  #include &lt;abstractions/freedesktop.org&gt;
-  #include &lt;abstractions/gnome&gt;
-  #include &lt;abstractions/launchpad-integration&gt;
-  #include &lt;abstractions/nameservice&gt;
-  #include &lt;abstractions/private-files-strict&gt;
-  #include &lt;abstractions/ubuntu-browsers&gt;
-  #include &lt;abstractions/ubuntu-console-browsers&gt;
-  #include &lt;abstractions/user-download&gt;
-  #include &lt;abstractions/user-tmp&gt;
-  #include &lt;abstractions/ibus&gt;
-  #include &lt;abstractions/X&gt;
-
-  deny capability sys_ptrace,
-
-  deny @{HOME}/.bash* rw,
-  deny @{HOME}/.cshrc rw,
-  deny @{HOME}/.profile rw,
-  deny @{HOME}/.zshrc rw,
-
-  owner @{HOME}/.cache/dconf/user rw,
-  owner @{HOME}/.config/dconf/user r,
-  owner @{HOME}/.config/enchant/ rw,
-  owner @{HOME}/.config/enchant/* rwk,
-  owner @{HOME}/.local/share/icons/ r,
-  owner @{HOME}/.local/share/mime/* r,
-  owner @{HOME}/.gnome2/nautilus-sendto/** rw,
-  owner @{HOME}/.gstreamer*/ rw,
-  owner @{HOME}/.gstreamer*/** rw,
-  owner @{HOME}/.pulse/ rw,
-  owner @{HOME}/.pulse/** rw,
-  owner @{HOME}/.pulse-cookie rwk,
-  owner @{HOME}/.purple/ rw,
-  owner @{HOME}/.purple/** rwk,
-
-  /bin/dash rix,
-
-  /{dev,run}/shm/ r,
-  /{dev,run}/shm/* rw,
-
-  /etc/ r,
-  /etc/pulse/client.conf r,
-  /etc/ssl/certs/ r,
-  /etc/ssl/certs/** r,
-  /etc/ssl/certs/ssl-cert-snakeoil.pem r,
-
-  owner /tmp/orbit-*/* w,
-  owner /tmp/pulse-*/* w,
-
-  /usr/bin/gconftool-2 rix,
-  /usr/bin/gnome-default-applications-properties ix,
-  /usr/bin/gnome-network-preferences ix,
-  /usr/bin/gnome-open rmix,
-  /usr/bin/gsettings rix,
-  /usr/bin/pidgin r,
-  /usr/bin/xdg-open rmix,
-  /bin/which rix,
-  /usr/bin/gvfs-open rmix,
-
-  /usr/share/glib-2.0/schemas/gschemas.compiled r,
-
-  /usr/lib/ r,
-  /usr/lib/frei0r-1/*.so rm,
-  /usr/lib/libvisual-*/**.so rm,
-  /usr/lib/pidgin/*.so rm,
-  /usr/lib/purple*/*.so rm,
-
-  /usr/share/ca-certificates/*/** r,
-  /usr/share/enchant/enchant.ordering r,
-  /usr/share/locale-langpack/** rm,
-  /usr/share/purple/ca-certs/ r,
-  /usr/share/purple/ca-certs/** r,
-  /usr/share/myspell/dicts/ r,
-  /usr/share/myspell/dicts/** r,
-  /usr/share/tcltk/** r,
-
-  /usr/share/themes/ r,
-  /usr/share/themes/** r,
-
-  /usr/share/hunspell/ r,
-  /usr/share/hunspell/** r,
-
-  deny @{PROC}/** r,
-
-  # Site-specific additions and overrides. See local/README for details.
-  #include &lt;local/usr.bin.pidgin&gt;
-}
-&lt;/pre&gt;
-
-Create a file /etc/apparmor.d/local/usr.bin/pidgin.
-
-&lt;pre&gt;
-kdesudo kwrite /etc/apparmor.d/local/usr.bin/pidgin
-&lt;/pre&gt;
-
-&lt;pre&gt;
-/etc/resolv.conf.whonix r,
-/etc/hosts.whonix r,
-&lt;/pre&gt;
-
-Run.
-
-&lt;pre&gt;
-sudo apparmor_parser -r -W -T /etc/apparmor.d/usr.bin.pidgin
-&lt;/pre&gt;
-
-&lt;pre&gt;
-sudo aa-enforce /etc/apparmor.d/usr.bin.pidgin
-&lt;/pre&gt;
-
-Run.
-
-That's it.
-
-=== Tor Browser Bundle (TBB) ===
-{{AppArmorProfileWarning}}
-
-Create a file /etc/apparmor.d/home.user.tor-browser_en-US.Browser.firefox.
-
-&lt;pre&gt;
-kdesudo kwrite /etc/apparmor.d/home.user.tor-browser_en-US.Browser.firefox
-&lt;/pre&gt;
-
-&lt;pre&gt;
-#include &lt;tunables/global&gt;
-
-/home/user/tor-browser_en-US/Browser/firefox {
-	#include &lt;abstractions/base&gt;
-	#include &lt;abstractions/user-tmp&gt;
-	#include &lt;abstractions/bash&gt;
-	
-	capability sys_ptrace,
-
-	network,
-	network tcp,
-
-	deny /etc/host.conf r,
-	deny /etc/hosts r,
-	deny /etc/nsswitch.conf r,
-	deny /etc/resolv.conf r,
-	deny /proc/9881/mountinfo r,
-	deny @{HOME}/.config/user-dirs.dirs r,
-	deny @{HOME}/.gtk-bookmarks r,
-	deny @{HOME}/.local/share/recently-used.xbel* rw,
-
-	/bin/dash rix,
-	/bin/open rix,
-	/bin/ps rix,		
-	
-	/dev/dri/card0 rw,
-	/dev/vboxuser rw,
-	/dev/tty r,
-
-	/etc/drirc r,
-	/etc/X11/cursors/* r,
-	/etc/fonts/** r,
-	/etc/mime.types r,
-	/etc/mailcap r,
-	deny /etc/passwd r,
-	deny /etc/resolv.conf.whonix r,
-	deny /etc/hosts.whonix r,
-	/etc/pkcs11/modules/ r,
-	/etc/pkcs11/modules/* r,
-
-	owner @{HOME}/tor-browser_en-US/ r,
-	owner @{HOME}/tor-browser_en-US/.cache/ cx,
-	owner @{HOME}/tor-browser_en-US/* rw, 
-	owner @{HOME}/tor-browser_en-US/.mozilla/ w,
-	owner @{HOME}/tor-browser_en-US/.mozilla/*/ w,
-	owner @{HOME}/tor-browser_en-US/Browser/** r,
-	owner @{HOME}/tor-browser_en-US/Browser/*.so mr,
-	owner @{HOME}/tor-browser_en-US/Browser/browser/components/*.so mr,
-	owner @{HOME}/tor-browser_en-US/Browser/components/*.so mr,
-	owner @{HOME}/tor-browser_en-US/Browser/firefox rix,
-	owner @{HOME}/tor-browser_en-US/Data/Browser/ r,
-	owner @{HOME}/tor-browser_en-US/Data/Browser/** rwk,
-	owner @{HOME}/tor-browser_en-US/Desktop/ rw,
-	owner @{HOME}/tor-browser_en-US/Desktop/** rw,
-	owner @{HOME}/tor-browser_en-US/Downloads/ rw,
-	owner @{HOME}/tor-browser_en-US/Downloads/** rw,
-	owner @{HOME}/tor-browser_en-US/Tor/tor Px,
-
-	
-	/sys/devices/system/cpu/ r,
-	/sys/devices/system/cpu/* r,
-
-	/tmp/.X0-lock r,
-
-	## Looks like a nvidia audio driver.
-	deny /usr/lib/i386-linux-gnu/dri/swrast_dri.so m,
-
-	## Alphabets libraries (32bit).
-	/usr/lib/i386-linux-gnu/pango/1.6.0/modules/* m,
-
-	/usr/lib/i386-linux-gnu/pkcs11/* m,
-	/usr/bin/kde4-config rix,
-	
-	/usr/share/ r,
-	/usr/share/fonts/ r,
-	/usr/share/fonts/** r,
-	/usr/share/icons/ r,
-	/usr/share/icons/** r,
-	/usr/share/mime/ r,
-	/usr/share/mime/** r,
-	/usr/share/pixmaps/ r,
-	/usr/share/pixmaps/** r,
-	/usr/share/themes/ r,
-	/usr/share/themes/** r,
-
-	/usr/share/kde4/config/kdeglobals r,
-	/usr/share/whonix/kde/share/config/kdeglobals r,
-
-	deny /usr/share/applications/** r,
-
-	/var/cache/fontconfig/* r,
-
-	/var/lib/dbus/machine-id r,
-
-	## In 'Edit/Preferences', set 'Saves files to' -&gt; 'Downloads'.	
-	owner @{HOME}/Downloads/* rw,
-
-	owner @{HOME}/.Xauthority r,
-       	owner @{HOME}/.local/share/ r,
-	owner @{HOME}/.local/share/mime/ r,
-	owner @{HOME}/.local/share/mime/** r,
-	owner @{HOME}/.local/share/applications/mimeinfo.cache r,
-	owner @{HOME}/.local/share/applications/mimeapps.list r,
-	owner @{HOME}/.icons/ r,
-	owner @{HOME}/.icons/** r,
-	owner @{HOME}/.local/share/icons/ r,
-	owner @{HOME}/.themes/** r,
-	deny owner @{HOME}/.local/share/gvfs-metadata/home r,
-	owner @{HOME}/.cache/ r,
-	owner @{HOME}/.cache/* rwk,
-	owner @{HOME}/.kde/share/config/gtkrc-2.0 r,
-
-	@{PROC} r,
-	@{PROC}/[0-9]*/maps r,
-	@{PROC}/tty/drivers r,
-	deny @{PROC}/[0-9]*/mounts r,
-	deny @{PROC}/[0-9]*/mountinfo r,
-	@{PROC}/[0-9]*/stat r,
-	@{PROC}/[0-9]*/status r,
-	@{PROC}/[0-9]*/task/*/stat r,
-	@{PROC}/[0-9]*/cmdline r,
-	@{PROC}/[0-9]*/fd/ r,
-	@{PROC}/cpuinfo r,
-	@{PROC}/filesystems r,
-	@{PROC}/meminfo r,
-	@{PROC}/stat r,
-	@{PROC}/sys/kernel/pid_max r,
-	@{PROC}/uptime r,
-}
-&lt;/pre&gt;
-
-Run
-&lt;pre&gt;
-sudo aa-enforce /etc/apparmor.d/home.user.tor-browser_en-US.Browser.firefox
-&lt;/pre&gt;
-
-[https://www.whonix.org/forum/index.php?action=profile;u=24 troubadour] created this profile. You can discuss it in this [https://www.whonix.org/forum/index.php/topic,24.0.html forum thread].
-
-=== Additional inspiration ===
-Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/AppArmor in Debian]):
-
-* [https://trac.torproject.org/projects/tor/wiki/doc/AppArmorForTBB AppArmor Profile for TBB]
-* [https://github.com/adrelanos/Inoffical-TBB-AppArmor Inoffical-TBB-AppArmor]
+=== AppArmor ===
+Learn about [http://wiki.apparmor.net AppArmor]. Check out Whonix's [[AppArmor]] profiles.
 
 == More than one Tor Browser in Whonix ==
 These instructions only work with TBB 3.x and above.
@@ -14707,7 +14428,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>hilnieqgx7k59lbs39y72dl1iiia5ay</sha1>
+      <sha1>q6gqck08qkb8owls0g1v0mcj67g6uqo</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -17592,14 +17313,15 @@ Essentially this feature allows to directly use physical PCI devices on the host
     <ns>0</ns>
     <id>148</id>
     <revision>
-      <id>5795</id>
-      <parentid>5500</parentid>
-      <timestamp>2014-02-27T12:30:52Z</timestamp>
+      <id>6102</id>
+      <parentid>5795</parentid>
+      <timestamp>2014-02-28T22:05:19Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="4733">&lt;!--
+      <comment>/* Download the key */</comment>
+      <text xml:space="preserve" bytes="4731">&lt;!--
 Copyright:
 
    Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -17648,7 +17370,7 @@ This page is strongly related to the [[Trust]] page.
 &lt;html&gt;&lt;a class=&quot;link-https&quot; href=&quot;/adrelanos.asc&quot;&gt;adrelanos.asc&lt;/a&gt;&lt;/html&gt; (Right click &amp; Save)
 --&gt;
 
-2. Store it as adrelanos.asc.
+2. Store it as patrick.asc.
 
 3. Import the key:
 
@@ -17719,7 +17441,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>gkps0ba2yqgbslf39lsdttblmlqq7uk</sha1>
+      <sha1>5j1p1qpoq9xgfjq3nlgdqwhuhbndhgm</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -17793,14 +17515,15 @@ To get a new circuit, press.
     <ns>0</ns>
     <id>150</id>
     <revision>
-      <id>5794</id>
-      <parentid>4805</parentid>
-      <timestamp>2014-02-27T12:29:32Z</timestamp>
+      <id>6106</id>
+      <parentid>5794</parentid>
+      <timestamp>2014-02-28T22:15:53Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="14470">&lt;!--
+      <comment>/* Updating */</comment>
+      <text xml:space="preserve" bytes="14467">&lt;!--
 Copyright:
 
    Whonix Tor Browser wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -17950,7 +17673,7 @@ There is no auto-update feature for Tor Browser. You will be notified about new 
 '''Short''':&lt;br /&gt;
 Tor Browser version check and update (after confirmation) in Whonix can be done with:
 
-&lt;pre&gt;torbrowser --update&lt;/pre&gt;
+&lt;pre&gt;update-torbrowser&lt;/pre&gt;
 
 A future update of Tor Browser by The Tor Project might make Tor Browser running in Whonix-Workstation unusable. In case Tor Browser inside Whonix-Workstation breaks, a news with instructions on how to fix the issue will be posted within a few days. If not, the Whonix developers are not aware of the issue.
 
@@ -17959,7 +17682,7 @@ If the Tor Browser update script is ever broken, you are advised to update manua
 '''Long''':&lt;br /&gt;
 If you update Tor Browser in Whonix and there won't be [[DoNot#Prevent_Tor_over_Tor_scenarios.|Tor over Tor, which is recommended against]]. You can use either (choose one):
 
-* Whonix's {{Code|torbrowser}} updater which comes with Whonix &lt;ref&gt;Because it patches the start-tor-browser script.&lt;/ref&gt;
+* Whonix's {{Code|update-torbrowser}} which comes with Whonix &lt;ref&gt;Because it patches the start-tor-browser script.&lt;/ref&gt;
 * [[Manually Updating Tor Browser]] instructions
 
 = Browser Plugins / Flash / Java =
@@ -18008,7 +17731,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>ecccuu7hiu0pjctq6g3497z29ztxbdu</sha1>
+      <sha1>0aavyi6c2hg6r6ungoiucuoj0d6kn3g</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -56707,17 +56430,17 @@ Thanks für den MAT public domain screenshot an [https://www.awxcnx.de/handbuch_
     <ns>0</ns>
     <id>710</id>
     <revision>
-      <id>5704</id>
-      <parentid>5488</parentid>
-      <timestamp>2014-02-27T10:06:18Z</timestamp>
+      <id>6097</id>
+      <parentid>6096</parentid>
+      <timestamp>2014-02-28T18:52:22Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="23406">{{Header}}
+      <text xml:space="preserve" bytes="23387">{{Header}}
 
 = Keys =
-== New Key (Signed Whonix 8 testers-only) ==
+== New Key ==
 &lt;pre&gt;
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
@@ -57131,8 +56854,10 @@ E13Z1DJRfRPaW7cbNubq
 -----END PGP SIGNATURE-----
 &lt;/pre&gt;
 
+{{Footer}}
+
 [[Category:Documentation]]</text>
-      <sha1>5be4znsphe1xlk6q5gvptf6swag7u4j</sha1>
+      <sha1>74uiwmptml5b0mqoyay2l3j5hurwfvu</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -61684,15 +61409,15 @@ sudo rm -fR /var/lib/apt/lists/*
     <ns>0</ns>
     <id>891</id>
     <revision>
-      <id>6094</id>
-      <parentid>5988</parentid>
-      <timestamp>2014-02-28T07:09:27Z</timestamp>
+      <id>6101</id>
+      <parentid>6094</parentid>
+      <timestamp>2014-02-28T21:27:08Z</timestamp>
       <contributor>
         <username>Troubadour</username>
         <id>230</id>
       </contributor>
-      <comment>TBB profile changes (network rules, gnome modules issue)</comment>
-      <text xml:space="preserve" bytes="8074">{{Header}}
+      <comment>Added Icedove profile.</comment>
+      <text xml:space="preserve" bytes="11390">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
@@ -61761,7 +61486,6 @@ Paste the following content.
 	/etc/mailcap r,
 	/etc/pkcs11/modules/ r,
 	/etc/pkcs11/modules/* r,
-
 	
 	owner @{HOME}/tor-browser_en-US/ r,
 	owner @{HOME}/tor-browser_en-US/* rw, 
@@ -61847,6 +61571,133 @@ Paste the following content.
 Run
 &lt;pre&gt;
 sudo aa-enforce /etc/apparmor.d/home.user.tor-browser_en-US.Browser.firefox
+&lt;/pre&gt;
+
+[https://www.whonix.org/forum/index.php?action=profile;u=24 troubadour] created this profile. You can discuss it in this [http://kkkkkkkkkk63ava6.onion/forum/index.php/topic,97.0.html forum thread].
+
+= Icedove =
+{{AppArmorProfileWarning}}
+
+There is one restriction with this profile: the attachments (received or to be sent) must be in '/home/user/Downloads'. The directory should be already created if you are using the TBB profile.
+
+Create a file /etc/apparmor.d/usr.lib.icedove.icedove.
+
+&lt;pre&gt;
+kdesudo kwrite /etc/apparmor.d/usr.lib.icedove.icedove
+&lt;/pre&gt;
+
+Paste the following content.
+
+&lt;pre&gt;
+#include &lt;tunables/global&gt;
+
+/usr/lib/icedove/icedove {
+  #include &lt;abstractions/base&gt;
+  #include &lt;abstractions/user-tmp&gt;
+  #include &lt;abstractions/bash&gt;
+  #include &lt;abstractions/fonts&gt;
+  
+  capability sys_ptrace,
+  
+  deny /etc/host.conf r,
+  deny /etc/hosts r,
+  deny /etc/nsswitch.conf r,
+  deny /etc/passwd r,
+  deny /etc/hosts.whonix r,
+  deny /etc/fstab r,
+	owner @{HOME}/* rw,
+	owner @{HOME}/.* rw,
+	owner @{HOME}/Desktop/ r,
+  deny owner @{HOME}/.cache/ rw,
+  deny owner @{HOME}/.cache/** rw,
+	deny owner @{HOME}/.local/share/recently-used.xbel* rw,
+  deny @{PROC}/[0-9]*/mounts r,
+  deny @{PROC}/[0-9]*/mountinfo r,
+  deny /usr/lib/i386-linux-gnu/dri/swrast_dri.so m,
+  deny /usr/share/applications/ rw,
+
+ 	/bin/dash  rix,
+  /bin/ps rix,
+	/bin/mknod rix,
+  
+  /dev/tty r,
+  /dev/vboxuser rw,
+  /dev/dri/card0 rw,
+  
+  /etc/drirc r,
+  /etc/ld.so.cache r,
+  /etc/resolv.conf r,
+  /etc/resolv.conf.whonix r,
+  /etc/mailcap r, 
+  /etc/icedove/pref/ r,
+  /etc/icedove/pref/* r,
+  /etc/X11/cursors/* r,
+  /etc/mime.types r,
+  /etc/gai.conf r,
+  
+  /lib/i386-linux-gnu/i686/cmov/libc-2.13.so r,
+  /lib/i386-linux-gnu/libprocps.so.0.0.1 r,
+  
+  owner @{HOME}/ r,	  
+  owner @{HOME}/Downloads/ rw,	
+  owner @{HOME}/Downloads/* rw,	
+	
+  owner @{HOME}/.Xauthority r,
+  owner @{HOME}/.icedove/** rwk,
+  owner @{HOME}/.icedove/up40c30c.default/lock rw,
+  owner @{HOME}/.icedove/up40c30c.default/.parentlock rwk,
+  owner @{HOME}/.kde/share/** rw,
+  owner @{HOME}/.config/oxygen-gtk/argb-apps.conf rw,
+  owner @{HOME}/.local/share/applications/mimeapps.list r,
+  owner @{HOME}/.local/share/applications/userapp-Icedove* r,
+  
+  @{PROC} r,
+  @{PROC}/[0-9]*/maps r,
+  @{PROC}/tty/drivers r,
+  @{PROC}/[0-9]*/stat r,
+  @{PROC}/[0-9]*/status r,
+  @{PROC}/[0-9]*/task/*/stat r,
+  @{PROC}/[0-9]*/cmdline r,
+  @{PROC}/[0-9]*/fd/ r,
+  @{PROC}/cpuinfo r,
+  @{PROC}/filesystems r,
+  @{PROC}/meminfo r,
+  @{PROC}/stat r,
+  @{PROC}/sys/kernel/pid_max r,
+  @{PROC}/uptime r,
+  
+  /sys/devices/system/cpu/ r,  
+  /sys/devices/system/cpu/present r,  
+  
+  /usr/bin/kde4-config rix,
+ 
+  /usr/lib/icedove/icedove mr,
+  /usr/lib/i386-linux-gnu/pango/1.6.0/modules/* m,
+  
+  /usr/share/ r,
+  /usr/share/icons/ r,
+  /usr/share/icons/** r,
+  /usr/share/mime/ r,
+  /usr/share/mime/** r,
+  /usr/share/pixmaps/ r,
+  /usr/share/pixmaps/** r,
+  /usr/share/themes/ r,
+  /usr/share/themes/** r,
+  /usr/share/icedove/ r,
+  /usr/share/icedove/** r,
+  /usr/share/glib-2.0/schemas/gschemas.compiled r, 
+  /usr/share/whonix/kde/share/config/kdeglobals rw,
+  /usr/share/hunspell/ r,
+  /usr/share/hunspell/* r,
+  /usr/.local/share/applications/ rw,
+
+  /var/lib/dbus/machine-id r,
+}
+&lt;/pre&gt;
+
+Run
+&lt;pre&gt;
+sudo aa-enforce /etc/apparmor.d/usr.lib.icedove.icedove
 &lt;/pre&gt;
 
 [https://www.whonix.org/forum/index.php?action=profile;u=24 troubadour] created this profile. You can discuss it in this [http://kkkkkkkkkk63ava6.onion/forum/index.php/topic,97.0.html forum thread].
@@ -62000,7 +61851,7 @@ Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/A
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>5tcat5wxa5d4rrwzrynrceto1z3y1mz</sha1>
+      <sha1>gvj4wutz7yd97yjteyuzz2x8hxv4fqs</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -62134,30 +61985,27 @@ Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/A
     <ns>10</ns>
     <id>894</id>
     <revision>
-      <id>6053</id>
-      <parentid>6049</parentid>
-      <timestamp>2014-02-27T23:18:17Z</timestamp>
+      <id>6100</id>
+      <parentid>6099</parentid>
+      <timestamp>2014-02-28T18:55:11Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="7693">&lt;!--T:7--&gt;
-&lt;big&gt;&lt;translate&gt;&lt;!--T:9--&gt;
-Version:&lt;/translate&gt; &lt;span style=&quot;color: green&quot;&gt;{{VersionNew}}&lt;/span&gt;&lt;/big&gt;
+      <text xml:space="preserve" bytes="7588">&lt;!--T:7--&gt;
+&lt;big&gt;Version: &lt;span style=&quot;color: green&quot;&gt;{{VersionNew}}&lt;/span&gt;&lt;/big&gt;
 
-&lt;translate&gt;
 &lt;!--T:8--&gt;
 '''Note:''' You need to download both Gateway and Workstation virtual machine images.
-&lt;/translate&gt;
 
 &lt;!--T:9--&gt;
 {| class=&quot;wikitable&quot; style=&quot;text-align: center;background-color: #fff&quot;
 |- {{GrayBackground}}
 | style=&quot;height: 47px;&quot;|
-| style=&quot;white-space: nowrap; width: 137px;&quot;|'''&lt;translate&gt;&lt;!--T:10--&gt;
-Whonix-Gateway&lt;/translate&gt;'''&lt;br /&gt;(1.2 GiB)
-| style=&quot;white-space: nowrap; width: 137px;&quot;|'''&lt;translate&gt;&lt;!--T:11--&gt;
-Whonix-Workstation&lt;/translate&gt;'''&lt;br /&gt;(1.3 GiB)
+| style=&quot;white-space: nowrap; width: 137px;&quot;|'''&lt;!--T:10--&gt;
+Whonix-Gateway'''&lt;br /&gt;(1.2 GiB)
+| style=&quot;white-space: nowrap; width: 137px;&quot;|'''&lt;!--T:11--&gt;
+Whonix-Workstation'''&lt;br /&gt;(1.3 GiB)
 | style=&quot;white-space: nowrap; width: 140px;&quot;|'''[[Hide Tor and Whonix from your ISP|Anonymous Download]]&lt;br /&gt; possible &lt;ref name=anonymousdownload&gt;By using the [https://www.torproject.org/download/download-easy.html.en Tor Browser Bundle] (TBB). For an introduction, see [[Tor Browser|Tor Browser]]. See also [[Hide Tor and Whonix from your ISP|Hide Tor and Whonix from your ISP]].&lt;/ref&gt;'''
 | style=&quot;width: 135px;&quot;|'''[[Download Security|Download Security]]&lt;br /&gt; without [[#Verify the Whonix images|Verification]]'''
 | style=&quot;width: 135px;&quot;|'''[[Download Security|Download Security]]&lt;br /&gt; with [[#Verify the Whonix images|Verification]]'''
@@ -62232,7 +62080,7 @@ Whonix-Workstation&lt;/translate&gt;'''&lt;br /&gt;(1.3 GiB)
 | style=&quot;background-color: {{Green}}&quot;| Very High &lt;ref name=fromsourcecode&gt;When you build from source code, audit the source code for being non-malicious and reasonably bug free, you do not have to [[Trust|Trust]] the developers, the website or the SSL certificate authorities.&lt;/ref&gt;
 | style=&quot;background-color: {{Green}}&quot;| Best &lt;ref name=fromsourcecode /&gt; &lt;ref&gt;By additional verification that you got the source code from the original authors and by ensuring you're using the same source code as others you get better security.&lt;/ref&gt;
 |}</text>
-      <sha1>m2dpkvnff6fnv3jyfqnvjgvahsz4bmf</sha1>
+      <sha1>sjmmu9gn26qakzv34fnkm11ile1b96n</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
