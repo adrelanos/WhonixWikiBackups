@@ -60827,14 +60827,14 @@ The following AppArmor profile is still experimental. The worst thing that can h
     <ns>8</ns>
     <id>870</id>
     <revision>
-      <id>5981</id>
-      <parentid>5660</parentid>
-      <timestamp>2014-02-27T17:05:58Z</timestamp>
+      <id>6119</id>
+      <parentid>6118</parentid>
+      <timestamp>2014-02-28T23:26:37Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="1007">&lt;html&gt;
+      <text xml:space="preserve" bytes="1075">&lt;html&gt;
 &lt;style type=&quot;text/css&quot;&gt;
 
 #banner {
@@ -60881,14 +60881,16 @@ The following AppArmor profile is still experimental. The worst thing that can h
   &lt;a class=&quot;cn-full-banner-click&quot; href=&quot;/wiki/Donate&quot; title=&quot;&quot;&gt;
 &lt;div id=&quot;banner-logo&quot;&gt;&lt;/div&gt;
     &lt;div id=&quot;black-text&quot;&gt;
-   Whonix fundraising campaign. &lt;br /&gt; Please consider donating one dollar by monthly standing order!
+   &lt;translate&gt;&lt;!--T:1--&gt;
+Whonix fundraising campaign.&lt;/translate&gt; &lt;br /&gt; &lt;translate&gt;&lt;!--T:2--&gt;
+Please consider donating one dollar by monthly standing order!&lt;/translate&gt;
      &lt;/div&gt;
   &lt;/a&gt;
 
 
 &lt;/div&gt;
 &lt;/html&gt;</text>
-      <sha1>kx1gxch9ct7vpopmn647h874hp5m89w</sha1>
+      <sha1>kii41us4if0ch9uvrh1adg47eb16tgy</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -63498,6 +63500,239 @@ sudo ln -s /etc/dpkg/origins/whonix /etc/dpkg/origins/default
       <comment>Redirected page to [[Contact]]</comment>
       <text xml:space="preserve" bytes="21">#REDIRECT [[Contact]]</text>
       <sha1>nuntettk0rpwiqpconmi4985hj0krjj</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:MediaWiki:Sitenotice/2/en</title>
+    <ns>1198</ns>
+    <id>956</id>
+    <revision>
+      <id>6110</id>
+      <timestamp>2014-02-28T23:19:25Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="62">Please consider donating one dollar by monthly standing order!</text>
+      <sha1>e5ytyxq9pp1b9rf9880xmc7xte056fb</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Sitenotice/en</title>
+    <ns>8</ns>
+    <id>957</id>
+    <revision>
+      <id>6111</id>
+      <timestamp>2014-02-28T23:19:26Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="1007">&lt;html&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+
+#banner {
+ position: relative;
+ overflow: hidden;
+ background-image:url('/w/images/0/0d/Gray-gradient1.png') bottom repeat-x;
+ margin-bottom: 0.5em !important;
+ margin-top: 0.5em !important;
+ background-color:#EEEEEE;
+ border: solid 1px #aaaaaa; 
+ height:66px;
+}
+
+#banner a.cn-full-banner-click {
+ display:block;
+ height:100%;
+ width:100%;
+ cursor: pointer;
+}
+
+
+#banner-logo {
+ position: absolute;
+ top: 8px;
+ left: 15px;
+ background-image: url(/w/images/d/d0/Donate50.png);
+ height: 50px;
+ width: 50px;
+ background-repeat: no-repeat;
+}
+
+#banner #black-text {
+ font-size: 1.1em;
+ color: black;
+ padding: 0.5em 40px 0.4em 60px;
+ line-height: 1.3em;
+ text-align: center;
+ font-weight:bold;
+}
+&lt;/style&gt;
+
+&lt;div id=&quot;banner&quot;&gt;
+
+  &lt;a class=&quot;cn-full-banner-click&quot; href=&quot;/wiki/Donate&quot; title=&quot;&quot;&gt;
+&lt;div id=&quot;banner-logo&quot;&gt;&lt;/div&gt;
+    &lt;div id=&quot;black-text&quot;&gt;
+   Whonix fundraising campaign. &lt;br /&gt; Please consider donating one dollar by monthly standing order!
+     &lt;/div&gt;
+  &lt;/a&gt;
+
+
+&lt;/div&gt;
+&lt;/html&gt;</text>
+      <sha1>kx1gxch9ct7vpopmn647h874hp5m89w</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:MediaWiki:Sitenotice/Page display title/en</title>
+    <ns>1198</ns>
+    <id>958</id>
+    <revision>
+      <id>6112</id>
+      <timestamp>2014-02-28T23:19:36Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="20">MediaWiki:Sitenotice</text>
+      <sha1>5c9bgg0v4r6tqb8kp5auffv6ks9rffo</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:MediaWiki:Sitenotice/1/en</title>
+    <ns>1198</ns>
+    <id>959</id>
+    <revision>
+      <id>6113</id>
+      <timestamp>2014-02-28T23:19:39Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="28">Whonix fundraising campaign.</text>
+      <sha1>dpbd17uyytvjosojat4e9vu2mw6z3cs</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:MediaWiki:Sitenotice/1/de</title>
+    <ns>1198</ns>
+    <id>960</id>
+    <revision>
+      <id>6114</id>
+      <timestamp>2014-02-28T23:22:21Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;Whonix Spendenkampagne.&quot;</comment>
+      <text xml:space="preserve" bytes="23">Whonix Spendenkampagne.</text>
+      <sha1>gy5b4w1zwhcrgqsaliqvmyfvwumodyb</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Sitenotice/de</title>
+    <ns>8</ns>
+    <id>961</id>
+    <revision>
+      <id>6117</id>
+      <parentid>6115</parentid>
+      <timestamp>2014-02-28T23:23:33Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;Bitte unterstützen sie Whonix, indem sie einen Euro pro Monat per Dauerauftrag spenden.&quot;</comment>
+      <text xml:space="preserve" bytes="1028">&lt;html&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+
+#banner {
+ position: relative;
+ overflow: hidden;
+ background-image:url('/w/images/0/0d/Gray-gradient1.png') bottom repeat-x;
+ margin-bottom: 0.5em !important;
+ margin-top: 0.5em !important;
+ background-color:#EEEEEE;
+ border: solid 1px #aaaaaa; 
+ height:66px;
+}
+
+#banner a.cn-full-banner-click {
+ display:block;
+ height:100%;
+ width:100%;
+ cursor: pointer;
+}
+
+
+#banner-logo {
+ position: absolute;
+ top: 8px;
+ left: 15px;
+ background-image: url(/w/images/d/d0/Donate50.png);
+ height: 50px;
+ width: 50px;
+ background-repeat: no-repeat;
+}
+
+#banner #black-text {
+ font-size: 1.1em;
+ color: black;
+ padding: 0.5em 40px 0.4em 60px;
+ line-height: 1.3em;
+ text-align: center;
+ font-weight:bold;
+}
+&lt;/style&gt;
+
+&lt;div id=&quot;banner&quot;&gt;
+
+  &lt;a class=&quot;cn-full-banner-click&quot; href=&quot;/wiki/Donate&quot; title=&quot;&quot;&gt;
+&lt;div id=&quot;banner-logo&quot;&gt;&lt;/div&gt;
+    &lt;div id=&quot;black-text&quot;&gt;
+   Whonix Spendenkampagne. &lt;br /&gt; Bitte unterstützen sie Whonix, indem sie einen Euro pro Monat per Dauerauftrag spenden.
+     &lt;/div&gt;
+  &lt;/a&gt;
+
+
+&lt;/div&gt;
+&lt;/html&gt;</text>
+      <sha1>9chb64oj74gqovarfhl3lgg3bem5twe</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:MediaWiki:Sitenotice/2/de</title>
+    <ns>1198</ns>
+    <id>962</id>
+    <revision>
+      <id>6116</id>
+      <timestamp>2014-02-28T23:23:33Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;Bitte unterstützen sie Whonix, indem sie einen Euro pro Monat per Dauerauftrag spenden.&quot;</comment>
+      <text xml:space="preserve" bytes="88">Bitte unterstützen sie Whonix, indem sie einen Euro pro Monat per Dauerauftrag spenden.</text>
+      <sha1>qj0chtlxigc1th5vq1wiaffesbj9dmc</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
