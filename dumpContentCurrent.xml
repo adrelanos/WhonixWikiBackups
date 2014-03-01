@@ -4,7 +4,7 @@
   <siteinfo>
     <sitename>Whonix</sitename>
     <base>http://localhost/wiki/Main_Page</base>
-    <generator>MediaWiki 1.21.5</generator>
+    <generator>MediaWiki 1.22.3</generator>
     <case>first-letter</case>
     <namespaces>
       <namespace key="-2" case="first-letter">Media</namespace>
@@ -29,7 +29,6 @@
       <namespace key="829" case="first-letter">Module talk</namespace>
       <namespace key="1198" case="first-letter">Translations</namespace>
       <namespace key="1199" case="first-letter">Translations talk</namespace>
-      <namespace key="121707" case="first-letter">Forum</namespace>
     </namespaces>
   </siteinfo>
   <page>
@@ -134,65 +133,21 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
     <ns>8</ns>
     <id>3</id>
     <revision>
-      <id>5564</id>
-      <parentid>5561</parentid>
-      <timestamp>2014-02-22T02:32:13Z</timestamp>
+      <id>6185</id>
+      <parentid>6182</parentid>
+      <timestamp>2014-03-01T22:58:06Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="1514">
-* users
-** Main Page|Homepage
-** About|About
-** Features|Features
-** Download|Downloads
-** Documentation|Documentation
-** https://www.whonix.org/blog|News Blog
-** Screenshots|Screenshots
-** Videos|Videos
-** Security Guide|Security Guide
-** FAQ|FAQ
-** Contribute|You Can Help
-** Download#Known_bugs|Known Issues
-** https://github.com/Whonix/Whonix/issues?labels=bug&amp;page=1&amp;state=open|Bugs
-** https://github.com/Whonix/Whonix/issues?labels=enhancement&amp;page=1&amp;state=open|Feature Requests
-** Support|User Help Forum / Support
-** Contact|Contact
-** Whonix:General disclaimer|Disclaimer
-
-* Frequently Asked Features
-** Bridges|Bridges Support
-** Features#VPN_and_Tunnel_Support|VPN/Tunnel Support
-** Hosting_Location_Hidden_Services|Location/IP Hidden Servers
-** Other Operating Systems|Windows Support
-** Browser Plugins|Flash Support
-** Physical Isolation|Physical Isolation
-
-* Danger Zone
-** Official Whonix Online Profiles|Social Media Profiles
-** https://twitter.com/Whonix|@Whonix Twitter
-** https://plus.google.com/108150429836421683225|Google+
-** https://www.facebook.com/Whonix|Facebook
-
-* Developers
-** Mailing Lists#whonix-devel|Development Mailing List
-** Contribute|Contribute
-** Design|Technical Design
-** https://github.com/Whonix/Whonix/|Source Code
-** Dev/Developer Portal|Developer Portal / Hacking
-** https://github.com/Whonix/Whonix/issues|Development Tickets
-** Authorship|Authorship
-
-* SEARCH
-
-* TOOLBOX
-** recentchanges-url|recentchanges
-** randompage-url|randompage
-** helppage|help
-
-* LANGUAGES</text>
-      <sha1>hsyijhyhxfa1sfgomd8f0e87ysrzh59</sha1>
+      <text xml:space="preserve" bytes="166">* Menu
+** Main Page | HOME
+** Download | DOWNLOADS
+** Documentation | DOCUMENTATION
+** https://www.whonix.org/blog | BLOG
+** SUPPORT
+** Dev/Developer Portal | DEVELOP</text>
+      <sha1>42p22tgognk798bhd4v4gby81q08i8y</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -295,14 +250,14 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
     <ns>10</ns>
     <id>14</id>
     <revision>
-      <id>5334</id>
-      <parentid>5330</parentid>
-      <timestamp>2014-02-12T15:09:22Z</timestamp>
+      <id>6151</id>
+      <parentid>5334</parentid>
+      <timestamp>2014-03-01T22:18:56Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <username>Fortasse</username>
+        <id>1</id>
       </contributor>
-      <text xml:space="preserve" bytes="877">&lt;font size=&quot;3&quot;&gt;[https://www.whonix.org{{localurl:{{FULLPAGENAME}}}} https] | &lt;html&gt;&lt;a class=&quot;link-https&quot; style=&quot;color: #3366BB&quot; href=&quot;http://kkkkkkkkkk63ava6.onion&lt;/html&gt;{{localurl:{{FULLPAGENAME}}}}&lt;html&gt;&quot; rel=&quot;nofollow&quot;&gt;.onion&lt;/a&gt;&lt;/html&gt;&lt;/font&gt; &lt;font size=&quot;1&quot;&gt;| [http://whonix.org.nyud.net{{localurl:{{FULLPAGENAME}}}} Mirror] | [https://kkkkkkkkkk63ava6.tor2web.org{{localurl:{{FULLPAGENAME}}}} Mirror] | [[Contribute#Donate|Donate to Whonix!]]&lt;/font&gt; | [[Impressum]] | [[Datenschutz|Datenschutzerklärung]] | [[Disclaimer|Haftungsausschluss]]&lt;!--
+      <text xml:space="preserve" bytes="928">&lt;font size=&quot;3&quot;&gt;[https://www.whonix.org{{localurl:{{FULLPAGENAME}}}} https] | &lt;html&gt;&lt;a class=&quot;link-https&quot; style=&quot;color: #3366BB&quot; href=&quot;http://kkkkkkkkkk63ava6.onion&lt;/html&gt;{{localurl:{{FULLPAGENAME}}}}&lt;html&gt;&quot; rel=&quot;nofollow&quot;&gt;.onion&lt;/a&gt;&lt;/html&gt;&lt;/font&gt; &lt;font size=&quot;1&quot;&gt; &lt;sup&gt;[[Forcing .onion on Whonix.org | note]]&lt;/sup&gt;| [http://whonix.org.nyud.net{{localurl:{{FULLPAGENAME}}}} Mirror] | [https://kkkkkkkkkk63ava6.tor2web.org{{localurl:{{FULLPAGENAME}}}} Mirror] | [[Contribute#Donate|Donate to Whonix!]]&lt;/font&gt; | [[Impressum]] | [[Datenschutz|Datenschutzerklärung]] | [[Disclaimer|Haftungsausschluss]]&lt;!--
 inspired by http://aboli.sh/
 @cnpirates ssl(tor) ssl(i2p) coralcdn .sdns .onion .i2p--&gt;
 {{#seo:
@@ -312,7 +267,7 @@ inspired by http://aboli.sh/
 |article:author=https://www.facebook.com/patrick.schleizer
 |og:image=https://www.whonix.org/blog/wp-content/uploads/2014/01/Banner2.png
 }}</text>
-      <sha1>jplcmamvukdtnvlr1opqqm2lp131m3y</sha1>
+      <sha1>682mvtdtimfpd6n7hbzhpopp6rdh1rb</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -684,15 +639,15 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>19</id>
     <revision>
-      <id>6041</id>
-      <parentid>6040</parentid>
-      <timestamp>2014-02-27T23:09:21Z</timestamp>
+      <id>6136</id>
+      <parentid>6135</parentid>
+      <timestamp>2014-03-01T21:18:20Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>Marked this version for translation</comment>
-      <text xml:space="preserve" bytes="11362">{{Header}}
+      <comment>/* Mounting (CD/DVD) Devices */</comment>
+      <text xml:space="preserve" bytes="10936">{{Header}}
 &lt;!--
 Copyright:
 
@@ -827,7 +782,7 @@ There is a tutorial with screenshots, see [[Install]].
 There are also [[Videos | Video Tutorials]].
 
 &lt;!--T:32--&gt;
-If you still need help, please go to the [[Special:AWCforum|User Help Forum]].
+If you still need help, please check the [[Support]] page.
 
 == 3. After installing == &lt;!--T:33--&gt;
 
@@ -888,36 +843,33 @@ In case you are interested in Whonix source code updates, [[Dev/git#subscribe_to
 = Known bugs = &lt;!--T:64--&gt;
 == Normal ==
 === Mounting (CD/DVD) Devices ===
-Currently needs a workaround as well. Please see [[Special:AWCforum/st/id167/#post_700|forum]].
+You can use the following workaround.
+
+&lt;pre&gt;
+sudo mkdir /mnt/cdrom
+&lt;/pre&gt;
+
+&lt;pre&gt;
+sudo mount /dev/cdrom /mnt/cdrom/
+&lt;/pre&gt;
+
+The following message.
+
+&lt;pre&gt;
+mount: block device /dev/sr0 is write-protected, mounting read-only
+&lt;/pre&gt;
+
+Is expected. (It's normal that CD/DVD's are mounted read-only.)
+
+Help fixing this bug is welcome!
 
 === VLC / Video Player Crash === &lt;!--T:86--&gt;
-For problem and workaround see forum thread: [[Special:AWCforum/st/id282/vlc_video_crash.html]].
-
-== Minor == &lt;!--T:99--&gt;
-=== There is no public key available for the following key IDs ===
-The message &quot;{{Code2|There is no public key available for the following key IDs}}&quot; is not necessarily an error. It might be just a warning/information.
-
-&lt;!--T:105--&gt;
+You can use this workaround.
 &lt;pre&gt;
-sudo apt-get update
-...
-Reading package lists... Done
-...
-W: There is no public key available for the following key IDs:
-9C131AD3713AAEEF
+VLC -&gt; Tools -&gt; Preferences -&gt; Video -&gt; Output -&gt; X11 -&gt; Save
 &lt;/pre&gt;
 
-&lt;!--T:106--&gt;
-Check the exit code of apt-get.
-
-&lt;!--T:107--&gt;
-&lt;pre&gt;
-echo $?
-0
-&lt;/pre&gt;
-
-&lt;!--T:108--&gt;
-When it's 0, there is no problem. This is due to key transition, because Whonix's repository is currently signed with the old and the new signing key.
+== Minor ==
 
 === &quot;apt-get source package&quot; will show &quot;dpkg-source: warning: failed to verify signature&quot; === &lt;!--T:66--&gt;
 More info [http://lists.debian.org/debian-derivatives/2013/08/msg00000.html here] (and in the following mails).
@@ -964,7 +916,7 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>ats2h4ik6ok6mzh1tbgud3upwqse8nk</sha1>
+      <sha1>fc7h1zmfq9m3zparfepk6aw1nk2zs85</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -1325,14 +1277,14 @@ See also [[Security_in_Real_World | Whonix security in real world]], [[Security_
     <ns>0</ns>
     <id>24</id>
     <revision>
-      <id>6105</id>
-      <parentid>5287</parentid>
-      <timestamp>2014-02-28T22:13:46Z</timestamp>
+      <id>6184</id>
+      <parentid>6105</parentid>
+      <timestamp>2014-03-01T22:56:25Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="14065">&lt;!--
+      <text xml:space="preserve" bytes="14129">&lt;!--
 Copyright:
 
    Whonix Documentation wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -1576,6 +1528,7 @@ Anonymity is a complex problem without an easy solution, and security is only as
 
 * [[Debian|Debian as Host Operating System Tips, Download, ISO gpg verification, Installation and Security]]
 * [[Hosting a Whonix Mirror]]
+* [[Forcing_.onion_on_Whonix.org|Forcing .onion on Whonix.org]]
 
 '''Esoteric Stuff (only for advanced users)'''
 
@@ -1603,7 +1556,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>2o7i5yxfuqsu2tq6m55uz65dx3212gt</sha1>
+      <sha1>mz3tcz1n09s2k5z4jfkzrkt4tq0nd09</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -6446,14 +6399,15 @@ You could try the [https://www.riseup.net/en/openvpn-linux#gnome riseup.net Open
     <ns>0</ns>
     <id>92</id>
     <revision>
-      <id>5957</id>
-      <parentid>5784</parentid>
-      <timestamp>2014-02-27T16:30:13Z</timestamp>
+      <id>6124</id>
+      <parentid>5957</parentid>
+      <timestamp>2014-03-01T15:33:35Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="22537">{{Header}}
+      <comment>/* Install Basic Packages */</comment>
+      <text xml:space="preserve" bytes="22666">{{Header}}
 {{#seo:
 |description=Security by Isolation. Using Whonix with Physical Isolation on Bare Metal for Better Security.
 }}
@@ -6815,6 +6769,8 @@ You may want to take an image of your installation in case the build script fail
 {{Build Configuration}}
 
 == Install Basic Packages ==
+This step is only required up to and including Whonix 8. Versions higher than Whonix 8 do not require this manual step anymore.
+
 Make sure you have all packages installed which are listed in the file {{Code2|grml_packages}}. You can do that using the following command.
 
 &lt;pre&gt;
@@ -7040,7 +6996,7 @@ To get a more complete list, install Debian (with KDE) on bare metal using the r
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>55t3txke3f0priqda6jlkpuh15eisj6</sha1>
+      <sha1>fv9a5jcu92evpgcm20upt3ghxfw2awo</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -7542,14 +7498,13 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
     <ns>0</ns>
     <id>96</id>
     <revision>
-      <id>5972</id>
-      <parentid>5657</parentid>
-      <timestamp>2014-02-27T16:57:26Z</timestamp>
+      <id>6125</id>
+      <parentid>5972</parentid>
+      <timestamp>2014-03-01T16:00:02Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* Verifiable Builds */</comment>
+      <comment>/* Last update */</comment>
       <text xml:space="preserve" bytes="77850">{{Header}}
 {{#seo:
 |description=Comparison of Whonix, Tails, Tor Browser Bundle, QubesOS TorVM and corridor. About anonymity, privacy, security, circumvention, attacks, fingerprinting, usability, features, etc.
@@ -7563,7 +7518,7 @@ This page contains the comparisons of Whonix, Tails, Tor Browser and Qubes OS To
 | style=&quot;height:30px&quot;| || style=&quot;width:125px&quot;| '''[[Main Page|Whonix]] || style=&quot;width:125px&quot;| '''[https://tails.boum.org/ Tails]''' || style=&quot;width:125px&quot;| '''[https://www.torproject.org/projects/torbrowser.html.en Tor Browser]''' || style=&quot;width:125px&quot;| '''[http://qubes-os.org/trac/wiki/UserDoc/TorVM Qubes OS TorVM]''' || style=&quot;width:125px&quot;| '''[https://github.com/rustybird/corridor corridor]''' ([https://lists.torproject.org/pipermail/tor-talk/2014-February/032152.html tor-talk])
 |-
 | style=&quot;height:35px;width:70px;background-color: #f9f9f9&quot;| Version &lt;ref&gt;At the time of comparing.&lt;/ref&gt;
-| style=&quot;background-color: {{Green}}&quot;| 7
+| style=&quot;background-color: {{Green}}&quot;| 8
 | style=&quot;background-color: {{Yellow}}&quot;| 0.16 &lt;ref name=old&gt;There is a newer version. The information on this page could be outdated.&lt;/ref&gt;
 | style=&quot;background-color: {{Green}}&quot;| 3.5
 | style=&quot;background-color: {{Yellow}}&quot;| 0.1.beta1 &lt;ref name=old /&gt;
@@ -8843,7 +8798,7 @@ One has always to be very careful, when talking about others. Especially, when t
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Design]]</text>
-      <sha1>e685fa6werb5sa8yeroctaeebsbnb0q</sha1>
+      <sha1>9zy01xkimyre6wfevg3s28hiw2q0b5p</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -13051,14 +13006,15 @@ For even more Security, see [[Advanced Security Guide]].
     <ns>0</ns>
     <id>120</id>
     <revision>
-      <id>5865</id>
-      <parentid>4734</parentid>
-      <timestamp>2014-02-27T13:43:54Z</timestamp>
+      <id>6159</id>
+      <parentid>6158</parentid>
+      <timestamp>2014-03-01T22:25:57Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="27508">&lt;!--
+      <comment>/* Evil developer attack */</comment>
+      <text xml:space="preserve" bytes="25943">&lt;!--
 Copyright:
 
    Whonix Trust wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -13119,14 +13075,15 @@ One could say that Whonix is the union of Debian and Tor. What we do, essentiall
 With all this in light (which you ideally also should try to verify), you should be able to make an informed decision on whether or not you should trust our software.
 
 = How can I trust the download images? =
-
-Don't trust 'us'! You don't know us. Never trust people you don't know, especially not on the internet. Even if you decided to blindly trust Whonix developer adrelanos for some strange reason, well, adrelanos feels honored, but since Whonix is/could become a high profile target, it's a bad idea to assume, that adrelanos's build machine is clean from sophisticated targeted attacks.
+Don't trust 'us'! You don't know us. Never trust people you don't know, especially not on the internet. Even if you decided to blindly trust Whonix developer Patrick Schleizer for some strange reason, well, Patrick feels honored, but since Whonix is/could become a high profile target, it's a bad idea to assume, that Patrick's build machine is clean from sophisticated targeted attacks.
 
 You can trust these binary images to some extent if you can verify that you get exactly the same code as hundreds of other users (you can check sourceforge how often the builds where downloaded) and no one found and publicly reported any security issue. In order to verify that, beginning from Whonix 0.4.5 OpenPGP signatures are uploaded.
 
 Sourceforge ensures some trust and integrity of the hash file through TLS (check the certificate), unfortunately only for users who are registered and logged in.
 
-Binary releases and source code tags for releases are OpenPGP signed by anonymous Whonix developer adrelanos. The Whonix project exists since 2012-01-11. (Earlier project names were TorBOX and aos ([[History]]).)
+Binary releases and source code tags for releases are OpenPGP signed by Whonix developer Patrick Schleizer. The Whonix project exists since 2012-01-11. (Earlier project names were TorBOX and aos ([[History]]).)
+
+[[Trust#Verifiable_Builds|Verifiable Builds]] allow auditors to check if there is hidden code inside Whonix.
 
 If that's not good enough, you are very much welcome to build your own Whonix images using the [[BuildDocumentation]]. It is easy.
 
@@ -13142,9 +13099,9 @@ OpenPGP: Usually you get a fingerprint on a web site (insecure, or secured with 
 
 To mitigate this, it is recommended to check OpenPGP fingerprint from multiple &quot;secure&quot; sites. Bonus points for using different authentication systems. For example: https://www.torproject.org/docs/signing-keys.html.en AND http://idnxcnkne4qt76tg.onion/docs/signing-keys.html.en. Note that hidden services do not offer very strong authentication. A powerful adversary is more likely than not able to impersonate a hidden service, but together with multiple sources it becomes increasingly costly and improbably that a single adversary can impersonate all of them.
 
-All current Whonix developers prefer to stay anonymous. There's no way to get OpenPGP key signed (real life &quot;key party&quot;) while remaining anonymous. Binary downloads are OpenPGP signed by Whonix developer adrelanos. The source code is available from github over TLS, you can git clone over https. Each release git tag is OpenPGP signed by Whonix developer adrelanos. If desired, you can request signed git development tags from adrelanos.
+Binary downloads are OpenPGP signed by Whonix developer Patrick Schleizer. The source code is available from github over TLS, you can git clone over https. Each release git tag is OpenPGP signed by Whonix developer Patrick Schleizer. If desired, you can request signed git development tags from Patrick Schleizer.
 
-Whonix developer ([http://www.webcitation.org/6Eny0UfAI w]), [https://trac.torproject.org/projects/tor/wiki/doc/proper?version=1 named proper in past] ([http://www.webcitation.org/6Fg1zUNeQ w]), [https://trac.torproject.org/projects/tor/wiki/doc/proper?version=6 renamed itself to adrelanos] ([http://www.webcitation.org/6Fg2p2YK3 w]), [https://trac.torproject.org/projects/tor/wiki/doc/proper?version=3 published its OpenPGP key on 05/29/12] ([http://www.webcitation.org/6Fg336X1H w]) ([https://trac.torproject.org/projects/tor/wiki/doc/proper?action=history wiki history] ([http://www.webcitation.org/6Fg24cX1W w])). Its OpenPGP key is mirrored online on six different places, see [[Whonix Signing Key]] ([http://www.webcitation.org/6Fg3L8QCZ w]).
+Whonix developer ([http://www.webcitation.org/6Eny0UfAI w]), [https://trac.torproject.org/projects/tor/wiki/doc/proper?version=1 named proper in past] ([http://www.webcitation.org/6Fg1zUNeQ w]), [https://trac.torproject.org/projects/tor/wiki/doc/proper?version=6 renamed itself to adrelanos] ([http://www.webcitation.org/6Fg2p2YK3 w]), [https://trac.torproject.org/projects/tor/wiki/doc/proper?version=3 published its OpenPGP key on 05/29/12] ([http://www.webcitation.org/6Fg336X1H w]) ([https://trac.torproject.org/projects/tor/wiki/doc/proper?action=history wiki history] ([http://www.webcitation.org/6Fg24cX1W w])). [https://www.whonix.org/blog/giving-up-pseudonymity-after-collecting-experiences-with-pseudonymous-project-development/ Revealed its identity on 01/18/14.] [http://www.webcitation.org/6Nl4kSDM8 (w)] [https://lists.torproject.org/pipermail/tor-talk/2014-January/031741.html Patrick Schleizer posted its OpenPGP key transition message on 01/18/14 signed by his old and his new key.] [http://www.webcitation.org/6Nl4neAFt (w)]
 
 The OpenPGP key ensures, should the Whonix infrastructure ever be compromised by a powerful adversary (domain seizure/takeover etc.), that the original Whonix developers can at least prove, that they are the same people who owned the infrastructure.
 
@@ -13154,25 +13111,8 @@ Even if you distrust Whonix developers, OpenPGP verifying binary downloads or gi
 * [http://sourceforge.net/blog/sourceforge-attack-full-report/ sourceforge hacked] ([http://www.webcitation.org/6Eny40bV9 w])
 * [http://www.theregister.co.uk/2012/09/26/sourceforge_backdoor_code_compromise/ sourceforge mirror hacked] ([http://www.webcitation.org/6Enz6vyNP w])
 
-== What do the Digital Signatures Prove and What They DO NOT Prove ==
-
-Most people, even programmers, often confuse the basic ideas behind digital signatures. Most people should read this section, even if it looks trivial at first sight.
-
-Digital Signatures can prove, that a given file is authentic, i.e. that is has been indeed created by a person that signed it, and that its contents have not been tampered (so, integrity is preserved).
-
-Digital Signatures do '''not''' prove any other property, e.g. that the file is not malicious. In fact there is nothing that could stop people from signing a malicious program (and it happens from time to time in reality).
-
-The point is, of course, that people need to choose to trust some people, e.g. Linus Torvalds, Microsoft, etc. and assume that if a file(s) was indeed signed by those individuals, then indeed it should not be malicious and buggy in some horrible way. But the decision of whether to trust certain people (e.g. those behind the Whonix Project) is beyond the scope of digital signatures. It's more of a sociological and political decision.
-
-However, once we make a decision to trust somebody (e.g. The Whonix Project and the files released by them), then the digital signatures are useful, because they make it possible to limit our trust only to those few people we chose, and not to worry about all the Bad Things That Can Happen In The Middle between us and them (i.e. the vendor), like e.g.: server compromises, dishonest IT staff at the hosting company, dishonest staff at the ISPs, WiFi attacks, etc.
-
-If we verify all the files we download from the vendor, we don't need to worry about all the above bad things, because we would easily be able to detect when the file(s) has been tampered (and not execute/install/open them).
-
-However, for the digital signatures to make any sense, one should ensure that the public keys we use for signature verification are indeed the original ones. Anybody can generate a OpenPGP key pair that would pretend to be for &quot;Whonix Project&quot;, but only the key pair that I (adrelanos) generated is the legitimate one. Securely obtaining Whonix signing key is documented on a later page, [[Whonix Signing Key]].
-
 == Whonix developer OpenPGP guidelines ==
-
-All Whonix developers who use long term pseudonyms, are encouraged to:
+All long term Whonix developers, are encouraged to:
 
 * Create a 4096/4096 RSA/RSA OpenPGP key.
 * Get the latest gpg.conf (which comes with Whonix-Workstation) for stronger hashes, no-emit-version, etc.
@@ -13180,65 +13120,7 @@ All Whonix developers who use long term pseudonyms, are encouraged to:
 * Make a backup of that encrypted file.
 * Remember the password, check yourself regularly.
 * Also upload the encrypted file to some (free) online cloud hosting, in case of thief, fire, tornado, etc.
-* Since the project started in 2012, the earlier the OpenPGP public key was published, the less likely is it, that the public key is affected from an evil developer attack. Adrelanos expects evil developer attacks not to happen against relatively new, unpopular and insignificant projects.
-
-== Evil developer attack ==
-
-This is only a theoretical attack, as far as we know. We are not aware that it ever happened to any software project. This is not a Whonix specific problem. It applies to all open source software projects, but more to those where the developers stay anonymous. Examples for such anonymously developed software projects are TrueCrypt, Tails, i2p, Whonix... As of April 2012 all Whonix developers are also anonymous.
-
-The attack works like this: 1. Start a new software project. Alternatively join an existing software project. 2. Behave well, publish your sources. Gain trust. 3. Build binaries directly from your sources and offer them for download. 4. Make a great product, get a lot of users. 5. Continue to develop it. 6. Make a second branch of your sources and add malware. 7. Continue to publish your clean sources, but offer your malicious binaries for download. 8. Done! You infected a lot of users.
-
-It is very difficult for end users to notice this attack. Of course, if all users would be added to a botnet, there would be news about this incident very soon and everyone would know. On the other hand, if the backdoor is barely used, it may remain secret for a long time.
-
-The myth, that open source software is automatically more secure than closed source, is still strong and widespread. Yes, open source has advantages but certainly not for this threat model. Who checks if the binaries are made from the proclaimed source and publishes the results? That is called deterministic builds.&lt;ref&gt;https://mailman.stanford.edu/pipermail/liberationtech/2013-June/009257.html&lt;/ref&gt; &lt;ref&gt;https://trac.torproject.org/projects/tor/ticket/3688&lt;/ref&gt; It is quite difficult to achieve that. If you are interested on how complex it is, also google 'trusting trust'.
-
-All that is very difficult and it all comes back to trust. How can you trust anonymous developers? Even if they were not anonymous, you still do not know them and can not trust them? And even if you know them, can you trust them not to have made any mistakes?
-
-These are serious questions to think about. Whonix is also affected by this issue, just like TrueCrypt, Tails, i2p, etc. Most projects (such as TrueCrypt) do not even admit and inform about this fact. Whonix is just an ordinary software project, unfortunately we are unable to fix all problems in the world.
-
-Whonix doesn't distribute any binaries, only redistributes unmodified upstream binaries, shell scripts, we do not create our own binaries. That's what we claim, but it's a lot easier to verify than if we were distributing our own binaries from source code we wrote. Users should worry about the motives and internal security of everyone contributing to torproject.org, all of the distro devs and maintainers and the hundreds of upstream devs and contributors. Trusted computing base size of a modern operating system today is so ridiculously big and so many people are involved we'd be really surprised if none of the &quot;bugs&quot; were intentional. And then there's the hardware. You think that even AMD could understand an Intel chip or vice versa? Of course one can't compare an anonymous contributor with no investment but time with a multi-national company. On the other hand, in comparison, detection here is just ridiculously simple (diff the hash sums), while finding and then proving that something is not a bug but a backdoor in a compiler, well designed source code let alone a CPU is impossible. Anonymous or not no longer matters these days. We are in a more or less open &quot;cyber war&quot; or that's what media and lawmakers want us to believe. Fact is, today players are backed by governments, they can use their real identities without fear of repercussion, fake IDs can be created, trustworthy people can be coerced into giving up their OpenPGP and ssh keys if projects even make use of any strong authentication. Judging by the lack of signatures on many open source upstream and even downstream downloads I'm sure many lack any internal security enforcement and still trust DNS to provide authenticity and clear text to provide integrity. About open source, yeah, you can bet Apple, Google and Microsoft have better internal security than the global open source community. However that doesn't make their code trustworthy or says anything about whether closed or open is more secure...
-
-== adrelanos's reasons to stay anonymous ==
-
-For anyone curious to know... Protection and paranoia (depending on definition). Just a few examples...
-
-People failing to understand the software making death threats:
-
-* https://tails.boum.org/forum/Too_frequent_IP_address/#comment-cfc122dfc8de737737c076399250a766 ([http://www.webcitation.org/6EnyCThAn w])
-
-Making threats to &quot;burn down his house&quot;, &quot;pay him an overdue visit&quot;:
-
-* http://fscked.org/blog/something-rotten-opdarknet ([http://www.webcitation.org/6EnzTQo5k w])
-
-Harassment on border:
-
-* http://www.huffingtonpost.com/2010/08/02/jacob-appelbaum-wikileaks_n_667665.html ([http://www.webcitation.org/6EnyCThAn w])
-* http://news.cnet.com/8301-27080_3-20012253-245.html ([http://www.webcitation.org/6EnzUVsJn w])
-
-Security and trust shouldn't depend on showing a face:
-
-* [https://tails.boum.org/forum/Who_is_behind_Tails__63__ Tails] ([http://www.webcitation.org/6EnyCggbX w])
-
-Other reasons:
-
-* Staying out of press with real name.
-* Separating private, professional and project's activities.
-
-== Also interesting ==
-
-* Tails is a live CD or live USB that aims at preserving your privacy and anonymity. [https://tails.boum.org/doc/about/trust/index.en.html Tails about trust.] ([http://www.webcitation.org/6EnyJvTnn w])
-* I2p (anonymizing network) does also talk about [http://www.i2p2.de/how_threatmodel.html#dev development attacks]. ([http://www.webcitation.org/6EnyKSGdn w])
-* [http://wiki.qubes-os.org/trac/wiki/VerifyingSignatures Qubes OS: What do the Digital Signatures Prove and What They DO NOT Prove] ([http://www.webcitation.org/6EnyL8AQn w])
-* [http://hyper.to/blog/link/attack-scenarios-software-distribution/ Miron’s Weblog: Attack Scenarios on Software Distributions] ([http://www.webcitation.org/6EnzaBTdP w])
-* list of incidents of compromised servers: [http://www.koch.ro/blog/index.php?/archives/153-On-distributing-binaries.html On distributing binaries] ([http://www.webcitation.org/6L1roljIe w])
-
-= How to improve the situation? =
-
-This page may sound a bit sad. The situation is less than optimal. The good news is, that it's not an unsolvable problem. It's what I've been able to work on. I can't do it all alone. It can be improved! [[Contribute|contributors]] can help to improve the situation.
-
-Other  persons are trusted by different groups. They could contribute by [[Contribute#Release_Manager | creating and signing binary builds]].
-
-Skilled developers could help to implement [https://github.com/Whonix/Whonix/issues/29 Verifiable builds]. This would provide proof, that a binary was created from genuine source.
+* Since the project started in 2012, we believe the earlier developer published its OpenPGP public key, the less likely is it, that the developer is attempting an evil developer attack.
 
 = Whonix Updates =
 == Introduction ==
@@ -13262,7 +13144,7 @@ When Whonix's APT Repository is enabled and updated Whonix debian packages are u
 
 Alternatively, you can [[Dev/Build Documentation|update Whonix from source code]].
 
-At the moment, adrelanos is the only Whonix developer holding the Whonix APT repository OpenPGP signing key.
+At the moment, Whonix developer Patrick Schleizer is the only one holding the Whonix APT repository OpenPGP signing key.
 
 When it comes to trust, there is a big difference if you are building Whonix from source code or if you are using the Default-Download-Version. When you build Whonix using the build script and verified the source code to be non-malicious and reasonable bug free, Whonix developers have no way to access your system. With Whonix's APT repository enabled however, Whonix developers holding a Whonix repository signing key could always release a malicious update and gain full access on your machines.
 
@@ -13313,6 +13195,44 @@ It's a bit safer to use Whonix-Default-Download version and to disable Whonix's 
 
 '''This is just an introduction. See [[Verifiable Builds#Verifiable Whonix Debian Packages]] for the full page.'''
 
+= Appendix =
+== What do the Digital Signatures Prove and What They DO NOT Prove ==
+Most people, even programmers, often confuse the basic ideas behind digital signatures. Most people should read this section, even if it looks trivial at first sight.
+
+Digital Signatures can prove, that a given file is authentic, i.e. that is has been indeed created by a person that signed it, and that its contents have not been tampered (so, integrity is preserved).
+
+Digital Signatures do '''not''' prove any other property, e.g. that the file is not malicious. In fact there is nothing that could stop people from signing a malicious program (and it happens from time to time in reality).
+
+The point is, of course, that people need to choose to trust some people, e.g. Linus Torvalds, Microsoft, etc. and assume that if a file(s) was indeed signed by those individuals, then indeed it should not be malicious and buggy in some horrible way. But the decision of whether to trust certain people (e.g. those behind the Whonix Project) is beyond the scope of digital signatures. It's more of a sociological and political decision.
+
+However, once we make a decision to trust somebody (e.g. The Whonix Project and the files released by them), then the digital signatures are useful, because they make it possible to limit our trust only to those few people we chose, and not to worry about all the Bad Things That Can Happen In The Middle between us and them (i.e. the vendor), like e.g.: server compromises, dishonest IT staff at the hosting company, dishonest staff at the ISPs, WiFi attacks, etc.
+
+If we verify all the files we download from the vendor, we don't need to worry about all the above bad things, because we would easily be able to detect when the file(s) has been tampered (and not execute/install/open them).
+
+However, for the digital signatures to make any sense, one should ensure that the public keys we use for signature verification are indeed the original ones. Anybody can generate a OpenPGP key pair that would pretend to be for &quot;Whonix Project&quot;, but only the key pair that I (Patrick Schleizer) generated is the legitimate one. Securely obtaining Whonix signing key is documented on a later page, [[Whonix Signing Key]].
+
+== Evil developer attack ==
+This is only a theoretical attack, as far as we know. We are not aware that it ever happened to any software project. This is not a Whonix specific problem. It applies to all open source software projects, but more to those where the developers stay anonymous. Examples for such anonymously developed software projects are TrueCrypt, Tails, i2p...
+
+The attack works like this: 1. Start a new software project. Alternatively join an existing software project. 2. Behave well, publish your sources. Gain trust. 3. Build binaries directly from your sources and offer them for download. 4. Make a great product, get a lot of users. 5. Continue to develop it. 6. Make a second branch of your sources and add malware. 7. Continue to publish your clean sources, but offer your malicious binaries for download. 8. Done! You infected a lot of users.
+
+It is very difficult for end users to notice this attack. Of course, if all users would be added to a botnet, there would be news about this incident very soon and everyone would know. On the other hand, if the backdoor is barely used, it may remain secret for a long time.
+
+The myth, that open source software is automatically more secure than closed source, is still strong and widespread. Yes, open source has advantages but certainly not for this threat model. Who checks if the binaries are made from the proclaimed source and publishes the results? That is called deterministic builds.&lt;ref&gt;https://mailman.stanford.edu/pipermail/liberationtech/2013-June/009257.html&lt;/ref&gt; &lt;ref&gt;https://trac.torproject.org/projects/tor/ticket/3688&lt;/ref&gt; It is quite difficult to achieve that. If you are interested on how complex it is, also google 'trusting trust'.
+
+All that is very difficult and it all comes back to trust. How can you trust developers? Even if they are not anonymous, you still do not know them and can not trust them? And even if you know them, can you trust them not to have made any mistakes?
+
+These are serious questions to think about. Whonix is also affected by this issue, just like TrueCrypt, Tails, i2p, etc. Most projects (such as TrueCrypt) do not even inform about this fact. Whonix is just an ordinary software project, unfortunately we are unable to fix all problems in the world.
+
+Whonix doesn't distribute any binaries, only redistributes unmodified upstream binaries, shell scripts, we do not create our own binaries. That's what we claim, but it's a lot easier to verify than if we were distributing our own binaries from source code we wrote. Users should worry about the motives and internal security of everyone contributing to torproject.org, all of the distro devs and maintainers and the hundreds of upstream devs and contributors. Trusted computing base size of a modern operating system today is so ridiculously big and so many people are involved we'd be really surprised if none of the &quot;bugs&quot; were intentional. And then there's the hardware. You think that even AMD could understand an Intel chip or vice versa? Of course one can't compare an anonymous contributor with no investment but time with a multi-national company. On the other hand, in comparison, detection here is just ridiculously simple (diff the hash sums), while finding and then proving that something is not a bug but a backdoor in a compiler, well designed source code let alone a CPU is impossible. Anonymous or not no longer matters these days. We are in a more or less open &quot;cyber war&quot; or that's what media and lawmakers want us to believe. Fact is, today players are backed by governments, they can use their real identities without fear of repercussion, fake IDs can be created, trustworthy people can be coerced into giving up their OpenPGP and ssh keys if projects even make use of any strong authentication. Judging by the lack of signatures on many open source upstream and even downstream downloads I'm sure many lack any internal security enforcement and still trust DNS to provide authenticity and clear text to provide integrity. About open source, yeah, you can bet Apple, Google and Microsoft have better internal security than the global open source community. However that doesn't make their code trustworthy or says anything about whether closed or open is more secure...
+
+== Other Projects Discussing Trust ==
+* Tails is a live CD or live USB that aims at preserving your privacy and anonymity. [https://tails.boum.org/doc/about/trust/index.en.html Tails about trust.] ([http://www.webcitation.org/6EnyJvTnn w])
+* I2p (anonymizing network) does also talk about [http://www.i2p2.de/how_threatmodel.html#dev development attacks]. ([http://www.webcitation.org/6EnyKSGdn w])
+* [http://wiki.qubes-os.org/trac/wiki/VerifyingSignatures Qubes OS: What do the Digital Signatures Prove and What They DO NOT Prove] ([http://www.webcitation.org/6EnyL8AQn w])
+* [http://hyper.to/blog/link/attack-scenarios-software-distribution/ Miron’s Weblog: Attack Scenarios on Software Distributions] ([http://www.webcitation.org/6EnzaBTdP w])
+* list of incidents of compromised servers: [http://www.koch.ro/blog/index.php?/archives/153-On-distributing-binaries.html On distributing binaries] ([http://www.webcitation.org/6L1roljIe w])
+
 = Footnotes / References =
 &lt;references/&gt;
 
@@ -13329,7 +13249,7 @@ Thanks to Qubes OS ([https://groups.google.com/forum/?fromgroups=#!topic/qubes-d
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>p7638j24mlf159b82hjl1yzwvrapep4</sha1>
+      <sha1>actx8imiconakslb9qn40cgyu7opwhp</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -23544,19 +23464,18 @@ Resolve DNS.
     <ns>8</ns>
     <id>220</id>
     <revision>
-      <id>4663</id>
-      <parentid>4573</parentid>
-      <timestamp>2014-01-12T15:21:58Z</timestamp>
+      <id>6144</id>
+      <parentid>6143</parentid>
+      <timestamp>2014-03-01T22:07:19Z</timestamp>
       <contributor>
         <username>Fortasse</username>
         <id>1</id>
       </contributor>
-      <text xml:space="preserve" bytes="39300">/* CSS placed here will be applied to all skins */
+      <text xml:space="preserve" bytes="39297">/* CSS placed here will be applied to all skins */
 /* Default styling for HTML elements */
 
  body.page-No_page_title h1.firstHeading, body.page-Main_Page h1.firstHeading
  { display:none; }
-
 dfn {
     font-style: inherit;  /* Reset default styling for &lt;dfn&gt; */
 }
@@ -23830,7 +23749,7 @@ ul + table.navbox {
     font-weight: normal;
 }
 .navbar ul {
-    display: inline;
+    display: none;
     white-space: nowrap;
 }
 .navbar li {
@@ -24971,7 +24890,7 @@ pre
 {
 white-space:pre-line;
 }</text>
-      <sha1>acu7qck13nsj8bry22wnin37bxr3t45</sha1>
+      <sha1>kk3e1yqq9guw8vnjxefu9qiv8u2ipwd</sha1>
       <model>css</model>
       <format>text/css</format>
     </revision>
@@ -35955,14 +35874,14 @@ Whonix-Example-Implementation:
     <ns>0</ns>
     <id>299</id>
     <revision>
-      <id>5933</id>
-      <parentid>5816</parentid>
-      <timestamp>2014-02-27T16:10:30Z</timestamp>
+      <id>6139</id>
+      <parentid>6127</parentid>
+      <timestamp>2014-03-01T21:56:55Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="57264">{{Header}}
+      <text xml:space="preserve" bytes="58105">{{Header}}
 {{#seo:
 |description=Outdated, Deprecated, Archived Whonix Documentation.
 }}
@@ -37148,6 +37067,35 @@ sudo apt-get update &amp;&amp; apt-get dist-upgrade
 &lt;!--T:97--&gt;
 (Source &lt;ref&gt;http://askubuntu.com/questions/41605/trouble-downloading-updates-due-to-hash-sum-mismatch-error&lt;/ref&gt;)
 
+=== There is no public key available for the following key IDs ===
+The message &quot;{{Code2|There is no public key available for the following key IDs}}&quot; is not necessarily an error. It might be just a warning/information.
+
+&lt;!--T:105--&gt;
+&lt;pre&gt;
+sudo apt-get update
+...
+Reading package lists... Done
+...
+W: There is no public key available for the following key IDs:
+9C131AD3713AAEEF
+&lt;/pre&gt;
+
+&lt;!--T:106--&gt;
+Check the exit code of apt-get.
+
+&lt;!--T:107--&gt;
+&lt;pre&gt;
+echo $?
+0
+&lt;/pre&gt;
+
+&lt;!--T:108--&gt;
+When it's 0, there is no problem. This is due to key transition, because Whonix's repository is currently signed with the old and the new signing key.
+
+= Reasons for Staying Anonymous Developer =
+Security and trust shouldn't depend on showing a face:
+
+* [https://tails.boum.org/forum/Who_is_behind_Tails__63__ Tails] ([http://www.webcitation.org/6EnyCggbX w])
 
 = Footnotes =
 &lt;references /&gt;
@@ -37155,7 +37103,7 @@ sudo apt-get update &amp;&amp; apt-get dist-upgrade
 {{Footer}}
 
 [[Category:Deprecated]]</text>
-      <sha1>kue9g81rlo302lwxcnk3qpbuse1njwl</sha1>
+      <sha1>kbhvy1rgm6f5zegaswucjc5sm9siibz</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -37993,14 +37941,14 @@ Questions:
     <ns>0</ns>
     <id>306</id>
     <revision>
-      <id>5872</id>
-      <parentid>4736</parentid>
-      <timestamp>2014-02-27T13:48:48Z</timestamp>
+      <id>6140</id>
+      <parentid>5872</parentid>
+      <timestamp>2014-03-01T21:58:24Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="3758">&lt;!--
+      <text xml:space="preserve" bytes="4543">&lt;!--
 Copyright:
 
    Whonix Anonymity wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -38054,6 +38002,22 @@ Further reading on that topic:
 * [[The World Wide Web And Your Privacy]]
 * [[Data Collection Techniques]]
 
+== Reasons to Stay Anonymous ==
+A few examples...
+
+* [https://tails.boum.org/forum/Too_frequent_IP_address/#comment-cfc122dfc8de737737c076399250a766 People failing to understand the software making death threats] ([http://www.webcitation.org/6EnyCThAn w])
+* [http://fscked.org/blog/something-rotten-opdarknet Making threats to &quot;burn down his house&quot;, &quot;pay him an overdue visit&quot;]([http://www.webcitation.org/6EnzTQo5k w])
+
+Harassment on border:
+
+* http://www.huffingtonpost.com/2010/08/02/jacob-appelbaum-wikileaks_n_667665.html ([http://www.webcitation.org/6EnyCThAn w])
+* http://news.cnet.com/8301-27080_3-20012253-245.html ([http://www.webcitation.org/6EnzUVsJn w])
+
+Other reasons:
+
+* Staying out of press with real name.
+* Separating private, professional and project's activities.
+
 = License =
 
 &lt;pre&gt;
@@ -38068,7 +38032,7 @@ under certain conditions; see the wiki source code for details.
 [[Category:Documentation]]
 
 {{Footer}}</text>
-      <sha1>369q9pqpt5jhz8srgmq9f1cdollgdu8</sha1>
+      <sha1>j1vohvva8lk8ywboe7lgdqiiq4d7g7r</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -43819,14 +43783,15 @@ Do not remove {{Code2|...-postinst}} packages.
     <ns>0</ns>
     <id>475</id>
     <revision>
-      <id>5861</id>
-      <parentid>5860</parentid>
-      <timestamp>2014-02-27T13:40:25Z</timestamp>
+      <id>6134</id>
+      <parentid>5861</parentid>
+      <timestamp>2014-03-01T21:07:28Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="3146">{{#seo:
+      <comment>/* Free Support */</comment>
+      <text xml:space="preserve" bytes="3066">{{#seo:
 |description=Various Ways to get Help with Whonix. Free and Professional Support available.
 }}
 {{Header}}
@@ -43848,8 +43813,6 @@ Coming Soon! (~2 days)
 * For Whonix specific questions not suitable for the stackexchange Q/A format, use the [https://www.whonix.org/forum Whonix User Forum]. Or, use the &lt;html&gt;&lt;a href=&quot;/cgi-bin/mailman/listinfo/whonix-users&quot;&gt;Whonix Users Mailing List&lt;/a&gt;&lt;/html&gt;. 
 
 * [irc://irc.oftc.net/whonix #Whonix on irc.oftc.net] ([https://webirc.oftc.net:8443/?channels=Whonix Webchat])
-
-* Our [[Special:AWCforum|OLD Whonix User Forum]] has an archive of old topics.
 
 * [https://github.com/Whonix/Whonix/issues Bug Reports / Feature Requests]
 
@@ -43882,7 +43845,7 @@ Be careful with the advice you are getting in public places. Get a second opinio
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>4tkwzuwjdea7f6b02djz6pluinscupi</sha1>
+      <sha1>ell3u4y0hvlj7ar7352lxgjhvhkor6z</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -60827,14 +60790,14 @@ The following AppArmor profile is still experimental. The worst thing that can h
     <ns>8</ns>
     <id>870</id>
     <revision>
-      <id>6119</id>
-      <parentid>6118</parentid>
-      <timestamp>2014-02-28T23:26:37Z</timestamp>
+      <id>6129</id>
+      <parentid>6119</parentid>
+      <timestamp>2014-03-01T20:24:21Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <username>Fortasse</username>
+        <id>1</id>
       </contributor>
-      <text xml:space="preserve" bytes="1075">&lt;html&gt;
+      <text xml:space="preserve" bytes="1146">&lt;html&gt;
 &lt;style type=&quot;text/css&quot;&gt;
 
 #banner {
@@ -60889,8 +60852,10 @@ Please consider donating one dollar by monthly standing order!&lt;/translate&gt;
 
 
 &lt;/div&gt;
-&lt;/html&gt;</text>
-      <sha1>kii41us4if0ch9uvrh1adg47eb16tgy</sha1>
+&lt;/html&gt;
+
+The old forums are down, we are aware, and are working on a solution.</text>
+      <sha1>e3gxz51ezbx3rzzn93wwftem8sgnnf4</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -61411,15 +61376,15 @@ sudo rm -fR /var/lib/apt/lists/*
     <ns>0</ns>
     <id>891</id>
     <revision>
-      <id>6101</id>
-      <parentid>6094</parentid>
-      <timestamp>2014-02-28T21:27:08Z</timestamp>
+      <id>6170</id>
+      <parentid>6163</parentid>
+      <timestamp>2014-03-01T22:43:04Z</timestamp>
       <contributor>
         <username>Troubadour</username>
         <id>230</id>
       </contributor>
-      <comment>Added Icedove profile.</comment>
-      <text xml:space="preserve" bytes="11390">{{Header}}
+      <comment>Edited for Enigmail</comment>
+      <text xml:space="preserve" bytes="11713">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
@@ -61529,7 +61494,7 @@ Paste the following content.
 	/usr/share/pixmaps/** r,
 	/usr/share/themes/ r,
 	/usr/share/themes/** r,
-
+        /usr/share/fontconfig/conf.avail/* r,
 	/usr/share/kde4/config/kdeglobals r,
 	/usr/share/whonix/kde/share/config/kdeglobals r,
 
@@ -61577,7 +61542,7 @@ sudo aa-enforce /etc/apparmor.d/home.user.tor-browser_en-US.Browser.firefox
 
 [https://www.whonix.org/forum/index.php?action=profile;u=24 troubadour] created this profile. You can discuss it in this [http://kkkkkkkkkk63ava6.onion/forum/index.php/topic,97.0.html forum thread].
 
-= Icedove =
+= Icedove (with Enigmail)=
 {{AppArmorProfileWarning}}
 
 There is one restriction with this profile: the attachments (received or to be sent) must be in '/home/user/Downloads'. The directory should be already created if you are using the TBB profile.
@@ -61601,14 +61566,13 @@ Paste the following content.
   
   capability sys_ptrace,
   
-  deny /etc/host.conf r,
+  deny / r,
+	deny /etc/host.conf r,
   deny /etc/hosts r,
   deny /etc/nsswitch.conf r,
   deny /etc/passwd r,
   deny /etc/hosts.whonix r,
   deny /etc/fstab r,
-	owner @{HOME}/* rw,
-	owner @{HOME}/.* rw,
 	owner @{HOME}/Desktop/ r,
   deny owner @{HOME}/.cache/ rw,
   deny owner @{HOME}/.cache/** rw,
@@ -61617,12 +61581,18 @@ Paste the following content.
   deny @{PROC}/[0-9]*/mountinfo r,
   deny /usr/lib/i386-linux-gnu/dri/swrast_dri.so m,
   deny /usr/share/applications/ rw,
-
+	deny owner @{HOME}/* rw,
+	deny owner @{HOME}/.* rw,
+	
  	/bin/dash  rix,
   /bin/ps rix,
 	/bin/mknod rix,
+	/bin/grep rix,
+	/bin/chmod rix,
+	/bin/mktemp rix,
+	/bin/which rix,
   
-  /dev/tty r,
+  /dev/tty rw,
   /dev/vboxuser rw,
   /dev/dri/card0 rw,
   
@@ -61636,23 +61606,24 @@ Paste the following content.
   /etc/X11/cursors/* r,
   /etc/mime.types r,
   /etc/gai.conf r,
+	/etc/whonix.d/ r, 
+	/etc/whonix.d/* r, 
   
   /lib/i386-linux-gnu/i686/cmov/libc-2.13.so r,
   /lib/i386-linux-gnu/libprocps.so.0.0.1 r,
   
   owner @{HOME}/ r,	  
-  owner @{HOME}/Downloads/ rw,	
-  owner @{HOME}/Downloads/* rw,	
+	owner @{HOME}/Downloads/ rw,	
+	owner @{HOME}/Downloads/* rw,	
 	
   owner @{HOME}/.Xauthority r,
-  owner @{HOME}/.icedove/** rwk,
-  owner @{HOME}/.icedove/up40c30c.default/lock rw,
-  owner @{HOME}/.icedove/up40c30c.default/.parentlock rwk,
+  owner @{HOME}/.icedove/** mrwk,
   owner @{HOME}/.kde/share/** rw,
   owner @{HOME}/.config/oxygen-gtk/argb-apps.conf rw,
   owner @{HOME}/.local/share/applications/mimeapps.list r,
   owner @{HOME}/.local/share/applications/userapp-Icedove* r,
-  
+	owner @{HOME}/.gnupg/* lrwkcix,
+ 
   @{PROC} r,
   @{PROC}/[0-9]*/maps r,
   @{PROC}/tty/drivers r,
@@ -61672,10 +61643,18 @@ Paste the following content.
   /sys/devices/system/cpu/present r,  
   
   /usr/bin/kde4-config rix,
- 
-  /usr/lib/icedove/icedove mr,
+ 	/usr/bin/basename rix,
+	/usr/bin/grep rix,
+	/usr/bin/uwt rix,
+	/usr/bin/torsocks rix,
+	/usr/bin/gpg.whonix rix,
+	/usr/bin/gpg.whonix-orig rix,
+
+  /usr/lib/icedove/icedove mrix,
   /usr/lib/i386-linux-gnu/pango/1.6.0/modules/* m,
-  
+  /usr/lib/whonix/uwtwrapper rix,
+	/usr/lib/gnupg/gpgkeys_hkp ix,
+
   /usr/share/ r,
   /usr/share/icons/ r,
   /usr/share/icons/** r,
@@ -61853,7 +61832,7 @@ Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/A
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>gvj4wutz7yd97yjteyuzz2x8hxv4fqs</sha1>
+      <sha1>qe4uewd85vagz7ag8qp49j5zi3wvlaj</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -63733,6 +63712,80 @@ sudo ln -s /etc/dpkg/origins/whonix /etc/dpkg/origins/default
       <comment>Created page with &quot;Bitte unterstützen sie Whonix, indem sie einen Euro pro Monat per Dauerauftrag spenden.&quot;</comment>
       <text xml:space="preserve" bytes="88">Bitte unterstützen sie Whonix, indem sie einen Euro pro Monat per Dauerauftrag spenden.</text>
       <sha1>qj0chtlxigc1th5vq1wiaffesbj9dmc</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>T4</title>
+    <ns>0</ns>
+    <id>965</id>
+    <revision>
+      <id>6123</id>
+      <parentid>6122</parentid>
+      <timestamp>2014-03-01T13:35:00Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <text xml:space="preserve" bytes="16">__NOINDEX__
+test</text>
+      <sha1>81lsbztihytacf41r3kkjbdrmbuia8x</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Forcing .onion on Whonix.org</title>
+    <ns>0</ns>
+    <id>966</id>
+    <revision>
+      <id>6183</id>
+      <parentid>6171</parentid>
+      <timestamp>2014-03-01T22:55:29Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <text xml:space="preserve" bytes="1907">{{Header}}
+{{#seo:
+|description=Instructions on how to set up a Whonix Download Mirror
+}}
+
+If you would like to use alternative end-to-end encryption (independent from [[SSL]] certificate authorities), be independent from the mainstream domain name system or want to reduce your load on Tor's exit nodes, browsing this wiki (and our [https://www.whonix.org/forum forums] and [https://www.whonix.org/blog blog]) using our .onion address is easy and seamless, once configured. 
+
+== Requirements ==
+
+* Tor Browser Bundle (If you're using Whonix, you already have this.)
+
+== Background ==
+
+HTTPS Everywhere is a very clever tool created by folks at the [https://www.eff.org EFF] to automatically take you from browsing HTTP (insecure) versions of popular websites to the HTTPS (more secure) version, if that particular website offers it. However, HTTPS Everywhere supports user rules, and it is not limited to HTTP(S), so you can configure it to take you to our .onion instead of our .org!
+
+== Adding the user rule ==
+
+Locate the directory &quot;HTTPSEverywhereUserRules&quot;, it should be /home/user/tor-browser_en-US/Data/Browser/profile.default/HTTPSEverywhereUserRules or somewhere close to that. 
+
+Create a new file called WhonixOnion.xml paste:
+&lt;pre&gt;
+&lt;ruleset name=&quot;Whonix Onion&quot;&gt;
+  &lt;target host=&quot;www.whonix.org&quot; /&gt;
+  &lt;target host=&quot;kkkkkkkkkk63ava6.onion&quot; /&gt;
+  &lt;rule from=&quot;^http(s)?://(www\.)?whonix\.org/&quot; to=&quot;http://kkkkkkkkkk63ava6.onion/&quot;/&gt;
+&lt;/ruleset&gt;
+&lt;/pre&gt;
+and save.
+
+== (re)Start your browser ==
+
+After installing the user rule, start or restart your Tor browser. When you browse out to www.whonix.org, HTTPS Everywhere will automatically engage, and send you to kkkkkkkkkk63ava6.onion. If you want to disable this functionality, disable the ruleset using the HTTPS Everywhere icon in the upper right of the browser window, or simply delete the file.
+
+Happy browsing!
+
+{{Footer}}
+
+[[Category:Documentation]]</text>
+      <sha1>mdcj0m4kou5m86m6n4vga06n5gh85d1</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
