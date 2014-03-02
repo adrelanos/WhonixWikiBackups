@@ -505,15 +505,16 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>18</id>
     <revision>
-      <id>5560</id>
-      <parentid>5554</parentid>
-      <timestamp>2014-02-22T02:29:23Z</timestamp>
+      <id>6230</id>
+      <parentid>5560</parentid>
+      <timestamp>2014-03-02T11:49:07Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Disadvantages of Whonix */</comment>
-      <text xml:space="preserve" bytes="10873">{{#seo:
+      <minor/>
+      <comment>Text replace - &quot;OtherOperatingSystems&quot; to &quot;Other Operating Systems&quot;</comment>
+      <text xml:space="preserve" bytes="10879">{{#seo:
 |description=Whonix Feature List
 }}
 {{Header}}
@@ -548,7 +549,7 @@ Everything is explained in [[Documentation]].
 * Based on the [https://www.torproject.org Tor] anonymity network.
 * Based on [https://www.virtualbox.org VirtualBox].
 * Can torify almost any application.
-* Can torify any [[OtherOperatingSystems|operating system]]
+* Can torify any [[Other Operating Systems|operating system]]
 * Can torify Windows.
 * [[Chat]] anonymously.
 * Circumvent Censorship.
@@ -595,7 +596,7 @@ Everything is explained in [[Documentation]].
 &lt;ref&gt;[https://trac.torproject.org/projects/tor/ticket/7830 UDP is not supported by Tor]&lt;/ref&gt;
 &lt;ref&gt;Limited workaround: [[OnionCat]]&lt;/ref&gt;
 &lt;ref&gt;{{note}} Services that need to listen on publicly reachable ports (open/forwarded ports) are also not supported. However you may run [[Hidden Services]] which are reachable via Tor or tor2web ([https://trac.torproject.org/projects/tor/wiki/doc/tor2web be careful]).&lt;/ref&gt;
-* Installation of any software package possible. &lt;ref&gt;{{note}} Must be able to run on Debian GNU/Linux or you can use [[OtherOperatingSystems]]. See also [[Install Software|Software installation on Whonix-Workstation]] for details.&lt;/ref&gt;
+* Installation of any software package possible. &lt;ref&gt;{{note}} Must be able to run on Debian GNU/Linux or you can use [[Other Operating Systems]]. See also [[Install Software|Software installation on Whonix-Workstation]] for details.&lt;/ref&gt;
 &lt;ref&gt;{{note}} ICMP, ping, VOIP calls over UDP, etc...&lt;/ref&gt;
 &lt;ref&gt;{{note}} Skype over TCP does work, but it's not recommended, because it's proprietary, closed source and there is no control over the encryption keys. Skype authority can compromise you out any moment. A secure encryption/authentication design looks different. For example GPG and OTR are secure, because the user has control over the keys, not the server. See [[Voip#...|Voip Skype section]] for details.&lt;/ref&gt;
 &lt;ref&gt;{{note}} [[OnionCat]]&lt;/ref&gt;
@@ -615,7 +616,7 @@ Everything is explained in [[Documentation]].
 * Loads of Optional Configurations (additional features / Add-Ons) available.
 * Best possible [[Protocol-Leak-Protection and Fingerprinting-Protection]].
 * Private obfuscated [[Bridges]] can be added to {{Code2|/etc/tor/torrc}}.
-* Whonix-Gateway can also torify Windows, see [[OtherOperatingSystems]].
+* Whonix-Gateway can also torify Windows, see [[Other Operating Systems]].
 
 = Disadvantages of Whonix =
 * More difficult to set up compared to the regular Tor Browser Bundle.
@@ -658,7 +659,7 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>cxqz05qwsh3l2u7s742p7t04aqpmsuw</sha1>
+      <sha1>hysvzy4rp9hd99burm41347edrf3uub</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -668,18 +669,18 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>19</id>
     <revision>
-      <id>6215</id>
-      <parentid>6136</parentid>
-      <timestamp>2014-03-02T07:37:48Z</timestamp>
+      <id>6217</id>
+      <parentid>6215</parentid>
+      <timestamp>2014-03-02T11:07:40Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>añadir una letra sin sentido</comment>
-      <text xml:space="preserve" bytes="10937">{{Header}}
+      <text xml:space="preserve" bytes="10936">{{Header}}
 &lt;!--
 Copyright:
 
-   Whonix Download wiki page Copyrignht (C) Amnesia &lt;amnesia at boum dot org&gt;
+   Whonix Download wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
    Whonix Download wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
    
    This program is free software; you can redistribute it and/or modify
@@ -944,7 +945,7 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>tr8m6qqlyfcmvq21fvs11wkuaj14rnr</sha1>
+      <sha1>fc7h1zmfq9m3zparfepk6aw1nk2zs85</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -2382,15 +2383,14 @@ Not compulsory, just nicely asking:
     <ns>0</ns>
     <id>56</id>
     <revision>
-      <id>5486</id>
-      <parentid>5462</parentid>
-      <timestamp>2014-02-17T22:24:00Z</timestamp>
+      <id>6251</id>
+      <parentid>5486</parentid>
+      <timestamp>2014-03-02T16:26:42Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Why can't I ping the Whonix-Gateway? */</comment>
-      <text xml:space="preserve" bytes="49409">{{Header}}
+      <text xml:space="preserve" bytes="49339">{{Header}}
 {{#seo:
 |description=FAQ. Frequently Asked Questions.
 }}
@@ -2905,7 +2905,7 @@ And big black text-only window (terminal) looks scary. A graphical desktop envir
 
 Also terminal-only environments are often unusable by users with disabilities. That's why Whonix {{Whonix6}} and above will feature an optional graphical desktop environment.
 
-If you think, the graphical Whonix-Gateway uses too much disk size and/or [[Special:AWCforum/st/id85/Possible_to_install_whonix_off_U....html|you want]] to do non-originally intended things, such as running Whonix completely in RAM, sorry to say. Whonix has never been developed with low size, low RAM or low system requirements in mind. See also [[#Why are the Whonix images so big?]] and [[#Will there be a Whonix Live CD or DVD?]].
+If you think, the graphical Whonix-Gateway uses too much disk size and/or you want to do non-originally intended things, such as running Whonix completely in RAM, sorry to say. Whonix has never been developed with low size, low RAM or low system requirements in mind. See also [[#Why are the Whonix images so big?]] and [[#Will there be a Whonix Live CD or DVD?]].
 
 Advanced users can build Whonix from source code and use a build configuration to create a terminal-only version of Whonix-Gateway. (Refer to [[Dev/Build Documentation|Build Documentation]] in case that is of interest to you.)
 
@@ -2943,7 +2943,7 @@ Without performing these basics steps, the setup may sound clever, but may not w
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>i7qwcimc6mn5xj64rmh1ngi9jrpxid2</sha1>
+      <sha1>bvllmoeexgoq6pwoy8e4xn8j3c6e7tk</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -3373,260 +3373,18 @@ Anonymous Third Party Hosts for VPS hosting involve anonymous money, which is di
     <title>OtherOperatingSystems</title>
     <ns>0</ns>
     <id>61</id>
+    <redirect title="Other Operating Systems" />
     <revision>
-      <id>5783</id>
-      <parentid>4973</parentid>
-      <timestamp>2014-02-27T12:14:49Z</timestamp>
+      <id>6225</id>
+      <parentid>5783</parentid>
+      <timestamp>2014-03-02T11:47:07Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="9591">{{Header}}
-{{#seo:
-|description=Anonymize any Operating System! Your operating system tunneled through the Tor Anonymity Network! Create your Custom-Whonix-Workstation!
-}}
-
-= Introduction =
-The Whonix Framework&lt;ref&gt;[[Technical_Introduction#Whonix_Framework]]&lt;/ref&gt; supports any operating system.
-
-'''''Using a Whonix-Download-Workstation is easier and provides more Security out of the box!''''' It's your responsibility to get the same security features for a Whonix-Custom-Workstation, see [[Other_Operating_Systems#Security_Comparison:_Whonix-Download-Workstation_vs._Whonix-Custom-Workstation|Security Comparison: Whonix-Download-Workstation vs. Whonix-Custom-Workstation]] at the bottom of the page for details.
-
-The Whonix-Gateway already supports torification of any operating system, including Microsoft Windows and others. As an transparent or isolating proxy, see below for more information.
-
-= Windows-Whonix-Workstation =
-XP, Vista and Windows 7 are are known to work behind Whonix-Gateway. While it's possible, it's not recommended and only for advanced users. This is because, there are issues with Windows. Those are not Whonix issues. Whonix developers can not fix those issues. One issue is, that Windows is closed source. Rather, Windows is affected by [https://trac.torproject.org/projects/tor/wiki/doc/TransparentProxyLeaks Transparent Proxy Leaks] and other issues. For more information and depending on your security requirements, read the following chapters.
-
-== Easy ==
-{{VM Settings Easy Common}}
-
-(5). Configure network:
-
-For Windows 7 (similar in Windows XP): In Control Panel -&gt; Network and Sharing Center: click on &quot;Change adapter settings&quot; Right-click on local area connection &gt; properties In property window: double-click Internet Protocol Version 4, use the following settings:
-
-&lt;pre&gt;
-IP address 192.168.0.50
-Subnet netmask 255.255.255.0
-Default gateway 192.168.0.10
-Preferred DNS server 192.168.0.10
-&lt;/pre&gt;
-
-(6). Download operating system updates.
-
-= Whonix-GNU/Linux-Workstation =
-== Easy ==
-{{VM Settings Easy Common}}
-
-(5). Configure network:
-
-Open a Terminal and type.
-
-&lt;pre&gt;sudo nano /etc/network/interfaces&lt;/pre&gt;
-
-You only need to configure eth0:
-
-&lt;pre&gt;# This file describes the network interfaces available on your system
-# and how to activate them. For more information, see interfaces(5).
-
-# The loopback network interface, leave as it is
-auto lo
-iface lo inet loopback
-
-auto eth0
-#iface eth0 inet dhcp
-iface eth0 inet static
-# increment last octet on additional workstations
-       address 192.168.0.12
-       netmask 255.255.255.0
-       #network 192.168.0.0
-       #broadcast 192.168.0.255
-       gateway 192.168.0.10&lt;/pre&gt;
-Open /etc/resolv.conf.
-
-&lt;pre&gt;sudo nano /etc/resolv.conf&lt;/pre&gt;
-and delete everything, then add
-
-&lt;pre&gt;nameserver 192.168.0.10&lt;/pre&gt;
-(6). Download operating system updates.
-
-Debian based Linux, such as Ubuntu:
-
-&lt;pre&gt;sudo apt-get update &amp;&amp; sudo apt-get dist-upgrade&lt;/pre&gt;
-
-= More security =
-
-Recommendations:
-
-* Verify operating system installation CD, compare with sha256 hash or even better verify the gpg signature, if available.
-* Install while the Virtual Machine has no internet connection.
-* Set your username to ''user''.
-* Disable Internet Time Syncing.
-* Set your Time Zone to ''UTC''.
-* Set up a static IP.
-* In case you want to run more than one Whonix-Workstation at the same time, it's recommended reading the Introduction in the [[Multiple Whonix-Workstations]] article.
-* Read [[Security Guide]], [[Documentation]] and [[Design]] (which is Whonix-Example-Implementation-Workstation (based on Debian GNU/Linux) specific) and try to apply as much from it to Windows as possible.
-
-= Even more security =
-
-== General ==
-
-Recommendations:
-
-* Prevent [https://trac.torproject.org/projects/tor/wiki/doc/TransparentProxyLeaks Transparent Proxy Leaks] by disabling Whonix-Gateway's Transparent Proxy feature. Instead use your Windows Whonix-Workstation behind an [https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/IsolatingProxy Isolating Proxy]. See [[Stream Isolation]] for more information and instructions on how to disable the Transparent Proxy feature.
-* Check your host clock out of band (use a watch or atomic clock).
-* Set your host and your Workstation clock to show seconds as well. After booting the Whonix-Windows-Workstation, add a random skew to your clock, maybe +/- 1 to 30 seconds. Optimal values are still under investigation. For reference, see [[TimeSync|Whonix's Secure And Distributed Time Synchronization Mechanism]], it's Whonix-Example-Implementation-Workstation (based on Debian GNU/Linux) specific, but most information also applies to Windows. Since I am not aware of a tails_htp alternative for Windows, you have to do it manually.
-
-== VM settings ==
-{{VM Settings Security Common}}
-
-= Most security =
-
-Use the default Whonix VMs and build them yourself from source.
-
-= Ubuntu =
-
-== General ==
-
-Moved to [[Ubuntu]]
-
-== About Ubuntu ==
-
-Moved to [[Ubuntu]].
-
-== Guest additions for Ubuntu Precise ==
-
-Moved to [[Ubuntu]].
-
-= Debian =
-
-Whonix-Default/Download-Version is already based on Debian Wheezy / Stable. You may be interested to read:
-
-* How to obtain Debian safely: [[Debian|Debian ISO gpg verification]]
-
-= Security Comparison: Whonix-Download-Workstation vs. Whonix-Custom-Workstation =
-
-== Introduction ==
-
-Read first: [[Comparison_of_different_Whonix_variants | Comparison of different Whonix variants]]!
-
-Note: Whonix-BuildYourselfFromSource-Workstation is of course the same as Whonix-Download-Workstation.
-
-== Table ==
-
-{| class=&quot;wikitable&quot; style=&quot;background-color: #fff; text-align: center&quot;
-!
-! Whonix-Download-Workstation
-! Whonix-Custom-Workstation
-|-
-| align=&quot;left&quot; | Based on
-| Debian Wheezy GNU/Linux
-| Any of your choice.
-|-
-| align=&quot;left&quot; | Amnesic
-| No
-| No
-|-
-| align=&quot;left&quot; | Protection against root exploits (Malware with root rights) on the Workstation &lt;sup&gt;18&lt;/sup&gt;
-| Yes &lt;sup&gt;1&lt;/sup&gt;&lt;sup&gt;a&lt;/sup&gt;
-| Yes &lt;sup&gt;1&lt;/sup&gt;&lt;sup&gt;a&lt;/sup&gt;
-|-
-| align=&quot;left&quot; | IP/DNS protocol leak protection
-| Full &lt;sup&gt;1&lt;/sup&gt;
-| Full &lt;sup&gt;1&lt;/sup&gt;
-|-
-| align=&quot;left&quot; | Takes advantage of Entry Guards
-| Yes
-| Yes
-|-
-| align=&quot;left&quot; | Operating System Updates persist once updated
-| Yes
-| Depends if gets installed or is a Live CD.
-|-
-| align=&quot;left&quot; | Hides hardware serials from malicious software
-| Yes &lt;sup&gt;16&lt;/sup&gt;
-| Yes &lt;sup&gt;16&lt;/sup&gt;
-|-
-| align=&quot;left&quot; | Collects (virtual) hardware serials
-| No
-| Depends on the custom operating system
-|-
-| align=&quot;left&quot; | Includes Tor Browser
-| Yes
-| Your responsibility to install Tor Browser. &lt;ref name=tb&gt;For help using Tor Browser without Tor over Tor (recommended), see https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/WebBrowsers and http://www.wilderssecurity.com/showthread.php?t=339051&amp;page=14 beginning from &quot;Does anyone know if separating tor and vidalia from the browser is possible?&quot; and [[Special:AWCforum/st/id179/#post_1025]].&lt;/ref&gt;
-|-
-| align=&quot;left&quot; | Includes Firefox privacy patches &lt;ref&gt;https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/WebBrowsers&lt;/ref&gt; and Tor Button (=Tor Browser)
-| Yes, because it uses Tor Browser (without Tor/Vidalia).
-| Your responsibility to install Tor Browser. &lt;ref name=tb /&gt;
-|-
-| align=&quot;left&quot; | Prevents [[DoNot#Prevent_Tor_over_Tor_scenarios.|Tor over Tor]] for Tor Browser
-| Yes
-|  Your responsibility to prevent Tor over Tor. &lt;ref name=tb /&gt;
-|-
-| align=&quot;left&quot; | Stream isolation to prevent identity correlation through circuit sharing
-| Yes
-| Your responsibility to use Stream Isolation.
-|-
-| align=&quot;left&quot; | Stream isolation in Tor Browser
-| No &lt;sup&gt;14&lt;/sup&gt;
-| No &lt;sup&gt;14&lt;/sup&gt;
-|-
-| align=&quot;left&quot; | Encryption
-| Should be applied on host.
-| Should be applied on host.
-|-
-| align=&quot;left&quot; | Cold Boot Attack Protection &lt;sup&gt;8&lt;/sup&gt;
-| No
-| No
-|-
-| align=&quot;left&quot; | Secure Distributed Network Time Synchronization
-|  Yes
-| Your responsibility to install it.
-|-
-| align=&quot;left&quot; | Hides your time zone (set to UTC)
-| Yes
-| Your responsibility to set clock to UTC.
-|-
-| align=&quot;left&quot; | Hides your operating system account name
-| Yes, set to user.
-| Your responsibility to set username to user.
-|-
-| align=&quot;left&quot; | Hides your MAC address from websites
-| Invalid &lt;sup&gt;19&lt;/sup&gt;
-| Invalid &lt;sup&gt;19&lt;/sup&gt;
-|-
-| align=&quot;left&quot; | Secures your MAC address from local LAN (sometimes ISP) &lt;sup&gt;20&lt;/sup&gt;
-| No, planned, see. &lt;sup&gt;21&lt;/sup&gt;
-| Your responsibility. &lt;sup&gt;20&lt;/sup&gt;,&lt;sup&gt;21&lt;/sup&gt;
-|-
-| align=&quot;left&quot; | Hides your hosts MAC address from applications
-| Yes &lt;sup&gt;24&lt;/sup&gt;
-| Yes &lt;sup&gt;24&lt;/sup&gt;
-|-
-| align=&quot;left&quot; | Secure gpg.conf
-| Yes
-| Your responsibility to use a secure gpg.conf.
-|-
-| align=&quot;left&quot; | Privacy enhanced IRC client configuration.
-| Yes
-| Your responsibility to configure the IRC client for enhanced privacy.
-|}
-
-== Footnotes ==
-
-Same footnotes as in [[Comparison_with_Others#Comparison_of_Whonix.2C_Tails.2C_Tor_Browser_Bundle_and_Qubes_OS_TorVM|Comparison of Whonix, Tails, Tor Browser Bundle and Qubes OS TorVM ]] and [[Tor Browser]].
-
-== Conclusion ==
-
-The Whonix-Download-Workstation is already preconfigured with all Whonix extra security features.
-
-A Whonix-Custom-Workstation ''can be made'' (Your responsibility!) as secure as a Whonix-Download-Workstation. If you simply create &lt;ref&gt;Install or use a Live CD/DVD into Whonix-Workstation.&lt;/ref&gt; a Whonix-Custom-Workstation it has still ''some'' security advantages, for example full IP/DNS protocol leak protection, but ''not all'', for example it lacks Secure Distributed Network Time Synchronization. The details are listed in the table above.
-
-== References ==
-{{reflist}}
-
-{{Footer}}
-
-[[Category:Documentation]]</text>
-      <sha1>kxfelpbzodolse628tnvfp5pf9zfqww</sha1>
+      <comment>Redirected page to [[Other Operating Systems]]</comment>
+      <text xml:space="preserve" bytes="37">#REDIRECT [[Other Operating Systems]]</text>
+      <sha1>9e5dst5ao6k0i2j1ceuwwdx1yl8wazs</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -4469,17 +4227,260 @@ http://sourceforge.net/p/whonix/wiki/Dev_old_1/
     <title>Other Operating Systems</title>
     <ns>0</ns>
     <id>79</id>
-    <redirect title="OtherOperatingSystems" />
     <revision>
-      <id>150</id>
-      <timestamp>2013-06-28T18:43:57Z</timestamp>
+      <id>6224</id>
+      <parentid>150</parentid>
+      <timestamp>2014-03-02T11:46:55Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>Redirected page to [[OtherOperatingSystems]]</comment>
-      <text xml:space="preserve" bytes="35">#REDIRECT [[OtherOperatingSystems]]</text>
-      <sha1>s9j1inxnmlq0swe1kgwg26kj86ioj5v</sha1>
+      <text xml:space="preserve" bytes="9591">{{Header}}
+{{#seo:
+|description=Anonymize any Operating System! Your operating system tunneled through the Tor Anonymity Network! Create your Custom-Whonix-Workstation!
+}}
+
+= Introduction =
+The Whonix Framework&lt;ref&gt;[[Technical_Introduction#Whonix_Framework]]&lt;/ref&gt; supports any operating system.
+
+'''''Using a Whonix-Download-Workstation is easier and provides more Security out of the box!''''' It's your responsibility to get the same security features for a Whonix-Custom-Workstation, see [[Other_Operating_Systems#Security_Comparison:_Whonix-Download-Workstation_vs._Whonix-Custom-Workstation|Security Comparison: Whonix-Download-Workstation vs. Whonix-Custom-Workstation]] at the bottom of the page for details.
+
+The Whonix-Gateway already supports torification of any operating system, including Microsoft Windows and others. As an transparent or isolating proxy, see below for more information.
+
+= Windows-Whonix-Workstation =
+XP, Vista and Windows 7 are are known to work behind Whonix-Gateway. While it's possible, it's not recommended and only for advanced users. This is because, there are issues with Windows. Those are not Whonix issues. Whonix developers can not fix those issues. One issue is, that Windows is closed source. Rather, Windows is affected by [https://trac.torproject.org/projects/tor/wiki/doc/TransparentProxyLeaks Transparent Proxy Leaks] and other issues. For more information and depending on your security requirements, read the following chapters.
+
+== Easy ==
+{{VM Settings Easy Common}}
+
+(5). Configure network:
+
+For Windows 7 (similar in Windows XP): In Control Panel -&gt; Network and Sharing Center: click on &quot;Change adapter settings&quot; Right-click on local area connection &gt; properties In property window: double-click Internet Protocol Version 4, use the following settings:
+
+&lt;pre&gt;
+IP address 192.168.0.50
+Subnet netmask 255.255.255.0
+Default gateway 192.168.0.10
+Preferred DNS server 192.168.0.10
+&lt;/pre&gt;
+
+(6). Download operating system updates.
+
+= Whonix-GNU/Linux-Workstation =
+== Easy ==
+{{VM Settings Easy Common}}
+
+(5). Configure network:
+
+Open a Terminal and type.
+
+&lt;pre&gt;sudo nano /etc/network/interfaces&lt;/pre&gt;
+
+You only need to configure eth0:
+
+&lt;pre&gt;# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+
+# The loopback network interface, leave as it is
+auto lo
+iface lo inet loopback
+
+auto eth0
+#iface eth0 inet dhcp
+iface eth0 inet static
+# increment last octet on additional workstations
+       address 192.168.0.12
+       netmask 255.255.255.0
+       #network 192.168.0.0
+       #broadcast 192.168.0.255
+       gateway 192.168.0.10&lt;/pre&gt;
+Open /etc/resolv.conf.
+
+&lt;pre&gt;sudo nano /etc/resolv.conf&lt;/pre&gt;
+and delete everything, then add
+
+&lt;pre&gt;nameserver 192.168.0.10&lt;/pre&gt;
+(6). Download operating system updates.
+
+Debian based Linux, such as Ubuntu:
+
+&lt;pre&gt;sudo apt-get update &amp;&amp; sudo apt-get dist-upgrade&lt;/pre&gt;
+
+= More security =
+
+Recommendations:
+
+* Verify operating system installation CD, compare with sha256 hash or even better verify the gpg signature, if available.
+* Install while the Virtual Machine has no internet connection.
+* Set your username to ''user''.
+* Disable Internet Time Syncing.
+* Set your Time Zone to ''UTC''.
+* Set up a static IP.
+* In case you want to run more than one Whonix-Workstation at the same time, it's recommended reading the Introduction in the [[Multiple Whonix-Workstations]] article.
+* Read [[Security Guide]], [[Documentation]] and [[Design]] (which is Whonix-Example-Implementation-Workstation (based on Debian GNU/Linux) specific) and try to apply as much from it to Windows as possible.
+
+= Even more security =
+
+== General ==
+
+Recommendations:
+
+* Prevent [https://trac.torproject.org/projects/tor/wiki/doc/TransparentProxyLeaks Transparent Proxy Leaks] by disabling Whonix-Gateway's Transparent Proxy feature. Instead use your Windows Whonix-Workstation behind an [https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/IsolatingProxy Isolating Proxy]. See [[Stream Isolation]] for more information and instructions on how to disable the Transparent Proxy feature.
+* Check your host clock out of band (use a watch or atomic clock).
+* Set your host and your Workstation clock to show seconds as well. After booting the Whonix-Windows-Workstation, add a random skew to your clock, maybe +/- 1 to 30 seconds. Optimal values are still under investigation. For reference, see [[TimeSync|Whonix's Secure And Distributed Time Synchronization Mechanism]], it's Whonix-Example-Implementation-Workstation (based on Debian GNU/Linux) specific, but most information also applies to Windows. Since I am not aware of a tails_htp alternative for Windows, you have to do it manually.
+
+== VM settings ==
+{{VM Settings Security Common}}
+
+= Most security =
+
+Use the default Whonix VMs and build them yourself from source.
+
+= Ubuntu =
+
+== General ==
+
+Moved to [[Ubuntu]]
+
+== About Ubuntu ==
+
+Moved to [[Ubuntu]].
+
+== Guest additions for Ubuntu Precise ==
+
+Moved to [[Ubuntu]].
+
+= Debian =
+
+Whonix-Default/Download-Version is already based on Debian Wheezy / Stable. You may be interested to read:
+
+* How to obtain Debian safely: [[Debian|Debian ISO gpg verification]]
+
+= Security Comparison: Whonix-Download-Workstation vs. Whonix-Custom-Workstation =
+
+== Introduction ==
+
+Read first: [[Comparison_of_different_Whonix_variants | Comparison of different Whonix variants]]!
+
+Note: Whonix-BuildYourselfFromSource-Workstation is of course the same as Whonix-Download-Workstation.
+
+== Table ==
+
+{| class=&quot;wikitable&quot; style=&quot;background-color: #fff; text-align: center&quot;
+!
+! Whonix-Download-Workstation
+! Whonix-Custom-Workstation
+|-
+| align=&quot;left&quot; | Based on
+| Debian Wheezy GNU/Linux
+| Any of your choice.
+|-
+| align=&quot;left&quot; | Amnesic
+| No
+| No
+|-
+| align=&quot;left&quot; | Protection against root exploits (Malware with root rights) on the Workstation &lt;sup&gt;18&lt;/sup&gt;
+| Yes &lt;sup&gt;1&lt;/sup&gt;&lt;sup&gt;a&lt;/sup&gt;
+| Yes &lt;sup&gt;1&lt;/sup&gt;&lt;sup&gt;a&lt;/sup&gt;
+|-
+| align=&quot;left&quot; | IP/DNS protocol leak protection
+| Full &lt;sup&gt;1&lt;/sup&gt;
+| Full &lt;sup&gt;1&lt;/sup&gt;
+|-
+| align=&quot;left&quot; | Takes advantage of Entry Guards
+| Yes
+| Yes
+|-
+| align=&quot;left&quot; | Operating System Updates persist once updated
+| Yes
+| Depends if gets installed or is a Live CD.
+|-
+| align=&quot;left&quot; | Hides hardware serials from malicious software
+| Yes &lt;sup&gt;16&lt;/sup&gt;
+| Yes &lt;sup&gt;16&lt;/sup&gt;
+|-
+| align=&quot;left&quot; | Collects (virtual) hardware serials
+| No
+| Depends on the custom operating system
+|-
+| align=&quot;left&quot; | Includes Tor Browser
+| Yes
+| Your responsibility to install Tor Browser. &lt;ref name=tb&gt;For help using Tor Browser without Tor over Tor (recommended), see https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/WebBrowsers and http://www.wilderssecurity.com/showthread.php?t=339051&amp;page=14 beginning from &quot;Does anyone know if separating tor and vidalia from the browser is possible?&quot; and [[Special:AWCforum/st/id179/#post_1025]].&lt;/ref&gt;
+|-
+| align=&quot;left&quot; | Includes Firefox privacy patches &lt;ref&gt;https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/WebBrowsers&lt;/ref&gt; and Tor Button (=Tor Browser)
+| Yes, because it uses Tor Browser (without Tor/Vidalia).
+| Your responsibility to install Tor Browser. &lt;ref name=tb /&gt;
+|-
+| align=&quot;left&quot; | Prevents [[DoNot#Prevent_Tor_over_Tor_scenarios.|Tor over Tor]] for Tor Browser
+| Yes
+|  Your responsibility to prevent Tor over Tor. &lt;ref name=tb /&gt;
+|-
+| align=&quot;left&quot; | Stream isolation to prevent identity correlation through circuit sharing
+| Yes
+| Your responsibility to use Stream Isolation.
+|-
+| align=&quot;left&quot; | Stream isolation in Tor Browser
+| No &lt;sup&gt;14&lt;/sup&gt;
+| No &lt;sup&gt;14&lt;/sup&gt;
+|-
+| align=&quot;left&quot; | Encryption
+| Should be applied on host.
+| Should be applied on host.
+|-
+| align=&quot;left&quot; | Cold Boot Attack Protection &lt;sup&gt;8&lt;/sup&gt;
+| No
+| No
+|-
+| align=&quot;left&quot; | Secure Distributed Network Time Synchronization
+|  Yes
+| Your responsibility to install it.
+|-
+| align=&quot;left&quot; | Hides your time zone (set to UTC)
+| Yes
+| Your responsibility to set clock to UTC.
+|-
+| align=&quot;left&quot; | Hides your operating system account name
+| Yes, set to user.
+| Your responsibility to set username to user.
+|-
+| align=&quot;left&quot; | Hides your MAC address from websites
+| Invalid &lt;sup&gt;19&lt;/sup&gt;
+| Invalid &lt;sup&gt;19&lt;/sup&gt;
+|-
+| align=&quot;left&quot; | Secures your MAC address from local LAN (sometimes ISP) &lt;sup&gt;20&lt;/sup&gt;
+| No, planned, see. &lt;sup&gt;21&lt;/sup&gt;
+| Your responsibility. &lt;sup&gt;20&lt;/sup&gt;,&lt;sup&gt;21&lt;/sup&gt;
+|-
+| align=&quot;left&quot; | Hides your hosts MAC address from applications
+| Yes &lt;sup&gt;24&lt;/sup&gt;
+| Yes &lt;sup&gt;24&lt;/sup&gt;
+|-
+| align=&quot;left&quot; | Secure gpg.conf
+| Yes
+| Your responsibility to use a secure gpg.conf.
+|-
+| align=&quot;left&quot; | Privacy enhanced IRC client configuration.
+| Yes
+| Your responsibility to configure the IRC client for enhanced privacy.
+|}
+
+== Footnotes ==
+
+Same footnotes as in [[Comparison_with_Others#Comparison_of_Whonix.2C_Tails.2C_Tor_Browser_Bundle_and_Qubes_OS_TorVM|Comparison of Whonix, Tails, Tor Browser Bundle and Qubes OS TorVM ]] and [[Tor Browser]].
+
+== Conclusion ==
+
+The Whonix-Download-Workstation is already preconfigured with all Whonix extra security features.
+
+A Whonix-Custom-Workstation ''can be made'' (Your responsibility!) as secure as a Whonix-Download-Workstation. If you simply create &lt;ref&gt;Install or use a Live CD/DVD into Whonix-Workstation.&lt;/ref&gt; a Whonix-Custom-Workstation it has still ''some'' security advantages, for example full IP/DNS protocol leak protection, but ''not all'', for example it lacks Secure Distributed Network Time Synchronization. The details are listed in the table above.
+
+== References ==
+{{reflist}}
+
+{{Footer}}
+
+[[Category:Documentation]]</text>
+      <sha1>kxfelpbzodolse628tnvfp5pf9zfqww</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -4777,18 +4778,16 @@ Use at your own risk.
     <ns>4</ns>
     <id>84</id>
     <revision>
-      <id>5352</id>
-      <parentid>4676</parentid>
-      <timestamp>2014-02-14T10:20:54Z</timestamp>
+      <id>6223</id>
+      <parentid>6222</parentid>
+      <timestamp>2014-03-02T11:20:54Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Whonix.org Site Security */</comment>
-      <text xml:space="preserve" bytes="4173">{{Header}}
+      <text xml:space="preserve" bytes="4300">{{Header}}
 
 = Whonix.org Privacy Policy =
-
 The website whonix.org, takes your privacy seriously and collects as little as information as possible. IP logs are disabled, we are using apache mod-removeip &lt;ref&gt;https://we.riseup.net/debian/apache#mod_removeip&lt;/ref&gt;. If it becomes necessary (such as spamming or abuse), we may need to re-enable IP logging. 
 
 In any case, we recommend visiting this website using the Tor Browser in Whonix or using the Tor Browser Bundle. Although we rent this server from a reputable server provider, but can't audit their logging policy.
@@ -4796,32 +4795,31 @@ In any case, we recommend visiting this website using the Tor Browser in Whonix 
 A written privacy policy isn't worth much anyway, since its only privacy by policy. That is why anonymity preserving tools such as Whonix and Tor Browser have been created in the first place. They offer privacy by design.
 
 = Whonix.org Site Security =
-
 {| class=&quot;wikitable&quot;
 |-
 |Valid SSL certificate
-|Yes, from startssl.com. &lt;ref&gt;https://startssl.com/&lt;/ref&gt;
+|{{Yes}}, from startssl.com. &lt;ref&gt;https://startssl.com/&lt;/ref&gt;
 |-
 |HTTPS Everywhere &lt;ref&gt;https://www.eff.org/https-everywhere&lt;/ref&gt; inclusion
-|Yes. &lt;ref&gt;https://trac.torproject.org/projects/tor/ticket/9143&lt;/ref&gt;
+|{{Yes}} &lt;ref&gt;https://trac.torproject.org/projects/tor/ticket/9143&lt;/ref&gt;
 |-
 |OpenPGP signed fingerprint of whonix.org's SSL certificate
-|Yes. &lt;ref name=fingerprint /&gt;
+|{{Yes}} &lt;ref name=fingerprint /&gt;
 |-
-|Qualys SSL LABS &lt;ref&gt;https://www.ssllabs.com/&lt;/ref&gt; SSL Server Test &lt;ref&gt;https://www.ssllabs.com/ssltest/index.html&lt;/ref&gt;:
-|Passed. A rating. &lt;ref&gt;https://www.ssllabs.com/ssltest/analyze.html?d=whonix.org&lt;/ref&gt;
+|Passed Qualys SSL LABS &lt;ref&gt;https://www.ssllabs.com/&lt;/ref&gt; SSL Server Test &lt;ref&gt;https://www.ssllabs.com/ssltest/index.html&lt;/ref&gt;:
+|{{Yes}}, A rating. &lt;ref&gt;https://www.ssllabs.com/ssltest/analyze.html?d=whonix.org&lt;/ref&gt;
 |-
 |HSTS &lt;ref&gt;https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security&lt;/ref&gt;
-|Yes. &lt;ref&gt;&lt;pre&gt;curl -i https://whonix.org&lt;/pre&gt;&lt;/ref&gt;
+|{{Yes}} &lt;ref&gt;&lt;pre&gt;curl -i https://whonix.org&lt;/pre&gt;&lt;/ref&gt;
 |-
 |HSTS Preloading List &lt;ref&gt;http://blog.chromium.org/2011/06/new-chromium-security-features-june.html&lt;/ref&gt; &lt;ref&gt;http://blog.stalkr.net/2011/08/hsts-preloading-public-key-pinning-and.html&lt;/ref&gt; &lt;ref&gt;http://www.chromium.org/sts&lt;/ref&gt; &lt;ref&gt;https://blog.mozilla.org/security/2012/11/01/preloading-hsts/&lt;/ref&gt; &lt;ref&gt;https://bugzilla.mozilla.org/show_bug.cgi?id=861960&lt;/ref&gt;
-|Requested. Will propagate to Chrome, Firefox and Tor Browser. &lt;ref&gt;https://github.com/Whonix/Whonix/issues/34&lt;/ref&gt; &lt;ref&gt;http://src.chromium.org/viewvc/chrome?revision=209444&amp;view=revision&lt;/ref&gt;
+| {{Yes}} &lt;ref&gt;Requested. Will propagate to Chrome, Firefox and Tor Browser.&lt;/ref&gt; &lt;ref&gt;https://github.com/Whonix/Whonix/issues/34&lt;/ref&gt; &lt;ref&gt;http://src.chromium.org/viewvc/chrome?revision=209444&amp;view=revision&lt;/ref&gt;
 |-
-|Approved revisions &lt;ref&gt;http://www.mediawiki.org/wiki/Extension:Approved_Revs/&lt;/ref&gt;
-|Yes, admins must verify changes before they become the default version.
+|Flagged Revisions &lt;ref&gt;https://www.mediawiki.org/wiki/Extension:FlaggedRevs/&lt;/ref&gt;
+|{{Yes}}, admins must verify changes before they become the default version.
 |-
 |Secondary .onion domain &lt;ref&gt;Optional Tor hidden service (.onion domain); alternative end-to-end encrypted/authenticated connection; in this use case, not for location privacy; backup in case DNS is not functional&lt;/ref&gt;
-|Yes. &lt;ref&gt;http://kkkkkkkkkk63ava6.onion.&lt;/ref&gt;
+|{{Yes}} &lt;ref&gt;http://kkkkkkkkkk63ava6.onion.&lt;/ref&gt; &lt;ref&gt;See also [[Forcing_.onion_on_Whonix.org|Forcing .onion on Whonix.org]].&lt;/ref&gt;
 |-
 |}
 
@@ -4868,7 +4866,7 @@ AyCDWXR3yKGMWHkJqfLu
 
 {{Footer}}
 [[Category:Documentation]] [[Category:Design]]</text>
-      <sha1>8sstnspb7o85o4bzljp0xs645muyrjz</sha1>
+      <sha1>gcpph872y92cas5vqvxknt7ahw3pw6g</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -5106,14 +5104,15 @@ See license file in Whonix source code.
     <ns>0</ns>
     <id>86</id>
     <revision>
-      <id>5840</id>
-      <parentid>4771</parentid>
-      <timestamp>2014-02-27T13:13:03Z</timestamp>
+      <id>6244</id>
+      <parentid>5840</parentid>
+      <timestamp>2014-03-02T15:27:16Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="17999">{{Header}}
+      <comment>/* History of Whonix */</comment>
+      <text xml:space="preserve" bytes="18281">{{Header}}
 {{#seo:
 |description=History of Whonix. TorBOX -&gt; aos -&gt; Whonix.
 }}
@@ -5134,7 +5133,7 @@ TransPort, SocksPort, Transparent Proxy, Isolating Proxy, ...
 
 ...
 
-Whonix developer ([http://www.webcitation.org/6Eny0UfAI w]), [https://trac.torproject.org/projects/tor/wiki/doc/proper?version=1 named proper in past] ([http://www.webcitation.org/6Fg1zUNeQ w]), [https://trac.torproject.org/projects/tor/wiki/doc/proper?version=6 renamed itself to adrelanos] ([http://www.webcitation.org/6Fg2p2YK3 w]), [https://trac.torproject.org/projects/tor/wiki/doc/proper?version=3 published its OpenPGP key on 05/29/12] ([http://www.webcitation.org/6Fg336X1H w]) ([https://trac.torproject.org/projects/tor/wiki/doc/proper?action=history wiki history] ([http://www.webcitation.org/6Fg24cX1W w])). Its OpenPGP key is mirrored online on seven different places, see [[Trusting Whonix Signing Key]] ([http://www.webcitation.org/6Fg3L8QCZ w]).
+Whonix developer ([http://www.webcitation.org/6Eny0UfAI w]), [https://trac.torproject.org/projects/tor/wiki/doc/proper?version=1 named proper in past] ([http://www.webcitation.org/6Fg1zUNeQ w]), [https://trac.torproject.org/projects/tor/wiki/doc/proper?version=6 renamed itself to adrelanos] ([http://www.webcitation.org/6Fg2p2YK3 w]), [https://trac.torproject.org/projects/tor/wiki/doc/proper?version=3 published its OpenPGP key on 05/29/12] ([http://www.webcitation.org/6Fg336X1H w]) ([https://trac.torproject.org/projects/tor/wiki/doc/proper?action=history wiki history] ([http://www.webcitation.org/6Fg24cX1W w])). [https://www.whonix.org/blog/giving-up-pseudonymity-after-collecting-experiences-with-pseudonymous-project-development/ Revealed its identity on 01/18/14.] [http://www.webcitation.org/6Nl4kSDM8 (w)] [https://lists.torproject.org/pipermail/tor-talk/2014-January/031741.html Patrick Schleizer posted its OpenPGP key transition message on 01/18/14 signed by his old and his new key.] [http://www.webcitation.org/6Nl4neAFt (w)]
 
 = Whonix versions =
 
@@ -5345,7 +5344,7 @@ then choose etc (at the bottom) and then choose UTC.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>8jomy9t9rl1184jxllafzoui1hzlt1b</sha1>
+      <sha1>irzq07ul98go4kt9zldchlfpfapk4ci</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -7526,15 +7525,16 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
     <ns>0</ns>
     <id>96</id>
     <revision>
-      <id>6202</id>
-      <parentid>6200</parentid>
-      <timestamp>2014-03-02T00:57:21Z</timestamp>
+      <id>6226</id>
+      <parentid>6202</parentid>
+      <timestamp>2014-03-02T11:48:48Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Verifiable Builds */</comment>
-      <text xml:space="preserve" bytes="70231">{{Header}}
+      <minor/>
+      <comment>Text replace - &quot;OtherOperatingSystems&quot; to &quot;Other Operating Systems&quot;</comment>
+      <text xml:space="preserve" bytes="70233">{{Header}}
 {{#seo:
 |description=Comparison of Whonix, Tails, Tor Browser Bundle, QubesOS TorVM and corridor. About anonymity, privacy, security, circumvention, attacks, fingerprinting, usability, features, etc.
 }}
@@ -7587,7 +7587,7 @@ This page contains the comparisons of Whonix, Tails, Tor Browser and Qubes OS To
 | Tor traffic whitelisting gateway
 |-
 | style=&quot;height: 27px;background-color: #f9f9f9&quot;| Supported hardware
-| x86 compatible and/or VirtualBox + &lt;ref&gt;[[OtherOperatingSystems|Custom-Workstation]]: self made builds can run on any real or virtual hardware as long as they are behind a Whonix-Gateway. Tor Browser binaries are only available for a limited amount of platforms (Windows, Linux, BSD, Mac).&lt;/ref&gt;
+| x86 compatible and/or VirtualBox + &lt;ref&gt;[[Other Operating Systems|Custom-Workstation]]: self made builds can run on any real or virtual hardware as long as they are behind a Whonix-Gateway. Tor Browser binaries are only available for a limited amount of platforms (Windows, Linux, BSD, Mac).&lt;/ref&gt;
 | x86 compatible and/or Virtual Machines
 | Windows, Linux, Mac and Virtual Machines
 | Any capable of running Qubes OS, see [http://qubes-os.org/trac/wiki/SystemRequirements System Requirements] and [http://qubes-os.org/trac/wiki/HCL HCL].
@@ -8763,7 +8763,7 @@ One has always to be very careful, when talking about others. Especially, when t
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Design]]</text>
-      <sha1>dk0w5w4ue2zvsdrkdb6s2rhq24383lg</sha1>
+      <sha1>n81di0xxcdixz38ssj1vx7wm82qlpa5</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -11768,14 +11768,15 @@ What would have to be done:
     <ns>0</ns>
     <id>114</id>
     <revision>
-      <id>5771</id>
-      <parentid>4974</parentid>
-      <timestamp>2014-02-27T12:02:31Z</timestamp>
+      <id>6254</id>
+      <parentid>6253</parentid>
+      <timestamp>2014-03-02T16:40:22Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="9636">{{Header}}
+      <comment>/* Adding USB device to VirtualBox */</comment>
+      <text xml:space="preserve" bytes="13846">{{Header}}
 {{#seo:
 |description=Copying files into and out of Whonix Virtual Machines.
 }}
@@ -11843,8 +11844,94 @@ See your files.
 
 This is intentionally one-way as the Whonix-Workstation is inherently untrusted and should remain isolated to prevent side-channel attacks and covert channel leaks.
 
-= Adding USB device to VirtualBox =
+= Transfer files from the Whonix Workstation into a different Whonix-Workstation through a VDI file =
+This is one of the more convenient solutions for copying work from a Whonix 7 Workstation to a Whonix 8 Workstation. 
 
+1. First, in VirtualBox, click on the &quot;Settings&quot; for the Whonix Workstation that you desire to copy files from. Then, click on &quot;Storage.&quot;
+
+2. In the &quot;Storage&quot; settings, click on the square with a + sign on it to &quot;add hard disk.&quot; It will be located next to an entry that says &quot;Controller: Whonix.&quot;
+
+3. In the next window that appears, click on &quot;create new disk.&quot;
+
+4. When prompted to choose a &quot;hard drive file type,&quot;  select &quot;VDI.&quot;
+
+5. When prompted to choose &quot;storage on physical hard drive,&quot; choose &quot;dynamically allocated.&quot;
+
+6. In the next window, type &quot;WhonixTransferBackup&quot; for the drive name and then choose the storage capacity you need. In many cases, the default &quot;8.00 GB&quot; will be enough.
+
+7. When you are returned to the &quot;Settings&quot; window, click the &quot;OK&quot; button.
+
+8. Next, start the Whonix Workstation that you wish to transfer files from. When you reach the desktop, open a Terminal/Konsole session. 
+
+9. Now, format the new drive you created. Type
+&lt;pre&gt;
+sudo fdisk /dev/sdb
+&lt;/pre&gt;
+at the command prompt that appears, type &quot;n&quot; create a new partition. Press &quot;enter&quot; to choose the default options when prompted until you are returned to fdisk's main menu. Finally, when you are returned to fdisk's main command prompt, type &quot;w&quot; to write the partition and exit fdisk.
+
+10. Next, type
+&lt;pre&gt;
+sudo mkfs.ext4 /deb/sdb1
+&lt;/pre&gt;
+in the terminal session. 
+
+11. Now create a new directory to be the mount point for your drive. Type
+&lt;pre&gt;
+mkdir temp
+&lt;/pre&gt;
+in the terminal.
+
+12. Next, mount your new drive. Type
+&lt;pre&gt;
+sudo mount /dev/sdb1 temp
+&lt;/pre&gt;
+in the terminal.
+
+13. Now, change the permissions to your mount folder so you can write to the drive. Type
+&lt;pre&gt;
+sudo chmod 777 temp
+&lt;/pre&gt;
+in the terminal.
+
+14. At this point, you can copy whichever files you desire to your new drive by copying them to the &quot;temp&quot; folder. You can do this in the terminal, with the file browser, etc.  Once you have finished copying the files you want to the &quot;temp&quot; folder, shut down the Whonix Workstation.
+
+15. After the Whonix Workstation is closed, open the &quot;Virtual Media Manager&quot; in VirtualBox by clicking on &quot;File -&gt; Virtual Media Manager.&quot;
+
+16. Locate the new VDI file you created in steps 1-7 and click on it. Then, click the &quot;copy&quot; button. When the next window appears, click the &quot;next&quot; button.
+
+17. When prompted to choose a &quot;hard drive file type,&quot;  select &quot;VDI.&quot;
+
+18. When prompted to choose &quot;storage on physical hard drive,&quot; choose &quot;dynamically allocated.&quot;
+
+19. In the next window, type &quot;WhonixWorkstationFileTransfer&quot; for the drive name and then choose a folder where you wish to store it. The, click on the &quot;copy&quot; button.
+
+20. When you are returned to the &quot;Virtual Media Manager&quot; window, click the &quot;close&quot; button.
+
+21. Now, in the main VirtualBox window, click on the version of the Whonix Workstation that you want to copy the files into and click &quot;settings.&quot; 
+
+22. Got to the &quot;storage&quot; section and click on the square with a + sign on it to &quot;add hard disk.&quot; It will be located next to an entry that says &quot;Controller: Whonix.&quot;
+
+23. In the next window that appears, click on &quot;choose existing disk.&quot; Then, find where you saved the &quot;WhonixWorkstationFileTransfer.vdi&quot; file and select it.
+
+24.When you are returned to the &quot;settings&quot; window, click &quot;OK.&quot;
+
+25. Now, start the Whonix Workstation that you wish to copy your files into. When you reach your desktop, open a Terminal/Konsole session.
+
+26. At the terminal command prompt, create a new directory to be the mount point for your drive. Type
+&lt;pre&gt;
+mkdir temp
+&lt;/pre&gt;
+in the terminal.
+
+27. Next, mount your new drive. Type
+&lt;pre&gt;
+sudo mount /dev/sdb1 temp
+&lt;/pre&gt;
+in the terminal.
+
+28. Finally, copy the files you want into the Whonix Workstation. When you are finished copying all the files, you can shut down the Whonix Workstation and delete the temporary &quot;file transfer&quot; VDI files you used in this process through the Virtual Media Manager if you desire.
+
+= Adding USB device to VirtualBox =
 This is not recommended for security reasons.
 
 Does '''not''' require VirtualBox Guest Additions.
@@ -11857,9 +11944,9 @@ Anyway, VirtualBox does not support USB out of the box. There are closed source 
 
 Install them on the host.
 
-I don't know if reboot is required. Then you can plug USB devices into Virtual Machines through the device menu in VirtualBox.
+We don't know if reboot is required. Then you can plug USB devices into Virtual Machines through the device menu in VirtualBox.
 
-Note that automount of USB devices is disabled in Whonix by default. Try, Start menu -&gt; System Settings -&gt; Removable Media or manually mount. [https://sourceforge.net/p/whonix/discussion/general/thread/3b4b67c2/ Please share your results.]
+Note that automount of USB devices is disabled in Whonix by default. Try, Start menu -&gt; System Settings -&gt; Removable Media or manually mount. [https://sourceforge.net/p/whonix/discussion/general/thread/3b4b67c2/ (Old forum topic.)] [https://www.whonix.org/forum (You could start a new forum discussion to share your results.)]
 
 Note, if you USB device is formatted with NTFS, you need to install the ntfs-3g package, and a special mount command, see &lt;ref&gt;http://sourceforge.net/p/whonix/discussion/general/thread/c2429909/&lt;/ref&gt;.
 
@@ -12101,7 +12188,7 @@ sudo umount /mnt/whonix
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Development]]</text>
-      <sha1>2w9p877w9zltbmynnv2wxcjcx220txf</sha1>
+      <sha1>s20h3jzh0x04ubyr2pc1dyc9meqtxtp</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -12111,15 +12198,15 @@ sudo umount /mnt/whonix
     <ns>0</ns>
     <id>115</id>
     <revision>
-      <id>6095</id>
-      <parentid>5918</parentid>
-      <timestamp>2014-02-28T14:25:19Z</timestamp>
+      <id>6231</id>
+      <parentid>6218</parentid>
+      <timestamp>2014-03-02T13:14:57Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Installing VirtualBox Guest Additions */</comment>
-      <text xml:space="preserve" bytes="6064">{{Header}}
+      <comment>Downloading linux-headers-$(uname -r) doesn't require deb-src to be enabled. linux-headers are installed by default in Whonix 8.</comment>
+      <text xml:space="preserve" bytes="5647">{{Header}}
 {{#seo:
 |description=Instructions for installing VirtualBox Guest Additions in Whonix. Shared Folders, Mouse Integration, etc.
 }}
@@ -12146,14 +12233,11 @@ Searching&lt;ref&gt;http://packages.debian.org/search?searchon=names&amp;keyword
 
 &lt;pre&gt;
 sudo apt-get update &amp;&amp; sudo apt-get dist-upgrade
-&lt;/pre&gt;
 
-Followed by.
-
-&lt;pre&gt;
 ## If you only want Shared Folder, for improved security,
 ## you can try using only the next line, but not the line after next.
-sudo apt-get install --no-install-recommends virtualbox-guest-dkms virtualbox-guest-utils
+# You need kernel headers to be able to compile the kernel module
+sudo apt-get install --no-install-recommends linux-headers-$(uname -r) virtualbox-guest-dkms virtualbox-guest-utils
 
 ## If you want all features, such as dynamic resolution
 ## and mouse integration.
@@ -12165,23 +12249,6 @@ Reboot. And you're done.
 Alternatively, if this fails, you could also refer to the upstream documentation, [https://www.virtualbox.org/manual/ch04.html VirtualBox: Chapter 4. Guest Additions].
 
 NOTE: Sometimes after reboot the Workstation guest fails to pick up a new resolution. Try to change the screen resolution manually a few times, from KDE settings. Once it succeeds to change to fullscreen, the change will stay persistent across reboots.
-
-NOTE: If installation of virtualbox-guest-dkms finishes without error, but there is no kernel module generated you're probably missing the kernel-headers. 
-Do the following:
-In 
-
-&lt;pre&gt;
-/etc/apt/sources.list #uncomment the two lines starting with &quot;deb-src&quot;
-&lt;/pre&gt;
-
-This will make linux sources available in apt-get.
-
-&lt;pre&gt;
-sudo apt-get install linux-headers-$(uname -r)
-sudo apt-get install --reinstall virtualbox-guest-dkms
-&lt;/pre&gt;
-
-Restart VM (to make the kernel module available)
 
 === (Instructions for Debian Jessie) ===
 Recommend avoid for Guest Additionsǃ This version is difficult to get working with guest additions and vbox shares. Debian Jessie has the issue that Whonix installs with Kernel 3.10 and the distro is at 3.12, and the 3.10 headers are not available. Therefore, it is dangerous (and unsafe) to get the Kernel headers on a different repository. Additionally, there are reports that updating the kernel can cause issues (and is also unsafe). Therefore, instead install experimental version 7.7.8.6 located at https://www.whonix.org/blog/
@@ -12250,7 +12317,7 @@ Safe and reboot. Done.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>qb8m6nmjafezww6rgp6d2lzaln0cw47</sha1>
+      <sha1>4qwijsxn7rw93ib0hbau92h00bnlwby</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -12636,15 +12703,15 @@ for places where I could need more input. Also reviewing the whole source code o
     <ns>0</ns>
     <id>119</id>
     <revision>
-      <id>6104</id>
-      <parentid>5857</parentid>
-      <timestamp>2014-02-28T22:12:38Z</timestamp>
+      <id>6232</id>
+      <parentid>6104</parentid>
+      <timestamp>2014-03-02T13:29:10Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Whonix-Workstation Security */</comment>
-      <text xml:space="preserve" bytes="16813">{{Header}}
+      <comment>/* Recommendation to install latest security updates on all systems */</comment>
+      <text xml:space="preserve" bytes="16987">{{Header}}
 {{#seo:
 |description=Computer Security Guide for Whonix Linux for Users, Whonix Hardening
 }}
@@ -12687,7 +12754,19 @@ Then upgrade.
 sudo apt-get dist-upgrade
 &lt;/pre&gt;
 
-'''2.'''
+'''2. Never install unsigned packages!'''
+
+If you see something like this.
+
+&lt;pre&gt;
+WARNING: The following packages cannot be authenticated!
+  icedove
+Install these packages without verification [y/N]?
+&lt;/pre&gt;
+
+Don't proceed! Press {{Code|N}} and {{Code|&lt;enter&gt;}}. Ruining {{Code|apt-get update}} again should fix it. If not, something is broken or it's a man-in-the-middle attack, which isn't that unlikely, since we are updating over Tor exit relays and some of them are malciious. Try to [[Arm#Arm|change your Tor circuit]].
+
+'''3. Changed Configuration Files'''
 
 If you see something like the following.
 
@@ -12711,12 +12790,6 @@ How could you find out if the file is coming from a Whonix specific package or n
 
 * Whonix specific packages are always called {{Code|whonix-...}}. In the example above it's saying &quot;{{Code2|Setting up ifupdown ...&quot;}}, so the file isn't coming from a Whonix specific package. In this case, you should press {{Code|n}} as advised in the paragraph above.
 * If the package name does include {{Code|whonix-...}}, it's a Whonix specific package. In that case, your safest bet should be pressing {{Code|y}}, but then you would loose your customized settings. You can re-add them afterwards. Such conflicts will hopefully rarely happen, if you use [[Whonix_Configuration_Files|Whonix modular flexible .d style configuration folders]].
- 
-'''3. Never install unsigned packages!'''
-
-If Apper complains because of unsigned packages, this is most likely a bug in Apper. In this case update manually using apt-get as described above.
-
-If apt-get complains that a package can not be verified, don't proceed! Ruining &quot;''apt-get update''&quot; again should fix it. If not, something is broken or it's a man-in-the-middle attack.
 
 = Whonix-Gateway Security =
 == General ==
@@ -12961,7 +13034,7 @@ For even more Security, see [[Advanced Security Guide]].
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>g560l3noquzoc7m60jjhqve4ez39uvx</sha1>
+      <sha1>51ezgpro11d7jet47rkagdu37egauaj</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -13798,14 +13871,13 @@ When you are using them at the same time, the risks explained in the introductio
     <ns>0</ns>
     <id>127</id>
     <revision>
-      <id>6103</id>
-      <parentid>5724</parentid>
-      <timestamp>2014-02-28T22:10:41Z</timestamp>
+      <id>6255</id>
+      <parentid>6103</parentid>
+      <timestamp>2014-03-02T20:31:48Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* Hardening */</comment>
+      <comment>/* Outgoing */</comment>
       <text xml:space="preserve" bytes="32524">{{Header}}
 &lt;!--
 Copyright:
@@ -14014,7 +14086,7 @@ ReachableORAddresses *:443
 
 Reload Tor.
 
-&lt;pre&gt;sudo service Tor reload&lt;/pre&gt;
+&lt;pre&gt;sudo service tor reload&lt;/pre&gt;
 
 This has also been discussed [https://sourceforge.net/p/whonix/discussion/general/thread/3a0b673a/ in the forum].
 
@@ -14309,7 +14381,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>q6gqck08qkb8owls0g1v0mcj67g6uqo</sha1>
+      <sha1>6v6odlxmprf3he1aa87b1z2nv1w22hb</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -16071,14 +16143,14 @@ Optional, for debugging if you have problems.
     <ns>0</ns>
     <id>139</id>
     <revision>
-      <id>5917</id>
-      <parentid>5397</parentid>
-      <timestamp>2014-02-27T14:20:21Z</timestamp>
+      <id>6247</id>
+      <parentid>6246</parentid>
+      <timestamp>2014-03-02T15:59:12Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="5504">&lt;!--
+      <text xml:space="preserve" bytes="5719">&lt;!--
 Copyright:
 
    Whonix Verify_the_virtual_machine_images_using_the_command_line wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -16122,7 +16194,7 @@ Open a terminal and import Whonix signing key with the following commands:
 
 &lt;pre&gt;
 cd [the directory in which you downloaded the key]
-cat adrelanos.asc | gpg --keyid-format long --import
+cat patrick.asc | gpg --keyid-format long --import
 &lt;/pre&gt;
 
 The output should tell you that the key was imported:
@@ -16157,15 +16229,18 @@ Then, '''start the cryptographic verification''', it can take several minutes:
 
 &lt;pre&gt;
 cd [the directory in which you downloaded the .ova and the .asc]
-gpg --keyid-format long --verify Whonix-Gateway-7.ova.asc Whonix-Gateway-7.ova
+gpg --keyid-format long --verify Whonix-Gateway-8.ova.asc Whonix-Gateway-8.ova
 &lt;/pre&gt;
 
 '''If the Virtual Machine image is correct''' the output will tell you that the signature is good:
 
 &lt;pre&gt;
-gpg: Signature made Sun Nov 25 21:48:54 2012 UTC
-gpg:                using RSA key 9C131AD3713AAEEF
-gpg: Good signature from &quot;adrelanos &lt;adrelanos@riseup.net&quot;
+gpg: Signature made Fri 21 Feb 2014 05:41:12 PM CET using RSA key ID 77BB3C48
+gpg: Good signature from &quot;Patrick Schleizer &lt;adrelanos@riseup.net&gt;&quot; [unknown]
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: 916B 8D99 C38E AF5E 8ADC  7A2A 8D66 066A 2EEA CCDA
+     Subkey fingerprint: 6E97 9B28 A6F3 7C43 BE30  AFA1 CB8D 50BB 77BB 3C48
 &lt;/pre&gt;
 
 This might be followed by a warning saying:
@@ -16173,7 +16248,6 @@ This might be followed by a warning saying:
 &lt;pre&gt;
 gpg: WARNING: This key is not certified with a trusted signature!
 gpg:          There is no indication that the signature belongs to the owner.
-Primary key fingerprint: 9B15 7153 925C 303A 4225  3AFB 9C13 1AD3 713A AEEF
 &lt;/pre&gt;
 
 This doesn't alter the validity of the signature according to the key you downloaded. This warning rather has to do with the trust that you put in Whonix signing key. See, [[Whonix Signing Key]]. To remove this warning you would have to personally sign Whonix signing key with your own key.
@@ -16182,15 +16256,15 @@ This doesn't alter the validity of the signature according to the key you downlo
 
 &lt;pre&gt;
 gpg: Signature made Sun Nov 25 21:48:54 2012 UTC
-gpg:                using RSA key 9C131AD3713AAEEF
-gpg: BAD signature from &quot;adrelanos &lt;adrelanos@riseup.net&gt;&quot;
+gpg:                using RSA key 77BB3C48
+gpg: BAD signature from &quot;Patrick Schleizer &lt;adrelanos@riseup.net&gt;&quot;
 &lt;/pre&gt;
 
 '''Repeat these steps for Whonix-Workstation as well.'''
 
 &lt;pre&gt;
 cd [the directory in which you downloaded the .ova and the .asc]
-gpg --keyid-format long --verify Whonix-Workstation-7.ova.asc Whonix-Workstation-7.ova
+gpg --keyid-format long --verify Whonix-Workstation-8.ova.asc Whonix-Workstation-8.ova
 &lt;/pre&gt;
 
 = License =
@@ -16207,7 +16281,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>bf25xhd1gpssyul6h3ojowaqoon86wx</sha1>
+      <sha1>8b2arairj4n2vj52co1s1651va8oehv</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -17678,14 +17752,16 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
     <ns>0</ns>
     <id>155</id>
     <revision>
-      <id>5891</id>
-      <parentid>4766</parentid>
-      <timestamp>2014-02-27T14:00:40Z</timestamp>
+      <id>6229</id>
+      <parentid>5891</parentid>
+      <timestamp>2014-03-02T11:49:01Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="18239">{{Header}}
+      <minor/>
+      <comment>Text replace - &quot;OtherOperatingSystems&quot; to &quot;Other Operating Systems&quot;</comment>
+      <text xml:space="preserve" bytes="18241">{{Header}}
 &lt;!--
 Copyright:
 
@@ -17827,7 +17903,7 @@ Basically, sdwdate picks three random servers - one from each pool, and then bui
 *** [http://brainstorm.ubuntu.com/idea/30050/ Ubuntu Brainstorm Idea #30050: Secure Network Time Synchronization]
 *** [http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=%23687166 Debian Bug Report ntp: NTP security vulnerability because not using authentication by default]
 *** [https://bugs.launchpad.net/ubuntu/+source/ntp/+bug/1039420 Ubuntu Bug Report NTP security vulnerability because not using authentication by default]
-** Manual workaround: Check your clock manually and read [[OtherOperatingSystems#About_Ubuntu|About Ubuntu]] (stale mirror attack). ([https://bugs.launchpad.net/launchpad/+bug/716535 Bug #716535: Please support Valid-Until in release files for security.ubuntu.com])
+** Manual workaround: Check your clock manually and read [[Other Operating Systems#About_Ubuntu|About Ubuntu]] (stale mirror attack). ([https://bugs.launchpad.net/launchpad/+bug/716535 Bug #716535: Please support Valid-Until in release files for security.ubuntu.com])
 * '''Attack 3''' gets defeated, Whonix adds additional security.
 * '''Attack 4''' gets defeated, Whonix adds additional security.
 * '''Attack 5''' is a general Tor problem, which can not be solved by Whonix and which is unsolved in other projects as well. Since host, Whonix-Gateway and Whonix-Workstation time all differ, this attack at least becomes harder against Whonix.
@@ -17877,7 +17953,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Design]]</text>
-      <sha1>pfnwuebxs94ftsfm1n69hrhb3igxwj5</sha1>
+      <sha1>0b1y3l24xx95qyi1t5r93d7azhraa2w</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -17907,14 +17983,16 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
     <ns>0</ns>
     <id>157</id>
     <revision>
-      <id>5546</id>
-      <parentid>1597</parentid>
-      <timestamp>2014-02-22T02:10:33Z</timestamp>
+      <id>6227</id>
+      <parentid>5546</parentid>
+      <timestamp>2014-03-02T11:48:52Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="2696">{{#seo:
+      <minor/>
+      <comment>Text replace - &quot;OtherOperatingSystems&quot; to &quot;Other Operating Systems&quot;</comment>
+      <text xml:space="preserve" bytes="2702">{{#seo:
 |description=Comparison of Whonix in a VM vs Whonix with Physical Isolation with and without virtualized Gateway
 }}
 {{Header}}
@@ -17972,20 +18050,20 @@ Footnotes:
 Multiple options for operating system.
 
 * Debian Wheezy GNU/Linux (Default-Download-Version, recommended!).
-* See also [[OtherOperatingSystems]], especially [[OtherOperatingSystems#Security_Comparison:_Whonix-Download-Workstation_vs._Whonix-Custom-Workstation | Security Comparison: Whonix-Download-Workstation vs. Whonix-Custom-Workstation]]
+* See also [[Other Operating Systems]], especially [[Other Operating Systems#Security_Comparison:_Whonix-Download-Workstation_vs._Whonix-Custom-Workstation | Security Comparison: Whonix-Download-Workstation vs. Whonix-Custom-Workstation]]
 * Any other, see ''Whonix Framework''.
 * There is [[HardenedGentooTG | Hardened Gentoo based Whonix-Gateway]]. (outdated, experts only, needs maintainer!)
 
 == Security Comparison: Whonix-Download-Workstation vs. Whonix-Custom-Workstation ==
 
-See [[OtherOperatingSystems#Security_Comparison:_Whonix-Download-Workstation_vs._Whonix-Custom-Workstation | Security Comparison: Whonix-Download-Workstation vs. Whonix-Custom-Workstation]].
+See [[Other Operating Systems#Security_Comparison:_Whonix-Download-Workstation_vs._Whonix-Custom-Workstation | Security Comparison: Whonix-Download-Workstation vs. Whonix-Custom-Workstation]].
 
 Unless otherwise stated, the documentation and design is about the Default-Download-Version.
 
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Design]]</text>
-      <sha1>rxwkrc3mkhcrhb1sociddeeq714pi6u</sha1>
+      <sha1>1zyswro46ueyua8rjbzczh3gv23s2ns</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -22940,14 +23018,14 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>216</id>
     <revision>
-      <id>5911</id>
-      <parentid>4832</parentid>
-      <timestamp>2014-02-27T14:16:03Z</timestamp>
+      <id>6252</id>
+      <parentid>5911</parentid>
+      <timestamp>2014-03-02T16:29:37Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="2262">{{Header}}
+      <text xml:space="preserve" bytes="2274">{{Header}}
 {{#seo:
 |description=How to Start Whonix and Troubleshooting Whonix Startup Issues
 }}
@@ -22961,7 +23039,7 @@ If you need more help with starting, there are [[Videos|Video Tutorials]] (which
 
 &lt;font size=&quot;-3&quot;&gt;([[Videos#Video_Help|Video Help]])&lt;/font&gt;
 
-If you still need help, please go to the [[Special:AWCforum|Whonix User Help Forum]].
+If you still need help, please go to the [[https://www.whonix.org/forum|Whonix User Help Forum]].
 
 '''The default username is:''' '''''user'''''
 
@@ -23001,7 +23079,7 @@ In case you need to [[#PAE_crash|disable PAE]], use the 486 kernel.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>bpryazi199ky3n5fd93ese03as6w8ik</sha1>
+      <sha1>gmrx0pzmr5hy0iqaovg1d62ponf3aws</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -39981,14 +40059,15 @@ Sourceforge support, ctsai-sf on freenode in #sourceforge said, they use GeoIP f
     <ns>0</ns>
     <id>374</id>
     <revision>
-      <id>5768</id>
-      <parentid>5708</parentid>
-      <timestamp>2014-02-27T11:59:14Z</timestamp>
+      <id>6237</id>
+      <parentid>5768</parentid>
+      <timestamp>2014-03-02T14:23:42Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="336">__NOTOC__
+      <comment>/* License */</comment>
+      <text xml:space="preserve" bytes="403">__NOTOC__
 {{Header}}
 {{#seo:
 |description=Donating one dollar per month using a standing order will help to found Whonix in the long term. Donate today!
@@ -39997,12 +40076,12 @@ Sourceforge support, ctsai-sf on freenode in #sourceforge said, they use GeoIP f
 {{Donate}}
 
 = License =
-The subscribe button (subscribeCC_LG.gif) is copyrighted by PayPal. The pixel (pixel.gif) is copyrighted by PayPal.
+The subscribe button (subscribeCC_LG.gif) is copyrighted by PayPal. The buy now button (Btn_buynowCC_LG.gif) is copyrighted by PayPal. The pixel (pixel.gif) is copyrighted by PayPal.
 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>1n9tg8bw4cgb2r5uknigmskon75991k</sha1>
+      <sha1>i09b1qjo1162510wy3jtfdq55ae53ss</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -48854,14 +48933,16 @@ The following settings are not required (because recommended earlier or done by 
     <ns>0</ns>
     <id>504</id>
     <revision>
-      <id>5845</id>
-      <parentid>4066</parentid>
-      <timestamp>2014-02-27T13:19:38Z</timestamp>
+      <id>6228</id>
+      <parentid>5845</parentid>
+      <timestamp>2014-03-02T11:49:00Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="1787">{{Header}}
+      <minor/>
+      <comment>Text replace - &quot;OtherOperatingSystems&quot; to &quot;Other Operating Systems&quot;</comment>
+      <text xml:space="preserve" bytes="1789">{{Header}}
 {{#seo:
 |description=Only got a backup of .vmdk virtual machine hdd files? Want to restore them? That's what this page is for.
 }}
@@ -48871,7 +48952,7 @@ The following settings are not required (because recommended earlier or done by 
 
 The following instructions are useful, if you have a backup of Whonix .vmdk hard disk images but want to restore them. This could be the case if your VM settings file is damaged or missing for some reason or if you only made a backup of the .vmdk files.
 
-In case you want to use other operating systems behind Whonix-Gateway, other than the default Whonix-Workstation, then rather read the [[OtherOperatingSystems]] page.
+In case you want to use other operating systems behind Whonix-Gateway, other than the default Whonix-Workstation, then rather read the [[Other Operating Systems]] page.
 
 = Whonix-Workstation =
 == Easy ==
@@ -48925,7 +49006,7 @@ VBoxManage modifyvm &quot;$VMNAME&quot; --natdnspassdomain1 off
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>rhx136hpw0kwdbi2g4f147cxvigcvhr</sha1>
+      <sha1>8fa152nsxp2vvyspcbavksj1rxpswn2</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -54116,14 +54197,15 @@ From there follow the steps as you previously did and build the image you still 
     <ns>0</ns>
     <id>685</id>
     <revision>
-      <id>5778</id>
-      <parentid>5580</parentid>
-      <timestamp>2014-02-27T12:08:30Z</timestamp>
+      <id>6250</id>
+      <parentid>5778</parentid>
+      <timestamp>2014-03-02T16:25:37Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="7594">{{Header}}
+      <comment>/* Other Required Steps */</comment>
+      <text xml:space="preserve" bytes="7548">{{Header}}
 {{#seo:
 |description=Using Whonix with KVM instead of VirtualBox
 }}
@@ -54231,8 +54313,6 @@ It should be safe for use unless you Adrelanos determine otherwise. 2D and 3D in
 
 Clock disabling for vms on host is recommended by Adrelanos. Still haven't done it yet,  and it seems to need command line.
 
-Forum thread: [[Special:AWCforum/st/id306/]]
-
 == Enabling SPICE == 
 SPICE allows accelerated graphics and clipboard sharing. Its implications for security are an open question that needs a detailed answer rather than a vague clear cut one.
 
@@ -54251,7 +54331,7 @@ Not enabling SPICE from the beginning, will prevent the spice channel device fro
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>gu6d03sb2evrv6id5polk20xkzxl9qm</sha1>
+      <sha1>t6t0lockkz7m0oxpwunquhni8mjamuv</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -60841,14 +60921,15 @@ Please consider a recurring donation!&lt;/translate&gt;
     <ns>10</ns>
     <id>875</id>
     <revision>
-      <id>6205</id>
-      <parentid>5769</parentid>
-      <timestamp>2014-03-02T02:09:00Z</timestamp>
+      <id>6239</id>
+      <parentid>6238</parentid>
+      <timestamp>2014-03-02T14:26:04Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="3685">Donations are used to allow Whonix developer Patrick Schleizer to work full time on Whonix and to pay for whonix.org server cost. Small monthly donations are preferred. Please consider recurring donation of 1 $ or €. With enough small monthly donations, this will be possible.
+      <text xml:space="preserve" bytes="3690">__NOTOC__
+Donations are used to allow Whonix developer Patrick Schleizer to work full time on Whonix and to pay for whonix.org server cost. Small monthly donations are preferred. Please consider recurring donation of 1 $ or €. With enough small monthly donations, this will be possible.
 
 &lt;!-------------------------bank wire, PayPal------------------------&gt;
 {|style=&quot;border-spacing:8px; margin:0px -8px;&quot;
@@ -60868,12 +60949,10 @@ BIC: PBNKDEFF
 |style=&quot;color:#000;&quot;| 
 {{Donate by PayPal Subscription}}
 |-
-! &lt;h3 style=&quot;margin:0; background:#cef2e0; font-size:120%; font-weight:bold; border:1px solid #a3bfb1; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;PayPal Mail Address&lt;/h3&gt;
+! &lt;h3 style=&quot;margin:0; background:#cef2e0; font-size:120%; font-weight:bold; border:1px solid #a3bfb1; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;PayPal Onetime Donation&lt;/h3&gt;
 |-
 |style=&quot;color:#000;&quot;| 
-&lt;pre&gt;
-patrick_schleizer@web.de
-&lt;/pre&gt;
+{{Donate_by_PayPal_Onetime}}
 |-
 
 ! &lt;h3 style=&quot;margin:0; background:#cef2e0; font-size:120%; font-weight:bold; border:1px solid #a3bfb1; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Other method?&lt;/h3&gt;
@@ -60926,7 +61005,7 @@ Please get in [[Contact#For_Donations|Contact]] if you would like to donate but 
 Donations aren't tax-deducible, because Whonix isn't a (non-profit) company yet.
 
 To leave feedback, you could join the [https://www.whonix.org/forum/index.php/topic,76.0.html Forum Discussion about Donations].</text>
-      <sha1>c83hb319o7yp8y01466o7ga0ong20n3</sha1>
+      <sha1>9s40svkjbeat3r3pl60r8c2hzhk461m</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -61888,14 +61967,15 @@ Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/A
     <ns>10</ns>
     <id>894</id>
     <revision>
-      <id>6100</id>
-      <parentid>6099</parentid>
-      <timestamp>2014-02-28T18:55:11Z</timestamp>
+      <id>6248</id>
+      <parentid>6243</parentid>
+      <timestamp>2014-03-02T16:06:03Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="7588">&lt;!--T:7--&gt;
+      <comment>why bold the file size, not the vm name?</comment>
+      <text xml:space="preserve" bytes="7584">&lt;!--T:7--&gt;
 &lt;big&gt;Version: &lt;span style=&quot;color: green&quot;&gt;{{VersionNew}}&lt;/span&gt;&lt;/big&gt;
 
 &lt;!--T:8--&gt;
@@ -61905,10 +61985,8 @@ Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/A
 {| class=&quot;wikitable&quot; style=&quot;text-align: center;background-color: #fff&quot;
 |- {{GrayBackground}}
 | style=&quot;height: 47px;&quot;|
-| style=&quot;white-space: nowrap; width: 137px;&quot;|'''&lt;!--T:10--&gt;
-Whonix-Gateway'''&lt;br /&gt;(1.2 GiB)
-| style=&quot;white-space: nowrap; width: 137px;&quot;|'''&lt;!--T:11--&gt;
-Whonix-Workstation'''&lt;br /&gt;(1.3 GiB)
+| style=&quot;white-space: nowrap; width: 137px;&quot;|'''&lt;!--T:10--&gt;Whonix-Gateway&lt;br /&gt;'''(1.2 GB)
+| style=&quot;white-space: nowrap; width: 137px;&quot;|'''&lt;!--T:11--&gt;Whonix-Workstation&lt;br /&gt;'''(1.3 GB)
 | style=&quot;white-space: nowrap; width: 140px;&quot;|'''[[Hide Tor and Whonix from your ISP|Anonymous Download]]&lt;br /&gt; possible &lt;ref name=anonymousdownload&gt;By using the [https://www.torproject.org/download/download-easy.html.en Tor Browser Bundle] (TBB). For an introduction, see [[Tor Browser|Tor Browser]]. See also [[Hide Tor and Whonix from your ISP|Hide Tor and Whonix from your ISP]].&lt;/ref&gt;'''
 | style=&quot;width: 135px;&quot;|'''[[Download Security|Download Security]]&lt;br /&gt; without [[#Verify the Whonix images|Verification]]'''
 | style=&quot;width: 135px;&quot;|'''[[Download Security|Download Security]]&lt;br /&gt; with [[#Verify the Whonix images|Verification]]'''
@@ -61983,7 +62061,7 @@ Whonix-Workstation'''&lt;br /&gt;(1.3 GiB)
 | style=&quot;background-color: {{Green}}&quot;| Very High &lt;ref name=fromsourcecode&gt;When you build from source code, audit the source code for being non-malicious and reasonably bug free, you do not have to [[Trust|Trust]] the developers, the website or the SSL certificate authorities.&lt;/ref&gt;
 | style=&quot;background-color: {{Green}}&quot;| Best &lt;ref name=fromsourcecode /&gt; &lt;ref&gt;By additional verification that you got the source code from the original authors and by ensuring you're using the same source code as others you get better security.&lt;/ref&gt;
 |}</text>
-      <sha1>sjmmu9gn26qakzv34fnkm11ile1b96n</sha1>
+      <sha1>4bghq5zsolvk36xltsldzj3kmhetp8f</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -63814,6 +63892,93 @@ Therefore it is impossible to claim that non-trivial source code is backdoor fre
 | {{BlueBackground}} Not applicable. &lt;ref name=justshellscripts /&gt;
 |}</text>
       <sha1>iwwd9y1n6f713g95te0rfjdrp2hwlwv</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Donate by PayPal Onetime</title>
+    <ns>10</ns>
+    <id>969</id>
+    <revision>
+      <id>6242</id>
+      <parentid>6241</parentid>
+      <timestamp>2014-03-02T14:29:34Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <minor/>
+      <comment>Protected &quot;[[Template:Donate by PayPal Onetime]]&quot; ([Edit=Allow only administrators] (indefinite) [Move=Allow only administrators] (indefinite))</comment>
+      <text xml:space="preserve" bytes="2842">&lt;html&gt;
+&lt;form action=&quot;https://www.paypal.com/cgi-bin/webscr&quot; method=&quot;post&quot; target=&quot;_top&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;cmd&quot; value=&quot;_xclick&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;business&quot; value=&quot;patrick_schleizer@web.de&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;lc&quot; value=&quot;US&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;item_name&quot; value=&quot;Whonix Prefered Support&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;button_subtype&quot; value=&quot;services&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;no_note&quot; value=&quot;0&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;currency_code&quot; value=&quot;USD&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;bn&quot; value=&quot;PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest&quot;&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;input type=&quot;hidden&quot; name=&quot;on0&quot; value=&quot;Choose Your Support Level&quot;&gt;Choose Your Support Level&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;select name=&quot;os0&quot;&gt;
+	&lt;option value=&quot;Level 1&quot;&gt;Level 1 $1.00 USD&lt;/option&gt;
+	&lt;option value=&quot;Level 2&quot;&gt;Level 2 $2.00 USD&lt;/option&gt;
+	&lt;option value=&quot;Level 5&quot;&gt;Level 5 $5.00 USD&lt;/option&gt;
+	&lt;option value=&quot;Level 10&quot;&gt;Level 10 $10.00 USD&lt;/option&gt;
+	&lt;option value=&quot;Level 20&quot;&gt;Level 20 $20.00 USD&lt;/option&gt;
+	&lt;option value=&quot;Level 50&quot;&gt;Level 50 $50.00 USD&lt;/option&gt;
+	&lt;option value=&quot;Level 100&quot;&gt;Level 100 $100.00 USD&lt;/option&gt;
+	&lt;option value=&quot;Level 500&quot;&gt;Level 500 $500.00 USD&lt;/option&gt;
+	&lt;option value=&quot;Level 1000&quot;&gt;Level 1000 $1,000.00 USD&lt;/option&gt;
+	&lt;option value=&quot;Level 2000&quot;&gt;Level 2000 $2,000.00 USD&lt;/option&gt;
+&lt;/select&gt; &lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;currency_code&quot; value=&quot;USD&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_select0&quot; value=&quot;Level 1&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_amount0&quot; value=&quot;1.00&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_select1&quot; value=&quot;Level 2&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_amount1&quot; value=&quot;2.00&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_select2&quot; value=&quot;Level 5&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_amount2&quot; value=&quot;5.00&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_select3&quot; value=&quot;Level 10&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_amount3&quot; value=&quot;10.00&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_select4&quot; value=&quot;Level 20&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_amount4&quot; value=&quot;20.00&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_select5&quot; value=&quot;Level 50&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_amount5&quot; value=&quot;50.00&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_select6&quot; value=&quot;Level 100&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_amount6&quot; value=&quot;100.00&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_select7&quot; value=&quot;Level 500&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_amount7&quot; value=&quot;500.00&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_select8&quot; value=&quot;Level 1000&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_amount8&quot; value=&quot;1000.00&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_select9&quot; value=&quot;Level 2000&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_amount9&quot; value=&quot;2000.00&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;option_index&quot; value=&quot;0&quot;&gt;
+&lt;input type=&quot;image&quot; src=&quot;/w/images/c/cc/Btn_buynowCC_LG.gif&quot; border=&quot;0&quot; name=&quot;submit&quot; alt=&quot;PayPal - The safer, easier way to pay online!&quot;&gt;
+&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;/w/images/c/cd/Pixel.gif&quot; width=&quot;1&quot; height=&quot;1&quot;&gt;
+&lt;/form&gt;
+&lt;/html&gt;</text>
+      <sha1>3osv2pyl394u9wnftyx7w2oj2am3q8x</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:Btn buynowCC LG.gif</title>
+    <ns>6</ns>
+    <id>970</id>
+    <revision>
+      <id>6236</id>
+      <parentid>6234</parentid>
+      <timestamp>2014-03-02T14:23:15Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <text xml:space="preserve" bytes="66">The buy now button (Btn_buynowCC_LG.gif) is copyrighted by PayPal.</text>
+      <sha1>55q96kajt4fawny3n8k3c884fjbcp1c</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
