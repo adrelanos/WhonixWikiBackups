@@ -36,15 +36,15 @@
     <ns>0</ns>
     <id>1</id>
     <revision>
-      <id>5950</id>
-      <parentid>5949</parentid>
-      <timestamp>2014-02-27T16:28:37Z</timestamp>
+      <id>6208</id>
+      <parentid>6207</parentid>
+      <timestamp>2014-03-02T02:27:23Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="5127">{{Header}}
-
+      <text xml:space="preserve" bytes="6558">{{Header}}
+__NOTOC__
 &lt;languages /&gt;
 &lt;translate&gt;
 &lt;!--T:11--&gt;
@@ -77,8 +77,15 @@
 | supported_platforms    = x86 compatible and/or VirtualBox + &lt;ref&gt;[[Other Operating Systems|Custom-Workstation]]: self made builds can run on any real or virtual hardware as long as they are behind a Whonix-Gateway. Tor Browser binaries are only available for a limited number of platforms (Windows, Linux, BSD, Mac).&lt;/ref&gt;
 }}
 
+&lt;!-------------------------Whonix------------------------&gt;
+{|style=&quot;border-spacing:8px; margin:0px -8px;&quot;
+|class=&quot;MainPageBG&quot; style=&quot;width:55%; border:1px solid #cef2e0; background:#f5fffa; vertical-align:top; color:#000;&quot;|
+{|width=&quot;100%&quot; cellpadding=&quot;2&quot; cellspacing=&quot;5&quot; style=&quot;vertical-align:top; background:#f5fffa;&quot;
+! &lt;h3 style=&quot;margin:0; background:#cef2e0; font-size:120%; font-weight:bold; border:1px solid #a3bfb1; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Whonix&lt;/h3&gt;
+|-
+|style=&quot;color:#000;&quot;| 
 &lt;!--T:2--&gt;
-[[Image:whonix.jpg|center|Whonix Concept|400px]]
+[[Image:whonix.jpg|center|Whonix Concept|500px]]
 
 &lt;!--T:3--&gt;
 Whonix is an operating system focused on anonymity, privacy and security. It's based on the Tor anonymity network&lt;ref&gt;https://www.torproject.org/about/overview.html.en&lt;/ref&gt;, Debian GNU/Linux&lt;ref&gt;https://en.wikipedia.org/wiki/Debian&lt;/ref&gt; and security by isolation. DNS leaks are impossible, and not even malware with root privileges can find out the user's real IP. 
@@ -91,6 +98,27 @@ To learn more about security and anonymity under Whonix, please continue to the 
 
 &lt;!--T:6--&gt;
 [[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|alt=Download Whonix]]
+
+|-
+|}&lt;!--
+
+&lt;--------------------------------Blog Posts, Forum Posts-------------------------------&gt;
+|class=&quot;MainPageBG&quot; style=&quot;width:45%; border:1px solid #cedff2; background:#f5faff; vertical-align:top&quot;|
+{| width=&quot;100%&quot; cellpadding=&quot;2&quot; cellspacing=&quot;5&quot; style=&quot;vertical-align:top; background:#f5faff;&quot;
+! &lt;h3 style=&quot;margin:0; background:#cedff2; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Latest Blog Posts&lt;/h3&gt;
+|-
+|style=&quot;color:#000;&quot;|
+&lt;rss number=10 title=off desc=off&gt;https://www.whonix.org/blog/feed/rss2/&lt;/rss&gt;
+
+|-
+! &lt;h3 style=&quot;margin:0; background:#cedff2; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Latest Forum Posts&lt;/h3&gt;
+|-
+|style=&quot;color:#000;&quot;| 
+&lt;rss number=10 title=off desc=off&gt;https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10&lt;/rss&gt;
+
+|-
+|}
+|}
 
 = Screenshots = &lt;!--T:7--&gt;
 &lt;gallery&gt;
@@ -123,7 +151,7 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
 &lt;/translate&gt;
 {{Footer}}
 [[Category:Documentation]]</text>
-      <sha1>nhwoqof5u0r1cf9u0prwvvn3nc7anip</sha1>
+      <sha1>0yt4thhkk4yez5qp5xi04np8dx4b086</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -133,21 +161,22 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
     <ns>8</ns>
     <id>3</id>
     <revision>
-      <id>6185</id>
-      <parentid>6182</parentid>
-      <timestamp>2014-03-01T22:58:06Z</timestamp>
+      <id>6211</id>
+      <parentid>6185</parentid>
+      <timestamp>2014-03-02T03:09:38Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="166">* Menu
+      <text xml:space="preserve" bytes="187">* Menu
 ** Main Page | HOME
 ** Download | DOWNLOADS
 ** Documentation | DOCUMENTATION
+** Support | SUPPORT
 ** https://www.whonix.org/blog | BLOG
 ** SUPPORT
 ** Dev/Developer Portal | DEVELOP</text>
-      <sha1>42p22tgognk798bhd4v4gby81q08i8y</sha1>
+      <sha1>cixtn70ixw3qjpctrmg3tk9w5nkhssj</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -639,19 +668,18 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>19</id>
     <revision>
-      <id>6136</id>
-      <parentid>6135</parentid>
-      <timestamp>2014-03-01T21:18:20Z</timestamp>
+      <id>6215</id>
+      <parentid>6136</parentid>
+      <timestamp>2014-03-02T07:37:48Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* Mounting (CD/DVD) Devices */</comment>
-      <text xml:space="preserve" bytes="10936">{{Header}}
+      <comment>añadir una letra sin sentido</comment>
+      <text xml:space="preserve" bytes="10937">{{Header}}
 &lt;!--
 Copyright:
 
-   Whonix Download wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
+   Whonix Download wiki page Copyrignht (C) Amnesia &lt;amnesia at boum dot org&gt;
    Whonix Download wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
    
    This program is free software; you can redistribute it and/or modify
@@ -916,7 +944,7 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>fc7h1zmfq9m3zparfepk6aw1nk2zs85</sha1>
+      <sha1>tr8m6qqlyfcmvq21fvs11wkuaj14rnr</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -7498,14 +7526,15 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
     <ns>0</ns>
     <id>96</id>
     <revision>
-      <id>6125</id>
-      <parentid>5972</parentid>
-      <timestamp>2014-03-01T16:00:02Z</timestamp>
+      <id>6202</id>
+      <parentid>6200</parentid>
+      <timestamp>2014-03-02T00:57:21Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>/* Last update */</comment>
-      <text xml:space="preserve" bytes="77850">{{Header}}
+      <comment>/* Verifiable Builds */</comment>
+      <text xml:space="preserve" bytes="70231">{{Header}}
 {{#seo:
 |description=Comparison of Whonix, Tails, Tor Browser Bundle, QubesOS TorVM and corridor. About anonymity, privacy, security, circumvention, attacks, fingerprinting, usability, features, etc.
 }}
@@ -7902,75 +7931,11 @@ This page contains the comparisons of Whonix, Tails, Tor Browser and Qubes OS To
 |}
 
 == Verifiable Builds ==
-{| class=&quot;wikitable&quot; style=&quot;text-align: center; background-color: #fff&quot;
-|- style=&quot;background-color: #f9f9f9&quot;
-| style=&quot;height: 30px;width:220px&quot;|
-| '''Whonix'''
-| '''Tails'''
-| '''Tor Browser'''
-| '''Qubes OS TorVM'''
-| '''corridor'''
-|-
-| style=&quot;height: 27px;background-color: #f9f9f9&quot;| {{Code2|Deterministic Builds}}&lt;ref name=deterministic&gt;
-Open Source does not automagically prevent [https://en.wikipedia.org/wiki/Backdoor_%28computing%29 backdoors], unless the user creates its own binaries from source code itself. The ones who compile, upload and distribute (also the webhost) the binaries could add a {{Code2|hidden code}} without publishing the backdoor code. Nothing prevents one to claim, that a certain binary has been built from a clean source code, while the binary was actually built by the source code plus the backdoor code. Also the ones who may have infected the build machine with a backdoor are in position to add a backdoor without the distributor being aware of it.
-
-Deterministic builds can detect backdoors. For more information on deterministic builds and why this is important, see:
-
-* [https://mailman.stanford.edu/pipermail/liberationtech/2013-June/009257.html liberationtech mailing list: Deterministic builds and software trust]
-* [http://gitian.org/ gitian.org]
-* Quote Mike Perry: {{Code|Current popular software development practices simply cannot survive targeted attacks of the scale and scope that we are seeing today.}} Source: [https://blog.torproject.org/blog/deterministic-builds-part-one-cyberwar-and-global-compromise Deterministic Builds Part One: Cyberwar and Global Compromise]
-* [https://wiki.debian.org/ReproducibleBuilds Debian wiki about their progress and development efforts to implement Reproducible Builds]
-&lt;/ref&gt;
-| {{No}}
-| {{No}}
-| {{Yes}} &lt;ref&gt;See [https://blog.torproject.org/blog/deterministic-builds-part-one-cyberwar-and-global-compromise Deterministic Builds Part One: Cyberwar and Global Compromise] and [https://blog.torproject.org/blog/deterministic-builds-part-two-technical-details Deterministic Builds Part Two: Technical Details].&lt;/ref&gt;
-| {{No}}
-| {{BlueBackground}} Not applicable. &lt;ref name=justshellscripts&gt;Just shell scripts.&lt;/ref&gt;
-|-
-| style=&quot;height: 27px;background-color: #f9f9f9&quot;| Based on a {{Code2|Deterministically Built}}&lt;ref name=deterministic /&gt; Operating System
-| {{No}} &lt;ref name=deterministicoperatingsystem&gt;To be fair, there are no deterministically built operating system yet. It would take lots of effort to create one and its far from easy. When you search through the websites / mailing list archives of Open Source operating systems, you notice, that there is not even yet awareness of this issue.&lt;/ref&gt;
-| {{No}} &lt;ref name=deterministicoperatingsystem /&gt;
-| {{No}} &lt;ref name=deterministicoperatingsystem /&gt;
-| {{No}} &lt;ref name=deterministicoperatingsystem /&gt;
-| {{No}} &lt;ref name=deterministicoperatingsystem /&gt;
-|-
-| style=&quot;height: 27px;background-color: #f9f9f9&quot;| Verifiably no backdoor in the project's own source code
-| {{BlueBackground}} Invalid &lt;ref name=nobackdoorterminlogy&gt;
-A [https://en.wikipedia.org/wiki/Backdoor_(computing) backdoor] can either be a [https://en.wikipedia.org/wiki/Vulnerability_(computing) vulnerability] as in a bug in the source code. Vulnerabilities can get introduced by accident (human error) or on purpose. Once the software has been deployed and the vulnerability has been found, it might happen, that an attacker uses an [https://en.wikipedia.org/wiki/Exploit_(computer_security) exploits] to gain unauthorized access. [http://security.stackexchange.com/questions/42318/hiding-backdoors-in-open-source-code-in-other-languages-than-c-and-c Such vulnerabilities (or purposely planted backdoors) can, with cleverness, be planted in Open Source code plain sight, while being very difficult and unlikely to be spotted by people looking at the code.] Examples:
-
-* [https://lwn.net/Articles/57135/ An attempt to backdoor the kernel].
-* Some argued, the [http://www.theregister.co.uk/2008/05/21/massive_debian_openssl_hangover/ Debian SSL debacle], wasn't a bug, but a backdoor (no one has spot vulnerability in the source code for years!).
-
-Another form of a backdoor is adding the full code (or binary) of [https://en.wikipedia.org/wiki/Trojan_horse_(computing) trojan horse] (computer virus) to the binary build, while not publishing the extra source code and keeping that secret code. The latter, can only be detected with {{Code2|Deterministic Builds}}, which are discussed above.
-&lt;br /&gt;
-Therefore it is impossible to claim that non-trivial source code is backdoor free, because a backdoors can be hidden as vulnerabilities. Auditors scrutinizing the source code can only state their opinion about the quality of the source code and eventually report a vulnerability. It can only be reasonably easily checked, if the source code is free of computer viruses (for example, trojan horses), not backdoors.
-&lt;/ref&gt;
-| {{BlueBackground}} Invalid &lt;ref name=nobackdoorterminlogy /&gt;
-| {{BlueBackground}} Invalid &lt;ref name=nobackdoorterminlogy /&gt;
-| {{BlueBackground}} Invalid &lt;ref name=nobackdoorterminlogy /&gt;
-| {{BlueBackground}} Invalid &lt;ref name=nobackdoorterminlogy /&gt;
-|-
-| style=&quot;height: 27px;background-color: #f9f9f9&quot;| Verifiably {{Code2|vulnerability}}&lt;ref&gt;https://en.wikipedia.org/wiki/Vulnerability_(computing)&lt;/ref&gt; free
-| {{No}} &lt;ref name=nobugfree&gt;Although possible (in theory?), there are no mathematically proven [http://www.drdobbs.com/cpp/100-verifiable-bug-free-code-is-possible/228701189 bug free] operating systems yet.&lt;/ref&gt;
-| {{No}} &lt;ref name=nobugfree /&gt;
-| {{No}} &lt;ref name=nobugfree /&gt;
-| {{No}} &lt;ref name=nobugfree /&gt;
-| {{No}} &lt;ref name=nobugfree /&gt;
-|-
-| style=&quot;height: 27px;background-color: #f9f9f9&quot;| Verifiably no {{Code2|hidden source code}}&lt;ref name=hidden-source-code&gt;Hidden source code is defined as code, which gets added by an adversary, who compromised a build machine or by the person who builds (compiled) a binary builds before building the binary build. The secret source code will not be published and it will look like (or claimed) that the software was built from the source code, which has been published. The most reliable method to detect such hidden code (added on purpose or due to build machine compromise) is to compare {{Code2|Deterministic Builds}}, which are discussed above. (Other methods, such watching the traffic, only have good chances to spot a backdoor, when the backdoor is used in many cases. Even less likely backdoors are found through [https://en.wikipedia.org/wiki/Reverse_engineering reverse engineering], because very few people are using a [https://en.wikipedia.org/wiki/Disassembler disassembler].&lt;/ref&gt; in {{Code2|upstream distribution/binaries}}&lt;ref name=upstreamdistribution&gt;The upstream distribution is the distribution on which the project is based on. Whonix and Tails are based on Debian, thus Debian is their upstream distribution. QubesOS TorVM is based on Qubes OS, which itself is based on Fedora and Xen.&lt;/ref&gt;
-| {{No}} &lt;ref name=upstream-distro-no-hidden-code&gt;No, since the upstream software is not {{Code2|deterministically built}}. See above to learn about {{Code2|Deterministic Builds}}.&lt;/ref&gt;
-| {{No}} &lt;ref name=upstream-distro-no-hidden-code /&gt;
-| {{No}} &lt;ref name=upstream-distro-no-hidden-code /&gt;
-| {{No}} &lt;ref name=upstream-distro-no-hidden-code /&gt;
-| {{No}} &lt;ref name=upstream-distro-no-hidden-code /&gt;
-|-
-| style=&quot;height: 27px;background-color: #f9f9f9&quot;| Project's binary builds verifiably created from project's own source code (no {{Code2|hidden source code}}&lt;ref name=hidden-source-code /&gt; in the project's own source code)
-| {{Yes}} &lt;ref&gt;See [[Trust#Verifiable Builds]].&lt;/ref&gt;
-| {{No}}
-| {{Yes}}
-| ?
-| {{BlueBackground}} Not applicable. &lt;ref name=justshellscripts /&gt;
-|}
+&lt;!--
+Editor hint. Can be edited here:
+http://www.whonix.org/wiki/Template:Verifiable_Builds_Comparsion_Table
+--&gt;
+{{Verifiable_Builds_Comparsion_Table}}
 
 == Fingerprint ==
 {| class=&quot;wikitable&quot; style=&quot;text-align: center; background-color: #fff&quot;
@@ -8798,7 +8763,7 @@ One has always to be very careful, when talking about others. Especially, when t
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Design]]</text>
-      <sha1>9zy01xkimyre6wfevg3s28hiw2q0b5p</sha1>
+      <sha1>dk0w5w4ue2zvsdrkdb6s2rhq24383lg</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -13006,15 +12971,15 @@ For even more Security, see [[Advanced Security Guide]].
     <ns>0</ns>
     <id>120</id>
     <revision>
-      <id>6159</id>
-      <parentid>6158</parentid>
-      <timestamp>2014-03-01T22:25:57Z</timestamp>
+      <id>6210</id>
+      <parentid>6209</parentid>
+      <timestamp>2014-03-02T02:41:53Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Evil developer attack */</comment>
-      <text xml:space="preserve" bytes="25943">&lt;!--
+      <comment>/* Appendix */</comment>
+      <text xml:space="preserve" bytes="25925">&lt;!--
 Copyright:
 
    Whonix Trust wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -13087,14 +13052,7 @@ Binary releases and source code tags for releases are OpenPGP signed by Whonix d
 
 If that's not good enough, you are very much welcome to build your own Whonix images using the [[BuildDocumentation]]. It is easy.
 
-= Misc =
-
-== TLS ==
-
-&lt;code&gt;TLS/SSL/HTTPS with the CA model is flawed.&lt;/code&gt;&lt;ref&gt;See [[SSL]].&lt;/ref&gt; We don't trust it and you shouldn't either. Even if all the implementation details (revocation not working, every CA can issue certs for anything, including &quot;*&quot;) were sorted out, having to trust a 3rd party is a no go. But, we still have to rely on it to some extent for that lack of a widely used web of trust or other alternative.
-
-== OpenPGP ==
-
+= OpenPGP =
 OpenPGP: Usually you get a fingerprint on a web site (insecure, or secured with the broken TLS) and then download that from a key server (insecure, or secured with the broken TLS). Unless you have attended any key signing parties and have a trust path to everyone you need to connect with, OpenPGP is only as secure as TLS!
 
 To mitigate this, it is recommended to check OpenPGP fingerprint from multiple &quot;secure&quot; sites. Bonus points for using different authentication systems. For example: https://www.torproject.org/docs/signing-keys.html.en AND http://idnxcnkne4qt76tg.onion/docs/signing-keys.html.en. Note that hidden services do not offer very strong authentication. A powerful adversary is more likely than not able to impersonate a hidden service, but together with multiple sources it becomes increasingly costly and improbably that a single adversary can impersonate all of them.
@@ -13111,16 +13069,16 @@ Even if you distrust Whonix developers, OpenPGP verifying binary downloads or gi
 * [http://sourceforge.net/blog/sourceforge-attack-full-report/ sourceforge hacked] ([http://www.webcitation.org/6Eny40bV9 w])
 * [http://www.theregister.co.uk/2012/09/26/sourceforge_backdoor_code_compromise/ sourceforge mirror hacked] ([http://www.webcitation.org/6Enz6vyNP w])
 
-== Whonix developer OpenPGP guidelines ==
-All long term Whonix developers, are encouraged to:
+= Verifiable Builds =
+== Verifiable .ova's ==
+{{Verifiable Ovas Introduction}}
 
-* Create a 4096/4096 RSA/RSA OpenPGP key.
-* Get the latest gpg.conf (which comes with Whonix-Workstation) for stronger hashes, no-emit-version, etc.
-* Store the private key inside an encrypted file.
-* Make a backup of that encrypted file.
-* Remember the password, check yourself regularly.
-* Also upload the encrypted file to some (free) online cloud hosting, in case of thief, fire, tornado, etc.
-* Since the project started in 2012, we believe the earlier developer published its OpenPGP public key, the less likely is it, that the developer is attempting an evil developer attack.
+'''This is just an introduction. See [[Verifiable Builds]] for the full page.'''
+
+== Verifiable Whonix Debian Packages ==
+{{Verifiable Pkgs Introduction}}
+
+'''This is just an introduction. See [[Verifiable Builds#Verifiable Whonix Debian Packages]] for the full page.'''
 
 = Whonix Updates =
 == Introduction ==
@@ -13184,19 +13142,8 @@ The least secure and most convenient way is to use Whonix is using Whonix-Defaul
 
 It's a bit safer to use Whonix-Default-Download version and to disable Whonix's APT repository. When updated Whonix deb packages are released, download them manually, verify them manually and install them manually. Big security bonus points for verifying the deb package contents before installing them. You'll get most security, if you [[Dev/Build_Documentation|build Whonix from source code]] and also build update packages from source code. Big security bonus points for verifying the source code before building Whonix.
 
-= Verifiable Builds =
-== Verifiable .ova's ==
-{{Verifiable Ovas Introduction}}
-
-'''This is just an introduction. See [[Verifiable Builds]] for the full page.'''
-
-== Verifiable Whonix Debian Packages ==
-{{Verifiable Pkgs Introduction}}
-
-'''This is just an introduction. See [[Verifiable Builds#Verifiable Whonix Debian Packages]] for the full page.'''
-
 = Appendix =
-== What do the Digital Signatures Prove and What They DO NOT Prove ==
+== What do Digital Signatures Prove and What They DO NOT Prove ==
 Most people, even programmers, often confuse the basic ideas behind digital signatures. Most people should read this section, even if it looks trivial at first sight.
 
 Digital Signatures can prove, that a given file is authentic, i.e. that is has been indeed created by a person that signed it, and that its contents have not been tampered (so, integrity is preserved).
@@ -13210,6 +13157,9 @@ However, once we make a decision to trust somebody (e.g. The Whonix Project and 
 If we verify all the files we download from the vendor, we don't need to worry about all the above bad things, because we would easily be able to detect when the file(s) has been tampered (and not execute/install/open them).
 
 However, for the digital signatures to make any sense, one should ensure that the public keys we use for signature verification are indeed the original ones. Anybody can generate a OpenPGP key pair that would pretend to be for &quot;Whonix Project&quot;, but only the key pair that I (Patrick Schleizer) generated is the legitimate one. Securely obtaining Whonix signing key is documented on a later page, [[Whonix Signing Key]].
+
+== TLS ==
+&lt;code&gt;TLS/SSL/HTTPS with the CA model is flawed.&lt;/code&gt;&lt;ref&gt;See [[SSL]].&lt;/ref&gt; We don't trust it and you shouldn't either. Even if all the implementation details (revocation not working, every CA can issue certs for anything, including &quot;*&quot;) were sorted out, having to trust a 3rd party is a no go. But, we still have to rely on it to some extent for that lack of a widely used web of trust or other alternative.
 
 == Evil developer attack ==
 This is only a theoretical attack, as far as we know. We are not aware that it ever happened to any software project. This is not a Whonix specific problem. It applies to all open source software projects, but more to those where the developers stay anonymous. Examples for such anonymously developed software projects are TrueCrypt, Tails, i2p...
@@ -13225,6 +13175,17 @@ All that is very difficult and it all comes back to trust. How can you trust dev
 These are serious questions to think about. Whonix is also affected by this issue, just like TrueCrypt, Tails, i2p, etc. Most projects (such as TrueCrypt) do not even inform about this fact. Whonix is just an ordinary software project, unfortunately we are unable to fix all problems in the world.
 
 Whonix doesn't distribute any binaries, only redistributes unmodified upstream binaries, shell scripts, we do not create our own binaries. That's what we claim, but it's a lot easier to verify than if we were distributing our own binaries from source code we wrote. Users should worry about the motives and internal security of everyone contributing to torproject.org, all of the distro devs and maintainers and the hundreds of upstream devs and contributors. Trusted computing base size of a modern operating system today is so ridiculously big and so many people are involved we'd be really surprised if none of the &quot;bugs&quot; were intentional. And then there's the hardware. You think that even AMD could understand an Intel chip or vice versa? Of course one can't compare an anonymous contributor with no investment but time with a multi-national company. On the other hand, in comparison, detection here is just ridiculously simple (diff the hash sums), while finding and then proving that something is not a bug but a backdoor in a compiler, well designed source code let alone a CPU is impossible. Anonymous or not no longer matters these days. We are in a more or less open &quot;cyber war&quot; or that's what media and lawmakers want us to believe. Fact is, today players are backed by governments, they can use their real identities without fear of repercussion, fake IDs can be created, trustworthy people can be coerced into giving up their OpenPGP and ssh keys if projects even make use of any strong authentication. Judging by the lack of signatures on many open source upstream and even downstream downloads I'm sure many lack any internal security enforcement and still trust DNS to provide authenticity and clear text to provide integrity. About open source, yeah, you can bet Apple, Google and Microsoft have better internal security than the global open source community. However that doesn't make their code trustworthy or says anything about whether closed or open is more secure...
+
+== Whonix developer OpenPGP guidelines ==
+All long term Whonix developers, are encouraged to:
+
+* Create a 4096/4096 RSA/RSA OpenPGP key.
+* Get the latest gpg.conf (which comes with Whonix-Workstation) for stronger hashes, no-emit-version, etc.
+* Store the private key inside an encrypted file.
+* Make a backup of that encrypted file.
+* Remember the password, check yourself regularly.
+* Also upload the encrypted file to some (free) online cloud hosting, in case of thief, fire, tornado, etc.
+* Since the project started in 2012, we believe the earlier developer published its OpenPGP public key, the less likely is it, that the developer is attempting an evil developer attack.
 
 == Other Projects Discussing Trust ==
 * Tails is a live CD or live USB that aims at preserving your privacy and anonymity. [https://tails.boum.org/doc/about/trust/index.en.html Tails about trust.] ([http://www.webcitation.org/6EnyJvTnn w])
@@ -13249,7 +13210,7 @@ Thanks to Qubes OS ([https://groups.google.com/forum/?fromgroups=#!topic/qubes-d
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>actx8imiconakslb9qn40cgyu7opwhp</sha1>
+      <sha1>s9sztq94ntbe0521l91uc9akj8g615l</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -17233,15 +17194,15 @@ Essentially this feature allows to directly use physical PCI devices on the host
     <ns>0</ns>
     <id>148</id>
     <revision>
-      <id>6102</id>
-      <parentid>5795</parentid>
-      <timestamp>2014-02-28T22:05:19Z</timestamp>
+      <id>6187</id>
+      <parentid>6102</parentid>
+      <timestamp>2014-03-01T23:10:16Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
       <comment>/* Download the key */</comment>
-      <text xml:space="preserve" bytes="4731">&lt;!--
+      <text xml:space="preserve" bytes="4219">&lt;!--
 Copyright:
 
    Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -17283,12 +17244,7 @@ Since all Whonix releases are signed with the same key, you will not have to ver
 This page is strongly related to the [[Trust]] page.
 
 = Download the key =
-1. Copy and paste Patrick Schleizer's (adrelanos') OpenPGP key.
-* For Whonix 7: [[Adrelanos#Old_Key_.28Signed_Whonix_7.29|key Whonix 7]]
-* For Whonix 8 (currently only testers-only version): [[Adrelanos#New_Key_.28Signed_Whonix_8_testers-only.29|key Whonix 8]]
-&lt;!--
-&lt;html&gt;&lt;a class=&quot;link-https&quot; href=&quot;/adrelanos.asc&quot;&gt;adrelanos.asc&lt;/a&gt;&lt;/html&gt; (Right click &amp; Save)
---&gt;
+1. Copy and paste Patrick Schleizer's (adrelanos') OpenPGP key. &lt;html&gt;&lt;a class=&quot;link-https&quot; href=&quot;/patrick.asc&quot;&gt;patrick.asc&lt;/a&gt;&lt;/html&gt; (Right click &amp; Save)
 
 2. Store it as patrick.asc.
 
@@ -17301,23 +17257,12 @@ gpg --import patrick.asc
 4. Verify the key using this fingerprint:
 
 &lt;pre&gt;
-## Whonix 7
-gpg --fingerprint 9B157153925C303A42253AFB9C131AD3713AAEEF
-
-## Whonix 8
 gpg --fingerprint 916B8D99C38EAF5E8ADC7A2A8D66066A2EEACCDA
 &lt;/pre&gt;
 
 Should show:
 
 &lt;pre&gt;
-## Whonix 7
-pub   4096R/713AAEEF 2012-03-02
-      Key fingerprint = 9B15 7153 925C 303A 4225  3AFB 9C13 1AD3 713A AEEF
-uid                  adrelanos &lt;adrelanos@riseup.net&gt;
-sub   4096R/794279C4 2012-03-02
-
-## Whonix 8
 pub   4096R/2EEACCDA 2014-01-16 [expires: 2015-01-16]
       Key fingerprint = 916B 8D99 C38E AF5E 8ADC  7A2A 8D66 066A 2EEA CCDA
 uid                 [ unknown] Patrick Schleizer &lt;adrelanos@riseup.net&gt;
@@ -17361,7 +17306,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>5j1p1qpoq9xgfjq3nlgdqwhuhbndhgm</sha1>
+      <sha1>05moxzsi4gl7a9sfqftlbdkcryxkkxj</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -33638,17 +33583,17 @@ SIGQUIT (Issued if the user sends a quit signal (Ctrl + D).) Well, I think Ctrl 
     <ns>0</ns>
     <id>287</id>
     <revision>
-      <id>5823</id>
-      <parentid>5558</parentid>
-      <timestamp>2014-02-27T13:02:08Z</timestamp>
+      <id>6214</id>
+      <parentid>6213</parentid>
+      <timestamp>2014-03-02T03:14:05Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Developing / Hacking Whonix */</comment>
-      <text xml:space="preserve" bytes="1382">{{#seo:
+      <text xml:space="preserve" bytes="1420">{{#seo:
 |description=Whonix Developer Portal, Hacking Whonix, Developing Whonix
 }}
+__NOTOC__
 {{Header}}
 {{forkme}}
 = Building =
@@ -33669,20 +33614,21 @@ See [[Dev/Build Documentation]].
 * [https://github.com/Whonix/Whonix/issues Development Tickets, Bugs, Feature Requests, Roadmap]
 * [[Dev/Source Code Intro#Build Configuration|Build Configuration]]
 * [[Dev/git#Goodies|Optional Goodies]]
+* [[Design|Technical Design]]
 * Detailed Design - What is each file good for?
 ** [[Dev/Design-Shared]]
 ** [[Dev/Design-Gateway]]
 ** [[Dev/Design-Workstation]]
-* [[Design|Technical Design]]
 * [[Dev/Source_Code_Intro#Debugging|Useful stuff for debugging]]
 * [[Dev/Redistribution|Redistributing Whonix]]
 * [[Dev/Source_Code_Intro#Porting|Porting (some random notes interesting for someone planing to port Whonix update debs to rpm)]]
 * [[Dev/Continuous Integration|Continuous Integration (CI)]]
+* [[Contribute|Contribute]]
 
 {{Footer}}
 
 [[Category:Development]]</text>
-      <sha1>e3ld6q3z57od2cxztyoqbvcey5114dy</sha1>
+      <sha1>c0uemiih2l285ynj2xcjc0mlp7rmted</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -42316,40 +42262,19 @@ The Tor Project never managed to get such a downloader up and running, see {{Cod
     <ns>0</ns>
     <id>437</id>
     <revision>
-      <id>5329</id>
-      <parentid>5328</parentid>
-      <timestamp>2014-02-12T02:59:50Z</timestamp>
+      <id>6190</id>
+      <parentid>5329</parentid>
+      <timestamp>2014-03-02T00:20:16Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="668">
-= a = 
-
-
-title=&quot;word1,word2&quot;
-metakeywords=&quot;word3,word4&quot;
-metadescription=&quot;word5,word6&quot;
-test=&quot;word7,word8&quot;
-
-
-= y =
-og&amp;#58;type=&quot;website&quot;
-article:publisher=&quot;https://www.facebook.com/Whonix&quot;
-article:author=&quot;https://www.facebook.com/patrick.schleizer&quot;
-og:image=&quot;https://www.whonix.org/blog/wp-content/uploads/2014/01/Banner2.png&quot;
-
-= x =
-&lt;html&gt;
-test &amp;#58;
-&lt;/html&gt;
-
-&lt;rss number=10 title=off desc=off&gt;https://www.whonix.org/blog/feed/rss2/&lt;/rss&gt;
+      <text xml:space="preserve" bytes="308">&lt;rss number=10 title=off desc=off&gt;https://www.whonix.org/blog/feed/rss2/&lt;/rss&gt;
 
 &lt;rss number=10 title=off desc=off&gt;https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10&lt;/rss&gt;
 
 &lt;rss number=10 title=off desc=off&gt;https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10;sa=news&lt;/rss&gt;</text>
-      <sha1>5ulkt0u2vv40c5zy8l79qfii69o6s2p</sha1>
+      <sha1>6hqj7bt569r7vm80oyi26h3jj72rqnk</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -49998,14 +49923,14 @@ Maybe this will help: Try convert the vmdk to vdi, remove the old vmdk from the 
     <ns>0</ns>
     <id>530</id>
     <revision>
-      <id>5867</id>
-      <parentid>4624</parentid>
-      <timestamp>2014-02-27T13:45:16Z</timestamp>
+      <id>6198</id>
+      <parentid>5867</parentid>
+      <timestamp>2014-03-02T00:49:11Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="15523">{{Header}}
+      <text xml:space="preserve" bytes="15507">{{Header}}
 {{#seo:
 |description=Checking Whonix for backdoors.
 }}
@@ -50015,9 +49940,9 @@ Maybe this will help: Try convert the vmdk to vdi, remove the old vmdk from the 
 {{Verifiable Ovas Introduction}}
 
 === Short Overview - How it Works ===
-When building Whonix {{Code2|.ova}}'s from source code, for example {{Code2|/home/user/whonix_binary/Whonix-Gateway-7.ova}} also report {{Code2|/home/user/whonix_binary/Whonix-Gateway-7.report}} file will be created.
+When building Whonix {{Code2|.ova}}'s from source code, for example {{Code2|/home/user/whonix_binary/Whonix-Gateway-8.ova}} also report {{Code2|/home/user/whonix_binary/Whonix-Gateway-8.report}} file will be created.
 
-After building the {{Code2|.ova}}, the last build-step will extract the {{Code2|.ova}}, which will result getting three files, i.e. {{Code2|Whonix-Gateway-7.ovf}}, {{Code2|Whonix-Gateway-7.mf}} and {{Code2|Whonix-Gateway-7-disk1.vmdk}}. The {{Code2|.vmdk}}&lt;ref&gt;https://en.wikipedia.org/wiki/VMDK&lt;/ref&gt; image then will be converted to {{Code2|.vdi}}&lt;ref&gt;https://en.wikipedia.org/wiki/VDI_(file_format)&lt;/ref&gt;, then converted to {{Code2|raw}}&lt;ref&gt;https://en.wikipedia.org/wiki/Raw_image_format&lt;/ref&gt; ({{Code2|.img}}. (Converting as in creating a copy, not actually converting.) The filesystem layout, the MBR&lt;ref&gt;https://en.wikipedia.org/wiki/Master_boot_record&lt;/ref&gt; and the VBR&lt;ref&gt;https://en.wikipedia.org/wiki/Volume_boot_record&lt;/ref&gt; are written in to separate files. The raw image will then be mounted. A sha512 checksum of every file will be created and stored in the report.
+After building the {{Code2|.ova}}, the last build-step will extract the {{Code2|.ova}}, which will result getting three files, i.e. {{Code2|Whonix-Gateway-8.ovf}}, {{Code2|Whonix-Gateway-8.mf}} and {{Code2|Whonix-Gateway-8-disk1.vmdk}}. The {{Code2|.vmdk}}&lt;ref&gt;https://en.wikipedia.org/wiki/VMDK&lt;/ref&gt; image then will be converted to {{Code2|.vdi}}&lt;ref&gt;https://en.wikipedia.org/wiki/VDI_(file_format)&lt;/ref&gt;, then converted to {{Code2|raw}}&lt;ref&gt;https://en.wikipedia.org/wiki/Raw_image_format&lt;/ref&gt; ({{Code2|.img}}. (Converting as in creating a copy, not actually converting.) The filesystem layout, the MBR&lt;ref&gt;https://en.wikipedia.org/wiki/Master_boot_record&lt;/ref&gt; and the VBR&lt;ref&gt;https://en.wikipedia.org/wiki/Volume_boot_record&lt;/ref&gt; are written in to separate files. The raw image will then be mounted. A sha512 checksum of every file will be created and stored in the report.
 
 Anyone building {{Code2|Whonix.ova}} images will hopefully end up with the same report. We can then compare the reports using tools such as {{Code2|diff}} and/or {{Code2|meld}}. Those reports should be very similar. We can't end up with the very same reports, because again, there are no deterministically built operating systems yet. However, we can manually review the few remaining differences. That should make it reasonable to believe, that the original {{Code2|Whonix.ova}} images have been build from the source code that has been published for that Whonix version.
 
@@ -50040,7 +49965,7 @@ Unfortunately, we can not directly mount the {{Code2|.ova}}. We have to extract 
 The {{Code2|/help-steps/analyze_image}} script is the tool which comes with Whonix's source code to audit {{Code2|Whonix.ova}}. Nothing prevents you from cooking up your own custom method to verify {{Code2|Whonix.ova}}. On the contrary, we'd be very happy to hear about your methods, source code and results. Since this hasn't ever happened in past, Whonix came up with its own {{Code2|/help-steps/analyze_image}} script.
 
 === Possible Future Improvements ===
-[https://github.com/sleuthkit/sleuthkit/ sleuthkit] could be an interesting addition or even replacement for our custom script. Then we could create a report using something like {{Code|fls -f ext4 ./Whonix-Gateway-7.img}}. Does {{Code|fls}} very similar results when run on very similar images or does it mess up the ordering? The version in Debian even in [http://packages.debian.org/sid/sleuthkit sid] is outdated and does unfortunately not include support for ext4 and our images are using ext4. More recent sleuthkit upstream releases do support ext4, but there are no signed git tags yet ([https://github.com/sleuthkit/sleuthkit/issues/264 reported an issue]), so getting sleuthkit is a bit difficult. (If we want to defeat sophisticated backdoors, we shouldn't encourage auditors to blindly trust github's SSL alone for sleuthkit's integrity.) We could think about bending our images, downgrading from ext4 to ext3.
+[https://github.com/sleuthkit/sleuthkit/ sleuthkit] could be an interesting addition or even replacement for our custom script. Then we could create a report using something like {{Code|fls -f ext4 ./Whonix-Gateway-8.img}}. Does {{Code|fls}} very similar results when run on very similar images or does it mess up the ordering? The version in Debian even in [http://packages.debian.org/sid/sleuthkit sid] is outdated and does unfortunately not include support for ext4 and our images are using ext4. More recent sleuthkit upstream releases do support ext4, but there are no signed git tags yet ([https://github.com/sleuthkit/sleuthkit/issues/264 reported an issue]), so getting sleuthkit is a bit difficult. (If we want to defeat sophisticated backdoors, we shouldn't encourage auditors to blindly trust github's SSL alone for sleuthkit's integrity.) We could think about bending our images, downgrading from ext4 to ext3.
 
 === Expected Differences ===
 * {{Code|(mount_folder) /boot/initrd.img*}} - Those are extracted to the {{Code|initrd_folder}} and diffed.
@@ -50078,7 +50003,7 @@ Your report root folder can most likely be found in {{Code|/home/user/whonix_bin
 === How-To ===
 First of all, you need to create your own Whonix.ova images from source code, refer to [[Dev/Build Documentation|Build Documentation]]. Your report file can most likely be found at {{Code|/home/user/whonix_binary/$VMNAME-$whonix_build_whonix_version_new.report}} and your report_tempfolder at {{Code|/home/user/whonix_binary/$VMNAME-${whonix_build_whonix_version_new}_tempfolder}}. That is your own analyzed {{Code2|.ova}}. To make space for another analysis for other builds (such as those from whonix.org), rename your whonix_binary folder to something else, such as {{Code2|whonix_binary1}}.
 
-If you've build for example Whonix 7.5.4, you have to download Whonix 7.5.4 as well. Place the {{Code2|.ova}} in {{Code|/home/user/whonix_binary/}}. Keep the original name. Then go to Whonix's source code folder ({{Code|cd /home/user/Whonix}} and analyze that image. Use.
+If you've build for example Whonix 8, you have to download Whonix 8 as well. Place the {{Code2|.ova}} in {{Code|/home/user/whonix_binary/}}. Keep the original name. Then go to Whonix's source code folder ({{Code|cd /home/user/Whonix}} and analyze that image. Use.
 
 &lt;pre&gt;
 sudo ./build-steps.d/2800_create-report --tor-gateway
@@ -50091,7 +50016,7 @@ Then you have two {{Code2|.report}} files and two report temp folders.
 Use your favorite diff viewer for huge files. For example {{Code2|meld}}. Diff the reports. For example, use.
 
 &lt;pre&gt;
-meld ./whonix_binary1/Whonix-Gateway-7.5.4.report ./whonix_binary/Whonix-Gateway-7.5.4.report
+meld ./whonix_binary1/Whonix-Gateway-8.report ./whonix_binary/Whonix-Gateway-8.report
 &lt;/pre&gt;
 
 These files should be very similar, expect for a few differences which we earlier mentioned in chapter Expected Differences. Look at the differences. Two of them (because we're installing two kernels) should look like this:
@@ -50147,7 +50072,7 @@ In case you like to review the implementation, the related scripts can be found 
 
 [[Category:Documentation]]
 [[Category:Development]]</text>
-      <sha1>m9nh550qcmmx1fxv5gpzok3ka5ublxy</sha1>
+      <sha1>m2xxx6r2jz40qixglwzwleansdktpwg</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -50392,15 +50317,14 @@ Congratulations, you already created your own build of Whonix. If you want, you 
     <ns>10</ns>
     <id>535</id>
     <revision>
-      <id>5975</id>
-      <parentid>5974</parentid>
-      <timestamp>2014-02-27T16:59:08Z</timestamp>
+      <id>6201</id>
+      <parentid>6197</parentid>
+      <timestamp>2014-03-02T00:53:34Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="2836">{{mbox
-| type       = critical
+      <text xml:space="preserve" bytes="2909">{{mbox
 | image      = [[File:Ambox_warning_pn.svg.png|40px|alt=Question mark]]
 | text       = 
 Warning:
@@ -50408,14 +50332,14 @@ Warning:
 For this feature adding security, it needs your help! Do not assume, that others are doing it for you.
 }}
 
-This feature was released in Whonix 8.
+Whonix has a feature which allows the community to check that Whonix {{Code2|.ova}}&lt;ref&gt;https://en.wikipedia.org/wiki/Open_Virtualization_Format&lt;/ref&gt; releases are verifiably created from project's own source code. We call this verifiable builds. This only proves, that the person and machine&lt;ref&gt;Due to build machine compromise.&lt;/ref&gt; building Whonix has added nothing malicious, such as a backdoor&lt;ref&gt;https://en.wikipedia.org/wiki/Backdoor_(computing)&lt;/ref&gt;. It doesn't prove, that there are no backdoors in Debian. This isn't possible, because neither Debian&lt;ref&gt;Whonix is based on Debian.&lt;/ref&gt; nor any other operating system provides deterministic builds yet.&lt;ref&gt;Some Debian developres are working on it, see [https://wiki.debian.org/ReproducibleBuilds Reproducible Builds].&lt;/ref&gt; Rather this feature is no attempt to proof, that there aren't any vulnerabilities&lt;ref&gt;https://en.wikipedia.org/wiki/Vulnerability_(computing)&lt;/ref&gt; in Whonix's or Debian. A remotely exploitable&lt;ref&gt;https://en.wikipedia.org/wiki/Exploit_(computer_security)&lt;/ref&gt; bug in Whonix or Debian, a flaw in Whonix's firewall leaking traffic or code {{Code2|phoning home}}&lt;ref&gt;https://en.wikipedia.org/wiki/Phoning_home&lt;/ref&gt; the contents of your harddrive would still be fatal. A precondition so this feature can improve overall security is, that the community is auditing Whonix's and Debian's source code for being free of backdoors and vulnerabilities in the first place. In summary, we believe this feature is useful and can improve security, but however isn't a magical answer to all computer security and trust questions. The following table hopefully helps understanding what this feature archives.
 
-Whonix has a feature which allows the community to check that Whonix {{Code2|.ova}}&lt;ref&gt;https://en.wikipedia.org/wiki/Open_Virtualization_Format&lt;/ref&gt; releases are verifiably created from project's own source code. We call this verifiable builds. This only proves, that the person and machine&lt;ref&gt;Due to build machine compromise.&lt;/ref&gt; building Whonix has added nothing malicious, such as a backdoor&lt;ref&gt;https://en.wikipedia.org/wiki/Backdoor_(computing)&lt;/ref&gt;. It doesn't prove, that there are no backdoors in Debian. This isn't possible, because neither Debian&lt;ref&gt;Whonix is based on Debian.&lt;/ref&gt; nor any other operating system provides deterministic builds yet.&lt;ref&gt;Some Debian developres are working on it, see [https://wiki.debian.org/ReproducibleBuilds Reproducible Builds].&lt;/ref&gt; Rather this feature is no attempt to proof, that there aren't any vulnerabilities&lt;ref&gt;https://en.wikipedia.org/wiki/Vulnerability_(computing)&lt;/ref&gt; in Whonix's or Debian. A remotely exploitable&lt;ref&gt;https://en.wikipedia.org/wiki/Exploit_(computer_security)&lt;/ref&gt; bug in Whonix or Debian, a flaw in Whonix's firewall leaking traffic or code {{Code2|phoning home}}&lt;ref&gt;https://en.wikipedia.org/wiki/Phoning_home&lt;/ref&gt; the contents of your harddrive would still be fatal. A precondition so this feature can improve overall security is, that the community is auditing Whonix's and Debian's source code for being free of backdoors and vulnerabilities in the first place. In summary, we believe this feature is useful and can improve security, but however isn't a magical answer to all computer security and trust questions. The [[Comparison with Others#Verifiable Builds]] table makes it clear what this feature archives.
+{{Verifiable_Builds_Comparsion_Table}}
 
 You might be curious, why Whonix is verifiable while neither Debian nor any other operating system is? This is because [[About#Based_on_Debian|Whonix is very simple]], to oversimplify it: Whonix is just a collection of configuration files and scripts, i.e. Whonix's source code does not contain any compiled code etc. On the other hand, Debian is a full operating system. And of course, without the great work of the Debian project and all the upstream projects, Whonix wouldn't exist.
 
-This feature will hopefully be ready for Whonix 8. Only users who download a new image can profit from this feature. Auditing old versions is not possible.&lt;ref&gt;Because in order to implement the verifiable builds feature, we need to get rid of lots of non-deterministic auto-generated files at the end of the build process and to re-create them during first boot.&lt;/ref&gt;</text>
-      <sha1>ddplcpo0q2jft24bd0brt8k1we5kdu3</sha1>
+This feature was first available with Whonix 8. Only users who download a new image can profit from this feature. Auditing versions older than Whonix 8 with this script is not possible.&lt;ref&gt;Not possible doesn't mean impossible here. Would just involve lots of work.&lt;/ref&gt; &lt;ref&gt;Because in order to implement the verifiable builds feature, we need to get rid of lots of non-deterministic auto-generated files at the end of the build process and to re-create them during first boot.&lt;/ref&gt;</text>
+      <sha1>4arnp1uqpwnh5hng5t6zuq6ih14ru58</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -60790,14 +60714,14 @@ The following AppArmor profile is still experimental. The worst thing that can h
     <ns>8</ns>
     <id>870</id>
     <revision>
-      <id>6129</id>
-      <parentid>6119</parentid>
-      <timestamp>2014-03-01T20:24:21Z</timestamp>
+      <id>6189</id>
+      <parentid>6186</parentid>
+      <timestamp>2014-03-02T00:04:17Z</timestamp>
       <contributor>
-        <username>Fortasse</username>
-        <id>1</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="1146">&lt;html&gt;
+      <text xml:space="preserve" bytes="1050">&lt;html&gt;
 &lt;style type=&quot;text/css&quot;&gt;
 
 #banner {
@@ -60846,16 +60770,14 @@ The following AppArmor profile is still experimental. The worst thing that can h
     &lt;div id=&quot;black-text&quot;&gt;
    &lt;translate&gt;&lt;!--T:1--&gt;
 Whonix fundraising campaign.&lt;/translate&gt; &lt;br /&gt; &lt;translate&gt;&lt;!--T:2--&gt;
-Please consider donating one dollar by monthly standing order!&lt;/translate&gt;
+Please consider a recurring donation!&lt;/translate&gt;
      &lt;/div&gt;
   &lt;/a&gt;
 
 
 &lt;/div&gt;
-&lt;/html&gt;
-
-The old forums are down, we are aware, and are working on a solution.</text>
-      <sha1>e3gxz51ezbx3rzzn93wwftem8sgnnf4</sha1>
+&lt;/html&gt;</text>
+      <sha1>juvysq5gyz2gd2id6136kco4kverbtn</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -60919,14 +60841,14 @@ The old forums are down, we are aware, and are working on a solution.</text>
     <ns>10</ns>
     <id>875</id>
     <revision>
-      <id>5769</id>
-      <parentid>5617</parentid>
-      <timestamp>2014-02-27T12:00:01Z</timestamp>
+      <id>6205</id>
+      <parentid>5769</parentid>
+      <timestamp>2014-03-02T02:09:00Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="3705">Donations are used to allow Whonix developer Patrick Schleizer to work full time on Whonix and to pay for whonix.org server cost. Small monthly donations are preferred. Please consider donating 1 $ or € per month using a standing order. With enough small monthly donations, this will be possible.
+      <text xml:space="preserve" bytes="3685">Donations are used to allow Whonix developer Patrick Schleizer to work full time on Whonix and to pay for whonix.org server cost. Small monthly donations are preferred. Please consider recurring donation of 1 $ or €. With enough small monthly donations, this will be possible.
 
 &lt;!-------------------------bank wire, PayPal------------------------&gt;
 {|style=&quot;border-spacing:8px; margin:0px -8px;&quot;
@@ -61004,7 +60926,7 @@ Please get in [[Contact#For_Donations|Contact]] if you would like to donate but 
 Donations aren't tax-deducible, because Whonix isn't a (non-profit) company yet.
 
 To leave feedback, you could join the [https://www.whonix.org/forum/index.php/topic,76.0.html Forum Discussion about Donations].</text>
-      <sha1>a9k7pwsnem6tm8od88z5v5ar05uye08</sha1>
+      <sha1>c83hb319o7yp8y01466o7ga0ong20n3</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -63786,6 +63708,112 @@ Happy browsing!
 
 [[Category:Documentation]]</text>
       <sha1>mdcj0m4kou5m86m6n4vga06n5gh85d1</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Dev/AppArmor</title>
+    <ns>0</ns>
+    <id>967</id>
+    <revision>
+      <id>6188</id>
+      <timestamp>2014-03-01T23:26:00Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;{{Header}}  {{Footer}}&quot;</comment>
+      <text xml:space="preserve" bytes="22">{{Header}}
+
+{{Footer}}</text>
+      <sha1>cqacdx6a8fi72i7nstmmasxqx0c5f29</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Verifiable Builds Comparsion Table</title>
+    <ns>10</ns>
+    <id>968</id>
+    <revision>
+      <id>6199</id>
+      <timestamp>2014-03-02T00:51:24Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;{| class=&quot;wikitable&quot; style=&quot;text-align: center; background-color: #fff&quot; |- style=&quot;background-color: #f9f9f9&quot; | style=&quot;height: 30px;width:220px&quot;| | '''Whonix''' | '''Tails''' |...&quot;</comment>
+      <text xml:space="preserve" bytes="7770">{| class=&quot;wikitable&quot; style=&quot;text-align: center; background-color: #fff&quot;
+|- style=&quot;background-color: #f9f9f9&quot;
+| style=&quot;height: 30px;width:220px&quot;|
+| '''Whonix'''
+| '''Tails'''
+| '''Tor Browser'''
+| '''Qubes OS TorVM'''
+| '''corridor'''
+|-
+| style=&quot;height: 27px;background-color: #f9f9f9&quot;| {{Code2|Deterministic Builds}}&lt;ref name=deterministic&gt;
+Open Source does not automagically prevent [https://en.wikipedia.org/wiki/Backdoor_%28computing%29 backdoors], unless the user creates its own binaries from source code itself. The ones who compile, upload and distribute (also the webhost) the binaries could add a {{Code2|hidden code}} without publishing the backdoor code. Nothing prevents one to claim, that a certain binary has been built from a clean source code, while the binary was actually built by the source code plus the backdoor code. Also the ones who may have infected the build machine with a backdoor are in position to add a backdoor without the distributor being aware of it.
+
+Deterministic builds can detect backdoors. For more information on deterministic builds and why this is important, see:
+
+* [https://mailman.stanford.edu/pipermail/liberationtech/2013-June/009257.html liberationtech mailing list: Deterministic builds and software trust]
+* [http://gitian.org/ gitian.org]
+* Quote Mike Perry: {{Code|Current popular software development practices simply cannot survive targeted attacks of the scale and scope that we are seeing today.}} Source: [https://blog.torproject.org/blog/deterministic-builds-part-one-cyberwar-and-global-compromise Deterministic Builds Part One: Cyberwar and Global Compromise]
+* [https://wiki.debian.org/ReproducibleBuilds Debian wiki about their progress and development efforts to implement Reproducible Builds]
+&lt;/ref&gt;
+| {{No}}
+| {{No}}
+| {{Yes}} &lt;ref&gt;See [https://blog.torproject.org/blog/deterministic-builds-part-one-cyberwar-and-global-compromise Deterministic Builds Part One: Cyberwar and Global Compromise] and [https://blog.torproject.org/blog/deterministic-builds-part-two-technical-details Deterministic Builds Part Two: Technical Details].&lt;/ref&gt;
+| {{No}}
+| {{BlueBackground}} Not applicable. &lt;ref name=justshellscripts&gt;Just shell scripts.&lt;/ref&gt;
+|-
+| style=&quot;height: 27px;background-color: #f9f9f9&quot;| Based on a {{Code2|Deterministically Built}}&lt;ref name=deterministic /&gt; Operating System
+| {{No}} &lt;ref name=deterministicoperatingsystem&gt;To be fair, there are no deterministically built operating system yet. It would take lots of effort to create one and its far from easy. When you search through the websites / mailing list archives of Open Source operating systems, you notice, that there is not even yet awareness of this issue.&lt;/ref&gt;
+| {{No}} &lt;ref name=deterministicoperatingsystem /&gt;
+| {{No}} &lt;ref name=deterministicoperatingsystem /&gt;
+| {{No}} &lt;ref name=deterministicoperatingsystem /&gt;
+| {{No}} &lt;ref name=deterministicoperatingsystem /&gt;
+|-
+| style=&quot;height: 27px;background-color: #f9f9f9&quot;| Verifiably no backdoor in the project's own source code
+| {{BlueBackground}} Invalid &lt;ref name=nobackdoorterminlogy&gt;
+A [https://en.wikipedia.org/wiki/Backdoor_(computing) backdoor] can either be a [https://en.wikipedia.org/wiki/Vulnerability_(computing) vulnerability] as in a bug in the source code. Vulnerabilities can get introduced by accident (human error) or on purpose. Once the software has been deployed and the vulnerability has been found, it might happen, that an attacker uses an [https://en.wikipedia.org/wiki/Exploit_(computer_security) exploits] to gain unauthorized access. [http://security.stackexchange.com/questions/42318/hiding-backdoors-in-open-source-code-in-other-languages-than-c-and-c Such vulnerabilities (or purposely planted backdoors) can, with cleverness, be planted in Open Source code plain sight, while being very difficult and unlikely to be spotted by people looking at the code.] Examples:
+
+* [https://lwn.net/Articles/57135/ An attempt to backdoor the kernel].
+* Some argued, the [http://www.theregister.co.uk/2008/05/21/massive_debian_openssl_hangover/ Debian SSL debacle], wasn't a bug, but a backdoor (no one has spot vulnerability in the source code for years!).
+
+Another form of a backdoor is adding the full code (or binary) of [https://en.wikipedia.org/wiki/Trojan_horse_(computing) trojan horse] (computer virus) to the binary build, while not publishing the extra source code and keeping that secret code. The latter, can only be detected with {{Code2|Deterministic Builds}}, which are discussed above.
+&lt;br /&gt;
+Therefore it is impossible to claim that non-trivial source code is backdoor free, because a backdoors can be hidden as vulnerabilities. Auditors scrutinizing the source code can only state their opinion about the quality of the source code and eventually report a vulnerability. It can only be reasonably easily checked, if the source code is free of computer viruses (for example, trojan horses), not backdoors.
+&lt;/ref&gt;
+| {{BlueBackground}} Invalid &lt;ref name=nobackdoorterminlogy /&gt;
+| {{BlueBackground}} Invalid &lt;ref name=nobackdoorterminlogy /&gt;
+| {{BlueBackground}} Invalid &lt;ref name=nobackdoorterminlogy /&gt;
+| {{BlueBackground}} Invalid &lt;ref name=nobackdoorterminlogy /&gt;
+|-
+| style=&quot;height: 27px;background-color: #f9f9f9&quot;| Verifiably {{Code2|vulnerability}}&lt;ref&gt;https://en.wikipedia.org/wiki/Vulnerability_(computing)&lt;/ref&gt; free
+| {{No}} &lt;ref name=nobugfree&gt;Although possible (in theory?), there are no mathematically proven [http://www.drdobbs.com/cpp/100-verifiable-bug-free-code-is-possible/228701189 bug free] operating systems yet.&lt;/ref&gt;
+| {{No}} &lt;ref name=nobugfree /&gt;
+| {{No}} &lt;ref name=nobugfree /&gt;
+| {{No}} &lt;ref name=nobugfree /&gt;
+| {{No}} &lt;ref name=nobugfree /&gt;
+|-
+| style=&quot;height: 27px;background-color: #f9f9f9&quot;| Verifiably no {{Code2|hidden source code}}&lt;ref name=hidden-source-code&gt;Hidden source code is defined as code, which gets added by an adversary, who compromised a build machine or by the person who builds (compiled) a binary builds before building the binary build. The secret source code will not be published and it will look like (or claimed) that the software was built from the source code, which has been published. The most reliable method to detect such hidden code (added on purpose or due to build machine compromise) is to compare {{Code2|Deterministic Builds}}, which are discussed above. (Other methods, such watching the traffic, only have good chances to spot a backdoor, when the backdoor is used in many cases. Even less likely backdoors are found through [https://en.wikipedia.org/wiki/Reverse_engineering reverse engineering], because very few people are using a [https://en.wikipedia.org/wiki/Disassembler disassembler].&lt;/ref&gt; in {{Code2|upstream distribution/binaries}}&lt;ref name=upstreamdistribution&gt;The upstream distribution is the distribution on which the project is based on. Whonix and Tails are based on Debian, thus Debian is their upstream distribution. QubesOS TorVM is based on Qubes OS, which itself is based on Fedora and Xen.&lt;/ref&gt;
+| {{No}} &lt;ref name=upstream-distro-no-hidden-code&gt;No, since the upstream software is not {{Code2|deterministically built}}. See above to learn about {{Code2|Deterministic Builds}}.&lt;/ref&gt;
+| {{No}} &lt;ref name=upstream-distro-no-hidden-code /&gt;
+| {{No}} &lt;ref name=upstream-distro-no-hidden-code /&gt;
+| {{No}} &lt;ref name=upstream-distro-no-hidden-code /&gt;
+| {{No}} &lt;ref name=upstream-distro-no-hidden-code /&gt;
+|-
+| style=&quot;height: 27px;background-color: #f9f9f9&quot;| Project's binary builds verifiably created from project's own source code (no {{Code2|hidden source code}}&lt;ref name=hidden-source-code /&gt; in the project's own source code)
+| {{Yes}} &lt;ref&gt;See [[Trust#Verifiable Builds]].&lt;/ref&gt;
+| {{No}}
+| {{Yes}}
+| ?
+| {{BlueBackground}} Not applicable. &lt;ref name=justshellscripts /&gt;
+|}</text>
+      <sha1>iwwd9y1n6f713g95te0rfjdrp2hwlwv</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
