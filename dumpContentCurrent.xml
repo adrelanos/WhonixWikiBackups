@@ -25,6 +25,12 @@
       <namespace key="13" case="first-letter">Help talk</namespace>
       <namespace key="14" case="first-letter">Category</namespace>
       <namespace key="15" case="first-letter">Category talk</namespace>
+      <namespace key="102" case="first-letter">Property</namespace>
+      <namespace key="103" case="first-letter">Property talk</namespace>
+      <namespace key="104" case="first-letter">Type</namespace>
+      <namespace key="105" case="first-letter">Type talk</namespace>
+      <namespace key="108" case="first-letter">Concept</namespace>
+      <namespace key="109" case="first-letter">Concept talk</namespace>
       <namespace key="828" case="first-letter">Module</namespace>
       <namespace key="829" case="first-letter">Module talk</namespace>
       <namespace key="1198" case="first-letter">Translations</namespace>
@@ -36,9 +42,9 @@
     <ns>0</ns>
     <id>1</id>
     <revision>
-      <id>6268</id>
-      <parentid>6208</parentid>
-      <timestamp>2014-03-03T15:35:23Z</timestamp>
+      <id>6284</id>
+      <parentid>6283</parentid>
+      <timestamp>2014-03-04T15:29:39Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
@@ -23523,14 +23529,14 @@ Resolve DNS.
     <ns>8</ns>
     <id>220</id>
     <revision>
-      <id>6144</id>
-      <parentid>6143</parentid>
-      <timestamp>2014-03-01T22:07:19Z</timestamp>
+      <id>6288</id>
+      <parentid>6287</parentid>
+      <timestamp>2014-03-04T15:59:26Z</timestamp>
       <contributor>
-        <username>Fortasse</username>
-        <id>1</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="39297">/* CSS placed here will be applied to all skins */
+      <text xml:space="preserve" bytes="39332">/* CSS placed here will be applied to all skins */
 /* Default styling for HTML elements */
 
  body.page-No_page_title h1.firstHeading, body.page-Main_Page h1.firstHeading
@@ -24948,8 +24954,12 @@ table#mw-prefixindex-nav-table {
 pre
 {
 white-space:pre-line;
+}
+
+#p-logo {
+        display:none;
 }</text>
-      <sha1>kk3e1yqq9guw8vnjxefu9qiv8u2ipwd</sha1>
+      <sha1>3y001m4e9xnz7671r1i5bpbwyoreg3v</sha1>
       <model>css</model>
       <format>text/css</format>
     </revision>
@@ -60830,9 +60840,9 @@ The following AppArmor profile is still experimental. The worst thing that can h
     <ns>8</ns>
     <id>870</id>
     <revision>
-      <id>6189</id>
-      <parentid>6186</parentid>
-      <timestamp>2014-03-02T00:04:17Z</timestamp>
+      <id>6285</id>
+      <parentid>6189</parentid>
+      <timestamp>2014-03-04T15:48:47Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
@@ -60865,7 +60875,7 @@ The following AppArmor profile is still experimental. The worst thing that can h
  left: 15px;
  background-image: url(/w/images/d/d0/Donate50.png);
  height: 50px;
- width: 50px;
+ width: 100%;
  background-repeat: no-repeat;
 }
 
@@ -60893,7 +60903,7 @@ Please consider a recurring donation!&lt;/translate&gt;
 
 &lt;/div&gt;
 &lt;/html&gt;</text>
-      <sha1>juvysq5gyz2gd2id6136kco4kverbtn</sha1>
+      <sha1>p21ak4gtb7rcnmw8gxyb3paj9fq2qdd</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -61413,15 +61423,15 @@ sudo rm -fR /var/lib/apt/lists/*
     <ns>0</ns>
     <id>891</id>
     <revision>
-      <id>6258</id>
-      <parentid>6257</parentid>
-      <timestamp>2014-03-03T08:45:38Z</timestamp>
+      <id>6290</id>
+      <parentid>6289</parentid>
+      <timestamp>2014-03-04T22:59:51Z</timestamp>
       <contributor>
         <username>Troubadour</username>
         <id>230</id>
       </contributor>
-      <comment>Denied '/usr/share/fontconfig/'</comment>
-      <text xml:space="preserve" bytes="12042">{{Header}}
+      <comment>Reoganized. Added a local profile.</comment>
+      <text xml:space="preserve" bytes="11929">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
@@ -61449,6 +61459,8 @@ Paste the following content.
 	#include &lt;abstractions/bash&gt;
 	#include &lt;abstractions/fonts&gt;
 	
+	#include &lt;local/home.user.tor-browser_en-US.Browser.firefox&gt;
+	
 	capability sys_ptrace,
 
 	deny /etc/host.conf r,
@@ -61458,42 +61470,11 @@ Paste the following content.
 	deny /etc/passwd r,
 	deny /etc/resolv.conf.whonix r,
 	deny /etc/hosts.whonix r,
-	deny @{PROC}/[0-9]*/mounts r,
-	deny @{PROC}/[0-9]*/mountinfo r,
-	deny @{HOME}/.config/user-dirs.dirs r,
-	deny @{HOME}/.gtk-bookmarks r,
-	deny @{HOME}/.local/share/recently-used.xbel* rw,
-	deny owner @{HOME}/.local/share/gvfs-metadata/home r,
-	deny owner @{HOME}/.cache/ rw,
-	deny owner @{HOME}/.cache/* rw,
-	deny owner @{HOME}/.kde/share/config/gtkrc-2.0 rw,
-	deny owner @{HOME}/.kde/share/config/kdeglobals rw,
-	deny owner @{HOME}/.config/oxygen-gtk/argb-apps.conf rw,
-	deny /usr/share/applications/** r,
-        deny /usr/share/fontconfig/conf.avail/* r,
 
-	#######################################
-	deny /etc/gnome-vfs-2.0/modules/ rw,	
-	deny /etc/gnome-vfs-2.0/modules/* rw,	
-	#######################################
-
-	/bin/dash rix,
-	/bin/open rix,
-	/bin/ps rix,
-	
-	/dev/dri/card0 rw,
-	/dev/vboxuser rw,
-	/dev/tty r,
-
-	/etc/drirc r,
-	/etc/X11/cursors/* r,
-	/etc/mime.types r,
-	/etc/mailcap r,
-	/etc/pkcs11/modules/ r,
-	/etc/pkcs11/modules/* r,
-	
 	owner @{HOME}/tor-browser_en-US/ r,
 	owner @{HOME}/tor-browser_en-US/* rw, 
+	owner @{HOME}/tor-browser_en-US/.cache/ r,
+	owner @{HOME}/tor-browser_en-US/.cache/* rw, 
 	owner @{HOME}/tor-browser_en-US/.mozilla/ w,
 	owner @{HOME}/tor-browser_en-US/.mozilla/*/ w,
 	owner @{HOME}/tor-browser_en-US/Browser/** r,
@@ -61509,19 +61490,24 @@ Paste the following content.
 	owner @{HOME}/tor-browser_en-US/Downloads/** rw,
 	owner @{HOME}/tor-browser_en-US/Tor/tor Px,
 
-	/sys/devices/system/cpu/ r,
-	/sys/devices/system/cpu/* r,
-
-	/tmp/.X0-lock r,
-
-	## Looks like a nvidia audio driver.
-	deny /usr/lib/i386-linux-gnu/dri/swrast_dri.so m,
-
-	## Alphabets libraries (32bit).
-	/usr/lib/i386-linux-gnu/pango/1.6.0/modules/* m,
-
-	/usr/lib/i386-linux-gnu/pkcs11/* m,
-	/usr/bin/kde4-config rix,
+	owner @{HOME}/ r,
+	owner @{HOME}/Desktop r,	
+	owner @{HOME}/Downloads/ r,	
+	owner @{HOME}/Downloads/** rw,
+	owner @{HOME}/.kde/share/** rw,
+	owner @{HOME}/.local/share/ r,
+	owner @{HOME}/.local/share/applications/* r,
+	owner @{HOME}/.local/share/mime/ r,
+	owner @{HOME}/.local/share/mime/** r,
+	owner @{HOME}/.local/share/gvfs-metadata/home r,
+	owner @{HOME}/.local/share/recently-used.xbel* rw,
+	owner @{HOME}/.themes/** r,
+	owner @{HOME}/.cache/ r,
+	owner @{HOME}/.cache/* rwk,
+	owner @{HOME}/.config/oxygen-gtk/argb-apps.conf rw,
+	owner @{HOME}/.config/user-dirs.dirs r,
+	owner @{HOME}/.gtk-bookmarks r,
+	owner @{HOME}/.Xauthority r,
 	
 	/usr/share/ r,
 	/usr/share/icons/ r,
@@ -61534,27 +61520,29 @@ Paste the following content.
 	/usr/share/themes/** r,
 	/usr/share/kde4/config/kdeglobals r,
 	/usr/share/whonix/kde/share/config/kdeglobals r,
-
-	/var/lib/dbus/machine-id r,
-
-	## In 'Edit/Preferences', set 'Saves files to' -&gt; 'Downloads'.	
-	owner @{HOME}/Downloads/* rw,
-
-	owner @{HOME}/.Xauthority r,
-
-	owner @{HOME}/.local/share/ r,
-	owner @{HOME}/.local/share/applications/mimeinfo.cache r,
-	owner @{HOME}/.local/share/mime/ r,
-	owner @{HOME}/.local/share/mime/** r,
-	owner @{HOME}/.local/share/applications/mimeapps.list r,
-	owner @{HOME}/.icons/ r,
-	owner @{HOME}/.icons/** r,
-	owner @{HOME}/.local/share/icons/ r,
-	owner @{HOME}/.themes/** r,
+	/usr/share/applications/** r,
+ 	/usr/share/alsa/alsa.conf r,
+ 	
+ 	/etc/drirc r,
+	/etc/X11/cursors/* r,
+	/etc/mime.types r,
+	/etc/mailcap r,
+	/etc/pkcs11/modules/ r,
+	/etc/pkcs11/modules/* r,
 	
+	/bin/dash rix,
+	/bin/open rix,
+	/bin/ps rix,
+	
+	/dev/dri/card0 rw,
+	/dev/vboxuser rw,
+	/dev/tty r,
+
 	@{PROC} r,
 	@{PROC}/[0-9]*/maps r,
 	@{PROC}/tty/drivers r,
+	@{PROC}/[0-9]*/mounts r,
+	@{PROC}/[0-9]*/mountinfo r,
 	@{PROC}/[0-9]*/stat r,
 	@{PROC}/[0-9]*/status r,
 	@{PROC}/[0-9]*/task/*/stat r,
@@ -61566,13 +61554,37 @@ Paste the following content.
 	@{PROC}/stat r,
 	@{PROC}/sys/kernel/pid_max r,
 	@{PROC}/uptime r,
+
+	/sys/devices/system/cpu/ r,
+	/sys/devices/system/cpu/* r,
+
+	/tmp/.X0-lock r,
+
+	/usr/bin/kde4-config rix,
+	
+	/usr/lib/i386-linux-gnu/** mr,
+	
+	/var/lib/dbus/machine-id r,
+	/var/lib/whonix/whonixblog/ r,	
 }
 &lt;/pre&gt;
 
-Run
+Create a file /etc/apparmor.d/local/home.user.tor-browser_en-US.Browser.firefox.
+
 &lt;pre&gt;
-sudo aa-enforce /etc/apparmor.d/home.user.tor-browser_en-US.Browser.firefox
+kdesudo kwrite /etc/apparmor.d/local/home.user.tor-browser_en-US.Browser.firefox
 &lt;/pre&gt;
+
+Paste the following content.
+&lt;pre&gt;
+/etc/gnome-vfs-2.0/modules/ r,
+/etc/gnome-vfs-2.0/modules/* r,
+
+/usr/share/fontconfig/conf.avail/* r,
+/usr/share/poppler/cMap/Adobe-Korea1/ r,
+/usr/share/poppler/cMap/Adobe-Korea1/* r,
+&lt;/pre&gt;
+
 
 [https://www.whonix.org/forum/index.php?action=profile;u=24 troubadour] created this profile. You can discuss it in this [http://kkkkkkkkkk63ava6.onion/forum/index.php/topic,97.0.html forum thread].
 
@@ -61874,7 +61886,7 @@ Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/A
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>avuz5tzote9sn2t4vctt687bv9pkesn</sha1>
+      <sha1>13zoyyhxd6xw5rixyh30aa8q02jpow0</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
