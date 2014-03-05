@@ -2979,14 +2979,14 @@ Without performing these basics steps, the setup may sound clever, but may not w
     <ns>0</ns>
     <id>58</id>
     <revision>
-      <id>5570</id>
-      <parentid>4758</parentid>
-      <timestamp>2014-02-22T02:50:35Z</timestamp>
+      <id>6294</id>
+      <parentid>6293</parentid>
+      <timestamp>2014-03-04T23:41:00Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="1962">{{#seo:
+      <text xml:space="preserve" bytes="2236">{{#seo:
 |description=Contact Whonix developers and whonix.org webmaster. Press contact.
 }}
 {{Header}}
@@ -3000,37 +3000,44 @@ For anything else:
 See [[Support]].
 
 == For developers ==
-&lt;html&gt;&lt;a href=&quot;/cgi-bin/mailman/listinfo/whonix-devel&quot;&gt;Developer Mailing List&lt;/a&gt;&lt;/html&gt;
+* [https://www.whonix.org/forum/index.php/board,5.0.html Development Forum]
+* &lt;html&gt;&lt;a href=&quot;/cgi-bin/mailman/listinfo/whonix-devel&quot;&gt;Developer Mailing List&lt;/a&gt;&lt;/html&gt;
+* [https://github.com/Whonix/Whonix/issues Github]
 
 == For Press ==
-'''Email:''' ''adrelanos@riseup.net'' &lt;ref name=OpenPGP&gt;E-mail encryption available. [[Trusting Whonix Signing Key | Whonix OpenPGP key information]]&lt;/ref&gt;
+Contact Whonix Developer Patrick Schleizer.
 
+* '''e-mail''': ''[mailto:adrelanos@riseup.net adrelanos@riseup.net]''
+* gpg: &lt;html&gt;&lt;a class=&quot;link-https&quot; href=&quot;/patrick.asc&quot;&gt;patrick.asc&lt;/a&gt;&lt;/html&gt; &lt;br /&gt;
+&lt;br /&gt;
 I would appreciate if you could send me your draft before publishing articles about Whonix. This is not a request. It's an offer. I would proofread it, state where I think something is incorrect and add sources to my claims. I dislike to pressure press. You are free to write what you want. I feel free to post my standpoint in public if I feel otherwise about something.
 
 == For Donations ==
-'''[[Donate]]''' &lt;br /&gt;&lt;br /&gt;
-'''Email:''' ''adrelanos@riseup.net'' &lt;ref name=OpenPGP /&gt;
+See '''[[Donate]]''' page. &lt;br /&gt;&lt;br /&gt;
+Contact Whonix Developer Patrick Schleizer.
+
+* '''e-mail''': ''[mailto:adrelanos@riseup.net adrelanos@riseup.net]''
+* gpg: &lt;html&gt;&lt;a class=&quot;link-https&quot; href=&quot;/patrick.asc&quot;&gt;patrick.asc&lt;/a&gt;&lt;/html&gt; &lt;br /&gt;
 
 == For Private Inquiries ==
-Is it really a private inquiry? Please double check, if any of the [[Support]] places is applicable. '''No support for questions which could be asked in public places as well!'''
+Contact Whonix Developer Patrick Schleizer.
 
-'''Email:''' ''adrelanos@riseup.net'' &lt;ref name=OpenPGP /&gt;
+* '''e-mail''': ''[mailto:adrelanos@riseup.net adrelanos@riseup.net]''
+* gpg: &lt;html&gt;&lt;a class=&quot;link-https&quot; href=&quot;/patrick.asc&quot;&gt;patrick.asc&lt;/a&gt;&lt;/html&gt; &lt;br /&gt;
 
 == For website issues ==
 Requests for permissions, bug reports, or other website related communications:
 
-'''Email:''' fortasse at riseup dot net &lt;ref&gt;&lt;html&gt;&lt;a class=&quot;link-https&quot; href=&quot;/fortasse.asc&quot;&gt;OpenPGP key&lt;/a&gt;&lt;/html&gt;&lt;/ref&gt;
+* '''e-mail:''' ''fortasse at riseup dot net''
+* gpg: &lt;html&gt;&lt;a class=&quot;link-https&quot; href=&quot;/fortasse.asc&quot;&gt;fortasse.asc&lt;/a&gt;&lt;/html&gt; &lt;br /&gt;
 
 == Social Media ==
 There are some [[Official Whonix Online Profiles | Whonix Social Media Profiles]], but please don't rely on them for getting Whonix News and please don't use them to contact Whonix developers.
 
 If you don't get into trouble, by letting others to know, that you like or use Whonix, feel free to follow or like those profiles (with your anonymous account) as a little way to [[Contribute]].
 
-== Footnotes ==
-&lt;references/&gt;
-
 [[Category:Documentation]]</text>
-      <sha1>s8ugf8x83d4m13wl75rg4b70vkk7ziy</sha1>
+      <sha1>ayrtne00r85an59vtagvmpq104rl9zo</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -40105,20 +40112,19 @@ Sourceforge support, ctsai-sf on freenode in #sourceforge said, they use GeoIP f
     <ns>0</ns>
     <id>374</id>
     <revision>
-      <id>6281</id>
-      <parentid>6237</parentid>
-      <timestamp>2014-03-03T21:55:40Z</timestamp>
+      <id>6291</id>
+      <parentid>6281</parentid>
+      <timestamp>2014-03-04T23:17:35Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* License */</comment>
-      <text xml:space="preserve" bytes="401">__NOTOC__
+      <text xml:space="preserve" bytes="412">__NOTOC__
+__NOTITLE__
 {{Header}}
 {{#seo:
 |description=Donating one dollar per month using a standing order will help to found Whonix in the long term. Donate today!
 }}
-
 {{Donate}}
 
 = License =
@@ -40127,7 +40133,7 @@ The PayPal logo (60px-De-pp-logo-200px.png), the subscribe button (subscribeCC_L
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>89lgbj8c259gj51q6lfun8eun57rdbd</sha1>
+      <sha1>63ijjqhrc6ubsdtpqmgm1frdvq8oqty</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -60967,14 +60973,14 @@ Please consider a recurring donation!&lt;/translate&gt;
     <ns>10</ns>
     <id>875</id>
     <revision>
-      <id>6280</id>
-      <parentid>6278</parentid>
-      <timestamp>2014-03-03T21:52:44Z</timestamp>
+      <id>6299</id>
+      <parentid>6297</parentid>
+      <timestamp>2014-03-05T00:06:31Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="3934">__NOTOC__
+      <text xml:space="preserve" bytes="3994">__NOTOC__
 Donations are used to allow Whonix developer Patrick Schleizer to work full time on Whonix and to pay for whonix.org server cost. Small monthly donations are preferred. Please consider recurring donation of 1 $ or €. With enough small monthly donations, this will be possible.
 
 &lt;!-------------------------bank transfer, PayPal------------------------&gt;
@@ -61008,6 +61014,7 @@ Ask [mailto:patrick_schleizer@web.de Patrick Schleizer] if available.
 &lt;pre&gt;
 patrick_schleizer@web.de
 &lt;/pre&gt;
+(&lt;html&gt;&lt;a class=&quot;link-https&quot; href=&quot;/patrick.asc&quot;&gt;gpg&lt;/a&gt;&lt;/html&gt;)
 |-
 
 |-
@@ -61030,14 +61037,14 @@ bitcoin:1JgzCCSox56Sh4NnQJqRiwoxKi8oVSZBEd
 &lt;/pre&gt;
 
 |-
-! &lt;h3 style=&quot;margin:0; background:#cedff2; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;[[File:Litecoin_Accepted_Here.png|120px|alt=Litecoin accepted here|link=litecoin:LW3wgQtZhtR2G5Uv48rSzonFd1arhUfjE9ff]]&lt;/h3&gt;
+! &lt;h3 style=&quot;margin:0; background:#cedff2; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;[[File:Litecoin_Accepted_Here.png|120px|alt=Litecoin accepted here|link=litecoin:LW3wgQtZhtR2G5Uv48rSzonFd1arhUfjE9]]&lt;/h3&gt;
 |-
-|style=&quot;color:#000;&quot;| 
+|style=&quot;color:#000;&quot;|
+litecoin:LW3wgQtZhtR2G5Uv48rSzonFd1arhUfjE9
 &lt;pre&gt;
 LW3wgQtZhtR2G5Uv48rSzonFd1arhUfjE9
 &lt;/pre&gt;
 
-litecoin:LW3wgQtZhtR2G5Uv48rSzonFd1arhUfjE9ff
 |-
 |}
 |}
@@ -61051,7 +61058,7 @@ Please get in [[Contact#For_Donations|Contact]] if you would like to donate but 
 Donations aren't tax-deducible, because Whonix isn't a (non-profit) company yet.
 
 To leave feedback, you could join the [https://www.whonix.org/forum/index.php/topic,76.0.html Forum Discussion about Donations].</text>
-      <sha1>9tkd9zriredjbln4xl7ore9m3ma86sn</sha1>
+      <sha1>rapwuwpzsi1l26c252o75xz2ey7fufi</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -61423,21 +61430,153 @@ sudo rm -fR /var/lib/apt/lists/*
     <ns>0</ns>
     <id>891</id>
     <revision>
-      <id>6290</id>
-      <parentid>6289</parentid>
-      <timestamp>2014-03-04T22:59:51Z</timestamp>
+      <id>6300</id>
+      <parentid>6298</parentid>
+      <timestamp>2014-03-05T10:26:07Z</timestamp>
       <contributor>
         <username>Troubadour</username>
         <id>230</id>
       </contributor>
-      <comment>Reoganized. Added a local profile.</comment>
-      <text xml:space="preserve" bytes="11929">{{Header}}
+      <comment>Typo edit</comment>
+      <text xml:space="preserve" bytes="14869">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
 __FORCETOC__
 = Introduction =
 The following AppArmor profiles are currently under evaluation with Whonix 8. When considered sufficiently tested, they will be checked for backward compatibility with Whonix 7.
+
+= VirtualBox =
+{{AppArmorProfileWarning}}
+
+This profile has to be used in the host. It is tested with VirtualBox 4.3 (4.3_4.3.8-92456~Debian~wheezy_amd64), no other versions. If you build a Whonix image, it will install VirtualBox 4.1. Please report any message you might see in the forum https://www.whonix.org/forum/index.php/topic,97.0.html 
+
+In the host, create a file /etc/apparmor.d/usr.bin.VBox.
+
+&lt;pre&gt;
+kdesudo kwrite /etc/apparmor.d/usr.bin.VBox
+&lt;/pre&gt;
+
+Paste the following content.
+
+&lt;pre&gt;
+#include &lt;tunables/global&gt;
+
+/usr/bin/VBox {
+	#include &lt;abstractions/base&gt;
+	#include &lt;abstractions/bash&gt;
+	#include &lt;abstractions/fonts&gt;	
+	#include &lt;abstractions/audio&gt;  	
+
+	capability net_admin, 
+	capability net_raw,
+	capability sys_ptrace,
+
+	owner @{HOME}/ r,
+	owner @{HOME}/* r,    # Check. Files denied.
+	owner @{HOME}/.ICEauthority r,
+	owner @{HOME}/.Xauthority r,
+	owner @{HOME}/.config/** r,
+	owner @{HOME}/.config/VirtualBox/** rw,
+	owner @{HOME}/.config/Trolltech.conf rk,
+	owner @{HOME}/.local/share/mime/* r,			
+	owner @{HOME}/.gtk-bookmarks r,
+	owner @{HOME}/.VirtualBox/ r,
+	owner @{HOME}/.VirtualBox/* rw,
+	owner @{HOME}/Documents/ r,
+	owner @{HOME}/Documents/** r,
+	owner @{HOME}/Desktop/ r,
+	owner @{HOME}/Desktop/** rw,
+	owner @{HOME}/.local/share/recently-used.xbel* rw,
+	
+	## Disk images (ISO, OVF/OVA...) directory. Create.
+	owner @{HOME}/Disk_Images/ r,	
+	owner @{HOME}/Disk_Images/* r,
+	
+	## Default Virtual Machine directory.
+	owner &quot;@{HOME}/VirtualBox VMs/&quot; r,
+	owner &quot;@{HOME}/VirtualBox VMs/**&quot; rw,
+	
+	## Shared folders. Replace with your own host share.
+	owner @{HOME}/share/ r,
+	owner @{HOME}/share/* rw,
+
+	/bin/dash rix,
+	/bin/kmod rix,
+	/bin/grep rix,
+	/bin/uname rix,
+	/bin/cat rix,
+	/bin/gawk rix,
+	/bin/ps rix,
+	/bin/rm rix,		
+	
+	/dev/dri/card0 rw,
+	/dev/vboxdrv rw,
+	/dev/vboxdrvu rw,
+	/dev/tty r,
+
+	/etc/nsswitch.conf r,
+	/etc/passwd r,
+	/etc/resolv.conf r,
+	/etc/fstab r,
+	/etc/drirc r,
+	/etc/xdg/** r,
+
+	/usr/lib/virtualbox/** mrcux,
+	/usr/lib/x86_64-linux-gnu/** mrix,
+	
+	@{PROC}/ r,
+	@{PROC}/cmdline r,
+	@{PROC}/[0-9]*/cmdline r,
+	@{PROC}/modules r,
+	@{PROC}/net r,
+	@{PROC}/[0-9]*/net/** r,
+	@{PROC}/[0-9]*/stat r,
+	@{PROC}/[0-9]*/status r,
+	@{PROC}/[0-9]*/fd r,
+	@{PROC}/uptime r,
+	@{PROC}/tty/drivers r,
+	@{PROC}/sys/kernel/pid_max r,
+		
+	/run/gdm3/** r,
+	
+	/sys/devices/pci0000:00/** r,
+	/sys/devices/virtual/** r,
+	/sys/devices/system/cpu/** r,
+	/sys/devices/LNXSYSTM:00/LNXSYBUS:00/** r,
+	/sys/module/** r,	
+	/sys/block/ r,
+	/sys/class/** r,	
+
+	owner /tmp/** rw,
+	
+	/usr/bin/VBox rix,
+	/usr/bin/whoami	rix,
+	/usr/bin/basename rix,
+	/usr/bin/ps rix,
+	/usr/bin/gawk rix,
+	/usr/bin/mawk rix,
+	
+	/usr/share/themes/** r,
+	/usr/share/icons/ r,	
+	/usr/share/icons/** rk,	
+	/usr/share/mime/ r,
+	/usr/share/mime/** r,
+	/usr/share/pixmaps/ r,
+	/usr/share/pixmaps/** r,
+	/usr/share/gvfs/** r,
+	/usr/share/virtualbox/** r,
+
+	/var/lib/dbus/machine-id r,
+}
+&lt;/pre&gt;
+
+Run
+&lt;pre&gt;
+sudo aa-enforce /etc/apparmor.d/usr.bin.VBox
+&lt;/pre&gt;
+
+[https://www.whonix.org/forum/index.php?action=profile;u=24 troubadour] created this profile. You can discuss it in this [http://kkkkkkkkkk63ava6.onion/forum/index.php/topic,97.0.html forum thread].
 
 = Tor Browser Bundle (TBB) =
 {{AppArmorProfileWarning}}
@@ -61605,129 +61744,134 @@ Paste the following content.
 #include &lt;tunables/global&gt;
 
 /usr/lib/icedove/icedove {
-  #include &lt;abstractions/base&gt;
-  #include &lt;abstractions/user-tmp&gt;
-  #include &lt;abstractions/bash&gt;
-  #include &lt;abstractions/fonts&gt;
-  
-  capability sys_ptrace,
-  
-  deny / r,
-  deny /etc/host.conf r,
-  deny /etc/hosts r,
-  deny /etc/nsswitch.conf r,
-  deny /etc/passwd r,
-  deny /etc/hosts.whonix r,
-  deny /etc/fstab r,
-  deny owner @{HOME}/Desktop/ r,
-  deny owner @{HOME}/.cache/ rw,
-  deny owner @{HOME}/.cache/** rw,
-  deny owner @{HOME}/.local/share/recently-used.xbel* rw,
-  deny @{HOME}/.local/share/applications/kate-2.desktop r,
-  deny @{PROC}/[0-9]*/mounts r,
-  deny @{PROC}/[0-9]*/mountinfo r,
-  deny /usr/lib/i386-linux-gnu/dri/swrast_dri.so m,
-  deny /usr/share/applications/ rw,
-  deny /usr/share/fontconfig/conf.avail/* r,
-  deny owner @{HOME}/* rw,
-  deny owner @{HOME}/.* rw,
+	#include &lt;abstractions/base&gt;
+	#include &lt;abstractions/user-tmp&gt;
+	#include &lt;abstractions/bash&gt;
+	#include &lt;abstractions/fonts&gt;
 	
-  /bin/dash  rix,
-  /bin/ps rix,
-  /bin/mknod rix,
-  /bin/grep rix,
-  /bin/chmod rix,
-  /bin/mktemp rix,
-  /bin/which rix,
-  
-  /dev/tty rw,
-  /dev/vboxuser rw,
-  /dev/dri/card0 rw,
-  
-  /etc/drirc r,
-  /etc/ld.so.cache r,
-  /etc/resolv.conf r,
-  /etc/resolv.conf.whonix r,
-  /etc/mailcap r, 
-  /etc/icedove/pref/ r,
-  /etc/icedove/pref/* r,
-  /etc/X11/cursors/* r,
-  /etc/mime.types r,
-  /etc/gai.conf r,
-  /etc/whonix.d/ r, 
-  /etc/whonix.d/* r, 
-  
-  /lib/i386-linux-gnu/i686/cmov/libc-2.13.so r,
-  /lib/i386-linux-gnu/libprocps.so.0.0.1 r,
-  
-  owner @{HOME}/ r,	  
-  owner @{HOME}/Downloads/ rw,	
-  owner @{HOME}/Downloads/* rw,	
+	#include &lt;local/usr.lib.icedove.icedove&gt;
+	  
+	capability sys_ptrace,
+	  
+	deny / r,
+	deny /etc/host.conf r,
+	deny /etc/hosts r,
+	deny /etc/nsswitch.conf r,
+	deny /etc/passwd r,
+	deny /etc/hosts.whonix r,
+	deny /etc/fstab r,
+
+	owner @{HOME}/ r,	  
+	owner @{HOME}/Desktop/ r,
+	owner @{HOME}/Downloads/ r,	
+	owner @{HOME}/Downloads/** rw,	
+	owner @{HOME}/.icedove/** mrwk,
+	owner @{HOME}/.kde/share/** rw,
+	owner @{HOME}/.config/oxygen-gtk/argb-apps.conf rw,
+	owner @{HOME}/.local/share/ r,
+	owner @{HOME}/.local/share/applications/* r,
+	owner @{HOME}/.local/share/mime/ r,
+	owner @{HOME}/.local/share/mime/** r,
+	owner @{HOME}/.local/share/recently-used.xbel* rw,
+	owner @{HOME}/.local/share/applications/kate-2.desktop r,
+	owner @{HOME}/.cache/ r,
+	owner @{HOME}/.cache/** rw,
+	owner @{HOME}/.gnupg/* lrwkcix,
+	owner @{HOME}/.Xauthority r,
 	
-  owner @{HOME}/.Xauthority r,
-  owner @{HOME}/.icedove/** mrwk,
-  owner @{HOME}/.kde/share/** rw,
-  owner @{HOME}/.config/oxygen-gtk/argb-apps.conf rw,
-  owner @{HOME}/.local/share/applications/mimeapps.list r,
-  owner @{HOME}/.local/share/applications/userapp-Icedove* r,
-  owner @{HOME}/.local/share/ r,
-  owner @{HOME}/.local/share/mime/ r,
-  owner @{HOME}/.local/share/mime/* r,
-  owner @{HOME}/.local/share/mime/application/ r,
-  owner @{HOME}/.local/share/mime/application/* r,
-  owner @{HOME}/.gnupg/* lrwkcix,
- 
-  @{PROC} r,
-  @{PROC}/[0-9]*/maps r,
-  @{PROC}/tty/drivers r,
-  @{PROC}/[0-9]*/stat r,
-  @{PROC}/[0-9]*/status r,
-  @{PROC}/[0-9]*/task/*/stat r,
-  @{PROC}/[0-9]*/cmdline r,
-  @{PROC}/[0-9]*/fd/ r,
-  @{PROC}/cpuinfo r,
-  @{PROC}/filesystems r,
-  @{PROC}/meminfo r,
-  @{PROC}/stat r,
-  @{PROC}/sys/kernel/pid_max r,
-  @{PROC}/uptime r,
-  
-  /sys/devices/system/cpu/ r,  
-  /sys/devices/system/cpu/present r,  
-  
-  /usr/bin/kde4-config rix,
-  /usr/bin/basename rix,
-  /usr/bin/grep rix,
-  /usr/bin/uwt rix,
-  /usr/bin/torsocks rix,
-  /usr/bin/gpg.whonix rix,
-  /usr/bin/gpg.whonix-orig rix,
-  /usr/bin/gpg2 r,
+	/usr/share/ r,
+	/usr/share/icons/ r,
+	/usr/share/icons/** r,
+	/usr/share/mime/ r,
+	/usr/share/mime/** r,
+	/usr/share/pixmaps/ r,
+	/usr/share/pixmaps/** r,
+	/usr/share/themes/ r,
+	/usr/share/themes/** r,
+	/usr/share/icedove/ r,
+	/usr/share/icedove/** r,
+	/usr/share/glib-2.0/schemas/gschemas.compiled r, 
+	/usr/share/whonix/kde/share/config/kdeglobals rw,
+	/usr/share/hunspell/ r,
+	/usr/share/hunspell/* r,
+	/usr/.local/share/applications/ rw,
+	/usr/share/applications/ rw,
+	
+	/etc/drirc r,
+	/etc/ld.so.cache r,
+	/etc/resolv.conf r,
+	/etc/resolv.conf.whonix r,
+	/etc/mailcap r, 
+	/etc/icedove/pref/ r,
+	/etc/icedove/pref/* r,
+	/etc/X11/cursors/* r,
+	/etc/mime.types r,
+	/etc/gai.conf r,
+	/etc/whonix.d/ r, 
+	/etc/whonix.d/* r, 
 
-  /usr/lib/icedove/icedove mrix,
-  /usr/lib/i386-linux-gnu/pango/1.6.0/modules/* m,
-  /usr/lib/whonix/uwtwrapper rix,
-  /usr/lib/gnupg/gpgkeys_hkp ix,
+	/bin/ps rix,
+	/bin/dash  rix,
+	/bin/mknod rix,
+	/bin/grep rix,
+	/bin/chmod rix,
+	/bin/mktemp rix,
+	/bin/which rix,
+	  
+	/dev/tty rw,
+	/dev/vboxuser rw,
+	/dev/dri/card0 rw,
+		  
+	/lib/i386-linux-gnu/i686/cmov/libc-2.13.so r,
+	/lib/i386-linux-gnu/libprocps.so.0.0.1 r,
+	 
+	@{PROC} r,
+	@{PROC}/[0-9]*/maps r,
+	@{PROC}/tty/drivers r,
+	@{PROC}/[0-9]*/stat r,
+	@{PROC}/[0-9]*/status r,
+	@{PROC}/[0-9]*/task/*/stat r,
+	@{PROC}/[0-9]*/cmdline r,
+	@{PROC}/[0-9]*/fd/ r,
+	@{PROC}/cpuinfo r,
+	@{PROC}/filesystems r,
+	@{PROC}/meminfo r,
+	@{PROC}/stat r,
+	@{PROC}/sys/kernel/pid_max r,
+	@{PROC}/uptime r,
+	@{PROC}/[0-9]*/mounts r,
+	@{PROC}/[0-9]*/mountinfo r,
+	  
+	/sys/devices/system/cpu/ r,  
+	/sys/devices/system/cpu/present r,  
+	  
+	/usr/bin/kde4-config rix,
+	/usr/bin/basename rix,
+	/usr/bin/grep rix,
+	/usr/bin/uwt rix,
+	/usr/bin/torsocks rix,
+	/usr/bin/gpg.whonix rix,
+	/usr/bin/gpg.whonix-orig rix,
+	/usr/bin/gpg2 r,
 
-  /usr/share/ r,
-  /usr/share/icons/ r,
-  /usr/share/icons/** r,
-  /usr/share/mime/ r,
-  /usr/share/mime/** r,
-  /usr/share/pixmaps/ r,
-  /usr/share/pixmaps/** r,
-  /usr/share/themes/ r,
-  /usr/share/themes/** r,
-  /usr/share/icedove/ r,
-  /usr/share/icedove/** r,
-  /usr/share/glib-2.0/schemas/gschemas.compiled r, 
-  /usr/share/whonix/kde/share/config/kdeglobals rw,
-  /usr/share/hunspell/ r,
-  /usr/share/hunspell/* r,
-  /usr/.local/share/applications/ rw,
+	/usr/lib/i386-linux-gnu/** rm,
+	/usr/lib/icedove/icedove mrix,
+	/usr/lib/whonix/uwtwrapper rix,
+	/usr/lib/gnupg/gpgkeys_hkpr ix,
 
-  /var/lib/dbus/machine-id r,
+	/var/lib/dbus/machine-id r,
 }
+&lt;/pre&gt;
+
+Create a file /etc/apparmor.d/local/usr.lib.icedove.icedove.
+
+&lt;pre&gt;
+kdesudo kwrite /etc/apparmor.d/local/usr.lib.icedove.icedove
+&lt;/pre&gt;
+
+Paste the following content.
+&lt;pre&gt;
+/usr/share/fontconfig/conf.avail/* r,
 &lt;/pre&gt;
 
 Run
@@ -61886,7 +62030,7 @@ Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/A
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>13zoyyhxd6xw5rixyh30aa8q02jpow0</sha1>
+      <sha1>636rqv8udcvehlxvkp9z89ziwqo8ur8</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
