@@ -42,45 +42,59 @@
     <ns>0</ns>
     <id>1</id>
     <revision>
-      <id>6284</id>
-      <parentid>6283</parentid>
-      <timestamp>2014-03-04T15:29:39Z</timestamp>
+      <id>6339</id>
+      <parentid>6338</parentid>
+      <timestamp>2014-03-05T22:53:29Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="6827">{{Header}}
+      <comment>Marked this version for translation</comment>
+      <text xml:space="preserve" bytes="8069">{{Header}}
 __NOTOC__
 &lt;languages /&gt;
 &lt;translate&gt;
 &lt;!--T:11--&gt;
 {{#seo:
 |description=Privacy protection. Anonymity online. Anonymous Operating System.
-}}
+}}&lt;/translate&gt;
 
 &lt;!--T:1--&gt;
 {{Infobox OS
 | logo                   = [[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|alt=Download Whonix]]
 | name                   = Whonix
-| screenshot             = [[Image:kde0_5_0.png|Whonix-Workstation with KDE Desktop|200px]]
+| screenshot             = [[Image:kde0_5_0.png|&lt;translate&gt;&lt;!--T:12--&gt;
+Whonix-Workstation with KDE Desktop&lt;/translate&gt;|200px]]
 | caption                = Whonix-Workstation with KDE Desktop
-| developer              = none / Whonix developers
-| family                 = [https://en.wikipedia.org/wiki/Unix-like Unix-like], based on [https://en.wikipedia.org/wiki/Debian Debian]
-| source_model           = [https://en.wikipedia.org/wiki/Open_source Open Source] 
-| working_state          = active
-| released               = 29 Feb 2012
+| developer              = &lt;translate&gt;&lt;!--T:13--&gt;
+[https://www.whonix.org/forum/index.php/topic,109.0.html none] / [[Authorship|Whonix developers]]&lt;/translate&gt;
+| family                 = &lt;translate&gt;&lt;!--T:14--&gt;
+[https://en.wikipedia.org/wiki/Unix-like Unix-like], based on [https://en.wikipedia.org/wiki/Debian Debian]&lt;/translate&gt;
+| source_model           = &lt;translate&gt;&lt;!--T:15--&gt;
+[https://en.wikipedia.org/wiki/Open_source Open Source]&lt;/translate&gt;
+| working_state          = &lt;translate&gt;&lt;!--T:16--&gt;
+active&lt;/translate&gt;
+| released               = &lt;translate&gt;&lt;!--T:17--&gt;
+29 Feb 2012&lt;/translate&gt;
 | latest_release_version = [[Download|{{Version}}]]
 | latest_release_date    = {{Start date and age|2014|02|27|df=yes}}
-| latest_test_version    = none at the moment
+| latest_test_version    = &lt;translate&gt;&lt;!--T:18--&gt;
+none at the moment&lt;/translate&gt;
 | latest_test_date       = {{Start date and age|2014|01|13|df=yes}}
-| marketing target       = Anonymity; Privacy; Security; Personal computing; [[HostingLocationHiddenServices|Location Hidden Servers]]
-| kernel_type            = [https://en.wikipedia.org/wiki/Monolithic_kernel Monolithic] ([https://en.wikipedia.org/wiki/Linux_kernel Linux kernel])
+| marketing target       = &lt;translate&gt;&lt;!--T:19--&gt;
+Anonymity; Privacy; Security; Personal computing; [[Hosting Location Hidden Services|Location Hidden Servers]]&lt;/translate&gt;
+| kernel_type            = &lt;translate&gt;&lt;!--T:20--&gt;
+[https://en.wikipedia.org/wiki/Monolithic_kernel Monolithic] ([https://en.wikipedia.org/wiki/Linux_kernel Linux kernel])&lt;/translate&gt;
 | ui                     = [https://en.wikipedia.org/wiki/KDE KDE]
-| license                = [https://en.wikipedia.org/wiki/Free_software Free software], mainly the [https://en.wikipedia.org/wiki/GNU_GPL GNU GPL], and other licenses&lt;ref&gt;{{cite web|url=http://www.debian.org/legal/licenses/|title=License information|publisher=Debian|accessdate=2009-02-28}}&lt;/ref&gt;
+| license                = &lt;translate&gt;&lt;!--T:21--&gt;
+[https://en.wikipedia.org/wiki/Free_software Free software], mainly the [https://en.wikipedia.org/wiki/GNU_GPL GNU GPL], and other licenses&lt;/translate&gt;&lt;ref&gt;{{cite web|url=http://www.debian.org/legal/licenses/|title=License information|publisher=Debian|accessdate=2009-02-28}}&lt;/ref&gt;
 | website                = [https://www.whonix.org https]; &lt;html&gt;&lt;a class=&quot;link-https&quot; style=&quot;color: #3366BB&quot; href=&quot;http://kkkkkkkkkk63ava6.onion&quot; rel=&quot;nofollow&quot;&gt;.onion&lt;/a&gt;&lt;/html&gt;
-| updatemodel            = [https://en.wikipedia.org/wiki/Advanced_Packaging_Tool APT] (several front-ends available)
+| updatemodel            = &lt;translate&gt;&lt;!--T:22--&gt;
+[https://en.wikipedia.org/wiki/Advanced_Packaging_Tool APT] (several front-ends available)&lt;/translate&gt;
 | preceded_by            = [https://trac.torproject.org/projects/tor/wiki/doc/JanusVM JanusVM]&lt;ref&gt;http://www.webcitation.org/6IA21tFaM&lt;/ref&gt;; [http://www.makeuseof.com/tag/browse-email-safely-anonymously-torbox/ TorBOX]&lt;ref&gt;http://www.webcitation.org/6IA20bIq5&lt;/ref&gt;
-| supported_platforms    = x86 compatible and/or VirtualBox + &lt;ref&gt;[[Other Operating Systems|Custom-Workstation]]: self made builds can run on any real or virtual hardware as long as they are behind a Whonix-Gateway. Tor Browser binaries are only available for a limited number of platforms (Windows, Linux, BSD, Mac).&lt;/ref&gt;
+| supported_platforms    = &lt;translate&gt;&lt;!--T:23--&gt;
+x86 compatible and/or VirtualBox +&lt;/translate&gt; &lt;ref&gt;&lt;translate&gt;&lt;!--T:24--&gt;
+[[Other Operating Systems|Custom-Workstation]]: self made builds can run on any real or virtual hardware as long as they are behind a Whonix-Gateway. Tor Browser binaries are only available for a limited number of platforms (Windows, Linux, BSD, Mac).&lt;/translate&gt;&lt;/ref&gt;
 }}
 
 &lt;!-------------------------Whonix------------------------&gt;
@@ -93,14 +107,20 @@ __NOTOC__
 &lt;!--T:2--&gt;
 [[Image:whonix.jpg|center|Whonix Concept|500px]]
 
+&lt;translate&gt;
 &lt;!--T:3--&gt;
-Whonix is an operating system focused on anonymity, privacy and security. It's based on the Tor anonymity network&lt;ref&gt;https://www.torproject.org/about/overview.html.en&lt;/ref&gt;, Debian GNU/Linux&lt;ref&gt;https://en.wikipedia.org/wiki/Debian&lt;/ref&gt; and security by isolation. DNS leaks are impossible, and not even malware with root privileges can find out the user's real IP. 
+Whonix is an operating system focused on anonymity, privacy and security. It's based on the Tor anonymity network&lt;ref&gt;https://www.torproject.org/about/overview.html.en&lt;/ref&gt;, Debian GNU/Linux&lt;ref&gt;https://en.wikipedia.org/wiki/Debian&lt;/ref&gt; and security by isolation. DNS leaks are impossible, and not even malware with root privileges can find out the user's real IP.
+&lt;/translate&gt;
 
+&lt;translate&gt;
 &lt;!--T:4--&gt;
 Whonix consists of two parts: One solely runs Tor and acts as a gateway, which we call Whonix-Gateway. The other, which we call Whonix-Workstation, is on a completely isolated network. Only connections through Tor are possible.
+&lt;/translate&gt;
 
+&lt;translate&gt;
 &lt;!--T:5--&gt;
 To learn more about security and anonymity under Whonix, please continue to the [[About|About Whonix]] page.
+&lt;/translate&gt;
 
 &lt;!--T:6--&gt;
 [[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|alt=Download Whonix]]
@@ -111,13 +131,15 @@ To learn more about security and anonymity under Whonix, please continue to the 
 &lt;--------------------------------Blog Posts, Forum Posts-------------------------------&gt;
 |class=&quot;MainPageBG&quot; style=&quot;width:45%; border:1px solid #cedff2; background:#f5faff; vertical-align:top&quot;|
 {| width=&quot;100%&quot; cellpadding=&quot;2&quot; cellspacing=&quot;5&quot; style=&quot;vertical-align:top; background:#f5faff;&quot;
-! &lt;h3 style=&quot;margin:0; background:#cedff2; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Latest [https://www.whonix.org/blog Blog] Posts [[File:2000px-Feed-icon.svg.png|20px|alt=rss|link=https://www.whonix.org/blog/feed/]]&lt;/h3&gt;
+! &lt;h3 style=&quot;margin:0; background:#cedff2; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;&lt;translate&gt;&lt;!--T:25--&gt;
+Latest [https://www.whonix.org/blog Blog] Posts&lt;/translate&gt; [[File:2000px-Feed-icon.svg.png|20px|alt=rss|link=https://www.whonix.org/blog/feed/]]&lt;/h3&gt;
 |-
 |style=&quot;color:#000;&quot;|
 &lt;rss number=10 title=off desc=off&gt;https://www.whonix.org/blog/feed/rss2/&lt;/rss&gt;
 
 |-
-! &lt;h3 style=&quot;margin:0; background:#cedff2; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Latest [https://www.whonix.org/forum Forum] Posts [[File:2000px-Feed-icon.svg.png|20px|alt=rss|link=https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10]]&lt;/h3&gt;
+! &lt;h3 style=&quot;margin:0; background:#cedff2; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;&lt;translate&gt;&lt;!--T:26--&gt;
+Latest [https://www.whonix.org/forum Forum] Posts&lt;/translate&gt; [[File:2000px-Feed-icon.svg.png|20px|alt=rss|link=https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10]]&lt;/h3&gt;
 |-
 |style=&quot;color:#000;&quot;| 
 &lt;rss number=10 title=off desc=off&gt;https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10&lt;/rss&gt;
@@ -128,36 +150,52 @@ To learn more about security and anonymity under Whonix, please continue to the 
 
 = Screenshots = &lt;!--T:7--&gt;
 &lt;gallery&gt;
-Image:kde0_5_0.png|Whonix-Workstation with KDE Desktop
-Image:whonixcheck_gui.png|[[whonixcheck]]
-Image:timesync_gui.png|[[TimeSync]]
-Image:stream_isolation.1.0.jpg|[[Stream Isolation]]
-Image:mat.png|MAT - [[Metadata]] Anonymisation Toolkit
-Image:flash_leak_test.png|[[Browser Plugins|Flash]] Leak Test SocksPort and TransPort
-Image:Thunderbird_17.0.png|Mozilla Thunderbird (called Icedove in Debian) with TorBirdy, see [[E-Mail]]
-Image:xchat_screenshot_created_by_adrelanos.png|[[XChat]], IRC Chat Client
-Image:torbrowser.png|[[Tor Browser]], privacy by design. Fighting web fingerprinting and linkability.
-Image:shield_badge.png|Whonix is a member of the [http://internetdefenseleague.org Internet Defense League].
-Image:OIN_logo_200px.png|Whonix is a [http://www.openinventionnetwork.com/licensees.php licensee] of the [https://en.wikipedia.org/wiki/Open_Invention_Network Open Invention Network].
-Image:donate.png|link=Donate|[[Donate|Donate to Whonix!]]
+Image:kde0_5_0.png|&lt;translate&gt;&lt;!--T:27--&gt;
+Whonix-Workstation with KDE Desktop&lt;/translate&gt;
+Image:whonixcheck_gui.png|&lt;translate&gt;&lt;!--T:28--&gt;
+[[whonixcheck|whonixcheck]]&lt;/translate&gt;
+Image:timesync_gui.png|&lt;translate&gt;&lt;!--T:29--&gt;
+[[TimeSync|TimeSync]]&lt;/translate&gt;
+Image:stream_isolation.1.0.jpg|&lt;translate&gt;&lt;!--T:30--&gt;
+[[Stream Isolation|Stream Isolation]]&lt;/translate&gt;
+Image:mat.png|&lt;translate&gt;&lt;!--T:31--&gt;
+MAT - [[Metadata|Metadata]] Anonymisation Toolkit&lt;/translate&gt;
+Image:flash_leak_test.png|&lt;translate&gt;&lt;!--T:32--&gt;
+[[Browser Plugins|Flash]] Leak Test SocksPort and TransPort&lt;/translate&gt;
+Image:Thunderbird_17.0.png|&lt;translate&gt;&lt;!--T:33--&gt;
+Mozilla Thunderbird (called Icedove in Debian) with TorBirdy, see [[E-Mail]]&lt;/translate&gt;
+Image:xchat_screenshot_created_by_adrelanos.png|&lt;translate&gt;&lt;!--T:34--&gt;
+[[XChat|XChat]], IRC Chat Client&lt;/translate&gt;
+Image:torbrowser.png|&lt;translate&gt;&lt;!--T:35--&gt;
+[[Tor Browser|Tor Browser]], privacy by design. Fighting web fingerprinting and linkability.&lt;/translate&gt;
+Image:shield_badge.png|&lt;translate&gt;&lt;!--T:36--&gt;
+Whonix is a member of the [http://internetdefenseleague.org Internet Defense League].&lt;/translate&gt;
+Image:OIN_logo_200px.png|&lt;translate&gt;&lt;!--T:37--&gt;
+Whonix is a [http://www.openinventionnetwork.com/licensees.php licensee] of the [https://en.wikipedia.org/wiki/Open_Invention_Network Open Invention Network].&lt;/translate&gt;
+Image:donate.png|link=Donate|&lt;translate&gt;&lt;!--T:38--&gt;
+[[Donate|Donate to Whonix!]]&lt;/translate&gt;
 &lt;/gallery&gt;
 
-= Footnotes = &lt;!--T:8--&gt;
-Whonix is produced independently of, and carries no guarantee from, The Tor Project&lt;ref&gt;https://www.torproject.org&lt;/ref&gt;.
+= &lt;translate&gt;&lt;!--T:39--&gt;
+Footnotes&lt;/translate&gt; =
+&lt;translate&gt;
+&lt;!--T:8--&gt;
+Whonix is produced independently of, and carries no guarantee from, The Tor Project&lt;/translate&gt;&lt;ref&gt;https://www.torproject.org&lt;/ref&gt;.
 
 &lt;!--T:9--&gt;
 &lt;references /&gt;
 
+&lt;translate&gt;
 &lt;!--T:10--&gt;
 Thanks to Tomchen1989 from Wikimedia Commons for the download button! [https://commons.wikimedia.org/wiki/File:Download_Button.svg 1] ([http://www.webcitation.org/6I2DQzdu0 w])
 Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_43.htm awxcnx.de]!
+&lt;/translate&gt;
 &lt;!---
 &lt;a href=&quot;https://plus.google.com/108150429836421683225&quot; rel=&quot;publisher&quot;&gt;Google+&lt;/a&gt;
 ---&gt;
-&lt;/translate&gt;
 {{Footer}}
 [[Category:Documentation]]</text>
-      <sha1>3nmv0gxez32xx29vdzzgyfvrc90zirc</sha1>
+      <sha1>f15yjwej6aug8zuo8i7wbo4lslkxvzu</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -511,16 +549,16 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>18</id>
     <revision>
-      <id>6230</id>
-      <parentid>5560</parentid>
-      <timestamp>2014-03-02T11:49:07Z</timestamp>
+      <id>6310</id>
+      <parentid>6230</parentid>
+      <timestamp>2014-03-05T17:04:36Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
       <minor/>
-      <comment>Text replace - &quot;OtherOperatingSystems&quot; to &quot;Other Operating Systems&quot;</comment>
-      <text xml:space="preserve" bytes="10879">{{#seo:
+      <comment>Text replace - &quot;HostingLocationHiddenServices&quot; to &quot;Hosting Location Hidden Services&quot;</comment>
+      <text xml:space="preserve" bytes="10882">{{#seo:
 |description=Whonix Feature List
 }}
 {{Header}}
@@ -570,7 +608,7 @@ Everything is explained in [[Documentation]].
 * Isolating Proxy
 * Java anonymously
 * Javascript anonymously
-* [[HostingLocationHiddenServices|Location/IP hidden servers]]
+* [[Hosting Location Hidden Services|Location/IP hidden servers]]
 * [[Mixmaster]] over Tor
 * Prevents anyone from learning your IP.
 * Prevents anyone from learning your physical location.
@@ -665,7 +703,7 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>hysvzy4rp9hd99burm41347edrf3uub</sha1>
+      <sha1>lpyp52ut56b900iw7yi60fvzxn1jjol</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -1312,14 +1350,16 @@ See also [[Security_in_Real_World | Whonix security in real world]], [[Security_
     <ns>0</ns>
     <id>24</id>
     <revision>
-      <id>6184</id>
-      <parentid>6105</parentid>
-      <timestamp>2014-03-01T22:56:25Z</timestamp>
+      <id>6315</id>
+      <parentid>6306</parentid>
+      <timestamp>2014-03-05T17:04:55Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="14129">&lt;!--
+      <minor/>
+      <comment>Text replace - &quot;HostingLocationHiddenServices&quot; to &quot;Hosting Location Hidden Services&quot;</comment>
+      <text xml:space="preserve" bytes="14126">&lt;!--
 Copyright:
 
    Whonix Documentation wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -1350,12 +1390,11 @@ The complete text of the GNU General Public License can also be found online on 
 &lt;!--
 The Whonix Documentation wiki page is forked from the Tails Documentation page, from this exact source &lt;http://git.immerda.ch/?p=amnesia.git;a=blob;f=wiki/src/doc.mdwn;hb=920ef988d1e8ed552f4e97d1423e0038e1bfbbf4&gt;.
 --&gt;
+__NOTITLE__
 {{Header}}
 {{#seo:
 |description=Whonix Documentation. Crash Course in Anonymity and Security on the Internet.
 }}
-
-= Introduction =
 
 This documentation is a crash course in anonymity and security on the Internet. Whonix is a technological means to anonymity, but staying anonymous is not just a technological problem: No tool is enough to keep you safe.  
 
@@ -1429,7 +1468,7 @@ Anonymity is a complex problem without an easy solution, and security is only as
 ** [[Chat#Pidgin|Pidgin multi-protocol instant messenger]]
 ** [[Chat#OTR_encryption|Pidgin OTR end-to-end encryption]]
 ** [[XChat|Chatting on IRC with XChat]]
-* [[HostingLocationHiddenServices|Hosting Location/IP Hidden Servers]]
+* [[Hosting Location Hidden Services|Hosting Location/IP Hidden Servers]]
 ** [[Hidden Services|Hosting Tor Hidden Services, ANY, Hidden Webserver]]
 ** [[Hosting|Third Party Hosting Services]]
 * [[File Sharing|Filesharing, BitTorrent]]
@@ -1591,7 +1630,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>mz3tcz1n09s2k5z4jfkzrkt4tq0nd09</sha1>
+      <sha1>hznbsih1jojj1miy1ctfnn16wn6wahk</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -2389,14 +2428,16 @@ Not compulsory, just nicely asking:
     <ns>0</ns>
     <id>56</id>
     <revision>
-      <id>6251</id>
-      <parentid>5486</parentid>
-      <timestamp>2014-03-02T16:26:42Z</timestamp>
+      <id>6320</id>
+      <parentid>6251</parentid>
+      <timestamp>2014-03-05T17:05:41Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="49339">{{Header}}
+      <minor/>
+      <comment>Text replace - &quot;HostingLocationHiddenServices&quot; to &quot;Hosting Location Hidden Services&quot;</comment>
+      <text xml:space="preserve" bytes="49342">{{Header}}
 {{#seo:
 |description=FAQ. Frequently Asked Questions.
 }}
@@ -2614,7 +2655,7 @@ Adrelanos doesn't/didn't know how to implement various things into Tails, and do
 |  align=&quot;left&quot; | [[Logging in to captive portals]]
 |-  class=&quot;even&quot;
 |  align=&quot;left&quot; | Location Hidden/IP Hidden Servers
-|  align=&quot;left&quot; | [[HostingLocationHiddenServices|Location/IP Hidden Servers]]
+|  align=&quot;left&quot; | [[Hosting Location Hidden Services|Location/IP Hidden Servers]]
 |-  class=&quot;odd&quot;
 |  align=&quot;left&quot; | [https://tails.boum.org/todo/VoIP_support/ Voip]
 |  align=&quot;left&quot; | [[Voip]]
@@ -2949,7 +2990,7 @@ Without performing these basics steps, the setup may sound clever, but may not w
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>bvllmoeexgoq6pwoy8e4xn8j3c6e7tk</sha1>
+      <sha1>smk5qw0kcjxz9w1rbh3rlqubax992sf</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -4916,14 +4957,15 @@ AyCDWXR3yKGMWHkJqfLu
     <ns>0</ns>
     <id>85</id>
     <revision>
-      <id>5726</id>
-      <parentid>4765</parentid>
-      <timestamp>2014-02-27T11:19:13Z</timestamp>
+      <id>6334</id>
+      <parentid>5726</parentid>
+      <timestamp>2014-03-05T22:42:13Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="12115">{{Header}}
+      <comment>/* Code Contributors */</comment>
+      <text xml:space="preserve" bytes="12120">{{Header}}
 {{#seo:
 |description=Authorship of Whonix. Code Contributors, Arts Contributors, Other Contributors, Credits, Inspiration, Alternatives, Sources.
 }}
@@ -4936,12 +4978,12 @@ See [[Whonix:General_disclaimer]].
 See [[Whonix:General_disclaimer#Whonix_VPN_disclaimer]].
 
 = Code Contributors =
-
 '''Current Maintainers'''
 
 At the moment only Patrick Schleizer writes code for Whonix. Help is welcome!
 
-* Patrick Schleizer (adrelanos@riseup.net): iinitially researched extensively and compiled all information floating around the web into a guide; Later created the Whonix build scripts, binary images, extended documentation, see [[History]].
+* Patrick Schleizer (adrelanos@riseup.net): initially researched extensively and compiled all information floating around the web into a guide; Later created the Whonix build scripts, binary images, extended documentation, see [[History]].
+&lt;br /&gt;
 
 '''Past Code Contributors'''
 
@@ -5134,7 +5176,7 @@ See license file in Whonix source code.
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Development]]</text>
-      <sha1>9nqwroea7y0rgx56qyj8zfutro41q1l</sha1>
+      <sha1>nc022s8rkzypejt3sw1xwxmazx20l60</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -11810,14 +11852,15 @@ What would have to be done:
     <ns>0</ns>
     <id>114</id>
     <revision>
-      <id>6273</id>
-      <parentid>6254</parentid>
-      <timestamp>2014-03-03T19:33:08Z</timestamp>
+      <id>6324</id>
+      <parentid>6323</parentid>
+      <timestamp>2014-03-05T17:10:25Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>update your shit</comment>
-      <text xml:space="preserve" bytes="13935">{{Header}}
+      <comment>/* Transfer files from the Whonix Workstation into a different Whonix-Workstation through a VDI file */</comment>
+      <text xml:space="preserve" bytes="14031">{{Header}}
 {{#seo:
 |description=Copying files into and out of Whonix Virtual Machines.
 }}
@@ -11888,14 +11931,11 @@ This is intentionally one-way as the Whonix-Workstation is inherently untrusted 
 = Transfer files from the Whonix Workstation into a different Whonix-Workstation through a VDI file =
 This is one of the more convenient solutions for copying work from a Whonix 7 Workstation to a Whonix 8 Workstation. 
 
+0. The virtual machine you want to edit needs to be powered off.
+
 1. First, in VirtualBox, click on the &quot;Settings&quot; for the Whonix Workstation that you desire to copy files from. Then, click on &quot;Storage.&quot;
 
 2. In the &quot;Storage&quot; settings, click on the square with a + sign on it to &quot;add hard disk.&quot; It will be located next to an entry that says &quot;Controller: Whonix.&quot;
-     !!!!! ^this is wrong this option is grey'd out update your shit^    !!!!!!!!!!!
-
-
-
-
 
 3. In the next window that appears, click on &quot;create new disk.&quot;
 
@@ -11976,6 +12016,9 @@ sudo mount /dev/sdb1 temp
 in the terminal.
 
 28. Finally, copy the files you want into the Whonix Workstation. When you are finished copying all the files, you can shut down the Whonix Workstation and delete the temporary &quot;file transfer&quot; VDI files you used in this process through the Virtual Media Manager if you desire.
+
+Related forum topic: &lt;br /&gt;
+[https://www.whonix.org/forum/index.php/topic,105.0.html How to tranfer data to Whonix 8]
 
 = Adding USB device to VirtualBox =
 This is not recommended for security reasons.
@@ -12234,7 +12277,7 @@ sudo umount /mnt/whonix
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Development]]</text>
-      <sha1>r44wll37eq4fp1bvj3c8frd46oy6gfx</sha1>
+      <sha1>gbq89tt5k3zgk87une3dydbe2y4uosr</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -32583,14 +32626,16 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
     <ns>0</ns>
     <id>268</id>
     <revision>
-      <id>5896</id>
-      <parentid>4338</parentid>
-      <timestamp>2014-02-27T14:04:13Z</timestamp>
+      <id>6319</id>
+      <parentid>5896</parentid>
+      <timestamp>2014-03-05T17:05:29Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="3867">{{Header}}
+      <minor/>
+      <comment>Text replace - &quot;HostingLocationHiddenServices&quot; to &quot;Hosting Location Hidden Services&quot;</comment>
+      <text xml:space="preserve" bytes="3870">{{Header}}
 {{#seo:
 |description=List of Third Party Hosting Services that allow content to be hosted anonymously
 }}
@@ -32722,7 +32767,7 @@ http://bitcoin-hosting.com
 
 * [[Surfing Posting Blogging]]
 * [[Money|Anonymous Money]]
-* [[HostingLocationHiddenServices]]
+* [[Hosting Location Hidden Services]]
 * [[Hidden Services]]
 
 = License =
@@ -32732,7 +32777,7 @@ http://bitcoin-hosting.com
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>q260y26a4xs1ll24v3kuktha98hm0gc</sha1>
+      <sha1>4jcp7kg6kkqmwkc21c67x1hrzr34z93</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -50569,16 +50614,16 @@ Warning:
     <ns>1198</ns>
     <id>540</id>
     <revision>
-      <id>4223</id>
-      <timestamp>2013-12-16T16:30:52Z</timestamp>
+      <id>6354</id>
+      <parentid>4223</parentid>
+      <timestamp>2014-03-05T22:54:29Z</timestamp>
       <contributor>
         <username>FuzzyBot</username>
         <id>37</id>
       </contributor>
       <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="135">= Footnotes =
-Whonix is produced independently of, and carries no guarantee from, The Tor Project&lt;ref&gt;https://www.torproject.org&lt;/ref&gt;.</text>
-      <sha1>t9e1tt8rkmv1trp3835n1w13fz93byj</sha1>
+      <text xml:space="preserve" bytes="83">Whonix is produced independently of, and carries no guarantee from, The Tor Project</text>
+      <sha1>pfcuqkcktya8wp7z5hoaq2c24mldp8m</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -50588,36 +50633,37 @@ Whonix is produced independently of, and carries no guarantee from, The Tor Proj
     <ns>0</ns>
     <id>541</id>
     <revision>
-      <id>5956</id>
-      <parentid>5954</parentid>
-      <timestamp>2014-02-27T16:30:03Z</timestamp>
+      <id>6371</id>
+      <parentid>6355</parentid>
+      <timestamp>2014-03-05T22:55:35Z</timestamp>
       <contributor>
         <username>FuzzyBot</username>
         <id>37</id>
       </contributor>
       <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="4979">{{Header}}
-
+      <text xml:space="preserve" bytes="6873">{{Header}}
+__NOTOC__
 &lt;languages /&gt;
 {{#seo:
 |description=Privacy protection. Anonymity online. Anonymous Operating System.
 }}
 
+&lt;!--T:1--&gt;
 {{Infobox OS
 | logo                   = [[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|alt=Download Whonix]]
 | name                   = Whonix
 | screenshot             = [[Image:kde0_5_0.png|Whonix-Workstation with KDE Desktop|200px]]
 | caption                = Whonix-Workstation with KDE Desktop
-| developer              = none / Whonix developers
+| developer              = [https://www.whonix.org/forum/index.php/topic,109.0.html none] / [[Authorship|Whonix developers]]
 | family                 = [https://en.wikipedia.org/wiki/Unix-like Unix-like], based on [https://en.wikipedia.org/wiki/Debian Debian]
-| source_model           = [https://en.wikipedia.org/wiki/Open_source Open Source] 
+| source_model           = [https://en.wikipedia.org/wiki/Open_source Open Source]
 | working_state          = active
 | released               = 29 Feb 2012
 | latest_release_version = [[Download|{{Version}}]]
 | latest_release_date    = {{Start date and age|2014|02|27|df=yes}}
 | latest_test_version    = none at the moment
 | latest_test_date       = {{Start date and age|2014|01|13|df=yes}}
-| marketing target       = Anonymity; Privacy; Security; Personal computing; [[HostingLocationHiddenServices|Location Hidden Servers]]
+| marketing target       = Anonymity; Privacy; Security; Personal computing; [[Hosting Location Hidden Services|Location Hidden Servers]]
 | kernel_type            = [https://en.wikipedia.org/wiki/Monolithic_kernel Monolithic] ([https://en.wikipedia.org/wiki/Linux_kernel Linux kernel])
 | ui                     = [https://en.wikipedia.org/wiki/KDE KDE]
 | license                = [https://en.wikipedia.org/wiki/Free_software Free software], mainly the [https://en.wikipedia.org/wiki/GNU_GPL GNU GPL], and other licenses&lt;ref&gt;{{cite web|url=http://www.debian.org/legal/licenses/|title=License information|publisher=Debian|accessdate=2009-02-28}}&lt;/ref&gt;
@@ -50627,27 +50673,57 @@ Whonix is produced independently of, and carries no guarantee from, The Tor Proj
 | supported_platforms    = x86 compatible and/or VirtualBox + &lt;ref&gt;[[Other Operating Systems|Custom-Workstation]]: self made builds can run on any real or virtual hardware as long as they are behind a Whonix-Gateway. Tor Browser binaries are only available for a limited number of platforms (Windows, Linux, BSD, Mac).&lt;/ref&gt;
 }}
 
-[[Image:whonix.jpg|center|Whonix Concept|400px]]
+&lt;!-------------------------Whonix------------------------&gt;
+{|style=&quot;border-spacing:8px; margin:0px -8px;&quot;
+|class=&quot;MainPageBG&quot; style=&quot;width:55%; border:1px solid #cef2e0; background:#f5fffa; vertical-align:top; color:#000;&quot;|
+{|width=&quot;100%&quot; cellpadding=&quot;2&quot; cellspacing=&quot;5&quot; style=&quot;vertical-align:top; background:#f5fffa;&quot;
+! &lt;h3 style=&quot;margin:0; background:#cef2e0; font-size:120%; font-weight:bold; border:1px solid #a3bfb1; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Whonix&lt;/h3&gt;
+|-
+|style=&quot;color:#000;&quot;| 
+&lt;!--T:2--&gt;
+[[Image:whonix.jpg|center|Whonix Concept|500px]]
 
-Whonix is an operating system focused on anonymity, privacy and security. It's based on the Tor anonymity network&lt;ref&gt;https://www.torproject.org/about/overview.html.en&lt;/ref&gt;, Debian GNU/Linux&lt;ref&gt;https://en.wikipedia.org/wiki/Debian&lt;/ref&gt; and security by isolation. DNS leaks are impossible, and not even malware with root privileges can find out the user's real IP. 
+Whonix is an operating system focused on anonymity, privacy and security. It's based on the Tor anonymity network&lt;ref&gt;https://www.torproject.org/about/overview.html.en&lt;/ref&gt;, Debian GNU/Linux&lt;ref&gt;https://en.wikipedia.org/wiki/Debian&lt;/ref&gt; and security by isolation. DNS leaks are impossible, and not even malware with root privileges can find out the user's real IP.
 
 Whonix consists of two parts: One solely runs Tor and acts as a gateway, which we call Whonix-Gateway. The other, which we call Whonix-Workstation, is on a completely isolated network. Only connections through Tor are possible.
 
 To learn more about security and anonymity under Whonix, please continue to the [[About|About Whonix]] page.
 
+&lt;!--T:6--&gt;
 [[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|alt=Download Whonix]]
 
-= Screenshots =
+|-
+|}&lt;!--
+
+&lt;--------------------------------Blog Posts, Forum Posts-------------------------------&gt;
+|class=&quot;MainPageBG&quot; style=&quot;width:45%; border:1px solid #cedff2; background:#f5faff; vertical-align:top&quot;|
+{| width=&quot;100%&quot; cellpadding=&quot;2&quot; cellspacing=&quot;5&quot; style=&quot;vertical-align:top; background:#f5faff;&quot;
+! &lt;h3 style=&quot;margin:0; background:#cedff2; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Latest [https://www.whonix.org/blog Blog] Posts [[File:2000px-Feed-icon.svg.png|20px|alt=rss|link=https://www.whonix.org/blog/feed/]]&lt;/h3&gt;
+|-
+|style=&quot;color:#000;&quot;|
+&lt;rss number=10 title=off desc=off&gt;https://www.whonix.org/blog/feed/rss2/&lt;/rss&gt;
+
+|-
+! &lt;h3 style=&quot;margin:0; background:#cedff2; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Latest [https://www.whonix.org/forum Forum] Posts [[File:2000px-Feed-icon.svg.png|20px|alt=rss|link=https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10]]&lt;/h3&gt;
+|-
+|style=&quot;color:#000;&quot;| 
+&lt;rss number=10 title=off desc=off&gt;https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10&lt;/rss&gt;
+
+|-
+|}
+|}
+
+= Screenshots = &lt;!--T:7--&gt;
 &lt;gallery&gt;
 Image:kde0_5_0.png|Whonix-Workstation with KDE Desktop
-Image:whonixcheck_gui.png|[[whonixcheck]]
-Image:timesync_gui.png|[[TimeSync]]
-Image:stream_isolation.1.0.jpg|[[Stream Isolation]]
-Image:mat.png|MAT - [[Metadata]] Anonymisation Toolkit
+Image:whonixcheck_gui.png|[[whonixcheck|whonixcheck]]
+Image:timesync_gui.png|[[TimeSync|TimeSync]]
+Image:stream_isolation.1.0.jpg|[[Stream Isolation|Stream Isolation]]
+Image:mat.png|MAT - [[Metadata|Metadata]] Anonymisation Toolkit
 Image:flash_leak_test.png|[[Browser Plugins|Flash]] Leak Test SocksPort and TransPort
 Image:Thunderbird_17.0.png|Mozilla Thunderbird (called Icedove in Debian) with TorBirdy, see [[E-Mail]]
-Image:xchat_screenshot_created_by_adrelanos.png|[[XChat]], IRC Chat Client
-Image:torbrowser.png|[[Tor Browser]], privacy by design. Fighting web fingerprinting and linkability.
+Image:xchat_screenshot_created_by_adrelanos.png|[[XChat|XChat]], IRC Chat Client
+Image:torbrowser.png|[[Tor Browser|Tor Browser]], privacy by design. Fighting web fingerprinting and linkability.
 Image:shield_badge.png|Whonix is a member of the [http://internetdefenseleague.org Internet Defense League].
 Image:OIN_logo_200px.png|Whonix is a [http://www.openinventionnetwork.com/licensees.php licensee] of the [https://en.wikipedia.org/wiki/Open_Invention_Network Open Invention Network].
 Image:donate.png|link=Donate|[[Donate|Donate to Whonix!]]
@@ -50656,6 +50732,7 @@ Image:donate.png|link=Donate|[[Donate|Donate to Whonix!]]
 = Footnotes =
 Whonix is produced independently of, and carries no guarantee from, The Tor Project&lt;ref&gt;https://www.torproject.org&lt;/ref&gt;.
 
+&lt;!--T:9--&gt;
 &lt;references /&gt;
 
 Thanks to Tomchen1989 from Wikimedia Commons for the download button! [https://commons.wikimedia.org/wiki/File:Download_Button.svg 1] ([http://www.webcitation.org/6I2DQzdu0 w])
@@ -50665,7 +50742,7 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
 ---&gt;
 {{Footer}}
 [[Category:Documentation]]</text>
-      <sha1>2cung3ofkql13n32u83t1jbyva6rp29</sha1>
+      <sha1>t8k13uggephl8ri4q1jenpbd74oa0js</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -50693,19 +50770,17 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
     <ns>1198</ns>
     <id>543</id>
     <revision>
-      <id>4226</id>
-      <timestamp>2013-12-16T16:30:59Z</timestamp>
+      <id>6370</id>
+      <parentid>4226</parentid>
+      <timestamp>2014-03-05T22:55:34Z</timestamp>
       <contributor>
         <username>FuzzyBot</username>
         <id>37</id>
       </contributor>
       <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="369">Thanks to Tomchen1989 from Wikimedia Commons for the download button! [https://commons.wikimedia.org/wiki/File:Download_Button.svg 1] ([http://www.webcitation.org/6I2DQzdu0 w])
-Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_43.htm awxcnx.de]!
-&lt;!---
-&lt;a href=&quot;https://plus.google.com/108150429836421683225&quot; rel=&quot;publisher&quot;&gt;Google+&lt;/a&gt;
----&gt;</text>
-      <sha1>nhmaf5gujy1d3m6u34w005ht80tfz0q</sha1>
+      <text xml:space="preserve" bytes="274">Thanks to Tomchen1989 from Wikimedia Commons for the download button! [https://commons.wikimedia.org/wiki/File:Download_Button.svg 1] ([http://www.webcitation.org/6I2DQzdu0 w])
+Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_43.htm awxcnx.de]!</text>
+      <sha1>4im1hb1hhpq59x4imjby8o1664chxvb</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -50769,15 +50844,16 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
     <ns>1198</ns>
     <id>547</id>
     <revision>
-      <id>5952</id>
-      <parentid>5549</parentid>
-      <timestamp>2014-02-27T16:29:35Z</timestamp>
+      <id>6314</id>
+      <parentid>5952</parentid>
+      <timestamp>2014-03-05T17:04:52Z</timestamp>
       <contributor>
-        <username>FuzzyBot</username>
-        <id>37</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="2446">{{Infobox OS
+      <minor/>
+      <comment>Text replace - &quot;HostingLocationHiddenServices&quot; to &quot;Hosting Location Hidden Services&quot;</comment>
+      <text xml:space="preserve" bytes="2449">{{Infobox OS
 | logo                   = [[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|alt=Download Whonix]]
 | name                   = Whonix
 | screenshot             = [[Image:kde0_5_0.png|Whonix-Workstation with KDE Desktop|200px]]
@@ -50791,7 +50867,7 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
 | latest_release_date    = {{Start date and age|2014|02|27|df=yes}}
 | latest_test_version    = none at the moment
 | latest_test_date       = {{Start date and age|2014|01|13|df=yes}}
-| marketing target       = Anonymity; Privacy; Security; Personal computing; [[HostingLocationHiddenServices|Location Hidden Servers]]
+| marketing target       = Anonymity; Privacy; Security; Personal computing; [[Hosting Location Hidden Services|Location Hidden Servers]]
 | kernel_type            = [https://en.wikipedia.org/wiki/Monolithic_kernel Monolithic] ([https://en.wikipedia.org/wiki/Linux_kernel Linux kernel])
 | ui                     = [https://en.wikipedia.org/wiki/KDE KDE]
 | license                = [https://en.wikipedia.org/wiki/Free_software Free software], mainly the [https://en.wikipedia.org/wiki/GNU_GPL GNU GPL], and other licenses&lt;ref&gt;{{cite web|url=http://www.debian.org/legal/licenses/|title=License information|publisher=Debian|accessdate=2009-02-28}}&lt;/ref&gt;
@@ -50800,7 +50876,7 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
 | preceded_by            = [https://trac.torproject.org/projects/tor/wiki/doc/JanusVM JanusVM]&lt;ref&gt;http://www.webcitation.org/6IA21tFaM&lt;/ref&gt;; [http://www.makeuseof.com/tag/browse-email-safely-anonymously-torbox/ TorBOX]&lt;ref&gt;http://www.webcitation.org/6IA20bIq5&lt;/ref&gt;
 | supported_platforms    = x86 compatible and/or VirtualBox + &lt;ref&gt;[[Other Operating Systems|Custom-Workstation]]: self made builds can run on any real or virtual hardware as long as they are behind a Whonix-Gateway. Tor Browser binaries are only available for a limited number of platforms (Windows, Linux, BSD, Mac).&lt;/ref&gt;
 }}</text>
-      <sha1>9cydr2rhbdp2oxwe76ovseodiiwspyv</sha1>
+      <sha1>f05owwkiwal4y1l7nk7pptts49nkshn</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -56183,73 +56259,106 @@ Den Haftungsausschluss (Disclaimer) finden Sie [[Disclaimer|hier]].
     <ns>0</ns>
     <id>700</id>
     <revision>
-      <id>5953</id>
-      <parentid>5548</parentid>
-      <timestamp>2014-02-27T16:29:36Z</timestamp>
+      <id>6402</id>
+      <parentid>6400</parentid>
+      <timestamp>2014-03-05T22:58:31Z</timestamp>
       <contributor>
-        <username>FuzzyBot</username>
-        <id>37</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <comment>Updating to match new version of source page</comment>
-      <text xml:space="preserve" bytes="4905">{{Header}}
-
+      <comment>Created page with &quot;x86 kompatibel und/oder VirtualBox +&quot;</comment>
+      <text xml:space="preserve" bytes="6990">{{Header}}
+__NOTOC__
 &lt;languages /&gt;
 {{#seo:
-|description=Privacy protection. Anonymity online. Anonymous Operating System.
+|description=Schutz der Privatsphäre im Internet. Online Anonymität. Anonymes Betriebssystem.
 }}
 
+&lt;!--T:1--&gt;
 {{Infobox OS
 | logo                   = [[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|alt=Download Whonix]]
 | name                   = Whonix
-| screenshot             = [[Image:kde0_5_0.png|Whonix-Workstation with KDE Desktop|200px]]
+| screenshot             = [[Image:kde0_5_0.png|Whonix-Workstation mit KDE Desktop|200px]]
 | caption                = Whonix-Workstation with KDE Desktop
-| developer              = none / Whonix developers
-| family                 = [https://en.wikipedia.org/wiki/Unix-like Unix-like], based on [https://en.wikipedia.org/wiki/Debian Debian]
-| source_model           = [https://en.wikipedia.org/wiki/Open_source Open Source] 
-| working_state          = active
-| released               = 29 Feb 2012
+| developer              = [https://www.whonix.org/forum/index.php/topic,109.0.html keine] / [[Authorship|Whonix Entwicklergemeinde]]
+| family                 = [https://en.wikipedia.org/wiki/Unix-like Unix-ähnlich], basierend auf [https://en.wikipedia.org/wiki/Debian Debian]
+| source_model           = [https://en.wikipedia.org/wiki/Open_source Open Source]
+| working_state          = aktiv
+| released               = 29.02.2012
 | latest_release_version = [[Download|{{Version}}]]
 | latest_release_date    = {{Start date and age|2014|02|27|df=yes}}
-| latest_test_version    = none at the moment
+| latest_test_version    = im Momment keine
 | latest_test_date       = {{Start date and age|2014|01|13|df=yes}}
-| marketing target       = Anonymity; Privacy; Security; Personal computing; [[HostingLocationHiddenServices|Location Hidden Servers]]
+| marketing target       = Anonymität; Privatsphäre; Sicherheit; PC; [[Hosting Location Hidden Services|Versteckte Serverdienste]]
 | kernel_type            = [https://en.wikipedia.org/wiki/Monolithic_kernel Monolithic] ([https://en.wikipedia.org/wiki/Linux_kernel Linux kernel])
 | ui                     = [https://en.wikipedia.org/wiki/KDE KDE]
-| license                = [https://en.wikipedia.org/wiki/Free_software Free software], mainly the [https://en.wikipedia.org/wiki/GNU_GPL GNU GPL], and other licenses&lt;ref&gt;{{cite web|url=http://www.debian.org/legal/licenses/|title=License information|publisher=Debian|accessdate=2009-02-28}}&lt;/ref&gt;
+| license                = [https://en.wikipedia.org/wiki/Free_software Free software], hauptsächlich die [https://en.wikipedia.org/wiki/GNU_GPL GNU GPL], und andere Lizenzen&lt;ref&gt;{{cite web|url=http://www.debian.org/legal/licenses/|title=License information|publisher=Debian|accessdate=2009-02-28}}&lt;/ref&gt;
 | website                = [https://www.whonix.org https]; &lt;html&gt;&lt;a class=&quot;link-https&quot; style=&quot;color: #3366BB&quot; href=&quot;http://kkkkkkkkkk63ava6.onion&quot; rel=&quot;nofollow&quot;&gt;.onion&lt;/a&gt;&lt;/html&gt;
-| updatemodel            = [https://en.wikipedia.org/wiki/Advanced_Packaging_Tool APT] (several front-ends available)
+| updatemodel            = [https://en.wikipedia.org/wiki/Advanced_Packaging_Tool APT] (verschiedene Aufsätze verfügbar)
 | preceded_by            = [https://trac.torproject.org/projects/tor/wiki/doc/JanusVM JanusVM]&lt;ref&gt;http://www.webcitation.org/6IA21tFaM&lt;/ref&gt;; [http://www.makeuseof.com/tag/browse-email-safely-anonymously-torbox/ TorBOX]&lt;ref&gt;http://www.webcitation.org/6IA20bIq5&lt;/ref&gt;
-| supported_platforms    = x86 compatible and/or VirtualBox + &lt;ref&gt;[[Other Operating Systems|Custom-Workstation]]: self made builds can run on any real or virtual hardware as long as they are behind a Whonix-Gateway. Tor Browser binaries are only available for a limited number of platforms (Windows, Linux, BSD, Mac).&lt;/ref&gt;
+| supported_platforms    = x86 kompatibel und/oder VirtualBox + &lt;ref&gt;[[Other Operating Systems|Custom-Workstation]]: self made builds can run on any real or virtual hardware as long as they are behind a Whonix-Gateway. Tor Browser binaries are only available for a limited number of platforms (Windows, Linux, BSD, Mac).&lt;/ref&gt;
 }}
 
-[[Image:whonix.jpg|center|Whonix Konzept|400px]]
+&lt;!-------------------------Whonix------------------------&gt;
+{|style=&quot;border-spacing:8px; margin:0px -8px;&quot;
+|class=&quot;MainPageBG&quot; style=&quot;width:55%; border:1px solid #cef2e0; background:#f5fffa; vertical-align:top; color:#000;&quot;|
+{|width=&quot;100%&quot; cellpadding=&quot;2&quot; cellspacing=&quot;5&quot; style=&quot;vertical-align:top; background:#f5fffa;&quot;
+! &lt;h3 style=&quot;margin:0; background:#cef2e0; font-size:120%; font-weight:bold; border:1px solid #a3bfb1; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Whonix&lt;/h3&gt;
+|-
+|style=&quot;color:#000;&quot;| 
+&lt;!--T:2--&gt;
+[[Image:whonix.jpg|center|Whonix Concept|500px]]
 
-Whonix ist ein Betriebssystem mit Fokus auf Anonymität, Privatsphäre und Sicherheit. Es basiert auf dem Tor Anonymitätsnetzwerk und Sicherheit durch Isolation. DNS Leaks sind unmöglich, nicht mal Malware mit Rootrechten kann die echte IP des Benutzers herausfinden. 
+Whonix ist ein Betriebssystem mit Fokus auf Anonymität, Privatsphäre und Sicherheit. Es basiert auf dem Tor Anonymitätsnetzwerk und Sicherheit durch Isolation. DNS Leaks sind unmöglich, nicht mal Malware mit Rootrechten kann die echte IP des Benutzers herausfinden.
 
 Whonix besteht aus zwei Teilen: Auf einem läuft Tor und fungiert als ein Tunnel, diesen nennen wir Whonix-Gateway. Der andere, welchen wir Whonix-Workstation nennen befindet sich in einem völlig isolierten Netzwerk. Nur Verbindungen durch Tor sind möglich.
 
 Um mehr über Sicherheit und Anonymität in Whonix zu lernen, fahren sie bitte fort zur Seite [[About|Über Whonix]].
 
+&lt;!--T:6--&gt;
 [[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|alt=Download Whonix]]
 
-= Screenshots =
+|-
+|}&lt;!--
+
+&lt;--------------------------------Blog Posts, Forum Posts-------------------------------&gt;
+|class=&quot;MainPageBG&quot; style=&quot;width:45%; border:1px solid #cedff2; background:#f5faff; vertical-align:top&quot;|
+{| width=&quot;100%&quot; cellpadding=&quot;2&quot; cellspacing=&quot;5&quot; style=&quot;vertical-align:top; background:#f5faff;&quot;
+! &lt;h3 style=&quot;margin:0; background:#cedff2; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Latest [https://www.whonix.org/blog Blog] Posts [[File:2000px-Feed-icon.svg.png|20px|alt=rss|link=https://www.whonix.org/blog/feed/]]&lt;/h3&gt;
+|-
+|style=&quot;color:#000;&quot;|
+&lt;rss number=10 title=off desc=off&gt;https://www.whonix.org/blog/feed/rss2/&lt;/rss&gt;
+
+|-
+! &lt;h3 style=&quot;margin:0; background:#cedff2; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Latest [https://www.whonix.org/forum Forum] Posts [[File:2000px-Feed-icon.svg.png|20px|alt=rss|link=https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10]]&lt;/h3&gt;
+|-
+|style=&quot;color:#000;&quot;| 
+&lt;rss number=10 title=off desc=off&gt;https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10&lt;/rss&gt;
+
+|-
+|}
+|}
+
+= Screenshots = &lt;!--T:7--&gt;
 &lt;gallery&gt;
-Image:kde0_5_0.png|Whonix-Workstation 0.5.6 mit KDE Desktop
-Image:whonixcheck_gui.png|[[whonixcheck]]
-Image:timesync_gui.png|[[TimeSync]]
-Image:stream_isolation.1.0.jpg|[[Stream Isolation]]
-Image:mat.png|MAT - [[Metadata]] Anonymisation Toolkit
+Image:kde0_5_0.png|Whonix-Workstation with KDE Desktop
+Image:whonixcheck_gui.png|[[whonixcheck|whonixcheck]]
+Image:timesync_gui.png|[[TimeSync|TimeSync]]
+Image:stream_isolation.1.0.jpg|[[Stream Isolation|Stream Isolation]]
+Image:mat.png|MAT - [[Metadata|Metadata]] Anonymisation Toolkit
 Image:flash_leak_test.png|[[Browser Plugins|Flash]] Leak Test SocksPort and TransPort
-Image:Thunderbird_17.0.png|Mozilla Thunderbird (Icedove genannt in Debian) mit TorBirdy, siehe [[E-Mail]]
-Image:xchat_screenshot_created_by_adrelanos.png|[[XChat]], IRC Chat Client
-Image:torbrowser.png|[[Tor Browser]], Privatsphäre per Design. Bekämpft Browserverfolgung.
-Image:shield_badge.png|Whonix ist Mitglied der [http://internetdefenseleague.org Internet Defense League].
-Image:OIN_logo_200px.png|Whonix ist [http://www.openinventionnetwork.com/licensees.php Lizenznehmer] des [https://en.wikipedia.org/wiki/Open_Invention_Network Open Invention Network].
-Image:donate.png|link=Donate|[[Donate|Spenden an Whonix!]]
+Image:Thunderbird_17.0.png|Mozilla Thunderbird (called Icedove in Debian) with TorBirdy, see [[E-Mail]]
+Image:xchat_screenshot_created_by_adrelanos.png|[[XChat|XChat]], IRC Chat Client
+Image:torbrowser.png|[[Tor Browser|Tor Browser]], privacy by design. Fighting web fingerprinting and linkability.
+Image:shield_badge.png|Whonix is a member of the [http://internetdefenseleague.org Internet Defense League].
+Image:OIN_logo_200px.png|Whonix is a [http://www.openinventionnetwork.com/licensees.php licensee] of the [https://en.wikipedia.org/wiki/Open_Invention_Network Open Invention Network].
+Image:donate.png|link=Donate|[[Donate|Donate to Whonix!]]
 &lt;/gallery&gt;
 
-Whonix wird unabhängig und ohne jegliche Garantien von The Tor Project&lt;ref&gt;https://www.torproject.org&lt;/ref&gt; hergestellt.
+= Footnotes =
+Whonix wird unabhängig und ohne jegliche Garantien von The Tor Project&lt;ref&gt;https://www.torproject.org&lt;/ref&gt; hergestellt.&lt;ref&gt;https://www.torproject.org&lt;/ref&gt;.
 
+&lt;!--T:9--&gt;
 &lt;references /&gt;
 
 Danke an Tomchen1989 von Wikimedia Commons für den Downloadbutton! [https://commons.wikimedia.org/wiki/File:Download_Button.svg 1] ([http://www.webcitation.org/6I2DQzdu0 w])
@@ -56257,9 +56366,12 @@ Thanks für den MAT public domain screenshot an [https://www.awxcnx.de/handbuch_
 &lt;!---
 &lt;a href=&quot;https://plus.google.com/108150429836421683225&quot; rel=&quot;publisher&quot;&gt;Google+&lt;/a&gt;
 ---&gt;
+&lt;!---
+&lt;a href=&quot;https://plus.google.com/108150429836421683225&quot; rel=&quot;publisher&quot;&gt;Google+&lt;/a&gt;
+---&gt;
 {{Footer}}
 [[Category:Documentation]]</text>
-      <sha1>8f2a9y2dlisx86ajh1dg2505r8q6185</sha1>
+      <sha1>nvwi2gj1kfbzwhuhnaejmgyw0wkuwdt</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -57727,36 +57839,37 @@ sudo -E ./build-steps.d/1100_prepare-build-machine --bare-metal --tor-gateway
     <ns>0</ns>
     <id>755</id>
     <revision>
-      <id>5951</id>
-      <parentid>5547</parentid>
-      <timestamp>2014-02-27T16:29:21Z</timestamp>
+      <id>6344</id>
+      <parentid>6318</parentid>
+      <timestamp>2014-03-05T22:54:06Z</timestamp>
       <contributor>
         <username>FuzzyBot</username>
         <id>37</id>
       </contributor>
       <comment>Updating to match new version of source page</comment>
-      <text xml:space="preserve" bytes="6394">{{Header}}
-
+      <text xml:space="preserve" bytes="7950">{{Header}}
+__NOTOC__
 &lt;languages /&gt;
 {{#seo:
 |description=Privacy protection. Anonymity online. Anonymous Operating System.
 }}
 
+&lt;!--T:1--&gt;
 {{Infobox OS
 | logo                   = [[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|alt=Download Whonix]]
 | name                   = Whonix
 | screenshot             = [[Image:kde0_5_0.png|Whonix-Workstation with KDE Desktop|200px]]
 | caption                = Whonix-Workstation with KDE Desktop
-| developer              = none / Whonix developers
+| developer              = [https://www.whonix.org/forum/index.php/topic,109.0.html none] / [[Authorship|Whonix developers]]
 | family                 = [https://en.wikipedia.org/wiki/Unix-like Unix-like], based on [https://en.wikipedia.org/wiki/Debian Debian]
-| source_model           = [https://en.wikipedia.org/wiki/Open_source Open Source] 
+| source_model           = [https://en.wikipedia.org/wiki/Open_source Open Source]
 | working_state          = active
 | released               = 29 Feb 2012
 | latest_release_version = [[Download|{{Version}}]]
 | latest_release_date    = {{Start date and age|2014|02|27|df=yes}}
 | latest_test_version    = none at the moment
 | latest_test_date       = {{Start date and age|2014|01|13|df=yes}}
-| marketing target       = Anonymity; Privacy; Security; Personal computing; [[HostingLocationHiddenServices|Location Hidden Servers]]
+| marketing target       = Anonymity; Privacy; Security; Personal computing; [[Hosting Location Hidden Services|Location Hidden Servers]]
 | kernel_type            = [https://en.wikipedia.org/wiki/Monolithic_kernel Monolithic] ([https://en.wikipedia.org/wiki/Linux_kernel Linux kernel])
 | ui                     = [https://en.wikipedia.org/wiki/KDE KDE]
 | license                = [https://en.wikipedia.org/wiki/Free_software Free software], mainly the [https://en.wikipedia.org/wiki/GNU_GPL GNU GPL], and other licenses&lt;ref&gt;{{cite web|url=http://www.debian.org/legal/licenses/|title=License information|publisher=Debian|accessdate=2009-02-28}}&lt;/ref&gt;
@@ -57766,35 +57879,67 @@ sudo -E ./build-steps.d/1100_prepare-build-machine --bare-metal --tor-gateway
 | supported_platforms    = x86 compatible and/or VirtualBox + &lt;ref&gt;[[Other Operating Systems|Custom-Workstation]]: self made builds can run on any real or virtual hardware as long as they are behind a Whonix-Gateway. Tor Browser binaries are only available for a limited number of platforms (Windows, Linux, BSD, Mac).&lt;/ref&gt;
 }}
 
-[[Image:whonix.jpg|center|Замысел Whonix|400px]]
+&lt;!-------------------------Whonix------------------------&gt;
+{|style=&quot;border-spacing:8px; margin:0px -8px;&quot;
+|class=&quot;MainPageBG&quot; style=&quot;width:55%; border:1px solid #cef2e0; background:#f5fffa; vertical-align:top; color:#000;&quot;|
+{|width=&quot;100%&quot; cellpadding=&quot;2&quot; cellspacing=&quot;5&quot; style=&quot;vertical-align:top; background:#f5fffa;&quot;
+! &lt;h3 style=&quot;margin:0; background:#cef2e0; font-size:120%; font-weight:bold; border:1px solid #a3bfb1; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Whonix&lt;/h3&gt;
+|-
+|style=&quot;color:#000;&quot;| 
+&lt;!--T:2--&gt;
+[[Image:whonix.jpg|center|Whonix Concept|500px]]
 
-Whonix является операционной системой, нацеленной на обеспечение анонимности, приватности и безопасности данных. В её основе лежит Сеть Анонимизации Tor&lt;ref&gt;https://www.torproject.org/about/overview.html.en&lt;/ref&gt;, Debian GNU/Linux&lt;ref&gt;https://en.wikipedia.org/wiki/Debian&lt;/ref&gt; и безопасность за счёт изоляции потоков. Утечки DNS-запросов невозможны, и даже программы-шпионы с правами корневого пользователя не способны выяснить реальный IP пользователя. 
+Whonix является операционной системой, нацеленной на обеспечение анонимности, приватности и безопасности данных. В её основе лежит Сеть Анонимизации Tor&lt;ref&gt;https://www.torproject.org/about/overview.html.en&lt;/ref&gt;, Debian GNU/Linux&lt;ref&gt;https://en.wikipedia.org/wiki/Debian&lt;/ref&gt; и безопасность за счёт изоляции потоков. Утечки DNS-запросов невозможны, и даже программы-шпионы с правами корневого пользователя не способны выяснить реальный IP пользователя.
 
 Whonix состоит из двух частей: первая обеспечивает соединение с/работу Tor и действует как шлюз, поэтому и называется Whonix-Gateway (Whonix-шлюз). Вторая, именуемая Whonix-Workstation (Whonix-Рабочая станция), находится в совершенно изолированной сети. Любые соединения возможны только через Tor.
 
 Для получения дополнительной информации по безопасности данных и анонимности, обеспечиваемых в ОС Whonix, обратитесь к странице [[О|О Whonix]]
 
-[[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|alt=Загрузить Whonix]]
+&lt;!--T:6--&gt;
+[[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|alt=Download Whonix]]
 
-= Скриншоты =
+|-
+|}&lt;!--
+
+&lt;--------------------------------Blog Posts, Forum Posts-------------------------------&gt;
+|class=&quot;MainPageBG&quot; style=&quot;width:45%; border:1px solid #cedff2; background:#f5faff; vertical-align:top&quot;|
+{| width=&quot;100%&quot; cellpadding=&quot;2&quot; cellspacing=&quot;5&quot; style=&quot;vertical-align:top; background:#f5faff;&quot;
+! &lt;h3 style=&quot;margin:0; background:#cedff2; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Latest [https://www.whonix.org/blog Blog] Posts [[File:2000px-Feed-icon.svg.png|20px|alt=rss|link=https://www.whonix.org/blog/feed/]]&lt;/h3&gt;
+|-
+|style=&quot;color:#000;&quot;|
+&lt;rss number=10 title=off desc=off&gt;https://www.whonix.org/blog/feed/rss2/&lt;/rss&gt;
+
+|-
+! &lt;h3 style=&quot;margin:0; background:#cedff2; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Latest [https://www.whonix.org/forum Forum] Posts [[File:2000px-Feed-icon.svg.png|20px|alt=rss|link=https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10]]&lt;/h3&gt;
+|-
+|style=&quot;color:#000;&quot;| 
+&lt;rss number=10 title=off desc=off&gt;https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10&lt;/rss&gt;
+
+|-
+|}
+|}
+
+= Screenshots = &lt;!--T:7--&gt;
 &lt;gallery&gt;
-Image:kde0_5_0.png|Whonix-Workstation 0.5.6 с рабочим столом KDE
-Image:whonixcheck_gui.png|[[whonixcheck|whonix-проверка]]
-Image:timesync_gui.png|[[TimeSync|Синхронизация времени]]
-Image:stream_isolation.1.0.jpg|[[Stream Isolation|Изоляция потоков]]
-Image:mat.png|MAT - Набор инструментов анонимизации [[Metadata|Метаданных]]
-Image:flash_leak_test.png|[[Browser Plugins|Флэш]] Проверка утечек через SocksPort и TransPort
-Image:Thunderbird_17.0.png|Mozilla Thunderbird (именуемая &quot;Icedove&quot; в ОС Debian) с TorBirdy, см. [[E-Mail]]
-Image:xchat_screenshot_created_by_adrelanos.png|[[XChat]], Чат-клиент IRC
-Image:torbrowser.png|[[Tor Browser|Tor-браузер]], приватность за счёт конструкции. Борьба c отпечатками пальцев и распознаванием корреляцией.
-Image:shield_badge.png|Whonix состоит в [http://internetdefenseleague.org Лиге защиты в Интернете].
-Image:OIN_logo_200px.png|Whonix является [http://www.openinventionnetwork.com/licensees.php лицензиатом] [https://en.wikipedia.org/wiki/Open_Invention_Network Сети открытых изобретений].
-Image:donate.png|link=Donate|[[Donate|Финансово поддержать Whonix!]]
+Image:kde0_5_0.png|Whonix-Workstation with KDE Desktop
+Image:whonixcheck_gui.png|[[whonixcheck|whonixcheck]]
+Image:timesync_gui.png|[[TimeSync|TimeSync]]
+Image:stream_isolation.1.0.jpg|[[Stream Isolation|Stream Isolation]]
+Image:mat.png|MAT - [[Metadata|Metadata]] Anonymisation Toolkit
+Image:flash_leak_test.png|[[Browser Plugins|Flash]] Leak Test SocksPort and TransPort
+Image:Thunderbird_17.0.png|Mozilla Thunderbird (called Icedove in Debian) with TorBirdy, see [[E-Mail]]
+Image:xchat_screenshot_created_by_adrelanos.png|[[XChat|XChat]], IRC Chat Client
+Image:torbrowser.png|[[Tor Browser|Tor Browser]], privacy by design. Fighting web fingerprinting and linkability.
+Image:shield_badge.png|Whonix is a member of the [http://internetdefenseleague.org Internet Defense League].
+Image:OIN_logo_200px.png|Whonix is a [http://www.openinventionnetwork.com/licensees.php licensee] of the [https://en.wikipedia.org/wiki/Open_Invention_Network Open Invention Network].
+Image:donate.png|link=Donate|[[Donate|Donate to Whonix!]]
 &lt;/gallery&gt;
 
+= Footnotes =
 = Сноски =
-ОС Whonix выпускается независимо от Проекта Tor, и последний не предоставляет никаких гарантий в отношении её&lt;ref&gt;https://www.torproject.org&lt;/ref&gt;.
+ОС Whonix выпускается независимо от Проекта Tor, и последний не предоставляет никаких гарантий в отношении её&lt;ref&gt;https://www.torproject.org&lt;/ref&gt;.&lt;ref&gt;https://www.torproject.org&lt;/ref&gt;.
 
+&lt;!--T:9--&gt;
 &lt;references /&gt;
 
 Благодарим Tomchen1989 из Wikimedia Commons за кнопку загрузки!
@@ -57803,9 +57948,12 @@ Image:donate.png|link=Donate|[[Donate|Финансово поддержать Wh
 Благодарим за скриншот публичного домена MAT к
 [https://www.awxcnx.de/handbuch_43.htm awxcnx.de]!
 &lt;!--- &lt;a href=&quot;https://plus.google.com/108150429836421683225&quot; rel=&quot;publisher&quot;&gt;Google+&lt;/a&gt; ---&gt;
+&lt;!---
+&lt;a href=&quot;https://plus.google.com/108150429836421683225&quot; rel=&quot;publisher&quot;&gt;Google+&lt;/a&gt;
+---&gt;
 {{Footer}}
 [[Category:Documentation]]</text>
-      <sha1>r1czvxnch25ee67xld6rw9308a4bgvu</sha1>
+      <sha1>03up2mencxgykw8w86b4d9ieohd1yzc</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -57815,14 +57963,16 @@ Image:donate.png|link=Donate|[[Donate|Финансово поддержать Wh
     <ns>1198</ns>
     <id>756</id>
     <revision>
-      <id>5239</id>
-      <parentid>5237</parentid>
-      <timestamp>2014-02-10T18:29:43Z</timestamp>
+      <id>6317</id>
+      <parentid>5239</parentid>
+      <timestamp>2014-03-05T17:05:26Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="3101">{{Infobox OS
+      <minor/>
+      <comment>Text replace - &quot;HostingLocationHiddenServices&quot; to &quot;Hosting Location Hidden Services&quot;</comment>
+      <text xml:space="preserve" bytes="3104">{{Infobox OS
 | logo                   = [[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|alt=Download Whonix]]
 | name                   = Whonix
 | screenshot             = [[Image:kde0_5_0.png|Whonix-Workstation 0.5.6 с рабочим столом KDE|200px]]
@@ -57837,7 +57987,7 @@ Image:donate.png|link=Donate|[[Donate|Финансово поддержать Wh
 | latest_release_date    = {{Start date and age|2013|10|11|df=yes}}
 | latest_test_version    = 7.7.2
 | latest_test_date       = {{Start date and age|2014|01|13|df=yes}}
-| marketing target       = marketing target       = Анонимность; Конфиденциальность; Безопасность; Приватность; [[HostingLocationHiddenServices|Location Hidden Servers]]
+| marketing target       = marketing target       = Анонимность; Конфиденциальность; Безопасность; Приватность; [[Hosting Location Hidden Services|Location Hidden Servers]]
 | kernel_type            = [https://en.wikipedia.org/wiki/Monolithic_kernel Монолитное] ([https://en.wikipedia.org/wiki/Linux_kernel Ядро Linux])
 | ui                     = [https://en.wikipedia.org/wiki/KDE KDE]
 | license                = [https://en.wikipedia.org/wiki/Free_software Свободное ПО], главным образом [https://en.wikipedia.org/wiki/GNU_GPL GNU GPL], и другие лицензии &lt;ref&gt;{{cite web|url=http://www.debian.org/legal/licenses/|title=License information|publisher=Debian|accessdate=2009-02-28}}&lt;/ref&gt;
@@ -57846,7 +57996,7 @@ Image:donate.png|link=Donate|[[Donate|Финансово поддержать Wh
 | preceded_by            = [https://trac.torproject.org/projects/tor/wiki/doc/JanusVM JanusVM]&lt;ref&gt;http://www.webcitation.org/6IA21tFaM&lt;/ref&gt;; [http://www.makeuseof.com/tag/browse-email-safely-anonymously-torbox/ TorBOX]&lt;ref&gt;http://www.webcitation.org/6IA20bIq5&lt;/ref&gt;
 | supported_platforms    = x86 compatible and/or VirtualBox + &lt;ref&gt;[[Other Operating Systems|Workstation-собственной-сборки]]: собственные сборки могут работать на любом реальном или виртуальном аппаратном обеспечении при условии, что они соединяются с Интернетом через Whonix-Gateway (Whonix-шлюз). Уже скомпилированные запускаемые файлы предлагаются только для ограниченного числа платформ (Windows, Linux, BSD, Mac).&lt;/ref&gt;
 }}</text>
-      <sha1>advgo9pwsyyqvf7ma7isguvc412mibm</sha1>
+      <sha1>dqg4muhghlgwl2j6uq1kkik5zzctkor</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -61430,15 +61580,15 @@ sudo rm -fR /var/lib/apt/lists/*
     <ns>0</ns>
     <id>891</id>
     <revision>
-      <id>6300</id>
-      <parentid>6298</parentid>
-      <timestamp>2014-03-05T10:26:07Z</timestamp>
+      <id>6332</id>
+      <parentid>6331</parentid>
+      <timestamp>2014-03-05T22:36:13Z</timestamp>
       <contributor>
         <username>Troubadour</username>
         <id>230</id>
       </contributor>
-      <comment>Typo edit</comment>
-      <text xml:space="preserve" bytes="14869">{{Header}}
+      <minor/>
+      <text xml:space="preserve" bytes="15204">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
@@ -61449,7 +61599,7 @@ The following AppArmor profiles are currently under evaluation with Whonix 8. Wh
 = VirtualBox =
 {{AppArmorProfileWarning}}
 
-This profile has to be used in the host. It is tested with VirtualBox 4.3 (4.3_4.3.8-92456~Debian~wheezy_amd64), no other versions. If you build a Whonix image, it will install VirtualBox 4.1. Please report any message you might see in the forum https://www.whonix.org/forum/index.php/topic,97.0.html 
+This profile has to be used in the host. It is tested with VirtualBox 4.3 (4.3_4.3.8-92456~Debian~wheezy_amd64), no other versions. If you build a Whonix image, it will install VirtualBox 4.1. Please report any message you might see in this  [http://kkkkkkkkkk63ava6.onion/forum/index.php/topic,97.0.html forum thread].
 
 In the host, create a file /etc/apparmor.d/usr.bin.VBox.
 
@@ -61571,7 +61721,8 @@ Paste the following content.
 }
 &lt;/pre&gt;
 
-Run
+Run.
+
 &lt;pre&gt;
 sudo aa-enforce /etc/apparmor.d/usr.bin.VBox
 &lt;/pre&gt;
@@ -61597,7 +61748,9 @@ Paste the following content.
 	#include &lt;abstractions/user-tmp&gt;
 	#include &lt;abstractions/bash&gt;
 	#include &lt;abstractions/fonts&gt;
-	
+	#include &lt;abstractions/kde&gt;
+	#include &lt;abstractions/gnome&gt;
+		
 	#include &lt;local/home.user.tor-browser_en-US.Browser.firefox&gt;
 	
 	capability sys_ptrace,
@@ -61610,55 +61763,61 @@ Paste the following content.
 	deny /etc/resolv.conf.whonix r,
 	deny /etc/hosts.whonix r,
 
-	owner @{HOME}/tor-browser_en-US/ r,
-	owner @{HOME}/tor-browser_en-US/* rw, 
-	owner @{HOME}/tor-browser_en-US/.cache/ r,
-	owner @{HOME}/tor-browser_en-US/.cache/* rw, 
-	owner @{HOME}/tor-browser_en-US/.mozilla/ w,
-	owner @{HOME}/tor-browser_en-US/.mozilla/*/ w,
-	owner @{HOME}/tor-browser_en-US/Browser/** r,
-	owner @{HOME}/tor-browser_en-US/Browser/*.so mr,
-	owner @{HOME}/tor-browser_en-US/Browser/browser/components/*.so mr,
-	owner @{HOME}/tor-browser_en-US/Browser/components/*.so mr,
-	owner @{HOME}/tor-browser_en-US/Browser/firefox rix,
-	owner @{HOME}/tor-browser_en-US/Data/Browser/ r,
-	owner @{HOME}/tor-browser_en-US/Data/Browser/** rwk,
-	owner @{HOME}/tor-browser_en-US/Desktop/ rw,
-	owner @{HOME}/tor-browser_en-US/Desktop/** rw,
-	owner @{HOME}/tor-browser_en-US/Downloads/ rw,
-	owner @{HOME}/tor-browser_en-US/Downloads/** rw,
-	owner @{HOME}/tor-browser_en-US/Tor/tor Px,
+	@{HOME}/tor-browser_en-US/ r,
+	@{HOME}/tor-browser_en-US/* rw, 
+	@{HOME}/tor-browser_en-US/.cache/ r,
+	@{HOME}/tor-browser_en-US/.cache/* rw, 
+	@{HOME}/tor-browser_en-US/.mozilla/ w,
+	@{HOME}/tor-browser_en-US/.mozilla/*/ w,
+	@{HOME}/tor-browser_en-US/Browser/** r,
+	@{HOME}/tor-browser_en-US/Browser/*.so mr,
+	@{HOME}/tor-browser_en-US/Browser/browser/components/*.so mr,
+	@{HOME}/tor-browser_en-US/Browser/components/*.so mr,
+	@{HOME}/tor-browser_en-US/Browser/firefox rix,
+	@{HOME}/tor-browser_en-US/Data/Browser/ r,
+	@{HOME}/tor-browser_en-US/Data/Browser/** rwk,
+	@{HOME}/tor-browser_en-US/Desktop/ rw,
+	@{HOME}/tor-browser_en-US/Desktop/** rw,
+	@{HOME}/tor-browser_en-US/Downloads/ rw,
+	@{HOME}/tor-browser_en-US/Downloads/** rw,
+	@{HOME}/tor-browser_en-US/Tor/tor Px,
 
-	owner @{HOME}/ r,
-	owner @{HOME}/Desktop r,	
-	owner @{HOME}/Downloads/ r,	
-	owner @{HOME}/Downloads/** rw,
-	owner @{HOME}/.kde/share/** rw,
-	owner @{HOME}/.local/share/ r,
-	owner @{HOME}/.local/share/applications/* r,
-	owner @{HOME}/.local/share/mime/ r,
-	owner @{HOME}/.local/share/mime/** r,
-	owner @{HOME}/.local/share/gvfs-metadata/home r,
-	owner @{HOME}/.local/share/recently-used.xbel* rw,
-	owner @{HOME}/.themes/** r,
-	owner @{HOME}/.cache/ r,
-	owner @{HOME}/.cache/* rwk,
-	owner @{HOME}/.config/oxygen-gtk/argb-apps.conf rw,
-	owner @{HOME}/.config/user-dirs.dirs r,
-	owner @{HOME}/.gtk-bookmarks r,
-	owner @{HOME}/.Xauthority r,
+	@{HOME}/ r,
+	@{HOME}/Desktop r,	
+	@{HOME}/Downloads/ r,	
+	@{HOME}/Downloads/** rw,
+# In &lt;abstractions/kde&gt;
+#	@{HOME}/.kde/share/** rw,
+	@{HOME}/.local/share/ r,
+	@{HOME}/.local/share/applications/* r,
+	@{HOME}/.local/share/mime/ r,
+	@{HOME}/.local/share/mime/** r,
+	@{HOME}/.local/share/gvfs-metadata/home r,
+	@{HOME}/.local/share/recently-used.xbel* rw,
+	@{HOME}/.themes/** r,
+	@{HOME}/.cache/ r,
+	@{HOME}/.cache/* rwk,
+	@{HOME}/.config/oxygen-gtk/argb-apps.conf rw,
+	@{HOME}/.config/user-dirs.dirs r,
+# In &lt;abstractions/gnome&gt;
+#	@{HOME}/.gtk-bookmarks r,
+	@{HOME}/.Xauthority r,
+## NOT in &lt;abstractions/kde&gt;
+	@{HOME}/.kde/share/config/gtkrc-2.0 r,	
 	
 	/usr/share/ r,
-	/usr/share/icons/ r,
-	/usr/share/icons/** r,
+# In &lt;abstractions/kde&gt;
+#	/usr/share/icons/ r,
+#	/usr/share/icons/** r,
 	/usr/share/mime/ r,
 	/usr/share/mime/** r,
 	/usr/share/pixmaps/ r,
 	/usr/share/pixmaps/** r,
 	/usr/share/themes/ r,
 	/usr/share/themes/** r,
-	/usr/share/kde4/config/kdeglobals r,
-	/usr/share/whonix/kde/share/config/kdeglobals r,
+# In &lt;abstractions/kde&gt;
+#	/usr/share/kde4/config/kdeglobals r,
+#	/usr/share/whonix/kde/share/config/kdeglobals r,
 	/usr/share/applications/** r,
  	/usr/share/alsa/alsa.conf r,
  	
@@ -61699,13 +61858,15 @@ Paste the following content.
 
 	/tmp/.X0-lock r,
 
-	/usr/bin/kde4-config rix,
+# In &lt;abstractions/kde&gt;
+#	/usr/bin/kde4-config rix,
 	
 	/usr/lib/i386-linux-gnu/** mr,
 	
 	/var/lib/dbus/machine-id r,
-	/var/lib/whonix/whonixblog/ r,	
+	/var/lib/whonix/whonixblog/ r,
 }
+
 &lt;/pre&gt;
 
 Create a file /etc/apparmor.d/local/home.user.tor-browser_en-US.Browser.firefox.
@@ -61716,12 +61877,19 @@ kdesudo kwrite /etc/apparmor.d/local/home.user.tor-browser_en-US.Browser.firefox
 
 Paste the following content.
 &lt;pre&gt;
-/etc/gnome-vfs-2.0/modules/ r,
-/etc/gnome-vfs-2.0/modules/* r,
+# In &lt;abstractions/gnome&gt;
+# /etc/gnome-vfs-2.0/modules/ r,
+# /etc/gnome-vfs-2.0/modules/* r,
 
 /usr/share/fontconfig/conf.avail/* r,
-/usr/share/poppler/cMap/Adobe-Korea1/ r,
-/usr/share/poppler/cMap/Adobe-Korea1/* r,
+/usr/share/poppler/cMap/ r,
+/usr/share/poppler/cMap/** r,
+&lt;/pre&gt;
+
+Run.
+
+&lt;pre&gt;
+sudo aa-enforce /etc/apparmor.d/home.user.tor-browser_en-US.Browser.firefox
 &lt;/pre&gt;
 
 
@@ -61748,7 +61916,9 @@ Paste the following content.
 	#include &lt;abstractions/user-tmp&gt;
 	#include &lt;abstractions/bash&gt;
 	#include &lt;abstractions/fonts&gt;
-	
+	#include &lt;abstractions/kde&gt;
+	#include &lt;abstractions/gnome&gt;
+
 	#include &lt;local/usr.lib.icedove.icedove&gt;
 	  
 	capability sys_ptrace,
@@ -61761,23 +61931,23 @@ Paste the following content.
 	deny /etc/hosts.whonix r,
 	deny /etc/fstab r,
 
-	owner @{HOME}/ r,	  
-	owner @{HOME}/Desktop/ r,
-	owner @{HOME}/Downloads/ r,	
-	owner @{HOME}/Downloads/** rw,	
-	owner @{HOME}/.icedove/** mrwk,
-	owner @{HOME}/.kde/share/** rw,
-	owner @{HOME}/.config/oxygen-gtk/argb-apps.conf rw,
-	owner @{HOME}/.local/share/ r,
-	owner @{HOME}/.local/share/applications/* r,
-	owner @{HOME}/.local/share/mime/ r,
-	owner @{HOME}/.local/share/mime/** r,
-	owner @{HOME}/.local/share/recently-used.xbel* rw,
-	owner @{HOME}/.local/share/applications/kate-2.desktop r,
-	owner @{HOME}/.cache/ r,
-	owner @{HOME}/.cache/** rw,
-	owner @{HOME}/.gnupg/* lrwkcix,
-	owner @{HOME}/.Xauthority r,
+	@{HOME}/ r,	  
+	@{HOME}/Desktop/ r,
+	@{HOME}/Downloads/ r,	
+	@{HOME}/Downloads/** rw,	
+	@{HOME}/.icedove/** mrwk,
+	@{HOME}/.kde/share/** rw,
+	@{HOME}/.config/oxygen-gtk/argb-apps.conf rw,
+	@{HOME}/.local/share/ r,
+	@{HOME}/.local/share/applications/* r,
+	@{HOME}/.local/share/mime/ r,
+	@{HOME}/.local/share/mime/** r,
+	@{HOME}/.local/share/recently-used.xbel* rw,
+	@{HOME}/.local/share/applications/kate-2.desktop r,
+	@{HOME}/.cache/ r,
+	@{HOME}/.cache/** rwk,
+	@{HOME}/.gnupg/* lrwkcix,
+	@{HOME}/.Xauthority r,
 	
 	/usr/share/ r,
 	/usr/share/icons/ r,
@@ -61794,8 +61964,8 @@ Paste the following content.
 	/usr/share/whonix/kde/share/config/kdeglobals rw,
 	/usr/share/hunspell/ r,
 	/usr/share/hunspell/* r,
-	/usr/.local/share/applications/ rw,
-	/usr/share/applications/ rw,
+	/usr/.local/share/applications/ rwk,
+	/usr/share/applications/ rwk,
 	
 	/etc/drirc r,
 	/etc/ld.so.cache r,
@@ -61809,6 +61979,7 @@ Paste the following content.
 	/etc/gai.conf r,
 	/etc/whonix.d/ r, 
 	/etc/whonix.d/* r, 
+        /etc/xul-ext/enigmail.js rix,
 
 	/bin/ps rix,
 	/bin/dash  rix,
@@ -61852,7 +62023,7 @@ Paste the following content.
 	/usr/bin/torsocks rix,
 	/usr/bin/gpg.whonix rix,
 	/usr/bin/gpg.whonix-orig rix,
-	/usr/bin/gpg2 r,
+	/usr/bin/gpg2 rix,
 
 	/usr/lib/i386-linux-gnu/** rm,
 	/usr/lib/icedove/icedove mrix,
@@ -61872,6 +62043,8 @@ kdesudo kwrite /etc/apparmor.d/local/usr.lib.icedove.icedove
 Paste the following content.
 &lt;pre&gt;
 /usr/share/fontconfig/conf.avail/* r,
+/usr/share/poppler/cMap/ r,
+/usr/share/poppler/cMap/** r,
 &lt;/pre&gt;
 
 Run
@@ -61941,12 +62114,13 @@ Paste the following content.
   owner @{HOME}/.pulse-cookie rwk,
   owner @{HOME}/.purple/ rw,
   owner @{HOME}/.purple/** rwk,
-
+  owner @{HOME}/.kde/share/config/* r,  # added 
   /bin/dash rix,
 
   /{dev,run}/shm/ r,
   /{dev,run}/shm/* rw,
 
+  deny /etc/fstab r,  # Required by the change buddyicon button
   /etc/ r,
   /etc/pulse/client.conf r,
   /etc/ssl/certs/ r,
@@ -61996,10 +62170,10 @@ Paste the following content.
 }
 &lt;/pre&gt;
 
-Create a file /etc/apparmor.d/local/usr.bin/pidgin.
+Create a file /etc/apparmor.d/local/usr.bin.pidgin.
 
 &lt;pre&gt;
-kdesudo kwrite /etc/apparmor.d/local/usr.bin/pidgin
+kdesudo kwrite /etc/apparmor.d/local/usr.bin.pidgin
 &lt;/pre&gt;
 
 &lt;pre&gt;
@@ -62030,7 +62204,7 @@ Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/A
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>636rqv8udcvehlxvkp9z89ziwqo8ur8</sha1>
+      <sha1>8llvxmgcnmstpbyh46si74cc1pdx00t</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -62164,15 +62338,14 @@ Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/A
     <ns>10</ns>
     <id>894</id>
     <revision>
-      <id>6248</id>
-      <parentid>6243</parentid>
-      <timestamp>2014-03-02T16:06:03Z</timestamp>
+      <id>6307</id>
+      <parentid>6248</parentid>
+      <timestamp>2014-03-05T16:20:12Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>why bold the file size, not the vm name?</comment>
-      <text xml:space="preserve" bytes="7584">&lt;!--T:7--&gt;
+      <text xml:space="preserve" bytes="7632">&lt;!--T:7--&gt;
 &lt;big&gt;Version: &lt;span style=&quot;color: green&quot;&gt;{{VersionNew}}&lt;/span&gt;&lt;/big&gt;
 
 &lt;!--T:8--&gt;
@@ -62191,8 +62364,8 @@ Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/A
 
 &lt;!--T:91--&gt;
 | {{GrayBackground}}| [[File:HTTP.png|40px]] {{Anchor|Whonix_signature}}
-| &lt;html&gt;&lt;a href=&quot;http://mirror.whonix.org.nyud.net/&lt;/html&gt;{{VersionNew}}&lt;html&gt;/Whonix-Gateway-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
-| &lt;html&gt;&lt;a href=&quot;http://mirror.whonix.org.nyud.net/&lt;/html&gt;{{VersionNew}}&lt;html&gt;/Whonix-Workstation-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
+| &lt;html&gt;&lt;a href=&quot;http://mirror.whonix.org.nyud.net/&lt;/html&gt;{{VersionNew}}&lt;html&gt;/Whonix-Gateway-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova&quot; target=&quot;_blank&quot;&gt;Download (off, use mirror below)&lt;/a&gt;&lt;/html&gt;
+| &lt;html&gt;&lt;a href=&quot;http://mirror.whonix.org.nyud.net/&lt;/html&gt;{{VersionNew}}&lt;html&gt;/Whonix-Workstation-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova&quot; target=&quot;_blank&quot;&gt;Download (off, use mirror below)&lt;/a&gt;&lt;/html&gt;
 |{{Yes}} &lt;ref name=anonymousdownload /&gt;
 | style=&quot;background-color: {{Red}}&quot;| Very Low &lt;ref&gt;[[Warning#Man-in-the-middle_attacks|Man-in-the-middle attacks]] could poison the download.&lt;/ref&gt;
 | style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification&gt;It does not matter if you did the bulk download over an insecure channel, if you use OpenPGP verification at the end.&lt;/ref&gt;
@@ -62258,7 +62431,7 @@ Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/A
 | style=&quot;background-color: {{Green}}&quot;| Very High &lt;ref name=fromsourcecode&gt;When you build from source code, audit the source code for being non-malicious and reasonably bug free, you do not have to [[Trust|Trust]] the developers, the website or the SSL certificate authorities.&lt;/ref&gt;
 | style=&quot;background-color: {{Green}}&quot;| Best &lt;ref name=fromsourcecode /&gt; &lt;ref&gt;By additional verification that you got the source code from the original authors and by ensuring you're using the same source code as others you get better security.&lt;/ref&gt;
 |}</text>
-      <sha1>4bghq5zsolvk36xltsldzj3kmhetp8f</sha1>
+      <sha1>s6fgtggsq33ebtwn1sgnvqzgbihwewd</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -64203,35 +64376,37 @@ Therefore it is impossible to claim that non-trivial source code is backdoor fre
     <ns>0</ns>
     <id>972</id>
     <revision>
-      <id>6266</id>
-      <parentid>6264</parentid>
-      <timestamp>2014-03-03T11:11:03Z</timestamp>
+      <id>6349</id>
+      <parentid>6321</parentid>
+      <timestamp>2014-03-05T22:54:15Z</timestamp>
       <contributor>
-        <username>Jinformatique</username>
-        <id>247</id>
+        <username>FuzzyBot</username>
+        <id>37</id>
       </contributor>
-      <text xml:space="preserve" bytes="4003">{{Header}}
-
+      <comment>Updating to match new version of source page</comment>
+      <text xml:space="preserve" bytes="6922">{{Header}}
+__NOTOC__
 &lt;languages /&gt;
 {{#seo:
 |description=Privacy protection. Anonymity online. Anonymous Operating System.
 }}
 
+&lt;!--T:1--&gt;
 {{Infobox OS
 | logo                   = [[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|alt=Download Whonix]]
 | name                   = Whonix
 | screenshot             = [[Image:kde0_5_0.png|Whonix-Workstation with KDE Desktop|200px]]
 | caption                = Whonix-Workstation with KDE Desktop
-| developer              = none / Whonix developers
+| developer              = [https://www.whonix.org/forum/index.php/topic,109.0.html none] / [[Authorship|Whonix developers]]
 | family                 = [https://en.wikipedia.org/wiki/Unix-like Unix-like], based on [https://en.wikipedia.org/wiki/Debian Debian]
-| source_model           = [https://en.wikipedia.org/wiki/Open_source Open Source] 
+| source_model           = [https://en.wikipedia.org/wiki/Open_source Open Source]
 | working_state          = active
 | released               = 29 Feb 2012
 | latest_release_version = [[Download|{{Version}}]]
 | latest_release_date    = {{Start date and age|2014|02|27|df=yes}}
 | latest_test_version    = none at the moment
 | latest_test_date       = {{Start date and age|2014|01|13|df=yes}}
-| marketing target       = Anonymity; Privacy; Security; Personal computing; [[HostingLocationHiddenServices|Location Hidden Servers]]
+| marketing target       = Anonymity; Privacy; Security; Personal computing; [[Hosting Location Hidden Services|Location Hidden Servers]]
 | kernel_type            = [https://en.wikipedia.org/wiki/Monolithic_kernel Monolithic] ([https://en.wikipedia.org/wiki/Linux_kernel Linux kernel])
 | ui                     = [https://en.wikipedia.org/wiki/KDE KDE]
 | license                = [https://en.wikipedia.org/wiki/Free_software Free software], mainly the [https://en.wikipedia.org/wiki/GNU_GPL GNU GPL], and other licenses&lt;ref&gt;{{cite web|url=http://www.debian.org/legal/licenses/|title=License information|publisher=Debian|accessdate=2009-02-28}}&lt;/ref&gt;
@@ -64241,21 +64416,67 @@ Therefore it is impossible to claim that non-trivial source code is backdoor fre
 | supported_platforms    = x86 compatible and/or VirtualBox + &lt;ref&gt;[[Other Operating Systems|Custom-Workstation]]: self made builds can run on any real or virtual hardware as long as they are behind a Whonix-Gateway. Tor Browser binaries are only available for a limited number of platforms (Windows, Linux, BSD, Mac).&lt;/ref&gt;
 }}
 
-[[Image:whonix.jpg|center|Whonix Concept|400px]]
+&lt;!-------------------------Whonix------------------------&gt;
+{|style=&quot;border-spacing:8px; margin:0px -8px;&quot;
+|class=&quot;MainPageBG&quot; style=&quot;width:55%; border:1px solid #cef2e0; background:#f5fffa; vertical-align:top; color:#000;&quot;|
+{|width=&quot;100%&quot; cellpadding=&quot;2&quot; cellspacing=&quot;5&quot; style=&quot;vertical-align:top; background:#f5fffa;&quot;
+! &lt;h3 style=&quot;margin:0; background:#cef2e0; font-size:120%; font-weight:bold; border:1px solid #a3bfb1; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Whonix&lt;/h3&gt;
+|-
+|style=&quot;color:#000;&quot;| 
+&lt;!--T:2--&gt;
+[[Image:whonix.jpg|center|Whonix Concept|500px]]
 
-Whonix is an operating system focused on anonymity, privacy and security. It's based on the Tor anonymity network&lt;ref&gt;https://www.torproject.org/about/overview.html.en&lt;/ref&gt;, Debian GNU/Linux&lt;ref&gt;https://en.wikipedia.org/wiki/Debian&lt;/ref&gt; and security by isolation. DNS leaks are impossible, and not even malware with root privileges can find out the user's real IP. 
+Whonix is an operating system focused on anonymity, privacy and security. It's based on the Tor anonymity network&lt;ref&gt;https://www.torproject.org/about/overview.html.en&lt;/ref&gt;, Debian GNU/Linux&lt;ref&gt;https://en.wikipedia.org/wiki/Debian&lt;/ref&gt; and security by isolation. DNS leaks are impossible, and not even malware with root privileges can find out the user's real IP.
 
 Whonix consists of two parts: One solely runs Tor and acts as a gateway, which we call Whonix-Gateway. The other, which we call Whonix-Workstation, is on a completely isolated network. Only connections through Tor are possible.
 
 To learn more about security and anonymity under Whonix, please continue to the [[About|About Whonix]] page.
 
+&lt;!--T:6--&gt;
 [[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|alt=Download Whonix]]
 
-= Captures d'écran =
+|-
+|}&lt;!--
 
+&lt;--------------------------------Blog Posts, Forum Posts-------------------------------&gt;
+|class=&quot;MainPageBG&quot; style=&quot;width:45%; border:1px solid #cedff2; background:#f5faff; vertical-align:top&quot;|
+{| width=&quot;100%&quot; cellpadding=&quot;2&quot; cellspacing=&quot;5&quot; style=&quot;vertical-align:top; background:#f5faff;&quot;
+! &lt;h3 style=&quot;margin:0; background:#cedff2; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Latest [https://www.whonix.org/blog Blog] Posts [[File:2000px-Feed-icon.svg.png|20px|alt=rss|link=https://www.whonix.org/blog/feed/]]&lt;/h3&gt;
+|-
+|style=&quot;color:#000;&quot;|
+&lt;rss number=10 title=off desc=off&gt;https://www.whonix.org/blog/feed/rss2/&lt;/rss&gt;
+
+|-
+! &lt;h3 style=&quot;margin:0; background:#cedff2; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Latest [https://www.whonix.org/forum Forum] Posts [[File:2000px-Feed-icon.svg.png|20px|alt=rss|link=https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10]]&lt;/h3&gt;
+|-
+|style=&quot;color:#000;&quot;| 
+&lt;rss number=10 title=off desc=off&gt;https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10&lt;/rss&gt;
+
+|-
+|}
+|}
+
+= Screenshots = &lt;!--T:7--&gt;
+&lt;gallery&gt;
+Image:kde0_5_0.png|Whonix-Workstation with KDE Desktop
+Image:whonixcheck_gui.png|[[whonixcheck|whonixcheck]]
+Image:timesync_gui.png|[[TimeSync|TimeSync]]
+Image:stream_isolation.1.0.jpg|[[Stream Isolation|Stream Isolation]]
+Image:mat.png|MAT - [[Metadata|Metadata]] Anonymisation Toolkit
+Image:flash_leak_test.png|[[Browser Plugins|Flash]] Leak Test SocksPort and TransPort
+Image:Thunderbird_17.0.png|Mozilla Thunderbird (called Icedove in Debian) with TorBirdy, see [[E-Mail]]
+Image:xchat_screenshot_created_by_adrelanos.png|[[XChat|XChat]], IRC Chat Client
+Image:torbrowser.png|[[Tor Browser|Tor Browser]], privacy by design. Fighting web fingerprinting and linkability.
+Image:shield_badge.png|Whonix is a member of the [http://internetdefenseleague.org Internet Defense League].
+Image:OIN_logo_200px.png|Whonix is a [http://www.openinventionnetwork.com/licensees.php licensee] of the [https://en.wikipedia.org/wiki/Open_Invention_Network Open Invention Network].
+Image:donate.png|link=Donate|[[Donate|Donate to Whonix!]]
+&lt;/gallery&gt;
+
+= Footnotes =
 = Notes =
-Whonix est produit indépendamment du, et ne comporte aucune garantie du, Projet Tor&lt;ref&gt;https://www.torproject.org&lt;/ref&gt;.
+Whonix est produit indépendamment du, et ne comporte aucune garantie du, Projet Tor&lt;ref&gt;https://www.torproject.org&lt;/ref&gt;.&lt;ref&gt;https://www.torproject.org&lt;/ref&gt;.
 
+&lt;!--T:9--&gt;
 &lt;references /&gt;
 
 Thanks to Tomchen1989 from Wikimedia Commons for the download button! [https://commons.wikimedia.org/wiki/File:Download_Button.svg 1] ([http://www.webcitation.org/6I2DQzdu0 w])
@@ -64265,7 +64486,7 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
 ---&gt;
 {{Footer}}
 [[Category:Documentation]]</text>
-      <sha1>fvpb6g3i3lz9dl3jm308uhw14fe2g9s</sha1>
+      <sha1>c9ssh953ot4tpe34efq0qjic6tpmwpe</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -64364,6 +64585,823 @@ license: public domain</text>
       <comment>MsUpload</comment>
       <text xml:space="preserve" bytes="8">MsUpload</text>
       <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Dev/Replicating whonix.org</title>
+    <ns>0</ns>
+    <id>978</id>
+    <revision>
+      <id>6328</id>
+      <parentid>6327</parentid>
+      <timestamp>2014-03-05T19:23:56Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <text xml:space="preserve" bytes="1372">{{Header}}
+{{forkme}}
+
+'''UNFINISHED!''' &lt;br /&gt;
+'''UNTESTED!'''
+
+(Iceweasel is required, because Tor Browser no longer supports visiting 127.0.0.1. Any other browser would work as well.)
+
+Install web software.
+
+&lt;pre&gt;
+sudo apt-get install git apache2 php5-mysql php5 libapache2-mod-php5 mysql-client mysql-server iceweasel
+&lt;/pre&gt;
+
+You will be asked for a mysql root password. Remember it.
+
+Get our wiki images and content database backup.
+
+&lt;pre&gt;
+git clone --depth=1 https://github.com/WhonixBOT/WhonixWikiBackups.git
+&lt;/pre&gt;
+
+Get and install the mediawiki web app.
+
+&lt;pre&gt;
+sudo su
+cd /var/www
+wget http://releases.wikimedia.org/mediawiki/1.22/mediawiki-1.22.3.tar.gz
+tar -xvzf mediawiki-1.22.3.tar.gz
+mv mediawiki-1.22.3 wiki
+&lt;/pre&gt;
+
+Start iceweasel.
+
+Setup mediawiki. Go to http://127.0.0.1/wiki/mw-config/index.php.
+
+Use the following settings.
+
+&lt;pre&gt;
+Database name: wiki
+Datebase password: what you remembered above
+No more questions.
+Otherwise use the defaults.
+Name of wiki:
+Whonix
+&lt;/pre&gt;
+
+Download LocalSettings.php, safe as /home/user/LocalSettings.php.
+
+&lt;pre&gt;
+cd wiki
+cp /home/user/LocalSettings.php /var/www/wiki/
+php maintenance/importDump.php /home/user/WhonixWikiBackups/dumpContentCurrent.xml
+php maintenance/update.php
+php maintenance/importImages.php /home/user/WhonixWikiBackups/mediafiles/
+&lt;/pre&gt;
+
+Go to http://127.0.0.1/wiki/index.php/Main_Page.
+
+{{Footer}}</text>
+      <sha1>tpybxskyvblwcg7pk8f4ucfx8sap7ok</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/31/en</title>
+    <ns>1198</ns>
+    <id>979</id>
+    <revision>
+      <id>6340</id>
+      <timestamp>2014-03-05T22:53:38Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="49">MAT - [[Metadata|Metadata]] Anonymisation Toolkit</text>
+      <sha1>p3179de6y118scn7k58nj22fvcsozu3</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/34/en</title>
+    <ns>1198</ns>
+    <id>980</id>
+    <revision>
+      <id>6342</id>
+      <timestamp>2014-03-05T22:53:47Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="32">[[XChat|XChat]], IRC Chat Client</text>
+      <sha1>05zh9mjjvtdw548bp95m9e3eup053ca</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/23/en</title>
+    <ns>1198</ns>
+    <id>981</id>
+    <revision>
+      <id>6343</id>
+      <timestamp>2014-03-05T22:54:00Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="34">x86 compatible and/or VirtualBox +</text>
+      <sha1>llwzqb3tvbeaq7e3a8r7yuelomihv0v</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/25/en</title>
+    <ns>1198</ns>
+    <id>982</id>
+    <revision>
+      <id>6345</id>
+      <timestamp>2014-03-05T22:54:08Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="47">Latest [https://www.whonix.org/blog Blog] Posts</text>
+      <sha1>l5ygw5a6w8qfhkuioftm1a3vfvmxkjb</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/24/en</title>
+    <ns>1198</ns>
+    <id>983</id>
+    <revision>
+      <id>6346</id>
+      <timestamp>2014-03-05T22:54:08Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="251">[[Other Operating Systems|Custom-Workstation]]: self made builds can run on any real or virtual hardware as long as they are behind a Whonix-Gateway. Tor Browser binaries are only available for a limited number of platforms (Windows, Linux, BSD, Mac).</text>
+      <sha1>dnnadj9j7jeh8v2e7dt7iz9lb2wk4s5</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/30/en</title>
+    <ns>1198</ns>
+    <id>984</id>
+    <revision>
+      <id>6347</id>
+      <timestamp>2014-03-05T22:54:11Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="37">[[Stream Isolation|Stream Isolation]]</text>
+      <sha1>hxb27x5zke3qdtrml0ge4h5rq7ctnlm</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/19/en</title>
+    <ns>1198</ns>
+    <id>985</id>
+    <revision>
+      <id>6350</id>
+      <timestamp>2014-03-05T22:54:15Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="110">Anonymity; Privacy; Security; Personal computing; [[Hosting Location Hidden Services|Location Hidden Servers]]</text>
+      <sha1>q23l1xzahwif3ui4potf0on2t1zxfq3</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/12/en</title>
+    <ns>1198</ns>
+    <id>986</id>
+    <revision>
+      <id>6351</id>
+      <timestamp>2014-03-05T22:54:16Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="35">Whonix-Workstation with KDE Desktop</text>
+      <sha1>p56rpdnjsy764hdb1hh8sleuhwms7a2</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/33/en</title>
+    <ns>1198</ns>
+    <id>987</id>
+    <revision>
+      <id>6352</id>
+      <timestamp>2014-03-05T22:54:21Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="76">Mozilla Thunderbird (called Icedove in Debian) with TorBirdy, see [[E-Mail]]</text>
+      <sha1>4314soobdxsy789vu7mzsl0jh55ljbl</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/27/en</title>
+    <ns>1198</ns>
+    <id>988</id>
+    <revision>
+      <id>6353</id>
+      <timestamp>2014-03-05T22:54:24Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="35">Whonix-Workstation with KDE Desktop</text>
+      <sha1>p56rpdnjsy764hdb1hh8sleuhwms7a2</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/36/en</title>
+    <ns>1198</ns>
+    <id>989</id>
+    <revision>
+      <id>6356</id>
+      <timestamp>2014-03-05T22:54:30Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="85">Whonix is a member of the [http://internetdefenseleague.org Internet Defense League].</text>
+      <sha1>8zl5l1w7ch5fmroqz4xoy3ab0q5hxkh</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/18/en</title>
+    <ns>1198</ns>
+    <id>990</id>
+    <revision>
+      <id>6357</id>
+      <timestamp>2014-03-05T22:54:30Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="18">none at the moment</text>
+      <sha1>t1yntrmakk3f2jxpmn0gsejcqcn8id8</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/37/en</title>
+    <ns>1198</ns>
+    <id>991</id>
+    <revision>
+      <id>6360</id>
+      <timestamp>2014-03-05T22:54:57Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="158">Whonix is a [http://www.openinventionnetwork.com/licensees.php licensee] of the [https://en.wikipedia.org/wiki/Open_Invention_Network Open Invention Network].</text>
+      <sha1>cckp5wmrboxas6e0cemo8n1ub97jpc0</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/35/en</title>
+    <ns>1198</ns>
+    <id>992</id>
+    <revision>
+      <id>6361</id>
+      <timestamp>2014-03-05T22:55:00Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="92">[[Tor Browser|Tor Browser]], privacy by design. Fighting web fingerprinting and linkability.</text>
+      <sha1>ra6cvfsu2pvwgm79s6p1u520xtrs1gr</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/20/en</title>
+    <ns>1198</ns>
+    <id>993</id>
+    <revision>
+      <id>6362</id>
+      <timestamp>2014-03-05T22:55:05Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="120">[https://en.wikipedia.org/wiki/Monolithic_kernel Monolithic] ([https://en.wikipedia.org/wiki/Linux_kernel Linux kernel])</text>
+      <sha1>gef99yzm8nty6nj88vvol0v8sow86ob</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/28/en</title>
+    <ns>1198</ns>
+    <id>994</id>
+    <revision>
+      <id>6363</id>
+      <timestamp>2014-03-05T22:55:07Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="27">[[whonixcheck|whonixcheck]]</text>
+      <sha1>1g4pf660pkv1c39pkm2qyjtfgoed98e</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/26/en</title>
+    <ns>1198</ns>
+    <id>995</id>
+    <revision>
+      <id>6364</id>
+      <timestamp>2014-03-05T22:55:13Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="49">Latest [https://www.whonix.org/forum Forum] Posts</text>
+      <sha1>emsq483hc44le933ssmu23syia8qb7v</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/11/de</title>
+    <ns>1198</ns>
+    <id>996</id>
+    <revision>
+      <id>6365</id>
+      <timestamp>2014-03-05T22:55:22Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;{{#seo: |description=Schutz der Privatsphäre im Internet. Online Anonymität. Anonymes Betriebssystem. }}&quot;</comment>
+      <text xml:space="preserve" bytes="106">{{#seo:
+|description=Schutz der Privatsphäre im Internet. Online Anonymität. Anonymes Betriebssystem.
+}}</text>
+      <sha1>rw8u4cihfca1nd9evepgiko28hiyn1i</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/12/de</title>
+    <ns>1198</ns>
+    <id>997</id>
+    <revision>
+      <id>6367</id>
+      <timestamp>2014-03-05T22:55:27Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;Whonix-Workstation mit KDE Desktop&quot;</comment>
+      <text xml:space="preserve" bytes="34">Whonix-Workstation mit KDE Desktop</text>
+      <sha1>oykv247cqnlh9h4dnwmz1wymm4thl6b</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/14/en</title>
+    <ns>1198</ns>
+    <id>998</id>
+    <revision>
+      <id>6369</id>
+      <timestamp>2014-03-05T22:55:29Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="107">[https://en.wikipedia.org/wiki/Unix-like Unix-like], based on [https://en.wikipedia.org/wiki/Debian Debian]</text>
+      <sha1>owl8xjhbb60v8u8pazhqyo8eb8vgxuq</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/38/en</title>
+    <ns>1198</ns>
+    <id>999</id>
+    <revision>
+      <id>6372</id>
+      <timestamp>2014-03-05T22:55:35Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="28">[[Donate|Donate to Whonix!]]</text>
+      <sha1>fdntqj5oxu6im3a3kfobbwc2cnfdpe8</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/17/en</title>
+    <ns>1198</ns>
+    <id>1000</id>
+    <revision>
+      <id>6374</id>
+      <timestamp>2014-03-05T22:55:37Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="11">29 Feb 2012</text>
+      <sha1>kr0qfxnx0vzq6qeup9v35d2jq3wojv9</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/13/de</title>
+    <ns>1198</ns>
+    <id>1001</id>
+    <revision>
+      <id>6375</id>
+      <timestamp>2014-03-05T22:55:38Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;[https://www.whonix.org/forum/index.php/topic,109.0.html keine] / [[Authorship|Whonix Entwicklergemeinde]]&quot;</comment>
+      <text xml:space="preserve" bytes="106">[https://www.whonix.org/forum/index.php/topic,109.0.html keine] / [[Authorship|Whonix Entwicklergemeinde]]</text>
+      <sha1>iwk3id3b9yxb37zgftag00c6ys52uqj</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/22/en</title>
+    <ns>1198</ns>
+    <id>1002</id>
+    <revision>
+      <id>6377</id>
+      <timestamp>2014-03-05T22:55:56Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="90">[https://en.wikipedia.org/wiki/Advanced_Packaging_Tool APT] (several front-ends available)</text>
+      <sha1>9agdh9c8kotnse6xgign3h2ki8o1vtm</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/14/de</title>
+    <ns>1198</ns>
+    <id>1003</id>
+    <revision>
+      <id>6378</id>
+      <timestamp>2014-03-05T22:55:56Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;[https://en.wikipedia.org/wiki/Unix-like Unix-ähnlich], basierend auf [https://en.wikipedia.org/wiki/Debian Debian]&quot;</comment>
+      <text xml:space="preserve" bytes="116">[https://en.wikipedia.org/wiki/Unix-like Unix-ähnlich], basierend auf [https://en.wikipedia.org/wiki/Debian Debian]</text>
+      <sha1>oxnxz0gdpigd9ical27bskcb7wfqdw1</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/15/de</title>
+    <ns>1198</ns>
+    <id>1004</id>
+    <revision>
+      <id>6380</id>
+      <timestamp>2014-03-05T22:56:04Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;[https://en.wikipedia.org/wiki/Open_source Open Source]&quot;</comment>
+      <text xml:space="preserve" bytes="55">[https://en.wikipedia.org/wiki/Open_source Open Source]</text>
+      <sha1>eqlth2q308y2a75jw2nind2sx8ii98p</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/16/de</title>
+    <ns>1198</ns>
+    <id>1005</id>
+    <revision>
+      <id>6381</id>
+      <timestamp>2014-03-05T22:56:07Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;aktiv&quot;</comment>
+      <text xml:space="preserve" bytes="5">aktiv</text>
+      <sha1>abtbrcwlo4q0nvrq2sh1lkkv2qfx3j8</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/29/en</title>
+    <ns>1198</ns>
+    <id>1006</id>
+    <revision>
+      <id>6382</id>
+      <timestamp>2014-03-05T22:56:09Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="21">[[TimeSync|TimeSync]]</text>
+      <sha1>tgsiveym9honwy2pq55x6av5zr4tx27</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/32/en</title>
+    <ns>1198</ns>
+    <id>1007</id>
+    <revision>
+      <id>6384</id>
+      <timestamp>2014-03-05T22:56:15Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="59">[[Browser Plugins|Flash]] Leak Test SocksPort and TransPort</text>
+      <sha1>0skn3xhyo95rch8pmw6ywf3p8x24ebg</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/17/de</title>
+    <ns>1198</ns>
+    <id>1008</id>
+    <revision>
+      <id>6385</id>
+      <timestamp>2014-03-05T22:56:16Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;29.02.2012&quot;</comment>
+      <text xml:space="preserve" bytes="10">29.02.2012</text>
+      <sha1>ta3159u9o3s8ohmctcrovx50fgb2m9o</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/39/en</title>
+    <ns>1198</ns>
+    <id>1009</id>
+    <revision>
+      <id>6387</id>
+      <timestamp>2014-03-05T22:56:21Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="9">Footnotes</text>
+      <sha1>rkmmjlsna6ik4m7fzifk43pi98ljol6</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/18/de</title>
+    <ns>1198</ns>
+    <id>1010</id>
+    <revision>
+      <id>6388</id>
+      <timestamp>2014-03-05T22:56:24Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;im Momment keine&quot;</comment>
+      <text xml:space="preserve" bytes="16">im Momment keine</text>
+      <sha1>odf1sswtzfhfxqu5tijdiyv1j1e8jtx</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/15/en</title>
+    <ns>1198</ns>
+    <id>1011</id>
+    <revision>
+      <id>6390</id>
+      <timestamp>2014-03-05T22:56:27Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="55">[https://en.wikipedia.org/wiki/Open_source Open Source]</text>
+      <sha1>eqlth2q308y2a75jw2nind2sx8ii98p</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/16/en</title>
+    <ns>1198</ns>
+    <id>1012</id>
+    <revision>
+      <id>6391</id>
+      <timestamp>2014-03-05T22:56:33Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="6">active</text>
+      <sha1>53tpgwctk4hd2yx8bvwf8cuesffglcc</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/21/en</title>
+    <ns>1198</ns>
+    <id>1013</id>
+    <revision>
+      <id>6392</id>
+      <timestamp>2014-03-05T22:56:34Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="139">[https://en.wikipedia.org/wiki/Free_software Free software], mainly the [https://en.wikipedia.org/wiki/GNU_GPL GNU GPL], and other licenses</text>
+      <sha1>ks21sal9yi16thdsgk2qb5zx9cv7kn2</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/13/en</title>
+    <ns>1198</ns>
+    <id>1014</id>
+    <revision>
+      <id>6393</id>
+      <timestamp>2014-03-05T22:56:45Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="97">[https://www.whonix.org/forum/index.php/topic,109.0.html none] / [[Authorship|Whonix developers]]</text>
+      <sha1>ecg78f2zhtm08j81380ud8yh143q7es</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/19/de</title>
+    <ns>1198</ns>
+    <id>1015</id>
+    <revision>
+      <id>6394</id>
+      <timestamp>2014-03-05T22:57:13Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;Anonymität; Privatsphäre; Sicherheit; PC; [[Hosting Location Hidden Services|Versteckte Serverdienste]]&quot;</comment>
+      <text xml:space="preserve" bytes="105">Anonymität; Privatsphäre; Sicherheit; PC; [[Hosting Location Hidden Services|Versteckte Serverdienste]]</text>
+      <sha1>4ozlqgdbqqtww7kdsoh4j5sxweomlrf</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/20/de</title>
+    <ns>1198</ns>
+    <id>1016</id>
+    <revision>
+      <id>6396</id>
+      <timestamp>2014-03-05T22:57:27Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;[https://en.wikipedia.org/wiki/Monolithic_kernel Monolithic] ([https://en.wikipedia.org/wiki/Linux_kernel Linux kernel])&quot;</comment>
+      <text xml:space="preserve" bytes="120">[https://en.wikipedia.org/wiki/Monolithic_kernel Monolithic] ([https://en.wikipedia.org/wiki/Linux_kernel Linux kernel])</text>
+      <sha1>gef99yzm8nty6nj88vvol0v8sow86ob</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/21/de</title>
+    <ns>1198</ns>
+    <id>1017</id>
+    <revision>
+      <id>6397</id>
+      <timestamp>2014-03-05T22:57:52Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;[https://en.wikipedia.org/wiki/Free_software Free software], hauptsächlich die [https://en.wikipedia.org/wiki/GNU_GPL GNU GPL], und andere Lizenzen&quot;</comment>
+      <text xml:space="preserve" bytes="148">[https://en.wikipedia.org/wiki/Free_software Free software], hauptsächlich die [https://en.wikipedia.org/wiki/GNU_GPL GNU GPL], und andere Lizenzen</text>
+      <sha1>6eiihmsqcav0x5w2c4euxf0euvzaxts</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/22/de</title>
+    <ns>1198</ns>
+    <id>1018</id>
+    <revision>
+      <id>6399</id>
+      <timestamp>2014-03-05T22:58:13Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;[https://en.wikipedia.org/wiki/Advanced_Packaging_Tool APT] (verschiedene Aufsätze verfügbar)&quot;</comment>
+      <text xml:space="preserve" bytes="95">[https://en.wikipedia.org/wiki/Advanced_Packaging_Tool APT] (verschiedene Aufsätze verfügbar)</text>
+      <sha1>6m0dcncknwmymm369aq6katp6uyg9t7</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/23/de</title>
+    <ns>1198</ns>
+    <id>1019</id>
+    <revision>
+      <id>6401</id>
+      <timestamp>2014-03-05T22:58:30Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;x86 kompatibel und/oder VirtualBox +&quot;</comment>
+      <text xml:space="preserve" bytes="36">x86 kompatibel und/oder VirtualBox +</text>
+      <sha1>rn606cka6l2npuu3oa48p9quwloj7kw</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
