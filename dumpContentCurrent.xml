@@ -42,14 +42,14 @@
     <ns>0</ns>
     <id>1</id>
     <revision>
-      <id>6439</id>
-      <parentid>6339</parentid>
-      <timestamp>2014-03-05T23:26:16Z</timestamp>
+      <id>6460</id>
+      <parentid>6439</parentid>
+      <timestamp>2014-03-06T18:35:54Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="8069">{{Header}}
+      <text xml:space="preserve" bytes="8072">{{Header}}
 __NOTOC__
 &lt;languages /&gt;
 &lt;translate&gt;
@@ -189,12 +189,13 @@ Whonix is produced independently of, and carries no guarantee from, The Tor Proj
 Thanks to Tomchen1989 from Wikimedia Commons for the download button! [https://commons.wikimedia.org/wiki/File:Download_Button.svg 1] ([http://www.webcitation.org/6I2DQzdu0 w])
 Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_43.htm awxcnx.de]!
 &lt;/translate&gt;
-&lt;!---
-&lt;a href=&quot;https://plus.google.com/108150429836421683225&quot; rel=&quot;publisher&quot;&gt;Google+&lt;/a&gt;
----&gt;
+
+&lt;html&gt;
+&lt;a href=&quot;https://plus.google.com/u/0/112678569435063398972?rel=author&quot;&gt;Google&lt;/a&gt;
+&lt;/html&gt;
 {{Footer}}
 [[Category:Documentation]]</text>
-      <sha1>liga9laierh5mueayk4xp2lpqn4r83n</sha1>
+      <sha1>ge2zupibuqzi942dke6oykpjhf8xccr</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -7134,14 +7135,15 @@ To get a more complete list, install Debian (with KDE) on bare metal using the r
     <ns>0</ns>
     <id>93</id>
     <revision>
-      <id>5836</id>
-      <parentid>4737</parentid>
-      <timestamp>2014-02-27T13:10:32Z</timestamp>
+      <id>6458</id>
+      <parentid>5836</parentid>
+      <timestamp>2014-03-06T16:23:00Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="7225">&lt;!--
+      <comment>/* Comparison */</comment>
+      <text xml:space="preserve" bytes="7298">&lt;!--
 Copyright:
 
    Whonix Anonymity wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -7213,6 +7215,9 @@ In conclusion, if your ISP or local network administrator can determine someone 
 
 [[Comparison with Others#Fingerprint]]
 
+= See Also =
+[[Protocol-Leak-Protection and Fingerprinting-Protection]]
+
 = References =
 &lt;references/&gt;
 
@@ -7228,7 +7233,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Design]]</text>
-      <sha1>1c7v52no4acopov00n7gn3ack2hvxj8</sha1>
+      <sha1>7cvclmx2g3qgw0nxrsqvgv3m7mxtey0</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -43547,15 +43552,15 @@ OVA image can now be used in VirtualBox.
     <ns>0</ns>
     <id>469</id>
     <revision>
-      <id>6453</id>
-      <parentid>6452</parentid>
-      <timestamp>2014-03-06T11:00:20Z</timestamp>
+      <id>6454</id>
+      <parentid>6453</parentid>
+      <timestamp>2014-03-06T11:37:46Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
       <comment>/* Expected Build Warnings */</comment>
-      <text xml:space="preserve" bytes="13783">{{Header}}
+      <text xml:space="preserve" bytes="13894">{{Header}}
 {{#seo:
 |description=Complete and Comprehensive Instructions to build Whonix Virtual Machine Images from Source Code. Including build configurations, such as 64 bit builds, Terminal-Only builds and so forth.
 }}
@@ -43782,13 +43787,16 @@ dpkg: warning: failed to open configuration file '/root/.dpkg.cfg' for reading: 
 &lt;/pre&gt;
 Does not affect the build. &lt;ref&gt;This happens because we are running {{Code|debuild}} as user, not root. Probably a bug in dpkg. If you research this, you'll see, there were many such bugs in dpkg.&lt;/ref&gt;
 
+Related forum topic: &lt;br /&gt;
+[https://www.whonix.org/forum/index.php/topic,120.0.html Expected Build Warnings]
+
 = Footnotes =
 &lt;references/&gt;
 
 {{Footer}}
 
 [[Category:Development]]</text>
-      <sha1>95yzm2qmbc6ha3traroxm606c5l9qkp</sha1>
+      <sha1>hd6es2vkl6yftq61s51os15wxsjsw2y</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -50176,14 +50184,15 @@ Maybe this will help: Try convert the vmdk to vdi, remove the old vmdk from the 
     <ns>0</ns>
     <id>530</id>
     <revision>
-      <id>6198</id>
-      <parentid>5867</parentid>
-      <timestamp>2014-03-02T00:49:11Z</timestamp>
+      <id>6457</id>
+      <parentid>6456</parentid>
+      <timestamp>2014-03-06T16:13:31Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="15507">{{Header}}
+      <comment>/* How-To */</comment>
+      <text xml:space="preserve" bytes="16007">{{Header}}
 {{#seo:
 |description=Checking Whonix for backdoors.
 }}
@@ -50222,7 +50231,7 @@ The {{Code2|/help-steps/analyze_image}} script is the tool which comes with Whon
 
 === Expected Differences ===
 * {{Code|(mount_folder) /boot/initrd.img*}} - Those are extracted to the {{Code|initrd_folder}} and diffed.
-* {{Code|(mount_folder) /etc/fstab}} - Will contains different uuids. We could make them uniform, but that would complicate the code, manually look at the diff.
+* {{Code|(mount_folder) /etc/fstab}} - Will contains different uuids. We could make them uniform, but that would complicate the code, manually look at the diff. &lt;font size=-3&gt;(Will no longer be necessary in Whonix 8.5.0.1 and above, because fixed disk identifiers will be used.)&lt;/font&gt;
 * {{Code|(mount_folder) /etc/shadow}} - Manually look at the diff. Users are advised to change their passwords anyway.
 * {{Code|(mount_folder) /etc/shadow-}} - Same as above.
 * {{Code|(mount_folder) /etc/init.d/.depend.boot}} - {{Code|/sbin/insserv}} (part of sysvinit) does not produce deterministic results. Gets copied to the {{Code|manual_analysis_folder}}. Manually review them. You just have to check, they're not containing anything sketchy. You most likely won't be able to tell, if some services are deliberately not started or in wrong order. This is not an issue, because when Whonix starts for the first time it executes {{Code|whonix_shared/usr/lib/whonix/first_run_initializer}}, which executes {{Code|/sbin/insserv}}, which recreates this file. &lt;ref&gt;We can not delete this file before redistributing Whonix, because then Whonix wouldn't start.&lt;/ref&gt;
@@ -50231,7 +50240,7 @@ The {{Code2|/help-steps/analyze_image}} script is the tool which comes with Whon
 * {{Code|(mount_folder) /usr/share/whonix_build_timestamp}} - Timestamp, naturally differs.
 * {{Code|(mount_folder) /var/lib/initramfs-tools/...}} - Is a one-line text file, which contains the name of the initrd and its checksum. Differs, because the initrd isn't deterministic in the first place.
 * {{Code|(mount_folder) /var/lib/initramfs-tools/...}} - Same as above.
-* {{Code|(manual_analysis_folder) *.dd.1000000}} - The first ~1MB of the {{Code2|.img}}. Disk signature will differ.
+* {{Code|(manual_analysis_folder) *.dd.1000000}} - The first ~1MB of the {{Code2|.img}}. Disk signature will differ. &lt;font size=-3&gt;(Will no longer be necessary in Whonix 8.5.0.1 and above, because fixed disk identifiers will be used.)&lt;/font&gt;
 
 === Unexpected Differences ===
 There could be differences besides the expected differences, because this is still experimental as in a new feature. Remember, there are no deterministically built distributions yet. If you find any additional differences, keep calm, it's not necessarily a backdoor, report them, and if you can, diff and/or audit them.
@@ -50278,7 +50287,7 @@ These files should be very similar, expect for a few differences which we earlie
 
 Check at the top of your report files for (extracted_initrd_folder) and see if both initrd's were really extracted. &lt;ref&gt;They should, because otherwise if extraction failed, the {{Code2|analyze_image}} script should have failed earlier and informed you already.&lt;/ref&gt;
 
-Check for more differences, you can ignore {{Code|(mount_folder) /etc/fstab}} for now, this is an expected difference and we audit them later.
+Check for more differences, you can ignore {{Code|(mount_folder) /etc/fstab}} for now, this is an expected difference and we audit them later. &lt;font size=-3&gt;(Will no longer be necessary in Whonix 8.5.0.1 and above, because fixed disk identifiers will be used.)&lt;/font&gt;
 
 Also ignore {{Code|(mount_folder) /etc/init.d/.depend.boot}}, {{Code|(mount_folder) /etc/init.d/.depend.start}}, and {{Code|(mount_folder) /etc/init.d/.depend.stop}} for now, this is an expected difference and we audit them later.
 
@@ -50296,7 +50305,7 @@ Diff the virtual machine description file {{Code|(extracted_ova_folder) *.ovf}}.
 
 Diff the manifest file {{Code|(extracted_ova_folder) *.mf}}. Only the checksums should differ.
 
-Diff the first ~1 MB of .img (contains MBR and bootloader) {{Code|(manual_analysis_folder) *.dd.1000000}} - Use for example {{Code|vbindiff ....dd.1000000 *.dd.1000000}}. Only the disk signature should differ.
+Diff the first ~1 MB of .img (contains MBR and bootloader) {{Code|(manual_analysis_folder) *.dd.1000000}} - Use for example {{Code|vbindiff ....dd.1000000 *.dd.1000000}}. Only the disk signature should differ. &lt;font size=-3&gt;(Will no longer be necessary in Whonix 8.5.0.1 and above, because fixed disk identifiers will be used.)&lt;/font&gt;
 
 Finally diff the rest of the files in your {{Code2|manual_analysis_folder}}. Using a diff application which can diff whole folders such as {{Code2|meld}} would be useful, but what tools you use is up to you. Have a look at the &quot;Expected Differences&quot; chapter above for the kind of differences you can expect.
 
@@ -50325,7 +50334,7 @@ In case you like to review the implementation, the related scripts can be found 
 
 [[Category:Documentation]]
 [[Category:Development]]</text>
-      <sha1>m2xxx6r2jz40qixglwzwleansdktpwg</sha1>
+      <sha1>nccsfjq65xyc0pcgl8ep50kkqlbwyg7</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -61624,15 +61633,15 @@ sudo rm -fR /var/lib/apt/lists/*
     <ns>0</ns>
     <id>891</id>
     <revision>
-      <id>6332</id>
-      <parentid>6331</parentid>
-      <timestamp>2014-03-05T22:36:13Z</timestamp>
+      <id>6459</id>
+      <parentid>6332</parentid>
+      <timestamp>2014-03-06T17:10:41Z</timestamp>
       <contributor>
         <username>Troubadour</username>
         <id>230</id>
       </contributor>
-      <minor/>
-      <text xml:space="preserve" bytes="15204">{{Header}}
+      <comment>Allowed sound.</comment>
+      <text xml:space="preserve" bytes="15219">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
@@ -61863,7 +61872,7 @@ Paste the following content.
 #	/usr/share/kde4/config/kdeglobals r,
 #	/usr/share/whonix/kde/share/config/kdeglobals r,
 	/usr/share/applications/** r,
- 	/usr/share/alsa/alsa.conf r,
+ 	/usr/share/alsa/** r,
  	
  	/etc/drirc r,
 	/etc/X11/cursors/* r,
@@ -61879,6 +61888,7 @@ Paste the following content.
 	/dev/dri/card0 rw,
 	/dev/vboxuser rw,
 	/dev/tty r,
+        /dev/snd/* r,
 
 	@{PROC} r,
 	@{PROC}/[0-9]*/maps r,
@@ -62248,7 +62258,7 @@ Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/A
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>8llvxmgcnmstpbyh46si74cc1pdx00t</sha1>
+      <sha1>04iyuq4v5cbw4yix3g6q2h2cfhnlh45</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
