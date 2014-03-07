@@ -713,14 +713,15 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>19</id>
     <revision>
-      <id>6444</id>
-      <parentid>6440</parentid>
-      <timestamp>2014-03-06T00:20:38Z</timestamp>
+      <id>6462</id>
+      <parentid>6444</parentid>
+      <timestamp>2014-03-07T03:06:59Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="12019">{{Header}}
+      <comment>Marked this version for translation</comment>
+      <text xml:space="preserve" bytes="12578">{{Header}}
 &lt;!--
 Copyright:
 
@@ -754,11 +755,13 @@ This wiki page is a fork of the Tails Download page, from this exact source &lt;
 --&gt;
 &lt;languages /&gt;
 &lt;translate&gt;
+&lt;!--T:211--&gt;
 {{#seo:
 |description=Download Whonix. Anonymity online. Privacy protection.
 }}
 &lt;/translate&gt;
-= &lt;translate&gt;First time user?&lt;/translate&gt; =
+= &lt;translate&gt;&lt;!--T:212--&gt;
+First time user?&lt;/translate&gt; =
 {{Anchor|Landing}}
 
 
@@ -794,10 +797,12 @@ Then, have a look at the [[About]], [[Warning]] and [[DoNot|Do Not]] pages to ma
 
 {{anchor|Download Whonix virtual machine images}}
 
-= &lt;translate&gt;Download Whonix&lt;/translate&gt; =
+= &lt;translate&gt;&lt;!--T:213--&gt;
+Download Whonix&lt;/translate&gt; =
 {{DownloadTableNew}}
 
-= &lt;translate&gt;Verify the Whonix images&lt;/translate&gt; =
+= &lt;translate&gt;&lt;!--T:214--&gt;
+Verify the Whonix images&lt;/translate&gt; =
 &lt;translate&gt;
 &lt;!--T:17--&gt;
 It is important to check the integrity of the virtual machine images you downloaded to make sure no man-in-the-middle attack or file corruption happened. (See [[Download Security]].)
@@ -832,16 +837,19 @@ Otherwise, follow the instructions:
 * [[Verify_the_virtual_machine_images_using_other_operating systems|For Windows or Mac]]
 &lt;/translate&gt;
 
-= &lt;translate&gt;Install Whonix&lt;/translate&gt; =
+= &lt;translate&gt;&lt;!--T:215--&gt;
+Install Whonix&lt;/translate&gt; =
 
-== &lt;translate&gt;1. Before installing&lt;/translate&gt; ==
+== &lt;translate&gt;&lt;!--T:216--&gt;
+1. Before installing&lt;/translate&gt; ==
 
 &lt;translate&gt;
 &lt;!--T:26--&gt;
 Read and apply the [[Pre_Install_Advice|Security Advice]].
 &lt;/translate&gt;
 
-== &lt;translate&gt;2. Install&lt;/translate&gt; ==
+== &lt;translate&gt;&lt;!--T:217--&gt;
+2. Install&lt;/translate&gt; ==
 
 &lt;translate&gt;
 &lt;!--T:28--&gt;
@@ -850,7 +858,8 @@ Read and apply the [[Pre_Install_Advice|Security Advice]].
 * Take a snapshot for both Whonix-Gateway and Whonix-Workstation on VirtualBox. So you can easily restore the original snapshot whenever you need a clean state.
 &lt;/translate&gt;
 
-=== &lt;translate&gt;Need help?&lt;/translate&gt; ===
+=== &lt;translate&gt;&lt;!--T:218--&gt;
+Need help?&lt;/translate&gt; ===
 
 &lt;translate&gt;
 &lt;!--T:30--&gt;
@@ -863,23 +872,29 @@ There are also [[Videos|Video Tutorials]].
 If you still need help, please check the [[Support|Support]] page.
 &lt;/translate&gt;
 
-== &lt;translate&gt;3. After installing&lt;/translate&gt; ==
+== &lt;translate&gt;&lt;!--T:219--&gt;
+3. After installing&lt;/translate&gt; ==
 
 &lt;translate&gt;
 &lt;!--T:34--&gt;
 Read and apply the [[Post Install Advice|Post Install Advice]].
 &lt;/translate&gt;
 
-= &lt;translate&gt;Stay tuned&lt;/translate&gt; =
-== &lt;translate&gt;Introduction&lt;/translate&gt; ==
+= &lt;translate&gt;&lt;!--T:220--&gt;
+Stay tuned&lt;/translate&gt; =
+== &lt;translate&gt;&lt;!--T:221--&gt;
+Introduction&lt;/translate&gt; ==
 &lt;translate&gt;
 &lt;!--T:37--&gt;
 Reading the latest news is important to stay on top of latest developments. Should security vulnerabilities ever be found in Whonix or should an improved version be released, you should be informed.
 &lt;/translate&gt;
 
-== &lt;translate&gt;Whonix News Blogs&lt;/translate&gt; ==
-[[File:Whonix News Blog opened offline created by adrelanos.png|thumb|&lt;translate&gt;Whonix News Blogs&lt;/translate&gt;]]
-&lt;translate&gt;There are two ways to get news. Choose at your preference.&lt;/translate&gt;
+== &lt;translate&gt;&lt;!--T:222--&gt;
+Whonix News Blogs&lt;/translate&gt; ==
+[[File:Whonix News Blog opened offline created by adrelanos.png|thumb|&lt;translate&gt;&lt;!--T:223--&gt;
+Whonix News Blogs&lt;/translate&gt;]]
+&lt;translate&gt;&lt;!--T:224--&gt;
+There are two ways to get news. Choose at your preference.&lt;/translate&gt;
 
 &lt;translate&gt;
 &lt;!--T:39--&gt;
@@ -889,27 +904,39 @@ Reading the latest news is important to stay on top of latest developments. Shou
 
 &lt;translate&gt;
 &lt;!--T:40--&gt;
-When you start '''Tor Browser Recommended''', there is a shortcut on the desktop, see&lt;/translate&gt; [[Image:important.png|r]] &lt;translate&gt;, it will open both Whonix News Blogs in a privacy friendly way. It's recommended at least to read Whonix Important Blog if you are in a hurry. Have a look into Whonix Feature Blog if you are generally interested to learn about anonymity/privacy/security related things or to see what's going on with Whonix.
+When you start '''Tor Browser Recommended''', there is a shortcut on the desktop, see&lt;/translate&gt; [[Image:important.png|r]] &lt;translate&gt;&lt;!--T:225--&gt;
+, it will open both Whonix News Blogs in a privacy friendly way. It's recommended at least to read Whonix Important Blog if you are in a hurry. Have a look into Whonix Feature Blog if you are generally interested to learn about anonymity/privacy/security related things or to see what's going on with Whonix.
 &lt;/translate&gt;
 
-== &lt;translate&gt;Operating System Updates&lt;/translate&gt; ==
+== &lt;translate&gt;&lt;!--T:226--&gt;
+Operating System Updates&lt;/translate&gt; ==
 &lt;translate&gt;
 &lt;!--T:42--&gt;
 You should regularly check for operating system updates on your host operating system, on Whonix-Workstation and on Whonix-Gateway as highly recommended in the [[Security Guide|Security Guide]].
 &lt;/translate&gt;
 
-== &lt;translate&gt;Tor Browser&lt;/translate&gt; ==
-[[Image:whonixcheck_gui.png|[[whonixcheck|&lt;translate&gt;whonixcheck&lt;/translate&gt;]]|thumb]]
+== &lt;translate&gt;&lt;!--T:227--&gt;
+Tor Browser&lt;/translate&gt; ==
+[[Image:whonixcheck_gui.png|[[whonixcheck|&lt;translate&gt;&lt;!--T:228--&gt;
+whonixcheck&lt;/translate&gt;]]|thumb]]
 
 &lt;translate&gt;
 &lt;!--T:45--&gt;
 There is no auto-update feature for Tor Browser. You will be notified about new Tor Browser versions by [[whonixcheck|whonixcheck]]. Tor Browser's built in update check mechanism also works in Whonix. For instructions how to update the browser, see [[Tor Browser|Tor Browser]]. Additionally it might also be wise to subscribe to https://blog.torproject.org for news.&lt;/translate&gt;
 
-== &lt;translate&gt;Whonix Version Check and Whonix News&lt;/translate&gt; ==
-[[File:whonixcheck created by adrelanos.png|thumb|&lt;translate&gt;Whonix Version Check (first rectangle in black) and&lt;/translate&gt;&lt;br /&gt;&lt;translate&gt;Whonix News&lt;/translate&gt; &lt;br /&gt;&lt;translate&gt;(second rectangle in green)&lt;/translate&gt;]]
-&lt;translate&gt;Furthermore you will be automatically notified about new Whonix versions by Whonix Version Check and about the most important occurrences&lt;/translate&gt;&lt;ref&gt;&lt;translate&gt;Such as when a version becomes unsupported, if manual action is required, if major features break, or if security vulnerabilities are found. The policy is to use Whonix News as rarely as possible.&lt;/translate&gt;&lt;/ref&gt; &lt;translate&gt;by Whonix News, both of which are part of [[whonixcheck|whonixcheck]].&lt;/translate&gt;
+== &lt;translate&gt;&lt;!--T:229--&gt;
+Whonix Version Check and Whonix News&lt;/translate&gt; ==
+[[File:whonixcheck created by adrelanos.png|thumb|&lt;translate&gt;&lt;!--T:230--&gt;
+Whonix Version Check (first rectangle in black) and&lt;/translate&gt;&lt;br /&gt;&lt;translate&gt;&lt;!--T:231--&gt;
+Whonix News&lt;/translate&gt; &lt;br /&gt;&lt;translate&gt;&lt;!--T:232--&gt;
+(second rectangle in green)&lt;/translate&gt;]]
+&lt;translate&gt;&lt;!--T:233--&gt;
+Furthermore you will be automatically notified about new Whonix versions by Whonix Version Check and about the most important occurrences&lt;/translate&gt;&lt;ref&gt;&lt;translate&gt;&lt;!--T:234--&gt;
+Such as when a version becomes unsupported, if manual action is required, if major features break, or if security vulnerabilities are found. The policy is to use Whonix News as rarely as possible.&lt;/translate&gt;&lt;/ref&gt; &lt;translate&gt;&lt;!--T:235--&gt;
+by Whonix News, both of which are part of [[whonixcheck|whonixcheck]].&lt;/translate&gt;
 
-== &lt;translate&gt;Social Media Profiles&lt;/translate&gt; ==
+== &lt;translate&gt;&lt;!--T:236--&gt;
+Social Media Profiles&lt;/translate&gt; ==
 &lt;translate&gt;
 &lt;!--T:48--&gt;
 There are some [[Official Whonix Online Profiles|Whonix Social Media Profiles]], but please don't rely on them for getting Whonix News and please don't use them to contact Whonix developers. (See [[Contact|Contact]] for contact information.)
@@ -925,16 +952,21 @@ Because some people will do so even though it is not recommended, messages from 
 If you won't get into trouble by letting others learn about Whonix, feel free to follow or like those profiles (with your anonymous account) as a little way to [[Contribute|Contribute]].
 &lt;/translate&gt;
 
-== &lt;translate&gt;Source Code&lt;/translate&gt; ==
+== &lt;translate&gt;&lt;!--T:237--&gt;
+Source Code&lt;/translate&gt; ==
 &lt;translate&gt;
 &lt;!--T:54--&gt;
 In case you are interested in Whonix source code updates, [[Dev/git#subscribe_to_code_changes|subscribe to code changes]].
 &lt;/translate&gt;
 
-= &lt;translate&gt;Known bugs&lt;/translate&gt; =
-== &lt;translate&gt;Normal&lt;/translate&gt; ==
-=== &lt;translate&gt;Mounting (CD/DVD) Devices&lt;/translate&gt; ===
-&lt;translate&gt;You can use the following workaround.&lt;/translate&gt;
+= &lt;translate&gt;&lt;!--T:238--&gt;
+Known bugs&lt;/translate&gt; =
+== &lt;translate&gt;&lt;!--T:239--&gt;
+Normal&lt;/translate&gt; ==
+=== &lt;translate&gt;&lt;!--T:240--&gt;
+Mounting (CD/DVD) Devices&lt;/translate&gt; ===
+&lt;translate&gt;&lt;!--T:241--&gt;
+You can use the following workaround.&lt;/translate&gt;
 
 &lt;pre&gt;
 sudo mkdir /mnt/cdrom
@@ -944,25 +976,33 @@ sudo mkdir /mnt/cdrom
 sudo mount /dev/cdrom /mnt/cdrom/
 &lt;/pre&gt;
 
-&lt;translate&gt;The following message.&lt;/translate&gt;
+&lt;translate&gt;&lt;!--T:242--&gt;
+The following message.&lt;/translate&gt;
 
 &lt;pre&gt;
 mount: block device /dev/sr0 is write-protected, mounting read-only
 &lt;/pre&gt;
 
-&lt;translate&gt;Is expected. (It's normal that CD/DVD's are mounted read-only.)&lt;/translate&gt;
+&lt;translate&gt;&lt;!--T:243--&gt;
+Is expected. (It's normal that CD/DVD's are mounted read-only.)&lt;/translate&gt;
 
-&lt;translate&gt;Help fixing this bug is welcome!&lt;/translate&gt;
+&lt;translate&gt;&lt;!--T:244--&gt;
+Help fixing this bug is welcome!&lt;/translate&gt;
 
-=== &lt;translate&gt;VLC / Video Player Crash&lt;/translate&gt; ===
-&lt;translate&gt;You can use this workaround.&lt;/translate&gt;
+=== &lt;translate&gt;&lt;!--T:245--&gt;
+VLC / Video Player Crash&lt;/translate&gt; ===
+&lt;translate&gt;&lt;!--T:246--&gt;
+You can use this workaround.&lt;/translate&gt;
 &lt;pre&gt;
 VLC -&gt; Tools -&gt; Preferences -&gt; Video -&gt; Output -&gt; X11 -&gt; Save
 &lt;/pre&gt;
 
-== &lt;translate&gt;Minor&lt;/translate&gt; ==
-=== &lt;translate&gt;&quot;apt-get source package&quot; will show &quot;dpkg-source: warning: failed to verify signature&quot;&lt;/translate&gt; ===
-&lt;translate&gt;More info [http://lists.debian.org/debian-derivatives/2013/08/msg00000.html here] (and in the following mails).&lt;/translate&gt;
+== &lt;translate&gt;&lt;!--T:247--&gt;
+Minor&lt;/translate&gt; ==
+=== &lt;translate&gt;&lt;!--T:248--&gt;
+&quot;apt-get source package&quot; will show &quot;dpkg-source: warning: failed to verify signature&quot;&lt;/translate&gt; ===
+&lt;translate&gt;&lt;!--T:249--&gt;
+More info [http://lists.debian.org/debian-derivatives/2013/08/msg00000.html here] (and in the following mails).&lt;/translate&gt;
 
 &lt;translate&gt;
 &lt;!--T:109--&gt;
@@ -982,6 +1022,7 @@ sudo ln -s /etc/dpkg/origins/debian /etc/dpkg/origins/default
 2. {{Code|apt-get source package}}
 
 &lt;translate&gt;
+&lt;!--T:250--&gt;
 3. Undo afterwards to prevent unexpected issues.
 &lt;/translate&gt;
 
@@ -990,9 +1031,11 @@ sudo unlink /etc/dpkg/origins/default
 sudo ln -s /etc/dpkg/origins/whonix /etc/dpkg/origins/default
 &lt;/pre&gt;
 
-= &lt;translate&gt;Footnotes&lt;/translate&gt; =
+= &lt;translate&gt;&lt;!--T:251--&gt;
+Footnotes&lt;/translate&gt; =
 &lt;references /&gt;
-= &lt;translate&gt;License&lt;/translate&gt; =
+= &lt;translate&gt;&lt;!--T:252--&gt;
+License&lt;/translate&gt; =
 &lt;pre&gt;
 Whonix Download wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
 Whonix Download wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
@@ -1002,12 +1045,13 @@ This is free software, and you are welcome to redistribute it
 under certain conditions; see the wiki source code for details.
 &lt;/pre&gt;
 
-&lt;translate&gt;Some icons created by third parties, Free licenses as well, see [[Authorship#Images_created_by_third_parties|Authorship Images created by third parties]] for details.&lt;/translate&gt;
+&lt;translate&gt;&lt;!--T:253--&gt;
+Some icons created by third parties, Free licenses as well, see [[Authorship#Images_created_by_third_parties|Authorship Images created by third parties]] for details.&lt;/translate&gt;
 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>24atrbjhj1qdyg2uqk21cekiypicgjr</sha1>
+      <sha1>nohuavodtexncvol4s2tfzlzqxi3slo</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -50717,15 +50761,15 @@ Warning:
     <ns>0</ns>
     <id>541</id>
     <revision>
-      <id>6446</id>
-      <parentid>6371</parentid>
-      <timestamp>2014-03-06T09:54:15Z</timestamp>
+      <id>6468</id>
+      <parentid>6446</parentid>
+      <timestamp>2014-03-07T03:08:15Z</timestamp>
       <contributor>
         <username>FuzzyBot</username>
         <id>37</id>
       </contributor>
       <comment>Updating to match new version of source page</comment>
-      <text xml:space="preserve" bytes="6873">{{Header}}
+      <text xml:space="preserve" bytes="6876">{{Header}}
 __NOTOC__
 &lt;languages /&gt;
 {{#seo:
@@ -50821,12 +50865,13 @@ Whonix is produced independently of, and carries no guarantee from, The Tor Proj
 
 Thanks to Tomchen1989 from Wikimedia Commons for the download button! [https://commons.wikimedia.org/wiki/File:Download_Button.svg 1] ([http://www.webcitation.org/6I2DQzdu0 w])
 Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_43.htm awxcnx.de]!
-&lt;!---
-&lt;a href=&quot;https://plus.google.com/108150429836421683225&quot; rel=&quot;publisher&quot;&gt;Google+&lt;/a&gt;
----&gt;
+
+&lt;html&gt;
+&lt;a href=&quot;https://plus.google.com/u/0/112678569435063398972?rel=author&quot;&gt;Google&lt;/a&gt;
+&lt;/html&gt;
 {{Footer}}
 [[Category:Documentation]]</text>
-      <sha1>siiw2pftusl3bl6ke1be4duc4q88fca</sha1>
+      <sha1>bhtnb97bnxderiafvpv91c5jm5au5no</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -51076,15 +51121,16 @@ Image:donate.png|link=Donate|[[Donate|Donate to Whonix!]]
     <ns>1198</ns>
     <id>553</id>
     <revision>
-      <id>4238</id>
-      <timestamp>2013-12-16T16:35:31Z</timestamp>
+      <id>6482</id>
+      <parentid>4238</parentid>
+      <timestamp>2014-03-07T03:14:09Z</timestamp>
       <contributor>
         <username>FuzzyBot</username>
         <id>37</id>
       </contributor>
       <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="78">If you still need help, please go to the [[Special:AWCforum|User Help Forum]].</text>
-      <sha1>0m5py4wadhhug8m5vgh8t2iu4n5c7u9</sha1>
+      <text xml:space="preserve" bytes="66">If you still need help, please check the [[Support|Support]] page.</text>
+      <sha1>jijeajo52masjjgepwg9kvy3izun59k</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -51094,15 +51140,15 @@ Image:donate.png|link=Donate|[[Donate|Donate to Whonix!]]
     <ns>0</ns>
     <id>554</id>
     <revision>
-      <id>6088</id>
-      <parentid>6067</parentid>
-      <timestamp>2014-02-27T23:44:22Z</timestamp>
+      <id>6528</id>
+      <parentid>6523</parentid>
+      <timestamp>2014-03-07T03:34:25Z</timestamp>
       <contributor>
         <username>FuzzyBot</username>
         <id>37</id>
       </contributor>
       <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="10514">{{Header}}
+      <text xml:space="preserve" bytes="10185">{{Header}}
 &lt;!--
 Copyright:
 
@@ -51164,7 +51210,6 @@ Warning:
 Then, have a look at the [[About]], [[Warning]] and [[DoNot|Do Not]] pages to make sure that Whonix is the right tool for you and you understand well its limitations.
 }}
 
-&lt;!--T:6--&gt;
 {{anchor|Download Whonix virtual machine images}}
 
 = Download Whonix =
@@ -51180,7 +51225,6 @@ It is important to check the integrity of the virtual machine images you downloa
 Warning:
 
 Do not continue if verification failed! You risk using infected or erroneous files! The whole point of verification is verify file integrity.
-
 }}
 
 Whonix virtual machine images are cryptographically signed using OpenPGP&lt;ref&gt;OpenPGP is a standard for data encryption that provides cryptographic privacy and authentication through the use of keys owned by its users.&lt;/ref&gt; by Whonix developer Patrick Schleizer.
@@ -51207,87 +51251,81 @@ Read and apply the [[Pre_Install_Advice|Security Advice]].
 
 === Need help? ===
 
-There is a tutorial with screenshots, see [[Install]].
+There is a tutorial with screenshots, see [[Install|Install]].
 
-There are also [[Videos | Video Tutorials]].
+There are also [[Videos|Video Tutorials]].
 
-If you still need help, please go to the [[Special:AWCforum|User Help Forum]].
+If you still need help, please check the [[Support|Support]] page.
 
 == 3. After installing ==
 
-Read and apply the [[Post Install Advice]].
+Read and apply the [[Post Install Advice|Post Install Advice]].
 
 = Stay tuned =
-
 == Introduction ==
-
 Reading the latest news is important to stay on top of latest developments. Should security vulnerabilities ever be found in Whonix or should an improved version be released, you should be informed.
 
 == Whonix News Blogs ==
-[[File:Whonix News Blog opened offline created by adrelanos.png|thumb|{{Code|Whonix News Blogs}}]]
+[[File:Whonix News Blog opened offline created by adrelanos.png|thumb|Whonix News Blogs]]
 There are two ways to get news. Choose at your preference.
 
-# [https://anonymousoperatingsystem.wordpress.com/category/important/ {{Code|Whonix Important Blog}}] - Most important stuff only. Security vulnerabilities and new stable versions only. For people with very limited time and interest in Whonix development and news.
-# [https://anonymousoperatingsystem.wordpress.com/ {{Code|Whonix Feature Blog}}] - Includes everything from {{Code|Whonix Important Blog}}. Also testers-only and developers versions are announced. Has a relaxed posting policy. Also blog posts about updated articles, new features, future features, development, call for testing, general project thoughts and so on will be published.
+# [https://anonymousoperatingsystem.wordpress.com/category/important/ Whonix Important Blog] - Most important stuff only. Security vulnerabilities and new stable versions only. For people with very limited time and interest in Whonix development and news.
+# [https://anonymousoperatingsystem.wordpress.com/ Whonix Feature Blog] - Includes everything from Whonix Important Blog. Also testers-only and developers versions are announced. Has a relaxed posting policy. Also blog posts about updated articles, new features, future features, development, call for testing, general project thoughts and so on will be published.
 
-When you start '''Tor Browser Recommended''', there is a shortcut on the desktop, see [[Image:important.png|r]], it will open both {{Code|Whonix News Blogs}} in a privacy friendly way. It's recommended at least to read {{Code|Whonix Important Blog}} if you are in a hurry. Have a look into {{Code|Whonix Feature Blog}} if you are generally interested to learn about anonymity/privacy/security related things or to see what's going on with Whonix.
+When you start '''Tor Browser Recommended''', there is a shortcut on the desktop, see [[Image:important.png|r]] , it will open both Whonix News Blogs in a privacy friendly way. It's recommended at least to read Whonix Important Blog if you are in a hurry. Have a look into Whonix Feature Blog if you are generally interested to learn about anonymity/privacy/security related things or to see what's going on with Whonix.
 
 == Operating System Updates ==
-
-You should regularly check for operating system updates on your host operating system, on Whonix-Workstation and on Whonix-Gateway as highly recommended in the [[Security Guide]].
+You should regularly check for operating system updates on your host operating system, on Whonix-Workstation and on Whonix-Gateway as highly recommended in the [[Security Guide|Security Guide]].
 
 == Tor Browser ==
+[[Image:whonixcheck_gui.png|[[whonixcheck|whonixcheck]]|thumb]]
 
-[[Image:whonixcheck_gui.png|[[whonixcheck]]|thumb]]
-
-There is no auto-update feature for Tor Browser. You will be notified about new Tor Browser versions by [[whonixcheck]]. Tor Browser's built in update check mechanism also works in Whonix. For instructions how to update the browser, see [[Tor Browser]]. Additionally it might also be wise to subscribe to https://blog.torproject.org for news.
+There is no auto-update feature for Tor Browser. You will be notified about new Tor Browser versions by [[whonixcheck|whonixcheck]]. Tor Browser's built in update check mechanism also works in Whonix. For instructions how to update the browser, see [[Tor Browser|Tor Browser]]. Additionally it might also be wise to subscribe to https://blog.torproject.org for news.
 
 == Whonix Version Check and Whonix News ==
-[[File:whonixcheck created by adrelanos.png|thumb|{{Code|Whonix Version Check}} (first rectangle in black) and&lt;br /&gt;{{Code|Whonix News}} &lt;br /&gt;(second rectangle in green)]]
-Furthermore you will be automatically notified about new Whonix versions by {{Code|Whonix Version Check}} and about the most important occurrences&lt;ref&gt;Such as when a version becomes unsupported, if manual action is required, if major features break, or if security vulnerabilities are found. The policy is to use {{Code|Whonix News}} as rarely as possible.&lt;/ref&gt; by {{Code|Whonix News}}, both of which are part of [[whonixcheck]].
+[[File:whonixcheck created by adrelanos.png|thumb|Whonix Version Check (first rectangle in black) and&lt;br /&gt;Whonix News &lt;br /&gt;(second rectangle in green)]]
+Furthermore you will be automatically notified about new Whonix versions by Whonix Version Check and about the most important occurrences&lt;ref&gt;Such as when a version becomes unsupported, if manual action is required, if major features break, or if security vulnerabilities are found. The policy is to use Whonix News as rarely as possible.&lt;/ref&gt; by Whonix News, both of which are part of [[whonixcheck|whonixcheck]].
 
 == Social Media Profiles ==
-
-There are some [[Official Whonix Online Profiles|Whonix Social Media Profiles]], but please don't rely on them for getting Whonix News and please don't use them to contact Whonix developers. (See [[Contact]] for contact information.)
+There are some [[Official Whonix Online Profiles|Whonix Social Media Profiles]], but please don't rely on them for getting Whonix News and please don't use them to contact Whonix developers. (See [[Contact|Contact]] for contact information.)
 
 Because some people will do so even though it is not recommended, messages from the Whonix Feature Blog will be automatically mirrored to [https://twitter.com/Whonix Whonix Twitter Profile], to [https://www.facebook.com/Whonix Whonix Facebook Profile] and to [https://plus.google.com/108150429836421683225/ Whonix Google+ Profile].
 
-If you won't get into trouble by letting others learn about Whonix, feel free to follow or like those profiles (with your anonymous account) as a little way to [[Contribute]].
+If you won't get into trouble by letting others learn about Whonix, feel free to follow or like those profiles (with your anonymous account) as a little way to [[Contribute|Contribute]].
 
 == Source Code ==
-
 In case you are interested in Whonix source code updates, [[Dev/git#subscribe_to_code_changes|subscribe to code changes]].
 
 = Known bugs =
 == Normal ==
 === Mounting (CD/DVD) Devices ===
-Currently needs a workaround as well. Please see [[Special:AWCforum/st/id167/#post_700|forum]].
+You can use the following workaround.
+
+&lt;pre&gt;
+sudo mkdir /mnt/cdrom
+&lt;/pre&gt;
+
+&lt;pre&gt;
+sudo mount /dev/cdrom /mnt/cdrom/
+&lt;/pre&gt;
+
+The following message.
+
+&lt;pre&gt;
+mount: block device /dev/sr0 is write-protected, mounting read-only
+&lt;/pre&gt;
+
+Is expected. (It's normal that CD/DVD's are mounted read-only.)
+
+Help fixing this bug is welcome!
 
 === VLC / Video Player Crash ===
-For problem and workaround see forum thread: [[Special:AWCforum/st/id282/vlc_video_crash.html]].
+You can use this workaround.
+&lt;pre&gt;
+VLC -&gt; Tools -&gt; Preferences -&gt; Video -&gt; Output -&gt; X11 -&gt; Save
+&lt;/pre&gt;
 
 == Minor ==
-=== There is no public key available for the following key IDs ===
-The message &quot;{{Code2|There is no public key available for the following key IDs}}&quot; is not necessarily an error. It might be just a warning/information.
-
-&lt;pre&gt;
-sudo apt-get update
-...
-Reading package lists... Done
-...
-W: There is no public key available for the following key IDs:
-9C131AD3713AAEEF
-&lt;/pre&gt;
-
-Check the exit code of apt-get.
-
-&lt;pre&gt;
-echo $?
-0
-&lt;/pre&gt;
-
-When it's 0, there is no problem. This is due to key transition, because Whonix's repository is currently signed with the old and the new signing key.
-
 === &quot;apt-get source package&quot; will show &quot;dpkg-source: warning: failed to verify signature&quot; ===
 More info [http://lists.debian.org/debian-derivatives/2013/08/msg00000.html here] (and in the following mails).
 
@@ -51321,12 +51359,12 @@ This is free software, and you are welcome to redistribute it
 under certain conditions; see the wiki source code for details.
 &lt;/pre&gt;
 
-Some icons created by third parties, Free licenses as well, see [[Authorship#Images_created_by_third_parties]] for details.
+Some icons created by third parties, Free licenses as well, see [[Authorship#Images_created_by_third_parties|Authorship Images created by third parties]] for details.
 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>kmj3f975banghs120uojlqnpyp7c9cq</sha1>
+      <sha1>k64l1u1bjxzqqgpruoo0qp618voidhn</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -51414,15 +51452,16 @@ sudo apt-get install enigmail
     <ns>1198</ns>
     <id>560</id>
     <revision>
-      <id>4245</id>
-      <timestamp>2013-12-16T16:36:00Z</timestamp>
+      <id>6517</id>
+      <parentid>4245</parentid>
+      <timestamp>2014-03-07T03:32:12Z</timestamp>
       <contributor>
         <username>FuzzyBot</username>
         <id>37</id>
       </contributor>
       <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="43">Read and apply the [[Post Install Advice]].</text>
-      <sha1>l9vbc4rlpc4dr770cy74y2tamgwy8xw</sha1>
+      <text xml:space="preserve" bytes="63">Read and apply the [[Post Install Advice|Post Install Advice]].</text>
+      <sha1>i3h5hb80i0bh4n9uxwf53vpcp1n0xzi</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -52003,15 +52042,16 @@ sudo apt-get dist-upgrade
     <ns>1198</ns>
     <id>576</id>
     <revision>
-      <id>4262</id>
-      <timestamp>2013-12-16T16:37:14Z</timestamp>
+      <id>6515</id>
+      <parentid>4262</parentid>
+      <timestamp>2014-03-07T03:32:10Z</timestamp>
       <contributor>
         <username>FuzzyBot</username>
         <id>37</id>
       </contributor>
       <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="175">If you won't get into trouble by letting others learn about Whonix, feel free to follow or like those profiles (with your anonymous account) as a little way to [[Contribute]].</text>
-      <sha1>swfq58j6413ik6xf2ao4do6til802xh</sha1>
+      <text xml:space="preserve" bytes="186">If you won't get into trouble by letting others learn about Whonix, feel free to follow or like those profiles (with your anonymous account) as a little way to [[Contribute|Contribute]].</text>
+      <sha1>iq5fjohmcavbkxw9p7bqmcqxdpqx7xg</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -52040,15 +52080,16 @@ sudo apt-get dist-upgrade
     <ns>1198</ns>
     <id>578</id>
     <revision>
-      <id>4264</id>
-      <timestamp>2013-12-16T16:37:25Z</timestamp>
+      <id>6496</id>
+      <parentid>4264</parentid>
+      <timestamp>2014-03-07T03:23:20Z</timestamp>
       <contributor>
         <username>FuzzyBot</username>
         <id>37</id>
       </contributor>
       <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="44">There are also [[Videos | Video Tutorials]].</text>
-      <sha1>9uqqjaswwiflwsey2br8vk11yrce0ho</sha1>
+      <text xml:space="preserve" bytes="42">There are also [[Videos|Video Tutorials]].</text>
+      <sha1>2mglbddmtzshva6nsdojjpapuaskxoz</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -52099,16 +52140,16 @@ sudo apt-get dist-upgrade
     <ns>1198</ns>
     <id>581</id>
     <revision>
-      <id>5637</id>
-      <parentid>5421</parentid>
-      <timestamp>2014-02-24T16:44:03Z</timestamp>
+      <id>6492</id>
+      <parentid>5637</parentid>
+      <timestamp>2014-03-07T03:23:15Z</timestamp>
       <contributor>
         <username>FuzzyBot</username>
         <id>37</id>
       </contributor>
       <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="342">There is no auto-update feature for Tor Browser. You will be notified about new Tor Browser versions by [[whonixcheck]]. Tor Browser's built in update check mechanism also works in Whonix. For instructions how to update the browser, see [[Tor Browser]]. Additionally it might also be wise to subscribe to https://blog.torproject.org for news.</text>
-      <sha1>9hqse0lzce5vp9lcw6yyric03e0vobz</sha1>
+      <text xml:space="preserve" bytes="366">There is no auto-update feature for Tor Browser. You will be notified about new Tor Browser versions by [[whonixcheck|whonixcheck]]. Tor Browser's built in update check mechanism also works in Whonix. For instructions how to update the browser, see [[Tor Browser|Tor Browser]]. Additionally it might also be wise to subscribe to https://blog.torproject.org for news.</text>
+      <sha1>gwffty7rmsrd1galwh4qantto3zdmb2</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -52161,15 +52202,16 @@ sudo ln -s /etc/dpkg/origins/whonix /etc/dpkg/origins/default
     <ns>1198</ns>
     <id>586</id>
     <revision>
-      <id>4272</id>
-      <timestamp>2013-12-16T16:39:00Z</timestamp>
+      <id>6520</id>
+      <parentid>4272</parentid>
+      <timestamp>2014-03-07T03:32:26Z</timestamp>
       <contributor>
         <username>FuzzyBot</username>
         <id>37</id>
       </contributor>
       <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="446">When you start '''Tor Browser Recommended''', there is a shortcut on the desktop, see [[Image:important.png|r]], it will open both {{Code|Whonix News Blogs}} in a privacy friendly way. It's recommended at least to read {{Code|Whonix Important Blog}} if you are in a hurry. Have a look into {{Code|Whonix Feature Blog}} if you are generally interested to learn about anonymity/privacy/security related things or to see what's going on with Whonix.</text>
-      <sha1>7136ej69wc8ckrs40cpw8sqhq94h6ou</sha1>
+      <text xml:space="preserve" bytes="85">When you start '''Tor Browser Recommended''', there is a shortcut on the desktop, see</text>
+      <sha1>bw09uyjfgexr64irtzyx5d28cb1v8yw</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -52585,15 +52627,16 @@ Copyright:</text>
     <ns>1198</ns>
     <id>609</id>
     <revision>
-      <id>4296</id>
-      <timestamp>2013-12-16T16:43:41Z</timestamp>
+      <id>6527</id>
+      <parentid>4296</parentid>
+      <timestamp>2014-03-07T03:34:24Z</timestamp>
       <contributor>
         <username>FuzzyBot</username>
         <id>37</id>
       </contributor>
       <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="233">There are some [[Official Whonix Online Profiles|Whonix Social Media Profiles]], but please don't rely on them for getting Whonix News and please don't use them to contact Whonix developers. (See [[Contact]] for contact information.)</text>
-      <sha1>3g322mks6il6butjlxqkmforska81i9</sha1>
+      <text xml:space="preserve" bytes="241">There are some [[Official Whonix Online Profiles|Whonix Social Media Profiles]], but please don't rely on them for getting Whonix News and please don't use them to contact Whonix developers. (See [[Contact|Contact]] for contact information.)</text>
+      <sha1>rqqinvlnh22j4dk4gp5nwqf7pktujnu</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -52645,15 +52688,16 @@ Copyright:</text>
     <ns>1198</ns>
     <id>612</id>
     <revision>
-      <id>4299</id>
-      <timestamp>2013-12-16T16:44:10Z</timestamp>
+      <id>6522</id>
+      <parentid>4299</parentid>
+      <timestamp>2014-03-07T03:33:26Z</timestamp>
       <contributor>
         <username>FuzzyBot</username>
         <id>37</id>
       </contributor>
       <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="54">There is a tutorial with screenshots, see [[Install]].</text>
-      <sha1>dv37wnrcqp8lnsl7l5w9bshwvesxalq</sha1>
+      <text xml:space="preserve" bytes="62">There is a tutorial with screenshots, see [[Install|Install]].</text>
+      <sha1>2pb7gmvqyc9hrfmamp9rhewf0djf5zf</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -52663,16 +52707,16 @@ Copyright:</text>
     <ns>1198</ns>
     <id>613</id>
     <revision>
-      <id>4300</id>
-      <timestamp>2013-12-16T16:44:28Z</timestamp>
+      <id>6485</id>
+      <parentid>4300</parentid>
+      <timestamp>2014-03-07T03:15:54Z</timestamp>
       <contributor>
         <username>FuzzyBot</username>
         <id>37</id>
       </contributor>
       <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="211">= Verify the Whonix images =
-It is important to check the integrity of the virtual machine images you downloaded to make sure no man-in-the-middle attack or file corruption happened. (See [[Download Security]].)</text>
-      <sha1>tu8yu0pkartacsv28u0kvx09xnhat0e</sha1>
+      <text xml:space="preserve" bytes="182">It is important to check the integrity of the virtual machine images you downloaded to make sure no man-in-the-middle attack or file corruption happened. (See [[Download Security]].)</text>
+      <sha1>ppxny0x8g4nkw4k4yqo0q78lsstev8k</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -52815,16 +52859,17 @@ It is important to check the integrity of the virtual machine images you downloa
     <ns>1198</ns>
     <id>621</id>
     <revision>
-      <id>4308</id>
-      <timestamp>2013-12-16T16:46:16Z</timestamp>
+      <id>6480</id>
+      <parentid>4308</parentid>
+      <timestamp>2014-03-07T03:13:54Z</timestamp>
       <contributor>
         <username>FuzzyBot</username>
         <id>37</id>
       </contributor>
       <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="647"># [https://anonymousoperatingsystem.wordpress.com/category/important/ {{Code|Whonix Important Blog}}] - Most important stuff only. Security vulnerabilities and new stable versions only. For people with very limited time and interest in Whonix development and news.
-# [https://anonymousoperatingsystem.wordpress.com/ {{Code|Whonix Feature Blog}}] - Includes everything from {{Code|Whonix Important Blog}}. Also testers-only and developers versions are announced. Has a relaxed posting policy. Also blog posts about updated articles, new features, future features, development, call for testing, general project thoughts and so on will be published.</text>
-      <sha1>d89hlxdakhqmv5wb2isv7mv37ae6ihn</sha1>
+      <text xml:space="preserve" bytes="620"># [https://anonymousoperatingsystem.wordpress.com/category/important/ Whonix Important Blog] - Most important stuff only. Security vulnerabilities and new stable versions only. For people with very limited time and interest in Whonix development and news.
+# [https://anonymousoperatingsystem.wordpress.com/ Whonix Feature Blog] - Includes everything from Whonix Important Blog. Also testers-only and developers versions are announced. Has a relaxed posting policy. Also blog posts about updated articles, new features, future features, development, call for testing, general project thoughts and so on will be published.</text>
+      <sha1>i8xl8f1z90l13cbkeanreepbxnom7tc</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -53140,15 +53185,16 @@ License can be found in the /usr/share/common-licenses' directory.</text>
     <ns>1198</ns>
     <id>638</id>
     <revision>
-      <id>4325</id>
-      <timestamp>2013-12-16T16:48:55Z</timestamp>
+      <id>6508</id>
+      <parentid>4325</parentid>
+      <timestamp>2014-03-07T03:29:37Z</timestamp>
       <contributor>
         <username>FuzzyBot</username>
         <id>37</id>
       </contributor>
       <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="179">You should regularly check for operating system updates on your host operating system, on Whonix-Workstation and on Whonix-Gateway as highly recommended in the [[Security Guide]].</text>
-      <sha1>p0g8gbz6krkqmphiwagfghofzlfrzjn</sha1>
+      <text xml:space="preserve" bytes="194">You should regularly check for operating system updates on your host operating system, on Whonix-Workstation and on Whonix-Gateway as highly recommended in the [[Security Guide|Security Guide]].</text>
+      <sha1>0p4bqaw0mt4uueye1sxefr18f52vcza</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -56318,15 +56364,15 @@ Den Haftungsausschluss (Disclaimer) finden Sie [[Disclaimer|hier]].
     <ns>0</ns>
     <id>700</id>
     <revision>
-      <id>6448</id>
-      <parentid>6438</parentid>
-      <timestamp>2014-03-06T09:55:10Z</timestamp>
+      <id>6471</id>
+      <parentid>6448</parentid>
+      <timestamp>2014-03-07T03:08:24Z</timestamp>
       <contributor>
         <username>FuzzyBot</username>
         <id>37</id>
       </contributor>
       <comment>Updating to match new version of source page</comment>
-      <text xml:space="preserve" bytes="6987">{{Header}}
+      <text xml:space="preserve" bytes="6990">{{Header}}
 __NOTOC__
 &lt;languages /&gt;
 {{#seo:
@@ -56422,12 +56468,13 @@ Whonix wird unabhängig und ohne jegliche Garantien von The Tor Project hergeste
 
 Danke an Tomchen1989 von Wikimedia Commons für den Downloadbutton! [https://commons.wikimedia.org/wiki/File:Download_Button.svg 1] ([http://www.webcitation.org/6I2DQzdu0 w])
 Thanks für den MAT public domain screenshot an [https://www.awxcnx.de/handbuch_43.htm awxcnx.de]!
-&lt;!---
-&lt;a href=&quot;https://plus.google.com/108150429836421683225&quot; rel=&quot;publisher&quot;&gt;Google+&lt;/a&gt;
----&gt;
+
+&lt;html&gt;
+&lt;a href=&quot;https://plus.google.com/u/0/112678569435063398972?rel=author&quot;&gt;Google&lt;/a&gt;
+&lt;/html&gt;
 {{Footer}}
 [[Category:Documentation]]</text>
-      <sha1>9rd6sxxvgwxu8u8hwxavtmosttlx3w4</sha1>
+      <sha1>nn80vjp5bcz5s4zxqm8e5bo7pxu6yvg</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -57892,15 +57939,15 @@ sudo -E ./build-steps.d/1100_prepare-build-machine --bare-metal --tor-gateway
     <ns>0</ns>
     <id>755</id>
     <revision>
-      <id>6449</id>
-      <parentid>6344</parentid>
-      <timestamp>2014-03-06T09:55:12Z</timestamp>
+      <id>6470</id>
+      <parentid>6449</parentid>
+      <timestamp>2014-03-07T03:08:23Z</timestamp>
       <contributor>
         <username>FuzzyBot</username>
         <id>37</id>
       </contributor>
       <comment>Updating to match new version of source page</comment>
-      <text xml:space="preserve" bytes="7950">{{Header}}
+      <text xml:space="preserve" bytes="7953">{{Header}}
 __NOTOC__
 &lt;languages /&gt;
 {{#seo:
@@ -58001,12 +58048,13 @@ Image:donate.png|link=Donate|[[Donate|Donate to Whonix!]]
 Благодарим за скриншот публичного домена MAT к
 [https://www.awxcnx.de/handbuch_43.htm awxcnx.de]!
 &lt;!--- &lt;a href=&quot;https://plus.google.com/108150429836421683225&quot; rel=&quot;publisher&quot;&gt;Google+&lt;/a&gt; ---&gt;
-&lt;!---
-&lt;a href=&quot;https://plus.google.com/108150429836421683225&quot; rel=&quot;publisher&quot;&gt;Google+&lt;/a&gt;
----&gt;
+
+&lt;html&gt;
+&lt;a href=&quot;https://plus.google.com/u/0/112678569435063398972?rel=author&quot;&gt;Google&lt;/a&gt;
+&lt;/html&gt;
 {{Footer}}
 [[Category:Documentation]]</text>
-      <sha1>bsvbr4ze571iv9718cskdp6gzsrnilo</sha1>
+      <sha1>p56vuxepyb5midic6ap27yokqs5n7ff</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -58204,15 +58252,15 @@ Image:donate.png|link=Donate|[[Donate|Donate to Whonix!]]
     <ns>0</ns>
     <id>765</id>
     <revision>
-      <id>6042</id>
-      <parentid>6035</parentid>
-      <timestamp>2014-02-27T23:09:26Z</timestamp>
+      <id>6469</id>
+      <parentid>6042</parentid>
+      <timestamp>2014-03-07T03:08:19Z</timestamp>
       <contributor>
         <username>FuzzyBot</username>
         <id>37</id>
       </contributor>
       <comment>Updating to match new version of source page</comment>
-      <text xml:space="preserve" bytes="15309">{{Header}}
+      <text xml:space="preserve" bytes="14239">{{Header}}
 &lt;!--
 Copyright:
 
@@ -58245,8 +58293,10 @@ The complete text of the GNU General Public License can also be found online on 
 This wiki page is a fork of the Tails Download page, from this exact source &lt;http://git.immerda.ch/?p=amnesia.git;a=blob;f=wiki/src/download.html;hb=19d48ad8b7d23548aae126ed6cb873c91255f876&gt;.
 --&gt;
 &lt;languages /&gt;
-= Новичок? =
-{{Anchor|Landing}}
+{{#seo:
+|description=Download Whonix. Anonymity online. Privacy protection.
+}}
+= First time user? =
 {{Anchor|Landing}}
 
 
@@ -58263,10 +58313,7 @@ This wiki page is a fork of the Tails Download page, from this exact source &lt;
 | type       = critical
 | image      = [[File:Ambox_warning_pn.svg.png|40px|alt=Question mark]]
 | text       = 
-| type       = critical
-| image      = [[File:Ambox_warning_pn.svg.png|40px|alt=Question mark]]
-| text       = 
-Предупреждение:
+Warning:
 
 * Если вы не знаете, что такое метаданные или атака &quot;противник-в-середине&quot;.
 * Если вы думаете, что никто не может прослушивать * ваш канал благодаря защите Tor.
@@ -58275,24 +58322,21 @@ This wiki page is a fork of the Tails Download page, from this exact source &lt;
 Then, have a look at the [[About]], [[Warning]] and [[DoNot|Do Not]] pages to make sure that Whonix is the right tool for you and you understand well its limitations.
 }}
 
-&lt;!--T:6--&gt;
 {{anchor|Download Whonix virtual machine images}}
 
 = Download Whonix =
 {{DownloadTableNew}}
 
+= Verify the Whonix images =
 Важно проверить целостность образов для виртуальной машины, которые вы скачали, для того, чтобы убедиться, что во время закачки не произошла атака &quot;противник в середине&quot; или порча файла. (см. [[Download Security|Безопасность загрузки]].)
 
 {{mbox
 | type       = critical
 | image      = [[File:Ambox_warning_pn.svg.png|40px|alt=Question mark]]
 | text       =
-| type       = critical
-| image      = [[File:Ambox_warning_pn.svg.png|40px|alt=Question mark]]
-| text       = Предупреждение:
+Warning:
 
 Предупреждение: В случае неудачной проверки подлинности не совершайте никаких последующих действий! Вы подвергаете себя опасности использования заражённых или повреждённых файлов! Суть проверки подлинности как раз заключается в проверке целостности файлов.
-
 }}
 
 Образы Whonix для виртуальной машины криптографически подписаны OpenPGP &lt;ref&gt;OpenPGP является стандартом шифрования данных, обеспечивающим криптографическую приватность и идентификацию посредством использования ключей, находящихся у пользователей.&lt;/ref&gt; разработчиком Whonix.
@@ -58305,14 +58349,14 @@ Then, have a look at the [[About]], [[Warning]] and [[DoNot|Do Not]] pages to ma
 * [[Verify the_virtual_machine_images_using_the_command line|Для Linux в командной строке]]
 * [[Verify_the_virtual_machine_images_using_other_operating systems|Для Windows или Mac]]
 
-= Установите Whonix =
+= Install Whonix =
 
-== 1. До установки ==
+== 1. Before installing ==
 
 Прочтите и используйте
 [[Pre_Install_Advice|Советы по безопасности]].
 
-== 2. Установка ==
+== 2. Install ==
 
 * Скачайте и установите [https://www.virtualbox.org/wiki/Downloads VirtualBox]. &lt;ref&gt;Или же можно найти и установить портативную сборку
 VirtualBox&lt;/ref&gt;
@@ -58320,7 +58364,7 @@ VirtualBox&lt;/ref&gt;
 Whonix-Workstation.ova. Whonix состоит из двух виртуальных машин.&lt;/ref&gt; в VirtualBox. Не меняйте никакие настройки во время процесса импорта!
 * Сделайте снимок системы в VirtualBox для обоих машин: для Whonix-Gateway и Whonix-Workstation. Позднее из этих снимков вы сможете в любое время с лёгкостью восстановить систему до первоначального состояния.
 
-=== Нужна помощь? ===
+=== Need help? ===
 
 Имеется руководство со скриншотами, см. [[Install|Установка]].
 
@@ -58328,19 +58372,17 @@ Whonix-Workstation.ova. Whonix состоит из двух виртуальны
 
 Если всё ещё возникают вопросы, обратитесь в [[Special:AWCforum|Форум помощи пользователям]].
 
-== 3. После установки ==
+== 3. After installing ==
 
 Ознакомьтесь с/воспользуйтесь [[Post Install Advice|Советами по действиям после установки]].
 
-= Будьте в курсе событий =
-
-== Введение ==
-
+= Stay tuned =
+== Introduction ==
 Чтение свежих новостей позволит быть в курсе событий в отношении последних обстоятельств. В случае обнаружения уязвимостей в Whonix или выпуска улучшенной версии вы, таким образом, будете знать о них.
 
-== Новостные блоги Whonix ==
-[[File:Whonix News Blog opened offline created by adrelanos.png|thumb|{{Code|Whonix News Blogs}}]]
-Есть два способа получения новостей. Сделайте выбор по своему усмотрению.
+== Whonix News Blogs ==
+[[File:Whonix News Blog opened offline created by adrelanos.png|thumb|Whonix News Blogs]]
+There are two ways to get news. Choose at your preference.
 
 # {{Code|Важный блог Whonix}} - Здесь публикуется наиболее важная
 информация. Главным образом, это информация об уязвимостях и новых
@@ -58354,64 +58396,60 @@ Whonix-Workstation.ova. Whonix состоит из двух виртуальны
 обновлениях статей, новых функциях, будущих функциях, разработке,
 предложения к тестированию, общие мысли о проекте и тому подобное.
 
-Около '''Tor Browser Recommended''', вы можете увидеть ярлык на рабочем столе, см. [[Image:important.png|r]], он запустит оба {{Code|Новостных блога Whonix}} с сохранением вашей анонимности. В случае нехватки времени рекомендуется периодически читать хотя бы {{Code|Важный блог Whonix}}. Если вас вообще интересуют вопросы анонимности/приватности/безопасности или вы хотите узнать о текущих разработках по Whonix, посетите {{Code|Блог функций Whonix}}.
+Около '''Tor Browser Recommended''', вы можете увидеть ярлык на рабочем столе, см. [[Image:important.png|r]], он запустит оба {{Code|Новостных блога Whonix}} с сохранением вашей анонимности. В случае нехватки времени рекомендуется периодически читать хотя бы {{Code|Важный блог Whonix}}. Если вас вообще интересуют вопросы анонимности/приватности/безопасности или вы хотите узнать о текущих разработках по Whonix, посетите {{Code|Блог функций Whonix}}. [[Image:important.png|r]] , it will open both Whonix News Blogs in a privacy friendly way. It's recommended at least to read Whonix Important Blog if you are in a hurry. Have a look into Whonix Feature Blog if you are generally interested to learn about anonymity/privacy/security related things or to see what's going on with Whonix.
 
-== Обновления операционной системы ==
-
+== Operating System Updates ==
 Необходимо регулярно проверять наличие обновлений для вашей основной (негостевой) операционной системы, Whonix-Workstation (Whonix-Рабочей станции) и Whonix-Gateway (Whonix-шлюза) в соответствии с рекомендациями  [[Security Guide|Руководства по безопасности]]
 
-== Tor-браузер ==
+== Tor Browser ==
+[[Image:whonixcheck_gui.png|[[whonixcheck|whonixcheck]]|thumb]]
 
-[[Image:whonixcheck_gui.png|[[whonixcheck|whonix-проверка]]|thumb]]
+There is no auto-update feature for Tor Browser. You will be notified about new Tor Browser versions by [[whonixcheck|whonixcheck]]. Tor Browser's built in update check mechanism also works in Whonix. For instructions how to update the browser, see [[Tor Browser|Tor Browser]]. Additionally it might also be wise to subscribe to https://blog.torproject.org for news.
 
-There is no auto-update feature for Tor Browser. You will be notified about new Tor Browser versions by [[whonixcheck]]. Tor Browser's built in update check mechanism also works in Whonix. For instructions how to update the browser, see [[Tor Browser]]. Additionally it might also be wise to subscribe to https://blog.torproject.org for news.
+== Whonix Version Check and Whonix News ==
+[[File:whonixcheck created by adrelanos.png|thumb|Whonix Version Check (first rectangle in black) and&lt;br /&gt;Whonix News &lt;br /&gt;(second rectangle in green)]]
+Furthermore you will be automatically notified about new Whonix versions by Whonix Version Check and about the most important occurrences&lt;ref&gt;Such as when a version becomes unsupported, if manual action is required, if major features break, or if security vulnerabilities are found. The policy is to use Whonix News as rarely as possible.&lt;/ref&gt; by Whonix News, both of which are part of [[whonixcheck|whonixcheck]].
 
-== Проверка версии Whonix и Новости Whonix ==
-[[File:whonixcheck created by adrelanos.png|thumb|{{Code|Проверка версии Whonix}} (первый прямоугольник чёрного цвета) и&lt;br /&gt;{{Code|Новости Whonix}} &lt;br /&gt;(второй прямоугольник зелёного цвета)]]
-Также, благодаря {{Code|Проверке версии Whonix}} вы будете получать автоматические уведомления о новых версиях и о самых важных событиях &lt;ref&gt;, например, о том, что версия перестала поддерживаться, или о том, что требуется какое-либо действие, перестали работать какие-либо функции или были обнаружены уязвимости в системе обеспечения безопасности. Согласно замыслу необходимость в пользовании {{Code|Новостями Whonix}} сведена к минимуму.&lt;/ref&gt; за счёт {{Code|Новостей Whonix}}, они являются частью [[whonixcheck|whonix-проверки]].
-
-== Группы в социальных сетях ==
-
+== Social Media Profiles ==
 Существует несколько [[Official Whonix Online Profiles|Групп Whonix в социальных сетях]], однако не полагайтесь на них в плане получения Новостей Whonix, и по мере возможности избегайте использовать их для связи с разработчиками Whonix.  (См. [[Contact|Контакты]] для получения контактной информации.)
 
 Because some people will do so even though it is not recommended, messages from the Whonix Feature Blog will be automatically mirrored to [https://twitter.com/Whonix Whonix Twitter Profile], to [https://www.facebook.com/Whonix Whonix Facebook Profile] and to [https://plus.google.com/108150429836421683225/ Whonix Google+ Profile].
 
 Если распространение вами информации о Whonix не несёт для вас никакой угрозы, можете свободно пользоваться этими группами и ставить им оценки &quot;нравится&quot; (используя анонимную учётную запись), чтобы [[Contribute|Внести вклад]] для поддержания ОС Whonix.
 
-== Исходный код ==
-
+== Source Code ==
 Если вас интересуют обновления исходного кода Whonix, [[Dev/git#subscribe_to_code_changes|подпишитесь на получение информации по изменениям в исходном коде]].
 
 = Known bugs =
 == Normal ==
 === Mounting (CD/DVD) Devices ===
-Currently needs a workaround as well. Please see [[Special:AWCforum/st/id167/#post_700|forum]].
+You can use the following workaround.
+
+&lt;pre&gt;
+sudo mkdir /mnt/cdrom
+&lt;/pre&gt;
+
+&lt;pre&gt;
+sudo mount /dev/cdrom /mnt/cdrom/
+&lt;/pre&gt;
+
+The following message.
+
+&lt;pre&gt;
+mount: block device /dev/sr0 is write-protected, mounting read-only
+&lt;/pre&gt;
+
+Is expected. (It's normal that CD/DVD's are mounted read-only.)
+
+Help fixing this bug is welcome!
 
 === VLC / Video Player Crash ===
-For problem and workaround see forum thread: [[Special:AWCforum/st/id282/vlc_video_crash.html]].
+You can use this workaround.
+&lt;pre&gt;
+VLC -&gt; Tools -&gt; Preferences -&gt; Video -&gt; Output -&gt; X11 -&gt; Save
+&lt;/pre&gt;
 
 == Minor ==
-=== There is no public key available for the following key IDs ===
-The message &quot;{{Code2|There is no public key available for the following key IDs}}&quot; is not necessarily an error. It might be just a warning/information.
-
-&lt;pre&gt;
-sudo apt-get update
-...
-Reading package lists... Done
-...
-W: There is no public key available for the following key IDs:
-9C131AD3713AAEEF
-&lt;/pre&gt;
-
-Check the exit code of apt-get.
-
-&lt;pre&gt;
-echo $?
-0
-&lt;/pre&gt;
-
-When it's 0, there is no problem. This is due to key transition, because Whonix's repository is currently signed with the old and the new signing key.
-
 === &quot;apt-get source package&quot; will show &quot;dpkg-source: warning: failed to verify signature&quot; ===
 More info [http://lists.debian.org/debian-derivatives/2013/08/msg00000.html here] (and in the following mails).
 
@@ -58445,12 +58483,12 @@ This is free software, and you are welcome to redistribute it
 under certain conditions; see the wiki source code for details.
 &lt;/pre&gt;
 
-Some icons created by third parties, Free licenses as well, see [[Authorship#Images_created_by_third_parties]] for details.
+Some icons created by third parties, Free licenses as well, see [[Authorship#Images_created_by_third_parties|Authorship Images created by third parties]] for details.
 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>snrg23cqz0kqkqrio1bj7v61zmav62k</sha1>
+      <sha1>mepbieq1f1p0y4udsx2bfl1j38xqgoi</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -61464,17 +61502,16 @@ echo $?
     <ns>1198</ns>
     <id>882</id>
     <revision>
-      <id>6052</id>
-      <parentid>6024</parentid>
-      <timestamp>2014-02-27T23:18:04Z</timestamp>
+      <id>6531</id>
+      <parentid>6052</parentid>
+      <timestamp>2014-03-07T03:35:18Z</timestamp>
       <contributor>
         <username>FuzzyBot</username>
         <id>37</id>
       </contributor>
       <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="169">Then, have a look at the [[About]], [[Warning]] and [[DoNot|Do Not]] pages to make sure that Whonix is the right tool for you and you understand well its limitations.
-}}</text>
-      <sha1>en97xpcrihfnfk847xr278249whq6wr</sha1>
+      <text xml:space="preserve" bytes="166">Then, have a look at the [[About]], [[Warning]] and [[DoNot|Do Not]] pages to make sure that Whonix is the right tool for you and you understand well its limitations.</text>
+      <sha1>999znzpasqbub00x2u328ds2jus2hey</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -61633,15 +61670,15 @@ sudo rm -fR /var/lib/apt/lists/*
     <ns>0</ns>
     <id>891</id>
     <revision>
-      <id>6459</id>
-      <parentid>6332</parentid>
-      <timestamp>2014-03-06T17:10:41Z</timestamp>
+      <id>6461</id>
+      <parentid>6459</parentid>
+      <timestamp>2014-03-06T23:15:58Z</timestamp>
       <contributor>
         <username>Troubadour</username>
         <id>230</id>
       </contributor>
-      <comment>Allowed sound.</comment>
-      <text xml:space="preserve" bytes="15219">{{Header}}
+      <comment>Added '@{HOME}/* r,'</comment>
+      <text xml:space="preserve" bytes="15233">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
@@ -61836,6 +61873,7 @@ Paste the following content.
 	@{HOME}/tor-browser_en-US/Tor/tor Px,
 
 	@{HOME}/ r,
+	@{HOME}/* r,
 	@{HOME}/Desktop r,	
 	@{HOME}/Downloads/ r,	
 	@{HOME}/Downloads/** rw,
@@ -62258,7 +62296,7 @@ Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/A
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>04iyuq4v5cbw4yix3g6q2h2cfhnlh45</sha1>
+      <sha1>98463j3nf5z4bqmrdk0qdsttx9rpqzi</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -64430,15 +64468,15 @@ Therefore it is impossible to claim that non-trivial source code is backdoor fre
     <ns>0</ns>
     <id>972</id>
     <revision>
-      <id>6447</id>
-      <parentid>6349</parentid>
-      <timestamp>2014-03-06T09:54:20Z</timestamp>
+      <id>6466</id>
+      <parentid>6447</parentid>
+      <timestamp>2014-03-07T03:07:39Z</timestamp>
       <contributor>
         <username>FuzzyBot</username>
         <id>37</id>
       </contributor>
       <comment>Updating to match new version of source page</comment>
-      <text xml:space="preserve" bytes="6922">{{Header}}
+      <text xml:space="preserve" bytes="6925">{{Header}}
 __NOTOC__
 &lt;languages /&gt;
 {{#seo:
@@ -64535,12 +64573,13 @@ Whonix est produit indépendamment du, et ne comporte aucune garantie du, Projet
 
 Thanks to Tomchen1989 from Wikimedia Commons for the download button! [https://commons.wikimedia.org/wiki/File:Download_Button.svg 1] ([http://www.webcitation.org/6I2DQzdu0 w])
 Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_43.htm awxcnx.de]!
-&lt;!---
-&lt;a href=&quot;https://plus.google.com/108150429836421683225&quot; rel=&quot;publisher&quot;&gt;Google+&lt;/a&gt;
----&gt;
+
+&lt;html&gt;
+&lt;a href=&quot;https://plus.google.com/u/0/112678569435063398972?rel=author&quot;&gt;Google&lt;/a&gt;
+&lt;/html&gt;
 {{Footer}}
 [[Category:Documentation]]</text>
-      <sha1>13cm2fmd7n9a2eom491rjho5z5vsx31</sha1>
+      <sha1>7one2mlzoj5lqqw7703xrwt1d7rtx1q</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -65744,6 +65783,782 @@ Go to http://127.0.0.1/wiki/index.php/Main_Page.
       <comment>Created page with &quot;Fußnoten&quot;</comment>
       <text xml:space="preserve" bytes="9">Fußnoten</text>
       <sha1>bbs006qxggyywmqkj6un6epe9wxfagw</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/239/en</title>
+    <ns>1198</ns>
+    <id>1036</id>
+    <revision>
+      <id>6463</id>
+      <timestamp>2014-03-07T03:07:06Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="6">Normal</text>
+      <sha1>85utzvuz4se1fwaf9z22rr0d9ny9gpw</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/238/en</title>
+    <ns>1198</ns>
+    <id>1037</id>
+    <revision>
+      <id>6467</id>
+      <timestamp>2014-03-07T03:08:01Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="10">Known bugs</text>
+      <sha1>oq5mim7o9cq7a5w5v6k81ma8v9r1o3l</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/211/en</title>
+    <ns>1198</ns>
+    <id>1038</id>
+    <revision>
+      <id>6472</id>
+      <timestamp>2014-03-07T03:09:46Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="78">{{#seo:
+|description=Download Whonix. Anonymity online. Privacy protection.
+}}</text>
+      <sha1>s0abx92oix0anu18ged3kum5zw2h51r</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/218/en</title>
+    <ns>1198</ns>
+    <id>1039</id>
+    <revision>
+      <id>6473</id>
+      <timestamp>2014-03-07T03:10:07Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="10">Need help?</text>
+      <sha1>hqpnv1zzqhe71v0d9htmmw0w6gct67e</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/249/en</title>
+    <ns>1198</ns>
+    <id>1040</id>
+    <revision>
+      <id>6474</id>
+      <timestamp>2014-03-07T03:11:44Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="111">More info [http://lists.debian.org/debian-derivatives/2013/08/msg00000.html here] (and in the following mails).</text>
+      <sha1>gpj1mnvii9mu8f4tck0yezg55ggktoc</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/223/en</title>
+    <ns>1198</ns>
+    <id>1041</id>
+    <revision>
+      <id>6475</id>
+      <timestamp>2014-03-07T03:11:48Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="17">Whonix News Blogs</text>
+      <sha1>hyj244umpf4fbavvrj123yawf82dzpc</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/246/en</title>
+    <ns>1198</ns>
+    <id>1042</id>
+    <revision>
+      <id>6476</id>
+      <timestamp>2014-03-07T03:12:04Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="28">You can use this workaround.</text>
+      <sha1>o3nmigr2h3v4qdf0opdzz29poowe52d</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/240/en</title>
+    <ns>1198</ns>
+    <id>1043</id>
+    <revision>
+      <id>6477</id>
+      <timestamp>2014-03-07T03:12:26Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="25">Mounting (CD/DVD) Devices</text>
+      <sha1>2eqg17fhyq3xyg90unkqveruzia8pbj</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/231/en</title>
+    <ns>1198</ns>
+    <id>1044</id>
+    <revision>
+      <id>6478</id>
+      <timestamp>2014-03-07T03:13:37Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="11">Whonix News</text>
+      <sha1>b0ajmrjypvevlzezqi468zyoz1ib3by</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/219/en</title>
+    <ns>1198</ns>
+    <id>1045</id>
+    <revision>
+      <id>6479</id>
+      <timestamp>2014-03-07T03:13:52Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="19">3. After installing</text>
+      <sha1>ejs9gho27j0oy44n8t9uoxdhiwytlwy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/233/en</title>
+    <ns>1198</ns>
+    <id>1046</id>
+    <revision>
+      <id>6484</id>
+      <timestamp>2014-03-07T03:15:41Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="137">Furthermore you will be automatically notified about new Whonix versions by Whonix Version Check and about the most important occurrences</text>
+      <sha1>j0bznjbkyea4ddm42zevo2jaixrmyy6</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/224/en</title>
+    <ns>1198</ns>
+    <id>1047</id>
+    <revision>
+      <id>6487</id>
+      <timestamp>2014-03-07T03:16:40Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="58">There are two ways to get news. Choose at your preference.</text>
+      <sha1>7qkjvwq2y93ufrg1vuu7cj4sv3b4j84</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/251/en</title>
+    <ns>1198</ns>
+    <id>1048</id>
+    <revision>
+      <id>6488</id>
+      <timestamp>2014-03-07T03:16:48Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="9">Footnotes</text>
+      <sha1>rkmmjlsna6ik4m7fzifk43pi98ljol6</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/245/en</title>
+    <ns>1198</ns>
+    <id>1049</id>
+    <revision>
+      <id>6489</id>
+      <timestamp>2014-03-07T03:17:23Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="24">VLC / Video Player Crash</text>
+      <sha1>gg9y5ez10hm0fu7ztdj46fp3m9ey6r0</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/250/en</title>
+    <ns>1198</ns>
+    <id>1050</id>
+    <revision>
+      <id>6490</id>
+      <timestamp>2014-03-07T03:19:04Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="48">3. Undo afterwards to prevent unexpected issues.</text>
+      <sha1>43aa1qfox6qzs3yyvwsa7xo3ip15xod</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/248/en</title>
+    <ns>1198</ns>
+    <id>1051</id>
+    <revision>
+      <id>6491</id>
+      <timestamp>2014-03-07T03:22:01Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="85">&quot;apt-get source package&quot; will show &quot;dpkg-source: warning: failed to verify signature&quot;</text>
+      <sha1>2pujz7pwv97m2xi04q9csp5hk1rvl27</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/222/en</title>
+    <ns>1198</ns>
+    <id>1052</id>
+    <revision>
+      <id>6494</id>
+      <timestamp>2014-03-07T03:23:17Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="17">Whonix News Blogs</text>
+      <sha1>hyj244umpf4fbavvrj123yawf82dzpc</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/229/en</title>
+    <ns>1198</ns>
+    <id>1053</id>
+    <revision>
+      <id>6498</id>
+      <timestamp>2014-03-07T03:23:26Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="36">Whonix Version Check and Whonix News</text>
+      <sha1>d706v8ip4c7nqtp2xp7b4pyv78jsg9o</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/236/en</title>
+    <ns>1198</ns>
+    <id>1054</id>
+    <revision>
+      <id>6499</id>
+      <timestamp>2014-03-07T03:24:44Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="21">Social Media Profiles</text>
+      <sha1>5albb98ikwz8al8tm9ennhqqi2co5v1</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/227/en</title>
+    <ns>1198</ns>
+    <id>1055</id>
+    <revision>
+      <id>6500</id>
+      <timestamp>2014-03-07T03:26:56Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="11">Tor Browser</text>
+      <sha1>6y0j5bj1ga8x05fj0760v5wcaicx7j0</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/232/en</title>
+    <ns>1198</ns>
+    <id>1056</id>
+    <revision>
+      <id>6501</id>
+      <timestamp>2014-03-07T03:27:19Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="27">(second rectangle in green)</text>
+      <sha1>i1sop9b05w8ql1yplnl7r8hwxw635zb</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/247/en</title>
+    <ns>1198</ns>
+    <id>1057</id>
+    <revision>
+      <id>6502</id>
+      <timestamp>2014-03-07T03:27:20Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="5">Minor</text>
+      <sha1>1vgv0399a2yzcua20r4alcazz9da11b</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/214/en</title>
+    <ns>1198</ns>
+    <id>1058</id>
+    <revision>
+      <id>6503</id>
+      <timestamp>2014-03-07T03:27:20Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="24">Verify the Whonix images</text>
+      <sha1>mozwnw3jpjtcumqv2u4jul32r98znr9</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/241/en</title>
+    <ns>1198</ns>
+    <id>1059</id>
+    <revision>
+      <id>6504</id>
+      <timestamp>2014-03-07T03:27:30Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="37">You can use the following workaround.</text>
+      <sha1>j51fal0k919v9f9guczyhc3j60kyuut</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/228/en</title>
+    <ns>1198</ns>
+    <id>1060</id>
+    <revision>
+      <id>6505</id>
+      <timestamp>2014-03-07T03:27:39Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="11">whonixcheck</text>
+      <sha1>20f4jdecb512u84m9ifsu9uyiris94c</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/242/en</title>
+    <ns>1198</ns>
+    <id>1061</id>
+    <revision>
+      <id>6506</id>
+      <timestamp>2014-03-07T03:28:17Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="22">The following message.</text>
+      <sha1>hc6x2ropwirx74ybwl92sqmqo5a4s46</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/220/en</title>
+    <ns>1198</ns>
+    <id>1062</id>
+    <revision>
+      <id>6507</id>
+      <timestamp>2014-03-07T03:28:29Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="10">Stay tuned</text>
+      <sha1>ayrtxdxn514ogbtk7o9wwwa10st4i4o</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/253/en</title>
+    <ns>1198</ns>
+    <id>1063</id>
+    <revision>
+      <id>6510</id>
+      <timestamp>2014-03-07T03:30:15Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="166">Some icons created by third parties, Free licenses as well, see [[Authorship#Images_created_by_third_parties|Authorship Images created by third parties]] for details.</text>
+      <sha1>01oltb1rslixh0xrd8y3pfz6wegqbhf</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/226/en</title>
+    <ns>1198</ns>
+    <id>1064</id>
+    <revision>
+      <id>6511</id>
+      <timestamp>2014-03-07T03:30:49Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="24">Operating System Updates</text>
+      <sha1>c9w3vmavkuiidwpl6jw39ytxmmss7n5</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/252/en</title>
+    <ns>1198</ns>
+    <id>1065</id>
+    <revision>
+      <id>6512</id>
+      <timestamp>2014-03-07T03:31:21Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="7">License</text>
+      <sha1>5uxtxt08ajnjdtx6uf83qxfnf5ddfia</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/213/en</title>
+    <ns>1198</ns>
+    <id>1066</id>
+    <revision>
+      <id>6513</id>
+      <timestamp>2014-03-07T03:31:44Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="15">Download Whonix</text>
+      <sha1>rv9znfk9ikdaixxyvslx1ncs37uwk3k</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/215/en</title>
+    <ns>1198</ns>
+    <id>1067</id>
+    <revision>
+      <id>6514</id>
+      <timestamp>2014-03-07T03:32:08Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="14">Install Whonix</text>
+      <sha1>m4ylgaga9if5thtet3ywao4yqfzczc9</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/221/en</title>
+    <ns>1198</ns>
+    <id>1068</id>
+    <revision>
+      <id>6519</id>
+      <timestamp>2014-03-07T03:32:22Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="12">Introduction</text>
+      <sha1>49ahif9bkddp0u5yetttbi2wk043fti</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/217/en</title>
+    <ns>1198</ns>
+    <id>1069</id>
+    <revision>
+      <id>6524</id>
+      <timestamp>2014-03-07T03:33:48Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="10">2. Install</text>
+      <sha1>skiu52ofu7jm6sindtpn6rz0ph4mda6</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/216/en</title>
+    <ns>1198</ns>
+    <id>1070</id>
+    <revision>
+      <id>6525</id>
+      <timestamp>2014-03-07T03:34:14Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="20">1. Before installing</text>
+      <sha1>4wbdkajzy6s1n7471g9kh9q7c4aa5kj</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/230/en</title>
+    <ns>1198</ns>
+    <id>1071</id>
+    <revision>
+      <id>6526</id>
+      <timestamp>2014-03-07T03:34:15Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="51">Whonix Version Check (first rectangle in black) and</text>
+      <sha1>b0y4bxmz3wrt14lgqtowrrbmk3gy13g</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/235/en</title>
+    <ns>1198</ns>
+    <id>1072</id>
+    <revision>
+      <id>6529</id>
+      <timestamp>2014-03-07T03:34:37Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="70">by Whonix News, both of which are part of [[whonixcheck|whonixcheck]].</text>
+      <sha1>4m610b8riw200xfqghxf4gbl01u66m8</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/244/en</title>
+    <ns>1198</ns>
+    <id>1073</id>
+    <revision>
+      <id>6530</id>
+      <timestamp>2014-03-07T03:35:00Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="32">Help fixing this bug is welcome!</text>
+      <sha1>tb3ezn0svamqezjnpxa0k8fxuwc5q5z</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/234/en</title>
+    <ns>1198</ns>
+    <id>1074</id>
+    <revision>
+      <id>6532</id>
+      <timestamp>2014-03-07T03:35:28Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="196">Such as when a version becomes unsupported, if manual action is required, if major features break, or if security vulnerabilities are found. The policy is to use Whonix News as rarely as possible.</text>
+      <sha1>sze9825r3endj5e1zy3crlwd2wgv3iy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/243/en</title>
+    <ns>1198</ns>
+    <id>1075</id>
+    <revision>
+      <id>6533</id>
+      <timestamp>2014-03-07T03:35:52Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="63">Is expected. (It's normal that CD/DVD's are mounted read-only.)</text>
+      <sha1>dvn3mpaek8cuz2d5nh65m9g9pvjlbgt</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/237/en</title>
+    <ns>1198</ns>
+    <id>1076</id>
+    <revision>
+      <id>6534</id>
+      <timestamp>2014-03-07T03:36:12Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="11">Source Code</text>
+      <sha1>ee572s5hnp8hlf3ebfpsoosi0aupblb</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/212/en</title>
+    <ns>1198</ns>
+    <id>1077</id>
+    <revision>
+      <id>6535</id>
+      <timestamp>2014-03-07T03:36:23Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="16">First time user?</text>
+      <sha1>nj6gqf7otk4yu5fs88wja867a69c3r9</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Download/225/en</title>
+    <ns>1198</ns>
+    <id>1078</id>
+    <revision>
+      <id>6536</id>
+      <timestamp>2014-03-07T03:36:24Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="308">, it will open both Whonix News Blogs in a privacy friendly way. It's recommended at least to read Whonix Important Blog if you are in a hurry. Have a look into Whonix Feature Blog if you are generally interested to learn about anonymity/privacy/security related things or to see what's going on with Whonix.</text>
+      <sha1>g2mu9jr6938kyyold4lnol0ceyenh63</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
