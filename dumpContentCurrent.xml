@@ -338,14 +338,14 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
     <ns>10</ns>
     <id>14</id>
     <revision>
-      <id>6151</id>
-      <parentid>5334</parentid>
-      <timestamp>2014-03-01T22:18:56Z</timestamp>
+      <id>6685</id>
+      <parentid>6151</parentid>
+      <timestamp>2014-03-07T23:39:50Z</timestamp>
       <contributor>
-        <username>Fortasse</username>
-        <id>1</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="928">&lt;font size=&quot;3&quot;&gt;[https://www.whonix.org{{localurl:{{FULLPAGENAME}}}} https] | &lt;html&gt;&lt;a class=&quot;link-https&quot; style=&quot;color: #3366BB&quot; href=&quot;http://kkkkkkkkkk63ava6.onion&lt;/html&gt;{{localurl:{{FULLPAGENAME}}}}&lt;html&gt;&quot; rel=&quot;nofollow&quot;&gt;.onion&lt;/a&gt;&lt;/html&gt;&lt;/font&gt; &lt;font size=&quot;1&quot;&gt; &lt;sup&gt;[[Forcing .onion on Whonix.org | note]]&lt;/sup&gt;| [http://whonix.org.nyud.net{{localurl:{{FULLPAGENAME}}}} Mirror] | [https://kkkkkkkkkk63ava6.tor2web.org{{localurl:{{FULLPAGENAME}}}} Mirror] | [[Contribute#Donate|Donate to Whonix!]]&lt;/font&gt; | [[Impressum]] | [[Datenschutz|Datenschutzerklärung]] | [[Disclaimer|Haftungsausschluss]]&lt;!--
+      <text xml:space="preserve" bytes="927">&lt;font size=&quot;3&quot;&gt;[https://www.whonix.org{{localurl:{{FULLPAGENAME}}}} https] | &lt;html&gt;&lt;a class=&quot;link-https&quot; style=&quot;color: #3366BB&quot; href=&quot;http://kkkkkkkkkk63ava6.onion&lt;/html&gt;{{localurl:{{FULLPAGENAME}}}}&lt;html&gt;&quot; rel=&quot;nofollow&quot;&gt;.onion&lt;/a&gt;&lt;/html&gt;&lt;/font&gt; &lt;font size=&quot;1&quot;&gt; &lt;sup&gt;[[Forcing .onion on Whonix.org|note]]&lt;/sup&gt; | [http://whonix.org.nyud.net{{localurl:{{FULLPAGENAME}}}} Mirror] | [https://kkkkkkkkkk63ava6.tor2web.org{{localurl:{{FULLPAGENAME}}}} Mirror] | [[Contribute#Donate|Donate to Whonix!]]&lt;/font&gt; | [[Impressum]] | [[Datenschutz|Datenschutzerklärung]] | [[Disclaimer|Haftungsausschluss]]&lt;!--
 inspired by http://aboli.sh/
 @cnpirates ssl(tor) ssl(i2p) coralcdn .sdns .onion .i2p--&gt;
 {{#seo:
@@ -355,7 +355,7 @@ inspired by http://aboli.sh/
 |article:author=https://www.facebook.com/patrick.schleizer
 |og:image=https://www.whonix.org/blog/wp-content/uploads/2014/01/Banner2.png
 }}</text>
-      <sha1>682mvtdtimfpd6n7hbzhpopp6rdh1rb</sha1>
+      <sha1>b4zjnm9rynl92f0209iz3tuayhr4nki</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -1437,15 +1437,15 @@ See also [[Security_in_Real_World | Whonix security in real world]], [[Security_
     <ns>0</ns>
     <id>24</id>
     <revision>
-      <id>6674</id>
-      <parentid>6671</parentid>
-      <timestamp>2014-03-07T21:40:44Z</timestamp>
+      <id>6687</id>
+      <parentid>6674</parentid>
+      <timestamp>2014-03-08T07:02:25Z</timestamp>
       <contributor>
         <username>Troubadour</username>
         <id>230</id>
       </contributor>
-      <comment>Reorganization of AppArmor page.</comment>
-      <text xml:space="preserve" bytes="14347">&lt;!--
+      <comment>Profiles pages -&gt; AppArmor/'Packege Name'</comment>
+      <text xml:space="preserve" bytes="14383">&lt;!--
 Copyright:
 
    Whonix Documentation wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -1637,10 +1637,10 @@ Anonymity is a complex problem without an easy solution, and security is only as
 * [[Tuning#Replacing Desktop Environment|Replacing desktop environment]]
 * [[Physical Isolation|Whonix using Physical Isolation, setup using two different computers AND virtualization. This is the most secure Tor configuration to date.]]
 * [[AppArmor|Hardening using Whonix's AppArmor Profiles (under construction)]]
-**[[VirtualBox|VirtualBox profile]]
-**[[Tor_Browser_Bundle_.28TBB.29|Tor Browser Bundle (TBB) profile]]
-**[[Icedove_.28with_Enigmail.29|Icedove (with Enigmail) profile]]
-**[[Pidgin|Pidgin profile]]
+**[[AppArmor/VirtualBox|VirtualBox profile]]
+**[[AppArmor/Tor_Browser_Bundle_.28TBB.29|Tor Browser Bundle (TBB) profile]]
+**[[AppArmor/Icedove_.28with_Enigmail.29|Icedove (with Enigmail) profile]]
+**[[AppArmor/Pidgin|Pidgin profile]]
 * [[Advanced Security Guide|Advanced Security Guide]]
 * [[Multiple Whonix-Workstations|Using Multiple Whonix-Workstations]]
 * [[Multiple_Whonix-Workstations#Multiple_Whonix-Gateways|Using Multiple Whonix-Gateways]]
@@ -1720,7 +1720,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>iwodmvy9nsnzvgw7j7d5rlgxacjlf0n</sha1>
+      <sha1>astfsyr0m5ion2dpulw30i3cu9numvq</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -7725,16 +7725,15 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
     <ns>0</ns>
     <id>96</id>
     <revision>
-      <id>6226</id>
-      <parentid>6202</parentid>
-      <timestamp>2014-03-02T11:48:48Z</timestamp>
+      <id>6686</id>
+      <parentid>6226</parentid>
+      <timestamp>2014-03-08T04:12:14Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <minor/>
-      <comment>Text replace - &quot;OtherOperatingSystems&quot; to &quot;Other Operating Systems&quot;</comment>
-      <text xml:space="preserve" bytes="70233">{{Header}}
+      <comment>/* Circumventing Proxy Obedience Design */</comment>
+      <text xml:space="preserve" bytes="70856">{{Header}}
 {{#seo:
 |description=Comparison of Whonix, Tails, Tor Browser Bundle, QubesOS TorVM and corridor. About anonymity, privacy, security, circumvention, attacks, fingerprinting, usability, features, etc.
 }}
@@ -8508,6 +8507,16 @@ Whonix protects against IP/location discovery through root exploits ([https://en
 | {{Fail}}
 | {{Fail}}
 |-
+| style=&quot;height: 27px;text-align: left;background-color: #f9f9f9&quot;| 13. Hidden service domain name security after server software exploit
+| {{Safe}} &lt;ref name=hidden_service_key_stored_on_gateway&gt;When server software on Whonix-Workstation gets (root) exploited, the attacker can not steal the key of the hidden service because it is stored on Whonix-Gateway.&lt;/ref&gt;
+| {{Safe}} &lt;ref name=hidden_service_key_stored_on_gateway /&gt;
+| {{Fail}}
+| {{Fail}}
+| {{BlueBackground}} Not an operating system. 
+| {{BlueBackground}} Not an operating system. 
+| ? &lt;ref&gt;Safe in theory. Does it support hidden services yet?&lt;/ref&gt;
+| {{Fail}}
+|-
 |}
 
 == Network Time related ==
@@ -8963,7 +8972,7 @@ One has always to be very careful, when talking about others. Especially, when t
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Design]]</text>
-      <sha1>n81di0xxcdixz38ssj1vx7wm82qlpa5</sha1>
+      <sha1>4kiljhw0udg9ow6l1k8f9jij98jz1hz</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -41423,15 +41432,15 @@ table.wikitable
     <ns>0</ns>
     <id>400</id>
     <revision>
-      <id>6683</id>
-      <parentid>6672</parentid>
-      <timestamp>2014-03-07T22:58:09Z</timestamp>
+      <id>6684</id>
+      <parentid>6683</parentid>
+      <timestamp>2014-03-07T23:09:59Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* seomastering.com */</comment>
-      <text xml:space="preserve" bytes="8338">{{Header}}
+      <comment>/* Ohloh */</comment>
+      <text xml:space="preserve" bytes="9234">{{Header}}
 {{#seo:
 |description=Awards / Certifications / Buttons / Widgets which whonix.org could use.
 }}
@@ -41524,22 +41533,6 @@ http://www.downloadroute.com/Whonix-Whonix-Development-Team/antivirus_report.htm
 https://www.ohloh.net/p/Whonix/widgets
 
 &lt;html&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;http://www.ohloh.net/p/641038/widgets/project_users_logo.js&quot;&gt;&lt;/script&gt;
-&lt;/html&gt;
-
-&lt;html&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;http://www.ohloh.net/p/641038/widgets/project_users.js?style=green&quot;&gt;&lt;/script&gt;
-&lt;/html&gt;
-
-&lt;html&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;http://www.ohloh.net/p/641038/widgets/project_partner_badge.js&quot;&gt;&lt;/script&gt;
-&lt;/html&gt;
-
-&lt;html&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;http://www.ohloh.net/p/641038/widgets/project_languages.js&quot;&gt;&lt;/script&gt;
-&lt;/html&gt;
-
-&lt;html&gt;
 &lt;script type=&quot;text/javascript&quot; src=&quot;http://www.ohloh.net/p/641038/widgets/project_factoids_stats.js&quot;&gt;&lt;/script&gt;
 &lt;/html&gt;
 
@@ -41548,11 +41541,11 @@ https://www.ohloh.net/p/Whonix/widgets
 &lt;/html&gt;
 
 &lt;html&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;http://www.ohloh.net/p/641038/widgets/project_cocomo.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://www.ohloh.net/p/641038/widgets/project_basic_stats.js&quot;&gt;&lt;/script&gt;
 &lt;/html&gt;
 
 &lt;html&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;http://www.ohloh.net/p/641038/widgets/project_basic_stats.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://www.ohloh.net/p/641038/widgets/project_languages.js&quot;&gt;&lt;/script&gt;
 &lt;/html&gt;
 
 &lt;html&gt;
@@ -41561,6 +41554,50 @@ https://www.ohloh.net/p/Whonix/widgets
 
 &lt;html&gt;
 &lt;script type=&quot;text/javascript&quot; src=&quot;http://www.ohloh.net/p/641038/widgets/project_search_code.js&quot;&gt;&lt;/script&gt;
+&lt;/html&gt;
+
+&lt;html&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://www.ohloh.net/widgets/project_search_all_code.js?project_id=641038&quot;&gt;&lt;/script&gt;
+&lt;/html&gt;
+
+&lt;html&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://www.ohloh.net/p/641038/widgets/project_cocomo.js&quot;&gt;&lt;/script&gt;
+&lt;/html&gt;
+
+&lt;html&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://www.ohloh.net/p/641038/widgets/project_partner_badge.js&quot;&gt;&lt;/script&gt;
+&lt;/html&gt;
+
+&lt;html&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://www.ohloh.net/p/641038/widgets/project_thin_badge.js&quot;&gt;&lt;/script&gt;
+&lt;/html&gt;
+
+&lt;html&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://www.ohloh.net/p/641038/widgets/project_users_logo.js&quot;&gt;&lt;/script&gt;
+&lt;/html&gt;
+
+&lt;html&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://www.ohloh.net/p/641038/widgets/project_users.js&quot;&gt;&lt;/script&gt;
+&lt;/html&gt;
+
+&lt;html&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://www.ohloh.net/p/641038/widgets/project_users.js?style=gray&quot;&gt;&lt;/script&gt;
+&lt;/html&gt;
+
+&lt;html&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://www.ohloh.net/p/641038/widgets/project_users.js?style=green&quot;&gt;&lt;/script&gt;
+&lt;/html&gt;
+
+&lt;html&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://www.ohloh.net/p/641038/widgets/project_users.js?style=red&quot;&gt;&lt;/script&gt;
+&lt;/html&gt;
+
+&lt;html&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://www.ohloh.net/p/641038/widgets/project_users.js?style=blue&quot;&gt;&lt;/script&gt;
+&lt;/html&gt;
+
+&lt;html&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://www.ohloh.net/p/641038/widgets/project_users.js?style=rainbow&quot;&gt;&lt;/script&gt;
 &lt;/html&gt;
 
 = webutation 1 =
@@ -41625,7 +41662,7 @@ if (window.attachEvent) window.attachEvent('onload', async_load); else window.ad
 {{Footer}}
 
 [[Category:Development]]</text>
-      <sha1>5ci80f138mm0mbkzc8qiy3hxc79805x</sha1>
+      <sha1>ig7yp97szc48t9i0a8p5atdhfwfr8bx</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -61746,15 +61783,15 @@ sudo rm -fR /var/lib/apt/lists/*
     <ns>0</ns>
     <id>891</id>
     <revision>
-      <id>6673</id>
-      <parentid>6461</parentid>
-      <timestamp>2014-03-07T21:39:39Z</timestamp>
+      <id>6692</id>
+      <parentid>6673</parentid>
+      <timestamp>2014-03-08T07:37:33Z</timestamp>
       <contributor>
         <username>Troubadour</username>
         <id>230</id>
       </contributor>
-      <comment>Updated. Profiles are in sub-pages.</comment>
-      <text xml:space="preserve" bytes="883">{{Header}}
+      <comment>Poofiles in AppArmor/'Package Name'</comment>
+      <text xml:space="preserve" bytes="919">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
@@ -61763,13 +61800,13 @@ __FORCETOC__
 The following AppArmor profiles are currently under evaluation with Whonix 8. When considered sufficiently tested, they will be checked for backward compatibility with Whonix 7.
 
 = Profiles =
-[[VirtualBox|VirtualBox profile]]
+[[AppArmor/VirtualBox|VirtualBox profile]]
 
-[[Tor_Browser_Bundle_.28TBB.29|Tor Browser Bundle (TBB) profile]]
+[[AppArmor/Tor_Browser_Bundle_.28TBB.29|Tor Browser Bundle (TBB) profile]]
 
-[[Icedove_.28with_Enigmail.29|Icedove (with Enigmail) profile]]
+[[AppArmor/Icedove_.28with_Enigmail.29|Icedove (with Enigmail) profile]]
 
-[[Pidgin|Pidgin profile]]
+[[AppArmor/Pidgin|Pidgin profile]]
 
 = Additional inspiration =
 Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/AppArmor in Debian]):
@@ -61780,7 +61817,7 @@ Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/A
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>okac9kvkzqxe7dsgsyr0t2okr312y76</sha1>
+      <sha1>h7ed0cun1wsifkn3rdejazzm9eq340n</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -67284,6 +67321,687 @@ Run.
 sudo aa-enforce /etc/apparmor.d/usr.bin.pidgin
 &lt;/pre&gt;</text>
       <sha1>tc8lymh5p783xwp77st2gyudg5h2n5y</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>AppArmor/VirtualBox</title>
+    <ns>0</ns>
+    <id>1114</id>
+    <revision>
+      <id>6688</id>
+      <timestamp>2014-03-08T07:10:11Z</timestamp>
+      <contributor>
+        <username>Troubadour</username>
+        <id>230</id>
+      </contributor>
+      <comment>AppArmor/VirtualBox</comment>
+      <text xml:space="preserve" bytes="3297">{{Header}}
+{{#seo:
+|description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
+}}
+__FORCETOC__
+{{AppArmorProfileWarning}}
+
+
+This profile has to be used in the host. It is tested with VirtualBox 4.3 (4.3_4.3.8-92456~Debian~wheezy_amd64), no other versions. If you build a Whonix image, it will install VirtualBox 4.1. Please report any message you might see in this  [http://kkkkkkkkkk63ava6.onion/forum/index.php/topic,97.0.html forum thread].
+
+In the host, create a file /etc/apparmor.d/usr.bin.VBox.
+
+&lt;pre&gt;
+kdesudo kwrite /etc/apparmor.d/usr.bin.VBox
+&lt;/pre&gt;
+
+Paste the following content.
+
+&lt;pre&gt;
+#include &lt;tunables/global&gt;
+
+/usr/bin/VBox {
+	#include &lt;abstractions/base&gt;
+	#include &lt;abstractions/bash&gt;
+	#include &lt;abstractions/fonts&gt;	
+	#include &lt;abstractions/audio&gt;  	
+
+	capability net_admin, 
+	capability net_raw,
+	capability sys_ptrace,
+
+	owner @{HOME}/ r,
+	owner @{HOME}/* r,    # Check. Files denied.
+	owner @{HOME}/.ICEauthority r,
+	owner @{HOME}/.Xauthority r,
+	owner @{HOME}/.config/** r,
+	owner @{HOME}/.config/VirtualBox/** rw,
+	owner @{HOME}/.config/Trolltech.conf rk,
+	owner @{HOME}/.local/share/mime/* r,			
+	owner @{HOME}/.gtk-bookmarks r,
+	owner @{HOME}/.VirtualBox/ r,
+	owner @{HOME}/.VirtualBox/* rw,
+	owner @{HOME}/Documents/ r,
+	owner @{HOME}/Documents/** r,
+	owner @{HOME}/Desktop/ r,
+	owner @{HOME}/Desktop/** rw,
+	owner @{HOME}/.local/share/recently-used.xbel* rw,
+	
+	## Disk images (ISO, OVF/OVA...) directory. Create.
+	owner @{HOME}/Disk_Images/ r,	
+	owner @{HOME}/Disk_Images/* r,
+	
+	## Default Virtual Machine directory.
+	owner &quot;@{HOME}/VirtualBox VMs/&quot; r,
+	owner &quot;@{HOME}/VirtualBox VMs/**&quot; rw,
+	
+	## Shared folders. Replace with your own host share.
+	owner @{HOME}/share/ r,
+	owner @{HOME}/share/* rw,
+
+	/bin/dash rix,
+	/bin/kmod rix,
+	/bin/grep rix,
+	/bin/uname rix,
+	/bin/cat rix,
+	/bin/gawk rix,
+	/bin/ps rix,
+	/bin/rm rix,		
+	
+	/dev/dri/card0 rw,
+	/dev/vboxdrv rw,
+	/dev/vboxdrvu rw,
+	/dev/tty r,
+
+	/etc/nsswitch.conf r,
+	/etc/passwd r,
+	/etc/resolv.conf r,
+	/etc/fstab r,
+	/etc/drirc r,
+	/etc/xdg/** r,
+
+	/usr/lib/virtualbox/** mrcux,
+	/usr/lib/x86_64-linux-gnu/** mrix,
+	
+	@{PROC}/ r,
+	@{PROC}/cmdline r,
+	@{PROC}/[0-9]*/cmdline r,
+	@{PROC}/modules r,
+	@{PROC}/net r,
+	@{PROC}/[0-9]*/net/** r,
+	@{PROC}/[0-9]*/stat r,
+	@{PROC}/[0-9]*/status r,
+	@{PROC}/[0-9]*/fd r,
+	@{PROC}/uptime r,
+	@{PROC}/tty/drivers r,
+	@{PROC}/sys/kernel/pid_max r,
+		
+	/run/gdm3/** r,
+	
+	/sys/devices/pci0000:00/** r,
+	/sys/devices/virtual/** r,
+	/sys/devices/system/cpu/** r,
+	/sys/devices/LNXSYSTM:00/LNXSYBUS:00/** r,
+	/sys/module/** r,	
+	/sys/block/ r,
+	/sys/class/** r,	
+
+	owner /tmp/** rw,
+	
+	/usr/bin/VBox rix,
+	/usr/bin/whoami	rix,
+	/usr/bin/basename rix,
+	/usr/bin/ps rix,
+	/usr/bin/gawk rix,
+	/usr/bin/mawk rix,
+	
+	/usr/share/themes/** r,
+	/usr/share/icons/ r,	
+	/usr/share/icons/** rk,	
+	/usr/share/mime/ r,
+	/usr/share/mime/** r,
+	/usr/share/pixmaps/ r,
+	/usr/share/pixmaps/** r,
+	/usr/share/gvfs/** r,
+	/usr/share/virtualbox/** r,
+
+	/var/lib/dbus/machine-id r,
+}
+&lt;/pre&gt;
+
+Run.
+
+&lt;pre&gt;
+sudo aa-enforce /etc/apparmor.d/usr.bin.VBox
+&lt;/pre&gt;
+
+[https://www.whonix.org/forum/index.php?action=profile;u=24 troubadour] created this profile. You can discuss it in this [http://kkkkkkkkkk63ava6.onion/forum/index.php/topic,97.0.html forum thread].</text>
+      <sha1>qaqv0w2d7usdbbegz17qp80t4n320rs</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>AppArmor/Pidgin</title>
+    <ns>0</ns>
+    <id>1115</id>
+    <revision>
+      <id>6689</id>
+      <timestamp>2014-03-08T07:14:23Z</timestamp>
+      <contributor>
+        <username>Troubadour</username>
+        <id>230</id>
+      </contributor>
+      <comment>AppArmor/Pidgin</comment>
+      <text xml:space="preserve" bytes="3397">{{Header}}
+{{#seo:
+|description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
+}}
+__FORCETOC__
+{{AppArmorProfileWarning}}
+
+
+Credit for this AppArmor profile goes to [http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=676849 intrigeri].
+
+Create a file /etc/apparmor.d/usr.bin.pidgin.
+
+&lt;pre&gt;
+kdesudo kwrite /etc/apparmor.d/usr.bin.pidgin
+&lt;/pre&gt;
+
+Paste the following content.
+
+&lt;pre&gt;
+# vim:syntax=apparmor
+
+#include &lt;tunables/global&gt;
+
+/usr/bin/pidgin {
+  #include &lt;abstractions/audio&gt;
+  #include &lt;abstractions/aspell&gt;
+  #include &lt;abstractions/base&gt;
+  #include &lt;abstractions/bash&gt;
+  #include &lt;abstractions/consoles&gt;
+  #include &lt;abstractions/dbus&gt;
+  #include &lt;abstractions/dbus-session&gt;
+  #include &lt;abstractions/fonts&gt;
+  #include &lt;abstractions/freedesktop.org&gt;
+  #include &lt;abstractions/gnome&gt;
+  #include &lt;abstractions/launchpad-integration&gt;
+  #include &lt;abstractions/nameservice&gt;
+  #include &lt;abstractions/private-files-strict&gt;
+  #include &lt;abstractions/ubuntu-browsers&gt;
+  #include &lt;abstractions/ubuntu-console-browsers&gt;
+  #include &lt;abstractions/user-download&gt;
+  #include &lt;abstractions/user-tmp&gt;
+  #include &lt;abstractions/ibus&gt;
+  #include &lt;abstractions/X&gt;
+
+  deny capability sys_ptrace,
+
+  deny @{HOME}/.bash* rw,
+  deny @{HOME}/.cshrc rw,
+  deny @{HOME}/.profile rw,
+  deny @{HOME}/.zshrc rw,
+
+  owner @{HOME}/.cache/dconf/user rw,
+  owner @{HOME}/.config/dconf/user r,
+  owner @{HOME}/.config/enchant/ rw,
+  owner @{HOME}/.config/enchant/* rwk,
+  owner @{HOME}/.local/share/icons/ r,
+  owner @{HOME}/.local/share/mime/* r,
+  owner @{HOME}/.gnome2/nautilus-sendto/** rw,
+  owner @{HOME}/.gstreamer*/ rw,
+  owner @{HOME}/.gstreamer*/** rw,
+  owner @{HOME}/.pulse/ rw,
+  owner @{HOME}/.pulse/** rw,
+  owner @{HOME}/.pulse-cookie rwk,
+  owner @{HOME}/.purple/ rw,
+  owner @{HOME}/.purple/** rwk,
+  owner @{HOME}/.kde/share/config/* r,  # added 
+  /bin/dash rix,
+
+  /{dev,run}/shm/ r,
+  /{dev,run}/shm/* rw,
+
+  deny /etc/fstab r,  # Required by the change buddyicon button
+  /etc/ r,
+  /etc/pulse/client.conf r,
+  /etc/ssl/certs/ r,
+  /etc/ssl/certs/** r,
+  /etc/ssl/certs/ssl-cert-snakeoil.pem r,
+
+  owner /tmp/orbit-*/* w,
+  owner /tmp/pulse-*/* w,
+
+  /usr/bin/gconftool-2 rix,
+  /usr/bin/gnome-default-applications-properties ix,
+  /usr/bin/gnome-network-preferences ix,
+  /usr/bin/gnome-open rmix,
+  /usr/bin/gsettings rix,
+  /usr/bin/pidgin r,
+  /usr/bin/xdg-open rmix,
+  /bin/which rix,
+  /usr/bin/gvfs-open rmix,
+
+  /usr/share/glib-2.0/schemas/gschemas.compiled r,
+
+  /usr/lib/ r,
+  /usr/lib/frei0r-1/*.so rm,
+  /usr/lib/libvisual-*/**.so rm,
+  /usr/lib/pidgin/*.so rm,
+  /usr/lib/purple*/*.so rm,
+
+  /usr/share/ca-certificates/*/** r,
+  /usr/share/enchant/enchant.ordering r,
+  /usr/share/locale-langpack/** rm,
+  /usr/share/purple/ca-certs/ r,
+  /usr/share/purple/ca-certs/** r,
+  /usr/share/myspell/dicts/ r,
+  /usr/share/myspell/dicts/** r,
+  /usr/share/tcltk/** r,
+
+  /usr/share/themes/ r,
+  /usr/share/themes/** r,
+
+  /usr/share/hunspell/ r,
+  /usr/share/hunspell/** r,
+
+  deny @{PROC}/** r,
+
+  # Site-specific additions and overrides. See local/README for details.
+  #include &lt;local/usr.bin.pidgin&gt;
+}
+&lt;/pre&gt;
+
+Create a file /etc/apparmor.d/local/usr.bin.pidgin.
+
+&lt;pre&gt;
+kdesudo kwrite /etc/apparmor.d/local/usr.bin.pidgin
+&lt;/pre&gt;
+
+&lt;pre&gt;
+/etc/resolv.conf.whonix r,
+/etc/hosts.whonix r,
+&lt;/pre&gt;
+
+Run.
+&lt;pre&gt;
+sudo aa-enforce /etc/apparmor.d/usr.bin.pidgin
+&lt;/pre&gt;</text>
+      <sha1>tc8lymh5p783xwp77st2gyudg5h2n5y</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>AppArmor/Tor Browser Bundle .28TBB.29</title>
+    <ns>0</ns>
+    <id>1116</id>
+    <revision>
+      <id>6690</id>
+      <timestamp>2014-03-08T07:28:39Z</timestamp>
+      <contributor>
+        <username>Troubadour</username>
+        <id>230</id>
+      </contributor>
+      <comment>AppArmor/TBB</comment>
+      <text xml:space="preserve" bytes="4198">{{Header}}
+{{#seo:
+|description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
+}}
+__FORCETOC__
+{{AppArmorProfileWarning}}
+
+
+Credit for this AppArmor profile goes to [http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=676849 intrigeri].
+
+Create a file /etc/apparmor.d/home.user.tor-browser_en-US.Browser.firefox.
+
+&lt;pre&gt;
+kdesudo kwrite /etc/apparmor.d/home.user.tor-browser_en-US.Browser.firefox
+&lt;/pre&gt;
+
+Paste the following content.
+
+&lt;pre&gt;
+#include &lt;tunables/global&gt;
+
+/home/user/tor-browser_en-US/Browser/firefox {
+	#include &lt;abstractions/base&gt;
+	#include &lt;abstractions/user-tmp&gt;
+	#include &lt;abstractions/bash&gt;
+	#include &lt;abstractions/fonts&gt;
+	#include &lt;abstractions/kde&gt;
+	#include &lt;abstractions/gnome&gt;
+		
+	#include &lt;local/home.user.tor-browser_en-US.Browser.firefox&gt;
+	
+	capability sys_ptrace,
+
+	deny /etc/host.conf r,
+	deny /etc/hosts r,
+	deny /etc/nsswitch.conf r,
+	deny /etc/resolv.conf r,
+	deny /etc/passwd r,
+	deny /etc/resolv.conf.whonix r,
+	deny /etc/hosts.whonix r,
+
+	@{HOME}/tor-browser_en-US/ r,
+	@{HOME}/tor-browser_en-US/* rw, 
+	@{HOME}/tor-browser_en-US/.cache/ r,
+	@{HOME}/tor-browser_en-US/.cache/* rw, 
+	@{HOME}/tor-browser_en-US/.mozilla/ w,
+	@{HOME}/tor-browser_en-US/.mozilla/*/ w,
+	@{HOME}/tor-browser_en-US/Browser/** r,
+	@{HOME}/tor-browser_en-US/Browser/*.so mr,
+	@{HOME}/tor-browser_en-US/Browser/browser/components/*.so mr,
+	@{HOME}/tor-browser_en-US/Browser/components/*.so mr,
+	@{HOME}/tor-browser_en-US/Browser/firefox rix,
+	@{HOME}/tor-browser_en-US/Data/Browser/ r,
+	@{HOME}/tor-browser_en-US/Data/Browser/** rwk,
+	@{HOME}/tor-browser_en-US/Desktop/ rw,
+	@{HOME}/tor-browser_en-US/Desktop/** rw,
+	@{HOME}/tor-browser_en-US/Downloads/ rw,
+	@{HOME}/tor-browser_en-US/Downloads/** rw,
+	@{HOME}/tor-browser_en-US/Tor/tor Px,
+
+	@{HOME}/ r,
+	@{HOME}/* r,
+	@{HOME}/Desktop r,	
+	@{HOME}/Downloads/ r,	
+	@{HOME}/Downloads/** rw,
+# In &lt;abstractions/kde&gt;
+#	@{HOME}/.kde/share/** rw,
+	@{HOME}/.local/share/ r,
+	@{HOME}/.local/share/applications/* r,
+	@{HOME}/.local/share/mime/ r,
+	@{HOME}/.local/share/mime/** r,
+	@{HOME}/.local/share/gvfs-metadata/home r,
+	@{HOME}/.local/share/recently-used.xbel* rw,
+	@{HOME}/.themes/** r,
+	@{HOME}/.cache/ r,
+	@{HOME}/.cache/* rwk,
+	@{HOME}/.config/oxygen-gtk/argb-apps.conf rw,
+	@{HOME}/.config/user-dirs.dirs r,
+# In &lt;abstractions/gnome&gt;
+#	@{HOME}/.gtk-bookmarks r,
+	@{HOME}/.Xauthority r,
+## NOT in &lt;abstractions/kde&gt;
+	@{HOME}/.kde/share/config/gtkrc-2.0 r,	
+	
+	/usr/share/ r,
+# In &lt;abstractions/kde&gt;
+#	/usr/share/icons/ r,
+#	/usr/share/icons/** r,
+	/usr/share/mime/ r,
+	/usr/share/mime/** r,
+	/usr/share/pixmaps/ r,
+	/usr/share/pixmaps/** r,
+	/usr/share/themes/ r,
+	/usr/share/themes/** r,
+# In &lt;abstractions/kde&gt;
+#	/usr/share/kde4/config/kdeglobals r,
+#	/usr/share/whonix/kde/share/config/kdeglobals r,
+	/usr/share/applications/** r,
+ 	/usr/share/alsa/** r,
+ 	
+ 	/etc/drirc r,
+	/etc/X11/cursors/* r,
+	/etc/mime.types r,
+	/etc/mailcap r,
+	/etc/pkcs11/modules/ r,
+	/etc/pkcs11/modules/* r,
+	
+	/bin/dash rix,
+	/bin/open rix,
+	/bin/ps rix,
+	
+	/dev/dri/card0 rw,
+	/dev/vboxuser rw,
+	/dev/tty r,
+    /dev/snd/* r,
+
+	@{PROC} r,
+	@{PROC}/[0-9]*/maps r,
+	@{PROC}/tty/drivers r,
+	@{PROC}/[0-9]*/mounts r,
+	@{PROC}/[0-9]*/mountinfo r,
+	@{PROC}/[0-9]*/stat r,
+	@{PROC}/[0-9]*/status r,
+	@{PROC}/[0-9]*/task/*/stat r,
+	@{PROC}/[0-9]*/cmdline r,
+	@{PROC}/[0-9]*/fd/ r,
+	@{PROC}/cpuinfo r,
+	@{PROC}/filesystems r,
+	@{PROC}/meminfo r,
+	@{PROC}/stat r,
+	@{PROC}/sys/kernel/pid_max r,
+	@{PROC}/uptime r,
+
+	/sys/devices/system/cpu/ r,
+	/sys/devices/system/cpu/* r,
+
+	/tmp/.X0-lock r,
+
+# In &lt;abstractions/kde&gt;
+#	/usr/bin/kde4-config rix,
+	
+	/usr/lib/i386-linux-gnu/** mr,
+	
+	/var/lib/dbus/machine-id r,
+	/var/lib/whonix/whonixblog/ r,
+}
+
+&lt;/pre&gt;
+
+Create a file /etc/apparmor.d/local/home.user.tor-browser_en-US.Browser.firefox.
+
+&lt;pre&gt;
+kdesudo kwrite /etc/apparmor.d/home.user.local/tor-browser_en-US.Browser.firefox
+&lt;/pre&gt;
+
+&lt;pre&gt;
+# In &lt;abstractions/gnome&gt;
+# /etc/gnome-vfs-2.0/modules/ r,
+# /etc/gnome-vfs-2.0/modules/* r,
+
+/usr/share/fontconfig/conf.avail/* r,
+/usr/share/poppler/cMap/ r,
+/usr/share/poppler/cMap/** r,
+&lt;/pre&gt;
+
+Run.
+&lt;pre&gt;
+sudo aa-enforce /etc/apparmor.d/home.user.tor-browser_en-US.Browser.firefox
+&lt;/pre&gt;</text>
+      <sha1>6l6ai4gm23x4lqs22tw6nd6ve77lg6d</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>AppArmor/Icedove .28with Enigmail.29</title>
+    <ns>0</ns>
+    <id>1117</id>
+    <revision>
+      <id>6691</id>
+      <timestamp>2014-03-08T07:35:02Z</timestamp>
+      <contributor>
+        <username>Troubadour</username>
+        <id>230</id>
+      </contributor>
+      <comment>AppArmor/Icedove</comment>
+      <text xml:space="preserve" bytes="3717">{{Header}}
+{{#seo:
+|description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
+}}
+__FORCETOC__
+{{AppArmorProfileWarning}}
+
+
+Credit for this AppArmor profile goes to [http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=676849 intrigeri].
+
+Create a file /etc/apparmor.d/usr.bin.pidgin.
+
+&lt;pre&gt;
+kdesudo kwrite /etc/apparmor.d/usr.bin.pidgin
+&lt;/pre&gt;
+
+Paste the following content.
+
+&lt;pre&gt;
+
+&lt;/pre&gt;
+
+Create a file /etc/apparmor.d/local/usr.lib.icedove.icedove.
+
+&lt;pre&gt;
+kdesudo kwrite /etc/apparmor.d/local/usr.lib.icedove.icedove
+&lt;/pre&gt;
+
+&lt;pre&gt;
+#include &lt;tunables/global&gt;
+
+/usr/lib/icedove/icedove {
+	#include &lt;abstractions/base&gt;
+	#include &lt;abstractions/user-tmp&gt;
+	#include &lt;abstractions/bash&gt;
+	#include &lt;abstractions/fonts&gt;
+	#include &lt;abstractions/kde&gt;
+	#include &lt;abstractions/gnome&gt;
+
+	#include &lt;local/usr.lib.icedove.icedove&gt;
+	  
+	capability sys_ptrace,
+	  
+	deny / r,
+	deny /etc/host.conf r,
+	deny /etc/hosts r,
+	deny /etc/nsswitch.conf r,
+	deny /etc/passwd r,
+	deny /etc/hosts.whonix r,
+	deny /etc/fstab r,
+
+	@{HOME}/ r,	  
+	@{HOME}/Desktop/ r,
+	@{HOME}/Downloads/ r,	
+	@{HOME}/Downloads/** rw,	
+	@{HOME}/.icedove/** mrwk,
+	@{HOME}/.kde/share/** rw,
+	@{HOME}/.config/oxygen-gtk/argb-apps.conf rw,
+	@{HOME}/.local/share/ r,
+	@{HOME}/.local/share/applications/* r,
+	@{HOME}/.local/share/mime/ r,
+	@{HOME}/.local/share/mime/** r,
+	@{HOME}/.local/share/recently-used.xbel* rw,
+	@{HOME}/.local/share/applications/kate-2.desktop r,
+	@{HOME}/.cache/ r,
+	@{HOME}/.cache/** rwk,
+	@{HOME}/.gnupg/* lrwkcix,
+	@{HOME}/.Xauthority r,
+	
+	/usr/share/ r,
+	/usr/share/icons/ r,
+	/usr/share/icons/** r,
+	/usr/share/mime/ r,
+	/usr/share/mime/** r,
+	/usr/share/pixmaps/ r,
+	/usr/share/pixmaps/** r,
+	/usr/share/themes/ r,
+	/usr/share/themes/** r,
+	/usr/share/icedove/ r,
+	/usr/share/icedove/** r,
+	/usr/share/glib-2.0/schemas/gschemas.compiled r, 
+	/usr/share/whonix/kde/share/config/kdeglobals rw,
+	/usr/share/hunspell/ r,
+	/usr/share/hunspell/* r,
+	/usr/.local/share/applications/ rwk,
+	/usr/share/applications/ rwk,
+	
+	/etc/drirc r,
+	/etc/ld.so.cache r,
+	/etc/resolv.conf r,
+	/etc/resolv.conf.whonix r,
+	/etc/mailcap r, 
+	/etc/icedove/pref/ r,
+	/etc/icedove/pref/* r,
+	/etc/X11/cursors/* r,
+	/etc/mime.types r,
+	/etc/gai.conf r,
+	/etc/whonix.d/ r, 
+	/etc/whonix.d/* r, 
+	/etc/xul-ext/enigmail.js rix,
+
+	/bin/ps rix,
+	/bin/dash  rix,
+	/bin/mknod rix,
+	/bin/grep rix,
+	/bin/chmod rix,
+	/bin/mktemp rix,
+	/bin/which rix,
+	  
+	/dev/tty rw,
+	/dev/vboxuser rw,
+	/dev/dri/card0 rw,
+		  
+	/lib/i386-linux-gnu/i686/cmov/libc-2.13.so r,
+	/lib/i386-linux-gnu/libprocps.so.0.0.1 r,
+	 
+	@{PROC} r,
+	@{PROC}/[0-9]*/maps r,
+	@{PROC}/tty/drivers r,
+	@{PROC}/[0-9]*/stat r,
+	@{PROC}/[0-9]*/status r,
+	@{PROC}/[0-9]*/task/*/stat r,
+	@{PROC}/[0-9]*/cmdline r,
+	@{PROC}/[0-9]*/fd/ r,
+	@{PROC}/cpuinfo r,
+	@{PROC}/filesystems r,
+	@{PROC}/meminfo r,
+	@{PROC}/stat r,
+	@{PROC}/sys/kernel/pid_max r,
+	@{PROC}/uptime r,
+	@{PROC}/[0-9]*/mounts r,
+	@{PROC}/[0-9]*/mountinfo r,
+	  
+	/sys/devices/system/cpu/ r,  
+	/sys/devices/system/cpu/present r,  
+	  
+	/usr/bin/kde4-config rix,
+	/usr/bin/basename rix,
+	/usr/bin/grep rix,
+	/usr/bin/uwt rix,
+	/usr/bin/torsocks rix,
+	/usr/bin/gpg.whonix rix,
+	/usr/bin/gpg.whonix-orig rix,
+	/usr/bin/gpg2 rix,
+
+	/usr/lib/i386-linux-gnu/** rm,
+	/usr/lib/icedove/icedove mrix,
+	/usr/lib/whonix/uwtwrapper rix,
+	/usr/lib/gnupg/gpgkeys_hkpr ix,
+
+	/var/lib/dbus/machine-id r,
+}
+&lt;/pre&gt;
+
+Create a file /etc/apparmor.d/local/usr.lib.icedove.icedove.
+
+&lt;pre&gt;
+kdesudo kwrite /etc/apparmor.d/local/usr.lib.icedove.icedove
+&lt;/pre&gt;
+
+&lt;pre&gt;
+/usr/share/fontconfig/conf.avail/* r,
+/usr/share/poppler/cMap/ r,
+/usr/share/poppler/cMap/** r,
+
+&lt;/pre&gt;
+
+Run.
+&lt;pre&gt;
+sudo aa-enforce /etc/apparmor.d/usr.bin.pidgin
+&lt;/pre&gt;</text>
+      <sha1>5tdm4fhppj3fqfwe9jyc6faaeh3mmt4</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
