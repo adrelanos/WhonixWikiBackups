@@ -66687,15 +66687,14 @@ Go to http://127.0.0.1/wiki/index.php/Main_Page.
     <ns>0</ns>
     <id>1110</id>
     <revision>
-      <id>6774</id>
-      <parentid>6767</parentid>
-      <timestamp>2014-03-09T21:35:45Z</timestamp>
+      <id>6797</id>
+      <parentid>6795</parentid>
+      <timestamp>2014-03-10T19:42:40Z</timestamp>
       <contributor>
         <username>Troubadour</username>
         <id>230</id>
       </contributor>
-      <comment>Icedove instead of tBB. Corrected.</comment>
-      <text xml:space="preserve" bytes="4074">{{Header}}
+      <text xml:space="preserve" bytes="4191">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
@@ -66758,11 +66757,14 @@ Paste the following content.
 	@{HOME}/Downloads/ r,	
 	@{HOME}/Downloads/** rw,
 	@{HOME}/.local/share/ r,
-	@{HOME}/.local/share/applications/* r,
-	@{HOME}/.local/share/mime/ r,
-	@{HOME}/.local/share/mime/** r,
-	@{HOME}/.local/share/gvfs-metadata/home r,
-	@{HOME}/.local/share/recently-used.xbel* rw,
+	@{HOME}/.local/share/** rw,
+	@{HOME}/.thumbnails/ r,
+	@{HOME}/.thumbnails/** rw,
+#	@{HOME}/.local/share/applications/* r,
+#	@{HOME}/.local/share/mime/ r,
+#	@{HOME}/.local/share/mime/** r,
+#	@{HOME}/.local/share/gvfs-metadata/home r,
+#	@{HOME}/.local/share/recently-used.xbel* rw,
 	@{HOME}/.themes/** r,
 	@{HOME}/.cache/ r,
 	@{HOME}/.cache/* rwk,
@@ -66770,7 +66772,7 @@ Paste the following content.
 	@{HOME}/.config/user-dirs.dirs r,
 	@{HOME}/.Xauthority r,
 ## NOT in &lt;abstractions/kde&gt;
-	@{HOME}/.kde/share/** rw,		###
+	@{HOME}/.kde/share/** rw,		
 	
 	/usr/share/ r,
 	/usr/share/mime/ r,
@@ -66780,9 +66782,10 @@ Paste the following content.
 	/usr/share/themes/ r,
 	/usr/share/themes/** r,
 	/usr/share/whonix/kde/share/config/kdeglobals r,
-	/usr/share/applications/ r,		###
- 	/usr/share/applications/** rwk, ###
- 	
+	/usr/share/applications/ r,		
+ 	/usr/share/applications/** rwk, 
+  	/usr/share/fontconfig/conf.avail/* r,
+	
  	/etc/drirc r,
 	/etc/X11/cursors/* r,
 	/etc/mime.types r,
@@ -66828,7 +66831,6 @@ Paste the following content.
 	/var/lib/dbus/machine-id r,
 	/var/lib/whonix/whonixblog/ r,
 }
-
 &lt;/pre&gt;
 
 Create a file /etc/apparmor.d/local/home.user.tor-browser_en-US.Browser.firefox.
@@ -66858,7 +66860,7 @@ sudo aa-enforce /etc/apparmor.d/home.user.tor-browser_en-US.Browser.firefox
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>eru746h5c1uumd05ja3j7dw5bia79k6</sha1>
+      <sha1>98i4udexyp5fjqj4lka1wgqt77qw93q</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -67715,14 +67717,14 @@ sudo aa-enforce /etc/apparmor.d/usr.lib.icedove.icedove
     <ns>0</ns>
     <id>1138</id>
     <revision>
-      <id>6784</id>
-      <parentid>6782</parentid>
-      <timestamp>2014-03-09T22:39:05Z</timestamp>
+      <id>6794</id>
+      <parentid>6784</parentid>
+      <timestamp>2014-03-10T17:05:11Z</timestamp>
       <contributor>
         <username>Troubadour</username>
         <id>230</id>
       </contributor>
-      <text xml:space="preserve" bytes="5127">{{Header}}
+      <text xml:space="preserve" bytes="5177">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
@@ -67847,8 +67849,9 @@ Paste the following content.
 	@{HOME}/tor-browser_en-US/Docs/version r,
 	@{HOME}/.whonix/ r,
 	@{HOME}/.whonix/* rwcux,
-	
-	/lib/i386-linux-gnu/** mr, 
+	@{HOME}/tor-browser_en-US/Docs/sources/versions r,
+
+ 	/lib/i386-linux-gnu/** mr, 
 	
 	@{PROC} r,
 	@{PROC}/cmdline r,
@@ -67919,8 +67922,8 @@ Paste the following content.
 	/usr/bin/xz rix,
 	/usr/bin/gpgv rix,
 	/usr/bin/head rix,
-	/user/bin/gawk rix,
-	/user/bin/awk rix,
+	/usr/bin/gawk rix,
+	/usr/bin/awk rix,
 
 	/usr/sbin/service rix,
 	/usr/sbin/virt-what rix,
@@ -67964,7 +67967,7 @@ sudo aa-enforce /etc/apparmor.d/usr.bin.whonixcheck
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>sxwu6ccq44u3t93yajhoqrfgtbe9288</sha1>
+      <sha1>mll88ddq6x1ap80sk64rfkt1ac3o7ut</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -67974,14 +67977,15 @@ sudo aa-enforce /etc/apparmor.d/usr.bin.whonixcheck
     <ns>0</ns>
     <id>1139</id>
     <revision>
-      <id>6783</id>
-      <parentid>6781</parentid>
-      <timestamp>2014-03-09T22:37:43Z</timestamp>
+      <id>6796</id>
+      <parentid>6783</parentid>
+      <timestamp>2014-03-10T18:06:40Z</timestamp>
       <contributor>
-        <username>Troubadour</username>
-        <id>230</id>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="4317">{{Header}}
+      <comment>fix user -&gt; usr</comment>
+      <text xml:space="preserve" bytes="4315">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
@@ -68154,8 +68158,8 @@ Paste the following content.
 	/usr/bin/python2.7 rix,
 	/usr/bin/apt-get.whonix-orig rix,
 	/usr/bin/dpkg rix,
-	/user/bin/gawk rix,
-	/user/bin/awk rix,
+	/usr/bin/gawk rix,
+	/usr/bin/awk rix,
 
 	/usr/sbin/service rix,
 	
@@ -68190,7 +68194,7 @@ sudo aa-enforce /etc/apparmor.d/usr.bin.timesync
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>amwat5btadwnlr6mewkh16llfo6k068</sha1>
+      <sha1>touvzj28yrmty88q1ozzbwpazl6jkfs</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
