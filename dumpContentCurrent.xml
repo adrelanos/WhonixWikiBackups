@@ -16382,14 +16382,14 @@ Optional, for debugging if you have problems.
     <ns>0</ns>
     <id>139</id>
     <revision>
-      <id>6247</id>
-      <parentid>6246</parentid>
-      <timestamp>2014-03-02T15:59:12Z</timestamp>
+      <id>6793</id>
+      <parentid>6792</parentid>
+      <timestamp>2014-03-10T04:30:17Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="5719">&lt;!--
+      <text xml:space="preserve" bytes="5786">&lt;!--
 Copyright:
 
    Whonix Verify_the_virtual_machine_images_using_the_command_line wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -16489,7 +16489,7 @@ gpg: WARNING: This key is not certified with a trusted signature!
 gpg:          There is no indication that the signature belongs to the owner.
 &lt;/pre&gt;
 
-This doesn't alter the validity of the signature according to the key you downloaded. This warning rather has to do with the trust that you put in Whonix signing key. See, [[Whonix Signing Key]]. To remove this warning you would have to personally sign Whonix signing key with your own key.
+This doesn't alter the validity of the signature according to the key you downloaded. This warning rather has to do with the trust that you put in Whonix signing key and the [[OpenPGP#The_OpenPGP_Web_of_Trust|web of trust]]. To remove this warning you would have to personally sign Whonix signing key with your own key.
 
 '''If the Virtual Machine image is not correct''' the output will tell you that the signature is bad:
 
@@ -16507,20 +16507,21 @@ gpg --keyid-format long --verify Whonix-Workstation-8.ova.asc Whonix-Workstation
 &lt;/pre&gt;
 
 = License =
-
-&lt;code&gt;
+&lt;blockquote&gt;
 Whonix Verify_the_virtual_machine_images_using_the_command_line wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
 Whonix Verify_the_virtual_machine_images_using_the_command_line wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
+&lt;/blockquote&gt;
 
+&lt;blockquote&gt;
 This program comes with ABSOLUTELY NO WARRANTY; for details see the wiki source code.
 This is free software, and you are welcome to redistribute it
 under certain conditions; see the wiki source code for details.
-&lt;/code&gt;
+&lt;/blockquote&gt;
 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>8b2arairj4n2vj52co1s1651va8oehv</sha1>
+      <sha1>inkjd7b5krvv2w9v9nd0z7ebsmt0uiu</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -16656,14 +16657,14 @@ under certain conditions; see the wiki source code for details.
     <ns>0</ns>
     <id>142</id>
     <revision>
-      <id>5868</id>
-      <parentid>4724</parentid>
-      <timestamp>2014-02-27T13:45:56Z</timestamp>
+      <id>6788</id>
+      <parentid>6787</parentid>
+      <timestamp>2014-03-10T04:23:23Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="4003">{{Header}}
+      <text xml:space="preserve" bytes="4391">{{Header}}
 &lt;!--
 Copyright:
 
@@ -16718,27 +16719,39 @@ Then, download the cryptographic signature corresponding to the virtual machine 
 
 [http://www.gpg4win.org/doc/en/gpg4win-compendium_24.html#id4 Consult the Gpg4win documentation to check the signature]
 
-If you see &quot;{{Code2|Not enough information to check signature validity}}&quot;, please read this [[Special:AWCforum/st/id163/verification_using_the_signing_k....html|forum thread]].
+If you see &quot;{{Code2|Not enough information to check signature validity}}&quot; as shown below.
+
+[[File:Kleopatra_not_enough_information_to_check_signature_validity.png|alt=&lt;translate&gt;Kleopatra Not enough information to check signature validity&lt;/translate&gt;|400px]]
+
+This warning equals.
+
+&lt;pre&gt;
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+&lt;/pre&gt;
+
+See [[Verify_the_virtual_machine_images_using_the_command_line|TODO]] for explanation.
 
 '''For Mac OS X using GPGTools'''
 
 After installing GPGTools, you should be able to follow the instruction for [[Verify the virtual machine images using the command line|Linux with the command line]]. To open the command line, navigate to your Applications folder, open Utilities, and double click on Terminal.
 
 = License =
-
-&lt;code&gt;
+&lt;blockquote&gt;
 Whonix Verify_the_virtual_machine_images_using_other_operating_systems wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
 Whonix Verify_the_virtual_machine_images_using_other_operating_systems wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
+&lt;/blockquote&gt;
 
+&lt;blockquote&gt;
 This program comes with ABSOLUTELY NO WARRANTY; for details see the wiki source code.
 This is free software, and you are welcome to redistribute it
 under certain conditions; see the wiki source code for details.
-&lt;/code&gt;
+&lt;/blockquote&gt;
 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>020vzvdxbyqx1jbzgc6v03gfop2a6a4</sha1>
+      <sha1>kmepl2cau9ozndh8spraaj5mculljtj</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -30912,14 +30925,15 @@ For these reasons it's not a good idea to add popcon to Whonix. If you have sugg
     <ns>0</ns>
     <id>255</id>
     <revision>
-      <id>5850</id>
-      <parentid>4719</parentid>
-      <timestamp>2014-02-27T13:24:11Z</timestamp>
+      <id>6791</id>
+      <parentid>6790</parentid>
+      <timestamp>2014-03-10T04:27:35Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="8922">&lt;!--
+      <comment>/* Bootstrapping OpenPGP keys from the web */</comment>
+      <text xml:space="preserve" bytes="8339">&lt;!--
 Copyright:
 
    Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -31002,8 +31016,6 @@ This trust model is not perfect either and requires both caution and intelligent
 
 We also acknowledge that not everybody might be able to create good trust path since it based on a network of direct human relationships and the knowledge of quite complex tools such as GnuPG.
 
-Because Whonix developer adrelanos prefers to stay anonymous, this trust model is not suited for Whonix.
-
 == Bootstrapping OpenPGP keys from the web ==
 What in case you want to totally stay anonymous or have no trust path to a OpenPGP key?
 
@@ -31016,8 +31028,6 @@ As an alternative, some people also publish their OpenPGP fingerprint or their O
 For such a model, it is best if the same website is accessible over both, http'''s''' and .onion and the user visits both sites and compares if the results match.
 
 To further improve the situation the key holder can spread its fingerprint and/or OpenPGP key to other websites. Some key holders attach their OpenPGP fingerprint to their e-mail signature (a short attachment of any mail) and participate(d) various public mailing lists. It will be difficult for an adversary to spoof all those information. This only helps, if the one trying to obtain the key is either aware of that or researching that on their own initiative.
-
-Whonix developer adrelanos peruses the strategy to deploy its key through multiple (at time of writing 6) sources. Different websites reachable over http, http'''s''' or .onion. Hosted by both, known and anonymous people. This should make it much more expensive for an adversary to take them all down or to turn them all over and make this particular attack vector unprofitable. An example implementation of this strategy can be found on the [[Whonix Signing Key]] wiki page.
 
 = License =
 The [http://www.openpgp-schulungen.de/fuer/webautoren/ certification] image ([https://www.whonix.org/wiki/File:Hauke_laging_gepruefter_artikel.en.png hauke_laging_gepruefter_artikel.en.png]) is copyrighted by [http://www.hauke-laging.de/ Hauke Laging].
@@ -31034,7 +31044,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>sd4bohwklg5jkb448jhqk3fuv8fuwcl</sha1>
+      <sha1>nu7px1xmqwxtg4gkf1mcj1i6flduzdn</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -68440,6 +68450,24 @@ Related forum topic: &lt;br /&gt;
 
 [[Category:Development]]</text>
       <sha1>l2zbik3s0689p7kdgh95ulxkh48iplw</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:Kleopatra not enough information to check signature validity.png</title>
+    <ns>6</ns>
+    <id>1141</id>
+    <revision>
+      <id>6786</id>
+      <timestamp>2014-03-10T04:17:31Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
