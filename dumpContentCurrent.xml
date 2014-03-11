@@ -44370,14 +44370,15 @@ The reason you can't just get higher resolutions using {{Code2|xrandr}} &quot;{{
     <ns>10</ns>
     <id>479</id>
     <revision>
-      <id>5506</id>
-      <parentid>5505</parentid>
-      <timestamp>2014-02-19T15:32:52Z</timestamp>
+      <id>6806</id>
+      <parentid>6805</parentid>
+      <timestamp>2014-03-10T23:55:40Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="2261">&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+      <text xml:space="preserve" bytes="2375">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
+&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
 '''OPTIONAL!'''
 
 Advanced users can create 64bit instead of 32bit builds.
@@ -44385,7 +44386,7 @@ Advanced users can create 64bit instead of 32bit builds.
 If you are interested, click on Expand on the right.
 &lt;div class=&quot;mw-collapsible-content&quot;&gt;
 
-64bit builds are rarely tested due to lack of developer manpower. Should work well in principle.
+64bit builds are less tested due to lack of developer manpower. Should work well in principle.
 
 Create {{Code2|/etc/whonix_buildconfig.d}} folder.
 
@@ -44444,10 +44445,12 @@ If you want to undo this build configuration, see footnote. &lt;ref&gt;
 sudo rm /etc/whonix_buildconfig.d/50_target_arch
 &lt;/pre&gt;
 &lt;/ref&gt;
-
+&lt;noinclude&gt;
+Footnotes:
+&lt;references /&gt;&lt;/noinclude&gt;
 &lt;/div&gt;
-&lt;/div&gt;</text>
-      <sha1>sjow7m0f818octpsrscuvhik7jwcuk4</sha1>
+&lt;/div&gt;&lt;noinclude&gt;{{Footer}}&lt;/noinclude&gt;</text>
+      <sha1>g1h35xj0keerglpruv672o1m6qlbzp5</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -44457,16 +44460,15 @@ sudo rm /etc/whonix_buildconfig.d/50_target_arch
     <ns>10</ns>
     <id>480</id>
     <revision>
-      <id>4754</id>
-      <parentid>3828</parentid>
-      <timestamp>2014-01-14T17:41:48Z</timestamp>
+      <id>6831</id>
+      <parentid>6828</parentid>
+      <timestamp>2014-03-11T01:50:33Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <minor/>
-      <comment>Text replace - &quot;adrelanos at riseup dot net&quot; to &quot;adrelanos@riseup.net&quot;</comment>
-      <text xml:space="preserve" bytes="1365">&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+      <text xml:space="preserve" bytes="1481">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
+&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
 '''OPTIONAL!'''
 
 Advanced users can build a no-default-gui / no-KDE / terminal-only Whonix-Gateway and/or Whonix-Workstation.
@@ -44474,7 +44476,7 @@ Advanced users can build a no-default-gui / no-KDE / terminal-only Whonix-Gatewa
 If you are interested, click on Expand on the right.
 &lt;div class=&quot;mw-collapsible-content&quot;&gt;
 
-terminal-only builds are rarely tested due to lack of developer manpower. Should work well in principle.
+terminal-only builds are less tested due to lack of contributor manpower. Should work well in principle.
 
 '''NOTE''': You may or may not like to combine this with NoDefaultApps Builds. See below.
 
@@ -44510,10 +44512,12 @@ If you want to undo this build configuration, see footnote. &lt;ref&gt;
 sudo rm /etc/whonix_buildconfig.d/50_terminal_only
 &lt;/pre&gt;
 &lt;/ref&gt;
-
+&lt;noinclude&gt;
+Footnotes:
+&lt;references /&gt;&lt;/noinclude&gt;
 &lt;/div&gt;
-&lt;/div&gt;</text>
-      <sha1>7ht5061v88vyoyte3sakiztsygnt1is</sha1>
+&lt;/div&gt;&lt;noinclude&gt;{{Footer}}&lt;/noinclude&gt;</text>
+      <sha1>6ft9ll7v1ztjgwyxuuavv5k8gics7r4</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -44523,16 +44527,15 @@ sudo rm /etc/whonix_buildconfig.d/50_terminal_only
     <ns>10</ns>
     <id>481</id>
     <revision>
-      <id>4757</id>
-      <parentid>3827</parentid>
-      <timestamp>2014-01-14T17:42:20Z</timestamp>
+      <id>6825</id>
+      <parentid>6812</parentid>
+      <timestamp>2014-03-11T00:18:37Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <minor/>
-      <comment>Text replace - &quot;adrelanos at riseup dot net&quot; to &quot;adrelanos@riseup.net&quot;</comment>
-      <text xml:space="preserve" bytes="2157">&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+      <text xml:space="preserve" bytes="2271">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
+&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
 '''OPTIONAL!'''
 
 Advanced users can install fewer {{Code2|recommended}} packages to make the resulting build smaller and more customizable. ({{Code2|recommended}} as in useful to have, not necessary to have them for some other reason.)
@@ -44540,7 +44543,7 @@ Advanced users can install fewer {{Code2|recommended}} packages to make the resu
 If you are interested, click on Expand on the right.
 &lt;div class=&quot;mw-collapsible-content&quot;&gt;
 
-NoDefaultApps builds are rarely tested due to lack of contributor manpower. Should work well in principle.
+NoDefaultApps builds are less tested due to lack of contributor manpower. Should work well in principle.
 
 '''NOTE''': You most likely want to combine this with terminal-only builds, see above.
 
@@ -44583,10 +44586,12 @@ If you want to undo this build configuration, see footnote. &lt;ref&gt;
 sudo rm /etc/whonix_buildconfig.d/50_no_default_apps
 &lt;/pre&gt;
 &lt;/ref&gt;
-
+&lt;noinclude&gt;
+Footnotes:
+&lt;references /&gt;&lt;/noinclude&gt;
 &lt;/div&gt;
-&lt;/div&gt;</text>
-      <sha1>g2lhpc3l7ozwz5mduqjiwouwsj39p8l</sha1>
+&lt;/div&gt;&lt;noinclude&gt;{{Footer}}&lt;/noinclude&gt;</text>
+      <sha1>akhlixqdlw4gwv5r6jo96d20gsuj8qz</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -44596,16 +44601,15 @@ sudo rm /etc/whonix_buildconfig.d/50_no_default_apps
     <ns>10</ns>
     <id>482</id>
     <revision>
-      <id>4753</id>
-      <parentid>3829</parentid>
-      <timestamp>2014-01-14T17:41:46Z</timestamp>
+      <id>6830</id>
+      <parentid>6815</parentid>
+      <timestamp>2014-03-11T01:48:07Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <minor/>
-      <comment>Text replace - &quot;adrelanos at riseup dot net&quot; to &quot;adrelanos@riseup.net&quot;</comment>
-      <text xml:space="preserve" bytes="1939">&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+      <text xml:space="preserve" bytes="2055">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
+&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
 '''OPTIONAL!'''
 
 &lt;u&gt;Whonix's APT Repository&lt;/u&gt; is &lt;u&gt;disabled by default&lt;/u&gt; since Whonix 7.3.3. You may enjoy this for [[Trust]] reasons. You can later update Whonix debian packages from source code if you want. If you are interested in enabling Whonix's APT repository right after building (you could do that also after booting your build for the first time if you wanted) for convenience while sacrificing the extra security of not updating from source code, click on Expand on the right side.
@@ -44656,10 +44660,12 @@ If you want to undo this build configuration, see footnote. &lt;ref&gt;
 sudo rm /etc/whonix_buildconfig.d/50_whonix_apt_repository
 &lt;/pre&gt;
 &lt;/ref&gt;
-
+&lt;noinclude&gt;
+Footnotes:
+&lt;references /&gt;&lt;/noinclude&gt;
 &lt;/div&gt;
-&lt;/div&gt;</text>
-      <sha1>eruzhforrdf0gf4umo2mv5rfljdno0j</sha1>
+&lt;/div&gt;&lt;noinclude&gt;{{Footer}}&lt;/noinclude&gt;</text>
+      <sha1>f7r3w4b6vo1uezf8h00wukdadp50905</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -44669,15 +44675,15 @@ sudo rm /etc/whonix_buildconfig.d/50_whonix_apt_repository
     <ns>10</ns>
     <id>483</id>
     <revision>
-      <id>5360</id>
-      <parentid>4825</parentid>
-      <timestamp>2014-02-15T11:14:55Z</timestamp>
+      <id>6820</id>
+      <parentid>6818</parentid>
+      <timestamp>2014-03-11T00:13:12Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* apt-cache */</comment>
-      <text xml:space="preserve" bytes="2176">== Build Configuration (Optional) ==
+      <text xml:space="preserve" bytes="2272">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
+== Build Configuration (Optional) ==
 === Introduction (Optional) ===
 &lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
 '''OPTIONAL.'''
@@ -44729,8 +44735,13 @@ It is recommended to copy and paste text when creating build configuration files
 {{Build Documentation Custom Build Tags}}
 
 == Source Code Changes ==
-{{Build Documentation Source Code Changes}}</text>
-      <sha1>lg76lchqb60rvehqmr5dacbw5ddxz5l</sha1>
+{{Build Documentation Source Code Changes}}
+&lt;noinclude&gt;
+Footnotes:
+&lt;references /&gt;
+{{Footer}}
+&lt;/noinclude&gt;</text>
+      <sha1>a1za32spb7c8mid1inqiem3zz4bm58q</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -48735,15 +48746,15 @@ ii  zsh-common            5.0.2-4         all             architecture independe
     <ns>10</ns>
     <id>491</id>
     <revision>
-      <id>5939</id>
-      <parentid>5938</parentid>
-      <timestamp>2014-02-27T16:19:30Z</timestamp>
+      <id>6824</id>
+      <parentid>6811</parentid>
+      <timestamp>2014-03-11T00:17:56Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Verify Whonix Source Code */</comment>
-      <text xml:space="preserve" bytes="3015">== Get Whonix Source Code ==
+      <text xml:space="preserve" bytes="3100">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
+== Get Whonix Source Code ==
 Install git and get Whonix's source code from the git repository.&lt;ref&gt;From https://github.com/adrelanos/Whonix and not from https://github.com/Whonix/Whonix, because only adrelanos/Whonix contains git tags of the testers-only version.&lt;/ref&gt;
 
 &lt;pre&gt;
@@ -48835,8 +48846,12 @@ In case you want to build a specific git tag.
 git checkout 8
 &lt;/pre&gt;
 
-You have to replace {{Code2|8}} with the actual version you want to build. The stable version, the testers-only version or the developers version. You can learn about current versions reading [[Download#Stay_tuned|Whonix News Blogs]]. New versions are also announced on the [[Mailing_Lists#whonix-devel|whonix-devel mailing list]]. So you could alternatively check its archives. Signing up for whonix-devel is another way to get informed about new releases.</text>
-      <sha1>msccq96ba9z6b5ul9ojs92ws7awpx1w</sha1>
+You have to replace {{Code2|8}} with the actual version you want to build. The stable version, the testers-only version or the developers version. You can learn about current versions reading [[Download#Stay_tuned|Whonix News Blogs]]. New versions are also announced on the [[Mailing_Lists#whonix-devel|whonix-devel mailing list]]. So you could alternatively check its archives. Signing up for whonix-devel is another way to get informed about new releases.
+&lt;noinclude&gt;
+&lt;references /&gt;
+{{Footer}}
+&lt;/noinclude&gt;</text>
+      <sha1>aw9byywdd1pb1l6z27op268vvl91yvf</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -48846,14 +48861,15 @@ You have to replace {{Code2|8}} with the actual version you want to build. The s
     <ns>10</ns>
     <id>493</id>
     <revision>
-      <id>4132</id>
-      <parentid>3756</parentid>
-      <timestamp>2013-12-04T16:02:07Z</timestamp>
+      <id>6823</id>
+      <parentid>6810</parentid>
+      <timestamp>2014-03-11T00:16:51Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="1009">&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+      <text xml:space="preserve" bytes="1075">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
+&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
 '''Only if you are using your own git tags! In that case click on Expand on the right.'''
 &lt;div class=&quot;mw-collapsible-content&quot;&gt;
 If you created for example a git tag &quot;8.1&quot; and want to receive Whonix News for &quot;8&quot;, apply this.
@@ -48875,10 +48891,9 @@ whonix_deb_package_version=&quot;2:7-debpackage1&quot;
 &lt;/pre&gt;
 
 When you later update from Whonix debian packages from for example &quot;8.1&quot; to &quot;9&quot;, these settings have to be commented out.
-
 &lt;/div&gt;
-&lt;/div&gt;</text>
-      <sha1>gg29n9cz3y1ysqngpnootkho1j74fud</sha1>
+&lt;/div&gt;&lt;noinclude&gt;{{Footer}}&lt;/noinclude&gt;</text>
+      <sha1>ge9qofjj7mkly17cdd9roc4drszd8xo</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -48888,14 +48903,15 @@ When you later update from Whonix debian packages from for example &quot;8.1&quo
     <ns>10</ns>
     <id>494</id>
     <revision>
-      <id>4131</id>
-      <parentid>3779</parentid>
-      <timestamp>2013-12-04T16:01:54Z</timestamp>
+      <id>6827</id>
+      <parentid>6814</parentid>
+      <timestamp>2014-03-11T01:16:58Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="2419">&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+      <text xml:space="preserve" bytes="2536">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
+&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
 '''Only in case you made changes to the Whonix source folder! In that case click on Expand on the right.''' &lt;br /&gt;
 '''Not required if you only added using your own build configuration in {{Code|/etc/whonix_buildconfig.d}} folder.'''
 &lt;div class=&quot;mw-collapsible-content&quot;&gt;
@@ -48956,9 +48972,12 @@ git status
 git commit -a
 git status
 &lt;/pre&gt;
+&lt;noinclude&gt;
+Footnotes:
+&lt;references /&gt;&lt;/noinclude&gt;
 &lt;/div&gt;
-&lt;/div&gt;</text>
-      <sha1>jbf2qpcwsfapys8gcd2bjy2amv8trbk</sha1>
+&lt;/div&gt;&lt;noinclude&gt;{{Footer}}&lt;/noinclude&gt;</text>
+      <sha1>halqsmzghlhffgmb9kfosbix7x89y7b</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -48968,22 +48987,27 @@ git status
     <ns>10</ns>
     <id>495</id>
     <revision>
-      <id>5455</id>
-      <parentid>4363</parentid>
-      <timestamp>2014-02-16T23:22:26Z</timestamp>
+      <id>6822</id>
+      <parentid>6819</parentid>
+      <timestamp>2014-03-11T00:15:44Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>reset debian/changelog no longer required</comment>
-      <text xml:space="preserve" bytes="217">'''OPTIONAL!'''
+      <text xml:space="preserve" bytes="336">&lt;noinclude&gt;{{Header}}
+&lt;/noinclude&gt;
+'''OPTIONAL!'''
 
 Remove temporary files from {{Code2|debian}} folder and delete debian packages from {{Code2|parent directory}}&lt;ref&gt;I.e. {{Code2|../}}, most likely {{Code2|/home/user}}.&lt;/ref&gt;.
 
 &lt;pre&gt;
 make clean
-&lt;/pre&gt;</text>
-      <sha1>hnwcech4ubrvv9m0oafkpo9vfw9p4je</sha1>
+&lt;/pre&gt;
+&lt;noinclude&gt;
+Footnotes:
+&lt;references /&gt;&lt;/noinclude&gt;
+&lt;noinclude&gt;{{Footer}}&lt;/noinclude&gt;</text>
+      <sha1>3uidvwq9bgz6e9anltldug7jyiftliu</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -49086,18 +49110,16 @@ git fetch
     <ns>10</ns>
     <id>500</id>
     <revision>
-      <id>4756</id>
-      <parentid>3992</parentid>
-      <timestamp>2014-01-14T17:42:09Z</timestamp>
+      <id>6809</id>
+      <parentid>6800</parentid>
+      <timestamp>2014-03-10T23:57:53Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <minor/>
-      <comment>Text replace - &quot;adrelanos at riseup dot net&quot; to &quot;adrelanos@riseup.net&quot;</comment>
-      <text xml:space="preserve" bytes="4503">&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+      <text xml:space="preserve" bytes="4502">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
+&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
 '''OPTIONAL!'''
-'''Whonix 7.4.0 and above only!'''
 
 Advanced users could install from Current Sources (custom) instead of from Frozen Sources (default in 7.4.0 and above). Both options have security advantages and disadvantages.
 
@@ -49170,7 +49192,7 @@ Footnotes:
 &lt;references group=&quot;currentsources&quot;/&gt;
 &lt;/div&gt;
 &lt;/div&gt;</text>
-      <sha1>d0e88jzrjgwybhppk5ztohuyfuta1sp</sha1>
+      <sha1>ttae08y9998p4vd5zob5kygeuac03lm</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -50615,16 +50637,15 @@ sshfs -p 2222 user@127.0.0.1:/ ~/mountworkstation
     <ns>10</ns>
     <id>532</id>
     <revision>
-      <id>4748</id>
-      <parentid>4130</parentid>
-      <timestamp>2014-01-14T17:40:58Z</timestamp>
+      <id>6826</id>
+      <parentid>6813</parentid>
+      <timestamp>2014-03-11T00:19:00Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <minor/>
-      <comment>Text replace - &quot;adrelanos at riseup dot net&quot; to &quot;adrelanos@riseup.net&quot;</comment>
-      <text xml:space="preserve" bytes="1301">&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+      <text xml:space="preserve" bytes="1417">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
+&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
 '''OPTIONAL!'''
 
 By default Whonix's last build step creates a report file of all hdd contents. (See [[Verifiable Builds]] for details.) This step is optional. First introduced in Whonix 7.4.8. Whonix should work fine without that step. It is used for extra security. This step takes quite some time. This step is recommended. If you want to disable it, click on Expand on the right side.
@@ -50662,10 +50683,12 @@ If you want to undo this build configuration, see footnote. &lt;ref&gt;
 sudo rm /etc/whonix_buildconfig.d/50_no_report
 &lt;/pre&gt;
 &lt;/ref&gt;
-
+&lt;noinclude&gt;
+Footnotes:
+&lt;references /&gt;&lt;/noinclude&gt;
 &lt;/div&gt;
-&lt;/div&gt;</text>
-      <sha1>t7edu1qfmi3f1agigao504okx7vxohp</sha1>
+&lt;/div&gt;&lt;noinclude&gt;{{Footer}}&lt;/noinclude&gt;</text>
+      <sha1>fzugv19wsye8ra9bme3mvelnrjc5l9g</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -50732,14 +50755,15 @@ Adding your Virtual Box settings folder to a [https://en.wikipedia.org/wiki/Revi
     <ns>10</ns>
     <id>534</id>
     <revision>
-      <id>4181</id>
-      <timestamp>2013-12-10T21:25:23Z</timestamp>
+      <id>6821</id>
+      <parentid>6808</parentid>
+      <timestamp>2014-03-11T00:14:16Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>Created page with &quot;&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt; '''OPTIONAL!'''  Since Whonix 7.5.2, advanced users who build Whonix from source code can increase cer...&quot;</comment>
-      <text xml:space="preserve" bytes="645">&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+      <text xml:space="preserve" bytes="712">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
+&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
 '''OPTIONAL!'''
 
 Since Whonix 7.5.2, advanced users who build Whonix from source code can increase certainty, that their image is free from perhaps anonymity critical bugs, by verifying, that their image is very similar to redistributed Whonix .ova's. This is optional, but can improve security.
@@ -50748,8 +50772,8 @@ If you are interested, click on Expand on the right.
 &lt;div class=&quot;mw-collapsible-content&quot;&gt;
 Congratulations, you already created your own build of Whonix. If you want, you can compare your build with official builds for better security. See [[Verifiable Builds]].
 &lt;/div&gt;
-&lt;/div&gt;</text>
-      <sha1>t8pw035p76tumvjye3ky3b12x36np6m</sha1>
+&lt;/div&gt;&lt;noinclude&gt;{{Footer}}&lt;/noinclude&gt;</text>
+      <sha1>l2lip629r5wcoldyf87q7mkwqqkp8rb</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -57260,14 +57284,15 @@ http://www.webcitation.org/6NGwjP4X9</text>
     <ns>10</ns>
     <id>712</id>
     <revision>
-      <id>4824</id>
-      <timestamp>2014-01-20T19:02:55Z</timestamp>
+      <id>6829</id>
+      <parentid>6816</parentid>
+      <timestamp>2014-03-11T01:47:26Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>Created page with &quot;&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt; '''OPTIONAL!'''  When building with --bare-metal option in a virtual machine, builders can use their o...&quot;</comment>
-      <text xml:space="preserve" bytes="1262">&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+      <text xml:space="preserve" bytes="1378">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
+&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
 '''OPTIONAL!'''
 
 When building with --bare-metal option in a virtual machine, builders can use their own http proxy (apt cache) on the host, which will greatly improve build speed when building several times in a row (debugging, development).
@@ -57302,10 +57327,12 @@ Don't forget to add -E to sudo, so environment variables are preserved. Examples
 sudo -E ./whonix_build --bare-metal --tor-gateway --build
 sudo -E ./build-steps.d/1100_prepare-build-machine --bare-metal --tor-gateway
 &lt;/pre&gt;
-
+&lt;noinclude&gt;
+Footnotes:
+&lt;references /&gt;&lt;/noinclude&gt;
 &lt;/div&gt;
-&lt;/div&gt;</text>
-      <sha1>c077yacrm92mx032vcqdr6qqe9wpj6n</sha1>
+&lt;/div&gt;&lt;noinclude&gt;{{Footer}}&lt;/noinclude&gt;</text>
+      <sha1>46rzjm2otiufwtf0si6ksj4dkebim4g</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -66687,14 +66714,14 @@ Go to http://127.0.0.1/wiki/index.php/Main_Page.
     <ns>0</ns>
     <id>1110</id>
     <revision>
-      <id>6797</id>
-      <parentid>6795</parentid>
-      <timestamp>2014-03-10T19:42:40Z</timestamp>
+      <id>6833</id>
+      <parentid>6797</parentid>
+      <timestamp>2014-03-11T10:07:42Z</timestamp>
       <contributor>
         <username>Troubadour</username>
         <id>230</id>
       </contributor>
-      <text xml:space="preserve" bytes="4191">{{Header}}
+      <text xml:space="preserve" bytes="3970">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
@@ -66760,19 +66787,14 @@ Paste the following content.
 	@{HOME}/.local/share/** rw,
 	@{HOME}/.thumbnails/ r,
 	@{HOME}/.thumbnails/** rw,
-#	@{HOME}/.local/share/applications/* r,
-#	@{HOME}/.local/share/mime/ r,
-#	@{HOME}/.local/share/mime/** r,
-#	@{HOME}/.local/share/gvfs-metadata/home r,
-#	@{HOME}/.local/share/recently-used.xbel* rw,
 	@{HOME}/.themes/** r,
 	@{HOME}/.cache/ r,
 	@{HOME}/.cache/* rwk,
-	@{HOME}/.config/oxygen-gtk/argb-apps.conf rw,
-	@{HOME}/.config/user-dirs.dirs r,
+	@{HOME}/.config/** rw,		###
+#	@{HOME}/.config/user-dirs.dirs r,
 	@{HOME}/.Xauthority r,
 ## NOT in &lt;abstractions/kde&gt;
-	@{HOME}/.kde/share/** rw,		
+	@{HOME}/.kde/share/** rw,	
 	
 	/usr/share/ r,
 	/usr/share/mime/ r,
@@ -66782,9 +66804,9 @@ Paste the following content.
 	/usr/share/themes/ r,
 	/usr/share/themes/** r,
 	/usr/share/whonix/kde/share/config/kdeglobals r,
-	/usr/share/applications/ r,		
- 	/usr/share/applications/** rwk, 
-  	/usr/share/fontconfig/conf.avail/* r,
+	/usr/share/applications/ r,
+ 	/usr/share/applications/** rwk,
+ 	/usr/share/fontconfig/conf.avail/* r,
 	
  	/etc/drirc r,
 	/etc/X11/cursors/* r,
@@ -66860,7 +66882,7 @@ sudo aa-enforce /etc/apparmor.d/home.user.tor-browser_en-US.Browser.firefox
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>98i4udexyp5fjqj4lka1wgqt77qw93q</sha1>
+      <sha1>4bb8ugkdzlz2har398wouxfrna2orvy</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -67189,15 +67211,14 @@ sudo aa-enforce /etc/apparmor.d/usr.bin.pidgin
     <ns>0</ns>
     <id>1118</id>
     <revision>
-      <id>6768</id>
-      <parentid>6702</parentid>
-      <timestamp>2014-03-09T20:22:36Z</timestamp>
+      <id>6834</id>
+      <parentid>6768</parentid>
+      <timestamp>2014-03-11T10:08:10Z</timestamp>
       <contributor>
         <username>Troubadour</username>
         <id>230</id>
       </contributor>
-      <minor/>
-      <text xml:space="preserve" bytes="4024">{{Header}}
+      <text xml:space="preserve" bytes="4061">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
@@ -67225,7 +67246,7 @@ Paste the following content.
 	#include &lt;abstractions/fonts&gt;
 	#include &lt;abstractions/kde&gt;
 	#include &lt;abstractions/gnome&gt;
-	#include &lt;abstractions/audio&gt;    ###
+	#include &lt;abstractions/audio&gt;   
 
 	#include &lt;local/usr.lib.icedove.icedove&gt;
 	  
@@ -67245,13 +67266,14 @@ Paste the following content.
 	@{HOME}/Downloads/** rw,	
 	@{HOME}/.icedove/** mrwk,
 	@{HOME}/.kde/share/** rw,
-	@{HOME}/.config/oxygen-gtk/argb-apps.conf rw,
+	@{HOME}/.config/** rw,		###
+#	@{HOME}/.config/oxygen-gtk/argb-apps.conf rw,  ###
 	@{HOME}/.local/share/ r,
 	@{HOME}/.local/share/applications/* r,
 	@{HOME}/.local/share/mime/ r,
 	@{HOME}/.local/share/mime/** r,
 	@{HOME}/.local/share/recently-used.xbel* rw,
-	@{HOME}/.local/share/applications/kate-2.desktop r,
+#	@{HOME}/.local/share/applications/kate-2.desktop r,  ###
 	@{HOME}/.cache/ r,
 	@{HOME}/.cache/** rwk,
 	@{HOME}/.gnupg/* lrwkcix,
@@ -67366,7 +67388,7 @@ sudo aa-enforce /etc/apparmor.d/usr.lib.icedove.icedove
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>cxeoabc0a0rr1wmu3b9wffag587hsyg</sha1>
+      <sha1>czmi1bn58aaa78qu3ev4wo5h9qiybkq</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -68472,6 +68494,24 @@ Related forum topic: &lt;br /&gt;
       <comment>MsUpload</comment>
       <text xml:space="preserve" bytes="8">MsUpload</text>
       <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Trucos de videojuegos trucos trucos</title>
+    <ns>0</ns>
+    <id>1142</id>
+    <revision>
+      <id>6832</id>
+      <timestamp>2014-03-11T01:54:54Z</timestamp>
+      <contributor>
+        <username>JoseDomGago</username>
+        <id>254</id>
+      </contributor>
+      <comment>Created page with &quot;Trucos trucos trucos [http://trucos.hobbyconsolas.com/ trucos] trucos trucos trucos &lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;1. Foundation :&lt;br&gt;&lt;br&gt;Today, video games are component part of unpaid lif...&quot;</comment>
+      <text xml:space="preserve" bytes="14715">Trucos trucos trucos [http://trucos.hobbyconsolas.com/ trucos] trucos trucos trucos &lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;1. Foundation :&lt;br&gt;&lt;br&gt;Today, video games are component part of unpaid life history of the immense bulk of populate. Since this is unmatched factor of technology, we believe it capture and utile to analyse the likely that video games could be in the learning litigate , so that their consumption contributes to amend and heighten the timber of the appendage.&lt;br&gt;&lt;br&gt; &lt;br&gt;&lt;br&gt;Two . Job :&lt;br&gt;&lt;br&gt;Faced with the efforts made in late eld to clear up the use of goods and services of video games , it is essential to dissect the substantial features that hold to be applied in instruction. It is from about reflections on the respective studies (Maya Lin and Lepper , 1987 ; Fileni , 1988 , Outburst , 1995, Levis, 1997 ; Calvo , 1997 ) facts nearly video games , it is requirement to pee-pee decisions more or less them, in coition to its benefits and losses , which is why it is important to pretend decisions if we select to conceive of television games as a field of study real and didactical educational note value :&lt;br&gt;&lt;br&gt;What view is of video games, this beingness an natural action so far-flung and acute praxis ? What benefits for the fry swordplay video games ? What is the theatrical role of the educator ( parent, teacher, etc. . ) , Ahead the halt , and this is a unpaid recourse ? What electronegative aspects of video recording games ? Nether what conditions should be developed in amateur activities involving telecasting games? What are the excerption criteria should rule when buying picture games and specially to allow for them to children and adolescents ? What skills and abilities bring to development picture games related to to those requisite in the teaching-acquisition process ? Does beingness video recording games cataloged resources in New technologies What are their learning potentiality ?&lt;br&gt;&lt;br&gt; &lt;br&gt;&lt;br&gt;Tercet . Video recording Conception .&lt;br&gt;&lt;br&gt;If always in that location were boundaries betwixt the concepts of multimedia and video recording games , they experience begun to delapidate quickly. Gravid corporations affianced in other activities related to the Earth of New technologies merely with no receive in the globe of reckoner amusement , are increasingly more concerned in having an combat-ready function in the video recording biz marketplace especially in regards to picture games menage . ( Levis , 1997 )&lt;br&gt;&lt;br&gt;Due to the supra and in fiat to sneak the empiricist philosophy aspects of picture games, is our placement that defines the videojuegso as a cross arrangement , interactive multimedia system games, ( Levis ), consisting in games whose plebeian feature is her midriff victimized and non the subject matter of the bet on ( Outburst , 1995 ) . Therefore, scorn its perpetually changing, we can suppose that telecasting games are playful instruments that call for an physical science sensitive , viz. an physical science gaming chopine ( dwelling console , PC , gaming machines , etc. . ) ( Maldonado , 1999 ) .&lt;br&gt;&lt;br&gt;From Here you give notice categorize or class video games as follows ( Blowup ) :&lt;br&gt;&lt;br&gt;Eccentric OF Biz&lt;br&gt;&lt;br&gt;METHODS&lt;br&gt;&lt;br&gt;Colonnade&lt;br&gt;&lt;br&gt;Labyrinths&lt;br&gt;&lt;br&gt;sports&lt;br&gt;&lt;br&gt;Enkindle and Block&lt;br&gt;&lt;br&gt;Simulators&lt;br&gt;&lt;br&gt;implemental&lt;br&gt;&lt;br&gt;Situations&lt;br&gt;&lt;br&gt;sports&lt;br&gt;&lt;br&gt;strategy&lt;br&gt;&lt;br&gt; &lt;br&gt;&lt;br&gt;Graphical Adventures&lt;br&gt;&lt;br&gt;Roleplaying&lt;br&gt;&lt;br&gt;Warfare Games&lt;br&gt;&lt;br&gt;other Games&lt;br&gt;&lt;br&gt;Plank Games&lt;br&gt;&lt;br&gt;Plug-in &amp; Chess game&lt;br&gt;&lt;br&gt; &lt;br&gt;&lt;br&gt;April . CONTRIBUTIONS ON THE Purpose OF Video recording GAMES :&lt;br&gt;&lt;br&gt;We went then to name close to conclusions reached by the researchers ; Effusion 1995 ; Levis, 1997 ; Calvo , 1997 , Etxeberría , 1999, Maldonado and Jariego , 1999 , Carlos the Jackal , 1999 , which is currently poring over the gimpy , both in the learning , sociological and science :&lt;br&gt;&lt;br&gt;4.1. What persuasion is of picture games, this existence an natural process so widespread and intense practise ?&lt;br&gt;&lt;br&gt;Various studies suffer shown that bias and ideas that you have regarding television games are bad, they receive been darned mainly to sequester the thespian , stir up ferocity and cause dependance . ( Blowup , 1995, Lin and Lepper 1987 ) .&lt;br&gt;&lt;br&gt;However, other researchers on this topic , ( Etxeberría , 1999, Maldonado and Jariego , 1999 , Ilich Sanchez 1999 , Levi's , 1997 , Calvo , 1997 ) accept terminated crucial to found boundaries that delimitate the benefits and restitution to fake video recording games and level take his insertion to Education Department and instruction resources for technological, that buns attend to as an educational instrument in the teaching-learnedness cognitive operation .&lt;br&gt;&lt;br&gt;Picture games are regarded as the trump known typewrite of gamy whose park feature is the way of life it is victimised. As mentioned in a higher place , we function a bear chopine or physics gage , so it should be understood that television games are a whole existence included in this group final age games alike Pacman to the electric current CD Read-only memory , video recording games and gameboy .&lt;br&gt;&lt;br&gt;4.2. What benefits for the tike dramatic play video recording games ?&lt;br&gt;&lt;br&gt;We recognise that when the tiddler plays, he to the full develops biopsicológico degree , strong-arm and sociable ( Garaigordobil , 1990 ) . Likewise, based on the researchers mentioned , it was set up that when the minor plays picture games have abilities and skills developed in elite psychological science that act upon the teaching-learning action , of which the pursuit are mentioned :&lt;br&gt;&lt;br&gt;Your power to purpose symbols increases because through and through these games, prat typify different phenomena , break down their conscious experiences , plan, intend and play with foresightedness .&lt;br&gt;The actor uses its self-regulatory processes so that you toilet master , choice and unionize outside influences so that is not special to unpaid respond to situations that stimulate during the spirited.&lt;br&gt;The national interacts with the environs , so that during the lame the someone handles the reins of the office and sets the limits of their self-direction.&lt;br&gt;Need and ocular and auditive stimulant picture game allows the actor the result of different levels of problems and difficulties , which is obtained supremacy of skills and abilities of the engineering science itself .&lt;br&gt;4.3. What is the theatrical role of the pedagog ( parent, teacher, etc. . ) , Before the halting , and this is a unpaid repair ?&lt;br&gt;&lt;br&gt;Since it has been proved that picture games bring to and dissemble the ontogenesis of the case-by-case , it is of import that the adult has knowledge just about the cocksure aspects with the Games and that its employ tush regard beneficially , psychological and cognitive ontogeny of the small fry.&lt;br&gt;&lt;br&gt;Spell it is truthful that at that place are tearing television games , it is also important to note of hand the beingness of telecasting games the participant harmless thence not suited to label video recording games as evil elements , since the upshot of the apply thereof leave reckon on the dally materials , ie games that bequeath evolve and supply the kid. It is for this that , from these investigations , make out unitedly the chase recommendations , focalization specially on the practice of picture games and involution with , parents with their children and educators with their students :&lt;br&gt;&lt;br&gt;It is important to do it the subject matter of video games is acquired and their instruction manual , which leave assist us to prefer those near conquer games for every maturate.&lt;br&gt;We advocate the function of television games on the grocery , non male chauvinist , trigger-happy or racist .&lt;br&gt;Advance the employment of picture games that give up the participation of to a greater extent than matchless actor .&lt;br&gt;Bound the meter the habit of video recording games. It is recommended that you fiddle between 30-60 proceedings a Clarence Day , depending on the child's historic period .&lt;br&gt;Do not draw a blank that the stake and its resources should depart , therefore the grownup the nestling wish assay to radiate the secret plan and mettlesome objects .&lt;br&gt;Tending must be taken during the utilisation of telecasting games and many former amusive activities , parents and teachers are mired in the spirited , so to be partakers in this activeness .&lt;br&gt;The utilize of telecasting games as , tail end grow in the minor , skills valued by today's guild , so that your personality will be positively reinforced .&lt;br&gt;&lt;br&gt;Many parents cogitate that games child's play an entertainment sport , which speeds up the reflexes and the creative thinker , merely the vast legal age , all the same , trust that picture games trauma those WHO wont , isolating or sensational his bear in mind . To cut the doubtfulness of this type of game, then summarise the positivist aspects of the lame to those World Health Organization induce hail to rely studies this musing :&lt;br&gt;&lt;br&gt;Loosely populate WHO act video games are convoluted in a acquisition action covered, that allows convention subjects boil down resistivity to be courtly erudition , and multisensory representation of learning, victimisation pictures, sounds and kinesthetic modalities facilitates More teaching.&lt;br&gt;Allow the physical exercise of the imagination, without spacial or feature limitations .&lt;br&gt;Cater memory access to &quot; other worlds &quot; and share-out to each one other done the charts.&lt;br&gt;They let the realm of skills, since the tike to repeat the activity over again and once again come to dominate , gaining a sensation of assure .&lt;br&gt;They party favor crying rematch and the &quot; try again &quot; in a condom surround .&lt;br&gt;Facilitate fundamental interaction with former friends , in a non- hierarchic .&lt;br&gt;Allows strive taxonomic group goals , such as first step a door, saving individual , finding cherish , etc. . are activities that the tyke performs highschool motivational flush and World Health Organization knows or has absolved exposition of the documentary to be achieved with the culmination of the undertaking.&lt;br&gt;Stimulates increased attention and self-command , if we strike that changing the child's environs (non the tiddler ) privy advance individual winner.&lt;br&gt;Stimulates curio and pertain to be investigated.&lt;br&gt;In any case the above , it has been confirmed that the back wish non trip the descent of societal dealings , even so , further irrefutable attitudes socializing. ( Fileni , 1988 , Gush , 1994 ) , which found that users of picture games are Thomas More social, they prefer to gaming in groups or pairs, watch your friends more , and make greater elite innovation .&lt;br&gt;&lt;br&gt;Moreover, intelligence agency does non appear to brook whatsoever declension , even so video recording games especially highly-developed spacial news , and reward those skills that are needful in the study of fresh technologies. (L. and Frensch , 1990 Mandinacht , 1987, White, 1984. )&lt;br&gt;&lt;br&gt;When performing picture games, or subjects , quest above totally savour the mettlesome , that is played mainly for pleasure , as the item-by-item meets intragroup motivations as to reach a say of intellect , attain sure objectives and / or larn a stage subordination or accomplishment , plus cognitive or intellectual utilisation .&lt;br&gt;&lt;br&gt;4.4. What damaging aspects of picture games ?&lt;br&gt;&lt;br&gt;Piece it is true up that you ingest observed the benefits of video games, it is of import to Federal Reserve note approximately of the terms pose contentedness of video games, with the exclusive determination of preventing and civilise children and adolescents on values ​​and principles , as eve the clock time the explore has non answered questions regarding the straight act upon of video games with vehemence or sexism battery-acid on players , or as elements that touch off employment of such attitudes.&lt;br&gt;&lt;br&gt;As mentioned in a higher place , parents are advised that by acquiring practical shimmer materials , they do non incorporate heights doses of ferocity and aggression , as we screw the demeanor tends to be imitated by children and adolescents.&lt;br&gt;&lt;br&gt;However, unmatched should nullify sexist contented real , that is, where in that location are stereotypes in the manlike and female figures that go in harm to women , since women in games look to a lesser extent and when they do , they run to be represented in inactive behaviors , dominated and subaltern , piece workforce are delineate in combat-ready and dominant attitudes .&lt;br&gt;&lt;br&gt;Is expected with this remark , boost parents and educators to look into more near the gamy in set up that it be put-upon conveniently and positively as a agency or objective playful and even out educational .&lt;br&gt;&lt;br&gt;For completely the above, we deficiency to take to reflection, both educators, parents , researchers, etc. . , On the persona that games posterior dally , so that our design around them must be within the context of use of the New technologies , so , accomplishment , phthisis and / or employ jumper cable to regard the lives of those users .&lt;br&gt;&lt;br&gt;Among the questions that as learning researchers are obliged to look for answers through and through grave and scientific studies are the followers :&lt;br&gt;&lt;br&gt;Below what conditions should break recreational activities that are secondhand in picture games?&lt;br&gt;&lt;br&gt;What are the pick criteria should endure when purchasing the table of contents of video recording games, particularly to allow them to children and adolescents ?&lt;br&gt;&lt;br&gt;What skills and abilities bestow to developing television games akin to those requisite in the teaching-learnedness march ?&lt;br&gt;&lt;br&gt;As video games cataloged resources in young technologies What are their educational potency ?&lt;br&gt;&lt;br&gt;The supra questions solvent the vexation that it is by shop at and daily function of picture games specially by children and adolescents , conclude moves us to explore for answers whose resolve is to promote the manipulation of video games as an natural process seen these incontrovertible and enriching get for the drug user.&lt;br&gt;&lt;br&gt; &lt;br&gt;&lt;br&gt;May . CONCLUSIONS :&lt;br&gt;&lt;br&gt;We urge that television games are highly motivative corporeal , allow many learning opportunities, facilitate anatomy the knowledge, exercised immediately the evolution of cognitive strategies , increase the electrical capacity for negotiation and line of reasoning , structuring favour of cognitive processes because the penury for memorisation of processes, actions and rules and they are very pliant course of study that behind be secondhand in a check , a workshop , etc. . , a readily useable thereby constituting a stuff of slap-up pedagogical prize computing device .</text>
+      <sha1>ru8doyff9vjnv5a4vujf5cw7kzpjlqm</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
