@@ -40,13 +40,14 @@
     <ns>0</ns>
     <id>1</id>
     <revision>
-      <id>6861</id>
-      <parentid>6858</parentid>
-      <timestamp>2014-03-12T02:43:48Z</timestamp>
+      <id>6881</id>
+      <parentid>6880</parentid>
+      <timestamp>2014-03-12T20:14:10Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Adrelanos</username>
+        <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="8976">{{Header}}
+      <text xml:space="preserve" bytes="9896">{{Header}}
 __NOTOC__
 &lt;languages /&gt;
 &lt;translate&gt;
@@ -124,6 +125,16 @@ To learn more about security and anonymity under Whonix, please continue to the 
 [[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|alt=&lt;translate&gt;&lt;!--T:42--&gt;
 Download Whonix&lt;/translate&gt;]]
 
+&lt;html&gt;
+&lt;div class=&quot;hreview&quot;&gt;
+   &lt;span class=&quot;item&quot;&gt;
+     &lt;span class=&quot;fn&quot;&gt;Whonix&lt;/span&gt;
+   &lt;/span&gt;
+is &lt;span itemprop=&quot;price&quot;&gt;Free&lt;/span&gt; as in price and freedom, &lt;span class=&quot;summary&quot;&gt;lets you run anonymous applications and servers.&lt;/span&gt;. Whonix has been rated &lt;span class=&quot;rating&quot;&gt;5&lt;/span&gt;/5 stars by &lt;span class=&quot;reviewer&quot;&gt;users of sourceforge.net&lt;/span&gt; on &lt;span class=&quot;dtreviewed&quot;&gt;2014-12-03&lt;/span&gt;
+&lt;/div&gt;
+&lt;/html&gt;
+&lt;ref&gt;[http://sourceforge.net/projects/whonix/ Whonix sourceforge.net project home page] [http://www.webcitation.org/6O1gNLC1B (w)]; [http://sourceforge.net/projects/whonix/reviews/ Whonix sourceforg.net project review page] [http://www.webcitation.org/6O1gT5Wqw (w)]&lt;/ref&gt;
+
 |-
 |}&lt;!--
 
@@ -186,6 +197,13 @@ Image:donate.png|link=Donate|alt=&lt;translate&gt;&lt;!--T:54--&gt;
 Whonix Donate Icon&lt;/translate&gt;|&lt;translate&gt;&lt;!--T:38--&gt;
 [[Donate|Donate to Whonix!]]&lt;/translate&gt;
 &lt;/gallery&gt;
+&lt;html&gt;
+&lt;div itemscope itemtype=&quot;http://schema.org/Organization&quot;&gt;
+&lt;a itemprop=&quot;url&quot; href=&quot;https://www.whonix.org&quot;&gt;Home&lt;/a&gt;
+&lt;/br&gt;
+&lt;img itemprop=&quot;logo&quot; src=&quot;https://www.whonix.org/w/images/6/62/Whonix_logo.png&quot; /&gt;
+&lt;/div&gt;
+&lt;/html&gt;
 '''[[Screenshots|More Screenshots]].'''
 = &lt;translate&gt;&lt;!--T:39--&gt;
 Footnotes&lt;/translate&gt; =
@@ -200,7 +218,7 @@ Whonix is produced independently of, and carries no guarantee from, The Tor Proj
 Thanks to Tomchen1989 from Wikimedia Commons for the download button! [https://commons.wikimedia.org/wiki/File:Download_Button.svg 1] ([http://www.webcitation.org/6I2DQzdu0 w])
 Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_43.htm awxcnx.de]!
 &lt;/translate&gt;[[Category:Documentation]]{{Footer}}</text>
-      <sha1>q0xlti9f2xlmbiauh8dwzjiyqjyrgbk</sha1>
+      <sha1>nxgicgbt1sxl3wh3n9lkfl6uad9ulf7</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -352,14 +370,14 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
     <ns>10</ns>
     <id>15</id>
     <revision>
-      <id>6862</id>
-      <parentid>6857</parentid>
-      <timestamp>2014-03-12T02:51:45Z</timestamp>
+      <id>6867</id>
+      <parentid>6862</parentid>
+      <timestamp>2014-03-12T15:39:11Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="1785">&lt;br /&gt;&lt;hr&gt;&lt;font size=&quot;-3&quot;&gt;&lt;html&gt;&lt;a href=&quot;/w/index.php?title=Special:UserLogin&amp;returnto=Main+Page&quot; /&gt;Log in&lt;/a&gt;&lt;/html&gt; | [[Contact|Contact]] | [[Impressum]] | [[Datenschutz|Datenschutzerklärung]] | [[Disclaimer|Haftungsausschluss]]
+      <text xml:space="preserve" bytes="1755">&lt;br /&gt;&lt;hr&gt;&lt;font size=&quot;-3&quot;&gt;[[Special:UserLogin|Log in]] | [[Special:OpenIDLogin|OpenID]] | [[Contact|Contact]] | [[Impressum]] | [[Datenschutz|Datenschutzerklärung]] | [[Disclaimer|Haftungsausschluss]]
 [https://www.whonix.org{{localurl:{{FULLPAGENAME}}}} https] | &lt;html&gt;&lt;a class=&quot;link-https&quot; style=&quot;color: #3366BB&quot; href=&quot;http://kkkkkkkkkk63ava6.onion&lt;/html&gt;{{localurl:{{FULLPAGENAME}}}}&lt;html&gt;&quot; rel=&quot;nofollow&quot;&gt;.onion&lt;/a&gt;&lt;/html&gt; &lt;sup&gt;[[Forcing .onion on Whonix.org|note]]&lt;/sup&gt; | [http://whonix.org.nyud.net{{localurl:{{FULLPAGENAME}}}} Mirror] | [https://kkkkkkkkkk63ava6.tor2web.org{{localurl:{{FULLPAGENAME}}}} Mirror]
 &lt;!--
 inspired by http://aboli.sh/
@@ -369,7 +387,7 @@ This is a wiki. Want to improve this page? See [https://github.com/Whonix/Whonix
 
 Whonix (&lt;html&gt;&lt;a href=&quot;https://plus.google.com/108150429836421683225&quot; rel=&quot;publisher&quot; /&gt;g+&lt;/a&gt;&lt;/html&gt;) is a [http://www.openinventionnetwork.com/licensees.php licensee] of the [[File:OIN_logo_200px.png|link=https://en.wikipedia.org/wiki/Open_Invention_Network|alt=Open Invention Network|140px]]. Unless otherwise noted above, content of this  page is copyrighted by [mailto:adrelanos@riseup.net Patrick Schleizer] (&lt;html&gt;&lt;a href=&quot;/patrick.asc&quot;&gt;gpg&lt;/a&gt;&lt;/html&gt;) (&lt;html&gt;&lt;a href=&quot;https://plus.google.com/u/0/112678569435063398972?rel=author&quot;&gt;g+&lt;/a&gt;)&lt;/html&gt; and licensed under the same Free (as in speech) [https://github.com/Whonix/Whonix/blob/master/debian/copyright license] as Whonix itself.
 &lt;/font&gt;</text>
-      <sha1>ajohkwwdnary4xlj8rykc6h1xbavzuk</sha1>
+      <sha1>dz142orzqqg10vd1zux2971kzwiawp7</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -1422,15 +1440,14 @@ See also [[Security_in_Real_World | Whonix security in real world]], [[Security_
     <ns>0</ns>
     <id>24</id>
     <revision>
-      <id>6766</id>
-      <parentid>6725</parentid>
-      <timestamp>2014-03-09T20:20:44Z</timestamp>
+      <id>6871</id>
+      <parentid>6766</parentid>
+      <timestamp>2014-03-12T17:08:40Z</timestamp>
       <contributor>
         <username>Troubadour</username>
         <id>230</id>
       </contributor>
-      <comment>Added whonixcheck timesync</comment>
-      <text xml:space="preserve" bytes="14385">&lt;!--
+      <text xml:space="preserve" bytes="14424">&lt;!--
 Copyright:
 
    Whonix Documentation wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -1626,6 +1643,7 @@ Anonymity is a complex problem without an easy solution, and security is only as
 ** [[AppArmor/Tor_Browser_Bundle|Tor Browser Bundle (TBB)]]
 ** [[AppArmor/Icedove|Icedove (with Enigmail)]]
 ** [[AppArmor/Pidgin|Pidgin]]
+** [[AppArmor/sdwdate|Whonix sdwdate]]
 ** [[AppArmor/Timesync|Whonix timesync]]
 ** [[AppArmor/Whonixcheck|whonixcheck]]
 * [[Advanced Security Guide|Advanced Security Guide]]
@@ -1707,7 +1725,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>cnzo1b22hxbm2vim33xlbjwryykh0pq</sha1>
+      <sha1>f0pvchnrdtjgiqpbtqtmu5wmqcdpu7r</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -7380,14 +7398,15 @@ If you are going to use VirtualBox inside VirtualBox, be sure to change your hos
     <ns>0</ns>
     <id>95</id>
     <revision>
-      <id>5770</id>
-      <parentid>4767</parentid>
-      <timestamp>2014-02-27T12:01:54Z</timestamp>
+      <id>6879</id>
+      <parentid>6877</parentid>
+      <timestamp>2014-03-12T19:38:01Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="23161">{{Header}}
+      <comment>/* Mozilla Thunderbird with TorBirdy */</comment>
+      <text xml:space="preserve" bytes="23549">{{Header}}
 &lt;!--
 Copyright:
 
@@ -7504,6 +7523,15 @@ Must be &quot;Good Signature&quot;.
 10. There are no proxy settings required &lt;ref&gt;For [[Stream Isolation]].&lt;/ref&gt;, because since TorBirdy 0.1.0, TorBirdy natively supports Whonix.&lt;ref&gt;TorBirdy sets Socks Host to 192.168.0.10 and Port to 9102, if the WHONIX variable is set, which is the default in /etc/environment since Whonix 0.5.5.&lt;/ref&gt;
 
 11. If you are using enigmail for OpenPGP encryption, it's recommended to check &quot;Always confirm before sending&quot; checked in Enigmail -&gt; Preferences -&gt; Sending.
+
+&lt;html&gt;
+&lt;div class=&quot;hreview&quot;&gt;
+   &lt;span class=&quot;item&quot;&gt;
+     &lt;span class=&quot;fn&quot;&gt;Mozilla Thunderbird (Icedove) with TorBirdy&lt;/span&gt;
+   &lt;/span&gt;
+is a &lt;span itemprop=&quot;price&quot;&gt;Free&lt;/span&gt; &lt;span class=&quot;summary&quot;&gt;anonymous e-mail client&lt;/span&gt;. Rated &lt;span class=&quot;rating&quot;&gt;5&lt;/span&gt;/5 stars by &lt;span class=&quot;reviewer&quot;&gt;Patrick Schleizer&lt;/span&gt; on &lt;span class=&quot;dtreviewed&quot;&gt;2014-12-03&lt;/span&gt;.
+&lt;/div&gt;
+&lt;/html&gt;
 
 = Remailer - Sending e-mails without registration =
 
@@ -7703,7 +7731,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>20wjkccdf7qjaiwgtjw05boaqdpuyp1</sha1>
+      <sha1>nk8ugmd691n6wlsouomxn2pxior9kyj</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -61843,15 +61871,14 @@ sudo rm -fR /var/lib/apt/lists/*
     <ns>0</ns>
     <id>891</id>
     <revision>
-      <id>6771</id>
-      <parentid>6727</parentid>
-      <timestamp>2014-03-09T20:26:23Z</timestamp>
+      <id>6870</id>
+      <parentid>6771</parentid>
+      <timestamp>2014-03-12T17:07:27Z</timestamp>
       <contributor>
         <username>Troubadour</username>
         <id>230</id>
       </contributor>
-      <comment>Added timesync whonixcheck</comment>
-      <text xml:space="preserve" bytes="941">{{Header}}
+      <text xml:space="preserve" bytes="979">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
@@ -61864,6 +61891,7 @@ The following AppArmor profiles are currently under evaluation with Whonix 8. Wh
 * [[AppArmor/Tor_Browser_Bundle|Tor Browser Bundle (TBB)]]
 * [[AppArmor/Icedove|Icedove (with Enigmail)]]
 * [[AppArmor/Pidgin|Pidgin]]
+* [[AppArmor/sdwdate|Whonix sdwdate]]
 * [[AppArmor/Timesync|Whonix timesync]]
 * [[AppArmor/Whonixcheck|whonixcheck]]
 
@@ -61876,7 +61904,7 @@ Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/A
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>9o4ax4qtd41wp5bhend742luy33phey</sha1>
+      <sha1>63j0oly3u7wwy9shfqix1cczyznxjyk</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -67745,14 +67773,13 @@ sudo aa-enforce /etc/apparmor.d/usr.lib.icedove.icedove
     <ns>0</ns>
     <id>1138</id>
     <revision>
-      <id>6844</id>
-      <parentid>6794</parentid>
-      <timestamp>2014-03-11T21:37:52Z</timestamp>
+      <id>6882</id>
+      <parentid>6873</parentid>
+      <timestamp>2014-03-12T21:02:57Z</timestamp>
       <contributor>
-        <username>Troubadour</username>
-        <id>230</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <text xml:space="preserve" bytes="4975">{{Header}}
+      <text xml:space="preserve" bytes="5154">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
@@ -67769,7 +67796,7 @@ kdesudo kwrite /etc/apparmor.d/usr.bin.whonixcheck
 Paste the following content.
 
 &lt;pre&gt;
-# Last modified: Tue Mar 11 20:48:46 UTC 2014
+# Last modified: Wed Mar 12 20:33:58 UTC 2014
 #include &lt;tunables/global&gt;
 
 /usr/bin/whonixcheck {
@@ -67789,6 +67816,7 @@ Paste the following content.
 	capability kill,
 	capability sys_rawio,
 	
+	/ r,
 	
 	/bin/bash ix,
 	/usr/bin/whonixcheck r,
@@ -67873,9 +67901,11 @@ Paste the following content.
 	/etc/security/capability.conf r,
 	/etc/gai.conf r,
 	/etc/services r,
+	/etc/apparmor.d/ r,
 	
 	@{HOME}/ r,
 	@{HOME}/tor-browser_en-US/Docs/version r,
+	@{HOME}/tor-browser_en-US/Docs/sources/versions r,
 	@{HOME}/.whonix/ r,
 	@{HOME}/.whonix/* rwcux,
 	
@@ -67888,6 +67918,7 @@ Paste the following content.
 	@{PROC}/[0-9]*/fd/ r,
 	@{PROC}/sys/kernel/pid_max r,
 	@{PROC}/uptime r,
+	@{PROC}/tty/drivers r,
 
 	/run/whonix/whonixcheck/* mrwcx,
 	/run/whonix/whonixcheck/timesync_pid r,
@@ -67942,8 +67973,10 @@ Paste the following content.
 	/usr/bin/xz rix,
 	/usr/bin/gpgv rix,
 	/usr/bin/head rix,
-	/user/bin/gawk rix,
-	/user/bin/awk rix,
+	/usr/bin/gawk rix,
+	/usr/bin/awk rix,
+	/usr/bin/whoami rix,
+	/usr/bin/tr rix,
 
 	/usr/sbin/service rix,
 	/usr/sbin/virt-what rix,
@@ -67955,6 +67988,7 @@ Paste the following content.
 	/usr/lib/torsocks/* mr,
 	/usr/lib/virt-what/virt-what-cpuid-helper rix,
 	/usr/lib/apt/methods/* rix,
+	/usr/lib/whonix/curl_exit_codes rix,
 	
 	/usr/local/lib/python2.7/dist-packages/ r,
 			
@@ -67987,7 +68021,7 @@ sudo aa-enforce /etc/apparmor.d/usr.bin.whonixcheck
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>ouwinl6v0qtm6x4lu0yv6gijbmkpczx</sha1>
+      <sha1>o12nblumnwlfyjqjw38zeg2zjj6e2ju</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -68539,6 +68573,241 @@ Weiterführende Links (in Englischer Sprache):
       <comment>Redirected page to [[Deutsch/Homepage]]</comment>
       <text xml:space="preserve" bytes="30">#REDIRECT [[Deutsch/Homepage]]</text>
       <sha1>guu61iczkbpob0wzde7dx26r5ug31fg</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>AppArmor/sdwdate</title>
+    <ns>0</ns>
+    <id>1146</id>
+    <revision>
+      <id>6883</id>
+      <parentid>6869</parentid>
+      <timestamp>2014-03-12T21:03:20Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <text xml:space="preserve" bytes="5028">{{Header}}
+{{#seo:
+|description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
+}}
+__FORCETOC__
+{{AppArmorProfileWarning}}
+
+
+Create a file /etc/apparmor.d/usr.bin.sdwdate.
+
+&lt;pre&gt;
+kdesudo kwrite /etc/apparmor.d/usr.bin.sdwdate
+&lt;/pre&gt;
+
+Paste the following content.
+
+&lt;pre&gt;
+# Last modified: Wed Mar 12 20:30:54 UTC 2014
+#include &lt;tunables/global&gt;
+
+/usr/bin/sdwdate {
+	#include &lt;abstractions/base&gt;
+	#include &lt;abstractions/bash&gt;
+	
+	capability sys_resource,
+	capability sys_ptrace,
+	capability setuid,
+	capability setgid,
+	capability sys_time,
+	capability dac_override,
+	
+	@{HOME}/sdwdatetest rwcx,
+
+	/bin/bash ix,
+	/bin/rm rix,
+	/bin/cat rix,
+	/bin/mktemp rix,
+	/bin/ps rix,
+	/bin/sleep rix,
+	/bin/touch rix,
+	/bin/tee rix,
+	/bin/date rix,
+	/bin/sync rix,
+	/bin/tty rix,
+	/bin/tail rix,
+	/bin/mkdir rix,
+	/bin/chmod rix,
+	/bin/uname rix,
+	/bin/grep rix,
+	/bin/run-parts rix,
+	/bin/chown rix,
+	/bin/date rix,
+	/bin/echo rix,
+	/bin/touch rix,
+	/bin/which rix,
+
+	/dev/tty rw,
+	
+	/etc/passwd r,
+	/etc/hosts r,
+	/etc/host.conf r,
+	/etc/hosts.whonix r,
+	/etc/hosts r,
+	/etc/nsswitch.conf r,
+	/etc/resolv.conf r,
+	/etc/resolv.conf.whonix r,
+	deny /etc/fstab r,
+
+	/etc/pam.d/* r,
+	/etc/pam.d/other r,
+	/etc/pam.d/common-auth r,
+	/etc/pam.d/common-account r,
+
+	/etc/apt/sources.list.d/ r,
+	/etc/apt/sources.list.d/* r,
+	/etc/apt/sources.list.whonix r,
+	
+	/etc/ld.so.cache r,
+	/etc/nsswitch.conf r,
+	/etc/group r,
+	/etc/sudoers r,
+	/etc/sudoers.d/ r,
+	/etc/sudoers.d/* r,
+	/etc/pam.d/* r,
+	/etc/apt/sources.list.whonix r,
+	/etc/apt/sources.list.d/whonix.list	r,
+	/etc/whonix.d/ r, 
+	/etc/whonix.d/* r, 
+	/etc/init.d/bootclockrandomization rix,
+	/etc/default/nss r,
+	/etc/default/rcS r,
+	/etc/default/timesanitycheck r,
+	/etc/init.d/timesanitycheck rix,
+	/etc/sdwdate.d/ r, 
+	/etc/sdwdate.d/* r, 
+	/etc/default/sdwdate r,
+	/etc/init.d/sdwdate rix,
+	/etc/init.d/virtualbox-guest-utils rwix,
+	/etc/apt/apt.conf.d/ r,
+	/etc/apt/apt.conf.d/* r,
+	/etc/python2.7/sitecustomize.py r,
+	/etc/dpkg/dpkg.cfg r,
+	/etc/dpkg/dpkg.cfg.d/ r,
+	/etc/apt/sources.list.d/ r,
+	/etc/apt/sources.list.d/* r,
+	/etc/apt/preferences.d/ r,
+	/etc/apt/preferences.d/* r,
+	/etc/security/capability.conf r,
+	
+	/lib/i386-linux-gnu/security/* mr,	
+#	/lib/i386-linux-gnu/security/pam_unix.so mr,
+#	/lib/i386-linux-gnu/security/pam_deny.so mr,
+#	/lib/i386-linux-gnu/security/pam_permit.so mr,
+#	/lib/i386-linux-gnu/security/pam_cap.so mr,	
+	
+	@{PROC} r,
+	@{PROC}/cmdline r,
+	@{PROC}/[0-9]*/stat r,
+	@{PROC}/[0-9]*/status r,
+	@{PROC}/[0-9]*/fd/ r,
+	@{PROC}/sys/kernel/pid_max r,
+	@{PROC}/uptime r,
+
+	/run/sdwdate/done rwcx,
+	/run/whonix/whonixcheck/timesync_pid rix,
+	/run/whonix/whonixcheck/timesync_done rw,
+	/run/whonix/whonixcheck/timesync_running rwcix,
+	/run/whonix/whonixcheck/whonixcheck_apt_get_pid rw,
+	
+	/run/whonix/whonixcheck/* mrwcx,
+	/run/whonix/whonixcheck/timesync_pid r,
+	/run/utmp rk,
+	/run/msgcollector r,
+	/run/msgcollector/ r,
+	/run/msgcollector/* rw,
+	/run/sdwdate r,
+	/run/sdwdate/ rw,
+	/run/sdwdate/* rw,
+	/run/whonix/whonixcheck/ rw,
+	/run/timesanitycheck/success rw,	
+
+	/tmp/** lrwcix,
+	
+	/usr/lib/sudo/sudoers.so mr,
+	/usr/lib/whonix/timesync_pre rix,
+	/usr/lib/whonix/timesync_post_error rix,
+	/usr/lib/whonix/timesync_prerequisite rix,
+	/usr/lib/whonix/timesync_post_success rix,
+	/usr/lib/whonix/whonixcheck/apt-get-update-simulate rix,
+	/usr/lib/whonix/uwtwrapper rix,
+	/usr/lib/whonix/msgcollector rix,
+	/usr/lib/whonix/msgprogress rix,
+	/usr/lib/whonix/whonixcheck/help_check_tor_bootstrap.py rix,
+	/usr/lib/python2.7/** mr,
+	/usr/lib/python2.7/lib-dynload/datetime.so mr,
+	
+	/usr/local/lib/python2.7/dist-packages/ r,
+
+	/usr/bin/sdwdate rix,
+	/usr/bin/basename  rix,
+	/usr/bin/sudo ix,
+	/usr/bin/tee rix,
+	/usr/bin/tty rix,
+	/usr/bin/mawk rix,
+	/usr/bin/tput rix,
+	/usr/bin/service rix,
+	/usr/bin/env rix,
+	/usr/bin/timeout rix,
+	/usr/bin/tail rix,
+	/usr/bin/install rix,
+	/usr/bin/lspci rix,
+	/usr/bin/sdwdate rix,
+	/usr/bin/uuidgen rix,
+	/usr/bin/od rix,
+	/usr/bin/dirname rix,
+	/usr/bin/apt-get.whonix rix,
+	/usr/bin/uwt rix,
+	/usr/bin/curl.whonix-orig rix,
+	/usr/bin/torsocks rix,
+	/usr/bin/python2.7 rix,
+	/usr/bin/apt-get.whonix-orig rix,
+	/usr/bin/dpkg rix,
+	/usr/bin/dpkg-query rix,
+	/usr/bin/gawk rix,
+	/usr/bin/awk rix,
+	/usr/sbin/service rix,
+
+
+	/usr/share/whonix/build_version r,
+	/usr/share/ca-certificates/** r,
+	/usr/share/misc/pci.ids r,
+	/usr/share/pyshared/** r,	
+
+	/var/cache/apt/pkgcache.bin rix,
+		
+	/var/lib/dpkg/lock rwcxk,
+	/var/lib/dpkg/updates/ r,
+	/var/lib/dpkg/status r,
+	/var/lib/apt/lists/ r,
+	/var/lib/apt/extended_states r,
+	/var/lib/dpkg/** rwk,
+	
+	/var/log/bootclockrandomization.log rwk,
+	/var/log/timesanitycheck.log rwk,
+	
+	/var/log/sdwdate.log rwcux,
+}
+&lt;/pre&gt;
+
+Run
+&lt;pre&gt;
+sudo aa-enforce /etc/apparmor.d/usr.bin.sdwdate
+&lt;/pre&gt;
+
+[https://www.whonix.org/forum/index.php?action=profile;u=24 troubadour] created this profile. You can discuss it in this [http://kkkkkkkkkk63ava6.onion/forum/index.php/topic,97.0.html forum thread].
+
+{{Footer}}
+
+[[Category:Documentation]]</text>
+      <sha1>hziu4f38he8lps5u2kyw6yxqtkc4gni</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
