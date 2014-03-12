@@ -1,5 +1,3 @@
- 
-
 <mediawiki xmlns="http://www.mediawiki.org/xml/export-0.8/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.8/ http://www.mediawiki.org/xml/export-0.8.xsd" version="0.8" xml:lang="en">
   <siteinfo>
     <sitename>Whonix</sitename>
@@ -42,14 +40,13 @@
     <ns>0</ns>
     <id>1</id>
     <revision>
-      <id>6666</id>
-      <parentid>6623</parentid>
-      <timestamp>2014-03-07T15:51:22Z</timestamp>
+      <id>6861</id>
+      <parentid>6858</parentid>
+      <timestamp>2014-03-12T02:43:48Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <text xml:space="preserve" bytes="9077">{{Header}}
+      <text xml:space="preserve" bytes="8976">{{Header}}
 __NOTOC__
 &lt;languages /&gt;
 &lt;translate&gt;
@@ -198,19 +195,12 @@ Whonix is produced independently of, and carries no guarantee from, The Tor Proj
 
 &lt;!--T:9--&gt;
 &lt;references /&gt;
-
 &lt;translate&gt;
 &lt;!--T:10--&gt;
 Thanks to Tomchen1989 from Wikimedia Commons for the download button! [https://commons.wikimedia.org/wiki/File:Download_Button.svg 1] ([http://www.webcitation.org/6I2DQzdu0 w])
 Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_43.htm awxcnx.de]!
-&lt;/translate&gt;
-
-&lt;html&gt;
-&lt;a href=&quot;https://plus.google.com/u/0/112678569435063398972?rel=author&quot;&gt;Google&lt;/a&gt;
-&lt;/html&gt;
-{{Footer}}
-[[Category:Documentation]]</text>
-      <sha1>b7lc1ou6eu8574rv38v6qqnyy6rc8fi</sha1>
+&lt;/translate&gt;[[Category:Documentation]]{{Footer}}</text>
+      <sha1>q0xlti9f2xlmbiauh8dwzjiyqjyrgbk</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -338,24 +328,21 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
     <ns>10</ns>
     <id>14</id>
     <revision>
-      <id>6685</id>
-      <parentid>6151</parentid>
-      <timestamp>2014-03-07T23:39:50Z</timestamp>
+      <id>6852</id>
+      <parentid>6685</parentid>
+      <timestamp>2014-03-11T23:04:06Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="927">&lt;font size=&quot;3&quot;&gt;[https://www.whonix.org{{localurl:{{FULLPAGENAME}}}} https] | &lt;html&gt;&lt;a class=&quot;link-https&quot; style=&quot;color: #3366BB&quot; href=&quot;http://kkkkkkkkkk63ava6.onion&lt;/html&gt;{{localurl:{{FULLPAGENAME}}}}&lt;html&gt;&quot; rel=&quot;nofollow&quot;&gt;.onion&lt;/a&gt;&lt;/html&gt;&lt;/font&gt; &lt;font size=&quot;1&quot;&gt; &lt;sup&gt;[[Forcing .onion on Whonix.org|note]]&lt;/sup&gt; | [http://whonix.org.nyud.net{{localurl:{{FULLPAGENAME}}}} Mirror] | [https://kkkkkkkkkk63ava6.tor2web.org{{localurl:{{FULLPAGENAME}}}} Mirror] | [[Contribute#Donate|Donate to Whonix!]]&lt;/font&gt; | [[Impressum]] | [[Datenschutz|Datenschutzerklärung]] | [[Disclaimer|Haftungsausschluss]]&lt;!--
-inspired by http://aboli.sh/
-@cnpirates ssl(tor) ssl(i2p) coralcdn .sdns .onion .i2p--&gt;
-{{#seo:
+      <text xml:space="preserve" bytes="238">{{#seo:
 |metakeywords=anonymity
 |og:type=website
 |article:publisher=https://www.facebook.com/Whonix
 |article:author=https://www.facebook.com/patrick.schleizer
 |og:image=https://www.whonix.org/blog/wp-content/uploads/2014/01/Banner2.png
 }}</text>
-      <sha1>b4zjnm9rynl92f0209iz3tuayhr4nki</sha1>
+      <sha1>625gdewfc221mzclrg4kyszsjd9b8kq</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -365,23 +352,24 @@ inspired by http://aboli.sh/
     <ns>10</ns>
     <id>15</id>
     <revision>
-      <id>6093</id>
-      <parentid>4763</parentid>
-      <timestamp>2014-02-28T00:15:01Z</timestamp>
+      <id>6862</id>
+      <parentid>6857</parentid>
+      <timestamp>2014-03-12T02:51:45Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="910">&lt;br /&gt;&lt;hr&gt;
+      <text xml:space="preserve" bytes="1785">&lt;br /&gt;&lt;hr&gt;&lt;font size=&quot;-3&quot;&gt;&lt;html&gt;&lt;a href=&quot;/w/index.php?title=Special:UserLogin&amp;returnto=Main+Page&quot; /&gt;Log in&lt;/a&gt;&lt;/html&gt; | [[Contact|Contact]] | [[Impressum]] | [[Datenschutz|Datenschutzerklärung]] | [[Disclaimer|Haftungsausschluss]]
+[https://www.whonix.org{{localurl:{{FULLPAGENAME}}}} https] | &lt;html&gt;&lt;a class=&quot;link-https&quot; style=&quot;color: #3366BB&quot; href=&quot;http://kkkkkkkkkk63ava6.onion&lt;/html&gt;{{localurl:{{FULLPAGENAME}}}}&lt;html&gt;&quot; rel=&quot;nofollow&quot;&gt;.onion&lt;/a&gt;&lt;/html&gt; &lt;sup&gt;[[Forcing .onion on Whonix.org|note]]&lt;/sup&gt; | [http://whonix.org.nyud.net{{localurl:{{FULLPAGENAME}}}} Mirror] | [https://kkkkkkkkkk63ava6.tor2web.org{{localurl:{{FULLPAGENAME}}}} Mirror]
+&lt;!--
+inspired by http://aboli.sh/
+@cnpirates ssl(tor) ssl(i2p) coralcdn .sdns .onion .i2p--&gt;
 
-&lt;font size=&quot;-3&quot;&gt;This is a wiki. Want to improve this page? See [https://github.com/Whonix/Whonix/blob/master/debian/copyright Conditions for Contributions to Whonix], then &lt;html&gt;&lt;a href=&quot;&lt;/html&gt;{{localurl:{{FULLPAGENAME}}|action=edit}}&lt;html&gt;&quot;&gt;Edit&lt;/a&gt;&lt;/html&gt; it! IP addresses are scrubbed, but editing over Tor is recommended. Edits are held for moderation.
+This is a wiki. Want to improve this page? See [https://github.com/Whonix/Whonix/blob/master/debian/copyright Conditions for Contributions to Whonix], then &lt;html&gt;&lt;a href=&quot;&lt;/html&gt;{{localurl:{{FULLPAGENAME}}|action=edit}}&lt;html&gt;&quot;&gt;Edit&lt;/a&gt;&lt;/html&gt; it! IP addresses are scrubbed, but editing over Tor is recommended. Edits are held for moderation.
 
-Whonix is a [http://www.openinventionnetwork.com/licensees.php licensee] of the [[File:OIN_logo_200px.png|link=https://en.wikipedia.org/wiki/Open_Invention_Network|alt=Open Invention Network|140px]]. Unless otherwise noted above, content of this  page is copyrighted by [mailto:adrelanos@riseup.net Patrick Schleizer] and licensed under the same Free (as in speech) [https://github.com/Whonix/Whonix/blob/master/debian/copyright license] as Whonix itself.
-
-Questions? [[Contact|Contact us!]]
-
-[[Contribute#Donate|Donate to Whonix!]]&lt;/font&gt;</text>
-      <sha1>ndh4mjh2ysd3cxb1fwcoswdl4wwndx6</sha1>
+Whonix (&lt;html&gt;&lt;a href=&quot;https://plus.google.com/108150429836421683225&quot; rel=&quot;publisher&quot; /&gt;g+&lt;/a&gt;&lt;/html&gt;) is a [http://www.openinventionnetwork.com/licensees.php licensee] of the [[File:OIN_logo_200px.png|link=https://en.wikipedia.org/wiki/Open_Invention_Network|alt=Open Invention Network|140px]]. Unless otherwise noted above, content of this  page is copyrighted by [mailto:adrelanos@riseup.net Patrick Schleizer] (&lt;html&gt;&lt;a href=&quot;/patrick.asc&quot;&gt;gpg&lt;/a&gt;&lt;/html&gt;) (&lt;html&gt;&lt;a href=&quot;https://plus.google.com/u/0/112678569435063398972?rel=author&quot;&gt;g+&lt;/a&gt;)&lt;/html&gt; and licensed under the same Free (as in speech) [https://github.com/Whonix/Whonix/blob/master/debian/copyright license] as Whonix itself.
+&lt;/font&gt;</text>
+      <sha1>ajohkwwdnary4xlj8rykc6h1xbavzuk</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -728,14 +716,14 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>19</id>
     <revision>
-      <id>6619</id>
-      <parentid>6618</parentid>
-      <timestamp>2014-03-07T15:22:32Z</timestamp>
+      <id>6866</id>
+      <parentid>6865</parentid>
+      <timestamp>2014-03-12T02:59:25Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="13034">{{Header}}
+      <text xml:space="preserve" bytes="13031">{{Header}}
 &lt;!--
 Copyright:
 
@@ -1071,12 +1059,9 @@ under certain conditions; see the wiki source code for details.
 &lt;/pre&gt;
 
 &lt;translate&gt;&lt;!--T:253--&gt;
-Some icons created by third parties, Free licenses as well, see [[Authorship#Images_created_by_third_parties|Authorship Images created by third parties]] for details.&lt;/translate&gt;
-
-{{Footer}}
-
-[[Category:Documentation]]</text>
-      <sha1>b7mwx7u0opmafe2lwin92ly5rtrdijn</sha1>
+Some icons created by third parties, Free licenses as well, see [[Authorship#Images_created_by_third_parties|Authorship Images created by third parties]] for details.
+&lt;/translate&gt;[[Category:Documentation]]{{Footer}}</text>
+      <sha1>puzjmnc60eb3rdgqlmc9r420jzozlr2</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -12791,15 +12776,14 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>118</id>
     <revision>
-      <id>6706</id>
-      <parentid>6705</parentid>
-      <timestamp>2014-03-08T14:23:36Z</timestamp>
+      <id>6860</id>
+      <parentid>6706</parentid>
+      <timestamp>2014-03-12T01:58:56Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* WIkipedia */</comment>
-      <text xml:space="preserve" bytes="5659">{{#seo:
+      <text xml:space="preserve" bytes="5842">{{#seo:
 |description=Donate, Spread, Follow, Mirror, Translate, Develop, Testing. Contribute to Free Software / Open Source.
 }}
 {{Header}}
@@ -12913,7 +12897,10 @@ Login on github, go to https://github.com/Whonix/Whonix/issues and press &quot;w
 
 If you know KDE desktop scripting, for example how to change Desktop view to folder view using a script and would volunteer to answer such questions that would be immensely helpful.
 
-= Audit =
+= Audit Documentation Changes =
+Keep up to date on our [[Special:RecentChanges|wiki changes]]. ([https://www.whonix.org/w/index.php?title=Special:RecentChanges&amp;feed=rss rss])
+
+= Audit Whonix =
 
 Audit Whonix's security.
 
@@ -12931,7 +12918,7 @@ The PayPal logo (60px-De-pp-logo-200px.png), the subscribe button (subscribeCC_L
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Development]]</text>
-      <sha1>ngnypn6z6zdqk8simvgdxy33maznphs</sha1>
+      <sha1>ktwtuqzzbewf5pohyf2yx2p1zh5npdf</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -42663,19 +42650,26 @@ The Tor Project never managed to get such a downloader up and running, see {{Cod
     <ns>0</ns>
     <id>437</id>
     <revision>
-      <id>6190</id>
-      <parentid>5329</parentid>
-      <timestamp>2014-03-02T00:20:16Z</timestamp>
+      <id>6856</id>
+      <parentid>6855</parentid>
+      <timestamp>2014-03-12T00:10:03Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="308">&lt;rss number=10 title=off desc=off&gt;https://www.whonix.org/blog/feed/rss2/&lt;/rss&gt;
+      <text xml:space="preserve" bytes="1025">{{Header}}
+
+
+Whonix is a [http://www.openinventionnetwork.com/licensees.php licensee] of the [[File:OIN_logo_200px.png|link=https://en.wikipedia.org/wiki/Open_Invention_Network|alt=Open Invention Network|140px]]. Unless otherwise noted above, content of this  page is copyrighted by [mailto:adrelanos@riseup.net Patrick Schleizer] (&lt;html&gt;&lt;a href=&quot;/patrick.asc&quot;&gt;gpg&lt;/a&gt;&lt;/html&gt;) (&lt;html&gt;&lt;a href=&quot;https://plus.google.com/u/0/112678569435063398972?rel=author&quot;&gt;g+&lt;/a&gt;)&lt;/html&gt; (&lt;html&gt;&lt;a href=&quot;https://plus.google.com/108150429836421683225&quot; rel=&quot;publisher&quot; /&gt;g+&lt;/a&gt;&lt;/html&gt;) and licensed under the same Free (as in speech) [https://github.com/Whonix/Whonix/blob/master/debian/copyright license] as Whonix itself.
+
+&lt;rss number=10 title=off desc=off&gt;https://www.whonix.org/blog/feed/rss2/&lt;/rss&gt;
 
 &lt;rss number=10 title=off desc=off&gt;https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10&lt;/rss&gt;
 
-&lt;rss number=10 title=off desc=off&gt;https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10;sa=news&lt;/rss&gt;</text>
-      <sha1>6hqj7bt569r7vm80oyi26h3jj72rqnk</sha1>
+&lt;rss number=10 title=off desc=off&gt;https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10;sa=news&lt;/rss&gt;
+
+{{Footer}}</text>
+      <sha1>qrxwrwmd4k99bqhjaqq0kmpqu1kbthz</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
