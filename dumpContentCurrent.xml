@@ -56442,14 +56442,15 @@ Quelle: &lt;html&gt;&lt;a href=&quot;http://www.juraforum.de/impressum-generator
     <ns>0</ns>
     <id>698</id>
     <revision>
-      <id>6885</id>
-      <parentid>6842</parentid>
-      <timestamp>2014-03-13T00:26:34Z</timestamp>
+      <id>6894</id>
+      <parentid>6885</parentid>
+      <timestamp>2014-03-13T15:39:35Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="3941">&lt;!--
+      <comment>/* Geltungsbereich */</comment>
+      <text xml:space="preserve" bytes="3988">&lt;!--
 NOTE TO WIKI EDITORS:
 Do not add the default footer!
 Do not edit without asking Patrick Schleizer beforehand!
@@ -56516,6 +56517,7 @@ Dieses Impressum gilt auch für:
 ** https://github.com/adrelanos/sdwdate
 ** https://github.com/adrelanos/popcon-benchmark
 ** https://github.com/adrelanos/torbirdy
+** https://github.com/Whonix/whonix-tor-config
 
 Bitte beachten Sie, dass dieses Impressum gilt nicht für:
 
@@ -56530,7 +56532,7 @@ Die Datenschutzerklärung finden Sie [[Datenschutz|hier]].
 Den Haftungsausschluss (Disclaimer) finden Sie [[Disclaimer|hier]].
 
 [[Category:Documentation]]</text>
-      <sha1>mifc0224bsp8jmozum2i0t0brhcfjcn</sha1>
+      <sha1>h4zxa2f18iwrftqhvve32yyxmu6dcg2</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -67799,13 +67801,13 @@ sudo aa-enforce /etc/apparmor.d/usr.lib.icedove.icedove
     <ns>0</ns>
     <id>1138</id>
     <revision>
-      <id>6882</id>
-      <parentid>6873</parentid>
-      <timestamp>2014-03-12T21:02:57Z</timestamp>
+      <id>6901</id>
+      <parentid>6898</parentid>
+      <timestamp>2014-03-13T22:16:13Z</timestamp>
       <contributor>
         <ip>127.0.0.1</ip>
       </contributor>
-      <text xml:space="preserve" bytes="5154">{{Header}}
+      <text xml:space="preserve" bytes="5176">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
@@ -67822,7 +67824,7 @@ kdesudo kwrite /etc/apparmor.d/usr.bin.whonixcheck
 Paste the following content.
 
 &lt;pre&gt;
-# Last modified: Wed Mar 12 20:33:58 UTC 2014
+# Last modified: Thu Mar 13 22:05:12 UTC 2014
 #include &lt;tunables/global&gt;
 
 /usr/bin/whonixcheck {
@@ -67936,6 +67938,7 @@ Paste the following content.
 	@{HOME}/.whonix/* rwcux,
 	
 	/lib/i386-linux-gnu/** mr, 
+	/lib/security/* mr,	
 	
 	@{PROC} r,
 	@{PROC}/cmdline r,
@@ -68047,7 +68050,7 @@ sudo aa-enforce /etc/apparmor.d/usr.bin.whonixcheck
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>o12nblumnwlfyjqjw38zeg2zjj6e2ju</sha1>
+      <sha1>44a8ntgb0l7tk2v0hpf6ian4eaea4gc</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -68057,14 +68060,13 @@ sudo aa-enforce /etc/apparmor.d/usr.bin.whonixcheck
     <ns>0</ns>
     <id>1139</id>
     <revision>
-      <id>6845</id>
-      <parentid>6796</parentid>
-      <timestamp>2014-03-11T21:38:08Z</timestamp>
+      <id>6900</id>
+      <parentid>6897</parentid>
+      <timestamp>2014-03-13T22:15:23Z</timestamp>
       <contributor>
-        <username>Troubadour</username>
-        <id>230</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <text xml:space="preserve" bytes="4164">{{Header}}
+      <text xml:space="preserve" bytes="4234">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
@@ -68081,7 +68083,7 @@ kdesudo kwrite /etc/apparmor.d/usr.bin.timesync
 Paste the following content.
 
 &lt;pre&gt;
-# Last Modified: Tue Mar 11 21:25:27 UTC 2014
+# Last Modified: Thu Mar 13 21:51:00 UTC 2014
 #include &lt;tunables/global&gt;
 
 /usr/bin/timesync {
@@ -68177,8 +68179,10 @@ Paste the following content.
 	@{HOME}/ r,
 	@{HOME}/.whonix/ r,
 	@{HOME}/.whonix/* rwcux,
+	@{HOME}/sdwdatetest rwk,
 	
 	/lib/i386-linux-gnu/** mr, 
+	/lib/security/* mr,	
 	
 	@{PROC} r,
 	@{PROC}/cmdline r,
@@ -68232,6 +68236,7 @@ Paste the following content.
 	/usr/bin/dpkg rix,
 	/usr/bin/gawk rix,
 	/usr/bin/awk rix,
+	/usr/bin/whoami rix,
 
 	/usr/sbin/service rix,
 	
@@ -68266,7 +68271,7 @@ sudo aa-enforce /etc/apparmor.d/usr.bin.timesync
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>cxo030qwex1woaga0zm42ur5s7saflt</sha1>
+      <sha1>eikj27hi5irqxbv6jacanij0ysqqphd</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -68608,13 +68613,13 @@ Weiterführende Links (in Englischer Sprache):
     <ns>0</ns>
     <id>1146</id>
     <revision>
-      <id>6883</id>
-      <parentid>6869</parentid>
-      <timestamp>2014-03-12T21:03:20Z</timestamp>
+      <id>6899</id>
+      <parentid>6896</parentid>
+      <timestamp>2014-03-13T22:14:37Z</timestamp>
       <contributor>
         <ip>127.0.0.1</ip>
       </contributor>
-      <text xml:space="preserve" bytes="5028">{{Header}}
+      <text xml:space="preserve" bytes="4860">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
@@ -68631,7 +68636,7 @@ kdesudo kwrite /etc/apparmor.d/usr.bin.sdwdate
 Paste the following content.
 
 &lt;pre&gt;
-# Last modified: Wed Mar 12 20:30:54 UTC 2014
+# Last modified: Thu Mar 13 22:04:37 UTC 2014
 #include &lt;tunables/global&gt;
 
 /usr/bin/sdwdate {
@@ -68724,10 +68729,7 @@ Paste the following content.
 	/etc/security/capability.conf r,
 	
 	/lib/i386-linux-gnu/security/* mr,	
-#	/lib/i386-linux-gnu/security/pam_unix.so mr,
-#	/lib/i386-linux-gnu/security/pam_deny.so mr,
-#	/lib/i386-linux-gnu/security/pam_permit.so mr,
-#	/lib/i386-linux-gnu/security/pam_cap.so mr,	
+	/lib/security/* mr,	
 	
 	@{PROC} r,
 	@{PROC}/cmdline r,
@@ -68799,8 +68801,8 @@ Paste the following content.
 	/usr/bin/dpkg-query rix,
 	/usr/bin/gawk rix,
 	/usr/bin/awk rix,
-	/usr/sbin/service rix,
 
+	/usr/sbin/service rix,
 
 	/usr/share/whonix/build_version r,
 	/usr/share/ca-certificates/** r,
@@ -68833,7 +68835,7 @@ sudo aa-enforce /etc/apparmor.d/usr.bin.sdwdate
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>hziu4f38he8lps5u2kyw6yxqtkc4gni</sha1>
+      <sha1>9048cx4ec3jbpdeo2o9sujtp02e6ujp</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -68852,23 +68854,6 @@ sudo aa-enforce /etc/apparmor.d/usr.bin.sdwdate
       </contributor>
       <text xml:space="preserve" bytes="67">The Flattr badge (Flattr-badge-large.png) is copyrighted by Flattr.</text>
       <sha1>qngljg6c9lhqz331n9behsbf54wsexr</sha1>
-      <model>wikitext</model>
-      <format>text/x-wiki</format>
-    </revision>
-  </page>
-  <page>
-    <title>Translator</title>
-    <ns>0</ns>
-    <id>1148</id>
-    <revision>
-      <id>6893</id>
-      <timestamp>2014-03-13T05:29:28Z</timestamp>
-      <contributor>
-        <ip>127.0.0.1</ip>
-      </contributor>
-      <comment>Created page with &quot;Сделать перевод&quot;</comment>
-      <text xml:space="preserve" bytes="29">Сделать перевод</text>
-      <sha1>qq45x637ahopm34s6aie0aqpck3cjou</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
