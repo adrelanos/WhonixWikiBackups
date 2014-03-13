@@ -10271,24 +10271,31 @@ under certain conditions; see the wiki source code for details.
     <ns>0</ns>
     <id>103</id>
     <revision>
-      <id>5806</id>
-      <parentid>3243</parentid>
-      <timestamp>2014-02-27T12:41:18Z</timestamp>
+      <id>6892</id>
+      <parentid>5806</parentid>
+      <timestamp>2014-03-13T01:45:46Z</timestamp>
       <contributor>
-        <username>Adrelanos</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <text xml:space="preserve" bytes="2416">{{Header}}
+      <comment>bbbb</comment>
+      <text xml:space="preserve" bytes="2880">{{Header}}
 {{#seo:
 |description=Anonymous IRC Chat. XChat over the Tor Anonymity Network.
 }}
 [[File:Xchat.png|400px||thumb|XChat (IRC Client), showing chat window]]
 [[File:xchat_screenshot_created_by_adrelanos.png|400px||thumb|XChat (IRC Client), showing /whois of oneself]]
-== Introduction ==
+== FREE Chatting - Chatting Online, Chatting Sites ==
 
-XChat&lt;ref&gt;http://xchat.org/&lt;/ref&gt; in Whonix has been hardened according to TorifyHOWTO/XChat&lt;ref&gt;https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/XChat&lt;/ref&gt;. All servers, besides the secure (SSL) version of OFTC have been removed. You are encouraged to add the secure version of your IRC server. (Preferably a hidden service, SSL as a fallback or at best, both.) See also [https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/XChat TorifyHOWTO/XChat].
 
-On OFTC is the official #Tor. Note that no Whonix developers hang out there! Upstream Tor developers do not support Whonix. For contacting Whonix developers, see [[Contact | Contacting Whonix developers / Feedback / Questions]].
+
+Join FREE Chatting - Chatting Online, Chatting Sites
+
+ChatRoll is an [http://chatroll.org/ Free online Chatting] Video website that pairs strangers from around the world together for webcam-based conversations. Visitors to the website begin an online chat (text, audio, and video) with another visitor who is chosen at random. At any point, either user may leave the current chat by initiating another random connection. 
+
+[http://chatroll.org/ ChaTroll] offers a random chat system, which allows you to meet new people with video chat for free. The online video chat system will pair you at random with another person using the free chat video . If you don't like the people you meet, you can click on the &quot;Next&quot; button to match somebody new.
+
+
+[http://chatroll.org/free-chatting-websites/ Free Chatting Websites], [http://chatroll.org/free-online-chatting-without-registration/ Free Online Chatting Without Registration], [http://chatroll.org/video-chatting-websites/ Video Chatting Websites],[http://chatroll.org/online-chatting-with-strangers/ Online Chatting With Strangers],[http://chatroll.org/chats-online/‎ Chats Online]
 
 == How to start XChat ==
 
@@ -10329,7 +10336,7 @@ The [https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/IrcSilc Torif
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>pzst3zswzlbxixc9y8gqekfq3x1uh6q</sha1>
+      <sha1>3mz1bwmwip3cadk34gk08nnuul8nkr8</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -12804,14 +12811,15 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>118</id>
     <revision>
-      <id>6860</id>
-      <parentid>6706</parentid>
-      <timestamp>2014-03-12T01:58:56Z</timestamp>
+      <id>6890</id>
+      <parentid>6860</parentid>
+      <timestamp>2014-03-13T00:59:21Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="5842">{{#seo:
+      <comment>/* License */</comment>
+      <text xml:space="preserve" bytes="5910">{{#seo:
 |description=Donate, Spread, Follow, Mirror, Translate, Develop, Testing. Contribute to Free Software / Open Source.
 }}
 {{Header}}
@@ -12941,12 +12949,12 @@ grep -r &quot;REVIEW&quot; *
 for places where I could need more input. Also reviewing the whole source code or just the major configuration files would be fine. Or review the [[Design]].
 
 = License =
-The PayPal logo (60px-De-pp-logo-200px.png), the subscribe button (subscribeCC_LG.gif), the buy now button (Btn_buynowCC_LG.gif) and the pixel (pixel.gif) is copyrighted by PayPal.
+The PayPal logo (60px-De-pp-logo-200px.png), the subscribe button (subscribeCC_LG.gif), the buy now button (Btn_buynowCC_LG.gif) and the pixel (pixel.gif) is copyrighted by PayPal. The Flattr badge (Flattr-badge-large.png) is copyrighted by Flattr.
 
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Development]]</text>
-      <sha1>ktwtuqzzbewf5pohyf2yx2p1zh5npdf</sha1>
+      <sha1>1oypco9ubi2qloama1sq4qqe6w7zwyd</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -33252,16 +33260,15 @@ Credits: anonym on tails-dev wrote some things about Flash Proxy. These have bee
     <ns>0</ns>
     <id>275</id>
     <revision>
-      <id>6724</id>
-      <parentid>6723</parentid>
-      <timestamp>2014-03-08T20:20:11Z</timestamp>
+      <id>6884</id>
+      <parentid>6724</parentid>
+      <timestamp>2014-03-12T23:44:05Z</timestamp>
       <contributor>
         <username>JasonJAyalaP</username>
         <id>9</id>
       </contributor>
-      <minor/>
-      <comment>file sharing</comment>
-      <text xml:space="preserve" bytes="2146">{{Header}}
+      <comment>/* Please limit! */  removed vpn</comment>
+      <text xml:space="preserve" bytes="1950">{{Header}}
 {{#seo:
 |description=Anonymous File Sharing using Whonix
 }}
@@ -33269,9 +33276,7 @@ Credits: anonym on tails-dev wrote some things about Flash Proxy. These have bee
 == Please limit! ==
 Whonix will keep your IP address hidden while you use BitTorrent and other file sharing and P2P programs. However, because the Tor network suffers from limited bandwidth shared among many users, please be aware of how much you are downloading and uploading with these programs: A single 500 megabyte media file can equal hours of browsing for another user.
 
-Violation of copyright laws risks harassment against exit nodes. Instead of using Tor to circumvent laws that don't protect file sharing with fair or private use exemptions, consider a paid VPN service which will direct your internet traffic to jurisdictions with such exemptions.
-
-To learn more about legal protections in your country: https://en.wikipedia.org/wiki/Legal_aspects_of_file_sharing
+Violation of copyright laws risks harassment against exit nodes. To learn more about legal protections for file sharing in your country, see https://en.wikipedia.org/wiki/Legal_aspects_of_file_sharing
 
 == The Tor Project ==
 
@@ -33295,7 +33300,7 @@ Quote: [https://blog.torproject.org/blog/bittorrent-over-tor-isnt-good-idea Roge
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Development]]</text>
-      <sha1>1n4xk974htfjytg7tc31zi8wotmjb54</sha1>
+      <sha1>gy2i6h1g4ps6yz94q7k3bklcn0z7ijl</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -40345,14 +40350,15 @@ Sourceforge support, ctsai-sf on freenode in #sourceforge said, they use GeoIP f
     <ns>0</ns>
     <id>374</id>
     <revision>
-      <id>6291</id>
-      <parentid>6281</parentid>
-      <timestamp>2014-03-04T23:17:35Z</timestamp>
+      <id>6889</id>
+      <parentid>6291</parentid>
+      <timestamp>2014-03-13T00:59:04Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="412">__NOTOC__
+      <comment>/* License */</comment>
+      <text xml:space="preserve" bytes="480">__NOTOC__
 __NOTITLE__
 {{Header}}
 {{#seo:
@@ -40362,11 +40368,12 @@ __NOTITLE__
 
 = License =
 The PayPal logo (60px-De-pp-logo-200px.png), the subscribe button (subscribeCC_LG.gif), the buy now button (Btn_buynowCC_LG.gif) and the pixel (pixel.gif) is copyrighted by PayPal.
+The Flattr badge (Flattr-badge-large.png) is copyrighted by Flattr.
 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>63ijjqhrc6ubsdtpqmgm1frdvq8oqty</sha1>
+      <sha1>4a7xw3c4kqy6xuvsz7wcg2fl5zh7vti</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -56435,15 +56442,14 @@ Quelle: &lt;html&gt;&lt;a href=&quot;http://www.juraforum.de/impressum-generator
     <ns>0</ns>
     <id>698</id>
     <revision>
-      <id>6842</id>
-      <parentid>5926</parentid>
-      <timestamp>2014-03-11T19:21:40Z</timestamp>
+      <id>6885</id>
+      <parentid>6842</parentid>
+      <timestamp>2014-03-13T00:26:34Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <comment>/* Geltungsbereich */</comment>
-      <text xml:space="preserve" bytes="3967">&lt;!--
+      <text xml:space="preserve" bytes="3941">&lt;!--
 NOTE TO WIKI EDITORS:
 Do not add the default footer!
 Do not edit without asking Patrick Schleizer beforehand!
@@ -56474,9 +56480,9 @@ Dieses Impressum gilt auch für:
 * Alle Artikel auf https://www.whonix.org / http://zo7fksnun4b4v4jv.onion / http://kkkkkkkkkk63ava6.onion, in denen dieses Impressum verlinkt ist.
 * Twitter Whonix: https://twitter.com/Whonix
 * Twitter WhonixSource: https://twitter.com/WhonixSource
-* Google+ Whonix: https://plus.google.com/108150429836421683225/about
-* Google+ adrelanos: https://plus.google.com/u/0/102912938397451649726/about
-* Google+ Patrick Schleizer: https://plus.google.com/u/0/112678569435063398972/about
+* Google+ Whonix: https://plus.google.com/108150429836421683225
+* Google+ adrelanos: https://plus.google.com/102912938397451649726
+* Google+ Patrick Schleizer: https://plus.google.com/112678569435063398972
 * YouTube adrelanos: https://www.youtube.com/user/adrelanos
 * YouTube Patrick Schleizer: http://www.youtube.com/channel/UC4_4e5cN5zhCS13W8v_d4nw
 * wordpress: https://anonymousoperatingsystem.wordpress.com/
@@ -56524,7 +56530,7 @@ Die Datenschutzerklärung finden Sie [[Datenschutz|hier]].
 Den Haftungsausschluss (Disclaimer) finden Sie [[Disclaimer|hier]].
 
 [[Category:Documentation]]</text>
-      <sha1>3e7vabjeyyy3ks5unu0edztw63a6ztm</sha1>
+      <sha1>mifc0224bsp8jmozum2i0t0brhcfjcn</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -61409,14 +61415,14 @@ Please consider a recurring donation!&lt;/translate&gt;
     <ns>10</ns>
     <id>875</id>
     <revision>
-      <id>6704</id>
-      <parentid>6299</parentid>
-      <timestamp>2014-03-08T14:17:50Z</timestamp>
+      <id>6888</id>
+      <parentid>6886</parentid>
+      <timestamp>2014-03-13T00:45:18Z</timestamp>
       <contributor>
         <username>Adrelanos</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="4282">__NOTOC__
+      <text xml:space="preserve" bytes="5035">__NOTOC__
 Donations are used to allow Whonix developer Patrick Schleizer to work full time on Whonix and to pay for whonix.org server cost. Small monthly donations are preferred. Please consider recurring donation of 1 $ or €. With enough small monthly donations, this will be possible.
 
 &lt;!-------------------------bank transfer, PayPal------------------------&gt;
@@ -61482,6 +61488,26 @@ LW3wgQtZhtR2G5Uv48rSzonFd1arhUfjE9
 &lt;/pre&gt;
 
 |-
+! &lt;h3 style=&quot;margin:0; background:#cedff2; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Check, Cash, Money Order&lt;/h3&gt;
+|-
+|style=&quot;color:#000;&quot;|
+You can send checks or money orders to:
+&lt;pre&gt;
+Patrick Schleizer
+Waldzieststr. 16
+04329 Leipzig 
+Germany
+&lt;/pre&gt;
+
+|-
+! &lt;h3 style=&quot;margin:0; background:#cedff2; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Flattr&lt;/h3&gt;
+|-
+|style=&quot;color:#000;&quot;|
+&lt;html&gt;
+&lt;a href=&quot;https://flattr.com/submit/auto?user_id=Patrick_Schleizer&amp;url=https%3A%2F%2Fwww.whonix.org&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/w/images/4/4c/Flattr-badge-large.png&quot; alt=&quot;Flattr this&quot; title=&quot;Flattr this&quot; border=&quot;0&quot;&gt;&lt;/a&gt;
+&lt;/html&gt;
+
+|-
 ! &lt;h3 style=&quot;margin:0; background:#cedff2; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Contribute&lt;/h3&gt;
 |-
 |style=&quot;color:#000;&quot;|
@@ -61500,7 +61526,7 @@ Please get in [[Contact#For_Donations|Contact]] if you would like to donate but 
 Donations aren't tax-deducible, because Whonix isn't a (non-profit) company yet.
 
 To leave feedback, you could join the [https://www.whonix.org/forum/index.php/topic,76.0.html Forum Discussion about Donations].</text>
-      <sha1>gh0h9y8d4jnkvkfq3yo3hr07qcbevir</sha1>
+      <sha1>a9jb3bqq40mxfcb9apyn6bcjst8pdqv</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -68808,6 +68834,41 @@ sudo aa-enforce /etc/apparmor.d/usr.bin.sdwdate
 
 [[Category:Documentation]]</text>
       <sha1>hziu4f38he8lps5u2kyw6yxqtkc4gni</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:Flattr-badge-large.png</title>
+    <ns>6</ns>
+    <id>1147</id>
+    <revision>
+      <id>6891</id>
+      <parentid>6887</parentid>
+      <timestamp>2014-03-13T00:59:36Z</timestamp>
+      <contributor>
+        <username>Adrelanos</username>
+        <id>2</id>
+      </contributor>
+      <text xml:space="preserve" bytes="67">The Flattr badge (Flattr-badge-large.png) is copyrighted by Flattr.</text>
+      <sha1>qngljg6c9lhqz331n9behsbf54wsexr</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translator</title>
+    <ns>0</ns>
+    <id>1148</id>
+    <revision>
+      <id>6893</id>
+      <timestamp>2014-03-13T05:29:28Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Created page with &quot;Сделать перевод&quot;</comment>
+      <text xml:space="preserve" bytes="29">Сделать перевод</text>
+      <sha1>qq45x637ahopm34s6aie0aqpck3cjou</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
