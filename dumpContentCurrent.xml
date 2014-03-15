@@ -1439,14 +1439,14 @@ See also [[Security_in_Real_World | Whonix security in real world]], [[Security_
     <ns>0</ns>
     <id>24</id>
     <revision>
-      <id>6871</id>
-      <parentid>6766</parentid>
-      <timestamp>2014-03-12T17:08:40Z</timestamp>
+      <id>6924</id>
+      <parentid>6871</parentid>
+      <timestamp>2014-03-15T19:09:25Z</timestamp>
       <contributor>
-        <username>Troubadour</username>
-        <id>230</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <text xml:space="preserve" bytes="14424">&lt;!--
+      <comment>Added columns and made link text smaller. Hopefully more readable. Not as pretty as JonDo site I know but some of these lists are really long so I wasn't sure how else to present them.</comment>
+      <text xml:space="preserve" bytes="18395">&lt;!--
 Copyright:
 
    Whonix Documentation wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -1487,228 +1487,274 @@ This documentation is a crash course in anonymity and security on the Internet. 
 
 Anonymity is a complex problem without an easy solution, and security is only as strong as its weakest link—often the user. The more you know, the safer you can be. Fortunately, basic knowledge and caution will go far.
 
-'''General information'''
 
-* [[Main Page|Very brief introduction and summary on Whonix Homepage]]
-* [[Anonymity|Why do you need anonymity?]]
-* [[The World Wide Web And Your Privacy|The World Wide Web and your privacy]]
-* [[Surveillance Capabilities|Surveillance Capabilities]]
-* [[Data Collection Techniques|Data Collection Techniques]]
-* [[About|More About Whonix]]
-* [[Features|Features]]
-* [[System Requirements|System requirements]]
-* [[Warning|Warnings!]]
-* [[DoNot|Non-technical steps for staying anonymous]]
-* [[Security in Real World|Whonix Security in Real World]]
-* [[Whonix:Privacy_policy|Whonix.org Site Security]]
-* [[Comparison with Others|Comparison of Whonix, Tails, Tor Browser Bundle and TorVM]]
-* [[Comparison of different Whonix variants|Comparison of different Whonix variants]]
-* [[Screenshots|Screenshots]]
-* [[Trust|Trusting Whonix]]
-* [[Fingerprint|Fingerprint]]
-* [https://github.com/Whonix/Whonix/blob/master/COPYING License]
-* [[Download#Known_bugs|Known bugs]]
+
+'''General information'''
+&lt;div style=&quot;column-count:3;-moz-column-count:3;-webkit-column-count:3&quot;&gt;
+
+* &lt;small&gt;[[Main Page|Very brief introduction and summary on Whonix Homepage]]&lt;/small&gt;
+* &lt;small&gt;  [[Anonymity|Why do you need anonymity?]]&lt;/small&gt;
+* &lt;small&gt;[[The World Wide Web And Your Privacy|The World Wide Web and your privacy]]&lt;/small&gt;
+* &lt;small&gt; [[Surveillance Capabilities|Surveillance Capabilities]]&lt;/small&gt;
+* &lt;small&gt; [[Data Collection Techniques|Data Collection Techniques]]&lt;/small&gt;
+* &lt;small&gt; [[About|More About Whonix]]&lt;/small&gt;
+* &lt;small&gt; [[Features|Features]]&lt;/small&gt;
+* &lt;small&gt; [[System Requirements|System requirements]]&lt;/small&gt;
+* &lt;small&gt; [[Warning|Warnings!]]&lt;/small&gt;
+* &lt;small&gt; [[DoNot|Non-technical steps for staying anonymous]]&lt;/small&gt;
+* &lt;small&gt; [[Security in Real World|Whonix Security in Real World]]&lt;/small&gt;
+* &lt;small&gt; [[Whonix:Privacy_policy|Whonix.org Site Security]]&lt;/small&gt;
+* &lt;small&gt; [[Comparison with Others|Comparison of Whonix, Tails, Tor Browser Bundle and TorVM]]&lt;/small&gt;
+* &lt;small&gt; [[Comparison of different Whonix variants|Comparison of different Whonix variants]]&lt;/small&gt;
+* &lt;small&gt; [[Screenshots|Screenshots]]&lt;/small&gt;
+* &lt;small&gt; [[Trust|Trusting Whonix]]&lt;/small&gt;
+* &lt;small&gt; [[Fingerprint|Fingerprint]]&lt;/small&gt;
+* &lt;small&gt; [https://github.com/Whonix/Whonix/blob/master/COPYING License]&lt;/small&gt;
+* &lt;small&gt; [[Download#Known_bugs|Known bugs]]&lt;/small&gt;
+&lt;/div&gt;
+
 
 '''Get Whonix'''
+&lt;div style=&quot;column-count:3;-moz-column-count:3;-webkit-column-count:3&quot;&gt;
 
-* [[Download#First_time_user.3F|First time user?]]
-* [[Download#Download_Whonix|Download Whonix]]
-* [[Whonix Signing Key|Download Whonix signing key]]
-* [[Download#Verify_the_Whonix_images|Verify the Whonix images]]
-** [[Verify_the_virtual_machine_images_using_Linux|For Linux: Ubuntu, Debian, Whonix, etc. using kgpg]]
-** [[Verify_the_virtual_machine_images_using_the_command_line|For Linux with the command line]]
-** [[Verify_the_virtual_machine_images_using_other_operating_systems|For Windows or Mac]]
-* [[Pre Install Advice|Security Advice before installing Whonix]]
-* [[Download#Install_Whonix|Install Whonix]]
+* &lt;small&gt; [[Download#First_time_user.3F|First time user?]]&lt;/small&gt;
+* &lt;small&gt; [[Download#Download_Whonix|Download Whonix]]&lt;/small&gt;
+* &lt;small&gt; [[Whonix Signing Key|Download Whonix signing key]]&lt;/small&gt;
+* &lt;small&gt; [[Download#Verify_the_Whonix_images|Verify the Whonix images]]&lt;/small&gt;
+** &lt;small&gt; [[Verify_the_virtual_machine_images_using_Linux|For Linux: Ubuntu, Debian, Whonix, etc. using kgpg]]&lt;/small&gt;
+** &lt;small&gt; [[Verify_the_virtual_machine_images_using_the_command_line|For Linux with the command line]]&lt;/small&gt;
+** &lt;small&gt; [[Verify_the_virtual_machine_images_using_other_operating_systems|For Windows or Mac]]&lt;/small&gt;
+* &lt;small&gt; [[Pre Install Advice|Security Advice before installing Whonix]]&lt;/small&gt;
+* &lt;small&gt; [[Download#Install_Whonix|Install Whonix]]&lt;/small&gt;
+&lt;/div&gt;
+
 
 '''First steps with Whonix'''
+&lt;div style=&quot;column-count:3;-moz-column-count:3;-webkit-column-count:3&quot;&gt;
 
-* [[Post Install Advice|Security Advice after Installing Whonix]]
-* [[Starting Whonix#Starting Whonix|Starting Whonix]]
-* [[Starting Whonix#Boot Options|Startup Options]]
-* [[Bridges|Tor Bridge Mode, using (private) (obfuscated) bridges]]
-* [[Download#Stay tuned|Stay tuned]]
-* [[Language|Change the system language]]
-* [[Keyboard Layout|Change the keyboard layout]]
-* [[Desktop|KDE/Whonix Desktop Tips]]
-* [[Higher_Screen_Resolution|Higher Screen Resolution without installing VirtualBox guest additions]]
-* [[Security Guide|Security Guide]]
-* [[Install Software|Install additional software]]
+* &lt;small&gt; [[Post Install Advice|Security Advice after Installing Whonix]]&lt;/small&gt;
+* &lt;small&gt; [[Starting Whonix#Starting Whonix|Starting Whonix]]&lt;/small&gt;
+* &lt;small&gt; [[Starting Whonix#Boot Options|Startup Options]]&lt;/small&gt;
+* &lt;small&gt; [[Bridges|Tor Bridge Mode, using (private) (obfuscated) bridges]]&lt;/small&gt;
+* &lt;small&gt; [[Download#Stay tuned|Stay tuned]]&lt;/small&gt;
+* &lt;small&gt; [[Language|Change the system language]]&lt;/small&gt;
+* &lt;small&gt; [[Keyboard Layout|Change the keyboard layout]]&lt;/small&gt;
+* &lt;small&gt; [[Desktop|KDE/Whonix Desktop Tips]]&lt;/small&gt;
+* &lt;small&gt; [[Higher_Screen_Resolution|Higher Screen Resolution without installing VirtualBox guest additions]]&lt;/small&gt;
+* &lt;small&gt; [[Security Guide|Security Guide]]&lt;/small&gt;
+* &lt;small&gt; [[Install Software|Install additional software]]&lt;/small&gt;
+&lt;/div&gt;
+
 
 '''Bugs'''
+&lt;div style=&quot;column-count:3;-moz-column-count:3;-webkit-column-count:3&quot;&gt;
 
-* [[Reporting Bugs|Reporting Bugs]]
-* [[Test|Troubeshooting]]
-* [[Starting Whonix#PAE crash|Whonix does not start]]
+* &lt;small&gt; [[Reporting Bugs|Reporting Bugs]]&lt;/small&gt;
+* &lt;small&gt; [[Test|Troubeshooting]]&lt;/small&gt;
+* &lt;small&gt; [[Starting Whonix#PAE crash|Whonix does not start]]&lt;/small&gt;
+&lt;/div&gt;
+
 
 '''Connect to the Internet anonymously'''
+&lt;div style=&quot;column-count:3;-moz-column-count:3;-webkit-column-count:3&quot;&gt;
 
-* [[Logging_in_to_captive_portals|Logging in to captive portals, Hotspot Wi-Fi registration]]
-* [[Tor Controller|Controlling Tor]]
-* [[Tor Browser|Browsing the web with Tor Browser]]
-** [[Surfing_Posting_Blogging|Surfing, Posting, Blogging]]
-** [[Browser Plugins|Using Browser Plugins, Adobe Flash]]
-* [[Chat|Chatting]]
-** [[Chat#General Safety Advice|General Safety Advice]]
-** [[Chat#TorChat|TorChat]]
-** [[Chat#RetroShare|RetroShare serverless encrypted instant messenger and more - experimental in Whonix]]
-** [[Chat#Pidgin|Pidgin multi-protocol instant messenger]]
-** [[Chat#OTR_encryption|Pidgin OTR end-to-end encryption]]
-** [[XChat|Chatting on IRC with XChat]]
-* [[Hosting Location Hidden Services|Hosting Location/IP Hidden Servers]]
-** [[Hidden Services|Hosting Tor Hidden Services, ANY, Hidden Webserver]]
-** [[Hosting|Third Party Hosting Services]]
-* [[File Sharing|Filesharing, BitTorrent]]
-* [[E-Mail|E-Mail: Introduction, Webmail, Mozilla Thunderbird with TorBirdy]]
-** [[Remailer|Sending e-mails without registration through Webinterface, Introduction into Remailer]]
-** [[Mixmaster|Mixmaster, a Remailer over Tor]]
-* [[rss|rss reader (unfinished in Whonix - under development), subscribing to website and/or blog updates, rss to e-mail and rss to sms]]
-* [[Money|Anonymous Money, anonymously pay and receive money, Bitcoin, BTC (DRAFT!)]]
-* [[Voip|Phone Calls, Voice over IP, Voip (UNFINISHED!)]]
-* [[Other Anonymizing Networks|Accessing Other Anonymizing Services over Tor]]
-** [[i2p|i2p]]
-** [[Freenet|Freenet (hack, advanced users only)]]
-** [[JonDonym|JonDonym]]
-** [[Chat#RetroShare|RetroShare (experimental in Whonix)]]
+* &lt;small&gt; [[Logging_in_to_captive_portals|Logging in to captive portals, Hotspot Wi-Fi registration]]&lt;/small&gt;
+* &lt;small&gt; [[Tor Controller|Controlling Tor]]&lt;/small&gt;
+* &lt;small&gt; [[Tor Browser|Browsing the web with Tor Browser]]&lt;/small&gt;
+** &lt;small&gt; [[Surfing_Posting_Blogging|Surfing, Posting, Blogging]]&lt;/small&gt;
+** &lt;small&gt; [[Browser Plugins|Using Browser Plugins, Adobe Flash]]&lt;/small&gt;
+* &lt;small&gt; [[Chat|Chatting]]&lt;/small&gt;
+** &lt;small&gt; [[Chat#General Safety Advice|General Safety Advice]]&lt;/small&gt;
+** &lt;small&gt; [[Chat#TorChat|TorChat]]&lt;/small&gt;
+** &lt;small&gt; [[Chat#RetroShare|RetroShare serverless encrypted instant messenger and more - experimental in Whonix]]&lt;/small&gt;
+** &lt;small&gt; [[Chat#Pidgin|Pidgin multi-protocol instant messenger]]&lt;/small&gt;
+** &lt;small&gt; [[Chat#OTR_encryption|Pidgin OTR end-to-end encryption]]&lt;/small&gt;
+** &lt;small&gt; [[XChat|Chatting on IRC with XChat]]&lt;/small&gt;
+* &lt;small&gt; [[Hosting Location Hidden Services|Hosting Location/IP Hidden Servers]]&lt;/small&gt;
+** &lt;small&gt; [[Hidden Services|Hosting Tor Hidden Services, ANY, Hidden Webserver]]&lt;/small&gt;
+** &lt;small&gt; [[Hosting|Third Party Hosting Services]]&lt;/small&gt;
+* &lt;small&gt; [[File Sharing|Filesharing, BitTorrent]]&lt;/small&gt;
+* &lt;small&gt; [[E-Mail|E-Mail: Introduction, Webmail, Mozilla Thunderbird with TorBirdy]]&lt;/small&gt;
+** &lt;small&gt; [[Remailer|Sending e-mails without registration through Webinterface, Introduction into Remailer]]&lt;/small&gt;
+** &lt;small&gt; [[Mixmaster|Mixmaster, a Remailer over Tor]]&lt;/small&gt;
+* &lt;small&gt; [[rss|rss reader (unfinished in Whonix - under development), subscribing to website and/or blog updates, rss to e-mail and rss to sms]]&lt;/small&gt;
+* &lt;small&gt; [[Money|Anonymous Money, anonymously pay and receive money, Bitcoin, BTC (DRAFT!)]]&lt;/small&gt;
+* &lt;small&gt; [[Voip|Phone Calls, Voice over IP, Voip (UNFINISHED!)]]&lt;/small&gt;
+* &lt;small&gt; [[Other Anonymizing Networks|Accessing Other Anonymizing Services over Tor]]&lt;/small&gt;
+** &lt;small&gt; [[i2p|i2p]]&lt;/small&gt;
+** &lt;small&gt; [[Freenet|Freenet (hack, advanced users only)]]&lt;/small&gt;
+** &lt;small&gt; [[JonDonym|JonDonym]]&lt;/small&gt;
+** &lt;small&gt; [[Chat#RetroShare|RetroShare (experimental in Whonix)]]&lt;/small&gt;
+&lt;/div&gt;
+
 
 '''Encryption &amp; Privacy'''
+&lt;div style=&quot;column-count:3;-moz-column-count:3;-webkit-column-count:3&quot;&gt;
 
-* [[Metadata|Clean metadata in files]]
-* [[Software#Encrypt.2C_decrypt.2C_sign.2C_and_verify_text_using_OpenPGP.3B_GnuPG_frontend | OpenPGP with KGPG]]
-* [[OpenPGP|OpenPGP key distribution strategies and trust models]]
+* &lt;small&gt; [[Metadata|Clean metadata in files]]&lt;/small&gt;
+* &lt;small&gt; [[Software#Encrypt.2C_decrypt.2C_sign.2C_and_verify_text_using_OpenPGP.3B_GnuPG_frontend | OpenPGP with KGPG]]&lt;/small&gt;
+* &lt;small&gt; [[OpenPGP|OpenPGP key distribution strategies and trust models]]&lt;/small&gt;
+&lt;/div&gt;
+
 
 '''Tools'''
+&lt;div style=&quot;column-count:3;-moz-column-count:3;-webkit-column-count:3&quot;&gt;
 
-* [[Software#Media Player|Media Player]]
-* [[Software#Image Viewer|Image Viewer]]
-* [[Software#Desktop Screenshot Creator|Desktop Screenshot Creator]]
-* [[Software#Desktop Video Recorder|Desktop Video Recorder]]
-* [[Software#Calculator|Calculator]]
-* [[Software#Terminal|Terminal]]
+* &lt;small&gt; [[Software#Media Player|Media Player]]&lt;/small&gt;
+* &lt;small&gt; [[Software#Image Viewer|Image Viewer]]&lt;/small&gt;
+* &lt;small&gt; [[Software#Desktop Screenshot Creator|Desktop Screenshot Creator]]&lt;/small&gt;
+* &lt;small&gt; [[Software#Desktop Video Recorder|Desktop Video Recorder]]&lt;/small&gt;
+* &lt;small&gt; [[Software#Calculator|Calculator]]&lt;/small&gt;
+* &lt;small&gt; [[Software#Terminal|Terminal]]&lt;/small&gt;
+&lt;/div&gt;
+
 
 '''Work on sensitive documents'''
+&lt;div style=&quot;column-count:3;-moz-column-count:3;-webkit-column-count:3&quot;&gt;
 
-* [[Software#Office Suite|Office suite]]
-* [[Software#Image Editing|Graphics]]
-* [[Software#Video Editing|Video]]
-* [[Software#Publishing|Publishing]]
-* [[Software#Audio Editing|Audio]]
-* [[Software#Printing and Scanning|Printing and scanning]]
+* &lt;small&gt; [[Software#Office Suite|Office suite]]&lt;/small&gt;
+* &lt;small&gt; [[Software#Image Editing|Graphics]]&lt;/small&gt;
+* &lt;small&gt; [[Software#Video Editing|Video]]&lt;/small&gt;
+* &lt;small&gt; [[Software#Publishing|Publishing]]&lt;/small&gt;
+* &lt;small&gt; [[Software#Audio Editing|Audio]]&lt;/small&gt;
+* &lt;small&gt; [[Software#Printing and Scanning|Printing and scanning]]&lt;/small&gt;
+&lt;/div&gt;
+
 
 '''Tunnel Support / Chaining Support'''
+&lt;div style=&quot;column-count:3;-moz-column-count:3;-webkit-column-count:3&quot;&gt;
 
-* [[Features#VPN_.2F_Tunnel_support|Tunnel Support]]
-* [[Tunnel_Tor_through_proxy_or_VPN_or_SSH|Tunnel Tor through proxy, VPN or SSH (proxy/VPN/SSH -&gt; Tor)]]
-** [[Tunnel_Tor_through_proxy_or_VPN_or_SSH|Tunnel Tor through proxy (proxy -&gt; Tor)]]
-** [[Tunnel_Tor_through_proxy_or_VPN_or_SSH|Tunnel Tor through SSH (SSH -&gt; Tor)]]
-** [[Tunnel_Tor_through_proxy_or_VPN_or_SSH|Tunnel Tor through VPN (VPN -&gt; Tor)]]
-* [[Tunnel_Proxy_or_SSH_or_VPN_through_Tor|Tunnel Proxy/SSH/VPN through Tor (Tor -&gt; Proxy/SSH/VPN)]]
-** [[Tunnel_Proxy_or_SSH_or_VPN_through_Tor|Tunnel proxy through Tor (Tor -&gt; proxy)]]
-** [[Tunnel_Proxy_or_SSH_or_VPN_through_Tor|Tunnel SSH through Tor (Tor -&gt; SSH)]]
-** [[Tunnel_Proxy_or_SSH_or_VPN_through_Tor|Tunnel VPN through Tor (Tor -&gt; VPN)]]
-* [[TestVPN|Example VPNs working with Whonix for testing purposes]]
-* [[Advanced_Security_Guide#Chaining_Anonymizing_Gateways|Chaining Anonymizing Gateways]]
+* &lt;small&gt; [[Features#VPN_.2F_Tunnel_support|Tunnel Support]]&lt;/small&gt;
+* &lt;small&gt; [[Tunnel_Tor_through_proxy_or_VPN_or_SSH|Tunnel Tor through proxy, VPN or SSH (proxy/VPN/SSH -&gt; Tor)]]&lt;/small&gt;
+** &lt;small&gt; [[Tunnel_Tor_through_proxy_or_VPN_or_SSH|Tunnel Tor through proxy (proxy -&gt; Tor)]]&lt;/small&gt;
+** &lt;small&gt; [[Tunnel_Tor_through_proxy_or_VPN_or_SSH|Tunnel Tor through SSH (SSH -&gt; Tor)]]&lt;/small&gt;
+** &lt;small&gt; [[Tunnel_Tor_through_proxy_or_VPN_or_SSH|Tunnel Tor through VPN (VPN -&gt; Tor)]]&lt;/small&gt;
+* &lt;small&gt; [[Tunnel_Proxy_or_SSH_or_VPN_through_Tor|Tunnel Proxy/SSH/VPN through Tor (Tor -&gt; Proxy/SSH/VPN)]]&lt;/small&gt;
+** &lt;small&gt; [[Tunnel_Proxy_or_SSH_or_VPN_through_Tor|Tunnel proxy through Tor (Tor -&gt; proxy)]]&lt;/small&gt;
+** &lt;small&gt; [[Tunnel_Proxy_or_SSH_or_VPN_through_Tor|Tunnel SSH through Tor (Tor -&gt; SSH)]]&lt;/small&gt;
+** &lt;small&gt; [[Tunnel_Proxy_or_SSH_or_VPN_through_Tor|Tunnel VPN through Tor (Tor -&gt; VPN)]]&lt;/small&gt;
+* &lt;small&gt; [[TestVPN|Example VPNs working with Whonix for testing purposes]]&lt;/small&gt;
+* &lt;small&gt; [[Advanced_Security_Guide#Chaining_Anonymizing_Gateways|Chaining Anonymizing Gateways]]&lt;/small&gt;
+&lt;/div&gt;
+
 
 '''Misc'''
+&lt;div style=&quot;column-count:3;-moz-column-count:3;-webkit-column-count:3&quot;&gt;
 
-* [[FAQ|FAQ - Frequently Asked Questions]]
-* [[Authorship|Authors/Changelog, sources, credits and license]]
-* [[Dev/Changelog|Changelog]]
-* [[History|History of Whonix]]
-* [[Whonix:General_disclaimer|DISCLAIMER]]
-* [[Special:AllPages|List of all Whonix pages (Index)]]
-* [[Contribute|Contribute]]
-* [[Official Whonix Online Profiles|Official Whonix Online Profiles (also Social Media)]]
-* [[Contact|Contacting Whonix developers, Feedback, Questions]]
+* &lt;small&gt; [[FAQ|FAQ - Frequently Asked Questions]]&lt;/small&gt;
+* &lt;small&gt; [[Authorship|Authors/Changelog, sources, credits and license]]&lt;/small&gt;
+* &lt;small&gt; [[Dev/Changelog|Changelog]]&lt;/small&gt;
+* &lt;small&gt; [[History|History of Whonix]]&lt;/small&gt;
+* &lt;small&gt; [[Whonix:General_disclaimer|DISCLAIMER]]&lt;/small&gt;
+* &lt;small&gt; [[Special:AllPages|List of all Whonix pages (Index)]]&lt;/small&gt;
+* &lt;small&gt; [[Contribute|Contribute]]&lt;/small&gt;
+* &lt;small&gt; [[Official Whonix Online Profiles|Official Whonix Online Profiles (also Social Media)]]&lt;/small&gt;
+* &lt;small&gt; [[Contact|Contacting Whonix developers, Feedback, Questions]]&lt;/small&gt;
+&lt;/div&gt;
+
 
 '''Unfinished'''
 
-* Other [[Censorship Circumvention Tools|Censorship Circumvention Tools]] than [[Bridges]]
+* &lt;small&gt; Other [[Censorship Circumvention Tools|Censorship Circumvention Tools]] than [[Bridges]]&lt;/small&gt;
+
 
 '''Advanced Topics'''
+&lt;div style=&quot;column-count:3;-moz-column-count:3;-webkit-column-count:3&quot;&gt;
 
-* [[Whonix Configuration Files|Whonix modular flexible .d style configuration folders]]
-* [[Other Operating Systems|Other Operating Systems such as Windows, Ubuntu, etc. torified by Whonix-Gateway]]
-* [[Other_Desktop_Environments|Other Desktop Environments (Gnome, LXDE, Xfce, etc.)]]
-* [[Backup Whonix VMs]]
-* [[Manually Create Whonix VM Settings|Manually Create Whonix VM Settings, in case you want to restore a backup of .vdi hard disk image files]]
-* [[Manually Updating Tor Browser|Manually updating Tor Browser, temporary workaround, in case the torbrowser updater ever gets broken]]
-* [[Dev/Build Documentation|Build Documentation, How to build Whonix from Source Code, How to update Whonix from Source Code]]
-* [[Download Security|Download Security]]
-* [[Tuning#Replacing Desktop Environment|Replacing desktop environment]]
-* [[Physical Isolation|Whonix using Physical Isolation, setup using two different computers AND virtualization. This is the most secure Tor configuration to date.]]
-* [[AppArmor|Hardening using Whonix's AppArmor Profiles]]
-** [[AppArmor/VirtualBox|VirtualBox]]
-** [[AppArmor/Tor_Browser_Bundle|Tor Browser Bundle (TBB)]]
-** [[AppArmor/Icedove|Icedove (with Enigmail)]]
-** [[AppArmor/Pidgin|Pidgin]]
-** [[AppArmor/sdwdate|Whonix sdwdate]]
-** [[AppArmor/Timesync|Whonix timesync]]
-** [[AppArmor/Whonixcheck|whonixcheck]]
-* [[Advanced Security Guide|Advanced Security Guide]]
-* [[Multiple Whonix-Workstations|Using Multiple Whonix-Workstations]]
-* [[Multiple_Whonix-Workstations#Multiple_Whonix-Gateways|Using Multiple Whonix-Gateways]]
-* [[Advanced_Security_Guide#Chaining_Anonymizing_Gateways|Chaining Anonymizing Gateways]]
-* [[Hide Tor and Whonix from your ISP|Hide the fact that you are using Tor/Whonix]]
-* [[Connections_between_Whonix-Gateway_and_Whonix-Workstation|(encrypted) (authenticated) Connection Between Whonix-Gateway and Whonix-Workstation]]
-* [[Design|Technical Design]]
-* [[Tunnel UDP over Tor|Tunnel UDP over Tor (Workaround using VPNs)]]
-* [[VirtualBox Guest Additions|VirtualBox Guest Additions, Shared Folder (not recommended, for those who really know better)]]
-* [[Grow Virtual Harddisk|Grow Virtual Harddisk]]
-* [[Secondary DNS Resolver|Secondary DNS resolver]]
-* [[Secondary DNS Resolver|Authenticated DNS over Tor, DNSSEC over Tor]]
-* [[Secondary DNS Resolver|Encrypted DNS over Tor, DNSCrypt by OpenDNS, httpsdnsd by JonDos]]
-* [[OnionCat|OnionCat, GarliCat: Tunnel TCP, UDP, ICMP or any other protocol through Tor or i2p; IPv6, VPN-like, TAP/TUN tunneling device]]
-* [[Hosting a %28private%29 %28obfuscated%29 bridge or %28exit%29 relay|Hosting a (private) (obfuscated) bridge or (exit) relay]]
-* Using Tor's SocksProxy in Whonix-Workstation (See [[Stream Isolation]].)
-* Best possible protection against Identity correlation through circuit sharing (See [[Stream Isolation]].)
-* [[PPTP|Connect to a Tor Gateway on your local network using PPTP VPN]]
-* [[Whonix-APT-Repository| Whonix's APT Repository, how to enable/disable it?]]
-* [[Whonix Debian Packages|Whonix Debian Packages, which ones are safe to remove?]]
-* File Transfer
-** [[File Transfer#Security Overview|Security Overview]]
-** [[File_Transfer#Transfer_files_from_the_Host_into_Whonix-Gateway_or_Whonix-Workstation_through_ISO_images|Transfer files from the Host into Whonix-Gateway or Whonix-Workstation through ISO images]]
-** [[File_Transfer#Adding_USB_device_to_VirtualBox|Adding USB device to VirtualBox]]
-** [[File Transfer#Shared Folder|Shared Folder]]
-** [[File Transfer#SSH into Whonix-Gateway|sshfs (or ssh) into Whonix-Gateway]]
-** [[File_Transfer#SSH_into_Whonix-Workstation|sshfs (or ssh) into Whonix-Workstation]]
-** [[Sshfs_into_Whonix-Workstation|sshfs into Whonix-Workstation standalone instructions]]
-** [[File Transfer#Mount and inspect images|Mount and inspect images, IMG, VDI]]
-* [[Tuning|Tuning]]
-** [[Tuning|Introduction]]
-** [[Tuning|Increase Virtual Machine RAM]]
-** [[Tuning|More CPU cores]]
-** [[Tuning|Removing packages]]
-** [[Tuning|Replacing desktop environment]]
-** [[Tuning|Synthetic CPU]]
-** [[Tuning|Nested paging and VPIDs]]
-** [[Tuning|Guest Additions]]
-** [[Tuning|Hardware-accelerated graphics]]
-** [[Tuning|Memory ballooning, Page Fusion, Memory overcommitment]]
-** [[Tuning|64 bit architecture]]
-** [[Tuning|Optimized builds]]
-** [[Tuning|PCI Passthrough]]
-* [[Manually Creating Whonix]]
-* [[Dev/Other Virtualization Platforms|Other Virtualization Platforms]]
-* [[Skipping Whonix Postinst Scripts|How to skip/blacklist selected Whonix Postinst Scripts]]
+* &lt;small&gt; [[Whonix Configuration Files|Whonix modular flexible .d style configuration folders]]&lt;/small&gt;
+* &lt;small&gt; [[Other Operating Systems|Other Operating Systems such as Windows, Ubuntu, etc. torified by Whonix-Gateway]]&lt;/small&gt;
+* &lt;small&gt; [[Other_Desktop_Environments|Other Desktop Environments (Gnome, LXDE, Xfce, etc.)]]&lt;/small&gt;
+* &lt;small&gt; [[Backup Whonix VMs]]&lt;/small&gt;
+* &lt;small&gt; [[Manually Create Whonix VM Settings|Manually Create Whonix VM Settings, in case you want to restore a backup of .vdi hard disk image files]]&lt;/small&gt;
+* &lt;small&gt; [[Manually Updating Tor Browser|Manually updating Tor Browser, temporary workaround, in case the torbrowser updater ever gets broken]]&lt;/small&gt;
+* &lt;small&gt; [[Dev/Build Documentation|Build Documentation, How to build Whonix from Source Code, How to update Whonix from Source Code]]&lt;/small&gt;
+* &lt;small&gt; [[Download Security|Download Security]]&lt;/small&gt;
+* &lt;small&gt; [[Tuning#Replacing Desktop Environment|Replacing desktop environment]]&lt;/small&gt;
+* &lt;small&gt; [[Physical Isolation|Whonix using Physical Isolation, setup using two different computers AND virtualization. This is the most secure Tor configuration to date.]]&lt;/small&gt;
+* &lt;small&gt; [[AppArmor|Hardening using Whonix's AppArmor Profiles]]&lt;/small&gt;
+** &lt;small&gt; [[AppArmor/VirtualBox|VirtualBox]]&lt;/small&gt;
+** &lt;small&gt; [[AppArmor/Tor_Browser_Bundle|Tor Browser Bundle (TBB)]]&lt;/small&gt;
+** &lt;small&gt; [[AppArmor/Icedove|Icedove (with Enigmail)]]&lt;/small&gt;
+** &lt;small&gt; [[AppArmor/Pidgin|Pidgin]]&lt;/small&gt;
+** &lt;small&gt; [[AppArmor/sdwdate|Whonix sdwdate]]&lt;/small&gt;
+** &lt;small&gt; [[AppArmor/Timesync|Whonix timesync]]&lt;/small&gt;
+** &lt;small&gt; [[AppArmor/Whonixcheck|whonixcheck]]&lt;/small&gt;
+* &lt;small&gt; [[Advanced Security Guide|Advanced Security Guide]]&lt;/small&gt;
+* &lt;small&gt; [[Multiple Whonix-Workstations|Using Multiple Whonix-Workstations]]&lt;/small&gt;
+* &lt;small&gt; [[Multiple_Whonix-Workstations#Multiple_Whonix-Gateways|Using Multiple Whonix-Gateways]]&lt;/small&gt;
+* &lt;small&gt; [[Advanced_Security_Guide#Chaining_Anonymizing_Gateways|Chaining Anonymizing Gateways]]&lt;/small&gt;
+* &lt;small&gt; [[Hide Tor and Whonix from your ISP|Hide the fact that you are using Tor/Whonix]]&lt;/small&gt;
+* &lt;small&gt; [[Connections_between_Whonix-Gateway_and_Whonix-Workstation|(encrypted) (authenticated) Connection Between Whonix-Gateway and Whonix-Workstation]]&lt;/small&gt;
+* &lt;small&gt; [[Design|Technical Design]]&lt;/small&gt;
+* &lt;small&gt; [[Tunnel UDP over Tor|Tunnel UDP over Tor (Workaround using VPNs)]]&lt;/small&gt;
+* &lt;small&gt; [[VirtualBox Guest Additions|VirtualBox Guest Additions, Shared Folder (not recommended, for those who really know better)]]&lt;/small&gt;
+* &lt;small&gt; [[Grow Virtual Harddisk|Grow Virtual Harddisk]]&lt;/small&gt;
+* &lt;small&gt; [[Secondary DNS Resolver|Secondary DNS resolver]]&lt;/small&gt;
+* &lt;small&gt; [[Secondary DNS Resolver|Authenticated DNS over Tor, DNSSEC over Tor]]&lt;/small&gt;
+* &lt;small&gt; [[Secondary DNS Resolver|Encrypted DNS over Tor, DNSCrypt by OpenDNS, httpsdnsd by JonDos]]&lt;/small&gt;
+* &lt;small&gt; [[OnionCat|OnionCat, GarliCat: Tunnel TCP, UDP, ICMP or any other protocol through Tor or i2p; IPv6, VPN-like, TAP/TUN tunneling device]]&lt;/small&gt;
+* &lt;small&gt; [[Hosting a %28private%29 %28obfuscated%29 bridge or %28exit%29 relay|Hosting a (private) (obfuscated) bridge or (exit) relay]]&lt;/small&gt;
+* &lt;small&gt; Using Tor's SocksProxy in Whonix-Workstation (See [[Stream Isolation]].)&lt;/small&gt;
+* &lt;small&gt; Best possible protection against Identity correlation through circuit sharing (See [[Stream Isolation]].)&lt;/small&gt;
+* &lt;small&gt; [[PPTP|Connect to a Tor Gateway on your local network using PPTP VPN]]&lt;/small&gt;
+* &lt;small&gt; [[Whonix-APT-Repository| Whonix's APT Repository, how to enable/disable it?]]&lt;/small&gt;
+* &lt;small&gt; [[Whonix Debian Packages|Whonix Debian Packages, which ones are safe to remove?]]&lt;/small&gt;
+* &lt;small&gt; File Transfer&lt;/small&gt;
+** &lt;small&gt; [[File Transfer#Security Overview|Security Overview]]&lt;/small&gt;
+** &lt;small&gt; [[File_Transfer#Transfer_files_from_the_Host_into_Whonix-Gateway_or_Whonix-Workstation_through_ISO_images|Transfer files from the Host into Whonix-Gateway or Whonix-Workstation through ISO images]]&lt;/small&gt;
+** &lt;small&gt; [[File_Transfer#Adding_USB_device_to_VirtualBox|Adding USB device to VirtualBox]]&lt;/small&gt;
+** &lt;small&gt; [[File Transfer#Shared Folder|Shared Folder]]&lt;/small&gt;
+** &lt;small&gt; [[File Transfer#SSH into Whonix-Gateway|sshfs (or ssh) into Whonix-Gateway]]&lt;/small&gt;
+** &lt;small&gt; [[File_Transfer#SSH_into_Whonix-Workstation|sshfs (or ssh) into Whonix-Workstation]]&lt;/small&gt;
+** &lt;small&gt; [[Sshfs_into_Whonix-Workstation|sshfs into Whonix-Workstation standalone instructions]]&lt;/small&gt;
+** &lt;small&gt; [[File Transfer#Mount and inspect images|Mount and inspect images, IMG, VDI]]&lt;/small&gt;
+* &lt;small&gt; [[Tuning|Tuning]]&lt;/small&gt;
+** &lt;small&gt; [[Tuning|Introduction]]&lt;/small&gt;
+** &lt;small&gt; [[Tuning|Increase Virtual Machine RAM]]&lt;/small&gt;
+** &lt;small&gt; [[Tuning|More CPU cores]]&lt;/small&gt;
+** &lt;small&gt; [[Tuning|Removing packages]]&lt;/small&gt;
+** &lt;small&gt; [[Tuning|Replacing desktop environment]]&lt;/small&gt;
+** &lt;small&gt; [[Tuning|Synthetic CPU]]&lt;/small&gt;
+** &lt;small&gt; [[Tuning|Nested paging and VPIDs]]&lt;/small&gt;
+** &lt;small&gt; [[Tuning|Guest Additions]]&lt;/small&gt;
+** &lt;small&gt; [[Tuning|Hardware-accelerated graphics]]&lt;/small&gt;
+** &lt;small&gt; [[Tuning|Memory ballooning, Page Fusion, Memory overcommitment]]&lt;/small&gt;
+** &lt;small&gt; [[Tuning|64 bit architecture]]&lt;/small&gt;
+** &lt;small&gt; [[Tuning|Optimized builds]]&lt;/small&gt;
+** &lt;small&gt; [[Tuning|PCI Passthrough]]&lt;/small&gt;
+* &lt;small&gt; [[Manually Creating Whonix]]&lt;/small&gt;
+* &lt;small&gt; [[Dev/Other Virtualization Platforms|Other Virtualization Platforms]]&lt;/small&gt;
+* &lt;small&gt; [[Skipping Whonix Postinst Scripts|How to skip/blacklist selected Whonix Postinst Scripts]]&lt;/small&gt;
+&lt;/div&gt;
+
 
 '''Other'''
+&lt;div style=&quot;column-count:3;-moz-column-count:3;-webkit-column-count:3&quot;&gt;
 
-* [[Debian|Debian as Host Operating System Tips, Download, ISO gpg verification, Installation and Security]]
-* [[Hosting a Whonix Mirror]]
-* [[Forcing_.onion_on_Whonix.org|Forcing .onion on Whonix.org]]
+* &lt;small&gt; [[Debian|Debian as Host Operating System Tips, Download, ISO gpg verification, Installation and Security]]&lt;/small&gt;
+* &lt;small&gt; [[Hosting a Whonix Mirror]]&lt;/small&gt;
+* &lt;small&gt; [[Forcing_.onion_on_Whonix.org|Forcing .onion on Whonix.org]]&lt;/small&gt;
+&lt;/div&gt;
+
 
 '''Esoteric Stuff (only for advanced users)'''
+&lt;div style=&quot;column-count:3;-moz-column-count:3;-webkit-column-count:3&quot;&gt;
 
-* [[Access Gateway Port From Host|Access Whonix-Gateway Ports From Host, make Tor accessible running inside Whonix-Gateway on the host]]
-* [[Whonix-Gateway System DNS|Getting the global system DNS resolver working on Whonix-Gateway (usually recommended against and unnecessary)]]
+* &lt;small&gt; [[Access Gateway Port From Host|Access Whonix-Gateway Ports From Host, make Tor accessible running inside Whonix-Gateway on the host]]&lt;/small&gt;
+* &lt;small&gt; [[Whonix-Gateway System DNS|Getting the global system DNS resolver working on Whonix-Gateway (usually recommended against and unnecessary)]]&lt;/small&gt;
+&lt;/div&gt;
+
 
 '''Appendix'''
+&lt;div style=&quot;column-count:3;-moz-column-count:3;-webkit-column-count:3&quot;&gt;
 
-* [[Introduction|Introduction into Whonix Documentation]]
-* [https://metrics.torproject.org/exonerator.html ExoneraTor: a website that tells you whether a given IP address was a Tor relay]
-* [https://metrics.torproject.org/ Tor Metrics Portal]
-* [https://compass.torproject.org/ Tor Compass]
+* &lt;small&gt; [[Introduction|Introduction into Whonix Documentation]]&lt;/small&gt;
+* &lt;small&gt; [https://metrics.torproject.org/exonerator.html ExoneraTor: a website that tells you whether a given IP address was a Tor relay]&lt;/small&gt;
+* &lt;small&gt; [https://metrics.torproject.org/ Tor Metrics Portal]&lt;/small&gt;
+* &lt;small&gt; [https://compass.torproject.org/ Tor Compass]&lt;/small&gt;
+&lt;/div&gt;
+
+
 
 = License =
 
@@ -1724,7 +1770,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>f0pvchnrdtjgiqpbtqtmu5wmqcdpu7r</sha1>
+      <sha1>o122hjwxn2exfph8gw1lue8ldn80il4</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -15739,15 +15785,14 @@ Specifically for Whonix, [[whonixcheck]] and the [[Dev/News|Whonix News Format]]
     <ns>0</ns>
     <id>134</id>
     <revision>
-      <id>6841</id>
-      <parentid>6840</parentid>
-      <timestamp>2014-03-11T13:09:44Z</timestamp>
+      <id>6922</id>
+      <parentid>6841</parentid>
+      <timestamp>2014-03-15T12:50:52Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* Installing i2p inside Whonix-Workstation (i2p over Tor) */</comment>
-      <text xml:space="preserve" bytes="5560">{{Header}}
+      <comment>added some new details about fixing clock skew issues for I2P running inside Whonix Workstation</comment>
+      <text xml:space="preserve" bytes="6047">{{Header}}
 {{#seo:
 |description=i2p over Tor. Tunnelling the i2p Anonymizing Network over the Tor Anonymizing Network. Connection Schema: Tor -&gt; i2p -&gt; Destination.
 }}
@@ -15818,14 +15863,26 @@ Recommended settings:
 ** Add: &lt;pre&gt;time.sntpServerList=localhost&lt;/pre&gt;
 ** Click &quot;Safe Changes&quot;.
 
-NOTE: it is possible to avoid clock skews (I2P will notice those and complain about it) by switching '''sdwdate''' off:
+'''Clock skew issues'''
+
+In Whonix Workstation 7 and I2P-0.9.11 it was possible to fix clock skews (I2P notices those at startup and complains about it) by switching '''sdwdate''' off: 
 
 &lt;pre&gt;
 sudo service sdwdate stop
 sudo chmod -x /etc/init.d/sdwdate
 &lt;/pre&gt;
 
-However, time sync management in Whonix is a complex issue, so before doing this, make sure to read [[Dev/TimeSync]] and understand the implications.
+In Whonix Workstation 8 and I2P-0.9.11 this doesn't work - I2P complains about clock skews even after disabling both '''sdwdate''' and '''bootclockrandomization'''.
+
+It is still possible to fix the clock manually. For example, if I2P reports a clock skew of 60 seconds at startup, use this command to change system time:
+
+&lt;pre&gt;
+sudo date -s now-60sec
+&lt;/pre&gt;
+
+then restart I2P.
+
+However, time sync management in Whonix is a complex issue, so before changing the default way of time management in Whonix, make sure to read [[Dev/TimeSync]] and understand the implications.
 
 == Installing i2p on Whonix-Gateway (i2pBOX) ==
 
@@ -15837,7 +15894,7 @@ Was just a development idea with some progress. Moved to [[Dev/Inspiration]].
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>5tj3m82uuox26d3xejkfizf04cl1aoc</sha1>
+      <sha1>2xsl8v77oug0nbd24ziv8r4y7e95kpe</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -43755,17 +43812,16 @@ OVA image can now be used in VirtualBox.
     <ns>0</ns>
     <id>469</id>
     <revision>
-      <id>6848</id>
-      <parentid>6728</parentid>
-      <timestamp>2014-03-11T22:46:30Z</timestamp>
+      <id>6926</id>
+      <parentid>6848</parentid>
+      <timestamp>2014-03-15T20:40:35Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Preparation Steps */</comment>
-      <text xml:space="preserve" bytes="13905">{{Header}}
+      <text xml:space="preserve" bytes="13907">{{Header}}
 {{#seo:
-|description=Complete and Comprehensive Instructions to build Whonix Virtual Machine Images from Source Code. Including build configurations, such as 64 bit builds, Terminal-Only builds and so forth.
+|description=Complete and Comprehensive Instructions to build Whonix 8 Virtual Machine Images from Source Code. Including build configurations, such as 64 bit builds, Terminal-Only builds and so forth.
 }}
 {{forkme}}
 
@@ -43998,7 +44054,7 @@ Related forum topic: &lt;br /&gt;
 {{Footer}}
 
 [[Category:Development]]</text>
-      <sha1>rh8nmr6tlsr0n247po9jg95bambz2c0</sha1>
+      <sha1>f6qm9omwpf09bpc4r490g7w44mzcf9b</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -44394,20 +44450,22 @@ The reason you can't just get higher resolutions using {{Code2|xrandr}} &quot;{{
     <ns>10</ns>
     <id>479</id>
     <revision>
-      <id>6806</id>
-      <parentid>6805</parentid>
-      <timestamp>2014-03-10T23:55:40Z</timestamp>
+      <id>6927</id>
+      <parentid>6806</parentid>
+      <timestamp>2014-03-15T20:50:15Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="2375">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
-&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+      <text xml:space="preserve" bytes="2711">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
 '''OPTIONAL!'''
 
 Advanced users can create 64bit instead of 32bit builds.
 
 If you are interested, click on Expand on the right.
+
+Whonix 8
+&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
 &lt;div class=&quot;mw-collapsible-content&quot;&gt;
 
 64bit builds are less tested due to lack of developer manpower. Should work well in principle.
@@ -44473,8 +44531,32 @@ sudo rm /etc/whonix_buildconfig.d/50_target_arch
 Footnotes:
 &lt;references /&gt;&lt;/noinclude&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+
+Whonix 9
+&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+&lt;div class=&quot;mw-collapsible-content&quot;&gt;
+Linux 64 bit. Less tested.
+
+&lt;pre&gt;
+--64bit-linux
+&lt;/pre&gt;
+
+kFreeBSD 64 bit. Entirely untested.
+
+&lt;pre&gt;
+--64bit-kfreebsd
+&lt;/pre&gt;
+
+kFreeBSD 32 bit. Entirely untested.
+
+&lt;pre&gt;
+--32bit-kfreebsd
+&lt;/pre&gt;
+
+&lt;/div&gt;
 &lt;/div&gt;&lt;noinclude&gt;{{Footer}}&lt;/noinclude&gt;</text>
-      <sha1>g1h35xj0keerglpruv672o1m6qlbzp5</sha1>
+      <sha1>h7bjx9gqli1jgmlku2tr0aqo8w5l2mh</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -44484,20 +44566,22 @@ Footnotes:
     <ns>10</ns>
     <id>480</id>
     <revision>
-      <id>6831</id>
-      <parentid>6828</parentid>
-      <timestamp>2014-03-11T01:50:33Z</timestamp>
+      <id>6933</id>
+      <parentid>6831</parentid>
+      <timestamp>2014-03-15T21:14:44Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="1481">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
-&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+      <text xml:space="preserve" bytes="1654">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
 '''OPTIONAL!'''
 
 Advanced users can build a no-default-gui / no-KDE / terminal-only Whonix-Gateway and/or Whonix-Workstation.
 
 If you are interested, click on Expand on the right.
+
+Whonix 8
+&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
 &lt;div class=&quot;mw-collapsible-content&quot;&gt;
 
 terminal-only builds are less tested due to lack of contributor manpower. Should work well in principle.
@@ -44536,12 +44620,21 @@ If you want to undo this build configuration, see footnote. &lt;ref&gt;
 sudo rm /etc/whonix_buildconfig.d/50_terminal_only
 &lt;/pre&gt;
 &lt;/ref&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+Whonix 9
+&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+&lt;div class=&quot;mw-collapsible-content&quot;&gt;
+&lt;pre&gt;
+--terminal-only
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;noinclude&gt;
 Footnotes:
-&lt;references /&gt;&lt;/noinclude&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;noinclude&gt;{{Footer}}&lt;/noinclude&gt;</text>
-      <sha1>6ft9ll7v1ztjgwyxuuavv5k8gics7r4</sha1>
+&lt;references /&gt;&lt;/noinclude&gt;&lt;noinclude&gt;{{Footer}}&lt;/noinclude&gt;</text>
+      <sha1>72swou619yttnn2v1iql6s301cqxjmg</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -44551,20 +44644,22 @@ Footnotes:
     <ns>10</ns>
     <id>481</id>
     <revision>
-      <id>6825</id>
-      <parentid>6812</parentid>
-      <timestamp>2014-03-11T00:18:37Z</timestamp>
+      <id>6928</id>
+      <parentid>6825</parentid>
+      <timestamp>2014-03-15T20:51:51Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="2271">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
-&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+      <text xml:space="preserve" bytes="2454">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
 '''OPTIONAL!'''
 
 Advanced users can install fewer {{Code2|recommended}} packages to make the resulting build smaller and more customizable. ({{Code2|recommended}} as in useful to have, not necessary to have them for some other reason.)
 
 If you are interested, click on Expand on the right.
+
+Whonix 8
+&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
 &lt;div class=&quot;mw-collapsible-content&quot;&gt;
 
 NoDefaultApps builds are less tested due to lack of contributor manpower. Should work well in principle.
@@ -44614,8 +44709,17 @@ sudo rm /etc/whonix_buildconfig.d/50_no_default_apps
 Footnotes:
 &lt;references /&gt;&lt;/noinclude&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+
+Whonix 9
+&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+&lt;div class=&quot;mw-collapsible-content&quot;&gt;
+&lt;pre&gt;
+--no-default-applications
+&lt;/pre&gt;
+&lt;/div&gt;
 &lt;/div&gt;&lt;noinclude&gt;{{Footer}}&lt;/noinclude&gt;</text>
-      <sha1>akhlixqdlw4gwv5r6jo96d20gsuj8qz</sha1>
+      <sha1>m6hvrdksua6a7lysvwx0h2b8382if61</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -44625,18 +44729,20 @@ Footnotes:
     <ns>10</ns>
     <id>482</id>
     <revision>
-      <id>6830</id>
-      <parentid>6815</parentid>
-      <timestamp>2014-03-11T01:48:07Z</timestamp>
+      <id>6931</id>
+      <parentid>6930</parentid>
+      <timestamp>2014-03-15T21:07:44Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="2055">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
-&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+      <text xml:space="preserve" bytes="2422">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
 '''OPTIONAL!'''
 
 &lt;u&gt;Whonix's APT Repository&lt;/u&gt; is &lt;u&gt;disabled by default&lt;/u&gt; since Whonix 7.3.3. You may enjoy this for [[Trust]] reasons. You can later update Whonix debian packages from source code if you want. If you are interested in enabling Whonix's APT repository right after building (you could do that also after booting your build for the first time if you wanted) for convenience while sacrificing the extra security of not updating from source code, click on Expand on the right side.
+
+Whonix 8
+&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
 &lt;div class=&quot;mw-collapsible-content&quot;&gt;
 
 Do you want to &lt;u&gt;opt-in&lt;/u&gt; for &lt;u&gt;Whonix's APT Repository&lt;/u&gt;? Then do these steps as it follows.
@@ -44688,8 +44794,29 @@ sudo rm /etc/whonix_buildconfig.d/50_whonix_apt_repository
 Footnotes:
 &lt;references /&gt;&lt;/noinclude&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+
+Whonix 9
+&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+&lt;div class=&quot;mw-collapsible-content&quot;&gt;
+&lt;pre&gt;
+--enable-whonix-apt-repository
+&lt;/pre&gt;
+
+&lt;pre&gt;
+--whonix-apt-repository-distribution stable
+&lt;/pre&gt;
+
+&lt;pre&gt;
+--whonix-apt-repository-distribution testers
+&lt;/pre&gt;
+
+&lt;pre&gt;
+--whonix-apt-repository-distribution developers
+&lt;/pre&gt;
+&lt;/div&gt;
 &lt;/div&gt;&lt;noinclude&gt;{{Footer}}&lt;/noinclude&gt;</text>
-      <sha1>f7r3w4b6vo1uezf8h00wukdadp50905</sha1>
+      <sha1>j1bdwf3virzq7knj56im02xxrg9kqze</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -44699,15 +44826,14 @@ Footnotes:
     <ns>10</ns>
     <id>483</id>
     <revision>
-      <id>6850</id>
-      <parentid>6820</parentid>
-      <timestamp>2014-03-11T22:48:28Z</timestamp>
+      <id>6936</id>
+      <parentid>6934</parentid>
+      <timestamp>2014-03-15T21:24:04Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Source Code Changes */</comment>
-      <text xml:space="preserve" bytes="2271">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
+      <text xml:space="preserve" bytes="2401">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
 == Build Configuration (Optional) ==
 === Introduction (Optional) ===
 &lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
@@ -44759,13 +44885,19 @@ It is recommended to copy and paste text when creating build configuration files
 == Custom Build Tags ==
 {{Build Documentation Custom Build Tags}}
 
+== VM Settings (Optional) ==
+{{Build Documentation VM Settings}}
+
+== Skip Steps (Optional) ==
+{{Build Documentation Skip Steps}}
+
 == Source Code Changes ==
 {{Build Documentation Source Code Changes}}&lt;noinclude&gt;
 Footnotes:
 &lt;references /&gt;
 {{Footer}}
 &lt;/noinclude&gt;</text>
-      <sha1>5yezyo9wh8mgdn14boxorewxt23xyay</sha1>
+      <sha1>dtj83f92bpshqca946y9hc5eeeot8pa</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -49134,20 +49266,22 @@ git fetch
     <ns>10</ns>
     <id>500</id>
     <revision>
-      <id>6809</id>
-      <parentid>6800</parentid>
-      <timestamp>2014-03-10T23:57:53Z</timestamp>
+      <id>6932</id>
+      <parentid>6809</parentid>
+      <timestamp>2014-03-15T21:09:19Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="4502">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
-&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+      <text xml:space="preserve" bytes="4678">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
 '''OPTIONAL!'''
 
 Advanced users could install from Current Sources (custom) instead of from Frozen Sources (default in 7.4.0 and above). Both options have security advantages and disadvantages.
 
 If you are interested, click on Expand on the right.
+
+Whonix 8
+&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
 &lt;div class=&quot;mw-collapsible-content&quot;&gt;
 
 CurrentSources builds are rarely tested due to lack of contributor manpower. Should work reasonable well in principle as long as no packages are removed from Debian. The worst thing that can probably happen, is that the build fails due to missing packages.
@@ -49215,8 +49349,18 @@ Footnotes:
 
 &lt;references group=&quot;currentsources&quot;/&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+
+Whonix 9
+
+&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+&lt;div class=&quot;mw-collapsible-content&quot;&gt;
+&lt;pre&gt;
+--current-sources
+&lt;/pre&gt;
+&lt;/div&gt;
 &lt;/div&gt;</text>
-      <sha1>ttae08y9998p4vd5zob5kygeuac03lm</sha1>
+      <sha1>2rtwixbwg4bl5mcw8cdwx5u9sw57dlo</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -50661,20 +50805,21 @@ sshfs -p 2222 user@127.0.0.1:/ ~/mountworkstation
     <ns>10</ns>
     <id>532</id>
     <revision>
-      <id>6826</id>
-      <parentid>6813</parentid>
-      <timestamp>2014-03-11T00:19:00Z</timestamp>
+      <id>6929</id>
+      <parentid>6826</parentid>
+      <timestamp>2014-03-15T21:02:05Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="1417">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
-&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+      <text xml:space="preserve" bytes="1590">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
 '''OPTIONAL!'''
 
 By default Whonix's last build step creates a report file of all hdd contents. (See [[Verifiable Builds]] for details.) This step is optional. First introduced in Whonix 7.4.8. Whonix should work fine without that step. It is used for extra security. This step takes quite some time. This step is recommended. If you want to disable it, click on Expand on the right side.
-&lt;div class=&quot;mw-collapsible-content&quot;&gt;
 
+Whonix 8
+&lt;div class=&quot;mw-collapsible-content&quot;&gt;
+&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
 Do you want to &lt;u&gt;opt-out&lt;/u&gt; of the report creation build step? Then do these steps as it follows.
 
 Create {{Code2|/etc/whonix_buildconfig.d}} folder.
@@ -50711,8 +50856,17 @@ sudo rm /etc/whonix_buildconfig.d/50_no_report
 Footnotes:
 &lt;references /&gt;&lt;/noinclude&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+
+Whonix 9
+&lt;div class=&quot;mw-collapsible-content&quot;&gt;
+&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+&lt;pre&gt;
+--minimal-report
+&lt;/pre&gt;
+&lt;/div&gt;
 &lt;/div&gt;&lt;noinclude&gt;{{Footer}}&lt;/noinclude&gt;</text>
-      <sha1>fzugv19wsye8ra9bme3mvelnrjc5l9g</sha1>
+      <sha1>dko6kewrtoowdz5wx91jblt2ea4mhn0</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -55333,14 +55487,15 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
     <ns>0</ns>
     <id>691</id>
     <revision>
-      <id>5757</id>
-      <parentid>5338</parentid>
-      <timestamp>2014-02-27T11:50:53Z</timestamp>
+      <id>6923</id>
+      <parentid>5757</parentid>
+      <timestamp>2014-03-15T14:02:56Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="6668">{{Header}}
+      <comment>/* Set cluster_size 512 - 2MB for better performance? */</comment>
+      <text xml:space="preserve" bytes="6666">{{Header}}
 {{#seo:
 |description=Development Notes for adding KVM support to Whonix.
 }}
@@ -55430,7 +55585,7 @@ For something that supports snapshots and has better performance than qcow2 ther
 == Set cluster_size 512 - 2MB for better performance? ==
 HulaHoop1 wrote: The qcow2 defaults seem fine to me, however the one parameter of interest we should play with is image's : 'cluster_size' 512 - 2MB the larger the size the better performance but the size is bigger. I think we should try the largest and see if the image size stays reasonable.
 
-adrelanos wrote:
+Patrick wrote:
 
 When using (Whonix 7.7.8.0):
       qemu-img \
@@ -55501,7 +55656,7 @@ For better performance. (As per [http://www.ilsistemista.net/index.php/virtualiz
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>3pfvws3x2ppn1pubg6dmidmk1lcb5og</sha1>
+      <sha1>35z7ltu6bcpf4qbmqvx75st0yiele5u</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -68338,16 +68493,16 @@ sudo aa-enforce /etc/apparmor.d/usr.bin.timesync
     <ns>0</ns>
     <id>1140</id>
     <revision>
-      <id>6778</id>
-      <timestamp>2014-03-09T21:55:01Z</timestamp>
+      <id>6925</id>
+      <parentid>6778</parentid>
+      <timestamp>2014-03-15T20:40:04Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>Created page with &quot;{{Header}} {{#seo: |description=Complete and Comprehensive Instructions to build Whonix Virtual Machine Images from Source Code. Including build configurations, such as 64 bit...&quot;</comment>
-      <text xml:space="preserve" bytes="14187">{{Header}}
+      <text xml:space="preserve" bytes="14189">{{Header}}
 {{#seo:
-|description=Complete and Comprehensive Instructions to build Whonix Virtual Machine Images from Source Code. Including build configurations, such as 64 bit builds, Terminal-Only builds and so forth.
+|description=Complete and Comprehensive Instructions to build Whonix 9 Virtual Machine Images from Source Code. Including build configurations, such as 64 bit builds, Terminal-Only builds and so forth.
 }}
 {{forkme}}
 
@@ -68587,7 +68742,7 @@ Related forum topic: &lt;br /&gt;
 {{Footer}}
 
 [[Category:Development]]</text>
-      <sha1>l2zbik3s0689p7kdgh95ulxkh48iplw</sha1>
+      <sha1>22lhbmfp85pe74tanlajp1w869oedqk</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -68930,6 +69085,99 @@ sudo aa-enforce /etc/apparmor.d/usr.bin.sdwdate
       <comment>Patrick moved page [[User:Adrelanos]] to [[User:Patrick]]: Automatically moved page while renaming the user &quot;[[User:Adrelanos|Adrelanos]]&quot; to &quot;[[User:Patrick|Patrick]]&quot;</comment>
       <text xml:space="preserve" bytes="26">#REDIRECT [[User:Patrick]]</text>
       <sha1>sk5uefltmjjn6o6ir77zfrjmp2qq519</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Build Documentation VM Settings</title>
+    <ns>10</ns>
+    <id>1150</id>
+    <revision>
+      <id>6935</id>
+      <timestamp>2014-03-15T21:20:43Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt; '''OPTIONAL!'''  Whonix 8 &lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt; &lt;div class=&quot;mw-collapsible-content&quot;&gt; Only ...&quot;</comment>
+      <text xml:space="preserve" bytes="604">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
+'''OPTIONAL!'''
+
+Whonix 8
+&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+&lt;div class=&quot;mw-collapsible-content&quot;&gt;
+Only relevant for VM builds.
+
+Not available. You can change them manually after building Whonix.
+&lt;/div&gt;
+&lt;/div&gt;
+
+Whonix 9
+&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+&lt;div class=&quot;mw-collapsible-content&quot;&gt;
+Only relevant for VM builds.
+
+&lt;pre&gt;
+--vmram 128
+&lt;/pre&gt;
+
+&lt;pre&gt;
+--vram 12
+&lt;/pre&gt;
+
+&lt;pre&gt;
+--vmsize 200G
+&lt;/pre&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;&lt;noinclude&gt;
+Footnotes:
+&lt;references /&gt;&lt;/noinclude&gt;&lt;noinclude&gt;{{Footer}}&lt;/noinclude&gt;</text>
+      <sha1>eoaqh4bugdha7eoagbyn2ituvuh6kzp</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Build Documentation Skip Steps</title>
+    <ns>10</ns>
+    <id>1151</id>
+    <revision>
+      <id>6937</id>
+      <timestamp>2014-03-15T21:25:32Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt; '''OPTIONAL!'''  Whonix 8 &lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt; &lt;div class=&quot;mw-collapsible-content&quot;&gt; Undoc...&quot;</comment>
+      <text xml:space="preserve" bytes="480">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
+'''OPTIONAL!'''
+
+Whonix 8
+&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+&lt;div class=&quot;mw-collapsible-content&quot;&gt;
+Undocumented.
+&lt;/div&gt;
+&lt;/div&gt;
+
+Whonix 9
+&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+&lt;div class=&quot;mw-collapsible-content&quot;&gt;
+
+&lt;pre&gt;
+--skip-verifiable
+&lt;/pre&gt;
+
+&lt;pre&gt;
+--skip-sanity-tests
+&lt;/pre&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;&lt;noinclude&gt;
+Footnotes:
+&lt;references /&gt;&lt;/noinclude&gt;&lt;noinclude&gt;{{Footer}}&lt;/noinclude&gt;</text>
+      <sha1>lgwid7je87by317owr7tw72tb3oqjbw</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
