@@ -43812,14 +43812,15 @@ OVA image can now be used in VirtualBox.
     <ns>0</ns>
     <id>469</id>
     <revision>
-      <id>6926</id>
-      <parentid>6848</parentid>
-      <timestamp>2014-03-15T20:40:35Z</timestamp>
+      <id>6941</id>
+      <parentid>6926</parentid>
+      <timestamp>2014-03-16T18:49:30Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="13907">{{Header}}
+      <comment>/* Introduction */</comment>
+      <text xml:space="preserve" bytes="13902">{{Header}}
 {{#seo:
 |description=Complete and Comprehensive Instructions to build Whonix 8 Virtual Machine Images from Source Code. Including build configurations, such as 64 bit builds, Terminal-Only builds and so forth.
 }}
@@ -43829,7 +43830,7 @@ OVA image can now be used in VirtualBox.
 == Introduction ==
 This page documents how to build Whonix VirtualBox images. If you have any questions or need help, get in Contact.
 
-It documents how to build the '''testers-only version''' of Whonix. Rather, if you are interested in building the stable version of Whonix, click [[Dev/Build_Documentation|Build Documentation]].
+It documents how to build the '''stable version''' of Whonix. Rather, if you are interested in building the testers version of Whonix, click [[Dev/Build_Documentation|Build Documentation]].
 
 Knowledge assumed: basic principles of Virtualization; operation of your platform; Linux knowledge: how to install Debian and basic command line knowledge.
 
@@ -44054,7 +44055,7 @@ Related forum topic: &lt;br /&gt;
 {{Footer}}
 
 [[Category:Development]]</text>
-      <sha1>f6qm9omwpf09bpc4r490g7w44mzcf9b</sha1>
+      <sha1>bnavk3ph3m7qm81883y5f05bl11o4fc</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -54797,15 +54798,15 @@ From there follow the steps as you previously did and build the image you still 
     <ns>0</ns>
     <id>685</id>
     <revision>
-      <id>6443</id>
-      <parentid>6442</parentid>
-      <timestamp>2014-03-05T23:51:46Z</timestamp>
+      <id>6944</id>
+      <parentid>6443</parentid>
+      <timestamp>2014-03-16T21:29:28Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Other Required Steps */</comment>
-      <text xml:space="preserve" bytes="6532">{{Header}}
+      <comment>/* KVM Setup Instructions */</comment>
+      <text xml:space="preserve" bytes="6690">{{Header}}
 {{#seo:
 |description=Using Whonix with KVM instead of VirtualBox
 }}
@@ -54854,7 +54855,7 @@ sudo apt-get update
 sudo apt-get install virt-manager
 &lt;/pre&gt;
 
-3. Before starting the new vm wizard we must create an internal isolated network that connects the workstation with the gateway.
+Before starting the new vm wizard we must create an internal isolated network that connects the workstation with the gateway.
 
 Go to the VMM GUI --&gt; Edit --&gt; Connection Details --&gt; Add button
 Choose whonix as network name
@@ -54865,14 +54866,14 @@ Keep the default option of: Isolated Virtual Network selected and click finish.
 
 The next steps may need more work to customize vm devices and clock to safe defaults. Work in this area not final.
 
-4. Create a Whonix Gateway vm first and choose to edit it before installation.
+Create a Whonix Gateway vm first and choose to edit it before installation.
 Customize the first NIC that is included to be in default NAT mode.
 Click to add hardware and chose another NIC.
 This new NIC must have the newly created isolated virtual network 'whonix' selected as the network device. Finalize and launch.
 Must enable disk controller as SATA
 Must select qcow2 as storage format.
 
-5. Create Whonix Workstation vm and  make sure you select the isolated int. network for the only NIC this machine has. Launch.
+Create Whonix Workstation vm and  make sure you select the isolated int. network for the only NIC this machine has. Launch.
 Disk Controller works only with IDE
 Must select qcow2 as storage format
 
@@ -54886,7 +54887,9 @@ http://www.linux-kvm.org/page/SPICE
 
 It should be safe for use unless you Adrelanos determine otherwise. 2D and 3D in VBox have an insecure architecture and even the manuals admit to this. 2D in VBox is not even available for anything but windows guests which is not recommended and insecure of course.  Everything Linux based is designed from the ground up with security considerations in mind.
 
-Clock disabling for vms on host is recommended by Adrelanos. Still haven't done it yet,  and it seems to need command line.
+Clock disabling for vms on host is recommended. Still haven't done it yet,  and it seems to need command line.
+
+If you have issues with free disk space, using a file system supporting sparse files is recommended, also see [https://www.whonix.org/forum/index.php?topic=153 forum discussion].
 
 == Enabling SPICE == 
 SPICE allows accelerated graphics and clipboard sharing. Its implications for security are an open question that needs a detailed answer rather than a vague clear cut one.
@@ -54906,7 +54909,7 @@ Not enabling SPICE from the beginning, will prevent the spice channel device fro
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>164z2kmoe8eomtf7oz5oymp2gwz95kb</sha1>
+      <sha1>jm0byyslu6gh3nvuj09llbf4nsoynau</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -60500,22 +60503,21 @@ inspired by http://aboli.sh/
     <ns>0</ns>
     <id>849</id>
     <revision>
-      <id>6732</id>
-      <parentid>5748</parentid>
-      <timestamp>2014-03-09T19:48:04Z</timestamp>
+      <id>6942</id>
+      <parentid>6732</parentid>
+      <timestamp>2014-03-16T18:51:15Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <minor/>
-      <comment>Adrelanos moved page [[Dev/BuildDocumentation 8 in VM]] to [[Dev/Build Documentation/8 in VM]]</comment>
-      <text xml:space="preserve" bytes="13409">{{Header}}
+      <comment>update for Whonix 8</comment>
+      <text xml:space="preserve" bytes="13319">{{Header}}
 {{#seo:
 |description=Instructions for building Whonix from Source Code inside a Virtual Machine.
 }}
 
 = Documentation =
-This is a short set of instructions for building 7.7.9.8 testers-only version of Whonix (later to be modified for Whonix 8) inside VirtualBox (as opposed to the traditional process of running these commands on a system that is installed directly on the hardware).
+This is a short set of instructions for building 8 stable version of Whonix inside VirtualBox (as opposed to the traditional process of running these commands on a system that is installed directly on the hardware).
 
 Advantages of this approach are that you can build Whonix on any OS that can run VirtualBox (you need Debian Stable for hardware type build) and that any potential system damage is limited to the VM. Using shapshots you can quickly revert a faulty state or a failed build and start again.
 
@@ -60910,13 +60912,13 @@ cd Whonix
 git tag
 
 ## Choose which version you want to build.
-git checkout 7.7.9.8
+git checkout 8
 &lt;/pre&gt;
 
  &lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
 '''OPTIONAL.'''
 
-If you are interested in seeing a visual walk-through of the build from source, click on Expand on the right. Pictures are shown using the tag 7.7.6.4 but you must use 7.7.9.8
+If you are interested in seeing a visual walk-through of the build from source, click on Expand on the right. Pictures are shown using the tag 7.7.6.4 but you must use 8
 
 &lt;div class=&quot;mw-collapsible-content&quot;&gt;
 Logging as user.
@@ -60946,7 +60948,7 @@ All available tags displayed.
 [[File:14b.png|400px]]
 
 
-Checkout out 7.7.9.8
+Checkout out 8
 
 [[File:15b.png|400px]]
 &lt;/div&gt;
@@ -61047,10 +61049,10 @@ sudo apt-get install usbmount
 cd /media/usb0
 
 ## Copy the OVA file to USB. 
-sudo cp /home/user/whonix_binary/Whonix-Workstation-7.7.9.8.ova /media/usb0
+sudo cp /home/user/whonix_binary/Whonix-Workstation-8.ova /media/usb0
 
 ## or if you have been building the Gateway
-sudo cp /home/user/whonix_binary/Whonix-Gateway-7.7.9.8.ova /media/usb0
+sudo cp /home/user/whonix_binary/Whonix-Gateway-8.ova /media/usb0
 
 ## Unmount the USB
 sudo umount /media/usb0
@@ -61067,10 +61069,10 @@ sudo mount -t vfat /dev/sdb1 /media/usb -o uid=1000,gid=1000,utf8,dmask=027,fmas
 cd /media/usb
 
 ## Copy the OVA file to USB. 
-sudo cp /home/user/whonix_binary/Whonix-Workstation-7.7.9.8.ova /media/usb
+sudo cp /home/user/whonix_binary/Whonix-Workstation-8.ova /media/usb
 
 ## or if you have been building the Gateway
-sudo cp /home/user/whonix_binary/Whonix-Gateway-7.7.9.8.ova /media/usb
+sudo cp /home/user/whonix_binary/Whonix-Gateway-8.ova /media/usb
 
 ## Unmount the USB
 sudo umount /media/usb
@@ -61092,7 +61094,7 @@ From there follow the steps as you previously did and build the image you still 
 {{Footer}}
 
 [[Category:Development]]</text>
-      <sha1>a8a6hachf1rao7ldu37fxgv9dcoycmz</sha1>
+      <sha1>gylc3japj5o7pfjs766bl3vt6twct8o</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -61567,14 +61569,14 @@ Please consider a recurring donation!&lt;/translate&gt;
     <ns>10</ns>
     <id>875</id>
     <revision>
-      <id>6915</id>
-      <parentid>6888</parentid>
-      <timestamp>2014-03-15T00:06:09Z</timestamp>
+      <id>6939</id>
+      <parentid>6915</parentid>
+      <timestamp>2014-03-16T17:37:33Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="4979">__NOTOC__
+      <text xml:space="preserve" bytes="4971">__NOTOC__
 Donations are used to allow Whonix developer Patrick Schleizer to work full time on Whonix and to pay for whonix.org server cost. Small monthly donations are preferred. With enough monthly donations, this will be possible.
 
 &lt;!-------------------------bank transfer, PayPal------------------------&gt;
@@ -61604,9 +61606,9 @@ BIC: PBNKDEFF
 ! &lt;h3 style=&quot;margin:0; background:#cef2e0; font-size:120%; font-weight:bold; border:1px solid #a3bfb1; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Other method?&lt;/h3&gt;
 |-
 |style=&quot;color:#000;&quot;| 
-Ask [mailto:patrick_schleizer@web.de Patrick Schleizer] if available.
+Ask [mailto:adrelanos@riseup.net Patrick Schleizer] if available.
 &lt;pre&gt;
-patrick_schleizer@web.de
+adrelanos@riseup.net
 &lt;/pre&gt;
 (&lt;html&gt;&lt;a class=&quot;link-https&quot; href=&quot;/patrick.asc&quot;&gt;gpg&lt;/a&gt;&lt;/html&gt;)
 |-
@@ -61678,7 +61680,7 @@ Please get in [[Contact#For_Donations|Contact]] if you would like to donate but 
 Donations aren't tax-deducible, because Whonix isn't a (non-profit) company yet.
 
 To leave feedback, you could join the [https://www.whonix.org/forum/index.php/topic,76.0.html Forum Discussion about Donations].</text>
-      <sha1>nwdabqg3qze7tae6526xadwqv9r5exh</sha1>
+      <sha1>djn3zuuoy8635aps5bbhsm46fxuwbqj</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -68493,14 +68495,15 @@ sudo aa-enforce /etc/apparmor.d/usr.bin.timesync
     <ns>0</ns>
     <id>1140</id>
     <revision>
-      <id>6925</id>
-      <parentid>6778</parentid>
-      <timestamp>2014-03-15T20:40:04Z</timestamp>
+      <id>6943</id>
+      <parentid>6940</parentid>
+      <timestamp>2014-03-16T18:53:02Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="14189">{{Header}}
+      <comment>/* Introduction */</comment>
+      <text xml:space="preserve" bytes="15119">{{Header}}
 {{#seo:
 |description=Complete and Comprehensive Instructions to build Whonix 9 Virtual Machine Images from Source Code. Including build configurations, such as 64 bit builds, Terminal-Only builds and so forth.
 }}
@@ -68514,7 +68517,7 @@ sudo aa-enforce /etc/apparmor.d/usr.bin.timesync
 
 = Build Documentation =
 == Introduction ==
-This page documents how to build Whonix VirtualBox images. If you have any questions or need help, get in Contact.
+This page documents how to build Whonix VirtualBox or .qcow2 images (for [[KVM]]). If you have any questions or need help, get in Contact.
 
 It documents how to build the '''testers-only version''' of Whonix. Rather, if you are interested in building the stable version of Whonix, click [[Dev/Build_Documentation|Build Documentation]].
 
@@ -68643,6 +68646,18 @@ I am not sure it is a great idea to first tell builders how to build Whonix and 
 
 Open a terminal (such as Konsole).
 
+The build script (whonix_build) needs a parameter to know your build target. Currently available build targets are the following.
+
+&lt;pre&gt;
+--virtualbox
+--qcow2
+--bare-metal
+&lt;/pre&gt;
+
+Choose one. It has to be added to your whonix_build command.
+
+If you are interested in --bare-metal you should look into our [[Dev/Build_Documentation/Physical_Isolation|Physical Isolation Build Documentation]] instead. In context of build documentation for the current page you are reading, choose either --virtualbox if you are interested to build Virtual Box .ova's or --qcow2 if you are interested to build .qcow2 images (most likely for use with [[KVM]]). (These can be combined, most likely only useful for redistributable builds.) Note, that --virtualbox is currently the best supported and most tested option. --qcow2 builds are highly experimental, Whonix [[KVM]] support is still waiting for a dedicated maintainer.
+
 Delete eventually already existing Whonix-Gateway virtual machine. '''Warning''': This will delete a virtual machine named Whonix-Gateway from Virtual Box!
 
 &lt;pre&gt;
@@ -68742,7 +68757,7 @@ Related forum topic: &lt;br /&gt;
 {{Footer}}
 
 [[Category:Development]]</text>
-      <sha1>22lhbmfp85pe74tanlajp1w869oedqk</sha1>
+      <sha1>9o911vd401ahzeklw7hoycjs2npponl</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
