@@ -733,14 +733,14 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>19</id>
     <revision>
-      <id>6866</id>
-      <parentid>6865</parentid>
-      <timestamp>2014-03-12T02:59:25Z</timestamp>
+      <id>6952</id>
+      <parentid>6949</parentid>
+      <timestamp>2014-03-17T13:45:13Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="13031">{{Header}}
+      <text xml:space="preserve" bytes="14810">{{Header}}
 &lt;!--
 Copyright:
 
@@ -920,12 +920,21 @@ Reading the latest news is important to stay on top of latest developments. Shou
 [[File:Whonix News Blog opened offline created by adrelanos.png|thumb|alt=&lt;translate&gt;Whonix News Blogs Screenshot&lt;/translate&gt;|&lt;translate&gt;&lt;!--T:223--&gt;
 Whonix News Blogs&lt;/translate&gt;]]
 &lt;translate&gt;&lt;!--T:224--&gt;
-There are two ways to get news. Choose at your preference.&lt;/translate&gt;
+For your convenience, there are multiple choices to get news. Choose at your preference.&lt;/translate&gt;
 
 &lt;translate&gt;
 &lt;!--T:39--&gt;
-# [https://anonymousoperatingsystem.wordpress.com/category/important/ Whonix Important Blog] - Most important stuff only. Security vulnerabilities and new stable versions only. For people with very limited time and interest in Whonix development and news.
-# [https://anonymousoperatingsystem.wordpress.com/ Whonix Feature Blog] - Includes everything from Whonix Important Blog. Also testers-only and developers versions are announced. Has a relaxed posting policy. Also blog posts about updated articles, new features, future features, development, call for testing, general project thoughts and so on will be published.
+# [https://www.whonix.org/blog/category/important/ Whonix Important Blog] [[File:2000px-Feed-icon.svg.png|12px|alt=Whonix Important Blog Rss|link=https://www.whonix.org/blog/category/important/feed/]] - Most important stuff only. Security vulnerabilities and new stable versions only. For people with very limited time and interest in Whonix development and news.
+# [https://www.whonix.org/blog Whonix Feature Blog] [[File:2000px-Feed-icon.svg.png|12px|alt=Whonix Feature Blog rss|link=https://www.whonix.org/blog/feed/]] - Includes everything from Whonix Important Blog. Also testers-only and developers versions are announced. Has a relaxed posting policy. Also blog posts about updated articles, new features, future features, development, call for testing, general project thoughts and so on will be published.
+# Other choices. &lt;ref&gt;
+Other choices.
+* [https://www.whonix.org/blog/category/important/feed/ Whonix Important Blog RSS] [[File:2000px-Feed-icon.svg.png|12px|alt=Whonix Important Blog Rss|link=https://www.whonix.org/blog/category/important/feed/]]
+* [https://www.whonix.org/blog/feed/ Whonix Feature Blog RSS] [[File:2000px-Feed-icon.svg.png|12px|alt=Whonix Feature Blog rss|link=https://www.whonix.org/blog/feed/]]
+* subscribe to [https://www.whonix.org/blog Whonix Blog] by e-mail (when you are registered at Whonix Blog, you can choose to which categories you want to subscribe)
+* Whonix Blog posts are mirrored to [https://www.whonix.org/forum/ Whonix User Forum] You could subscribe by [http://blog.onlineinstitute.com/forum-hosting/email-notifications-new-posts-ismf/ e-mail] or by rss ([https://www.whonix.org/forum/index.php?action=.xml;type=rss;sa=recent;limit=20 recent posts] [[File:2000px-Feed-icon.svg.png|12px|alt=Whonix forum recent posts rss|link=https://www.whonix.org/forum/index.php?action=.xml;type=rss;sa=recent;limit=20]] or [https://www.whonix.org/forum/index.php?action=.xml;type=rss;sa=news;limit=20 recent topics] [[File:2000px-Feed-icon.svg.png|12px|alt=Whonix forum recent topics rss|link=https://www.whonix.org/forum/index.php?action=.xml;type=rss;sa=news;limit=20]] [[http://www.simplemachines.org/community/index.php?topic=25009.0 more rss options]]).
+* Whonix Blog posts are mirrored to [[Mailing_Lists#whonix-devel|Whonix Development Mailing List]]
+* [[Download#Social_Media_Profiles|Whonix Social Media Profiles]]
+&lt;/ref&gt;
 &lt;/translate&gt;
 
 &lt;translate&gt;
@@ -1078,7 +1087,7 @@ under certain conditions; see the wiki source code for details.
 &lt;translate&gt;&lt;!--T:253--&gt;
 Some icons created by third parties, Free licenses as well, see [[Authorship#Images_created_by_third_parties|Authorship Images created by third parties]] for details.
 &lt;/translate&gt;[[Category:Documentation]]{{Footer}}</text>
-      <sha1>puzjmnc60eb3rdgqlmc9r420jzozlr2</sha1>
+      <sha1>e5wny66ftozwptfa0wsog7xgxiep038</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -12487,15 +12496,15 @@ sudo umount /mnt/whonix
     <ns>0</ns>
     <id>115</id>
     <revision>
-      <id>6231</id>
-      <parentid>6218</parentid>
-      <timestamp>2014-03-02T13:14:57Z</timestamp>
+      <id>6948</id>
+      <parentid>6947</parentid>
+      <timestamp>2014-03-17T13:14:03Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>Downloading linux-headers-$(uname -r) doesn't require deb-src to be enabled. linux-headers are installed by default in Whonix 8.</comment>
-      <text xml:space="preserve" bytes="5647">{{Header}}
+      <comment>&quot;linux-headers-$(uname -r)&quot; is installed by default on Whonix 8 and above</comment>
+      <text xml:space="preserve" bytes="5628">{{Header}}
 {{#seo:
 |description=Instructions for installing VirtualBox Guest Additions in Whonix. Shared Folders, Mouse Integration, etc.
 }}
@@ -12505,7 +12514,7 @@ sudo umount /mnt/whonix
 
 * '''Weakens security in general as per [[Security Guide]] (Harden Virtualbox).'''
 * Also see article, [http://www.phoronix.com/scan.php?page=news_item&amp;px=OTk5Mw The VirtualBox Kernel Driver Is Tainted Crap] &lt;ref&gt;http://www.webcitation.org/6HqJVN0br&lt;/ref&gt; | Opposite statements: &lt;ref&gt;http://lists.debian.org/debian-devel/2013/08/msg00112.html&lt;/ref&gt;, &lt;ref&gt;http://lists.debian.org/debian-devel/2013/08/msg00116.html&lt;/ref&gt;
-* Clipboard sharing is disabled by default in the Virtual Box VM settings for Whonix-Gateway and Whonix-Workstation. Enable it only temporarily in case you really need it. Go to VirtualBox machine settings -&gt; General -&gt; Advanced -&gt; Shared Clipboard -&gt; Enable -&gt; ok.
+* Clipboard sharing is disabled by default in the Virtual Box VM settings for Whonix-Gateway and Whonix-Workstation. Enable it only temporarily in case you really need it. Go to VirtualBox machine settings -&gt; General -&gt; Advanced -&gt; Shared Clipboard -&gt; Bidirectional -&gt; ok.
 
 
 * &lt;s&gt;Additionally they give the Virtual Machine access to the host's (built-in) microphone. Many notebooks have a built-in microphone. In case you install Guest Additions anyway, better cover it up or remove your microphone. Forum question: [https://forums.virtualbox.org/viewtopic.php?f=1&amp;t=56820 VirtualBox Forum: How disable microphone when guest additions are installed?] Feature Request: [https://www.virtualbox.org/ticket/12023 disable microphone when guest additions are installed]&lt;/s&gt;
@@ -12526,7 +12535,7 @@ sudo apt-get update &amp;&amp; sudo apt-get dist-upgrade
 ## If you only want Shared Folder, for improved security,
 ## you can try using only the next line, but not the line after next.
 # You need kernel headers to be able to compile the kernel module
-sudo apt-get install --no-install-recommends linux-headers-$(uname -r) virtualbox-guest-dkms virtualbox-guest-utils
+sudo apt-get install --no-install-recommends virtualbox-guest-dkms virtualbox-guest-utils
 
 ## If you want all features, such as dynamic resolution
 ## and mouse integration.
@@ -12606,7 +12615,7 @@ Safe and reboot. Done.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>4qwijsxn7rw93ib0hbau92h00bnlwby</sha1>
+      <sha1>6s1d9oprzx63lf5ql5863r29unb2hur</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -12848,15 +12857,15 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>118</id>
     <revision>
-      <id>6890</id>
-      <parentid>6860</parentid>
-      <timestamp>2014-03-13T00:59:21Z</timestamp>
+      <id>6951</id>
+      <parentid>6950</parentid>
+      <timestamp>2014-03-17T13:30:41Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* License */</comment>
-      <text xml:space="preserve" bytes="5910">{{#seo:
+      <comment>/* Audit Documentation Changes */</comment>
+      <text xml:space="preserve" bytes="6642">{{#seo:
 |description=Donate, Spread, Follow, Mirror, Translate, Develop, Testing. Contribute to Free Software / Open Source.
 }}
 {{Header}}
@@ -12875,10 +12884,10 @@ Follow Whonix on [https://twitter.com/Whonix Twitter].
 Send [[Contact|feedback]] about Whonix.
 
 == Answer Questions ==
-Help other users on Stack Exchange by subscribing to the {{Code2|whonix}} tag in [http://tor.stackexchange.com/questions/tagged/whonix tor.se] and [http://tor.stackexchange.com/questions/tagged/whonix unix.se] either [http://blog.stackoverflow.com/2010/12/subscribe-to-tags-via-emai/ by e-mail] or by rss ([http://tor.stackexchange.com/feeds/tag?tagnames=whonix&amp;sort=newest tor.se rss]; 
-[http://unix.stackexchange.com/feeds/tag?tagnames=whonix&amp;sort=newest unix.se rss]).
+Help other users on Stack Exchange by subscribing to the {{Code2|whonix}} tag in [http://tor.stackexchange.com/questions/tagged/whonix tor.se] and [http://tor.stackexchange.com/questions/tagged/whonix unix.se] either [http://blog.stackoverflow.com/2010/12/subscribe-to-tags-via-emai/ by e-mail] or by rss ([http://tor.stackexchange.com/feeds/tag?tagnames=whonix&amp;sort=newest tor.se rss] [[File:2000px-Feed-icon.svg.png|12px|alt=Whonix tor.se rss|link=http://tor.stackexchange.com/feeds/tag?tagnames=whonix&amp;sort=newest]]; 
+[http://unix.stackexchange.com/feeds/tag?tagnames=whonix&amp;sort=newest unix.se rss] [[File:2000px-Feed-icon.svg.png|12px|alt=Whonix unix.se rss|link=http://unix.stackexchange.com/feeds/tag?tagnames=whonix&amp;sort=newest]]).
 
-Join the [https://www.whonix.org/forum/ Whonix User Forum]. You could subscribe by [http://blog.onlineinstitute.com/forum-hosting/email-notifications-new-posts-ismf/ e-mail] or by RSS ([https://www.whonix.org/forum/index.php?action=.xml;type=rss;sa=recent;limit=20 recent posts] or [https://www.whonix.org/forum/index.php?action=.xml;type=rss;sa=news;limit=20 recent topics] [[http://www.simplemachines.org/community/index.php?topic=25009.0 more rss options]]).
+Join the [https://www.whonix.org/forum/ Whonix User Forum]. You could subscribe by [http://blog.onlineinstitute.com/forum-hosting/email-notifications-new-posts-ismf/ e-mail] or by rss ([https://www.whonix.org/forum/index.php?action=.xml;type=rss;sa=recent;limit=20 recent posts] [[File:2000px-Feed-icon.svg.png|12px|alt=Whonix forum recent posts rss|link=https://www.whonix.org/forum/index.php?action=.xml;type=rss;sa=recent;limit=20]] or [https://www.whonix.org/forum/index.php?action=.xml;type=rss;sa=news;limit=20 recent topics] [[File:2000px-Feed-icon.svg.png|12px|alt=Whonix forum recent topics rss|link=https://www.whonix.org/forum/index.php?action=.xml;type=rss;sa=news;limit=20]] [[http://www.simplemachines.org/community/index.php?topic=25009.0 more rss options]]).
 
 Join IRC room [irc://irc.oftc.net/whonix #Whonix on irc.oftc.net] ([https://webirc.oftc.net:8443/?channels=Whonix Webchat]).
 
@@ -12971,7 +12980,7 @@ Login on github, go to https://github.com/Whonix/Whonix/issues and press &quot;w
 If you know KDE desktop scripting, for example how to change Desktop view to folder view using a script and would volunteer to answer such questions that would be immensely helpful.
 
 = Audit Documentation Changes =
-Keep up to date on our [[Special:RecentChanges|wiki changes]]. ([https://www.whonix.org/w/index.php?title=Special:RecentChanges&amp;feed=rss rss])
+Keep up to date on our [[Special:RecentChanges|wiki changes]]. ([https://www.whonix.org/w/index.php?title=Special:RecentChanges&amp;feed=rss rss] [[File:2000px-Feed-icon.svg.png|12px|alt=Whonix wiki recent changes rss|link=https://www.whonix.org/w/index.php?title=Special:RecentChanges&amp;feed=rss]])
 
 = Audit Whonix =
 
@@ -12991,7 +13000,7 @@ The PayPal logo (60px-De-pp-logo-200px.png), the subscribe button (subscribeCC_L
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Development]]</text>
-      <sha1>1oypco9ubi2qloama1sq4qqe6w7zwyd</sha1>
+      <sha1>nkfasrzynu05tjnr8auc9jjsv4tro7g</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -50962,19 +50971,20 @@ Congratulations, you already created your own build of Whonix. If you want, you 
     <ns>10</ns>
     <id>535</id>
     <revision>
-      <id>6201</id>
-      <parentid>6197</parentid>
-      <timestamp>2014-03-02T00:53:34Z</timestamp>
+      <id>6953</id>
+      <parentid>6201</parentid>
+      <timestamp>2014-03-17T13:51:42Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="2909">{{mbox
-| image      = [[File:Ambox_warning_pn.svg.png|40px|alt=Question mark]]
+      <comment>improved warning as suggested by Jason Ayala</comment>
+      <text xml:space="preserve" bytes="2942">{{mbox
+| image   = [[File:Ambox_warning_pn.svg.png|40px|alt=verifiable builds warning icon]]
 | text       = 
 Warning:
 
-For this feature adding security, it needs your help! Do not assume, that others are doing it for you.
+This feature only adds security if people like you actually use it! Don’t assume that someone else is doing it for you!
 }}
 
 Whonix has a feature which allows the community to check that Whonix {{Code2|.ova}}&lt;ref&gt;https://en.wikipedia.org/wiki/Open_Virtualization_Format&lt;/ref&gt; releases are verifiably created from project's own source code. We call this verifiable builds. This only proves, that the person and machine&lt;ref&gt;Due to build machine compromise.&lt;/ref&gt; building Whonix has added nothing malicious, such as a backdoor&lt;ref&gt;https://en.wikipedia.org/wiki/Backdoor_(computing)&lt;/ref&gt;. It doesn't prove, that there are no backdoors in Debian. This isn't possible, because neither Debian&lt;ref&gt;Whonix is based on Debian.&lt;/ref&gt; nor any other operating system provides deterministic builds yet.&lt;ref&gt;Some Debian developres are working on it, see [https://wiki.debian.org/ReproducibleBuilds Reproducible Builds].&lt;/ref&gt; Rather this feature is no attempt to proof, that there aren't any vulnerabilities&lt;ref&gt;https://en.wikipedia.org/wiki/Vulnerability_(computing)&lt;/ref&gt; in Whonix's or Debian. A remotely exploitable&lt;ref&gt;https://en.wikipedia.org/wiki/Exploit_(computer_security)&lt;/ref&gt; bug in Whonix or Debian, a flaw in Whonix's firewall leaking traffic or code {{Code2|phoning home}}&lt;ref&gt;https://en.wikipedia.org/wiki/Phoning_home&lt;/ref&gt; the contents of your harddrive would still be fatal. A precondition so this feature can improve overall security is, that the community is auditing Whonix's and Debian's source code for being free of backdoors and vulnerabilities in the first place. In summary, we believe this feature is useful and can improve security, but however isn't a magical answer to all computer security and trust questions. The following table hopefully helps understanding what this feature archives.
@@ -50984,7 +50994,7 @@ Whonix has a feature which allows the community to check that Whonix {{Code2|.ov
 You might be curious, why Whonix is verifiable while neither Debian nor any other operating system is? This is because [[About#Based_on_Debian|Whonix is very simple]], to oversimplify it: Whonix is just a collection of configuration files and scripts, i.e. Whonix's source code does not contain any compiled code etc. On the other hand, Debian is a full operating system. And of course, without the great work of the Debian project and all the upstream projects, Whonix wouldn't exist.
 
 This feature was first available with Whonix 8. Only users who download a new image can profit from this feature. Auditing versions older than Whonix 8 with this script is not possible.&lt;ref&gt;Not possible doesn't mean impossible here. Would just involve lots of work.&lt;/ref&gt; &lt;ref&gt;Because in order to implement the verifiable builds feature, we need to get rid of lots of non-deterministic auto-generated files at the end of the build process and to re-create them during first boot.&lt;/ref&gt;</text>
-      <sha1>4arnp1uqpwnh5hng5t6zuq6ih14ru58</sha1>
+      <sha1>mnm02r7lsnz5nh8u95cpatz4rjis9z2</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -68840,13 +68850,14 @@ Weiterführende Links (in Englischer Sprache):
     <ns>0</ns>
     <id>1146</id>
     <revision>
-      <id>6899</id>
-      <parentid>6896</parentid>
-      <timestamp>2014-03-13T22:14:37Z</timestamp>
+      <id>6954</id>
+      <parentid>6946</parentid>
+      <timestamp>2014-03-17T20:36:25Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Troubadour</username>
+        <id>230</id>
       </contributor>
-      <text xml:space="preserve" bytes="4860">{{Header}}
+      <text xml:space="preserve" bytes="5020">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
@@ -68863,7 +68874,7 @@ kdesudo kwrite /etc/apparmor.d/usr.bin.sdwdate
 Paste the following content.
 
 &lt;pre&gt;
-# Last modified: Thu Mar 13 22:04:37 UTC 2014
+# Last modified: Mon Mar 17 20:08:27 UTC 2014
 #include &lt;tunables/global&gt;
 
 /usr/bin/sdwdate {
@@ -68877,7 +68888,7 @@ Paste the following content.
 	capability sys_time,
 	capability dac_override,
 	
-	@{HOME}/sdwdatetest rwcx,
+	@{HOME}/sdwdatetest rwk,
 
 	/bin/bash ix,
 	/bin/rm rix,
@@ -68955,8 +68966,8 @@ Paste the following content.
 	/etc/apt/preferences.d/* r,
 	/etc/security/capability.conf r,
 	
-	/lib/i386-linux-gnu/security/* mr,	
-	/lib/security/* mr,	
+	/lib/i386-linux-gnu/** mr, 
+	/lib//security/* mr,	
 	
 	@{PROC} r,
 	@{PROC}/cmdline r,
@@ -68965,10 +68976,12 @@ Paste the following content.
 	@{PROC}/[0-9]*/fd/ r,
 	@{PROC}/sys/kernel/pid_max r,
 	@{PROC}/uptime r,
+	@{PROC}/tty/drivers r,			
+
 
 	/run/sdwdate/done rwcx,
 	/run/whonix/whonixcheck/timesync_pid rix,
-	/run/whonix/whonixcheck/timesync_done rw,
+	/run/whonix/whonixcheck/timesync_done rwix,
 	/run/whonix/whonixcheck/timesync_running rwcix,
 	/run/whonix/whonixcheck/whonixcheck_apt_get_pid rw,
 	
@@ -68987,14 +69000,20 @@ Paste the following content.
 	/tmp/** lrwcix,
 	
 	/usr/lib/sudo/sudoers.so mr,
+
 	/usr/lib/whonix/timesync_pre rix,
 	/usr/lib/whonix/timesync_post_error rix,
 	/usr/lib/whonix/timesync_prerequisite rix,
 	/usr/lib/whonix/timesync_post_success rix,
-	/usr/lib/whonix/whonixcheck/apt-get-update-simulate rix,
-	/usr/lib/whonix/uwtwrapper rix,
+	/usr/lib/whonix/usr/timesync_init_d rix,
+	/usr/lib/whonix/usr/timesync_post_failure rix,
 	/usr/lib/whonix/msgcollector rix,
 	/usr/lib/whonix/msgprogress rix,
+	
+	/usr/lib/whonix/curl_exit_codes rix,  
+		
+	/usr/lib/whonix/whonixcheck/apt-get-update-simulate rix,
+	/usr/lib/whonix/uwtwrapper rix,
 	/usr/lib/whonix/whonixcheck/help_check_tor_bootstrap.py rix,
 	/usr/lib/python2.7/** mr,
 	/usr/lib/python2.7/lib-dynload/datetime.so mr,
@@ -69028,8 +69047,9 @@ Paste the following content.
 	/usr/bin/dpkg-query rix,
 	/usr/bin/gawk rix,
 	/usr/bin/awk rix,
-
+	
 	/usr/sbin/service rix,
+
 
 	/usr/share/whonix/build_version r,
 	/usr/share/ca-certificates/** r,
@@ -69062,7 +69082,7 @@ sudo aa-enforce /etc/apparmor.d/usr.bin.sdwdate
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>9048cx4ec3jbpdeo2o9sujtp02e6ujp</sha1>
+      <sha1>aetlxaj2k5je5sj3boyo6yla44u7xwr</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
