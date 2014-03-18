@@ -5607,14 +5607,14 @@ then choose etc (at the bottom) and then choose UTC.
     <ns>0</ns>
     <id>87</id>
     <revision>
-      <id>5785</id>
-      <parentid>5335</parentid>
-      <timestamp>2014-02-27T12:16:13Z</timestamp>
+      <id>6955</id>
+      <parentid>5785</parentid>
+      <timestamp>2014-03-18T06:32:25Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <text xml:space="preserve" bytes="21428">&lt;!--
+      <comment>/* Using your home connection */</comment>
+      <text xml:space="preserve" bytes="22128">&lt;!--
 Copyright:
 
    Whonix Pre Install Advice wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -5797,6 +5797,9 @@ However, when not using a VM, your physical MAC address could be revealed in cas
 Changing the MAC address at least requires root access to find out the real physical address.
 (Note: This has to be tested)
 
+Consider:
+If your home network uses a cable modem internet connection, the ISP either provides the cable modem device as part of the service or requires pre-registration the MAC address of your self-provided cable modem in order to setup/apportion your service. If you manage to hack/change the MAC address of the cmodem, your service would immediately cease functioning (because the IP assignment is apportioned for, and bound to, that specific MAC address). As a result, when connecting from behind a cable modem / NAT router, spoofing the MAC address of your PC's ethernet adapter may be pointless -- if you are &quot;traced&quot;, the trackable endpoint will be the MAC address of the cable modem device.
+
 ==== Using a public computer (e.g. in a library, Internet-cafe) ====
 
 The MAC address should not be changed, as it may bring undesired admin attention and/or simply forbid access to the Internet.
@@ -5925,7 +5928,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>78akse22xfsc3d4fdsvv5fj2ucyd0xw</sha1>
+      <sha1>abnw6zy29vxmpe3cbb6n4ia6b8nla16</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
