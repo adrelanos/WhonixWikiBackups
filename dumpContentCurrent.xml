@@ -733,14 +733,14 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>19</id>
     <revision>
-      <id>6952</id>
-      <parentid>6949</parentid>
-      <timestamp>2014-03-17T13:45:13Z</timestamp>
+      <id>6960</id>
+      <parentid>6952</parentid>
+      <timestamp>2014-03-18T19:49:15Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="14810">{{Header}}
+      <text xml:space="preserve" bytes="15149">{{Header}}
 &lt;!--
 Copyright:
 
@@ -1035,6 +1035,23 @@ You can use this workaround.&lt;/translate&gt;
 VLC -&gt; Tools -&gt; Preferences -&gt; Video -&gt; Output -&gt; X11 -&gt; Save
 &lt;/pre&gt;
 
+=== gpg keyserver unreachable ===
+Open gpg.conf.
+&lt;pre&gt;
+kwrite ~/.gnupg/gpg.conf
+&lt;/pre&gt;
+
+Search for all instances of &quot;keyserver&quot;. And comment them out, i.e.
+&lt;pre&gt;
+#keyserver ...
+&lt;/pre&gt;
+
+Add a functional keyerver at the bottom. In Whonix 9 we will be using the following one as default.
+
+&lt;pre&gt;
+keyserver hkp://qdigse2yzvuglcix.onion
+&lt;/pre&gt;
+
 &lt;translate&gt;== Minor == &lt;!--T:247--&gt;
 &lt;/translate&gt;
 
@@ -1087,7 +1104,7 @@ under certain conditions; see the wiki source code for details.
 &lt;translate&gt;&lt;!--T:253--&gt;
 Some icons created by third parties, Free licenses as well, see [[Authorship#Images_created_by_third_parties|Authorship Images created by third parties]] for details.
 &lt;/translate&gt;[[Category:Documentation]]{{Footer}}</text>
-      <sha1>e5wny66ftozwptfa0wsog7xgxiep038</sha1>
+      <sha1>icviaraf1pf3jwiag18a6qj5tcn2wan</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -12860,14 +12877,15 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>118</id>
     <revision>
-      <id>6951</id>
-      <parentid>6950</parentid>
-      <timestamp>2014-03-17T13:30:41Z</timestamp>
+      <id>6961</id>
+      <parentid>6951</parentid>
+      <timestamp>2014-03-18T22:23:28Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Audit Documentation Changes */</comment>
+      <minor/>
+      <comment>Removed protection from &quot;[[Contribute]]&quot;</comment>
       <text xml:space="preserve" bytes="6642">{{#seo:
 |description=Donate, Spread, Follow, Mirror, Translate, Develop, Testing. Contribute to Free Software / Open Source.
 }}
@@ -55503,21 +55521,21 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
     <ns>0</ns>
     <id>691</id>
     <revision>
-      <id>6923</id>
-      <parentid>5757</parentid>
-      <timestamp>2014-03-15T14:02:56Z</timestamp>
+      <id>6959</id>
+      <parentid>6958</parentid>
+      <timestamp>2014-03-18T18:15:37Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Set cluster_size 512 - 2MB for better performance? */</comment>
-      <text xml:space="preserve" bytes="6666">{{Header}}
+      <comment>/* Links */</comment>
+      <text xml:space="preserve" bytes="6435">{{Header}}
 {{#seo:
 |description=Development Notes for adding KVM support to Whonix.
 }}
 
 = Links =
-* [[Special:AWCforum/st/id306/]]
+* &lt;s&gt;[[Special:AWCforum/st/id306/]]&lt;/s&gt;
 * [[KVM|KVM instructions work in progress]]
 * [https://github.com/Whonix/Whonix/issues/121 KVM Support github ticket]
 
@@ -55546,9 +55564,6 @@ How to use -rtc clock=vm ?
 
 == Weaker warning against KVM in whonixcheck ==
 As soon as all blockers have been sorted out. We could recommend using [[KVM]] instructions.
-
-== qcow2 compression ==
-There is a minor issue with the new extra qcow2 images, which are now preallocated. Upload would take ~250 hours per image. Looks like they're not [https://en.wikipedia.org/wiki/Sparse_file sparse files] anymore. I'll manually compress and upload them. No need for a new tag, no need to delay the release further.
 
 = Non-Blockers =
 == SPICE security implications ==
@@ -55666,13 +55681,16 @@ The https://github.com/Whonix/Whonix/blob/master/help-steps/analyze_image requir
 == metadata preallocated images ==
 For better performance. (As per [http://www.ilsistemista.net/index.php/virtualization/11-kvm-io-slowness-on-rhel-6.html blog post].) Done in 7.7.8.0.
 
+== qcow2 compression ==
+When uncompressed, upload would take ~250 hours per image. Now compressing.
+
 = Footnotes =
 &lt;references /&gt;
 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>35z7ltu6bcpf4qbmqvx75st0yiele5u</sha1>
+      <sha1>4197eau01p0oauzsv2ogq8inbi8lsf3</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
