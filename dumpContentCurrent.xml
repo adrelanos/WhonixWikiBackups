@@ -1165,14 +1165,14 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
     <ns>0</ns>
     <id>23</id>
     <revision>
-      <id>5869</id>
-      <parentid>4723</parentid>
-      <timestamp>2014-02-27T13:46:59Z</timestamp>
+      <id>6984</id>
+      <parentid>5869</parentid>
+      <timestamp>2014-03-20T03:37:03Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <text xml:space="preserve" bytes="25905">&lt;languages /&gt;
+      <comment>Some grammar error. &quot;file formats&quot; not &quot;files format&quot;</comment>
+      <text xml:space="preserve" bytes="25904">&lt;languages /&gt;
 {{Header}}
 {{#seo:
 |description=Things you should know about Whonix and Anonymity in General to stay safe.
@@ -1329,9 +1329,9 @@ For more information on this topic, see also: [[FAQ#Is_there_a_substitute_for_Wh
 
 = Whonix doesn't clear the metadata of your documents =
 
-Numerous files format store hidden data or metadata inside of the files. Text processors or PDF files could store the name of the author, the date and time of creation of the file, and sometimes even parts of the editing history of the fileâ€¦ those hidden data depend on the file format and the software used.
+Numerous file formats store hidden data or metadata inside of the files. Text processors or PDF files could store the name of the author, the date and time of creation of the file, and sometimes even parts of the editing history of the fileâ€¦ those hidden data depend on the file format and the software used.
 
-Images file formats, like TIFF of JPEG, probably take the prize in this field. Those files, created by digital cameras or mobile phones, contain a metadata format called EXIF which can include the date, time and sometimes the GPS coordinates of the picture, the brand and serial number of the device which took it as well as a thumbnail of the original image. Image processing software tend to keep those data intact. The internet is full of cropped or blurred images for which the EXIF thumbnail still contains the full original picture.
+Image file formats, like TIFF of JPEG, probably take the prize in this field. Those files, created by digital cameras or mobile phones, contain a metadata format called EXIF which can include the date, time and sometimes the GPS coordinates of the picture, the brand and serial number of the device which took it as well as a thumbnail of the original image. Image processing software tend to keep those data intact. The internet is full of cropped or blurred images for which the EXIF thumbnail still contains the full original picture.
 
 '''Whonix doesn't clear the metadata of your files for you'''. Yet, it's still within the Whonix' design goal to help you do that. For example, Whonix already comes with [[Metadata |  MAT]], which is a Metadata Anonymisation Toolkit.
 
@@ -1455,7 +1455,7 @@ See also [[Security_in_Real_World | Whonix security in real world]], [[Security_
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>g6tc15crx801by0h29ad7ardqxfiph6</sha1>
+      <sha1>lm78030snhh7jaxreqbgg20qg2xbdqd</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -10056,14 +10056,13 @@ You can also read the scripts and only run the commands you find sensible manual
     <ns>0</ns>
     <id>102</id>
     <revision>
-      <id>5790</id>
-      <parentid>4725</parentid>
-      <timestamp>2014-02-27T12:22:51Z</timestamp>
+      <id>6986</id>
+      <parentid>6985</parentid>
+      <timestamp>2014-03-20T05:55:59Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <text xml:space="preserve" bytes="9369">&lt;!--
+      <text xml:space="preserve" bytes="9274">&lt;!--
 Copyright:
 
    Whonix Software wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -10121,7 +10120,7 @@ Documentation:
 
 See [[E-Mail]].
 
-== IRC CLient ==
+== IRC Client ==
 
 Pre-installed.
 
@@ -10133,16 +10132,13 @@ Pre-installed.
 
 [http://www.videolan.org/vlc/ VLC Media Player]
 
-Start menu -&gt; Applications -&gt; Media -&gt; VLC Media Player
+Start menu -&gt; Applications -&gt; Multimedia -&gt; VLC Media Player
 
 == Image Viewer ==
 
-You can install it using Start menu -&gt; Applications -&gt; System -&gt; Terminal.
+Pre-installed.
 
-&lt;pre&gt;
-sudo apt-get update
-sudo apt-get install gwenview
-&lt;/pre&gt;
+Start menu -&gt; Applications -&gt; Graphics -&gt; Image Viewer
 
 == Desktop Screenshot Creator ==
 
@@ -10170,12 +10166,9 @@ sudo apt-get install gtk-recordmydesktop
 
 [http://utils.kde.org/projects/kcalc/ KCalc]
 
-You can install it using Start menu -&gt; Applications -&gt; System -&gt; Terminal.
+Pre-installed.
 
-&lt;pre&gt;
-sudo apt-get update
-sudo apt-get install kcalc
-&lt;/pre&gt;
+You can start it using Start menu -&gt; Applications -&gt; Utilities -&gt; Scientific Calculator.
 
 == Terminal ==
 
@@ -10246,7 +10239,7 @@ sudo apt-get install kwave
 
 == Printing and Scanning ==
 
-Printing is risky. This is not a Whonix related issues. It is a general issue with printers.
+Printing is risky. This is not a Whonix related issue. It is a general issue with printers.
 
 Quotes from eff.org&lt;ref&gt;https://www.eff.org/issues/printers&lt;/ref&gt;:
 
@@ -10334,7 +10327,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>ht1834aeyokoodv5mcqujydpxghntir</sha1>
+      <sha1>ffcxah9kmhxvij93mgv1jxlwskh7mek</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -12877,15 +12870,16 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>118</id>
     <revision>
-      <id>6975</id>
-      <parentid>6961</parentid>
-      <timestamp>2014-03-19T19:49:23Z</timestamp>
+      <id>6981</id>
+      <parentid>6980</parentid>
+      <timestamp>2014-03-20T01:17:51Z</timestamp>
       <contributor>
-        <username>Lasko</username>
-        <id>255</id>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <comment>Added pictures that link to each section. Organized sections a bit. Corrected a few small grammar mistakes.</comment>
-      <text xml:space="preserve" bytes="7768">{{#seo:
+      <comment>/* Spread */</comment>
+      <text xml:space="preserve" bytes="8035">__NOTITLE__
+{{#seo:
 |description=Donate, Spread, Follow, Mirror, Translate, Develop, Testing. Contribute to Free Software / Open Source.
 }}
 {{Header}}
@@ -12926,13 +12920,21 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
 Feel free to do any or all of them. Any help is welcome. Your own protection and safety are the first priority.
 
 === Spread ===
-Tell your friends about Whonix. Post [https://www.whonix.org/blog/ news] about Whonix on your website or blog.
+Tell your friends about Whonix. Post [https://www.whonix.org/blog/ news] about Whonix on your website, blog or social media.
 
 === Follow ===
-Follow Whonix on [https://twitter.com/Whonix Twitter] and the Whonix [https://www.whonix.org/blog/ blog].
+Follow,
+
+* [[Download#Whonix_News_Blogs|Whonix blog]].
+&lt;br /&gt;
+And if you do not get into any trouble, follow Whonix on social media:
+
+* [https://twitter.com/Whonix Whonix Twitter Profile]
+* [https://www.facebook.com/Whonix Whonix Facebook Profile]
+* [https://plus.google.com/108150429836421683225/ Whonix Google+ Profile].
 
 === Feedback ===
-Send [[Contact|feedback]] about Whonix.
+Send [[https://www.whonix.org/forum|feedback]] about Whonix.
 
 
 === WIkipedia ===
@@ -12951,11 +12953,10 @@ Make awesome Whonix [[Screenshots]]. Donate them to Whonix or release them into 
 
 === Videos ===
 
-We need more Whonix [[Videos]]. Maybe in your language? No matter if demonstration videos, promotional videos, conceptual videos or tutorials. Donate them to Whonix or release them into [https://creativecommons.org/publicdomain/zero/1.0/ public domain].
+We need more Whonix [[Videos]]. Maybe in your language? No matter if demonstration videos, promotional videos, conceptual videos or tutorials. Donate them to Whonix or release them into [https://creativecommons.org/publicdomain/zero/1.0/ public domain]. We also have a video script waiting to be produced, get in contact.
 
 === Social Media / Marketing ===
-
-I am not very experienced in maintaining social media relations. Even though they work against privacy goals by collecting a lot of data, I believe they are important for marketing and communication nowadays.
+Even though they work against privacy goals by collecting a lot of data, we believe they are important for marketing and communication nowadays.
 
 If you are willing to help or to maintain Whonix's Twitter account, Facebook page, Google+, YouTube or identic.ca account, please get in [[Contact|contact]].
 
@@ -13060,23 +13061,27 @@ Join the [https://www.whonix.org/forum/ Whonix User Forum]. You could subscribe 
 Join IRC room [irc://irc.oftc.net/whonix #Whonix on irc.oftc.net] ([https://webirc.oftc.net:8443/?channels=Whonix Webchat]).
 
 
+&lt;!--
 === Forum Moderator ===
 
 Please apply as a Forum Moderator. You can help by approving posts by real people and stopping automatic spam bots. And perhaps answer a question if you know the answer, or just leave the question unanswered until Patrick Schleizer or someone else answers.
 
 If you want, you get notified about new posts by e-mail. If you could check and moderate the forums a few times every day in your spare time, that would really help.
-
+--&gt;
 
 &lt;center&gt;
+
 == Legal ==
 ----
 &lt;/center&gt;
 
 
-Either answering some small questions or filling one piece of paperwork would be immensely helpful. Please [[Contact|contact]] if interested. 
+Knowledge about German gUG and taxes would be helpful. Please e-mail Patrick Schleizer, adrelanos@riseup.net if you are interested.
+
 
 
 &lt;center&gt;
+
 == License ==
 ----
 &lt;/center&gt;
@@ -13089,7 +13094,7 @@ The PayPal logo (60px-De-pp-logo-200px.png), the subscribe button (subscribeCC_L
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Development]]</text>
-      <sha1>pwpfa0fv59794rt75kjn4k6t62yf5hb</sha1>
+      <sha1>fj5w5g6o1g7b84g7mwxtb0h2erngrnm</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -55589,14 +55594,14 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
     <ns>0</ns>
     <id>691</id>
     <revision>
-      <id>6974</id>
-      <parentid>6972</parentid>
-      <timestamp>2014-03-19T17:10:12Z</timestamp>
+      <id>6982</id>
+      <parentid>6977</parentid>
+      <timestamp>2014-03-20T02:56:25Z</timestamp>
       <contributor>
         <ip>127.0.0.1</ip>
       </contributor>
-      <comment>kvmclock link</comment>
-      <text xml:space="preserve" bytes="7974">{{Header}}
+      <comment>clock=vm qemu patchset link</comment>
+      <text xml:space="preserve" bytes="8247">{{Header}}
 {{#seo:
 |description=Development Notes for adding KVM support to Whonix.
 }}
@@ -55621,6 +55626,8 @@ How to check, that it is set to '''utc'''?
 
 == How to use -rtc clock=vm ? ==
 KVM's '''-rtc''' option as per https://doc.opensuse.org/products/draft/SLES/SLES-kvm_sd_draft/cha.qemu.running.html#cha.qemu.running.gen_opts.rtc
+
+This is the original qemu patchset that implements clock=vm in the timer back-ends: https://www.redhat.com/archives/libvir-list/2010-March/msg01293.html 
 
 &lt;blockquote&gt;
 If you need to isolate the VM Guest clock from the host one, specify clock=vm instead of the default clock=host. 
@@ -55732,6 +55739,10 @@ Yes if its recommneded then lets do this, Its easily done through the GUI by goi
 
 I am yet to document this in the KVM page lets do this at the end. Is there any tangible speed gains?
 
+== Shared Folder ==
+We should add instructions on how to use shared folders.
+http://www.linux-kvm.org/page/9p_virtio
+
 = Answered Questions =
 == Leak Tests? ==
 [[HulaHoop1]] sorted that out in [[Special:AWCforum/st/id306/]].
@@ -55795,7 +55806,7 @@ whonixcheck (since Whonix 8) would tell you if kvmclock is enabled. whonixcheck 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>i9p6aa1vyavc8ngkunuugeqv861iwjj</sha1>
+      <sha1>klr321f1xxdfz0nekxy4bzq5qh9107j</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -69426,6 +69437,26 @@ License: Public Domain</comment>
 
 License: Public Domain</text>
       <sha1>8ds49z7fs2zyy79sckzh2wervrln3lr</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Juegos De Consolas arma de aumento de la imaginacion</title>
+    <ns>0</ns>
+    <id>1157</id>
+    <revision>
+      <id>6983</id>
+      <timestamp>2014-03-20T03:25:34Z</timestamp>
+      <contributor>
+        <username>LinoBarros</username>
+        <id>253</id>
+      </contributor>
+      <comment>Created page with &quot;Desde hace una temporada de que analice en un sitio en relacion a topicos educativos que los niños de hoy en dia leen cada vez muy poco, cualquier cosa que podemos constatar ...&quot;</comment>
+      <text xml:space="preserve" bytes="2978">Desde hace una temporada de que analice en un sitio en relacion a topicos educativos que los niños de hoy en dia leen cada vez muy poco, cualquier cosa que podemos constatar en las insuficientes transacciones de textos de ficcion, novela, etc ... tendencia de que progresivamente conduce a mas.&lt;br&gt;&lt;br&gt;
+
+Seria muy posible el que en dicha obvia progresion a la baja en el habito de lectura se escondan diferentes argumentos en medio de las que se encuentran la mayor notoriedad en el dia a dia de los televisores y por supuesto de los juegos.  Sin embargo, analicemos un poquito mas. &lt;br&gt;&lt;br&gt;Muchisimo antaño del que ciertos Pc, videoconsolas y videogames ocuparan el sitio de los textos, los infantes de entonces nos teniamos que componer con los Jugueticos de toda la vida y solo teniamos a total mandato una serie de niños en la tele, cada pocos dias.  En estas circunstancias, no nos convenia mas soluccion que acudir a los dichos juguetes de siempre y los cuentos como instrumento de desarrollo de nuestra fantasia. Justamente inventabamos nuestras cruzadas, relatos, etc de manera bastante mas directa y facil.  &lt;br&gt;&lt;br&gt;¿Que alcanzamos a expresar de los momentos actuales en con este motivo? En nuestros dias por muchisimo que nos pueda doler a los mas profusamente viejos aceptar sucede exactamente lo mismo, tan solo que los medios para poder producir esa ficcion han variado de manera extremo. Un niño de ahora lleva a su disposicion las mencionadas anteriormente relatos que nosotros poseiamos, podrian continuar las aventuras de heroes, malos, corsarios, trotamundos, puede asistir en conflictos contra los “villanos”, debido a los videogames.  &lt;br&gt;&lt;br&gt;Actualmente cada uno de nuestros hijos, hermanos enanos, etcétera es el personal super heroe crucial de la historia que esta disfrutando a modo de el juego, es el, el que realiza las diferentes acciones que se tienen a cabo en la  televisor, como si fuera un otro yo de sel mismo.  De dicha manera el enano produce su campo de ficcion, no de tal manera manipulativa al igual que antaño, pero si de manera informatica. &lt;br&gt;&lt;br&gt;Los chicos de actualmente prosiguen estando igual que los chicos de antiguamente y si los cuentos se expenden muchisimo menos es debido a que los puntos potentes de los games son extremadamente consistente.  Un libro entra a traves de la vista, es blanco y negro o tal y como mucho ofrece alguna imagen. Por el contrario un juego es una experiencia en la que entran en videojuego gran parte de sentidos y por consiguiente es mas absorbente, de esta forma en el momento en que jugamos tenemos que procurar atencion a los sonidos, a lo que podemos ver e inclusive a las vibraciones de los mandos. &lt;br&gt;&lt;br&gt;Jamas sere uno mismo el que apueste por desterrar los cuentos, y menos siendo un enamorado de leer como soy, sin embargo menos aun sere yo la persona que comente que los videojuegos son los peor por hacer Semejante ocasion, en el equilibrio entre entreambos este la solucion.</text>
+      <sha1>j0dxdc642plgwfrmf2arcuejvnadkeb</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
