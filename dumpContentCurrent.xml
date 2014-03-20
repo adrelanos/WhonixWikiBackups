@@ -1465,14 +1465,14 @@ See also [[Security_in_Real_World | Whonix security in real world]], [[Security_
     <ns>0</ns>
     <id>24</id>
     <revision>
-      <id>6924</id>
-      <parentid>6871</parentid>
-      <timestamp>2014-03-15T19:09:25Z</timestamp>
+      <id>6994</id>
+      <parentid>6924</parentid>
+      <timestamp>2014-03-20T18:37:21Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <comment>Added columns and made link text smaller. Hopefully more readable. Not as pretty as JonDo site I know but some of these lists are really long so I wasn't sure how else to present them.</comment>
-      <text xml:space="preserve" bytes="18395">&lt;!--
+      <text xml:space="preserve" bytes="18517">&lt;!--
 Copyright:
 
    Whonix Documentation wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -1706,6 +1706,7 @@ Anonymity is a complex problem without an easy solution, and security is only as
 ** &lt;small&gt; [[AppArmor/Timesync|Whonix timesync]]&lt;/small&gt;
 ** &lt;small&gt; [[AppArmor/Whonixcheck|whonixcheck]]&lt;/small&gt;
 * &lt;small&gt; [[Advanced Security Guide|Advanced Security Guide]]&lt;/small&gt;
+* &lt;small&gt; [[Advanced_Security_Guide#More_than_one_Tor_Browser_in_Whonix|Using Multiple instances of Tor Browser]]&lt;/small&gt;
 * &lt;small&gt; [[Multiple Whonix-Workstations|Using Multiple Whonix-Workstations]]&lt;/small&gt;
 * &lt;small&gt; [[Multiple_Whonix-Workstations#Multiple_Whonix-Gateways|Using Multiple Whonix-Gateways]]&lt;/small&gt;
 * &lt;small&gt; [[Advanced_Security_Guide#Chaining_Anonymizing_Gateways|Chaining Anonymizing Gateways]]&lt;/small&gt;
@@ -1796,7 +1797,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>o122hjwxn2exfph8gw1lue8ldn80il4</sha1>
+      <sha1>5gd4rz59vnveql9kf039mccfr9wyhds</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -15888,14 +15889,15 @@ Specifically for Whonix, [[whonixcheck]] and the [[Dev/News|Whonix News Format]]
     <ns>0</ns>
     <id>134</id>
     <revision>
-      <id>6922</id>
-      <parentid>6841</parentid>
-      <timestamp>2014-03-15T12:50:52Z</timestamp>
+      <id>6993</id>
+      <parentid>6922</parentid>
+      <timestamp>2014-03-20T18:35:56Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <comment>added some new details about fixing clock skew issues for I2P running inside Whonix Workstation</comment>
-      <text xml:space="preserve" bytes="6047">{{Header}}
+      <comment>/* Installing i2p inside Whonix-Workstation (i2p over Tor) */</comment>
+      <text xml:space="preserve" bytes="6094">{{Header}}
 {{#seo:
 |description=i2p over Tor. Tunnelling the i2p Anonymizing Network over the Tor Anonymizing Network. Connection Schema: Tor -&gt; i2p -&gt; Destination.
 }}
@@ -15935,7 +15937,7 @@ List of i2p inproxies:
 
 == Installing i2p inside Whonix-Workstation (i2p over Tor) ==
 '''Update''': &lt;br /&gt;
-Accessing i2p's webinterface on 127.0.0.1 using Tor Browser is no longer possible due to a [https://trac.torproject.org/projects/tor/ticket/10419 change] in Tor Browser by The Tor Project. You could set to transparent torification, but then you would be vulnerable fingerprinting issues. See [https://trac.torproject.org/projects/tor/ticket/10419 ticket] for more.
+Accessing i2p's webinterface on 127.0.0.1 using Tor Browser is no longer possible due to a [https://trac.torproject.org/projects/tor/ticket/10419 change] in Tor Browser by The Tor Project. You [[Tor_Browser#Change.2FRemove_Proxy_Settings|could set to transparent torification]], but then you would be vulnerable fingerprinting issues. See [https://trac.torproject.org/projects/tor/ticket/10419 ticket] for more.
 
 It is possible to run i2p inside the Whonix-Workstation. Advantages:
 
@@ -15997,7 +15999,7 @@ Was just a development idea with some progress. Moved to [[Dev/Inspiration]].
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>2xsl8v77oug0nbd24ziv8r4y7e95kpe</sha1>
+      <sha1>9r2708o96d8i4163f6ikl4a4b1wzj7j</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -43767,16 +43769,16 @@ Modifications coming with Whonix will always fall back to reasonable defaults, i
     <ns>0</ns>
     <id>468</id>
     <revision>
-      <id>6730</id>
-      <parentid>5942</parentid>
-      <timestamp>2014-03-09T19:47:40Z</timestamp>
+      <id>7001</id>
+      <parentid>6988</parentid>
+      <timestamp>2014-03-20T20:37:19Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <username>Jekyll</username>
+        <id>161</id>
       </contributor>
       <minor/>
-      <comment>Adrelanos moved page [[Dev/BuildDocumentation 8 short]] to [[Dev/Build Documentation/8 short]]</comment>
-      <text xml:space="preserve" bytes="3333">&lt;!--
+      <comment>Version template change</comment>
+      <text xml:space="preserve" bytes="3305">&lt;!--
 # This file is part of Whonix
 # Copyright (C) 2012 - 2013 adrelanos &lt;adrelanos@riseup.net&gt;
 # See the file COPYING for copying conditions.
@@ -43797,9 +43799,7 @@ Best way to get help is to make a thread in the forum.
 
 = Build Documentation =
 == Introduction ==
-This page documents how to build Whonix VirtualBox images.
-
-It documents how to build the Whonix 8.
+This page documents how to build Whonix {{Version8}} VirtualBox images.
 
 
 Build prerequisites:
@@ -43905,7 +43905,7 @@ OVA image can now be used in VirtualBox.
 {{Footer}}
 
 [[Category:Development]]</text>
-      <sha1>44604vyccyi8mtuhlvrtbtjk703w9p9</sha1>
+      <sha1>3r7opbhzhrd5ddvjh8nvlniflg6akc6</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -55594,14 +55594,15 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
     <ns>0</ns>
     <id>691</id>
     <revision>
-      <id>6982</id>
-      <parentid>6977</parentid>
-      <timestamp>2014-03-20T02:56:25Z</timestamp>
+      <id>6992</id>
+      <parentid>6982</parentid>
+      <timestamp>2014-03-20T15:31:17Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <comment>clock=vm qemu patchset link</comment>
-      <text xml:space="preserve" bytes="8247">{{Header}}
+      <comment>/* Non-Blockers */</comment>
+      <text xml:space="preserve" bytes="8478">{{Header}}
 {{#seo:
 |description=Development Notes for adding KVM support to Whonix.
 }}
@@ -55739,6 +55740,9 @@ Yes if its recommneded then lets do this, Its easily done through the GUI by goi
 
 I am yet to document this in the KVM page lets do this at the end. Is there any tangible speed gains?
 
+== Qemu Support ==
+To change existing kvm guest to use plain qemu: as per not available in virt-manager. do 'sudo virsh edit $vmname' and change &lt;domain type='kvm'&gt; to &lt;domain type='qemu'&gt; (source: #virt channel on irc.oftc.net).
+
 == Shared Folder ==
 We should add instructions on how to use shared folders.
 http://www.linux-kvm.org/page/9p_virtio
@@ -55806,7 +55810,7 @@ whonixcheck (since Whonix 8) would tell you if kvmclock is enabled. whonixcheck 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>klr321f1xxdfz0nekxy4bzq5qh9107j</sha1>
+      <sha1>qlz49gfuty9sy7p6s9ejtxryoomdokl</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -60650,23 +60654,24 @@ inspired by http://aboli.sh/
     <ns>0</ns>
     <id>849</id>
     <revision>
-      <id>6942</id>
-      <parentid>6732</parentid>
-      <timestamp>2014-03-16T18:51:15Z</timestamp>
+      <id>7008</id>
+      <parentid>7000</parentid>
+      <timestamp>2014-03-20T20:47:59Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <username>Jekyll</username>
+        <id>161</id>
       </contributor>
-      <comment>update for Whonix 8</comment>
-      <text xml:space="preserve" bytes="13319">{{Header}}
+      <minor/>
+      <comment>template debian version</comment>
+      <text xml:space="preserve" bytes="13414">{{Header}}
 {{#seo:
 |description=Instructions for building Whonix from Source Code inside a Virtual Machine.
 }}
 
 = Documentation =
-This is a short set of instructions for building 8 stable version of Whonix inside VirtualBox (as opposed to the traditional process of running these commands on a system that is installed directly on the hardware).
+This is a short set of instructions for building the stable version of Whonix {{Version8}} inside VirtualBox (as opposed to the traditional process of running these commands on a system that is installed directly on the hardware).
 
-Advantages of this approach are that you can build Whonix on any OS that can run VirtualBox (you need Debian Stable for hardware type build) and that any potential system damage is limited to the VM. Using shapshots you can quickly revert a faulty state or a failed build and start again.
+Advantages of this approach are that you can build Whonix on any OS that can run VirtualBox (you need Debian Stable for hardware type build) and that any potential system damage is limited to the VM. Using snapshots you can quickly revert a faulty state or a failed build and start again.
 
 The focus here is to show the simplest way to build Whonix from source. Various security precautions such as GPG key verification are omitted.
 
@@ -60675,7 +60680,7 @@ Please read the full [[Dev/BuildDocumentation_8#Build_Documentation.|documentati
 == Get and prepare Debian and VirtualBox ==
 [[Debian#Download_and_Verification|Download and verify]] Debian Stable/Wheezy 32 bit network install (netinst) ISO.
 
-[https://www.virtualbox.org/wiki/Downloads Download] the latest version of VirtualBox and verify the downloaded packages by [http://dlc.sun.com.edgesuite.net/virtualbox/4.3.6/SHA256SUMS comparing SHA256 checksums].
+[https://www.virtualbox.org/wiki/Downloads Download] the latest version of VirtualBox and verify the downloaded packages by [http://dlc.sun.com.edgesuite.net/virtualbox/4.3.8/SHA256SUMS comparing SHA256 checksums].
 
 After you install VirtualBox create a new virtual machine with the following specifics:
 
@@ -60690,7 +60695,7 @@ Storage on physical hard drive: Dynamically allocated / Next
 File location and size: 50 GB / Create
 &lt;/pre&gt;
 
-Start the newly created virtual machine, select the ISO of Debian 7.4 stable (debian-7.4.0-i386-netinst.iso) and click Start.
+Start the newly created virtual machine, select the ISO of Debian {{Version8Debian}} stable (debian-7.4.0-i386-netinst.iso) and click Start.
 
 &lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
 '''OPTIONAL.'''
@@ -61065,7 +61070,7 @@ git checkout 8
  &lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
 '''OPTIONAL.'''
 
-If you are interested in seeing a visual walk-through of the build from source, click on Expand on the right. Pictures are shown using the tag 7.7.6.4 but you must use 8
+If you are interested in seeing a visual walk-through of the build from source, click on Expand on the right. Pictures are shown using the tag 7.7.6.4 but you must use {{Version}}
 
 &lt;div class=&quot;mw-collapsible-content&quot;&gt;
 Logging as user.
@@ -61095,7 +61100,7 @@ All available tags displayed.
 [[File:14b.png|400px]]
 
 
-Checkout out 8
+Checkout out {{Version}}
 
 [[File:15b.png|400px]]
 &lt;/div&gt;
@@ -61185,7 +61190,7 @@ To proceed, [https://www.virtualbox.org/wiki/Downloads download] the vbox file (
 ===== USB transfer=====
 Make your USB key available to the VM through selecting it in the Devices/USB devices menu. Plug it in first of course ;)
 
-You can automount your USB or set it up manually. The former involves typing up a long command but on some computers, usbmount might, for some reason, only reach speeds of USB 1.0, meaning it will take five to six hours to transfer the file. Test it out.
+You can automount your USB or set it up manually. The former involves typing up a long command but on some computers usbmount might, for some reason, only reach speeds of USB 1.0, meaning it will take five to six hours to transfer the file. Test it out.
 
 ====== Using usbmount ====== 
 &lt;pre&gt;
@@ -61209,7 +61214,10 @@ Deselect your USB key in the VM's Devices/USB devices menu to make it available 
 
 ====== Mounting USB manually ====== 
 &lt;pre&gt;
-## mount your USB key to /media/usb
+## Create a mount point
+sudo mkdir /media/usb
+
+## Mount your USB key to /media/usb
 sudo mount -t vfat /dev/sdb1 /media/usb -o uid=1000,gid=1000,utf8,dmask=027,fmask=137
 
 ## Check if the USB is present and mounted
@@ -61233,7 +61241,6 @@ If you want to build another image (presuming you have build only Workstation or
 
 From there follow the steps as you previously did and build the image you still need Workstation or Gateway.
 
-
 = Footnotes =
 
 &lt;references/&gt;
@@ -61241,7 +61248,7 @@ From there follow the steps as you previously did and build the image you still 
 {{Footer}}
 
 [[Category:Development]]</text>
-      <sha1>gylc3japj5o7pfjs766bl3vt6twct8o</sha1>
+      <sha1>1pnggezdmej3043oyt9fi4ou4vp95xg</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -64177,14 +64184,14 @@ test</text>
     <ns>0</ns>
     <id>966</id>
     <revision>
-      <id>6183</id>
-      <parentid>6171</parentid>
-      <timestamp>2014-03-01T22:55:29Z</timestamp>
+      <id>6987</id>
+      <parentid>6183</parentid>
+      <timestamp>2014-03-20T13:20:52Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <text xml:space="preserve" bytes="1907">{{Header}}
+      <comment>Improved ruleset</comment>
+      <text xml:space="preserve" bytes="1893">{{Header}}
 {{#seo:
 |description=Instructions on how to set up a Whonix Download Mirror
 }}
@@ -64206,9 +64213,9 @@ Locate the directory &quot;HTTPSEverywhereUserRules&quot;, it should be /home/us
 Create a new file called WhonixOnion.xml paste:
 &lt;pre&gt;
 &lt;ruleset name=&quot;Whonix Onion&quot;&gt;
+  &lt;target host=&quot;whonix.org&quot; /&gt;
   &lt;target host=&quot;www.whonix.org&quot; /&gt;
-  &lt;target host=&quot;kkkkkkkkkk63ava6.onion&quot; /&gt;
-  &lt;rule from=&quot;^http(s)?://(www\.)?whonix\.org/&quot; to=&quot;http://kkkkkkkkkk63ava6.onion/&quot;/&gt;
+  &lt;rule from=&quot;^https?://(www\.)?whonix\.org/&quot; to=&quot;http://kkkkkkkkkk63ava6.onion/&quot;/&gt;
 &lt;/ruleset&gt;
 &lt;/pre&gt;
 and save.
@@ -64222,7 +64229,7 @@ Happy browsing!
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>mdcj0m4kou5m86m6n4vga06n5gh85d1</sha1>
+      <sha1>gnkch20j0kkzhk1tif9oej0p6e7ihfd</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -68987,9 +68994,9 @@ Weiterführende Links (in Englischer Sprache):
     <ns>0</ns>
     <id>1146</id>
     <revision>
-      <id>6954</id>
-      <parentid>6946</parentid>
-      <timestamp>2014-03-17T20:36:25Z</timestamp>
+      <id>7009</id>
+      <parentid>6954</parentid>
+      <timestamp>2014-03-20T21:30:16Z</timestamp>
       <contributor>
         <username>Troubadour</username>
         <id>230</id>
@@ -69193,7 +69200,7 @@ Paste the following content.
 	/usr/share/misc/pci.ids r,
 	/usr/share/pyshared/** r,	
 
-	/var/cache/apt/pkgcache.bin rix,
+	/var/cache/apt/pkgcache.bin rwk,
 		
 	/var/lib/dpkg/lock rwcxk,
 	/var/lib/dpkg/updates/ r,
@@ -69219,7 +69226,7 @@ sudo aa-enforce /etc/apparmor.d/usr.bin.sdwdate
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>aetlxaj2k5je5sj3boyo6yla44u7xwr</sha1>
+      <sha1>fj9jkpahisg8tg7e8z7ly4i4xda7jpu</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -69442,21 +69449,200 @@ License: Public Domain</text>
     </revision>
   </page>
   <page>
-    <title>Juegos De Consolas arma de aumento de la imaginacion</title>
-    <ns>0</ns>
-    <id>1157</id>
+    <title>Template:VersionDebian</title>
+    <ns>10</ns>
+    <id>1158</id>
     <revision>
-      <id>6983</id>
-      <timestamp>2014-03-20T03:25:34Z</timestamp>
+      <id>6989</id>
+      <timestamp>2014-03-20T14:29:53Z</timestamp>
       <contributor>
-        <username>LinoBarros</username>
-        <id>253</id>
+        <username>Jekyll</username>
+        <id>161</id>
       </contributor>
-      <comment>Created page with &quot;Desde hace una temporada de que analice en un sitio en relacion a topicos educativos que los niños de hoy en dia leen cada vez muy poco, cualquier cosa que podemos constatar ...&quot;</comment>
-      <text xml:space="preserve" bytes="2978">Desde hace una temporada de que analice en un sitio en relacion a topicos educativos que los niños de hoy en dia leen cada vez muy poco, cualquier cosa que podemos constatar en las insuficientes transacciones de textos de ficcion, novela, etc ... tendencia de que progresivamente conduce a mas.&lt;br&gt;&lt;br&gt;
-
-Seria muy posible el que en dicha obvia progresion a la baja en el habito de lectura se escondan diferentes argumentos en medio de las que se encuentran la mayor notoriedad en el dia a dia de los televisores y por supuesto de los juegos.  Sin embargo, analicemos un poquito mas. &lt;br&gt;&lt;br&gt;Muchisimo antaño del que ciertos Pc, videoconsolas y videogames ocuparan el sitio de los textos, los infantes de entonces nos teniamos que componer con los Jugueticos de toda la vida y solo teniamos a total mandato una serie de niños en la tele, cada pocos dias.  En estas circunstancias, no nos convenia mas soluccion que acudir a los dichos juguetes de siempre y los cuentos como instrumento de desarrollo de nuestra fantasia. Justamente inventabamos nuestras cruzadas, relatos, etc de manera bastante mas directa y facil.  &lt;br&gt;&lt;br&gt;¿Que alcanzamos a expresar de los momentos actuales en con este motivo? En nuestros dias por muchisimo que nos pueda doler a los mas profusamente viejos aceptar sucede exactamente lo mismo, tan solo que los medios para poder producir esa ficcion han variado de manera extremo. Un niño de ahora lleva a su disposicion las mencionadas anteriormente relatos que nosotros poseiamos, podrian continuar las aventuras de heroes, malos, corsarios, trotamundos, puede asistir en conflictos contra los “villanos”, debido a los videogames.  &lt;br&gt;&lt;br&gt;Actualmente cada uno de nuestros hijos, hermanos enanos, etcétera es el personal super heroe crucial de la historia que esta disfrutando a modo de el juego, es el, el que realiza las diferentes acciones que se tienen a cabo en la  televisor, como si fuera un otro yo de sel mismo.  De dicha manera el enano produce su campo de ficcion, no de tal manera manipulativa al igual que antaño, pero si de manera informatica. &lt;br&gt;&lt;br&gt;Los chicos de actualmente prosiguen estando igual que los chicos de antiguamente y si los cuentos se expenden muchisimo menos es debido a que los puntos potentes de los games son extremadamente consistente.  Un libro entra a traves de la vista, es blanco y negro o tal y como mucho ofrece alguna imagen. Por el contrario un juego es una experiencia en la que entran en videojuego gran parte de sentidos y por consiguiente es mas absorbente, de esta forma en el momento en que jugamos tenemos que procurar atencion a los sonidos, a lo que podemos ver e inclusive a las vibraciones de los mandos. &lt;br&gt;&lt;br&gt;Jamas sere uno mismo el que apueste por desterrar los cuentos, y menos siendo un enamorado de leer como soy, sin embargo menos aun sere yo la persona que comente que los videojuegos son los peor por hacer Semejante ocasion, en el equilibrio entre entreambos este la solucion.</text>
-      <sha1>j0dxdc642plgwfrmf2arcuejvnadkeb</sha1>
+      <comment>Introducing a version template for Debian</comment>
+      <text xml:space="preserve" bytes="3">7.4</text>
+      <sha1>si38dwzdn4wgl76eaok07n6bbxsx2gj</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:VersionVirtualBox</title>
+    <ns>10</ns>
+    <id>1159</id>
+    <revision>
+      <id>6990</id>
+      <timestamp>2014-03-20T14:30:37Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>Introducing a version template for VirtualBox</comment>
+      <text xml:space="preserve" bytes="5">4.3.8</text>
+      <sha1>mrfz0al08yvxhhnbmz4kl5vxv7we5is</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Version9</title>
+    <ns>10</ns>
+    <id>1160</id>
+    <revision>
+      <id>6998</id>
+      <parentid>6996</parentid>
+      <timestamp>2014-03-20T20:34:37Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>Version template for Whonix 9</comment>
+      <text xml:space="preserve" bytes="1">9</text>
+      <sha1>19pfuy8ud9bdlqh9kfjfu9858wakplj</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Version8</title>
+    <ns>10</ns>
+    <id>1161</id>
+    <revision>
+      <id>6997</id>
+      <timestamp>2014-03-20T20:34:29Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>Version template for Whonix 8</comment>
+      <text xml:space="preserve" bytes="1">8</text>
+      <sha1>tpnsk00419wba6vjh1upif21qtst1cv</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Version10</title>
+    <ns>10</ns>
+    <id>1162</id>
+    <revision>
+      <id>6999</id>
+      <timestamp>2014-03-20T20:34:57Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>Version template for Whonix 10</comment>
+      <text xml:space="preserve" bytes="2">10</text>
+      <sha1>krts3twot3ehfxyk1iegfol431z56n9</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Version8Virtualbox</title>
+    <ns>10</ns>
+    <id>1163</id>
+    <revision>
+      <id>7002</id>
+      <timestamp>2014-03-20T20:41:17Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>Version template for VirtualBox for Whonix 8 instructions</comment>
+      <text xml:space="preserve" bytes="5">4.3.8</text>
+      <sha1>mrfz0al08yvxhhnbmz4kl5vxv7we5is</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Version9Virtualbox</title>
+    <ns>10</ns>
+    <id>1164</id>
+    <revision>
+      <id>7003</id>
+      <timestamp>2014-03-20T20:41:19Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>Version template for VirtualBox for Whonix 9 instructions</comment>
+      <text xml:space="preserve" bytes="5">4.3.x</text>
+      <sha1>ey8z05rsmfs6rra1bhi1iqvlc55j50a</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Version10Virtualbox</title>
+    <ns>10</ns>
+    <id>1165</id>
+    <revision>
+      <id>7004</id>
+      <timestamp>2014-03-20T20:41:21Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>Version template for VirtualBox for Whonix 10 instructions</comment>
+      <text xml:space="preserve" bytes="5">4.x.x</text>
+      <sha1>nqo84nf2vq6ogveygihscz7hgy3p5nn</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Version8Debian</title>
+    <ns>10</ns>
+    <id>1166</id>
+    <revision>
+      <id>7005</id>
+      <timestamp>2014-03-20T20:43:03Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>Version template for Debian for Whonix 8 instructions</comment>
+      <text xml:space="preserve" bytes="3">7.4</text>
+      <sha1>si38dwzdn4wgl76eaok07n6bbxsx2gj</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Version9Debian</title>
+    <ns>10</ns>
+    <id>1167</id>
+    <revision>
+      <id>7006</id>
+      <timestamp>2014-03-20T20:43:06Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>Version template for Debian for Whonix 9 instructions</comment>
+      <text xml:space="preserve" bytes="3">8.x</text>
+      <sha1>lhh9ydiy3g2zwdnfmp5xm2h3jmbfdsh</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Version10Debian</title>
+    <ns>10</ns>
+    <id>1168</id>
+    <revision>
+      <id>7007</id>
+      <timestamp>2014-03-20T20:43:12Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>Version template for Debian for Whonix 10 instructions</comment>
+      <text xml:space="preserve" bytes="3">8.x</text>
+      <sha1>lhh9ydiy3g2zwdnfmp5xm2h3jmbfdsh</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
