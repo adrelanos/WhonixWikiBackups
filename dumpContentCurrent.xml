@@ -4474,14 +4474,15 @@ http://sourceforge.net/p/whonix/wiki/Dev_old_1/
     <ns>0</ns>
     <id>79</id>
     <revision>
-      <id>6224</id>
-      <parentid>150</parentid>
-      <timestamp>2014-03-02T11:46:55Z</timestamp>
+      <id>7010</id>
+      <parentid>6224</parentid>
+      <timestamp>2014-03-21T16:14:39Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="9591">{{Header}}
+      <comment>/* Footnotes */</comment>
+      <text xml:space="preserve" bytes="9541">{{Header}}
 {{#seo:
 |description=Anonymize any Operating System! Your operating system tunneled through the Tor Anonymity Network! Create your Custom-Whonix-Workstation!
 }}
@@ -4712,7 +4713,7 @@ Note: Whonix-BuildYourselfFromSource-Workstation is of course the same as Whonix
 
 == Footnotes ==
 
-Same footnotes as in [[Comparison_with_Others#Comparison_of_Whonix.2C_Tails.2C_Tor_Browser_Bundle_and_Qubes_OS_TorVM|Comparison of Whonix, Tails, Tor Browser Bundle and Qubes OS TorVM ]] and [[Tor Browser]].
+Same footnotes as in [[Comparison_with_Others|Comparison of Whonix, Tails, Tor Browser Bundle, Qubes OS TorVM and Corridor]] and [[Tor Browser|Tor Browser]].
 
 == Conclusion ==
 
@@ -4726,7 +4727,7 @@ A Whonix-Custom-Workstation ''can be made'' (Your responsibility!) as secure as 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>kxfelpbzodolse628tnvfp5pf9zfqww</sha1>
+      <sha1>g5j12awbhbj15zfh0nrvfd5eejb2mix</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -19001,14 +19002,14 @@ When you go ahead now, and ask in a cracker forum, they probably won't spread a 
     <ns>0</ns>
     <id>162</id>
     <revision>
-      <id>6543</id>
-      <parentid>5545</parentid>
-      <timestamp>2014-03-07T14:21:43Z</timestamp>
+      <id>7013</id>
+      <parentid>6543</parentid>
+      <timestamp>2014-03-21T22:27:15Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="5844">{{#seo:
+      <text xml:space="preserve" bytes="5879">{{#seo:
 |description=Technical Design and Conception of the Whonix Anonymous Operating System
 }}
 {{Header}}
@@ -19092,6 +19093,7 @@ When you go ahead now, and ask in a cracker forum, they probably won't spread a 
 ** [[Dev/Permissions]]
 ** [[Hosting a Whonix Mirror]]
 ** [[Dev/Replicating_whonix.org|Replicating whonix.org]]
+** [[Dev/Sponsor/A|Dev/Sponsor/A]]
 
 * '''Other related'''
 ** [[Documentation|Documentation]]
@@ -19123,7 +19125,7 @@ When you go ahead now, and ask in a cracker forum, they probably won't spread a 
 [[Category:Design]]
 
 {{Footer}}</text>
-      <sha1>91oy7anzrj591j65pxtaixd4tibqump</sha1>
+      <sha1>lmykqo5lcehha2q08x9w9muqpb41bar</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -69643,6 +69645,58 @@ License: Public Domain</text>
       <comment>Version template for Debian for Whonix 10 instructions</comment>
       <text xml:space="preserve" bytes="3">8.x</text>
       <sha1>lhh9ydiy3g2zwdnfmp5xm2h3jmbfdsh</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Dev/Sponsor/A</title>
+    <ns>0</ns>
+    <id>1169</id>
+    <revision>
+      <id>7012</id>
+      <parentid>7011</parentid>
+      <timestamp>2014-03-21T19:41:04Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <text xml:space="preserve" bytes="2342">{{Header}}
+
+= Usability Improvements =
+== Make Whonix software translatable ==
+https://translatewiki.net has a pool of translation volunteers. Once Whonix gets {{Code|gettext}}ified, Whonix could apply for translatewiki.net and they could start translating Whonix software.
+
+== Make whonix.org translatable ==
+We yet have to figure out how to use the translation extension and to prepare whonix.org's documentation for translation. We occasionally have offers to translate whonix.org, for [https://www.whonix.org/pipermail/whonix-devel/2014-March/000143.html example to French]. Whonix developer Patrick Schleizer could translate whonix.org to German.
+
+== Language Selector ==
+As a new part of Whonix First Time Setup (which starts after Whonix starts for the first time), the user could be asked which language she wants to use.
+
+= Windows Support =
+Something around [[Other Operating Systems]]. Provide a script and instructions related to [[Other Operating Systems]], to make routing Windows through Whonix-Gateway (Tor) easier and safer. 
+
+= Contribution Scalability and Security Improvement =
+Whonix consists of roughly 25.000 lines of code. Mostly all in one git repository. To professionalize Whonix's source code, it would be better if Whonix was split into multiple packages. That would make it simpler to grasp Whonix's architecture, make it simpler to contribute to Whonix, simpler to audit the critical parts of Whonix and simpler to port Whonix to other targets.
+
+= Security Improvements =
+== Check for Revocation Certificates before running apt-get ==
+Copied from https://github.com/Whonix/Whonix/issues/125
+
+Neither Debian nor Whonix has no good mechanism to revoke apt keys in case of compromise, neither a way to inform users in emergency situations:
+https://lists.debian.org/debian-security/2013/10/msg00065.html
+
+An apt key revoker should be written:
+https://lists.debian.org/debian-security/2013/12/msg00031.html
+
+And up-streamed to Debian.
+
+* Keyservers may not be used: https://lists.nongnu.org/archive/html/sks-devel/2013-12/msg00076.html
+* The code for downloading the revocation certificates should be configurable. .d style configuration folder. Where distributions and PPA's can drop configuration snippets. Using arrays.
+* Code should be re-usable for Whonix News key revocation as well (using plugin).
+
+{{Footer}}</text>
+      <sha1>fme3r4bfci7op4yqesfzypyz76ndaee</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
