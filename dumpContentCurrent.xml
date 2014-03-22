@@ -40,14 +40,15 @@
     <ns>0</ns>
     <id>1</id>
     <revision>
-      <id>6881</id>
-      <parentid>6880</parentid>
-      <timestamp>2014-03-12T20:14:10Z</timestamp>
+      <id>7021</id>
+      <parentid>6881</parentid>
+      <timestamp>2014-03-22T21:26:10Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <username>Lasko</username>
+        <id>255</id>
       </contributor>
-      <text xml:space="preserve" bytes="9896">{{Header}}
+      <comment>Cut number of posts in blog and forum feed from 10 down to 5. Now it won't stick out too far on the bottom. I did notice, however, that the whole table appears below the infobox in Internet Explorer. Will try to work on this next.</comment>
+      <text xml:space="preserve" bytes="9893">{{Header}}
 __NOTOC__
 &lt;languages /&gt;
 &lt;translate&gt;
@@ -145,14 +146,14 @@ is &lt;span itemprop=&quot;price&quot;&gt;Free&lt;/span&gt; as in price and free
 Latest [https://www.whonix.org/blog Blog] Posts&lt;/translate&gt; [[File:2000px-Feed-icon.svg.png|20px|alt=rss|link=https://www.whonix.org/blog/feed/]]&lt;/h3&gt;
 |-
 |style=&quot;color:#000;&quot;|
-&lt;rss number=10 title=off desc=off&gt;https://www.whonix.org/blog/feed/rss2/&lt;/rss&gt;
+&lt;rss number=5 title=off desc=off&gt;https://www.whonix.org/blog/feed/rss2/&lt;/rss&gt;
 
 |-
 ! &lt;h3 style=&quot;margin:0; background:#cedff2; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;&lt;translate&gt;&lt;!--T:26--&gt;
 Latest [https://www.whonix.org/forum Forum] Posts&lt;/translate&gt; [[File:2000px-Feed-icon.svg.png|20px|alt=rss|link=https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10]]&lt;/h3&gt;
 |-
 |style=&quot;color:#000;&quot;| 
-&lt;rss number=10 title=off desc=off&gt;https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10&lt;/rss&gt;
+&lt;rss number=5 title=off desc=off&gt;https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=5&lt;/rss&gt;
 
 |-
 |}
@@ -218,7 +219,7 @@ Whonix is produced independently of, and carries no guarantee from, The Tor Proj
 Thanks to Tomchen1989 from Wikimedia Commons for the download button! [https://commons.wikimedia.org/wiki/File:Download_Button.svg 1] ([http://www.webcitation.org/6I2DQzdu0 w])
 Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_43.htm awxcnx.de]!
 &lt;/translate&gt;[[Category:Documentation]]{{Footer}}</text>
-      <sha1>nxgicgbt1sxl3wh3n9lkfl6uad9ulf7</sha1>
+      <sha1>by9wkt4hg9v3c5l6xwg33t29lzbcy83</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -19002,133 +19003,185 @@ When you go ahead now, and ask in a cracker forum, they probably won't spread a 
     <ns>0</ns>
     <id>162</id>
     <revision>
-      <id>7016</id>
-      <parentid>7013</parentid>
-      <timestamp>2014-03-21T23:43:19Z</timestamp>
+      <id>7017</id>
+      <parentid>7016</parentid>
+      <timestamp>2014-03-22T20:27:31Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="5951">{{#seo:
+      <text xml:space="preserve" bytes="6785">{{#seo:
 |description=Technical Design and Conception of the Whonix Anonymous Operating System
 }}
 {{Header}}
 {{forkme}}
-* '''Technical Design'''
-** [[Dev/Technical Introduction|Dev/Technical Introduction, Whonix Framework, Security Overview]]
-** [[Comparison with Others|Comparison of Whonix, Tails, Tor Browser Bundle and TorVM]]
-** [[Comparison of different Whonix variants|Comparison of different Whonix variants]]
-** [[Comparison Of Tor Proxies CGI proxies Proxy Chains And VPN Services]]
-** [[Warning#Whonix_is_a_work_in_progress|Status of Whonix]]
-** [[Whonix%27s Protocol-Leak-Protection and Fingerprinting-Protection|Protocol-Leak-Protection and Fingerprinting-Protection]]
-** [[TimeSync|Time Synchronization Mechanism]]
-** [[Stream Isolation|Stream Isolation]]
-** [[whonixcheck|whonixcheck]]
-** [[SSL|SSL]]
-** [[Dev/Leak Tests|LeakTests to check everything is properly set up]]
-** [[Dev/Anonymity Network|Anonymity Network]]
-** [[Dev/About Computer (In)Security]]
-** [[Dev/Threat Model]]
-** [[Dev/Operating System]]
-** [[Dev/Host]]
-** [[Dev/Virtualization Platform]]
-** [[Dev/Gateway]]
-** [[Fingerprint]]
-** [[Dev/Entropy]]
-** [[Security in Real World|Whonix Security in Real World]]
-** [[Security Reviews and Feedback|Security Reviews and Feedback]]
-** [[Connections_between_Whonix-Gateway_and_Whonix-Workstation|(encrypted) (authenticated) Connection Between Whonix-Gateway and Whonix-Workstation]]
-** [[Dev/Build Anonymity]]
-** [[Dev/Relationship With Upstream]]
-** [[Dev/About Infrastructure]]
-** [[Whonix:Privacy_policy|Whonix.org Site Security]]
-** [[DownloadSecurity|Download Security]]
-** [[Trust]]
-** [[Dev/About Developers]]
-** [[Next|NEXT: In development for next Whonix version]]
-** [[Dev/Flash Proxy|Flash Proxy]]
-** [[Dev/Control Port Filter Proxy|Control Port Filter Proxy]]
-** [[Dev/Download_Statistics|Statistics on Downloads and OpenPGP verification and how we can improve that]]
-** [[Dev/Automatic Updates|To use or not to use automatic updates, Update Notifier, GUI Updater, GUI package manager]]
-** [[Dev/Dummy Tor|Dummy Tor package on Whonix-Workstation]]
-** [[Dev/About Debian Packaging|About Debian Packaging]]
-** [[Dev/Default Application Policy|Criteria for installing applications by default in Whonix]]
-** [[Dev/Tor|Tor Config Files torrc]]
+'''Technical Design'''
+&lt;div style=&quot;column-count:3;-moz-column-count:3;-webkit-column-count:3&quot;&gt;
+&lt;small&gt;
+* [[Dev/Technical Introduction|Dev/Technical Introduction, Whonix Framework, Security Overview]]
+* [[Comparison with Others|Comparison of Whonix, Tails, Tor Browser Bundle and TorVM]]
+* [[Comparison of different Whonix variants|Comparison of different Whonix variants]]
+* [[Comparison Of Tor Proxies CGI proxies Proxy Chains And VPN Services]]
+* [[Warning#Whonix_is_a_work_in_progress|Status of Whonix]]
+* [[Whonix%27s Protocol-Leak-Protection and Fingerprinting-Protection|Protocol-Leak-Protection and Fingerprinting-Protection]]
+* [[TimeSync|Time Synchronization Mechanism]]
+* [[Stream Isolation|Stream Isolation]]
+* [[whonixcheck|whonixcheck]]
+* [[SSL|SSL]]
+* [[Dev/Leak Tests|LeakTests to check everything is properly set up]]
+* [[Dev/Anonymity Network|Anonymity Network]]
+* [[Dev/About Computer (In)Security]]
+* [[Dev/Threat Model]]
+* [[Dev/Operating System]]
+* [[Dev/Host]]
+* [[Dev/Virtualization Platform]]
+* [[Dev/Gateway]]
+* [[Fingerprint]]
+* [[Dev/Entropy]]
+* [[Security in Real World|Whonix Security in Real World]]
+* [[Security Reviews and Feedback|Security Reviews and Feedback]]
+* [[Connections_between_Whonix-Gateway_and_Whonix-Workstation|(encrypted) (authenticated) Connection Between Whonix-Gateway and Whonix-Workstation]]
+* [[Dev/Build Anonymity]]
+* [[Dev/Relationship With Upstream]]
+* [[Dev/About Infrastructure]]
+* [[Whonix:Privacy_policy|Whonix.org Site Security]]
+* [[DownloadSecurity|Download Security]]
+* [[Trust|Trusting Whonix]]
+* [[Dev/About Developers]]
+* [[Next|NEXT: In development for next Whonix version]]
+* [[Dev/Flash Proxy|Flash Proxy]]
+* [[Dev/Control Port Filter Proxy|Control Port Filter Proxy]]
+* [[Dev/Download_Statistics|Statistics on Downloads and OpenPGP verification and how we can improve that]]
+* [[Dev/Automatic Updates|To use or not to use automatic updates, Update Notifier, GUI Updater, GUI package manager]]
+* [[Dev/Dummy Tor|Dummy Tor package on Whonix-Workstation]]
+* [[Dev/About Debian Packaging|About Debian Packaging]]
+* [[Dev/Default Application Policy|Criteria for installing applications by default in Whonix]]
+* [[Dev/Tor|Tor Config Files torrc]]
+&lt;/small&gt;
+&lt;/div&gt;
+&lt;br /&gt;
 
-* '''Detailed Design'''
-** [[Dev/Design-Detailed|Introduction]]
-** [[Dev/Design-Gateway]]
-** [[Dev/Design-Workstation]]
-** [[Dev/Design-Shared]]
+'''Detailed Design'''
 
-* '''Future Technical Design'''
-** [[Dev/pdt|proposal to defend a permanent takedown threat]]
-** [[Dev/MAC|controversy of anonymous MAC addresses]]
+&lt;div style=&quot;column-count:3;-moz-column-count:3;-webkit-column-count:3&quot;&gt;
+&lt;small&gt;
+* [[Dev/Design-Detailed|Introduction]]
+* [[Dev/Design-Gateway]]
+* [[Dev/Design-Workstation]]
+* [[Dev/Design-Shared]]
+&lt;/small&gt;
+&lt;/div&gt;
+&lt;br /&gt;
 
-* '''Dev Pages'''
-** [[Dev/Developer_Portal|Developer Portal]]
-** [[Dev/Archived Discussions|Dev/Archived Discussions, development discussions, old and recent, bugs, features, etc.]]
-** [[Dev/git|Git branches]]
-** [[Dev/APT Repository|APT Repository (Whonix Debian Package Maintenance) (.deb)]]
-** [[Dev/KDE|Changes to the Debian|KDE defaults]]
-** [[Dev/GNOME|Some random thoughts about a future GNOME desktop, GNOME proxy]]
-** [[Dev/SourceCodeIntro|Introduction into the Whonix build method and source code]]
-** [[Dev/News|Whonix News File Format]]
-** [[Dev/SSL Certificate Pinning|SSL certificate pinning]]
-** [[Dev/Mixmaster|Mixmaster Implementation Notes]]
-** [[Dev/Flash Tutorial|Flash Tutorial Video]]
-** [[Dev/JonDo|development discussion if JonDo(Fox) could be pre-installed in Whonix-Workstation]]
-** [[Dev/Buttons|(Award) Buttons from Third Parties]]
-** [[Dev/Fedora|Fedora as host operating system or even VM operating system - development discussion]]
-** [[Dev/Network Manager|Network Manager (NM) in Whonix instead of ifupdown - development discussion]]
-** [[Dev/bash trap]]
-** [[Dev/Other Virtualization Platforms]]
-** [[Dev/OpenPGP Signed Website]]
-** [[Dev/SecureDownloader|Secure Downloader to Download Whonix]]
-** [[Dev/Continuous Integration|Continuous Integration (CI)]]
-** [[Dev/DHCP|Consideration running a DHCP server on Whonix-Gateway and running a DHCP client in Whonix-Workstation]]
-** [[Dev/0.5.6_Package_List]]
-** [[Dev/7_Package_List]]
-** [[Dev/KVM]]
-** [[Dev/Permissions]]
-** [[Hosting a Whonix Mirror]]
-** [[Dev/Replicating_whonix.org|Replicating whonix.org]]
-** [Dev/APT_Pinning|Why we should avoid APT Pinning]]
+'''Future Technical Design'''
 
-* '''Sponsors'''
-** [[Dev/Sponsor/A|Dev/Sponsor/A]]
+&lt;div style=&quot;column-count:3;-moz-column-count:3;-webkit-column-count:3&quot;&gt;
+&lt;small&gt;
+* [[Dev/pdt|proposal to defend a permanent takedown threat]]
+* [[Dev/MAC|controversy of anonymous MAC addresses]]
+&lt;/small&gt;
+&lt;/div&gt;
+&lt;br /&gt;
 
-* '''Other related'''
-** [[Documentation|Documentation]]
-** [[Dev/Build Documentation|Build Documentation, How to build Whonix from Source Code, How to update Whonix from Source Code]]
-** [https://github.com/Whonix/Whonix Whonix Source Code]
-** [https://github.com/Whonix/whonix-developer-meta-files/tree/master/release Whonix Developer Meta Files, Scripts for managing the Whonix GNU/Linux Distribution]
-** [[Dev/Redistribution#Pre_Building|Redistribution Pre Building]] (Only required if you want to redistribute (official) Whonix builds.)
-** [[Dev/Redistribution#Post_Building|Redistribution Post Building]] (Only required if you want to redistribute (official) Whonix builds.)
-** [[Test|Tests before Release]]
-** [[Dev/Vision‎|Whonix² Project Vision]]
+'''Dev Pages'''
 
-* '''Other unrelated'''
-** [[Dev/Tails Doc Fork|Documentation pages forked from the Tails project]]
-** [[Authorship#License|Citation, backup of website content license grants]]
+&lt;div style=&quot;column-count:3;-moz-column-count:3;-webkit-column-count:3&quot;&gt;
+&lt;small&gt;
+* [[Dev/Developer_Portal|Developer Portal]]
+* [[Dev/Archived Discussions|Dev/Archived Discussions, development discussions, old and recent, bugs, features, etc.]]
+* [[Dev/git|Git branches]]
+* [[Dev/APT Repository|APT Repository (Whonix Debian Package Maintenance) (.deb)]]
+* [[Dev/KDE|Changes to the Debian|KDE defaults]]
+* [[Dev/GNOME|Some random thoughts about a future GNOME desktop, GNOME proxy]]
+* [[Dev/SourceCodeIntro|Introduction into the Whonix build method and source code]]
+* [[Dev/News|Whonix News File Format]]
+* [[Dev/SSL Certificate Pinning|SSL certificate pinning]]
+* [[Dev/Mixmaster|Mixmaster Implementation Notes]]
+* [[Dev/Flash Tutorial|Flash Tutorial Video]]
+* [[Dev/JonDo|development discussion if JonDo(Fox) could be pre-installed in Whonix-Workstation]]
+* [[Dev/Buttons|(Award) Buttons from Third Parties]]
+* [[Dev/Fedora|Fedora as host operating system or even VM operating system - development discussion]]
+* [[Dev/Network Manager|Network Manager (NM) in Whonix instead of ifupdown - development discussion]]
+* [[Dev/bash trap]]
+* [[Dev/Other Virtualization Platforms]]
+* [[Dev/OpenPGP Signed Website]]
+* [[Dev/SecureDownloader|Secure Downloader to Download Whonix]]
+* [[Dev/Continuous Integration|Continuous Integration (CI)]]
+* [[Dev/DHCP|Consideration running a DHCP server on Whonix-Gateway and running a DHCP client in Whonix-Workstation]]
+* [[Dev/0.5.6_Package_List]]
+* [[Dev/7_Package_List]]
+* [[Dev/KVM]]
+* [[Dev/Permissions]]
+* [[Hosting a Whonix Mirror]]
+* [[Dev/Replicating_whonix.org|Replicating whonix.org]]
+* [[Dev/APT_Pinning|Why we should avoid APT Pinning]]
+&lt;/small&gt;
+&lt;/div&gt;
+&lt;br /&gt;
 
-* '''Just listing'''
-** [https://github.com/Whonix/Whonix/blob/master/GPLv3 GPLv3]
+'''Sponsors'''
 
-* '''Deprecated, for Inspiration, looking for Maintainer'''
-** [[HardenedGentooTG|HardenedGentoo-Whonix-Gateway]]
-** [[OneVM|OneVM - Whonix implementation with just a single VM (Tor runs on host)]]
-** [[Dev/Inspiration|Installing i2p on Whonix-Gateway (i2pBOX)]]
-** [[Dev/Inspiration|JonDonym as Tor replacement (JonDoBOX)]]
-** [[Dev/Inspiration|VPN, VPN's as a Tor replacement (VPNBOX)]]
-** [[Dev/Inspiration|Proxy, Proxies as a Tor replacement (ProxyBOX), Transparent Proxying Method, Proxy Settings Method]]
-** [[Dev/Inspiration|Freenet on the Whonix-Gateway (FreenetBOX)]]
-** [[Dev/Inspiration|RetroShare as Anonymizer]]
+&lt;div style=&quot;column-count:3;-moz-column-count:3;-webkit-column-count:3&quot;&gt;
+&lt;small&gt;
+* [[Dev/Sponsor/A|Dev/Sponsor/A]]
+&lt;/small&gt;
+&lt;/div&gt;
+&lt;br /&gt;
+
+'''Other related'''
+&lt;div style=&quot;column-count:3;-moz-column-count:3;-webkit-column-count:3&quot;&gt;
+&lt;small&gt;
+* [[Documentation|Documentation]]
+* [[Dev/Build Documentation|Build Documentation, How to build Whonix from Source Code, How to update Whonix from Source Code]]
+* [https://github.com/Whonix/Whonix Whonix Source Code]
+* [https://github.com/Whonix/whonix-developer-meta-files/tree/master/release Whonix Developer Meta Files, Scripts for managing the Whonix GNU/Linux Distribution]
+* [[Dev/Redistribution#Pre_Building|Redistribution Pre Building]] (Only required if you want to redistribute (official) Whonix builds.)
+* [[Dev/Redistribution#Post_Building|Redistribution Post Building]] (Only required if you want to redistribute (official) Whonix builds.)
+* [[Test|Tests before Release]]
+* [[Dev/Vision‎|Whonix² Project Vision]]
+&lt;/small&gt;
+&lt;/div&gt;
+&lt;br /&gt;
+
+'''Other unrelated'''
+
+&lt;div style=&quot;column-count:3;-moz-column-count:3;-webkit-column-count:3&quot;&gt;
+&lt;small&gt;
+* [[Dev/Tails Doc Fork|Documentation pages forked from the Tails project]]
+* [[Authorship#License|Citation, backup of website content license grants]]
+&lt;/small&gt;
+&lt;/div&gt;
+&lt;br /&gt;
+
+'''Just listing'''
+
+&lt;div style=&quot;column-count:3;-moz-column-count:3;-webkit-column-count:3&quot;&gt;
+&lt;small&gt;
+* [https://github.com/Whonix/Whonix/blob/master/GPLv3 GPLv3]
+&lt;/small&gt;
+&lt;/div&gt;
+
+
+'''Deprecated, for Inspiration, looking for Maintainer'''
+
+&lt;div style=&quot;column-count:3;-moz-column-count:3;-webkit-column-count:3&quot;&gt;
+&lt;small&gt;
+* [[HardenedGentooTG|HardenedGentoo-Whonix-Gateway]]
+* [[OneVM|OneVM - Whonix implementation with just a single VM (Tor runs on host)]]
+* [[Dev/Inspiration|Installing i2p on Whonix-Gateway (i2pBOX)]]
+* [[Dev/Inspiration|JonDonym as Tor replacement (JonDoBOX)]]
+* [[Dev/Inspiration|VPN, VPN's as a Tor replacement (VPNBOX)]]
+* [[Dev/Inspiration|Proxy, Proxies as a Tor replacement (ProxyBOX), Transparent Proxying Method, Proxy Settings Method]]
+* [[Dev/Inspiration|Freenet on the Whonix-Gateway (FreenetBOX)]]
+* [[Dev/Inspiration|RetroShare as Anonymizer]]
+&lt;/small&gt;
+&lt;/div&gt;
+&lt;br /&gt;
 
 [[Category:Design]]
 
 {{Footer}}</text>
-      <sha1>nxnld2qoos6iai140psixe7npxj9g3y</sha1>
+      <sha1>fqf5uwsic8gx88sx6gw24lcqa5mgfc3</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -34084,34 +34137,41 @@ SIGQUIT (Issued if the user sends a quit signal (Ctrl + D).) Well, I think Ctrl 
     <ns>0</ns>
     <id>287</id>
     <revision>
-      <id>6776</id>
-      <parentid>6214</parentid>
-      <timestamp>2014-03-09T21:52:19Z</timestamp>
+      <id>7020</id>
+      <parentid>7019</parentid>
+      <timestamp>2014-03-22T20:37:49Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Building */</comment>
-      <text xml:space="preserve" bytes="1401">{{#seo:
+      <text xml:space="preserve" bytes="1644">{{#seo:
 |description=Whonix Developer Portal, Hacking Whonix, Developing Whonix
 }}
 __NOTOC__
 {{Header}}
 {{forkme}}
-= Link to Source Code =
-https://github.com/Whonix/Whonix
+'''Link to Source Code'''
 
-= How to build Whonix from Source Code? =
-See [[Dev/Build Documentation]].
+&lt;div style=&quot;column-count:3;-moz-column-count:3;-webkit-column-count:3&quot;&gt;
+&lt;small&gt;* https://github.com/Whonix/Whonix&lt;/small&gt;
+&lt;/div&gt;
+&lt;br/&gt;
+'''How to build Whonix from Source Code?'''
 
-= Developing / Hacking Whonix =
+&lt;div style=&quot;column-count:3;-moz-column-count:3;-webkit-column-count:3&quot;&gt;
+&lt;small&gt;* See [[Dev/Build Documentation]].&lt;/small&gt;
+&lt;/div&gt;
+&lt;br/&gt;
+'''Developing / Hacking Whonix'''
+&lt;div style=&quot;column-count:3;-moz-column-count:3;-webkit-column-count:3&quot;&gt;
+&lt;small&gt;
+* [[Contribute|Contribute]]
 * [https://www.whonix.org/forum/index.php?board=5.0 Development Forum]
 * &lt;html&gt;&lt;a href=&quot;/cgi-bin/mailman/listinfo/whonix-devel&quot;&gt;Developer Mailing List&lt;/a&gt;&lt;/html&gt;
 * [[Dev/Source Code Intro|Introduction into Whonix Source Code]]
 * [[Dev/git|Introduction into Whonix's simple git branch model]]
 * [[Dev/git#subscribe_to_code_changes|Options to stay up to date on Whonix Source Code Changes]]
 * [https://github.com/Whonix/Whonix/issues Development Tickets, Bugs, Feature Requests, Roadmap]
-* [[Dev/Source Code Intro#Build Configuration|Build Configuration]]
 * [[Dev/git#Goodies|Optional Goodies]]
 * [[Design|Technical Design]]
 * Detailed Design - What is each file good for?
@@ -34121,13 +34181,14 @@ See [[Dev/Build Documentation]].
 * [[Dev/Source_Code_Intro#Debugging|Useful stuff for debugging]]
 * [[Dev/Redistribution|Redistributing Whonix]]
 * [[Dev/Source_Code_Intro#Porting|Porting (some random notes interesting for someone planing to port Whonix update debs to rpm)]]
-* [[Dev/Continuous Integration|Continuous Integration (CI)]]
-* [[Contribute|Contribute]]
+* [[Dev/Continuous Integration|Continuous Integration (CI)]]&lt;/small&gt;
+&lt;/div&gt;
+&lt;br/&gt;
 
 {{Footer}}
 
 [[Category:Development]]</text>
-      <sha1>gi7h3emwaac7zpsct4h63396jtkr2s7</sha1>
+      <sha1>muqyi52slz39mk29pqzifiu1txx544q</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
