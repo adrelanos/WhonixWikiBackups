@@ -19002,14 +19002,14 @@ When you go ahead now, and ask in a cracker forum, they probably won't spread a 
     <ns>0</ns>
     <id>162</id>
     <revision>
-      <id>7013</id>
-      <parentid>6543</parentid>
-      <timestamp>2014-03-21T22:27:15Z</timestamp>
+      <id>7016</id>
+      <parentid>7013</parentid>
+      <timestamp>2014-03-21T23:43:19Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="5879">{{#seo:
+      <text xml:space="preserve" bytes="5951">{{#seo:
 |description=Technical Design and Conception of the Whonix Anonymous Operating System
 }}
 {{Header}}
@@ -19093,6 +19093,9 @@ When you go ahead now, and ask in a cracker forum, they probably won't spread a 
 ** [[Dev/Permissions]]
 ** [[Hosting a Whonix Mirror]]
 ** [[Dev/Replicating_whonix.org|Replicating whonix.org]]
+** [Dev/APT_Pinning|Why we should avoid APT Pinning]]
+
+* '''Sponsors'''
 ** [[Dev/Sponsor/A|Dev/Sponsor/A]]
 
 * '''Other related'''
@@ -19125,7 +19128,7 @@ When you go ahead now, and ask in a cracker forum, they probably won't spread a 
 [[Category:Design]]
 
 {{Footer}}</text>
-      <sha1>lmykqo5lcehha2q08x9w9muqpb41bar</sha1>
+      <sha1>nxnld2qoos6iai140psixe7npxj9g3y</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -68996,14 +68999,15 @@ Weiterführende Links (in Englischer Sprache):
     <ns>0</ns>
     <id>1146</id>
     <revision>
-      <id>7009</id>
-      <parentid>6954</parentid>
-      <timestamp>2014-03-20T21:30:16Z</timestamp>
+      <id>7014</id>
+      <parentid>7009</parentid>
+      <timestamp>2014-03-21T23:36:19Z</timestamp>
       <contributor>
-        <username>Troubadour</username>
-        <id>230</id>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="5020">{{Header}}
+      <comment>added / r,</comment>
+      <text xml:space="preserve" bytes="5027">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
@@ -69033,6 +69037,8 @@ Paste the following content.
 	capability setgid,
 	capability sys_time,
 	capability dac_override,
+
+	/ r,
 	
 	@{HOME}/sdwdatetest rwk,
 
@@ -69228,7 +69234,7 @@ sudo aa-enforce /etc/apparmor.d/usr.bin.sdwdate
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>fj9jkpahisg8tg7e8z7ly4i4xda7jpu</sha1>
+      <sha1>shwuj348ddwd60ujastqyxzx2sm5h41</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -69697,6 +69703,40 @@ And up-streamed to Debian.
 
 {{Footer}}</text>
       <sha1>fme3r4bfci7op4yqesfzypyz76ndaee</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Dev/APT Pinning</title>
+    <ns>0</ns>
+    <id>1170</id>
+    <revision>
+      <id>7015</id>
+      <timestamp>2014-03-21T23:42:22Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;{{Header}}  This idea came up originally in context of: https://github.com/Whonix/Whonix/issues/60  = Summary = Debian developers would literally hate this.  = More Details = ...&quot;</comment>
+      <text xml:space="preserve" bytes="485">{{Header}}
+
+This idea came up originally in context of: https://github.com/Whonix/Whonix/issues/60
+
+= Summary =
+Debian developers would literally hate this.
+
+= More Details =
+Question:
+[https://lists.debian.org/debian-derivatives/2013/08/msg00004.html Can a package pull a another package from another repository to be added?]
+
+Answers:
+
+* https://lists.debian.org/debian-derivatives/2013/08/msg00005.html
+* https://lists.debian.org/debian-derivatives/2013/08/msg00006.html
+
+{{Footer}}</text>
+      <sha1>2vkl434zr2wg9xpasd2h4gllopbfo02</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
