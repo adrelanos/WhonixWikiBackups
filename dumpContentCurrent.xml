@@ -40,15 +40,13 @@
     <ns>0</ns>
     <id>1</id>
     <revision>
-      <id>7021</id>
-      <parentid>6881</parentid>
-      <timestamp>2014-03-22T21:26:10Z</timestamp>
+      <id>7022</id>
+      <parentid>7021</parentid>
+      <timestamp>2014-03-23T10:57:24Z</timestamp>
       <contributor>
-        <username>Lasko</username>
-        <id>255</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>Cut number of posts in blog and forum feed from 10 down to 5. Now it won't stick out too far on the bottom. I did notice, however, that the whole table appears below the infobox in Internet Explorer. Will try to work on this next.</comment>
-      <text xml:space="preserve" bytes="9893">{{Header}}
+      <text xml:space="preserve" bytes="9870">{{Header}}
 __NOTOC__
 &lt;languages /&gt;
 &lt;translate&gt;
@@ -87,7 +85,7 @@ Anonymity; Privacy; Security; Personal computing; [[Hosting Location Hidden Serv
 | ui                     = [https://en.wikipedia.org/wiki/KDE KDE]
 | license                = &lt;translate&gt;&lt;!--T:21--&gt;
 [https://en.wikipedia.org/wiki/Free_software Free software], mainly the [https://en.wikipedia.org/wiki/GNU_GPL GNU GPL], and other licenses&lt;/translate&gt;&lt;ref&gt;{{cite web|url=http://www.debian.org/legal/licenses/|title=License information|publisher=Debian|accessdate=2009-02-28}}&lt;/ref&gt;
-| website                = [https://www.whonix.org https]; &lt;html&gt;&lt;a class=&quot;link-https&quot; style=&quot;color: #3366BB&quot; href=&quot;http://kkkkkkkkkk63ava6.onion&quot; rel=&quot;nofollow&quot;&gt;.onion&lt;/a&gt;&lt;/html&gt;
+| website                = [https://www.whonix.org https]; &lt;html&gt;&lt;a class=&quot;link-https&quot; href=&quot;http://kkkkkkkkkk63ava6.onion&quot; rel=&quot;nofollow&quot;&gt;.onion&lt;/a&gt;&lt;/html&gt;
 | updatemodel            = &lt;translate&gt;&lt;!--T:22--&gt;
 [https://en.wikipedia.org/wiki/Advanced_Packaging_Tool APT] (several front-ends available)&lt;/translate&gt;
 | preceded_by            = [https://trac.torproject.org/projects/tor/wiki/doc/JanusVM JanusVM]&lt;ref&gt;http://www.webcitation.org/6IA21tFaM&lt;/ref&gt;; [http://www.makeuseof.com/tag/browse-email-safely-anonymously-torbox/ TorBOX]&lt;ref&gt;http://www.webcitation.org/6IA20bIq5&lt;/ref&gt;
@@ -219,7 +217,7 @@ Whonix is produced independently of, and carries no guarantee from, The Tor Proj
 Thanks to Tomchen1989 from Wikimedia Commons for the download button! [https://commons.wikimedia.org/wiki/File:Download_Button.svg 1] ([http://www.webcitation.org/6I2DQzdu0 w])
 Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_43.htm awxcnx.de]!
 &lt;/translate&gt;[[Category:Documentation]]{{Footer}}</text>
-      <sha1>by9wkt4hg9v3c5l6xwg33t29lzbcy83</sha1>
+      <sha1>ogb4ur5evvfb3byigj9vdepl9rtz2m6</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
