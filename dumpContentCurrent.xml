@@ -44394,21 +44394,21 @@ Do not remove {{Code2|...-postinst}} packages.
     <ns>0</ns>
     <id>475</id>
     <revision>
-      <id>6134</id>
-      <parentid>5861</parentid>
-      <timestamp>2014-03-01T21:07:28Z</timestamp>
+      <id>7029</id>
+      <parentid>6134</parentid>
+      <timestamp>2014-03-24T02:43:37Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <username>JasonJAyalaP</username>
+        <id>9</id>
       </contributor>
-      <comment>/* Free Support */</comment>
-      <text xml:space="preserve" bytes="3066">{{#seo:
+      <comment>/* Professional Support */</comment>
+      <text xml:space="preserve" bytes="3056">{{#seo:
 |description=Various Ways to get Help with Whonix. Free and Professional Support available.
 }}
 {{Header}}
 
 = Professional Support =
-Coming Soon! (~2 days)
+Coming Soon!
 
 = Free Support =
 * When the Tor Browser download script is failing, use the [https://www.whonix.org/forum/ Whonix User Forum]. Since many users are affected when it breaks, there is probably already an existing topic.
@@ -44456,7 +44456,7 @@ Be careful with the advice you are getting in public places. Get a second opinio
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>ell3u4y0hvlj7ar7352lxgjhvhkor6z</sha1>
+      <sha1>4txpty58inwxt5ixyjitl1mzj7kuk3p</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -69720,15 +69720,14 @@ License: Public Domain</text>
     <ns>0</ns>
     <id>1169</id>
     <revision>
-      <id>7027</id>
-      <parentid>7026</parentid>
-      <timestamp>2014-03-23T18:14:59Z</timestamp>
+      <id>7028</id>
+      <parentid>7027</parentid>
+      <timestamp>2014-03-24T00:40:50Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>More Secure and Usable Download Mechanism</comment>
-      <text xml:space="preserve" bytes="7326">{{Header}}
+      <text xml:space="preserve" bytes="7325">{{Header}}
 
 = Overview =
 The work outlined here is specifically focused on what could be done in a year with funding, though these goals should be considered as a larger roadmap for Whonix's development in general. This roadmap is focused on three goals: 
@@ -69757,7 +69756,7 @@ To circumvent this, many projects such as Whonix provide cryptographic checksums
 
 A solution to this dilemma is to build the verification mechanism directly into the browser. [https://en.wikipedia.org/wiki/Metalink Metalink] is the answer. Unfortunately, it has not been build into popular browsers yet. We have a long standing [https://github.com/Whonix/Whonix/issues/21 github issue] for it. The Whonix team currently has no recourses to tackle this issue.
 
-Mozilla has an open [https://bugzilla.mozilla.org/show_bug.cgi?id=331979 feature request] since 2006 and it doesn't look like they will be working on it anytime soon. With founding we could finally tackle this issue and help out lots of other security focused projects as well. Ideas:
+Mozilla has an open [https://bugzilla.mozilla.org/show_bug.cgi?id=331979 feature request] since 2006 and it doesn't look like they will be working on it anytime soon. With funding we could finally tackle this issue and help out lots of other security focused projects as well. Ideas:
 
 * contact Mozilla and ask how much it would cost to buy this feature
 * contact the Mozilla community and ask if someone would up to implement this feature for a price
@@ -69806,7 +69805,7 @@ We yet have to figure out how to use the translation extension and to prepare wh
 
 
 {{Footer}}</text>
-      <sha1>q459yz8rm6obignii4jf1wsynbcwcs1</sha1>
+      <sha1>950971uwxumfx2ps6cvyhbmp3cb7mft</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
