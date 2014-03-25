@@ -783,14 +783,14 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>19</id>
     <revision>
-      <id>6960</id>
-      <parentid>6952</parentid>
-      <timestamp>2014-03-18T19:49:15Z</timestamp>
+      <id>7051</id>
+      <parentid>6960</parentid>
+      <timestamp>2014-03-25T14:53:36Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="15149">{{Header}}
+      <text xml:space="preserve" bytes="15187">{{Header}}
 &lt;!--
 Copyright:
 
@@ -977,6 +977,7 @@ For your convenience, there are multiple choices to get news. Choose at your pre
 # [https://www.whonix.org/blog/category/important/ Whonix Important Blog] [[File:2000px-Feed-icon.svg.png|12px|alt=Whonix Important Blog Rss|link=https://www.whonix.org/blog/category/important/feed/]] - Most important stuff only. Security vulnerabilities and new stable versions only. For people with very limited time and interest in Whonix development and news.
 # [https://www.whonix.org/blog Whonix Feature Blog] [[File:2000px-Feed-icon.svg.png|12px|alt=Whonix Feature Blog rss|link=https://www.whonix.org/blog/feed/]] - Includes everything from Whonix Important Blog. Also testers-only and developers versions are announced. Has a relaxed posting policy. Also blog posts about updated articles, new features, future features, development, call for testing, general project thoughts and so on will be published.
 # Other choices. &lt;ref&gt;
+{{Anchor|WhonixNewsBlogOtherChoices}}
 Other choices.
 * [https://www.whonix.org/blog/category/important/feed/ Whonix Important Blog RSS] [[File:2000px-Feed-icon.svg.png|12px|alt=Whonix Important Blog Rss|link=https://www.whonix.org/blog/category/important/feed/]]
 * [https://www.whonix.org/blog/feed/ Whonix Feature Blog RSS] [[File:2000px-Feed-icon.svg.png|12px|alt=Whonix Feature Blog rss|link=https://www.whonix.org/blog/feed/]]
@@ -1154,7 +1155,7 @@ under certain conditions; see the wiki source code for details.
 &lt;translate&gt;&lt;!--T:253--&gt;
 Some icons created by third parties, Free licenses as well, see [[Authorship#Images_created_by_third_parties|Authorship Images created by third parties]] for details.
 &lt;/translate&gt;[[Category:Documentation]]{{Footer}}</text>
-      <sha1>icviaraf1pf3jwiag18a6qj5tcn2wan</sha1>
+      <sha1>r7hinvnrmgasq82p79ap1rrd5571mw5</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -5426,15 +5427,15 @@ See license file in Whonix source code.
     <ns>0</ns>
     <id>86</id>
     <revision>
-      <id>6244</id>
-      <parentid>5840</parentid>
-      <timestamp>2014-03-02T15:27:16Z</timestamp>
+      <id>7050</id>
+      <parentid>6244</parentid>
+      <timestamp>2014-03-25T13:31:30Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* History of Whonix */</comment>
-      <text xml:space="preserve" bytes="18281">{{Header}}
+      <comment>/* Old News */</comment>
+      <text xml:space="preserve" bytes="18276">{{Header}}
 {{#seo:
 |description=History of Whonix. TorBOX -&gt; aos -&gt; Whonix.
 }}
@@ -5557,7 +5558,7 @@ I did not want to delay this release any further. The mess with multiple project
 
 &lt;sup&gt;1&lt;/sup&gt; Rebranding. '''aos''' is the new project name. The process of rebranding is ongoing. Also all links have to be renamed. That will be done as soon as a new home for Whonix has been found.
 
-&lt;sup&gt;2&lt;/sup&gt; A Whonix (previously called Whonix) source code 0.2.1 is now on [https://github.com/Whonix/Whonix github]. The source code will be polished so it will be easier to understand, maintain and contribute.
+&lt;sup&gt;2&lt;/sup&gt; Whonix (previously called aos) source code 0.2.1 is now on [https://github.com/Whonix/Whonix github]. The source code will be polished so it will be easier to understand, maintain and contribute.
 
 '''2012-07-16'''
 
@@ -5666,7 +5667,7 @@ then choose etc (at the bottom) and then choose UTC.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>irzq07ul98go4kt9zldchlfpfapk4ci</sha1>
+      <sha1>2a0uhhdlxzni9yzu4n28quhj3fnu910</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -12922,15 +12923,15 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>118</id>
     <revision>
-      <id>6981</id>
-      <parentid>6980</parentid>
-      <timestamp>2014-03-20T01:17:51Z</timestamp>
+      <id>7056</id>
+      <parentid>7055</parentid>
+      <timestamp>2014-03-25T15:51:11Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Spread */</comment>
-      <text xml:space="preserve" bytes="8035">__NOTITLE__
+      <comment>/* Feedback */</comment>
+      <text xml:space="preserve" bytes="8033">__NOTITLE__
 {{#seo:
 |description=Donate, Spread, Follow, Mirror, Translate, Develop, Testing. Contribute to Free Software / Open Source.
 }}
@@ -12986,8 +12987,7 @@ And if you do not get into any trouble, follow Whonix on social media:
 * [https://plus.google.com/108150429836421683225/ Whonix Google+ Profile].
 
 === Feedback ===
-Send [[https://www.whonix.org/forum|feedback]] about Whonix.
-
+Send [https://www.whonix.org/forum feedback] about Whonix.
 
 === WIkipedia ===
 It would be great, if you could add Whonix to [https://en.wikipedia.org/w/index.php?title=Whonix&amp;redirect=no wikipedia], writing a great article. (It's own article, not a redirection to another page.)
@@ -13100,6 +13100,7 @@ https://www.whonix.org/blog/category/testers-wanted/
 
 
 &lt;center&gt;
+
 == Answer Questions ==
 ----
 &lt;/center&gt;
@@ -13146,7 +13147,7 @@ The PayPal logo (60px-De-pp-logo-200px.png), the subscribe button (subscribeCC_L
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Development]]</text>
-      <sha1>fj5w5g6o1g7b84g7mwxtb0h2erngrnm</sha1>
+      <sha1>9wao81i654ufot413ldxvwhzeddw6ac</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -50773,29 +50774,27 @@ Maybe this will help: Try convert the vmdk to vdi, remove the old vmdk from the 
     <ns>0</ns>
     <id>530</id>
     <revision>
-      <id>6457</id>
-      <parentid>6456</parentid>
-      <timestamp>2014-03-06T16:13:31Z</timestamp>
+      <id>7054</id>
+      <parentid>6457</parentid>
+      <timestamp>2014-03-25T15:43:36Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* How-To */</comment>
-      <text xml:space="preserve" bytes="16007">{{Header}}
+      <text xml:space="preserve" bytes="16009">{{Header}}
 {{#seo:
 |description=Checking Whonix for backdoors.
 }}
 = Verifiable Builds =
 == Verifiable .ova's ==
-=== Introduction - What this Archives ===
+=== Introduction - What this Achieves ===
 {{Verifiable Ovas Introduction}}
 
 === Short Overview - How it Works ===
 When building Whonix {{Code2|.ova}}'s from source code, for example {{Code2|/home/user/whonix_binary/Whonix-Gateway-8.ova}} also report {{Code2|/home/user/whonix_binary/Whonix-Gateway-8.report}} file will be created.
 
-After building the {{Code2|.ova}}, the last build-step will extract the {{Code2|.ova}}, which will result getting three files, i.e. {{Code2|Whonix-Gateway-8.ovf}}, {{Code2|Whonix-Gateway-8.mf}} and {{Code2|Whonix-Gateway-8-disk1.vmdk}}. The {{Code2|.vmdk}}&lt;ref&gt;https://en.wikipedia.org/wiki/VMDK&lt;/ref&gt; image then will be converted to {{Code2|.vdi}}&lt;ref&gt;https://en.wikipedia.org/wiki/VDI_(file_format)&lt;/ref&gt;, then converted to {{Code2|raw}}&lt;ref&gt;https://en.wikipedia.org/wiki/Raw_image_format&lt;/ref&gt; ({{Code2|.img}}. (Converting as in creating a copy, not actually converting.) The filesystem layout, the MBR&lt;ref&gt;https://en.wikipedia.org/wiki/Master_boot_record&lt;/ref&gt; and the VBR&lt;ref&gt;https://en.wikipedia.org/wiki/Volume_boot_record&lt;/ref&gt; are written in to separate files. The raw image will then be mounted. A sha512 checksum of every file will be created and stored in the report.
+After building the {{Code2|.ova}}, the last build-step will extract the {{Code2|.ova}}, which will result in getting three files, i.e. {{Code2|Whonix-Gateway-8.ovf}}, {{Code2|Whonix-Gateway-8.mf}} and {{Code2|Whonix-Gateway-8-disk1.vmdk}}. The {{Code2|.vmdk}}&lt;ref&gt;https://en.wikipedia.org/wiki/VMDK&lt;/ref&gt; image will then be converted to {{Code2|.vdi}}&lt;ref&gt;https://en.wikipedia.org/wiki/VDI_(file_format)&lt;/ref&gt;, then converted to {{Code2|raw}}&lt;ref&gt;https://en.wikipedia.org/wiki/Raw_image_format&lt;/ref&gt; ({{Code2|.img}}. (Converting as in creating a copy, not actually converting.) The filesystem layout, the MBR&lt;ref&gt;https://en.wikipedia.org/wiki/Master_boot_record&lt;/ref&gt; and the VBR&lt;ref&gt;https://en.wikipedia.org/wiki/Volume_boot_record&lt;/ref&gt; are written into separate files. The raw image will then be mounted. A sha512 checksum of every file will be created and stored in the report.
 
-Anyone building {{Code2|Whonix.ova}} images will hopefully end up with the same report. We can then compare the reports using tools such as {{Code2|diff}} and/or {{Code2|meld}}. Those reports should be very similar. We can't end up with the very same reports, because again, there are no deterministically built operating systems yet. However, we can manually review the few remaining differences. That should make it reasonable to believe, that the original {{Code2|Whonix.ova}} images have been build from the source code that has been published for that Whonix version.
+Anyone building {{Code2|Whonix.ova}} images will hopefully end up with the same report. We can then compare the reports using tools such as {{Code2|diff}} and/or {{Code2|meld}}. Those reports should be very similar. We can't end up with the very same reports, because again, there are no deterministically built operating systems yet. However, we can manually review the few remaining differences. That should make it reasonable to believe, that the original {{Code2|Whonix.ova}} images have been built from the source code that has been published for that Whonix version.
 
 Below on this page is a longer How-To.
 
@@ -50854,7 +50853,7 @@ Your report root folder can most likely be found in {{Code|/home/user/whonix_bin
 === How-To ===
 First of all, you need to create your own Whonix.ova images from source code, refer to [[Dev/Build Documentation|Build Documentation]]. Your report file can most likely be found at {{Code|/home/user/whonix_binary/$VMNAME-$whonix_build_whonix_version_new.report}} and your report_tempfolder at {{Code|/home/user/whonix_binary/$VMNAME-${whonix_build_whonix_version_new}_tempfolder}}. That is your own analyzed {{Code2|.ova}}. To make space for another analysis for other builds (such as those from whonix.org), rename your whonix_binary folder to something else, such as {{Code2|whonix_binary1}}.
 
-If you've build for example Whonix 8, you have to download Whonix 8 as well. Place the {{Code2|.ova}} in {{Code|/home/user/whonix_binary/}}. Keep the original name. Then go to Whonix's source code folder ({{Code|cd /home/user/Whonix}} and analyze that image. Use.
+If you've built for example Whonix 8, you have to download Whonix 8 as well. Place the {{Code2|.ova}} in {{Code|/home/user/whonix_binary/}}. Keep the original name. Then go to Whonix's source code folder ({{Code|cd /home/user/Whonix}} and analyze that image. Use.
 
 &lt;pre&gt;
 sudo ./build-steps.d/2800_create-report --tor-gateway
@@ -50923,7 +50922,7 @@ In case you like to review the implementation, the related scripts can be found 
 
 [[Category:Documentation]]
 [[Category:Development]]</text>
-      <sha1>nccsfjq65xyc0pcgl8ep50kkqlbwyg7</sha1>
+      <sha1>b3lwrbt2c90uc5dgm9ov2lg77ss754a</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -51180,15 +51179,13 @@ Congratulations, you already created your own build of Whonix. If you want, you 
     <ns>10</ns>
     <id>535</id>
     <revision>
-      <id>6953</id>
-      <parentid>6201</parentid>
-      <timestamp>2014-03-17T13:51:42Z</timestamp>
+      <id>7053</id>
+      <parentid>6953</parentid>
+      <timestamp>2014-03-25T15:43:23Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>improved warning as suggested by Jason Ayala</comment>
-      <text xml:space="preserve" bytes="2942">{{mbox
+      <text xml:space="preserve" bytes="2941">{{mbox
 | image   = [[File:Ambox_warning_pn.svg.png|40px|alt=verifiable builds warning icon]]
 | text       = 
 Warning:
@@ -51196,14 +51193,14 @@ Warning:
 This feature only adds security if people like you actually use it! Don’t assume that someone else is doing it for you!
 }}
 
-Whonix has a feature which allows the community to check that Whonix {{Code2|.ova}}&lt;ref&gt;https://en.wikipedia.org/wiki/Open_Virtualization_Format&lt;/ref&gt; releases are verifiably created from project's own source code. We call this verifiable builds. This only proves, that the person and machine&lt;ref&gt;Due to build machine compromise.&lt;/ref&gt; building Whonix has added nothing malicious, such as a backdoor&lt;ref&gt;https://en.wikipedia.org/wiki/Backdoor_(computing)&lt;/ref&gt;. It doesn't prove, that there are no backdoors in Debian. This isn't possible, because neither Debian&lt;ref&gt;Whonix is based on Debian.&lt;/ref&gt; nor any other operating system provides deterministic builds yet.&lt;ref&gt;Some Debian developres are working on it, see [https://wiki.debian.org/ReproducibleBuilds Reproducible Builds].&lt;/ref&gt; Rather this feature is no attempt to proof, that there aren't any vulnerabilities&lt;ref&gt;https://en.wikipedia.org/wiki/Vulnerability_(computing)&lt;/ref&gt; in Whonix's or Debian. A remotely exploitable&lt;ref&gt;https://en.wikipedia.org/wiki/Exploit_(computer_security)&lt;/ref&gt; bug in Whonix or Debian, a flaw in Whonix's firewall leaking traffic or code {{Code2|phoning home}}&lt;ref&gt;https://en.wikipedia.org/wiki/Phoning_home&lt;/ref&gt; the contents of your harddrive would still be fatal. A precondition so this feature can improve overall security is, that the community is auditing Whonix's and Debian's source code for being free of backdoors and vulnerabilities in the first place. In summary, we believe this feature is useful and can improve security, but however isn't a magical answer to all computer security and trust questions. The following table hopefully helps understanding what this feature archives.
+Whonix has a feature which allows the community to check that Whonix {{Code2|.ova}}&lt;ref&gt;https://en.wikipedia.org/wiki/Open_Virtualization_Format&lt;/ref&gt; releases are verifiably created from project's own source code. We call this verifiable builds. This only proves that the person and machine&lt;ref&gt;Due to build machine compromise.&lt;/ref&gt; building Whonix has added nothing malicious, such as a backdoor&lt;ref&gt;https://en.wikipedia.org/wiki/Backdoor_(computing)&lt;/ref&gt;. It doesn't prove, that there are no backdoors in Debian. This isn't possible, because neither Debian&lt;ref&gt;Whonix is based on Debian.&lt;/ref&gt; nor any other operating system provides deterministic builds yet.&lt;ref&gt;Some Debian developres are working on it, see [https://wiki.debian.org/ReproducibleBuilds Reproducible Builds].&lt;/ref&gt; Rather this feature is no attempt to proof, that there aren't any vulnerabilities&lt;ref&gt;https://en.wikipedia.org/wiki/Vulnerability_(computing)&lt;/ref&gt; in Whonix's or Debian. A remotely exploitable&lt;ref&gt;https://en.wikipedia.org/wiki/Exploit_(computer_security)&lt;/ref&gt; bug in Whonix or Debian, a flaw in Whonix's firewall leaking traffic or code {{Code2|phoning home}}&lt;ref&gt;https://en.wikipedia.org/wiki/Phoning_home&lt;/ref&gt; the contents of your harddrive would still be fatal. A precondition so this feature can improve overall security is, that the community is auditing Whonix's and Debian's source code for being free of backdoors and vulnerabilities in the first place. In summary, we believe this feature is useful and can improve security, but however isn't a magical answer to all computer security and trust questions. The following table hopefully helps understanding what this feature achieves.
 
 {{Verifiable_Builds_Comparsion_Table}}
 
 You might be curious, why Whonix is verifiable while neither Debian nor any other operating system is? This is because [[About#Based_on_Debian|Whonix is very simple]], to oversimplify it: Whonix is just a collection of configuration files and scripts, i.e. Whonix's source code does not contain any compiled code etc. On the other hand, Debian is a full operating system. And of course, without the great work of the Debian project and all the upstream projects, Whonix wouldn't exist.
 
 This feature was first available with Whonix 8. Only users who download a new image can profit from this feature. Auditing versions older than Whonix 8 with this script is not possible.&lt;ref&gt;Not possible doesn't mean impossible here. Would just involve lots of work.&lt;/ref&gt; &lt;ref&gt;Because in order to implement the verifiable builds feature, we need to get rid of lots of non-deterministic auto-generated files at the end of the build process and to re-create them during first boot.&lt;/ref&gt;</text>
-      <sha1>mnm02r7lsnz5nh8u95cpatz4rjis9z2</sha1>
+      <sha1>qndulrasylaqkj2s9w45ght3w86glr9</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -51213,15 +51210,14 @@ This feature was first available with Whonix 8. Only users who download a new im
     <ns>10</ns>
     <id>536</id>
     <revision>
-      <id>5976</id>
-      <parentid>4190</parentid>
-      <timestamp>2014-02-27T16:59:58Z</timestamp>
+      <id>7052</id>
+      <parentid>5976</parentid>
+      <timestamp>2014-03-25T15:43:06Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <text xml:space="preserve" bytes="309">Since Whonix 7.5.2, all Whonix Debian Packages are deterministically build. This means, if you build Whonix Debian Packages 7.5.2 from source code, then download 7.5.2 from Whonix's Debian repository, you can simply diff the checksum (for example the {{Code2|sha512sum}}) of those files and they should match.</text>
-      <sha1>cdy53dzazzsn71lb7nemlsxij2sfqax</sha1>
+      <text xml:space="preserve" bytes="309">Since Whonix 7.5.2, all Whonix Debian Packages are deterministically built. This means, if you build Whonix Debian Packages 7.5.2 from source code, then download 7.5.2 from Whonix's Debian repository, you can simply diff the checksum (for example the {{Code2|sha512sum}}) of those files and they should match.</text>
+      <sha1>meqvtgmvke5q3ar4am0r9naa2k6dffq</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -55255,14 +55251,15 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
     <ns>0</ns>
     <id>691</id>
     <revision>
-      <id>7030</id>
-      <parentid>6992</parentid>
-      <timestamp>2014-03-24T12:32:59Z</timestamp>
+      <id>7058</id>
+      <parentid>7057</parentid>
+      <timestamp>2014-03-25T22:58:36Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="8619">{{Header}}
+      <comment>/* How to check if virtio network is really in use or an eventually existing fallback driver? */</comment>
+      <text xml:space="preserve" bytes="8731">{{Header}}
 {{#seo:
 |description=Development Notes for adding KVM support to Whonix.
 }}
@@ -55322,9 +55319,11 @@ http://wiki.libvirt.org/page/Virtio
 What is http://www.linux-kvm.org/page/Boot_from_virtio_block_device good for? Required?
 
 == How to check if virtio storage access is in use or an eventually existing fallback driver? ==
-How to check if virtio storage access is in use or an eventually existing fallback driver?
+How to check if virtio storage access '''virtio_blk''' really is in use or an eventually existing fallback driver?
 
 == How to check if virtio network is really in use or an eventually existing fallback driver? ==
+How to check, that '''virtio_pci''' is really being used and not some fallback driver?
+
 /sys/devices/virtio-pci/0/net/eth0/statistics/rx_bytes seems not to exist on Debian Wheezy.
 
 == How to enable AppArmor / SELinux for KVM on Debian? ==
@@ -55473,7 +55472,7 @@ whonixcheck (since Whonix 8) would tell you if kvmclock is enabled. whonixcheck 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>s141xnhap0oxqmjs50d7al3481xvkog</sha1>
+      <sha1>4p4zx6lef7fyuglt9u577azeg60kjgq</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
