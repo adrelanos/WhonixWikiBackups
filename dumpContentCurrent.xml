@@ -40,13 +40,15 @@
     <ns>0</ns>
     <id>1</id>
     <revision>
-      <id>7022</id>
-      <parentid>7021</parentid>
-      <timestamp>2014-03-23T10:57:24Z</timestamp>
+      <id>7046</id>
+      <parentid>7044</parentid>
+      <timestamp>2014-03-25T05:08:12Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="9870">{{Header}}
+      <comment>removed space before language selector</comment>
+      <text xml:space="preserve" bytes="11088">{{Header}}
 __NOTOC__
 &lt;languages /&gt;
 &lt;translate&gt;
@@ -55,55 +57,12 @@ __NOTOC__
 |description=Privacy protection. Anonymity online. Anonymous Operating System.
 }}&lt;/translate&gt;
 
-&lt;!--T:1--&gt;
-{{Infobox OS
-| logo                   = 
-| name                   = Whonix
-| screenshot             = [[Image:kde0_5_0.png|alt=&lt;translate&gt;&lt;!--T:40--&gt;
-Whonix-Workstation with KDE Desktop&lt;/translate&gt;|&lt;translate&gt;&lt;!--T:12--&gt;
-Whonix-Workstation with KDE Desktop&lt;/translate&gt;|200px]]
-| caption                = Whonix-Workstation with KDE Desktop
-| developer              = &lt;translate&gt;&lt;!--T:13--&gt;
-[https://www.whonix.org/forum/index.php/topic,109.0.html none] / [[Authorship|Whonix developers]]&lt;/translate&gt;
-| family                 = &lt;translate&gt;&lt;!--T:14--&gt;
-[https://en.wikipedia.org/wiki/Unix-like Unix-like], based on [https://en.wikipedia.org/wiki/Debian Debian]&lt;/translate&gt;
-| source_model           = &lt;translate&gt;&lt;!--T:15--&gt;
-[https://en.wikipedia.org/wiki/Open_source Open Source]&lt;/translate&gt;
-| working_state          = &lt;translate&gt;&lt;!--T:16--&gt;
-active&lt;/translate&gt;
-| released               = &lt;translate&gt;&lt;!--T:17--&gt;
-29 Feb 2012&lt;/translate&gt;
-| latest_release_version = [[Download|{{Version}}]]
-| latest_release_date    = {{Start date and age|2014|02|27|df=yes}}
-| latest_test_version    = &lt;translate&gt;&lt;!--T:18--&gt;
-none at the moment&lt;/translate&gt;
-| latest_test_date       = {{Start date and age|2014|01|13|df=yes}}
-| marketing target       = &lt;translate&gt;&lt;!--T:19--&gt;
-Anonymity; Privacy; Security; Personal computing; [[Hosting Location Hidden Services|Location Hidden Servers]]&lt;/translate&gt;
-| kernel_type            = &lt;translate&gt;&lt;!--T:20--&gt;
-[https://en.wikipedia.org/wiki/Monolithic_kernel Monolithic] ([https://en.wikipedia.org/wiki/Linux_kernel Linux kernel])&lt;/translate&gt;
-| ui                     = [https://en.wikipedia.org/wiki/KDE KDE]
-| license                = &lt;translate&gt;&lt;!--T:21--&gt;
-[https://en.wikipedia.org/wiki/Free_software Free software], mainly the [https://en.wikipedia.org/wiki/GNU_GPL GNU GPL], and other licenses&lt;/translate&gt;&lt;ref&gt;{{cite web|url=http://www.debian.org/legal/licenses/|title=License information|publisher=Debian|accessdate=2009-02-28}}&lt;/ref&gt;
-| website                = [https://www.whonix.org https]; &lt;html&gt;&lt;a class=&quot;link-https&quot; href=&quot;http://kkkkkkkkkk63ava6.onion&quot; rel=&quot;nofollow&quot;&gt;.onion&lt;/a&gt;&lt;/html&gt;
-| updatemodel            = &lt;translate&gt;&lt;!--T:22--&gt;
-[https://en.wikipedia.org/wiki/Advanced_Packaging_Tool APT] (several front-ends available)&lt;/translate&gt;
-| preceded_by            = [https://trac.torproject.org/projects/tor/wiki/doc/JanusVM JanusVM]&lt;ref&gt;http://www.webcitation.org/6IA21tFaM&lt;/ref&gt;; [http://www.makeuseof.com/tag/browse-email-safely-anonymously-torbox/ TorBOX]&lt;ref&gt;http://www.webcitation.org/6IA20bIq5&lt;/ref&gt;
-| supported_platforms    = &lt;translate&gt;&lt;!--T:23--&gt;
-x86 compatible and/or VirtualBox +&lt;/translate&gt; &lt;ref&gt;&lt;translate&gt;&lt;!--T:24--&gt;
-[[Other Operating Systems|Custom-Workstation]]: self made builds can run on any real or virtual hardware as long as they are behind a Whonix-Gateway. Tor Browser binaries are only available for a limited number of platforms (Windows, Linux, BSD, Mac).&lt;/translate&gt;&lt;/ref&gt;
-}}
-
-&lt;!-------------------------Whonix------------------------&gt;
-{|style=&quot;border-spacing:8px; margin:0px -8px;&quot;
-|class=&quot;MainPageBG&quot; style=&quot;width:55%; border:1px solid #cef2e0; background:#f5fffa; vertical-align:top; color:#000;&quot;|
-{|width=&quot;100%&quot; cellpadding=&quot;2&quot; cellspacing=&quot;5&quot; style=&quot;vertical-align:top; background:#f5fffa;&quot;
-! &lt;h3 style=&quot;margin:0; background:#cef2e0; font-size:120%; font-weight:bold; border:1px solid #a3bfb1; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;[[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|170px|alt=&lt;translate&gt;&lt;!--T:41--&gt;
-Download Whonix&lt;/translate&gt;]]&lt;/h3&gt;
-|-
-|style=&quot;color:#000;&quot;| 
-&lt;!--T:2--&gt;
+&lt;div class=&quot;container&quot; style=&quot;width:100%; margin=0px; border:1px solid gray;  line-height:150%;&quot;&gt;
+&lt;div class=&quot;header&quot; style=&quot;border-bottom:1px solid gray; padding:0.5em; color:black; background-color:#C9DAEB; clear:left;&quot; &gt;&lt;h1 class=&quot;header&quot; style=&quot;text-align:center; padding:0; margin:0;&quot;&gt;Whonix    [[File:500.png|50px]]&lt;/h1&gt;&lt;/div&gt;
+&lt;div class=&quot;left&quot; style=&quot;float:left; width:33%; margin:0; padding:0.5em;&quot;&gt;&lt;div class=&quot;header&quot; style=&quot;border:1px solid gray; padding:0.5em; color:black; background-color:#C9DAEB; clear:left;&quot;&gt;&lt;h1 class=&quot;header&quot; style=&quot;text-align:center; padding:0; margin:0;&quot;&gt;[[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|170px|alt=&lt;translate&gt;&lt;!--T:41--&gt;
+Download Whonix&lt;/translate&gt;]]&lt;/h1&gt;&lt;/div&gt;&lt;!--T:2--&gt;
 [[Image:whonix.jpg|center|Whonix Concept|500px]]
+
 
 &lt;translate&gt;
 &lt;!--T:3--&gt;
@@ -120,9 +79,9 @@ Whonix consists of two parts: One solely runs Tor and acts as a gateway, which w
 To learn more about security and anonymity under Whonix, please continue to the [[About|About Whonix]] page.
 &lt;/translate&gt;
 
-&lt;!--T:6--&gt;
-[[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|alt=&lt;translate&gt;&lt;!--T:42--&gt;
-Download Whonix&lt;/translate&gt;]]
+
+
+
 
 &lt;html&gt;
 &lt;div class=&quot;hreview&quot;&gt;
@@ -134,30 +93,118 @@ is &lt;span itemprop=&quot;price&quot;&gt;Free&lt;/span&gt; as in price and free
 &lt;/html&gt;
 &lt;ref&gt;[http://sourceforge.net/projects/whonix/ Whonix sourceforge.net project home page] [http://www.webcitation.org/6O1gNLC1B (w)]; [http://sourceforge.net/projects/whonix/reviews/ Whonix sourceforg.net project review page] [http://www.webcitation.org/6O1gT5Wqw (w)]&lt;/ref&gt;
 
-|-
-|}&lt;!--
+[[File:500.png|300px300px]]
+&lt;/div&gt;
 
-&lt;--------------------------------Blog Posts, Forum Posts-------------------------------&gt;
-|class=&quot;MainPageBG&quot; style=&quot;width:45%; border:1px solid #cedff2; background:#f5faff; vertical-align:top&quot;|
-{| width=&quot;100%&quot; cellpadding=&quot;2&quot; cellspacing=&quot;5&quot; style=&quot;vertical-align:top; background:#f5faff;&quot;
-! &lt;h3 style=&quot;margin:0; background:#cedff2; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;&lt;translate&gt;&lt;!--T:25--&gt;
-Latest [https://www.whonix.org/blog Blog] Posts&lt;/translate&gt; [[File:2000px-Feed-icon.svg.png|20px|alt=rss|link=https://www.whonix.org/blog/feed/]]&lt;/h3&gt;
-|-
-|style=&quot;color:#000;&quot;|
-&lt;rss number=5 title=off desc=off&gt;https://www.whonix.org/blog/feed/rss2/&lt;/rss&gt;
+&lt;div class=&quot;middle&quot; style=&quot;float:left; width:33%; margin:0; padding:0.5em;&quot;&gt;&lt;div class=&quot;header&quot; style=&quot;border:1px solid gray; padding:0.5em; color:black; background-color:#C9DAEB; clear:left;&quot;&gt;&lt;h2 class=&quot;header&quot; style=&quot;text-align:center; padding:0; margin:0;&quot;&gt;&lt;translate&gt;&lt;!--T:25--&gt;
+Latest [https://www.whonix.org/blog Blog] Posts&lt;/translate&gt; [[File:2000px-Feed-icon.svg.png|20px|alt=rss|link=https://www.whonix.org/blog/feed/]]
+&lt;/h2&gt;&lt;/div&gt;
+&lt;rss number=10 title=off desc=off&gt;https://www.whonix.org/blog/feed/rss2/&lt;/rss&gt;
+&lt;div class=&quot;header&quot; style=&quot;border:1px solid gray; padding:0.5em; color:black; background-color:#C9DAEB; clear:left;&quot;&gt;&lt;h2 class=&quot;header&quot; style=&quot;text-align:center; padding:0; margin:0;&quot;&gt;&lt;translate&gt;&lt;!--T:26--&gt;
+Latest [https://www.whonix.org/forum Forum] Posts&lt;/translate&gt; [[File:2000px-Feed-icon.svg.png|20px|alt=rss|link=https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10]]
+&lt;/h2&gt;&lt;/div&gt;
+&lt;rss number=15 title=off desc=off&gt;https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=15&lt;/rss&gt;
+&lt;/div&gt;
 
-|-
-! &lt;h3 style=&quot;margin:0; background:#cedff2; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;&lt;translate&gt;&lt;!--T:26--&gt;
-Latest [https://www.whonix.org/forum Forum] Posts&lt;/translate&gt; [[File:2000px-Feed-icon.svg.png|20px|alt=rss|link=https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10]]&lt;/h3&gt;
-|-
-|style=&quot;color:#000;&quot;| 
-&lt;rss number=5 title=off desc=off&gt;https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=5&lt;/rss&gt;
+&lt;div class=&quot;right&quot; style=&quot;float:left; width:28%; margin:0; padding:0.5em;&quot;&gt;&lt;div class=&quot;header&quot; style=&quot;border:1px solid gray; padding:0.5em; color:black; background-color:#C9DAEB; clear:right;&quot;&gt;&lt;h2 class=&quot;header&quot; style=&quot;text-align:center; padding:0; margin:0;&quot;&gt;Whonix &lt;/h2&gt;&lt;/div&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;Whonix-Workstation with KDE Desktop: &lt;/p&gt;
+[[Image:kde0_5_0.png|alt=&lt;translate&gt;&lt;!--T:40--&gt;
+Whonix-Workstation with KDE Desktop&lt;/translate&gt;|&lt;translate&gt;&lt;!--T:12--&gt;
+Whonix-Workstation with KDE Desktop&lt;/translate&gt;|center]]
 
-|-
-|}
-|}
+&lt;table&gt;
+&lt;td&gt;Company:&lt;/td&gt;
+&lt;td style=&quot;text-align:left; &quot;&gt;&lt;translate&gt;&lt;!--T:13--&gt;
+[https://www.whonix.org/forum/index.php/topic,109.0.html none] &lt;/translate&gt;.&lt;/td&gt;
+&lt;tr&gt;
+&lt;td&gt;Developer:&lt;/td&gt;
+&lt;td style=&quot;text-align:left;&quot;&gt;[[Authorship|Whonix developers]]. &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;OS Family: &lt;/td&gt;
+&lt;td style=&quot;text-align:left;&quot;&gt;&lt;translate&gt;&lt;!--T:14--&gt;
+[https://en.wikipedia.org/wiki/Unix-like Unix-like], based on [https://en.wikipedia.org/wiki/Debian Debian]&lt;/translate&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Working State: &lt;/td&gt;
+&lt;td style=&quot;&quot;text-align:left;&quot;&gt;&lt;translate&gt;&lt;!--T:16--&gt;
+Active&lt;/translate&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Source Model: &lt;/td&gt;
+&lt;td style=&quot;&quot;text-align:left;&quot;&gt;&lt;translate&gt;&lt;!--T:15--&gt;
+[https://en.wikipedia.org/wiki/Open_source Open Source]&lt;/translate&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Initial Release: &lt;/td&gt;
+&lt;td style=&quot;&quot;text-align:left;&quot;&gt;&lt;translate&gt;&lt;!--T:17--&gt;
+29 Feb 2012&lt;/translate&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;[https://en.wikipedia.org/wiki/Software_release_life_cycle Latest Stable Release: ]&lt;/td&gt;
+&lt;td style=&quot;&quot;text-align:left;&quot;&gt;[[Download|{{Version}}]]/{{Start date and age|2014|02|27|df=yes}}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;[https://en.wikipedia.org/wiki/Software_release_life_cycle Latest Unstable Release: ]&lt;/td&gt;
+&lt;td style=&quot;&quot;text-align:left;&quot;&gt;&lt;translate&gt;&lt;!--T:18--&gt;
+none at the moment&lt;/translate&gt;{{Start date and age|2014|01|13|df=yes}}
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Marketing Target: &lt;/td&gt;
+&lt;td style=&quot;&quot;text-align:left;&quot;&gt;&lt;translate&gt;&lt;!--T:19--&gt;
+Anonymity; Privacy; Security; Personal computing; [[Hosting Location Hidden Services|Location Hidden Servers]]&lt;/translate&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Update Method: &lt;/td&gt;
+&lt;td style=&quot;&quot;text-align:left;&quot;&gt;&lt;translate&gt;&lt;!--T:22--&gt;
+[https://en.wikipedia.org/wiki/Advanced_Packaging_Tool APT] (several front-ends available)&lt;/translate&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Supported Platforms: &lt;/td&gt;
+&lt;td style=&quot;&quot;text-align:left;&quot;&gt;&lt;translate&gt;&lt;!--T:23--&gt;
+x86 compatible and/or VirtualBox +&lt;/translate&gt; &lt;ref&gt;&lt;translate&gt;&lt;!--T:24--&gt;
+[[Other Operating Systems|Custom-Workstation]]: self made builds can run on any real or virtual hardware as long as they are behind a Whonix-Gateway. Tor Browser binaries are only available for a limited number of platforms (Windows, Linux, BSD, Mac).&lt;/translate&gt;&lt;/ref&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;[https://en.wikipedia.org/wiki/Kernel_(computing) Kernel Type: ]&lt;/td&gt;
+&lt;td style=&quot;text-align:left;&quot;&gt;&lt;translate&gt;&lt;!--T:20--&gt;
+[https://en.wikipedia.org/wiki/Monolithic_kernel Monolithic] ([https://en.wikipedia.org/wiki/Linux_kernel Linux kernel])&lt;/translate&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Default [https://en.wikipedia.org/wiki/User_interface User Interface: ]&lt;/td&gt;
+&lt;td style=&quot;&quot;text-align:left;&quot;&gt;[https://en.wikipedia.org/wiki/KDE KDE]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;[https://en.wikipedia.org/wiki/Software_license License: ]&lt;/td&gt;
+&lt;td style=&quot;&quot;text-align:left;&quot;&gt;&lt;translate&gt;&lt;!--T:21--&gt;
+[https://en.wikipedia.org/wiki/Free_software Free software], mainly the [https://en.wikipedia.org/wiki/GNU_GPL GNU GPL], and other licenses&lt;/translate&gt;&lt;ref&gt;{{cite web|url=http://www.debian.org/legal/licenses/|title=License information|publisher=Debian|accessdate=2009-02-28}}&lt;/ref&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Preceeded By: &lt;/td&gt;
+&lt;td style=&quot;&quot;text-align:left;&quot;&gt;[https://trac.torproject.org/projects/tor/wiki/doc/JanusVM JanusVM]&lt;ref&gt;http://www.webcitation.org/6IA21tFaM&lt;/ref&gt;; [http://www.makeuseof.com/tag/browse-email-safely-anonymously-torbox/ TorBOX]&lt;ref&gt;http://www.webcitation.org/6IA20bIq5&lt;/ref&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Official Website: &lt;/td&gt;
+&lt;td style=&quot;&quot;text-align:left;&quot;&gt;[https://www.whonix.org https]; &lt;html&gt;&lt;a class=&quot;link-https&quot; href=&quot;http://kkkkkkkkkk63ava6.onion&quot; rel=&quot;nofollow&quot;&gt;.onion&lt;/a&gt;&lt;/html&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
 
-= Screenshots = &lt;!--T:7--&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;header&quot; style=&quot;text-align: center; border-top:1px solid gray; border-bottom:1px solid gray; padding:0.5em; height:40px; color:black; background-color:#C9DAEB; clear:left;&quot;&gt;
+&lt;h1 class=&quot;header&quot; style=&quot;text-align:center; padding:0; margin:0;&quot;&gt;Screenshots&lt;/h1&gt; &lt;!--T:7--&gt;
+&lt;/div&gt;
+
 &lt;gallery&gt;
 Image:kde0_5_0.png|alt=&lt;translate&gt;&lt;!--T:43--&gt;
 Whonix Desktop Screenshot&lt;/translate&gt;|&lt;translate&gt;&lt;!--T:27--&gt;
@@ -196,16 +243,16 @@ Image:donate.png|link=Donate|alt=&lt;translate&gt;&lt;!--T:54--&gt;
 Whonix Donate Icon&lt;/translate&gt;|&lt;translate&gt;&lt;!--T:38--&gt;
 [[Donate|Donate to Whonix!]]&lt;/translate&gt;
 &lt;/gallery&gt;
+
 &lt;html&gt;
 &lt;div itemscope itemtype=&quot;http://schema.org/Organization&quot;&gt;
-&lt;a itemprop=&quot;url&quot; href=&quot;https://www.whonix.org&quot;&gt;Home&lt;/a&gt;
 &lt;/br&gt;
-&lt;img itemprop=&quot;logo&quot; src=&quot;https://www.whonix.org/w/images/6/62/Whonix_logo.png&quot; /&gt;
+&lt;img itemprop=&quot;logo&quot; style=&quot;text-align:center;&quot; src=&quot;https://www.whonix.org/w/images/6/62/Whonix_logo.png&quot; /&gt;
 &lt;/div&gt;
 &lt;/html&gt;
 '''[[Screenshots|More Screenshots]].'''
 = &lt;translate&gt;&lt;!--T:39--&gt;
-Footnotes&lt;/translate&gt; =
+&lt;h1 style=&quot;text-align:center;&quot;&gt;Footnotes&lt;/h1&gt;&lt;/translate&gt; =
 &lt;translate&gt;
 &lt;!--T:8--&gt;
 Whonix is produced independently of, and carries no guarantee from, The Tor Project&lt;/translate&gt;&lt;ref&gt;https://www.torproject.org&lt;/ref&gt;.
@@ -216,8 +263,11 @@ Whonix is produced independently of, and carries no guarantee from, The Tor Proj
 &lt;!--T:10--&gt;
 Thanks to Tomchen1989 from Wikimedia Commons for the download button! [https://commons.wikimedia.org/wiki/File:Download_Button.svg 1] ([http://www.webcitation.org/6I2DQzdu0 w])
 Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_43.htm awxcnx.de]!
-&lt;/translate&gt;[[Category:Documentation]]{{Footer}}</text>
-      <sha1>ogb4ur5evvfb3byigj9vdepl9rtz2m6</sha1>
+&lt;/translate&gt;[[Category:Documentation]]{{Footer}}
+
+
+&lt;/div&gt;</text>
+      <sha1>lestiiimz9e203faxulfrli047byik6</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -53771,561 +53821,107 @@ License can be found in the /usr/share/common-licenses' directory.</text>
     <ns>0</ns>
     <id>649</id>
     <revision>
-      <id>5579</id>
-      <parentid>5578</parentid>
-      <timestamp>2014-02-22T18:43:50Z</timestamp>
+      <id>7047</id>
+      <parentid>5579</parentid>
+      <timestamp>2014-03-25T09:51:01Z</timestamp>
       <contributor>
         <username>Jekyll</username>
         <id>161</id>
       </contributor>
-      <text xml:space="preserve" bytes="12439">=This is a personal playground wiki page!=
+      <comment>Created a table</comment>
+      <text xml:space="preserve" bytes="3299">=This is a personal playground wiki page!=
 
 Use the official instructions in the Wiki - https://www.whonix.org/wiki/Dev/Build_Documentation
 
-= 7.7.8.7 Build Documentation (short) =
-
-This is a short set of instructions for building 7.7.8.7 testers-only version of Whonix (later to be modified for Whonix 8) inside VirtualBox (as opposed to the traditional process of running these commands on a system that is installed directly on the hardware).
-
-Advantages of this approach are that you can build Whonix on any OS that can run VirtualBox (you need Debian Stable for hardware type build) and that any potential system damage is limited to the VM. Using shapshots you can quickly revert a faulty state or a failed build and start again.
-
-The focus here is to show the simplest way to build Whonix from source. Various security precautions such as GPG key verification are omitted.
-
-Please read the full [[Dev/BuildDocumentation_8#Build_Documentation.|documentation]] in order to understand the process better.
-
-== Get and prepare Debian and VirtualBox ==
-[[Debian#Download_and_Verification|Download and verify]] Debian Stable/Wheezy 32 bit network install (netinst) ISO.
-
-[https://www.virtualbox.org/wiki/Downloads Download] the latest version of VirtualBox and verify the downloaded packages by [http://dlc.sun.com.edgesuite.net/virtualbox/4.3.6/SHA256SUMS comparing SHA256 checksums].
-
-After you install VirtualBox create a new virtual machine with the following specifics:
-
-&lt;pre&gt;
-Name: Debian
-Type: Linux
-Version: Debian
-Memory size: (go with recommended memory size) / Next
-Hard Drive: Create a virtual hard drive now / Create
-Hard drive file type: VDI (VirtualBox Disk Image) / Next
-Storage on physical hard drive: Dynamically allocated / Next
-File location and size: 50 GB / Create
-&lt;/pre&gt;
-
-Start the newly created virtual machine, select the ISO of Debian 7.4 stable (debian-7.4.0-i386-netinst.iso) and click Start.
-
-&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
-'''OPTIONAL.'''
-
-If you are interested in seeing a visual walk-through of the Virtual Machine preparation, click on Expand on the right.
-
-&lt;div class=&quot;mw-collapsible-content&quot;&gt;
-
-
-Create a new virtual machine by clicking &quot;New&quot;.
-
-[[File:1a.png|400px]]
-
-
-Click &quot;Next&quot;.
-
-[[File:2a.png|400px]]
-
-
-Set name to &quot;Debian&quot;.
-
-[[File:3a.png|400px]]
-
-
-Leave the memory as recommended.
-
-[[File:4aa.png|400px]]
-
-
-New hard disk.
-
-[[File:5a.png|400px]]
-
-
-&quot;VDI&quot;.
-
-[[File:6a.png|400px]]
-
-
-Choose &quot;Dynamically allocated&quot;
-
-[[File:7a.png|400px]]
-
-
-Set the size to 50GB. You won't use all of it.
-
-[[File:8aa.png|400px]]
-
-
-Check if all is correct.
-
-[[File:9aa.png|400px]]
-
-
-Create the virtual machine.
-
-[[File:10aa.png|400px]]
-
-
-Start the VM.
-
-[[File:11aa.png|400px]]
-
-
-Capture notification.
-
-[[File:12a.png|400px]]
-
-
-Welcome screen.
-
-[[File:13a.png|400px]]
-
-
-Locate Wheezy netinst ISO. 
-
-[[File:13aa.png|400px]]
-
-
-Check if all is correct.
-
-[[File:14aa.png|400px]]
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-== Install Debian ==
-In the installer boot menu of Debian Stable (Wheezy) press &quot;Install&quot; and choose following settings:
-
-&lt;pre&gt;
-Select a language: English
-Select your location: United States
-Configure the keyboard: (select your layout)
-Hostname: host
-Domain name: (empty)
-Root password: (set up a strong password)
-Full name for the new user: user
-Username for your account: user
-Password for the new user: (choose a good password, different from root password)
-Partitioning method: Guided - use entire disk
-Partitioning scheme: All files in one partition (select the listed device in the next step)
-Partition disks/overview: Finish partitioning
-Write changes to disk: Yes
-
-Debian archive mirror country: Go back
-Continue without a network mirror: Yes
-
-Use a network mirror: No
-Participate in the package usage survey: No
-Software selection: None; deselect all options (using Space)
-Install the GRUB boot loader: Yes (select the listed device in the next step)
-Finish the installation: Continue
-&lt;/pre&gt;
-
- &lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
-'''OPTIONAL.'''
-
-If you are interested in seeing a visual walk-through of the minimal installation of Debian Stable Wheezy, click on Expand on the right.
-
-&lt;div class=&quot;mw-collapsible-content&quot;&gt;
-In the menu select &quot;Install&quot;
-
-[[Image:20.png|400px]]
-
-
-Set language as English.
-
-[[File:21.png|400px]]
-
-
-Set location as United States.
-
-[[File:22a.png|400px]]
-
-
-Select your keyboard layout.
-
-[[File:23.png|400px]]
-
-
-Installing additional content.
-
-[[File:53.png|400px]]
-
-
-Network will auto-configure (hopefully).
-
-[[File:24.png|400px]]
-
-
-Set the hostname to &quot;host&quot;.
-
-[[File:25.png|400px]]
-
-
-Leave the domain name empty.
-
-[[File:26.png|400px]]
-
-
-Pick a strong root password.
-
-[[File:27.png|400px]]
-
-
-Reenter the password.
-
-[[File:28.png|400px]]
-
-
-Full name should should be &quot;user&quot;.
-
-[[File:29.png|400px]]
-
-
-Username should also be &quot;user&quot;.
-
-[[File:30.png|400px]]
-
-
-Enter a strong user password.
-
-[[File:31.png|400px]]
-
-
-Reenter the password.
-
-[[File:32.png|400px]]
-
-
-Network time procedure.
-
-[[File:33.png|400px]]
-
-
-Use a guided partitioning method with the whole disk (FDE is a good idea).
-
-[[File:34.png|400px]]
-
-
-Select the suggested disk.
-
-[[File:35.png|400px]]
-
-
-Partition all files in one partition.
-
-[[File:36.png|400px]]
-
-
-Finish partitioning.
-
-[[File:37.png|400px]]
-
-
-Confirm the changes.
-
-[[File:38.png|400px]]
-
-
-It takes a few minutes to get the base system installed.
-
-[[File:39.png|400px]]
-[[File:40.png|400px]]
-
-
-We don't need any extra packages so don't select a mirror, &quot;Go back&quot;.
-
-[[File:41.png|400px]]
-
-
-Confirm that you want to continue without a mirror.
-
-[[File:42.png|400px]]
-
-
-Configuring apt.
-
-[[File:43.png|400px]]
-
-
-&quot;No thanks&quot; to survey participation.
-
-[[File:44.png|400px]]
-
-
-Deselect (no star) the given option (using Space).
-
-[[File:45.png|400px]]
-[[File:46.png|400px]]
-
-
-Install GRUB.
-
-[[File:47.png|400px]]
-
-
-Select your disk.
-
-[[File:48.png|400px]]
-
-
-Finishing the installation.
-
-[[File:49.png|400px]]
-
-
-Done! The system will reboot.
-
-[[File:50.png|400px]]
-
-
-OS screen.
-
-[[File:51.png|400px]]
-
-
-Login screen.
-
-[[File:52a.png|400px]]
-&lt;/div&gt;
-&lt;/div&gt;
-
-== Preparing the system for build ==
-
-&lt;pre&gt;
-## (host) login with &quot;root&quot;
-root
-
-## Take an image of your installation in case the build script fails in the middle. &quot;Machine / Take snapshot&quot;. Name it &quot;Snapshot 1&quot;.
-
-## Add a new repository source. 
-echo &quot;deb http://ftp.us.debian.org/debian/ wheezy main&quot; &gt;&gt; /etc/apt/sources.list
-
-## Refresh package lists and upgrade
-apt-get update &amp;&amp; apt-get dist-upgrade -y
-
-## Install &quot;sudo&quot; and git.
-apt-get install sudo git -y
-
-## Add &quot;user&quot; to &quot;sudo&quot; group
-addgroup user sudo
-
-## Reboot the system to apply the changes
-shutdown -r now
-&lt;/pre&gt;
-
- &lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
-'''OPTIONAL.'''
-
-If you are interested in seeing a visual walk-through of the system preparation, click on Expand on the right.
-
-&lt;div class=&quot;mw-collapsible-content&quot;&gt;
-
-Logging as root.
-
-[[File:1b.png|400px]]
-
-
-Taking a snapshot of the VM.
-
-[[File:2b.png|400px]]
-
-[[File:2bb.png|200px]]
-
-
-Adding repository to sources and running update &amp; upgrade.
-
-[[File:3b.png|400px]]
-[[File:4b.png|400px]]
-
-
-Installing git and sudo.
-
-[[File:5b.png|400px]]
-[[File:6b.png|400px]]
-[[File:7b.png|400px]]
-
-
-Adding &quot;user to &quot;sudo&quot; group
-
-[[File:8b.png|400px]]
-
-
-Rebooting.
-
-[[File:9b.png|400px]]
-&lt;/div&gt;
-&lt;/div&gt;
-
-== Building from source ==
-
-&lt;pre&gt;
-## (host) login with &quot;user&quot;
-user
-
-## Here you can take another snapshot to avoiding doing system preparation again next time when you build. &quot;Machine / Take snapshot&quot;. Name it &quot;Snapshot 2&quot;.
-
-#Get source code.
-git clone https://github.com/Whonix/Whonix
-
-## Go into the git directory
-cd Whonix
-
-## Get a list of available git tags.
-git tag
-
-## Choose which version you want to build.
-git checkout 7.7.8.7
-&lt;/pre&gt;
-
- &lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
-'''OPTIONAL.'''
-
-If you are interested in seeing a visual walk-through of the build from source, click on Expand on the right. Pictures are shown using the tag 7.7.6.4 but you must use 7.7.8.7
-
-&lt;div class=&quot;mw-collapsible-content&quot;&gt;
-Logging as user.
-
-[[File:10b.png|400px]]
-
-
-Taking a snapshot of the VM.
-
-[[File:2b.png|400px]]
-
-[[File:12bbb.png|200px]]
-
-
-Cloning the git source.
-
-[[File:12b.png|400px]]
-
-
-Entering the git directory and getting git tags.
-
-[[File:13b.png|400px]]
-
-
-All available tags displayed.
-
-[[File:14b.png|400px]]
-
-
-Checkout out 7.7.8.7
-
-[[File:15b.png|400px]]
-&lt;/div&gt;
-&lt;/div&gt;
-
-== VM Creation ==
-
-Build a Whonix-Gateway virtual machine image.
-
-&lt;pre&gt;
-sudo ./whonix_build --build --tor-gateway 
-&lt;/pre&gt;
-
-
-Build a Whonix-Workstation virtual machine image.
-
-&lt;pre&gt;
-sudo ./whonix_build --build --tor-workstation
-&lt;/pre&gt;
-
-The resulting {{Code2|.ova}} images can be found in {{Code|~/whonix_binary}} folder.
-
-
-If you want to create a log of the build process (very useful for debugging) use the following commands but be aware that all output will be redirected to a file, meaning nothing will appear on the screen. This will create a text log in /home/user/log. 
-
-
-For Workstation
-
-&lt;pre&gt;
-sudo ./nothing-to-see/whonix_build --build --tor-workstation &gt;&gt; /home/user/log-workstation 2&gt;&gt; /home/user/log-workstation
-&lt;/pre&gt;
-
-For Gateway
-
-&lt;pre&gt;
-sudo ./nothing-to-see/whonix_build --build --tor-gateway &gt;&gt; /home/user/log-gateway 2&gt;&gt; /home/user/log-gateway
-&lt;/pre&gt;
- &lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
-'''OPTIONAL.'''
-
-If you are interested in seeing a visual walk-through of the VM creation, click on Expand on the right.
-
-&lt;div class=&quot;mw-collapsible-content&quot;&gt;
-
-Enter the Gateway build command
-
-[[File:16b.png|400px]]
-
-
-Provide sudo password
-
-[[File:18b.png|400px]]
-&lt;/div&gt;
-&lt;/div&gt;
-
-== VM image export == 
-
-After a few hours (depending on your disk speed, CPU clock rate, available download bandwidth, ...) the image (either Workstation or Gateway) will be created in {{Code|~/whonix_binary}} directory. This will take from 3 to 7 hours per image.
-
-You need to export the OVA image and then [[Install  |use it in VirtualBox]].
-
-To transfer the images you can use VirtualBox's Shared Folders Functionality or USB transfer.  
-
-==== Export to a shared folder ====   
-
-To use shared folder functionality you must have [[VirtualBox_Guest_Additions|Guest Additions]] installed.
-
-Before installing Guest Additions read the [https://www.virtualbox.org/manual/ch04.html official manual page] and Whonix's [[VirtualBox_Guest_Additions|wiki page]].
-
-If you still want to use it, [http://download.virtualbox.org/virtualbox/4.3.6/ download the ISO] (VBoxGuestAdditions_4.3.6.iso) and set up folder as described in the manual.
-
-==== Export via USB ====
-
-Unless you install VirtualBox Extension Pack, USB 2.0 won't be supported. USB 1.1 transfer speed is very low, usually 0,5 - 1 MB/s.
-
-===== Extension pack install (optional) =====
-Before installing the extension pack read the [https://www.virtualbox.org/manual/ch01.html#intro-installing official manual page].
-
-To proceed, [https://www.virtualbox.org/wiki/Downloads download] the vbox file (Oracle_VM_VirtualBox_Extension_Pack-4.3.6-91406.vbox-extpack). Import the file in VirtualBox (File/Preferences/Extensions then locate the file). After installing, &quot;Oracle VM VirtualBOx Extension Pack&quot; entry will appear as &quot;Active&quot;, resulting in a green arrow icon in front of the name.
-
-===== USB transfer=====
-Make your USB key available to the VM through selecting it in the Devices/USB devices menu. Plug it in first of course ;)
-
-&lt;pre&gt;
-## Install usbmount that will automatically mount your USB to media/usb0
-sudo apt-get install usbmount
-
-## Check if the USB is present and mounted
-cd /media/usb0
-
-## Copy the OVA file to USB. 
-sudo cp /home/user/whonix_binary/Whonix-Workstation-7.7.8.7.ova /media/usb0
-
-## or if you have been building the Gateway
-sudo cp /home/user/whonix_binary/Whonix-Gateway-7.7.8.7.ova /media/usb0
-
-## Unmount the USB
-sudo umount /media/usb0
-&lt;/pre&gt;
-
-Deselect your USB key in the VM's Devices/USB devices menu to make it available to your host system again.
-
-== Finishing up == 
-
-You are done! OVA file is now on your USB key/in your shared folder. All you have to do is [[Install  |use it in VirtualBox]].
-
-If you want to build another image (presuming you have build only Workstation or Gateway this time) revert the VM state to [[Jekyll:Sandbox#Building_from_source|Snapshot 2]].
-
-From there follow the steps as you previously did and build the image you still need Workstation or Gateway.</text>
-      <sha1>555db6g1e1hl6o7hjuy1mj8x406t1m1</sha1>
+== Password Manager Comparison Table ==
+
+
+The following table compares the features and status of three password managers that were suggested to be included in Whonix. Data was acquired in March, 2014.
+
+{| class=&quot;wikitable&quot; style=&quot;background-color: #fff; text-align: center&quot;
+!
+! KeePass
+! KeePassX
+! Figaro's Password Manager 2
+|-
+| align=&quot;left&quot; | Homepage
+| http://keepass.info
+| https://www.keepassx.org/
+| http://als.regnet.cz/fpm2/
+|-
+| align=&quot;left&quot; | Debian package
+| http://packages.qa.debian.org/keepass2
+| http://packages.qa.debian.org/keepassx
+| http://packages.qa.debian.org/fpm2
+|-
+| align=&quot;left&quot; | Latest version
+| 2.25 &lt;ref&gt;http://keepass.info/news/news_all.html&lt;/ref&gt;
+| 2.0 Alpha 5&lt;ref&gt;https://www.keepassx.org/news/&lt;/ref&gt;
+| 0.79 &lt;ref&gt;http://als.regnet.cz/fpm2/changelog&lt;/ref&gt;
+|-
+| align=&quot;left&quot; | Debian version (stable/testing)
+| 2.19 / 2.25 &lt;ref&gt;http://packages.qa.debian.org/keepass2&lt;/ref&gt; 
+| 0.4.3 &lt;ref&gt;http://packages.qa.debian.org/keepassx&lt;/ref&gt;
+| 0.79 &lt;ref&gt;http://packages.qa.debian.org/fpm2&lt;/ref&gt;
+|-
+| align=&quot;left&quot; | Used by other security distros
+| No  &lt;ref&gt;To the best knowledge of the author&lt;/ref&gt;
+| Tails &lt;ref&gt;https://tails.boum.org/doc/encryption_and_privacy/manage_passwords/index.en.html&lt;/ref&gt;
+| Liberte Linux &lt;ref&gt;http://dee.su/liberte&lt;/ref&gt;
+|-
+| align=&quot;left&quot; | Libraries
+| Mono 2.6 &lt;ref&gt;http://keepass.info/help/v2/setup.html#mono&lt;/ref&gt;
+| Qt 4.3 &lt;ref&gt;https://www.keepassx.org/requirements/&lt;/ref&gt;
+| GTK2 &lt;ref&gt;http://als.regnet.cz/fpm2/&lt;/ref&gt;
+|-
+| align=&quot;left&quot; | Popularity contest statistics (rounded)
+| 1750 &lt;ref&gt;http://qa.debian.org/popcon.php?package=keepass2&lt;/ref&gt; 
+| 4300 &lt;ref&gt;http://qa.debian.org/popcon.php?package=keepassx&lt;/ref&gt;
+| 250 &lt;ref&gt;http://qa.debian.org/popcon.php?package=fpm2&lt;/ref&gt;
+|-
+| align=&quot;left&quot; | Size installed (rounded)
+| 2150 k  &lt;ref&gt;aptitude show keepass2&lt;/ref&gt;
+| 3100 k  &lt;ref&gt;aptitude show keepassx&lt;/ref&gt;
+| 500 k &lt;ref&gt;aptitude show fpm2&lt;/ref&gt;
+|-
+| align=&quot;left&quot; |  Block ciphers 
+| AES &lt;ref&gt;http://keepass.info/features.html&lt;/ref&gt;
+| AES or Twofish &lt;ref&gt;https://www.keepassx.org/features/&lt;/ref&gt;
+| AES &lt;ref&gt;http://als.regnet.cz/fpm2/about&lt;/ref&gt;
+|-
+| align=&quot;left&quot; |  Key size
+| 256 bits &lt;ref&gt;http://keepass.info/features.html&lt;/ref&gt;
+| 256 bits &lt;ref&gt;https://www.keepassx.org/features/&lt;/ref&gt;
+| 256 bits &lt;ref&gt;http://als.regnet.cz/fpm2/about&lt;/ref&gt;
+|-
+| align=&quot;left&quot; |  Hashing
+| SHA-256 &lt;ref&gt;http://keepass.info/features.html&lt;/ref&gt;
+| SHA-256 &lt;ref&gt;https://www.keepassx.org/features/&lt;/ref&gt;
+| SHA-256 &lt;ref&gt;http://als.regnet.cz/fpm2/about&lt;/ref&gt;
+|-
+| align=&quot;left&quot; |  Key file support
+| Yes &lt;ref&gt;http://keepass.info/features.html&lt;/ref&gt;
+| Yes &lt;ref&gt;https://www.keepassx.org/features/&lt;/ref&gt;
+| Yes &lt;ref&gt;http://als.regnet.cz/fpm2/about&lt;/ref&gt;
+|-
+| align=&quot;left&quot; |  Password generator
+| Yes  &lt;ref&gt;http://keepass.info/features.html&lt;/ref&gt;
+| Yes  &lt;ref&gt;https://www.keepassx.org/features/&lt;/ref&gt;
+| Yes  &lt;ref&gt;http://als.regnet.cz/fpm2/about&lt;/ref&gt;
+|-
+| align=&quot;left&quot; | Various
+| 
+| 0.4.3 is no longer maintained &lt;ref&gt;https://www.keepassx.org/bug-reports/&lt;/ref&gt;
+| 
+|}
+
+
+Many thanks to Tails team for their discussion on the topic of password managers. &lt;ref&gt;https://labs.riseup.net/code/issues/5745&lt;/ref&gt; 
+
+
+&lt;references&gt; 
+&lt;references/&gt;</text>
+      <sha1>71rmdekbkiggv3pm7203izh3cd6if87</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -69719,23 +69315,21 @@ License: Public Domain</text>
     <ns>0</ns>
     <id>1169</id>
     <revision>
-      <id>7035</id>
-      <parentid>7034</parentid>
-      <timestamp>2014-03-24T17:24:31Z</timestamp>
+      <id>7043</id>
+      <parentid>7042</parentid>
+      <timestamp>2014-03-25T02:08:14Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Interaction Simplification and Standardization */</comment>
-      <text xml:space="preserve" bytes="9488">{{Header}}
+      <text xml:space="preserve" bytes="9516">{{Header}}
 
 = Overview =
 The work outlined here is specifically focused on what could be done in a year with funding, though these goals should be considered as a larger roadmap for Whonix's development in general. This roadmap is focused on three goals: 
 
-1. make Whonix more sustainable by making it easier for the community to engage and contribute code
-2. make Whonix more secure
-3. make Whonix more usable by average users in repressive situations
-
+# make Whonix more sustainable by making it easier for the community to engage and contribute code
+# make Whonix more secure
+# make Whonix more usable by average users in repressive situations
 
 = Sustainability =
 Given that Whonix was created by the community and is supported by the community, it is of the utmost importance that Whonix continues to do so.
@@ -69816,8 +69410,11 @@ Current TBB beta comes with a list of hardcoded briges. Censors can easily obtai
 == Other Circumvention Tools other than Bridges ==
 There are lots of other Censorship Circumvention Tools other than Tor bridges. We should check out all of them and document how to use them with Whonix. The todo list of tools that should be documented can be found here: [[Censorship Circumvention Tools]].
 
+= Links =
+* [[Dev/Sponsor/A2]]
+
 {{Footer}}</text>
-      <sha1>iqvli5n3bxx6kkfayvgwxkpm2qvxhuv</sha1>
+      <sha1>s1t2nscds7cahzs1p9glectputigie2</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -69903,6 +69500,183 @@ Paste the following content.
 
 [[Category:Documentation]]</text>
       <sha1>d3a1wbunnwb1dio5koowfo78itbrso1</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Dev/Sponsor/A2</title>
+    <ns>0</ns>
+    <id>1172</id>
+    <revision>
+      <id>7045</id>
+      <timestamp>2014-03-25T04:41:14Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;{{Header}}  '''Are the project’s goals clear? '''  '''Are the projects goals realistically met by the proposed solution?'''  '''Is the proposed solution viable in the real w...&quot;</comment>
+      <text xml:space="preserve" bytes="2754">{{Header}}
+
+'''Are the project’s goals clear? '''
+
+'''Are the projects goals realistically met by the proposed solution?'''
+
+'''Is the proposed solution viable in the real world?'''
+
+'''What will the project’s challenges be?'''
+
+'''Does the project’s focus impact either high value users (people in greater danger) or is it for a large numbers of users?'''
+
+'''Will the project be able to support itself by the requested funding, community sources, or other in-kind or indirect support?'''
+
+'''Does the project demonstrate external demand (i.e., demand originated from potential users, not from would-be patrons of some possibly hypothetical set of users)?'''
+
+'''Does the project articulate a measurable set of evaluation criteria and milestone metrics against results?'''
+
+'''Does the project demonstrate a high degree of usability/accessibility?'''
+
+'''Does the projects team posses the skills uniquely qualifying them to complete the proposed scope of work?'''
+
+Team needs:
+project coordinator: communication with funds (status reports), support manger, community manager, all-rounder, english language fixes, preparation of whonix.org wiki for translation
+web developer: improving Whonix's website (such as hiding currently online forum users by default, adding privacy friendly share buttons, fix css main page layout)
+gui developer
+programmer  (javascript to extend torbutton [branding for whonix locale homepage])
+consultant for usablity review
+
+list the skill sets we need here    
+
+'''Will the project fill a potential need or function that is currently unfilled, rather than reinventing the wheel?'''
+
+'''Does or should the project support a collaborative open community of developers?'''
+
+'''How does the project facilitate inter-project collaboration, including: talking with others doing similar things and identifying potential points of overlap; acted/planned to modularize code to enable others to reuse?'''
+
+Need to make sure we have a meeting with Tails and Tor at the begining or even NOW about how these projects will move forward. 
+
+'''What is the project’s plan for future development/implementation? Does this trajectory continue to support RFA’s mission/goals?'''
+
+'''Do the project deliverables assist other RFA projects/goals beyond this one initiative?'''
+Yes they connect to TOR. 
+
+'''Does the project have a diversified funding/support stream (i.e., how dependent would the project be on RFA)?'''
+
+Not currently, but interested in expanding this and applying for more grants. 
+
+'''Does the project team have a history of successful work related to the current initiative?'''
+Important
+
+'''Does the project have a core team (leadership, developers, etc.) dedicated to this project, in particular?'''
+Yes
+
+{{Footer}}</text>
+      <sha1>8wz9t0zrni230fhieje3ejl1lvvgsme</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Dev/Password Manager</title>
+    <ns>0</ns>
+    <id>1173</id>
+    <revision>
+      <id>7049</id>
+      <parentid>7048</parentid>
+      <timestamp>2014-03-25T09:59:28Z</timestamp>
+      <contributor>
+        <username>Jekyll</username>
+        <id>161</id>
+      </contributor>
+      <comment>/* Password Manager Comparison Table */</comment>
+      <text xml:space="preserve" bytes="3170">== Password Manager Comparison Table ==
+
+
+The following table compares the features and status of three password managers that were suggested to be included in Whonix. Data was acquired in March, 2014.
+
+{| class=&quot;wikitable&quot; style=&quot;background-color: #fff; text-align: center&quot;
+!
+! KeePass
+! KeePassX
+! Figaro's Password Manager 2
+|-
+| align=&quot;left&quot; | Homepage
+| http://keepass.info
+| https://www.keepassx.org/
+| http://als.regnet.cz/fpm2/
+|-
+| align=&quot;left&quot; | Debian package
+| http://packages.qa.debian.org/keepass2
+| http://packages.qa.debian.org/keepassx
+| http://packages.qa.debian.org/fpm2
+|-
+| align=&quot;left&quot; | Latest version
+| 2.25 &lt;ref&gt;http://keepass.info/news/news_all.html&lt;/ref&gt;
+| 2.0 Alpha 5 &lt;ref&gt;https://www.keepassx.org/news/&lt;/ref&gt;
+| 0.79 &lt;ref&gt;http://als.regnet.cz/fpm2/changelog&lt;/ref&gt;
+|-
+| align=&quot;left&quot; | Debian version (stable / testing)
+| 2.19 / 2.25 &lt;ref&gt;http://packages.qa.debian.org/keepass2&lt;/ref&gt; 
+| 0.4.3 &lt;ref&gt;http://packages.qa.debian.org/keepassx&lt;/ref&gt;
+| 0.79 &lt;ref&gt;http://packages.qa.debian.org/fpm2&lt;/ref&gt;
+|-
+| align=&quot;left&quot; | Used in other security-focused distributions 
+| No  &lt;ref&gt;To the best knowledge of the author&lt;/ref&gt;
+| Tails &lt;ref&gt;https://tails.boum.org/doc/encryption_and_privacy/manage_passwords/index.en.html&lt;/ref&gt;
+| Liberte Linux &lt;ref&gt;http://dee.su/liberte&lt;/ref&gt;
+|-
+| align=&quot;left&quot; | Libraries
+| Mono 2.6 &lt;ref&gt;http://keepass.info/help/v2/setup.html#mono&lt;/ref&gt;
+| Qt 4.3 &lt;ref&gt;https://www.keepassx.org/requirements/&lt;/ref&gt;
+| GTK2 &lt;ref&gt;http://als.regnet.cz/fpm2/&lt;/ref&gt;
+|-
+| align=&quot;left&quot; | Popularity contest statistics (rounded)
+| 1750 &lt;ref&gt;http://qa.debian.org/popcon.php?package=keepass2&lt;/ref&gt; 
+| 4300 &lt;ref&gt;http://qa.debian.org/popcon.php?package=keepassx&lt;/ref&gt;
+| 250 &lt;ref&gt;http://qa.debian.org/popcon.php?package=fpm2&lt;/ref&gt;
+|-
+| align=&quot;left&quot; | Size installed (rounded)
+| 2150 k &lt;ref&gt;aptitude show keepass2&lt;/ref&gt;
+| 3100 k &lt;ref&gt;aptitude show keepassx&lt;/ref&gt;
+| 500 k &lt;ref&gt;aptitude show fpm2&lt;/ref&gt;
+|-
+| align=&quot;left&quot; |  Block ciphers 
+| AES &lt;ref&gt;http://keepass.info/features.html&lt;/ref&gt;
+| AES or Twofish &lt;ref&gt;https://www.keepassx.org/features/&lt;/ref&gt;
+| AES &lt;ref&gt;http://als.regnet.cz/fpm2/about&lt;/ref&gt;
+|-
+| align=&quot;left&quot; |  Key size
+| 256 bits &lt;ref&gt;http://keepass.info/features.html&lt;/ref&gt;
+| 256 bits &lt;ref&gt;https://www.keepassx.org/features/&lt;/ref&gt;
+| 256 bits &lt;ref&gt;http://als.regnet.cz/fpm2/about&lt;/ref&gt;
+|-
+| align=&quot;left&quot; |  Hashing
+| SHA-256 &lt;ref&gt;http://keepass.info/features.html&lt;/ref&gt;
+| SHA-256 &lt;ref&gt;https://www.keepassx.org/features/&lt;/ref&gt;
+| SHA-256 &lt;ref&gt;http://als.regnet.cz/fpm2/about&lt;/ref&gt;
+|-
+| align=&quot;left&quot; |  Key file support
+| Yes &lt;ref&gt;http://keepass.info/features.html&lt;/ref&gt;
+| Yes &lt;ref&gt;https://www.keepassx.org/features/&lt;/ref&gt;
+| Yes &lt;ref&gt;http://als.regnet.cz/fpm2/about&lt;/ref&gt;
+|-
+| align=&quot;left&quot; |  Password generator
+| Yes &lt;ref&gt;http://keepass.info/features.html&lt;/ref&gt;
+| Yes &lt;ref&gt;https://www.keepassx.org/features/&lt;/ref&gt;
+| Yes &lt;ref&gt;http://als.regnet.cz/fpm2/about&lt;/ref&gt;
+|-
+| align=&quot;left&quot; | Various
+| 
+| 0.4.3 is no longer maintained &lt;ref&gt;https://www.keepassx.org/bug-reports/&lt;/ref&gt;
+| 
+|}
+
+
+Many thanks to Tails team for their discussion on the topic of password managers. &lt;ref&gt;https://labs.riseup.net/code/issues/5745&lt;/ref&gt; 
+
+&lt;references&gt; 
+&lt;references/&gt;</text>
+      <sha1>kz6cdvf6tbn2q1bon7j0o0x5olxb8q5</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
