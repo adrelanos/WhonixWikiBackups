@@ -1516,14 +1516,14 @@ See also [[Security_in_Real_World | Whonix security in real world]], [[Security_
     <ns>0</ns>
     <id>24</id>
     <revision>
-      <id>6994</id>
-      <parentid>6924</parentid>
-      <timestamp>2014-03-20T18:37:21Z</timestamp>
+      <id>7060</id>
+      <parentid>7059</parentid>
+      <timestamp>2014-03-26T06:03:36Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <username>Troubadour</username>
+        <id>230</id>
       </contributor>
-      <text xml:space="preserve" bytes="18517">&lt;!--
+      <text xml:space="preserve" bytes="18535">&lt;!--
 Copyright:
 
    Whonix Documentation wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -1752,10 +1752,10 @@ Anonymity is a complex problem without an easy solution, and security is only as
 ** &lt;small&gt; [[AppArmor/VirtualBox|VirtualBox]]&lt;/small&gt;
 ** &lt;small&gt; [[AppArmor/Tor_Browser_Bundle|Tor Browser Bundle (TBB)]]&lt;/small&gt;
 ** &lt;small&gt; [[AppArmor/Icedove|Icedove (with Enigmail)]]&lt;/small&gt;
-** &lt;small&gt; [[AppArmor/Pidgin|Pidgin]]&lt;/small&gt;
+** &lt;small&gt; [[AppArmor/Pidgin|Pidgin (with OTR)]]&lt;/small&gt;
 ** &lt;small&gt; [[AppArmor/sdwdate|Whonix sdwdate]]&lt;/small&gt;
 ** &lt;small&gt; [[AppArmor/Timesync|Whonix timesync]]&lt;/small&gt;
-** &lt;small&gt; [[AppArmor/Whonixcheck|whonixcheck]]&lt;/small&gt;
+** &lt;small&gt; [[AppArmor/Whonixcheck|Whonix whonixcheck]]&lt;/small&gt;
 * &lt;small&gt; [[Advanced Security Guide|Advanced Security Guide]]&lt;/small&gt;
 * &lt;small&gt; [[Advanced_Security_Guide#More_than_one_Tor_Browser_in_Whonix|Using Multiple instances of Tor Browser]]&lt;/small&gt;
 * &lt;small&gt; [[Multiple Whonix-Workstations|Using Multiple Whonix-Workstations]]&lt;/small&gt;
@@ -1848,7 +1848,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>5gd4rz59vnveql9kf039mccfr9wyhds</sha1>
+      <sha1>2vnnmtoqddqo6kw91iykh7uau8z6nwx</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -55251,15 +55251,14 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
     <ns>0</ns>
     <id>691</id>
     <revision>
-      <id>7058</id>
-      <parentid>7057</parentid>
-      <timestamp>2014-03-25T22:58:36Z</timestamp>
+      <id>7062</id>
+      <parentid>7061</parentid>
+      <timestamp>2014-03-26T06:42:11Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* How to check if virtio network is really in use or an eventually existing fallback driver? */</comment>
-      <text xml:space="preserve" bytes="8731">{{Header}}
+      <comment>formatting correction</comment>
+      <text xml:space="preserve" bytes="9197">{{Header}}
 {{#seo:
 |description=Development Notes for adding KVM support to Whonix.
 }}
@@ -55320,6 +55319,14 @@ What is http://www.linux-kvm.org/page/Boot_from_virtio_block_device good for? Re
 
 == How to check if virtio storage access is in use or an eventually existing fallback driver? ==
 How to check if virtio storage access '''virtio_blk''' really is in use or an eventually existing fallback driver?
+
+http://www.linux-kvm.org/page/Boot_from_virtio_block_device  &lt;&lt; What caught my eye was this red herring. Not sure if this applies:
+
+ qcow2
+I have problem to boot from qcow2 format image, it will hang while kernel booting. you may convert your disk image to raw format by &quot;qemu-img convert -f qcow2 &lt;your_disk_image&gt; -O raw &lt;a_new_location&gt;&quot;.
+
+http://wiki.libvirt.org/page/Virtio &lt;&lt; Shows from inside guest what virtio modules are loaded
+# /sbin/lsmod | grep virtio
 
 == How to check if virtio network is really in use or an eventually existing fallback driver? ==
 How to check, that '''virtio_pci''' is really being used and not some fallback driver?
@@ -55472,7 +55479,7 @@ whonixcheck (since Whonix 8) would tell you if kvmclock is enabled. whonixcheck 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>4p4zx6lef7fyuglt9u577azeg60kjgq</sha1>
+      <sha1>mtujwpnu7bvv8t62a6t7r4q09z3vcoi</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
