@@ -40,15 +40,14 @@
     <ns>0</ns>
     <id>1</id>
     <revision>
-      <id>7046</id>
-      <parentid>7044</parentid>
-      <timestamp>2014-03-25T05:08:12Z</timestamp>
+      <id>7071</id>
+      <parentid>7070</parentid>
+      <timestamp>2014-03-26T19:41:07Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>removed space before language selector</comment>
-      <text xml:space="preserve" bytes="11088">{{Header}}
+      <text xml:space="preserve" bytes="11193">{{Header}}
 __NOTOC__
 &lt;languages /&gt;
 &lt;translate&gt;
@@ -58,9 +57,9 @@ __NOTOC__
 }}&lt;/translate&gt;
 
 &lt;div class=&quot;container&quot; style=&quot;width:100%; margin=0px; border:1px solid gray;  line-height:150%;&quot;&gt;
-&lt;div class=&quot;header&quot; style=&quot;border-bottom:1px solid gray; padding:0.5em; color:black; background-color:#C9DAEB; clear:left;&quot; &gt;&lt;h1 class=&quot;header&quot; style=&quot;text-align:center; padding:0; margin:0;&quot;&gt;Whonix    [[File:500.png|50px]]&lt;/h1&gt;&lt;/div&gt;
-&lt;div class=&quot;left&quot; style=&quot;float:left; width:33%; margin:0; padding:0.5em;&quot;&gt;&lt;div class=&quot;header&quot; style=&quot;border:1px solid gray; padding:0.5em; color:black; background-color:#C9DAEB; clear:left;&quot;&gt;&lt;h1 class=&quot;header&quot; style=&quot;text-align:center; padding:0; margin:0;&quot;&gt;[[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|170px|alt=&lt;translate&gt;&lt;!--T:41--&gt;
-Download Whonix&lt;/translate&gt;]]&lt;/h1&gt;&lt;/div&gt;&lt;!--T:2--&gt;
+&lt;div class=&quot;header&quot; style=&quot;border-bottom:1px solid gray; padding:0.5em; color:black; background-color:#C9DAEB; clear:left;&quot; &gt;&lt;h1 class=&quot;header&quot; style=&quot;text-align:center; padding:0; margin:0;&quot;&gt; [[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|250px|alt=&lt;translate&gt;&lt;!--T:41--&gt;
+Download Whonix&lt;/translate&gt;]]&lt;/h1&gt;&lt;/div&gt;
+&lt;div class=&quot;left&quot; style=&quot;float:left; width:33%; margin:0; padding:0.5em;&quot;&gt;&lt;div class=&quot;header&quot; style=&quot;border:1px solid gray; padding:0.5em; color:black; background-color:#C9DAEB; clear:left;&quot;&gt;&lt;h1 class=&quot;header&quot; style=&quot;text-align:center; padding:0; margin:0;&quot;&gt;[[About|About]]&lt;/h1&gt;&lt;/div&gt;&lt;!--T:2--&gt;
 [[Image:whonix.jpg|center|Whonix Concept|500px]]
 
 
@@ -92,8 +91,6 @@ is &lt;span itemprop=&quot;price&quot;&gt;Free&lt;/span&gt; as in price and free
 &lt;/div&gt;
 &lt;/html&gt;
 &lt;ref&gt;[http://sourceforge.net/projects/whonix/ Whonix sourceforge.net project home page] [http://www.webcitation.org/6O1gNLC1B (w)]; [http://sourceforge.net/projects/whonix/reviews/ Whonix sourceforg.net project review page] [http://www.webcitation.org/6O1gT5Wqw (w)]&lt;/ref&gt;
-
-[[File:500.png|300px300px]]
 &lt;/div&gt;
 
 &lt;div class=&quot;middle&quot; style=&quot;float:left; width:33%; margin:0; padding:0.5em;&quot;&gt;&lt;div class=&quot;header&quot; style=&quot;border:1px solid gray; padding:0.5em; color:black; background-color:#C9DAEB; clear:left;&quot;&gt;&lt;h2 class=&quot;header&quot; style=&quot;text-align:center; padding:0; margin:0;&quot;&gt;&lt;translate&gt;&lt;!--T:25--&gt;
@@ -106,7 +103,7 @@ Latest [https://www.whonix.org/forum Forum] Posts&lt;/translate&gt; [[File:2000p
 &lt;rss number=15 title=off desc=off&gt;https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=15&lt;/rss&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;right&quot; style=&quot;float:left; width:28%; margin:0; padding:0.5em;&quot;&gt;&lt;div class=&quot;header&quot; style=&quot;border:1px solid gray; padding:0.5em; color:black; background-color:#C9DAEB; clear:right;&quot;&gt;&lt;h2 class=&quot;header&quot; style=&quot;text-align:center; padding:0; margin:0;&quot;&gt;Whonix &lt;/h2&gt;&lt;/div&gt;
+&lt;div class=&quot;right&quot; style=&quot;float:left; width:28%; margin:0; padding:0.5em;&quot;&gt;&lt;div class=&quot;header&quot; style=&quot;border:1px solid gray; padding:0.5em; color:black; background-color:#C9DAEB; clear:right;&quot;&gt;&lt;h2 class=&quot;header&quot; style=&quot;text-align:center; padding:0; margin:0;&quot;&gt;Whonix&lt;/h2&gt;&lt;/div&gt;
 &lt;p style=&quot;text-align:center;&quot;&gt;Whonix-Workstation with KDE Desktop: &lt;/p&gt;
 [[Image:kde0_5_0.png|alt=&lt;translate&gt;&lt;!--T:40--&gt;
 Whonix-Workstation with KDE Desktop&lt;/translate&gt;|&lt;translate&gt;&lt;!--T:12--&gt;
@@ -144,12 +141,12 @@ Active&lt;/translate&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;[https://en.wikipedia.org/wiki/Software_release_life_cycle Latest Stable Release: ]&lt;/td&gt;
-&lt;td style=&quot;&quot;text-align:left;&quot;&gt;[[Download|{{Version}}]]/{{Start date and age|2014|02|27|df=yes}}&lt;/td&gt;
+&lt;td style=&quot;&quot;text-align:left;&quot;&gt;[[Download|{{Version}}]] &lt;br /&gt;({{Start date and age|2014|02|27|df=yes}})&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;[https://en.wikipedia.org/wiki/Software_release_life_cycle Latest Unstable Release: ]&lt;/td&gt;
 &lt;td style=&quot;&quot;text-align:left;&quot;&gt;&lt;translate&gt;&lt;!--T:18--&gt;
-none at the moment&lt;/translate&gt;{{Start date and age|2014|01|13|df=yes}}
+8.1&lt;/translate&gt; &lt;br/&gt;({{Start date and age|2014|03|19|df=yes}})
 &lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -239,6 +236,11 @@ Whonix is a member of the [http://internetdefenseleague.org Internet Defense Lea
 Image:OIN_logo_200px.png|alt=&lt;translate&gt;&lt;!--T:53--&gt;
 Open Invention Network Logo&lt;/translate&gt;|&lt;translate&gt;&lt;!--T:37--&gt;
 Whonix is a [http://www.openinventionnetwork.com/licensees.php licensee] of the [https://en.wikipedia.org/wiki/Open_Invention_Network Open Invention Network].&lt;/translate&gt;
+
+Image:500.png|link=Download|alt=&lt;translate&gt;&lt;!--T:54--&gt;
+Old Whonix Logo&lt;/translate&gt;|&lt;translate&gt;&lt;!--T:38--&gt;
+[[Download|Old Whonix Logo]]&lt;/translate&gt;
+
 Image:donate.png|link=Donate|alt=&lt;translate&gt;&lt;!--T:54--&gt;
 Whonix Donate Icon&lt;/translate&gt;|&lt;translate&gt;&lt;!--T:38--&gt;
 [[Donate|Donate to Whonix!]]&lt;/translate&gt;
@@ -267,7 +269,7 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
 
 
 &lt;/div&gt;</text>
-      <sha1>lestiiimz9e203faxulfrli047byik6</sha1>
+      <sha1>55qhct0bu4v9734q714wmrmx7zktgxt</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -1516,14 +1518,14 @@ See also [[Security_in_Real_World | Whonix security in real world]], [[Security_
     <ns>0</ns>
     <id>24</id>
     <revision>
-      <id>7060</id>
-      <parentid>7059</parentid>
-      <timestamp>2014-03-26T06:03:36Z</timestamp>
+      <id>7076</id>
+      <parentid>7060</parentid>
+      <timestamp>2014-03-26T21:28:45Z</timestamp>
       <contributor>
         <username>Troubadour</username>
         <id>230</id>
       </contributor>
-      <text xml:space="preserve" bytes="18535">&lt;!--
+      <text xml:space="preserve" bytes="18579">&lt;!--
 Copyright:
 
    Whonix Documentation wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -1753,6 +1755,7 @@ Anonymity is a complex problem without an easy solution, and security is only as
 ** &lt;small&gt; [[AppArmor/Tor_Browser_Bundle|Tor Browser Bundle (TBB)]]&lt;/small&gt;
 ** &lt;small&gt; [[AppArmor/Icedove|Icedove (with Enigmail)]]&lt;/small&gt;
 ** &lt;small&gt; [[AppArmor/Pidgin|Pidgin (with OTR)]]&lt;/small&gt;
+** &lt;small&gt; [[AppArmor/XChat|XChat]]&lt;/small&gt;
 ** &lt;small&gt; [[AppArmor/sdwdate|Whonix sdwdate]]&lt;/small&gt;
 ** &lt;small&gt; [[AppArmor/Timesync|Whonix timesync]]&lt;/small&gt;
 ** &lt;small&gt; [[AppArmor/Whonixcheck|Whonix whonixcheck]]&lt;/small&gt;
@@ -1848,7 +1851,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>2vnnmtoqddqo6kw91iykh7uau8z6nwx</sha1>
+      <sha1>j7k8s2z8sev7sx7m3omlbyskkznwiao</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -2644,16 +2647,14 @@ Not compulsory, just nicely asking:
     <ns>0</ns>
     <id>56</id>
     <revision>
-      <id>6320</id>
-      <parentid>6251</parentid>
-      <timestamp>2014-03-05T17:05:41Z</timestamp>
+      <id>7077</id>
+      <parentid>7069</parentid>
+      <timestamp>2014-03-26T22:24:20Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <minor/>
-      <comment>Text replace - &quot;HostingLocationHiddenServices&quot; to &quot;Hosting Location Hidden Services&quot;</comment>
-      <text xml:space="preserve" bytes="49342">{{Header}}
+      <text xml:space="preserve" bytes="49341">{{Header}}
 {{#seo:
 |description=FAQ. Frequently Asked Questions.
 }}
@@ -2961,7 +2962,7 @@ But there are two problems. There is no &quot;encrypt after installing&quot; sof
 
 The other one is that the host can swap to the disk and therefore leak stuff to the perhaps unencrypted host disk.
 
-Therefore the only secure solution is applying full disk encryption on the host. as recommended in the [[Advanced Security Guide#Full Disk Encryption]]: 
+Therefore the only secure solution is applying full disk encryption on the host, as recommended in the [[Advanced Security Guide#Full Disk Encryption]].
 
 = Speed up the Whonix-Gateway? Speed up Tor? =
 
@@ -3206,7 +3207,7 @@ Without performing these basics steps, the setup may sound clever, but may not w
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>smk5qw0kcjxz9w1rbh3rlqubax992sf</sha1>
+      <sha1>c4q02ggz0fp2o7fz0yzko9k7575y7nm</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -19053,14 +19054,14 @@ When you go ahead now, and ask in a cracker forum, they probably won't spread a 
     <ns>0</ns>
     <id>162</id>
     <revision>
-      <id>7017</id>
-      <parentid>7016</parentid>
-      <timestamp>2014-03-22T20:27:31Z</timestamp>
+      <id>7068</id>
+      <parentid>7064</parentid>
+      <timestamp>2014-03-26T16:39:20Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="6785">{{#seo:
+      <text xml:space="preserve" bytes="6890">{{#seo:
 |description=Technical Design and Conception of the Whonix Anonymous Operating System
 }}
 {{Header}}
@@ -19165,6 +19166,7 @@ When you go ahead now, and ask in a cracker forum, they probably won't spread a 
 * [[Hosting a Whonix Mirror]]
 * [[Dev/Replicating_whonix.org|Replicating whonix.org]]
 * [[Dev/APT_Pinning|Why we should avoid APT Pinning]]
+* [[Dev/Password_Manager|Comparing Password Managers, finding out best choice as default installed one]]
 &lt;/small&gt;
 &lt;/div&gt;
 &lt;br /&gt;
@@ -19231,7 +19233,7 @@ When you go ahead now, and ask in a cracker forum, they probably won't spread a 
 [[Category:Design]]
 
 {{Footer}}</text>
-      <sha1>fqf5uwsic8gx88sx6gw24lcqa5mgfc3</sha1>
+      <sha1>l3srdlvz19w4vbv7kvnowgjnnriryle</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -23557,14 +23559,15 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>216</id>
     <revision>
-      <id>6252</id>
-      <parentid>5911</parentid>
-      <timestamp>2014-03-02T16:29:37Z</timestamp>
+      <id>7079</id>
+      <parentid>7078</parentid>
+      <timestamp>2014-03-26T22:47:51Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="2274">{{Header}}
+      <comment>/* Whonix does not start? */</comment>
+      <text xml:space="preserve" bytes="2521">{{Header}}
 {{#seo:
 |description=How to Start Whonix and Troubleshooting Whonix Startup Issues
 }}
@@ -23597,7 +23600,19 @@ Read the [[#Boot Options|Boot Options]] chapter and use the 486 kernel.
 If you see &quot;{{Code2|Failed to load unit 'PATM' (VERR_SSM_FIELD_NOT_CONSECUTIVE).}}&quot;, please enable VT-x in BIOS.
 
 == Kernel Panic ==
-This probably similar to PAE crash and VERR_SSM_FIELD_NOT_CONSECUTIVE issues above. If you can, enable VT-x in BIOS. If you can't deactivate PAE/NX in VirtualBox (see PAE crash above for instructions on how to do so) and then read the [[#Boot Options|Boot Options]] chapter and use the 486 kernel.
+This probably similar to PAE crash and VERR_SSM_FIELD_NOT_CONSECUTIVE issues above. If you can, enable VT-x in BIOS. If you cannot, then disable PAE/NX in VirtualBox (see PAE crash above for instructions on how to do so) and then read the [[#Boot Options|Boot Options]] chapter and use the 486 kernel.
+
+== VT-x is disabled in the BIOS. ==
+If you see this error message.
+
+&lt;pre&gt;
+Failed to open a session for the virtual machine Whonix-Gateway.
+
+VT-x is disabled in the BIOS.
+(VERR_VMX_MSR_VMXON_DISABLED).
+&lt;/pre&gt;
+
+Then please enable VT-x in BIOS.
 
 == Other reasons ==
 Please have a look at the [[Download]] page. It contains instructions on how to properly download and verify the Whonix virtual machine images. There is also help available in form of screenshot or video instructions.
@@ -23618,7 +23633,7 @@ In case you need to [[#PAE_crash|disable PAE]], use the 486 kernel.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>gmrx0pzmr5hy0iqaovg1d62ponf3aws</sha1>
+      <sha1>s53vovacnutud8birbvsxjask4e46yc</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -55251,14 +55266,15 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
     <ns>0</ns>
     <id>691</id>
     <revision>
-      <id>7062</id>
-      <parentid>7061</parentid>
-      <timestamp>2014-03-26T06:42:11Z</timestamp>
+      <id>7065</id>
+      <parentid>7062</parentid>
+      <timestamp>2014-03-26T14:05:17Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <comment>formatting correction</comment>
-      <text xml:space="preserve" bytes="9197">{{Header}}
+      <comment>removed the boot problem, please post in the forum or at least create a new sub title; answer lsmod | grep virtio</comment>
+      <text xml:space="preserve" bytes="9133">{{Header}}
 {{#seo:
 |description=Development Notes for adding KVM support to Whonix.
 }}
@@ -55320,13 +55336,16 @@ What is http://www.linux-kvm.org/page/Boot_from_virtio_block_device good for? Re
 == How to check if virtio storage access is in use or an eventually existing fallback driver? ==
 How to check if virtio storage access '''virtio_blk''' really is in use or an eventually existing fallback driver?
 
-http://www.linux-kvm.org/page/Boot_from_virtio_block_device  &lt;&lt; What caught my eye was this red herring. Not sure if this applies:
+http://www.linux-kvm.org/page/Boot_from_virtio_block_device &lt;br /&gt;
+http://wiki.libvirt.org/page/Virtio
 
- qcow2
-I have problem to boot from qcow2 format image, it will hang while kernel booting. you may convert your disk image to raw format by &quot;qemu-img convert -f qcow2 &lt;your_disk_image&gt; -O raw &lt;a_new_location&gt;&quot;.
+The following.
 
-http://wiki.libvirt.org/page/Virtio &lt;&lt; Shows from inside guest what virtio modules are loaded
-# /sbin/lsmod | grep virtio
+&lt;pre&gt;
+lsmod | grep virtio
+&lt;/pre&gt;
+
+Only shows, that the virtio kernel module is loaded. It isn't hard to load arbitrary kernel modules for hardware that you don't have installed. The question remains, is this kernel module actually in use or an eventually existing fallback driver?
 
 == How to check if virtio network is really in use or an eventually existing fallback driver? ==
 How to check, that '''virtio_pci''' is really being used and not some fallback driver?
@@ -55479,7 +55498,7 @@ whonixcheck (since Whonix 8) would tell you if kvmclock is enabled. whonixcheck 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>mtujwpnu7bvv8t62a6t7r4q09z3vcoi</sha1>
+      <sha1>dvvv95njts322w3ndofq2se41n1gwxq</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -55545,14 +55564,14 @@ http://git.qubes-os.org/?p=joanna/core-agent-linux.git;a=blob;f=misc/qubes.sudoe
     <ns>0</ns>
     <id>693</id>
     <revision>
-      <id>5907</id>
-      <parentid>5581</parentid>
-      <timestamp>2014-02-27T14:13:04Z</timestamp>
+      <id>7066</id>
+      <parentid>5907</parentid>
+      <timestamp>2014-03-26T14:11:01Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="2527">{{Header}}
+      <text xml:space="preserve" bytes="2533">{{Header}}
 {{#seo:
 |description=How to use Other Desktop Environments other than KDE with Whonix
 }}
@@ -55568,9 +55587,9 @@ When installing your own desktop environment, you're on your own. In theory (als
 Other desktop environments install other background services. We haven't researched the privacy implications of having these installed. For example, Gnome automatically installs [https://en.wikipedia.org/wiki/GeoClue GeoClue]. (Whonix prevents installation of that very package, but still...) And comes with a different collection of default applications that have not necessarily been checked for privacy. For example, Thunderbird/TorBirdy (as explained on the [[E-Mail]] page) is the only recommended mail client. Installing your own desktop environment may result in installing KMail, which isn't recommended, since there is no TorBirdy-like extension for KMail.
 
 = Future =
-At the moment unfortunately, &quot;Whonix should support other desktop environments&quot; is a synonym for &quot;adrelanos should support other desktop environments&quot;. Due to time constrains it won't be possible for Whonix developer adrelanos to maintain a second desktop environment next to maintaining the KDE desktop environment.
+At the moment unfortunately, &quot;Whonix should support other desktop environments&quot; is a synonym for &quot;Patrick should support other desktop environments&quot;. Due to time constrains it won't be possible for Whonix developer Patrick Schleizer to maintain a second desktop environment next to maintaining the KDE desktop environment.
 
-Since Whonix is an Open Source / Free Software project, Whonix developers are hoping that other developers join the project and maintain other desktop environments. That someone could be you.
+Since Whonix is an Open Source / Free Software project, Whonix developers are hoping that other developers join the project and maintain other desktop environments. That someone could be you?
 
 Related FAQ:
 
@@ -55585,7 +55604,7 @@ Related FAQ:
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>qhejgenhbmxy5dfzp1wmmzz7m7ogr11</sha1>
+      <sha1>5p8sat4ncjveeear83ncdbt9q371dec</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -61914,13 +61933,14 @@ sudo rm -fR /var/lib/apt/lists/*
     <ns>0</ns>
     <id>891</id>
     <revision>
-      <id>7039</id>
-      <parentid>6870</parentid>
-      <timestamp>2014-03-24T21:47:33Z</timestamp>
+      <id>7075</id>
+      <parentid>7073</parentid>
+      <timestamp>2014-03-26T21:28:20Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Troubadour</username>
+        <id>230</id>
       </contributor>
-      <text xml:space="preserve" bytes="1164">{{Header}}
+      <text xml:space="preserve" bytes="1198">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
@@ -61937,9 +61957,10 @@ The file is called by some of the profiles and has to be installed prior to the 
 * [[AppArmor/Tor_Browser_Bundle|Tor Browser Bundle (TBB)]]
 * [[AppArmor/Icedove|Icedove (with Enigmail)]]
 * [[AppArmor/Pidgin|Pidgin (with OTR)]]
+* [[AppArmor/XChat|XChat]]
 * [[AppArmor/sdwdate|Whonix sdwdate]]
 * [[AppArmor/Timesync|Whonix timesync]]
-* [[AppArmor/Whonixcheck|whonixcheck]]
+* [[AppArmor/Whonixcheck|Whonix whonixcheck]]
 
 = Additional inspiration =
 Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/AppArmor in Debian]):
@@ -61950,7 +61971,7 @@ Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/A
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>sf9q8tjo57fcc9n8ctb6u7sugu9mw0q</sha1>
+      <sha1>a8eodd0ny3ppy4gntug3clzwkrg5c0e</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -68660,15 +68681,14 @@ Weiterführende Links (in Englischer Sprache):
     <ns>0</ns>
     <id>1146</id>
     <revision>
-      <id>7014</id>
-      <parentid>7009</parentid>
-      <timestamp>2014-03-21T23:36:19Z</timestamp>
+      <id>7072</id>
+      <parentid>7014</parentid>
+      <timestamp>2014-03-26T19:45:27Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <username>Troubadour</username>
+        <id>230</id>
       </contributor>
-      <comment>added / r,</comment>
-      <text xml:space="preserve" bytes="5027">{{Header}}
+      <text xml:space="preserve" bytes="5057">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
@@ -68685,7 +68705,7 @@ kdesudo kwrite /etc/apparmor.d/usr.bin.sdwdate
 Paste the following content.
 
 &lt;pre&gt;
-# Last modified: Mon Mar 17 20:08:27 UTC 2014
+# Last modified: Wed Mar 26 19:42:23 UTC 2014
 #include &lt;tunables/global&gt;
 
 /usr/bin/sdwdate {
@@ -68698,7 +68718,7 @@ Paste the following content.
 	capability setgid,
 	capability sys_time,
 	capability dac_override,
-
+	
 	/ r,
 	
 	@{HOME}/sdwdatetest rwk,
@@ -68789,8 +68809,7 @@ Paste the following content.
 	@{PROC}/[0-9]*/fd/ r,
 	@{PROC}/sys/kernel/pid_max r,
 	@{PROC}/uptime r,
-	@{PROC}/tty/drivers r,			
-
+	@{PROC}/tty/drivers r,
 
 	/run/sdwdate/done rwcx,
 	/run/whonix/whonixcheck/timesync_pid rix,
@@ -68823,7 +68842,7 @@ Paste the following content.
 	/usr/lib/whonix/msgcollector rix,
 	/usr/lib/whonix/msgprogress rix,
 	
-	/usr/lib/whonix/curl_exit_codes rix,  
+	/usr/lib/whonix/curl_exit_codes rix, 
 		
 	/usr/lib/whonix/whonixcheck/apt-get-update-simulate rix,
 	/usr/lib/whonix/uwtwrapper rix,
@@ -68863,13 +68882,13 @@ Paste the following content.
 	
 	/usr/sbin/service rix,
 
-
 	/usr/share/whonix/build_version r,
 	/usr/share/ca-certificates/** r,
 	/usr/share/misc/pci.ids r,
 	/usr/share/pyshared/** r,	
 
 	/var/cache/apt/pkgcache.bin rwk,
+	/var/cache/apt/pkgcache.bin* rwk,
 		
 	/var/lib/dpkg/lock rwcxk,
 	/var/lib/dpkg/updates/ r,
@@ -68895,7 +68914,7 @@ sudo aa-enforce /etc/apparmor.d/usr.bin.sdwdate
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>shwuj348ddwd60ujastqyxzx2sm5h41</sha1>
+      <sha1>3aj8fxz387g9kk0zwmma1rda4kt37c5</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -69587,16 +69606,16 @@ Yes
     <ns>0</ns>
     <id>1173</id>
     <revision>
-      <id>7049</id>
-      <parentid>7048</parentid>
-      <timestamp>2014-03-25T09:59:28Z</timestamp>
+      <id>7067</id>
+      <parentid>7063</parentid>
+      <timestamp>2014-03-26T14:34:18Z</timestamp>
       <contributor>
-        <username>Jekyll</username>
-        <id>161</id>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <comment>/* Password Manager Comparison Table */</comment>
-      <text xml:space="preserve" bytes="3170">== Password Manager Comparison Table ==
+      <text xml:space="preserve" bytes="3557">{{Header}}
 
+== Password Manager Comparison Table ==
 
 The following table compares the features and status of three password managers that were suggested to be included in Whonix. Data was acquired in March, 2014.
 
@@ -69641,6 +69660,16 @@ The following table compares the features and status of three password managers 
 | 4300 &lt;ref&gt;http://qa.debian.org/popcon.php?package=keepassx&lt;/ref&gt;
 | 250 &lt;ref&gt;http://qa.debian.org/popcon.php?package=fpm2&lt;/ref&gt;
 |-
+| align=&quot;left&quot; | Download archive size (rounded)
+| 7400 kB &lt;ref&gt;apt-get install keepass2&lt;/ref&gt;
+| 1150 kB &lt;ref&gt;apt-get install keepassx&lt;/ref&gt;
+| 150 kB &lt;ref&gt;apt-get install fpm2&lt;/ref&gt;
+|-
+| align=&quot;left&quot; | Additional disk space needed (rounded)
+| 22100 kB &lt;ref&gt;apt-get install keepass2&lt;/ref&gt;
+| 3150 kB &lt;ref&gt;apt-get install keepassx&lt;/ref&gt;
+| 550 kB &lt;ref&gt;apt-get install fpm2&lt;/ref&gt;
+|-
 | align=&quot;left&quot; | Size installed (rounded)
 | 2150 k &lt;ref&gt;aptitude show keepass2&lt;/ref&gt;
 | 3100 k &lt;ref&gt;aptitude show keepassx&lt;/ref&gt;
@@ -69680,9 +69709,111 @@ The following table compares the features and status of three password managers 
 
 Many thanks to Tails team for their discussion on the topic of password managers. &lt;ref&gt;https://labs.riseup.net/code/issues/5745&lt;/ref&gt; 
 
-&lt;references&gt; 
-&lt;references/&gt;</text>
-      <sha1>kz6cdvf6tbn2q1bon7j0o0x5olxb8q5</sha1>
+&lt;references/&gt;
+
+{{Footer}}</text>
+      <sha1>4qmnqz7ktkd150vpf0aqdw188rn0prm</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>AppArmor/XChat</title>
+    <ns>0</ns>
+    <id>1174</id>
+    <revision>
+      <id>7074</id>
+      <timestamp>2014-03-26T21:27:54Z</timestamp>
+      <contributor>
+        <username>Troubadour</username>
+        <id>230</id>
+      </contributor>
+      <comment>Created page with &quot;{{Header}} {{#seo: |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon. }} __FORCETOC__ {{AppArmorProfileWarning}}   Create ...&quot;</comment>
+      <text xml:space="preserve" bytes="1749">{{Header}}
+{{#seo:
+|description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
+}}
+__FORCETOC__
+{{AppArmorProfileWarning}}
+
+
+Create a file /etc/apparmor.d/usr.bin.xchat.
+
+&lt;pre&gt;
+kdesudo kwrite /etc/apparmor.d/usr.bin.xchat
+&lt;/pre&gt;
+
+Paste the following content.
+
+&lt;pre&gt;
+# Last modified: Wed Mar 26 21:13:38 UTC 2014
+#include &lt;tunables/global&gt;
+
+/usr/bin/xchat {
+	#include &lt;abstractions/base&gt;
+	#include &lt;abstractions/bash&gt;
+	#include &lt;abstractions/fonts&gt;
+	#include &lt;abstractions/kde&gt;
+	#include &lt;abstractions/gnome&gt;
+	#include &lt;abstractions/X&gt;
+	#include &lt;abstractions/whonix&gt;
+	
+	deny @{PROC}/** r,
+	
+	
+	@{HOME}/ r,
+	@{HOME}/.config/** rwk,
+	@{HOME}/.xchat2/ r,
+	@{HOME}/.xchat2/** rwixk,
+		
+	/bin/grep rix,
+	/bin/uname rix,
+	/bin/mkdir rix,
+	/bin/rm rix,
+	
+	/dev/tty rwix,
+
+	/etc/passwd r,
+	/etc/nsswitch.conf r,
+	/etc/ld.so.cache r,
+	/etc/xdg/xfce4/helpers.rc r,
+	
+	/lib/i386-linux-gnu/**	mr,
+	
+	/usr/bin/xchat rix,
+	/usr/bin/xdg-open rix,
+	/usr/bin/dbus-send rix,
+	/usr/bin/xprop  rix,
+	/usr/bin/exo-open rix,
+	/usr/bin/sensible-browser rix,
+	/usr/bin/zenity rix,
+	/usr/bin/torbrowser rix,
+	/usr/bin/basename rix,
+	
+	/usr/lib/i386-linux-gnu/** mrix,
+	
+	/usr/share/icons/** r,
+	/usr/share/enchant/* r,
+	/usr/share/myspell/dicts/ r,
+	/usr/share/hunspell/ r,
+	/usr/share/hunspell/* r,
+	/usr/share/ca-certificates/spi-inc.org/spi-cacert-2008.crt r,
+	/usr/share/xfce4/helpers/* r,
+	/usr/share/zenity/* r,
+}
+&lt;/pre&gt;
+
+Run.
+&lt;pre&gt;
+sudo aa-enforce /etc/apparmor.d/usr.bin.xchat
+&lt;/pre&gt;
+
+[https://www.whonix.org/forum/index.php?action=profile;u=24 troubadour] created this profile. You can discuss it in this [http://kkkkkkkkkk63ava6.onion/forum/index.php/topic,97.0.html forum thread].
+
+{{Footer}}
+
+[[Category:Documentation]]</text>
+      <sha1>otukvwuqpr5slny0nxwgcrt75o20hmv</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
