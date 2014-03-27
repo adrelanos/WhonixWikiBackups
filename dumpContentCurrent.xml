@@ -55266,15 +55266,15 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
     <ns>0</ns>
     <id>691</id>
     <revision>
-      <id>7065</id>
-      <parentid>7062</parentid>
-      <timestamp>2014-03-26T14:05:17Z</timestamp>
+      <id>7085</id>
+      <parentid>7065</parentid>
+      <timestamp>2014-03-27T13:55:59Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>removed the boot problem, please post in the forum or at least create a new sub title; answer lsmod | grep virtio</comment>
-      <text xml:space="preserve" bytes="9133">{{Header}}
+      <comment>/* Non-Blockers */</comment>
+      <text xml:space="preserve" bytes="9333">{{Header}}
 {{#seo:
 |description=Development Notes for adding KVM support to Whonix.
 }}
@@ -55314,6 +55314,9 @@ How to check, that KVM '''-rtc''' is set to '''clock=vm''' ?
 As soon as all blockers have been sorted out. We could recommend using [[KVM]] instructions.
 
 = Non-Blockers =
+== Document: how to leave KVM when no X is running? ==
+Situation... User is in terminal in a VM... No X is running (&quot;sudo service kdn stop&quot;). User wants to switch back to the host... How to do this?
+
 == SPICE security implications ==
 http://lists.freedesktop.org/archives/spice-devel/2013-December/015810.html
 
@@ -55498,7 +55501,7 @@ whonixcheck (since Whonix 8) would tell you if kvmclock is enabled. whonixcheck 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>dvvv95njts322w3ndofq2se41n1gwxq</sha1>
+      <sha1>6380cha24118zw9u533erlh36fy6mpc</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -62105,14 +62108,14 @@ Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/A
     <ns>10</ns>
     <id>894</id>
     <revision>
-      <id>7081</id>
-      <parentid>7080</parentid>
-      <timestamp>2014-03-26T23:16:41Z</timestamp>
+      <id>7086</id>
+      <parentid>7081</parentid>
+      <timestamp>2014-03-27T14:23:30Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="7663">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
+      <text xml:space="preserve" bytes="6841">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
 &lt;!--T:7--&gt;
 &lt;big&gt;Version: &lt;span style=&quot;color: green&quot;&gt;{{VersionNew}}&lt;/span&gt;&lt;/big&gt;
 
@@ -62128,15 +62131,6 @@ Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/A
 | style=&quot;white-space: nowrap; width: 140px;&quot;|'''[[Hide Tor and Whonix from your ISP|Anonymous Download]]&lt;br /&gt; possible &lt;ref name=anonymousdownload&gt;By using the [https://www.torproject.org/download/download-easy.html.en Tor Browser Bundle] (TBB). For an introduction, see [[Tor Browser|Tor Browser]]. See also [[Hide Tor and Whonix from your ISP|Hide Tor and Whonix from your ISP]].&lt;/ref&gt;'''
 | style=&quot;width: 135px;&quot;|'''[[Download Security|Download Security]]&lt;br /&gt; without [[#Verify the Whonix images|Verification]]'''
 | style=&quot;width: 135px;&quot;|'''[[Download Security|Download Security]]&lt;br /&gt; with [[#Verify the Whonix images|Verification]]'''
-|- style=&quot;height: 47px&quot;
-
-&lt;!--T:91--&gt;
-| {{GrayBackground}}| [[File:HTTP.png|40px]] {{Anchor|Whonix_signature}}
-| &lt;html&gt;&lt;a href=&quot;http://199.127.226.139.nyud.net/&lt;/html&gt;{{VersionNew}}&lt;html&gt;/Whonix-Gateway-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
-| &lt;html&gt;&lt;a href=&quot;http://199.127.226.139.nyud.net/&lt;/html&gt;{{VersionNew}}&lt;html&gt;/Whonix-Workstation-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
-|{{Yes}} &lt;ref name=anonymousdownload /&gt;
-| style=&quot;background-color: {{Red}}&quot;| Very Low &lt;ref&gt;[[Warning#Man-in-the-middle_attacks|Man-in-the-middle attacks]] could poison the download.&lt;/ref&gt;
-| style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification&gt;It does not matter if you did the bulk download over an insecure channel, if you use OpenPGP verification at the end.&lt;/ref&gt;
 |- style=&quot;height: 47px&quot;
 
 &lt;!--T:15--&gt;
@@ -62201,7 +62195,7 @@ Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/A
 |}
 &lt;noinclude&gt;&lt;references /&gt;
 {{Footer}}&lt;/noinclude&gt;</text>
-      <sha1>aspku9p9nw1xsfv74t8kcgw6mi8dafr</sha1>
+      <sha1>mdfvz4nypikfo3jjm9yv8078yruxyao</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
