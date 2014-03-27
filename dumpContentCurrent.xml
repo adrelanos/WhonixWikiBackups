@@ -40,9 +40,9 @@
     <ns>0</ns>
     <id>1</id>
     <revision>
-      <id>7071</id>
-      <parentid>7070</parentid>
-      <timestamp>2014-03-26T19:41:07Z</timestamp>
+      <id>7083</id>
+      <parentid>7082</parentid>
+      <timestamp>2014-03-26T23:41:55Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
@@ -43002,15 +43002,15 @@ Whonix is a [http://www.openinventionnetwork.com/licensees.php licensee] of the 
     <ns>0</ns>
     <id>438</id>
     <revision>
-      <id>5985</id>
-      <parentid>5984</parentid>
-      <timestamp>2014-02-27T18:26:58Z</timestamp>
+      <id>7084</id>
+      <parentid>5985</parentid>
+      <timestamp>2014-03-27T01:31:10Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
       <comment>/* Professional Support */</comment>
-      <text xml:space="preserve" bytes="1655">{{Header}}
+      <text xml:space="preserve" bytes="1695">{{Header}}
 
 '''DRAFT!'''
 
@@ -43024,70 +43024,70 @@ Whonix is a [http://www.openinventionnetwork.com/licensees.php licensee] of the 
 | '''Remote Administration Support'''
 | '''Real Life Coaching &lt;ref&gt;Within Germany and eventually other European Counties as well.&lt;/ref&gt;'''
 |-
-| style=&quot;height: 27px;background-color: #f9f9f9&quot;| Support Level 1
+| style=&quot;height: 27px;background-color: #f9f9f9&quot;| Support Level 1 €
 | {{Yes}}
 | {{No}}
 | {{No}}
 | {{No}}
 | {{No}}
 |-
-| style=&quot;height: 27px;background-color: #f9f9f9&quot;| Support Level 2
+| style=&quot;height: 27px;background-color: #f9f9f9&quot;| Support Level 2 €
 | {{Yes}}
 | {{No}}
 | {{No}}
 | {{No}}
 | {{No}}
 |-
-| style=&quot;height: 27px;background-color: #f9f9f9&quot;| Support Level 5
+| style=&quot;height: 27px;background-color: #f9f9f9&quot;| Support Level 5 €
 | {{Yes}}
 | {{No}}
 | {{No}}
 | {{No}}
 | {{No}}
 |-
-| style=&quot;height: 27px;background-color: #f9f9f9&quot;| Support Level 10
+| style=&quot;height: 27px;background-color: #f9f9f9&quot;| Support Level 10 €
 | {{Yes}}
 | {{No}}
 | {{No}}
 | {{No}}
 | {{No}}
 |-
-| style=&quot;height: 27px;background-color: #f9f9f9&quot;| Support Level 20
+| style=&quot;height: 27px;background-color: #f9f9f9&quot;| Support Level 20 €
 | {{Yes}}
 | {{No}}
 | {{No}}
 | {{No}}
 | {{No}}
 |-
-| style=&quot;height: 27px;background-color: #f9f9f9&quot;| Support Level 50
+| style=&quot;height: 27px;background-color: #f9f9f9&quot;| Support Level 50 €
 | {{Yes}}
 | {{Yes}}
 | {{No}}
 | {{No}}
 | {{No}}
 |-
-| style=&quot;height: 27px;background-color: #f9f9f9&quot;| Support Level 100
+| style=&quot;height: 27px;background-color: #f9f9f9&quot;| Support Level 100 €
 | {{Yes}}
 | {{Yes}}
 | {{Yes}}
 | {{No}}
 | {{No}}
 |-
-| style=&quot;height: 27px;background-color: #f9f9f9&quot;| Support Level 500
+| style=&quot;height: 27px;background-color: #f9f9f9&quot;| Support Level 500 €
 | {{Yes}}
 | {{Yes}}
 | {{Yes}}
 | {{Yes}}
 | {{No}}
 |-
-| style=&quot;height: 27px;background-color: #f9f9f9&quot;| Support Level 1000
+| style=&quot;height: 27px;background-color: #f9f9f9&quot;| Support Level 1000 €
 | {{Yes}}
 | {{Yes}}
 | {{Yes}}
 | {{Yes}}
 | {{Yes}}
 |-
-| style=&quot;height: 27px;background-color: #f9f9f9&quot;| Support Level 2000
+| style=&quot;height: 27px;background-color: #f9f9f9&quot;| Support Level 2000 €
 | {{Yes}}
 | {{Yes}}
 | {{Yes}}
@@ -43100,7 +43100,7 @@ Whonix is a [http://www.openinventionnetwork.com/licensees.php licensee] of the 
 &lt;references /&gt;
 
 {{Footer}}</text>
-      <sha1>ngrypfrhhztkxyp3f4r4hubktoopor5</sha1>
+      <sha1>18ft9j8q776uwv90hv0wd68zoy5h7l7</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -62105,14 +62105,15 @@ Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/A
     <ns>10</ns>
     <id>894</id>
     <revision>
-      <id>6307</id>
-      <parentid>6248</parentid>
-      <timestamp>2014-03-05T16:20:12Z</timestamp>
+      <id>7081</id>
+      <parentid>7080</parentid>
+      <timestamp>2014-03-26T23:16:41Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="7632">&lt;!--T:7--&gt;
+      <text xml:space="preserve" bytes="7663">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
+&lt;!--T:7--&gt;
 &lt;big&gt;Version: &lt;span style=&quot;color: green&quot;&gt;{{VersionNew}}&lt;/span&gt;&lt;/big&gt;
 
 &lt;!--T:8--&gt;
@@ -62131,8 +62132,8 @@ Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/A
 
 &lt;!--T:91--&gt;
 | {{GrayBackground}}| [[File:HTTP.png|40px]] {{Anchor|Whonix_signature}}
-| &lt;html&gt;&lt;a href=&quot;http://mirror.whonix.org.nyud.net/&lt;/html&gt;{{VersionNew}}&lt;html&gt;/Whonix-Gateway-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova&quot; target=&quot;_blank&quot;&gt;Download (off, use mirror below)&lt;/a&gt;&lt;/html&gt;
-| &lt;html&gt;&lt;a href=&quot;http://mirror.whonix.org.nyud.net/&lt;/html&gt;{{VersionNew}}&lt;html&gt;/Whonix-Workstation-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova&quot; target=&quot;_blank&quot;&gt;Download (off, use mirror below)&lt;/a&gt;&lt;/html&gt;
+| &lt;html&gt;&lt;a href=&quot;http://199.127.226.139.nyud.net/&lt;/html&gt;{{VersionNew}}&lt;html&gt;/Whonix-Gateway-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
+| &lt;html&gt;&lt;a href=&quot;http://199.127.226.139.nyud.net/&lt;/html&gt;{{VersionNew}}&lt;html&gt;/Whonix-Workstation-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
 |{{Yes}} &lt;ref name=anonymousdownload /&gt;
 | style=&quot;background-color: {{Red}}&quot;| Very Low &lt;ref&gt;[[Warning#Man-in-the-middle_attacks|Man-in-the-middle attacks]] could poison the download.&lt;/ref&gt;
 | style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification&gt;It does not matter if you did the bulk download over an insecure channel, if you use OpenPGP verification at the end.&lt;/ref&gt;
@@ -62197,8 +62198,10 @@ Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/A
 | See [[Dev/Build Anonymity|Build Anonymity]]
 | style=&quot;background-color: {{Green}}&quot;| Very High &lt;ref name=fromsourcecode&gt;When you build from source code, audit the source code for being non-malicious and reasonably bug free, you do not have to [[Trust|Trust]] the developers, the website or the SSL certificate authorities.&lt;/ref&gt;
 | style=&quot;background-color: {{Green}}&quot;| Best &lt;ref name=fromsourcecode /&gt; &lt;ref&gt;By additional verification that you got the source code from the original authors and by ensuring you're using the same source code as others you get better security.&lt;/ref&gt;
-|}</text>
-      <sha1>s6fgtggsq33ebtwn1sgnvqzgbihwewd</sha1>
+|}
+&lt;noinclude&gt;&lt;references /&gt;
+{{Footer}}&lt;/noinclude&gt;</text>
+      <sha1>aspku9p9nw1xsfv74t8kcgw6mi8dafr</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
