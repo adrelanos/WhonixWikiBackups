@@ -40,14 +40,14 @@
     <ns>0</ns>
     <id>1</id>
     <revision>
-      <id>7141</id>
-      <parentid>7139</parentid>
-      <timestamp>2014-03-28T05:43:11Z</timestamp>
+      <id>7159</id>
+      <parentid>7141</parentid>
+      <timestamp>2014-03-28T16:56:56Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="11585">{{#seo:
+      <text xml:space="preserve" bytes="11498">{{#seo:
 |fb:admins=100007482551659
 |fb:app_id=606207202785157
 |twitter:card=summary_large_image
@@ -62,7 +62,6 @@ __NOTOC__
 &lt;!--T:11--&gt;
 {{#seo:
 |description=Privacy protection. Anonymity online. Anonymous Operating System.
-|twitter:description=Privacy protection. Anonymity online. Anonymous Operating System.
 |og:image=https://www.whonix.org/w/images/e/e0/210-Banner.png
 }}&lt;/translate&gt;
 
@@ -279,7 +278,7 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
 
 
 &lt;/div&gt;</text>
-      <sha1>m05jqhembd3yu99dor0ign37e5yo7ng</sha1>
+      <sha1>nbqpcm73lh8w14ofkrdffven9wk7lun</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -799,14 +798,14 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>19</id>
     <revision>
-      <id>7135</id>
-      <parentid>7131</parentid>
-      <timestamp>2014-03-28T04:57:10Z</timestamp>
+      <id>7160</id>
+      <parentid>7135</parentid>
+      <timestamp>2014-03-28T16:57:12Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="15323">{{Header}}
+      <text xml:space="preserve" bytes="15247">{{Header}}
 &lt;!--
 Copyright:
 
@@ -843,7 +842,6 @@ This wiki page is a fork of the Tails Download page, from this exact source &lt;
 &lt;!--T:211--&gt;
 {{#seo:
 |description=Download Whonix. Anonymity online. Privacy protection.
-|twitter:description=Download Whonix. Anonymity online. Privacy protection.
 |og:image=https://www.whonix.org/w/images/f/ff/Kde0_5_0.png
 }}
 &lt;/translate&gt;
@@ -1173,7 +1171,7 @@ under certain conditions; see the wiki source code for details.
 &lt;translate&gt;&lt;!--T:253--&gt;
 Some icons created by third parties, Free licenses as well, see [[Authorship#Images_created_by_third_parties|Authorship Images created by third parties]] for details.
 &lt;/translate&gt;[[Category:Documentation]]{{Footer}}</text>
-      <sha1>akdzcb7r30qj0r7sff3s6xzqvu3u1ri</sha1>
+      <sha1>e5qp00q84c538gmnyet5f6oxgbqa72r</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -7885,14 +7883,15 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
     <ns>0</ns>
     <id>96</id>
     <revision>
-      <id>6920</id>
-      <parentid>6686</parentid>
-      <timestamp>2014-03-15T07:55:09Z</timestamp>
+      <id>7170</id>
+      <parentid>7169</parentid>
+      <timestamp>2014-03-28T17:47:12Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <comment>/* Statement about Neutrality of this Page */</comment>
-      <text xml:space="preserve" bytes="70854">{{Header}}
+      <comment>/* Fingerprint */</comment>
+      <text xml:space="preserve" bytes="71058">{{Header}}
 {{#seo:
 |description=Comparison of Whonix, Tails, Tor Browser Bundle, QubesOS TorVM and corridor. About anonymity, privacy, security, circumvention, attacks, fingerprinting, usability, features, etc.
 }}
@@ -8122,7 +8121,7 @@ This page contains the comparisons of Whonix, Tails, Tor Browser and Qubes OS To
 | {{Yes}}
 | {{No}}
 | {{Yes}}
-| {{No}}
+| {{Yes}}
 | {{BlueBackground}} Not applicable. &lt;ref name=uptotheclienttobuildtorcircuits /&gt;
 |-
 |}
@@ -8188,7 +8187,7 @@ This page contains the comparisons of Whonix, Tails, Tor Browser and Qubes OS To
 | {{Yes}} &lt;ref&gt;See [[whonixcheck]], [[Download#Whonix_Version_Check_and_Whonix_News|Whonix News]].&lt;/ref&gt;
 | {{Yes}}
 | {{Yes}}
-| ?
+| {{Yes}}
 | ?
 |-
 | Important News Notifications
@@ -8283,7 +8282,7 @@ This page contains the comparisons of Whonix, Tails, Tor Browser and Qubes OS To
 | {{No}}
 | {{Yes}}
 | {{No}}
-| {{No}} (?)
+| {{No}}, planned. &lt;ref&gt;http://qubes-os.org/trac/ticket/716&lt;/ref&gt;
 | {{No}}
 |-
 |}
@@ -8330,7 +8329,7 @@ http://www.whonix.org/wiki/Template:Verifiable_Builds_Comparsion_Table
 | All Whonix-Gateway and Whonix-Workstation traffic is tunneled through Tor. Host traffic (operating system updates, eventually host browser etc.) uses clearnet.
 | None, unless other users sharing the same internet connection are not using Tails.
 | TBB traffic is tunneled through Tor. Host traffic (operating system updates, eventually untorified second browser etc.) uses clearnet.
-| Gateway is not torified, thus emitting clearnet traffic and probably due to package selection, revealing that it is an Qubes OS TorVM. (?)
+| Gateway is not torified, thus emitting clearnet traffic and probably due to package selection, revealing that it is an Qubes OS TorVM.
 | Gateway is not torified, thus emitting clearnet traffic.
 |-
 | style=&quot;height: 27px;background-color: #f9f9f9&quot;| Network fingerprint: ISP can guess which anonymity software is being used because of ratio of Tor and clearnet traffic
@@ -8428,14 +8427,14 @@ http://www.whonix.org/wiki/Template:Verifiable_Builds_Comparsion_Table
 | {{Yes}}
 | {{Yes}}
 | {{BlueBackground}} Not an operating system.
-| {{No}}
+| {{BlueBackground}} Not an operating system.
 | {{BlueBackground}} Not an operating system.
 |-
 | style=&quot;height: 27px;background-color: #f9f9f9&quot;| Privacy enhanced IRC client configuration.
 | {{Yes}}
 | {{Yes}}
 | {{BlueBackground}} Not an IRC client.
-| {{No}}
+| {{BlueBackground}} Not an operating system.
 | {{BlueBackground}} Not an IRC client.
 |-
 |}
@@ -8871,19 +8870,19 @@ Knowledge assumed:
 | style=&quot;background-color: {{Yellow}}&quot;| Can be manually installed. &lt;ref name=whonixvpnsupport&gt;Included, although there is no nice gui, it's available as Optional Configuration, see [[Features#VPN_.2F_Tunnel_support|VPN/tunnel support]].&lt;/ref&gt;
 | {{No}} &lt;ref name=tailsvpn&gt;Tails Status: https://tails.boum.org/todo/vpn_support/&lt;/ref&gt;
 | style=&quot;background-color: {{Yellow}}&quot;| Can be manually installed. (?)
-| ?
+| {{Yes}}
 |-
 | style=&quot;height: 27px;background-color: #f9f9f9&quot;| VPN support: user -&gt; Tor -&gt; VPN -&gt; destination
 | style=&quot;background-color: {{Yellow}}&quot;| Can be manually installed. &lt;ref name=whonixvpnsupport /&gt;
 | {{No}} &lt;ref name=tailsvpn /&gt;
 | ?
-| ?
+| {{Yes}} &lt;ref&gt;By making the netvm of the TorVM be a VpnVM.&lt;/ref&gt;
 |-
 | style=&quot;height: 27px;background-color: #f9f9f9&quot;| VPN support: user -&gt; VPN -&gt; Tor -&gt; VPN -&gt; destination
 | style=&quot;background-color: {{Yellow}}&quot;| Can be manually installed. &lt;ref name=whonixvpnsupport /&gt;
 | {{No}} &lt;ref name=tailsvpn /&gt;
 | ?
-| ?
+| {{Yes}}
 |-
 | style=&quot;height: 27px;background-color: #f9f9f9&quot;| IRC client pre-configured for privacy
 | {{Yes}} ([[XChat]])
@@ -9131,7 +9130,7 @@ One has always to be very careful, when talking about others. Especially, when t
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Design]]</text>
-      <sha1>o0eyckm4v3t8b7lsjihists2wk87085</sha1>
+      <sha1>lc0peh2fobboy1yyl0mq2jubrxaq8dn</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -12142,14 +12141,14 @@ What would have to be done:
     <ns>0</ns>
     <id>114</id>
     <revision>
-      <id>6973</id>
-      <parentid>6772</parentid>
-      <timestamp>2014-03-19T03:53:35Z</timestamp>
+      <id>7161</id>
+      <parentid>6973</parentid>
+      <timestamp>2014-03-28T17:05:34Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="14117">{{Header}}
+      <text xml:space="preserve" bytes="14131">{{Header}}
 {{#seo:
 |description=Copying files into and out of Whonix Virtual Machines.
 }}
@@ -12425,7 +12424,7 @@ On the Whonix-Gateway:
 ## On Whonix-Gateway!
 
 ## or user@
-/usr/bin/ssh.real root@192.168.0.11
+/usr/bin/ssh.whonix-orig root@192.168.0.11
 &lt;/pre&gt;
 
 Then SSH from the host into Whonix-Gateway (host -&gt; Whonix-Gateway). From there, SSH into Whonix-Workstation (Whonix-Gateway -&gt; Whonix-Workstation). You can also do that with one command (called SSH hopping).
@@ -12434,7 +12433,7 @@ Then SSH from the host into Whonix-Gateway (host -&gt; Whonix-Gateway). From the
 ## On the host!
 
 ## or root@
-ssh -t user@127.0.0.1 -p 2200 &quot;ssh.real user@192.168.0.11&quot;
+ssh -t user@127.0.0.1 -p 2200 &quot;ssh.whonix-orig user@192.168.0.11&quot;
 &lt;/pre&gt;
 
 You can also mount the filesystem of Whonix-Workstation with two commands. SSH hopping is also possible for sshfs (a website [http://www.larkinweb.co.uk/computing/mounting_file_systems_over_two_ssh_hops.html told] ([http://www.webcitation.org/6FDYtApEP w]) me).
@@ -12569,7 +12568,7 @@ sudo umount /mnt/whonix
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Development]]</text>
-      <sha1>hg5otpvd2wef8s8pzmy826c8zqhs3ev</sha1>
+      <sha1>0kfn8x8ybq8d4uwifxpahlyw4s2lemu</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -42989,26 +42988,46 @@ The Tor Project never managed to get such a downloader up and running, see {{Cod
     <ns>0</ns>
     <id>437</id>
     <revision>
-      <id>6856</id>
-      <parentid>6855</parentid>
-      <timestamp>2014-03-12T00:10:03Z</timestamp>
+      <id>7158</id>
+      <parentid>7157</parentid>
+      <timestamp>2014-03-28T16:08:20Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="1025">{{Header}}
+      <text xml:space="preserve" bytes="309">{{Header}}
 
+&lt;languages /&gt;
 
-Whonix is a [http://www.openinventionnetwork.com/licensees.php licensee] of the [[File:OIN_logo_200px.png|link=https://en.wikipedia.org/wiki/Open_Invention_Network|alt=Open Invention Network|140px]]. Unless otherwise noted above, content of this  page is copyrighted by [mailto:adrelanos@riseup.net Patrick Schleizer] (&lt;html&gt;&lt;a href=&quot;/patrick.asc&quot;&gt;gpg&lt;/a&gt;&lt;/html&gt;) (&lt;html&gt;&lt;a href=&quot;https://plus.google.com/u/0/112678569435063398972?rel=author&quot;&gt;g+&lt;/a&gt;)&lt;/html&gt; (&lt;html&gt;&lt;a href=&quot;https://plus.google.com/108150429836421683225&quot; rel=&quot;publisher&quot; /&gt;g+&lt;/a&gt;&lt;/html&gt;) and licensed under the same Free (as in speech) [https://github.com/Whonix/Whonix/blob/master/debian/copyright license] as Whonix itself.
+{{CONTENTLANGUAGE}}
 
-&lt;rss number=10 title=off desc=off&gt;https://www.whonix.org/blog/feed/rss2/&lt;/rss&gt;
+{{CONTENTLANG}}
 
-&lt;rss number=10 title=off desc=off&gt;https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10&lt;/rss&gt;
+{{#language}}
 
-&lt;rss number=10 title=off desc=off&gt;https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10;sa=news&lt;/rss&gt;
+{{#language:language code}}
+
+{{#language:ar}}
+
+{{#language:language code|target language code}}
+
+{{#language:ar|en}}
+
+{{#languagename:ar}}
+
+DIRECTIONMARK
+
+NAMESPAC
+
+NAMESPACEE
+
+&lt;translate&gt;
+&lt;!--T:5--&gt;
+test
+&lt;/translate&gt;
 
 {{Footer}}</text>
-      <sha1>qrxwrwmd4k99bqhjaqq0kmpqu1kbthz</sha1>
+      <sha1>7dbd168mifx74cfmg5d74vfu1gk9trp</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -50963,28 +50982,69 @@ In case you like to review the implementation, the related scripts can be found 
     <ns>0</ns>
     <id>531</id>
     <revision>
-      <id>5859</id>
-      <parentid>4787</parentid>
-      <timestamp>2014-02-27T13:38:10Z</timestamp>
+      <id>7175</id>
+      <parentid>7173</parentid>
+      <timestamp>2014-03-28T20:05:00Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="1494">{{Header}}
+      <text xml:space="preserve" bytes="2480">{{Header}}
 {{#seo:
 |description=Mount Whonix-Workstation's files on your Host using sshfs
 }}
 = Do Once =
 On the host.
+
+If you are not already a member of the fuse group, add yourself.
+
 &lt;pre&gt;
-Import Whonix-Gateway 7
-Import Whonix-Workstation 7
+sudo adduser `whoami` fuse
+&lt;/pre&gt;
+
+If you were not already a member, you will see.
+
+&lt;pre&gt;
+Adding user `user' to group `fuse' ...
+Adding user user to group fuse
+Done.
+&lt;/pre&gt;
+
+And should reboot. &lt;ref&gt;Restart X may do the trick as well.&lt;/ref&gt;
+
+If you see.
+
+&lt;pre&gt;
+The user `user' is already a member of `fuse'.
+&lt;/pre&gt;
+
+Then you are already a member of the fuse group and do not have to reboot.
+
+On the host.
+&lt;pre&gt;
+Import Whonix-Gateway
+Import Whonix-Workstation
 &lt;/pre&gt;
 
 On the host.
 &lt;pre&gt;
 ## Caution if you did not name your VM &quot;Whonix-Gateway&quot;!
-VBoxManage modifyvm &quot;Whonix-Gateway&quot; --natpf1 &quot;ssh&quot;,tcp,127.0.0.1,2200,,22
+VBoxManage modifyvm &quot;Whonix-Gateway&quot; --natpf1 &quot;ssh&quot;,tcp,127.0.0.1,2200,,22 ; echo $?
+&lt;/pre&gt;
+
+When there is an error, you will see this.
+
+&lt;pre&gt;
+VBoxManage: error: The machine 'Whonix-Gateway8.1' is already locked for a session (or being unlocked)
+VBoxManage: error: Details: code VBOX_E_INVALID_OBJECT_STATE (0x80bb0007), component Machine, interface IMachine, callee nsISupports
+Context: &quot;LockMachine(a-&gt;session, LockType_Write)&quot; at line 377 of file VBoxManageModifyVM.cpp
+1
+&lt;/pre&gt;
+
+When it succeeded, you will see this.
+
+&lt;pre&gt;
+0
 &lt;/pre&gt;
 
 Whonix-Gateway AND Whonix-Workstation.
@@ -51001,7 +51061,7 @@ sudo whonix_firewall
 
 On Whonix-Gateway.
 &lt;pre&gt;
-ssh.real 192.168.0.11
+ssh.whonix-orig 192.168.0.11
 ## yes (accept fingerprint)
 ## Terminate ssh connection.
 exit
@@ -51024,6 +51084,9 @@ On the host. Try this if you are having problems. This might not be neccessary. 
 ## or &quot;rm&quot; if you know what you are doing
 trash-put ~/.ssh/known_hosts
 trash-put ~/.ssh/known_hosts.old
+
+#rm ~/.ssh/known_hosts
+#rm ~/.ssh/known_hosts.old
 &lt;/pre&gt;
 
 On the host.
@@ -51044,7 +51107,7 @@ sshfs -p 2222 user@127.0.0.1:/ ~/mountworkstation
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>294n2re97qlhjwbwv7szo2ali5vky8n</sha1>
+      <sha1>l6fks069yvrl0gwbyxc1z1l1mebp5dl</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -61551,9 +61614,9 @@ To leave feedback, you could join the [https://www.whonix.org/forum/index.php/to
     <ns>10</ns>
     <id>876</id>
     <revision>
-      <id>6914</id>
-      <parentid>6910</parentid>
-      <timestamp>2014-03-15T00:04:51Z</timestamp>
+      <id>7179</id>
+      <parentid>6914</parentid>
+      <timestamp>2014-03-28T22:54:08Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
@@ -61573,10 +61636,10 @@ To leave feedback, you could join the [https://www.whonix.org/forum/index.php/to
 	&lt;option value=&quot;Level 1&quot;&gt;Level 1 : $1.00 USD - monthly&lt;/option&gt;
 	&lt;option value=&quot;Level 2&quot;&gt;Level 2 : $2.00 USD - monthly&lt;/option&gt;
 	&lt;option value=&quot;Level 5&quot;&gt;Level 5 : $5.00 USD - monthly&lt;/option&gt;
-	&lt;option value=&quot;Level 10&quot;&gt;Level 10 : $10.00 USD - monthly&lt;/option&gt;
+	&lt;option selected value=&quot;Level 10&quot;&gt;Level 10 : $10.00 USD - monthly&lt;/option&gt;
 	&lt;option value=&quot;Level 20&quot;&gt;Level 20 : $20.00 USD - monthly&lt;/option&gt;
 	&lt;option value=&quot;Level 50&quot;&gt;Level 50 : $50.00 USD - monthly&lt;/option&gt;
-	&lt;option selected value=&quot;Level 100&quot;&gt;Level 100 : $100.00 USD - monthly&lt;/option&gt;
+	&lt;option value=&quot;Level 100&quot;&gt;Level 100 : $100.00 USD - monthly&lt;/option&gt;
 	&lt;option value=&quot;Level 500&quot;&gt;Level 500 : $500.00 USD - monthly&lt;/option&gt;
 	&lt;option value=&quot;Level 1000&quot;&gt;Level 1000 : $1,000.00 USD - monthly&lt;/option&gt;
 	&lt;option value=&quot;Level 2000&quot;&gt;Level 2000 : $2,000.00 USD - monthly&lt;/option&gt;
@@ -61668,7 +61731,7 @@ To leave feedback, you could join the [https://www.whonix.org/forum/index.php/to
 &lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;/w/images/c/cd/Pixel.gif&quot; width=&quot;1&quot; height=&quot;1&quot;&gt;
 &lt;/form&gt;
 &lt;/html&gt;</text>
-      <sha1>iqgtfvu3klz23s6q3sfs2505ewqyw6e</sha1>
+      <sha1>69t80cxilpxww8xyfeddh7a5j50oq73</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -64051,9 +64114,9 @@ Therefore it is impossible to claim that non-trivial source code is backdoor fre
     <ns>10</ns>
     <id>969</id>
     <revision>
-      <id>6909</id>
-      <parentid>6242</parentid>
-      <timestamp>2014-03-14T23:40:01Z</timestamp>
+      <id>7178</id>
+      <parentid>6909</parentid>
+      <timestamp>2014-03-28T22:53:48Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
@@ -64073,10 +64136,10 @@ Therefore it is impossible to claim that non-trivial source code is backdoor fre
 	&lt;option value=&quot;Level 1&quot;&gt;Level 1 $1.00 USD&lt;/option&gt;
 	&lt;option value=&quot;Level 2&quot;&gt;Level 2 $2.00 USD&lt;/option&gt;
 	&lt;option value=&quot;Level 5&quot;&gt;Level 5 $5.00 USD&lt;/option&gt;
-	&lt;option value=&quot;Level 10&quot;&gt;Level 10 $10.00 USD&lt;/option&gt;
+	&lt;option selected value=&quot;Level 10&quot;&gt;Level 10 $10.00 USD&lt;/option&gt;
 	&lt;option value=&quot;Level 20&quot;&gt;Level 20 $20.00 USD&lt;/option&gt;
 	&lt;option value=&quot;Level 50&quot;&gt;Level 50 $50.00 USD&lt;/option&gt;
-	&lt;option selected value=&quot;Level 100&quot;&gt;Level 100 $100.00 USD&lt;/option&gt;
+	&lt;option value=&quot;Level 100&quot;&gt;Level 100 $100.00 USD&lt;/option&gt;
 	&lt;option value=&quot;Level 500&quot;&gt;Level 500 $500.00 USD&lt;/option&gt;
 	&lt;option value=&quot;Level 1000&quot;&gt;Level 1000 $1,000.00 USD&lt;/option&gt;
 	&lt;option value=&quot;Level 2000&quot;&gt;Level 2000 $2,000.00 USD&lt;/option&gt;
@@ -64132,7 +64195,7 @@ Therefore it is impossible to claim that non-trivial source code is backdoor fre
 &lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;/w/images/c/cd/Pixel.gif&quot; width=&quot;1&quot; height=&quot;1&quot;&gt;
 &lt;/form&gt;
 &lt;/html&gt;</text>
-      <sha1>hapwoxu7jk0e2nrrfc0ef274ixsoltm</sha1>
+      <sha1>tnh64k30pgy5cs0p3fgvgnlmjrfybwl</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -68639,18 +68702,19 @@ Related forum topic: &lt;br /&gt;
     <ns>0</ns>
     <id>1143</id>
     <revision>
-      <id>7113</id>
-      <parentid>7112</parentid>
-      <timestamp>2014-03-28T03:28:00Z</timestamp>
+      <id>7174</id>
+      <parentid>7142</parentid>
+      <timestamp>2014-03-28T19:47:53Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="893">__NOTITLE__
+      <text xml:space="preserve" bytes="935">__NOTITLE__
 {{Header}}
 {{#seo:
 |description=Schützen Sie Ihre Privatsphäre im Internet! Deutschsprachige Whonix Homepage.
 |og:image=https://www.whonix.org/w/images/thumb/b/be/500.png/180px-500.png
+|og:locale=de_DE
 }}
 [[File:500.png|thumb|right]]
 
@@ -68662,12 +68726,13 @@ Related forum topic: &lt;br /&gt;
 
 Weiterführende Links (in Englischer Sprache):
 
+* [[Main_Page|Homepage]]
 * [[Download#First_time_user.3F|Download Whonix]]
 * [[Documentation|Dokumentation]]
 * [[Screenshots|Screenshots]]
 
 {{Footer}}</text>
-      <sha1>rpwhsgf6fow3tsrbhyxdnio1keze8x9</sha1>
+      <sha1>oinlwcnvqeqql0xti6pfaamg8oupbg6</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -69865,6 +69930,114 @@ sudo aa-enforce /etc/apparmor.d/usr.bin.xchat
       <comment>MsUpload</comment>
       <text xml:space="preserve" bytes="8">MsUpload</text>
       <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:T/Page display title/en</title>
+    <ns>1198</ns>
+    <id>1177</id>
+    <revision>
+      <id>7149</id>
+      <timestamp>2014-03-28T15:59:31Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="1">T</text>
+      <sha1>mr1rlvgk4pz8fq6u8tg5e0yyu1i7x0n</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>T/en</title>
+    <ns>0</ns>
+    <id>1178</id>
+    <revision>
+      <id>7150</id>
+      <timestamp>2014-03-28T15:59:34Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="80">{{Header}}
+
+{{CONTENTLANGUAGE}}
+
+{{CONTENTLANG}}
+
+&lt;languages /&gt;
+test
+
+{{Footer}}</text>
+      <sha1>llk8qc4vph2htqgokj5v47j0ffhzvgj</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:T/5/en</title>
+    <ns>1198</ns>
+    <id>1179</id>
+    <revision>
+      <id>7151</id>
+      <timestamp>2014-03-28T15:59:37Z</timestamp>
+      <contributor>
+        <username>FuzzyBot</username>
+        <id>37</id>
+      </contributor>
+      <comment>Importing a new version from external source</comment>
+      <text xml:space="preserve" bytes="4">test</text>
+      <sha1>jrwjerxiekdtj9k82lg930wpkr6tq6r</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:T/5/de</title>
+    <ns>1198</ns>
+    <id>1180</id>
+    <revision>
+      <id>7152</id>
+      <timestamp>2014-03-28T16:00:00Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;testdeutsch&quot;</comment>
+      <text xml:space="preserve" bytes="11">testdeutsch</text>
+      <sha1>h2xs4dln7krvp9nly9uk5k7lnuoewn8</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>T/de</title>
+    <ns>0</ns>
+    <id>1181</id>
+    <revision>
+      <id>7153</id>
+      <timestamp>2014-03-28T16:00:00Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;testdeutsch&quot;</comment>
+      <text xml:space="preserve" bytes="87">{{Header}}
+
+{{CONTENTLANGUAGE}}
+
+{{CONTENTLANG}}
+
+&lt;languages /&gt;
+testdeutsch
+
+{{Footer}}</text>
+      <sha1>172lnq121m9mbu0cp8ejgd37b1b3r28</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
