@@ -2,7 +2,7 @@
   <siteinfo>
     <sitename>Whonix</sitename>
     <base>http://localhost/wiki/Main_Page</base>
-    <generator>MediaWiki 1.22.3</generator>
+    <generator>MediaWiki 1.22.5</generator>
     <case>first-letter</case>
     <namespaces>
       <namespace key="-2" case="first-letter">Media</namespace>
@@ -40,20 +40,30 @@
     <ns>0</ns>
     <id>1</id>
     <revision>
-      <id>7083</id>
-      <parentid>7082</parentid>
-      <timestamp>2014-03-26T23:41:55Z</timestamp>
+      <id>7141</id>
+      <parentid>7139</parentid>
+      <timestamp>2014-03-28T05:43:11Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="11193">{{Header}}
+      <text xml:space="preserve" bytes="11585">{{#seo:
+|fb:admins=100007482551659
+|fb:app_id=606207202785157
+|twitter:card=summary_large_image
+|twitter:site=@Whonix
+|twitter:domain=Whonix
+|twitter:creator=@Whonix
+|twitter:image:src=https://www.whonix.org/w/skins/common/images/135px_Whonix_lock.png
+}}
 __NOTOC__
 &lt;languages /&gt;
 &lt;translate&gt;
 &lt;!--T:11--&gt;
 {{#seo:
 |description=Privacy protection. Anonymity online. Anonymous Operating System.
+|twitter:description=Privacy protection. Anonymity online. Anonymous Operating System.
+|og:image=https://www.whonix.org/w/images/e/e0/210-Banner.png
 }}&lt;/translate&gt;
 
 &lt;div class=&quot;container&quot; style=&quot;width:100%; margin=0px; border:1px solid gray;  line-height:150%;&quot;&gt;
@@ -249,7 +259,7 @@ Whonix Donate Icon&lt;/translate&gt;|&lt;translate&gt;&lt;!--T:38--&gt;
 &lt;html&gt;
 &lt;div itemscope itemtype=&quot;http://schema.org/Organization&quot;&gt;
 &lt;/br&gt;
-&lt;img itemprop=&quot;logo&quot; style=&quot;text-align:center;&quot; src=&quot;https://www.whonix.org/w/images/6/62/Whonix_logo.png&quot; /&gt;
+&lt;img itemprop=&quot;logo&quot; style=&quot;text-align:center;&quot; src=&quot;https://www.whonix.org/w/images/e/e0/210-Banner.png&quot; /&gt;
 &lt;/div&gt;
 &lt;/html&gt;
 '''[[Screenshots|More Screenshots]].'''
@@ -269,7 +279,7 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
 
 
 &lt;/div&gt;</text>
-      <sha1>55qhct0bu4v9734q714wmrmx7zktgxt</sha1>
+      <sha1>m05jqhembd3yu99dor0ign37e5yo7ng</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -397,21 +407,25 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
     <ns>10</ns>
     <id>14</id>
     <revision>
-      <id>6852</id>
-      <parentid>6685</parentid>
-      <timestamp>2014-03-11T23:04:06Z</timestamp>
+      <id>7140</id>
+      <parentid>7138</parentid>
+      <timestamp>2014-03-28T05:42:58Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="238">{{#seo:
-|metakeywords=anonymity
-|og:type=website
+      <text xml:space="preserve" bytes="364">{{#seo:
 |article:publisher=https://www.facebook.com/Whonix
 |article:author=https://www.facebook.com/patrick.schleizer
-|og:image=https://www.whonix.org/blog/wp-content/uploads/2014/01/Banner2.png
+|fb:admins=100007482551659
+|fb:app_id=606207202785157
+|twitter:card=summary_large_image
+|twitter:site=@Whonix
+|twitter:domain=Whonix
+|twitter:creator=@Whonix
+|twitter:image:src=https://www.whonix.org/w/skins/common/images/135px_Whonix_lock.png
 }}</text>
-      <sha1>625gdewfc221mzclrg4kyszsjd9b8kq</sha1>
+      <sha1>kpda1ctfftv28ifrw6xaw1t48oi6p7z</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -785,14 +799,14 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>19</id>
     <revision>
-      <id>7051</id>
-      <parentid>6960</parentid>
-      <timestamp>2014-03-25T14:53:36Z</timestamp>
+      <id>7135</id>
+      <parentid>7131</parentid>
+      <timestamp>2014-03-28T04:57:10Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="15187">{{Header}}
+      <text xml:space="preserve" bytes="15323">{{Header}}
 &lt;!--
 Copyright:
 
@@ -829,6 +843,8 @@ This wiki page is a fork of the Tails Download page, from this exact source &lt;
 &lt;!--T:211--&gt;
 {{#seo:
 |description=Download Whonix. Anonymity online. Privacy protection.
+|twitter:description=Download Whonix. Anonymity online. Privacy protection.
+|og:image=https://www.whonix.org/w/images/f/ff/Kde0_5_0.png
 }}
 &lt;/translate&gt;
 &lt;translate&gt;&lt;!--T:212--&gt;
@@ -1157,7 +1173,7 @@ under certain conditions; see the wiki source code for details.
 &lt;translate&gt;&lt;!--T:253--&gt;
 Some icons created by third parties, Free licenses as well, see [[Authorship#Images_created_by_third_parties|Authorship Images created by third parties]] for details.
 &lt;/translate&gt;[[Category:Documentation]]{{Footer}}</text>
-      <sha1>r7hinvnrmgasq82p79ap1rrd5571mw5</sha1>
+      <sha1>akdzcb7r30qj0r7sff3s6xzqvu3u1ri</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -63470,20 +63486,20 @@ sudo ln -s /etc/dpkg/origins/whonix /etc/dpkg/origins/default
     <ns>0</ns>
     <id>948</id>
     <revision>
-      <id>6085</id>
-      <parentid>6077</parentid>
-      <timestamp>2014-02-27T23:38:37Z</timestamp>
+      <id>7107</id>
+      <parentid>6085</parentid>
+      <timestamp>2014-03-28T01:54:17Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="46">{{Header}}
-
-'''Test page'''
-{{TX}}
+      <text xml:space="preserve" bytes="190">{{#seo:
+|description=Schützen Sie Ihre Privatsphäre im Internet! Deutschsprachige Whonix Homepage.
+|og:image=https://www.whonix.org/w/images/thumb/b/be/500.png/180px-500.png
+}}
 
 {{Footer}}</text>
-      <sha1>mxuvzmr6bj2ci4eg0fx6f4kk8aqaqas</sha1>
+      <sha1>ncd4ljbfb2qidxk00fiv5besbsqz5ka</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -68623,18 +68639,20 @@ Related forum topic: &lt;br /&gt;
     <ns>0</ns>
     <id>1143</id>
     <revision>
-      <id>6838</id>
-      <parentid>6837</parentid>
-      <timestamp>2014-03-11T12:54:33Z</timestamp>
+      <id>7113</id>
+      <parentid>7112</parentid>
+      <timestamp>2014-03-28T03:28:00Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="789">__NOTITLE__
+      <text xml:space="preserve" bytes="893">__NOTITLE__
 {{Header}}
 {{#seo:
 |description=Schützen Sie Ihre Privatsphäre im Internet! Deutschsprachige Whonix Homepage.
+|og:image=https://www.whonix.org/w/images/thumb/b/be/500.png/180px-500.png
 }}
+[[File:500.png|thumb|right]]
 
 &lt;b&gt;Whonix ermöglicht den Schutz der Privatsphäre im Internet.&lt;/b&gt;
 
@@ -68649,7 +68667,7 @@ Weiterführende Links (in Englischer Sprache):
 * [[Screenshots|Screenshots]]
 
 {{Footer}}</text>
-      <sha1>pexpooks32fcubu0zd1pzgntkzhgz0c</sha1>
+      <sha1>rpwhsgf6fow3tsrbhyxdnio1keze8x9</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -69811,6 +69829,42 @@ sudo aa-enforce /etc/apparmor.d/usr.bin.xchat
 
 [[Category:Documentation]]</text>
       <sha1>otukvwuqpr5slny0nxwgcrt75o20hmv</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:200-Banner.png</title>
+    <ns>6</ns>
+    <id>1175</id>
+    <revision>
+      <id>7118</id>
+      <timestamp>2014-03-28T03:50:19Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:210-Banner.png</title>
+    <ns>6</ns>
+    <id>1176</id>
+    <revision>
+      <id>7120</id>
+      <timestamp>2014-03-28T03:52:39Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
