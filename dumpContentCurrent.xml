@@ -63934,16 +63934,70 @@ sudo ln -s /etc/dpkg/origins/whonix /etc/dpkg/origins/default
     <ns>0</ns>
     <id>965</id>
     <revision>
-      <id>6123</id>
-      <parentid>6122</parentid>
-      <timestamp>2014-03-01T13:35:00Z</timestamp>
+      <id>7180</id>
+      <parentid>6123</parentid>
+      <timestamp>2014-03-28T23:26:43Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="16">__NOINDEX__
-test</text>
-      <sha1>81lsbztihytacf41r3kkjbdrmbuia8x</sha1>
+      <text xml:space="preserve" bytes="1050">&lt;html&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+
+#banner {
+ position: relative;
+ overflow: hidden;
+ background-image:url('/w/images/0/0d/Gray-gradient1.png') bottom repeat-x;
+ margin-bottom: 0.5em !important;
+ margin-top: 0.5em !important;
+ background-color:#EEEEEE;
+ border: solid 1px #aaaaaa; 
+ height:66px;
+}
+
+#banner a.cn-full-banner-click {
+ display:block;
+ height:100%;
+ width:100%;
+ cursor: pointer;
+}
+
+
+#banner-logo {
+ position: absolute;
+ top: 8px;
+ left: 15px;
+ background-image: url(/w/images/d/d0/Donate50.png);
+ height: 50px;
+ width: 100%;
+ background-repeat: no-repeat;
+}
+
+#banner #black-text {
+ font-size: 1.1em;
+ color: black;
+ padding: 0.5em 40px 0.4em 60px;
+ line-height: 1.3em;
+ text-align: center;
+ font-weight:bold;
+}
+&lt;/style&gt;
+
+&lt;div id=&quot;banner&quot;&gt;
+
+  &lt;a class=&quot;cn-full-banner-click&quot; href=&quot;/wiki/Donate&quot; title=&quot;&quot;&gt;
+&lt;div id=&quot;banner-logo&quot;&gt;&lt;/div&gt;
+    &lt;div id=&quot;black-text&quot;&gt;
+   &lt;translate&gt;&lt;!--T:1--&gt;
+Whonix fundraising campaign.&lt;/translate&gt; &lt;br /&gt; &lt;translate&gt;&lt;!--T:2--&gt;
+Please consider a recurring donation!&lt;/translate&gt;
+     &lt;/div&gt;
+  &lt;/a&gt;
+
+
+&lt;/div&gt;
+&lt;/html&gt;</text>
+      <sha1>p21ak4gtb7rcnmw8gxyb3paj9fq2qdd</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
