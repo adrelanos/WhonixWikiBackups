@@ -1532,14 +1532,14 @@ See also [[Security_in_Real_World | Whonix security in real world]], [[Security_
     <ns>0</ns>
     <id>24</id>
     <revision>
-      <id>7076</id>
-      <parentid>7060</parentid>
-      <timestamp>2014-03-26T21:28:45Z</timestamp>
+      <id>7187</id>
+      <parentid>7076</parentid>
+      <timestamp>2014-03-29T20:18:24Z</timestamp>
       <contributor>
-        <username>Troubadour</username>
-        <id>230</id>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="18579">&lt;!--
+      <text xml:space="preserve" bytes="18615">&lt;!--
 Copyright:
 
    Whonix Documentation wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -1741,6 +1741,7 @@ Anonymity is a complex problem without an easy solution, and security is only as
 * &lt;small&gt; [[Whonix:General_disclaimer|DISCLAIMER]]&lt;/small&gt;
 * &lt;small&gt; [[Special:AllPages|List of all Whonix pages (Index)]]&lt;/small&gt;
 * &lt;small&gt; [[Contribute|Contribute]]&lt;/small&gt;
+* &lt;small&gt; [[Donate|Donate]]&lt;/small&gt;
 * &lt;small&gt; [[Official Whonix Online Profiles|Official Whonix Online Profiles (also Social Media)]]&lt;/small&gt;
 * &lt;small&gt; [[Contact|Contacting Whonix developers, Feedback, Questions]]&lt;/small&gt;
 &lt;/div&gt;
@@ -1865,7 +1866,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>j7k8s2z8sev7sx7m3omlbyskkznwiao</sha1>
+      <sha1>ah67vnnk77s2sprdbm23au45xybbpft</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -2380,14 +2381,15 @@ under certain conditions; see the wiki source code for details.
     <ns>0</ns>
     <id>53</id>
     <revision>
-      <id>6668</id>
-      <parentid>6667</parentid>
-      <timestamp>2014-03-07T16:00:30Z</timestamp>
+      <id>7185</id>
+      <parentid>6668</parentid>
+      <timestamp>2014-03-29T16:23:02Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="8823">&lt;translate&gt;
+      <text xml:space="preserve" bytes="8834">{{Header}}
+&lt;translate&gt;
 {{#seo:
 |description=Privacy protection. Anonymity online. Anonymous Operating System.
 }}
@@ -2570,7 +2572,7 @@ Not compulsory, just nicely asking:
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>smrs47wi8kypyfq0sk52j42ilf6ou37</sha1>
+      <sha1>1fbnswcwjm7o95hzh1gil180y4pgo46</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -12939,15 +12941,15 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>118</id>
     <revision>
-      <id>7056</id>
-      <parentid>7055</parentid>
-      <timestamp>2014-03-25T15:51:11Z</timestamp>
+      <id>7186</id>
+      <parentid>7056</parentid>
+      <timestamp>2014-03-29T19:46:59Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Feedback */</comment>
-      <text xml:space="preserve" bytes="8033">__NOTITLE__
+      <comment>/* KDE Desktop Developer */</comment>
+      <text xml:space="preserve" bytes="8038">__NOTITLE__
 {{#seo:
 |description=Donate, Spread, Follow, Mirror, Translate, Develop, Testing. Contribute to Free Software / Open Source.
 }}
@@ -13082,7 +13084,7 @@ Your task could include, depending on your interest:
 
 === KDE Desktop Developer ===
 
-If you know KDE desktop scripting, for example how to change Desktop view to folder view using a script and would volunteer to answer such questions that would be immensely helpful.
+If you know KDE desktop scripting, for example how to change the Desktop {{Code|folder view}} using a script and would volunteer to answer such questions that would be immensely helpful.
 
 === Audit Documentation Changes ===
 
@@ -13163,7 +13165,7 @@ The PayPal logo (60px-De-pp-logo-200px.png), the subscribe button (subscribeCC_L
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Development]]</text>
-      <sha1>9wao81i654ufot413ldxvwhzeddw6ac</sha1>
+      <sha1>jkuuvr8n6iena9on4442p2ndnmpu5d3</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -55345,15 +55347,15 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
     <ns>0</ns>
     <id>691</id>
     <revision>
-      <id>7085</id>
-      <parentid>7065</parentid>
-      <timestamp>2014-03-27T13:55:59Z</timestamp>
+      <id>7184</id>
+      <parentid>7183</parentid>
+      <timestamp>2014-03-29T15:48:47Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Non-Blockers */</comment>
-      <text xml:space="preserve" bytes="9333">{{Header}}
+      <comment>/* Archived IRC Logs */</comment>
+      <text xml:space="preserve" bytes="14007">{{Header}}
 {{#seo:
 |description=Development Notes for adding KVM support to Whonix.
 }}
@@ -55574,13 +55576,74 @@ whonixcheck (since Whonix 8) would tell you if kvmclock is enabled. whonixcheck 
 = Archived Discussions =
 * [https://www.whonix.org/forum/index.php/topic,202.0/topicseen.html qcow2 with metadata preallocation file sizes]
 
+= Archived IRC Logs =
+&lt;pre&gt;
+* Now talking on #kvm
+* Topic for #kvm is: KVM wiki website is http://www.linux-kvm.org - try status and faq pages, no really, read them! || you can also check the qemu manual at http://wiki.qemu.org/download/qemu-doc.html || don't paste on chan, use http://pastebin.com/ instead || libvirt/virt-manager support is #virt on irc.oftc.net
+* Topic for #kvm set by aliguori at Wed Mar 30 13:38:24 2011
+&lt;bancfc&gt; Hi How do I check if virtio storage is in use or an existing fallback driver for an emulated device?
+&lt;iggy&gt; there's no fallback in kvm like in xen
+&lt;bancfc&gt; so a simple grep should verify if a virtio device is used then - not merely attached I mean?
+&lt;iggy&gt; well... if you really want to check, it's going to be /dev/vdX
+&lt;iggy&gt; and lspci will show virtio block device
+&lt;bancfc&gt; Thanks iggy I have a few more questions that I'd really appreciate your help with
+&lt;iggy&gt; ask away
+&lt;bancfc&gt; I am trying to isolate the vm clock so no changes on the host can affect it. This is currently possible with -rtc clock=vm afaik,
+&lt;bancfc&gt; but it would be much more helpful for my project's purpose if this can be done through something like libvirt
+&lt;bancfc&gt; is this possible with libvirt?
+&lt;iggy&gt; that I don't know
+&lt;bancfc&gt; the appealing part of using libvirt is the xml settings file it creates, but I think something similar can be done with qemu-kvm cfgfiles option
+* iggy hates xml
+&lt;bancfc&gt; But that means all settings would have to be imitated but directly for the qemu-kvm utility which is fine if I can get it to do the same things
+&lt;bancfc&gt; namely the functionality of isoalted internal networking between two vms
+&lt;bancfc&gt; is that possible with qemu-kvm directly?
+&lt;iggy&gt; libvirt has an option to pass options directly to qemu-kvm
+&lt;bancfc&gt; please tell me how this is done :-)
+&lt;bancfc&gt; or where I can know this.
+&lt;bancfc&gt; ok nevermind, I just want to know if this means that a setting in the xml file is passed directly to qemu-kvm then?
+&lt;iggy&gt; ... You might try asking in the libvirt channel
+&lt;bancfc&gt; I did but no one seems to reply...
+&lt;iggy&gt; I know it's possible, I don't remember it off the top of my head
+&lt;bancfc&gt; Thank you so far for your replies. I am actually working on a project that uses virtualization to route all of a vm's traffic through a TOR instance running on another network facing gateway vm.
+&lt;bancfc&gt; Its known as Whonix
+&lt;bancfc&gt; Just letting you know that I'd appreciate any help on getting the main issues with porting it to KVM solved
+&lt;bancfc&gt; so we can prepare this for a greater good.
+&lt;bancfc&gt; This is the bugtracker page I am working on resolving: https://www.whonix.org/wiki/Dev/KVM#How_to_get_virtio_running_for_storage.3F
+&lt;bancfc&gt; iggy do you mind if I post the contents of this thread on our forum?
+&lt;iggy&gt; no...
+&lt;/pre&gt;
+
+&lt;pre&gt;
+&lt;ancfc&gt; Is there any security drawbacks from using a raw image file?
+&lt;iggy&gt; bancfc: security drawbacks? like what?
+&lt;bancfc&gt; iggy: are its contents directly interpreted by the host or is that when lvm is used only?
+&lt;iggy&gt; I'm not sure what you mean by &quot;contents directly interpreted&quot;, but raw devices/files just means there's a 1:1 correlation between guest request and host request
+&lt;bancfc&gt; like a virus or advanced persistent threat running in the vm
+&lt;iggy&gt; the host doesn't &quot;interpret&quot; what it's reading/writing... it just becomes a read/write in the host
+&lt;bancfc&gt; ok good just checking. iAnother question is raw snapshotting possible albeit not directly?
+&lt;bancfc&gt; I saw something about a differencing image applied in qcow format, yes?
+&lt;iggy&gt; only if there's something underlying the files that supports it (btrfs, lvm, zfs, etc)
+&lt;bancfc&gt; so not at the &quot;block&quot; level I guess?
+&lt;bancfc&gt; iggy: just a question or two about storage if thats ok, becuase we are trying to see which can give maximum performance
+&lt;iggy&gt; lvm &gt; raw files &gt; qcow2 &gt; everything else
+&lt;bancfc&gt; Is qcow2 the standard? Is qed recommended instead? When is the qcow&quot;3&quot; changes included into the present format?
+&lt;bancfc&gt; didn't mean to send this as you had already responded
+&lt;bancfc&gt; but anyhow qed seems to have been designed as a speedier replacement for qcow2. But qcow2 were adding changes to become more competitive again
+&lt;bancfc&gt; I wanted to know what you think about this and thats all. thanks
+&lt;iggy&gt; bancfc: qed is deprecated (as all of it's performance improvements that actually ended up helping were backported to qcow2)
+&lt;iggy&gt; the features are handled by feature flags in the qcow2 format, so there's technically no need for a &quot;qcow3&quot; format
+&lt;iggy&gt; as long as you don't use the features that qed didn't support (i.e. snapshots, etc.), qcow2 should be as fast
+&lt;bancfc&gt; iggy: thanks alot for your help
+&lt;iggy&gt; np
+&lt;/pre&gt;
+
 = Footnotes =
 &lt;references /&gt;
 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>6380cha24118zw9u533erlh36fy6mpc</sha1>
+      <sha1>5ln0gxfho991jf7yjwqk1y62y7hmo2i</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -70092,6 +70155,38 @@ testdeutsch
 
 {{Footer}}</text>
       <sha1>172lnq121m9mbu0cp8ejgd37b1b3r28</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Why Whonix is Free Software</title>
+    <ns>0</ns>
+    <id>1184</id>
+    <revision>
+      <id>7189</id>
+      <parentid>7188</parentid>
+      <timestamp>2014-03-29T20:29:00Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <text xml:space="preserve" bytes="1282">__NOTITLE__
+{{Header}}
+
+= Why Whonix will always be free in price as well as Free as in freedom? =
+
+* &lt;u&gt;Security Reasons&lt;/u&gt;: We believe that robust concepts, mature code and public scrutiny, i.e. [https://en.wikipedia.org/wiki/Secure_by_design security by design] has proven to be more secure than [https://en.wikipedia.org/wiki/Security_through_obscurity security through obscurity].
+* &lt;u&gt;Legal Reasons&lt;/u&gt;: Whonix is based on Free Software. For many components it is forbidden by law to make them non-free. &lt;ref&gt;Because their licenses don't grant the right to modify and sell them while not sharing modified source code.&lt;/ref&gt;
+* &lt;u&gt;Ethical Reasons&lt;/u&gt;: We believe it would be immoral to take something that is Free, make money out of it and give back nothing in return.
+* &lt;u&gt;Intellectual Challenge&lt;/u&gt;: It is fun having multiple people coordinate and contributing the project. This works best in Free Software / Open Source projects.
+* &lt;u&gt;Marketing Reasons&lt;/u&gt;: When it is free in price, it can spread faster than commercial tools. We hope make a living on what is fun (working on Whonix) by selling additional services ([[Support#Professional_Support|professional support]]) and [[Donate|donations]] some day.
+
+= Footnotes =
+&lt;references /&gt;
+
+[[Category:Documentation]]{{Footer}}</text>
+      <sha1>ehg4ntpb2j27gs8o4rpk3cwh31bgvz2</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
