@@ -1532,14 +1532,14 @@ See also [[Security_in_Real_World | Whonix security in real world]], [[Security_
     <ns>0</ns>
     <id>24</id>
     <revision>
-      <id>7187</id>
-      <parentid>7076</parentid>
-      <timestamp>2014-03-29T20:18:24Z</timestamp>
+      <id>7214</id>
+      <parentid>7187</parentid>
+      <timestamp>2014-03-30T20:58:41Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="18615">&lt;!--
+      <text xml:space="preserve" bytes="18716">&lt;!--
 Copyright:
 
    Whonix Documentation wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -1604,6 +1604,7 @@ Anonymity is a complex problem without an easy solution, and security is only as
 * &lt;small&gt; [[Fingerprint|Fingerprint]]&lt;/small&gt;
 * &lt;small&gt; [https://github.com/Whonix/Whonix/blob/master/COPYING License]&lt;/small&gt;
 * &lt;small&gt; [[Download#Known_bugs|Known bugs]]&lt;/small&gt;
+* &lt;small&gt; [[Why_Whonix_is_Free_Software|Why Whonix is free in price as well is in freedom?]]&lt;/small&gt;
 &lt;/div&gt;
 
 
@@ -1866,7 +1867,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>ah67vnnk77s2sprdbm23au45xybbpft</sha1>
+      <sha1>l8q0x8bw75jspcjwi76rq2ld6msfm00</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -3253,14 +3254,14 @@ Without performing these basics steps, the setup may sound clever, but may not w
     <ns>0</ns>
     <id>58</id>
     <revision>
-      <id>6294</id>
-      <parentid>6293</parentid>
-      <timestamp>2014-03-04T23:41:00Z</timestamp>
+      <id>7201</id>
+      <parentid>6294</parentid>
+      <timestamp>2014-03-30T18:19:07Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="2236">{{#seo:
+      <text xml:space="preserve" bytes="2272">{{#seo:
 |description=Contact Whonix developers and whonix.org webmaster. Press contact.
 }}
 {{Header}}
@@ -3282,7 +3283,7 @@ See [[Support]].
 Contact Whonix Developer Patrick Schleizer.
 
 * '''e-mail''': ''[mailto:adrelanos@riseup.net adrelanos@riseup.net]''
-* gpg: &lt;html&gt;&lt;a class=&quot;link-https&quot; href=&quot;/patrick.asc&quot;&gt;patrick.asc&lt;/a&gt;&lt;/html&gt; &lt;br /&gt;
+* gpg: &lt;html&gt;&lt;a class=&quot;link-https&quot; download href=&quot;/patrick.asc&quot;&gt;patrick.asc&lt;/a&gt;&lt;/html&gt; &lt;br /&gt;
 &lt;br /&gt;
 I would appreciate if you could send me your draft before publishing articles about Whonix. This is not a request. It's an offer. I would proofread it, state where I think something is incorrect and add sources to my claims. I dislike to pressure press. You are free to write what you want. I feel free to post my standpoint in public if I feel otherwise about something.
 
@@ -3291,19 +3292,19 @@ See '''[[Donate]]''' page. &lt;br /&gt;&lt;br /&gt;
 Contact Whonix Developer Patrick Schleizer.
 
 * '''e-mail''': ''[mailto:adrelanos@riseup.net adrelanos@riseup.net]''
-* gpg: &lt;html&gt;&lt;a class=&quot;link-https&quot; href=&quot;/patrick.asc&quot;&gt;patrick.asc&lt;/a&gt;&lt;/html&gt; &lt;br /&gt;
+* gpg: &lt;html&gt;&lt;a class=&quot;link-https&quot; download href=&quot;/patrick.asc&quot;&gt;patrick.asc&lt;/a&gt;&lt;/html&gt; &lt;br /&gt;
 
 == For Private Inquiries ==
 Contact Whonix Developer Patrick Schleizer.
 
 * '''e-mail''': ''[mailto:adrelanos@riseup.net adrelanos@riseup.net]''
-* gpg: &lt;html&gt;&lt;a class=&quot;link-https&quot; href=&quot;/patrick.asc&quot;&gt;patrick.asc&lt;/a&gt;&lt;/html&gt; &lt;br /&gt;
+* gpg: &lt;html&gt;&lt;a class=&quot;link-https&quot; download href=&quot;/patrick.asc&quot;&gt;patrick.asc&lt;/a&gt;&lt;/html&gt; &lt;br /&gt;
 
 == For website issues ==
 Requests for permissions, bug reports, or other website related communications:
 
 * '''e-mail:''' ''fortasse at riseup dot net''
-* gpg: &lt;html&gt;&lt;a class=&quot;link-https&quot; href=&quot;/fortasse.asc&quot;&gt;fortasse.asc&lt;/a&gt;&lt;/html&gt; &lt;br /&gt;
+* gpg: &lt;html&gt;&lt;a class=&quot;link-https&quot; download href=&quot;/fortasse.asc&quot;&gt;fortasse.asc&lt;/a&gt;&lt;/html&gt; &lt;br /&gt;
 
 == Social Media ==
 There are some [[Official Whonix Online Profiles | Whonix Social Media Profiles]], but please don't rely on them for getting Whonix News and please don't use them to contact Whonix developers.
@@ -3311,7 +3312,7 @@ There are some [[Official Whonix Online Profiles | Whonix Social Media Profiles]
 If you don't get into trouble, by letting others to know, that you like or use Whonix, feel free to follow or like those profiles (with your anonymous account) as a little way to [[Contribute]].
 
 [[Category:Documentation]]</text>
-      <sha1>ayrtne00r85an59vtagvmpq104rl9zo</sha1>
+      <sha1>non6ng6v9olo62ovonb4mkfsocnjbgq</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -17768,15 +17769,15 @@ Essentially this feature allows to directly use physical PCI devices on the host
     <ns>0</ns>
     <id>148</id>
     <revision>
-      <id>6187</id>
-      <parentid>6102</parentid>
-      <timestamp>2014-03-01T23:10:16Z</timestamp>
+      <id>7204</id>
+      <parentid>7203</parentid>
+      <timestamp>2014-03-30T18:22:23Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
       <comment>/* Download the key */</comment>
-      <text xml:space="preserve" bytes="4219">&lt;!--
+      <text xml:space="preserve" bytes="4201">&lt;!--
 Copyright:
 
    Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -17818,7 +17819,7 @@ Since all Whonix releases are signed with the same key, you will not have to ver
 This page is strongly related to the [[Trust]] page.
 
 = Download the key =
-1. Copy and paste Patrick Schleizer's (adrelanos') OpenPGP key. &lt;html&gt;&lt;a class=&quot;link-https&quot; href=&quot;/patrick.asc&quot;&gt;patrick.asc&lt;/a&gt;&lt;/html&gt; (Right click &amp; Save)
+1. Download Patrick Schleizer's (adrelanos') OpenPGP key. &lt;html&gt;&lt;a class=&quot;link-https&quot; download href=&quot;/patrick.asc&quot;&gt;patrick.asc&lt;/a&gt;&lt;/html&gt;
 
 2. Store it as patrick.asc.
 
@@ -17880,7 +17881,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>05moxzsi4gl7a9sfqftlbdkcryxkkxj</sha1>
+      <sha1>dbarsqm1r27y68iv23mxfbzyss85uyb</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -36462,14 +36463,14 @@ Whonix-Example-Implementation:
     <ns>0</ns>
     <id>299</id>
     <revision>
-      <id>6719</id>
-      <parentid>6441</parentid>
-      <timestamp>2014-03-08T15:52:44Z</timestamp>
+      <id>7207</id>
+      <parentid>7206</parentid>
+      <timestamp>2014-03-30T18:27:15Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="59226">{{Header}}
+      <text xml:space="preserve" bytes="61308">{{Header}}
 {{#seo:
 |description=Outdated, Deprecated, Archived Whonix Documentation.
 }}
@@ -37713,13 +37714,37 @@ qemu-img convert -p -O qcow2 ~/whonix.vdi ~/whonix.qcow2
 = System Requirements =
 *** Lucid has been reported, not to work. Since it's only supported until 2013-04 it won't be fixed.
 
+= Mirror =
+&lt;pre&gt;
+&lt;!--T:10--&gt;
+| {{GrayBackground}}| [[File:SSL_Symbol.png|40px]] {{Anchor|Whonix_signature}}
+| &lt;html&gt;&lt;a href=&quot;https://jhcloos.com/whonix/Whonix-&lt;/html&gt;{{VersionNew}}&lt;html&gt;/Whonix-Gateway-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
+| &lt;html&gt;&lt;a href=&quot;https://jhcloos.com/whonix/Whonix-&lt;/html&gt;{{VersionNew}}&lt;html&gt;/Whonix-Workstation-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
+|{{Yes}} &lt;ref name=anonymousdownload /&gt;
+| style=&quot;background-color: {{Red}}&quot;| Low &lt;ref&gt;[[Warning#Man-in-the-middle_attacks|Man-in-the-middle attacks]] could poison the download.&lt;/ref&gt;
+| style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification&gt;It does not matter if you did the bulk download over an insecure channel, if you use OpenPGP verification at the end.&lt;/ref&gt;
+|- style=&quot;height: 47px&quot;
+&lt;/pre&gt;
+
+= Magnet Link =
+&lt;pre&gt;
+&lt;!--T:14--&gt;
+| {{GrayBackground}}| [[File:Magnet_icon.svg.png|20px]] &lt;ref&gt;Magnet link clients known to work: gtk-gnutella. Check this [https://en.wikipedia.org/wiki/Magnet_URI_scheme#Clients_table clients table]. If nobody is [http://wiki.answers.com/Q/What_are_seeders_and_leechers seeding] at the time, only clients with the [https://en.wikipedia.org/wiki/Magnet_URI_scheme#Normal_.28as.29 &quot;as&quot;] feature can be used, because we are providing a [https://en.wikipedia.org/wiki/BitTorrent#Web_seeding webseed].&lt;/ref&gt;
+| &lt;html&gt;&lt;a href=&quot;magnet:?xt=urn:btih:b8969f87015c994f2c4dd93b3ed7c62861c27477&amp;dn=Whonix-Gateway-8.ova&amp;tr=http%3A%2F%2Fannounce.torrentsmd.com%3A6969%2Fannounce&amp;as=http%3A%2F%2Fwebseed.whonix.org%3A8008%2FWhonix-Gateway-8.ova&quot;&gt;Magnet Link&lt;/a&gt;&lt;/html&gt;
+| &lt;html&gt;&lt;a href=&quot;magnet:?xt=urn:btih:7a6a5294ebebef5e5edcb05aa2caf66ebaeaf300&amp;dn=Whonix-Workstation-8.ova&amp;tr=http%3A%2F%2Fannounce.torrentsmd.com%3A6969%2Fannounce&amp;as=http%3A%2F%2Fwebseed.whonix.org%3A8008%2FWhonix-Workstation-8.ova&quot;&gt;Magnet Link&lt;/a&gt;&lt;/html&gt;
+|{{No}}
+| style=&quot;background-color: {{Yellow}}&quot;| Medium &lt;ref name=atleastssl /&gt;
+| style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification /&gt;
+|- style=&quot;height: 47px&quot;
+&lt;/pre&gt;
+
 = Footnotes =
 &lt;references /&gt;
 
 {{Footer}}
 
 [[Category:Deprecated]]</text>
-      <sha1>cf594ugd0e1oxqm0wt85gk2df9p2fb9</sha1>
+      <sha1>oqm5qh98bymuv1y4wpf0foht42mwxhh</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -44497,21 +44522,24 @@ Do not remove {{Code2|...-postinst}} packages.
     <ns>0</ns>
     <id>475</id>
     <revision>
-      <id>7029</id>
-      <parentid>6134</parentid>
-      <timestamp>2014-03-24T02:43:37Z</timestamp>
+      <id>7200</id>
+      <parentid>7199</parentid>
+      <timestamp>2014-03-30T18:18:34Z</timestamp>
       <contributor>
-        <username>JasonJAyalaP</username>
-        <id>9</id>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
       <comment>/* Professional Support */</comment>
-      <text xml:space="preserve" bytes="3056">{{#seo:
+      <text xml:space="preserve" bytes="3300">{{#seo:
 |description=Various Ways to get Help with Whonix. Free and Professional Support available.
 }}
 {{Header}}
 
 = Professional Support =
-Coming Soon!
+Contact Whonix Developer [mailto:adrelanos@riseup.net Patrick Schleizer] for price quote.
+
+* '''e-mail''': ''[mailto:adrelanos@riseup.net adrelanos@riseup.net]''
+* gpg: &lt;html&gt;&lt;a class=&quot;link-https&quot; download  href=&quot;/patrick.asc&quot;&gt;patrick.asc&lt;/a&gt;&lt;/html&gt; &lt;br /&gt;
 
 = Free Support =
 * When the Tor Browser download script is failing, use the [https://www.whonix.org/forum/ Whonix User Forum]. Since many users are affected when it breaks, there is probably already an existing topic.
@@ -44559,7 +44587,7 @@ Be careful with the advice you are getting in public places. Get a second opinio
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>4txpty58inwxt5ixyjitl1mzj7kuk3p</sha1>
+      <sha1>0r3t7t0tdp2s0ocxmitxrnyo7sj282u</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -56579,15 +56607,15 @@ Quelle: &lt;html&gt;&lt;a href=&quot;http://www.juraforum.de/impressum-generator
     <ns>0</ns>
     <id>698</id>
     <revision>
-      <id>6894</id>
-      <parentid>6885</parentid>
-      <timestamp>2014-03-13T15:39:35Z</timestamp>
+      <id>7215</id>
+      <parentid>7212</parentid>
+      <timestamp>2014-03-30T21:28:05Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
       <comment>/* Geltungsbereich */</comment>
-      <text xml:space="preserve" bytes="3988">&lt;!--
+      <text xml:space="preserve" bytes="4130">&lt;!--
 NOTE TO WIKI EDITORS:
 Do not add the default footer!
 Do not edit without asking Patrick Schleizer beforehand!
@@ -56655,6 +56683,9 @@ Dieses Impressum gilt auch für:
 ** https://github.com/adrelanos/popcon-benchmark
 ** https://github.com/adrelanos/torbirdy
 ** https://github.com/Whonix/whonix-tor-config
+** https://github.com/Whonix/control-port-filter
+** https://github.com/adrelanos/control-port-filter
+** https://github.com/adrelanos/wiki-seo
 
 Bitte beachten Sie, dass dieses Impressum gilt nicht für:
 
@@ -56669,7 +56700,7 @@ Die Datenschutzerklärung finden Sie [[Datenschutz|hier]].
 Den Haftungsausschluss (Disclaimer) finden Sie [[Disclaimer|hier]].
 
 [[Category:Documentation]]</text>
-      <sha1>h4zxa2f18iwrftqhvve32yyxmu6dcg2</sha1>
+      <sha1>83bv0j23uhjczx1rfpg7xr02696g22g</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -62250,14 +62281,14 @@ Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/A
     <ns>10</ns>
     <id>894</id>
     <revision>
-      <id>7086</id>
-      <parentid>7081</parentid>
-      <timestamp>2014-03-27T14:23:30Z</timestamp>
+      <id>7208</id>
+      <parentid>7202</parentid>
+      <timestamp>2014-03-30T18:27:32Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="6841">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
+      <text xml:space="preserve" bytes="4830">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
 &lt;!--T:7--&gt;
 &lt;big&gt;Version: &lt;span style=&quot;color: green&quot;&gt;{{VersionNew}}&lt;/span&gt;&lt;/big&gt;
 
@@ -62284,19 +62315,10 @@ Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/A
 | style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification&gt;It does not matter if you did the bulk download over an insecure channel, if you use OpenPGP verification at the end.&lt;/ref&gt;
 |- style=&quot;height: 47px&quot;
 
-&lt;!--T:10--&gt;
-| {{GrayBackground}}| [[File:SSL_Symbol.png|40px]] {{Anchor|Whonix_signature}}
-| &lt;html&gt;&lt;a href=&quot;https://jhcloos.com/whonix/Whonix-&lt;/html&gt;{{VersionNew}}&lt;html&gt;/Whonix-Gateway-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
-| &lt;html&gt;&lt;a href=&quot;https://jhcloos.com/whonix/Whonix-&lt;/html&gt;{{VersionNew}}&lt;html&gt;/Whonix-Workstation-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
-|{{Yes}} &lt;ref name=anonymousdownload /&gt;
-| style=&quot;background-color: {{Red}}&quot;| Low &lt;ref&gt;[[Warning#Man-in-the-middle_attacks|Man-in-the-middle attacks]] could poison the download.&lt;/ref&gt;
-| style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification&gt;It does not matter if you did the bulk download over an insecure channel, if you use OpenPGP verification at the end.&lt;/ref&gt;
-|- style=&quot;height: 47px&quot;
-
 &lt;!--T:11--&gt;
 | {{GrayBackground}}| [[File:Button_sig.png|25px]]
-| white-space: nowrap;&quot;|&lt;html&gt;&lt;a href=&quot;/download/&lt;/html&gt;{{VersionNew}}&lt;html&gt;-sig/Whonix-Gateway-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova.asc&quot;&gt;OpenPGP Signature&lt;/a&gt;&lt;/html&gt;
-| white-space: nowrap;&quot;|&lt;html&gt;&lt;a href=&quot;/download/&lt;/html&gt;{{VersionNew}}&lt;html&gt;-sig/Whonix-Workstation-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova.asc&quot;&gt;OpenPGP Signature&lt;/a&gt;&lt;/html&gt;
+| white-space: nowrap;&quot;|&lt;html&gt;&lt;a download href=&quot;/download/&lt;/html&gt;{{VersionNew}}&lt;html&gt;-sig/Whonix-Gateway-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova.asc&quot;&gt;OpenPGP Signature&lt;/a&gt;&lt;/html&gt;
+| white-space: nowrap;&quot;|&lt;html&gt;&lt;a download href=&quot;/download/&lt;/html&gt;{{VersionNew}}&lt;html&gt;-sig/Whonix-Workstation-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova.asc&quot;&gt;OpenPGP Signature&lt;/a&gt;&lt;/html&gt;
 |{{Yes}} &lt;ref name=anonymousdownload /&gt;
 | -
 | -
@@ -62319,15 +62341,6 @@ Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/A
 | style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification /&gt;
 |- style=&quot;height: 47px&quot;
 
-&lt;!--T:14--&gt;
-| {{GrayBackground}}| [[File:Magnet_icon.svg.png|20px]] &lt;ref&gt;Magnet link clients known to work: gtk-gnutella. Check this [https://en.wikipedia.org/wiki/Magnet_URI_scheme#Clients_table clients table]. If nobody is [http://wiki.answers.com/Q/What_are_seeders_and_leechers seeding] at the time, only clients with the [https://en.wikipedia.org/wiki/Magnet_URI_scheme#Normal_.28as.29 &quot;as&quot;] feature can be used, because we are providing a [https://en.wikipedia.org/wiki/BitTorrent#Web_seeding webseed].&lt;/ref&gt;
-| &lt;html&gt;&lt;a href=&quot;magnet:?xt=urn:btih:b8969f87015c994f2c4dd93b3ed7c62861c27477&amp;dn=Whonix-Gateway-8.ova&amp;tr=http%3A%2F%2Fannounce.torrentsmd.com%3A6969%2Fannounce&amp;as=http%3A%2F%2Fwebseed.whonix.org%3A8008%2FWhonix-Gateway-8.ova&quot;&gt;Magnet Link&lt;/a&gt;&lt;/html&gt;
-| &lt;html&gt;&lt;a href=&quot;magnet:?xt=urn:btih:7a6a5294ebebef5e5edcb05aa2caf66ebaeaf300&amp;dn=Whonix-Workstation-8.ova&amp;tr=http%3A%2F%2Fannounce.torrentsmd.com%3A6969%2Fannounce&amp;as=http%3A%2F%2Fwebseed.whonix.org%3A8008%2FWhonix-Workstation-8.ova&quot;&gt;Magnet Link&lt;/a&gt;&lt;/html&gt;
-|{{No}}
-| style=&quot;background-color: {{Yellow}}&quot;| Medium &lt;ref name=atleastssl /&gt;
-| style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification /&gt;
-|- style=&quot;height: 47px&quot;
-
 &lt;!--T:16--&gt;
 | {{GrayBackground}}| [[File:template_source.png|25px]]
 | colspan=&quot;2&quot;|[[Dev/Build Documentation|Build from source code]]
@@ -62337,7 +62350,7 @@ Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/A
 |}
 &lt;noinclude&gt;&lt;references /&gt;
 {{Footer}}&lt;/noinclude&gt;</text>
-      <sha1>mdfvz4nypikfo3jjm9yv8078yruxyao</sha1>
+      <sha1>s5hacdaznckj9h387s7ifl28ill43et</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -62347,15 +62360,15 @@ Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/A
     <ns>10</ns>
     <id>895</id>
     <revision>
-      <id>5681</id>
-      <timestamp>2014-02-26T13:36:53Z</timestamp>
+      <id>7205</id>
+      <parentid>7198</parentid>
+      <timestamp>2014-03-30T18:22:58Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>Created page with &quot;8&quot;</comment>
-      <text xml:space="preserve" bytes="1">8</text>
-      <sha1>tpnsk00419wba6vjh1upif21qtst1cv</sha1>
+      <text xml:space="preserve" bytes="3">8.1</text>
+      <sha1>5najwdehcqf99c6oy3q3o3szl5mse5x</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -67020,13 +67033,14 @@ Go to http://127.0.0.1/wiki/index.php/Main_Page.
     <ns>0</ns>
     <id>1110</id>
     <revision>
-      <id>7037</id>
-      <parentid>6847</parentid>
-      <timestamp>2014-03-24T21:34:45Z</timestamp>
+      <id>7213</id>
+      <parentid>7210</parentid>
+      <timestamp>2014-03-30T20:44:22Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Troubadour</username>
+        <id>230</id>
       </contributor>
-      <text xml:space="preserve" bytes="4134">{{Header}}
+      <text xml:space="preserve" bytes="4138">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
@@ -67043,7 +67057,7 @@ kdesudo kwrite /etc/apparmor.d/home.user.tor-browser_en-US.Browser.firefox
 Paste the following content.
 
 &lt;pre&gt;
-# Last modified: Mon Mar 24 21:32:46 UTC 2014
+# Last modified: Sun Mar 30 19:46:33 UTC 2014
 #include &lt;tunables/global&gt;
 
 /home/user/tor-browser_en-US/Browser/firefox {
@@ -67158,8 +67172,9 @@ Paste the following content.
 	
 	/usr/lib/i386-linux-gnu/** mr,
 	
+	/usr/share/libthai/thbrk.tri r,
+	
 	/var/lib/dbus/machine-id r,
-#	/var/lib/whonix/whonixblog/ r,
 	/var/cache/fontconfig/ rwk,
 }
 &lt;/pre&gt;
@@ -67172,9 +67187,8 @@ kdesudo kwrite /etc/apparmor.d/local/home.user.tor-browser_en-US.Browser.firefox
 
 Paste the following content.
 &lt;pre&gt;
-# In &lt;abstractions/gnome&gt;
-# /etc/gnome-vfs-2.0/modules/ r,
-# /etc/gnome-vfs-2.0/modules/* r,
+@{HOME}/tor-browser_en-US/.gnome2/accels/ rwk,
+@{HOME}/tor-browser_en-US/.gnome2/accels/* rwk,
 
 /usr/share/fontconfig/conf.avail/* r,
 /usr/share/poppler/cMap/ r,
@@ -67191,7 +67205,7 @@ sudo aa-enforce /etc/apparmor.d/home.user.tor-browser_en-US.Browser.firefox
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>4t2ah3z8csj9xtaj7spnaqloasz98a0</sha1>
+      <sha1>dj8a7kw2mv60ysafg2e6wwjgvattrbp</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -69680,13 +69694,14 @@ Answers:
     <ns>0</ns>
     <id>1171</id>
     <revision>
-      <id>7036</id>
-      <timestamp>2014-03-24T21:24:50Z</timestamp>
+      <id>7209</id>
+      <parentid>7036</parentid>
+      <timestamp>2014-03-30T19:36:11Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Troubadour</username>
+        <id>230</id>
       </contributor>
-      <comment>Created page with &quot;{{Header}} {{#seo: |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon. }} __FORCETOC__ Create a file /etc/apparmor.d/abstra...&quot;</comment>
-      <text xml:space="preserve" bytes="656">{{Header}}
+      <text xml:space="preserve" bytes="655">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
@@ -69715,13 +69730,13 @@ Paste the following content.
 /usr/lib/whonix/uwtwrapper rix,
 /var/lib/whonix/whonixblog/ r,
 
-/usr/share/whonix/kde/share/config/kdeglobals rw,
+/usr/share/whonix/kde/share/config/kdeglobals r,
 &lt;/pre&gt;
 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>d3a1wbunnwb1dio5koowfo78itbrso1</sha1>
+      <sha1>0t96xeodq01gkolheabu9r0sy8rheiz</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -69919,14 +69934,14 @@ Many thanks to Tails team for their discussion on the topic of password managers
     <ns>0</ns>
     <id>1174</id>
     <revision>
-      <id>7074</id>
-      <timestamp>2014-03-26T21:27:54Z</timestamp>
+      <id>7211</id>
+      <parentid>7074</parentid>
+      <timestamp>2014-03-30T19:54:41Z</timestamp>
       <contributor>
         <username>Troubadour</username>
         <id>230</id>
       </contributor>
-      <comment>Created page with &quot;{{Header}} {{#seo: |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon. }} __FORCETOC__ {{AppArmorProfileWarning}}   Create ...&quot;</comment>
-      <text xml:space="preserve" bytes="1749">{{Header}}
+      <text xml:space="preserve" bytes="1787">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
@@ -69943,7 +69958,7 @@ kdesudo kwrite /etc/apparmor.d/usr.bin.xchat
 Paste the following content.
 
 &lt;pre&gt;
-# Last modified: Wed Mar 26 21:13:38 UTC 2014
+# Last modified: Sun Mar 30 19:53:06 UTC 2014
 #include &lt;tunables/global&gt;
 
 /usr/bin/xchat {
@@ -69957,8 +69972,7 @@ Paste the following content.
 	
 	deny @{PROC}/** r,
 	
-	
-	@{HOME}/ r,
+		@{HOME}/ r,
 	@{HOME}/.config/** rwk,
 	@{HOME}/.xchat2/ r,
 	@{HOME}/.xchat2/** rwixk,
@@ -69997,6 +70011,7 @@ Paste the following content.
 	/usr/share/ca-certificates/spi-inc.org/spi-cacert-2008.crt r,
 	/usr/share/xfce4/helpers/* r,
 	/usr/share/zenity/* r,
+	/usr/share/fontconfig/conf.avail/* r,
 }
 &lt;/pre&gt;
 
@@ -70010,7 +70025,7 @@ sudo aa-enforce /etc/apparmor.d/usr.bin.xchat
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>otukvwuqpr5slny0nxwgcrt75o20hmv</sha1>
+      <sha1>ow1cn009av1et0okj03gagozx17yp9h</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
