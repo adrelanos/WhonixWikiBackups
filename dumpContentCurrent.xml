@@ -40,9 +40,9 @@
     <ns>0</ns>
     <id>1</id>
     <revision>
-      <id>7159</id>
-      <parentid>7141</parentid>
-      <timestamp>2014-03-28T16:56:56Z</timestamp>
+      <id>7192</id>
+      <parentid>7191</parentid>
+      <timestamp>2014-03-30T09:32:18Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
@@ -70164,29 +70164,52 @@ testdeutsch
     <ns>0</ns>
     <id>1184</id>
     <revision>
-      <id>7189</id>
-      <parentid>7188</parentid>
-      <timestamp>2014-03-29T20:29:00Z</timestamp>
+      <id>7196</id>
+      <parentid>7195</parentid>
+      <timestamp>2014-03-30T09:39:09Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="1282">__NOTITLE__
+      <comment>/* Why Whonix will always be free in price as well as Free as in freedom? */</comment>
+      <text xml:space="preserve" bytes="1518">__NOTITLE__
 {{Header}}
 
 = Why Whonix will always be free in price as well as Free as in freedom? =
 
 * &lt;u&gt;Security Reasons&lt;/u&gt;: We believe that robust concepts, mature code and public scrutiny, i.e. [https://en.wikipedia.org/wiki/Secure_by_design security by design] has proven to be more secure than [https://en.wikipedia.org/wiki/Security_through_obscurity security through obscurity].
 * &lt;u&gt;Legal Reasons&lt;/u&gt;: Whonix is based on Free Software. For many components it is forbidden by law to make them non-free. &lt;ref&gt;Because their licenses don't grant the right to modify and sell them while not sharing modified source code.&lt;/ref&gt;
-* &lt;u&gt;Ethical Reasons&lt;/u&gt;: We believe it would be immoral to take something that is Free, make money out of it and give back nothing in return.
-* &lt;u&gt;Intellectual Challenge&lt;/u&gt;: It is fun having multiple people coordinate and contributing the project. This works best in Free Software / Open Source projects.
-* &lt;u&gt;Marketing Reasons&lt;/u&gt;: When it is free in price, it can spread faster than commercial tools. We hope make a living on what is fun (working on Whonix) by selling additional services ([[Support#Professional_Support|professional support]]) and [[Donate|donations]] some day.
+* &lt;u&gt;Ethical Reasons&lt;/u&gt;: We believe it would be immoral to take something that is Free&lt;ref&gt;Such as Debian, Tor, etc.&lt;/ref&gt;, make money out of it and give back nothing in return.
+* &lt;u&gt;Intellectual Challenge&lt;/u&gt;: It is fun having multiple people coordinate and [[Contribute|contributing]] the project. This works best in Free Software / Open Source projects.
+* &lt;u&gt;Marketing Reasons&lt;/u&gt;: When it is free in price, it can spread faster than commercial tools.
+* &lt;u&gt;Commercial Reasons&lt;/u&gt;: We hope make a living on what is fun (working on Whonix) by selling additional services ([[Support#Professional_Support|professional support]]) and [[Donate|donations]] some day.
+* &lt;u&gt;Professional Reasons&lt;/u&gt;: Having volunteered on a Free Software / Open Source project always looks good in a CV or application.
 
 = Footnotes =
+&lt;font size=-3&gt;
 &lt;references /&gt;
+&lt;/font&gt;
 
 [[Category:Documentation]]{{Footer}}</text>
-      <sha1>ehg4ntpb2j27gs8o4rpk3cwh31bgvz2</sha1>
+      <sha1>ckiy59jfc1x48ug84tu7ndw2u82qa06</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:R TorBOX-500px.png</title>
+    <ns>6</ns>
+    <id>1185</id>
+    <revision>
+      <id>7190</id>
+      <timestamp>2014-03-30T06:23:33Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
