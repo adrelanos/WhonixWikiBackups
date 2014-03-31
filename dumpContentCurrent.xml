@@ -41809,15 +41809,14 @@ table.wikitable
     <ns>0</ns>
     <id>400</id>
     <revision>
-      <id>6684</id>
-      <parentid>6683</parentid>
-      <timestamp>2014-03-07T23:09:59Z</timestamp>
+      <id>7217</id>
+      <parentid>6684</parentid>
+      <timestamp>2014-03-31T13:17:16Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Ohloh */</comment>
-      <text xml:space="preserve" bytes="9234">{{Header}}
+      <text xml:space="preserve" bytes="10666">{{Header}}
 {{#seo:
 |description=Awards / Certifications / Buttons / Widgets which whonix.org could use.
 }}
@@ -42036,10 +42035,31 @@ if (window.attachEvent) window.attachEvent('onload', async_load); else window.ad
 &lt;a href = 'http://www.seomastering.com/' title='SEO analysis' target='_blank'&gt;&lt;img src='http://www.seomastering.com/btn/wh/on/ix_org/tic-pr-arc-5.png' border='0' width='88' height='31' alt='whonix.org CY/PageRank' title='whonix.org TIC/PR'/&gt;&lt;/a&gt;
 &lt;/html&gt;
 
+= Tweet Embed =
+&lt;html&gt;
+&lt;blockquote class=&quot;twitter-tweet&quot; lang=&quot;en&quot;&gt;&lt;p&gt;Whonix 8.1 Maintenance Release &lt;a href=&quot;https://t.co/4Wu1ww1vVl&quot;&gt;https://t.co/4Wu1ww1vVl&lt;/a&gt; &lt;a href=&quot;http://t.co/JlQVoYF2Hg&quot;&gt;pic.twitter.com/JlQVoYF2Hg&lt;/a&gt;&lt;/p&gt;&amp;mdash; Whonix (@Whonix) &lt;a href=&quot;https://twitter.com/Whonix/statuses/450346361448189952&quot;&gt;March 30, 2014&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+&lt;/html&gt;
+
+= Facebook Embed =
+&lt;html&gt;
+&lt;div id=&quot;fb-root&quot;&gt;&lt;/div&gt; &lt;script&gt;(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = &quot;//connect.facebook.net/de_DE/all.js#xfbml=1&quot;; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));&lt;/script&gt;
+&lt;div class=&quot;fb-post&quot; data-href=&quot;https://www.facebook.com/Whonix/posts/1415539802038758&quot; data-width=&quot;466&quot;&gt;&lt;div class=&quot;fb-xfbml-parse-ignore&quot;&gt;&lt;a href=&quot;https://www.facebook.com/Whonix/posts/1415539802038758&quot;&gt;Beitrag&lt;/a&gt; von &lt;a href=&quot;https://www.facebook.com/Whonix&quot;&gt;Whonix&lt;/a&gt;.&lt;/div&gt;&lt;/div&gt;
+&lt;/html&gt;
+
+= g+ Embeded =
+&lt;html&gt;
+&lt;!-- Place this tag in your head or just before your close body tag. --&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://apis.google.com/js/plusone.js&quot;&gt;&lt;/script&gt;
+
+&lt;!-- Place this tag where you want the widget to render. --&gt;
+&lt;div class=&quot;g-post&quot; data-href=&quot;https://plus.google.com/108150429836421683225/posts/jPEtmfPWqeA&quot;&gt;&lt;/div&gt;
+&lt;/html&gt;
+
 {{Footer}}
 
 [[Category:Development]]</text>
-      <sha1>ig7yp97szc48t9i0a8p5atdhfwfr8bx</sha1>
+      <sha1>ta9ka4ij445nye3tiu32d9asropy407</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -43015,46 +43035,28 @@ The Tor Project never managed to get such a downloader up and running, see {{Cod
     <ns>0</ns>
     <id>437</id>
     <revision>
-      <id>7158</id>
-      <parentid>7157</parentid>
-      <timestamp>2014-03-28T16:08:20Z</timestamp>
+      <id>7222</id>
+      <parentid>7221</parentid>
+      <timestamp>2014-03-31T19:57:10Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="309">{{Header}}
+      <text xml:space="preserve" bytes="284">{{#seo:
+|title=a b c d
+|title_mode=append
+|keywords=one,two,three
+|description=test descr
+|google-site-verification=xyz
+}}
 
-&lt;languages /&gt;
-
-{{CONTENTLANGUAGE}}
-
-{{CONTENTLANG}}
-
-{{#language}}
-
-{{#language:language code}}
-
-{{#language:ar}}
-
-{{#language:language code|target language code}}
-
-{{#language:ar|en}}
-
-{{#languagename:ar}}
-
-DIRECTIONMARK
-
-NAMESPAC
-
-NAMESPACEE
-
-&lt;translate&gt;
-&lt;!--T:5--&gt;
-test
-&lt;/translate&gt;
-
-{{Footer}}</text>
-      <sha1>7dbd168mifx74cfmg5d74vfu1gk9trp</sha1>
+'metakeywords'=&gt;'keywords',
+'metak'=&gt;'keywords',
+'metadescription'=&gt;'description',
+'metad'=&gt;'description',
+'titlemode'=&gt;'title_mode',
+'title mode'=&gt;'title_mode'</text>
+      <sha1>8se2k1lp6z5hwe9fy611pxwnfvjrax6</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -44522,20 +44524,22 @@ Do not remove {{Code2|...-postinst}} packages.
     <ns>0</ns>
     <id>475</id>
     <revision>
-      <id>7200</id>
-      <parentid>7199</parentid>
-      <timestamp>2014-03-30T18:18:34Z</timestamp>
+      <id>7216</id>
+      <parentid>7200</parentid>
+      <timestamp>2014-03-31T12:20:34Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
       <comment>/* Professional Support */</comment>
-      <text xml:space="preserve" bytes="3300">{{#seo:
+      <text xml:space="preserve" bytes="3413">{{#seo:
 |description=Various Ways to get Help with Whonix. Free and Professional Support available.
 }}
 {{Header}}
 
 = Professional Support =
+Consulting / support for anonymity, privacy, security, data security &amp; Whonix &amp; system administration services.
+
 Contact Whonix Developer [mailto:adrelanos@riseup.net Patrick Schleizer] for price quote.
 
 * '''e-mail''': ''[mailto:adrelanos@riseup.net adrelanos@riseup.net]''
@@ -44587,7 +44591,7 @@ Be careful with the advice you are getting in public places. Get a second opinio
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>0r3t7t0tdp2s0ocxmitxrnyo7sj282u</sha1>
+      <sha1>8opf2gz12x87sbcbal1i8ddoofacg5n</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -69551,14 +69555,15 @@ License: Public Domain</text>
     <ns>0</ns>
     <id>1169</id>
     <revision>
-      <id>7043</id>
-      <parentid>7042</parentid>
-      <timestamp>2014-03-25T02:08:14Z</timestamp>
+      <id>7224</id>
+      <parentid>7223</parentid>
+      <timestamp>2014-03-31T20:28:44Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="9516">{{Header}}
+      <comment>/* /etc/tor.d/ */</comment>
+      <text xml:space="preserve" bytes="9542">{{Header}}
 
 = Overview =
 The work outlined here is specifically focused on what could be done in a year with funding, though these goals should be considered as a larger roadmap for Whonix's development in general. This roadmap is focused on three goals: 
@@ -69575,6 +69580,8 @@ Given that Whonix was created by the community and is supported by the community
 Whonix consists of roughly 25.000 lines of code. Mostly all in one git repository. To streamline the development Whonix's source code, it would be better if Whonix was split into multiple packages. That would make it simpler to grasp Whonix's architecture, make it simpler to contribute to Whonix, simpler to audit the critical parts of Whonix and simpler to port Whonix to other targets.
 
 == /etc/tor.d/ ==
+'''[ - ]'''
+
 We should pay The Tor Project (if they are willing) or someone else to implement [https://trac.torproject.org/projects/tor/ticket/1922 torrc.d-style configuration directories] (open for 4 years already). This feature is required for more robust and simplified implementation of features such as easier set up for bridges (just dropping a config snippet rather than programmability editing /etc/tor/torrc) or features such as &quot;sudo apt-get install wordpress-hidden-service&quot;.
 
 = Security =
@@ -69582,6 +69589,8 @@ Whonix's primary goal is security, without it nothing matters.'''
 '''Patrick, can you expand the issues in this section and make them each focused, say 3 main security issues that should be dealt with over the next year'''
 
 == More Secure and Usable Download Mechanism ==
+'''[ - ]'''
+
 To avoid man-in-the-middle capable adversaries exploiting whonix.org visitors or advising them to do malicious things, on whole whonix.org https is enforced. As alternative authentication, Whonix's website is reachable by an .onion address, because those are encrypted end-to-end by default and an alternative to the CA cartel. Due to the nature of Whonix's project, Whonix's downloadable files are big. Neither Whonix nor most other Linux distributions are capable to ship their downloadable files over https. Hence, most files are downloaded for most projects are downloaded from unauthenticated http - an invitation for man-in-the-middle attacks.
 
 To circumvent this, many projects such as Whonix provide cryptographic checksums (sha) and/or OpenPGP signatures. A past usability experiment on our [[Download]] page helped to increase the number of people who do OpenPGP verification from 1 in ~32 to 1 in ~10 used OpenPGP verification. (The full experiment is documented on the [[Dev/Download_Statistics]] page.) Too few users are doing it, even though the requreed steps are documented and the importance is highlighted. Probably due to time constraints and due to usability issues with the popular free OpenPGP implementation gnupg.
@@ -69650,7 +69659,7 @@ There are lots of other Censorship Circumvention Tools other than Tor bridges. W
 * [[Dev/Sponsor/A2]]
 
 {{Footer}}</text>
-      <sha1>s1t2nscds7cahzs1p9glectputigie2</sha1>
+      <sha1>k82m1jr7w9tvzrshw96zmz3mljq4bh9</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
