@@ -69755,14 +69755,17 @@ Paste the following content.
     <ns>0</ns>
     <id>1172</id>
     <revision>
-      <id>7045</id>
-      <timestamp>2014-03-25T04:41:14Z</timestamp>
+      <id>7229</id>
+      <parentid>7045</parentid>
+      <timestamp>2014-04-02T22:40:33Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>Created page with &quot;{{Header}}  '''Are the project’s goals clear? '''  '''Are the projects goals realistically met by the proposed solution?'''  '''Is the proposed solution viable in the real w...&quot;</comment>
-      <text xml:space="preserve" bytes="2754">{{Header}}
+      <text xml:space="preserve" bytes="2793">{{Header}}
+
+TODO:
+cooperation with Qubes OS TorVM
 
 '''Are the project’s goals clear? '''
 
@@ -69817,7 +69820,7 @@ Important
 Yes
 
 {{Footer}}</text>
-      <sha1>8wz9t0zrni230fhieje3ejl1lvvgsme</sha1>
+      <sha1>jpx0jfk2iyb5pplbn63n0bhuwt62z40</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
