@@ -41809,14 +41809,14 @@ table.wikitable
     <ns>0</ns>
     <id>400</id>
     <revision>
-      <id>7217</id>
-      <parentid>6684</parentid>
-      <timestamp>2014-03-31T13:17:16Z</timestamp>
+      <id>7240</id>
+      <parentid>7217</parentid>
+      <timestamp>2014-04-03T21:11:34Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="10666">{{Header}}
+      <text xml:space="preserve" bytes="10777">{{Header}}
 {{#seo:
 |description=Awards / Certifications / Buttons / Widgets which whonix.org could use.
 }}
@@ -42056,10 +42056,15 @@ if (window.attachEvent) window.attachEvent('onload', async_load); else window.ad
 &lt;div class=&quot;g-post&quot; data-href=&quot;https://plus.google.com/108150429836421683225/posts/jPEtmfPWqeA&quot;&gt;&lt;/div&gt;
 &lt;/html&gt;
 
+= mediawiki github plugin =
+&lt;code&gt;
+{{#github:whonix_shared/usr/bin/whonixcheck|Whonix/Whonix|master}}
+&lt;/code&gt;
+
 {{Footer}}
 
 [[Category:Development]]</text>
-      <sha1>ta9ka4ij445nye3tiu32d9asropy407</sha1>
+      <sha1>lhdmony9h3aodlac7zrnbt2sxkp0dio</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -43035,28 +43040,21 @@ The Tor Project never managed to get such a downloader up and running, see {{Cod
     <ns>0</ns>
     <id>437</id>
     <revision>
-      <id>7222</id>
-      <parentid>7221</parentid>
-      <timestamp>2014-03-31T19:57:10Z</timestamp>
+      <id>7243</id>
+      <parentid>7242</parentid>
+      <timestamp>2014-04-03T21:21:54Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="284">{{#seo:
-|title=a b c d
-|title_mode=append
-|keywords=one,two,three
-|description=test descr
-|google-site-verification=xyz
-}}
+      <text xml:space="preserve" bytes="136">{{Header}}
 
-'metakeywords'=&gt;'keywords',
-'metak'=&gt;'keywords',
-'metadescription'=&gt;'description',
-'metad'=&gt;'description',
-'titlemode'=&gt;'title_mode',
-'title mode'=&gt;'title_mode'</text>
-      <sha1>8se2k1lp6z5hwe9fy611pxwnfvjrax6</sha1>
+&lt;code&gt;
+{{#github:home.user.tor-browser_en-US.Browser.firefox|Whonix/apparmor-profile-torbrowser|master}}
+&lt;/code&gt;
+
+{{Footer}}</text>
+      <sha1>97yioge9sqsl4pxotujofn8uxe58v8x</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -56611,15 +56609,14 @@ Quelle: &lt;html&gt;&lt;a href=&quot;http://www.juraforum.de/impressum-generator
     <ns>0</ns>
     <id>698</id>
     <revision>
-      <id>7215</id>
-      <parentid>7212</parentid>
-      <timestamp>2014-03-30T21:28:05Z</timestamp>
+      <id>7230</id>
+      <parentid>7215</parentid>
+      <timestamp>2014-04-03T17:26:23Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Geltungsbereich */</comment>
-      <text xml:space="preserve" bytes="4130">&lt;!--
+      <text xml:space="preserve" bytes="4124">&lt;!--
 NOTE TO WIKI EDITORS:
 Do not add the default footer!
 Do not edit without asking Patrick Schleizer beforehand!
@@ -56655,18 +56652,18 @@ Dieses Impressum gilt auch für:
 * Google+ Patrick Schleizer: https://plus.google.com/112678569435063398972
 * YouTube adrelanos: https://www.youtube.com/user/adrelanos
 * YouTube Patrick Schleizer: http://www.youtube.com/channel/UC4_4e5cN5zhCS13W8v_d4nw
-* wordpress: https://anonymousoperatingsystem.wordpress.com/
-* about.me: http://about.me/Whonix/
-* freecode.com: https://freecode.com/projects/whonix/
+* wordpress: https://anonymousoperatingsystem.wordpress.com
+* about.me: http://about.me/Whonix
+* freecode.com: https://freecode.com/projects/whonix
 * bitcointalk.org: https://bitcointalk.org/index.php?action=profile;u=69869
 * Facebook:
 ** Whonix: https://www.facebook.com/pages/Whonix/622399681135624
 ** Whonix: https://www.facebook.com/Whonix
 ** Patrick Schleizer: https://www.facebook.com/patrick.schleizer
 * sourceforge:
-** https://sourceforge.net/p/whonix/
-** https://sourceforge.net/p/whonixoldarchivedreleases/
-** https://sourceforge.net/p/whonixdevelopermetafiles/
+** https://sourceforge.net/p/whonix
+** https://sourceforge.net/p/whonixoldarchivedreleases
+** https://sourceforge.net/p/whonixdevelopermetafiles
 * github:
 ** https://github.com/Whonix/Whonix
 ** https://github.com/adrelanos/nothing-to-see
@@ -56704,7 +56701,7 @@ Die Datenschutzerklärung finden Sie [[Datenschutz|hier]].
 Den Haftungsausschluss (Disclaimer) finden Sie [[Disclaimer|hier]].
 
 [[Category:Documentation]]</text>
-      <sha1>83bv0j23uhjczx1rfpg7xr02696g22g</sha1>
+      <sha1>llpo0idjy8wq6y8fml647dpmufquozh</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -67037,14 +67034,14 @@ Go to http://127.0.0.1/wiki/index.php/Main_Page.
     <ns>0</ns>
     <id>1110</id>
     <revision>
-      <id>7213</id>
-      <parentid>7210</parentid>
-      <timestamp>2014-03-30T20:44:22Z</timestamp>
+      <id>7233</id>
+      <parentid>7213</parentid>
+      <timestamp>2014-04-03T20:20:11Z</timestamp>
       <contributor>
         <username>Troubadour</username>
         <id>230</id>
       </contributor>
-      <text xml:space="preserve" bytes="4138">{{Header}}
+      <text xml:space="preserve" bytes="4146">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
@@ -67201,7 +67198,7 @@ Paste the following content.
 
 Run
 &lt;pre&gt;
-sudo aa-enforce /etc/apparmor.d/home.user.tor-browser_en-US.Browser.firefox
+sudo apparmor_parser -a /etc/apparmor.d/home.user.tor-browser_en-US.Browser.firefox
 &lt;/pre&gt;
 
 [https://www.whonix.org/forum/index.php?action=profile;u=24 troubadour] created this profile. You can discuss it in this [http://kkkkkkkkkk63ava6.onion/forum/index.php/topic,97.0.html forum thread].
@@ -67209,7 +67206,7 @@ sudo aa-enforce /etc/apparmor.d/home.user.tor-browser_en-US.Browser.firefox
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>dj8a7kw2mv60ysafg2e6wwjgvattrbp</sha1>
+      <sha1>2q20pd08nk6wbzm2mwzidoopz3xv53u</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -67219,14 +67216,14 @@ sudo aa-enforce /etc/apparmor.d/home.user.tor-browser_en-US.Browser.firefox
     <ns>0</ns>
     <id>1114</id>
     <revision>
-      <id>6700</id>
-      <parentid>6688</parentid>
-      <timestamp>2014-03-08T13:34:06Z</timestamp>
+      <id>7232</id>
+      <parentid>6700</parentid>
+      <timestamp>2014-04-03T20:18:46Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <username>Troubadour</username>
+        <id>230</id>
       </contributor>
-      <text xml:space="preserve" bytes="3337">{{Header}}
+      <text xml:space="preserve" bytes="3345">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
@@ -67359,7 +67356,7 @@ Paste the following content.
 Run.
 
 &lt;pre&gt;
-sudo aa-enforce /etc/apparmor.d/usr.bin.VBox
+sudo apparmor_parser -a /etc/apparmor.d/usr.bin.VBox
 &lt;/pre&gt;
 
 [https://www.whonix.org/forum/index.php?action=profile;u=24 troubadour] created this profile. You can discuss it in this [http://kkkkkkkkkk63ava6.onion/forum/index.php/topic,97.0.html forum thread].
@@ -67367,7 +67364,7 @@ sudo aa-enforce /etc/apparmor.d/usr.bin.VBox
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>gi6bc9gwonyokbxoqyh3x1e23roo85f</sha1>
+      <sha1>pt1hhgq66c2nw2km1zp1qsy97ihg45s</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -67377,13 +67374,14 @@ sudo aa-enforce /etc/apparmor.d/usr.bin.VBox
     <ns>0</ns>
     <id>1115</id>
     <revision>
-      <id>7040</id>
-      <parentid>6846</parentid>
-      <timestamp>2014-03-24T21:59:38Z</timestamp>
+      <id>7235</id>
+      <parentid>7040</parentid>
+      <timestamp>2014-04-03T20:24:48Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Troubadour</username>
+        <id>230</id>
       </contributor>
-      <text xml:space="preserve" bytes="3542">{{Header}}
+      <text xml:space="preserve" bytes="3550">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
@@ -67519,7 +67517,7 @@ Paste the following content.
 
 Run.
 &lt;pre&gt;
-sudo aa-enforce /etc/apparmor.d/usr.bin.pidgin
+sudo apparmor_parser -a /etc/apparmor.d/usr.bin.pidgin
 &lt;/pre&gt;
 
 [https://www.whonix.org/forum/index.php?action=profile;u=24 troubadour] created this profile. You can discuss it in this [http://kkkkkkkkkk63ava6.onion/forum/index.php/topic,97.0.html forum thread].
@@ -67527,7 +67525,7 @@ sudo aa-enforce /etc/apparmor.d/usr.bin.pidgin
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>bek7q3eme2nihb9goxjpfhtxk9zrjw4</sha1>
+      <sha1>973fd7pw80osojqmtpc0zlvnkobmif7</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -67537,13 +67535,14 @@ sudo aa-enforce /etc/apparmor.d/usr.bin.pidgin
     <ns>0</ns>
     <id>1118</id>
     <revision>
-      <id>7038</id>
-      <parentid>6834</parentid>
-      <timestamp>2014-03-24T21:46:35Z</timestamp>
+      <id>7234</id>
+      <parentid>7038</parentid>
+      <timestamp>2014-04-03T20:21:13Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Troubadour</username>
+        <id>230</id>
       </contributor>
-      <text xml:space="preserve" bytes="4136">{{Header}}
+      <text xml:space="preserve" bytes="4144">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
@@ -67707,7 +67706,7 @@ Paste the following content.
 
 Run
 &lt;pre&gt;
-sudo aa-enforce /etc/apparmor.d/usr.lib.icedove.icedove
+sudo apparmor_parser -a /etc/apparmor.d/usr.lib.icedove.icedove
 &lt;/pre&gt;
 
 [https://www.whonix.org/forum/index.php?action=profile;u=24 troubadour] created this profile. You can discuss it in this [http://kkkkkkkkkk63ava6.onion/forum/index.php/topic,97.0.html forum thread].
@@ -67715,7 +67714,7 @@ sudo aa-enforce /etc/apparmor.d/usr.lib.icedove.icedove
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>05vi4ojjplf4xx5dvjq4jbiej07nxjv</sha1>
+      <sha1>869bgl82h9hc15skzy7gubwl1zaoz60</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -68066,13 +68065,14 @@ sudo aa-enforce /etc/apparmor.d/usr.lib.icedove.icedove
     <ns>0</ns>
     <id>1138</id>
     <revision>
-      <id>7041</id>
-      <parentid>6901</parentid>
-      <timestamp>2014-03-24T22:09:41Z</timestamp>
+      <id>7239</id>
+      <parentid>7041</parentid>
+      <timestamp>2014-04-03T20:29:45Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Troubadour</username>
+        <id>230</id>
       </contributor>
-      <text xml:space="preserve" bytes="5185">{{Header}}
+      <text xml:space="preserve" bytes="5193">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
@@ -68308,7 +68308,7 @@ Paste the following content.
 
 Run
 &lt;pre&gt;
-sudo aa-enforce /etc/apparmor.d/usr.bin.whonixcheck
+sudo apparmor_parser -a /etc/apparmor.d/usr.bin.whonixcheck
 &lt;/pre&gt;
 
 [https://www.whonix.org/forum/index.php?action=profile;u=24 troubadour] created this profile. You can discuss it in this [http://kkkkkkkkkk63ava6.onion/forum/index.php/topic,97.0.html forum thread].
@@ -68316,7 +68316,7 @@ sudo aa-enforce /etc/apparmor.d/usr.bin.whonixcheck
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>h7za5be6564rxdgp4lhajqr1eqeshsg</sha1>
+      <sha1>8qje8tj09dday9mmhx7nnhp14vds8v4</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -68326,13 +68326,14 @@ sudo aa-enforce /etc/apparmor.d/usr.bin.whonixcheck
     <ns>0</ns>
     <id>1139</id>
     <revision>
-      <id>6900</id>
-      <parentid>6897</parentid>
-      <timestamp>2014-03-13T22:15:23Z</timestamp>
+      <id>7238</id>
+      <parentid>6900</parentid>
+      <timestamp>2014-04-03T20:28:59Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Troubadour</username>
+        <id>230</id>
       </contributor>
-      <text xml:space="preserve" bytes="4234">{{Header}}
+      <text xml:space="preserve" bytes="4242">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
@@ -68529,7 +68530,7 @@ Paste the following content.
 &lt;/pre&gt;
 
 &lt;pre&gt;
-sudo aa-enforce /etc/apparmor.d/usr.bin.timesync
+sudo apparmor_parser -a /etc/apparmor.d/usr.bin.timesync
 &lt;/pre&gt;
 
 [https://www.whonix.org/forum/index.php?action=profile;u=24 troubadour] created this profile. You can discuss it in this [http://kkkkkkkkkk63ava6.onion/forum/index.php/topic,97.0.html forum thread].
@@ -68537,7 +68538,7 @@ sudo aa-enforce /etc/apparmor.d/usr.bin.timesync
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>eikj27hi5irqxbv6jacanij0ysqqphd</sha1>
+      <sha1>j4lb4nay7pwxrwpvtqlkbx2heg2a3i3</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -68896,14 +68897,14 @@ Weiterführende Links (in Englischer Sprache):
     <ns>0</ns>
     <id>1146</id>
     <revision>
-      <id>7072</id>
-      <parentid>7014</parentid>
-      <timestamp>2014-03-26T19:45:27Z</timestamp>
+      <id>7237</id>
+      <parentid>7072</parentid>
+      <timestamp>2014-04-03T20:28:24Z</timestamp>
       <contributor>
         <username>Troubadour</username>
         <id>230</id>
       </contributor>
-      <text xml:space="preserve" bytes="5057">{{Header}}
+      <text xml:space="preserve" bytes="5065">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
@@ -69121,7 +69122,7 @@ Paste the following content.
 
 Run
 &lt;pre&gt;
-sudo aa-enforce /etc/apparmor.d/usr.bin.sdwdate
+sudo apparmor_parser -a /etc/apparmor.d/usr.bin.sdwdate
 &lt;/pre&gt;
 
 [https://www.whonix.org/forum/index.php?action=profile;u=24 troubadour] created this profile. You can discuss it in this [http://kkkkkkkkkk63ava6.onion/forum/index.php/topic,97.0.html forum thread].
@@ -69129,7 +69130,7 @@ sudo aa-enforce /etc/apparmor.d/usr.bin.sdwdate
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>3aj8fxz387g9kk0zwmma1rda4kt37c5</sha1>
+      <sha1>rr5s9sqceva8cu5lxxxthqph64ok717</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -69946,14 +69947,14 @@ Many thanks to Tails team for their discussion on the topic of password managers
     <ns>0</ns>
     <id>1174</id>
     <revision>
-      <id>7211</id>
-      <parentid>7074</parentid>
-      <timestamp>2014-03-30T19:54:41Z</timestamp>
+      <id>7236</id>
+      <parentid>7231</parentid>
+      <timestamp>2014-04-03T20:25:46Z</timestamp>
       <contributor>
         <username>Troubadour</username>
         <id>230</id>
       </contributor>
-      <text xml:space="preserve" bytes="1787">{{Header}}
+      <text xml:space="preserve" bytes="2011">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
@@ -69970,7 +69971,7 @@ kdesudo kwrite /etc/apparmor.d/usr.bin.xchat
 Paste the following content.
 
 &lt;pre&gt;
-# Last modified: Sun Mar 30 19:53:06 UTC 2014
+# Last modified: Thu Apr  3 19:43:50 UTC 2014
 #include &lt;tunables/global&gt;
 
 /usr/bin/xchat {
@@ -69984,10 +69985,11 @@ Paste the following content.
 	
 	deny @{PROC}/** r,
 	
-		@{HOME}/ r,
+	@{HOME}/ r,
 	@{HOME}/.config/** rwk,
 	@{HOME}/.xchat2/ r,
 	@{HOME}/.xchat2/** rwixk,
+	@{HOME}/.kde/share/config/gtkrc-2.0 r,
 		
 	/bin/grep rix,
 	/bin/uname rix,
@@ -69997,6 +69999,8 @@ Paste the following content.
 	/dev/tty rwix,
 
 	/etc/passwd r,
+	/etc/host.conf r,
+	/etc/gai.conf r,
 	/etc/nsswitch.conf r,
 	/etc/ld.so.cache r,
 	/etc/xdg/xfce4/helpers.rc r,
@@ -70012,8 +70016,10 @@ Paste the following content.
 	/usr/bin/zenity rix,
 	/usr/bin/torbrowser rix,
 	/usr/bin/basename rix,
+	/usr/bin/kde4-config rix,
 	
 	/usr/lib/i386-linux-gnu/** mrix,
+	/usr/lib/xchat/plugins/* mr,
 	
 	/usr/share/icons/** r,
 	/usr/share/enchant/* r,
@@ -70024,12 +70030,16 @@ Paste the following content.
 	/usr/share/xfce4/helpers/* r,
 	/usr/share/zenity/* r,
 	/usr/share/fontconfig/conf.avail/* r,
+	/usr/share/poppler/cMap/ r,
+	/usr/share/poppler/cMap/** r,
+
+	/var/lib/aspell/* r,
 }
 &lt;/pre&gt;
 
 Run.
 &lt;pre&gt;
-sudo aa-enforce /etc/apparmor.d/usr.bin.xchat
+sudo apparmor_parser -a /etc/apparmor.d/usr.bin.xchat
 &lt;/pre&gt;
 
 [https://www.whonix.org/forum/index.php?action=profile;u=24 troubadour] created this profile. You can discuss it in this [http://kkkkkkkkkk63ava6.onion/forum/index.php/topic,97.0.html forum thread].
@@ -70037,7 +70047,7 @@ sudo aa-enforce /etc/apparmor.d/usr.bin.xchat
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>ow1cn009av1et0okj03gagozx17yp9h</sha1>
+      <sha1>hhtxyh0yk3wfjxfumwddp5otecw034n</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
