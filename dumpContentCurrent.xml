@@ -5055,60 +5055,18 @@ different license.
     <title>Whonix:General disclaimer</title>
     <ns>4</ns>
     <id>83</id>
+    <redirect title="Disclaimer" />
     <revision>
-      <id>2400</id>
-      <parentid>181</parentid>
-      <timestamp>2013-08-15T23:19:32Z</timestamp>
+      <id>7247</id>
+      <parentid>2400</parentid>
+      <timestamp>2014-04-04T06:14:41Z</timestamp>
       <contributor>
-        <username>Anon</username>
-        <id>10</id>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <comment>/* Whonix VPN disclaimer */</comment>
-      <text xml:space="preserve" bytes="2250">{{Header}}
-
-= DISCLAIMER =
-
-== General ==
-
-''''''DISCLAIMER:'''''' The authors accept NO responsibility for any leaks, faults, detection, incarceration, torture, etc; as a result of your use of Whonix. NO WARRANTY expressed or implied.
-
-We have done our best to create this project, but we are not programmers, network experts, tor expert, lawyer, etc; Just a Tor user who have done extensive research on Google. Be careful, use your brain, trust no one but yourself.
-
-== Whonix VPN disclaimer ==
-
-You only have to read this chapter, when you are going to combine Whonix with a VPN.
-
-Whonix is in no way affiliated with any VPN provider.
-
-The mentioned VPN providers on other wiki pages have been chosen, because we found them, it was easy to register, no personal information were required and because it was free. Whonix developers do not review or rate VPN providers, that is beyond the Whonix project. You are welcome to post instructions for other free VPN services, which will be treated equally. In no way any provider is labeled as a good/bad choice.
-
-Depending on what they were used for, they also fulfilled certain criteria, which are mentioned in the specific article. For example: TCP connection supported; not blocking UDP ports; OpenVPN supported, many other free providers offered only access through proprietary, closed source and/or windows-only clients.
-
-Most websites recommend for choosing a good VPN:
-
-1. Do not use free VPNs, as they observe you, log everything and sell you.
-
-2. Leave no money trail, pay anonymously. (Bitcoin etc.) ([[Money|Anonymous Money page]])
-
-3. Research their reputation, background, history, location.
-
-4. Check their privacy policy and terms of service.
-
-5. They shouldn't ask for any identifying information. (name, postal address, e-mail etc.)
-
-6. The providers homepage is reachable over http'''s''' with a valid SSL certificate.
-
-7. You can use GPG to mail them. ([[Software#encrypt-decrypt-sign-and-verify-text-using-openpgp-gnupg-frontend|gpg mail encryption chapter]])
-
-8. They offer to use their service with a VPN software, which secure and Free Software&lt;ref&gt;https://en.wikipedia.org/wiki/Free_software&lt;/ref&gt;, such as OpenVPN.
-
-Use at your own risk.
-
-= Footnotes =
-&lt;references/&gt;
-
-{{Footer}}</text>
-      <sha1>j1kj6j9d3vjx9wpuq64rxqojflwgbe5</sha1>
+      <comment>Redirected page to [[Disclaimer]]</comment>
+      <text xml:space="preserve" bytes="24">#REDIRECT [[Disclaimer]]</text>
+      <sha1>4p59mh9bhyk3ie0ob2vznqep9s1h80o</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -5117,96 +5075,18 @@ Use at your own risk.
     <title>Whonix:Privacy policy</title>
     <ns>4</ns>
     <id>84</id>
+    <redirect title="Datenschutz" />
     <revision>
-      <id>6223</id>
-      <parentid>6222</parentid>
-      <timestamp>2014-03-02T11:20:54Z</timestamp>
+      <id>7258</id>
+      <parentid>7255</parentid>
+      <timestamp>2014-04-04T07:04:03Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="4300">{{Header}}
-
-= Whonix.org Privacy Policy =
-The website whonix.org, takes your privacy seriously and collects as little as information as possible. IP logs are disabled, we are using apache mod-removeip &lt;ref&gt;https://we.riseup.net/debian/apache#mod_removeip&lt;/ref&gt;. If it becomes necessary (such as spamming or abuse), we may need to re-enable IP logging. 
-
-In any case, we recommend visiting this website using the Tor Browser in Whonix or using the Tor Browser Bundle. Although we rent this server from a reputable server provider, but can't audit their logging policy.
-
-A written privacy policy isn't worth much anyway, since its only privacy by policy. That is why anonymity preserving tools such as Whonix and Tor Browser have been created in the first place. They offer privacy by design.
-
-= Whonix.org Site Security =
-{| class=&quot;wikitable&quot;
-|-
-|Valid SSL certificate
-|{{Yes}}, from startssl.com. &lt;ref&gt;https://startssl.com/&lt;/ref&gt;
-|-
-|HTTPS Everywhere &lt;ref&gt;https://www.eff.org/https-everywhere&lt;/ref&gt; inclusion
-|{{Yes}} &lt;ref&gt;https://trac.torproject.org/projects/tor/ticket/9143&lt;/ref&gt;
-|-
-|OpenPGP signed fingerprint of whonix.org's SSL certificate
-|{{Yes}} &lt;ref name=fingerprint /&gt;
-|-
-|Passed Qualys SSL LABS &lt;ref&gt;https://www.ssllabs.com/&lt;/ref&gt; SSL Server Test &lt;ref&gt;https://www.ssllabs.com/ssltest/index.html&lt;/ref&gt;:
-|{{Yes}}, A rating. &lt;ref&gt;https://www.ssllabs.com/ssltest/analyze.html?d=whonix.org&lt;/ref&gt;
-|-
-|HSTS &lt;ref&gt;https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security&lt;/ref&gt;
-|{{Yes}} &lt;ref&gt;&lt;pre&gt;curl -i https://whonix.org&lt;/pre&gt;&lt;/ref&gt;
-|-
-|HSTS Preloading List &lt;ref&gt;http://blog.chromium.org/2011/06/new-chromium-security-features-june.html&lt;/ref&gt; &lt;ref&gt;http://blog.stalkr.net/2011/08/hsts-preloading-public-key-pinning-and.html&lt;/ref&gt; &lt;ref&gt;http://www.chromium.org/sts&lt;/ref&gt; &lt;ref&gt;https://blog.mozilla.org/security/2012/11/01/preloading-hsts/&lt;/ref&gt; &lt;ref&gt;https://bugzilla.mozilla.org/show_bug.cgi?id=861960&lt;/ref&gt;
-| {{Yes}} &lt;ref&gt;Requested. Will propagate to Chrome, Firefox and Tor Browser.&lt;/ref&gt; &lt;ref&gt;https://github.com/Whonix/Whonix/issues/34&lt;/ref&gt; &lt;ref&gt;http://src.chromium.org/viewvc/chrome?revision=209444&amp;view=revision&lt;/ref&gt;
-|-
-|Flagged Revisions &lt;ref&gt;https://www.mediawiki.org/wiki/Extension:FlaggedRevs/&lt;/ref&gt;
-|{{Yes}}, admins must verify changes before they become the default version.
-|-
-|Secondary .onion domain &lt;ref&gt;Optional Tor hidden service (.onion domain); alternative end-to-end encrypted/authenticated connection; in this use case, not for location privacy; backup in case DNS is not functional&lt;/ref&gt;
-|{{Yes}} &lt;ref&gt;http://kkkkkkkkkk63ava6.onion.&lt;/ref&gt; &lt;ref&gt;See also [[Forcing_.onion_on_Whonix.org|Forcing .onion on Whonix.org]].&lt;/ref&gt;
-|-
-|}
-
-If you have further suggestions, please make them.
-
-= Footnotes =
-&lt;ref name=fingerprint&gt;
-&lt;pre&gt;
------BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA512
-
-openssl x509 -in ssl.crt -sha1 -noout -fingerprint
-SHA1 Fingerprint=88:B4:F5:26:9C:C6:16:C6:7D:6C:A7:66:BE:07:D5:23:9F:D2:71:42
-
-openssl x509 -in ssl.crt -md5 -noout -fingerprint
-MD5 Fingerprint=E8:BC:47:AD:74:73:D8:90:5B:53:2E:E3:89:67:0C:E0
-
-openssl x509 -in ssl.crt -sha256 -noout -fingerprint
-SHA256 Fingerprint=34:A1:48:8A:C2:DD:55:73:5A:4D:1C:78:6C:94:CF:00:71:E8:49:4B:6E:50:6B:F1:51:7C:91:55:04:E0:F4:3F
-
-openssl x509 -in ssl.crt -sha512 -noout -fingerprint
-SHA512 Fingerprint=28:8E:8E:67:F4:94:41:C5:BC:8A:7F:72:0D:05:38:45:BD:54:04:07:00:B4:A1:B4:F1:C3:4F:09:3F:14:D9:EF:97:FB:DD:A3:76:5B:42:92:43:$
-
------BEGIN PGP SIGNATURE-----
-
-iQIcBAEBCgAGBQJR1um2AAoJEJwTGtNxOq7vK0gQAJqt5VAeDPlompcQcwBF3LCU
-X3RjjI2fXGnNAoV4dIPCtM+Ftx00YZan83Y3FW4gG/0vnu5E0YQgrRH06kAchmIn
-wwTpGw+Ast87uOBGNUSifguso06ZXcQMJCs/m/A77cKhHrdvi9XjaPfEe+0vkkzC
-pX6txIW4zKMHgRqoyzEgIQKPPPck9IOR3awtVyhfJ2/IV5nB5Y6FrZozN9dFWBxQ
-fyyY9Qs+T0uz8tHVXeOyTZEjLq/Ry5aBw0Cwd9B5xQjMJfiXt5PK3lQLcSIjNAgY
-LrFvR77fhG5YtHl9GFKRNz4ipiGY0fed/2SxifPF9u61wo7i4ac/3Hb/8pqDtaTi
-M3igMY/QVvmNofdwDVFYW/QFefusGPiy8oowEN4lPHX8C+lyA3LMnfYd8nK6vgPE
-c/EItN1jjPPAqrdW2+npJrV018CCN7v6Z5Er0uH+8kICDtSSQHfy4ey/iafAIY5U
-HdAMgs0bLWEi/fkPveaZ/tomrXANzSevzgP/mDWLBshsSr7YFrfU4EUlNQdLwFvq
-rD4sGRJ9a/C1sYB3cF2K+EEnevliJ00UcqOHRkUwOIejcFrErdnLk8sJWhI4thSW
-NXlVWCmvlfgfdRKQD9V6GAf38XQUJsIbkAGuJNyQQXzW5EUxVQS2l+kFPL/QB37s
-AyCDWXR3yKGMWHkJqfLu
-=otoO
------END PGP SIGNATURE-----
-&lt;/pre&gt;
-&lt;/ref&gt;
-
-&lt;references/&gt;
-
-{{Footer}}
-[[Category:Documentation]] [[Category:Design]]</text>
-      <sha1>gcpph872y92cas5vqvxknt7ahw3pw6g</sha1>
+      <comment>Undo revision 7255 by [[Special:Contributions/Patrick|Patrick]] ([[User talk:Patrick|talk]])</comment>
+      <text xml:space="preserve" bytes="25">#REDIRECT [[Datenschutz]]</text>
+      <sha1>61dw8hpgcmxf6mexzpy7f4d1ugn51e2</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -40107,13 +39987,14 @@ Sourceforge support, ctsai-sf on freenode in #sourceforge said, they use GeoIP f
     <id>359</id>
     <redirect title="About" />
     <revision>
-      <id>1401</id>
-      <timestamp>2013-07-15T22:07:12Z</timestamp>
+      <id>7257</id>
+      <parentid>7256</parentid>
+      <timestamp>2014-04-04T07:03:45Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>Redirected page to [[About]]</comment>
+      <comment>Undo revision 7256 by [[Special:Contributions/Patrick|Patrick]] ([[User talk:Patrick|talk]])</comment>
       <text xml:space="preserve" bytes="19">#REDIRECT [[About]]</text>
       <sha1>er14b6zyl3y3jbuas9uw262avyx5zo9</sha1>
       <model>wikitext</model>
@@ -55377,15 +55258,15 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
     <ns>0</ns>
     <id>691</id>
     <revision>
-      <id>7184</id>
-      <parentid>7183</parentid>
-      <timestamp>2014-03-29T15:48:47Z</timestamp>
+      <id>7245</id>
+      <parentid>7244</parentid>
+      <timestamp>2014-04-04T04:29:42Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Archived IRC Logs */</comment>
-      <text xml:space="preserve" bytes="14007">{{Header}}
+      <comment>/* Script/automate creation of VM description files? */</comment>
+      <text xml:space="preserve" bytes="14412">{{Header}}
 {{#seo:
 |description=Development Notes for adding KVM support to Whonix.
 }}
@@ -55482,6 +55363,8 @@ http://serverfault.com/questions/346301/how-to-increase-video-memory-in-libvirt-
 == Script/automate creation of VM description files? ==
 So not following manual instructions is required anymore, but copy/paste some commands end up with the correct VM configuration.
 
+Once the necessary commands are documented, Patrick will be happy to automate the steps with a script.
+
 == Script/automate creation and upload of raw images? ==
 Because raw images have better performance than raw images? http://www.linux-kvm.org/page/Qcow2
 
@@ -55545,6 +55428,14 @@ To change existing kvm guest to use plain qemu: as per not available in virt-man
 == Shared Folder ==
 We should add instructions on how to use shared folders.
 http://www.linux-kvm.org/page/9p_virtio
+
+== Run virt-xml-validate during build process ==
+We should use.
+&lt;pre&gt;
+virt-xml-validate libvirt.xml
+&lt;/pre&gt;
+
+Patrick will be happy to add this command to the build process when using --kvm (or --qemu?) switch. Scripting this should be simple and the build process could fail early and closed (break).
 
 = Answered Questions =
 == Leak Tests? ==
@@ -55673,7 +55564,7 @@ whonixcheck (since Whonix 8) would tell you if kvmclock is enabled. whonixcheck 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>5ln0gxfho991jf7yjwqk1y62y7hmo2i</sha1>
+      <sha1>2mqa6gselwjp5wbrmte3a8mw8ppd021</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -56031,14 +55922,14 @@ You can customize the header and footer of your directory listing as explained [
     <ns>0</ns>
     <id>696</id>
     <revision>
-      <id>5925</id>
-      <parentid>5711</parentid>
-      <timestamp>2014-02-27T14:28:01Z</timestamp>
+      <id>7248</id>
+      <parentid>5925</parentid>
+      <timestamp>2014-04-04T06:34:13Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="32342">&lt;!--
+      <text xml:space="preserve" bytes="36544">&lt;!--
 NOTE TO WIKI EDITORS:
 Do not add the default footer!
 Do not edit without asking Patrick Schleizer beforehand!
@@ -56476,6 +56367,83 @@ http://www.quantcast.com/opt-out. Sollten Sie alle Cookies auf Ihrem Rechner
 löschen, müssen Sie das Opt-Out-Cookie erneut setzen.
 
 &lt;html&gt;&lt;p&gt;&lt;a href=&quot;http://rechtsanwalt-schwenke.de/smmr-buch/datenschutz-muster-generator-fuer-webseiten-blogs-und-social-media/&quot; &gt;&lt;strong&gt;Datenschutz-Muster von Rechtsanwalt Thomas Schwenke - I LAW it&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;&lt;/html&gt;
+--&gt;
+
+= Technical Information =
+The website whonix.org, takes your privacy seriously and collects as little as information as possible. IP logs are disabled, we are using apache mod-removeip &lt;ref&gt;https://we.riseup.net/debian/apache#mod_removeip&lt;/ref&gt;. If it becomes necessary (such as spamming or abuse), we may need to re-enable IP logging. 
+
+In any case, we recommend visiting this website using the Tor Browser in Whonix or using the Tor Browser Bundle. Although we rent this server from a reputable server provider, but can't audit their logging policy.
+
+A written privacy policy isn't worth much anyway, since its only privacy by policy. That is why anonymity preserving tools such as Whonix and Tor Browser have been created in the first place. They offer privacy by design.
+
+{| class=&quot;wikitable&quot;
+|-
+|Valid SSL certificate
+|{{Yes}}, from startssl.com. &lt;ref&gt;https://startssl.com/&lt;/ref&gt;
+|-
+|HTTPS Everywhere &lt;ref&gt;https://www.eff.org/https-everywhere&lt;/ref&gt; inclusion
+|{{Yes}} &lt;ref&gt;https://trac.torproject.org/projects/tor/ticket/9143&lt;/ref&gt;
+|-
+|OpenPGP signed fingerprint of whonix.org's SSL certificate
+|{{Yes}} &lt;ref name=fingerprint /&gt;
+|-
+|Passed Qualys SSL LABS &lt;ref&gt;https://www.ssllabs.com/&lt;/ref&gt; SSL Server Test &lt;ref&gt;https://www.ssllabs.com/ssltest/index.html&lt;/ref&gt;:
+|{{Yes}}, A rating. &lt;ref&gt;https://www.ssllabs.com/ssltest/analyze.html?d=whonix.org&lt;/ref&gt;
+|-
+|HSTS &lt;ref&gt;https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security&lt;/ref&gt;
+|{{Yes}} &lt;ref&gt;&lt;pre&gt;curl -i https://whonix.org&lt;/pre&gt;&lt;/ref&gt;
+|-
+|HSTS Preloading List &lt;ref&gt;http://blog.chromium.org/2011/06/new-chromium-security-features-june.html&lt;/ref&gt; &lt;ref&gt;http://blog.stalkr.net/2011/08/hsts-preloading-public-key-pinning-and.html&lt;/ref&gt; &lt;ref&gt;http://www.chromium.org/sts&lt;/ref&gt; &lt;ref&gt;https://blog.mozilla.org/security/2012/11/01/preloading-hsts/&lt;/ref&gt; &lt;ref&gt;https://bugzilla.mozilla.org/show_bug.cgi?id=861960&lt;/ref&gt;
+| {{Yes}} &lt;ref&gt;Requested. Will propagate to Chrome, Firefox and Tor Browser.&lt;/ref&gt; &lt;ref&gt;https://github.com/Whonix/Whonix/issues/34&lt;/ref&gt; &lt;ref&gt;http://src.chromium.org/viewvc/chrome?revision=209444&amp;view=revision&lt;/ref&gt;
+|-
+|Flagged Revisions &lt;ref&gt;https://www.mediawiki.org/wiki/Extension:FlaggedRevs/&lt;/ref&gt;
+|{{Yes}}, admins must verify changes before they become the default version.
+|-
+|Secondary .onion domain &lt;ref&gt;Optional Tor hidden service (.onion domain); alternative end-to-end encrypted/authenticated connection; in this use case, not for location privacy; backup in case DNS is not functional&lt;/ref&gt;
+|{{Yes}} &lt;ref&gt;http://kkkkkkkkkk63ava6.onion.&lt;/ref&gt; &lt;ref&gt;See also [[Forcing_.onion_on_Whonix.org|Forcing .onion on Whonix.org]].&lt;/ref&gt;
+|-
+|}
+
+If you have further suggestions, please make them.
+
+= Footnotes =
+&lt;ref name=fingerprint&gt;
+&lt;pre&gt;
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+openssl x509 -in ssl.crt -sha1 -noout -fingerprint
+SHA1 Fingerprint=88:B4:F5:26:9C:C6:16:C6:7D:6C:A7:66:BE:07:D5:23:9F:D2:71:42
+
+openssl x509 -in ssl.crt -md5 -noout -fingerprint
+MD5 Fingerprint=E8:BC:47:AD:74:73:D8:90:5B:53:2E:E3:89:67:0C:E0
+
+openssl x509 -in ssl.crt -sha256 -noout -fingerprint
+SHA256 Fingerprint=34:A1:48:8A:C2:DD:55:73:5A:4D:1C:78:6C:94:CF:00:71:E8:49:4B:6E:50:6B:F1:51:7C:91:55:04:E0:F4:3F
+
+openssl x509 -in ssl.crt -sha512 -noout -fingerprint
+SHA512 Fingerprint=28:8E:8E:67:F4:94:41:C5:BC:8A:7F:72:0D:05:38:45:BD:54:04:07:00:B4:A1:B4:F1:C3:4F:09:3F:14:D9:EF:97:FB:DD:A3:76:5B:42:92:43:$
+
+-----BEGIN PGP SIGNATURE-----
+
+iQIcBAEBCgAGBQJR1um2AAoJEJwTGtNxOq7vK0gQAJqt5VAeDPlompcQcwBF3LCU
+X3RjjI2fXGnNAoV4dIPCtM+Ftx00YZan83Y3FW4gG/0vnu5E0YQgrRH06kAchmIn
+wwTpGw+Ast87uOBGNUSifguso06ZXcQMJCs/m/A77cKhHrdvi9XjaPfEe+0vkkzC
+pX6txIW4zKMHgRqoyzEgIQKPPPck9IOR3awtVyhfJ2/IV5nB5Y6FrZozN9dFWBxQ
+fyyY9Qs+T0uz8tHVXeOyTZEjLq/Ry5aBw0Cwd9B5xQjMJfiXt5PK3lQLcSIjNAgY
+LrFvR77fhG5YtHl9GFKRNz4ipiGY0fed/2SxifPF9u61wo7i4ac/3Hb/8pqDtaTi
+M3igMY/QVvmNofdwDVFYW/QFefusGPiy8oowEN4lPHX8C+lyA3LMnfYd8nK6vgPE
+c/EItN1jjPPAqrdW2+npJrV018CCN7v6Z5Er0uH+8kICDtSSQHfy4ey/iafAIY5U
+HdAMgs0bLWEi/fkPveaZ/tomrXANzSevzgP/mDWLBshsSr7YFrfU4EUlNQdLwFvq
+rD4sGRJ9a/C1sYB3cF2K+EEnevliJ00UcqOHRkUwOIejcFrErdnLk8sJWhI4thSW
+NXlVWCmvlfgfdRKQD9V6GAf38XQUJsIbkAGuJNyQQXzW5EUxVQS2l+kFPL/QB37s
+AyCDWXR3yKGMWHkJqfLu
+=otoO
+-----END PGP SIGNATURE-----
+&lt;/pre&gt;
+&lt;/ref&gt;
+
+&lt;references/&gt;
 
 &lt;!--
 NOTE TO WIKI EDITORS:
@@ -56484,7 +56452,7 @@ Do not edit without asking Patrick Schleizer beforehand!
 --&gt;
 
 [[Category:Documentation]]</text>
-      <sha1>4elssobvqf2s9vp5wg2dg1vrv9da61j</sha1>
+      <sha1>ifgl5xdye7f0bfpxv3f32xmb8p6nj12</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -67034,9 +67002,9 @@ Go to http://127.0.0.1/wiki/index.php/Main_Page.
     <ns>0</ns>
     <id>1110</id>
     <revision>
-      <id>7233</id>
-      <parentid>7213</parentid>
-      <timestamp>2014-04-03T20:20:11Z</timestamp>
+      <id>7266</id>
+      <parentid>7233</parentid>
+      <timestamp>2014-04-04T07:43:35Z</timestamp>
       <contributor>
         <username>Troubadour</username>
         <id>230</id>
@@ -67198,7 +67166,7 @@ Paste the following content.
 
 Run
 &lt;pre&gt;
-sudo apparmor_parser -a /etc/apparmor.d/home.user.tor-browser_en-US.Browser.firefox
+sudo apparmor_parser -r /etc/apparmor.d/home.user.tor-browser_en-US.Browser.firefox
 &lt;/pre&gt;
 
 [https://www.whonix.org/forum/index.php?action=profile;u=24 troubadour] created this profile. You can discuss it in this [http://kkkkkkkkkk63ava6.onion/forum/index.php/topic,97.0.html forum thread].
@@ -67206,7 +67174,7 @@ sudo apparmor_parser -a /etc/apparmor.d/home.user.tor-browser_en-US.Browser.fire
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>2q20pd08nk6wbzm2mwzidoopz3xv53u</sha1>
+      <sha1>2emichsdkslye4upsp0rvz6jvcqlqt7</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -67216,9 +67184,9 @@ sudo apparmor_parser -a /etc/apparmor.d/home.user.tor-browser_en-US.Browser.fire
     <ns>0</ns>
     <id>1114</id>
     <revision>
-      <id>7232</id>
-      <parentid>6700</parentid>
-      <timestamp>2014-04-03T20:18:46Z</timestamp>
+      <id>7265</id>
+      <parentid>7232</parentid>
+      <timestamp>2014-04-04T07:41:10Z</timestamp>
       <contributor>
         <username>Troubadour</username>
         <id>230</id>
@@ -67356,7 +67324,7 @@ Paste the following content.
 Run.
 
 &lt;pre&gt;
-sudo apparmor_parser -a /etc/apparmor.d/usr.bin.VBox
+sudo apparmor_parser -r /etc/apparmor.d/usr.bin.VBox
 &lt;/pre&gt;
 
 [https://www.whonix.org/forum/index.php?action=profile;u=24 troubadour] created this profile. You can discuss it in this [http://kkkkkkkkkk63ava6.onion/forum/index.php/topic,97.0.html forum thread].
@@ -67364,7 +67332,7 @@ sudo apparmor_parser -a /etc/apparmor.d/usr.bin.VBox
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>pt1hhgq66c2nw2km1zp1qsy97ihg45s</sha1>
+      <sha1>2o80g3shwc00y2riwvnb8ixnvuo4m9x</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -67374,9 +67342,9 @@ sudo apparmor_parser -a /etc/apparmor.d/usr.bin.VBox
     <ns>0</ns>
     <id>1115</id>
     <revision>
-      <id>7235</id>
-      <parentid>7040</parentid>
-      <timestamp>2014-04-03T20:24:48Z</timestamp>
+      <id>7268</id>
+      <parentid>7235</parentid>
+      <timestamp>2014-04-04T07:45:54Z</timestamp>
       <contributor>
         <username>Troubadour</username>
         <id>230</id>
@@ -67517,7 +67485,7 @@ Paste the following content.
 
 Run.
 &lt;pre&gt;
-sudo apparmor_parser -a /etc/apparmor.d/usr.bin.pidgin
+sudo apparmor_parser -r /etc/apparmor.d/usr.bin.pidgin
 &lt;/pre&gt;
 
 [https://www.whonix.org/forum/index.php?action=profile;u=24 troubadour] created this profile. You can discuss it in this [http://kkkkkkkkkk63ava6.onion/forum/index.php/topic,97.0.html forum thread].
@@ -67525,7 +67493,7 @@ sudo apparmor_parser -a /etc/apparmor.d/usr.bin.pidgin
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>973fd7pw80osojqmtpc0zlvnkobmif7</sha1>
+      <sha1>6pcw0onu9zenzryhjwl2q5va5ahddaw</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -67535,9 +67503,9 @@ sudo apparmor_parser -a /etc/apparmor.d/usr.bin.pidgin
     <ns>0</ns>
     <id>1118</id>
     <revision>
-      <id>7234</id>
-      <parentid>7038</parentid>
-      <timestamp>2014-04-03T20:21:13Z</timestamp>
+      <id>7267</id>
+      <parentid>7234</parentid>
+      <timestamp>2014-04-04T07:44:28Z</timestamp>
       <contributor>
         <username>Troubadour</username>
         <id>230</id>
@@ -67706,7 +67674,7 @@ Paste the following content.
 
 Run
 &lt;pre&gt;
-sudo apparmor_parser -a /etc/apparmor.d/usr.lib.icedove.icedove
+sudo apparmor_parser -r /etc/apparmor.d/usr.lib.icedove.icedove
 &lt;/pre&gt;
 
 [https://www.whonix.org/forum/index.php?action=profile;u=24 troubadour] created this profile. You can discuss it in this [http://kkkkkkkkkk63ava6.onion/forum/index.php/topic,97.0.html forum thread].
@@ -67714,7 +67682,7 @@ sudo apparmor_parser -a /etc/apparmor.d/usr.lib.icedove.icedove
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>869bgl82h9hc15skzy7gubwl1zaoz60</sha1>
+      <sha1>gm5odl4a2w84y0qelkr0drru589omyx</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -68065,9 +68033,9 @@ sudo apparmor_parser -a /etc/apparmor.d/usr.lib.icedove.icedove
     <ns>0</ns>
     <id>1138</id>
     <revision>
-      <id>7239</id>
-      <parentid>7041</parentid>
-      <timestamp>2014-04-03T20:29:45Z</timestamp>
+      <id>7273</id>
+      <parentid>7239</parentid>
+      <timestamp>2014-04-04T07:55:16Z</timestamp>
       <contributor>
         <username>Troubadour</username>
         <id>230</id>
@@ -68308,7 +68276,7 @@ Paste the following content.
 
 Run
 &lt;pre&gt;
-sudo apparmor_parser -a /etc/apparmor.d/usr.bin.whonixcheck
+sudo apparmor_parser -r /etc/apparmor.d/usr.bin.whonixcheck
 &lt;/pre&gt;
 
 [https://www.whonix.org/forum/index.php?action=profile;u=24 troubadour] created this profile. You can discuss it in this [http://kkkkkkkkkk63ava6.onion/forum/index.php/topic,97.0.html forum thread].
@@ -68316,7 +68284,7 @@ sudo apparmor_parser -a /etc/apparmor.d/usr.bin.whonixcheck
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>8qje8tj09dday9mmhx7nnhp14vds8v4</sha1>
+      <sha1>tu48h49tj39k9h1z4qkfyz2kfo1mhmm</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -68326,14 +68294,14 @@ sudo apparmor_parser -a /etc/apparmor.d/usr.bin.whonixcheck
     <ns>0</ns>
     <id>1139</id>
     <revision>
-      <id>7238</id>
-      <parentid>6900</parentid>
-      <timestamp>2014-04-03T20:28:59Z</timestamp>
+      <id>7272</id>
+      <parentid>7271</parentid>
+      <timestamp>2014-04-04T07:53:49Z</timestamp>
       <contributor>
         <username>Troubadour</username>
         <id>230</id>
       </contributor>
-      <text xml:space="preserve" bytes="4242">{{Header}}
+      <text xml:space="preserve" bytes="4247">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
@@ -68529,8 +68497,10 @@ Paste the following content.
 }
 &lt;/pre&gt;
 
+Run
+
 &lt;pre&gt;
-sudo apparmor_parser -a /etc/apparmor.d/usr.bin.timesync
+sudo apparmor_parser -r /etc/apparmor.d/usr.bin.timesync
 &lt;/pre&gt;
 
 [https://www.whonix.org/forum/index.php?action=profile;u=24 troubadour] created this profile. You can discuss it in this [http://kkkkkkkkkk63ava6.onion/forum/index.php/topic,97.0.html forum thread].
@@ -68538,7 +68508,7 @@ sudo apparmor_parser -a /etc/apparmor.d/usr.bin.timesync
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>j4lb4nay7pwxrwpvtqlkbx2heg2a3i3</sha1>
+      <sha1>mvdrsjaxg6v95ranlveo0qp6uo1u2x1</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -68897,9 +68867,9 @@ Weiterführende Links (in Englischer Sprache):
     <ns>0</ns>
     <id>1146</id>
     <revision>
-      <id>7237</id>
-      <parentid>7072</parentid>
-      <timestamp>2014-04-03T20:28:24Z</timestamp>
+      <id>7270</id>
+      <parentid>7237</parentid>
+      <timestamp>2014-04-04T07:50:01Z</timestamp>
       <contributor>
         <username>Troubadour</username>
         <id>230</id>
@@ -69122,7 +69092,7 @@ Paste the following content.
 
 Run
 &lt;pre&gt;
-sudo apparmor_parser -a /etc/apparmor.d/usr.bin.sdwdate
+sudo apparmor_parser -r /etc/apparmor.d/usr.bin.sdwdate
 &lt;/pre&gt;
 
 [https://www.whonix.org/forum/index.php?action=profile;u=24 troubadour] created this profile. You can discuss it in this [http://kkkkkkkkkk63ava6.onion/forum/index.php/topic,97.0.html forum thread].
@@ -69130,7 +69100,7 @@ sudo apparmor_parser -a /etc/apparmor.d/usr.bin.sdwdate
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>rr5s9sqceva8cu5lxxxthqph64ok717</sha1>
+      <sha1>sc4w8asz16emauomca1sua7snzxtfid</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -69947,14 +69917,14 @@ Many thanks to Tails team for their discussion on the topic of password managers
     <ns>0</ns>
     <id>1174</id>
     <revision>
-      <id>7236</id>
-      <parentid>7231</parentid>
-      <timestamp>2014-04-03T20:25:46Z</timestamp>
+      <id>7274</id>
+      <parentid>7269</parentid>
+      <timestamp>2014-04-04T09:14:31Z</timestamp>
       <contributor>
         <username>Troubadour</username>
         <id>230</id>
       </contributor>
-      <text xml:space="preserve" bytes="2011">{{Header}}
+      <text xml:space="preserve" bytes="2060">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
@@ -69971,7 +69941,7 @@ kdesudo kwrite /etc/apparmor.d/usr.bin.xchat
 Paste the following content.
 
 &lt;pre&gt;
-# Last modified: Thu Apr  3 19:43:50 UTC 2014
+# Last modified: Fri Apr  4 08:53:34 UTC 2014
 #include &lt;tunables/global&gt;
 
 /usr/bin/xchat {
@@ -70020,7 +69990,8 @@ Paste the following content.
 	
 	/usr/lib/i386-linux-gnu/** mrix,
 	/usr/lib/xchat/plugins/* mr,
-	
+	/usr/lib/perl*/** mr,
+		
 	/usr/share/icons/** r,
 	/usr/share/enchant/* r,
 	/usr/share/myspell/dicts/ r,
@@ -70032,6 +70003,7 @@ Paste the following content.
 	/usr/share/fontconfig/conf.avail/* r,
 	/usr/share/poppler/cMap/ r,
 	/usr/share/poppler/cMap/** r,
+	/usr/share/perl*/** mr,
 
 	/var/lib/aspell/* r,
 }
@@ -70039,7 +70011,7 @@ Paste the following content.
 
 Run.
 &lt;pre&gt;
-sudo apparmor_parser -a /etc/apparmor.d/usr.bin.xchat
+sudo apparmor_parser -r /etc/apparmor.d/usr.bin.xchat
 &lt;/pre&gt;
 
 [https://www.whonix.org/forum/index.php?action=profile;u=24 troubadour] created this profile. You can discuss it in this [http://kkkkkkkkkk63ava6.onion/forum/index.php/topic,97.0.html forum thread].
@@ -70047,7 +70019,7 @@ sudo apparmor_parser -a /etc/apparmor.d/usr.bin.xchat
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>hhtxyh0yk3wfjxfumwddp5otecw034n</sha1>
+      <sha1>iti6cnbef3wzvi61pil4qr28pt8x0b4</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -70247,6 +70219,151 @@ testdeutsch
       <comment>MsUpload</comment>
       <text xml:space="preserve" bytes="8">MsUpload</text>
       <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Impressum</title>
+    <ns>8</ns>
+    <id>1188</id>
+    <revision>
+      <id>7251</id>
+      <timestamp>2014-04-04T06:38:12Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;Impressum&quot;</comment>
+      <text xml:space="preserve" bytes="9">Impressum</text>
+      <sha1>arovhxmtrtbxhg2mk69mqxvaqrrdfto</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Disclaimers</title>
+    <ns>8</ns>
+    <id>1189</id>
+    <revision>
+      <id>7252</id>
+      <timestamp>2014-04-04T07:01:39Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;-&quot;</comment>
+      <text xml:space="preserve" bytes="1">-</text>
+      <sha1>6za6z27cqk2qatlebqsiz85czbjf3rd</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:About</title>
+    <ns>8</ns>
+    <id>1190</id>
+    <revision>
+      <id>7253</id>
+      <timestamp>2014-04-04T07:01:56Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;-&quot;</comment>
+      <text xml:space="preserve" bytes="1">-</text>
+      <sha1>6za6z27cqk2qatlebqsiz85czbjf3rd</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Privacy</title>
+    <ns>8</ns>
+    <id>1192</id>
+    <revision>
+      <id>7259</id>
+      <timestamp>2014-04-04T07:06:10Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;-&quot;</comment>
+      <text xml:space="preserve" bytes="1">-</text>
+      <sha1>6za6z27cqk2qatlebqsiz85czbjf3rd</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Aboutsite</title>
+    <ns>8</ns>
+    <id>1193</id>
+    <revision>
+      <id>7260</id>
+      <timestamp>2014-04-04T07:06:30Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;-&quot;</comment>
+      <text xml:space="preserve" bytes="1">-</text>
+      <sha1>6za6z27cqk2qatlebqsiz85czbjf3rd</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Haftungsausschluss</title>
+    <ns>8</ns>
+    <id>1194</id>
+    <revision>
+      <id>7262</id>
+      <parentid>7261</parentid>
+      <timestamp>2014-04-04T07:15:31Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <text xml:space="preserve" bytes="18">Haftungsausschluss</text>
+      <sha1>5fn9taz1olz2oq3251zejm4nhnmxim7</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Haftungsausschluss</title>
+    <ns>0</ns>
+    <id>1195</id>
+    <redirect title="Disclaimer" />
+    <revision>
+      <id>7263</id>
+      <timestamp>2014-04-04T07:16:15Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>Redirected page to [[Disclaimer]]</comment>
+      <text xml:space="preserve" bytes="24">#REDIRECT [[Disclaimer]]</text>
+      <sha1>4p59mh9bhyk3ie0ob2vznqep9s1h80o</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Datenschutz</title>
+    <ns>8</ns>
+    <id>1196</id>
+    <revision>
+      <id>7264</id>
+      <timestamp>2014-04-04T07:20:26Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;Datenschutz&quot;</comment>
+      <text xml:space="preserve" bytes="11">Datenschutz</text>
+      <sha1>b9et42e8vnc5qx9b2khri81f4hj13sb</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
