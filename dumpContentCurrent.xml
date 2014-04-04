@@ -16003,14 +16003,14 @@ It should address all the current single points of failure:
     <ns>0</ns>
     <id>136</id>
     <revision>
-      <id>5802</id>
-      <parentid>3886</parentid>
-      <timestamp>2014-02-27T12:38:09Z</timestamp>
+      <id>7289</id>
+      <parentid>5802</parentid>
+      <timestamp>2014-04-04T11:43:54Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <text xml:space="preserve" bytes="13484">{{Header}}
+      <comment>warned against piblic voip servers, made clear that jitsi is unusable, hinted about speakfreely/tcp</comment>
+      <text xml:space="preserve" bytes="14129">{{Header}}
 {{#seo:
 |description=Anonymous Voice over IP (VOIP). Encrypted anonymous phone calls using the Tor Anonymity Network.
 }}
@@ -16047,17 +16047,25 @@ You most likely still require a Voip server. If no one of your group is interest
 
 If the Voip ID gets anonymously registered, i.e. if no personal data is required for signing up, everyone only and always connects over Tor, never connected or will ever connect without Tor, and all calls are encrypted and you won't talk to strangers, I don't see what even a malicious server could do. &lt;ref&gt;Apart from trying to [https://en.wikipedia.org/wiki/Exploit_(computer_security) exploit] random Tor users.&lt;/ref&gt;
 
+Note that the mentioned relative safety is only present when the clients are exchanging _all_ of their traffic encrypted _and_ _all_ of their traffic via the server. Most VoIP programs go out of their way to try to talk to each other directly. As of today (April 2014) there is no known program capable of using public VoIP servers together with TCP/Tor.
+
 == Voip Clients ==
 
 === Recommendations ===
 
 ==== Jitsi ====
 
-Jacob Appelbaum (Tor researcher) recommends&lt;ref&gt;https://jitsi.org/Main/News&lt;/ref&gt; Jitsi&lt;ref&gt;https://jitsi.org/&lt;/ref&gt;. It supports OTR encryption and ZRTP. Unfortunately it is not yet&lt;ref&gt;http://packages.debian.org/search?keywords=jitsi&lt;/ref&gt; in Debian Stable or Testing. But it will be in a few days in Debian testing. Beginning with next Whonix version (6 and above) you can most likely easily install it using {{Code|sudo apt-get install jitsi}}. In meanwhile you would have to download and install it manually following the instructions on Jitsi homepage for Debian.
+Jacob Appelbaum (Tor researcher) recommends&lt;ref&gt;https://jitsi.org/Main/News&lt;/ref&gt; Jitsi&lt;ref&gt;https://jitsi.org/&lt;/ref&gt; (this applies if _not_ using Tor). It supports OTR encryption and ZRTP and is available in Debian Testing. 
 
 Jitsi supports push to talk.
 
-'''TODO''': write a guide on how to connect to a free public server, having a secure ZRTP encrypted conversation with someone using the same client.
+Unfortunately it is not usable with Whonix, because it does not support TCP for audio/video at the moment of this writing (April 2014). As a consequence it _does_ expose the ip numbers and will not be able to connect either from or to Whonix.
+
+'''TODO''': write a guide on how to connect to a free public server, having a secure ZRTP encrypted conversation with someone using the same client (note: impossible as of April 2014 without revealing the ip numbers of the corresponding parties to both eavesdroppers and the server).
+
+====SpeakFreely====
+
+There is a modification to the Windows version of SpeakFreely, allowing it to use tcp and Tor&lt;ref&gt;http://torfone.org/spfr.html&lt;/ref&gt;. A corresponding modification applied to the Linux version would make it fully usable under Whonix.
 
 ==== sflphone ====
 
@@ -16254,7 +16262,7 @@ What's the point in using Skype if you and all your chat partners are also willi
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>7v1y76oqzezzps6lscdvijthewqsppy</sha1>
+      <sha1>pfr4nrneufzug6b791rw38m0vgn1hpt</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -70278,24 +70286,6 @@ testdeutsch
     </revision>
   </page>
   <page>
-    <title>MediaWiki:Privacy</title>
-    <ns>8</ns>
-    <id>1192</id>
-    <revision>
-      <id>7259</id>
-      <timestamp>2014-04-04T07:06:10Z</timestamp>
-      <contributor>
-        <username>Patrick</username>
-        <id>2</id>
-      </contributor>
-      <comment>Created page with &quot;-&quot;</comment>
-      <text xml:space="preserve" bytes="1">-</text>
-      <sha1>6za6z27cqk2qatlebqsiz85czbjf3rd</sha1>
-      <model>wikitext</model>
-      <format>text/x-wiki</format>
-    </revision>
-  </page>
-  <page>
     <title>MediaWiki:Aboutsite</title>
     <ns>8</ns>
     <id>1193</id>
@@ -70364,6 +70354,169 @@ testdeutsch
       <comment>Created page with &quot;Datenschutz&quot;</comment>
       <text xml:space="preserve" bytes="11">Datenschutz</text>
       <sha1>b9et42e8vnc5qx9b2khri81f4hj13sb</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Mobile-frontend-footer-license</title>
+    <ns>8</ns>
+    <id>1197</id>
+    <revision>
+      <id>7275</id>
+      <timestamp>2014-04-04T10:38:40Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;Text is available under [//Whonix:Copyright license]; additional terms may apply.&quot;</comment>
+      <text xml:space="preserve" bytes="81">Text is available under [//Whonix:Copyright license]; additional terms may apply.</text>
+      <sha1>bz9peh778fvdxv8huwg0icgzd5anttc</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Whonix:Privacy</title>
+    <ns>4</ns>
+    <id>1198</id>
+    <revision>
+      <id>7276</id>
+      <timestamp>2014-04-04T10:45:05Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;Datenschutz&quot;</comment>
+      <text xml:space="preserve" bytes="11">Datenschutz</text>
+      <sha1>b9et42e8vnc5qx9b2khri81f4hj13sb</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Privacy policy</title>
+    <ns>8</ns>
+    <id>1199</id>
+    <revision>
+      <id>7277</id>
+      <timestamp>2014-04-04T10:45:49Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;Datenschutz&quot;</comment>
+      <text xml:space="preserve" bytes="11">Datenschutz</text>
+      <sha1>b9et42e8vnc5qx9b2khri81f4hj13sb</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Whonix:Mobile-frontend-terms-url</title>
+    <ns>4</ns>
+    <id>1200</id>
+    <revision>
+      <id>7280</id>
+      <parentid>7279</parentid>
+      <timestamp>2014-04-04T11:01:16Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <text xml:space="preserve" bytes="41">This is Whonix:mobile-frontend-terms-url.</text>
+      <sha1>t7y7jbakbdg3j1srvd6tbu4nq4id4qg</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Mobile-frontend-terms-url</title>
+    <ns>8</ns>
+    <id>1201</id>
+    <revision>
+      <id>7281</id>
+      <timestamp>2014-04-04T11:05:48Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;This is MediaWiki:Mobile-frontend-terms-url.&quot;</comment>
+      <text xml:space="preserve" bytes="44">This is MediaWiki:Mobile-frontend-terms-url.</text>
+      <sha1>9kj0y2f1mtkfczel3nf8t016azrdqhx</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Privacypage</title>
+    <ns>8</ns>
+    <id>1202</id>
+    <revision>
+      <id>7282</id>
+      <timestamp>2014-04-04T11:09:41Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;Datenschutz&quot;</comment>
+      <text xml:space="preserve" bytes="11">Datenschutz</text>
+      <sha1>b9et42e8vnc5qx9b2khri81f4hj13sb</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Aboutpage</title>
+    <ns>8</ns>
+    <id>1203</id>
+    <revision>
+      <id>7284</id>
+      <timestamp>2014-04-04T11:12:19Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;About&quot;</comment>
+      <text xml:space="preserve" bytes="5">About</text>
+      <sha1>ciij5nit0pwhlb28jni0sl22sja9u7m</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Disclaimerpage</title>
+    <ns>8</ns>
+    <id>1204</id>
+    <revision>
+      <id>7285</id>
+      <timestamp>2014-04-04T11:13:11Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;Disclaimer&quot;</comment>
+      <text xml:space="preserve" bytes="10">Disclaimer</text>
+      <sha1>8wtarwxhjcded8lwgc9s48mxhz8qfxt</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Privacy</title>
+    <ns>8</ns>
+    <id>1205</id>
+    <revision>
+      <id>7288</id>
+      <parentid>7287</parentid>
+      <timestamp>2014-04-04T11:22:27Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>Replaced content with &quot;-&quot;</comment>
+      <text xml:space="preserve" bytes="1">-</text>
+      <sha1>6za6z27cqk2qatlebqsiz85czbjf3rd</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
