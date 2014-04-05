@@ -434,14 +434,14 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
     <ns>10</ns>
     <id>15</id>
     <revision>
-      <id>7023</id>
-      <parentid>6921</parentid>
-      <timestamp>2014-03-23T13:01:26Z</timestamp>
+      <id>7304</id>
+      <parentid>7023</parentid>
+      <timestamp>2014-04-05T04:58:34Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="1741">&lt;br /&gt;&lt;hr&gt;&lt;font size=&quot;-3&quot;&gt;[[Special:UserLogin|Log in]] | [[Special:OpenIDLogin|OpenID]] | [[Contact|Contact]] | [[Impressum]] | [[Datenschutz|Datenschutzerklärung]] | [[Disclaimer|Haftungsausschluss]]
+      <text xml:space="preserve" bytes="1731">&lt;br /&gt;&lt;hr&gt;&lt;font size=&quot;-3&quot;&gt;[[Special:UserLogin|Log in]] | [[Special:OpenIDLogin|OpenID]] | [[Contact|Contact]] | [[Impressum]] | [[Datenschutz|Datenschutz]] | [[Disclaimer|Haftungsausschluss]]
 [https://www.whonix.org{{localurl:{{FULLPAGENAME}}}} https] | &lt;html&gt;&lt;a class=&quot;link-https&quot; href=&quot;http://kkkkkkkkkk63ava6.onion&lt;/html&gt;{{localurl:{{FULLPAGENAME}}}}&lt;html&gt;&quot; rel=&quot;nofollow&quot;&gt;.onion&lt;/a&gt;&lt;/html&gt; &lt;sup&gt;[[Forcing .onion on Whonix.org|[note]]]&lt;/sup&gt; | [http://whonix.org.nyud.net{{localurl:{{FULLPAGENAME}}}} Mirror] | [https://kkkkkkkkkk63ava6.tor2web.org{{localurl:{{FULLPAGENAME}}}} Mirror]
 &lt;!--
 inspired by http://aboli.sh/
@@ -451,7 +451,7 @@ This is a wiki. Want to improve this page? See [https://github.com/Whonix/Whonix
 
 Whonix (&lt;html&gt;&lt;a href=&quot;https://plus.google.com/108150429836421683225&quot; rel=&quot;publisher&quot; /&gt;g+&lt;/a&gt;&lt;/html&gt;) is a [http://www.openinventionnetwork.com/licensees.php licensee] of the [[File:OIN_logo_200px.png|link=https://en.wikipedia.org/wiki/Open_Invention_Network|alt=Open Invention Network|140px]]. Unless otherwise noted above, content of this  page is copyrighted by [mailto:adrelanos@riseup.net Patrick Schleizer] (&lt;html&gt;&lt;a href=&quot;/patrick.asc&quot;&gt;gpg&lt;/a&gt;&lt;/html&gt;) &lt;!--(&lt;html&gt;&lt;a href=&quot;https://plus.google.com/u/0/112678569435063398972?rel=author&quot;&gt;g+&lt;/a&gt;)&lt;/html&gt;--&gt; and licensed under the same Free (as in speech) [https://github.com/Whonix/Whonix/blob/master/debian/copyright license] as Whonix itself.
 &lt;/font&gt;</text>
-      <sha1>293zts07qvhnforzf391qptptdi5i9t</sha1>
+      <sha1>35e1h6wgb570se2br0i7b3fz7fbzb83</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -3322,14 +3322,15 @@ If you don't get into trouble, by letting others to know, that you like or use W
     <ns>0</ns>
     <id>59</id>
     <revision>
-      <id>5875</id>
-      <parentid>4730</parentid>
-      <timestamp>2014-02-27T13:50:40Z</timestamp>
+      <id>7296</id>
+      <parentid>7295</parentid>
+      <timestamp>2014-04-05T01:44:18Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="8210">{{Header}}
+      <comment>/* Flash Proxy Bridges */</comment>
+      <text xml:space="preserve" bytes="8334">{{Header}}
 &lt;!--
 Copyright:
 
@@ -3419,7 +3420,7 @@ Should work in Whonix-Gateway as well, but require some fiddling. See also [http
 
 2. Create a file /etc/whonix_firewall.d/50_user (Or if you using a graphical Whonix-Gateway, you can use the desktop shortcut.)
 
-&lt;pre&gt;sudo nano /etc/whonix_firewall.d/50_user&lt;/pre&gt;
+&lt;pre&gt;kdesudo kwrite /etc/whonix_firewall.d/50_user&lt;/pre&gt;
 
 3. Add the following content.
 
@@ -3430,11 +3431,11 @@ FLASHPROXY_PORT=9000
 
 4. Reload Whonix Firewall. (Or if you using a graphical Whonix-Gateway, you can use the desktop shortcut.)
 
-&lt;pre&gt;sudo /usr/bin/whonix_firewall&lt;/pre&gt;
+&lt;pre&gt;sudo whonix_firewall&lt;/pre&gt;
 
 5. Install flashproxy.
 
-Ok, this is a bit tricky, since there is no Debian package with the flashproxy-client.
+Ok, this is a bit tricky, since there is no Debian package with the flashproxy-client. &lt;ref&gt;feature request: [https://trac.torproject.org/projects/tor/ticket/8092 make a deb of flashproxy and get into Debian]&lt;/ref&gt;
 
 Either get it from here:
 https://crypto.stanford.edu/flashproxy/#how-to
@@ -3462,7 +3463,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>0y22b165h6vs2f9ariwgqjp9hw9nw6l</sha1>
+      <sha1>k4xuomsnz5fey1gkunxl9u6omh7b3p1</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -7766,15 +7767,14 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
     <ns>0</ns>
     <id>96</id>
     <revision>
-      <id>7228</id>
-      <parentid>7227</parentid>
-      <timestamp>2014-04-01T17:51:55Z</timestamp>
+      <id>7327</id>
+      <parentid>7228</parentid>
+      <timestamp>2014-04-05T06:49:17Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* Last update */</comment>
-      <text xml:space="preserve" bytes="71415">{{Header}}
+      <comment>/* Features */ QubesOS supports Xfce4 as alternative to KDE during installation</comment>
+      <text xml:space="preserve" bytes="71420">{{Header}}
 {{#seo:
 |description=Comparison of Whonix, Tails, Tor Browser Bundle, QubesOS TorVM and corridor. About anonymity, privacy, security, circumvention, attacks, fingerprinting, usability, features, etc.
 }}
@@ -8735,7 +8735,7 @@ Knowledge assumed:
 | KDE
 | GNOME
 | {{BlueBackground}} Whatever the user has installed. Not an operating system.
-| KDE (?)
+| KDE or Xfce4
 |-
 | style=&quot;height: 27px;background-color: #f9f9f9&quot;| Multi language support
 | {{No}}
@@ -9013,7 +9013,7 @@ One has always to be very careful, when talking about others. Especially, when t
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Design]]</text>
-      <sha1>gamohdexy9n92n2z46bg9n92u0orlpl</sha1>
+      <sha1>osa9oirfqo4vcyxff7duet9mqn8n53m</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -16003,22 +16003,21 @@ It should address all the current single points of failure:
     <ns>0</ns>
     <id>136</id>
     <revision>
-      <id>7289</id>
-      <parentid>5802</parentid>
-      <timestamp>2014-04-04T11:43:54Z</timestamp>
+      <id>7315</id>
+      <parentid>7313</parentid>
+      <timestamp>2014-04-05T05:18:05Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <comment>warned against piblic voip servers, made clear that jitsi is unusable, hinted about speakfreely/tcp</comment>
-      <text xml:space="preserve" bytes="14129">{{Header}}
+      <comment>/* Voip Server */</comment>
+      <text xml:space="preserve" bytes="14426">{{Header}}
 {{#seo:
 |description=Anonymous Voice over IP (VOIP). Encrypted anonymous phone calls using the Tor Anonymity Network.
 }}
 
 = Voice over IP =
-
 == Introduction ==
-
 The Voice over IP Introduction chapter and instructions about mumble voice chat are finished. Instructions for other Voip clients aren't finished yet, but this shouldn't stop you from using mumble or experimenting with other clients. Please test and leave feedback!
 
 Anonymizing Voice over IP is very difficult, if possible at all. It's not so much about hiding the IP, which is easy with Whonix, it's about voice recognition and slow Tor network speed (latency). Pseudonymous use or hidden voice communication with known contacts is possible. It depends on your threat model.
@@ -16043,15 +16042,13 @@ Useful advice has been given by guardianproject.info. They recommend to use prow
 
 == Voip Server ==
 
-You most likely still require a Voip server. If no one of your group is interested in configuring a hidden Voip server, you could use a free one. I could imagine, that even latency is a bit better.
+You most likely still require a Voip server. If no one of your group is interested in configuring a hidden Voip server, you could use a free one on clearnet. Latency is possibly a bit better (due to using clearnet).
 
 If the Voip ID gets anonymously registered, i.e. if no personal data is required for signing up, everyone only and always connects over Tor, never connected or will ever connect without Tor, and all calls are encrypted and you won't talk to strangers, I don't see what even a malicious server could do. &lt;ref&gt;Apart from trying to [https://en.wikipedia.org/wiki/Exploit_(computer_security) exploit] random Tor users.&lt;/ref&gt;
 
 Note that the mentioned relative safety is only present when the clients are exchanging _all_ of their traffic encrypted _and_ _all_ of their traffic via the server. Most VoIP programs go out of their way to try to talk to each other directly. As of today (April 2014) there is no known program capable of using public VoIP servers together with TCP/Tor.
 
 == Voip Clients ==
-
-=== Recommendations ===
 
 ==== Jitsi ====
 
@@ -16062,10 +16059,6 @@ Jitsi supports push to talk.
 Unfortunately it is not usable with Whonix, because it does not support TCP for audio/video at the moment of this writing (April 2014). As a consequence it _does_ expose the ip numbers and will not be able to connect either from or to Whonix.
 
 '''TODO''': write a guide on how to connect to a free public server, having a secure ZRTP encrypted conversation with someone using the same client (note: impossible as of April 2014 without revealing the ip numbers of the corresponding parties to both eavesdroppers and the server).
-
-====SpeakFreely====
-
-There is a modification to the Windows version of SpeakFreely, allowing it to use tcp and Tor&lt;ref&gt;http://torfone.org/spfr.html&lt;/ref&gt;. A corresponding modification applied to the Linux version would make it fully usable under Whonix.
 
 ==== sflphone ====
 
@@ -16213,22 +16206,11 @@ You can now connect to the server.
 
 &lt;ref&gt;Mumble (and mumble-server)'s connections go through Tor's TransPort. This shouldn't matter, because (connections to and ) hidden services (itself) are stream isolated so or so, see [[Stream Isolation]] for more information on TransPort, SocksPort, Stream Isolation and so on.&lt;/ref&gt;
 
-==== List ====
-
-There is a [https://en.wikipedia.org/wiki/Comparison_of_VoIP_software Comparison of VoIP software] in wikipedia. The client should be Open Source and if you are not calling from .onion to .onion (and let Tor handle encryption) it should also support voice encryption such as ZRTP.
-
-==== Development Ideas ====
-
-[[OnionCat]] could be useful if tunneling UDP and/or ICMP tunneling over Tor should be required. It should be avoided if possible, because it add complexity to the setup and introduces more latency because connection always goes from hidden service to hidden service.
-
 === Warnings ===
-
 ==== TOR Fone ====
-
 The developer of TOR Fone recommends against&lt;ref&gt;https://lists.torproject.org/pipermail/tor-talk/2013-February/027215.html&lt;/ref&gt; using TOR Fone. Quote: &quot;''I did not think this project as a finished product for practical use.''&quot; The project got overall a pretty bad review in the mailing list thread.
 
 ==== Skype ====
-
 '''Does this mean that, for example, is my IP and location safe when using Skype?'''
 
 Yes, IP and location is safe. Skype has been tested in Whonix, it &quot;works&quot; quite well, still recommended against. Some further comments you should be aware of:
@@ -16249,11 +16231,23 @@ In conclusion Skype usage does not leak IP/location, but is discouraged anyway, 
 
 What's the point in using Skype if you and all your chat partners are also willing to create and use their accounts only over Tor? You are advised to use Skype alternatives.
 
+==== List ====
+There is a [https://en.wikipedia.org/wiki/Comparison_of_VoIP_software Comparison of VoIP software] in wikipedia. The client should be Open Source and if you are not calling from .onion to .onion (and let Tor handle encryption) it should also support voice encryption such as ZRTP.
+
+== Development Ideas ==
+=== OnionCat ===
+[[OnionCat]] could be useful if tunneling UDP and/or ICMP tunneling over Tor should be required. It should be avoided if possible, because it add complexity to the setup and introduces more latency because connection always goes from hidden service to hidden service.
+
+=== SpeakFreely ===
+There is a modification to the Windows version of SpeakFreely, allowing it to use tcp and Tor&lt;ref&gt;http://torfone.org/spfr.html&lt;/ref&gt;. A corresponding modification applied to the Linux version would make it fully usable under Whonix.
+
+As it's author [https://lists.torproject.org/pipermail/tor-talk/2013-February/027215.html said], it's not ready for prime time yet. Quote: &quot;I did not think this project as a finished product for practical use. This is only a platform to explore the possibility of transmission of voice over TOR.&quot;
+
 == Sources ==
 
 * [https://guardianproject.info/2013/01/31/anonymous-cb-radio-with-mumble-and-tor/ guardianproject.info: Mumble and the Bandwidth – Anonymous CB radio with Mumble and Tor]
 
-== External Resources =
+== External Resources ==
 * Not Whonix specific, still interesting: [http://huertanix.tumblr.com/post/55261352264/location-anonymous-voice-communication-a-step-by-step Location-Anonymous Voice Communication, A Step-by-Step Guide]
 
 == Footnotes ==
@@ -16262,7 +16256,7 @@ What's the point in using Skype if you and all your chat partners are also willi
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>pfr4nrneufzug6b791rw38m0vgn1hpt</sha1>
+      <sha1>os5nf3end3ti2fvfgw8neredy0igq6z</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -23947,9 +23941,9 @@ Resolve DNS.
     <ns>8</ns>
     <id>220</id>
     <revision>
-      <id>6288</id>
-      <parentid>6287</parentid>
-      <timestamp>2014-03-04T15:59:26Z</timestamp>
+      <id>7326</id>
+      <parentid>7325</parentid>
+      <timestamp>2014-04-05T05:44:56Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
@@ -33151,19 +33145,17 @@ http://bitcoin-hosting.com
     <ns>0</ns>
     <id>269</id>
     <revision>
-      <id>5897</id>
-      <parentid>3261</parentid>
-      <timestamp>2014-02-27T14:04:39Z</timestamp>
+      <id>7298</id>
+      <parentid>7294</parentid>
+      <timestamp>2014-04-05T01:55:48Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="1501">{{Header}}
+      <text xml:space="preserve" bytes="2398">{{Header}}
 {{#seo:
 |description=Hosting a (private) (obfuscated) bridge or (exit) relay using Whonix
 }}
-
-= Hosting a (private) (obfuscated) bridge or (exit) relay =
 
 == Introduction ==
 
@@ -33174,33 +33166,47 @@ This chapter hasn't been tested for a long time. Get in contact if you are inter
 
 Simply follow all the usual instructions given on torproject.org inside the Whonix-Gateway just as you would, if Tor wouldn't run inside a virtual machine. The only additional thing to do is to set up a port forwarding from the host to the virtual machine. That is simple. It's a VirtualBox feature. You can also do this with the VirtualBox graphical user interface. Go to Whonix-Gateway -&gt; Settings -&gt; Network Interface -&gt; Port Forwarding.
 
-What's left are the firewall rules. On the Whonix-Gateway lookg at {{Code|/etc/whonix_firewall/30_default}} and look out for.
+What's left are the firewall rules. On the Whonix-Gateway look at [https://github.com/Whonix/Whonix/blob/master/whonix_gateway/etc/whonix_firewall.d/30_default {{Code|/etc/whonix_firewall/30_default}}]. Read the introduction comment (which is about [[Whonix_Configuration_Files|Whonix flexible modular configuration files]]) and Tor Relay Settings.
 
-&lt;pre&gt;GATEWAY_ALLOW_INCOMMING_SSH=0&lt;/pre&gt;
-
-And change that to
-
-&lt;pre&gt;GATEWAY_ALLOW_INCOMMING_SSH=1&lt;/pre&gt;
-
-Scroll down to
+Open {{Code|/etc/whonix_firewall/50_user}}.
 
 &lt;pre&gt;
-if [ &quot;$GATEWAY_ALLOW_INCOMMING_SSH&quot; = &quot;1&quot; ]; then
-    iptables -A INPUT -i &quot;$EXT_IF&quot; -p tcp --dport 22 -j ACCEPT
-fi
+kdesudo kwrite /etc/whonix_firewall/50_user
 &lt;/pre&gt;
 
-and add
+Paste the following content. Adjust if necessary.
 
 &lt;pre&gt;
-# Tor
-iptables -A INPUT -i $EXT_IF -p tcp --dport YOURPORT -j ACCEPT
+## Allow incoming DIRPORT connections for an optional Tor relay.
+GATEWAY_ALLOW_INCOMING_DIR_PORT=1
+
+## Allow incoming ORPORT connections for an optional Tor relay.
+GATEWAY_ALLOW_INCOMING_OR_PORT=1
+
+## DIRPORT incoming port.
+DIR_PORT=80
+
+## ORPORT incoming port.
+OR_PORT=443
 &lt;/pre&gt;
+
+Reload Whonix firewall.
+
+&lt;pre&gt;
+sudo whonix_firewall
+&lt;/pre&gt;
+
+= Other Easy Options =
+As a Firefox or Chrome browser / Chromium user, install an add-on to create a &quot;flash&quot; proxy bridge. &quot;Flash&quot; as in flashing proxy, not as in Adobe Flash. This has nothing to do with Adobe Flash.
+
+For Chrome browser / Chromium, there is [https://chrome.google.com/webstore/detail/cupcake/dajjbehmbnbppjkcnpdkaniapgdppdnc cupcake]. Simply click to install the add-on and you're done.
+
+For Firefox browser, there is [https://addons.mozilla.org/firefox/addon/tor-flashproxy-badge/ Tor Flashproxy Badge]. Simply click to install the add-on and you're done.
 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>m0nvls8ns5wky7pj2wut8xbywoovqa0</sha1>
+      <sha1>fjdggy49twx2pz0jozjouytz33rgarj</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -70517,6 +70523,46 @@ testdeutsch
       <comment>Replaced content with &quot;-&quot;</comment>
       <text xml:space="preserve" bytes="1">-</text>
       <sha1>6za6z27cqk2qatlebqsiz85czbjf3rd</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Terminology</title>
+    <ns>0</ns>
+    <id>1208</id>
+    <revision>
+      <id>7323</id>
+      <parentid>7322</parentid>
+      <timestamp>2014-04-05T05:27:16Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <text xml:space="preserve" bytes="414">;clearnet:This term has two meanings. a) Connecting to the regular internet not using Tor (or other anonymity networks), and/or b) Connecting to regular servers (which are not Tor hidden services) (using Tor or not)
+;FTP:File Transfer Protocol
+;Voip:Voice over IP
+;GNU:&lt;html&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/GNU_Project&quot;&gt;GNU Project&lt;/a&gt;&lt;br&gt;&lt;/html&gt;
+;GTest:[http://en.wikipedia.org/wiki/GNU_Project GNU Project]</text>
+      <sha1>10sxc84l4szqb744xljhhomv3feemim</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Awesome Ideas To Find The Best Stop Snoring Device For You</title>
+    <ns>0</ns>
+    <id>1210</id>
+    <revision>
+      <id>7328</id>
+      <timestamp>2014-04-05T08:21:03Z</timestamp>
+      <contributor>
+        <username>Domingo24O</username>
+        <id>277</id>
+      </contributor>
+      <comment>Created page with &quot;&lt;br&gt;&lt;br&gt;Snoring is an extremely very common problem that has an effect on countless people. Are you presently of the belief that loud snoring is only a humorous annoyance that...&quot;</comment>
+      <text xml:space="preserve" bytes="4172">&lt;br&gt;&lt;br&gt;Snoring is an extremely very common problem that has an effect on countless people. Are you presently of the belief that loud snoring is only a humorous annoyance that takes place when some individuals are sleeping? A medical condition generally known as Obstructive Sleep Apnea can actually make you snore and stop respiration frequently through the night. If you find that you're tired and sluggish for the entire day time it might be caused by sub par rest from nighttime snoring.&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;Don't Stress Out If You Snore&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;If you want to comprehend the best way to start treating a medical related problem, the first thing you have to do is understand it's suspected origins. All of your muscles within your body loosen up even though you're resting.  Regrettably, for folks who snore at night the muscles in the air passage grow to be way too relaxed.  This leads to a lack of muscle rigidity plus a flattened airway.  Because the air struggles to pass in to the respiratory system past the small area it generates a noisy vibration.  Unfortunately snoring is not a rare issue.  It's also linked with a number of heart problems, also as psychological disorders.  Snoring induced by a nasal blockage might be helped by sinus strips that pull the nostrils apart.  While when the obstruction is caused by a blockage in the respiratory tract a snoring mouth piece will probably be much more appropriate.  Essentially the most popular snoring solution available on the market today could be the stop snoring mouth piece that's usually used in circumstances of moderate OSA.&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;Discover The Very Best Quit Snoring Solution For You Personally&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;Proper research and due diligence is crucial when attempting to establish which item is appropriate for you personally.  Make certain that you study all common stop snoring devices readily available to find the one that's ideal for your scenario.  As soon as you understand the etiology of one's problem deciding on the best solution is going to be an easy decision. &lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;A number of people are born having a uvula (the dangling thing in the back of one's throat) that's bigger than normal, and this could make them snore through the night. Morbid obesity is amongst the top factors that men and women snore because of the excess fat around their neck.  Are there any questions relating to everything that you just studied?  Now head over to how do I stop snoring; [http://www.stopsnoringconsumerreports.com/ www.stopsnoringconsumerreports.com],! Morbid obesity is needs to be taken seriously.  It is essential to slim down so as to assist you to stop snoring.   Daily physical exercise and eating fruits and veggies will help decrease your unwanted weight, and thus lessen your loud snoring as well.  Depending on how over weight you are will stipulate how much excess fat you'll need to lose, however the outcome will often be precisely the same.  Your loud snoring will probably be significantly reduced, and also you will feel far better.&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;Nasal strips could make it easier for you to inhale and exhale by making an effort to relieve congestion inside your nasal passage. Nasal blockage may also make inhaling and exhaling difficult in addition to causing you to snore. Outside of employing nasal strips it is possible to also use nasal spray in order to clear the congestion and stop the snoring.&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;One important issue to remember about snoring is that the cause is not always easy to isolate.  It may be many different aspects that cause the problem.  One particular exciting snoring solution is really a night shirt that forces you to sleep in your side to prevent you from snoring.  However, the most typical appliances are stop snoring mouthpieces which are similar to athletic mouthguards. CPAP machines are the only stop snoring product that makes use of an electronic system to be able to drive high pressure oxygen into your lungs.  It's considerably a lot more economical to buy an anti-snoring device on-line, but in case your health insurance coverage will cover your costs you are able to also visit your doctor.&lt;br&gt;&lt;br&gt;&lt;br&gt;</text>
+      <sha1>av1pwb15xl30zkfriaepw0ypzte3h80</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
