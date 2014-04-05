@@ -9855,14 +9855,15 @@ SSL certificates, especially for https://check.torproject.org (check.tpo) are no
     <ns>0</ns>
     <id>100</id>
     <revision>
-      <id>5922</id>
-      <parentid>4845</parentid>
-      <timestamp>2014-02-27T14:25:54Z</timestamp>
+      <id>7333</id>
+      <parentid>7332</parentid>
+      <timestamp>2014-04-05T15:44:12Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="7385">{{Header}}
+      <comment>/* Checks */</comment>
+      <text xml:space="preserve" bytes="7731">{{Header}}
 {{#seo:
 |description=Whonix Security Check Application. Sanity Test. Leak Test. Update Check.
 }}
@@ -9889,10 +9890,14 @@ Some users wish to hide the fact from their ISP, they they are using Tor and Who
 
 = Checks =
 * If run either on bare metal ([[Physical Isolation]]) or inside VirtualBox. Warns when using an unsupported (by Whonix developers) virtualizer.
-* Whonix 7.7.1.1 and above: checks if the clock source is KVMClock and warns if that is the case. Might probably only happen for users using the [[KVM]] instructions. Reports only if KVMClock is detected. Otherwise quiet.
-* Check the validity of Tor's config files by using &quot;sudo tor --verify-config&quot;. Whonix-Gateway only. Reports only error. Otherwise quiet.
-* Whonix 7.7.1.1 and above: Check if a package manager is currently running. Waits as long as a package manager is running until it continues. It waits, because the Tor package or [[Dev/CPFP]] is currently upgraded, connection checks would fail.
+* Checks if the clock source is KVMClock and warns if that is the case. Might probably only happen for users using the [[KVM]] instructions. Reports only if KVMClock is detected. Otherwise quiet.
+* Checks that whonixsetup is done.
+* Check the validity of Tor's config files by using {{Code|sudo tor --verify-config}}. Whonix-Gateway only. Reports only error. Otherwise quiet.
+* Check if a package manager is currently running. Waits as long as a package manager is running until it continues. It waits, because the Tor package or [[Dev/CPFP]] is currently upgraded, connection checks would fail.
+* Checks, that Tor has been enabled (i.e., that {{Code|DisableNetwork 1}}) has been commented out from /etc/tor/torrc (by whonixsetup).
 * Check if the Tor process is running. Only on Whonix-Gateway. Reports error if not. Quiet otherwise.
+* Whonix 9 and above: Checks if IP forwarding is disabled on gateway.
+* Whonix 9 and above, when using --verbose: Checks if {{Code|~/.whonix/msgdispatcher-error.log}} or {{Code|~/.whonix/whonix_torbrowser_updater_error.log}} exist and reports, if so.
 * Tor connection / IP
 ** Tor Bootstrap Status
 ** downloads https://check.torproject.org with curl through extra SocksPort
@@ -9909,8 +9914,14 @@ Some users wish to hide the fact from their ISP, they they are using Tor and Who
 ** Whonix version and news file must be signed by Whonix developer adrelanos.
 ** Adrelanos gpg key got copied to whonix_shared/usr/share/whonix/keys/whonix-keys.d/ at build time.
 ** Warns if the file can not be gpg verified with adrelanos gpg key. In that case version and news is ignored.
+** Messages signed more than one month ago are rejected and the user is informed about the message being no longer valid.
 ** Also see [[Trust]].
-** An adversary with (temporary) control over the sourceforge.net server could replace that file with any other message ever signed by adrelanos. Below Whonix 7.7.1.1: There is no defense against this attack, but a defense wouldn't be useful anyway. &lt;ref&gt;An adversary in that position could run even more powerful attacks, such as malicious website news and documentation, malicious downloads&lt;/ref&gt; Whonix 7.7.1.1 and above: Messages signed more than one month ago are rejected and the user is informed about the message being no longer valid.
+* Whonix 9 and above: Hostname
+** Checks, if {{Code|hostname --fqdn}} outputs {{Code|host.localdomain}}.
+** Checks, if {{Code|hostname }} outputs {{Code|host}}.
+** Checks, if {{Code|hostname --ip-address }} outputs {{Code|127.0.0.1}}.
+** Checks, if {{Code|hostname --domain }} outputs {{Code|localdomain}}.
+* Informs if [[Whonix-APT-Repository]] is enabled and if yes, which one is enabled.
 
 = Security =
 The ''ca-certificates'' Debian package is installed on Whonix. Curl will verify the SSL certificate for downloads from check.tpo (SocksPort Test, TransPort Test, Tor Browser version check) and aborts if the certificate is not valid.
@@ -9932,7 +9943,7 @@ cat /var/lib/whonix/whonixcheck/whonixcheck_message_x
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Design]]</text>
-      <sha1>of5hgltuwjlwyvv28xrxs5uivf9jn27</sha1>
+      <sha1>mekn3wkpngv30ovxxatzk6b4tx5bhtp</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
