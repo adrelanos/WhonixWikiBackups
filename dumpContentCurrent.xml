@@ -7767,14 +7767,14 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
     <ns>0</ns>
     <id>96</id>
     <revision>
-      <id>7327</id>
-      <parentid>7228</parentid>
-      <timestamp>2014-04-05T06:49:17Z</timestamp>
+      <id>7335</id>
+      <parentid>7327</parentid>
+      <timestamp>2014-04-06T09:16:58Z</timestamp>
       <contributor>
         <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* Features */ QubesOS supports Xfce4 as alternative to KDE during installation</comment>
-      <text xml:space="preserve" bytes="71420">{{Header}}
+      <comment>Tails &gt;= 0.23 now spoofs MAC address by default</comment>
+      <text xml:space="preserve" bytes="71389">{{Header}}
 {{#seo:
 |description=Comparison of Whonix, Tails, Tor Browser Bundle, QubesOS TorVM and corridor. About anonymity, privacy, security, circumvention, attacks, fingerprinting, usability, features, etc.
 }}
@@ -8122,7 +8122,7 @@ This page contains the comparisons of Whonix, Tails, Tor Browser and Qubes OS To
 |-
 | style=&quot;height: 27px;background-color: #f9f9f9&quot;| Hides your MAC address from local LAN &lt;ref&gt;Sometimes from ISP. Most ISPs do not see the MAC addresses of their clients. But some ISPs are based on LANs, in that case they can see the MAC address. Also hotspots can see the MAC address.&lt;/ref&gt;
 | style=&quot;background-color: {{Red}}&quot;| No, see. &lt;ref&gt;Please read [[Pre_Install_Advice#MAC_Address|Whonix in public networks / MAC Address]].&lt;/ref&gt;
-| style=&quot;background-color: {{Red}}&quot;| No, planned. &lt;ref&gt;[https://tails.boum.org/todo/macchanger/ Tails Todo: macchanger]&lt;/ref&gt;
+| style=&quot;background-color: {{Green}}&quot;| Yes, Tails &gt;= 0.23 spoofs MAC address. Can be disabled.
 | {{No}}
 | {{No}}
 | {{BlueBackground}} Not applicable.
@@ -9013,7 +9013,7 @@ One has always to be very careful, when talking about others. Especially, when t
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Design]]</text>
-      <sha1>osa9oirfqo4vcyxff7duet9mqn8n53m</sha1>
+      <sha1>3hbg283zqo2wcog9uv4gou71j2qbxpr</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -18146,16 +18146,15 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
     <ns>0</ns>
     <id>155</id>
     <revision>
-      <id>6229</id>
-      <parentid>5891</parentid>
-      <timestamp>2014-03-02T11:49:01Z</timestamp>
+      <id>7334</id>
+      <parentid>6229</parentid>
+      <timestamp>2014-04-05T23:05:53Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <minor/>
-      <comment>Text replace - &quot;OtherOperatingSystems&quot; to &quot;Other Operating Systems&quot;</comment>
-      <text xml:space="preserve" bytes="18241">{{Header}}
+      <comment>/* Attacks */</comment>
+      <text xml:space="preserve" bytes="18247">{{Header}}
 &lt;!--
 Copyright:
 
@@ -18233,7 +18232,12 @@ A correct system clock is crucial for many reasons (see footnotes for more):
 * '''Attack 2:''' Feeding old/outdated/known vulnerable updates and (https) certificates &lt;ref&gt;Cryptographic verification depends on system clock, i.e. a clock two years in past will accept certificates/updates, which have been expired/revoked for two years.&lt;/ref&gt;
 * '''Attack 3:''' Deanonymizing &lt;ref&gt;Javascript is enabled in Tor Button by default and it can be used to read the client's clock, see http://ip-check.info for demonstration. Also other applications do leak the client's clock, such as Thunderbird (patch has been proposed by TorBirdy developers) and https. Imagine the user connects to an adversary controlled web-server with Mozilla Firefox and connects to another web-server controlled by the same adversary with Tor Browser. As long as TBB upstream [https://trac.torproject.org/projects/tor/ticket/3059 Bug #3059: Find some way to deal with time-based fingerprints] is open, the adversary can link the anonymous and non-anonymous session, thus deanonymizing.&lt;/ref&gt;
 * '''Attack 4:''' Linking all sessions to the same pseudonym &lt;ref&gt;If the clock is too much off, it's also easy for an adversary's web-server to detect &quot;Oh, that's the Tor Browser user who's clock is X in past/future.&quot;, thus allowing the adversary to link all sessions to the same pseudonym. See Tor Browser upstream bug #3059: [https://trac.torproject.org/projects/tor/ticket/3059 Find some way to deal with time-based fingerprints].&lt;/ref&gt;
-* '''Attack 5:''' Locating hidden services. &lt;ref&gt;For hidden services a correct clock is crucial, see: [http://www.cl.cam.ac.uk/~sjm217/papers/ccs06hotornot.pdf Hot or Not: Revealing Hidden Services by their Clock Skew]; [http://caia.swin.edu.au/talks/CAIA-TALK-080728A.pdf An improved clock-skew measurement technique for revealing hidden services]; [http://people.cs.umass.edu/~elisha/Papers/SkewMask%20-%20final%20version.pdf SkewMask: Frustrating Clock Skew Fingerprinting Attempts]&lt;/ref&gt;
+* '''Attack 5:''' Locating hidden services. &lt;ref&gt;
+For hidden services a correct clock is crucial, see:
+* [http://www.cl.cam.ac.uk/~sjm217/papers/ccs06hotornot.pdf Hot or Not: Revealing Hidden Services by their Clock Skew]
+* [http://caia.swin.edu.au/talks/CAIA-TALK-080728A.pdf An improved clock-skew measurement technique for revealing hidden services]
+* [http://people.cs.umass.edu/~elisha/Papers/SkewMask%20-%20final%20version.pdf SkewMask: Frustrating Clock Skew Fingerprinting Attempts]
+&lt;/ref&gt;
 
 = Whonix's Time Synchronization Mechanism =
 == Overview ==
@@ -18347,7 +18351,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Design]]</text>
-      <sha1>0b1y3l24xx95qyi1t5r93d7azhraa2w</sha1>
+      <sha1>7t76sr8vrsq07t7adt7ftgbtbnj0tq7</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
