@@ -4220,9 +4220,9 @@ Hidden Services with Whonix are still safer than running Tor and the server soft
     <ns>0</ns>
     <id>75</id>
     <revision>
-      <id>5819</id>
-      <parentid>4154</parentid>
-      <timestamp>2014-02-27T12:58:50Z</timestamp>
+      <id>7339</id>
+      <parentid>7338</parentid>
+      <timestamp>2014-04-06T19:03:15Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
@@ -7767,14 +7767,15 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
     <ns>0</ns>
     <id>96</id>
     <revision>
-      <id>7335</id>
-      <parentid>7327</parentid>
-      <timestamp>2014-04-06T09:16:58Z</timestamp>
+      <id>7336</id>
+      <parentid>7335</parentid>
+      <timestamp>2014-04-06T14:46:51Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <comment>Tails &gt;= 0.23 now spoofs MAC address by default</comment>
-      <text xml:space="preserve" bytes="71389">{{Header}}
+      <comment>/* Hardware Serials */</comment>
+      <text xml:space="preserve" bytes="71366">{{Header}}
 {{#seo:
 |description=Comparison of Whonix, Tails, Tor Browser Bundle, QubesOS TorVM and corridor. About anonymity, privacy, security, circumvention, attacks, fingerprinting, usability, features, etc.
 }}
@@ -8122,7 +8123,7 @@ This page contains the comparisons of Whonix, Tails, Tor Browser and Qubes OS To
 |-
 | style=&quot;height: 27px;background-color: #f9f9f9&quot;| Hides your MAC address from local LAN &lt;ref&gt;Sometimes from ISP. Most ISPs do not see the MAC addresses of their clients. But some ISPs are based on LANs, in that case they can see the MAC address. Also hotspots can see the MAC address.&lt;/ref&gt;
 | style=&quot;background-color: {{Red}}&quot;| No, see. &lt;ref&gt;Please read [[Pre_Install_Advice#MAC_Address|Whonix in public networks / MAC Address]].&lt;/ref&gt;
-| style=&quot;background-color: {{Green}}&quot;| Yes, Tails &gt;= 0.23 spoofs MAC address. Can be disabled.
+| {{Yes}} &lt;ref&gt;Tails &gt;= 0.23 spoofs MAC address. Can be disabled.&lt;/ref&gt;
 | {{No}}
 | {{No}}
 | {{BlueBackground}} Not applicable.
@@ -9013,7 +9014,7 @@ One has always to be very careful, when talking about others. Especially, when t
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Design]]</text>
-      <sha1>3hbg283zqo2wcog9uv4gou71j2qbxpr</sha1>
+      <sha1>7733mlb932mzq3bxepijj6pow8m25z7</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -18146,14 +18147,13 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
     <ns>0</ns>
     <id>155</id>
     <revision>
-      <id>7334</id>
-      <parentid>6229</parentid>
-      <timestamp>2014-04-05T23:05:53Z</timestamp>
+      <id>7337</id>
+      <parentid>7334</parentid>
+      <timestamp>2014-04-06T15:23:08Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Attacks */</comment>
       <text xml:space="preserve" bytes="18247">{{Header}}
 &lt;!--
 Copyright:
@@ -18244,7 +18244,7 @@ For hidden services a correct clock is crucial, see:
 * Whonix leaves the host's system clock or time synchronization mechanism untouched.
 * Whonix-Gateway and Whonix-Workstation are based on VirtualBox and therefore have their own virtual hardware system clocks.
 * Most VirtualBox time synchronization features get disabled by Whonix.
-** Guest additions time synchronization gets disabled in ''/etc/init.d/htpdate'' at run time. See VirtualBox bug report [https://www.virtualbox.org/ticket/10828 VBoxService --disable-timesync broken]. They say it's actually not a bug. It's a missing feature, that running instances of VBoxService can not be modified in their settings. Whonix would need to edit ''/etc/init.d/vboxadd-service'' by adding ''--disable-timesync'' &lt;ref&gt;[https://www.virtualbox.org/ticket/2928 source]&lt;/ref&gt;. Whonix developer Patrick Schleizer does not see a reliable way to do so. If the guest additions get automatically updated in future the option would get overwritten. That's why Whonix added a line in ''/etc/init.d/htpdate'' to turn it off completely. Guest additions time synchronization gets disabled, but the rest of the guest additions continue to work fine. Unless you have a better idea, it's an acceptable workaround.
+** Guest additions time synchronization gets disabled in ''/etc/init.d/sdwdate'' at run time. See VirtualBox bug report [https://www.virtualbox.org/ticket/10828 VBoxService --disable-timesync broken]. They say it's actually not a bug. It's a missing feature, that running instances of VBoxService can not be modified in their settings. Whonix would need to edit ''/etc/init.d/vboxadd-service'' by adding ''--disable-timesync'' &lt;ref&gt;[https://www.virtualbox.org/ticket/2928 source]&lt;/ref&gt;. Whonix developer Patrick Schleizer does not see a reliable way to do so. If the guest additions get automatically updated in future the option would get overwritten. That's why Whonix added a line in ''/etc/init.d/sdwdate'' to turn it off completely. Guest additions time synchronization gets disabled, but the rest of the guest additions continue to work fine. Unless you have a better idea, it's an acceptable workaround.
 ** built in time synchronization features get disabled by ''VBoxManage setextradata &quot;$VMNAME&quot; &quot;VBoxInternal/Devices/VMMDev/0/Config/GetHostTimeDisabled&quot; &quot;1&quot;'' at build time.
 * Whonix-Gateway and Whonix-Workstation
 ** When get powered on, they still get their time from the host. The user is advised to modify the biossystemtimeoffset in Advanced Security Guide, chapter [[Advanced Security Guide#Network Time Synchronization|Network Time Synchronization]]. &lt;ref&gt;Developer information: If we needed or wanted to render the hardware clock unusable, we could set VirtualBox ''--biossystemtimeoffset'' several decades in past or future.&lt;/ref&gt;
@@ -18351,7 +18351,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Design]]</text>
-      <sha1>7t76sr8vrsq07t7adt7ftgbtbnj0tq7</sha1>
+      <sha1>2v1vn3ch8ow69n9j3e3c7b9k5q8q9lp</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -23956,14 +23956,14 @@ Resolve DNS.
     <ns>8</ns>
     <id>220</id>
     <revision>
-      <id>7326</id>
-      <parentid>7325</parentid>
-      <timestamp>2014-04-05T05:44:56Z</timestamp>
+      <id>7342</id>
+      <parentid>7326</parentid>
+      <timestamp>2014-04-06T21:34:10Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="39332">/* CSS placed here will be applied to all skins */
+      <text xml:space="preserve" bytes="39380">/* CSS placed here will be applied to all skins */
 /* Default styling for HTML elements */
 
  body.page-No_page_title h1.firstHeading, body.page-Main_Page h1.firstHeading
@@ -25385,8 +25385,12 @@ white-space:pre-line;
 
 #p-logo {
         display:none;
+}
+
+#footer-poweredbyico {
+        display:none;
 }</text>
-      <sha1>3y001m4e9xnz7671r1i5bpbwyoreg3v</sha1>
+      <sha1>bh3j1g3qsd0ccchcjtl3760l7lbadrn</sha1>
       <model>css</model>
       <format>text/css</format>
     </revision>
@@ -56606,14 +56610,15 @@ Quelle: &lt;html&gt;&lt;a href=&quot;http://www.juraforum.de/impressum-generator
     <ns>0</ns>
     <id>698</id>
     <revision>
-      <id>7230</id>
-      <parentid>7215</parentid>
-      <timestamp>2014-04-03T17:26:23Z</timestamp>
+      <id>7340</id>
+      <parentid>7230</parentid>
+      <timestamp>2014-04-06T19:04:32Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="4124">&lt;!--
+      <comment>/* Geltungsbereich */</comment>
+      <text xml:space="preserve" bytes="4211">&lt;!--
 NOTE TO WIKI EDITORS:
 Do not add the default footer!
 Do not edit without asking Patrick Schleizer beforehand!
@@ -56684,6 +56689,8 @@ Dieses Impressum gilt auch für:
 ** https://github.com/Whonix/control-port-filter
 ** https://github.com/adrelanos/control-port-filter
 ** https://github.com/adrelanos/wiki-seo
+** https://github.com/Whonix/msgcollector
+** https://github.com/adrelanos/msgcollector
 
 Bitte beachten Sie, dass dieses Impressum gilt nicht für:
 
@@ -56698,7 +56705,7 @@ Die Datenschutzerklärung finden Sie [[Datenschutz|hier]].
 Den Haftungsausschluss (Disclaimer) finden Sie [[Disclaimer|hier]].
 
 [[Category:Documentation]]</text>
-      <sha1>llpo0idjy8wq6y8fml647dpmufquozh</sha1>
+      <sha1>4zl6effkqhnfxr6fs19ey2rc5w5c1ta</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -70565,19 +70572,21 @@ testdeutsch
     </revision>
   </page>
   <page>
-    <title>Awesome Ideas To Find The Best Stop Snoring Device For You</title>
+    <title>Los jugadores de videogames escogen las sites de reproducciones en video</title>
     <ns>0</ns>
-    <id>1210</id>
+    <id>1211</id>
     <revision>
-      <id>7328</id>
-      <timestamp>2014-04-05T08:21:03Z</timestamp>
+      <id>7341</id>
+      <timestamp>2014-04-06T20:32:50Z</timestamp>
       <contributor>
-        <username>Domingo24O</username>
-        <id>277</id>
+        <username>JoaquinCampo</username>
+        <id>276</id>
       </contributor>
-      <comment>Created page with &quot;&lt;br&gt;&lt;br&gt;Snoring is an extremely very common problem that has an effect on countless people. Are you presently of the belief that loud snoring is only a humorous annoyance that...&quot;</comment>
-      <text xml:space="preserve" bytes="4172">&lt;br&gt;&lt;br&gt;Snoring is an extremely very common problem that has an effect on countless people. Are you presently of the belief that loud snoring is only a humorous annoyance that takes place when some individuals are sleeping? A medical condition generally known as Obstructive Sleep Apnea can actually make you snore and stop respiration frequently through the night. If you find that you're tired and sluggish for the entire day time it might be caused by sub par rest from nighttime snoring.&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;Don't Stress Out If You Snore&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;If you want to comprehend the best way to start treating a medical related problem, the first thing you have to do is understand it's suspected origins. All of your muscles within your body loosen up even though you're resting.  Regrettably, for folks who snore at night the muscles in the air passage grow to be way too relaxed.  This leads to a lack of muscle rigidity plus a flattened airway.  Because the air struggles to pass in to the respiratory system past the small area it generates a noisy vibration.  Unfortunately snoring is not a rare issue.  It's also linked with a number of heart problems, also as psychological disorders.  Snoring induced by a nasal blockage might be helped by sinus strips that pull the nostrils apart.  While when the obstruction is caused by a blockage in the respiratory tract a snoring mouth piece will probably be much more appropriate.  Essentially the most popular snoring solution available on the market today could be the stop snoring mouth piece that's usually used in circumstances of moderate OSA.&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;Discover The Very Best Quit Snoring Solution For You Personally&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;Proper research and due diligence is crucial when attempting to establish which item is appropriate for you personally.  Make certain that you study all common stop snoring devices readily available to find the one that's ideal for your scenario.  As soon as you understand the etiology of one's problem deciding on the best solution is going to be an easy decision. &lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;A number of people are born having a uvula (the dangling thing in the back of one's throat) that's bigger than normal, and this could make them snore through the night. Morbid obesity is amongst the top factors that men and women snore because of the excess fat around their neck.  Are there any questions relating to everything that you just studied?  Now head over to how do I stop snoring; [http://www.stopsnoringconsumerreports.com/ www.stopsnoringconsumerreports.com],! Morbid obesity is needs to be taken seriously.  It is essential to slim down so as to assist you to stop snoring.   Daily physical exercise and eating fruits and veggies will help decrease your unwanted weight, and thus lessen your loud snoring as well.  Depending on how over weight you are will stipulate how much excess fat you'll need to lose, however the outcome will often be precisely the same.  Your loud snoring will probably be significantly reduced, and also you will feel far better.&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;Nasal strips could make it easier for you to inhale and exhale by making an effort to relieve congestion inside your nasal passage. Nasal blockage may also make inhaling and exhaling difficult in addition to causing you to snore. Outside of employing nasal strips it is possible to also use nasal spray in order to clear the congestion and stop the snoring.&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;One important issue to remember about snoring is that the cause is not always easy to isolate.  It may be many different aspects that cause the problem.  One particular exciting snoring solution is really a night shirt that forces you to sleep in your side to prevent you from snoring.  However, the most typical appliances are stop snoring mouthpieces which are similar to athletic mouthguards. CPAP machines are the only stop snoring product that makes use of an electronic system to be able to drive high pressure oxygen into your lungs.  It's considerably a lot more economical to buy an anti-snoring device on-line, but in case your health insurance coverage will cover your costs you are able to also visit your doctor.&lt;br&gt;&lt;br&gt;&lt;br&gt;</text>
-      <sha1>av1pwb15xl30zkfriaepw0ypzte3h80</sha1>
+      <comment>Created page with &quot;  Desde hace unos escasos años hemos sido capaces de observar de la forma en que progresivamente los canales de videos dedicados en suministrar pistas y tricks para distintos...&quot;</comment>
+      <text xml:space="preserve" bytes="2223">
+
+Desde hace unos escasos años hemos sido capaces de observar de la forma en que progresivamente los canales de videos dedicados en suministrar pistas y tricks para distintos videojuegos estan claramente aumentando abundantemente. De esta manera, la web el portal youtube puede ser ,sin la menor duda, el que mas soluciones podria ofrecernos al resultar definitivamente el mas grande los blogs de reproducciones en video que hay disponible en la actualidad. &lt;br&gt;&lt;br&gt;El alcance de el portal youtube es desmedida, hasta inclusive el punto de que ha sido capaz de iniciar una reciente tipo de jugones, los youtubers, a los que alcanzamos a catalogar en variados clases que nos llevan empezando por los genuinos bufones que suben reproducciones en video nada mas que divertidos hasta los youtubers mas comprometidos que se encargan de dar resoluciones a cada game.  En los sites de los usuarios que es posible designar algo mas serios podemos localizar soluciones que nos llevan desde la facilitacion de trofeos y logros hasta guides pormenorizadas poco a poco que nos evidencian el total de el juego de un concreto juego. &lt;br&gt;&lt;br&gt;Una de las caracteristicas de esta reciente inclinacion puede ser claramente la enorme talento de ajuste que las estrellas de youtube tienen y pese a que al inicio podiamos testear que los usuarios tendian bastante mas a las guias de los games, progresivamente esta predisposicion ha ido desacelerandose, cambiandose en visionado por misiones con inferior seguimiento.  Por otra parte, la consulta de ciertos trofeos y logros arduos de obtener, como los recomendaciones y fallos que provean algo de ayuda en modalidades on line, han ido aumentando en gran medida. &lt;br&gt;&lt;br&gt;Aparece ciertamente cristalino que nos encontramos en un periodo en la que los users tienen preferencia por las webs de videos por encima de cualquiera otro, un asunto que no ha pasado sin ser tenido en consideracion para gran cantidad de jugones y blogs.  Absolutamente todos seria capaz subir los videos que quiera referente a lo que le de la gana, de manera que absolutamente todos deberiamos ser capaces de buscar lo que necesitemos de un modo mucho mas rauda y facil, e incluso transformarnos en unas stars de youtube.</text>
+      <sha1>7c2pkogci3uo7vvwabvl8f3gvgt2on6</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
