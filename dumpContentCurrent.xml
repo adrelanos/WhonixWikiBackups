@@ -1232,14 +1232,15 @@ Some icons created by third parties, Free licenses as well, see [[Authorship#Ima
     <ns>0</ns>
     <id>23</id>
     <revision>
-      <id>6984</id>
-      <parentid>5869</parentid>
-      <timestamp>2014-03-20T03:37:03Z</timestamp>
+      <id>7357</id>
+      <parentid>6984</parentid>
+      <timestamp>2014-04-07T21:31:30Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <comment>Some grammar error. &quot;file formats&quot; not &quot;files format&quot;</comment>
-      <text xml:space="preserve" bytes="25904">&lt;languages /&gt;
+      <comment>/* Whonix is a work in progress */</comment>
+      <text xml:space="preserve" bytes="25905">&lt;languages /&gt;
 {{Header}}
 {{#seo:
 |description=Things you should know about Whonix and Anonymity in General to stay safe.
@@ -1511,7 +1512,7 @@ least) three people, adrelanos, smarm and anonymous. [1] [2]
   Although Whonix has been developed with greatest care, a negative,
 being leak free or being free from mistakes in the extended project
 description [1], can not be proven. This is Whonix's first release
-announcement. I hope skilled people look into the concept and
+announcement. We hope skilled people look into the concept and
 implementation and fail to find anonymity related bugs.&lt;/pre&gt;
 
 See also [[Security_in_Real_World | Whonix security in real world]], [[Security_Reviews_and_Feedback | Security Reviews and Feedback]] and [[Technical_Introduction#Security_Overview | Security Overview]].
@@ -1522,7 +1523,7 @@ See also [[Security_in_Real_World | Whonix security in real world]], [[Security_
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>lm78030snhh7jaxreqbgg20qg2xbdqd</sha1>
+      <sha1>td6813418y2wk6x9fst9ffa48enibqg</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -2664,14 +2665,15 @@ Not compulsory, just nicely asking:
     <ns>0</ns>
     <id>56</id>
     <revision>
-      <id>7077</id>
-      <parentid>7069</parentid>
-      <timestamp>2014-03-26T22:24:20Z</timestamp>
+      <id>7358</id>
+      <parentid>7077</parentid>
+      <timestamp>2014-04-07T21:31:55Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="49341">{{Header}}
+      <comment>/* Why do you use the 32 bit operating system, not 64 bit? */</comment>
+      <text xml:space="preserve" bytes="49342">{{Header}}
 {{#seo:
 |description=FAQ. Frequently Asked Questions.
 }}
@@ -2778,7 +2780,7 @@ Update: A critical VirtualBox bug: [https://www.virtualbox.org/ticket/10853 Virt
 
 Since Whonix 0.4.0 the build environment uses grml-debootstrap (perhaps kameleon in future) and chroot. Image creation goes much faster and changing the architecture requires only a very few changes. If Whonix revives contributions or due to user feedback it might be possible in future to have 32 and 64 bit downloads.
 
-Old statement: 32bit software runs without problems on 32bit and 64bit hosts. 64bit software not so much. Because we generally don't control what host OS people use, I chose to base Whonix on 32bit. Secondly, 64bit software needs more RAM, we already run 3 operating systems on a system which, eats RAM. Let's better minimize that. KVM and other solutions improve RAM usage through page sharing or what it's called, VirtualBox doesn't. Thirdly, according to Brad Spengler and/or PAX team, amd64 is a brain dead instruction set and actually worse than x86, despite the large address space making ASLR more effective. They recommended to use grsec on x86 and I hope we can switch to a grsec kernel (wheezy has one, let's see if they maintain it).
+Old statement: 32bit software runs without problems on 32bit and 64bit hosts. 64bit software not so much. Because we generally don't control what host OS people use, I chose to base Whonix on 32bit. Secondly, 64bit software needs more RAM, we already run 3 operating systems on a system which, eats RAM. Let's better minimize that. KVM and other solutions improve RAM usage through page sharing or what it's called, VirtualBox doesn't. Thirdly, according to Brad Spengler and/or PAX team, amd64 is a brain dead instruction set and actually worse than x86, despite the large address space making ASLR more effective. They recommended to use grsec on x86 and we hope we can switch to a grsec kernel (wheezy has one, let's see if they maintain it).
 
 = Why aren't you using OpenBSD, it's the most secure OS ever!!!1! =
 
@@ -3224,7 +3226,7 @@ Without performing these basics steps, the setup may sound clever, but may not w
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>c4q02ggz0fp2o7fz0yzko9k7575y7nm</sha1>
+      <sha1>tvaja49aosuz2dvnp0ktrwhqt3jw3hy</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -3254,14 +3256,15 @@ Without performing these basics steps, the setup may sound clever, but may not w
     <ns>0</ns>
     <id>58</id>
     <revision>
-      <id>7201</id>
-      <parentid>6294</parentid>
-      <timestamp>2014-03-30T18:19:07Z</timestamp>
+      <id>7359</id>
+      <parentid>7201</parentid>
+      <timestamp>2014-04-07T21:32:30Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="2272">{{#seo:
+      <comment>/* For Press */</comment>
+      <text xml:space="preserve" bytes="1900">{{#seo:
 |description=Contact Whonix developers and whonix.org webmaster. Press contact.
 }}
 {{Header}}
@@ -3285,7 +3288,6 @@ Contact Whonix Developer Patrick Schleizer.
 * '''e-mail''': ''[mailto:adrelanos@riseup.net adrelanos@riseup.net]''
 * gpg: &lt;html&gt;&lt;a class=&quot;link-https&quot; download href=&quot;/patrick.asc&quot;&gt;patrick.asc&lt;/a&gt;&lt;/html&gt; &lt;br /&gt;
 &lt;br /&gt;
-I would appreciate if you could send me your draft before publishing articles about Whonix. This is not a request. It's an offer. I would proofread it, state where I think something is incorrect and add sources to my claims. I dislike to pressure press. You are free to write what you want. I feel free to post my standpoint in public if I feel otherwise about something.
 
 == For Donations ==
 See '''[[Donate]]''' page. &lt;br /&gt;&lt;br /&gt;
@@ -3312,7 +3314,7 @@ There are some [[Official Whonix Online Profiles | Whonix Social Media Profiles]
 If you don't get into trouble, by letting others to know, that you like or use Whonix, feel free to follow or like those profiles (with your anonymous account) as a little way to [[Contribute]].
 
 [[Category:Documentation]]</text>
-      <sha1>non6ng6v9olo62ovonb4mkfsocnjbgq</sha1>
+      <sha1>96qq9thm06lehe9t4nykkspj6lhzdtt</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -4544,15 +4546,15 @@ http://sourceforge.net/p/whonix/wiki/Dev_old_1/
     <ns>0</ns>
     <id>79</id>
     <revision>
-      <id>7010</id>
-      <parentid>6224</parentid>
-      <timestamp>2014-03-21T16:14:39Z</timestamp>
+      <id>7360</id>
+      <parentid>7010</parentid>
+      <timestamp>2014-04-07T21:32:55Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Footnotes */</comment>
-      <text xml:space="preserve" bytes="9541">{{Header}}
+      <comment>/* Even more security */</comment>
+      <text xml:space="preserve" bytes="9543">{{Header}}
 {{#seo:
 |description=Anonymize any Operating System! Your operating system tunneled through the Tor Anonymity Network! Create your Custom-Whonix-Workstation!
 }}
@@ -4644,7 +4646,7 @@ Recommendations:
 
 * Prevent [https://trac.torproject.org/projects/tor/wiki/doc/TransparentProxyLeaks Transparent Proxy Leaks] by disabling Whonix-Gateway's Transparent Proxy feature. Instead use your Windows Whonix-Workstation behind an [https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/IsolatingProxy Isolating Proxy]. See [[Stream Isolation]] for more information and instructions on how to disable the Transparent Proxy feature.
 * Check your host clock out of band (use a watch or atomic clock).
-* Set your host and your Workstation clock to show seconds as well. After booting the Whonix-Windows-Workstation, add a random skew to your clock, maybe +/- 1 to 30 seconds. Optimal values are still under investigation. For reference, see [[TimeSync|Whonix's Secure And Distributed Time Synchronization Mechanism]], it's Whonix-Example-Implementation-Workstation (based on Debian GNU/Linux) specific, but most information also applies to Windows. Since I am not aware of a tails_htp alternative for Windows, you have to do it manually.
+* Set your host and your Workstation clock to show seconds as well. After booting the Whonix-Windows-Workstation, add a random skew to your clock, maybe +/- 1 to 30 seconds. Optimal values are still under investigation. For reference, see [[TimeSync|Whonix's Secure And Distributed Time Synchronization Mechanism]], it's Whonix-Example-Implementation-Workstation (based on Debian GNU/Linux) specific, but most information also applies to Windows. Since we are not aware of a tails_htp alternative for Windows, you have to do it manually.
 
 == VM settings ==
 {{VM Settings Security Common}}
@@ -4797,7 +4799,7 @@ A Whonix-Custom-Workstation ''can be made'' (Your responsibility!) as secure as 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>g5j12awbhbj15zfh0nrvfd5eejb2mix</sha1>
+      <sha1>cv7ncckp52cefu7t30qwj5fxqj7h3dr</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -5097,15 +5099,15 @@ different license.
     <ns>0</ns>
     <id>85</id>
     <revision>
-      <id>6334</id>
-      <parentid>5726</parentid>
-      <timestamp>2014-03-05T22:42:13Z</timestamp>
+      <id>7361</id>
+      <parentid>6334</parentid>
+      <timestamp>2014-04-07T21:33:27Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Code Contributors */</comment>
-      <text xml:space="preserve" bytes="12120">{{Header}}
+      <comment>/* Sources */</comment>
+      <text xml:space="preserve" bytes="12100">{{Header}}
 {{#seo:
 |description=Authorship of Whonix. Code Contributors, Arts Contributors, Other Contributors, Credits, Inspiration, Alternatives, Sources.
 }}
@@ -5205,10 +5207,7 @@ Misc things.
 * leo bogert for Simple Bitcoin Donate Button http://leo.bogert.de/2012/02/22/simple-bitcoin-donate-button/
 
 == Sources ==
-
-Sources I (Patrick Schleizer) learned from:
-
-In random order.
+Sources learned from... In random order...
 
 * [http://www.debiantutorials.com/installing-and-configuring-pptp-vpn-server-on-lenny/ Debian Tutorials: Installing and configuring PPTP VPN server on lenny]
 * [http://www.debiantutorials.com/loading-iptables-rules-on-startup/ Debian Tutorials: Loading iptables rules on startup]
@@ -5316,7 +5315,7 @@ See license file in Whonix source code.
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Development]]</text>
-      <sha1>nc022s8rkzypejt3sw1xwxmazx20l60</sha1>
+      <sha1>sjo0yzruhsc39p4o5yoks609dbh7duw</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -5576,14 +5575,15 @@ then choose etc (at the bottom) and then choose UTC.
     <ns>0</ns>
     <id>87</id>
     <revision>
-      <id>6955</id>
-      <parentid>5785</parentid>
-      <timestamp>2014-03-18T06:32:25Z</timestamp>
+      <id>7362</id>
+      <parentid>6955</parentid>
+      <timestamp>2014-04-07T21:34:29Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <comment>/* Using your home connection */</comment>
-      <text xml:space="preserve" bytes="22128">&lt;!--
+      <comment>/* Changing MAC address */</comment>
+      <text xml:space="preserve" bytes="22138">&lt;!--
 Copyright:
 
    Whonix Pre Install Advice wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -5860,7 +5860,7 @@ instead.
 
 &lt;u&gt;(4)&lt;/u&gt;
 
-To prevent automatically bringing up new network interfaces I think all that's needed is to uncomment
+To prevent automatically bringing up new network interfaces this is probably all that's needed is to uncomment.
 
 &lt;pre&gt;auto eth0&lt;/pre&gt;
 Then manually bring up with
@@ -5897,7 +5897,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>abnw6zy29vxmpe3cbb6n4ia6b8nla16</sha1>
+      <sha1>bmpt9fpm9l6q73j8difaseczxc4kbva</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -7424,15 +7424,15 @@ If you are going to use VirtualBox inside VirtualBox, be sure to change your hos
     <ns>0</ns>
     <id>95</id>
     <revision>
-      <id>6879</id>
-      <parentid>6877</parentid>
-      <timestamp>2014-03-12T19:38:01Z</timestamp>
+      <id>7363</id>
+      <parentid>6879</parentid>
+      <timestamp>2014-04-07T21:35:48Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Mozilla Thunderbird with TorBirdy */</comment>
-      <text xml:space="preserve" bytes="23549">{{Header}}
+      <comment>/* E-Mail Provider Comparison */</comment>
+      <text xml:space="preserve" bytes="23539">{{Header}}
 &lt;!--
 Copyright:
 
@@ -7566,8 +7566,7 @@ See [[Remailer]].
 = E-Mail Provider Comparison =
 
 == Introduction ==
-
-Patrick Schleizer has been asked whether i2pmail is safer than tormail, riseup, gmail and so on. The ''Threats'' chapter above states &quot;''e-mail is always a single point of failure''&quot;. It doesn't really matter, apart from privacy by policy, no e-mail provider can significantly improve privacy by design. The most important thing about e-mail providers you should ask about e-mail providers is: Will they tolerate me signing up by Tor and exclusively using the e-mail service over Tor? Will they suspend my e-mail account because I speak against someone and they get forced to suspend my account? The latter question applies more, if you run a project, movement or something like that and less for accounts, which barely anyone knows.
+It has been asked whether i2pmail is safer than tormail, riseup, gmail and so on. The ''Threats'' chapter above states &quot;''e-mail is always a single point of failure''&quot;. It doesn't really matter, apart from privacy by policy, no e-mail provider can significantly improve privacy by design. The most important thing about e-mail providers you should ask about e-mail providers is: Will they tolerate me signing up by Tor and exclusively using the e-mail service over Tor? Will they suspend my e-mail account because I speak against someone and they get forced to suspend my account? The latter question applies more, if you run a project, movement or something like that and less for accounts, which barely anyone knows.
 
 Other than privacy by design, privacy by policy is always a weak protection. An exception might be services, which are not classical e-mail and therefore incompatible, but e-mail alike services such as Usenet (see below), I2P-Bote (see below), RetroShare or TorChat (See [[Chat]]).
 
@@ -7579,7 +7578,7 @@ A few frequently discussed mail providers are described above with some facts. T
 * Rumors about being hosted by a secret service. It doesn't really matter, you shouldn't trust mail providers anyway. Assume, anything they can log, they will log forever.
 * They technically can not even store Tor exit IP addresses (perhaps mail clients without TorBirdy, put aside) because it's a hidden service.
 * Does not work reliable for mailing lists. After a while the user gets unsubscribed because tormail bounces too many mails.
-* I haven't heard about any e-mail accounts which got suspended. (Well, I don't know about spam abuse, but that's another story.)
+* We haven't heard about any e-mail accounts which got suspended. (Well, we don't know about spam abuse, but that's another story.)
 * They are obviously Tor-friendly.
 * Things said in the ''Threats'' chapter still apply.
 &lt;/s&gt;
@@ -7594,7 +7593,7 @@ The Tor Mail service is now offline&lt;ref&gt;https://openwatch.net/i/200/anonym
 &lt;/ref&gt;, unless the sender and recipient are using end-to-end encryption such as OpenPGP.
 * Therefore it's no more/less secure than using riseup, tormail, etc.
 * Even though based on i2p, you can still use it in Whonix over Tor, see [[i2p]] for information how to tunnel i2p over Tor.
-* I haven't heard about any e-mail accounts which got suspended. (Well, I don't know about spam abuse, but that's another story.)
+* We haven't heard about any e-mail accounts which got suspended. (Well, we don't know about spam abuse, but that's another story.)
 * Things said in the ''Threats'' chapter still apply.
 
 == I2P-Bote ==
@@ -7608,7 +7607,7 @@ Is not a classical e-mail provider and deserves its own chapter, see below.
 * Privacy by policy.
 * Tor friendly.
 * Servers hosted in the US.
-* I haven't heard about any e-mail accounts which got suspended. (Well, I don't know about spam abuse, but that's another story.)
+* We haven't heard about any e-mail accounts which got suspended. (Well, we don't know about spam abuse, but that's another story.)
 * Things said in the ''Threats'' chapter still apply.
 
 == gmail ==
@@ -7757,7 +7756,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>nk8ugmd691n6wlsouomxn2pxior9kyj</sha1>
+      <sha1>2k4bw5v69gh28o0jxwq2nlvhw1go6yy</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -9024,14 +9023,15 @@ One has always to be very careful, when talking about others. Especially, when t
     <ns>0</ns>
     <id>97</id>
     <revision>
-      <id>5739</id>
-      <parentid>2756</parentid>
-      <timestamp>2014-02-27T11:33:29Z</timestamp>
+      <id>7364</id>
+      <parentid>5739</parentid>
+      <timestamp>2014-04-07T21:36:11Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="17968">{{Header}}
+      <comment>/* Conclusion */</comment>
+      <text xml:space="preserve" bytes="17971">{{Header}}
 {{#seo:
 |description=Comparison of different Anonymizer Technologies, Anonymity Networks
 }}
@@ -9183,11 +9183,11 @@ Some proxies automatically give your IP address away to the target webserver &lt
 
 Connections with proxies are almost always unencrypted &lt;sup&gt;1&lt;/sup&gt;, so that an eavesdropper on your connection could observe your surfing behavior. Moreover, the proxy operator can, of course, watch exactly what you are doing. Proxies offer thus, if at all, only weak protection against destination website logging and no protection from third parties eavesdroppers. Their usage is risky.
 
-&lt;sup&gt;1&lt;/sup&gt; I am not aware of any http(s) or socks4(a)/5 proxies &lt;sup&gt;2&lt;/sup&gt;, supporting encryption.
+&lt;sup&gt;1&lt;/sup&gt; We are not aware of any http(s) or socks4(a)/5 proxies &lt;sup&gt;2&lt;/sup&gt;, supporting encryption.
 
 &lt;sup&gt;2&lt;/sup&gt; (other than anonymity networks, which use http(s) socks4(a)/5 proxies just as an interface)
 
-&lt;sup&gt;3&lt;/sup&gt; I haven't found any http(s) or socks4(a)/5 proxies &lt;sup&gt;2&lt;/sup&gt; as legitimate offer. Most proxies are found on (free) proxy sharing and it's dubious if they those proxies are aware of it want to be listed there or if they are only open proxies. (misconfigured machines) &lt;sup&gt;4&lt;/sup&gt; (http forwarded for header)
+&lt;sup&gt;3&lt;/sup&gt; We haven't found any http(s) or socks4(a)/5 proxies &lt;sup&gt;2&lt;/sup&gt; as legitimate offer. Most proxies are found on (free) proxy sharing and it's dubious if they those proxies are aware of it want to be listed there or if they are only open proxies. (misconfigured machines) &lt;sup&gt;4&lt;/sup&gt; (http forwarded for header)
 
 === License ===
 
@@ -9415,7 +9415,7 @@ Whether it's worth to combine Tor with a VPN, either as pre-Tor-VPN (user -&gt; 
 [[Category:Design]]
 
 {{Footer}}</text>
-      <sha1>d8ptq1zl0pcgymqzrxet3xhjz7bxz66</sha1>
+      <sha1>00cyr657vhxkbir145j3blcys5hr3tl</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -10020,13 +10020,15 @@ You can also read the scripts and only run the commands you find sensible manual
     <ns>0</ns>
     <id>102</id>
     <revision>
-      <id>6986</id>
-      <parentid>6985</parentid>
-      <timestamp>2014-03-20T05:55:59Z</timestamp>
+      <id>7365</id>
+      <parentid>6986</parentid>
+      <timestamp>2014-04-07T21:36:31Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="9274">&lt;!--
+      <comment>/* Printing and Scanning */</comment>
+      <text xml:space="preserve" bytes="9275">&lt;!--
 Copyright:
 
    Whonix Software wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -10215,7 +10217,7 @@ Imagine that every time you printed a document it automatically included a secre
 Unfortunately the scenario isn't fictional.
 &lt;/blockquote&gt;
 
-I don't know if scanners also add such a kind of extra hidden data.
+We don't know if scanners also add such a kind of extra hidden data.
 
 If you want to be secure side, buy an extra printer/scanner, which you only use for anonymous activity.
 
@@ -10291,7 +10293,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>ffcxah9kmhxvij93mgv1jxlwskh7mek</sha1>
+      <sha1>i7zz8b0l180gqg0yj3ely4j5ja6p6at</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -12834,14 +12836,14 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>118</id>
     <revision>
-      <id>7186</id>
-      <parentid>7056</parentid>
-      <timestamp>2014-03-29T19:46:59Z</timestamp>
+      <id>7366</id>
+      <parentid>7186</parentid>
+      <timestamp>2014-04-07T21:36:51Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* KDE Desktop Developer */</comment>
+      <comment>/* Audit Whonix */</comment>
       <text xml:space="preserve" bytes="8038">__NOTITLE__
 {{#seo:
 |description=Donate, Spread, Follow, Mirror, Translate, Develop, Testing. Contribute to Free Software / Open Source.
@@ -12993,8 +12995,7 @@ A good place is starting with the source code and running
 grep -r &quot;REVIEW&quot; *
 &lt;/pre&gt;
 
-for places where I could need more input. Also reviewing the whole source code or just the major configuration files would be fine. Or review the [[Design]].
-
+for places where we could need more input. Also reviewing the whole source code or just the major configuration files would be fine. Or review the [[Design]].
 
 === Backup Whonix ===
 Run [[WhonixBackupScript]].
@@ -13058,7 +13059,7 @@ The PayPal logo (60px-De-pp-logo-200px.png), the subscribe button (subscribeCC_L
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Development]]</text>
-      <sha1>jkuuvr8n6iena9on4442p2ndnmpu5d3</sha1>
+      <sha1>i322lptd7ohnmqgpmcw0mw6wye9wyme</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -13815,21 +13816,21 @@ See [[Remailer]].
     <ns>0</ns>
     <id>122</id>
     <revision>
-      <id>5900</id>
-      <parentid>3304</parentid>
-      <timestamp>2014-02-27T14:07:15Z</timestamp>
+      <id>7367</id>
+      <parentid>5900</parentid>
+      <timestamp>2014-04-07T21:37:45Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="11547">{{Header}}
+      <comment>/* Introduction */</comment>
+      <text xml:space="preserve" bytes="11570">{{Header}}
 {{#seo:
 |description=JonDonym over Tor. Tunneling JonDonym through Tor. Connection Schema: Tor -&gt; JonDonym -&gt; Destination
 }}
 
 == Introduction ==
-
-'''adrelanos's JonDonym opinion'''
+'''Whonix developer Patrick Schleizer's JonDonym opinion'''
 
 JonDonym is an alternative anonymity network which will be compared with Tor in this Introduction chapter. It's easy to tunnel JonDonym over Tor inside Whonix-Workstation which we go into in the next chapter. In theory, Tor on Whonix-Gateway could be replaced with JonDo.
 
@@ -13892,7 +13893,7 @@ Quoted from the JonDonym network comparison page&lt;ref&gt;https://anonymous-pro
 &lt;blockquote&gt;[...] making surfing considerably slower but, in some individual cases, even more secure than with JonDonym alone.
 &lt;/blockquote&gt;
 
-According to the JonDonym page, chapter &lt;code&gt;Access to the Tor network with JonDo&lt;/code&gt;&lt;ref&gt;https://anonymous-proxy-servers.net/en/help/services_tor.html&lt;/ref&gt;, JonDo natively supports to get tunneled over Tor. This also implies, that the JonDo developers do '''not''' argue, that tunneling JonDo through Tor is any less safe. Having such an option helps JonDo users to tunnel through Tor (user -&gt; Tor -&gt; JonDonym). You won't need this option in Whonix, since all traffic originating from Whonix-Workstation, will be tunneled through Tor first in any case. Enabling that JonDo option is inside Whonix-Workstation is discouraged, since it would lead in Tor over Tor. 
+According to the JonDonym page, chapter &lt;code&gt;Access to the Tor network with JonDo&lt;/code&gt;&lt;ref&gt;https://anonymous-proxy-servers.net/en/help/services_tor.html&lt;/ref&gt;, JonDo natively supports to get tunneled over Tor. This also implies, that the JonDo developers do '''not''' argue, that tunneling JonDo through Tor is any less safe. Having such an option helps JonDo users to tunnel through Tor (user -&gt; Tor -&gt; JonDonym). You won't need this option in Whonix, since all traffic originating from Whonix-Workstation, will be tunneled through Tor first in any case. Enabling that JonDo option is inside Whonix-Workstation is discouraged, since it would lead in Tor over Tor.
 
 == JonDonym over Tor inside Whonix-Workstation ==
 === JonDo ===
@@ -13926,7 +13927,7 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>5lsrdg1c676360qj650ble6yxrfb35t</sha1>
+      <sha1>t4epml61om9r41882xoijvxnw5e9za7</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -16935,14 +16936,15 @@ If you want to enforce, that the VPN gets always used, see: https://github.com/a
     <ns>0</ns>
     <id>144</id>
     <revision>
-      <id>5866</id>
-      <parentid>4086</parentid>
-      <timestamp>2014-02-27T13:44:38Z</timestamp>
+      <id>7369</id>
+      <parentid>7368</parentid>
+      <timestamp>2014-04-07T21:38:46Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="5204">{{Header}}
+      <comment>/* Supported VMware Products */</comment>
+      <text xml:space="preserve" bytes="5185">{{Header}}
 {{#seo:
 |description=Using Whonix with VMware
 }}
@@ -16975,7 +16977,7 @@ Ideal:
 
 '''VMware Server''' or other products are ''untested'', but perhaps also in a ''it works'' state.
 
-'''VMware Player''' &lt;s&gt;is unsupported, because I don't see an option for internal networking.&lt;ref&gt;&lt;s&gt;Perhaps [[OneVM]] could work with VMware, but that would require even more contributions.&lt;/s&gt;&lt;/ref&gt;&lt;/s&gt; UPDATE: An anonymous user reported in the old forum&lt;ref&gt;https://sourceforge.net/p/whonix/discussion/general/thread/84452a10/?limit=25&amp;page=1#8f27&lt;/ref&gt; that VMware Player works as well. Untested by adrelanos. This [http://xmodulo.com/2013/02/how-to-create-multiple-networks-on-vmware-player.html guide] contains instructions how to set up the internal network.
+'''VMware Player''' &lt;s&gt;is unsupported, because there is option for internal networking?&lt;ref&gt;&lt;s&gt;Perhaps [[OneVM]] could work with VMware, but that would require even more contributions.&lt;/s&gt;&lt;/ref&gt;&lt;/s&gt; UPDATE: An anonymous user reported in the old forum&lt;ref&gt;https://sourceforge.net/p/whonix/discussion/general/thread/84452a10/?limit=25&amp;page=1#8f27&lt;/ref&gt; that VMware Player works as well. Untested. This [http://xmodulo.com/2013/02/how-to-create-multiple-networks-on-vmware-player.html guide] contains instructions how to set up the internal network.
 
 = About VMware =
 
@@ -17043,7 +17045,7 @@ See also [[Security Guide]].
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>g5wb15hyijwx0ys70ej5mf5sl5tc50x</sha1>
+      <sha1>q72uk478y91wcbkaix3bear9amqbzaz</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -17053,14 +17055,15 @@ See also [[Security Guide]].
     <ns>0</ns>
     <id>145</id>
     <revision>
-      <id>5796</id>
-      <parentid>3848</parentid>
-      <timestamp>2014-02-27T12:33:37Z</timestamp>
+      <id>7370</id>
+      <parentid>5796</parentid>
+      <timestamp>2014-04-07T21:39:14Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="21688">{{Header}}
+      <comment>/* Web Browser */</comment>
+      <text xml:space="preserve" bytes="21690">{{Header}}
 {{#seo:
 |description=Connection Schema: user -&gt; Tor -&gt; Proxy/SSH/VPN
 }}
@@ -17100,9 +17103,9 @@ The methods described on this page are all tested and should all more or less wo
 
 === Web Browser ===
 
-I don't know how anonymous it is to use (proxy/VPN/SSH -&gt;) Tor -&gt; Proxy/VPN/SSH -&gt; Tor Browser -&gt; website. How many people show up with a proxy, VPN or SSH IP using Tor Browser? This setup is so special that I believe only very few people are doing it. For this reason, I recommend against.
+I don't know how anonymous it is to use (proxy/VPN/SSH -&gt;) Tor -&gt; Proxy/VPN/SSH -&gt; Tor Browser -&gt; website. How many people show up with a proxy, VPN or SSH IP using Tor Browser? This setup is so special that I believe only very few people are doing it. For this reason, recommend against.
 
-On the other hand, due to browser fingerprinting, I can't recommend using any browser other than Tor Browser either.
+On the other hand, due to browser fingerprinting, it can't be recommend using any browser other than Tor Browser either.
 
 == Tunnel proxy through Tor ==
 
@@ -17452,7 +17455,7 @@ See also [[TestVPN|Free example VPNs working with Whonix for testing purposes]].
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>dggfhadql8jf5ak78hpkc00tbx483k4</sha1>
+      <sha1>c73dyrdlenmtvn2wcwsxnc7gd57m9my</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -17554,14 +17557,15 @@ Moved to [Dev] Archive Tunneling UDP over Tor.
     <ns>0</ns>
     <id>147</id>
     <revision>
-      <id>5914</id>
-      <parentid>4619</parentid>
-      <timestamp>2014-02-27T14:18:41Z</timestamp>
+      <id>7371</id>
+      <parentid>5914</parentid>
+      <timestamp>2014-04-07T21:39:44Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="4317">{{Header}}
+      <comment>/* 64 bit architecture */</comment>
+      <text xml:space="preserve" bytes="4304">{{Header}}
 {{#seo:
 |description=Making Whonix Faster. Tuning Whonix.
 }}
@@ -17630,7 +17634,7 @@ See VirtualBox manual: [https://www.virtualbox.org/manual/ch04.html#idp18673360 
 
 Several methods. The last method is probably the most useful one.
 
-Maybe it would enhance security and/or performance by using an amd64 kernel. I don't know how much sense that makes when the rest of the system is still 32 bit.
+Maybe it would enhance security and/or performance by using an amd64 kernel. How much sense that makes when the rest of the system is still 32 bit?
 
 &lt;pre&gt;
 sudo apt-get install linux-image-amd64
@@ -17653,7 +17657,7 @@ Essentially this feature allows to directly use physical PCI devices on the host
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>imux8ucivnaivjxwa2ad33ggcg0jbtx</sha1>
+      <sha1>4r8m0nnx04vag6t8x2dd6ezh68lloir</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -18558,14 +18562,15 @@ Source: http://www.howtoforge.com/how-to-set-up-a-tor-middlebox-routing-all-virt
     <ns>0</ns>
     <id>159</id>
     <revision>
-      <id>5837</id>
-      <parentid>5140</parentid>
-      <timestamp>2014-02-27T13:11:24Z</timestamp>
+      <id>7372</id>
+      <parentid>5837</parentid>
+      <timestamp>2014-04-07T21:40:14Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="8702">{{Header}}
+      <comment>/* Build Whonix-Gateway environment */</comment>
+      <text xml:space="preserve" bytes="8700">{{Header}}
 {{#seo:
 |description=Abandoned Draft for a Hardened Genntoo Based Whonix-Gateway. Looking for developer.
 }}
@@ -18718,7 +18723,7 @@ cp /usr/sbin/etc-update /torgateway/usr/sbin/etc-update
 cp /etc/etc-update.conf /torgateway/etc/etc-update.conf
 
 cp /usr/src/linux/arch/x86/boot/bzImage /torgateway/boot/kernel
-# I didn't use modules so that part is missing, refer to http://www.gentoo.org/doc/en/handbook/handbook-x86.xml?full=1#kernel_modules
+# didn't use modules so that part is missing, refer to http://www.gentoo.org/doc/en/handbook/handbook-x86.xml?full=1#kernel_modules
 
 mount -t proc none /torgateway/proc/
 
@@ -18813,7 +18818,7 @@ exit #build-chroot&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Deprecated]]</text>
-      <sha1>nast7fhju855kb6mmopcanygc14oqtm</sha1>
+      <sha1>t1c9w7t778md98k2l4z3gfsv37u5git</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -18842,14 +18847,15 @@ exit #build-chroot&lt;/pre&gt;
     <ns>0</ns>
     <id>161</id>
     <revision>
-      <id>5763</id>
-      <parentid>3013</parentid>
-      <timestamp>2014-02-27T11:55:05Z</timestamp>
+      <id>7373</id>
+      <parentid>5763</parentid>
+      <timestamp>2014-04-07T21:41:05Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="9849">{{Header}}
+      <comment>/* In layman's terms */</comment>
+      <text xml:space="preserve" bytes="9842">{{Header}}
 {{#seo:
 |description=Introduction into Whonix's Technical Design.
 }}
@@ -18892,10 +18898,9 @@ Whonix is an [https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/Isol
 == Security Overview ==
 
 === In layman's terms ===
+Shut up or put up! Is Whonix safe?
 
-Shut up or put up! Adrelanos, is Whonix safe?
-
-It is in the nature of security related software, that there is no 100% safety. Believe it or not, I use it myself and I keep maintaining and developing it. I believe in some aspects, threat models and use cases Whonix is safer than other tools. There is detailed reasoning for my claims on the Whonix Homepage.
+It is in the nature of security related software, that there is no 100% safety. Believe it or not, we use it ourselves and we keep maintaining and developing it. W believe in some aspects, threat models and use cases Whonix is safer than other tools. There is detailed reasoning for my claims on the Whonix Homepage.
 
 If you are more paranoid or have higher security needs, read everything, full documentation and full technical design, you'll learn about physical isolation and build Whonix from source code and so on.
 
@@ -18959,7 +18964,7 @@ When you go ahead now, and ask in a cracker forum, they probably won't spread a 
 {{Footer}}
 
 [[Category:Design]]</text>
-      <sha1>mhuo84qz7p0v33lbqc040ilb2afbtn4</sha1>
+      <sha1>i5vzdd583my3geac22uka9x786d49tn</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -22989,14 +22994,15 @@ The infobox template requires the [[:mw:Extension:Scribunto|Scribunto]] extensio
     <ns>0</ns>
     <id>210</id>
     <revision>
-      <id>5832</id>
-      <parentid>3111</parentid>
-      <timestamp>2014-02-27T13:07:13Z</timestamp>
+      <id>7374</id>
+      <parentid>5832</parentid>
+      <timestamp>2014-04-07T21:42:45Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="24268">{{Header}}
+      <comment>/* Whonix Threat Model not available as pdf or paper version */</comment>
+      <text xml:space="preserve" bytes="24228">{{Header}}
 {{#seo:
 |description=Technical Design Documentation about Whonix's Threat Model. Attacker Capabilities. Goals. Attack Surface.
 }}
@@ -23167,19 +23173,18 @@ Searching...
 * site:https://lists.torproject.org/pipermail/tor-talk/ adrelanos
 
 == Whonix Threat Model not available as pdf or paper version ==
+You may skip this optional chapter.
 
-You may skip this optional chapter. Written by Whonix developer adrelanos.
+While we read real papers, like the [https://svn.torproject.org/svn/projects/design-paper/tor-design.pdf Onion routing design paper] and many others, we can't be coerced into creating a paper &quot;Designing an anonymous operating system&quot; with latex as pdf.
 
-While I read real papers, like the [https://svn.torproject.org/svn/projects/design-paper/tor-design.pdf Onion routing design paper] and many others, I can't be coerced into creating a paper &quot;Designing an anonymous operating system&quot; with latex as pdf.
+Like Mike Perry, developer of Tor Browser [https://lists.torproject.org/pipermail/tor-talk/2012-May/024405.html said] &quot;''I find the pdf format heavy and unnerving from a security perspective.''&quot;. That also goes for us and we also find the pdf format inconvenient. It would also take us some time to learn latex, pdf creation, formatting etiquette and so on. Time, which we rather invest into improving the design, developing and so on. The &quot;Onion routing design paper&quot; is now also outdated and we rather have an editable, often updated and revised website compared to a paper/pdf.
 
-Like Mike Perry, developer of Tor Browser [https://lists.torproject.org/pipermail/tor-talk/2012-May/024405.html said] &quot;''I find the pdf format heavy and unnerving from a security perspective.''&quot;. That also goes for adrelanos and I also find the pdf format inconvenient. It would also take me some time to learn latex, pdf creation, formatting etiquette and so on. Time, which I rather invest into improving the design, developing and so on. The &quot;Onion routing design paper&quot; is now also outdated and I rather have an editable, often updated and revised website compared to a paper/pdf.
-
-Tails does also not have a design paper as pdf and still lots of users and developers. Also TrueCrypt had not design paper about plausible deniability and still got reviewed by Bruce Schneier et al. Therefore I really don't see the benefits of having the threat model available as pdf, but if I have overlooked something, please don't hesitate telling me.
+Tails does also not have a design paper as pdf and still lots of users and developers. Also TrueCrypt had not design paper about plausible deniability and still got reviewed by Bruce Schneier et al. Therefore we really don't see the benefits of having the threat model available as pdf, but if we have overlooked something, please don't hesitate telling us.
 
 {{Footer}}
 
 [[Category:Design]]</text>
-      <sha1>3nnhq4so1cjtm76fsd2anj293wwnk9d</sha1>
+      <sha1>l08k460t3hgz032wknpduy0fmmemx60</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -23601,21 +23606,22 @@ Some real world examples that are '''protected by using Whonix''':
     <ns>0</ns>
     <id>218</id>
     <revision>
-      <id>5789</id>
-      <parentid>2398</parentid>
-      <timestamp>2014-02-27T12:21:22Z</timestamp>
+      <id>7377</id>
+      <parentid>7376</parentid>
+      <timestamp>2014-04-07T21:44:00Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="7033">{{Header}}
+      <comment>/* Newer */</comment>
+      <text xml:space="preserve" bytes="7066">{{Header}}
 {{#seo:
 |description=Security Reviews and Feedback, Whonix in the Media
 }}
 
 = Security Reviews and Feedback =
 
-If you want to get listed here or feel something is missing, please get in contact.
+If you want to get listed here or feel something is missing, please just hit the edit button or get in contact.
 
 == Audits ==
 
@@ -23625,7 +23631,7 @@ If you want to get listed here or feel something is missing, please get in conta
 
 None, but that doesn't mean anything. There is nothing of that kind about Tails or Liberté Linux as well. Is there even something of that kind about Debian, Ubuntu or Qubes OS?
 
-I am not aware of any serious research about any of such distributions in [http://freehaven.net/anonbib/ anonbib]. No one like [https://en.wikipedia.org/wiki/Bruce_Schneier Bruce Schneier] for cryptography exists for distribution review.
+We are not aware of any serious research about any of such distributions in [http://freehaven.net/anonbib/ anonbib]. No one like [https://en.wikipedia.org/wiki/Bruce_Schneier Bruce Schneier] for cryptography exists for distribution review.
 
 More food for thought on the audit, users are sometimes asking for. Has GNU wget been audited? What is an audit? Is it an professional company, providing software security audits as a service? Some kind of certification? In the Open Source world, adrelanos hasn't found such a thing. If you know examples, please get in contact or edit this section. Do you expect to come someone reputable come up, say something like &quot;I carefully audited GNU wget and haven't found any security vulnerabilities&quot;? It looks like it works quite the other way around. When someone audits the code and finds nothing wrong, nothing will be reported. On the other hand, if a vulnerability has been found, that's worth some fame. The one who claimed beforehand to have found nothing, however, wouldn't get better reputation.
 
@@ -23666,7 +23672,7 @@ Old questions on torproject.org:
 Unsorted:
 
 * [http://utup22qsb6ebeejs.onion/?x=entry:entry120219-220943 &quot;My Hidden Blog&quot;]; (adrelanos) small blog entry; unfortunately not much information or feedback
-* [https://thepiratebay.se/tag/torbox Whonix on theprivatebay.de]; (adrelanos) Interesting but pointless imo. 6 seeders right now in total. People should not even trust us but they trust the packager of that torrent. I am not against sharing through torrent. It's all Free Software. As long we do not offer trusted and gpg signed builds, however I recommend against downloading through torrent.
+* [https://thepiratebay.se/tag/torbox Whonix on theprivatebay.de]; (adrelanos) Interesting but pointless imo. 6 seeders right now in total. People should not even trust us but they trust the packager of that torrent. We are not against sharing through torrent. It's all Free Software. As long we do not offer trusted and gpg signed builds, however I recommend against downloading through torrent.
 * [https://encrypted.google.com/search?q=site%3Awilderssecurity.com+TorBOX Whonix on wilderssecurity.com]; few threads
 * [http://ra.fnord.at/2011/05/easy-and-secure-anonymous-internet-usage/ ra's blog]; Search for &quot;TorBOX that they have&quot;.; Negative feedback.
 * LulzSec / AntiSecOp: [https://www.facebook.com/notes/lulzsec/want-to-be-a-ghost-on-the-internet/230293097062823?_fb_noscript=1 Want to be a ghost on the internet?] or google for 'Want to be a ghost on the internet?'; Whonix (TorBOX) is a part of their instructions.
@@ -23701,12 +23707,12 @@ Official:
 
 == Newer ==
 
-Sorry, I didn't add any more recent ones. There were simply to many to list them all in time.
+Sorry, we didn't add any more recent ones. There were simply to many to list them all in time.
 
 {{Footer}}
 
 [[Category:Design]]</text>
-      <sha1>23mszzl01xiv3laqocufuf4fezr8ufs</sha1>
+      <sha1>k2rzeevvlilneww22zyat6gom6j28tw</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -23716,14 +23722,15 @@ Sorry, I didn't add any more recent ones. There were simply to many to list them
     <ns>0</ns>
     <id>219</id>
     <revision>
-      <id>5788</id>
-      <parentid>2762</parentid>
-      <timestamp>2014-02-27T12:19:43Z</timestamp>
+      <id>7378</id>
+      <parentid>5788</parentid>
+      <timestamp>2014-04-07T21:44:38Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="10477">{{Header}}
+      <comment>/* Introduction */</comment>
+      <text xml:space="preserve" bytes="10380">{{Header}}
 {{#seo:
 |description=Authenticated/Enecrypted DNS over Tor, DNSSEC over Tor, DNSCrypt by OpenDNS, httpsdnsd by JonDos
 }}
@@ -23744,7 +23751,7 @@ Required knowledge:
 * Difference between encryption and authentication.
 * {{TorifiedGateway}} (&lt;-- read the footnotes)
 
-In the chapters below are examples how to use authenticated DNS ([https://en.wikipedia.org/wiki/Domain_Name_System_Security_Extensions DNSSEC]) or encrypted DNS (DNSCrypt or httpsdnsd). &lt;s&gt;I haven't found any public DNS resolvers supporting both, encryption and authentication.&lt;/s&gt; https://cloudns.com.au/ seems to support both, authentication (DNSSEC) and encryption (DNSCrypt).
+In the chapters below are examples how to use authenticated DNS ([https://en.wikipedia.org/wiki/Domain_Name_System_Security_Extensions DNSSEC]) or encrypted DNS (DNSCrypt or httpsdnsd). https://cloudns.com.au seems to support both, authentication (DNSSEC) and encryption (DNSCrypt).
 
 Note that most applications, such as [[Tor Browser]], will '''not''' ''automatically'' profit from setting up an alternative DNS resolver. This is because applications in Whonix are configured to use SocksPort instead of Trans- or DnsPort, see [[Stream Isolation]] for details. Another reason is, that most applications do not yet make use of authenticated DNS (DNSSEC). However, you could use encrypted DNS when deconfiguring socks proxy settings and when using system resolver (TransPort).
 
@@ -23946,7 +23953,7 @@ Resolve DNS.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>ko3xrf3mux3bjpg968g4zmijp7oyo5r</sha1>
+      <sha1>98kopau42pkaeb0zub70l7jqiiegjpv</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -23956,14 +23963,14 @@ Resolve DNS.
     <ns>8</ns>
     <id>220</id>
     <revision>
-      <id>7342</id>
-      <parentid>7326</parentid>
-      <timestamp>2014-04-06T21:34:10Z</timestamp>
+      <id>7353</id>
+      <parentid>7352</parentid>
+      <timestamp>2014-04-07T21:05:56Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="39380">/* CSS placed here will be applied to all skins */
+      <text xml:space="preserve" bytes="39523">/* CSS placed here will be applied to all skins */
 /* Default styling for HTML elements */
 
  body.page-No_page_title h1.firstHeading, body.page-Main_Page h1.firstHeading
@@ -25383,14 +25390,23 @@ pre
 white-space:pre-line;
 }
 
+/* Hide logo from left top since it breaks the design. */
 #p-logo {
         display:none;
 }
 
-#footer-poweredbyico {
-        display:none;
+/* kills whole footer */
+/*
+#footer ul {
+  display:none;
+}
+*/
+
+/* does not seem to do anything */
+#footer-icons {
+  display:none;
 }</text>
-      <sha1>bh3j1g3qsd0ccchcjtl3760l7lbadrn</sha1>
+      <sha1>s7sv9jwuc2yu8xwhg3vh1ehwpy8ql4f</sha1>
       <model>css</model>
       <format>text/css</format>
     </revision>
@@ -30544,14 +30560,15 @@ return suggestions;</text>
     <ns>0</ns>
     <id>250</id>
     <revision>
-      <id>5909</id>
-      <parentid>1770</parentid>
-      <timestamp>2014-02-27T14:14:20Z</timestamp>
+      <id>7379</id>
+      <parentid>5909</parentid>
+      <timestamp>2014-04-07T21:45:15Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="5026">{{Header}}
+      <comment>/* Cypherpunk remailer */</comment>
+      <text xml:space="preserve" bytes="5038">{{Header}}
 {{#seo:
 |description=Anonymous E-Mail. Remailer over Tor. Tunnelling remailer through Tor. Connection Schema: user -&gt; Tor -&gt; remailer -&gt; recipient
 }}
@@ -30607,7 +30624,7 @@ Note that everything said in introduction applies and additionally the server ad
 
 == Cypherpunk remailer ==
 
-This may be wrong, feel encouraged to check if I am correct.
+This may be wrong, feel encouraged to check if the following is correct.
 
 Although there is a big Cypherpunk remailer wikipedia article&lt;ref&gt;https://en.wikipedia.org/wiki/Cypherpunk_anonymous_remailer&lt;/ref&gt; and list of Cypherpunk remailer servers&lt;ref&gt;http://www.noreply.org/echolot/rlist2.html&lt;/ref&gt;, cypherpunks.to/remailers&lt;ref&gt;http://www.cypherpunks.to/remailers/&lt;/ref&gt; says it's using Mixmaster and the helpfile&lt;ref&gt;http://www.cypherpunks.to/remailers/help.txt&lt;/ref&gt; explains, that it's safer to use Mixmaster and that Cypherpunk remailer is just an e-mail based interface. Since the full list of typ I and typ II remailer servers&lt;ref&gt;http://www.noreply.org/echolot/&lt;/ref&gt; reveals, that most type I (Cypherpunk) are also type II (Mixmaster) servers, I don't see much point into learning and documenting how Cypherpunk remailer works. It doesn't look like an alternative, i.e. doesn't look like Cypherpunk remailer could be used if Mixmaster doesn't work for some reason. It would also defeat the point of this page: sending mails without registration, because you would still require a mail provider.
 
@@ -30617,7 +30634,7 @@ Although there is a big Cypherpunk remailer wikipedia article&lt;ref&gt;https://
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>2x9mhho48euezrx0i4gd2vzpr0i09i3</sha1>
+      <sha1>d32mlukf1yrbkksqykpq1e43537bg5o</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -30627,14 +30644,15 @@ Although there is a big Cypherpunk remailer wikipedia article&lt;ref&gt;https://
     <ns>0</ns>
     <id>251</id>
     <revision>
-      <id>5761</id>
-      <parentid>4733</parentid>
-      <timestamp>2014-02-27T11:54:07Z</timestamp>
+      <id>7380</id>
+      <parentid>5761</parentid>
+      <timestamp>2014-04-07T21:45:38Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="5459">&lt;!--
+      <comment>/* Why this document? */</comment>
+      <text xml:space="preserve" bytes="5460">&lt;!--
 Copyright:
 
    Whonix RelationshipWithUpstream wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -30671,7 +30689,7 @@ The Whonix RelationshipWithUpstream wiki page is forked from the Tails Relations
 }}
 = Why this document? =
 
-The [https://wiki.debian.org/Derivatives/Guidelines Debian Derivatives Guidelines] encourages &quot;derivative distributions to mention and define their relationship with Debian&quot;. Because this seems like a great idea to me, I wrote this statement that not only covers Whonix's relationship with Debian, but also Whonix's relationship with any one of its upstream projects.
+The [https://wiki.debian.org/Derivatives/Guidelines Debian Derivatives Guidelines] encourages &quot;derivative distributions to mention and define their relationship with Debian&quot;. Because this seems like a great idea to me, we wrote this statement that not only covers Whonix's relationship with Debian, but also Whonix's relationship with any one of its upstream projects.
 
 = Summary =
 
@@ -30750,7 +30768,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Design]]</text>
-      <sha1>n463iab9d6n3j30b8mmgomrgexhelk7</sha1>
+      <sha1>hc38rmmpk3ei1tfya5l0aq6wf7dhnw1</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -30996,14 +31014,15 @@ You can also attempt [LeakTests Leak Testing] to verify that no packets are leak
     <ns>0</ns>
     <id>254</id>
     <revision>
-      <id>5782</id>
-      <parentid>5676</parentid>
-      <timestamp>2014-02-27T12:12:43Z</timestamp>
+      <id>7382</id>
+      <parentid>7381</parentid>
+      <timestamp>2014-04-07T21:46:39Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="13500">{{Header}}
+      <comment>/* Popularity Contest */</comment>
+      <text xml:space="preserve" bytes="13504">{{Header}}
 {{#seo:
 |description=Comparison and Consideration of various Operating Systems as base for the Whonix Anonymous Operating System. Design Documentation.
 }}
@@ -31044,7 +31063,7 @@ FreeBSD and OpenWRT have their own FAQ entries you could look into.
 
 Ubuntu isn't used as Whonix-Gateway/Workstation operating system for legal reasons (see below) and was lately negatively perceived due to {{Code2|privacy issues}}&lt;ref&gt;[https://www.eff.org/deeplinks/2012/10/privacy-ubuntu-1210-amazon-ads-and-data-leaks Privacy in Ubuntu 12.10: Amazon Ads and Data Leaks]&lt;/ref&gt;, so it's recommended against to use it as host operating system as well.
 
-Mac OS X can not be used for legal reasons. Even if that were not a problem, it's still a proprietary, closed source operating system, I don't like their attitude and how they (not) communicate with the security community. Also also see: [https://krebsonsecurity.com/2011/11/apple-took-3-years-to-fix-finfisher-trojan-hole/ Apple Took 3+ Years to Fix FinFisher Trojan Hole].
+Mac OS X can not be used for legal reasons. Even if that were not a problem, it's still a proprietary, closed source operating system, We don't like their attitude and how they (not) communicate with the security community. Also also see: [https://krebsonsecurity.com/2011/11/apple-took-3-years-to-fix-finfisher-trojan-hole/ Apple Took 3+ Years to Fix FinFisher Trojan Hole].
 
 [http://alpinelinux.org/ Alpine Linux] on first sight appears to have interesting security features. But they [http://bugs.alpinelinux.org/issues/1067 don't package Tor yet]. Other than that, we didn't look thoroughly into it.
 
@@ -31113,8 +31132,8 @@ The Debian ''popularity-contest'' package popcon is '''disabled''' Whonix.
 
 Some privacy considerations and reasons why it's disabled:
 
-* The connection would obviously need to go over its own Tor circuit (stream isolation). At the moment popcon tries to go through http and if it fails (no internet connectivity) it goes into the mail queue. (sendmail) Sendmail probably works though TransPort, but I don't know if it can be torified for proper stream isolation.
-* (From the popcon readme) &quot;''Each popularity-contest host is identified by a random 128bit uuid (MY_HOSTID in /etc/popularity-contest.conf).''&quot; - This would allow to enumerate a quite good guess about the amount number of Whonix users. I am not sure if sourceforge could already have an insight about that (due to Whonix News File downloads, see whonixcheck) or about any other negative implications.
+* The connection would obviously need to go over its own Tor circuit (stream isolation). At the moment popcon tries to go through http and if it fails (no internet connectivity) it goes into the mail queue. (sendmail) Sendmail probably works though TransPort, but we don't know if it can be torified for proper stream isolation.
+* (From the popcon readme) &quot;''Each popularity-contest host is identified by a random 128bit uuid (MY_HOSTID in /etc/popularity-contest.conf).''&quot; - This would allow to enumerate a quite good guess about the amount number of Whonix users. We are not sure if sourceforge could already have an insight about that (due to Whonix News File downloads, see whonixcheck) or about any other negative implications.
 * MY_HOSTID would probably get created at Whonix build time and all Whonix users would have the same MY_HOSTID, which would make it useless. A new MY_HOSTID would have to be created at first boot of Whonix.
 * Popcon runs at a random day. Good.
 * If the machine is powered on: it runs at 6:47, which is bad, because a local adversary (ISP or hotspot) could guess popcon runs over Tor which would likely be a Whonix user.
@@ -31135,7 +31154,7 @@ For these reasons it's not a good idea to add popcon to Whonix. If you have sugg
 {{Footer}}
 
 [[Category:Design]]</text>
-      <sha1>4ahrlw26wsutcg6tuu4aj9impnsmxw3</sha1>
+      <sha1>pgt82z68h13mkvb2ucef1n04zblr8o9</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -31367,14 +31386,15 @@ If you don't get into trouble, by letting others to know, that you like or use W
     <ns>0</ns>
     <id>258</id>
     <revision>
-      <id>5847</id>
-      <parentid>2794</parentid>
-      <timestamp>2014-02-27T13:21:57Z</timestamp>
+      <id>7384</id>
+      <parentid>7383</parentid>
+      <timestamp>2014-04-07T21:47:44Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="22626">{{Header}}
+      <comment>/* Withdrawing Bitcoin */</comment>
+      <text xml:space="preserve" bytes="22630">{{Header}}
 {{#seo:
 |description=Anonymous Money. How to anonymous buy things. How to anonymously receive money. Anonymous BTC. How to anonymize your BitCoins.
 }}
@@ -31657,7 +31677,7 @@ Before using non-anonymous methods, especially bank wire transfer, to purchase B
 
 (a) One method to anonymize already existing Bitcoins could be to get them out of the Bitcoin eco system and to get them anonymously back into it afterwards. (Not implying that this is easier.) Of course, this only works if it does not matter to you if the existing Bitcoins can get linked to you personally.
 
-(b) Since the methods to purchase Bitcoins with strong anonymity are limited, many people recommend to route them through many Bitcoin exchanges run by different parties. I can't make a statement on how secure that is. In summary various sources say, depends on the amount of money, if the exchange can be trusted, if the exchanges keeps logs, how many people are using the exchange and if you get back your own or different Bitcoins. The [https://en.bitcoin.it/wiki/Anonymity Bitcoin wiki anonymity page] covers this topic better. You can find discussions about this topic in the Sources chapter on this page.
+(b) Since the methods to purchase Bitcoins with strong anonymity are limited, many people recommend to route them through many Bitcoin exchanges run by different parties. We can't make a statement on how secure that is. In summary various sources say, depends on the amount of money, if the exchange can be trusted, if the exchanges keeps logs, how many people are using the exchange and if you get back your own or different Bitcoins. The [https://en.bitcoin.it/wiki/Anonymity Bitcoin wiki anonymity page] covers this topic better. You can find discussions about this topic in the Sources chapter on this page.
 
 == Paying Bitcoin ==
 
@@ -31669,7 +31689,7 @@ It's important, that you keep care not to de-anonymize yourself by re-using the 
 
 This chapter assumes, the Bitcoins are already anonymized. Either because of anonymously Accepting Bitcoin as Payee (see chapter above) or because because existing Bitcoin were anonymized. (see chapter above)
 
-Buying items and sending them to an address should be safe (assumption valid above) as long as the price isn't to high and doesn't create suspicion. Like always, I can't give you a guarantee, that this is true, but I don't know what I might oversee after reading a lot about this topic. The items you bought could be converted into cash, if you sell them. You have to be careful not to create suspicion as well.
+Buying items and sending them to an address should be safe (assumption valid above) as long as the price isn't to high and doesn't create suspicion. Like always, we can't give you a guarantee, that this is true, but we don't know what we might oversee after reading a lot about this topic. The items you bought could be converted into cash, if you sell them. You have to be careful not to create suspicion as well.
 
 Anonymously cashing out Bitcoin directly into cash looks very difficult. (Impossible, while preserving strong anonymity.) Even thought, Bitcoin can be made more anonymous, when you leave the Bitcoin ecosystem you are left to the conditions of the other payment methods. Have a look again at the top of this page for a comparison of various payment methods to recall their advantages and disadvantages. Cash by land mail (to an anonymous inbox) or meeting in person appears to be most anonymous, but is still far away from strong anonymity.
 
@@ -31687,7 +31707,7 @@ Anonymously cashing out Bitcoin directly into cash looks very difficult. (Imposs
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>glgydg1ct8n61bjkjvg1bd6nhxcvrpi</sha1>
+      <sha1>ikdeaf6bjo9ysusnd08gvaex2oy4bdb</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -31852,25 +31872,24 @@ See [[Tor Browser]].
     <ns>0</ns>
     <id>261</id>
     <revision>
-      <id>5758</id>
-      <parentid>1014</parentid>
-      <timestamp>2014-02-27T11:51:27Z</timestamp>
+      <id>7385</id>
+      <parentid>5758</parentid>
+      <timestamp>2014-04-07T21:49:41Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="5145">{{Header}}
+      <text xml:space="preserve" bytes="5130">{{Header}}
 {{#seo:
 |description=Development notes for adding MAC address anonymization to Whonix.
 }}
 
 = Introduction =
+Trying to sketch a user interface for a MAC changer, fulfilling everything mentioned on https://tails.boum.org/todo/macchanger/
 
-I was trying to sketch a user interface for a MAC changer, fulfilling everything mentioned on https://tails.boum.org/todo/macchanger/
+To understand the problem better myself and to make sure we are all talking about the same thing, it may be a good idea to create an overview. Therefore a nice table, which is attached below, has been created.
 
-To understand the problem better myself and to make sure we are all talking about the same thing, I thought it may be a good idea to create an overview. Therefore I made a nice table, which is attached below.
-
-There are so many different threat models and goals, I am not sure it gets too difficult for the average user. For supporting all use cases, the user interface would become giant, just for deciding on which MAC touse.
+There are so many different threat models and goals. Might become too difficult for the average user. For supporting all use cases, the user interface would become giant, just for deciding on which MAC touse.
 
 = use case overview =
 
@@ -31958,7 +31977,7 @@ The user enters a word and using that word will result in creating the same macc
 {{Footer}}
 
 [[Category:Development]] [[Category:Design]]</text>
-      <sha1>h3hkryhazh3tl641ia7zxkr1gk8y952</sha1>
+      <sha1>gea77our2bxg7a2501b950vuwy76plo</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -34133,14 +34152,14 @@ SIGQUIT (Issued if the user sends a quit signal (Ctrl + D).) Well, I think Ctrl 
     <ns>0</ns>
     <id>287</id>
     <revision>
-      <id>7020</id>
-      <parentid>7019</parentid>
-      <timestamp>2014-03-22T20:37:49Z</timestamp>
+      <id>7354</id>
+      <parentid>7020</parentid>
+      <timestamp>2014-04-07T21:24:43Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="1644">{{#seo:
+      <text xml:space="preserve" bytes="1648">{{#seo:
 |description=Whonix Developer Portal, Hacking Whonix, Developing Whonix
 }}
 __NOTOC__
@@ -34149,13 +34168,17 @@ __NOTOC__
 '''Link to Source Code'''
 
 &lt;div style=&quot;column-count:3;-moz-column-count:3;-webkit-column-count:3&quot;&gt;
-&lt;small&gt;* https://github.com/Whonix/Whonix&lt;/small&gt;
+&lt;small&gt;
+* https://github.com/Whonix/Whonix
+&lt;/small&gt;
 &lt;/div&gt;
 &lt;br/&gt;
 '''How to build Whonix from Source Code?'''
 
 &lt;div style=&quot;column-count:3;-moz-column-count:3;-webkit-column-count:3&quot;&gt;
-&lt;small&gt;* See [[Dev/Build Documentation]].&lt;/small&gt;
+&lt;small&gt;
+* See [[Dev/Build Documentation]].
+&lt;/small&gt;
 &lt;/div&gt;
 &lt;br/&gt;
 '''Developing / Hacking Whonix'''
@@ -34184,7 +34207,7 @@ __NOTOC__
 {{Footer}}
 
 [[Category:Development]]</text>
-      <sha1>muqyi52slz39mk29pqzifiu1txx544q</sha1>
+      <sha1>68u8ps12yatig5sdt9zzanw8wlqjx5r</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -34439,14 +34462,14 @@ Doesn't look like NM has a fail closed mechanism: [[VPN-Firewall]]
     <ns>0</ns>
     <id>290</id>
     <revision>
-      <id>5828</id>
-      <parentid>2953</parentid>
-      <timestamp>2014-02-27T13:05:01Z</timestamp>
+      <id>7386</id>
+      <parentid>5828</parentid>
+      <timestamp>2014-04-07T21:52:23Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="6235">{{Header}}
+      <text xml:space="preserve" bytes="6254">{{Header}}
 {{#seo:
 |description=Technical Design Documentation about Mixmaster
 }}
@@ -34460,7 +34483,7 @@ Motivation behind this: &quot;''What if there where a bookmark pointing to mail.
 
 [https://en.wikipedia.org/wiki/Mixmaster_anonymous_remailer Mixmaster] is a Remailer. Please read the [[Remailer]] article first as introduction.
 
-There are two ways of using the Mixmaster network. Installing Mixmaster in Debian is the recommended way but more difficult. Unfortunately, there is no nice graphical user interface for the Mixmaster for Debian GNU/Linux. There are web interfaces at the bottom of this page, I don't know yet how to use them.
+There are two ways of using the Mixmaster network. Installing Mixmaster in Debian is the recommended way but more difficult. Unfortunately, there is no nice graphical user interface for the Mixmaster for Debian GNU/Linux. There are web interfaces at the bottom of this page, but no one managed to document how to use them yet.
 
 This is quite an unusual setup. At time of writing there where no references that ever anyone ever successfully used the mixmaster software to remail over Tor. Therefore it might make clear, that you are a Whonix user.
 
@@ -34476,7 +34499,7 @@ There is a video without speech on Ubuntu, but steps on Debian are the same. No 
 
 There is also a video with speech explaining Mixmaster. Video comments:
 
-* Before 4:38 min he explains general things about Mixmaster. I don't agree, for reasons explained above. The video is already four years old.
+* Before 4:38 min he explains general things about Mixmaster. We don't agree, for reasons explained above. The video is already four years old.
 * Before 4:38 min he explains to manually install it. We don't have to do it, since it's available as Debian package.
 * You could watch https://www.youtube.com/dzbrFPO4604 beginning from 4:38 min.
 
@@ -34617,7 +34640,7 @@ The [[Deprecated]] page contains information related to Mixmaster: MX DNS reques
 {{Footer}}
 
 [[Category:Development]]</text>
-      <sha1>ksjm9te65m4mdl7onj96ov21xjfe6lg</sha1>
+      <sha1>btep9f1h5pbjhu5xhwjedkx0nakqkov</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -38815,14 +38838,14 @@ Therefore splitting them, appeared to be the only solution. Otherwise it would i
     <ns>0</ns>
     <id>311</id>
     <revision>
-      <id>5879</id>
-      <parentid>4114</parentid>
-      <timestamp>2014-02-27T13:54:26Z</timestamp>
+      <id>7397</id>
+      <parentid>7396</parentid>
+      <timestamp>2014-04-07T22:01:08Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="15759">{{Header}}
+      <text xml:space="preserve" bytes="15896">{{Header}}
 {{#seo:
 |description=Development Notes / Design Documentation about Whonix's Infrastructure
 }}
@@ -38932,23 +38955,23 @@ Other severe usability bugs:
 * [http://google-opensource.blogspot.com/2013/05/a-change-to-google-code-download-service.html No file downloads.]
 
 === wikimedia / wikpedia ===
-Last time I checked wikipedia (wikimedia) derivatives and wikia weren't Tor friendly.
+Last time we checked wikipedia (wikimedia) derivatives and wikia weren't Tor friendly.
 
 == savannah ==
-* https://savannah.nongnu.org (with SSL) looked promising and I don't expect them to be gone soon or to do any other stupid stuff (banning countries etc.).
-* They offer homepages, for example http://www.nongnu.org/qwe/ but I haven't seen subdomains (qwe.nongnu.org) with SSL (for nongnu.org). That's the minimum requirement.
+* https://savannah.nongnu.org (with SSL) looked promising and they are expected to be gone soon or to do any other stupid stuff (banning countries etc.).
+* They offer homepages, for example http://www.nongnu.org/qwe/ but seems like there are no subdomains (qwe.nongnu.org) with SSL (for nongnu.org). That's the minimum requirement.
 * Support direct download links (hotlinking).
 * Can't provide file hosting for Whonix, because it would cause too much traffic. &lt;ref&gt;https://lists.gnu.org/archive/html/savannah-hackers-public/2013-09/msg00015.html&lt;/ref&gt;
 
 == github ==
 * Already using github as main git repository.
-* github.com offers [https://github.com/blog/272-github-pages sub domains], but they are not reachable over SSL. I can't believe, there are no open source project hosting services with web hosting and SSL.
+* github.com offers [https://github.com/blog/272-github-pages sub domains], but they are not reachable over SSL.
 * github triggers [https://trac.torproject.org/projects/tor/ticket/7084 a] [https://trac.torproject.org/projects/tor/ticket/7265 scary], [https://trac.torproject.org/projects/tor/ticket/6253 error] message. After either many pages trigger that error so it doesn't matter any more or until this message gets fixed in Tor Browser, we shouldn't use the github as issue tracker or website to avoid FUD. When that got somehow a non-problem, we could think about using github as issue tracker.
-* I haven't found out how to autocreate table of contents using markdown on github, but...
+* How autocreate table of contents using markdown on github? But...
 * Github also [https://github.com/github/markup/ supports] mediawiki syntax.
 ** Seems it automatically creates a table of contents, good!
 ** Bug: [https://github.com/github/markup/issues/193 Mediawiki Pictures now shown in Github Wiki], unless this bug gets fixed, we could think about using the github source code hosting as website, see [https://github.com/adrelanos/testw/blob/master/README.mediawiki example].
-** I haven't found out yet how to use \[\[include ref=WikiHeader\]\] for github mediawiki pages. It's an important feature for Whonix pages.
+** We haven't found out yet how to use \[\[include ref=WikiHeader\]\] for github mediawiki pages. It's an important feature for Whonix pages.
 ** Looks like mediawiki support is just a gimmick. More advanced formatting like font size, syntax highlighting and so on doesn't work.
 * No file hosting service.
 
@@ -38966,8 +38989,8 @@ Last time I checked wikipedia (wikimedia) derivatives and wikia weren't Tor frie
 * Risky, because those services can go away any time without notice. - Looks like a valid risk, two just went down. &lt;ref&gt;
 * &lt;s&gt;[http://bj6sy3n7tbt3ot2f.onion OnionHosting] (DOWN)&lt;/s&gt;
 ** &lt;s&gt;Price 5 BTC of &quot;life time&quot;.&lt;/s&gt;
-** &lt;s&gt;I think it's a legit service. The Administrator is hosting many services in onionland for a long time. - Turns out this wasn't true&lt;/s&gt;
-** &lt;s&gt;I don't have 5 BTC to open an account.&lt;/s&gt;
+** &lt;s&gt;Seems like it's a legit service. The Administrator is hosting many services in onionland for a long time. - Turns out this wasn't true&lt;/s&gt;
+** &lt;s&gt;We don't have 5 BTC to open an account. (Written long time before bitcoin skyrocketed.)&lt;/s&gt;
 * &lt;s&gt;[http://torhostg5s7pa2sn.onion/ torhost] (DOWN)&lt;/s&gt;
 ** &lt;s&gt;I don't know for how long it will stay.&lt;/s&gt;
 ** &lt;s&gt;I [http://p4vm6o4n4hbfqxhy.onion/ have a sponsored account], which has the same features as the fair paid account.&lt;/s&gt;
@@ -38980,11 +39003,12 @@ Last time I checked wikipedia (wikimedia) derivatives and wikia weren't Tor frie
 == mirror.fsf.org ==
 * http://mirror.fsf.org/
 * Providing direct download links (hotlinking).
-* I don't think it will be possible. They have a quite firm policy ([https://www.gnu.org/distros/free-system-distribution-guidelines.html Guidelines for Free System Distributions]) and if Debian didn't manage to fulfill it, surely Whonix can't either.
+* Probably it will not be possible. They have a quite firm policy ([https://www.gnu.org/distros/free-system-distribution-guidelines.html Guidelines for Free System Distributions]) and if Debian didn't manage to fulfill it, surely Whonix can't either.
 * In theory, an option could be to base Whonix on a distribution which is [https://www.gnu.org/distros/free-distros.html on their list already], but that might not be doable for technical reasons. (Questions open up, such as: Are they in sync with Debian unstable? Are they in sync with Debian testing? How long does it take until they deploy updates from security.debian.org? How up to date are their packages? How are they different from Debian?)
+* Whonix contacted FSF to be their list. Thes declined, because Whonix is not standalone. (Does not fulfill point &quot;Complete Distros&quot;, since physical isolation users have to install Debian first.)
 
 == seul.org ==
-* Did send registration request for seul.org. They don't accept new registrations, but Roger Dingledine (surprise, surprise) said in private mail, he's seeding Tails already and would volunteer to seed Whonix, if there was an announcement mailing list or if I mailed him new releases. Doing this.
+* Sent registration request for seul.org. They don't accept new registrations, but Roger Dingledine (surprise, surprise) said in private mail, he's seeding Tails already and would volunteer to seed Whonix, if there was an announcement mailing list or if we mailed him new releases. Doing this.
 
 == Conclusion ==
 In summary there where no open source hosting sites, which offer SSL everywhere and unlimited download of big files. An open source hosting facility providing free webspace and SSL everywhere would be much desirable, but doesn't exist.
@@ -39089,7 +39113,7 @@ Sorry, we are not interested in your offer.
 [[Category:Design]]
 
 {{Footer}}</text>
-      <sha1>rclhky7otv3g6ica7sknpnsosr93b6l</sha1>
+      <sha1>9dqf3gr8zygtlz2kno8n37wonq53uug</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -41176,14 +41200,15 @@ It's an interesting idea, but outside the scope of Whonix to invent such a solut
     <ns>0</ns>
     <id>393</id>
     <revision>
-      <id>5745</id>
-      <parentid>3512</parentid>
-      <timestamp>2014-02-27T11:40:05Z</timestamp>
+      <id>7389</id>
+      <parentid>7388</parentid>
+      <timestamp>2014-04-07T21:54:12Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="6332">{{Header}}
+      <comment>/* One click upgrade button for Debian packages */</comment>
+      <text xml:space="preserve" bytes="6340">{{Header}}
 {{#seo:
 |description=Why does Whonix (not) use Automatic Updates? Why does Whonix (not) use a GUI Update Notifier or GUI Updater?
 }}
@@ -41192,7 +41217,7 @@ It's an interesting idea, but outside the scope of Whonix to invent such a solut
 == One click upgrade button for Debian packages==
 Automation is very difficult due to issues introduced at a higher level (Debian and The Tor Project).
 
-apt-get isn't good at conflict resolution with config files (the user may have installed arbitrary packages, changed their configs and then upstream may have updated the config file. dpkg will ask if the user wants to take the new or the old config file. Also other things can go wrong, such as problems with gpg verification, package lists, which are no longer {{Code|valid-until}}, general brokenness due to aborts during last action and so forth. Others dedicated projects have failed at simplification of apt-get, such as synaptic, apper&lt;ref&gt;Bugs such as apper recommends restarting while apt-get (command line) is still working.&lt;/ref&gt;, packagekit and software center. All failed at implementing this for everyone in all cases. When separate projects failed as a higher level (Linux distributions aren't user friendly themselves in the first place), there is nothing I could fix in Whonix at a lower level.
+apt-get isn't good at conflict resolution with config files (the user may have installed arbitrary packages, changed their configs and then upstream may have updated the config file. dpkg will ask if the user wants to take the new or the old config file. Also other things can go wrong, such as problems with gpg verification, package lists, which are no longer {{Code|valid-until}}, general brokenness due to aborts during last action and so forth. Others dedicated projects have failed at simplification of apt-get, such as synaptic, apper&lt;ref&gt;Bugs such as apper recommends restarting while apt-get (command line) is still working.&lt;/ref&gt;, packagekit and software center. All failed at implementing this for everyone in all cases. When separate projects failed as a higher level (Linux distributions aren't user friendly themselves in the first place), there is nothing that be could fixed in Whonix at a lower level.
 
 == Unattended upgrades in background for Debian packages ==
 Reasons for Automatic Updates:
@@ -41267,7 +41292,7 @@ As long there are no tools which can handle always all cases for all users, it's
 {{Footer}}
 
 [[Category:Design]] [[Category:Development]]</text>
-      <sha1>qskwupkf1e8dp3j2jjar6r0x3k26amy</sha1>
+      <sha1>92g3t1qtt92s1b8kr24g64cmfi50mf6</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -42300,21 +42325,22 @@ Maybe this is what subkeys are all about.  I'll have to dig into it more.</text>
     <ns>0</ns>
     <id>416</id>
     <revision>
-      <id>5881</id>
-      <parentid>2215</parentid>
-      <timestamp>2014-02-27T13:55:55Z</timestamp>
+      <id>7391</id>
+      <parentid>7390</parentid>
+      <timestamp>2014-04-07T21:55:43Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="2849">{{Header}}
+      <comment>/* How to decide which apps come with Whonix? */</comment>
+      <text xml:space="preserve" bytes="2813">{{Header}}
 {{#seo:
 |description=Design Documentation - How to decide which apps come with Whonix?
 }}
 = How to decide which apps come with Whonix? =
 Overall: not killing the project for being badmouthed by The Tor Project and/or geeks due to bad decisions.
  
-The following numbers are not referring to priorities, just to reference them. Just what I always had in mind, not written in stone.
+The following numbers are not referring to priorities, just to reference them. '''Not written in stone!'''
 
 # There must be a reliable upgrade path. Stuff that is in Debian is perfect.
 # Upgrading must not eat up Whonix maintainer's time to keep Whonix maintainable.
@@ -42329,22 +42355,22 @@ The following numbers are not referring to priorities, just to reference them. J
 
 Lesser:
 
-* I must believe that a fair amount of users likes it.
-* I must believe that it's usable by a fair amount of users.
+* We must believe that a fair amount of users likes it.
+* We must believe that it's usable by a fair amount of users.
 * Mature behaving and communicative upstream, not important if the application/script is trivial and maintenance is simple.
 
 Examples:
 
-a) There is no BitCoin client installed by default in Whonix, because no gui client was available in Debian stable at time of release. Shipping a manually installed one by default would be nightmare, because users wouldn't know how it was installed and not update it. Updating would be left to the user. So I thought it is better if the whole process download, verification, install, upgrade notification and upgrade is up to the user.
+a) There is no BitCoin client installed by default in Whonix, because no gui client was available in Debian stable at time of release. Shipping a manually installed one by default would be nightmare, because users wouldn't know how it was installed and not update it. Updating would be left to the user. It is better if the whole process download, verification, install, upgrade notification and upgrade is up to the user.
 
 b) There is no Email client installed by default in Whonix, because no Tor-safe client (Thunderbird + TorBirdy) was available in Debian stable at time of release.
 
-c) There is no torrent client installed by default in Whonix, because I know of none fulfills 3. If one has been found, this topic has to be brought up on tor-talk mailing list, asking for their official position, due to [[File_Sharing#Updates|contradictory prior statements]] to fulfill 10.
+c) There is no torrent client installed by default in Whonix, because we know of none fulfills 3. If one has been found, this topic has to be brought up on tor-talk mailing list, asking for their official position, due to [[File_Sharing#Updates|contradictory prior statements]] to fulfill 10.
 
 {{Footer}}
 
 [[Category: Design]] [[Category: Development]]</text>
-      <sha1>do15c1p21f26ri7pzw8t7devdmdskev</sha1>
+      <sha1>ol7488gv86obexmyh58725cqa3el48l</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -43356,14 +43382,15 @@ Whonix 7 Changelog:
     <ns>0</ns>
     <id>450</id>
     <revision>
-      <id>5820</id>
-      <parentid>3713</parentid>
-      <timestamp>2014-02-27T13:00:09Z</timestamp>
+      <id>7387</id>
+      <parentid>5820</parentid>
+      <timestamp>2014-04-07T21:53:26Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="4560">{{Header}}
+      <comment>/* General Note about CI Services in use for Building Whonix */</comment>
+      <text xml:space="preserve" bytes="4561">{{Header}}
 {{#seo:
 |description=Development Notes of Whonix and Continuous Integration (CI)
 }}
@@ -43374,7 +43401,7 @@ For status badges see: &lt;br /&gt;
 https://github.com/Whonix/Whonix
 
 = General Note about CI Services in use for Building Whonix =
-Since all CI machines I know off run Ubuntu and Whonix is based on Debian, it was required to add a few CI specific workarounds to Whonix's build script. Therefore, if a CI build works, that doesn't necessarily mean, that a Debian based build would succeed as well. So the usefulness of the results is a bit limited. Nevertheless, compatibility with CI environments is a very useful &quot;stress test&quot; for the build script. It helps early spotting most bugs, which break the build.
+Since all CI machines we know off run Ubuntu and Whonix is based on Debian, it was required to add a few CI specific workarounds to Whonix's build script. Therefore, if a CI build works, that doesn't necessarily mean, that a Debian based build would succeed as well. So the usefulness of the results is a bit limited. Nevertheless, compatibility with CI environments is a very useful &quot;stress test&quot; for the build script. It helps early spotting most bugs, which break the build.
 
 Since there are no free CI services supporting {{Code2|mount}} ({{Code2|device-mapper}}), there is unfortunately no CI service which could be used for building Whonix Virtual Machine images.
 
@@ -43439,7 +43466,7 @@ device mapper prerequisites not met
 {{Footer}}
 
 [[Category:Development]]</text>
-      <sha1>3tphrrc8ve60r6ubay3bcsudnm887d2</sha1>
+      <sha1>0ah94kw0vq9hj5pd2fs14c4tdmqtucn</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -64376,15 +64403,15 @@ Therefore it is impossible to claim that non-trivial source code is backdoor fre
     <ns>0</ns>
     <id>972</id>
     <revision>
-      <id>6626</id>
-      <parentid>6466</parentid>
-      <timestamp>2014-03-07T15:31:48Z</timestamp>
+      <id>7348</id>
+      <parentid>7346</parentid>
+      <timestamp>2014-04-07T20:06:48Z</timestamp>
       <contributor>
-        <username>FuzzyBot</username>
-        <id>37</id>
+        <username>Jinformatique</username>
+        <id>247</id>
       </contributor>
-      <comment>Updating to match new version of source page</comment>
-      <text xml:space="preserve" bytes="7366">{{Header}}
+      <comment>Created page with &quot;Whonix-Workstation avec le bureau KDE&quot;</comment>
+      <text xml:space="preserve" bytes="7375">{{Header}}
 __NOTOC__
 &lt;languages /&gt;
 {{#seo:
@@ -64395,7 +64422,7 @@ __NOTOC__
 {{Infobox OS
 | logo                   = 
 | name                   = Whonix
-| screenshot             = [[Image:kde0_5_0.png|alt=Whonix-Workstation with KDE Desktop|Whonix-Workstation with KDE Desktop|200px]]
+| screenshot             = [[Image:kde0_5_0.png|alt=Whonix-Workstation avec le bureau KDE|Whonix-Workstation avec le bureau KDE|200px]]
 | caption                = Whonix-Workstation with KDE Desktop
 | developer              = [https://www.whonix.org/forum/index.php/topic,109.0.html none] / [[Authorship|Whonix developers]]
 | family                 = [https://en.wikipedia.org/wiki/Unix-like Unix-like], based on [https://en.wikipedia.org/wiki/Debian Debian]
@@ -64420,7 +64447,7 @@ __NOTOC__
 {|style=&quot;border-spacing:8px; margin:0px -8px;&quot;
 |class=&quot;MainPageBG&quot; style=&quot;width:55%; border:1px solid #cef2e0; background:#f5fffa; vertical-align:top; color:#000;&quot;|
 {|width=&quot;100%&quot; cellpadding=&quot;2&quot; cellspacing=&quot;5&quot; style=&quot;vertical-align:top; background:#f5fffa;&quot;
-! &lt;h3 style=&quot;margin:0; background:#cef2e0; font-size:120%; font-weight:bold; border:1px solid #a3bfb1; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;[[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|170px|alt=Download Whonix]]&lt;/h3&gt;
+! &lt;h3 style=&quot;margin:0; background:#cef2e0; font-size:120%; font-weight:bold; border:1px solid #a3bfb1; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;[[File:210px-Download_Button.svg.png|center|link=Download#First_time_user.3F|170px|alt=Télécharger Whonix]]&lt;/h3&gt;
 |-
 |style=&quot;color:#000;&quot;| 
 &lt;!--T:2--&gt;
@@ -64487,7 +64514,7 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
 &lt;/html&gt;
 {{Footer}}
 [[Category:Documentation]]</text>
-      <sha1>d1nrkviugkjqicebxik7j3suw8r2p92</sha1>
+      <sha1>0nyg64f5n25hg40r0wi5dhiaxqj2eta</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -69562,15 +69589,15 @@ License: Public Domain</text>
     <ns>0</ns>
     <id>1169</id>
     <revision>
-      <id>7224</id>
-      <parentid>7223</parentid>
-      <timestamp>2014-03-31T20:28:44Z</timestamp>
+      <id>7356</id>
+      <parentid>7355</parentid>
+      <timestamp>2014-04-07T21:28:01Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* /etc/tor.d/ */</comment>
-      <text xml:space="preserve" bytes="9542">{{Header}}
+      <comment>/* Other Circumvention Tools other than Bridges */</comment>
+      <text xml:space="preserve" bytes="9665">{{Header}}
 
 = Overview =
 The work outlined here is specifically focused on what could be done in a year with funding, though these goals should be considered as a larger roadmap for Whonix's development in general. This roadmap is focused on three goals: 
@@ -69654,19 +69681,19 @@ We yet have to figure out how to use the translation extension and to prepare wh
 
 = Circumvention =
 == Better Circumvention User Interface ==
-TBB uses the tor-launcher add-on, it looks good and makes it simpler to enter bridges. The upcoming version of tor-launcher even support pluggable transports. There is some work done creating a standalone xul application of tor-launcher. Tails devs are planing to use it. Whonix should use it as well. Some older screenshots of tor-launcher can be seen here: [[Dev/whonixsetup]].
+TBB uses the tor-launcher add-on, it looks good and makes it simpler to enter bridges. The upcoming version of tor-launcher even support pluggable transports. There is some work done creating a standalone xul application of tor-launcher. Tails devs are planing to use it. Whonix should use it as well. Some older screenshots of tor-launcher can be seen here: [[Dev/whonixsetup]]. ([https://github.com/Whonix/Whonix/issues/167 github ticket])
 
 == Shipping semi-public bridges ==
 Current TBB beta comes with a list of hardcoded briges. Censors can easily obtain and ban them. Still, these hardcoded bridge relays work for a non-negligible share of users (otherwise TBB would not go this path). We could ship this list by default as well.
 
 == Other Circumvention Tools other than Bridges ==
-There are lots of other Censorship Circumvention Tools other than Tor bridges. We should check out all of them and document how to use them with Whonix. The todo list of tools that should be documented can be found here: [[Censorship Circumvention Tools]].
+There are lots of other Censorship Circumvention Tools other than Tor bridges. We should check out all of them and document how to use them with Whonix. The todo list of tools that should be documented can be found here: [[Censorship Circumvention Tools]]. ([https://github.com/Whonix/Whonix/issues/22 github ticket])
 
 = Links =
 * [[Dev/Sponsor/A2]]
 
 {{Footer}}</text>
-      <sha1>k82m1jr7w9tvzrshw96zmz3mljq4bh9</sha1>
+      <sha1>lh5ggd009pr5saioqpfqhlspy0agr16</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -70572,21 +70599,55 @@ testdeutsch
     </revision>
   </page>
   <page>
-    <title>Los jugadores de videogames escogen las sites de reproducciones en video</title>
-    <ns>0</ns>
-    <id>1211</id>
+    <title>Translations:Main Page/40/fr</title>
+    <ns>1198</ns>
+    <id>1212</id>
     <revision>
-      <id>7341</id>
-      <timestamp>2014-04-06T20:32:50Z</timestamp>
+      <id>7343</id>
+      <timestamp>2014-04-07T20:05:42Z</timestamp>
       <contributor>
-        <username>JoaquinCampo</username>
-        <id>276</id>
+        <username>Jinformatique</username>
+        <id>247</id>
       </contributor>
-      <comment>Created page with &quot;  Desde hace unos escasos años hemos sido capaces de observar de la forma en que progresivamente los canales de videos dedicados en suministrar pistas y tricks para distintos...&quot;</comment>
-      <text xml:space="preserve" bytes="2223">
-
-Desde hace unos escasos años hemos sido capaces de observar de la forma en que progresivamente los canales de videos dedicados en suministrar pistas y tricks para distintos videojuegos estan claramente aumentando abundantemente. De esta manera, la web el portal youtube puede ser ,sin la menor duda, el que mas soluciones podria ofrecernos al resultar definitivamente el mas grande los blogs de reproducciones en video que hay disponible en la actualidad. &lt;br&gt;&lt;br&gt;El alcance de el portal youtube es desmedida, hasta inclusive el punto de que ha sido capaz de iniciar una reciente tipo de jugones, los youtubers, a los que alcanzamos a catalogar en variados clases que nos llevan empezando por los genuinos bufones que suben reproducciones en video nada mas que divertidos hasta los youtubers mas comprometidos que se encargan de dar resoluciones a cada game.  En los sites de los usuarios que es posible designar algo mas serios podemos localizar soluciones que nos llevan desde la facilitacion de trofeos y logros hasta guides pormenorizadas poco a poco que nos evidencian el total de el juego de un concreto juego. &lt;br&gt;&lt;br&gt;Una de las caracteristicas de esta reciente inclinacion puede ser claramente la enorme talento de ajuste que las estrellas de youtube tienen y pese a que al inicio podiamos testear que los usuarios tendian bastante mas a las guias de los games, progresivamente esta predisposicion ha ido desacelerandose, cambiandose en visionado por misiones con inferior seguimiento.  Por otra parte, la consulta de ciertos trofeos y logros arduos de obtener, como los recomendaciones y fallos que provean algo de ayuda en modalidades on line, han ido aumentando en gran medida. &lt;br&gt;&lt;br&gt;Aparece ciertamente cristalino que nos encontramos en un periodo en la que los users tienen preferencia por las webs de videos por encima de cualquiera otro, un asunto que no ha pasado sin ser tenido en consideracion para gran cantidad de jugones y blogs.  Absolutamente todos seria capaz subir los videos que quiera referente a lo que le de la gana, de manera que absolutamente todos deberiamos ser capaces de buscar lo que necesitemos de un modo mucho mas rauda y facil, e incluso transformarnos en unas stars de youtube.</text>
-      <sha1>7c2pkogci3uo7vvwabvl8f3gvgt2on6</sha1>
+      <comment>Created page with &quot;Whonix-Workstation avec le bureau KDE&quot;</comment>
+      <text xml:space="preserve" bytes="37">Whonix-Workstation avec le bureau KDE</text>
+      <sha1>qpr9bkjhft1l9cr2qtalg79bb4z9849</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/41/fr</title>
+    <ns>1198</ns>
+    <id>1213</id>
+    <revision>
+      <id>7345</id>
+      <timestamp>2014-04-07T20:06:26Z</timestamp>
+      <contributor>
+        <username>Jinformatique</username>
+        <id>247</id>
+      </contributor>
+      <comment>Created page with &quot;Télécharger Whonix&quot;</comment>
+      <text xml:space="preserve" bytes="20">Télécharger Whonix</text>
+      <sha1>dklikmibag3m0ow6lpzwqvurom0tdh9</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Translations:Main Page/12/fr</title>
+    <ns>1198</ns>
+    <id>1214</id>
+    <revision>
+      <id>7347</id>
+      <timestamp>2014-04-07T20:06:47Z</timestamp>
+      <contributor>
+        <username>Jinformatique</username>
+        <id>247</id>
+      </contributor>
+      <comment>Created page with &quot;Whonix-Workstation avec le bureau KDE&quot;</comment>
+      <text xml:space="preserve" bytes="37">Whonix-Workstation avec le bureau KDE</text>
+      <sha1>qpr9bkjhft1l9cr2qtalg79bb4z9849</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
