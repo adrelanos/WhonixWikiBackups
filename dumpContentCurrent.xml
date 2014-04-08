@@ -434,15 +434,15 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
     <ns>10</ns>
     <id>15</id>
     <revision>
-      <id>7304</id>
-      <parentid>7023</parentid>
-      <timestamp>2014-04-05T04:58:34Z</timestamp>
+      <id>7410</id>
+      <parentid>7304</parentid>
+      <timestamp>2014-04-08T03:17:45Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <username>Fortasse</username>
+        <id>1</id>
       </contributor>
       <text xml:space="preserve" bytes="1731">&lt;br /&gt;&lt;hr&gt;&lt;font size=&quot;-3&quot;&gt;[[Special:UserLogin|Log in]] | [[Special:OpenIDLogin|OpenID]] | [[Contact|Contact]] | [[Impressum]] | [[Datenschutz|Datenschutz]] | [[Disclaimer|Haftungsausschluss]]
-[https://www.whonix.org{{localurl:{{FULLPAGENAME}}}} https] | &lt;html&gt;&lt;a class=&quot;link-https&quot; href=&quot;http://kkkkkkkkkk63ava6.onion&lt;/html&gt;{{localurl:{{FULLPAGENAME}}}}&lt;html&gt;&quot; rel=&quot;nofollow&quot;&gt;.onion&lt;/a&gt;&lt;/html&gt; &lt;sup&gt;[[Forcing .onion on Whonix.org|[note]]]&lt;/sup&gt; | [http://whonix.org.nyud.net{{localurl:{{FULLPAGENAME}}}} Mirror] | [https://kkkkkkkkkk63ava6.tor2web.org{{localurl:{{FULLPAGENAME}}}} Mirror]
+[https://www.whonix.org{{localurl:{{FULLPAGENAME}}}} https] | &lt;html&gt;&lt;a class=&quot;link-https&quot; href=&quot;http://xxxxxxxxxxh5kyrx.onion&lt;/html&gt;{{localurl:{{FULLPAGENAME}}}}&lt;html&gt;&quot; rel=&quot;nofollow&quot;&gt;.onion&lt;/a&gt;&lt;/html&gt; &lt;sup&gt;[[Forcing .onion on Whonix.org|[note]]]&lt;/sup&gt; | [http://whonix.org.nyud.net{{localurl:{{FULLPAGENAME}}}} Mirror] | [https://kkkkkkkkkk63ava6.tor2web.org{{localurl:{{FULLPAGENAME}}}} Mirror]
 &lt;!--
 inspired by http://aboli.sh/
 @cnpirates ssl(tor) ssl(i2p) coralcdn .sdns .onion .i2p--&gt;
@@ -451,7 +451,7 @@ This is a wiki. Want to improve this page? See [https://github.com/Whonix/Whonix
 
 Whonix (&lt;html&gt;&lt;a href=&quot;https://plus.google.com/108150429836421683225&quot; rel=&quot;publisher&quot; /&gt;g+&lt;/a&gt;&lt;/html&gt;) is a [http://www.openinventionnetwork.com/licensees.php licensee] of the [[File:OIN_logo_200px.png|link=https://en.wikipedia.org/wiki/Open_Invention_Network|alt=Open Invention Network|140px]]. Unless otherwise noted above, content of this  page is copyrighted by [mailto:adrelanos@riseup.net Patrick Schleizer] (&lt;html&gt;&lt;a href=&quot;/patrick.asc&quot;&gt;gpg&lt;/a&gt;&lt;/html&gt;) &lt;!--(&lt;html&gt;&lt;a href=&quot;https://plus.google.com/u/0/112678569435063398972?rel=author&quot;&gt;g+&lt;/a&gt;)&lt;/html&gt;--&gt; and licensed under the same Free (as in speech) [https://github.com/Whonix/Whonix/blob/master/debian/copyright license] as Whonix itself.
 &lt;/font&gt;</text>
-      <sha1>35e1h6wgb570se2br0i7b3fz7fbzb83</sha1>
+      <sha1>es3c5jm9hv3x36pb2hg5ox3b4whwywq</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -798,14 +798,14 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>19</id>
     <revision>
-      <id>7160</id>
-      <parentid>7135</parentid>
-      <timestamp>2014-03-28T16:57:12Z</timestamp>
+      <id>7404</id>
+      <parentid>7160</parentid>
+      <timestamp>2014-04-07T22:49:06Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="15247">{{Header}}
+      <text xml:space="preserve" bytes="15309">{{Header}}
 &lt;!--
 Copyright:
 
@@ -1091,7 +1091,7 @@ mount: block device /dev/sr0 is write-protected, mounting read-only
 Is expected. (It's normal that CD/DVD's are mounted read-only.)&lt;/translate&gt;
 
 &lt;translate&gt;&lt;!--T:244--&gt;
-Help fixing this bug is welcome!&lt;/translate&gt;
+Help fixing this bug is welcome! ([https://github.com/Whonix/Whonix/issues/168 github ticket])&lt;/translate&gt;
 
 &lt;translate&gt;=== VLC / Video Player Crash === &lt;!--T:245--&gt;
 &lt;/translate&gt;
@@ -1171,7 +1171,7 @@ under certain conditions; see the wiki source code for details.
 &lt;translate&gt;&lt;!--T:253--&gt;
 Some icons created by third parties, Free licenses as well, see [[Authorship#Images_created_by_third_parties|Authorship Images created by third parties]] for details.
 &lt;/translate&gt;[[Category:Documentation]]{{Footer}}</text>
-      <sha1>e5qp00q84c538gmnyet5f6oxgbqa72r</sha1>
+      <sha1>2q317gnpdv25sd7xyuj68le7zglqhxs</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -4222,9 +4222,9 @@ Hidden Services with Whonix are still safer than running Tor and the server soft
     <ns>0</ns>
     <id>75</id>
     <revision>
-      <id>7339</id>
-      <parentid>7338</parentid>
-      <timestamp>2014-04-06T19:03:15Z</timestamp>
+      <id>7412</id>
+      <parentid>7403</parentid>
+      <timestamp>2014-04-08T03:24:18Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
@@ -35048,14 +35048,15 @@ The real fix is an open question for research:
     <ns>0</ns>
     <id>292</id>
     <revision>
-      <id>5827</id>
-      <parentid>2610</parentid>
-      <timestamp>2014-02-27T13:04:36Z</timestamp>
+      <id>7402</id>
+      <parentid>5827</parentid>
+      <timestamp>2014-04-07T22:05:58Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="1854">{{Header}}
+      <comment>/* JonDo */</comment>
+      <text xml:space="preserve" bytes="1853">{{Header}}
 {{#seo:
 |description=Technical Design Documentation about JonDo
 }}
@@ -35063,26 +35064,26 @@ The real fix is an open question for research:
 
 JonDo can already be used over Tor when it's installed inside Whonix-Workstation (user -&gt; Tor -&gt; JonDo), see [[JonDonym]].
 
-Installing it by default.... I don't know. Only one person asked about JonDo... I am not very positive that JonDo will be pre-installed on Whonix-Workstation by default, although I am not totally against it.
+Installing it by default.... Unsure. Only one person asked about JonDo... We're not very positive that JonDo will be pre-installed on Whonix-Workstation by default, although we're totally against it.
 
-All software in Whonix by default should be able to update itself (or at least inform that it's outdated so it can be updated with only one command, such as torbrowser). I don't know if their Debian repository works for Debian Wheezy, which Whonix is based on. Can you test it please?
+All software in Whonix by default should be able to update itself (or at least inform that it's outdated so it can be updated with only one command, such as torbrowser). We don't know if their Debian repository works for Debian Wheezy, which Whonix is based on. Can you test it please?
 
-I also wouldn't know what happens if they replace their signing key.
+We also wouldn't know what happens if they replace their signing key.
 
-As Whonix developer I can't really support the JonDo software. I don't have time to build JonDo from source code and ship a new build of Whonix each time JonDo gets updated.
+As Whonix developers we can't really support the JonDo software. We don't have time to build JonDo from source code and ship a new build of Whonix each time JonDo gets updated.
 
-They have their own instructions in on their homepage and those may change over time. If follow their instructions and pre-install it and they change the instructions, Whonix users will still have the outdated versions. What should I do in that case? Post in important blog &quot;now follow these command line instructions and get JonDo updated if you use it&quot;?
+They have their own instructions in on their homepage and those may change over time. If follow their instructions and pre-install it and they change the instructions, Whonix users will still have the outdated versions. What should we do in that case? Post in important blog &quot;now follow these command line instructions and get JonDo updated if you use it&quot;?
 
 So this almost always requires either to offload installing it to the user or some cooperation from the original software project.
 
-Whonix is also [[FAQ#Does_Whonix_modify_Tor.3F|quite simple]] at the moment and I don't know how the project would be perceived if Tor Browser and JonDoFox were installed by default.
+Whonix is also [[FAQ#Does_Whonix_modify_Tor.3F|quite simple]] at the moment and we don't know how the project would be perceived if Tor Browser and JonDoFox were installed by default.
 
 Building Whonix from source code, custom builds are always possible. To make this happen, it needs someone deeply caring about JonDo and contributing to Whonix. Otherwise it's very unlikely.
 
 {{Footer}}
 
 [[Category:Development]]</text>
-      <sha1>fgpk1i06j5gdc7d1y71hpskn45m55kq</sha1>
+      <sha1>eom5aon00sj6xei7rx5lffbsbq4xyhm</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -37690,14 +37691,14 @@ qemu-img convert -p -O qcow2 ~/whonix.vdi ~/whonix.qcow2
     <ns>0</ns>
     <id>300</id>
     <revision>
-      <id>5740</id>
-      <parentid>5406</parentid>
-      <timestamp>2014-02-27T11:34:25Z</timestamp>
+      <id>7401</id>
+      <parentid>7400</parentid>
+      <timestamp>2014-04-07T22:04:57Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="5767">{{Header}}
+      <text xml:space="preserve" bytes="5754">{{Header}}
 {{#seo:
 |description=Debian tips, tricks, recommendations related to Whonix.
 }}
@@ -37793,7 +37794,7 @@ netstat -anltp | grep &quot;LISTEN&quot;
 
 Must should be none, i.e no reply.
 
-Remove services, which open ports. &lt;ref&gt;For documentation purposes I made a Debian installation and installed as much services with taskel as possible, while having a network connection. (Simulating user misunderstanding.) A Debian default installation with default settings does not install all those packages.&lt;/ref&gt;
+Remove services, which open ports. &lt;ref&gt;For documentation purposes a Debian installation has been installed with as much services as possible using taksel, while having a network connection. (Simulating user misunderstanding.) A Debian default installation with default settings does not install all those packages.&lt;/ref&gt;
 
 &lt;pre&gt;
 su
@@ -37822,7 +37823,7 @@ https://github.com/Whonix/Whonix/blob/stable/host/whonix_firewall
 ''A system is only as secure as its administrator is capable of making it. Debian's default installation of services aims to be secure, but may not be as paranoid as some other operating systems which install all services disabled by default.''
 &lt;/blockquote&gt;
 
-I am not sure if they are referring to running services after installing them or having no services running (open ports) after a default installation with default settings. Debian doesn't do the latter, which is a pity.
+Are they referring to running services after installing them or having no services running (open ports) after a default installation with default settings? Debian doesn't do the latter, which is a pity.
 
 Don't participate in popularity contest.
 
@@ -37838,7 +37839,7 @@ Some useful links. Parts of it are outdated (old Debian versions). Some stuff do
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>4sshvyiuql7nphzmj9n7a75zqpr6u8p</sha1>
+      <sha1>sx03y67hab9o9xs4c9a3yad16qos5tq</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -38027,14 +38028,15 @@ There is an extra chapter about the [[Pre Install Advice#MAC Address|MAC address
     <ns>0</ns>
     <id>303</id>
     <revision>
-      <id>5750</id>
-      <parentid>4566</parentid>
-      <timestamp>2014-02-27T11:45:56Z</timestamp>
+      <id>7399</id>
+      <parentid>5750</parentid>
+      <timestamp>2014-04-07T22:03:12Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="7838">{{Header}}
+      <comment>/* Attack Scenarios */</comment>
+      <text xml:space="preserve" bytes="7839">{{Header}}
 {{#seo:
 |description=Control Port Filter Proxy - filtering dangerous Tor Control Port commands - Design Documentation
 }}
@@ -38077,7 +38079,7 @@ Control Port Filter proxy listens on 127.0.0.1 port 9052, filters (white list) i
 == Attack Scenarios ==
 Once Whonix-Workstation has been compromised, the adversary could continuously and/or using a pattern, send white listed commands to Tor. At the moment, only NEWNYM would be of interest. When the adversary is also an ISP level adversary, the adversary might be able to see the pattern being produced. This however isn't a big risk, since once Whonix-Workstation is compromised, more powerful attacks are available - An adversary could also use &quot;Morse Code&quot;, i.e. limit the victims traffic for a few seconds to zero or close to zero, then push the traffic to its maximum. 
 
-More worrying is the extended attack surface. See &quot;Attack Surface&quot; above. I am not aware of anyone having audited tcpserver or /bin/bash for vulnerabilities. Please add this information if you know more.
+More worrying is the extended attack surface. See &quot;Attack Surface&quot; above. We're not aware of anyone having audited tcpserver or /bin/bash for vulnerabilities. Please add this information if you know more.
 
 == Files ==
 * https://github.com/Whonix/Whonix/blob/master/whonix_gateway/usr/bin/controlportfilt
@@ -38112,7 +38114,7 @@ grep -r torbutton_send_ctrl_cmd *
 {{Footer}}
 
 [[Category:Design]]</text>
-      <sha1>r1r6gi7fvttnnxzbpkbhpjyn3jm79kw</sha1>
+      <sha1>ahc91n1sdode0c2tp6hfw9vlxgih6lf</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -38122,14 +38124,14 @@ grep -r torbutton_send_ctrl_cmd *
     <ns>0</ns>
     <id>304</id>
     <revision>
-      <id>5948</id>
-      <parentid>5946</parentid>
-      <timestamp>2014-02-27T16:25:52Z</timestamp>
+      <id>7398</id>
+      <parentid>5948</parentid>
+      <timestamp>2014-04-07T22:02:33Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* On Whonix-Workstation */</comment>
+      <comment>/* RetroShare */</comment>
       <text xml:space="preserve" bytes="15995">{{Header}}
 &lt;!--
 Copyright:
@@ -38377,7 +38379,7 @@ Although google search results and many people may claim otherwise, it is possib
 
 Running RetroShare through Tor enables you, to do things, which are normally potentially dangerous, such as adding random people (from a forum), while staying anonymous. (For example, to join a RetroShare forum.) This is '''not''' a recommendation, just stating a possibility.
 
-After adding tons of random &quot;friends&quot; from a public forum, I could connect to a very few people over TCP. &lt;ref&gt;Chance of working better ('''untested'''): [[Tunnel UDP over Tor]].&lt;/ref&gt; &lt;ref&gt;Note, in case you are using the previous footnote, [[Security_Guide#Other_Anonymizing_Networks_over_Tor_UDP_Tunnel|Other Anonymizing Networks over Tor UDP Tunnel]] applies.&lt;/ref&gt; Approximately only 5% were online. Although I can probably see only a very small portion of the network, the content of the network looks pretty interesting.
+After adding tons of random &quot;friends&quot; from a public forum, connection to a very few people over TCP. &lt;ref&gt;Chance of working better ('''untested'''): [[Tunnel UDP over Tor]].&lt;/ref&gt; &lt;ref&gt;Note, in case you are using the previous footnote, [[Security_Guide#Other_Anonymizing_Networks_over_Tor_UDP_Tunnel|Other Anonymizing Networks over Tor UDP Tunnel]] applies.&lt;/ref&gt; Approximately only 5% were online. Although probably only a very small portion of the network could be seen, the content of the network looked pretty interesting.
 
 RetroShare reports Right click -&gt; DHT Details: NET WARNING No DHT; Behind NAT UNKNOWN NAT STATE MANUAL FORWARD
 
@@ -38440,7 +38442,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>h6rb8avcj8jx2dm2s31dp7lhbqge17q</sha1>
+      <sha1>4cfbndr55r8hh7d7o507n1n8yq3htd6</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -55318,15 +55320,14 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
     <ns>0</ns>
     <id>691</id>
     <revision>
-      <id>7245</id>
-      <parentid>7244</parentid>
-      <timestamp>2014-04-04T04:29:42Z</timestamp>
+      <id>7408</id>
+      <parentid>7407</parentid>
+      <timestamp>2014-04-08T02:29:00Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* Script/automate creation of VM description files? */</comment>
-      <text xml:space="preserve" bytes="14412">{{Header}}
+      <comment>Raw image question settled</comment>
+      <text xml:space="preserve" bytes="14319">{{Header}}
 {{#seo:
 |description=Development Notes for adding KVM support to Whonix.
 }}
@@ -55415,11 +55416,6 @@ https://wiki.debian.org/SELinux/Setup#Steps_to_setup_SELinux &lt;-- This is a st
 == How to add a random time offset? ==
 Having a small random offset (similar to [[Advanced_Security_Guide#Network_Time_Synchronization]]) would be a good thing.
 
-== Is it possible to add 64, 128 or even more MB to the virtual graphics card using the command line to boost graphics performance? ==
-
-Yes. Can be realised by virsh command as per the steps in here:
-http://serverfault.com/questions/346301/how-to-increase-video-memory-in-libvirt-kvm-gui
-
 == Script/automate creation of VM description files? ==
 So not following manual instructions is required anymore, but copy/paste some commands end up with the correct VM configuration.
 
@@ -55429,7 +55425,7 @@ Once the necessary commands are documented, Patrick will be happy to automate th
 Because raw images have better performance than raw images? http://www.linux-kvm.org/page/Qcow2
 
 True that performance is better, but I don't think it supports snapshots AFAIK.
-For something that supports snapshots and has better performance than qcow2 there is QED. A format developed by IBM for the QEMU project recently, that promises just that.
+For something that supports snapshots and good performance lets stick with qcow2.
 
 == Set cluster_size 512 - 2MB for better performance? ==
 HulaHoop1 wrote: The qcow2 defaults seem fine to me, however the one parameter of interest we should play with is image's : 'cluster_size' 512 - 2MB the larger the size the better performance but the size is bigger. I think we should try the largest and see if the image size stays reasonable.
@@ -55475,10 +55471,6 @@ It remains to be tested, if the images work well using these settings. (The appa
 
 git tag 7.8.0.1 and above will be using the &quot;-o cluster_size=2M&quot; option.
 
-== KVM Instructions recommend to use a no cache policy? ==
-As per [http://www.ilsistemista.net/index.php/virtualization/11-kvm-io-slowness-on-rhel-6.html?start=7 blog post] it is recommended to use a no cache policy. Do our KVM instructions need changes to incorporate this?
-
-Yes if its recommneded then lets do this, Its easily done through the GUI by going to SATA disk -&gt; Cache policy: set to none
 
 I am yet to document this in the KVM page lets do this at the end. Is there any tangible speed gains?
 
@@ -55512,6 +55504,16 @@ su
 Whonixcheck should check if /sys/devices/system/clocksource/clocksource0/current_clocksource is kvm-clock and warn if it does.
 
 Implemented: https://github.com/Whonix/Whonix/commit/2584c3bdcd9a98181c7535f963a615d257e0fefd
+
+== Is it possible to add 64, 128 or even more MB to the virtual graphics card using the command line to boost graphics performance? ==
+
+Yes. Can be realised by virsh command as per the steps in here:
+http://serverfault.com/questions/346301/how-to-increase-video-memory-in-libvirt-kvm-gui
+
+== KVM Instructions recommend to use a no cache policy? ==
+As per [http://www.ilsistemista.net/index.php/virtualization/11-kvm-io-slowness-on-rhel-6.html?start=7 blog post] it is recommended to use a no cache policy. Do our KVM instructions need changes to incorporate this?
+
+Yes if its recommended then lets do this, Its easily done through the GUI by going to: disk -&gt; Cache policy: set to none
 
 == Script/automate creation and upload of qcow2 images? ==
 Done.
@@ -55624,7 +55626,7 @@ whonixcheck (since Whonix 8) would tell you if kvmclock is enabled. whonixcheck 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>2mqa6gselwjp5wbrmte3a8mw8ppd021</sha1>
+      <sha1>21ndn310q2pgqntr9n231x7kcronkdd</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -61492,14 +61494,14 @@ The following AppArmor profile is still experimental. The worst thing that can h
     <ns>8</ns>
     <id>870</id>
     <revision>
-      <id>6285</id>
-      <parentid>6189</parentid>
-      <timestamp>2014-03-04T15:48:47Z</timestamp>
+      <id>7411</id>
+      <parentid>7405</parentid>
+      <timestamp>2014-04-08T03:23:42Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <username>Fortasse</username>
+        <id>1</id>
       </contributor>
-      <text xml:space="preserve" bytes="1050">&lt;html&gt;
+      <text xml:space="preserve" bytes="1087">&lt;html&gt;
 &lt;style type=&quot;text/css&quot;&gt;
 
 #banner {
@@ -61543,19 +61545,16 @@ The following AppArmor profile is still experimental. The worst thing that can h
 
 &lt;div id=&quot;banner&quot;&gt;
 
-  &lt;a class=&quot;cn-full-banner-click&quot; href=&quot;/wiki/Donate&quot; title=&quot;&quot;&gt;
-&lt;div id=&quot;banner-logo&quot;&gt;&lt;/div&gt;
+
     &lt;div id=&quot;black-text&quot;&gt;
-   &lt;translate&gt;&lt;!--T:1--&gt;
-Whonix fundraising campaign.&lt;/translate&gt; &lt;br /&gt; &lt;translate&gt;&lt;!--T:2--&gt;
-Please consider a recurring donation!&lt;/translate&gt;
+We have updated keys. Our new SSL certificate is by GANDI SAS, and we have moved our .onion to xxxxxxxxxxh5kyrx.onion. The old onion(s) will continue to work, but the private key component may be compromised because of the Heartbleed OpenSSL bug. (http://heartbleed.com for more)
      &lt;/div&gt;
-  &lt;/a&gt;
+
 
 
 &lt;/div&gt;
 &lt;/html&gt;</text>
-      <sha1>p21ak4gtb7rcnmw8gxyb3paj9fq2qdd</sha1>
+      <sha1>sl6k18mc5lc5tlixa0di2me8t5s6zwr</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -64115,13 +64114,13 @@ Please consider a recurring donation!&lt;/translate&gt;
     <ns>0</ns>
     <id>966</id>
     <revision>
-      <id>6987</id>
-      <parentid>6183</parentid>
-      <timestamp>2014-03-20T13:20:52Z</timestamp>
+      <id>7409</id>
+      <parentid>6987</parentid>
+      <timestamp>2014-04-08T03:16:43Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Fortasse</username>
+        <id>1</id>
       </contributor>
-      <comment>Improved ruleset</comment>
       <text xml:space="preserve" bytes="1893">{{Header}}
 {{#seo:
 |description=Instructions on how to set up a Whonix Download Mirror
@@ -64146,21 +64145,21 @@ Create a new file called WhonixOnion.xml paste:
 &lt;ruleset name=&quot;Whonix Onion&quot;&gt;
   &lt;target host=&quot;whonix.org&quot; /&gt;
   &lt;target host=&quot;www.whonix.org&quot; /&gt;
-  &lt;rule from=&quot;^https?://(www\.)?whonix\.org/&quot; to=&quot;http://kkkkkkkkkk63ava6.onion/&quot;/&gt;
+  &lt;rule from=&quot;^https?://(www\.)?whonix\.org/&quot; to=&quot;http://xxxxxxxxxxh5kyrx.onion/&quot;/&gt;
 &lt;/ruleset&gt;
 &lt;/pre&gt;
 and save.
 
 == (re)Start your browser ==
 
-After installing the user rule, start or restart your Tor browser. When you browse out to www.whonix.org, HTTPS Everywhere will automatically engage, and send you to kkkkkkkkkk63ava6.onion. If you want to disable this functionality, disable the ruleset using the HTTPS Everywhere icon in the upper right of the browser window, or simply delete the file.
+After installing the user rule, start or restart your Tor browser. When you browse out to www.whonix.org, HTTPS Everywhere will automatically engage, and send you to xxxxxxxxxxh5kyrx.onion. If you want to disable this functionality, disable the ruleset using the HTTPS Everywhere icon in the upper right of the browser window, or simply delete the file.
 
 Happy browsing!
 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>gnkch20j0kkzhk1tif9oej0p6e7ihfd</sha1>
+      <sha1>bmtdwi2j5d0t5q9tcfrdkjwabhwebo9</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -70648,6 +70647,41 @@ testdeutsch
       <comment>Created page with &quot;Whonix-Workstation avec le bureau KDE&quot;</comment>
       <text xml:space="preserve" bytes="37">Whonix-Workstation avec le bureau KDE</text>
       <sha1>qpr9bkjhft1l9cr2qtalg79bb4z9849</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Sitenotice id</title>
+    <ns>8</ns>
+    <id>1215</id>
+    <revision>
+      <id>7413</id>
+      <parentid>7406</parentid>
+      <timestamp>2014-04-08T03:24:29Z</timestamp>
+      <contributor>
+        <username>Fortasse</username>
+        <id>1</id>
+      </contributor>
+      <text xml:space="preserve" bytes="1">2</text>
+      <sha1>phz40h3k0sqkofeslplfx66u885ccs0</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Inwentaryzacja lokalu</title>
+    <ns>0</ns>
+    <id>1216</id>
+    <revision>
+      <id>7414</id>
+      <timestamp>2014-04-08T03:48:00Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>inwentaryzacja_lokalu</comment>
+      <text xml:space="preserve" bytes="965">W obszarze działalności wykonywanych usług oferujemy sporządzanie wycen: gruntów niezabudowanych, nieruchomości gruntowych zabudowanych, budynków mieszkalnych, gospodarczych, garaży, lokali mieszkalnych, lokali użytkowych, obiektów przemysłowych, komercyjnych, biurowych, nieruchomości rolnych, ograniczonych praw rzeczowych (użytkowanie, służebność, spółdzielcze własnościowe prawo do lokalu), określenie wartości spółdzielczego własnościowego prawa do lokalu mieszkalnego w przypadku jego przekształcania w prawo własności, analizy i opinie dla potrzeb indywidualnych inwestora. Dokonujemy wycen dla następujących celów: sprzedaż oraz nabycie nieruchomości, zniesienie współwłasności, podział majątku, postępowanie spadkowe, zabezpieczenie kredytu hipotecznego, ustalenia i aktualizacja opłat za użytkowanie wieczyste, ustalenie opłat za dzierżawę, najem, trwały zarząd, amortyzacji podatkowych innychwycena &lt;br /&gt;</text>
+      <sha1>pz1gz734edmvq3m5kib0erznkzqz8ms</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
