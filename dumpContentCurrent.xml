@@ -2664,15 +2664,15 @@ Not compulsory, just nicely asking:
     <ns>0</ns>
     <id>56</id>
     <revision>
-      <id>7358</id>
-      <parentid>7077</parentid>
-      <timestamp>2014-04-07T21:31:55Z</timestamp>
+      <id>7442</id>
+      <parentid>7358</parentid>
+      <timestamp>2014-04-09T14:21:21Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Why do you use the 32 bit operating system, not 64 bit? */</comment>
-      <text xml:space="preserve" bytes="49342">{{Header}}
+      <comment>/* Why not use a Live CD/DVD as Whonix-Workstation operating system? */</comment>
+      <text xml:space="preserve" bytes="49419">{{Header}}
 {{#seo:
 |description=FAQ. Frequently Asked Questions.
 }}
@@ -2725,6 +2725,7 @@ Please also read [[#Why are the Whonix images so big?]] above, the same applies 
 See also [[Other Desktop Environments]] for workarounds/alternatives.
 
 = Why not use a Live CD/DVD as Whonix-Workstation operating system? =
+'''This FAQ entry should be updated.'''
 
 We discussed this and came to the decision, that Live CD/DVDs are not suited for Whonix.
 
@@ -2740,7 +2741,10 @@ Negative:
 * no timely security updates
 * &lt;s&gt;not persistent&lt;/s&gt; limited persistence
 * not flexible enough
-* anonymity orientated Live CD/DVD's often have their own Tor enforcement included, which would lead into a [https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO#ToroverTor Tor over Tor] scenario
+
+anonymity orientated Live CD/DVD's negative in context of this FAQ:
+
+* anonymity orientated Live CD/DVD's often have their own Tor enforcement included, which would lead into a [[DoNot#Prevent_Tor_over_Tor_scenarios.|Tor over Tor]] scenario
 
 = Why should I (not) trust Whonix? =
 
@@ -3225,7 +3229,7 @@ Without performing these basics steps, the setup may sound clever, but may not w
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>tvaja49aosuz2dvnp0ktrwhqt3jw3hy</sha1>
+      <sha1>it21r9cpopidgv8tmogpc5nhjvg5tqi</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -4221,15 +4225,15 @@ Hidden Services with Whonix are still safer than running Tor and the server soft
     <ns>0</ns>
     <id>75</id>
     <revision>
-      <id>7424</id>
-      <parentid>7415</parentid>
-      <timestamp>2014-04-08T22:34:41Z</timestamp>
+      <id>7440</id>
+      <parentid>7439</parentid>
+      <timestamp>2014-04-09T14:05:52Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
       <minor/>
-      <comment>Reverted edits by [[Special:Contributions/127.0.0.1|127.0.0.1]] ([[User talk:127.0.0.1|talk]]) to last revision by [[User:Patrick|Patrick]]</comment>
+      <comment>Protected &quot;[[Dev/Archived Discussions]]&quot; ([Edit=Allow only autoconfirmed users] (expires 14:05, 23 April 2014 (UTC)) [Move=Allow only autoconfirmed users] (expires 14:05, 23 April 2014 (UTC)))</comment>
       <text xml:space="preserve" bytes="33738">{{Header}}
 {{#seo:
 |description=Outdated, Archived Whonix Development Discussions
@@ -70722,35 +70726,35 @@ testdeutsch
     </revision>
   </page>
   <page>
-    <title>Feng Shui dla biznesu</title>
+    <title>Katalog stron firmowych w internecie</title>
     <ns>0</ns>
-    <id>1217</id>
+    <id>1220</id>
     <revision>
-      <id>7430</id>
-      <timestamp>2014-04-08T23:47:03Z</timestamp>
+      <id>7441</id>
+      <timestamp>2014-04-09T14:11:51Z</timestamp>
       <contributor>
         <ip>127.0.0.1</ip>
       </contributor>
-      <comment>Feng_Shui_dla_biznesu</comment>
-      <text xml:space="preserve" bytes="137">Analizy Feng Shui polegają na interpretacji data mieszkaniec dom.&lt;br /&gt;Szkoła Kompasu polega na dopasowaniu przestrzeni do osoby.&lt;br /&gt;</text>
-      <sha1>pec85od03ombo7cn3lwyadufpizmhii</sha1>
+      <comment>Katalog_stron_firmowych_w_internecie</comment>
+      <text xml:space="preserve" bytes="958">Co jeszcze jesteśmy w stanie dla Ciebie zrobić?&lt;br /&gt;Zrobimy dla Ciebie indywidualne unikalne logo Twojej firmy,&lt;br /&gt;pomożemy zastrzec znak w biurze patentowym,&lt;br /&gt;zrobimy dla Ciebie indywidualną i niepowtarzalną stronę internetową,&lt;br /&gt;pozycjonujemy indywidualnie strony www,&lt;br /&gt;pomożemy za pomocą indywidualnego szkolenia jak pozyskać nowych klientów.&lt;br /&gt;&lt;br /&gt;Firmy coraz częściej aby znaleźć nowe rynki popytu uderzają w reklamę na stronach internetowych służących do ich pozycjonowania. W naszych czasach już nie tylko się liczy &quot;znana stara marka&quot;, ale też coraz częściej na naszą decyzję wpływają inne czynniki jak cena i jakość. Możemy zauważyć jak poprzez dobrą reklamę różne młode mniej znane marki wchodzą &quot;na sam szczyt&quot; w gałęzi biznesu. Poprzez katalogi stron internetowych możemy łatwo znaleźć firmy w danej lokalizacji, która nas interesuje ale zarówno która jest godna zaufania.&lt;br /&gt;</text>
+      <sha1>olw73benrax0c6hapjyfr24ays4ndfm</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
   </page>
   <page>
-    <title>Zegarki militarne i Vostok</title>
+    <title>Pisanie prac</title>
     <ns>0</ns>
-    <id>1218</id>
+    <id>1221</id>
     <revision>
-      <id>7436</id>
-      <timestamp>2014-04-09T02:10:18Z</timestamp>
+      <id>7443</id>
+      <timestamp>2014-04-09T16:23:39Z</timestamp>
       <contributor>
         <ip>127.0.0.1</ip>
       </contributor>
-      <comment>Zegarki_militarne_i_Vostok</comment>
-      <text xml:space="preserve" bytes="10">etolożkę</text>
-      <sha1>57edbihcnckl3rbm8pp4b8dmof1j9qb</sha1>
+      <comment>pisanie_prac</comment>
+      <text xml:space="preserve" bytes="2393">Niektórzy mówią, że nie mają czasu na dalsze dokształcanie się, to dla nich stworzono między innymi zdalneedukacja[edumediaonline.pl zdalne nauczanie, e-learning, kursy, szkolenia] (e-learning). Ta metoda nauczania pozwala na zdobywanie wiedzy i umiejętności przez 24 godziny na dobę, dzięki wykorzystaniu dobrodziejstw internetu. Kursant w domu w odpowiadającej mu porze realizuje zagadnienia kursu korzystając z materiałów zamieszczonych na specjalnie przygotowanej platformie. Cały czas ma opiekę nauczyciela, który pomaga mu, doradza i sprawdza wiedzę zdobytą w czasie kursu. &lt;br /&gt;&lt;br /&gt;Ćwiczenia to nic innego jak krótka forma edukacji polegająca na wyrobieniu u kształconego pewnych potrzebnych mu w życiu umiejętności. Poza czystą teorią, najczęściej podaną w formie niezbędnej do opanowania treści szkolenia reszta szkolenia powinna być czysto praktyczna. To oznacza, że warto jest sprawdzić program szkolenia, aby porównać liczbę godzin teorii i praktycznych ćwiczeń. szkolenia, kursy &lt;br /&gt;&lt;br /&gt;Podczas tworzenia kursu lub szkolenia często wykorzystuje się różnego rodzaju opracowania i materiały, które są niezbędne dla osiągnięcia postawionych celi edukacyjnych kursu lub szkolenia. Takie studium nie musi zawierać tylko zagadnienia teoretyczne, ale też zestaw ćwiczeń wraz z odpowiedziami, który kursant powinien podczas kursu, szkolenia zrealizować pisanie prac, opracowania [edumediaonline.pl kurs, szkolenie]&lt;br /&gt;&lt;br /&gt;Na naukę nigdy nie jest za późno, warto zatem zastanowić się, czy posiadamy odpowiednie kwalifikacje, albo czy nasze nie są przestarzałe. Najłatwiejszym sposobem jest dalsze dokształcenie się, w każdym wieku. Istnieje wiele ciekawych kursów i szkoleń. &lt;br /&gt;Nie każdy kurs jest właściwy, zatem warto trochę popytać lub samemu sprawdzić. pisanie prac kursy, szkolenia &lt;br /&gt;&lt;br /&gt;Można się zastanowić, czy warto się kształcić dalej. otóż w dzisiejszym świecie tak, gdyż postęp technologiczny wymusza zmianę naszych umiejętności. Na co innego zwraca się obecnie uwagę, niż jeszcze 10, czy 20 lat temu. To wymusza poznanie też nowych sposób komunikacji, nowych nawyków, które kiedyś nie były uczone. Z tego powodu najłatwiej to zrobić wybierając odpowiedni kurslub warsztaty opracowania, pisnaie prac [edumediaonline.pl kursy, szkolenia, doradztwo]&lt;br /&gt;</text>
+      <sha1>j3yqnxybe6qj43o9np1bkg5vntvf2vc</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
