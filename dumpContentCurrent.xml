@@ -49201,15 +49201,14 @@ ii  zsh-common            5.0.2-4         all             architecture independe
     <ns>10</ns>
     <id>491</id>
     <revision>
-      <id>6849</id>
-      <parentid>6824</parentid>
-      <timestamp>2014-03-11T22:47:36Z</timestamp>
+      <id>7448</id>
+      <parentid>6849</parentid>
+      <timestamp>2014-04-10T11:56:22Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Choose Whonix Version */</comment>
-      <text xml:space="preserve" bytes="3099">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
+      <text xml:space="preserve" bytes="3105">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
 == Get Whonix Source Code ==
 Install git and get Whonix's source code from the git repository.&lt;ref&gt;From https://github.com/adrelanos/Whonix and not from https://github.com/Whonix/Whonix, because only adrelanos/Whonix contains git tags of the testers-only version.&lt;/ref&gt;
 
@@ -49268,7 +49267,7 @@ Verify the tag you want to build.
 
 &lt;pre&gt;
 ## ... Replace with tag you want to build.
-git tag -v 8
+git tag -v 8.1
 &lt;/pre&gt;
 
 Output should look similar to this.
@@ -49276,7 +49275,7 @@ Output should look similar to this.
 &lt;pre&gt;
 object 1844108109a5f2f8bddcf2257b9f3675be5cfb22
 type commit
-tag 8
+tag 8.1
 tagger Patrick Schleizer &lt;adrelanos@riseup.net&gt; 1392320095 +0000
 
 .
@@ -49299,14 +49298,14 @@ Git checkout, which version (or [[Dev/git|git branch]]) you want to build.
 In case you want to build a specific git tag.
 
 &lt;pre&gt;
-git checkout 8
+git checkout 8.1
 &lt;/pre&gt;
 
 You have to replace {{Code2|8}} with the actual version you want to build. The stable version, the testers-only version or the developers version. You can learn about current versions reading [[Download#Stay_tuned|Whonix News Blogs]]. New versions are also announced on the [[Mailing_Lists#whonix-devel|whonix-devel mailing list]]. So you could alternatively check its archives. Signing up for whonix-devel is another way to get informed about new releases.&lt;noinclude&gt;
 &lt;references /&gt;
 {{Footer}}
 &lt;/noinclude&gt;</text>
-      <sha1>nwqatgi604f7x5ouunrvcowdm1lco6l</sha1>
+      <sha1>d6t2y9n0lo23w3q1xd9im0uw7mi22yc</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -69631,15 +69630,15 @@ License: Public Domain</text>
     <ns>0</ns>
     <id>1169</id>
     <revision>
-      <id>7356</id>
-      <parentid>7355</parentid>
-      <timestamp>2014-04-07T21:28:01Z</timestamp>
+      <id>7452</id>
+      <parentid>7451</parentid>
+      <timestamp>2014-04-10T21:26:42Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Other Circumvention Tools other than Bridges */</comment>
-      <text xml:space="preserve" bytes="9665">{{Header}}
+      <comment>/* Verifiable APT Repository */</comment>
+      <text xml:space="preserve" bytes="10870">{{Header}}
 
 = Overview =
 The work outlined here is specifically focused on what could be done in a year with funding, though these goals should be considered as a larger roadmap for Whonix's development in general. This roadmap is focused on three goals: 
@@ -69663,6 +69662,12 @@ We should pay The Tor Project (if they are willing) or someone else to implement
 = Security =
 Whonix's primary goal is security, without it nothing matters.'''
 '''Patrick, can you expand the issues in this section and make them each focused, say 3 main security issues that should be dealt with over the next year'''
+
+== Leak Test Expert Review ==
+'''[ - ]''' &lt;br /&gt;
+'''Added April 2014'''
+
+Whonix's firewall is the heart of Whonix's security, preventing leaks, routing everything over Tor. We've done [[Dev/Leak Tests]], but an expert in iptables / networking should audit Whonix for leaks. This can be done by a one time project contractor position.
 
 == More Secure and Usable Download Mechanism ==
 '''[ - ]'''
@@ -69699,6 +69704,11 @@ And up-streamed to Debian.
 == Secure Distributed Network Time Synchronization ==
 Host operating systems such as Debian and Ubuntu have no way for secure and trust distributed network time synchronization, although that is crucial for security. ([https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=%23687166 Debian bug confirmation]; [https://bugs.launchpad.net/ubuntu/+source/ntp/+bug/1039420 Ubuntu bug confirmation]). Whonix already comes with a secure replacement as described on that [[Dev/TimeSync]] page. That mechanism should be split of Whonix's source code and be made a separate project available as a package (.deb), that users can download and install. Debian developers should then be encouraged to add that package to their offical repository, so it gets even simpler to install it (such as, as simple as {{Code|sudo apt-get install sdwdate}}). If Debian developers are not interested, Whonix developers should attempt to become a Debian maintainer as well and maintain the package themselves in Debian. (From Debian, that package will flow down to other Debian-based distributions such as Ubuntu, Mint, etc.)
 
+== Verifiable APT Repository ==
+For better protection against build machine compromise, Whonix has a [[Verifiable Builds]] feature.
+
+Documentation on how to verify Whonix's APT Repository is currently a bit [[Verifiable_Builds#Verifiable_Whonix_Debian_Packages|scare]], should be extended and better scripted.
+
 = Usability =
 Currently, to use Whonix a user must get familiar with Virtual Box and Debian (KDE) to be able to use and configure Whonix. In order to allow those with less time/access to expert knowledge of Linux, who may be in areas where time and security are of the essence, usability issues must be a top priority. 
 
@@ -69721,6 +69731,25 @@ https://translatewiki.net has a pool of translation volunteers. Once Whonix gets
 === Translation for Documentation ===
 We yet have to figure out how to use the translation extension and to prepare whonix.org's documentation for translation. We occasionally have offers to translate whonix.org, for [https://www.whonix.org/pipermail/whonix-devel/2014-March/000143.html example to French]. Whonix developer Patrick Schleizer could translate whonix.org to German.
 
+=== Desktop Environment ===
+Port Whonix to LXDE or XFCE?
+
+=== Reduce Image Size post-installing a desktop environment? ===
+Do not install a desktop by default and allow the user to choose either KDE, LXDE/XFCE or no desktop environment at first boot?
+
+=== Windows Installer ===
+Simpler than manually downloading VirtualBox and two Whonix VMs.
+
+Stub installer (small installer the can be downloaded fast - that downloads the bigger files).
+
+Windows store?
+
+=== Linux Installer ===
+&lt;pre&gt;
+sudo wget ... | sudo apt-key add ...
+sudo apt-get install whonix
+&lt;/pre&gt;
+
 = Circumvention =
 == Better Circumvention User Interface ==
 TBB uses the tor-launcher add-on, it looks good and makes it simpler to enter bridges. The upcoming version of tor-launcher even support pluggable transports. There is some work done creating a standalone xul application of tor-launcher. Tails devs are planing to use it. Whonix should use it as well. Some older screenshots of tor-launcher can be seen here: [[Dev/whonixsetup]]. ([https://github.com/Whonix/Whonix/issues/167 github ticket])
@@ -69735,7 +69764,7 @@ There are lots of other Censorship Circumvention Tools other than Tor bridges. W
 * [[Dev/Sponsor/A2]]
 
 {{Footer}}</text>
-      <sha1>lh5ggd009pr5saioqpfqhlspy0agr16</sha1>
+      <sha1>gshpbj1plvyw760vd75y02e1rpzbiw3</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
