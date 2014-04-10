@@ -433,14 +433,14 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
     <ns>10</ns>
     <id>15</id>
     <revision>
-      <id>7410</id>
-      <parentid>7304</parentid>
-      <timestamp>2014-04-08T03:17:45Z</timestamp>
+      <id>7447</id>
+      <parentid>7410</parentid>
+      <timestamp>2014-04-10T04:21:54Z</timestamp>
       <contributor>
-        <username>Fortasse</username>
-        <id>1</id>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="1731">&lt;br /&gt;&lt;hr&gt;&lt;font size=&quot;-3&quot;&gt;[[Special:UserLogin|Log in]] | [[Special:OpenIDLogin|OpenID]] | [[Contact|Contact]] | [[Impressum]] | [[Datenschutz|Datenschutz]] | [[Disclaimer|Haftungsausschluss]]
+      <text xml:space="preserve" bytes="1556">&lt;br /&gt;&lt;hr&gt;&lt;font size=&quot;-3&quot;&gt;[[Special:UserLogin|Log in]] | [[Special:OpenIDLogin|OpenID]] | [[Contact|Contact]] | [[Impressum]] | [[Datenschutz|Datenschutz]] | [[Disclaimer|Haftungsausschluss]]
 [https://www.whonix.org{{localurl:{{FULLPAGENAME}}}} https] | &lt;html&gt;&lt;a class=&quot;link-https&quot; href=&quot;http://xxxxxxxxxxh5kyrx.onion&lt;/html&gt;{{localurl:{{FULLPAGENAME}}}}&lt;html&gt;&quot; rel=&quot;nofollow&quot;&gt;.onion&lt;/a&gt;&lt;/html&gt; &lt;sup&gt;[[Forcing .onion on Whonix.org|[note]]]&lt;/sup&gt; | [http://whonix.org.nyud.net{{localurl:{{FULLPAGENAME}}}} Mirror] | [https://kkkkkkkkkk63ava6.tor2web.org{{localurl:{{FULLPAGENAME}}}} Mirror]
 &lt;!--
 inspired by http://aboli.sh/
@@ -448,9 +448,9 @@ inspired by http://aboli.sh/
 
 This is a wiki. Want to improve this page? See [https://github.com/Whonix/Whonix/blob/master/debian/copyright Conditions for Contributions to Whonix], then &lt;html&gt;&lt;a href=&quot;&lt;/html&gt;{{localurl:{{FULLPAGENAME}}|action=edit}}&lt;html&gt;&quot;&gt;Edit&lt;/a&gt;&lt;/html&gt; it! IP addresses are scrubbed, but editing over Tor is recommended. Edits are held for moderation.
 
-Whonix (&lt;html&gt;&lt;a href=&quot;https://plus.google.com/108150429836421683225&quot; rel=&quot;publisher&quot; /&gt;g+&lt;/a&gt;&lt;/html&gt;) is a [http://www.openinventionnetwork.com/licensees.php licensee] of the [[File:OIN_logo_200px.png|link=https://en.wikipedia.org/wiki/Open_Invention_Network|alt=Open Invention Network|140px]]. Unless otherwise noted above, content of this  page is copyrighted by [mailto:adrelanos@riseup.net Patrick Schleizer] (&lt;html&gt;&lt;a href=&quot;/patrick.asc&quot;&gt;gpg&lt;/a&gt;&lt;/html&gt;) &lt;!--(&lt;html&gt;&lt;a href=&quot;https://plus.google.com/u/0/112678569435063398972?rel=author&quot;&gt;g+&lt;/a&gt;)&lt;/html&gt;--&gt; and licensed under the same Free (as in speech) [https://github.com/Whonix/Whonix/blob/master/debian/copyright license] as Whonix itself.
+Whonix (&lt;html&gt;&lt;a href=&quot;https://plus.google.com/108150429836421683225&quot; rel=&quot;publisher&quot; /&gt;g+&lt;/a&gt;&lt;/html&gt;) is a [http://www.openinventionnetwork.com/licensees.php licensee] of the [[File:OIN_logo_200px.png|link=https://en.wikipedia.org/wiki/Open_Invention_Network|alt=Open Invention Network|140px]]. Unless otherwise noted above, content of this  page is [[Whonix:Copyrights|copyrighted]] and licensed under the same Free (as in speech) [https://github.com/Whonix/Whonix/blob/master/debian/copyright license] as Whonix itself.
 &lt;/font&gt;</text>
-      <sha1>es3c5jm9hv3x36pb2hg5ox3b4whwywq</sha1>
+      <sha1>8hyw54torwwn56zao9znr7kn6loh2i3</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -5033,28 +5033,32 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>4</ns>
     <id>82</id>
     <revision>
-      <id>179</id>
-      <parentid>178</parentid>
-      <timestamp>2013-07-01T18:12:30Z</timestamp>
+      <id>7446</id>
+      <parentid>7445</parentid>
+      <timestamp>2014-04-10T04:21:19Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <minor/>
-      <comment>Protected &quot;[[Whonix:Copyrights]]&quot; ([Edit=Allow only administrators] (indefinite) [Move=Allow only administrators] (indefinite))</comment>
-      <text xml:space="preserve" bytes="586">&lt;pre&gt;
+      <text xml:space="preserve" bytes="1088">{{Header}}
+
+Whonix (&lt;html&gt;&lt;a href=&quot;https://plus.google.com/108150429836421683225&quot; rel=&quot;publisher&quot; /&gt;g+&lt;/a&gt;&lt;/html&gt;) is copyrighted by [mailto:adrelanos@riseup.net Patrick Schleizer] (&lt;html&gt;&lt;a href=&quot;/patrick.asc&quot;&gt;gpg&lt;/a&gt;&lt;/html&gt;) &lt;!--(&lt;html&gt;&lt;a href=&quot;https://plus.google.com/u/0/112678569435063398972?rel=author&quot;&gt;g+&lt;/a&gt;)&lt;/html&gt;--&gt; and licensed under the same Free (as in speech) [https://github.com/Whonix/Whonix/blob/master/debian/copyright license] as Whonix itself.
+
+&lt;pre&gt;
 *****************************************************************************
 * Whonix source code and documentation contributions
 *****************************************************************************
 
 Any changes you pull into this source will be also licensed
-under GPL v3 or any later. Additionally you grant adrelanos the right to
+under GPL v3 or any later. Additionally you grant Patrick Schleizer the right to
 re-license your work under a different license. If that is not acceptable,
 you can either fork this source under GPL v3 or any later or contact
-adrelanos. Contact adrelanos, if you require this source code under
+Patrick Schleizer. Contact Patrick Schleizer, if you require this source code under
 different license.
-&lt;/pre&gt;</text>
-      <sha1>h5hexbn3bq8rsoegmrzn6oogr7drmi1</sha1>
+&lt;/pre&gt;
+
+{{Footer}}</text>
+      <sha1>cem6nk7wclenjyjansd9rj1gwgat8ej</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -62240,23 +62244,6 @@ Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/A
     </revision>
   </page>
   <page>
-    <title>Category talk:Documentation</title>
-    <ns>15</ns>
-    <id>892</id>
-    <revision>
-      <id>5675</id>
-      <timestamp>2014-02-25T16:59:49Z</timestamp>
-      <contributor>
-        <ip>127.0.0.1</ip>
-      </contributor>
-      <comment>hey everyone</comment>
-      <text xml:space="preserve" bytes="5">hello</text>
-      <sha1>jywkymwk5kel4plcu17bdqhwzuuz3nx</sha1>
-      <model>wikitext</model>
-      <format>text/x-wiki</format>
-    </revision>
-  </page>
-  <page>
     <title>Template:DownloadTable</title>
     <ns>10</ns>
     <id>893</id>
@@ -70721,40 +70708,6 @@ testdeutsch
       </contributor>
       <text xml:space="preserve" bytes="1">2</text>
       <sha1>phz40h3k0sqkofeslplfx66u885ccs0</sha1>
-      <model>wikitext</model>
-      <format>text/x-wiki</format>
-    </revision>
-  </page>
-  <page>
-    <title>Katalog stron firmowych w internecie</title>
-    <ns>0</ns>
-    <id>1220</id>
-    <revision>
-      <id>7441</id>
-      <timestamp>2014-04-09T14:11:51Z</timestamp>
-      <contributor>
-        <ip>127.0.0.1</ip>
-      </contributor>
-      <comment>Katalog_stron_firmowych_w_internecie</comment>
-      <text xml:space="preserve" bytes="958">Co jeszcze jesteśmy w stanie dla Ciebie zrobić?&lt;br /&gt;Zrobimy dla Ciebie indywidualne unikalne logo Twojej firmy,&lt;br /&gt;pomożemy zastrzec znak w biurze patentowym,&lt;br /&gt;zrobimy dla Ciebie indywidualną i niepowtarzalną stronę internetową,&lt;br /&gt;pozycjonujemy indywidualnie strony www,&lt;br /&gt;pomożemy za pomocą indywidualnego szkolenia jak pozyskać nowych klientów.&lt;br /&gt;&lt;br /&gt;Firmy coraz częściej aby znaleźć nowe rynki popytu uderzają w reklamę na stronach internetowych służących do ich pozycjonowania. W naszych czasach już nie tylko się liczy &quot;znana stara marka&quot;, ale też coraz częściej na naszą decyzję wpływają inne czynniki jak cena i jakość. Możemy zauważyć jak poprzez dobrą reklamę różne młode mniej znane marki wchodzą &quot;na sam szczyt&quot; w gałęzi biznesu. Poprzez katalogi stron internetowych możemy łatwo znaleźć firmy w danej lokalizacji, która nas interesuje ale zarówno która jest godna zaufania.&lt;br /&gt;</text>
-      <sha1>olw73benrax0c6hapjyfr24ays4ndfm</sha1>
-      <model>wikitext</model>
-      <format>text/x-wiki</format>
-    </revision>
-  </page>
-  <page>
-    <title>Pisanie prac</title>
-    <ns>0</ns>
-    <id>1221</id>
-    <revision>
-      <id>7443</id>
-      <timestamp>2014-04-09T16:23:39Z</timestamp>
-      <contributor>
-        <ip>127.0.0.1</ip>
-      </contributor>
-      <comment>pisanie_prac</comment>
-      <text xml:space="preserve" bytes="2393">Niektórzy mówią, że nie mają czasu na dalsze dokształcanie się, to dla nich stworzono między innymi zdalneedukacja[edumediaonline.pl zdalne nauczanie, e-learning, kursy, szkolenia] (e-learning). Ta metoda nauczania pozwala na zdobywanie wiedzy i umiejętności przez 24 godziny na dobę, dzięki wykorzystaniu dobrodziejstw internetu. Kursant w domu w odpowiadającej mu porze realizuje zagadnienia kursu korzystając z materiałów zamieszczonych na specjalnie przygotowanej platformie. Cały czas ma opiekę nauczyciela, który pomaga mu, doradza i sprawdza wiedzę zdobytą w czasie kursu. &lt;br /&gt;&lt;br /&gt;Ćwiczenia to nic innego jak krótka forma edukacji polegająca na wyrobieniu u kształconego pewnych potrzebnych mu w życiu umiejętności. Poza czystą teorią, najczęściej podaną w formie niezbędnej do opanowania treści szkolenia reszta szkolenia powinna być czysto praktyczna. To oznacza, że warto jest sprawdzić program szkolenia, aby porównać liczbę godzin teorii i praktycznych ćwiczeń. szkolenia, kursy &lt;br /&gt;&lt;br /&gt;Podczas tworzenia kursu lub szkolenia często wykorzystuje się różnego rodzaju opracowania i materiały, które są niezbędne dla osiągnięcia postawionych celi edukacyjnych kursu lub szkolenia. Takie studium nie musi zawierać tylko zagadnienia teoretyczne, ale też zestaw ćwiczeń wraz z odpowiedziami, który kursant powinien podczas kursu, szkolenia zrealizować pisanie prac, opracowania [edumediaonline.pl kurs, szkolenie]&lt;br /&gt;&lt;br /&gt;Na naukę nigdy nie jest za późno, warto zatem zastanowić się, czy posiadamy odpowiednie kwalifikacje, albo czy nasze nie są przestarzałe. Najłatwiejszym sposobem jest dalsze dokształcenie się, w każdym wieku. Istnieje wiele ciekawych kursów i szkoleń. &lt;br /&gt;Nie każdy kurs jest właściwy, zatem warto trochę popytać lub samemu sprawdzić. pisanie prac kursy, szkolenia &lt;br /&gt;&lt;br /&gt;Można się zastanowić, czy warto się kształcić dalej. otóż w dzisiejszym świecie tak, gdyż postęp technologiczny wymusza zmianę naszych umiejętności. Na co innego zwraca się obecnie uwagę, niż jeszcze 10, czy 20 lat temu. To wymusza poznanie też nowych sposób komunikacji, nowych nawyków, które kiedyś nie były uczone. Z tego powodu najłatwiej to zrobić wybierając odpowiedni kurslub warsztaty opracowania, pisnaie prac [edumediaonline.pl kursy, szkolenia, doradztwo]&lt;br /&gt;</text>
-      <sha1>j3yqnxybe6qj43o9np1bkg5vntvf2vc</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
