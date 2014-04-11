@@ -1532,14 +1532,14 @@ See also [[Security_in_Real_World | Whonix security in real world]], [[Security_
     <ns>0</ns>
     <id>24</id>
     <revision>
-      <id>7214</id>
-      <parentid>7187</parentid>
-      <timestamp>2014-03-30T20:58:41Z</timestamp>
+      <id>7465</id>
+      <parentid>7214</parentid>
+      <timestamp>2014-04-10T23:21:11Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="18716">&lt;!--
+      <text xml:space="preserve" bytes="18845">&lt;!--
 Copyright:
 
    Whonix Documentation wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -1838,6 +1838,7 @@ Anonymity is a complex problem without an easy solution, and security is only as
 &lt;div style=&quot;column-count:3;-moz-column-count:3;-webkit-column-count:3&quot;&gt;
 
 * &lt;small&gt; [[Access Gateway Port From Host|Access Whonix-Gateway Ports From Host, make Tor accessible running inside Whonix-Gateway on the host]]&lt;/small&gt;
+* &lt;small&gt; [[Whonix-Gateways Own Traffic Transparent Proxy|Enable Transparent Proxying for Whonix-Gateway's own traffic]]&lt;/small&gt;
 * &lt;small&gt; [[Whonix-Gateway System DNS|Getting the global system DNS resolver working on Whonix-Gateway (usually recommended against and unnecessary)]]&lt;/small&gt;
 &lt;/div&gt;
 
@@ -1867,7 +1868,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>l8q0x8bw75jspcjwi76rq2ld6msfm00</sha1>
+      <sha1>dv1in91b0uoct8ypodpci92rbodrcyi</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -32479,14 +32480,15 @@ Undo Step 0 now!
     <ns>0</ns>
     <id>264</id>
     <revision>
-      <id>5779</id>
-      <parentid>4454</parentid>
-      <timestamp>2014-02-27T12:09:28Z</timestamp>
+      <id>7464</id>
+      <parentid>7455</parentid>
+      <timestamp>2014-04-10T23:19:40Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="5459">{{Header}}
+      <comment>/* FIN ACK / RST ACK - Leak Test */</comment>
+      <text xml:space="preserve" bytes="7074">{{Header}}
 {{#seo:
 |description=Testing for IP/DNS Leaks
 }}
@@ -32604,6 +32606,69 @@ Shut down the Whonix-Gateway and start the Whonix-Workstation. The Whonix-Workst
 
 First, make sure both VMs are online. Since ICMP is not supported by Tor and filtered by Whonix firewall, you should not be able to ping any servers.
 
+= FIN ACK / RST ACK - Leak Test=
+&lt;font size=&quot;-3&quot;&gt;Credit for FIN ACK / RST ACK - Leak Test (coined by Whonix): Originally written by Mike Perry on the tor-talk mailing list, he found a transparent proxy leak without references to Whonix. ([https://lists.torproject.org/pipermail/tor-talk/2014-March/032503.html source]) The test has been adapted for Whonix.&lt;/font&gt;
+
+Note, the following IP 74.125.28.104 points to www.google.com and should be seen as an example.
+
+On the host.
+
+Close your browser and cease all other non-Whonix online activity to avoid contaminating the following test.
+
+Install tcpdump.
+
+&lt;pre&gt;
+sudo apt-get update
+sudo apt-get install tcpdump
+&lt;/pre&gt;
+
+Run tcpdump.
+
+&lt;pre&gt;
+sudo tcpdump -n -i any host 74.125.28.104
+&lt;/pre&gt;
+
+For testing/learning, connect to 74.125.28.104 (ping, open in a browser, use wget or similar) and see how it looks like when a connection to that IP is being made.
+
+Close the connection. Stop tcpdump. Start tcpdump again.
+
+In Whonix-Workstation.
+
+Create a socket connection.
+
+&lt;pre&gt;
+python
+
+import socket
+
+s = socket.create_connection((&quot;74.125.28.104&quot;, 80))
+&lt;/pre&gt;
+
+On Whonix-Gateway.
+
+Stop Tor.
+
+&lt;pre&gt;
+sudo service tor stop
+&lt;/pre&gt;
+
+In Whonix-Workstation.
+
+Close the socket connection.
+
+&lt;pre&gt;
+s.close()
+&lt;/pre&gt;
+
+On the host.
+
+Check, that you can not see any connections to 74.125.28.104 in tcpdump.
+
+Variations of this test:
+
+* You could also run tcpdump in Whonix-Workstation or on Whonix-Gateway.
+* You could also [[Whonix-Gateways_Own_Traffic_Transparent_Proxy|enable transparent proxying for Whonix-Gateway's own traffic]] and create the socket connection on Whonix-Gateway.
+
 = Integrated tshark leaktest =
 
 The necessary scripts for leak testing are now integrated into the Whonix machines.
@@ -32649,7 +32714,7 @@ A similar project published another leak test. Read [https://github.com/ra--/Tor
 {{Footer}}
 
 [[Category:Development]] [[Category:Design]]</text>
-      <sha1>1ba64oycb4mhdcx5ha51zcil8ozv2gn</sha1>
+      <sha1>o6pgeoivsqs467dj8hxkzlwqkkisxwc</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -43764,27 +43829,35 @@ Ask whatever you like.  I'm not bashful, and I have no shame.
     <ns>0</ns>
     <id>460</id>
     <revision>
-      <id>5919</id>
-      <parentid>4807</parentid>
-      <timestamp>2014-02-27T14:22:28Z</timestamp>
+      <id>7468</id>
+      <parentid>7466</parentid>
+      <timestamp>2014-04-10T23:25:38Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="981">{{Header}}
+      <comment>/* DNS on Whonix-Gateway */</comment>
+      <text xml:space="preserve" bytes="1374">{{Header}}
 {{#seo:
 |description=Getting System DNS working on Whonix-Gateway
 }}
 
 = DNS on Whonix-Gateway =
-'''Advanced users only!'''
-'''Usually recommended against and neither necessary.'''
+'''Advanced users only!''' &lt;br /&gt;
+'''Usually recommended against and unnecessary.'''
 
 {{TorifiedGateway}}
 
 Whonix-Workstation is configured to use various SocksPorts, DnsPort and TransPort, see also [[Stream Isolation]]. Whonix-Gateway is only configured to use various SocksPorts. A global system DNS resolver isn't required for Whonix-Gateway for anything. (Except, resolving the hostname of a proxy used in /etc/tor/torrc through Tor would be useful.)
 
 Working. Using Whonix-Gateway's user {{Code2|clearnet}}.
+
+{{mbox
+
+| type      = critical
+| image   = [[File:Ambox_warning_pn.svg.png|40px|alt=&lt;translate&gt;Whonix first time users warning&lt;/translate&gt;]]
+| text       = Using the clearnet user, traffic will be sent over normal internet! Not over Tor! Will not be anonymous!
+}}
 
 Explanation: &lt;br /&gt;
 http://sourceforge.net/p/whonix/discussion/general/thread/41116dda/
@@ -43799,13 +43872,16 @@ ping google.com
 # working
 &lt;/pre&gt;
 
+= See Also =
+* [[Whonix-Gateways Own Traffic Transparent Proxy|Enable Transparent Proxying for Whonix-Gateway's own traffic]]
+
 = Footnotes =
 &lt;references/&gt;
 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>r28dwguqzpbre68wxjyqthp0oy19218</sha1>
+      <sha1>l05i3ve2sghl2r3b804msz3r83k1qu5</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -44517,21 +44593,20 @@ Do not remove {{Code2|...-postinst}} packages.
     <ns>0</ns>
     <id>475</id>
     <revision>
-      <id>7423</id>
-      <parentid>7422</parentid>
-      <timestamp>2014-04-08T22:34:06Z</timestamp>
+      <id>7475</id>
+      <parentid>7474</parentid>
+      <timestamp>2014-04-11T01:49:40Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
       <comment>/* Safety Advice */</comment>
-      <text xml:space="preserve" bytes="3679">{{#seo:
+      <text xml:space="preserve" bytes="3767">{{#seo:
 |description=Various Ways to get Help with Whonix. Free and Professional Support available.
 }}
 {{Header}}
 
 = Professional Support =
-Consulting / support for anonymity, privacy, security, data security &amp; Whonix &amp; system administration services.
+Consulting / support for anonymity, privacy, security, data security, Whonix &amp; system administration services.
 
 Contact Whonix Developer [mailto:adrelanos@riseup.net Patrick Schleizer] for price quote.
 
@@ -44573,6 +44648,8 @@ To not link your questions to an existing email or OpenID, use a separate e-mail
 
 Be careful with the advice you are getting in public places. Get a second opinion, and do not run commands or perform steps which you do not understand.
 
+Never post any custom code that pertains to your system or Hidden Service specifically.
+
 In Whonix forum [https://www.whonix.org/forum/index.php?action=profile;area=account account settings] uncheck the &quot;Show others my online status&quot; option and hit the &quot;change profile&quot; button to store. &lt;ref&gt;https://www.whonix.org/forum/index.php/topic,155.0.html&lt;/ref&gt;
 
 = General Advice =
@@ -44586,7 +44663,7 @@ In Whonix forum [https://www.whonix.org/forum/index.php?action=profile;area=acco
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>mbn6i6f7mp8wojm023w0lbr6aqemcv0</sha1>
+      <sha1>rxlbpqa7u9jnx8s8cxhhuy6n1d7m8xh</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -49507,14 +49584,14 @@ Footnotes:
     <ns>0</ns>
     <id>499</id>
     <revision>
-      <id>5804</id>
-      <parentid>5673</parentid>
-      <timestamp>2014-02-27T12:39:56Z</timestamp>
+      <id>7453</id>
+      <parentid>5804</parentid>
+      <timestamp>2014-04-10T22:31:58Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="963">{{Header}}
+      <text xml:space="preserve" bytes="1134">{{Header}}
 {{#seo:
 |description=Create a backup of Source Code of the Whonix Anonymous Operating System.
 }}
@@ -49522,7 +49599,15 @@ Footnotes:
 Please run the Whonix backup script every now and then. Check if the Whonix backup script changed every now and then.
 
 &lt;pre&gt;
+kwrite ~/whonix_backup
+&lt;/pre&gt;
+
+Paste the following content.
+
+&lt;pre&gt;
 #!/bin/bash
+
+set -x
 
 sudo apt-get update
 sudo apt-get install git github-backup
@@ -49551,10 +49636,22 @@ cd ~/whonix_backup/WhonixWikiBackups
 git fetch
 &lt;/pre&gt;
 
+Make it executable.
+
+&lt;pre&gt;
+chmod +x ~/whonix_backup
+&lt;/pre&gt;
+
+Run.
+
+&lt;pre&gt;
+~/whonix_backup
+&lt;/pre&gt;
+
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Development]]</text>
-      <sha1>h6pph5b3e2qhcc249pjxu1ndm978q3q</sha1>
+      <sha1>3d18ib1ogdfo0cr31l4468ra95sn5gf</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -55373,14 +55470,14 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
     <ns>0</ns>
     <id>691</id>
     <revision>
-      <id>7408</id>
-      <parentid>7407</parentid>
-      <timestamp>2014-04-08T02:29:00Z</timestamp>
+      <id>7478</id>
+      <parentid>7477</parentid>
+      <timestamp>2014-04-11T02:02:42Z</timestamp>
       <contributor>
         <ip>127.0.0.1</ip>
       </contributor>
-      <comment>Raw image question settled</comment>
-      <text xml:space="preserve" bytes="14319">{{Header}}
+      <comment>Debian apparmor</comment>
+      <text xml:space="preserve" bytes="15556">{{Header}}
 {{#seo:
 |description=Development Notes for adding KVM support to Whonix.
 }}
@@ -55434,10 +55531,37 @@ Probably yes?
 https://wiki.debian.org/DebianKVMGuests
 
 == Do KVM instructions need changes to activate virtio? ==
-Do [[KVM]] instructions need changes to activate virtio?
+Probably needs to be scripted in the build process for the KVM version in particular. The corresponding setting for it should be included outside in the xml file too.
 
 == How to get virtio running for storage? ==
-http://wiki.libvirt.org/page/Virtio
+
+Virtio-blk now works
+
+Here are the steps, which I'll throw altogether here before the server downtime. Will move into the wiki later:
+
+http://www.linux-kvm.org/page/Boot_from_virtio_block_device        &lt; Original steps that needed to be changed so it can apply to Debian.
+
+Quote
+
+    in guest os, change /boot/grub/device.map from &quot;(hd0) /dev/sda&quot; to &quot;(hd0) /dev/vda&quot;
+    in guest os, change /boot/grub/grub.cfg from &quot;root=/dev/sda1&quot; to &quot;root=/dev/vda1&quot;, if you are using UUID, then no need to do this step. 
+
+
+I changed all mention of sda1 to vda1 in the grub file. I changed the disk controller type from virtmanager to virtio which takes care of this at the libvirt xml level. Now the vm boots normally with no hangups and I feel a little faster.
+
+ A bit of advice, that I'll add so you can decide:
+
+
+Quote
+
+    &lt;iggy&gt; bancfc: the better option would be using LABELs and UUIDs and such in the source image
+    &lt;iggy&gt; unless this is a one time conversion kind of thing
+
+
+
+Not really important but is interesting:
+
+http://www.linux-kvm.org/page/Virtio/Block/Latency
 
 == Boot from virtio block device? ==
 What is http://www.linux-kvm.org/page/Boot_from_virtio_block_device good for? Required?
@@ -55465,6 +55589,10 @@ How to check, that '''virtio_pci''' is really being used and not some fallback d
 
 Details on how to install, configure and enable SELinux enforcing mode:
 https://wiki.debian.org/SELinux/Setup#Steps_to_setup_SELinux &lt;-- This is a start, but incomplete. When following these instructions it gets difficult at the &quot;audit2why -al&quot; step, because it shows a ton of policy violations which are non-trivial to fix without learning a lot about SELinux.
+
+For Debian hosts, Apparmor makes more sense.
+
+http://libvirt.org/drvqemu.html#securitysvirtaa
 
 == How to add a random time offset? ==
 Having a small random offset (similar to [[Advanced_Security_Guide#Network_Time_Synchronization]]) would be a good thing.
@@ -55679,7 +55807,7 @@ whonixcheck (since Whonix 8) would tell you if kvmclock is enabled. whonixcheck 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>21ndn310q2pgqntr9n231x7kcronkdd</sha1>
+      <sha1>o5v1m754g515n285efj6py8gb6e1s0s</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -63698,20 +63826,36 @@ sudo ln -s /etc/dpkg/origins/whonix /etc/dpkg/origins/default
     <ns>0</ns>
     <id>948</id>
     <revision>
-      <id>7107</id>
-      <parentid>6085</parentid>
-      <timestamp>2014-03-28T01:54:17Z</timestamp>
+      <id>7473</id>
+      <parentid>7472</parentid>
+      <timestamp>2014-04-11T00:49:35Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="190">{{#seo:
+      <text xml:space="preserve" bytes="561">{{#seo:
 |description=Schützen Sie Ihre Privatsphäre im Internet! Deutschsprachige Whonix Homepage.
 |og:image=https://www.whonix.org/w/images/thumb/b/be/500.png/180px-500.png
 }}
 
+&lt;html&gt;
+&lt;script src=&quot;yshout/js/jquery.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;yshout/js/yshout.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;yshout/example/css/light.yshout.css&quot; /&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+   new YShout({
+      yPath: 'https://www.whonix.org/yshout/'
+   });
+&lt;/script&gt;
+&lt;/html&gt;
+
+&lt;html&gt;
+&lt;div id=&quot;yshout&quot;&gt;&lt;/div&gt;
+&lt;/html&gt;
+
 {{Footer}}</text>
-      <sha1>ncd4ljbfb2qidxk00fiv5besbsqz5ka</sha1>
+      <sha1>mp0mku2izz2yhtaabqpailzynwipipv</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -70737,6 +70881,100 @@ testdeutsch
       </contributor>
       <text xml:space="preserve" bytes="1">2</text>
       <sha1>phz40h3k0sqkofeslplfx66u885ccs0</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Whonix-Gateways Own Traffic Transparent Proxy</title>
+    <ns>0</ns>
+    <id>1223</id>
+    <revision>
+      <id>7467</id>
+      <parentid>7463</parentid>
+      <timestamp>2014-04-10T23:22:46Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <text xml:space="preserve" bytes="1592">{{Header}}
+{{#seo:
+|description=Getting Transparent Proxying working for Whonix-Gateway's own traffic.
+}}
+
+'''Advanced users only!''' &lt;br /&gt;
+'''Usually recommended against and unnecessary!'''
+
+{{TorifiedGateway}}
+
+Whonix-Workstation has the transparent proxying feature enabled by default. (You could [[Stream_Isolation#Better_Protection|disable it]] if you wanted to.)
+
+Whonix-Gateway has by default no transparent proxying feature. This article explains how you could enable it. There are no known use cases besides [[Dev/Leak Tests|leak testing]].
+
+On Whonix-Gateway.
+
+For explanation, open {{Code|/etc/whonix_firewall.d/30_user}} and read what the settings {{Code|GATEWAY_TRANSPARENT_TCP}} and {{Code|GATEWAY_TRANSPARENT_DNS}} are about.
+
+&lt;pre&gt;
+kwrite /etc/whonix_firewall.d/30_user
+&lt;/pre&gt;
+
+Create a file {{Code|/etc/whonix_firewall.d/50_user}}.
+
+&lt;pre&gt;
+kdesudo kwrite /etc/whonix_firewall.d/50_user
+&lt;/pre&gt;
+
+Add the following content.
+
+&lt;pre&gt;
+GATEWAY_TRANSPARENT_TCP=1
+GATEWAY_TRANSPARENT_DNS=1
+&lt;/pre&gt;
+
+Save.
+
+Reload Whonix's Firewall.
+
+&lt;pre&gt;
+sudo whonix_firewall
+&lt;/pre&gt;
+
+Open {{Code|/etc/tor/torrc}}.
+
+&lt;pre&gt;
+kdesudo kwrite /etc/tor/torrc
+&lt;/pre&gt;
+
+Add the following content.
+
+&lt;pre&gt;
+TransPort 127.0.0.1:9041
+DnsPort 127.0.0.1:54
+&lt;/pre&gt;
+
+Reload Tor.
+
+&lt;pre&gt;
+sudo service tor reload
+&lt;/pre&gt;
+
+Test if you wish.
+
+&lt;pre&gt;
+curl.whonix-orig https://check.torproject.org
+&lt;/pre&gt;
+
+= See Also =
+* [[Whonix-Gateway System DNS|Getting the global system DNS resolver working on Whonix-Gateway (usually recommended against and unnecessary)]]
+
+= Footnotes =
+&lt;references /&gt;
+
+{{Footer}}
+
+[[Category:Documentation]]</text>
+      <sha1>imqqc3lfbmg2y3imv9d6gxg2g64t2j2</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
