@@ -797,14 +797,14 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>19</id>
     <revision>
-      <id>7404</id>
-      <parentid>7160</parentid>
-      <timestamp>2014-04-07T22:49:06Z</timestamp>
+      <id>7481</id>
+      <parentid>7404</parentid>
+      <timestamp>2014-04-11T22:11:36Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="15309">{{Header}}
+      <text xml:space="preserve" bytes="15148">{{Header}}
 &lt;!--
 Copyright:
 
@@ -943,7 +943,6 @@ Read and apply the [[Pre_Install_Advice|Security Advice]].
 &lt;!--T:28--&gt;
 * Download and install [https://www.virtualbox.org/wiki/Downloads VirtualBox]. &lt;ref&gt;You could alternatively search for a Portable VirtualBox&lt;/ref&gt;
 * [[#Download Whonix|Download Whonix]] and import both Whonix images&lt;ref&gt;You need both Whonix-Gateway.ova and Whonix-Workstation.ova images. Whonix is a two machine setup.&lt;/ref&gt; into VirtualBox. Do not change any settings when importing!
-* Take a snapshot for both Whonix-Gateway and Whonix-Workstation on VirtualBox. So you can easily restore the original snapshot whenever you need a clean state.
 
 &lt;!--T:250--&gt;
 === In case you need help ===
@@ -1170,7 +1169,7 @@ under certain conditions; see the wiki source code for details.
 &lt;translate&gt;&lt;!--T:253--&gt;
 Some icons created by third parties, Free licenses as well, see [[Authorship#Images_created_by_third_parties|Authorship Images created by third parties]] for details.
 &lt;/translate&gt;[[Category:Documentation]]{{Footer}}</text>
-      <sha1>2q317gnpdv25sd7xyuj68le7zglqhxs</sha1>
+      <sha1>kui4fftv0diu2j18kjz2sxufv8530n8</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -9435,14 +9434,15 @@ Whether it's worth to combine Tor with a VPN, either as pre-Tor-VPN (user -&gt; 
     <ns>0</ns>
     <id>98</id>
     <revision>
-      <id>6107</id>
-      <parentid>5791</parentid>
-      <timestamp>2014-02-28T22:39:05Z</timestamp>
+      <id>7483</id>
+      <parentid>6107</parentid>
+      <timestamp>2014-04-11T22:13:31Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="20937">{{Header}}
+      <comment>/* Total protection */</comment>
+      <text xml:space="preserve" bytes="20934">{{Header}}
 {{#seo:
 |description=Prevent Identity Correlation through Circuit Sharing by using Tor Stream Isolation
 }}
@@ -9716,7 +9716,7 @@ This will disable transparent proxying. All applications not configured to use a
 
 === Total protection ===
 
-Total protection is only possible, if you honor the advice above and only use one application per session and always revert to a fresh snapshot or use [[Tor_Browser#More_than_one_Tor_Browser_in_Whonix | more than one Whonix-Workstation]]. [[Multiple Whonix-Workstations]] (using different internal IP's) are automatically separated by Tor (IsolateClientAddr is Tor's default).
+Total protection is only possible, if you honor the advice above and only use one application per session and always revert to a fresh image or use [[Tor_Browser#More_than_one_Tor_Browser_in_Whonix | more than one Whonix-Workstation]]. [[Multiple Whonix-Workstations]] (using different internal IP's) are automatically separated by Tor (IsolateClientAddr is Tor's default).
 
 === Limited workarounds for Tor Browser ===
 
@@ -9817,7 +9817,7 @@ Stream Isolation Graphic has been contributed by: Cuan Knaggs – graphic and we
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Design]]</text>
-      <sha1>ew72zhkw52yy3amft8f5rb9cx8kc1ux</sha1>
+      <sha1>5bvb3ombjw8l0be97s6wlpacblxpt8q</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -12614,14 +12614,15 @@ Safe and reboot. Done.
     <ns>0</ns>
     <id>116</id>
     <revision>
-      <id>5798</id>
-      <parentid>2744</parentid>
-      <timestamp>2014-02-27T12:35:02Z</timestamp>
+      <id>7484</id>
+      <parentid>5798</parentid>
+      <timestamp>2014-04-11T22:13:45Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="7182">{{Header}}
+      <comment>/* More secure */</comment>
+      <text xml:space="preserve" bytes="7058">{{Header}}
 {{#seo:
 |description=Anonymous Ubuntu. Tunnel Ubuntu through the Tor Anonymity Network using Whonix.
 }}
@@ -12694,8 +12695,6 @@ If you forgot to set the time to UTC you can do so at any time by type the follo
 
 &lt;pre&gt;sudo dpkg-reconfigure tzdata&lt;/pre&gt;
 
-Now would be a good time to create a snapshot of the VM.
-
 Update package lists.
 
 &lt;pre&gt;sudo apt-get update&lt;/pre&gt;
@@ -12703,8 +12702,6 @@ Update package lists.
 Get latest updates.
 
 &lt;pre&gt;sudo apt-get dist-upgrade&lt;/pre&gt;
-
-Now would be a another good time to create a snapshot of the VM.
 
 = Guest additions for Ubuntu =
 
@@ -12770,7 +12767,7 @@ Userland protection for Tor is great. &lt;ref&gt;This would only apply if you cr
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>qiviburtgxvobl022cnoao4q8qh38mn</sha1>
+      <sha1>8q3kdhv5gp8w5g5lzy0l8z62mdxz3pq</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -13079,15 +13076,15 @@ The PayPal logo (60px-De-pp-logo-200px.png), the subscribe button (subscribeCC_L
     <ns>0</ns>
     <id>119</id>
     <revision>
-      <id>6232</id>
-      <parentid>6104</parentid>
-      <timestamp>2014-03-02T13:29:10Z</timestamp>
+      <id>7488</id>
+      <parentid>6232</parentid>
+      <timestamp>2014-04-11T22:17:18Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Recommendation to install latest security updates on all systems */</comment>
-      <text xml:space="preserve" bytes="16987">{{Header}}
+      <comment>/* Recommendation to use multiple VM Snapshots */</comment>
+      <text xml:space="preserve" bytes="17204">{{Header}}
 {{#seo:
 |description=Computer Security Guide for Whonix Linux for Users, Whonix Hardening
 }}
@@ -13346,6 +13343,7 @@ The best practice is to create snapshots of the VM and &quot;roll back&quot; aft
 For Technical Design notes, see [[Dev/Operating System]]. For information on how to use other operating systems, see [[Other Operating Systems]].
 
 == Recommendation to use multiple VM Snapshots ==
+'''Warning''': VirtualBox's VM Snapshot feature is recommended against, because [https://www.whonix.org/forum/index.php/topic,97.msg1586.html#msg1586 we experienced] data loss with it. You're better off using clones.
 
 Apart from offering protection against hardware serial leaks, VMs got another great advantage: the ability to quickly discard and restore a system.
 
@@ -13410,7 +13408,7 @@ For even more Security, see [[Advanced Security Guide]].
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>51ezgpro11d7jet47rkagdu37egauaj</sha1>
+      <sha1>4f5hm135j3nbxn7dp1hgzqs6o4n713t</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -23004,15 +23002,14 @@ The infobox template requires the [[:mw:Extension:Scribunto|Scribunto]] extensio
     <ns>0</ns>
     <id>210</id>
     <revision>
-      <id>7374</id>
-      <parentid>5832</parentid>
-      <timestamp>2014-04-07T21:42:45Z</timestamp>
+      <id>7489</id>
+      <parentid>7374</parentid>
+      <timestamp>2014-04-11T22:17:47Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Whonix Threat Model not available as pdf or paper version */</comment>
-      <text xml:space="preserve" bytes="24228">{{Header}}
+      <text xml:space="preserve" bytes="24225">{{Header}}
 {{#seo:
 |description=Technical Design Documentation about Whonix's Threat Model. Attacker Capabilities. Goals. Attack Surface.
 }}
@@ -23116,7 +23113,7 @@ If the code base is huge and complex code auditing isn't a realistic strategy, t
 * making the TCB small and
 * using privilege separation: The TCB for identity/anonymity is as small as it gets on a monolithic general purpose OS. It could be smaller (e.g. a custom kernel, busybox, uclibc instead of libc and gnu-utils) but that comes at the cost of maintainability, security updates and ease of use. (And still leaves us with a comparably huge monolithic kernel and a gigantic gcc infrastructure.) Linux/Xorg (with DAC or even MAC) isn't very good with privilege separation (e.g. no trusted path). The strongest privilege separation is offered by using multiple physical computers, that's what we RECOMMEND, [[Physical Isolation]] and [[multiple Whonix-Workstations]]. The more practical, but less secure alternative is virtualization. For details about privilege separation between IRC/Browser/Clients and Tor see [[Dev/Technical Introduction]]
 
-We've thought a lot about making Whonix yet more secure but with the (free and open source) tools available today it doesn't seem possible. What we'd need is an isolation kernel, that would offer some strong guarantees of isolation between the different subsystems and ideally would be verified, so you don't have to worry about sophisticated backdoors (apart from the compiler, see &quot;Trusting trust&quot;/chicken and egg), software vulnerabilities and even some hardware backdoors and vulnerabilities (through IOMMU and microkernel design one can put hardware and firmware components, apart from the CPU, out of the TCB). For Fingerprint/Protocol leaks and the [https://en.wikipedia.org/wiki/CIA_triad#Key_concepts CIA Triad] we are depending on the Whonix-Workstation TCB. This is a hopelessly large TCB/attack surface. For this reason we use yet another approach which can be called &quot;security through non-persistence&quot;. That is, you should extensively make use of the snapshot and roll back feature of the virtual machine. Instead of privilege separation within a Tor-Workstation (e.g. by using a Mandatory Access Control framework) which would come at great usability costs, we recommend to use the coarse-grained isolation provided through multiple VMs (also see [[Advanced_Security_Guide#About_grsecurity]]).
+We've thought a lot about making Whonix yet more secure but with the (free and open source) tools available today it doesn't seem possible. What we'd need is an isolation kernel, that would offer some strong guarantees of isolation between the different subsystems and ideally would be verified, so you don't have to worry about sophisticated backdoors (apart from the compiler, see &quot;Trusting trust&quot;/chicken and egg), software vulnerabilities and even some hardware backdoors and vulnerabilities (through IOMMU and microkernel design one can put hardware and firmware components, apart from the CPU, out of the TCB). For Fingerprint/Protocol leaks and the [https://en.wikipedia.org/wiki/CIA_triad#Key_concepts CIA Triad] we are depending on the Whonix-Workstation TCB. This is a hopelessly large TCB/attack surface. For this reason we use yet another approach which can be called &quot;security through non-persistence&quot;. That is, you should extensively make use of the clone feature and roll back of the virtual machine. Instead of privilege separation within a Tor-Workstation (e.g. by using a Mandatory Access Control framework) which would come at great usability costs, we recommend to use the coarse-grained isolation provided through multiple VMs (also see [[Advanced_Security_Guide#About_grsecurity]]).
 
 To protect against software attacks (vulnerabilities) in particular:
 
@@ -23194,7 +23191,7 @@ Tails does also not have a design paper as pdf and still lots of users and devel
 {{Footer}}
 
 [[Category:Design]]</text>
-      <sha1>l08k460t3hgz032wknpduy0fmmemx60</sha1>
+      <sha1>1o00p9lcfymq5mej2ywutb7jpdom2bh</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -36512,14 +36509,14 @@ Whonix-Example-Implementation:
     <ns>0</ns>
     <id>299</id>
     <revision>
-      <id>7207</id>
-      <parentid>7206</parentid>
-      <timestamp>2014-03-30T18:27:15Z</timestamp>
+      <id>7482</id>
+      <parentid>7207</parentid>
+      <timestamp>2014-04-11T22:12:10Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="61308">{{Header}}
+      <text xml:space="preserve" bytes="61494">{{Header}}
 {{#seo:
 |description=Outdated, Deprecated, Archived Whonix Documentation.
 }}
@@ -37787,13 +37784,16 @@ qemu-img convert -p -O qcow2 ~/whonix.vdi ~/whonix.qcow2
 |- style=&quot;height: 47px&quot;
 &lt;/pre&gt;
 
+= Download / Snapshot =
+* Take a snapshot for both Whonix-Gateway and Whonix-Workstation on VirtualBox. So you can easily restore the original snapshot whenever you need a clean state.
+
 = Footnotes =
 &lt;references /&gt;
 
 {{Footer}}
 
 [[Category:Deprecated]]</text>
-      <sha1>oqm5qh98bymuv1y4wpf0foht42mwxhh</sha1>
+      <sha1>j7txnk6jxsezlyvmfj6cbgmnf1gm4mj</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -44593,14 +44593,14 @@ Do not remove {{Code2|...-postinst}} packages.
     <ns>0</ns>
     <id>475</id>
     <revision>
-      <id>7475</id>
-      <parentid>7474</parentid>
-      <timestamp>2014-04-11T01:49:40Z</timestamp>
+      <id>7490</id>
+      <parentid>7475</parentid>
+      <timestamp>2014-04-12T05:43:24Z</timestamp>
       <contributor>
         <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* Safety Advice */</comment>
-      <text xml:space="preserve" bytes="3767">{{#seo:
+      <comment>changes</comment>
+      <text xml:space="preserve" bytes="3778">{{#seo:
 |description=Various Ways to get Help with Whonix. Free and Professional Support available.
 }}
 {{Header}}
@@ -44608,7 +44608,7 @@ Do not remove {{Code2|...-postinst}} packages.
 = Professional Support =
 Consulting / support for anonymity, privacy, security, data security, Whonix &amp; system administration services.
 
-Contact Whonix Developer [mailto:adrelanos@riseup.net Patrick Schleizer] for price quote.
+Contact the lead Whonix Developer [mailto:adrelanos@riseup.net Patrick Schleizer] for a price quote.
 
 * '''e-mail''': ''[mailto:adrelanos@riseup.net adrelanos@riseup.net]''
 * gpg: &lt;html&gt;&lt;a class=&quot;link-https&quot; download  href=&quot;/patrick.asc&quot;&gt;patrick.asc&lt;/a&gt;&lt;/html&gt; &lt;br /&gt;
@@ -44663,7 +44663,7 @@ In Whonix forum [https://www.whonix.org/forum/index.php?action=profile;area=acco
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>rxlbpqa7u9jnx8s8cxhhuy6n1d7m8xh</sha1>
+      <sha1>b9vy4j1qs8ccdu09gk4syy3aql559h8</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -45302,14 +45302,15 @@ Footnotes:
     <ns>0</ns>
     <id>485</id>
     <revision>
-      <id>5944</id>
-      <parentid>5870</parentid>
-      <timestamp>2014-02-27T16:21:50Z</timestamp>
+      <id>7486</id>
+      <parentid>5944</parentid>
+      <timestamp>2014-04-11T22:15:15Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="3702">{{Header}}
+      <comment>/* Whonix APT Repository Overview */</comment>
+      <text xml:space="preserve" bytes="3699">{{Header}}
 {{#seo:
 |description=Whonix stable / testers / developers APT Repository. How to change from one suite to another? How to disable Whonix's APT Repository?
 }}
@@ -45318,7 +45319,7 @@ Footnotes:
 = Whonix APT Repository Overview =
 Whonix's &lt;u&gt;developers&lt;/u&gt; APT repository likely contain untested changes. It's recommended against to use it unless you are in touch with the development team. When we are reasonably sure, that these changes won't break Whonix's update system, they may be migrated to Whonix's testers repository where a wider audience is supposed to test them.
 
-Whonix's &lt;u&gt;testers&lt;/u&gt; APT repository is for testers-only. Even though briefly tested by Whonix developers, it may may break apt-get during upgrade. Eventually running a few manual commands are required to fix it. Making a snapshot and be prepared to roll back in case anything goes wrong is recommended. After testing by a wider audience, packages are migrated to Whonix's stable repository.
+Whonix's &lt;u&gt;testers&lt;/u&gt; APT repository is for testers-only. Even though briefly tested by Whonix developers, it may may break apt-get during upgrade. Eventually running a few manual commands are required to fix it. Making a clone and be prepared to roll back in case anything goes wrong is recommended. After testing by a wider audience, packages are migrated to Whonix's stable repository.
 
 Whonix's &lt;u&gt;stable&lt;/u&gt; APT repository is recommended for most users. Even if you're not using your production system to test Whonix's testers-only packages, you're encouraged to run separate Whonix-Gateway and Whonix-Workstation, that use Whonix's testers repository. This is because, if too few people are actually testing Whonix, it might happen that changes that are migrated to Whonix's stable repository are still causing issues.
 
@@ -45385,7 +45386,7 @@ cat /etc/apt/sources.list.d/*
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>789oha2ny2y2fc35e85ddyiknjgqngy</sha1>
+      <sha1>a3n1nh2gydfadqw9o0yarytkobovr73</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -45395,16 +45396,15 @@ cat /etc/apt/sources.list.d/*
     <ns>0</ns>
     <id>487</id>
     <revision>
-      <id>6734</id>
-      <parentid>4209</parentid>
-      <timestamp>2014-03-09T19:48:41Z</timestamp>
+      <id>7487</id>
+      <parentid>6734</parentid>
+      <timestamp>2014-04-11T22:15:31Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <minor/>
-      <comment>Adrelanos moved page [[Dev/BuildDocumentation 8 deb]] to [[Dev/Build Documentation/8 deb]]</comment>
-      <text xml:space="preserve" bytes="3379">{{Header}}
+      <comment>/* Prerequisites */</comment>
+      <text xml:space="preserve" bytes="3376">{{Header}}
 {{forkme}}
 
 '''UNFINISHED!'''
@@ -45414,7 +45414,7 @@ cat /etc/apt/sources.list.d/*
 This assumes you are updating Whonix's debian packages while you are using Whonix.
 
 == Prerequisites ==
-Might be a good idea to create a backup and/or snapshot before trying to update.
+Might be a good idea to create a backup and/or clone before trying to update.
 
 If you haven't done already, disable Whonix's APT repository. &lt;ref&gt;[[Whonix-APT-Repository#Disable_Whonix_APT_Repository]]&lt;/ref&gt;
 
@@ -45498,7 +45498,7 @@ Lets hope it works well. Please get in [[Support|Contact]] should there be any i
 {{Footer}}
 
 [[Category:Development]]</text>
-      <sha1>f5qzv9metcy3ry5uqygrld46kzbfuki</sha1>
+      <sha1>oblm9wi0rhg2m8gitmhs2qun31g4eyu</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -60739,16 +60739,14 @@ inspired by http://aboli.sh/
     <ns>0</ns>
     <id>849</id>
     <revision>
-      <id>7008</id>
-      <parentid>7000</parentid>
-      <timestamp>2014-03-20T20:47:59Z</timestamp>
+      <id>7485</id>
+      <parentid>7008</parentid>
+      <timestamp>2014-04-11T22:14:49Z</timestamp>
       <contributor>
-        <username>Jekyll</username>
-        <id>161</id>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <minor/>
-      <comment>template debian version</comment>
-      <text xml:space="preserve" bytes="13414">{{Header}}
+      <text xml:space="preserve" bytes="13428">{{Header}}
 {{#seo:
 |description=Instructions for building Whonix from Source Code inside a Virtual Machine.
 }}
@@ -60756,7 +60754,7 @@ inspired by http://aboli.sh/
 = Documentation =
 This is a short set of instructions for building the stable version of Whonix {{Version8}} inside VirtualBox (as opposed to the traditional process of running these commands on a system that is installed directly on the hardware).
 
-Advantages of this approach are that you can build Whonix on any OS that can run VirtualBox (you need Debian Stable for hardware type build) and that any potential system damage is limited to the VM. Using snapshots you can quickly revert a faulty state or a failed build and start again.
+Advantages of this approach are that you can build Whonix on any OS that can run VirtualBox (you need Debian Stable for hardware type build) and that any potential system damage is limited to the VM. &lt;s&gt;Using snapshots you can quickly revert a faulty state or a failed build and start again.&lt;/s&gt;
 
 The focus here is to show the simplest way to build Whonix from source. Various security precautions such as GPG key verification are omitted.
 
@@ -61163,7 +61161,7 @@ Logging as user.
 [[File:10b.png|400px]]
 
 
-Taking a snapshot of the VM.
+&lt;s&gt;Taking a snapshot of the VM.&lt;/s&gt;
 
 [[File:2b.png|400px]]
 
@@ -61333,7 +61331,7 @@ From there follow the steps as you previously did and build the image you still 
 {{Footer}}
 
 [[Category:Development]]</text>
-      <sha1>1pnggezdmej3043oyt9fi4ou4vp95xg</sha1>
+      <sha1>4vvy6yfi7mf6h53m990dqku58eno92l</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
