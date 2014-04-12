@@ -3767,15 +3767,15 @@ As soon as i2p over Tor is working in Whonix-Workstation, you can probably follo
     <ns>0</ns>
     <id>63</id>
     <revision>
-      <id>6272</id>
-      <parentid>5567</parentid>
-      <timestamp>2014-03-03T16:19:08Z</timestamp>
+      <id>7497</id>
+      <parentid>6272</parentid>
+      <timestamp>2014-04-12T18:02:01Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Hosting ANY Hidden Services */</comment>
-      <text xml:space="preserve" bytes="10752">{{#seo:
+      <comment>/* Setup */</comment>
+      <text xml:space="preserve" bytes="10820">{{#seo:
 |description=Anonymously Hosting any Tor Hidden Services any Server with Whonix
 }}
 {{Header}}
@@ -3878,6 +3878,8 @@ Done.
 
 '''Note''', that it may take up to 30 minutes (or so?) until a fresh .onion domain gets reachable.
 
+'''Note''', accessing 127.0.0.1 {{Tor_Browser_Local_Connections}}.
+
 === Debugging ===
 Check permissions.
 
@@ -3970,7 +3972,7 @@ Hidden Services with Whonix are still safer than running Tor and the server soft
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>h8x6ogkivci9ox87k58zjmli42u7nz3</sha1>
+      <sha1>mespyuetat0gfi3ehhp1d3uoxn8spxh</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -15861,15 +15863,15 @@ Specifically for Whonix, [[whonixcheck]] and the [[Dev/News|Whonix News Format]]
     <ns>0</ns>
     <id>134</id>
     <revision>
-      <id>6993</id>
-      <parentid>6922</parentid>
-      <timestamp>2014-03-20T18:35:56Z</timestamp>
+      <id>7496</id>
+      <parentid>7494</parentid>
+      <timestamp>2014-04-12T18:00:25Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
       <comment>/* Installing i2p inside Whonix-Workstation (i2p over Tor) */</comment>
-      <text xml:space="preserve" bytes="6094">{{Header}}
+      <text xml:space="preserve" bytes="5759">{{Header}}
 {{#seo:
 |description=i2p over Tor. Tunnelling the i2p Anonymizing Network over the Tor Anonymizing Network. Connection Schema: Tor -&gt; i2p -&gt; Destination.
 }}
@@ -15909,7 +15911,7 @@ List of i2p inproxies:
 
 == Installing i2p inside Whonix-Workstation (i2p over Tor) ==
 '''Update''': &lt;br /&gt;
-Accessing i2p's webinterface on 127.0.0.1 using Tor Browser is no longer possible due to a [https://trac.torproject.org/projects/tor/ticket/10419 change] in Tor Browser by The Tor Project. You [[Tor_Browser#Change.2FRemove_Proxy_Settings|could set to transparent torification]], but then you would be vulnerable fingerprinting issues. See [https://trac.torproject.org/projects/tor/ticket/10419 ticket] for more.
+Accessing i2p's webinterface on 127.0.0.1 {{Tor_Browser_Local_Connections}}.
 
 It is possible to run i2p inside the Whonix-Workstation. Advantages:
 
@@ -15971,7 +15973,7 @@ Was just a development idea with some progress. Moved to [[Dev/Inspiration]].
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>9r2708o96d8i4163f6ikl4a4b1wzj7j</sha1>
+      <sha1>pwed6fl2nlg0bvqasimv0zdf2i7qhlc</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -17861,15 +17863,14 @@ To get a new circuit, press.
     <ns>0</ns>
     <id>150</id>
     <revision>
-      <id>6106</id>
-      <parentid>5794</parentid>
-      <timestamp>2014-02-28T22:15:53Z</timestamp>
+      <id>7498</id>
+      <parentid>6106</parentid>
+      <timestamp>2014-04-12T18:03:01Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Updating */</comment>
-      <text xml:space="preserve" bytes="14467">&lt;!--
+      <text xml:space="preserve" bytes="14557">&lt;!--
 Copyright:
 
    Whonix Tor Browser wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -18031,6 +18032,9 @@ If you update Tor Browser in Whonix and there won't be [[DoNot#Prevent_Tor_over_
 * Whonix's {{Code|update-torbrowser}} which comes with Whonix &lt;ref&gt;Because it patches the start-tor-browser script.&lt;/ref&gt;
 * [[Manually Updating Tor Browser]] instructions
 
+= Local Connections =
+'''Note''', accessing 127.0.0.1 {{Tor_Browser_Local_Connections}}.
+
 = Browser Plugins / Flash / Java =
 
 See [[Browser Plugins]].
@@ -18077,7 +18081,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>0aavyi6c2hg6r6ungoiucuoj0d6kn3g</sha1>
+      <sha1>tvr0smp2s7gyg76kfeapf4mg9v7hi2v</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -56040,14 +56044,15 @@ You can customize the header and footer of your directory listing as explained [
     <ns>0</ns>
     <id>695</id>
     <revision>
-      <id>5775</id>
-      <parentid>4833</parentid>
-      <timestamp>2014-02-27T12:06:20Z</timestamp>
+      <id>7493</id>
+      <parentid>5775</parentid>
+      <timestamp>2014-04-12T13:44:42Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="4109">{{Header}}
+      <comment>mirror.whonix.org -&gt; mirror.whonix.de</comment>
+      <text xml:space="preserve" bytes="4104">{{Header}}
 {{#seo:
 |description=Instructions on how to set up a Whonix Download Mirror
 }}
@@ -56099,14 +56104,14 @@ The numbers don't have to line up exactly with the heading, but it makes it easi
 
 == Serving the Mirror Content ==
 
-Paste this into /etc/apache2/sites-available/mirror.whonix.org.conf:
+Paste this into /etc/apache2/sites-available/mirror.whonix.de.conf:
 &lt;pre&gt;
 #
-#  mirror.whonix.org (/etc/apache2/sites-available/mirror.whonix.org.conf)
+#  mirror.whonix.de (/etc/apache2/sites-available/mirror.whonix.de.conf)
 #
 &lt;VirtualHost *:80&gt;
         ServerAdmin &lt;YourContactEmail&gt;EDIT THIS
-        ServerName  mirror.whonix.org
+        ServerName  mirror.whonix.de
         DocumentRoot /var/www/whonix/
         # Logfile
         ErrorLog /var/log/apache2/whonix/error.log
@@ -56118,7 +56123,7 @@ sudo mkdir /var/log/apache2/whonix
 &lt;/pre&gt;
 Once you filled in your contact email (it will throw errors otherwise), enable the site:
 &lt;pre&gt;
-sudo a2ensite mirror.whonix.org.conf
+sudo a2ensite mirror.whonix.de.conf
 &lt;/pre&gt;
 You will be prompted to reload apache:
 &lt;pre&gt;
@@ -56155,7 +56160,7 @@ You can customize the header and footer of your directory listing as explained [
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>3woef7ojth4s2anmya9ls4ms3hgip58</sha1>
+      <sha1>sc1ne4qzzdn89uf9qwhyj53cxhk3sam</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -61679,14 +61684,16 @@ The following AppArmor profile is still experimental. The worst thing that can h
     <ns>8</ns>
     <id>870</id>
     <revision>
-      <id>7411</id>
-      <parentid>7405</parentid>
-      <timestamp>2014-04-08T03:23:42Z</timestamp>
+      <id>7491</id>
+      <parentid>7411</parentid>
+      <timestamp>2014-04-12T13:20:46Z</timestamp>
       <contributor>
-        <username>Fortasse</username>
-        <id>1</id>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="1087">&lt;html&gt;
+      <minor/>
+      <comment>Reverted edits by [[Special:Contributions/Fortasse|Fortasse]] ([[User talk:Fortasse|talk]]) to last revision by [[User:Patrick|Patrick]]</comment>
+      <text xml:space="preserve" bytes="1050">&lt;html&gt;
 &lt;style type=&quot;text/css&quot;&gt;
 
 #banner {
@@ -61730,16 +61737,19 @@ The following AppArmor profile is still experimental. The worst thing that can h
 
 &lt;div id=&quot;banner&quot;&gt;
 
-
+  &lt;a class=&quot;cn-full-banner-click&quot; href=&quot;/wiki/Donate&quot; title=&quot;&quot;&gt;
+&lt;div id=&quot;banner-logo&quot;&gt;&lt;/div&gt;
     &lt;div id=&quot;black-text&quot;&gt;
-We have updated keys. Our new SSL certificate is by GANDI SAS, and we have moved our .onion to xxxxxxxxxxh5kyrx.onion. The old onion(s) will continue to work, but the private key component may be compromised because of the Heartbleed OpenSSL bug. (http://heartbleed.com for more)
+   &lt;translate&gt;&lt;!--T:1--&gt;
+Whonix fundraising campaign.&lt;/translate&gt; &lt;br /&gt; &lt;translate&gt;&lt;!--T:2--&gt;
+Please consider a recurring donation!&lt;/translate&gt;
      &lt;/div&gt;
-
+  &lt;/a&gt;
 
 
 &lt;/div&gt;
 &lt;/html&gt;</text>
-      <sha1>sl6k18mc5lc5tlixa0di2me8t5s6zwr</sha1>
+      <sha1>p21ak4gtb7rcnmw8gxyb3paj9fq2qdd</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -67757,14 +67767,14 @@ sudo apparmor_parser -r /etc/apparmor.d/usr.bin.pidgin
     <ns>0</ns>
     <id>1118</id>
     <revision>
-      <id>7267</id>
-      <parentid>7234</parentid>
-      <timestamp>2014-04-04T07:44:28Z</timestamp>
+      <id>7507</id>
+      <parentid>7267</parentid>
+      <timestamp>2014-04-12T20:02:16Z</timestamp>
       <contributor>
         <username>Troubadour</username>
         <id>230</id>
       </contributor>
-      <text xml:space="preserve" bytes="4144">{{Header}}
+      <text xml:space="preserve" bytes="3998">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
@@ -67783,7 +67793,7 @@ kdesudo kwrite /etc/apparmor.d/usr.lib.icedove.icedove
 Paste the following content.
 
 &lt;pre&gt;
-# Last Modified: Wed Mon Mar 24 21:42:14 UTC 2014
+# Last Modified: Sat Apr 12 19:59:33 UTC 2014
 #include &lt;tunables/global&gt;
 
 /usr/lib/icedove/icedove {
@@ -67805,8 +67815,12 @@ Paste the following content.
 	deny /etc/hosts r,
 	deny /etc/nsswitch.conf r,
 	deny /etc/passwd r,
-#	deny /etc/hosts.whonix r,
 	deny /etc/fstab r,
+
+	deny @{PROC} r,
+	deny @{PROC}/** r,
+
+	deny /var/lib/dbus/machine-id r,
 
 	@{HOME}/ r,	  
 	@{HOME}/Desktop/ r,
@@ -67815,13 +67829,14 @@ Paste the following content.
 	@{HOME}/.icedove/** mrwk,
 	@{HOME}/.kde/share/** rw,
 	@{HOME}/.config/** rw,		
-#	@{HOME}/.config/oxygen-gtk/argb-apps.conf rw,  
+	@{HOME}/.fontconfig/ rwk, 
 	@{HOME}/.local/share/ r,
 	@{HOME}/.local/share/applications/* r,
 	@{HOME}/.local/share/mime/ r,
 	@{HOME}/.local/share/mime/** r,
 	@{HOME}/.local/share/recently-used.xbel* rw,
-#	@{HOME}/.local/share/applications/kate-2.desktop r,  
+	@{HOME}/.local/share/applications/ r,  
+	@{HOME}/.local/share/applications/* rwk,  
 	@{HOME}/.cache/ r,
 	@{HOME}/.cache/** rwk,
 	@{HOME}/.gnupg/* lrwkcix,
@@ -67839,7 +67854,6 @@ Paste the following content.
 	/usr/share/icedove/ r,
 	/usr/share/icedove/** r,
 	/usr/share/glib-2.0/schemas/gschemas.compiled r, 
-#	/usr/share/whonix/kde/share/config/kdeglobals rw,
 	/usr/share/hunspell/ r,
 	/usr/share/hunspell/* r,
 	/usr/.local/share/applications/ rwk,
@@ -67849,15 +67863,12 @@ Paste the following content.
 	/etc/drirc r,
 	/etc/ld.so.cache r,
 	/etc/resolv.conf r,
-#	/etc/resolv.conf.whonix r,
 	/etc/mailcap r, 
 	/etc/icedove/pref/ r,
 	/etc/icedove/pref/* r,
 	/etc/X11/cursors/* r,
 	/etc/mime.types r,
 	/etc/gai.conf r,
-#	/etc/whonix.d/ r, 
-#	/etc/whonix.d/* r, 
 	/etc/xul-ext/enigmail.js rix,
 
 	/bin/ps rix,
@@ -67875,22 +67886,21 @@ Paste the following content.
 	/lib/i386-linux-gnu/i686/cmov/libc-2.13.so r,
 	/lib/i386-linux-gnu/libprocps.so.0.0.1 r,
 	 
-	@{PROC} r,
-	@{PROC}/[0-9]*/maps r,
-	@{PROC}/tty/drivers r,
-	@{PROC}/[0-9]*/stat r,
-	@{PROC}/[0-9]*/status r,
-	@{PROC}/[0-9]*/task/*/stat r,
-	@{PROC}/[0-9]*/cmdline r,
-	@{PROC}/[0-9]*/fd/ r,
-	@{PROC}/cpuinfo r,
-	@{PROC}/filesystems r,
-	@{PROC}/meminfo r,
-	@{PROC}/stat r,
-	@{PROC}/sys/kernel/pid_max r,
-	@{PROC}/uptime r,
-	@{PROC}/[0-9]*/mounts r,
-	@{PROC}/[0-9]*/mountinfo r,
+#	@{PROC}/[0-9]*/maps r,
+#	@{PROC}/tty/drivers r,
+#	@{PROC}/[0-9]*/stat r,
+#	@{PROC}/[0-9]*/status r,
+#	@{PROC}/[0-9]*/task/*/stat r,
+#	@{PROC}/[0-9]*/cmdline r,
+#	@{PROC}/[0-9]*/fd/ r,
+#	@{PROC}/cpuinfo r,
+#	@{PROC}/filesystems r,
+#	@{PROC}/meminfo r,
+#	@{PROC}/stat r,
+#	@{PROC}/sys/kernel/pid_max r,
+#	@{PROC}/uptime r,
+#	@{PROC}/[0-9]*/mounts r,
+#	@{PROC}/[0-9]*/mountinfo r,
 	  
 	/sys/devices/system/cpu/ r,  
 	/sys/devices/system/cpu/present r,  
@@ -67900,16 +67910,13 @@ Paste the following content.
 	/usr/bin/grep rix,
 	/usr/bin/uwt rix,
 	/usr/bin/torsocks rix,
-#	/usr/bin/gpg.whonix rix,
-#	/usr/bin/gpg.whonix-orig rix,
 	/usr/bin/gpg2 rix,
+	/usr/bin/mkdir rix,
+	/usr/bin/update-desktop-database rix,
 
 	/usr/lib/i386-linux-gnu/** rm,
 	/usr/lib/icedove/icedove mrix,
-#	/usr/lib/whonix/uwtwrapper rix,
-	/usr/lib/gnupg/gpgkeys_hkpr ix,
-
-	/var/lib/dbus/machine-id r,
+	/usr/lib/gnupg/* rix,
 }
 &lt;/pre&gt;
 
@@ -67936,7 +67943,7 @@ sudo apparmor_parser -r /etc/apparmor.d/usr.lib.icedove.icedove
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>gm5odl4a2w84y0qelkr0drru589omyx</sha1>
+      <sha1>31uwjj2pkbnmxsj72aqamza8sz60fwy</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -70457,34 +70464,29 @@ testdeutsch
     <ns>0</ns>
     <id>1184</id>
     <revision>
-      <id>7196</id>
-      <parentid>7195</parentid>
-      <timestamp>2014-03-30T09:39:09Z</timestamp>
+      <id>7506</id>
+      <parentid>7505</parentid>
+      <timestamp>2014-04-12T19:17:33Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <username>JasonJAyalaP</username>
+        <id>9</id>
       </contributor>
       <comment>/* Why Whonix will always be free in price as well as Free as in freedom? */</comment>
-      <text xml:space="preserve" bytes="1518">__NOTITLE__
+      <text xml:space="preserve" bytes="1110">__NOTITLE__
 {{Header}}
 
 = Why Whonix will always be free in price as well as Free as in freedom? =
 
-* &lt;u&gt;Security Reasons&lt;/u&gt;: We believe that robust concepts, mature code and public scrutiny, i.e. [https://en.wikipedia.org/wiki/Secure_by_design security by design] has proven to be more secure than [https://en.wikipedia.org/wiki/Security_through_obscurity security through obscurity].
-* &lt;u&gt;Legal Reasons&lt;/u&gt;: Whonix is based on Free Software. For many components it is forbidden by law to make them non-free. &lt;ref&gt;Because their licenses don't grant the right to modify and sell them while not sharing modified source code.&lt;/ref&gt;
-* &lt;u&gt;Ethical Reasons&lt;/u&gt;: We believe it would be immoral to take something that is Free&lt;ref&gt;Such as Debian, Tor, etc.&lt;/ref&gt;, make money out of it and give back nothing in return.
-* &lt;u&gt;Intellectual Challenge&lt;/u&gt;: It is fun having multiple people coordinate and [[Contribute|contributing]] the project. This works best in Free Software / Open Source projects.
-* &lt;u&gt;Marketing Reasons&lt;/u&gt;: When it is free in price, it can spread faster than commercial tools.
-* &lt;u&gt;Commercial Reasons&lt;/u&gt;: We hope make a living on what is fun (working on Whonix) by selling additional services ([[Support#Professional_Support|professional support]]) and [[Donate|donations]] some day.
-* &lt;u&gt;Professional Reasons&lt;/u&gt;: Having volunteered on a Free Software / Open Source project always looks good in a CV or application.
-
-= Footnotes =
-&lt;font size=-3&gt;
-&lt;references /&gt;
-&lt;/font&gt;
+* &lt;u&gt;Security&lt;/u&gt;: The public scrutiny of [https://en.wikipedia.org/wiki/Secure_by_design security by design] has proven to be superior to [https://en.wikipedia.org/wiki/Security_through_obscurity security through obscurity].
+* &lt;u&gt;Legal&lt;/u&gt;: Whonix is based on Free Software. Their licenses do not grant the right to modify and distribute them without sharing the modified source code.
+* &lt;u&gt;Ethical&lt;/u&gt;: We believe it immoral to benefit from those Free Software components and give back nothing.
+* &lt;u&gt;Community&lt;/u&gt;: It is rewarding and fun to have all types of people [[Contribute|contributing]]. This works best in open source projects.
+* &lt;u&gt;Impact&lt;/u&gt;: When free in price, it can spread faster than commercial tools.
+* &lt;u&gt;Commercial&lt;/u&gt;: We hope to make a living on Whonix by selling additional services ([[Support#Professional_Support|professional support]]) and [[Donate|donations]].
+* &lt;u&gt;Career&lt;/u&gt;: Our experience volunteering on this project makes us more valuable.
 
 [[Category:Documentation]]{{Footer}}</text>
-      <sha1>ckiy59jfc1x48ug84tu7ndw2u82qa06</sha1>
+      <sha1>8mhoasquk4hqk10q7vb6l64tlxk4ipm</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -70878,15 +70880,15 @@ testdeutsch
     <ns>8</ns>
     <id>1215</id>
     <revision>
-      <id>7413</id>
-      <parentid>7406</parentid>
-      <timestamp>2014-04-08T03:24:29Z</timestamp>
+      <id>7492</id>
+      <parentid>7413</parentid>
+      <timestamp>2014-04-12T13:21:24Z</timestamp>
       <contributor>
-        <username>Fortasse</username>
-        <id>1</id>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="1">2</text>
-      <sha1>phz40h3k0sqkofeslplfx66u885ccs0</sha1>
+      <text xml:space="preserve" bytes="1">3</text>
+      <sha1>e02lujyq2quhrlk4n8m0cwmts2n3vzv</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -70981,6 +70983,26 @@ curl.whonix-orig https://check.torproject.org
 
 [[Category:Documentation]]</text>
       <sha1>imqqc3lfbmg2y3imv9d6gxg2g64t2j2</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Tor Browser Local Connections</title>
+    <ns>10</ns>
+    <id>1224</id>
+    <revision>
+      <id>7495</id>
+      <timestamp>2014-04-12T18:00:11Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt; using Tor Browser is no longer possible due to a [https://trac.torproject.org/projects/tor/ticket/10419 change] in Tor Browser by The Tor Pro...&quot;</comment>
+      <text xml:space="preserve" bytes="609">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
+using Tor Browser is no longer possible due to a [https://trac.torproject.org/projects/tor/ticket/10419 change] in Tor Browser by The Tor Project. You [[Tor_Browser#Change.2FRemove_Proxy_Settings|could set to transparent torification]], but then you would be vulnerable fingerprinting issues. See [https://trac.torproject.org/projects/tor/ticket/10419 ticket] for more. [https://www.whonix.org/forum/index.php/topic,219.msg1411.html Related Whonix Forum Topic] ; [https://trac.torproject.org/projects/tor/ticket/11493 Tor Browser Bug Report]
+&lt;noinclude&gt;{{Footer}}&lt;/noinclude&gt;</text>
+      <sha1>jylklctsa5tko9nmj62keb731z5idex</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
