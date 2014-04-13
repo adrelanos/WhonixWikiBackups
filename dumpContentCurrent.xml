@@ -40,14 +40,14 @@
     <ns>0</ns>
     <id>1</id>
     <revision>
-      <id>7426</id>
-      <parentid>7425</parentid>
-      <timestamp>2014-04-08T22:37:39Z</timestamp>
+      <id>7521</id>
+      <parentid>7515</parentid>
+      <timestamp>2014-04-13T15:33:25Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="11498">{{#seo:
+      <text xml:space="preserve" bytes="11479">{{#seo:
 |fb:admins=100007482551659
 |fb:app_id=606207202785157
 |twitter:card=summary_large_image
@@ -103,11 +103,11 @@ is &lt;span itemprop=&quot;price&quot;&gt;Free&lt;/span&gt; as in price and free
 &lt;/div&gt;
 
 &lt;div class=&quot;middle&quot; style=&quot;float:left; width:33%; margin:0; padding:0.5em;&quot;&gt;&lt;div class=&quot;header&quot; style=&quot;border:1px solid gray; padding:0.5em; color:black; background-color:#C9DAEB; clear:left;&quot;&gt;&lt;h2 class=&quot;header&quot; style=&quot;text-align:center; padding:0; margin:0;&quot;&gt;&lt;translate&gt;&lt;!--T:25--&gt;
-Latest [https://www.whonix.org/blog Blog] Posts&lt;/translate&gt; [[File:2000px-Feed-icon.svg.png|20px|alt=rss|link=https://www.whonix.org/blog/feed/]]
+Latest [https://www.whonix.org/blog Blog] Posts&lt;/translate&gt; [[File:Feed-icon.jpeg|20px|alt=rss|link=https://www.whonix.org/blog/feed/]]
 &lt;/h2&gt;&lt;/div&gt;
 &lt;rss number=10 title=off desc=off&gt;https://www.whonix.org/blog/feed/rss2/&lt;/rss&gt;
 &lt;div class=&quot;header&quot; style=&quot;border:1px solid gray; padding:0.5em; color:black; background-color:#C9DAEB; clear:left;&quot;&gt;&lt;h2 class=&quot;header&quot; style=&quot;text-align:center; padding:0; margin:0;&quot;&gt;&lt;translate&gt;&lt;!--T:26--&gt;
-Latest [https://www.whonix.org/forum Forum] Posts&lt;/translate&gt; [[File:2000px-Feed-icon.svg.png|20px|alt=rss|link=https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10]]
+Latest [https://www.whonix.org/forum Forum] Posts&lt;/translate&gt; [[File:Feed-icon.jpeg|20px|alt=rss|link=https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10]]
 &lt;/h2&gt;&lt;/div&gt;
 &lt;rss number=15 title=off desc=off&gt;https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=15&lt;/rss&gt;
 &lt;/div&gt;
@@ -242,7 +242,7 @@ Tor Browser Screenshot&lt;/translate&gt;|&lt;translate&gt;&lt;!--T:35--&gt;
 Image:shield_badge.png|alt=&lt;translate&gt;&lt;!--T:52--&gt;
 Internet Defense League Logo&lt;/translate&gt;|&lt;translate&gt;&lt;!--T:36--&gt;
 Whonix is a member of the [http://internetdefenseleague.org Internet Defense League].&lt;/translate&gt;
-Image:OIN_logo_200px.png|alt=&lt;translate&gt;&lt;!--T:53--&gt;
+Image:OIN_logo_200px.jpeg|alt=&lt;translate&gt;&lt;!--T:53--&gt;
 Open Invention Network Logo&lt;/translate&gt;|&lt;translate&gt;&lt;!--T:37--&gt;
 Whonix is a [http://www.openinventionnetwork.com/licensees.php licensee] of the [https://en.wikipedia.org/wiki/Open_Invention_Network Open Invention Network].&lt;/translate&gt;
 
@@ -278,7 +278,7 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
 
 
 &lt;/div&gt;</text>
-      <sha1>ppzxryf3414pva2l0obx3tu5oxspd4q</sha1>
+      <sha1>5hnjf49fni5aa8rfxhlivef09rlvtow</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -433,14 +433,14 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
     <ns>10</ns>
     <id>15</id>
     <revision>
-      <id>7447</id>
-      <parentid>7410</parentid>
-      <timestamp>2014-04-10T04:21:54Z</timestamp>
+      <id>7523</id>
+      <parentid>7512</parentid>
+      <timestamp>2014-04-13T16:21:11Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="1556">&lt;br /&gt;&lt;hr&gt;&lt;font size=&quot;-3&quot;&gt;[[Special:UserLogin|Log in]] | [[Special:OpenIDLogin|OpenID]] | [[Contact|Contact]] | [[Impressum]] | [[Datenschutz|Datenschutz]] | [[Disclaimer|Haftungsausschluss]]
+      <text xml:space="preserve" bytes="1460">&lt;br /&gt;&lt;hr&gt;&lt;font size=&quot;-3&quot;&gt;[[Special:UserLogin|Log in]] | [[Special:OpenIDLogin|OpenID]] | [[Contact|Contact]] | [[Impressum]] | [[Datenschutz|Datenschutz]] | [[Disclaimer|Haftungsausschluss]]
 [https://www.whonix.org{{localurl:{{FULLPAGENAME}}}} https] | &lt;html&gt;&lt;a class=&quot;link-https&quot; href=&quot;http://xxxxxxxxxxh5kyrx.onion&lt;/html&gt;{{localurl:{{FULLPAGENAME}}}}&lt;html&gt;&quot; rel=&quot;nofollow&quot;&gt;.onion&lt;/a&gt;&lt;/html&gt; &lt;sup&gt;[[Forcing .onion on Whonix.org|[note]]]&lt;/sup&gt; | [http://whonix.org.nyud.net{{localurl:{{FULLPAGENAME}}}} Mirror] | [https://kkkkkkkkkk63ava6.tor2web.org{{localurl:{{FULLPAGENAME}}}} Mirror]
 &lt;!--
 inspired by http://aboli.sh/
@@ -448,9 +448,9 @@ inspired by http://aboli.sh/
 
 This is a wiki. Want to improve this page? See [https://github.com/Whonix/Whonix/blob/master/debian/copyright Conditions for Contributions to Whonix], then &lt;html&gt;&lt;a href=&quot;&lt;/html&gt;{{localurl:{{FULLPAGENAME}}|action=edit}}&lt;html&gt;&quot;&gt;Edit&lt;/a&gt;&lt;/html&gt; it! IP addresses are scrubbed, but editing over Tor is recommended. Edits are held for moderation.
 
-Whonix (&lt;html&gt;&lt;a href=&quot;https://plus.google.com/108150429836421683225&quot; rel=&quot;publisher&quot; /&gt;g+&lt;/a&gt;&lt;/html&gt;) is a [http://www.openinventionnetwork.com/licensees.php licensee] of the [[File:OIN_logo_200px.png|link=https://en.wikipedia.org/wiki/Open_Invention_Network|alt=Open Invention Network|140px]]. Unless otherwise noted above, content of this  page is [[Whonix:Copyrights|copyrighted]] and licensed under the same Free (as in speech) [https://github.com/Whonix/Whonix/blob/master/debian/copyright license] as Whonix itself.
+Whonix (&lt;html&gt;&lt;a href=&quot;https://plus.google.com/108150429836421683225&quot; rel=&quot;publisher&quot; /&gt;g+&lt;/a&gt;&lt;/html&gt;) is a [http://www.openinventionnetwork.com/licensees.php licensee] of the Open Invention Network. Unless otherwise noted above, content of this  page is [[Whonix:Copyrights|copyrighted]] and licensed under the same Free (as in speech) [https://github.com/Whonix/Whonix/blob/master/debian/copyright license] as Whonix itself.
 &lt;/font&gt;</text>
-      <sha1>8hyw54torwwn56zao9znr7kn6loh2i3</sha1>
+      <sha1>jd88v6a118471vi7m7q65cuzy1qsu5d</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -797,14 +797,16 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>19</id>
     <revision>
-      <id>7481</id>
-      <parentid>7404</parentid>
-      <timestamp>2014-04-11T22:11:36Z</timestamp>
+      <id>7520</id>
+      <parentid>7481</parentid>
+      <timestamp>2014-04-13T14:51:31Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="15148">{{Header}}
+      <minor/>
+      <comment>Text replace - &quot;2000px-Feed-icon.svg.png&quot; to &quot;Feed-icon.jpeg&quot;</comment>
+      <text xml:space="preserve" bytes="15088">{{Header}}
 &lt;!--
 Copyright:
 
@@ -988,15 +990,15 @@ For your convenience, there are multiple choices to get news. Choose at your pre
 
 &lt;translate&gt;
 &lt;!--T:39--&gt;
-# [https://www.whonix.org/blog/category/important/ Whonix Important Blog] [[File:2000px-Feed-icon.svg.png|12px|alt=Whonix Important Blog Rss|link=https://www.whonix.org/blog/category/important/feed/]] - Most important stuff only. Security vulnerabilities and new stable versions only. For people with very limited time and interest in Whonix development and news.
-# [https://www.whonix.org/blog Whonix Feature Blog] [[File:2000px-Feed-icon.svg.png|12px|alt=Whonix Feature Blog rss|link=https://www.whonix.org/blog/feed/]] - Includes everything from Whonix Important Blog. Also testers-only and developers versions are announced. Has a relaxed posting policy. Also blog posts about updated articles, new features, future features, development, call for testing, general project thoughts and so on will be published.
+# [https://www.whonix.org/blog/category/important/ Whonix Important Blog] [[File:Feed-icon.jpeg|12px|alt=Whonix Important Blog Rss|link=https://www.whonix.org/blog/category/important/feed/]] - Most important stuff only. Security vulnerabilities and new stable versions only. For people with very limited time and interest in Whonix development and news.
+# [https://www.whonix.org/blog Whonix Feature Blog] [[File:Feed-icon.jpeg|12px|alt=Whonix Feature Blog rss|link=https://www.whonix.org/blog/feed/]] - Includes everything from Whonix Important Blog. Also testers-only and developers versions are announced. Has a relaxed posting policy. Also blog posts about updated articles, new features, future features, development, call for testing, general project thoughts and so on will be published.
 # Other choices. &lt;ref&gt;
 {{Anchor|WhonixNewsBlogOtherChoices}}
 Other choices.
-* [https://www.whonix.org/blog/category/important/feed/ Whonix Important Blog RSS] [[File:2000px-Feed-icon.svg.png|12px|alt=Whonix Important Blog Rss|link=https://www.whonix.org/blog/category/important/feed/]]
-* [https://www.whonix.org/blog/feed/ Whonix Feature Blog RSS] [[File:2000px-Feed-icon.svg.png|12px|alt=Whonix Feature Blog rss|link=https://www.whonix.org/blog/feed/]]
+* [https://www.whonix.org/blog/category/important/feed/ Whonix Important Blog RSS] [[File:Feed-icon.jpeg|12px|alt=Whonix Important Blog Rss|link=https://www.whonix.org/blog/category/important/feed/]]
+* [https://www.whonix.org/blog/feed/ Whonix Feature Blog RSS] [[File:Feed-icon.jpeg|12px|alt=Whonix Feature Blog rss|link=https://www.whonix.org/blog/feed/]]
 * subscribe to [https://www.whonix.org/blog Whonix Blog] by e-mail (when you are registered at Whonix Blog, you can choose to which categories you want to subscribe)
-* Whonix Blog posts are mirrored to [https://www.whonix.org/forum/ Whonix User Forum] You could subscribe by [http://blog.onlineinstitute.com/forum-hosting/email-notifications-new-posts-ismf/ e-mail] or by rss ([https://www.whonix.org/forum/index.php?action=.xml;type=rss;sa=recent;limit=20 recent posts] [[File:2000px-Feed-icon.svg.png|12px|alt=Whonix forum recent posts rss|link=https://www.whonix.org/forum/index.php?action=.xml;type=rss;sa=recent;limit=20]] or [https://www.whonix.org/forum/index.php?action=.xml;type=rss;sa=news;limit=20 recent topics] [[File:2000px-Feed-icon.svg.png|12px|alt=Whonix forum recent topics rss|link=https://www.whonix.org/forum/index.php?action=.xml;type=rss;sa=news;limit=20]] [[http://www.simplemachines.org/community/index.php?topic=25009.0 more rss options]]).
+* Whonix Blog posts are mirrored to [https://www.whonix.org/forum/ Whonix User Forum] You could subscribe by [http://blog.onlineinstitute.com/forum-hosting/email-notifications-new-posts-ismf/ e-mail] or by rss ([https://www.whonix.org/forum/index.php?action=.xml;type=rss;sa=recent;limit=20 recent posts] [[File:Feed-icon.jpeg|12px|alt=Whonix forum recent posts rss|link=https://www.whonix.org/forum/index.php?action=.xml;type=rss;sa=recent;limit=20]] or [https://www.whonix.org/forum/index.php?action=.xml;type=rss;sa=news;limit=20 recent topics] [[File:Feed-icon.jpeg|12px|alt=Whonix forum recent topics rss|link=https://www.whonix.org/forum/index.php?action=.xml;type=rss;sa=news;limit=20]] [[http://www.simplemachines.org/community/index.php?topic=25009.0 more rss options]]).
 * Whonix Blog posts are mirrored to [[Mailing_Lists#whonix-devel|Whonix Development Mailing List]]
 * [[Download#Social_Media_Profiles|Whonix Social Media Profiles]]
 &lt;/ref&gt;
@@ -1169,7 +1171,7 @@ under certain conditions; see the wiki source code for details.
 &lt;translate&gt;&lt;!--T:253--&gt;
 Some icons created by third parties, Free licenses as well, see [[Authorship#Images_created_by_third_parties|Authorship Images created by third parties]] for details.
 &lt;/translate&gt;[[Category:Documentation]]{{Footer}}</text>
-      <sha1>kui4fftv0diu2j18kjz2sxufv8530n8</sha1>
+      <sha1>rtd715wqyew9zmp6gmxmi6slx0yw7e1</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -12845,15 +12847,16 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>118</id>
     <revision>
-      <id>7366</id>
-      <parentid>7186</parentid>
-      <timestamp>2014-04-07T21:36:51Z</timestamp>
+      <id>7514</id>
+      <parentid>7366</parentid>
+      <timestamp>2014-04-13T14:51:11Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Audit Whonix */</comment>
-      <text xml:space="preserve" bytes="8038">__NOTITLE__
+      <minor/>
+      <comment>Text replace - &quot;2000px-Feed-icon.svg.png&quot; to &quot;Feed-icon.jpeg&quot;</comment>
+      <text xml:space="preserve" bytes="7988">__NOTITLE__
 {{#seo:
 |description=Donate, Spread, Follow, Mirror, Translate, Develop, Testing. Contribute to Free Software / Open Source.
 }}
@@ -12992,7 +12995,7 @@ If you know KDE desktop scripting, for example how to change the Desktop {{Code|
 
 === Audit Documentation Changes ===
 
-Keep up to date on our [[Special:RecentChanges|wiki changes]]. ([https://www.whonix.org/w/index.php?title=Special:RecentChanges&amp;feed=rss rss] [[File:2000px-Feed-icon.svg.png|12px|alt=Whonix wiki recent changes rss|link=https://www.whonix.org/w/index.php?title=Special:RecentChanges&amp;feed=rss]])
+Keep up to date on our [[Special:RecentChanges|wiki changes]]. ([https://www.whonix.org/w/index.php?title=Special:RecentChanges&amp;feed=rss rss] [[File:Feed-icon.jpeg|12px|alt=Whonix wiki recent changes rss|link=https://www.whonix.org/w/index.php?title=Special:RecentChanges&amp;feed=rss]])
 
 === Audit Whonix ===
 
@@ -13027,10 +13030,10 @@ https://www.whonix.org/blog/category/testers-wanted/
 &lt;/center&gt;
 
 
-Help other users on Stack Exchange by subscribing to the {{Code2|whonix}} tag in [http://tor.stackexchange.com/questions/tagged/whonix tor.se] and [http://tor.stackexchange.com/questions/tagged/whonix unix.se] either [http://blog.stackoverflow.com/2010/12/subscribe-to-tags-via-emai/ by e-mail] or by rss ([http://tor.stackexchange.com/feeds/tag?tagnames=whonix&amp;sort=newest tor.se rss] [[File:2000px-Feed-icon.svg.png|12px|alt=Whonix tor.se rss|link=http://tor.stackexchange.com/feeds/tag?tagnames=whonix&amp;sort=newest]]; 
-[http://unix.stackexchange.com/feeds/tag?tagnames=whonix&amp;sort=newest unix.se rss] [[File:2000px-Feed-icon.svg.png|12px|alt=Whonix unix.se rss|link=http://unix.stackexchange.com/feeds/tag?tagnames=whonix&amp;sort=newest]]).
+Help other users on Stack Exchange by subscribing to the {{Code2|whonix}} tag in [http://tor.stackexchange.com/questions/tagged/whonix tor.se] and [http://tor.stackexchange.com/questions/tagged/whonix unix.se] either [http://blog.stackoverflow.com/2010/12/subscribe-to-tags-via-emai/ by e-mail] or by rss ([http://tor.stackexchange.com/feeds/tag?tagnames=whonix&amp;sort=newest tor.se rss] [[File:Feed-icon.jpeg|12px|alt=Whonix tor.se rss|link=http://tor.stackexchange.com/feeds/tag?tagnames=whonix&amp;sort=newest]]; 
+[http://unix.stackexchange.com/feeds/tag?tagnames=whonix&amp;sort=newest unix.se rss] [[File:Feed-icon.jpeg|12px|alt=Whonix unix.se rss|link=http://unix.stackexchange.com/feeds/tag?tagnames=whonix&amp;sort=newest]]).
 
-Join the [https://www.whonix.org/forum/ Whonix User Forum]. You could subscribe by [http://blog.onlineinstitute.com/forum-hosting/email-notifications-new-posts-ismf/ e-mail] or by rss ([https://www.whonix.org/forum/index.php?action=.xml;type=rss;sa=recent;limit=20 recent posts] [[File:2000px-Feed-icon.svg.png|12px|alt=Whonix forum recent posts rss|link=https://www.whonix.org/forum/index.php?action=.xml;type=rss;sa=recent;limit=20]] or [https://www.whonix.org/forum/index.php?action=.xml;type=rss;sa=news;limit=20 recent topics] [[File:2000px-Feed-icon.svg.png|12px|alt=Whonix forum recent topics rss|link=https://www.whonix.org/forum/index.php?action=.xml;type=rss;sa=news;limit=20]] [[http://www.simplemachines.org/community/index.php?topic=25009.0 more rss options]]).
+Join the [https://www.whonix.org/forum/ Whonix User Forum]. You could subscribe by [http://blog.onlineinstitute.com/forum-hosting/email-notifications-new-posts-ismf/ e-mail] or by rss ([https://www.whonix.org/forum/index.php?action=.xml;type=rss;sa=recent;limit=20 recent posts] [[File:Feed-icon.jpeg|12px|alt=Whonix forum recent posts rss|link=https://www.whonix.org/forum/index.php?action=.xml;type=rss;sa=recent;limit=20]] or [https://www.whonix.org/forum/index.php?action=.xml;type=rss;sa=news;limit=20 recent topics] [[File:Feed-icon.jpeg|12px|alt=Whonix forum recent topics rss|link=https://www.whonix.org/forum/index.php?action=.xml;type=rss;sa=news;limit=20]] [[http://www.simplemachines.org/community/index.php?topic=25009.0 more rss options]]).
 
 Join IRC room [irc://irc.oftc.net/whonix #Whonix on irc.oftc.net] ([https://webirc.oftc.net:8443/?channels=Whonix Webchat]).
 
@@ -13068,7 +13071,7 @@ The PayPal logo (60px-De-pp-logo-200px.png), the subscribe button (subscribeCC_L
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Development]]</text>
-      <sha1>i322lptd7ohnmqgpmcw0mw6wye9wyme</sha1>
+      <sha1>hkiivo7e3jhbzu8yz6gl5nz3k0zofug</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -39808,24 +39811,6 @@ Sourceforge support, ctsai-sf on freenode in #sourceforge said, they use GeoIP f
     </revision>
   </page>
   <page>
-    <title>File:OIN logo 200px.png</title>
-    <ns>6</ns>
-    <id>331</id>
-    <revision>
-      <id>1096</id>
-      <timestamp>2013-07-12T03:14:03Z</timestamp>
-      <contributor>
-        <username>Patrick</username>
-        <id>2</id>
-      </contributor>
-      <comment>MsUpload</comment>
-      <text xml:space="preserve" bytes="8">MsUpload</text>
-      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
-      <model>wikitext</model>
-      <format>text/x-wiki</format>
-    </revision>
-  </page>
-  <page>
     <title>Category:Documentation</title>
     <ns>14</ns>
     <id>333</id>
@@ -51538,15 +51523,16 @@ Warning:
     <ns>0</ns>
     <id>541</id>
     <revision>
-      <id>6624</id>
-      <parentid>6468</parentid>
-      <timestamp>2014-03-07T15:31:37Z</timestamp>
+      <id>7519</id>
+      <parentid>6624</parentid>
+      <timestamp>2014-04-13T14:51:31Z</timestamp>
       <contributor>
-        <username>FuzzyBot</username>
-        <id>37</id>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <comment>Importing a new version from external source</comment>
-      <text xml:space="preserve" bytes="7317">{{Header}}
+      <minor/>
+      <comment>Text replace - &quot;2000px-Feed-icon.svg.png&quot; to &quot;Feed-icon.jpeg&quot;</comment>
+      <text xml:space="preserve" bytes="7297">{{Header}}
 __NOTOC__
 &lt;languages /&gt;
 {{#seo:
@@ -51603,13 +51589,13 @@ To learn more about security and anonymity under Whonix, please continue to the 
 &lt;--------------------------------Blog Posts, Forum Posts-------------------------------&gt;
 |class=&quot;MainPageBG&quot; style=&quot;width:45%; border:1px solid #cedff2; background:#f5faff; vertical-align:top&quot;|
 {| width=&quot;100%&quot; cellpadding=&quot;2&quot; cellspacing=&quot;5&quot; style=&quot;vertical-align:top; background:#f5faff;&quot;
-! &lt;h3 style=&quot;margin:0; background:#cedff2; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Latest [https://www.whonix.org/blog Blog] Posts [[File:2000px-Feed-icon.svg.png|20px|alt=rss|link=https://www.whonix.org/blog/feed/]]&lt;/h3&gt;
+! &lt;h3 style=&quot;margin:0; background:#cedff2; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Latest [https://www.whonix.org/blog Blog] Posts [[File:Feed-icon.jpeg|20px|alt=rss|link=https://www.whonix.org/blog/feed/]]&lt;/h3&gt;
 |-
 |style=&quot;color:#000;&quot;|
 &lt;rss number=10 title=off desc=off&gt;https://www.whonix.org/blog/feed/rss2/&lt;/rss&gt;
 
 |-
-! &lt;h3 style=&quot;margin:0; background:#cedff2; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Latest [https://www.whonix.org/forum Forum] Posts [[File:2000px-Feed-icon.svg.png|20px|alt=rss|link=https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10]]&lt;/h3&gt;
+! &lt;h3 style=&quot;margin:0; background:#cedff2; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Latest [https://www.whonix.org/forum Forum] Posts [[File:Feed-icon.jpeg|20px|alt=rss|link=https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10]]&lt;/h3&gt;
 |-
 |style=&quot;color:#000;&quot;| 
 &lt;rss number=10 title=off desc=off&gt;https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10&lt;/rss&gt;
@@ -51648,7 +51634,7 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
 &lt;/html&gt;
 {{Footer}}
 [[Category:Documentation]]</text>
-      <sha1>6tq2bfe6izmej7rkbjk0fb3sfhlns5n</sha1>
+      <sha1>5qajy7x10f2oppj8l4hfplyskrp0oco</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -56954,15 +56940,16 @@ Den Haftungsausschluss (Disclaimer) finden Sie [[Disclaimer|hier]].
     <ns>0</ns>
     <id>700</id>
     <revision>
-      <id>6640</id>
-      <parentid>6632</parentid>
-      <timestamp>2014-03-07T15:33:23Z</timestamp>
+      <id>7518</id>
+      <parentid>6640</parentid>
+      <timestamp>2014-04-13T14:51:29Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>Created page with &quot;Whonix Stream Isolation Grafik&quot;</comment>
-      <text xml:space="preserve" bytes="7429">{{Header}}
+      <minor/>
+      <comment>Text replace - &quot;2000px-Feed-icon.svg.png&quot; to &quot;Feed-icon.jpeg&quot;</comment>
+      <text xml:space="preserve" bytes="7409">{{Header}}
 __NOTOC__
 &lt;languages /&gt;
 {{#seo:
@@ -57019,13 +57006,13 @@ Um mehr über Sicherheit und Anonymität in Whonix zu lernen, fahren sie bitte f
 &lt;--------------------------------Blog Posts, Forum Posts-------------------------------&gt;
 |class=&quot;MainPageBG&quot; style=&quot;width:45%; border:1px solid #cedff2; background:#f5faff; vertical-align:top&quot;|
 {| width=&quot;100%&quot; cellpadding=&quot;2&quot; cellspacing=&quot;5&quot; style=&quot;vertical-align:top; background:#f5faff;&quot;
-! &lt;h3 style=&quot;margin:0; background:#cedff2; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Neuste Nachrichten im [https://www.whonix.org/blog Blog] [[File:2000px-Feed-icon.svg.png|20px|alt=rss|link=https://www.whonix.org/blog/feed/]]&lt;/h3&gt;
+! &lt;h3 style=&quot;margin:0; background:#cedff2; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Neuste Nachrichten im [https://www.whonix.org/blog Blog] [[File:Feed-icon.jpeg|20px|alt=rss|link=https://www.whonix.org/blog/feed/]]&lt;/h3&gt;
 |-
 |style=&quot;color:#000;&quot;|
 &lt;rss number=10 title=off desc=off&gt;https://www.whonix.org/blog/feed/rss2/&lt;/rss&gt;
 
 |-
-! &lt;h3 style=&quot;margin:0; background:#cedff2; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Neuste Nachrichten im [https://www.whonix.org/forum Forum] [[File:2000px-Feed-icon.svg.png|20px|alt=rss|link=https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10]]&lt;/h3&gt;
+! &lt;h3 style=&quot;margin:0; background:#cedff2; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Neuste Nachrichten im [https://www.whonix.org/forum Forum] [[File:Feed-icon.jpeg|20px|alt=rss|link=https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10]]&lt;/h3&gt;
 |-
 |style=&quot;color:#000;&quot;| 
 &lt;rss number=10 title=off desc=off&gt;https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10&lt;/rss&gt;
@@ -57064,7 +57051,7 @@ Thanks für den MAT public domain screenshot an [https://www.awxcnx.de/handbuch_
 &lt;/html&gt;
 {{Footer}}
 [[Category:Documentation]]</text>
-      <sha1>bphodidy2uoa97atnmv1785zi6mefmk</sha1>
+      <sha1>dssl8kh383rgwlx785529oyo1srsjct</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -58534,15 +58521,16 @@ Footnotes:
     <ns>0</ns>
     <id>755</id>
     <revision>
-      <id>6625</id>
-      <parentid>6470</parentid>
-      <timestamp>2014-03-07T15:31:47Z</timestamp>
+      <id>7516</id>
+      <parentid>6625</parentid>
+      <timestamp>2014-04-13T14:51:20Z</timestamp>
       <contributor>
-        <username>FuzzyBot</username>
-        <id>37</id>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <comment>Updating to match new version of source page</comment>
-      <text xml:space="preserve" bytes="8394">{{Header}}
+      <minor/>
+      <comment>Text replace - &quot;2000px-Feed-icon.svg.png&quot; to &quot;Feed-icon.jpeg&quot;</comment>
+      <text xml:space="preserve" bytes="8374">{{Header}}
 __NOTOC__
 &lt;languages /&gt;
 {{#seo:
@@ -58599,13 +58587,13 @@ Whonix состоит из двух частей: первая обеспечи�
 &lt;--------------------------------Blog Posts, Forum Posts-------------------------------&gt;
 |class=&quot;MainPageBG&quot; style=&quot;width:45%; border:1px solid #cedff2; background:#f5faff; vertical-align:top&quot;|
 {| width=&quot;100%&quot; cellpadding=&quot;2&quot; cellspacing=&quot;5&quot; style=&quot;vertical-align:top; background:#f5faff;&quot;
-! &lt;h3 style=&quot;margin:0; background:#cedff2; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Latest [https://www.whonix.org/blog Blog] Posts [[File:2000px-Feed-icon.svg.png|20px|alt=rss|link=https://www.whonix.org/blog/feed/]]&lt;/h3&gt;
+! &lt;h3 style=&quot;margin:0; background:#cedff2; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Latest [https://www.whonix.org/blog Blog] Posts [[File:Feed-icon.jpeg|20px|alt=rss|link=https://www.whonix.org/blog/feed/]]&lt;/h3&gt;
 |-
 |style=&quot;color:#000;&quot;|
 &lt;rss number=10 title=off desc=off&gt;https://www.whonix.org/blog/feed/rss2/&lt;/rss&gt;
 
 |-
-! &lt;h3 style=&quot;margin:0; background:#cedff2; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Latest [https://www.whonix.org/forum Forum] Posts [[File:2000px-Feed-icon.svg.png|20px|alt=rss|link=https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10]]&lt;/h3&gt;
+! &lt;h3 style=&quot;margin:0; background:#cedff2; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Latest [https://www.whonix.org/forum Forum] Posts [[File:Feed-icon.jpeg|20px|alt=rss|link=https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10]]&lt;/h3&gt;
 |-
 |style=&quot;color:#000;&quot;| 
 &lt;rss number=10 title=off desc=off&gt;https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10&lt;/rss&gt;
@@ -58649,7 +58637,7 @@ Image:donate.png|link=Donate|alt=Whonix Donate Icon|[[Donate|Donate to Whonix!]]
 &lt;/html&gt;
 {{Footer}}
 [[Category:Documentation]]</text>
-      <sha1>mbd2sitbaa0mamuulwyt6t0ex2f6qr4</sha1>
+      <sha1>rl9g86m2y004g0pqe32kitety0qooli</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -61815,15 +61803,15 @@ Please consider a recurring donation!&lt;/translate&gt;
     <ns>10</ns>
     <id>875</id>
     <revision>
-      <id>6939</id>
-      <parentid>6915</parentid>
-      <timestamp>2014-03-16T17:37:33Z</timestamp>
+      <id>7524</id>
+      <parentid>6939</parentid>
+      <timestamp>2014-04-13T20:11:57Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="4971">__NOTOC__
-Donations are used to allow Whonix developer Patrick Schleizer to work full time on Whonix and to pay for whonix.org server cost. Small monthly donations are preferred. With enough monthly donations, this will be possible.
+      <text xml:space="preserve" bytes="4484">__NOTOC__
+Donations are to make up time for working on Whonix, to pay for whonix.org server cost and other necessities. Small monthly donations are preferred.
 
 &lt;!-------------------------bank transfer, PayPal------------------------&gt;
 {|style=&quot;border-spacing:8px; margin:0px -8px;&quot;
@@ -61852,7 +61840,7 @@ BIC: PBNKDEFF
 ! &lt;h3 style=&quot;margin:0; background:#cef2e0; font-size:120%; font-weight:bold; border:1px solid #a3bfb1; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Other method?&lt;/h3&gt;
 |-
 |style=&quot;color:#000;&quot;| 
-Ask [mailto:adrelanos@riseup.net Patrick Schleizer] if available.
+Ask Whonix developer [mailto:adrelanos@riseup.net Patrick Schleizer] if available.
 &lt;pre&gt;
 adrelanos@riseup.net
 &lt;/pre&gt;
@@ -61917,8 +61905,6 @@ You can also contribute your time instead by [[Contribute|contributing]] to the 
 |}
 |}
 
-Donating Whonix full time would require ~1300 $ (or in €, ~1000 €) per month. This might sound like a lot money. It's not. Germany is expensive. ~240 € per month for rent at the town's edge, ~350 € for compulsory health insurance, 30 € electricity, ~20 € internet flatrate, ~18 € compulsory public TV (gez, rundfunkbeitrag), food, clothes, transportation, whonix.org server cost... Isn't a lot money in comparison.
-
 If you want to pay for getting a new feature, this may be possible as well, please get in [[Contact#For_private_inquiries|Contact]] to talk about the details.
 
 Please get in [[Contact#For_Donations|Contact]] if you would like to donate but don't know how.
@@ -61926,7 +61912,7 @@ Please get in [[Contact#For_Donations|Contact]] if you would like to donate but 
 Donations aren't tax-deducible, because Whonix isn't a (non-profit) company yet.
 
 To leave feedback, you could join the [https://www.whonix.org/forum/index.php/topic,76.0.html Forum Discussion about Donations].</text>
-      <sha1>djn3zuuoy8635aps5bbhsm46fxuwbqj</sha1>
+      <sha1>j5kr6oy3tvjrccmj3b4c8gr6w61407s</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -64598,15 +64584,16 @@ Therefore it is impossible to claim that non-trivial source code is backdoor fre
     <ns>0</ns>
     <id>972</id>
     <revision>
-      <id>7348</id>
-      <parentid>7346</parentid>
-      <timestamp>2014-04-07T20:06:48Z</timestamp>
+      <id>7517</id>
+      <parentid>7348</parentid>
+      <timestamp>2014-04-13T14:51:24Z</timestamp>
       <contributor>
-        <username>Jinformatique</username>
-        <id>247</id>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <comment>Created page with &quot;Whonix-Workstation avec le bureau KDE&quot;</comment>
-      <text xml:space="preserve" bytes="7375">{{Header}}
+      <minor/>
+      <comment>Text replace - &quot;2000px-Feed-icon.svg.png&quot; to &quot;Feed-icon.jpeg&quot;</comment>
+      <text xml:space="preserve" bytes="7355">{{Header}}
 __NOTOC__
 &lt;languages /&gt;
 {{#seo:
@@ -64663,13 +64650,13 @@ To learn more about security and anonymity under Whonix, please continue to the 
 &lt;--------------------------------Blog Posts, Forum Posts-------------------------------&gt;
 |class=&quot;MainPageBG&quot; style=&quot;width:45%; border:1px solid #cedff2; background:#f5faff; vertical-align:top&quot;|
 {| width=&quot;100%&quot; cellpadding=&quot;2&quot; cellspacing=&quot;5&quot; style=&quot;vertical-align:top; background:#f5faff;&quot;
-! &lt;h3 style=&quot;margin:0; background:#cedff2; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Latest [https://www.whonix.org/blog Blog] Posts [[File:2000px-Feed-icon.svg.png|20px|alt=rss|link=https://www.whonix.org/blog/feed/]]&lt;/h3&gt;
+! &lt;h3 style=&quot;margin:0; background:#cedff2; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Latest [https://www.whonix.org/blog Blog] Posts [[File:Feed-icon.jpeg|20px|alt=rss|link=https://www.whonix.org/blog/feed/]]&lt;/h3&gt;
 |-
 |style=&quot;color:#000;&quot;|
 &lt;rss number=10 title=off desc=off&gt;https://www.whonix.org/blog/feed/rss2/&lt;/rss&gt;
 
 |-
-! &lt;h3 style=&quot;margin:0; background:#cedff2; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Latest [https://www.whonix.org/forum Forum] Posts [[File:2000px-Feed-icon.svg.png|20px|alt=rss|link=https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10]]&lt;/h3&gt;
+! &lt;h3 style=&quot;margin:0; background:#cedff2; font-size:120%; font-weight:bold; border:1px solid #a3b0bf; text-align:left; color:#000; padding:0.2em 0.4em;&quot;&gt;Latest [https://www.whonix.org/forum Forum] Posts [[File:Feed-icon.jpeg|20px|alt=rss|link=https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10]]&lt;/h3&gt;
 |-
 |style=&quot;color:#000;&quot;| 
 &lt;rss number=10 title=off desc=off&gt;https://www.whonix.org/forum/index.php?action=.xml;type=rss2;limit=10&lt;/rss&gt;
@@ -64709,7 +64696,7 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
 &lt;/html&gt;
 {{Footer}}
 [[Category:Documentation]]</text>
-      <sha1>0nyg64f5n25hg40r0wi5dhiaxqj2eta</sha1>
+      <sha1>fzgxu2k60ftfwsi2oq0u76pd7573asf</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -71024,6 +71011,76 @@ using Tor Browser is no longer possible due to a [https://trac.torproject.org/pr
       <comment>Patrick moved page [[Adrelanos]] to [[Patrick Schleizer]]</comment>
       <text xml:space="preserve" bytes="31">#REDIRECT [[Patrick Schleizer]]</text>
       <sha1>il3hs6kh64ceilpshnfgseaa6w37sb4</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:OIN logo 200px.jpeg</title>
+    <ns>6</ns>
+    <id>1226</id>
+    <revision>
+      <id>7511</id>
+      <timestamp>2014-04-13T14:43:30Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:Feed-icon.jpeg</title>
+    <ns>6</ns>
+    <id>1227</id>
+    <revision>
+      <id>7513</id>
+      <timestamp>2014-04-13T14:49:31Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Jak zamontować palenisko</title>
+    <ns>0</ns>
+    <id>1228</id>
+    <revision>
+      <id>7522</id>
+      <timestamp>2014-04-13T16:18:46Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Jak_zamontować_palenisko</comment>
+      <text xml:space="preserve" bytes="1796">Kominek ma szansę być rewelacyjnym obiektem każdego projektu wnętrz w apartamencie. Czy to w jadalni czy w salonie - kominki bielsko sprawdzą się w niemal każdym pomieszczeniu. Aktualnie kominki wodne oparte na systemie gazowym są zainstalowane wszędzie niedrogo jak również, szybko. Dobrze jest wiedzieć coś więcej w tym temacie.&lt;br /&gt;&lt;br /&gt;I kolejny super obszar na projektowanie kominków to kuchnia. Kominki bielsko do kuchni są bardziej funkcjonalne, gdyż tam możemy gotować jedzenie. Kominki wodne kuchenne nierzadko mają wentylację komina, dlatego montaż kominka zawiera zainstalowanie komina na dachu. Są to właśnie nasze propozycje. &lt;br /&gt;&lt;br /&gt;Dużo nowoczesnych kominków nie wymaga standardowego komina, dzięki czemu projektowanie kominków jest o wiele łatwiejszy niż kiedyś. Zachęcam do skorzystania z tego krótkiego tekstu, którego tematem jest projektowanie kominków w odniesieniu do różnorodnych pomieszczeń w mieszkaniu. To dzięki temu zdobędziesz wiedzę, w jakim dobrze jest umieścić kominek.&lt;br /&gt;&lt;br /&gt;Następnym idealnym obszarem do instalacji kominka okazuje się sypialnia. Kominki wodne mogą w rzeczy samej dodać wiele do poczucia romantyczności w tego pomieszczenia. [kominki.eopisowo.pl Kominki wodne] do sypialni często są o mniejszych rozmiarach. Kominki bielsko do sypialni często są wyższe, tak aby było widać płomienie, kiedy kiedy odpoczywa się na posłaniu. &lt;br /&gt;&lt;br /&gt;Różne układu salonów skorzystają z z prezencji kominka. Jeśli chodzi o [kominki.eopisowo.pl montaż kominka] to trendy kładą nacisk na kominki bielsko drewniane i kamienne w staromodnym klimacie. Modne są też kominki wodne z marmuru, które uzupełniają stylową urządzoną całość pokoju i robią to w genialny sposób.&lt;br /&gt;</text>
+      <sha1>tmfrofvuwkeigj0uf6t4ja94jhxz81e</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Biokominki Warszawa</title>
+    <ns>0</ns>
+    <id>1229</id>
+    <revision>
+      <id>7525</id>
+      <timestamp>2014-04-13T20:19:43Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Biokominki_Warszawa</comment>
+      <text xml:space="preserve" bytes="2070">BioDesign działa na rynku biokominki od wielu lat ciesząc odbiorców wciąż nowymi formami kominków do bloków, jak i innymi usługami, takimi jak [www.biodesign.com.pl budowa www] - stron internetowych opartycz na systemach CMS. Wciąż poszerzamy nasz asortyment o dekoracje metalowe, elementy ozdobne kute w prawdziwej kuźni itp.&lt;br /&gt;&lt;br /&gt; Biokominki z serii NISKA CENA skierowana jest do każdego klienta, można je dowolnie zabudowywać ściankami GK upiększając mieszkanie w bloku. Biokominki z tej serii kuszą niespotykanymi kształtami, wykonanymi z ogromną precyzją. Każdy detal wykonywany jest na profesjonalnych maszynach sterowanych numerycznie. Każdy nawet najdrobniejszy element wykonywany jest na profesjonalnym sprzęcie. Każda powierzchnia naszych produktów pokryta jest wysokiej jakości farbami i lakierami wypalanymi w wysokiej temperaturze.&lt;br /&gt;&lt;br /&gt;Każdy biokominek przechodzi rygorystyczne procedury kontroli jakości, czego efektem jest umieszczany na produkcie znak CE. Nasze biokominki to najwyższa jakość systemów biokominkowych dla każdego. Ceny naszych produktów są proporcjonalne - dostosowane dla każdego przeciętnego klienta - sprawdź nas&lt;br /&gt;&lt;br /&gt;[www.biodesign.com.pl Biokominki] z serii QUALITY DESIGN charakteryzują się precyzją wykonania, niespotykaną u naszej konkurencji. Modele takie jak ATLANTIS, ZEUS czy GAYA cieszą klientów niepowtarzalną formą oraz funkcjonalnością.&lt;br /&gt;&lt;br /&gt;Tworzymy biokominki na indywidualne zamówienie zgodnie z dostarczonymi wytycznymi przez klienta. Nasze biokominki charakteryzuje najwyższa jakość oraz dbałośc o najdrobnieszcze detale. Konstrukcje wykonujemy ze stali szlachetnych.&lt;br /&gt;&lt;br /&gt;BioDesign - producent biokominków. W sprzedaży posiadamy dwie serie biokominków. Biokominki wysokiej jakości produkowane z najwyższej jakości stali szlachetnych, oraz [www.biodesign.com.pl biokominki] z serii NISKA CENA. Każdy z naszych biokominków to niepowtarzalne dzieło sztuki, które produkowane jest z pasją oraz zamiłowaniem do ognia.&lt;br /&gt;</text>
+      <sha1>84vqvlvlv3lk4sp0ulce9y1mnqiulst</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
