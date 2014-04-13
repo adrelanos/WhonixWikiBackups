@@ -57247,17 +57247,19 @@ Thanks für den MAT public domain screenshot an [https://www.awxcnx.de/handbuch_
     </revision>
   </page>
   <page>
-    <title>Adrelanos</title>
+    <title>Patrick Schleizer</title>
     <ns>0</ns>
     <id>710</id>
     <revision>
-      <id>6097</id>
-      <parentid>6096</parentid>
-      <timestamp>2014-02-28T18:52:22Z</timestamp>
+      <id>7509</id>
+      <parentid>6097</parentid>
+      <timestamp>2014-04-13T02:13:39Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
+      <minor/>
+      <comment>Patrick moved page [[Adrelanos]] to [[Patrick Schleizer]]</comment>
       <text xml:space="preserve" bytes="23387">{{Header}}
 
 = Keys =
@@ -70464,15 +70466,14 @@ testdeutsch
     <ns>0</ns>
     <id>1184</id>
     <revision>
-      <id>7506</id>
-      <parentid>7505</parentid>
-      <timestamp>2014-04-12T19:17:33Z</timestamp>
+      <id>7508</id>
+      <parentid>7506</parentid>
+      <timestamp>2014-04-12T22:26:53Z</timestamp>
       <contributor>
-        <username>JasonJAyalaP</username>
-        <id>9</id>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <comment>/* Why Whonix will always be free in price as well as Free as in freedom? */</comment>
-      <text xml:space="preserve" bytes="1110">__NOTITLE__
+      <text xml:space="preserve" bytes="1111">__NOTITLE__
 {{Header}}
 
 = Why Whonix will always be free in price as well as Free as in freedom? =
@@ -70485,8 +70486,9 @@ testdeutsch
 * &lt;u&gt;Commercial&lt;/u&gt;: We hope to make a living on Whonix by selling additional services ([[Support#Professional_Support|professional support]]) and [[Donate|donations]].
 * &lt;u&gt;Career&lt;/u&gt;: Our experience volunteering on this project makes us more valuable.
 
-[[Category:Documentation]]{{Footer}}</text>
-      <sha1>8mhoasquk4hqk10q7vb6l64tlxk4ipm</sha1>
+[[Category:Documentation]]
+{{Footer}}</text>
+      <sha1>0ejayyysk74lbbwor76dte57u1le24j</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -71003,6 +71005,25 @@ curl.whonix-orig https://check.torproject.org
 using Tor Browser is no longer possible due to a [https://trac.torproject.org/projects/tor/ticket/10419 change] in Tor Browser by The Tor Project. You [[Tor_Browser#Change.2FRemove_Proxy_Settings|could set to transparent torification]], but then you would be vulnerable fingerprinting issues. See [https://trac.torproject.org/projects/tor/ticket/10419 ticket] for more. [https://www.whonix.org/forum/index.php/topic,219.msg1411.html Related Whonix Forum Topic] ; [https://trac.torproject.org/projects/tor/ticket/11493 Tor Browser Bug Report]
 &lt;noinclude&gt;{{Footer}}&lt;/noinclude&gt;</text>
       <sha1>jylklctsa5tko9nmj62keb731z5idex</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Adrelanos</title>
+    <ns>0</ns>
+    <id>1225</id>
+    <redirect title="Patrick Schleizer" />
+    <revision>
+      <id>7510</id>
+      <timestamp>2014-04-13T02:13:40Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>Patrick moved page [[Adrelanos]] to [[Patrick Schleizer]]</comment>
+      <text xml:space="preserve" bytes="31">#REDIRECT [[Patrick Schleizer]]</text>
+      <sha1>il3hs6kh64ceilpshnfgseaa6w37sb4</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
