@@ -40,14 +40,14 @@
     <ns>0</ns>
     <id>1</id>
     <revision>
-      <id>7521</id>
-      <parentid>7515</parentid>
-      <timestamp>2014-04-13T15:33:25Z</timestamp>
+      <id>7528</id>
+      <parentid>7521</parentid>
+      <timestamp>2014-04-13T22:12:24Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="11479">{{#seo:
+      <text xml:space="preserve" bytes="11512">{{#seo:
 |fb:admins=100007482551659
 |fb:app_id=606207202785157
 |twitter:card=summary_large_image
@@ -195,7 +195,7 @@ x86 compatible and/or VirtualBox +&lt;/translate&gt; &lt;ref&gt;&lt;translate&gt
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Preceeded By: &lt;/td&gt;
-&lt;td style=&quot;&quot;text-align:left;&quot;&gt;[https://trac.torproject.org/projects/tor/wiki/doc/JanusVM JanusVM]&lt;ref&gt;http://www.webcitation.org/6IA21tFaM&lt;/ref&gt;; [http://www.makeuseof.com/tag/browse-email-safely-anonymously-torbox/ TorBOX]&lt;ref&gt;http://www.webcitation.org/6IA20bIq5&lt;/ref&gt;
+&lt;td style=&quot;&quot;text-align:left;&quot;&gt;[https://trac.torproject.org/projects/tor/wiki/doc/JanusVM JanusVM]&lt;ref&gt;http://www.webcitation.org/6IA21tFaM&lt;/ref&gt;; [http://www.makeuseof.com/tag/browse-email-safely-anonymously-torbox/ TorBOX] [[File:r_TorBOX-500px.png|20px]]&lt;ref&gt;http://www.webcitation.org/6IA20bIq5&lt;/ref&gt;
 &lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -278,7 +278,7 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
 
 
 &lt;/div&gt;</text>
-      <sha1>5hnjf49fni5aa8rfxhlivef09rlvtow</sha1>
+      <sha1>5sw5k2ckceyhmgkegutb2frlf8w70k5</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -1933,13 +1933,14 @@ under certain conditions; see the wiki source code for details.
     <ns>6</ns>
     <id>28</id>
     <revision>
-      <id>47</id>
-      <timestamp>2013-06-27T16:18:39Z</timestamp>
+      <id>7526</id>
+      <parentid>47</parentid>
+      <timestamp>2014-04-13T22:08:30Z</timestamp>
       <contributor>
-        <username>Fortasse</username>
-        <id>1</id>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <comment>MsUpload</comment>
+      <comment>Patrick uploaded a new version of &amp;quot;[[File:500.png]]&amp;quot;</comment>
       <text xml:space="preserve" bytes="8">MsUpload</text>
       <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
       <model>wikitext</model>
@@ -62478,14 +62479,15 @@ Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/A
     <ns>10</ns>
     <id>894</id>
     <revision>
-      <id>7208</id>
-      <parentid>7202</parentid>
-      <timestamp>2014-03-30T18:27:32Z</timestamp>
+      <id>7530</id>
+      <parentid>7529</parentid>
+      <timestamp>2014-04-14T00:36:24Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="4830">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
+      <comment>start download for signatures instead of opening signatures in browser</comment>
+      <text xml:space="preserve" bytes="4793">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
 &lt;!--T:7--&gt;
 &lt;big&gt;Version: &lt;span style=&quot;color: green&quot;&gt;{{VersionNew}}&lt;/span&gt;&lt;/big&gt;
 
@@ -62505,17 +62507,18 @@ Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/A
 
 &lt;!--T:15--&gt;
 | {{GrayBackground}}| [[File:HTTP.png|40px]] {{Anchor|Whonix_signature}}
-| &lt;html&gt;&lt;a href=&quot;http://sourceforge.net/projects/whonix/files/current/&lt;/html&gt;{{VersionNew}}&lt;html&gt;/Whonix-Gateway-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova/download&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
-| &lt;html&gt;&lt;a href=&quot;http://sourceforge.net/projects/whonix/files/current/&lt;/html&gt;{{VersionNew}}&lt;html&gt;/Whonix-Workstation-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova/download&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
+| &lt;html&gt;&lt;a href=&quot;http://mirror.whonix.de/&lt;/html&gt;{{VersionNew}}&lt;html&gt;/Whonix-Gateway-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
+| &lt;html&gt;&lt;a href=&quot;http://mirror.whonix.de/&lt;/html&gt;{{VersionNew}}&lt;html&gt;/Whonix-Workstation-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova&quot; target=&quot;_blank&quot;&gt;Download&lt;/a&gt;&lt;/html&gt;
 |{{Yes}} &lt;ref name=anonymousdownload /&gt;
 | style=&quot;background-color: {{Red}}&quot;| Very Low &lt;ref&gt;[[Warning#Man-in-the-middle_attacks|Man-in-the-middle attacks]] could poison the download.&lt;/ref&gt;
 | style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification&gt;It does not matter if you did the bulk download over an insecure channel, if you use OpenPGP verification at the end.&lt;/ref&gt;
 |- style=&quot;height: 47px&quot;
 
+
 &lt;!--T:11--&gt;
 | {{GrayBackground}}| [[File:Button_sig.png|25px]]
-| white-space: nowrap;&quot;|&lt;html&gt;&lt;a download href=&quot;/download/&lt;/html&gt;{{VersionNew}}&lt;html&gt;-sig/Whonix-Gateway-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova.asc&quot;&gt;OpenPGP Signature&lt;/a&gt;&lt;/html&gt;
-| white-space: nowrap;&quot;|&lt;html&gt;&lt;a download href=&quot;/download/&lt;/html&gt;{{VersionNew}}&lt;html&gt;-sig/Whonix-Workstation-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova.asc&quot;&gt;OpenPGP Signature&lt;/a&gt;&lt;/html&gt;
+| white-space: nowrap;&quot;|&lt;html&gt;&lt;a class=&quot;link-https&quot; download href=&quot;/download/&lt;/html&gt;{{VersionNew}}&lt;html&gt;-sig/Whonix-Gateway-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova.asc&quot;&gt;OpenPGP Signature&lt;/a&gt;&lt;/html&gt;
+| white-space: nowrap;&quot;|&lt;html&gt;&lt;a class=&quot;link-https&quot; download href=&quot;/download/&lt;/html&gt;{{VersionNew}}&lt;html&gt;-sig/Whonix-Workstation-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova.asc&quot;&gt;OpenPGP Signature&lt;/a&gt;&lt;/html&gt;
 |{{Yes}} &lt;ref name=anonymousdownload /&gt;
 | -
 | -
@@ -62547,7 +62550,7 @@ Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/A
 |}
 &lt;noinclude&gt;&lt;references /&gt;
 {{Footer}}&lt;/noinclude&gt;</text>
-      <sha1>s5hacdaznckj9h387s7ifl28ill43et</sha1>
+      <sha1>mn2jaajthiviq046dmlnnxe5cpi1n3i</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -70485,13 +70488,14 @@ testdeutsch
     <ns>6</ns>
     <id>1185</id>
     <revision>
-      <id>7190</id>
-      <timestamp>2014-03-30T06:23:33Z</timestamp>
+      <id>7527</id>
+      <parentid>7190</parentid>
+      <timestamp>2014-04-13T22:10:23Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>MsUpload</comment>
+      <comment>Patrick uploaded a new version of &amp;quot;[[File:R TorBOX-500px.png]]&amp;quot;</comment>
       <text xml:space="preserve" bytes="8">MsUpload</text>
       <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
       <model>wikitext</model>
@@ -71047,40 +71051,6 @@ using Tor Browser is no longer possible due to a [https://trac.torproject.org/pr
       <comment>MsUpload</comment>
       <text xml:space="preserve" bytes="8">MsUpload</text>
       <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
-      <model>wikitext</model>
-      <format>text/x-wiki</format>
-    </revision>
-  </page>
-  <page>
-    <title>Jak zamontować palenisko</title>
-    <ns>0</ns>
-    <id>1228</id>
-    <revision>
-      <id>7522</id>
-      <timestamp>2014-04-13T16:18:46Z</timestamp>
-      <contributor>
-        <ip>127.0.0.1</ip>
-      </contributor>
-      <comment>Jak_zamontować_palenisko</comment>
-      <text xml:space="preserve" bytes="1796">Kominek ma szansę być rewelacyjnym obiektem każdego projektu wnętrz w apartamencie. Czy to w jadalni czy w salonie - kominki bielsko sprawdzą się w niemal każdym pomieszczeniu. Aktualnie kominki wodne oparte na systemie gazowym są zainstalowane wszędzie niedrogo jak również, szybko. Dobrze jest wiedzieć coś więcej w tym temacie.&lt;br /&gt;&lt;br /&gt;I kolejny super obszar na projektowanie kominków to kuchnia. Kominki bielsko do kuchni są bardziej funkcjonalne, gdyż tam możemy gotować jedzenie. Kominki wodne kuchenne nierzadko mają wentylację komina, dlatego montaż kominka zawiera zainstalowanie komina na dachu. Są to właśnie nasze propozycje. &lt;br /&gt;&lt;br /&gt;Dużo nowoczesnych kominków nie wymaga standardowego komina, dzięki czemu projektowanie kominków jest o wiele łatwiejszy niż kiedyś. Zachęcam do skorzystania z tego krótkiego tekstu, którego tematem jest projektowanie kominków w odniesieniu do różnorodnych pomieszczeń w mieszkaniu. To dzięki temu zdobędziesz wiedzę, w jakim dobrze jest umieścić kominek.&lt;br /&gt;&lt;br /&gt;Następnym idealnym obszarem do instalacji kominka okazuje się sypialnia. Kominki wodne mogą w rzeczy samej dodać wiele do poczucia romantyczności w tego pomieszczenia. [kominki.eopisowo.pl Kominki wodne] do sypialni często są o mniejszych rozmiarach. Kominki bielsko do sypialni często są wyższe, tak aby było widać płomienie, kiedy kiedy odpoczywa się na posłaniu. &lt;br /&gt;&lt;br /&gt;Różne układu salonów skorzystają z z prezencji kominka. Jeśli chodzi o [kominki.eopisowo.pl montaż kominka] to trendy kładą nacisk na kominki bielsko drewniane i kamienne w staromodnym klimacie. Modne są też kominki wodne z marmuru, które uzupełniają stylową urządzoną całość pokoju i robią to w genialny sposób.&lt;br /&gt;</text>
-      <sha1>tmfrofvuwkeigj0uf6t4ja94jhxz81e</sha1>
-      <model>wikitext</model>
-      <format>text/x-wiki</format>
-    </revision>
-  </page>
-  <page>
-    <title>Biokominki Warszawa</title>
-    <ns>0</ns>
-    <id>1229</id>
-    <revision>
-      <id>7525</id>
-      <timestamp>2014-04-13T20:19:43Z</timestamp>
-      <contributor>
-        <ip>127.0.0.1</ip>
-      </contributor>
-      <comment>Biokominki_Warszawa</comment>
-      <text xml:space="preserve" bytes="2070">BioDesign działa na rynku biokominki od wielu lat ciesząc odbiorców wciąż nowymi formami kominków do bloków, jak i innymi usługami, takimi jak [www.biodesign.com.pl budowa www] - stron internetowych opartycz na systemach CMS. Wciąż poszerzamy nasz asortyment o dekoracje metalowe, elementy ozdobne kute w prawdziwej kuźni itp.&lt;br /&gt;&lt;br /&gt; Biokominki z serii NISKA CENA skierowana jest do każdego klienta, można je dowolnie zabudowywać ściankami GK upiększając mieszkanie w bloku. Biokominki z tej serii kuszą niespotykanymi kształtami, wykonanymi z ogromną precyzją. Każdy detal wykonywany jest na profesjonalnych maszynach sterowanych numerycznie. Każdy nawet najdrobniejszy element wykonywany jest na profesjonalnym sprzęcie. Każda powierzchnia naszych produktów pokryta jest wysokiej jakości farbami i lakierami wypalanymi w wysokiej temperaturze.&lt;br /&gt;&lt;br /&gt;Każdy biokominek przechodzi rygorystyczne procedury kontroli jakości, czego efektem jest umieszczany na produkcie znak CE. Nasze biokominki to najwyższa jakość systemów biokominkowych dla każdego. Ceny naszych produktów są proporcjonalne - dostosowane dla każdego przeciętnego klienta - sprawdź nas&lt;br /&gt;&lt;br /&gt;[www.biodesign.com.pl Biokominki] z serii QUALITY DESIGN charakteryzują się precyzją wykonania, niespotykaną u naszej konkurencji. Modele takie jak ATLANTIS, ZEUS czy GAYA cieszą klientów niepowtarzalną formą oraz funkcjonalnością.&lt;br /&gt;&lt;br /&gt;Tworzymy biokominki na indywidualne zamówienie zgodnie z dostarczonymi wytycznymi przez klienta. Nasze biokominki charakteryzuje najwyższa jakość oraz dbałośc o najdrobnieszcze detale. Konstrukcje wykonujemy ze stali szlachetnych.&lt;br /&gt;&lt;br /&gt;BioDesign - producent biokominków. W sprzedaży posiadamy dwie serie biokominków. Biokominki wysokiej jakości produkowane z najwyższej jakości stali szlachetnych, oraz [www.biodesign.com.pl biokominki] z serii NISKA CENA. Każdy z naszych biokominków to niepowtarzalne dzieło sztuki, które produkowane jest z pasją oraz zamiłowaniem do ognia.&lt;br /&gt;</text>
-      <sha1>84vqvlvlv3lk4sp0ulce9y1mnqiulst</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
