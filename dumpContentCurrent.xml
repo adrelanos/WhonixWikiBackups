@@ -17867,14 +17867,15 @@ To get a new circuit, press.
     <ns>0</ns>
     <id>150</id>
     <revision>
-      <id>7498</id>
-      <parentid>6106</parentid>
-      <timestamp>2014-04-12T18:03:01Z</timestamp>
+      <id>7541</id>
+      <parentid>7540</parentid>
+      <timestamp>2014-04-14T21:56:37Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="14557">&lt;!--
+      <comment>/* Whonix Proxy Settings */</comment>
+      <text xml:space="preserve" bytes="14863">&lt;!--
 Copyright:
 
    Whonix Tor Browser wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -18000,10 +18001,9 @@ The New Identity button om Tor Browser isn't perfect yet (NOT a Whonix issue), t
 '''Short''':
 You don't need to change any proxy settings in Tor Browser.
 
-'''Long''':
-There is no Tor over Tor in Whonix, which would be [[DoNot#Prevent_Tor_over_Tor_scenarios.|recommended against]].
-
-Whonix 6 and above do not modify Tor Browser's defaults (apart from the start-tor-browser script).
+'''Long''': &lt;ref&gt;
+There is no Tor over Tor in Whonix, which would be [[DoNot#Prevent_Tor_over_Tor_scenarios.|recommended against]], due to Whonix's environment. Whonix does not modify Tor Browser's startup script, defaults, etc. In Whonix-Workstation rinetd listens on {{Code2|127.0.0.1}} {{Code2|9150}} and {{Code2|9151}} (TBB's default ports) and forwards them to Whonix-Gateway {{Code2|192.168.0.10 9150}} (where a Tor SocksPort is listening) and {{Code2|9151}} (where [[Dev/CPFP|Control Port Filter Proxy]] is listening). Tor does not get started by {{Code2|[https://gitweb.torproject.org/tor-launcher.git torbrowser-launcher]}} because the {{Code2|[https://trac.torproject.org/projects/tor/ticket/6009 TOR_SKIP_LAUNCH]}} environment variable has been set set to {{Code2|1}} in {{Code2|/etc/profile.d/}}. See also [[Dev/Dummy_Tor]].
+&lt;/ref&gt;
 
 == More than one Tor Browser in Whonix ==
 For better isolation of different identities. For advanced users. Moved to the [[Advanced_Security_Guide#More_than_one_Tor_Browser_in_Whonix|Advanced Security Guide]].
@@ -18021,20 +18021,15 @@ There is no auto-update feature for Tor Browser. You will be notified about new 
 [[File:Tor Browser Update Check_004.png|Tor Browser Updater (Whonix) update done.|thumb]]
 [[File:Tor Browser Update Check_005.png|Tor Browser Updater (Whonix) in Terminal|thumb]]
 
-'''Short''':&lt;br /&gt;
 Tor Browser version check and update (after confirmation) in Whonix can be done with:
 
-&lt;pre&gt;update-torbrowser&lt;/pre&gt;
+&lt;pre&gt;
+Applications -&gt; System -&gt; Tor Browser Updater
+&lt;/pre&gt;
 
-A future update of Tor Browser by The Tor Project might make Tor Browser running in Whonix-Workstation unusable. In case Tor Browser inside Whonix-Workstation breaks, a news with instructions on how to fix the issue will be posted within a few days. If not, the Whonix developers are not aware of the issue.
+A future update of Tor Browser by The Tor Project might make Whonix's Tor Browser Updater or Tor Browser running in Whonix-Workstation unusable. In case Tor Browser (Updater) inside Whonix-Workstation breaks, a news with instructions on how to fix the issue will be posted within a few days. If not, the Whonix developers are not aware of the issue.
 
 If the Tor Browser update script is ever broken, you are advised to update manually, see [[Manually_Updating_Tor_Browser]].
-
-'''Long''':&lt;br /&gt;
-If you update Tor Browser in Whonix and there won't be [[DoNot#Prevent_Tor_over_Tor_scenarios.|Tor over Tor, which is recommended against]]. You can use either (choose one):
-
-* Whonix's {{Code|update-torbrowser}} which comes with Whonix &lt;ref&gt;Because it patches the start-tor-browser script.&lt;/ref&gt;
-* [[Manually Updating Tor Browser]] instructions
 
 = Local Connections =
 '''Note''', accessing 127.0.0.1 {{Tor_Browser_Local_Connections}}.
@@ -18085,7 +18080,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>tvr0smp2s7gyg76kfeapf4mg9v7hi2v</sha1>
+      <sha1>4mbihyaxbdawa7m4xq0ufnmkhu21r6s</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -31845,14 +31840,15 @@ For technical stuff, see [[Dev/Mixmaster]].
     <ns>0</ns>
     <id>260</id>
     <revision>
-      <id>5780</id>
-      <parentid>4443</parentid>
-      <timestamp>2014-02-27T12:10:08Z</timestamp>
+      <id>7539</id>
+      <parentid>7538</parentid>
+      <timestamp>2014-04-14T21:49:51Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="4533">{{Header}}
+      <comment>/* Footnotes */</comment>
+      <text xml:space="preserve" bytes="3908">{{Header}}
 {{#seo:
 |description=Manually Updating Tor Browser in case Whonix's torbrowser updater is broken
 }}
@@ -31906,16 +31902,13 @@ See [[Tor Browser]].
 {{mbox
 | type       = notice
 | image      = [[File:Ambox_notice.png|40px|alt=Info]]
-| text       = In case you are wondering if this will result in [[DoNot#Prevent_Tor_over_Tor_scenarios.|Tor over Tor]]... No, because since Whonix version 6, Tor Browser and Whonix play well together.&lt;ref&gt;Technically, rinetd listens on {{Code2|127.0.0.1}} {{Code2|9150}} and {{Code2|9151}} (TBB's default ports) and forwards them to Whonix-Gateway {{Code2|192.168.0.10 9150}} (where a Tor SocksPort is listening) and {{Code2|9151}} (where [[Dev/CPFP|Control Port Filter Proxy]] is listening). Tor does not get started by {{Code2|[https://gitweb.torproject.org/tor-launcher.git torbrowser-launcher]}} because the {{Code2|[https://trac.torproject.org/projects/tor/ticket/6009 TOR_SKIP_LAUNCH]}} environment variable has been set set to {{Code2|1}} in {{Code2|/etc/profile.d/}}. See also [[Dev/Dummy_Tor]].&lt;/ref&gt;
+| text       = In case you are wondering if this will result in [[DoNot#Prevent_Tor_over_Tor_scenarios.|Tor over Tor]]... No, because Tor Browser and Whonix [[Tor_Browser#Whonix_Proxy_Settings|play well together]].
 }}
-
-= Footnotes =
-&lt;references /&gt;
 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>sklua53uiit0quuwzxnk89xk9p8mjxr</sha1>
+      <sha1>dytgva1jqs4taaqhgv6opn2baq6s8pn</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -33800,14 +33793,15 @@ This was tested in VirtualBox.
     <ns>0</ns>
     <id>278</id>
     <revision>
-      <id>5753</id>
-      <parentid>4034</parentid>
-      <timestamp>2014-02-27T11:48:34Z</timestamp>
+      <id>7536</id>
+      <parentid>5753</parentid>
+      <timestamp>2014-04-14T21:44:52Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="1268">{{Header}}
+      <comment>/* Implementation */</comment>
+      <text xml:space="preserve" bytes="1465">{{Header}}
 {{#seo:
 |description=Preventing Tor over Tor for the Tor Browser Bundle (TBB), TorChat and others.
 }}
@@ -33818,11 +33812,11 @@ See [[DoNot#Prevent_Tor_over_Tor_scenarios.]]
 = Implementation =
 Implemented in three ways on Whonix-Workstation.
 
-* Implemented in Whonix source folder, {{Code|debian/control}}. The dummytor package uses the &quot;Provides: tor&quot; field&lt;ref&gt;See &quot;7.5 Virtual packages - Provides&quot; on http://www.debian.org/doc/debian-policy/ch-relationships.html&lt;/ref&gt;, which should avoid any kinds of conflicts, in case upstream releases a higher version of Tor. This won't work for packages, which depend on an explicit version of Tor (such as TorChat).
+* Implemented in Whonix source folder, {{Code|debian/control}}. The dummytor package uses the &quot;Provides: tor&quot; field&lt;ref&gt;See &quot;7.5 Virtual packages - Provides&quot; on http://www.debian.org/doc/debian-policy/ch-relationships.html&lt;/ref&gt;, which should avoid any kinds of conflicts, in case upstream releases a higher version of Tor. This won't work for packages, which depend on an explicit version of Tor (such as TorChat). This is non-ideal, since for example the {{Code|torchat}} package will install Tor, but still acceptable, because of the following additional implementations.
 
-* Tor autostart is disabled in {{Code|/etc/default/tor}}, so even if the {{Code|tor}} package gets installed, it won't be automatically started.
+* Tor's autostart is disabled in {{Code|/etc/default/tor}} (dpkg-diverted using config-package-dev), so even if the {{Code|tor}} package gets installed, it won't be automatically started.
 
-* rinetd listens on Tor's default ports. system Tor's {{Code|127.0.0.1:9050}}, {{Code|127.0.0.1:9051}} and TBB's {{Code|127.0.0.1:9150}}, {{Code|127.0.0.1:9051}}, which prevents the default Tor Browser Bundle or Tor package from The Tor Project to open listening ports on these ports, which will result in their Tor failing to open the listening port and therefore exiting, thus preventing Tor over Tor.
+* {{Code|rinetd}} listens on Tor's default ports. system Tor's {{Code|127.0.0.1:9050}}, {{Code|127.0.0.1:9051}} and TBB's {{Code|127.0.0.1:9150}}, {{Code|127.0.0.1:9051}}, which prevents the default Tor Browser Bundle or Tor package by The Tor Project from opening these default ports, which will result in Tor failing to open its listening port and therefore exiting, thus preventing Tor over Tor.
 
 = Footnotes =
 &lt;references /&gt;
@@ -33830,7 +33824,7 @@ Implemented in three ways on Whonix-Workstation.
 {{Footer}}
 
 [[Category:Design]]</text>
-      <sha1>2l7al60rwg2qu8ianiqbyucmvk056n0</sha1>
+      <sha1>014ke93t3uvbnwrgbnxlt5f3o8c1m9p</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -62479,15 +62473,15 @@ Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/A
     <ns>10</ns>
     <id>894</id>
     <revision>
-      <id>7530</id>
-      <parentid>7529</parentid>
-      <timestamp>2014-04-14T00:36:24Z</timestamp>
+      <id>7534</id>
+      <parentid>7530</parentid>
+      <timestamp>2014-04-14T21:26:28Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>start download for signatures instead of opening signatures in browser</comment>
-      <text xml:space="preserve" bytes="4793">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
+      <comment>class=&quot;link-https&quot; for torrent downloads</comment>
+      <text xml:space="preserve" bytes="4831">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
 &lt;!--T:7--&gt;
 &lt;big&gt;Version: &lt;span style=&quot;color: green&quot;&gt;{{VersionNew}}&lt;/span&gt;&lt;/big&gt;
 
@@ -62534,8 +62528,8 @@ Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/A
 
 &lt;!--T:13--&gt;
 | {{GrayBackground}}| [[File:btorrent-icon.png|25px]]&lt;ref&gt;Torrent clients known to work: transmission, Vuze, Deluge. Check this [https://en.wikipedia.org/wiki/Magnet_URI_scheme#Clients_table clients table]. If nobody is [http://wiki.answers.com/Q/What_are_seeders_and_leechers seeding] at the time, only clients with the [https://en.wikipedia.org/wiki/Magnet_URI_scheme#Normal_.28as.29 &quot;as&quot;] feature can be used, because we are providing a [https://en.wikipedia.org/wiki/BitTorrent#Web_seeding webseed].&lt;/ref&gt;
-| &lt;html&gt;&lt;a href=&quot;/download/&lt;/html&gt;{{VersionNew}}&lt;html&gt;-torrent/Whonix-Gateway-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova.torrent&quot;&gt;Torrent Download&lt;/a&gt;&lt;/html&gt;
-| &lt;html&gt;&lt;a href=&quot;/download/&lt;/html&gt;{{VersionNew}}&lt;html&gt;-torrent/Whonix-Workstation-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova.torrent&quot;&gt;Torrent Download&lt;/a&gt;&lt;/html&gt;
+| &lt;html&gt;&lt;a class=&quot;link-https&quot; href=&quot;/download/&lt;/html&gt;{{VersionNew}}&lt;html&gt;-torrent/Whonix-Gateway-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova.torrent&quot;&gt;Torrent Download&lt;/a&gt;&lt;/html&gt;
+| &lt;html&gt;&lt;a class=&quot;link-https&quot; href=&quot;/download/&lt;/html&gt;{{VersionNew}}&lt;html&gt;-torrent/Whonix-Workstation-&lt;/html&gt;{{VersionNew}}&lt;html&gt;.ova.torrent&quot;&gt;Torrent Download&lt;/a&gt;&lt;/html&gt;
 |{{No}}
 | style=&quot;background-color: {{Yellow}}&quot;| Medium &lt;ref name=atleastssl&gt;It's at least as secure as [[SSL|SSL]] and [https://en.wikipedia.org/wiki/SHA-1 SHA-1], better than plain http. This is because you get the torrent file or magnet link over https and the torrent/magnet client checks the SHA-1 checksum at the end. Using OpenPGP verification would be safer.&lt;/ref&gt;
 | style=&quot;background-color: {{Green}}&quot;| High &lt;ref name=openpgpverification /&gt;
@@ -62550,7 +62544,7 @@ Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/A
 |}
 &lt;noinclude&gt;&lt;references /&gt;
 {{Footer}}&lt;/noinclude&gt;</text>
-      <sha1>mn2jaajthiviq046dmlnnxe5cpi1n3i</sha1>
+      <sha1>69za3u0bk9m2t3q4xsblj3ypiqifujp</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -67250,14 +67244,13 @@ Go to http://127.0.0.1/wiki/index.php/Main_Page.
     <ns>0</ns>
     <id>1110</id>
     <revision>
-      <id>7480</id>
-      <parentid>7479</parentid>
-      <timestamp>2014-04-11T20:46:29Z</timestamp>
+      <id>7531</id>
+      <parentid>7480</parentid>
+      <timestamp>2014-04-14T20:10:48Z</timestamp>
       <contributor>
-        <username>Troubadour</username>
-        <id>230</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <text xml:space="preserve" bytes="4447">{{Header}}
+      <text xml:space="preserve" bytes="4511">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
@@ -67274,7 +67267,7 @@ kdesudo kwrite /etc/apparmor.d/home.user.tor-browser_en-US.Browser.firefox
 Paste the following content.
 
 &lt;pre&gt;
-# Last modified: Fri Apr 11 20:26:39 UTC 2014
+# Last modified: Mon Apr 14 19:01:23 UTC 2014
 #include &lt;tunables/global&gt;
 
 /home/user/tor-browser_en-US/Browser/firefox {
@@ -67286,6 +67279,7 @@ Paste the following content.
 	#include &lt;abstractions/gnome&gt;
 	#include &lt;abstractions/audio&gt;	
 	#include &lt;abstractions/freedesktop.org&gt;	
+	#include &lt;abstractions/user-download&gt;
 	#include &lt;abstractions/whonix&gt;	
 	
 	#include &lt;local/home.user.tor-browser_en-US.Browser.firefox&gt;
@@ -67298,6 +67292,7 @@ Paste the following content.
 	deny /etc/nsswitch.conf r,
 	deny /etc/resolv.conf r,
 	deny /etc/passwd r,
+	deny /etc/group r,
 
 	## Connot use 'deny @{PROC}/** r,&quot;. See below.
 	deny @{PROC} r,
@@ -67340,11 +67335,11 @@ Paste the following content.
 	@{HOME}/tor-browser_en-US/Tor/tor Px,
 	@{HOME}/tor-browser_en-US/Browser/dependentlibs.list r,
 
-	@{HOME}/ r,
-	@{HOME}/* r,
-	@{HOME}/Desktop r,	
-	@{HOME}/Downloads/ r,	
-	@{HOME}/Downloads/** rw,
+#	@{HOME}/ r,
+#	@{HOME}/* r,
+#	@{HOME}/Desktop r,	
+#	@{HOME}/Downloads/ r,	
+#	@{HOME}/Downloads/** rw,
 	@{HOME}/.local/share/ r,
 	@{HOME}/.local/share/** rw,
 	@{HOME}/.thumbnails/ r,
@@ -67430,7 +67425,7 @@ sudo apparmor_parser -r /etc/apparmor.d/home.user.tor-browser_en-US.Browser.fire
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>lj0nmxg53le3bxaz10ym8qe8h0evrvp</sha1>
+      <sha1>f13bmcisz1u1h91fg3r4fslov1b2tmn</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -67598,14 +67593,13 @@ sudo apparmor_parser -r /etc/apparmor.d/usr.bin.VBox
     <ns>0</ns>
     <id>1115</id>
     <revision>
-      <id>7268</id>
-      <parentid>7235</parentid>
-      <timestamp>2014-04-04T07:45:54Z</timestamp>
+      <id>7532</id>
+      <parentid>7268</parentid>
+      <timestamp>2014-04-14T20:19:01Z</timestamp>
       <contributor>
-        <username>Troubadour</username>
-        <id>230</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <text xml:space="preserve" bytes="3550">{{Header}}
+      <text xml:space="preserve" bytes="3590">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
@@ -67624,7 +67618,7 @@ kdesudo kwrite /etc/apparmor.d/usr.bin.pidgin
 Paste the following content.
 
 &lt;pre&gt;
-# Last Modified: Mon Mar 24 21:50:13 UTC 2014
+# Last Modified: Mon Apr 14 19:14:10 UTC 2014
 #include &lt;tunables/global&gt;
 
 /usr/bin/pidgin {
@@ -67633,28 +67627,40 @@ Paste the following content.
 	#include &lt;abstractions/base&gt;
 	#include &lt;abstractions/bash&gt;
 	#include &lt;abstractions/consoles&gt;
-	#include &lt;abstractions/dbus&gt;
-	#include &lt;abstractions/dbus-session&gt;
+#	#include &lt;abstractions/dbus&gt;
+#	#include &lt;abstractions/dbus-session&gt;
 	#include &lt;abstractions/fonts&gt;
 	#include &lt;abstractions/freedesktop.org&gt;
 	#include &lt;abstractions/gnome&gt;
 	#include &lt;abstractions/kde&gt;
-	#include &lt;abstractions/nameservice&gt;
+#	#include &lt;abstractions/nameservice&gt;
 	#include &lt;abstractions/private-files-strict&gt;
 	#include &lt;abstractions/user-download&gt;
-	#include &lt;abstractions/user-tmp&gt;
-	#include &lt;abstractions/ibus&gt;
+#	#include &lt;abstractions/user-tmp&gt;
+#	#include &lt;abstractions/ibus&gt;
 	#include &lt;abstractions/whonix&gt;
 
-	capability net_admin, 
-	capability net_raw,
 	capability sys_ptrace,
 	
+	deny / r,	
+	deny /etc/fstab r,
+	deny /etc/host.conf r,
+	deny /etc/hosts r,
+	deny /etc/nsswitch.conf r,
+	deny /etc/resolv.conf r,
+	deny /etc/passwd r,
+	deny /etc/group r,
+
 	deny @{HOME}/.bash* rw,
 	deny @{HOME}/.cshrc rw,
 	deny @{HOME}/.profile rw,
 	deny @{HOME}/.zshrc rw,
-	  
+	deny @{HOME}/Documents/** r,
+
+	deny @{PROC}** r,
+ 
+	/etc/gai.conf r,
+
 	@{HOME}/.cache/dconf/user rw,
 	@{HOME}/.config/dconf/user r,
 	@{HOME}/.config/enchant/ rw,
@@ -67669,25 +67675,22 @@ Paste the following content.
 	@{HOME}/.purple/ rw,
 	@{HOME}/.purple/** rwk,
 	@{HOME}/.kde/share/config/* r,
-	#@{HOME}/.whonix/* rwk,
-	/home/user/tor-browser_en-US/Browser/firefox rix,
-	/home/user/tor-browser_en-US/Browser/** mrixk,
+	# @{HOME}/.whonix/* rwk,
 
 	/bin/grep rix,
 	/bin/dash rix,
 	/bin/uname rix,
 	/bin/mkdir rix,
 	/bin/rm rix,
-
 	/{dev,run}/shm/ r,
 	/{dev,run}/shm/* rw,
 
-	deny /etc/fstab r,  # Required by the change buddyicon button
 	/etc/ r,
 	/etc/pulse/client.conf r,
 	/etc/ssl/certs/ r,
 	/etc/ssl/certs/** r,
 	/etc/ssl/certs/ssl-cert-snakeoil.pem r,
+	/etc/purple/prefs.xml r,
 	# /etc/whonix.d/* r,
 	 
 	## Added here instead of local profile ##
@@ -67725,14 +67728,10 @@ Paste the following content.
 	/usr/share/myspell/dicts/** r,
 	/usr/share/tcltk/** r,
 	/usr/share/zenity/* r,
-
 	/usr/share/themes/ r,
 	/usr/share/themes/** r,
-
 	/usr/share/hunspell/ r,
 	/usr/share/hunspell/** r,
-
-	deny @{PROC}/** r,
 
 	# Site-specific additions and overrides. See local/README for details.
 	#  #include &lt;local/TBB.Pidgin&gt;
@@ -67749,7 +67748,7 @@ sudo apparmor_parser -r /etc/apparmor.d/usr.bin.pidgin
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>6pcw0onu9zenzryhjwl2q5va5ahddaw</sha1>
+      <sha1>gz505tw6sstka2e2xfg0usle1t6i7do</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -67759,14 +67758,13 @@ sudo apparmor_parser -r /etc/apparmor.d/usr.bin.pidgin
     <ns>0</ns>
     <id>1118</id>
     <revision>
-      <id>7507</id>
-      <parentid>7267</parentid>
-      <timestamp>2014-04-12T20:02:16Z</timestamp>
+      <id>7533</id>
+      <parentid>7507</parentid>
+      <timestamp>2014-04-14T20:28:36Z</timestamp>
       <contributor>
-        <username>Troubadour</username>
-        <id>230</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <text xml:space="preserve" bytes="3998">{{Header}}
+      <text xml:space="preserve" bytes="4098">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
@@ -67785,7 +67783,7 @@ kdesudo kwrite /etc/apparmor.d/usr.lib.icedove.icedove
 Paste the following content.
 
 &lt;pre&gt;
-# Last Modified: Sat Apr 12 19:59:33 UTC 2014
+# Last Modified: Mon Apr 14 20:02:32 UTC 2014
 #include &lt;tunables/global&gt;
 
 /usr/lib/icedove/icedove {
@@ -67796,6 +67794,8 @@ Paste the following content.
 	#include &lt;abstractions/kde&gt;
 	#include &lt;abstractions/gnome&gt;
 	#include &lt;abstractions/audio&gt;   
+	#include &lt;abstractions/freedesktop.org&gt;
+	#include &lt;abstractions/user-download&gt;
 	#include &lt;abstractions/whonix&gt;   
 
 	#include &lt;local/usr.lib.icedove.icedove&gt;
@@ -67812,12 +67812,14 @@ Paste the following content.
 	deny @{PROC} r,
 	deny @{PROC}/** r,
 
+	deny /sys/devices/system/cpu/ r,  
+	deny /sys/devices/system/cpu/present r,  
 	deny /var/lib/dbus/machine-id r,
 
-	@{HOME}/ r,	  
-	@{HOME}/Desktop/ r,
-	@{HOME}/Downloads/ r,	
-	@{HOME}/Downloads/** rw,	
+#	@{HOME}/ r,	  
+#	@{HOME}/Desktop/ r,
+#	@{HOME}/Downloads/ r,	
+#	@{HOME}/Downloads/** rw,	
 	@{HOME}/.icedove/** mrwk,
 	@{HOME}/.kde/share/** rw,
 	@{HOME}/.config/** rw,		
@@ -67826,31 +67828,13 @@ Paste the following content.
 	@{HOME}/.local/share/applications/* r,
 	@{HOME}/.local/share/mime/ r,
 	@{HOME}/.local/share/mime/** r,
-	@{HOME}/.local/share/recently-used.xbel* rw,
-	@{HOME}/.local/share/applications/ r,  
-	@{HOME}/.local/share/applications/* rwk,  
+#	@{HOME}/.local/share/recently-used.xbel* rw,
+#	@{HOME}/.local/share/applications/ r,  
+#	@{HOME}/.local/share/applications/* rwk,  
 	@{HOME}/.cache/ r,
 	@{HOME}/.cache/** rwk,
 	@{HOME}/.gnupg/* lrwkcix,
 	@{HOME}/.Xauthority r,
-	
-	/usr/share/ r,
-	/usr/share/icons/ r,
-	/usr/share/icons/** r,
-	/usr/share/mime/ r,
-	/usr/share/mime/** r,
-	/usr/share/pixmaps/ r,
-	/usr/share/pixmaps/** r,
-	/usr/share/themes/ r,
-	/usr/share/themes/** r,
-	/usr/share/icedove/ r,
-	/usr/share/icedove/** r,
-	/usr/share/glib-2.0/schemas/gschemas.compiled r, 
-	/usr/share/hunspell/ r,
-	/usr/share/hunspell/* r,
-	/usr/.local/share/applications/ rwk,
-	/usr/share/applications/ r,		
-	/usr/share/applications/** rwk, 
 	
 	/etc/drirc r,
 	/etc/ld.so.cache r,
@@ -67894,8 +67878,6 @@ Paste the following content.
 #	@{PROC}/[0-9]*/mounts r,
 #	@{PROC}/[0-9]*/mountinfo r,
 	  
-	/sys/devices/system/cpu/ r,  
-	/sys/devices/system/cpu/present r,  
 	  
 	/usr/bin/kde4-config rix,
 	/usr/bin/basename rix,
@@ -67909,6 +67891,24 @@ Paste the following content.
 	/usr/lib/i386-linux-gnu/** rm,
 	/usr/lib/icedove/icedove mrix,
 	/usr/lib/gnupg/* rix,
+
+	/usr/share/ r,
+#	/usr/share/icons/ r,
+#	/usr/share/icons/** r,
+	/usr/share/mime/ r,
+	/usr/share/mime/** r,
+#	/usr/share/pixmaps/ r,
+#	/usr/share/pixmaps/** r,
+	/usr/share/themes/ r,
+	/usr/share/themes/** r,
+	/usr/share/icedove/ r,
+	/usr/share/icedove/** r,
+	/usr/share/glib-2.0/schemas/gschemas.compiled r, 
+	/usr/share/hunspell/ r,
+	/usr/share/hunspell/* r,
+	/usr/.local/share/applications/ rwk,
+	/usr/share/applications/ r,		
+	/usr/share/applications/** rwk, 
 }
 &lt;/pre&gt;
 
@@ -67935,7 +67935,7 @@ sudo apparmor_parser -r /etc/apparmor.d/usr.lib.icedove.icedove
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>31uwjj2pkbnmxsj72aqamza8sz60fwy</sha1>
+      <sha1>0v5k833jwisvo0zsr1y7znanbr7bix6</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
