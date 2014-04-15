@@ -40,14 +40,14 @@
     <ns>0</ns>
     <id>1</id>
     <revision>
-      <id>7528</id>
-      <parentid>7521</parentid>
-      <timestamp>2014-04-13T22:12:24Z</timestamp>
+      <id>7543</id>
+      <parentid>7528</parentid>
+      <timestamp>2014-04-15T01:16:48Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="11512">{{#seo:
+      <text xml:space="preserve" bytes="11493">{{#seo:
 |fb:admins=100007482551659
 |fb:app_id=606207202785157
 |twitter:card=summary_large_image
@@ -200,7 +200,7 @@ x86 compatible and/or VirtualBox +&lt;/translate&gt; &lt;ref&gt;&lt;translate&gt
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Official Website: &lt;/td&gt;
-&lt;td style=&quot;&quot;text-align:left;&quot;&gt;[https://www.whonix.org https]; &lt;html&gt;&lt;a class=&quot;link-https&quot; href=&quot;http://xxxxxxxxxxh5kyrx.onion&quot; rel=&quot;nofollow&quot;&gt;.onion&lt;/a&gt;&lt;/html&gt;
+&lt;td style=&quot;&quot;text-align:left;&quot;&gt;[https://www.whonix.org https]; &lt;html&gt;&lt;a href=&quot;http://xxxxxxxxxxh5kyrx.onion&quot; rel=&quot;nofollow&quot;&gt;.onion&lt;/a&gt;&lt;/html&gt;
 &lt;/td&gt;
 &lt;/tr&gt;
 &lt;/table&gt;
@@ -278,7 +278,7 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
 
 
 &lt;/div&gt;</text>
-      <sha1>5sw5k2ckceyhmgkegutb2frlf8w70k5</sha1>
+      <sha1>sw5pxkbb6ahb1gve0a6excxwg1sevwk</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -288,21 +288,22 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
     <ns>8</ns>
     <id>3</id>
     <revision>
-      <id>7435</id>
-      <parentid>7420</parentid>
-      <timestamp>2014-04-09T00:38:51Z</timestamp>
+      <id>7542</id>
+      <parentid>7435</parentid>
+      <timestamp>2014-04-15T01:06:15Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="199">* Menu
+      <text xml:space="preserve" bytes="220">* Menu
 ** Main Page | HOME
 ** Download | DOWNLOADS
 ** Documentation | DOCUMENTATION
 ** https://www.whonix.org/blog | BLOG
+** Support | SUPPORT
 ** https://www.whonix.org/forum | COMMUNITY
 ** Dev/Developer Portal | DEVELOP</text>
-      <sha1>dspl52g78wekgnko2iu5nayejaml5me</sha1>
+      <sha1>qxmbf43iw4ra1xqvot6m453tkc4512u</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
