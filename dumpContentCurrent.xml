@@ -67594,13 +67594,14 @@ sudo apparmor_parser -r /etc/apparmor.d/usr.bin.VBox
     <ns>0</ns>
     <id>1115</id>
     <revision>
-      <id>7532</id>
-      <parentid>7268</parentid>
-      <timestamp>2014-04-14T20:19:01Z</timestamp>
+      <id>7544</id>
+      <parentid>7532</parentid>
+      <timestamp>2014-04-15T19:03:59Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Troubadour</username>
+        <id>230</id>
       </contributor>
-      <text xml:space="preserve" bytes="3590">{{Header}}
+      <text xml:space="preserve" bytes="3704">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
@@ -67676,6 +67677,7 @@ Paste the following content.
 	@{HOME}/.purple/ rw,
 	@{HOME}/.purple/** rwk,
 	@{HOME}/.kde/share/config/* r,
+	@{HOME}/.config/oxygen-gtk/argb-apps.conf rwk,
 	# @{HOME}/.whonix/* rwk,
 
 	/bin/grep rix,
@@ -67710,6 +67712,7 @@ Paste the following content.
 	/usr/bin/torbrowser rix,
 	/usr/bin/basename rix,
 	/usr/bin/tty rix,
+	/usr/bin/kde4-config rix,
 
 	/usr/share/glib-2.0/schemas/gschemas.compiled r,
 
@@ -67733,6 +67736,7 @@ Paste the following content.
 	/usr/share/themes/** r,
 	/usr/share/hunspell/ r,
 	/usr/share/hunspell/** r,
+	/usr/share/fontconfig/conf.avail/* r,
 
 	# Site-specific additions and overrides. See local/README for details.
 	#  #include &lt;local/TBB.Pidgin&gt;
@@ -67749,7 +67753,7 @@ sudo apparmor_parser -r /etc/apparmor.d/usr.bin.pidgin
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>gz505tw6sstka2e2xfg0usle1t6i7do</sha1>
+      <sha1>ejknuws89b8rh3qgteao8nwxx85s8ef</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
