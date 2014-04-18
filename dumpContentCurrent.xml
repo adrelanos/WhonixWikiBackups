@@ -9440,15 +9440,14 @@ Whether it's worth to combine Tor with a VPN, either as pre-Tor-VPN (user -&gt; 
     <ns>0</ns>
     <id>98</id>
     <revision>
-      <id>7483</id>
-      <parentid>6107</parentid>
-      <timestamp>2014-04-11T22:13:31Z</timestamp>
+      <id>7549</id>
+      <parentid>7483</parentid>
+      <timestamp>2014-04-18T12:14:20Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Total protection */</comment>
-      <text xml:space="preserve" bytes="20934">{{Header}}
+      <text xml:space="preserve" bytes="20932">{{Header}}
 {{#seo:
 |description=Prevent Identity Correlation through Circuit Sharing by using Tor Stream Isolation
 }}
@@ -9538,7 +9537,7 @@ Applications in Whonix 0.2.1 and above configured to prevent {{Code2|identity co
 | -
 | -
 |- 
-|style=&quot;background-color:#f9f9f9;height:27px&quot;|[[Dev/TimeSync | htpdate]]
+|style=&quot;background-color:#f9f9f9;height:27px&quot;|[[Dev/TimeSync|sdwdate]]
 |style=&quot;background-color:{{Green}}&quot;|yes
 |style=&quot;background-color:{{Green}}&quot;|yes
 |socks proxy settings
@@ -9823,7 +9822,7 @@ Stream Isolation Graphic has been contributed by: Cuan Knaggs – graphic and we
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Design]]</text>
-      <sha1>5bvb3ombjw8l0be97s6wlpacblxpt8q</sha1>
+      <sha1>hfel5g1udhpqg7z2mhbmz6n4ezgqtib</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -54764,14 +54763,15 @@ Many thanks to Tails team for their discussion on the topic of password managers
     <ns>0</ns>
     <id>685</id>
     <revision>
-      <id>7547</id>
-      <parentid>7546</parentid>
-      <timestamp>2014-04-17T13:58:24Z</timestamp>
+      <id>7554</id>
+      <parentid>7553</parentid>
+      <timestamp>2014-04-18T13:03:55Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <comment>qcow2 official images use advcie</comment>
-      <text xml:space="preserve" bytes="6872">{{Header}}
+      <comment>/* KVM Setup Instructions */</comment>
+      <text xml:space="preserve" bytes="7364">{{Header}}
 {{#seo:
 |description=Using Whonix with KVM instead of VirtualBox
 }}
@@ -54805,8 +54805,8 @@ Furthermore VirtualBox contains significant functionality that is only available
 
 == KVM Setup Instructions ==
 {{mbox
-| type       = critical
-| image      = [[File:Ambox_warning_pn.svg.png|40px|alt=Question mark]]
+| type      = critical
+| image   = [[File:Ambox_warning_pn.svg.png|40px|alt=Question mark]]
 | text       = 
 Warning:
 
@@ -54820,7 +54820,7 @@ sudo apt-get update
 sudo apt-get install virt-manager
 &lt;/pre&gt;
 
-Make sure you use the qcow2 images that are provided by the Whonix project instead of rolling your own. They contain important performance optimizations.
+Make sure you use the qcow2 images that are provided by the Whonix project instead of rolling your own. &lt;ref&gt;As in, manually converting them from .ova to .qcow2 is no longer recommended, since you can download .qcow images from the Whonix project.&lt;/ref&gt; They contain important performance optimizations. &lt;ref&gt;As per [https://github.com/Whonix/Whonix/blob/master/build-steps.d/2400_convert-img-to-qcow2 build-steps.d/2400_convert-img-to-qcow2], these are &quot;-o cluster_size=2M&quot; and &quot;-o preallocation=metadata&quot;.&lt;/ref&gt; (Unless you [[Dev/Build_Documentation|created them from source]]. &lt;ref&gt;Because then you have the same performance optimizations.&lt;/ref&gt;)
 
 Before starting the new vm wizard we must create an internal isolated network that connects the workstation with the gateway.
 
@@ -54876,7 +54876,7 @@ Not enabling SPICE from the beginning, will prevent the spice channel device fro
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>q33aodqyn34dcqdjp3ztxpvtm769evy</sha1>
+      <sha1>tp0nmymkxtqfjdf65bm1ares0by50gk</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -56027,15 +56027,15 @@ You can customize the header and footer of your directory listing as explained [
     <ns>0</ns>
     <id>695</id>
     <revision>
-      <id>7493</id>
-      <parentid>5775</parentid>
-      <timestamp>2014-04-12T13:44:42Z</timestamp>
+      <id>7555</id>
+      <parentid>7493</parentid>
+      <timestamp>2014-04-18T14:26:00Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <username>Fortasse</username>
+        <id>1</id>
       </contributor>
-      <comment>mirror.whonix.org -&gt; mirror.whonix.de</comment>
-      <text xml:space="preserve" bytes="4104">{{Header}}
+      <comment>/* Getting Your Mirror Added */</comment>
+      <text xml:space="preserve" bytes="4086">{{Header}}
 {{#seo:
 |description=Instructions on how to set up a Whonix Download Mirror
 }}
@@ -56130,7 +56130,7 @@ sudo service apache2 restart
 
 == Getting Your Mirror Added ==
 
-Email the IP address of your new mirror to [[Contact#For_website_issues | Fortasse]], and you will be notified when it has been added to the rotation. Due to the way DNS propagates, it may be up to 24 hours before your system starts seeing traffic.
+Email the IP address of your new mirror to [[Contact | Adrelanos]], and you will be notified when it has been added to the rotation. Due to the way DNS propagates, it may be up to 24 hours before your system starts seeing traffic.
 
 '''Thanks for your support!'''
 
@@ -56143,7 +56143,7 @@ You can customize the header and footer of your directory listing as explained [
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>sc1ne4qzzdn89uf9qwhyj53cxhk3sam</sha1>
+      <sha1>axcz20d6fbkj0ju11uvb4suncs5n42o</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -61800,14 +61800,14 @@ Please consider a recurring donation!&lt;/translate&gt;
     <ns>10</ns>
     <id>875</id>
     <revision>
-      <id>7524</id>
-      <parentid>6939</parentid>
-      <timestamp>2014-04-13T20:11:57Z</timestamp>
+      <id>7548</id>
+      <parentid>7524</parentid>
+      <timestamp>2014-04-18T12:10:42Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="4484">__NOTOC__
+      <text xml:space="preserve" bytes="4354">__NOTOC__
 Donations are to make up time for working on Whonix, to pay for whonix.org server cost and other necessities. Small monthly donations are preferred.
 
 &lt;!-------------------------bank transfer, PayPal------------------------&gt;
@@ -61906,10 +61906,8 @@ If you want to pay for getting a new feature, this may be possible as well, plea
 
 Please get in [[Contact#For_Donations|Contact]] if you would like to donate but don't know how.
 
-Donations aren't tax-deducible, because Whonix isn't a (non-profit) company yet.
-
-To leave feedback, you could join the [https://www.whonix.org/forum/index.php/topic,76.0.html Forum Discussion about Donations].</text>
-      <sha1>j5kr6oy3tvjrccmj3b4c8gr6w61407s</sha1>
+Donations aren't tax-deducible, because Whonix isn't a (non-profit) company yet.</text>
+      <sha1>qng9f585c8j8578zs0s4855w4ui29om</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
