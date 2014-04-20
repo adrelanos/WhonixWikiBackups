@@ -56930,15 +56930,14 @@ Quelle: &lt;html&gt;&lt;a href=&quot;http://www.juraforum.de/impressum-generator
     <ns>0</ns>
     <id>698</id>
     <revision>
-      <id>7427</id>
-      <parentid>7340</parentid>
-      <timestamp>2014-04-08T22:43:40Z</timestamp>
+      <id>7558</id>
+      <parentid>7427</parentid>
+      <timestamp>2014-04-20T14:06:55Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Geltungsbereich */</comment>
-      <text xml:space="preserve" bytes="4243">&lt;!--
+      <text xml:space="preserve" bytes="4251">&lt;!--
 NOTE TO WIKI EDITORS:
 Do not add the default footer!
 Do not edit without asking Patrick Schleizer beforehand!
@@ -57005,7 +57004,7 @@ Dieses Impressum gilt auch für:
 ** https://github.com/adrelanos/sdwdate
 ** https://github.com/adrelanos/popcon-benchmark
 ** https://github.com/adrelanos/torbirdy
-** https://github.com/Whonix/whonix-tor-config
+** https://github.com/Whonix/anonymizer-config-gateway
 ** https://github.com/Whonix/control-port-filter
 ** https://github.com/adrelanos/control-port-filter
 ** https://github.com/adrelanos/wiki-seo
@@ -57025,7 +57024,7 @@ Die Datenschutzerklärung finden Sie [[Datenschutz|hier]].
 Den Haftungsausschluss (Disclaimer) finden Sie [[Disclaimer|hier]].
 
 [[Category:Documentation]]</text>
-      <sha1>d3uqton2nqdtfviokg74wyj8u3bolhp</sha1>
+      <sha1>akg0anhes09habyqty71tgucti20xt7</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -71171,6 +71170,23 @@ using Tor Browser is no longer possible due to a [https://trac.torproject.org/pr
       <comment>MsUpload</comment>
       <text xml:space="preserve" bytes="8">MsUpload</text>
       <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Monitoring</title>
+    <ns>0</ns>
+    <id>1231</id>
+    <revision>
+      <id>7559</id>
+      <timestamp>2014-04-20T21:40:59Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Monitoring</comment>
+      <text xml:space="preserve" bytes="706">Specjalizujemy się w montażu, sprzedaży oraz serwisie systemów: monitoringowych, alarmowych, telewizji DVB-T oraz kontroli pojazdów. Dojazd do klienta oraz pomiar i projekt systemu bez opłat. Nasi klienci mogą liczyć na nowoczesne wysokiej klasy systemy oparte o sprawdzony oraz profesjonalny sprzęt. Na nasze wszystkie usługi wystawiamy fakturę lub paragon oraz udzielamy gwarancji. Nasi klienci mogą liczyć na fachową pomoc, przeszkolenie w obsłudze sprzętu oraz serwisie pogwarancyjnym. Systemy monitoringowe oraz alarmowe to świetne zabezpieczenie przed włamaniem. Nasze systemy mają bardzo nowoczesne rozwiązania oparte o najnowsze technologie.Działamy na terenie Śląska. &lt;br /&gt;</text>
+      <sha1>gsqg19wbee15ncongfks4hbtug8vchf</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
