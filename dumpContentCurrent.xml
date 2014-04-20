@@ -55457,14 +55457,13 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
     <ns>0</ns>
     <id>691</id>
     <revision>
-      <id>7478</id>
-      <parentid>7477</parentid>
-      <timestamp>2014-04-11T02:02:42Z</timestamp>
+      <id>7557</id>
+      <parentid>7556</parentid>
+      <timestamp>2014-04-20T03:12:00Z</timestamp>
       <contributor>
         <ip>127.0.0.1</ip>
       </contributor>
-      <comment>Debian apparmor</comment>
-      <text xml:space="preserve" bytes="15556">{{Header}}
+      <text xml:space="preserve" bytes="25177">{{Header}}
 {{#seo:
 |description=Development Notes for adding KVM support to Whonix.
 }}
@@ -55788,13 +55787,130 @@ whonixcheck (since Whonix 8) would tell you if kvmclock is enabled. whonixcheck 
 &lt;iggy&gt; np
 &lt;/pre&gt;
 
+&lt;pre&gt;* Now talking on #tor
+* Topic for #tor is: Welcome to #tor, the discussion channel for Tor users and operators | https://www.torproject.org/ | https://www.torproject.org/docs/faq | https://tor.stackexchange.com/ | Developer discussion on #tor-dev | It's 'Tor', not 'TOR' | non-tor talk =&gt; #nottor
+* Topic for #tor set by ChanServ!services@services.oftc.net at Sun Feb  2 13:56:09 2014
+* Riastradh (~riastradh@82JAAD1W2.tor-irc.dnsbl.oftc.net) has joined #tor
+&lt;expedient&gt; I am working on the Whonix KVM port and ran the leaktest for this bug reported here: https://lists.torproject.org/pipermail/tor-talk/2014-March/032503.html
+&lt;expedient&gt; It turns out that this issue applies to us too and its an upstream bug
+&lt;arma&gt; i believe you
+&lt;arma&gt; upstream meaning what -- the kernel? iptables?
+&lt;expedient&gt; I am thinking iptables
+&lt;expedient&gt; You guys can probably get to them easier than we can
+&lt;arma&gt; is there a patch?
+* drtor (~drtor@9YYAAK2T4.tor-irc.dnsbl.oftc.net) has joined #tor
+&lt;expedient&gt; We are looking at some workaround in iptables but are not sure how well this will work
+&lt;expedient&gt; but one thing for sure is it needs to be fixed upstream because it affects any Linux platform that uses Tor as a transproxy
+&lt;expedient&gt; AFAIK Patrick  -Whoix leader- doesn't write kernel level code
+&lt;expedient&gt; https://www.whonix.org/forum/index.php/topic,243.0.html
+* realitygaps has quit (Remote host closed the connection)
+&lt;expedient&gt; According to my findings, the leak can be seen in tcpdump running on the host, as direct communication to Google without going through any Tor node. Its a catastrophe by all means
+&lt;velope&gt; a kernel patch is not necessarily appropriate, and upstream might well not consider it a bug
+&lt;velope&gt; the iptables workaround i gave is in a followup post from mike in that thread
+&lt;velope&gt; it would appear that &quot;it needs to be fixed upstream&quot; is just false
+&lt;velope&gt; i only skimmed that forum page quickly, and i really don't want to wade through every bit of it
+&lt;velope&gt; it contains my workaround based on --state INVALID
+&lt;expedient&gt; That's fine we will apply your advice, but are you sure that there is nothing fundamentally wrong with the kernel or iptables though?
+&lt;velope&gt; but it doesn't clearly seem to have been used
+&lt;velope&gt; apply it and test, a lot
+&lt;velope&gt; there is not yet any solid case made that there is something &quot;fundamentally wrong&quot;
+&lt;velope&gt; using iptables to redirect for transproxying relies on connection tracking
+&lt;arma&gt; i think the conclusion is &quot;it is hard to use these things safely&quot;
+&lt;arma&gt; which isn't really a bug in upstream so much as a challenge with the approach
+&lt;velope&gt; you have to test
+&lt;velope&gt; people don't test thoroughly
+&lt;velope&gt; they just read a man page or get some cookbook approach from some post, and run with it
+&lt;velope&gt; that is why something like this goes unnoticed for so long
+&lt;velope&gt; (gee, sounds like some other notable problems ...)
+&lt;expedient&gt; Sorry to throw another link your way, but so far this is what we do when testing:
+&lt;expedient&gt; https://www.whonix.org/wiki/Dev/Leak_Tests#FIN_ACK_.2F_RST_ACK_-_Leak_Test
+&lt;expedient&gt; Any advice if this is enough or anything we should add to ensure its safe after a workaround?
+* quiliro has quit (Quit: Leaving.)
+&lt;velope&gt; do violent tests with your networking connection
+&lt;expedient&gt; You are very sharp btw. That bug was a great find
+&lt;velope&gt; interrupt it and restore it at various moments, for various periods
+* blumenkraft (~eristisk@a1.networktest.34sp.com) has joined #tor
+&lt;velope&gt; well actually i never announced or reported the problem, so even though i fixed the problem for myself a couple years ago, mike appropriately gets credit for finding it. i just get credit for a better workaround.
+* amiller has quit (Remote host closed the connection)
+&lt;velope&gt; y'all need to understand that connection tracking was never intended to be more than a loose fit around categories of traffic, not some leakproof box
+&lt;expedient&gt; do you know if this applies to nftables too?
+&lt;expedient&gt; Its gradually becoming the successor to iptables and was added in 3.13
+&lt;velope&gt; when the kernel's info on a connection is lost or dropped (timeout), it's gone forever, so subsequent traffic won't be redirected
+&lt;velope&gt; i haven't used it and don't know. unless there's been some massively radical re-architecting of connection tracking, it's unlikely to be totally different, though there could be minor differences in behavior.
+&lt;arma&gt; the tails approach is starting to look a bit smarter
+* eristisk has quit (Ping timeout: 480 seconds)
+&lt;expedient&gt; tails is robus but it has to secure an entire rich os stack to protect the user
+&lt;arma&gt; approach to torifying the traffic i mean
+&lt;expedient&gt; ok
+&lt;arma&gt; i don't argue that wrapping stuff in vm's can make it harder for an attacker to break out
+&lt;velope&gt; in that tails doesn't rely on transproxy redirection, yes it's better
+&lt;expedient&gt; what specifics are you talking about for torifying maybe we can replicate that?
+&lt;arma&gt; but torifying outgoing streams is harder to make safe than explicit proxy settings
+* darkclown (~darkclown@p2011-ipbf7306marunouchi.tokyo.ocn.ne.jp) has joined #tor
+* anong0 has quit (Ping timeout: 480 seconds)
+&lt;velope&gt; right, we've always warned that transproxying is not as great as it seems
+&lt;arma&gt; &quot;set your proxy settings to use tor, only allow tor to use the network&quot;
+* Gentlecat has quit (Ping timeout: 480 seconds)
+&lt;arma&gt; so, implicitly, &quot;don't allow anything that isn't configured to use tor to use the network&quot;
+&lt;velope&gt; and most people just ignore the warnings about transproxying, because &quot;just stuffing everything through tor&quot; seems just what they want, and so simple. but not really.
+* mdik is now known as Guest6988
+* mdik (~mdik@brln-4d0c41d4.pool.mediaWays.net) has joined #tor
+&lt;expedient&gt;  the problem is when a box is rooted the software that is configured to use Tor can do things it shouldn't do
+&lt;expedient&gt; but I get your point
+* Guest6988 has quit (Ping timeout: 480 seconds)
+&lt;expedient&gt; its those people who think stuffing flash through a transproxy pipe think their safe
+&lt;velope&gt; that problem only exists for you because you insist on running tor in isolation
+* huseby has quit (Ping timeout: 480 seconds)
+&lt;arma&gt; &quot;be sure to send unexpected traffic over tor so it can't hurt us&quot;
+&lt;arma&gt; vs &quot;be sure to drop unexpected traffic so it can't hurt us&quot;
+&lt;arma&gt; option b sure seems wiser
+&lt;arma&gt; then a bad guy who breaks in can, at worst, generate traffic that looks expected so it goes through tor
+&lt;sd&gt; Useability wise, just having unique circuit per PID might be reasonable compromise.
+* TheCthulhu1 has quit (Remote host closed the connection)
+&lt;arma&gt; i think that's a totally separate topic
+&lt;expedient&gt; arma:  an important goal we are trying to achieve is for operators of hidden services to be able to have a fighting chance in case they are targeted.
+&lt;sd&gt; Trying to educate users &quot;don't throw * at tor, but selectively firewall everything&quot; seems like a losing battle though.
+&lt;arma&gt; it does? screw those users then.
+&lt;arma&gt; better to write software that works well
+&lt;arma&gt; and the ones who want to use the safe software will use it
+&lt;velope&gt; right, it can only be won or lost if you consider it to be a battle. users screw themselves, every day
+&lt;arma&gt; and we can't do much for the ones who choose to do it wrong
+&lt;velope&gt; a better analogy might be leading a horse to water
+* Rym has quit (Ping timeout: 480 seconds)
+&lt;sd&gt; That sounds like somewhat elitist stance. &quot;You dont deserve privacy because you're dumb&quot; vs &quot;Safe defaults built in.&quot;
+&lt;velope&gt; obviously better defaults are better, if they actually exist and are actually safer
+&lt;sd&gt; (I can see how it can go downhill from there if users are babysitted too much, though)
+&lt;velope&gt; but defaults never cover everything, because software is flexible, and people want it to be
+&lt;expedient&gt; The less decisions that need to be made in security, the better everyone will be
+&lt;expedient&gt; and hence why transproxy is an idea worth working towards
+&lt;arma&gt; so give them only the applications that you know behave well, with those applications configured to use tor correctly
+&lt;velope&gt; that principle is correct but the conclusion about transproxying is wrong
+&lt;arma&gt; letting them pick their own apps and hope they are safe is a recipe for surprises again and again
+&lt;expedient&gt; we do, but we can't guarantee that nothing dangerous happens when these apps are compromised unless it *all* goes through Tor
+&lt;sd&gt; Ultimately the problem with transproxy is just that it's difficult to identify the source app.
+* sd uses assigned source port ranges, but it is far from ideal
+&lt;expedient&gt; Kgpg, TorBrowser and xchat come by default
+&lt;velope&gt; even if it all goes through tor, you can't guarantee that nothing dangerous happens, you only have considered the first layer of potential problems
+&lt;expedient&gt; updated system and AppArmor are other layers we have
+&lt;velope&gt; that's all very nice and good
+&lt;expedient&gt; but against a well funded adversary you must throuw everything in the toolbox and the toolbox itself to protect users
+&lt;velope&gt; actually it's just more and more desperate band-aiding
+&lt;velope&gt; the effort would be much better directed towards thoroughly auditing apps
+&lt;expedient&gt; Auditing firefox is out of our league
+&lt;expedient&gt; but we have verifiable builds for Whonix
+&lt;sd&gt; Velope, that goal is far from realistic when we're talking huge blobs of code such as web browser or libpurple.
+&lt;velope&gt; it's the true longterm challenge that people get scared away from all the time
+* mttp_ (~mttp@9YYAAK2WG.tor-irc.dnsbl.oftc.net) has joined #tor
+&lt;velope&gt; and the &quot;community&quot; pays for it dearly with things like heartbleed
+&lt;/pre&gt;
+
 = Footnotes =
 &lt;references /&gt;
 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>o5v1m754g515n285efj6py8gb6e1s0s</sha1>
+      <sha1>mf5ajtpjzhgkvpbc4v4e6muag8cipb4</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
