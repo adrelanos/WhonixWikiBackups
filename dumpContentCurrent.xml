@@ -798,16 +798,14 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>19</id>
     <revision>
-      <id>7520</id>
-      <parentid>7481</parentid>
-      <timestamp>2014-04-13T14:51:31Z</timestamp>
+      <id>7560</id>
+      <parentid>7520</parentid>
+      <timestamp>2014-04-21T10:26:44Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <minor/>
-      <comment>Text replace - &quot;2000px-Feed-icon.svg.png&quot; to &quot;Feed-icon.jpeg&quot;</comment>
-      <text xml:space="preserve" bytes="15088">{{Header}}
+      <text xml:space="preserve" bytes="15256">{{Header}}
 &lt;!--
 Copyright:
 
@@ -1068,6 +1066,15 @@ In case you are interested in Whonix source code updates, [[Dev/git#subscribe_to
 &lt;translate&gt;== Normal == &lt;!--T:239--&gt;
 &lt;/translate&gt;
 
+=== Tor Browser Updater (Whonix) Workaround required ===
+Please use.
+
+&lt;pre&gt;
+update-torbrowser --clearnet
+&lt;/pre&gt;
+
+Will be fixed in next maintenance release Whonix 8.2.
+
 &lt;translate&gt;=== Mounting (CD/DVD) Devices === &lt;!--T:240--&gt;
 &lt;/translate&gt;
 &lt;translate&gt;&lt;!--T:241--&gt;
@@ -1172,7 +1179,7 @@ under certain conditions; see the wiki source code for details.
 &lt;translate&gt;&lt;!--T:253--&gt;
 Some icons created by third parties, Free licenses as well, see [[Authorship#Images_created_by_third_parties|Authorship Images created by third parties]] for details.
 &lt;/translate&gt;[[Category:Documentation]]{{Footer}}</text>
-      <sha1>rtd715wqyew9zmp6gmxmi6slx0yw7e1</sha1>
+      <sha1>meo8b5lfbmzc7f6lrrpptao7flozwc9</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -71170,23 +71177,6 @@ using Tor Browser is no longer possible due to a [https://trac.torproject.org/pr
       <comment>MsUpload</comment>
       <text xml:space="preserve" bytes="8">MsUpload</text>
       <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
-      <model>wikitext</model>
-      <format>text/x-wiki</format>
-    </revision>
-  </page>
-  <page>
-    <title>Monitoring</title>
-    <ns>0</ns>
-    <id>1231</id>
-    <revision>
-      <id>7559</id>
-      <timestamp>2014-04-20T21:40:59Z</timestamp>
-      <contributor>
-        <ip>127.0.0.1</ip>
-      </contributor>
-      <comment>Monitoring</comment>
-      <text xml:space="preserve" bytes="706">Specjalizujemy się w montażu, sprzedaży oraz serwisie systemów: monitoringowych, alarmowych, telewizji DVB-T oraz kontroli pojazdów. Dojazd do klienta oraz pomiar i projekt systemu bez opłat. Nasi klienci mogą liczyć na nowoczesne wysokiej klasy systemy oparte o sprawdzony oraz profesjonalny sprzęt. Na nasze wszystkie usługi wystawiamy fakturę lub paragon oraz udzielamy gwarancji. Nasi klienci mogą liczyć na fachową pomoc, przeszkolenie w obsłudze sprzętu oraz serwisie pogwarancyjnym. Systemy monitoringowe oraz alarmowe to świetne zabezpieczenie przed włamaniem. Nasze systemy mają bardzo nowoczesne rozwiązania oparte o najnowsze technologie.Działamy na terenie Śląska. &lt;br /&gt;</text>
-      <sha1>gsqg19wbee15ncongfks4hbtug8vchf</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
