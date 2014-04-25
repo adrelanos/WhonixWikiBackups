@@ -36518,14 +36518,14 @@ Whonix-Example-Implementation:
     <ns>0</ns>
     <id>299</id>
     <revision>
-      <id>7482</id>
-      <parentid>7207</parentid>
-      <timestamp>2014-04-11T22:12:10Z</timestamp>
+      <id>7566</id>
+      <parentid>7482</parentid>
+      <timestamp>2014-04-25T19:03:51Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="61494">{{Header}}
+      <text xml:space="preserve" bytes="62051">{{Header}}
 {{#seo:
 |description=Outdated, Deprecated, Archived Whonix Documentation.
 }}
@@ -37796,13 +37796,41 @@ qemu-img convert -p -O qcow2 ~/whonix.vdi ~/whonix.qcow2
 = Download / Snapshot =
 * Take a snapshot for both Whonix-Gateway and Whonix-Workstation on VirtualBox. So you can easily restore the original snapshot whenever you need a clean state.
 
+= Mediawiki Install =
+Get and install the mediawiki web app.
+
+&lt;pre&gt;
+sudo su
+cd /var/www
+wget http://releases.wikimedia.org/mediawiki/1.22/mediawiki-1.22.3.tar.gz
+tar -xvzf mediawiki-1.22.3.tar.gz
+mv mediawiki-1.22.3 wiki
+&lt;/pre&gt;
+
+Start iceweasel.
+
+Setup mediawiki. Go to http://127.0.0.1/wiki/mw-config/index.php.
+
+Use the following settings.
+
+&lt;pre&gt;
+Database name: wiki
+Datebase password: what you remembered above
+No more questions.
+Otherwise use the defaults.
+Name of wiki:
+Whonix
+&lt;/pre&gt;
+
+Download LocalSettings.php, safe as /home/user/LocalSettings.php.
+
 = Footnotes =
 &lt;references /&gt;
 
 {{Footer}}
 
 [[Category:Deprecated]]</text>
-      <sha1>j7txnk6jxsezlyvmfj6cbgmnf1gm4mj</sha1>
+      <sha1>7eof2avxvfubtsh4wonjll0i94ky8p5</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -64923,14 +64951,14 @@ license: public domain</text>
     <ns>0</ns>
     <id>978</id>
     <revision>
-      <id>6328</id>
-      <parentid>6327</parentid>
-      <timestamp>2014-03-05T19:23:56Z</timestamp>
+      <id>7567</id>
+      <parentid>6328</parentid>
+      <timestamp>2014-04-25T19:05:00Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="1372">{{Header}}
+      <text xml:space="preserve" bytes="1002">{{Header}}
 {{forkme}}
 
 '''UNFINISHED!''' &lt;br /&gt;
@@ -64952,36 +64980,27 @@ Get our wiki images and content database backup.
 git clone --depth=1 https://github.com/WhonixBOT/WhonixWikiBackups.git
 &lt;/pre&gt;
 
-Get and install the mediawiki web app.
+Get into /var/www folder and become root.
 
 &lt;pre&gt;
-sudo su
 cd /var/www
-wget http://releases.wikimedia.org/mediawiki/1.22/mediawiki-1.22.3.tar.gz
-tar -xvzf mediawiki-1.22.3.tar.gz
-mv mediawiki-1.22.3 wiki
+sudo su
 &lt;/pre&gt;
 
-Start iceweasel.
-
-Setup mediawiki. Go to http://127.0.0.1/wiki/mw-config/index.php.
-
-Use the following settings.
+Get into your /var/ folder.
 
 &lt;pre&gt;
-Database name: wiki
-Datebase password: what you remembered above
-No more questions.
-Otherwise use the defaults.
-Name of wiki:
-Whonix
+cd /var
 &lt;/pre&gt;
 
-Download LocalSettings.php, safe as /home/user/LocalSettings.php.
+Get our /var/www folder.
+
+&lt;pre&gt;
+git clone https://github.com/Whonix/www.git
+&lt;/pre&gt;
 
 &lt;pre&gt;
 cd wiki
-cp /home/user/LocalSettings.php /var/www/wiki/
 php maintenance/importDump.php /home/user/WhonixWikiBackups/dumpContentCurrent.xml
 php maintenance/update.php
 php maintenance/importImages.php /home/user/WhonixWikiBackups/mediafiles/
@@ -64990,7 +65009,7 @@ php maintenance/importImages.php /home/user/WhonixWikiBackups/mediafiles/
 Go to http://127.0.0.1/wiki/index.php/Main_Page.
 
 {{Footer}}</text>
-      <sha1>tpybxskyvblwcg7pk8f4ucfx8sap7ok</sha1>
+      <sha1>9sqx6yy0s4pghkqacwvliyevs43ew0t</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -67884,11 +67903,12 @@ sudo apparmor_parser -r /etc/apparmor.d/usr.bin.pidgin
     <ns>0</ns>
     <id>1118</id>
     <revision>
-      <id>7533</id>
-      <parentid>7507</parentid>
-      <timestamp>2014-04-14T20:28:36Z</timestamp>
+      <id>7568</id>
+      <parentid>7533</parentid>
+      <timestamp>2014-04-25T19:42:17Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Troubadour</username>
+        <id>230</id>
       </contributor>
       <text xml:space="preserve" bytes="4098">{{Header}}
 {{#seo:
@@ -67909,7 +67929,7 @@ kdesudo kwrite /etc/apparmor.d/usr.lib.icedove.icedove
 Paste the following content.
 
 &lt;pre&gt;
-# Last Modified: Mon Apr 14 20:02:32 UTC 2014
+# Last Modified: Fri Apr 25 19:38:17 UTC 2014
 #include &lt;tunables/global&gt;
 
 /usr/lib/icedove/icedove {
@@ -67935,8 +67955,8 @@ Paste the following content.
 	deny /etc/passwd r,
 	deny /etc/fstab r,
 
-	deny @{PROC} r,
-	deny @{PROC}/** r,
+#	deny @{PROC} r,
+#	deny @{PROC}/** r,
 
 	deny /sys/devices/system/cpu/ r,  
 	deny /sys/devices/system/cpu/present r,  
@@ -67988,21 +68008,22 @@ Paste the following content.
 	/lib/i386-linux-gnu/i686/cmov/libc-2.13.so r,
 	/lib/i386-linux-gnu/libprocps.so.0.0.1 r,
 	 
-#	@{PROC}/[0-9]*/maps r,
-#	@{PROC}/tty/drivers r,
-#	@{PROC}/[0-9]*/stat r,
-#	@{PROC}/[0-9]*/status r,
-#	@{PROC}/[0-9]*/task/*/stat r,
-#	@{PROC}/[0-9]*/cmdline r,
-#	@{PROC}/[0-9]*/fd/ r,
-#	@{PROC}/cpuinfo r,
-#	@{PROC}/filesystems r,
-#	@{PROC}/meminfo r,
-#	@{PROC}/stat r,
-#	@{PROC}/sys/kernel/pid_max r,
-#	@{PROC}/uptime r,
-#	@{PROC}/[0-9]*/mounts r,
-#	@{PROC}/[0-9]*/mountinfo r,
+	@{PROC}/ r,
+	@{PROC}/[0-9]*/maps r,
+	@{PROC}/tty/drivers r,
+	@{PROC}/[0-9]*/stat r,
+	@{PROC}/[0-9]*/status r,
+	@{PROC}/[0-9]*/task/*/stat r,
+	@{PROC}/[0-9]*/cmdline r,
+	@{PROC}/[0-9]*/fd/ r,
+	@{PROC}/cpuinfo r,
+	@{PROC}/filesystems r,
+	@{PROC}/meminfo r,
+	@{PROC}/stat r,
+	@{PROC}/sys/kernel/pid_max r,
+	@{PROC}/uptime r,
+	@{PROC}/[0-9]*/mounts r,
+	@{PROC}/[0-9]*/mountinfo r,
 	  
 	  
 	/usr/bin/kde4-config rix,
@@ -68061,7 +68082,7 @@ sudo apparmor_parser -r /etc/apparmor.d/usr.lib.icedove.icedove
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>0v5k833jwisvo0zsr1y7znanbr7bix6</sha1>
+      <sha1>hj5ytzjk9h1c66wyig45vl0yf29u3jh</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
