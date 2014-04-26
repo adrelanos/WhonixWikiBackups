@@ -17874,13 +17874,15 @@ To get a new circuit, press.
     <ns>0</ns>
     <id>150</id>
     <revision>
-      <id>7574</id>
-      <parentid>7541</parentid>
-      <timestamp>2014-04-26T05:41:50Z</timestamp>
+      <id>7577</id>
+      <parentid>7574</parentid>
+      <timestamp>2014-04-26T12:32:57Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="14877">&lt;!--
+      <comment>/* Tor Browser in Whonix differences */</comment>
+      <text xml:space="preserve" bytes="15043">&lt;!--
 Copyright:
 
    Whonix Tor Browser wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -17995,9 +17997,9 @@ It [https://trac.torproject.org/projects/tor/ticket/7255 might] be better not to
 
 = Tor Browser in Whonix differences =
 == Introduction ==
-The regular Tor Browser Bundle and Tor Browser in Whonix slightly differ. Tor Browser has been slightly modified by Whonix to work behind the Whonix-Gateway. The network and browser fingerprint however, is the same.
+The regular Tor Browser Bundle and Tor Browser in Whonix slightly differ. The environment Tor Browser is running in has been adjusted by Whonix to work behind the Whonix-Gateway. The network and browser fingerprint however, is the same.
 
-Tor Browser's internal update check mechanism is untouched and works fine. Default homepage is currently blank instead of original https://check.torproject.org.
+Tor Browser's internal update check mechanism is untouched and works fine. Default homepage is currently blank instead of original about:tor. &lt;ref&gt;This is because Whonix's torbrowser starter starts Tor Browser with about:blank as start page. in Whonix 8, Tor Browser's homepage setting is untouched.&lt;/ref&gt;
 
 == New Identity Button ==
 The New Identity button on Tor Browser isn't perfect yet (NOT a Whonix issue), there are open bugs.&lt;ref&gt;See [https://trac.torproject.org/projects/tor/query?status=accepted&amp;status=assigned&amp;status=needs_information&amp;status=needs_review&amp;status=new&amp;status=reopened&amp;order=priority&amp;col=id&amp;col=summary&amp;col=keywords&amp;col=status&amp;col=owner&amp;col=type&amp;col=priority&amp;keywords=tbb-linkability tbb-linkability] and [https://trac.torproject.org/projects/tor/query?status=accepted&amp;status=assigned&amp;status=needs_review&amp;status=needs_revision&amp;status=new&amp;status=reopened&amp;order=priority&amp;col=id&amp;col=summary&amp;col=keywords&amp;col=status&amp;col=owner&amp;col=type&amp;col=priority&amp;keywords=tbb-fingerprinting tbb-fingerprinting].&lt;/ref&gt;
@@ -18085,7 +18087,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>38dbl9btmtj1n9j316vif3rqgind481</sha1>
+      <sha1>hx4uthvkvmhm8ylvdf7gbdqbdr6ejy4</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -71195,6 +71197,24 @@ using Tor Browser is no longer possible due to a [https://trac.torproject.org/pr
       <comment>MsUpload</comment>
       <text xml:space="preserve" bytes="8">MsUpload</text>
       <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Sites de videogames gratuitos una posibilidad si no deseas pagar</title>
+    <ns>0</ns>
+    <id>1235</id>
+    <revision>
+      <id>7578</id>
+      <timestamp>2014-04-26T16:46:09Z</timestamp>
+      <contributor>
+        <username>RafaelEstevez</username>
+        <id>293</id>
+      </contributor>
+      <comment>Created page with &quot;Entre las gran cantidad de opciones de recreo que es posible hallar en internet, somos capaces de localizar a las sites dedicadas a games totalmente gratis como unas de las mu...&quot;</comment>
+      <text xml:space="preserve" bytes="2208">Entre las gran cantidad de opciones de recreo que es posible hallar en internet, somos capaces de localizar a las sites dedicadas a games totalmente gratis como unas de las mucho mas visionadas entre los gamers en la actualidad, gracias a muchisimas causas, como por ejemplo relacionadas con el tema monetario.  En este sentido, las blogs de videogames gratis proporcionan una gran cantidad de alternativas de tiempo libre con la unica condicion de tener una interconexion a el online, ya sea en nuestro personal computer, o en nuestros dispositivos moviles, como pueden tratarse de los Smartphones o tabletas. &lt;br&gt;&lt;br&gt;Pudiera ser que La mayoria de jugadores crean que los contenidos que podemos encontar en este tipo de webs dedicadas parecen de poca calidad, a pesar de todo esta caracteristica de ninguna manera resulta ser de esta forma y si efectivamente sabemos investigar, seremos capaces de encontrar juegos de mucha calidad. En este sentido, ocurre lo mismo que con los games de con coste, o sea, en absoluto la totalidad de lo que topamos puede ser de excelente categoria. Aunque, incluso podremos encontrar webs que otorgan un tipo de contenido mucho mas aceptable y con gran diversificacion. &lt;br&gt;Por otra parte, por si fuera poco hemos de mencionar que no solo el aspecto gratuito de todos estos contenidos es lo que hace capaz que el jugador visite cada vez mucho mas a el presente arquetipo de webs, sino de igual forma la razon de disfrutar accesibilidad a millares de contenidos de diverso genero. Dicha situacion hace que nos podamos recrear sobradamente en el presente tipo de sites, por que tiende a ser logico que hallemos cierto juego que se acople a la totalidad de nuestros habitos, hasta contenidos arcade clasicos que gustan a una infinidad de jugadores de videogames.&lt;br&gt;Podriamos decir que dicho arquetipo de paginas webs dedicadas a juegos gratis, resultan uno de los servicios y santuarios para los gamers en tanto que de dicha forma podrian ahorrar suficiente dinero sin dejar de pasar un buen rato, tanto en su equipos asi como en sus Smartphones y tabletas.  Tal y como podriamos corroborar las blogs dedicadas en juegos gratis continuan dandonos una asistencia sobresaliente.</text>
+      <sha1>herugse02rr3lzmmd6qyv45f61jc6m5</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
