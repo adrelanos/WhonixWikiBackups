@@ -5347,15 +5347,13 @@ See license file in Whonix source code.
     <ns>0</ns>
     <id>86</id>
     <revision>
-      <id>7050</id>
-      <parentid>6244</parentid>
-      <timestamp>2014-03-25T13:31:30Z</timestamp>
+      <id>7572</id>
+      <parentid>7571</parentid>
+      <timestamp>2014-04-26T04:03:50Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* Old News */</comment>
-      <text xml:space="preserve" bytes="18276">{{Header}}
+      <text xml:space="preserve" bytes="18296">{{Header}}
 {{#seo:
 |description=History of Whonix. TorBOX -&gt; aos -&gt; Whonix.
 }}
@@ -5470,47 +5468,48 @@ I did not want to delay this release any further. The mess with multiple project
 
 '''2012-09-05'''
 
-&lt;sup&gt;1&lt;/sup&gt; A bug in Whonix 0.2.1 when trying to update Tor has been [https://sourceforge.net/p/torbox/discussion/general/thread/e938932d/ reported]. The bug has been confirmed by Whonix developer adrelanos. Thanks to the anonymous user for reporting the bug and for testing the workaround! You can find the workaround under [[Deprecated#Updating Tor|Updating Tor]].
+&lt;sup&gt;1&lt;/sup&gt; A bug in aos 0.2.1 when trying to update Tor has been [https://sourceforge.net/p/torbox/discussion/general/thread/e938932d/ reported]. The bug has been confirmed by aos developer adrelanos. Thanks to the anonymous user for reporting the bug and for testing the workaround! You can find the workaround under [[Deprecated#Updating Tor|Updating Tor]].
 
 &lt;sup&gt;2&lt;/sup&gt; I am still having problems with the new webhost. Aos development made steady progress (see in [https://github.com/Whonix/Whonix git] if you are interested). The project is still very active and I am still interested and going to develop it further. One the webhost problem has been fixed, the 0.3.0 will be released.
 
 '''2012-07-17'''
 
-&lt;sup&gt;1&lt;/sup&gt; Rebranding. '''aos''' is the new project name. The process of rebranding is ongoing. Also all links have to be renamed. That will be done as soon as a new home for Whonix has been found.
+&lt;sup&gt;1&lt;/sup&gt; Rebranding. '''aos''' is the new project name. The process of rebranding is ongoing. Also all links have to be renamed. That will be done as soon as a new home for aos has been found.
 
-&lt;sup&gt;2&lt;/sup&gt; Whonix (previously called aos) source code 0.2.1 is now on [https://github.com/Whonix/Whonix github]. The source code will be polished so it will be easier to understand, maintain and contribute.
+&lt;sup&gt;2&lt;/sup&gt; A aos (previously called TorBOX) source code 0.2.1 is now on [https://github.com/Whonix/Whonix github]. The source code will be polished so it will be easier to understand, maintain and contribute. The ​devel branch contains latest changes.
 
 '''2012-07-16'''
 
-&lt;sup&gt;1&lt;/sup&gt; Whonix 0.2.1 has been released. It's Alpha quality software. There were no testers besides '''proper'''. You can download it. While this release contains many security enhancements, new minor usability bugs have been introduced. See [[Changelog]] for a comprehensive list of changes and known issues. '''adrelanos''' decided to release this even with the minor bugs since the security improvements are important. &lt;sup&gt;2&lt;/sup&gt; The gnome-terminal has a minor bug, at startup the it's black on black, therefor you can't see anything. Simply change the colors manually.
+&lt;sup&gt;1&lt;/sup&gt; TorBOX 0.2.1 has been released. It's Alpha quality software. There were no testers besides '''proper'''. You can download it. While this release contains many security enhancements, new minor usability bugs have been introduced. See [[Changelog]] for a comprehensive list of changes and known issues. '''adrelanos''' decided to release this even with the minor bugs since the security improvements are important. &lt;sup&gt;2&lt;/sup&gt; The gnome-terminal has a minor bug, at startup the it's black on black, therefor you can't see anything. Simply change the colors manually.
 
 &lt;sup&gt;3&lt;/sup&gt; '''proper''' has a new pseudonym, '''adrelanos'''.
 
-&lt;sup&gt;4&lt;/sup&gt; Due to [https://www.torproject.org/docs/trademark-faq.html.en trademark issues], Whonix must be rebranded. Whonix needs a new name, and a new home, a new website. Stay tuned for updates.
+&lt;sup&gt;4&lt;/sup&gt; Due to [https://www.torproject.org/docs/trademark-faq.html.en trademark issues], TorBOX must be rebranded. TorBOX needs a new name, and a new home, a new website. Stay tuned for updates.
 
 '''2012-07-14'''
 
-Whonix 0.2.1 will come out soon. Before officially releasing it, I'd like to have a few testers. If you are interested, please contact adrelanos a-t riseup do-t net.
+TorBOX 0.2.1 will come out soon. Before officially releasing it, I'd like to have a few testers. If you are interested, please contact adrelanos a-t riseup do-t net.
 
 '''2012-06-14'''
 
-A bad news and a good news. &lt;sup&gt;1&lt;/sup&gt; Unfortunately, the upcoming download version, Whonix 0.2.0, will not be functional on older hardware with non-PAE CPU's.
+A bad news and a good news.
+&lt;sup&gt;1&lt;/sup&gt; Unfortunately, the upcoming download version, TorBOX 0.2.0, will not be functional on older hardware with non-PAE CPU's.
 
-&lt;sup&gt;2&lt;/sup&gt; Fortunately, users with non-PAE CPU's, will still be able to build Whonix 0.2.0 from source. The situation may improve in future. The [[FAQ]] has been updated.
+&lt;sup&gt;2&lt;/sup&gt; Fortunately, users with non-PAE CPU's, will still be able to build TorBOX 0.2.0 from source. The situation may improve in future. The [[FAQ]] has been updated.
 
 '''2012-06-02'''
 
-&lt;sup&gt;1&lt;/sup&gt; The latest TorButton update may break Tor Browser within Whonix. We'll post soon an update with a solution. The Readme explains how you can update Tor Browser.
+&lt;sup&gt;1&lt;/sup&gt; The latest TorButton update may break Tor Browser within TorBOX. We'll post soon an update with a solution. The Readme explains how you can update Tor Browser.
 
-&lt;sup&gt;2&lt;/sup&gt; A bug crashing Whonix has been [http://ra.fnord.at/2011/05/easy-and-secure-anonymous-internet-usage/ reported offsite]. It happens when you try to run Whonix on older hardware, which does not support PAE. A new [[FAQ#Whonix crashes because of PAE?|FAQ entry]] with a interim solution has been posted. The bug will be fixed in Whonix 0.2.0. UPDATE: Unfortunately will only partially fixed, see news above.
+&lt;sup&gt;2&lt;/sup&gt; A bug crashing TorBOX has been [http://ra.fnord.at/2011/05/easy-and-secure-anonymous-internet-usage/ reported offsite]. It happens when you try to run TorBOX on older hardware, which does not support PAE. A new [[FAQ#Whonix crashes because of PAE?|FAQ entry]] with a interim solution has been posted. The bug will be fixed in TorBOX 0.2.0. UPDATE: Unfortunately will only partially fixed, see news above.
 
 '''2012-05-29'''
 
-&lt;sup&gt;1&lt;/sup&gt; The New Identity button of Tor Button in Tor Browser with Whonix is defunct. See [[Tor Browser#New Identity Button]] for an explanation why, what the New Identity button does and for a workaround.
+&lt;sup&gt;1&lt;/sup&gt; The New Identity button of Tor Button in Tor Browser with TorBOX is defunct. See [[Tor Browser#New Identity Button]] for an explanation why, what the New Identity button does and for a workaround.
 
 '''2012-05-21'''
 
-&lt;sup&gt;1&lt;/sup&gt; New article: All about [[Browser Plugins]] (such as Flash) in conjunction with Whonix.
+&lt;sup&gt;1&lt;/sup&gt; New article: All about [[Browser Plugins]] (such as Flash) in conjunction with TorBOX.
 
 '''2012-04-25'''
 
@@ -5522,50 +5521,52 @@ A bad news and a good news. &lt;sup&gt;1&lt;/sup&gt; Unfortunately, the upcoming
 
 '''2012-04-10'''
 
-We have a bunch of new/updated articles/stuff. Here is a selection. &lt;sup&gt;1&lt;/sup&gt; new: Rudimentary Whonix Support for Other Anonymizing Networks. (People who are only interested in Tor, do not have to read.)
+We have a bunch of new/updated articles/stuff. Here is a selection.
+&lt;sup&gt;1&lt;/sup&gt; new: Rudimentary TorBOX Support for Other Anonymizing Networks. (People who are only interested in Tor, do not have to read.)
 
-&lt;sup&gt;2&lt;/sup&gt; updated: Whonix/SecurityAndHardening.
+&lt;sup&gt;2&lt;/sup&gt; updated: TorBOX/SecurityAndHardening.
 
-&lt;sup&gt;3&lt;/sup&gt; new: Whonix/Trust.
+&lt;sup&gt;3&lt;/sup&gt; new: TorBOX/Trust.
 
 &lt;sup&gt;4&lt;/sup&gt; updated: Tunneling Proxy/SSH/VPN through Tor (Tor -&gt; Proxy/SSH/VPN).
 
-&lt;sup&gt;5&lt;/sup&gt; new: A Free example VPN working with Whonix for testing purposes.
+&lt;sup&gt;5&lt;/sup&gt; new: A Free example VPN working with TorBOX for testing purposes.
 
 &lt;sup&gt;6&lt;/sup&gt; new: Tunneling UDP over Tor (Update: see news)
 
-&lt;sup&gt;7&lt;/sup&gt; Optional new feature: Hide your Whonix usage / Torify the Whonix-Gateway
+&lt;sup&gt;7&lt;/sup&gt; Optional new feature: Hide your TorBOX usage / Torify the Tor-Gateway
 
-&lt;sup&gt;8&lt;/sup&gt; Dev only: Hardened Gentoo based Whonix-Gateway
+&lt;sup&gt;8&lt;/sup&gt; Dev only: Hardened Gentoo based Tor-Gateway
 
 '''2012-04-02'''
 
-&lt;sup&gt;1&lt;/sup&gt; '''Critical issue''' with /var/lib/tor for all users who downloaded the Whonix Download Binary images 0.1.3. Users who manually configured Whonix or used build from source are not affected.
+&lt;sup&gt;1&lt;/sup&gt; '''Critical issue''' with /var/lib/tor for all users who downloaded the TorBOX Download Binary images 0.1.3. Users who manually configured TorBOX or used build from source are not affected.
 
-On your Whonix-Gateway. 1. If you were using hidden services, backup your keys (/var/lib/tor/hidden_service/). 2. Execute the following:
+On your Tor-Gateway. 1. If you were using hidden services, backup your keys (/var/lib/tor/hidden_service/). 2. Execute the following:
 
 &lt;pre&gt;sudo -i 
 service tor stop
 rm -r /var/lib/tor/*
 service tor start
 exit&lt;/pre&gt;
-This will delete the content of the Tor data directory /var/lib/tor. Technical background: the Tor consensus and your [https://www.torproject.org/docs/faq.html.en#EntryGuards entry guards] are stored there. These should not be shared along all Whonix users.
+This will delete the content of the Tor data directory /var/lib/tor. Technical background: the Tor consensus and your [https://www.torproject.org/docs/faq.html.en#EntryGuards entry guards] are stored there. These should not be shared along all TorBOX users.
 
 '''2012-03-25'''
 
-&lt;sup&gt;1&lt;/sup&gt; Binary images for Whonix 0.1.3 are now available! These are affected by the critical issue above.
+&lt;sup&gt;1&lt;/sup&gt; Binary images for TorBOX 0.1.3 are now available! These are affected by the critical issue above.
 
 '''2012-03-24'''
 
-&lt;sup&gt;1&lt;/sup&gt; All users should update to 0.1.3! Users of Whonix 0.1.* can update using the update script. Users of Whonix versions prior the introduction of version numbers should reinstall following our build instructions or Physical Isolation instructions. Update: or download the latest ready-made images.
+&lt;sup&gt;1&lt;/sup&gt; All users should update to 0.1.3!
+Users of TorBOX 0.1.* can update using the update script. Users of TorBOX versions prior the introduction of version numbers should reinstall following our build instructions or Physical Isolation instructions. Update: or download the latest ready-made images.
 
 '''2012-03-22'''
 
-&lt;sup&gt;1&lt;/sup&gt; Whonix has now a logo. Thanks to XJ!
+&lt;sup&gt;1&lt;/sup&gt; TorBOX has now a logo. Thanks to XJ!
 
 '''2012-03-06'''
 
-&lt;sup&gt;1&lt;/sup&gt; Identity correlation through circuit sharing (Update: This is now closed, there is nothing we can do about till the current alpha version of Tor becomes stable; Update 2: Whonix is already working with the current Tor alpha and prepared for the next Tor stable, see Whonix-Gateway.sh.)
+&lt;sup&gt;1&lt;/sup&gt; Identity correlation through circuit sharing (Update: This is now closed, there is nothing we can do about till the current alpha version of Tor becomes stable; Update 2: TorBOX is already working with the current Tor alpha and prepared for the next Tor stable, see tor-gateway.sh.)
 
 '''2012-03-03'''
 
@@ -5573,7 +5574,7 @@ This will delete the content of the Tor data directory /var/lib/tor. Technical b
 
 '''2012-02-16'''
 
-&lt;sup&gt;1&lt;/sup&gt; This is resolved in the latest version of Whonix. Resolved in Whonix 0.1.3 and above. Only important prior Whonix 0.1.3. It would be prudent if all Whonix users would use the same time zone, as some applications do leak it, this hasn't been advised earlier. Do this on your Whonix-Workstation and on your Whonix-Gateway. Type in console
+&lt;sup&gt;1&lt;/sup&gt; This is resolved in the latest version of TorBOX. Resolved in TorBOX 0.1.3 and above. Only important prior TorBOX 0.1.3. It would be prudent if all TorBOX users would use the same time zone, as some applications do leak it, this hasn't been advised earlier. Do this on your Tor-Workstation and on your Tor-Gateway. Type in console
 
 &lt;pre&gt;sudo dpkg-reconfigure tzdata&lt;/pre&gt;
 then choose etc (at the bottom) and then choose UTC.
@@ -5587,7 +5588,7 @@ then choose etc (at the bottom) and then choose UTC.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>2a0uhhdlxzni9yzu4n28quhj3fnu910</sha1>
+      <sha1>4uuro55bh2s59oapuufd75uqi31qc21</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -6126,14 +6127,13 @@ See also [[TestVPN|Free example VPNs working with Whonix for testing purposes]].
     <ns>0</ns>
     <id>89</id>
     <revision>
-      <id>5899</id>
-      <parentid>3340</parentid>
-      <timestamp>2014-02-27T14:06:23Z</timestamp>
+      <id>7573</id>
+      <parentid>5899</parentid>
+      <timestamp>2014-04-26T05:21:58Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <text xml:space="preserve" bytes="6475">{{Header}}
+      <text xml:space="preserve" bytes="6466">{{Header}}
 {{#seo:
 |description=Avoid your Internet Service Provider from finding out, that you are Tor user.
 }}
@@ -6166,21 +6166,21 @@ Hiding the fact that you are a Tor user is very tricky to achieve. Be very caref
 
 Use either private and obfuscated bridges or a VPN/SSH proxy. On one hand, best chance to hide Tor might be to combine both ways, on the other hand, people who want to hide the fact that they are using Tor, may also have the same desire to hide the fact that they are using VPN or SSH.
 
-Using private and obfuscated bridges alone doesn't provide strong guarantees of hiding your the fact you are using Tor from your ISP. Quote&lt;ref&gt;https://mailman.boum.org/pipermail/tails-dev/2013-April/002950.html&lt;/ref&gt; &lt;ref&gt;http://www.webcitation.org/6G67ltL45&lt;/ref&gt; Jacob Appelbaum:
+Using private and obfuscated bridges alone doesn't provide strong guarantees of hiding the fact you are using Tor from your ISP. Quote&lt;ref&gt;https://mailman.boum.org/pipermail/tails-dev/2013-April/002950.html&lt;/ref&gt; &lt;ref&gt;http://www.webcitation.org/6G67ltL45&lt;/ref&gt; Jacob Appelbaum:
 
 &lt;blockquote&gt;
 Some pluggable transports may seek to obfuscate traffic or to morph it. However, they do not claim to hide that you are using Tor ''in all cases'' but rather in very specific cases. An example threat model includes a DPI device with limited time to make a classification choice - so the hiding is very specific to functionality and generally does not take into account endless data retention with retroactive policing.
 &lt;/blockquote&gt;
 
-Using a VPN or SSH does not provide strong guarantees of hiding your the fact you are using Tor from your ISP either. VPN's and SSH's are vulnerable to an attack called {{Code|website traffic fingerprinting}}&lt;ref&gt;For a reference for {{Code|website traffic fingerprinting}}, see [https://trac.torproject.org/projects/tor/wiki/doc/TorPlusVPN#VPNSSHFingerprinting VPN/SSH Fingerprinting] [http://www.webcitation.org/6Gmywywoj (w)]&lt;/ref&gt;.
+Using a VPN or SSH does not provide strong guarantees of hiding the fact you are using Tor from your ISP either. VPN's and SSH's are vulnerable to an attack called {{Code|website traffic fingerprinting}}&lt;ref&gt;For a reference for {{Code|website traffic fingerprinting}}, see [https://trac.torproject.org/projects/tor/wiki/doc/TorPlusVPN#VPNSSHFingerprinting VPN/SSH Fingerprinting] [http://www.webcitation.org/6Gmywywoj (w)]&lt;/ref&gt;.
 
 == Warnings ==
 
-* Think about, if your ISP knowing, you're a VPN or SSH user is acceptable to you.
+* Think about, if your ISP knowing you're a VPN or SSH user is acceptable to you.
 * Download Tor through a trusted internet service provider (in your (home) country) or through SSH or VPN (or before entering a hostile environment).
 * Setup the SSH/VPN tunnel or the private obfuscated bridges first. (Depending on what you want to use, read below.)
 * If you are extra paranoid, you should also download VirtualBox over Tor.
-* First, think about, how do you obtain the Tor Browser Bundle and obfuscated bridges and/or VPN and/or SSH, without your ISP noticing it? It's a chicken egg problem. You most likely have to get it from a trusted source. This isn't a problem, which Whonix could solve, it's a Tor upstream question.
+* First, think about, how do you obtain the Tor Browser Bundle and obfuscated bridges and/or VPN and/or SSH, without your ISP noticing it? It's a chicken-and-egg problem. You most likely have to get it from a trusted source. This isn't a problem which Whonix could solve, it's a Tor upstream question.
 * Another issue for hiding your Whonix usage is installing and/or downloading Whonix.
 * Download.
 ** If you download Whonix from sf.net that download will go unencrypted and your internet service provider (or SSH/VPN provider) will learn that you downloaded Whonix.
@@ -6188,8 +6188,8 @@ Using a VPN or SSH does not provide strong guarantees of hiding your the fact yo
 *** Since Whonix 7 and above, you no longer have to turn off your network connection while starting Whonix for the first time, &lt;ref&gt;In previous versions (up to Whonix 0.5.6 turning off ones network connection while starting whonix for the first time was still required to prevent connecting to the public Tor network.&lt;/ref&gt; thanks to {{Code2|whonixsetup - Connection Wizard}}. Then set up everything to hide your Tor/Whonix usage, either by using a SSH or VPN or private obfuscated bridge, which is also covered on this page.
 * Building from Source.
 ** You can learn everything about building Whonix, using the Tor Browser Bundle.
-** If you are building Whonix from source, the build scripts, will download a specific set of software packages with of apt-get, Tor Browser with curl, update-command-not-found, and your internet service provider could notice that you are building Whonix from source.
-** If you understand the build scripts, you can also manually build Whonix, by applying the commands and configuration files manually.
+** If you are building Whonix from source, the build scripts will download a specific set of software packages with of apt-get, Tor Browser with curl, update-command-not-found, and your internet service provider could notice that you are building Whonix from source.
+** If you understand the build scripts, you can also manually build Whonix by applying the commands and configuration files manually.
 ** See also [[Dev/Build Anonymity]].
 
 == Using a Proxy ==
@@ -6198,7 +6198,7 @@ Impossible! (The connection between you and your proxy is unencrypted. That goes
 
 == Using SSH or VPN ==
 
-See warnings above first. By default all traffic of Whonix-Gateway is routed through Tor! You need to route all that traffc through SSH/VPN.
+See warnings above first. By default all traffic of Whonix-Gateway is routed through Tor! You need to route all that traffic through SSH/VPN.
 
 Tunnel all Tor related traffic first through a VPN or SSH. See [[Tunnel Tor through proxy or VPN or SSH]] (ignore the proxy related stuff). This will hide the fact that you use Tor from your ISP. If the server is outside a national firewall this is also a way to circumvent Tor censorship.
 
@@ -6206,7 +6206,7 @@ If you do not trust any SSH or VPN providers, then anonymously host your own in 
 
 == Using private and obfuscated bridges ==
 
-See warnings above first. Set up Tor to use private and obfuscated [[Bridges]]. This makes it harder for ISPs and national firewalls to detect and block Tor but it does not prevent a dedicated adversary to find out that you are using Tor (research is ongoing, see obfsproxy).
+See warnings above first. Set up Tor to use private and obfuscated [[bridges]]. This makes it harder for ISPs and national firewalls to detect and block Tor but it does not prevent a dedicated adversary to find out that you are using Tor (research is ongoing, see obfsproxy).
 
 == Footnotes / References ==
 &lt;references/&gt;
@@ -6214,7 +6214,7 @@ See warnings above first. Set up Tor to use private and obfuscated [[Bridges]]. 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>segqr6gh5qmiuvgrb8zxp938tz0t9cz</sha1>
+      <sha1>ot5o8d18mpqou6ukv60hwfdau10znz5</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -17874,15 +17874,13 @@ To get a new circuit, press.
     <ns>0</ns>
     <id>150</id>
     <revision>
-      <id>7541</id>
-      <parentid>7540</parentid>
-      <timestamp>2014-04-14T21:56:37Z</timestamp>
+      <id>7574</id>
+      <parentid>7541</parentid>
+      <timestamp>2014-04-26T05:41:50Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* Whonix Proxy Settings */</comment>
-      <text xml:space="preserve" bytes="14863">&lt;!--
+      <text xml:space="preserve" bytes="14877">&lt;!--
 Copyright:
 
    Whonix Tor Browser wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -17926,15 +17924,15 @@ Tor Browser&lt;ref&gt;https://www.torproject.org/projects/torbrowser.html.en&lt;
 Here are a few things worth mentioning in the context of Whonix.
 
 = Anonymity vs Pseudonymity =
-When you were to use other browsers than Tor Browser, your IP/DNS would still be protected by Whonix, but you wouldn't profit from Tor Browser's the protocol level cleanup. Using other browser would be [[DoNot#Do_not_confuse_Anonymity_with_Pseudonymity.|pseudonymous rather than anonymous]].
+When you were to use other browsers than Tor Browser, your IP/DNS would still be protected by Whonix, but you wouldn't profit from Tor Browser's protocol level cleanup. Using other browsers would be [[DoNot#Do_not_confuse_Anonymity_with_Pseudonymity.|pseudonymous rather than anonymous]].
 
-Tor Browser in comparison to other browser is optimized for anonymity, it contains privacy enhancing patches&lt;ref&gt;https://www.torproject.org/projects/torbrowser/design/#firefox-patches&lt;/ref&gt; and add-ons&lt;ref&gt;See below.&lt;/ref&gt;. There are no other browsers other than Tor Browser capable of protocol level cleanup. When you use Tor Browser, you will blend in and share the [[Fingerprint]] of other Tor Browser users, which is a good thing.
+Tor Browser in comparison to other browsers is optimized for anonymity, it contains privacy enhancing patches&lt;ref&gt;https://www.torproject.org/projects/torbrowser/design/#firefox-patches&lt;/ref&gt; and add-ons&lt;ref&gt;See below.&lt;/ref&gt;. There are no other browsers other than Tor Browser capable of protocol level cleanup. When you use Tor Browser, you will blend in and share the [[Fingerprint]] of other Tor Browser users, which is a good thing.
 
 = HTTPS Encryption =
 
 Using HTTPS instead of HTTP encrypts your communication while browsing the web.
 
-All the data exchanged between your browser and the server you are visiting are encrypted. It prevents the [[Warning#Tor_exit_nodes_can_eavesdrop_on_communications|Tor exit relay to eavesdrop on your communication]].
+All the data exchanged between your browser and the server you are visiting are encrypted. It prevents the [[Warning#Tor_exit_nodes_can_eavesdrop_on_communications|Tor exit relay to eavesdrop on your communications]].
 
 HTTPS also includes mechanisms to authenticate the server you are communicating with. But those mechanisms can be flawed, [[Warning#Man-in-the-middle_attacks|as explained on our warning page]].
 
@@ -17988,7 +17986,7 @@ For more technical details you can refer to the Torbutton design document.&lt;re
 
 [[Image:noscript.png|NoScript logo|thumb]]
 
-NoScript also comes with Tor Browser and provides many protections, even thought JavaScript is enabled by default. You shouldn't mess with NoScript settings in Tor Browser unless you exactly know what you are doing.
+NoScript also comes with Tor Browser and provides many protections, even though JavaScript is enabled by default. You shouldn't mess with NoScript settings in Tor Browser unless you exactly know what you are doing.
 
 For more information you can refer to the NoScript [http://noscript.net/ website] and [http://noscript.net/features features].
 
@@ -17999,10 +17997,10 @@ It [https://trac.torproject.org/projects/tor/ticket/7255 might] be better not to
 == Introduction ==
 The regular Tor Browser Bundle and Tor Browser in Whonix slightly differ. Tor Browser has been slightly modified by Whonix to work behind the Whonix-Gateway. The network and browser fingerprint however, is the same.
 
-Tor Browser's internal update check mechanism is untouched and works fine. Default homepage is untouched and still https://check.torproject.org.
+Tor Browser's internal update check mechanism is untouched and works fine. Default homepage is currently blank instead of original https://check.torproject.org.
 
 == New Identity Button ==
-The New Identity button om Tor Browser isn't perfect yet (NOT a Whonix issue), there are open bugs.&lt;ref&gt;See [https://trac.torproject.org/projects/tor/query?status=accepted&amp;status=assigned&amp;status=needs_information&amp;status=needs_review&amp;status=new&amp;status=reopened&amp;order=priority&amp;col=id&amp;col=summary&amp;col=keywords&amp;col=status&amp;col=owner&amp;col=type&amp;col=priority&amp;keywords=tbb-linkability tbb-linkability] and [https://trac.torproject.org/projects/tor/query?status=accepted&amp;status=assigned&amp;status=needs_review&amp;status=needs_revision&amp;status=new&amp;status=reopened&amp;order=priority&amp;col=id&amp;col=summary&amp;col=keywords&amp;col=status&amp;col=owner&amp;col=type&amp;col=priority&amp;keywords=tbb-fingerprinting tbb-fingerprinting].&lt;/ref&gt;
+The New Identity button on Tor Browser isn't perfect yet (NOT a Whonix issue), there are open bugs.&lt;ref&gt;See [https://trac.torproject.org/projects/tor/query?status=accepted&amp;status=assigned&amp;status=needs_information&amp;status=needs_review&amp;status=new&amp;status=reopened&amp;order=priority&amp;col=id&amp;col=summary&amp;col=keywords&amp;col=status&amp;col=owner&amp;col=type&amp;col=priority&amp;keywords=tbb-linkability tbb-linkability] and [https://trac.torproject.org/projects/tor/query?status=accepted&amp;status=assigned&amp;status=needs_review&amp;status=needs_revision&amp;status=new&amp;status=reopened&amp;order=priority&amp;col=id&amp;col=summary&amp;col=keywords&amp;col=status&amp;col=owner&amp;col=type&amp;col=priority&amp;keywords=tbb-fingerprinting tbb-fingerprinting].&lt;/ref&gt;
 
 == Whonix Proxy Settings ==
 '''Short''':
@@ -18019,7 +18017,7 @@ For better isolation of different identities. For advanced users. Moved to the [
 
 == Introduction ==
 
-There is no auto-update feature for Tor Browser. You will be notified about new Tor Browser versions by [[whonixcheck]]. Additionally, Tor Browser's built in stock update notification mechanism also works in Whonix. Additionally it might be also wise to subscribe to https://blog.torproject.org for news.
+There is no auto-update feature for Tor Browser. You will be notified about new Tor Browser versions by [[whonixcheck]]. Additionally, Tor Browser's built in stock update notification mechanism also works in Whonix. Additionally it might also be wise to subscribe to https://blog.torproject.org for news.
 
 == Updating ==
 [[File:Tor Browser Update Check_001.png|Tor Browser Updater (Whonix) checking for updates.|thumb]]
@@ -18036,7 +18034,7 @@ Applications -&gt; System -&gt; Tor Browser Updater
 
 A future update of Tor Browser by The Tor Project might make Whonix's Tor Browser Updater or Tor Browser running in Whonix-Workstation unusable. In case Tor Browser (Updater) inside Whonix-Workstation breaks, a news with instructions on how to fix the issue will be posted within a few days. If not, the Whonix developers are not aware of the issue.
 
-If the Tor Browser update script is ever broken, you are advised to update manually, see [[Manually_Updating_Tor_Browser]].
+If the Tor Browser update script is ever broken, you are advised to update manually, see [[Manually Updating Tor Browser]].
 
 = Local Connections =
 '''Note''', accessing 127.0.0.1 {{Tor_Browser_Local_Connections}}.
@@ -18087,7 +18085,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>4mbihyaxbdawa7m4xq0ufnmkhu21r6s</sha1>
+      <sha1>38dbl9btmtj1n9j316vif3rqgind481</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -32729,14 +32727,15 @@ A similar project published another leak test. Read [https://github.com/ra--/Tor
     <ns>0</ns>
     <id>265</id>
     <revision>
-      <id>5902</id>
-      <parentid>3290</parentid>
-      <timestamp>2014-02-27T14:08:41Z</timestamp>
+      <id>7576</id>
+      <parentid>5902</parentid>
+      <timestamp>2014-04-26T09:38:22Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="5363">{{Header}}
+      <comment>/* Method 4 */</comment>
+      <text xml:space="preserve" bytes="5351">{{Header}}
 {{#seo:
 |description=How to change the User Interface Language for your Operating System and Tor Browser
 }}
@@ -32973,7 +32972,7 @@ vi
 zh-CN
 &lt;/pre&gt;
 
-To check if further languages are supported visit https://www.torproject.org/dist/torbrowser/linux/ or http://idnxcnkne4qt76tg.onion/dist/torbrowser/linux/. 
+To check if further languages are supported visit https://www.torproject.org/dist/torbrowser/ or http://idnxcnkne4qt76tg.onion/dist/torbrowser/. 
 
 Syntax.
 
@@ -32992,7 +32991,7 @@ Replace &quot;vi&quot; with &quot;zh-CN&quot; for Chinese and so on.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>o8koa9105egml9eazt78xwymgn3mb87</sha1>
+      <sha1>36wixx2hf2oz92sut7v6h4cl5y69aei</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -64951,14 +64950,14 @@ license: public domain</text>
     <ns>0</ns>
     <id>978</id>
     <revision>
-      <id>7567</id>
-      <parentid>6328</parentid>
-      <timestamp>2014-04-25T19:05:00Z</timestamp>
+      <id>7570</id>
+      <parentid>7569</parentid>
+      <timestamp>2014-04-25T23:09:05Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="1002">{{Header}}
+      <text xml:space="preserve" bytes="1036">{{Header}}
 {{forkme}}
 
 '''UNFINISHED!''' &lt;br /&gt;
@@ -65000,16 +64999,15 @@ git clone https://github.com/Whonix/www.git
 &lt;/pre&gt;
 
 &lt;pre&gt;
-cd wiki
-php maintenance/importDump.php /home/user/WhonixWikiBackups/dumpContentCurrent.xml
-php maintenance/update.php
-php maintenance/importImages.php /home/user/WhonixWikiBackups/mediafiles/
+php /var/www/wiki/maintenance/importDump.php /home/user/WhonixWikiBackups/dumpContentCurrent.xml
+php /var/www/wiki/maintenance/update.php
+php /var/www/wiki/maintenance/importImages.php /home/user/WhonixWikiBackups/mediafiles/
 &lt;/pre&gt;
 
 Go to http://127.0.0.1/wiki/index.php/Main_Page.
 
 {{Footer}}</text>
-      <sha1>9sqx6yy0s4pghkqacwvliyevs43ew0t</sha1>
+      <sha1>rweaxq976m37wjplo2g6n8bf029lghf</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -71132,17 +71130,16 @@ curl.whonix-orig https://check.torproject.org
     <ns>10</ns>
     <id>1224</id>
     <revision>
-      <id>7495</id>
-      <timestamp>2014-04-12T18:00:11Z</timestamp>
+      <id>7575</id>
+      <parentid>7495</parentid>
+      <timestamp>2014-04-26T05:42:41Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>Created page with &quot;&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt; using Tor Browser is no longer possible due to a [https://trac.torproject.org/projects/tor/ticket/10419 change] in Tor Browser by The Tor Pro...&quot;</comment>
-      <text xml:space="preserve" bytes="609">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
-using Tor Browser is no longer possible due to a [https://trac.torproject.org/projects/tor/ticket/10419 change] in Tor Browser by The Tor Project. You [[Tor_Browser#Change.2FRemove_Proxy_Settings|could set to transparent torification]], but then you would be vulnerable fingerprinting issues. See [https://trac.torproject.org/projects/tor/ticket/10419 ticket] for more. [https://www.whonix.org/forum/index.php/topic,219.msg1411.html Related Whonix Forum Topic] ; [https://trac.torproject.org/projects/tor/ticket/11493 Tor Browser Bug Report]
+      <text xml:space="preserve" bytes="612">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
+using Tor Browser is no longer possible due to a [https://trac.torproject.org/projects/tor/ticket/10419 change] in Tor Browser by The Tor Project. You [[Tor_Browser#Change.2FRemove_Proxy_Settings|could set to transparent torification]], but then you would be vulnerable to fingerprinting issues. See [https://trac.torproject.org/projects/tor/ticket/10419 ticket] for more. [https://www.whonix.org/forum/index.php/topic,219.msg1411.html Related Whonix Forum Topic] ; [https://trac.torproject.org/projects/tor/ticket/11493 Tor Browser Bug Report]
 &lt;noinclude&gt;{{Footer}}&lt;/noinclude&gt;</text>
-      <sha1>jylklctsa5tko9nmj62keb731z5idex</sha1>
+      <sha1>163ghh8k52yyehm5o6ft5zn2o6vnofa</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
