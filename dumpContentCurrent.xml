@@ -798,14 +798,13 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>19</id>
     <revision>
-      <id>7560</id>
-      <parentid>7520</parentid>
-      <timestamp>2014-04-21T10:26:44Z</timestamp>
+      <id>7596</id>
+      <parentid>7560</parentid>
+      <timestamp>2014-04-28T02:34:01Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <text xml:space="preserve" bytes="15256">{{Header}}
+      <text xml:space="preserve" bytes="15263">{{Header}}
 &lt;!--
 Copyright:
 
@@ -903,7 +902,7 @@ It is important to check the integrity of the virtual machine images you downloa
 Warning:
 
 &lt;!--T:201--&gt;
-Do not continue if verification failed! You risk using infected or erroneous files! The whole point of verification is verify file integrity.
+Do not continue if verification failed! You risk using infected or erroneous files! The whole point of verification is to verify the file integrity.
 &lt;/translate&gt;
 }}
 
@@ -1179,7 +1178,7 @@ under certain conditions; see the wiki source code for details.
 &lt;translate&gt;&lt;!--T:253--&gt;
 Some icons created by third parties, Free licenses as well, see [[Authorship#Images_created_by_third_parties|Authorship Images created by third parties]] for details.
 &lt;/translate&gt;[[Category:Documentation]]{{Footer}}</text>
-      <sha1>meo8b5lfbmzc7f6lrrpptao7flozwc9</sha1>
+      <sha1>83dsssogvhwrf4s701gw2pbjtnnva35</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -3778,16 +3777,14 @@ As soon as i2p over Tor is working in Whonix-Workstation, you can probably follo
     <ns>0</ns>
     <id>63</id>
     <revision>
-      <id>7497</id>
-      <parentid>6272</parentid>
-      <timestamp>2014-04-12T18:02:01Z</timestamp>
+      <id>7595</id>
+      <parentid>7497</parentid>
+      <timestamp>2014-04-28T02:24:01Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* Setup */</comment>
-      <text xml:space="preserve" bytes="10820">{{#seo:
-|description=Anonymously Hosting any Tor Hidden Services any Server with Whonix
+      <text xml:space="preserve" bytes="10826">{{#seo:
+|description=Anonymously Hosting Tor Hidden Services on any Server with Whonix
 }}
 {{Header}}
 = Tor Hidden Services - EASY =
@@ -3796,12 +3793,12 @@ As soon as i2p over Tor is working in Whonix-Workstation, you can probably follo
 
 Be sure to read and understand [https://www.torproject.org/docs/hidden-services.html.en Tor: Hidden Service Protocol] (general information) and [https://www.torproject.org/docs/tor-hidden-service.html.en Configuring Hidden Services for Tor] (standard setup, no isolated proxy) first. Note that hidden services are always only reachable using Tor or tunnel services, such as tor2web, ([https://trac.torproject.org/projects/tor/wiki/doc/tor2web be careful]).
 
-You do not need SSL &lt;ref&gt;https://en.wikipedia.org/wiki/Secure_Sockets_Layer&lt;/ref&gt;, because connections to Tor hidden services are end-to-end encrypted by default &lt;ref&gt;http://www.quora.com/Is-there-an-SSL-equivalent-for-Tor-Hidden-Services&lt;/ref&gt;. &lt;ref&gt;To be exact, only tor-to-tor, see [[Hidden_Services#Notes_about_End-to-end_security_of_Hidden_Services|Notes about End-to-end security of Hidden Services]].&lt;/ref&gt; This is handy, as you do not have to bother with self singed certificates or certificate authorities.
+You do not need SSL &lt;ref&gt;https://en.wikipedia.org/wiki/Secure_Sockets_Layer&lt;/ref&gt;, because connections to Tor hidden services are end-to-end encrypted by default &lt;ref&gt;http://www.quora.com/Is-there-an-SSL-equivalent-for-Tor-Hidden-Services&lt;/ref&gt;. &lt;ref&gt;To be exact, only tor-to-tor, see [[Hidden_Services#Notes_about_End-to-end_security_of_Hidden_Services|Notes about End-to-end security of Hidden Services]].&lt;/ref&gt; This is handy, as you do not have to bother with self signed certificates or certificate authorities.
 
 An adversary can see whether the service (and presumably Tor) is up and running or not.
 
 == Hosting ANY Hidden Services ==
-You can provide '''any''' server service, which relies on TCP, such a web servers, irc servers, chat servers and so forth. UDP and IPv6 are not supported by the Tor network, but if required you could use [[OnionCat]] as workaround.
+You can provide '''any''' server service, which relies on TCP, such as web servers, IRC servers, chat servers and so forth. UDP and IPv6 are not supported by the Tor network, but if required you could use [[OnionCat]] as a workaround.
 
 Below on this page is an ''example'' for a Hidden Webserver. On the [[Voip]] page is an example for a Hidden Voip Mumble Server.
 
@@ -3811,9 +3808,9 @@ While using Whonix we're quite confident that there are no IP/DNS leaks, but har
 
 Beware of application level leaks. See [[Protocol-Leak-Protection and Fingerprinting-Protection]] for definition. For example,
 
-* If you are using the Apache web server, it is advised to install [http://packages.debian.org/source/wheezy/libapache-mod-removeip libapache-mod-removeip]&lt;ref&gt;&lt;code&gt;sudo apt-get install libapache-mod-removeip&lt;/code&gt;&lt;/ref&gt; as well. A combination of Apache and mediawiki without libapache-mod-removeip being installed, wouldn't be the optimal case, since mediawiki by default puts IPs of anonymous editors in the public accessible editor logs. The IP would be 192.168.0.10. That could not be used to identify you, because that is not your real external IP address, but it would identify the server as a hidden service behind a Whonix-Gateway.&lt;ref&gt;Since its easy to know that the internal LAN IP 192.168.0.10 is usually used by Whonix-Gateway.&lt;/ref&gt;
+* If you are using the Apache web server, it is advised to install [http://packages.debian.org/source/wheezy/libapache-mod-removeip libapache-mod-removeip]&lt;ref&gt;&lt;code&gt;sudo apt-get install libapache-mod-removeip&lt;/code&gt;&lt;/ref&gt; as well. A combination of Apache and mediawiki without libapache-mod-removeip being installed, wouldn't be the optimal case, since mediawiki by default puts IPs of anonymous editors in the public accessible editor logs. The IP would be 192.168.0.10. That could not be used to identify you, because that is not your real external IP address, but it would identify the server as a hidden service behind a Whonix-Gateway.&lt;ref&gt;Since it's easy to know that the internal LAN IP 192.168.0.10 is usually used by Whonix-Gateway.&lt;/ref&gt;
 
-Therefore any instructions how to hide the IP address for your specific server software should be applied. Also other hardening instructions are recommended to apply. For example,
+Therefore any instructions on how to hide the IP address for your specific server software should be applied. Also other hardening instructions are recommended to apply. For example,
 
 * If you are using the Apache web server, see the following footnotes. &lt;ref&gt;
 (Source: [http://sourceforge.net/p/whonix/discussion/general/thread/407fce8f/?limit=25#478a old forum])
@@ -3983,7 +3980,7 @@ Hidden Services with Whonix are still safer than running Tor and the server soft
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>mespyuetat0gfi3ehhp1d3uoxn8spxh</sha1>
+      <sha1>sb9t4u2y3xzils2eqb40ldvngnffovf</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -5347,13 +5344,13 @@ See license file in Whonix source code.
     <ns>0</ns>
     <id>86</id>
     <revision>
-      <id>7572</id>
-      <parentid>7571</parentid>
-      <timestamp>2014-04-26T04:03:50Z</timestamp>
+      <id>7593</id>
+      <parentid>7592</parentid>
+      <timestamp>2014-04-28T01:33:08Z</timestamp>
       <contributor>
         <ip>127.0.0.1</ip>
       </contributor>
-      <text xml:space="preserve" bytes="18296">{{Header}}
+      <text xml:space="preserve" bytes="18372">{{Header}}
 {{#seo:
 |description=History of Whonix. TorBOX -&gt; aos -&gt; Whonix.
 }}
@@ -5456,11 +5453,11 @@ Download Source Code: https://github.com/Whonix/Whonix/archive/0.4.5.1.zip
 
 = Old News =
 
-'''2012-09-10'''
+'''2012-10-09'''
 
 Whonix '''ALPHA''' version '''0.4.5''' has been released and is ready for testing. Many usability bugs have been fixed. Security was further and slightly improved. Since it's an alpha version, there can be further unknown bugs. Known bugs are on the [[Download]] page. Changelog: [[Changelog]] Release announcement: [https://lists.torproject.org/pipermail/tor-talk/2012-October/025921.html tor-talk Mailing List]; [http://lists.debian.org/debian-derivatives/2012/10/msg00007.html Debian Derivatives Mailing List]; [http://sourceforge.net/mailarchive/forum.php?forum_name=whonix-devel Whonix Devel Mailing List]
 
-'''2012-28-09'''
+'''2012-09-28'''
 
 Whonix '''ALPHA''' version '''0.4.4''' has been released and is ready for testing. There some usability bugs inside, but workarounds are available in this readme. Since it's an alpha version, there can be further unknown bugs.
 
@@ -5493,6 +5490,7 @@ TorBOX 0.2.1 will come out soon. Before officially releasing it, I'd like to hav
 '''2012-06-14'''
 
 A bad news and a good news.
+
 &lt;sup&gt;1&lt;/sup&gt; Unfortunately, the upcoming download version, TorBOX 0.2.0, will not be functional on older hardware with non-PAE CPU's.
 
 &lt;sup&gt;2&lt;/sup&gt; Fortunately, users with non-PAE CPU's, will still be able to build TorBOX 0.2.0 from source. The situation may improve in future. The [[FAQ]] has been updated.
@@ -5522,6 +5520,7 @@ A bad news and a good news.
 '''2012-04-10'''
 
 We have a bunch of new/updated articles/stuff. Here is a selection.
+
 &lt;sup&gt;1&lt;/sup&gt; new: Rudimentary TorBOX Support for Other Anonymizing Networks. (People who are only interested in Tor, do not have to read.)
 
 &lt;sup&gt;2&lt;/sup&gt; updated: TorBOX/SecurityAndHardening.
@@ -5583,12 +5582,12 @@ then choose etc (at the bottom) and then choose UTC.
 
 '''2012-01-11'''
 
-&lt;sup&gt;1&lt;/sup&gt; Project started. [https://trac.torproject.org/projects/tor/wiki/doc/TorBOX?version=1 Historical very first version].
+&lt;sup&gt;1&lt;/sup&gt; Project started. [https://trac.torproject.org/projects/tor/wiki/doc/TorBOX?action=history Historical] very [https://trac.torproject.org/projects/tor/wiki/doc/TorBOX?version=1 first version].
 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>4uuro55bh2s59oapuufd75uqi31qc21</sha1>
+      <sha1>o4fz7m1nll6fz46ir6blo54pnzphq5y</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -5598,15 +5597,13 @@ then choose etc (at the bottom) and then choose UTC.
     <ns>0</ns>
     <id>87</id>
     <revision>
-      <id>7362</id>
-      <parentid>6955</parentid>
-      <timestamp>2014-04-07T21:34:29Z</timestamp>
+      <id>7598</id>
+      <parentid>7362</parentid>
+      <timestamp>2014-04-28T03:18:37Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* Changing MAC address */</comment>
-      <text xml:space="preserve" bytes="22138">&lt;!--
+      <text xml:space="preserve" bytes="22135">&lt;!--
 Copyright:
 
    Whonix Pre Install Advice wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -5756,16 +5753,16 @@ gufw
 === Microphone ===
 Does your computer or notebook have microphone? You could have a built-in one, but just never noticed - mute it, just in case. This chapters only applies to non-USB microphones, not to USB microphones.
 
-Microphones connected to your host get available to Virtual Box virtual machines such as Whonix-Workstation. {{Code2|Virtual Box does not yet have a feature to disable microphones inside virtual machines.}}&lt;ref&gt;https://www.virtualbox.org/ticket/12026&lt;/ref&gt; If your Whonix-Workstation ever gets compromised by malware, an adversary could eavesdrop. Unless you plan to use [[Voip]] inside Whonix-Workstation, it's recommended to mute your microphone in your host operating system's audio settings. And even if you plan to use [[Voip]] sometimes, you should mute and possibly unplug your microphone after use.
+Microphones connected to your host get available to VirtualBox virtual machines such as Whonix-Workstation. {{Code2|VirtualBox does not yet have a feature to disable microphones inside virtual machines.}}&lt;ref&gt;https://www.virtualbox.org/ticket/12026&lt;/ref&gt; If your Whonix-Workstation ever gets compromised by malware, an adversary could eavesdrop. Unless you plan to use [[Voip]] inside Whonix-Workstation, it's recommended to mute your microphone in your host operating system's audio settings. And even if you plan to use [[Voip]] sometimes, you should mute and possibly unplug your microphone after use.
 
-External microphones should be unplugged, that's even safer. If its a built-in microphone and in case you decided to disable your microphone, you can also check in BIOS, if the microphone can be disabled. Removing built-in microphones may be a bit more difficult, but if you have the skills to remove it, go for it. Obviously, a host without any microphones, can not eavesdrop even in case the host is compromised.
+External microphones should be unplugged, that's even safer. If it's a built-in microphone and in case you decided to disable your microphone, you can also check in BIOS if the microphone can be disabled. Removing built-in microphones may be a bit more difficult, but if you have the skills to remove it, go for it. Obviously, a host without any microphones, can not eavesdrop even in case the host is compromised.
 
 === Webcam ===
 Does your computer or notebook have webcam? You could have a built-in one, but just never noticed - check your computer's datasheet and operating system's hardware manager.
 
 Unless you plan to use a webcam inside Whonix-Workstation, it's recommended to disable or possibly remove your webcam. And even if you plan to use a webcam sometimes, you should disable and possibly unplug your webcam after use.
 
-External webcams should be unplugged, that's even safer. If its a built-in webcams and in case you decided to disable your microphone, you can also check in BIOS, if the webcam can be disabled. Removing built-in webcams may be a bit more difficult, but if you have the skills to remove it, go for it. Alternatively, cover it up. Obviously, a host without any webcams, can not record even in case the host is compromised.
+External webcams should be unplugged, that's even safer. If it's a built-in webcam and in case you decided to disable your microphone, you can also check in BIOS if the webcam can be disabled. Removing built-in webcams may be a bit more difficult, but if you have the skills to remove it, go for it. Alternatively, cover it up. Obviously, a host without any webcams, can not record even in case the host is compromised.
 
 == Whonix information ==
 
@@ -5920,7 +5917,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>bmpt9fpm9l6q73j8difaseczxc4kbva</sha1>
+      <sha1>jyer98mh1wiysk00klksqbtqs47gvi9</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -7792,15 +7789,13 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
     <ns>0</ns>
     <id>96</id>
     <revision>
-      <id>7336</id>
-      <parentid>7335</parentid>
-      <timestamp>2014-04-06T14:46:51Z</timestamp>
+      <id>7599</id>
+      <parentid>7336</parentid>
+      <timestamp>2014-04-28T03:19:40Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* Hardware Serials */</comment>
-      <text xml:space="preserve" bytes="71366">{{Header}}
+      <text xml:space="preserve" bytes="71367">{{Header}}
 {{#seo:
 |description=Comparison of Whonix, Tails, Tor Browser Bundle, QubesOS TorVM and corridor. About anonymity, privacy, security, circumvention, attacks, fingerprinting, usability, features, etc.
 }}
@@ -7901,7 +7896,7 @@ This page contains the comparisons of Whonix, Tails, Tor Browser and Qubes OS To
 | ?
 |{{No}}
 |-
-| style=&quot;height: 27px;background-color: #f9f9f9&quot;| Requires VirtualBox &lt;ref name=vmneutralcolor&gt;In neutral blue color, because its in the nature of the project to require or not require this virtualizer.&lt;/ref&gt;
+| style=&quot;height: 27px;background-color: #f9f9f9&quot;| Requires VirtualBox &lt;ref name=vmneutralcolor&gt;In neutral blue color, because it's in the nature of the project to require or not require this virtualizer.&lt;/ref&gt;
 | {{BlueBackground}} If not using Physical Isolation, yes. &lt;ref name=virtual /&gt;
 | {{BlueBackground}} No
 | {{BlueBackground}} No
@@ -9039,7 +9034,7 @@ One has always to be very careful, when talking about others. Especially, when t
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Design]]</text>
-      <sha1>7733mlb932mzq3bxepijj6pow8m25z7</sha1>
+      <sha1>bcseakbmg8wfpn5yev7nvvwcfw3x8rk</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -9450,15 +9445,14 @@ Whether it's worth to combine Tor with a VPN, either as pre-Tor-VPN (user -&gt; 
     <ns>0</ns>
     <id>98</id>
     <revision>
-      <id>7561</id>
-      <parentid>7549</parentid>
-      <timestamp>2014-04-22T18:28:47Z</timestamp>
+      <id>7590</id>
+      <parentid>7561</parentid>
+      <timestamp>2014-04-28T00:33:37Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* Basic Protection */</comment>
-      <text xml:space="preserve" bytes="20871">{{Header}}
+      <comment>/* Possible */</comment>
+      <text xml:space="preserve" bytes="20784">{{Header}}
 {{#seo:
 |description=Prevent Identity Correlation through Circuit Sharing by using Tor Stream Isolation
 }}
@@ -9737,7 +9731,7 @@ Total protection is only possible, if you honor the advice above and only use on
 === Limited workarounds for Tor Browser ===
 
 ==== Possible ====
-1. Weakest: Close Tor Browser, go to Whonix-Gateway, start [[Tor Controller|arm]], press &quot;n&quot; for new identity, restart Tor Browser. (Will be simpler in next Whonix version, Tor Buttons new identity feature will just work.)
+1. Weakest: On Tor Browser, click on the Torbutton and then click on &quot;New Identity&quot;. However your current browser session will be lost.
 
 2. Better: Install a second browser and configure it to use its own SocksPort, see [[Tor_Browser#More_than_one_Tor_Browser_in_Whonix|More than one Tor Browser in Whonix]].
 
@@ -9833,7 +9827,7 @@ Stream Isolation Graphic has been contributed by: Cuan Knaggs – graphic and we
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Design]]</text>
-      <sha1>qjyo4atr14q81eidhgfez2017251y5q</sha1>
+      <sha1>23t89vndf4na26hu01s3knjsk071grm</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -12501,15 +12495,13 @@ sudo umount /mnt/whonix
     <ns>0</ns>
     <id>115</id>
     <revision>
-      <id>6948</id>
-      <parentid>6947</parentid>
-      <timestamp>2014-03-17T13:14:03Z</timestamp>
+      <id>7603</id>
+      <parentid>6948</parentid>
+      <timestamp>2014-04-28T03:25:40Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>&quot;linux-headers-$(uname -r)&quot; is installed by default on Whonix 8 and above</comment>
-      <text xml:space="preserve" bytes="5628">{{Header}}
+      <text xml:space="preserve" bytes="5627">{{Header}}
 {{#seo:
 |description=Instructions for installing VirtualBox Guest Additions in Whonix. Shared Folders, Mouse Integration, etc.
 }}
@@ -12519,7 +12511,7 @@ sudo umount /mnt/whonix
 
 * '''Weakens security in general as per [[Security Guide]] (Harden Virtualbox).'''
 * Also see article, [http://www.phoronix.com/scan.php?page=news_item&amp;px=OTk5Mw The VirtualBox Kernel Driver Is Tainted Crap] &lt;ref&gt;http://www.webcitation.org/6HqJVN0br&lt;/ref&gt; | Opposite statements: &lt;ref&gt;http://lists.debian.org/debian-devel/2013/08/msg00112.html&lt;/ref&gt;, &lt;ref&gt;http://lists.debian.org/debian-devel/2013/08/msg00116.html&lt;/ref&gt;
-* Clipboard sharing is disabled by default in the Virtual Box VM settings for Whonix-Gateway and Whonix-Workstation. Enable it only temporarily in case you really need it. Go to VirtualBox machine settings -&gt; General -&gt; Advanced -&gt; Shared Clipboard -&gt; Bidirectional -&gt; ok.
+* Clipboard sharing is disabled by default in the VirtualBox VM settings for Whonix-Gateway and Whonix-Workstation. Enable it only temporarily in case you really need it. Go to VirtualBox machine settings -&gt; General -&gt; Advanced -&gt; Shared Clipboard -&gt; Bidirectional -&gt; ok.
 
 
 * &lt;s&gt;Additionally they give the Virtual Machine access to the host's (built-in) microphone. Many notebooks have a built-in microphone. In case you install Guest Additions anyway, better cover it up or remove your microphone. Forum question: [https://forums.virtualbox.org/viewtopic.php?f=1&amp;t=56820 VirtualBox Forum: How disable microphone when guest additions are installed?] Feature Request: [https://www.virtualbox.org/ticket/12023 disable microphone when guest additions are installed]&lt;/s&gt;
@@ -12620,7 +12612,7 @@ Safe and reboot. Done.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>6s1d9oprzx63lf5ql5863r29unb2hur</sha1>
+      <sha1>bdvhv09mkkww30pdom4md4o3jjvsuib</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -12859,16 +12851,13 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>118</id>
     <revision>
-      <id>7514</id>
-      <parentid>7366</parentid>
-      <timestamp>2014-04-13T14:51:11Z</timestamp>
+      <id>7600</id>
+      <parentid>7514</parentid>
+      <timestamp>2014-04-28T03:21:20Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <minor/>
-      <comment>Text replace - &quot;2000px-Feed-icon.svg.png&quot; to &quot;Feed-icon.jpeg&quot;</comment>
-      <text xml:space="preserve" bytes="7988">__NOTITLE__
+      <text xml:space="preserve" bytes="7989">__NOTITLE__
 {{#seo:
 |description=Donate, Spread, Follow, Mirror, Translate, Develop, Testing. Contribute to Free Software / Open Source.
 }}
@@ -12996,7 +12985,7 @@ Your task could include, depending on your interest:
 * uploading them
 * updating the download page
 * blog/mailing-lists posting
-* fixing build documentation, if its simple or reporting a bug
+* fixing build documentation, if it's simple or reporting a bug
 * [[Dev/Redistribution]]
 * [[Test]]ing (will be easy and fast as soon we add a script)
 
@@ -13083,7 +13072,7 @@ The PayPal logo (60px-De-pp-logo-200px.png), the subscribe button (subscribeCC_L
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Development]]</text>
-      <sha1>hkiivo7e3jhbzu8yz6gl5nz3k0zofug</sha1>
+      <sha1>hniu0mhvcmd16gunffavvhs69myzay7</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -13841,15 +13830,13 @@ See [[Remailer]].
     <ns>0</ns>
     <id>122</id>
     <revision>
-      <id>7367</id>
-      <parentid>5900</parentid>
-      <timestamp>2014-04-07T21:37:45Z</timestamp>
+      <id>7602</id>
+      <parentid>7367</parentid>
+      <timestamp>2014-04-28T03:24:14Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* Introduction */</comment>
-      <text xml:space="preserve" bytes="11570">{{Header}}
+      <text xml:space="preserve" bytes="11571">{{Header}}
 {{#seo:
 |description=JonDonym over Tor. Tunneling JonDonym through Tor. Connection Schema: Tor -&gt; JonDonym -&gt; Destination
 }}
@@ -13926,7 +13913,7 @@ You can tunnel JonDonym over Tor. This could be useful, to circumvent Tor bans. 
 
 Or you could try to install from their GNU/Linux repository. They have their own documentation page about the [https://anonymous-proxy-servers.net/en/help/firststeps2.html JonDo repository]. Whonix is based on Debian Wheezy. The only difference when using their repository instructions is, that your distribution is wheezy and not maverick.
 
-For better security, its recommended to download their signing key over https with your browser, i.e. where it says &quot;The repository is signed with the OpenPGP key 0xF1305880&quot; right click on 0xF1305880 and save as. Save it in your home folder and use &quot;gpg --import 0xF1305880&quot;. Downloading the key from a keyserver with apt-key would be less secure.&lt;ref&gt;Less secure using the short key fingerprint as in JonDo documentation. Using the long key fingerprint should be equally secure.&lt;/ref&gt;
+For better security, it's recommended to download their signing key over https with your browser, i.e. where it says &quot;The repository is signed with the OpenPGP key 0xF1305880&quot; right click on 0xF1305880 and save as. Save it in your home folder and use &quot;gpg --import 0xF1305880&quot;. Downloading the key from a keyserver with apt-key would be less secure.&lt;ref&gt;Less secure using the short key fingerprint as in JonDo documentation. Using the long key fingerprint should be equally secure.&lt;/ref&gt;
 
 === JonDoFox vs Tor Browser ===
 You must make an informed decision, if you prefer to use JonDoFox or the Tor Browser.
@@ -13952,7 +13939,7 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>t4epml61om9r41882xoijvxnw5e9za7</sha1>
+      <sha1>3rvofrmt0c8gif3x1ipg4kegrzlv0q5</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -16304,14 +16291,13 @@ As it's author [https://lists.torproject.org/pipermail/tor-talk/2013-February/02
     <ns>0</ns>
     <id>137</id>
     <revision>
-      <id>5760</id>
-      <parentid>5148</parentid>
-      <timestamp>2014-02-27T11:53:36Z</timestamp>
+      <id>7604</id>
+      <parentid>5760</parentid>
+      <timestamp>2014-04-28T03:25:52Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <text xml:space="preserve" bytes="5236">{{Header}}
+      <text xml:space="preserve" bytes="5235">{{Header}}
 {{#seo:
 |description=Development Notes about existing and new Virtualizers supported by Whonix... VirtualBox, Qemu, KVM, VMware etc...
 }}
@@ -16356,7 +16342,7 @@ The following is non-ideal, because we can not warn when host operating sytems a
 
 * [https://forums.virtualbox.org/viewtopic.php?f=1&amp;t=58498 Can a guest find out its host operating system?]: seems not possible.
 
-* Virtual Box uses VMDK version 3. This is non-ideal, because working with these images is difficult.
+* VirtualBox uses VMDK version 3. This is non-ideal, because working with these images is difficult.
 ** Converting these images is difficult.
 *** qemu-img version 1.6.1 ({{Code|qemu-img convert &quot;vmdk_file&quot; -O RAW &quot;vdi_file&quot;}}) fails with: {{Code2|qemu-img: 'image' uses a vmdk feature which is not supported by this qemu version: VMDK version 3}}, which is a [https://bugs.launchpad.net/qemu/+bug/1253465 known issue in qemu].
 *** Therefore it is required to convert them with VBoxManage to .vdi first. ({{Code|VBoxManage clonehd --format VDI &quot;vmdk_file&quot; &quot;vdi_file&quot;}})
@@ -16386,7 +16372,7 @@ See [[KVM#Why_Use_KVM_Over_VirtualBox.3F|Why Use KVM Over VirtualBox?]]
 {{Footer}}
 
 [[Category: Design]]</text>
-      <sha1>8g7dhegusvy53smzpaeanjjz9o4z5m9</sha1>
+      <sha1>m1cqenh8zpfx5q7g9yyeus7ttr8pigy</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -19204,14 +19190,13 @@ When you go ahead now, and ask in a cracker forum, they probably won't spread a 
     <ns>0</ns>
     <id>165</id>
     <revision>
-      <id>5835</id>
-      <parentid>3919</parentid>
-      <timestamp>2014-02-27T13:09:22Z</timestamp>
+      <id>7591</id>
+      <parentid>5835</parentid>
+      <timestamp>2014-04-28T01:09:35Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <text xml:space="preserve" bytes="4355">{{Header}}
+      <text xml:space="preserve" bytes="4090">{{Header}}
 {{#seo:
 |description=Discussion about Download Security of Software.
 }}
@@ -19225,7 +19210,7 @@ Just downloading the images in the clear without any verification is the least s
 
 Sourceforge.net does not support SSL for downloads.
 
-Viewing the [https://sourceforge.net/projects/whonix/files/current sourceforge download page] while logged into sourceforge.net you can see the MD5 and SHA1 hash (provided by sourceforge.net, not Whonix developers) after clicking the '''i''' button (View details). There is also a SHA1 hash integrated into the magnet link on the [[Download#Download_Whonix|Download page]] (provides by Whonix developers).
+Viewing the [https://sourceforge.net/projects/whonix/files/current sourceforge download page] while logged into sourceforge.net you can see the MD5 and SHA1 hash (provided by sourceforge.net, not Whonix developers) after clicking the '''i''' button (View details).
 
 Comparing the hash sums from the SSL protected page and verifying (comparing them) with what was downloaded is safer than no verification at all.
 
@@ -19239,20 +19224,20 @@ Building Whonix from source code is the most secure option to obtain Whonix. (Ma
 * [[Whonix Signing Key]]
 
 = More difficult =
-Of course, providing downloadable images over SSL and/or a hidden service hosted by Whonix developers in a physically owned and protected place would be safer. Practically it is difficult to provide SSL protected downloads at all. Many important software projects can only be downloaded in the clear, such as Ubuntu, Debian, Tails, Qubes OS, etc. This is because someone has to pay the bill and SSL (encryption) makes it more expensive. At the moment we happen to have at least one mirror supporting SSL. Unsure how long it will last. We're also still looking for more SSL supported mirrors to share the load.
+Of course, providing downloadable images over SSL and/or a hidden service hosted by Whonix developers in a physically owned and protected place would be safer. Practically it is difficult to provide SSL protected downloads at all. Many important software projects can only be downloaded in the clear, such as Ubuntu, Debian, Tails, Qubes OS, etc. This is because someone has to pay the bill and SSL (encryption) makes it more expensive. At the moment we don't have any mirror supporting SSL. We're looking for SSL supported mirrors to share the load.
 
 The SSL CA system being flawed in the first place is another story (see [[SSL]]).
 
-Having SSL supported mirrors may seem like an oxymoron. The common practice is to say, that mirrors are not to be trusted. Even if the mirror owners were trusted persons, it's still an open question how good their server security is. And even if their server security is good, mirrors are generally also hosted in hosting companies and we can't trust those. However, not all adversaries have share all available capabilities. Not all adversaries capable of mounting a man-in-the-middle attack are capable of breaking server security or forcing the hosting company to turn over the keys etc. Users not caring to use verification are still better off downloading from a SSL supported mirror, that works against less sophisticated adversaries. In numbers, this results in fewer users potentially ending up with maliciously altered downloads, so we think this is worth going for.
+Having SSL supported mirrors may seem like an oxymoron. The common practice is to say, that mirrors are not to be trusted. Even if the mirror owners were trusted persons, it's still an open question how good their server security is. And even if their server security is good, mirrors are generally also hosted in hosting companies and we can't trust those. However, not all adversaries have all available capabilities. Not all adversaries capable of mounting a man-in-the-middle attack are capable of breaking server security or forcing the hosting company to turn over the keys etc. Users not caring to use verification are still better off downloading from a SSL supported mirror, that works against less sophisticated adversaries. In numbers, this results in fewer users potentially ending up with maliciously altered downloads, so we think this is worth going for.
 
 It would also be safer if the download server would be under full control of the developers and not under control of a big company (hosting provider). But that's not how things work today. Self-hosting is very expensive. (Requires fast internet connection, home user contracts won't be fast enough, many servers, electricity power and physical security (officers).) Even the servers of The Tor Project are not hosted in some developer's home.
 
-Building from source code is also safer, because the developer itself does not have to be trusted. Even if the developer was trusted, self building is still safer. It removes the risk, that the developer's build machine getting infected by a targeted attack. See also, [[Trust]].
+Building from source code is also safer, because the developer itself does not have to be trusted. However, note that since Whonix 8, the downloadable images are now [[Verifiable Builds|verifiable]]. See also, [[Trust]].
 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>cyjr4j6z5anve21exknwltba8fyc3ch</sha1>
+      <sha1>fao48oddokxkdwyyrygp2t3hc65lpcn</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -19661,14 +19646,14 @@ In fact [http://retroshare.sourceforge.net RetroShare] is not an [https://en.wik
     <ns>0</ns>
     <id>171</id>
     <revision>
-      <id>6092</id>
-      <parentid>5738</parentid>
-      <timestamp>2014-02-27T23:51:51Z</timestamp>
+      <id>7597</id>
+      <parentid>6092</parentid>
+      <timestamp>2014-04-28T02:49:33Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <text xml:space="preserve" bytes="70101">{{Header}}
+      <comment>/* Whonix 0.5.5 Changelog */</comment>
+      <text xml:space="preserve" bytes="70146">{{Header}}
 __NOINDEX__
 {{#seo:
 |description=Old Archived Changelogs of Whonix
@@ -20182,9 +20167,9 @@ Whonix-Gateway and Whonix-Workstation
 
 Whonix-Workstation
 
-* easier to install [[Chat#torchat|TorChat]]
+* easier to install [[Chat#TorChat|TorChat]]
 * pre-installed [[Mixmaster]], a tool to send e-mail without registering e-mail accounts
-* easier to install TorBirdy
+* easier to install [[E-Mail#Mozilla_Thunderbird_with_TorBirdy|TorBirdy]]
 * pre-installed rawdog, an rss reader to read Whonix News Blogs
 * autologin for kde user
 * added [[Dev/Dummy Tor|Dummy Tor]] package
@@ -20563,7 +20548,7 @@ Testers release with same goals as Whonix 0.4.5-fix2, but didn't work.
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Development]]</text>
-      <sha1>nwuaz5wc03jz16m0cwu915dmey5yjn8</sha1>
+      <sha1>0o1fldb7q0jdrve9b8r2v6qsnt9yu7j</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -34093,15 +34078,13 @@ While phrasing the whonix_news, it's not required to remove the OpenPGP Signatur
     <ns>0</ns>
     <id>284</id>
     <revision>
-      <id>6679</id>
-      <parentid>5892</parentid>
-      <timestamp>2014-03-07T22:05:29Z</timestamp>
+      <id>7601</id>
+      <parentid>6679</parentid>
+      <timestamp>2014-04-28T03:22:39Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* subscribe to code changes */</comment>
-      <text xml:space="preserve" bytes="2341">{{Header}}
+      <text xml:space="preserve" bytes="2342">{{Header}}
 {{#seo:
 |description=Development Notes about git and ways to stay up to date of source code changes
 }}
@@ -34172,7 +34155,7 @@ Check every now and then https://github.com/Whonix/Whonix/commits/master.
 == Github Commits Mailing List ==
 [https://lists.sourceforge.net/lists/listinfo/whonix-commits Whonix-commits read only mailing list]
 
-(Stay hosted on sourceforge.net. Barely anyone is signed up and its quite high traffic.)
+(Stay hosted on sourceforge.net. Barely anyone is signed up and it's quite high traffic.)
 
 == Twitter ==
 If you prefer Twitter, use the [https://twitter.com/WhonixSource Secondary Twitter Account for Source Code Commit Notification].
@@ -34189,7 +34172,7 @@ Optional. Just sharing. Like it or not.
 {{Footer}}
 
 [[Category:Development]] [[Category:Design]]</text>
-      <sha1>op571j5ktf3tz0h85qis6me18vktj2q</sha1>
+      <sha1>oavoijtw37x4pobrpmhdjdaye5sgvrv</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -45420,15 +45403,13 @@ cat /etc/apt/sources.list.d/*
     <ns>0</ns>
     <id>487</id>
     <revision>
-      <id>7487</id>
-      <parentid>6734</parentid>
-      <timestamp>2014-04-11T22:15:31Z</timestamp>
+      <id>7609</id>
+      <parentid>7487</parentid>
+      <timestamp>2014-04-28T03:35:05Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* Prerequisites */</comment>
-      <text xml:space="preserve" bytes="3376">{{Header}}
+      <text xml:space="preserve" bytes="3375">{{Header}}
 {{forkme}}
 
 '''UNFINISHED!'''
@@ -45461,7 +45442,7 @@ Get all build dependencies.
 sudo ./build-steps.d/1100_prepare-build-machine --bare-metal
 &lt;/pre&gt;
 
-Why {{Code2|--bare-metal}}? This is correct, if you want to know why, see footnote. &lt;ref&gt;Setting the BARE_METAL variable to 1 will result in installing fewer build dependencies. For example Virtual Box will not be installed. These are only required to build full images, but since we just want to create updated Whonix Debian Packages, this is unnecessary. Not much harm done when forgetting to use --bare-metal, because the user is free to remove any build dependencies later.&lt;/ref&gt;
+Why {{Code2|--bare-metal}}? This is correct, if you want to know why, see footnote. &lt;ref&gt;Setting the BARE_METAL variable to 1 will result in installing fewer build dependencies. For example VirtualBox will not be installed. These are only required to build full images, but since we just want to create updated Whonix Debian Packages, this is unnecessary. Not much harm done when forgetting to use --bare-metal, because the user is free to remove any build dependencies later.&lt;/ref&gt;
 
 == Create the Packages ==
 &lt;pre&gt;
@@ -45522,7 +45503,7 @@ Lets hope it works well. Please get in [[Support|Contact]] should there be any i
 {{Footer}}
 
 [[Category:Development]]</text>
-      <sha1>oblm9wi0rhg2m8gitmhs2qun31g4eyu</sha1>
+      <sha1>9gwkhiqq6olrlshajmgcxzeebcyzgt1</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -50058,14 +50039,13 @@ protip - run UNIX commands in the background adding &amp; to the end of the line
     <ns>0</ns>
     <id>508</id>
     <revision>
-      <id>5821</id>
-      <parentid>3949</parentid>
-      <timestamp>2014-02-27T13:00:51Z</timestamp>
+      <id>7608</id>
+      <parentid>5821</parentid>
+      <timestamp>2014-04-28T03:34:57Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <text xml:space="preserve" bytes="1129">{{Header}}
+      <text xml:space="preserve" bytes="1128">{{Header}}
 {{#seo:
 |description=Design Documentation Whonix DHCP Server
 }}
@@ -50090,13 +50070,13 @@ Needs research:
 
 Disadvantages:
 
-* Needs research: Some users with little knowledge only download Whonix-Workstation and set its network settings to DHCP. ([[Special:AWCforum/st/id240/#post_1143|example]]) Accepting any IP from DHCP would allow them to non-anonymously use Whonix-Workstation easily. We would have to add some protection not accepting an IP from Virtual Box NAT, if that is possible.
+* Needs research: Some users with little knowledge only download Whonix-Workstation and set its network settings to DHCP. ([[Special:AWCforum/st/id240/#post_1143|example]]) Accepting any IP from DHCP would allow them to non-anonymously use Whonix-Workstation easily. We would have to add some protection not accepting an IP from VirtualBox NAT, if that is possible.
 * Needs research: Configuration of [[Hidden Services]] could become more difficult, because these need a fixed internal IP?
 
 [[Category:Design]]
 
 {{Footer}}</text>
-      <sha1>c55hhoglptq9d32lkpphq5g08nocy0d</sha1>
+      <sha1>t8xwdb54uess83gbt9u4w85xb9q7hps</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -50106,12 +50086,11 @@ Disadvantages:
     <ns>0</ns>
     <id>509</id>
     <revision>
-      <id>5781</id>
-      <parentid>4562</parentid>
-      <timestamp>2014-02-27T12:11:27Z</timestamp>
+      <id>7594</id>
+      <parentid>5781</parentid>
+      <timestamp>2014-04-28T02:17:03Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
       <text xml:space="preserve" bytes="20748">{{Header}}
 {{#seo:
@@ -50128,7 +50107,7 @@ The [http://www.openpgp-schulungen.de/fuer/webautoren/ certification] image ([ht
 The high level overview of this concept is as follows:
 
 # Shut down your every day operating system. Boot your air gapped operating system. You can boot a Live DVD or an operating system installed on external media such as USB (recommendation: use full disk encryption). Using a separate physical hardware is better than just booting another operating system, but still, using another operating system is better than nothing.
-# By default GPG creates a signing key as your main key (your identity) and one encryption subkey (how you receive messages intended for you). We will only create a primary singing/certification key.
+# By default GPG creates a signing key as your main key (your identity) and one encryption subkey (how you receive messages intended for you). We will only create a primary signing/certification key.
 # Use GPG to add an additional encryption and signing subkey to your keypair. These new subkeys are linked to your main key. Now we have two subkeys. Store the whole key in a protected place. Your master keypair is the one whose compromise would be truly catastrophic.
 # Then create a slave key which won't contain your master key.
 # Copy your slave key to your every day operating system.
@@ -50553,7 +50532,7 @@ Most of this text has been written by [https://alexcabal.com/creating-the-perfec
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>j04nt022zlifyn4b8ny6mu2noli0ibs</sha1>
+      <sha1>rcdiryl4bvil4nz2usw93u6zvurlxma</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -50973,13 +50952,13 @@ Maybe this will help: Try convert the vmdk to vdi, remove the old vmdk from the 
     <ns>0</ns>
     <id>530</id>
     <revision>
-      <id>7054</id>
-      <parentid>6457</parentid>
-      <timestamp>2014-03-25T15:43:36Z</timestamp>
+      <id>7607</id>
+      <parentid>7054</parentid>
+      <timestamp>2014-04-28T03:34:37Z</timestamp>
       <contributor>
         <ip>127.0.0.1</ip>
       </contributor>
-      <text xml:space="preserve" bytes="16009">{{Header}}
+      <text xml:space="preserve" bytes="16007">{{Header}}
 {{#seo:
 |description=Checking Whonix for backdoors.
 }}
@@ -51008,7 +50987,7 @@ We don't check GUID&lt;ref&gt;https://en.wikipedia.org/wiki/GUID_Partition_Table
 The {{Code2|/help-steps/analyze_image}} script is supposed to execute no code from the image you are analyzing. The risk running that script on images you did not create yourself such as on the official images should be low, but not non-existent. Audits of the analyzing script itself are most welcome. In order to analyze the image, tools which are available in Debian's repository are used. Such as extracting the .ova requires {{Code2|tar}}&lt;ref&gt;http://packages.debian.org/jessie/tar&lt;/ref&gt;. In theory, the {{Code2|.ova}} could be malformed in a way to exploit the auditor's machine while extracting it to coerce the auditor's machine create a legit report hiding the actual backdoor (and infecting the auditor's machine with a backdoor). To find out what other tools are used and for what, please have a look at the {{Code2|/help-steps/analyze_image}} script.
 
 === Theoretical Holes ===
-Unfortunately, we can not directly mount the {{Code2|.ova}}. We have to extract it first. Rather, Virtual Box does not support creating {{Code2|.ova}} containing {{Code2|.img}} (raw images). Img's would be ideal, since low level tools such as {{Code2|dd}} understand them. Even worse, {{Code2|.ova}}'s created by Virtual Box always include {{Code2|.vmdk}}. [https://forums.virtualbox.org/viewtopic.php?f=1&amp;t=58460 export VM using VDI instead of VMDK is not possible]. Rather [https://forums.virtualbox.org/viewtopic.php?f=7&amp;t=58461 Mounting VMDK's on Debian testing/jessie] using Free Software is currently not possible since no software supports that. During the convert process {{Code2|ova -&gt; vmdk -&gt; vdi -&gt; img}}, the MBR, bootloader, VBR and/or other obscure differences could occur. There is no reason to believe that is actually the case, but we're not aware of any research on that topic.
+Unfortunately, we can not directly mount the {{Code2|.ova}}. We have to extract it first. Rather, VirtualBox does not support creating {{Code2|.ova}} containing {{Code2|.img}} (raw images). Img's would be ideal, since low level tools such as {{Code2|dd}} understand them. Even worse, {{Code2|.ova}}'s created by VirtualBox always include {{Code2|.vmdk}}. [https://forums.virtualbox.org/viewtopic.php?f=1&amp;t=58460 export VM using VDI instead of VMDK is not possible]. Rather [https://forums.virtualbox.org/viewtopic.php?f=7&amp;t=58461 Mounting VMDK's on Debian testing/jessie] using Free Software is currently not possible since no software supports that. During the convert process {{Code2|ova -&gt; vmdk -&gt; vdi -&gt; img}}, the MBR, bootloader, VBR and/or other obscure differences could occur. There is no reason to believe that is actually the case, but we're not aware of any research on that topic.
 
 === Your Own Alternatives ===
 The {{Code2|/help-steps/analyze_image}} script is the tool which comes with Whonix's source code to audit {{Code2|Whonix.ova}}. Nothing prevents you from cooking up your own custom method to verify {{Code2|Whonix.ova}}. On the contrary, we'd be very happy to hear about your methods, source code and results. Since this hasn't ever happened in past, Whonix came up with its own {{Code2|/help-steps/analyze_image}} script.
@@ -51121,7 +51100,7 @@ In case you like to review the implementation, the related scripts can be found 
 
 [[Category:Documentation]]
 [[Category:Development]]</text>
-      <sha1>b3lwrbt2c90uc5dgm9ov2lg77ss754a</sha1>
+      <sha1>3bhqyc6q8dbjycz3o9z952b3si12d3l</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -51337,14 +51316,13 @@ Whonix 9
     <ns>0</ns>
     <id>533</id>
     <revision>
-      <id>5809</id>
-      <parentid>4136</parentid>
-      <timestamp>2014-02-27T12:50:34Z</timestamp>
+      <id>7606</id>
+      <parentid>5809</parentid>
+      <timestamp>2014-04-28T03:31:52Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <text xml:space="preserve" bytes="2621">{{Header}}
+      <text xml:space="preserve" bytes="2607">{{Header}}
 {{#seo:
 |description=Overview of Ways to Backup your Whonix Virtual Machines
 }}
@@ -51353,7 +51331,7 @@ Whonix 9
 There isn't a great and simple way to make backups yet. Best you can do is either:
 
 * [[File Transfer]]
-* and/or use the export feature of Virtual Box, that will create standalone .ova files which you should be able to easily import on any other machine and/or
+* and/or use the export feature of VirtualBox, that will create standalone .ova files which you should be able to easily import on any other machine and/or
 * Create a copy of your VM files. There is some important knowledge you have to be aware of, this is documented below.
 
 = General Important Recommendation =
@@ -51361,18 +51339,18 @@ Creating backups is only the first step. You should do a test run if you are act
 
 = Important Knowledge =
 == ~/VirtualBox VMs Folder ==
-If you want to copy your Virtual Box's to another harddrive, only creating a backup of your &quot;~/VirtualBox VMs&quot; folder won't suffice. You have to remember to have a backup of your Virtual Box settings folder (~/.VirtualBox) as well, because manually re-creating that folder is difficult and undocumented by Virtual Box's documentation.
+If you want to copy your VirtualBox's to another harddrive, only creating a backup of your &quot;~/VirtualBox VMs&quot; folder won't suffice. You have to remember to have a backup of your VirtualBox settings folder (~/.VirtualBox) as well, because manually re-creating that folder is difficult and undocumented by VirtualBox's documentation.
 
-== Using Virtual Box's VM Cloning Feature for Backups isn't Simple ==
-The clone feature of Virtual Box is not very user friendly for backups for the same reason as above. It works, for cloning VMs, but it's not very useful for easy backups, because general VM settings are still stored in your home folder (~/.VirtualBox) and these are difficult to restore as mentioned above. So if you use the clone feature and backup your VMs on a different harddrive, you have to remember to have a backup of your Virtual Box settings folder (~/.VirtualBox) as well.
+== Using VirtualBox's VM Cloning Feature for Backups isn't Simple ==
+The clone feature of VirtualBox is not very user friendly for backups for the same reason as above. It works, for cloning VMs, but it's not very useful for easy backups, because general VM settings are still stored in your home folder (~/.VirtualBox) and these are difficult to restore as mentioned above. So if you use the clone feature and backup your VMs on a different harddrive, you have to remember to have a backup of your VirtualBox settings folder (~/.VirtualBox) as well.
 
-== Backup Virtual Box Settings Files ==
-Turn off Virtual Box before attempting to backup the Virtual Box's settings folder (~/.VirtualBox).
+== Backup VirtualBox Settings Files ==
+Turn off VirtualBox before attempting to backup the VirtualBox's settings folder (~/.VirtualBox).
 
 When you change VM settings, add/remove VMs, add/remove virtual hdds, add/remove snapshots you should create a new backup.
 
 = Advanced Users =
-Adding your Virtual Box settings folder to a [https://en.wikipedia.org/wiki/Revision_control revision control system] such as [https://en.wikipedia.org/wiki/Git_(software) git] is a good additions to backups of Virtual Box's settings folder. Should Virtual Box damage your settings file and its backup file (happens sometimes), you can try a recent backup from an earlier git revision.
+Adding your VirtualBox settings folder to a [https://en.wikipedia.org/wiki/Revision_control revision control system] such as [https://en.wikipedia.org/wiki/Git_(software) git] is a good addition to backups of VirtualBox's settings folder. Should VirtualBox damage your settings file and its backup file (happens sometimes), you can try a recent backup from an earlier git revision.
 
 = See Also =
 * [[Manually_Create_Whonix_VM_Settings|Manually Create Whonix VM Settings, in case you want to restore a backup of .vdi hard disk image files]]
@@ -51384,7 +51362,7 @@ Adding your Virtual Box settings folder to a [https://en.wikipedia.org/wiki/Revi
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>9dep33dqq9n72p4n7spiozjbv7xyys6</sha1>
+      <sha1>7jko7knsu19udsz8l2lko5i0hz82xez</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -74961,15 +74939,13 @@ License: Public Domain</text>
     <ns>0</ns>
     <id>1169</id>
     <revision>
-      <id>7452</id>
-      <parentid>7451</parentid>
-      <timestamp>2014-04-10T21:26:42Z</timestamp>
+      <id>7605</id>
+      <parentid>7452</parentid>
+      <timestamp>2014-04-28T03:26:59Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* Verifiable APT Repository */</comment>
-      <text xml:space="preserve" bytes="10870">{{Header}}
+      <text xml:space="preserve" bytes="10869">{{Header}}
 
 = Overview =
 The work outlined here is specifically focused on what could be done in a year with funding, though these goals should be considered as a larger roadmap for Whonix's development in general. This roadmap is focused on three goals: 
@@ -75041,7 +75017,7 @@ For better protection against build machine compromise, Whonix has a [[Verifiabl
 Documentation on how to verify Whonix's APT Repository is currently a bit [[Verifiable_Builds#Verifiable_Whonix_Debian_Packages|scare]], should be extended and better scripted.
 
 = Usability =
-Currently, to use Whonix a user must get familiar with Virtual Box and Debian (KDE) to be able to use and configure Whonix. In order to allow those with less time/access to expert knowledge of Linux, who may be in areas where time and security are of the essence, usability issues must be a top priority. 
+Currently, to use Whonix a user must get familiar with VirtualBox and Debian (KDE) to be able to use and configure Whonix. In order to allow those with less time/access to expert knowledge of Linux, who may be in areas where time and security are of the essence, usability issues must be a top priority. 
 
 == Interaction Simplification and Standardization ==
 Whonix needs an interaction designer to review and plan and implement an across the board standardization of the look and feel of Whonix in the system itself and online.
@@ -75095,7 +75071,7 @@ There are lots of other Censorship Circumvention Tools other than Tor bridges. W
 * [[Dev/Sponsor/A2]]
 
 {{Footer}}</text>
-      <sha1>gshpbj1plvyw760vd75y02e1rpzbiw3</sha1>
+      <sha1>glp0srs9y9ep5v1a527gdqgc42xk09c</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
