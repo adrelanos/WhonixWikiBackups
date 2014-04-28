@@ -3777,14 +3777,15 @@ As soon as i2p over Tor is working in Whonix-Workstation, you can probably follo
     <ns>0</ns>
     <id>63</id>
     <revision>
-      <id>7595</id>
-      <parentid>7497</parentid>
-      <timestamp>2014-04-28T02:24:01Z</timestamp>
+      <id>7610</id>
+      <parentid>7595</parentid>
+      <timestamp>2014-04-28T10:21:11Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="10826">{{#seo:
-|description=Anonymously Hosting Tor Hidden Services on any Server with Whonix
+      <text xml:space="preserve" bytes="10816">{{#seo:
+|description=Anonymously Hosting any Tor Hidden Services with Whonix
 }}
 {{Header}}
 = Tor Hidden Services - EASY =
@@ -3980,7 +3981,7 @@ Hidden Services with Whonix are still safer than running Tor and the server soft
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>sb9t4u2y3xzils2eqb40ldvngnffovf</sha1>
+      <sha1>idn6hqgr61w83u0m1e9toxr7t3vrdse</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -14249,15 +14250,15 @@ When you are using them at the same time, the risks explained in the introductio
     <ns>0</ns>
     <id>127</id>
     <revision>
-      <id>6270</id>
-      <parentid>6255</parentid>
-      <timestamp>2014-03-03T15:48:57Z</timestamp>
+      <id>7616</id>
+      <parentid>7615</parentid>
+      <timestamp>2014-04-28T11:32:58Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Outgoing */</comment>
-      <text xml:space="preserve" bytes="32528">{{Header}}
+      <comment>/* Deactivate Automatic TimeSync */</comment>
+      <text xml:space="preserve" bytes="35292">{{Header}}
 &lt;!--
 Copyright:
 
@@ -14297,6 +14298,7 @@ This wiki page contains material from the of the Tails Protection against cold b
 Please understand the basics first, read the [[Pre Install Advice]] first!
 
 = Network Time Synchronization =
+== General ==
 Don't wonder... To prevent against time zone leaks, the system clock inside Whonix was set to UTC. This means it may be a few hours before or ahead of your host system clock. Do not change!
 
 On the host. If you were a user of TorBOX 0.2.1 or below and removed NTP, restore it now.
@@ -14357,6 +14359,76 @@ Even though it's a difficult topic, you are advised to read Technical Design cha
 Footnotes. Additional information, reasoning, design for interested users, developers and auditors.
 
 &lt;references /&gt;
+
+== Deactivate Automatic TimeSync ==
+'''Recommended against!''' &lt;br /&gt;
+'''Usually not required!'''
+
+Run.
+
+&lt;pre&gt;
+sudo update-rc.d sdwdate remove
+&lt;/pre&gt;
+
+Create a file {{Code|/etc/sdwdate.d/50_sdwdate_user}}.
+
+&lt;pre&gt;
+kdesudo kwrite /etc/sdwdate.d/50_sdwdate_user
+&lt;/pre&gt;
+
+And add.
+
+&lt;pre&gt;
+INTERVAL=&quot;0&quot;
+&lt;/pre&gt;
+
+Deactivate sdwdate plugin timesync.
+
+Whonix 8:
+
+&lt;pre&gt;
+mv /etc/sdwdate.d/31_timesync_plugin /home/user/
+&lt;/pre&gt;
+
+Whonix 9:
+
+&lt;pre&gt;
+## Will be probably:
+sudo apt-get remove timesync
+&lt;/pre&gt;
+
+If you want to manually sync time using sdwdate, then run.
+
+&lt;pre&gt;
+sdwdate
+&lt;/pre&gt;
+
+You should see something like this.
+
+&lt;pre&gt;
+50e99987-0ee8-4e17-883e-2aeb58881507: Loaded. | pid: 9766 | LD_PRELOAD: 
+50e99987-0ee8-4e17-883e-2aeb58881507: sdwdate_main...
+50e99987-0ee8-4e17-883e-2aeb58881507: Running sdwdate...
+50e99987-0ee8-4e17-883e-2aeb58881507: sdwdate_preparation: Setting CURL to curl.whonix-orig.
+50e99987-0ee8-4e17-883e-2aeb58881507: dispatching pre (SDW_MODE: startup): true
+50e99987-0ee8-4e17-883e-2aeb58881507: dispatching prerequisite (SDW_MODE: startup) (CURL: curl.whonix-orig) (LD_PRELOAD: ): /usr/lib/whonix/timesync_prerequisite
+50e99987-0ee8-4e17-883e-2aeb58881507: DISPATCH_PREREQUISITE returned 0, continuing...
+50e99987-0ee8-4e17-883e-2aeb58881507: getUrlDateDiff: https://www.torproject.org
+50e99987-0ee8-4e17-883e-2aeb58881507: dispatching SDWDATE_CURL_DISPATCH_PRE[SDWDATE_POOL_PAL] (SDW_MODE: startup) (CURL: curl.whonix-orig): true
+50e99987-0ee8-4e17-883e-2aeb58881507: dispatching SDWDATE_CURL_DISPATCH_POST[SDWDATE_POOL_PAL]: true
+50e99987-0ee8-4e17-883e-2aeb58881507: https://www.torproject.org (took 1s) =&gt; diff = -170 second(s)
+50e99987-0ee8-4e17-883e-2aeb58881507: getUrlDateDiff: https://www.stackexchange.com
+50e99987-0ee8-4e17-883e-2aeb58881507: dispatching SDWDATE_CURL_DISPATCH_PRE[SDWDATE_POOL_NEUTRAL] (SDW_MODE: startup) (CURL: curl.whonix-orig): true
+50e99987-0ee8-4e17-883e-2aeb58881507: dispatching SDWDATE_CURL_DISPATCH_POST[SDWDATE_POOL_NEUTRAL]: true
+50e99987-0ee8-4e17-883e-2aeb58881507: https://www.stackexchange.com (took 1s) =&gt; diff = -170 second(s)
+50e99987-0ee8-4e17-883e-2aeb58881507: getUrlDateDiff: https://encrypted.google.com
+50e99987-0ee8-4e17-883e-2aeb58881507: dispatching SDWDATE_CURL_DISPATCH_PRE[SDWDATE_POOL_FOE] (SDW_MODE: startup) (CURL: curl.whonix-orig): true
+50e99987-0ee8-4e17-883e-2aeb58881507: dispatching SDWDATE_CURL_DISPATCH_POST[SDWDATE_POOL_FOE]: true
+50e99987-0ee8-4e17-883e-2aeb58881507: https://encrypted.google.com (took 1s) =&gt; diff = -169 second(s)
+50e99987-0ee8-4e17-883e-2aeb58881507: Median diff: -169 second(s)
+50e99987-0ee8-4e17-883e-2aeb58881507: Setting time to 1398684745...
+50e99987-0ee8-4e17-883e-2aeb58881507: dispatching post_success (SDW_MODE: startup): true
+&lt;/pre&gt;
 
 = Host Security =
 
@@ -14760,7 +14832,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>f4izwi7th5r3c4ygu0id5ujva6ajdwq</sha1>
+      <sha1>77bo6a8xe67wenhbjd1k9xt5o0e0cfj</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -23612,15 +23684,15 @@ Some real world examples that are '''protected by using Whonix''':
     <ns>0</ns>
     <id>218</id>
     <revision>
-      <id>7377</id>
-      <parentid>7376</parentid>
-      <timestamp>2014-04-07T21:44:00Z</timestamp>
+      <id>7611</id>
+      <parentid>7377</parentid>
+      <timestamp>2014-04-28T10:45:32Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Newer */</comment>
-      <text xml:space="preserve" bytes="7066">{{Header}}
+      <comment>/* Press */</comment>
+      <text xml:space="preserve" bytes="7247">{{Header}}
 {{#seo:
 |description=Security Reviews and Feedback, Whonix in the Media
 }}
@@ -23710,6 +23782,7 @@ Official:
 * [http://techcrash.net/whonix-os-anonymous/ techcrash.net: Whonix, OS anonymous]
 * [http://www.signalnetworks.co.uk/whonix-the-all-tor-anonymous-platform/ signalnetworks.co.uk: Whonix- The all Tor anonymous platform]
 * [http://www.theregister.co.uk/2012/11/13/whonix/ The Register: Devs cook up 'leakproof' all-Tor untrackable platform]
+* [http://www.techradar.com/news/software/operating-systems/which-linux-distro-is-best-for-protecting-your-privacy--1192771 Which Linux distro is best for protecting your privacy?]
 
 == Newer ==
 
@@ -23718,7 +23791,7 @@ Sorry, we didn't add any more recent ones. There were simply to many to list the
 {{Footer}}
 
 [[Category:Design]]</text>
-      <sha1>k2rzeevvlilneww22zyat6gom6j28tw</sha1>
+      <sha1>7ifa9ndaehuntwgtvbcgczvgnuhqgrf</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -76208,23 +76281,6 @@ using Tor Browser is no longer possible due to a [https://trac.torproject.org/pr
       <comment>MsUpload</comment>
       <text xml:space="preserve" bytes="8">MsUpload</text>
       <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
-      <model>wikitext</model>
-      <format>text/x-wiki</format>
-    </revision>
-  </page>
-  <page>
-    <title>Połączenia Lamello i Invis</title>
-    <ns>0</ns>
-    <id>1236</id>
-    <revision>
-      <id>7589</id>
-      <timestamp>2014-04-27T20:28:08Z</timestamp>
-      <contributor>
-        <ip>127.0.0.1</ip>
-      </contributor>
-      <comment>Połączenia_Lamello_i_Invis</comment>
-      <text xml:space="preserve" bytes="2377">Wasz wysokiej jakości mebel jest doskonały i dopracowany w najdrobniejszym szczególe. Wszystkie połączenia są w 100 % niewidoczne a do tego rozłączne.Tworzycie produkty stosownie do idei i oczekiwań klienta. Bez ograniczeń jeśli chodzi o wielkość. Jeśli wyrób jest zbyt duży do przewiezienia, to na czas transportu można go rozebrać. Kreujecie systemy meblowe, które można dowolnie&lt;br /&gt;rozbudowywać wg indywidualnych potrzeb i oczekiwań klienta&lt;br /&gt;&lt;br /&gt;System połączeń elementów za pomocą obcego piórka lamello® jest bardzo popularny w Europie Zachodniej i USA. Lamellownica, jak potocznie nazywa się tę frezarkę, jest podstawowym elektronarzędziem w wyposażeniu zakładu stolarskiego. Ze względu na bardzo prostą obsługę, szerokie zastosowanie i niewysoką cenę trafia również do domowych warsztatów.&lt;br /&gt;&lt;br /&gt;Celem firmy nie jest niekończące się rozszerzanie oferty. Główny nacisk kładziony jest na funkcjonalność i bezawaryjność. Zostało to docenione przez użytkowników, wśród których urządzenia ze znakiem Lamello cieszą się opinią rozwiązań o najwyższej jakości. Ofertę firmy można podzielić na 5 zasadniczych grup: system połączeń drewna na obce piórka, tzw. lamelki, system zaprawiania wad drewna, system nakładania kleju, urządzenia specjalne oraz system niewidocznych rozłącznych połączeń INVIS®.&lt;br /&gt;&lt;br /&gt;Zakup frezarki Lamello Zeta to właściwa inwestycja w nową technologię dająca bardzo wymierne korzyści polegające na zdecydowanym obniżeniu czasu a co za tym idzie kosztu pracy który jest podstawowym czynnikiem decydującym o zyskowności prowadzonego interesu. Wiadomo przecież, że koszt zakupu nowoczesnych, innowacyjnych maszyn czy elektronarzędzi, dających większą wydajność produkcji i nowe możliwości konstrukcyjne szybko się amortyzuje&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Wiele dotychczas skomplikowanych połączeń można przy pomocy Zety szybko i solidnie wykonać bezpośrednio na montażu u klienta po uprzednim dokładnym dopasowaniu wszystkich składowych elementów. Nie bez znaczenia jest czas który spędzamy u klienta. Składanie elementów połączonych na Clamex P zajmuje o wiele mniej czasu niż kłopotliwe wkręcanie bolców od mimośrodu. Krótki czas montażu to nie tylko oszczędność pieniędzy ale również bardziej zadowolony klient.&lt;br /&gt;</text>
-      <sha1>956wgia05fk153ab0582b78byol1o2v</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
