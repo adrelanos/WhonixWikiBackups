@@ -40,9 +40,9 @@
     <ns>0</ns>
     <id>1</id>
     <revision>
-      <id>7583</id>
-      <parentid>7543</parentid>
-      <timestamp>2014-04-27T11:51:42Z</timestamp>
+      <id>7620</id>
+      <parentid>7619</parentid>
+      <timestamp>2014-04-29T12:24:35Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
@@ -3777,15 +3777,15 @@ As soon as i2p over Tor is working in Whonix-Workstation, you can probably follo
     <ns>0</ns>
     <id>63</id>
     <revision>
-      <id>7610</id>
-      <parentid>7595</parentid>
-      <timestamp>2014-04-28T10:21:11Z</timestamp>
+      <id>7617</id>
+      <parentid>7610</parentid>
+      <timestamp>2014-04-29T10:17:11Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="10816">{{#seo:
-|description=Anonymously Hosting any Tor Hidden Services with Whonix
+      <text xml:space="preserve" bytes="10824">{{#seo:
+|description=Anonymously host any server with Whonix and Tor hidden services
 }}
 {{Header}}
 = Tor Hidden Services - EASY =
@@ -3981,7 +3981,7 @@ Hidden Services with Whonix are still safer than running Tor and the server soft
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>idn6hqgr61w83u0m1e9toxr7t3vrdse</sha1>
+      <sha1>rvu62ypg8csddkdxfgf5d2m8w8kxwr5</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -41947,14 +41947,14 @@ table.wikitable
     <ns>0</ns>
     <id>400</id>
     <revision>
-      <id>7240</id>
-      <parentid>7217</parentid>
-      <timestamp>2014-04-03T21:11:34Z</timestamp>
+      <id>7618</id>
+      <parentid>7240</parentid>
+      <timestamp>2014-04-29T11:18:19Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="10777">{{Header}}
+      <text xml:space="preserve" bytes="11147">{{Header}}
 {{#seo:
 |description=Awards / Certifications / Buttons / Widgets which whonix.org could use.
 }}
@@ -42199,10 +42199,17 @@ if (window.attachEvent) window.attachEvent('onload', async_load); else window.ad
 {{#github:whonix_shared/usr/bin/whonixcheck|Whonix/Whonix|master}}
 &lt;/code&gt;
 
+= stackexchange =
+&lt;html&gt;
+&lt;a href=&quot;http://stackexchange.com/users/2593298&quot;&gt;
+&lt;img src=&quot;http://stackexchange.com/users/flair/2593298.png&quot; width=&quot;208&quot; height=&quot;58&quot; alt=&quot;profile for adrelanos on Stack Exchange, a network of free, community-driven Q&amp;amp;A sites&quot; title=&quot;profile for adrelanos on Stack Exchange, a network of free, community-driven Q&amp;amp;A sites&quot;&gt;
+&lt;/a&gt;
+&lt;/html&gt;
+
 {{Footer}}
 
 [[Category:Development]]</text>
-      <sha1>lhdmony9h3aodlac7zrnbt2sxkp0dio</sha1>
+      <sha1>nfmwlxqhuue5isbu45emhf7n0zurqt9</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -62527,14 +62534,15 @@ sudo rm -fR /var/lib/apt/lists/*
     <ns>0</ns>
     <id>891</id>
     <revision>
-      <id>7075</id>
-      <parentid>7073</parentid>
-      <timestamp>2014-03-26T21:28:20Z</timestamp>
+      <id>7624</id>
+      <parentid>7623</parentid>
+      <timestamp>2014-04-29T19:25:37Z</timestamp>
       <contributor>
-        <username>Troubadour</username>
-        <id>230</id>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="1198">{{Header}}
+      <comment>deleted superseded links</comment>
+      <text xml:space="preserve" bytes="1024">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
@@ -62559,13 +62567,10 @@ The file is called by some of the profiles and has to be installed prior to the 
 = Additional inspiration =
 Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/AppArmor in Debian]):
 
-* [https://trac.torproject.org/projects/tor/wiki/doc/AppArmorForTBB AppArmor Profile for TBB]
-* [https://github.com/adrelanos/Inoffical-TBB-AppArmor Inoffical-TBB-AppArmor]
-
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>a8eodd0ny3ppy4gntug3clzwkrg5c0e</sha1>
+      <sha1>8bl5e361b2ofbfnlx0jjrredm96k8af</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -72471,20 +72476,21 @@ Go to http://127.0.0.1/wiki/index.php/Main_Page.
     <ns>0</ns>
     <id>1110</id>
     <revision>
-      <id>7531</id>
-      <parentid>7480</parentid>
-      <timestamp>2014-04-14T20:10:48Z</timestamp>
+      <id>7622</id>
+      <parentid>7531</parentid>
+      <timestamp>2014-04-29T19:24:19Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="4511">{{Header}}
+      <text xml:space="preserve" bytes="4635">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
 __FORCETOC__
 {{AppArmorProfileWarning}}
 
-
+= Profile =
 Create a file /etc/apparmor.d/home.user.tor-browser_en-US.Browser.firefox.
 
 &lt;pre&gt;
@@ -72649,10 +72655,14 @@ sudo apparmor_parser -r /etc/apparmor.d/home.user.tor-browser_en-US.Browser.fire
 
 [https://www.whonix.org/forum/index.php?action=profile;u=24 troubadour] created this profile. You can discuss it in this [http://kkkkkkkkkk63ava6.onion/forum/index.php/topic,97.0.html forum thread].
 
+= Debian Package =
+'''Experimental''' deb package: &lt;br /&gt;
+https://github.com/Whonix/apparmor-profile-torbrowser
+
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>f13bmcisz1u1h91fg3r4fslov1b2tmn</sha1>
+      <sha1>akscg80m3ygafvvtwa0bhlfjolbetqi</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
