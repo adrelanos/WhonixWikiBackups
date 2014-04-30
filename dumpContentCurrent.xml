@@ -798,13 +798,14 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>19</id>
     <revision>
-      <id>7596</id>
-      <parentid>7560</parentid>
-      <timestamp>2014-04-28T02:34:01Z</timestamp>
+      <id>7625</id>
+      <parentid>7596</parentid>
+      <timestamp>2014-04-30T08:10:17Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="15263">{{Header}}
+      <text xml:space="preserve" bytes="15306">{{Header}}
 &lt;!--
 Copyright:
 
@@ -995,7 +996,7 @@ For your convenience, there are multiple choices to get news. Choose at your pre
 Other choices.
 * [https://www.whonix.org/blog/category/important/feed/ Whonix Important Blog RSS] [[File:Feed-icon.jpeg|12px|alt=Whonix Important Blog Rss|link=https://www.whonix.org/blog/category/important/feed/]]
 * [https://www.whonix.org/blog/feed/ Whonix Feature Blog RSS] [[File:Feed-icon.jpeg|12px|alt=Whonix Feature Blog rss|link=https://www.whonix.org/blog/feed/]]
-* subscribe to [https://www.whonix.org/blog Whonix Blog] by e-mail (when you are registered at Whonix Blog, you can choose to which categories you want to subscribe)
+* subscribe to [https://www.whonix.org/blog Whonix Blog] by e-mail (when you are [https://www.whonix.org/blog/wp-login.php registered] at Whonix Blog, you can choose to which categories you want to subscribe)
 * Whonix Blog posts are mirrored to [https://www.whonix.org/forum/ Whonix User Forum] You could subscribe by [http://blog.onlineinstitute.com/forum-hosting/email-notifications-new-posts-ismf/ e-mail] or by rss ([https://www.whonix.org/forum/index.php?action=.xml;type=rss;sa=recent;limit=20 recent posts] [[File:Feed-icon.jpeg|12px|alt=Whonix forum recent posts rss|link=https://www.whonix.org/forum/index.php?action=.xml;type=rss;sa=recent;limit=20]] or [https://www.whonix.org/forum/index.php?action=.xml;type=rss;sa=news;limit=20 recent topics] [[File:Feed-icon.jpeg|12px|alt=Whonix forum recent topics rss|link=https://www.whonix.org/forum/index.php?action=.xml;type=rss;sa=news;limit=20]] [[http://www.simplemachines.org/community/index.php?topic=25009.0 more rss options]]).
 * Whonix Blog posts are mirrored to [[Mailing_Lists#whonix-devel|Whonix Development Mailing List]]
 * [[Download#Social_Media_Profiles|Whonix Social Media Profiles]]
@@ -1178,7 +1179,7 @@ under certain conditions; see the wiki source code for details.
 &lt;translate&gt;&lt;!--T:253--&gt;
 Some icons created by third parties, Free licenses as well, see [[Authorship#Images_created_by_third_parties|Authorship Images created by third parties]] for details.
 &lt;/translate&gt;[[Category:Documentation]]{{Footer}}</text>
-      <sha1>83dsssogvhwrf4s701gw2pbjtnnva35</sha1>
+      <sha1>4kkwfxntnp1e87gryhti7cm6772dzy0</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
