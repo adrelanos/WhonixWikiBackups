@@ -798,14 +798,14 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>19</id>
     <revision>
-      <id>7625</id>
-      <parentid>7596</parentid>
-      <timestamp>2014-04-30T08:10:17Z</timestamp>
+      <id>7628</id>
+      <parentid>7625</parentid>
+      <timestamp>2014-05-01T00:44:42Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="15306">{{Header}}
+      <text xml:space="preserve" bytes="15303">{{Header}}
 &lt;!--
 Copyright:
 
@@ -903,7 +903,7 @@ It is important to check the integrity of the virtual machine images you downloa
 Warning:
 
 &lt;!--T:201--&gt;
-Do not continue if verification failed! You risk using infected or erroneous files! The whole point of verification is to verify the file integrity.
+Do not continue if verification failed! You risk using infected or erroneous files! The whole point of verification is to confirm file integrity.
 &lt;/translate&gt;
 }}
 
@@ -1179,7 +1179,7 @@ under certain conditions; see the wiki source code for details.
 &lt;translate&gt;&lt;!--T:253--&gt;
 Some icons created by third parties, Free licenses as well, see [[Authorship#Images_created_by_third_parties|Authorship Images created by third parties]] for details.
 &lt;/translate&gt;[[Category:Documentation]]{{Footer}}</text>
-      <sha1>4kkwfxntnp1e87gryhti7cm6772dzy0</sha1>
+      <sha1>1c9k6rtg5fqv0ttrlk1ht0tcqz3gamd</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -32792,15 +32792,13 @@ A similar project published another leak test. Read [https://github.com/ra--/Tor
     <ns>0</ns>
     <id>265</id>
     <revision>
-      <id>7576</id>
-      <parentid>5902</parentid>
-      <timestamp>2014-04-26T09:38:22Z</timestamp>
+      <id>7629</id>
+      <parentid>7576</parentid>
+      <timestamp>2014-05-01T06:13:30Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* Method 4 */</comment>
-      <text xml:space="preserve" bytes="5351">{{Header}}
+      <text xml:space="preserve" bytes="5349">{{Header}}
 {{#seo:
 |description=How to change the User Interface Language for your Operating System and Tor Browser
 }}
@@ -32925,7 +32923,7 @@ apt-get install nabi
 
 '''Please TEST and leave feedback.'''
 
-Available languages as in October 2012:
+Available languages as in May 2014:
 
 &lt;pre&gt;
 ar
@@ -32940,6 +32938,7 @@ nl
 pl
 pt-PT
 ru
+tr
 vi
 zh-CN
 &lt;/pre&gt;
@@ -33018,7 +33017,7 @@ sudo find /usr/lib/iceweasel/extensions -maxdepth 1 -name 'langpack*.xpi' -exec 
 
 '''Please TEST and leave feedback.'''
 
-Available languages as in October 2012:
+Available languages as in May 2014:
 
 &lt;pre&gt;
 ar
@@ -33033,6 +33032,7 @@ nl
 pl
 pt-PT
 ru
+tr
 vi
 zh-CN
 &lt;/pre&gt;
@@ -33056,7 +33056,7 @@ Replace &quot;vi&quot; with &quot;zh-CN&quot; for Chinese and so on.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>36wixx2hf2oz92sut7v6h4cl5y69aei</sha1>
+      <sha1>p5u9a2wvmiaffytlnsyq6owdotr7r4m</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -56242,15 +56242,15 @@ You can customize the header and footer of your directory listing as explained [
     <ns>0</ns>
     <id>695</id>
     <revision>
-      <id>7555</id>
-      <parentid>7493</parentid>
-      <timestamp>2014-04-18T14:26:00Z</timestamp>
+      <id>7627</id>
+      <parentid>7626</parentid>
+      <timestamp>2014-05-01T00:26:51Z</timestamp>
       <contributor>
-        <username>Fortasse</username>
-        <id>1</id>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <comment>/* Getting Your Mirror Added */</comment>
-      <text xml:space="preserve" bytes="4086">{{Header}}
+      <comment>/* Getting Whonix */</comment>
+      <text xml:space="preserve" bytes="4104">{{Header}}
 {{#seo:
 |description=Instructions on how to set up a Whonix Download Mirror
 }}
@@ -56281,7 +56281,7 @@ sudo apt-get install rsync
 
 and get Whonix from the rsync master:
 &lt;pre&gt;
-sudo rsync -rtv rsync://rsync.whonix.org/whonix /var/www/whonix
+sudo rsync -rtvp --delete rsync://rsync.whonix.org/whonix /var/www/whonix
 &lt;/pre&gt;
 
 This will put the contents of http://rsync.whonix.org/ in your server's directory /var/www/whonix.
@@ -56295,7 +56295,7 @@ sudo crontab -e
 
 You will see the crontab opened in nano (at least on Wheezy 7.3). Hit &quot;Page Down&quot; or the down cursor key until you are on the last line (below &quot;m h  dom mon dow   command&quot;) and enter:
 &lt;pre&gt;
-  0 *   *   *   *    rsync -rt rsync://rsync.whonix.org/whonix /var/www/whonix
+0 *   *   *   *    rsync -rtp --delete rsync://rsync.whonix.org/whonix /var/www/whonix
 &lt;/pre&gt;
 
 The numbers don't have to line up exactly with the heading, but it makes it easier to read.
@@ -56358,7 +56358,7 @@ You can customize the header and footer of your directory listing as explained [
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>axcz20d6fbkj0ju11uvb4suncs5n42o</sha1>
+      <sha1>72dilcgndtks1tp7vfkpp2hhb8ihdxq</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
