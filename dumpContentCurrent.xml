@@ -798,14 +798,13 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>19</id>
     <revision>
-      <id>7628</id>
-      <parentid>7625</parentid>
-      <timestamp>2014-05-01T00:44:42Z</timestamp>
+      <id>7635</id>
+      <parentid>7628</parentid>
+      <timestamp>2014-05-01T15:33:22Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <text xml:space="preserve" bytes="15303">{{Header}}
+      <text xml:space="preserve" bytes="15135">{{Header}}
 &lt;!--
 Copyright:
 
@@ -1066,15 +1065,6 @@ In case you are interested in Whonix source code updates, [[Dev/git#subscribe_to
 &lt;translate&gt;== Normal == &lt;!--T:239--&gt;
 &lt;/translate&gt;
 
-=== Tor Browser Updater (Whonix) Workaround required ===
-Please use.
-
-&lt;pre&gt;
-update-torbrowser --clearnet
-&lt;/pre&gt;
-
-Will be fixed in next maintenance release Whonix 8.2.
-
 &lt;translate&gt;=== Mounting (CD/DVD) Devices === &lt;!--T:240--&gt;
 &lt;/translate&gt;
 &lt;translate&gt;&lt;!--T:241--&gt;
@@ -1179,7 +1169,7 @@ under certain conditions; see the wiki source code for details.
 &lt;translate&gt;&lt;!--T:253--&gt;
 Some icons created by third parties, Free licenses as well, see [[Authorship#Images_created_by_third_parties|Authorship Images created by third parties]] for details.
 &lt;/translate&gt;[[Category:Documentation]]{{Footer}}</text>
-      <sha1>1c9k6rtg5fqv0ttrlk1ht0tcqz3gamd</sha1>
+      <sha1>qum9p3btidmszzm400ayigov0y5i2mb</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -7445,15 +7435,14 @@ If you are going to use VirtualBox inside VirtualBox, be sure to change your hos
     <ns>0</ns>
     <id>95</id>
     <revision>
-      <id>7585</id>
-      <parentid>7363</parentid>
-      <timestamp>2014-04-27T17:38:09Z</timestamp>
+      <id>7636</id>
+      <parentid>7633</parentid>
+      <timestamp>2014-05-01T15:37:50Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Mozilla Thunderbird with TorBirdy */</comment>
-      <text xml:space="preserve" bytes="23610">{{Header}}
+      <text xml:space="preserve" bytes="23724">{{Header}}
 &lt;!--
 Copyright:
 
@@ -7664,6 +7653,8 @@ Another anonymity network provider (JonDos), maintains a list of their recommend
 = Bitmessage =
 [https://bitmessage.org Bitmesage] might be another alternative to e-mail. See also [[Special:AWCforum/st/id239/Did_bitmassage_work_in_whonix%3F.html|Forum discussion]]. Not yet tested by Whonix developers, because [https://github.com/Bitmessage/PyBitmessage/issues/108 Bitmessage developers do not yet sign their their source code].
 
+&quot;Warning! Users report while Bitmessage runs is surfing over tor very slowly or even not possible.&quot; - Reference?
+
 = I2P-Bote =
 
 Quoted from wikipedia I2P&lt;ref&gt;https://en.wikipedia.org/wiki/I2P&lt;/ref&gt;:
@@ -7781,7 +7772,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>p121qsa8vd56azx98cfr88jxvbtv1qv</sha1>
+      <sha1>4cim0x3jgpg25t4ljwsz1mxp1ryhfc0</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -32792,13 +32783,14 @@ A similar project published another leak test. Read [https://github.com/ra--/Tor
     <ns>0</ns>
     <id>265</id>
     <revision>
-      <id>7629</id>
-      <parentid>7576</parentid>
-      <timestamp>2014-05-01T06:13:30Z</timestamp>
+      <id>7630</id>
+      <parentid>7629</parentid>
+      <timestamp>2014-05-01T10:41:27Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="5349">{{Header}}
+      <text xml:space="preserve" bytes="5337">{{Header}}
 {{#seo:
 |description=How to change the User Interface Language for your Operating System and Tor Browser
 }}
@@ -32943,7 +32935,7 @@ vi
 zh-CN
 &lt;/pre&gt;
 
-To check if further languages are supported visit https://www.torproject.org/dist/torbrowser/linux/ or http://idnxcnkne4qt76tg.onion/dist/torbrowser/linux/.
+To check if further languages are supported visit https://www.torproject.org/dist/torbrowser/ or http://idnxcnkne4qt76tg.onion/dist/torbrowser/.
 
 To make this language permanent when updating next time. Open {{Code|/etc/whonix.d/50_torbrowser_default}}.
 
@@ -33056,7 +33048,7 @@ Replace &quot;vi&quot; with &quot;zh-CN&quot; for Chinese and so on.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>p5u9a2wvmiaffytlnsyq6owdotr7r4m</sha1>
+      <sha1>0xymnf0j0y12mwvllqfy19ag36zt3o8</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -57029,14 +57021,15 @@ Quelle: &lt;html&gt;&lt;a href=&quot;http://www.juraforum.de/impressum-generator
     <ns>0</ns>
     <id>698</id>
     <revision>
-      <id>7587</id>
-      <parentid>7586</parentid>
-      <timestamp>2014-04-27T17:58:29Z</timestamp>
+      <id>7638</id>
+      <parentid>7587</parentid>
+      <timestamp>2014-05-01T17:56:50Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="4403">&lt;!--
+      <comment>/* Geltungsbereich */</comment>
+      <text xml:space="preserve" bytes="4510">&lt;!--
 NOTE TO WIKI EDITORS:
 Do not add the default footer!
 Do not edit without asking Patrick Schleizer beforehand!
@@ -57112,6 +57105,8 @@ Dieses Impressum gilt auch für:
 ** https://github.com/adrelanos/msgcollector
 ** https://github.com/Whonix/torsocks-remove-ld-preload
 ** https://github.com/adrelanos/torsocks-remove-ld-preload
+** https://github.com/Whonix/bootclockrandomization
+** https://github.com/adrelanos/bootclockrandomization
 
 Bitte beachten Sie, dass dieses Impressum gilt nicht für:
 
@@ -57126,7 +57121,7 @@ Die Datenschutzerklärung finden Sie [[Datenschutz|hier]].
 Den Haftungsausschluss (Disclaimer) finden Sie [[Disclaimer|hier]].
 
 [[Category:Documentation]]</text>
-      <sha1>8khm20ub508iw66xgf6caf9yxp4zfkl</sha1>
+      <sha1>qiczq96uhvfeyi5jkyslz3vy5g4liio</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -62535,15 +62530,14 @@ sudo rm -fR /var/lib/apt/lists/*
     <ns>0</ns>
     <id>891</id>
     <revision>
-      <id>7624</id>
-      <parentid>7623</parentid>
-      <timestamp>2014-04-29T19:25:37Z</timestamp>
+      <id>7634</id>
+      <parentid>7624</parentid>
+      <timestamp>2014-05-01T14:37:38Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>deleted superseded links</comment>
-      <text xml:space="preserve" bytes="1024">{{Header}}
+      <text xml:space="preserve" bytes="1490">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
@@ -62565,13 +62559,17 @@ The file is called by some of the profiles and has to be installed prior to the 
 * [[AppArmor/Timesync|Whonix timesync]]
 * [[AppArmor/Whonixcheck|Whonix whonixcheck]]
 
+= Wishlist =
+* adrelanos: Whonix-Gateway's [[Dev/CPFP]] (Automatically started as an /etc/init.d service. Used by Tor Browser. Avoids about:tor error message. Fixes Tor Browser's New Identity feature in Whonix. /usr/bin/controlportfilt and /usr/lib/whonix/cpf-tcpserver)
+* adrelanos: Whonix-Workstation's /usr/sbin/rinetd (Automatically started as an /etc/init.d service. Used by Tor Browser. Useful to run stock Tor Browser without need to modify proxy settings.)
+
 = Additional inspiration =
 Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/AppArmor in Debian]):
 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>8bl5e361b2ofbfnlx0jjrredm96k8af</sha1>
+      <sha1>q2p8wzfkl4sg0s180fuvjkvgwfzfdnj</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -62769,15 +62767,15 @@ Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/A
     <ns>10</ns>
     <id>895</id>
     <revision>
-      <id>7205</id>
-      <parentid>7198</parentid>
-      <timestamp>2014-03-30T18:22:58Z</timestamp>
+      <id>7631</id>
+      <parentid>7205</parentid>
+      <timestamp>2014-05-01T12:43:39Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="3">8.1</text>
-      <sha1>5najwdehcqf99c6oy3q3o3szl5mse5x</sha1>
+      <text xml:space="preserve" bytes="3">8.2</text>
+      <sha1>dqsx7uo62o3y1ktjnb4y97fdab2q1o1</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -76285,6 +76283,24 @@ using Tor Browser is no longer possible due to a [https://trac.torproject.org/pr
     <revision>
       <id>7513</id>
       <timestamp>2014-04-13T14:49:31Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:Whonix tzdata question.png</title>
+    <ns>6</ns>
+    <id>1237</id>
+    <revision>
+      <id>7637</id>
+      <timestamp>2014-05-01T17:05:15Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
