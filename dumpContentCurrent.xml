@@ -40,14 +40,14 @@
     <ns>0</ns>
     <id>1</id>
     <revision>
-      <id>7620</id>
-      <parentid>7619</parentid>
-      <timestamp>2014-04-29T12:24:35Z</timestamp>
+      <id>7662</id>
+      <parentid>7651</parentid>
+      <timestamp>2014-05-02T16:37:53Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="11511">{{#seo:
+      <text xml:space="preserve" bytes="11529">{{#seo:
 |fb:admins=100007482551659
 |fb:app_id=606207202785157
 |twitter:card=summary_large_image
@@ -58,6 +58,7 @@
 }}
 __NOTOC__
 &lt;languages /&gt;
+{{RandomNews}}
 &lt;translate&gt;
 &lt;!--T:11--&gt;
 {{#seo:
@@ -150,7 +151,7 @@ Active&lt;/translate&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;[https://en.wikipedia.org/wiki/Software_release_life_cycle Latest Stable Release: ]&lt;/td&gt;
-&lt;td style=&quot;&quot;text-align:left;&quot;&gt;[[Download|{{Version}}]] &lt;br /&gt;({{Start date and age|2014|02|27|df=yes}})&lt;/td&gt;
+&lt;td style=&quot;&quot;text-align:left;&quot;&gt;[[Download|{{VersionNew}}]] &lt;br /&gt;({{Start date and age|2014|05|01|df=yes}})&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;[https://en.wikipedia.org/wiki/Software_release_life_cycle Latest Unstable Release: ]&lt;/td&gt;
@@ -278,7 +279,7 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
 
 
 &lt;/div&gt;</text>
-      <sha1>398w5sv9j026m45ea32n4qh5x05syhl</sha1>
+      <sha1>9gk6yv5dnzent6jnkevc3d7ya8x3xvk</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -406,14 +407,14 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
     <ns>10</ns>
     <id>14</id>
     <revision>
-      <id>7140</id>
-      <parentid>7138</parentid>
-      <timestamp>2014-03-28T05:42:58Z</timestamp>
+      <id>7659</id>
+      <parentid>7658</parentid>
+      <timestamp>2014-05-02T16:29:22Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="364">{{#seo:
+      <text xml:space="preserve" bytes="379">{{#seo:
 |article:publisher=https://www.facebook.com/Whonix
 |article:author=https://www.facebook.com/patrick.schleizer
 |fb:admins=100007482551659
@@ -423,8 +424,9 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
 |twitter:domain=Whonix
 |twitter:creator=@Whonix
 |twitter:image:src=https://www.whonix.org/w/skins/common/images/135px_Whonix_lock.png
-}}</text>
-      <sha1>kpda1ctfftv28ifrw6xaw1t48oi6p7z</sha1>
+}}
+{{RandomNews}}</text>
+      <sha1>0puyybw36jahvfo33or6hya9mvjhf7j</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -798,13 +800,14 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>19</id>
     <revision>
-      <id>7639</id>
-      <parentid>7635</parentid>
-      <timestamp>2014-05-02T08:19:09Z</timestamp>
+      <id>7643</id>
+      <parentid>7639</parentid>
+      <timestamp>2014-05-02T10:54:37Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="15136">{{Header}}
+      <text xml:space="preserve" bytes="15135">{{Header}}
 &lt;!--
 Copyright:
 
@@ -942,7 +945,6 @@ Read and apply the [[Pre_Install_Advice|Security Advice]].
 &lt;translate&gt;
 &lt;!--T:28--&gt;
 * Download and install [https://www.virtualbox.org/wiki/Downloads VirtualBox]. &lt;ref&gt;You could alternatively search for a Portable VirtualBox&lt;/ref&gt;
-
 * [[#Download Whonix|Download Whonix]] and import both Whonix images&lt;ref&gt;You need both Whonix-Gateway.ova and Whonix-Workstation.ova images. Whonix is a two machine setup.&lt;/ref&gt; into VirtualBox. Do not change any settings when importing!
 
 &lt;!--T:250--&gt;
@@ -1170,7 +1172,7 @@ under certain conditions; see the wiki source code for details.
 &lt;translate&gt;&lt;!--T:253--&gt;
 Some icons created by third parties, Free licenses as well, see [[Authorship#Images_created_by_third_parties|Authorship Images created by third parties]] for details.
 &lt;/translate&gt;[[Category:Documentation]]{{Footer}}</text>
-      <sha1>7iw0fwdogqcb4myaon9qihfq6m9kkmj</sha1>
+      <sha1>qum9p3btidmszzm400ayigov0y5i2mb</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -1532,14 +1534,14 @@ See also [[Security_in_Real_World | Whonix security in real world]], [[Security_
     <ns>0</ns>
     <id>24</id>
     <revision>
-      <id>7584</id>
-      <parentid>7465</parentid>
-      <timestamp>2014-04-27T12:04:07Z</timestamp>
+      <id>7649</id>
+      <parentid>7647</parentid>
+      <timestamp>2014-05-02T11:44:20Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="18869">&lt;!--
+      <text xml:space="preserve" bytes="18995">&lt;!--
 Copyright:
 
    Whonix Documentation wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -1590,6 +1592,8 @@ Anonymity is a complex problem without an easy solution, and security is only as
 * &lt;small&gt;[[The World Wide Web And Your Privacy|The World Wide Web and your privacy]]&lt;/small&gt;
 * &lt;small&gt; [[Surveillance Capabilities|Surveillance Capabilities]]&lt;/small&gt;
 * &lt;small&gt; [[Data Collection Techniques|Data Collection Techniques]]&lt;/small&gt;
+* &lt;small&gt; [[Why_does_Whonix_use_Tor|Why does Whonix use Tor?]]&lt;/small&gt;
+* &lt;small&gt; [[Why is Tor slow|Why is Tor slow?]]&lt;/small&gt;
 * &lt;small&gt; [[About|More About Whonix]]&lt;/small&gt;
 * &lt;small&gt; [[Features|Features]]&lt;/small&gt;
 * &lt;small&gt; [[System Requirements|System requirements]]&lt;/small&gt;
@@ -1868,7 +1872,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>q7lnlbe0gsedhpjfqulttc5r9x7bwex</sha1>
+      <sha1>agce5xhb8pe72xylht14ekedrm24auk</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -12845,13 +12849,15 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>118</id>
     <revision>
-      <id>7600</id>
-      <parentid>7514</parentid>
-      <timestamp>2014-04-28T03:21:20Z</timestamp>
+      <id>7650</id>
+      <parentid>7642</parentid>
+      <timestamp>2014-05-02T12:02:47Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="7989">__NOTITLE__
+      <comment>/* Development */</comment>
+      <text xml:space="preserve" bytes="8089">__NOTITLE__
 {{#seo:
 |description=Donate, Spread, Follow, Mirror, Translate, Develop, Testing. Contribute to Free Software / Open Source.
 }}
@@ -12940,13 +12946,13 @@ If you are willing to help or to maintain Whonix's Twitter account, Facebook pag
 [[Image:Whonix-ad.png|frame|none|alt=| Looking for developers!]]
 &lt;/center&gt;
 
-
-Whonix is as [[FAQ#How_difficult_is_it_to_develop_Whonix.3F|easy]] as shell scripting (bash). We need developers!
-
+* '''iptables''' '''Have good knowledge of Linux networking and iptables? Get in contact!'''
+* [https://www.whonix.org/blog/translations-coordinator Translations Coordinator]
+* {{Code2|#!/bin/bash}}
+==== General ====
 Join [[Mailing_Lists#whonix-devel|Whonix Development Mailing List]]!
 
 Login on github, go to https://github.com/Whonix/Whonix/issues and press &quot;watch&quot; to get notified about discussions on Whonix github issues.
-
 
 === Release Manager ===
 &lt;span style=&quot;color: red;&quot;&gt;'''Much needed!'''&lt;/span&gt;
@@ -13066,7 +13072,7 @@ The PayPal logo (60px-De-pp-logo-200px.png), the subscribe button (subscribeCC_L
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Development]]</text>
-      <sha1>hniu0mhvcmd16gunffavvhs69myzay7</sha1>
+      <sha1>1bg8wgjglsl6gnmv141xs5xprn3iqiq</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -39395,14 +39401,15 @@ This could be compared to the &quot;Air Gap&quot; used on most high security net
     <ns>0</ns>
     <id>313</id>
     <revision>
-      <id>5888</id>
-      <parentid>2512</parentid>
-      <timestamp>2014-02-27T13:59:15Z</timestamp>
+      <id>7645</id>
+      <parentid>5888</parentid>
+      <timestamp>2014-05-02T11:19:33Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="1552">{{Header}}
+      <comment>/* List */</comment>
+      <text xml:space="preserve" bytes="1574">{{Header}}
 {{#seo:
 |description=List of documentation articles, which were forked from Tails.
 }}
@@ -39443,12 +39450,13 @@ If you want to stay current which changes have been made to a particular page, p
 * [[Verify_the_virtual_machine_images_using_other_operating_systems]]
 * [[Warning]]
 * [[Whonix Signing Key]]
+* [[Why is Tor slow]]
 * [[Dev/Relationship With Upstream]]
 
 {{Footer}}
 
 [[Category:Development]]</text>
-      <sha1>7v224zkvpo51eqrlfs3wduevflo65jr</sha1>
+      <sha1>34rvsgike7xw2wvbbv9pbuc04rz5fxr</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -43180,21 +43188,56 @@ The Tor Project never managed to get such a downloader up and running, see {{Cod
     <ns>0</ns>
     <id>437</id>
     <revision>
-      <id>7243</id>
-      <parentid>7242</parentid>
-      <timestamp>2014-04-03T21:21:54Z</timestamp>
+      <id>7657</id>
+      <parentid>7656</parentid>
+      <timestamp>2014-05-02T16:26:35Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="136">{{Header}}
+      <text xml:space="preserve" bytes="3297">{{Header}}
 
-&lt;code&gt;
-{{#github:home.user.tor-browser_en-US.Browser.firefox|Whonix/apparmor-profile-torbrowser|master}}
-&lt;/code&gt;
+[u]Random News:[/u] &lt;random&gt;Bored? Want to chat with other Whonix users? Join us in [url=http://irc://irc.oftc.net/whonix]IRC[/url] chat ([url=https://webirc.oftc.net:8443/?channels=Whonix]Webchat[/url]).
+@@@
+Don't mind having your name connected to Whonix? Follow us. [url=https://twitter.com/Whonix]Twitter[/url] / [url=https://www.facebook.com/Whonix]Facebook[/url] / [url=https://plus.google.com/108150429836421683225]g+[/url]
+@@@
+Check out [url=https://www.whonix.org]Whonix blog[/url].
+@@@
+Did you know that anyone can edit [url=https://www.whonix.org]Whonix's wiki[/url]?
+@@@
+Want to make Whonix more safe and usable? We're looking for helping hands. Check out [url=https://github.com/Whonix/Whonix/issues]Github Issues[/url] and [url=https://www.whonix.org/forum/index.php/board,5.0.html]development forum[/url].
+@@@
+Please consider a [url=https://www.whonix.org/wiki/Donate]recurring donation[/url]!
+@@@
+Want to get involved with Whonix? Check out our [url=https://www.whonix.org/wiki/Contribute]Contribute[/url] page.
+@@@
+Did you know you can [url=https://www.whonix.org/wiki/Forcing_.onion_on_Whonix.org]enforce using an alternative .onion domain[/url] to access this website?
+@@@
+Did you know, that Whonix has some protection against [url=https://en.wikipedia.org/wiki/Backdoor_(computing)]backdoors[/url]? The [url=https://www.whonix.org/wiki/Verifiable_Builds]Verifiable Builds[/url] feature only adds security if people like you actually use it!
+@@@
+Do you know our [url=https://www.whonix.org/wiki/Documentation]Documentation[/url], [url=https://www.whonix.org/wiki/Design]Technical Design[/url] and [url=https://www.whonix.org/wiki/Dev/Developer_Portal]Developer Portal[/url] already?
+@@@
+There are [url=https://www.whonix.org/wiki/Dev/git#subscribe_to_code_changes]5 different options[/url] to subscribe to Whonix source code changes.
+@@@
+Join us testing new [url=https://www.whonix.org/wiki/AppArmor]AppArmor profiles[/url] for improved security! ([url=https://www.whonix.org/forum/index.php/topic,97.0.html]forum discussion[/url])
+@@@
+Brainstorming: [url=https://www.whonix.org/forum/index.php/topic,215.0.html]Where Whonix wants to be in 2 or 5 years?[/url]
+@@@
+Interested in becoming author for [url=https://www.whonix.org/blog]Whonix blog[/url]? Writing about anonymity/privacy/security? Get in touch!
+@@@
+Wondering why Whonix will always be Free? Check out [url=https://www.whonix.org/wiki/Why_Whonix_is_Free_Software]Why Whonix is Free Software[/url].
+@@@
+It would be great if you could create a Wikipedia page for Whonix ([url=https://en.wikipedia.org/w/index.php?title=Whonix&amp;redirect=no]its own article[/url], not a [url=https://en.wikipedia.org/wiki/Whonix#Whonix_.28Anonymous_Operating_System.29]redirection[/url] to another page).
+@@@
+Did you [url=https://www.whonix.org/wiki/Contribute]contribiute[/url]  to Whonix? Feel free to add your name and what you did to the [url=https://www.whonix.org/wiki/Authorship]Whonix Authorship[/url] page.
+@@@
+Please [url=https://www.whonix.org/wiki/Contribute]contribute[/url] by [url=http://https://www.whonix.org/wiki/Contribute#Answer_Questions]answering questions[/url].
+@@@
+[url=https://www.whonix.org/blog/translations-coordinator]Whonix Project looking for Translations Coordinator![/url]
+&lt;/random&gt;
 
 {{Footer}}</text>
-      <sha1>97yioge9sqsl4pxotujofn8uxe58v8x</sha1>
+      <sha1>nx05dh55mh5gevl68z6ah6cuf4skx0g</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -76309,6 +76352,255 @@ using Tor Browser is no longer possible due to a [https://trac.torproject.org/pr
       <comment>MsUpload</comment>
       <text xml:space="preserve" bytes="8">MsUpload</text>
       <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Why is Tor slow</title>
+    <ns>0</ns>
+    <id>1238</id>
+    <revision>
+      <id>7646</id>
+      <parentid>7644</parentid>
+      <timestamp>2014-05-02T11:19:52Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>/* License */</comment>
+      <text xml:space="preserve" bytes="3564">{{Header}}
+&lt;!--
+Copyright:
+
+   Whonix Download wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
+   Whonix Download wiki page Copyright (C) 2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
+   
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; either version 3 of the License, or
+   (at your option) any later version.
+         
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+      
+   You should have received a copy of the GNU General Public License
+   along with this program; if not, write to:
+
+    Free Software Foundation, Inc. 
+    51 Franklin St, Fifth Floor
+    Boston, MA 02110-1301, USA.
+
+On Debian GNU/Linux systems, the complete text of the GNU General Public
+License can be found in the /usr/share/common-licenses' directory.
+
+The complete text of the GNU General Public License can also be found online on gnu.org &lt;https://www.gnu.org/licenses/gpl.html&gt;, in Whonix virtual machine images in /usr/share/common-licenses/GPL-3 file or on Github &lt;https://github.com/Whonix/Whonix/blob/master/GPLv3&gt;.
+--&gt;
+&lt;!--
+This wiki page is a fork of the Tails Why is Tor slow page, from this exact source &lt;https://git-tails.immerda.ch/tails/tree/wiki/src/doc/anonymous_internet/why_tor_is_slow.mdwn?id=31b348e2b974555bac5b7457c89c99429c6799cf&gt;.
+--&gt;
+{{#seo:
+|description=Download Whonix. Anonymity online. Privacy protection.
+}}
+
+Users often find that the Tor network is slow. This page describes some reasons that make Tor slow. For further explanations, see [https://www.torproject.org/docs/faq.html.en#WhySlow Why Tor is so slow?]
+
+= Tor circuits lengthen the connections =
+Tor provides anonymity by building circuits with three relays. So instead of connecting directly to the destination server, a connection
+is made between each relay of the circuit and this takes more time.
+
+Furthermore, Tor tries to build circuits with relays in different countries which make connection travel more and appear slower.
+
+= Quality of the relays =
+The Tor relays are run by volunteers in a decentralized way. So all relays are not of the same quality. Some are big and fast, while some
+others are smaller and slower. As a whole, the network could be faster it had more capacity. To improve the capacity of the Tor network, you
+can either run a Tor relay yourself or [https://www.torservers.net/partners.html help existing relays].
+
+= Misuse of the Tor network =
+Some people misuse the Tor network, sometimes on purpose or sometimes by lack of knowledge. For instance, Tor is sometimes used to conduct
+[https://en.wikipedia.org/wiki/Denial-of-service_attack DDoS attacks]. By doing this, the Tor relays are the ones who actually suffer from the
+attack, instead of the intended target.  Some people use [https://en.wikipedia.org/wiki/Peer-to-peer peer-to-peer software] through Tor which
+is bad for the network.
+
+= License =
+&lt;pre&gt;
+Whonix Download wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
+Whonix Download wiki page Copyright (C) 2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
+
+This program comes with ABSOLUTELY NO WARRANTY; for details see the wiki source code.
+This is free software, and you are welcome to redistribute it
+under certain conditions; see the wiki source code for details.
+&lt;/pre&gt;
+
+[[Category:Documentation]]{{Footer}}</text>
+      <sha1>nxegoy9ix6j8us0c6fya8jqrqqm6y64</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Why does Whonix use Tor</title>
+    <ns>0</ns>
+    <id>1239</id>
+    <revision>
+      <id>7648</id>
+      <timestamp>2014-05-02T11:42:52Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;{{Header}} &lt;!-- Copyright:     Whonix Download wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;    Whonix Download wiki page Copyright (C) 2014 Patrick Schleizer &lt;adr...&quot;</comment>
+      <text xml:space="preserve" bytes="5445">{{Header}}
+&lt;!--
+Copyright:
+
+   Whonix Download wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
+   Whonix Download wiki page Copyright (C) 2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
+   
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; either version 3 of the License, or
+   (at your option) any later version.
+         
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+      
+   You should have received a copy of the GNU General Public License
+   along with this program; if not, write to:
+
+    Free Software Foundation, Inc. 
+    51 Franklin St, Fifth Floor
+    Boston, MA 02110-1301, USA.
+
+On Debian GNU/Linux systems, the complete text of the GNU General Public
+License can be found in the /usr/share/common-licenses' directory.
+
+The complete text of the GNU General Public License can also be found online on gnu.org &lt;https://www.gnu.org/licenses/gpl.html&gt;, in Whonix virtual machine images in /usr/share/common-licenses/GPL-3 file or on Github &lt;https://github.com/Whonix/Whonix/blob/master/GPLv3&gt;.
+--&gt;
+&lt;!--
+This wiki page is a fork of the Tails Why Tor page, from this exact source &lt;https://git-tails.immerda.ch/tails/tree/wiki/src/doc/about/tor.mdwn?id=0711acb611042850264302d7687d009343afe287&gt;.
+--&gt;
+{{#seo:
+|description=Why does Whonix use Tor?
+}}
+
+Whonix uses Tor because it is the best available anonymity network.
+
+= Anonymity enforcement =
+We want to enforce good security by default for our users. That is why it is a fundamental assumption of Whonix to force all outgoing traffic through the Tor anonymity network.
+
+Over the years Tor has become a big network with a lot of capacity and a good speed.
+
+Virtual Private Networks (VPNs) could be faster than Tor but they are not anonymity networks, because the administrators of the VPN can know both where you are connecting from and where you are connecting to and break your anonymity. Tor provides anonymity
+by making it impossible for a single point in the network to know both the origin and the destination of a connection.
+
+When using a VPN, an attacker can also break your anonymity by monitoring the incoming and outgoing connections of the few servers of the VPN. On the other hand, the Tor network is formed by over 5000 relays run worldwide by volunteers.
+
+= User base =
+Tor is the anonymity network with the largest user base. More than 700.000 users connected to Tor daily in 2013. Being adopted by such a
+large audience proves its maturity, stability, and usability.
+
+Tor is being used equally by journalists, law enforcement, governments, human rights activists, business leaders, militaries, abuse victims and average citizens concerned about online privacy.&lt;ref&gt;https://www.torproject.org/about/torusers.html.en&lt;/ref&gt; This diversity actually provides stronger anonymity to everyone as it makes it more difficult to identify or target a specific profile of Tor user. {{Code2|Anonymity loves company.}}&lt;ref&gt;http://freehaven.net/anonbib/cache/usability:weis2006.pdf&lt;/ref&gt;
+
+= Technical merits and recognition =
+Tor has partnered with leading research institutions, and has been subjected to intensive academic research. It is the anonymity network which benefits from the most auditing and peer review.
+
+Tor has been received awards by institutions such as the [https://www.eff.org/awards/pioneer/2012 Electronic Frontier Foundation], and the [https://www.fsf.org/news/2010-free-software-awards-announced Free Software Foundation] to name a few.
+
+An extract of a Top Secret appraisal by the NSA characterized Tor as &quot;[http://www.theguardian.com/world/interactive/2013/oct/04/tor-high-secure-internet-anonymity the King of high secure, low latency Internet anonymity]&quot; with &quot;no contenders for the throne in waiting&quot;.
+
+= Relationship between Tor and Whonix =
+* The Tor software is made by [https://torproject.org The Tor Project].
+* The Tor network is run by a worldwide community of volunteers.
+* Whonix is a separate project made by a different group of people.
+
+Whonix is a complete operating system which uses Tor as its default networking application.
+
+Many people use Tor outside of Whonix, and many people use Whonix to do other things than accessing the Internet through Tor, for example [[Hosting Location Hidden Services]], [[i2p|tunnel i2p through Tor]], [[Features#VPN_.2F_Tunnel_support|tunnel VPNs or other Anonymity Networks through Tor]], [[Browser Plugins|anonymously watch flash videos]], [[Features#Whonix_Features|and more]].
+
+= See Also =
+* [[Comparison_Of_Tor_Proxies_CGI_proxies_Proxy_Chains_And_VPN_Services|Comparison Of Tor with CGI Proxies, Proxy Chains, and VPN Services]]
+* [[Dev/Anonymity_Network|Review of different Anonymity Networks]]
+
+= Footnotes =
+&lt;references /&gt;
+
+= License =
+&lt;pre&gt;
+Whonix Download wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
+Whonix Download wiki page Copyright (C) 2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
+
+This program comes with ABSOLUTELY NO WARRANTY; for details see the wiki source code.
+This is free software, and you are welcome to redistribute it
+under certain conditions; see the wiki source code for details.
+&lt;/pre&gt;
+
+[[Category:Documentation]]{{Footer}}</text>
+      <sha1>qpwijnt0u5xoohensmla8j6743aecjt</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:RandomNews</title>
+    <ns>10</ns>
+    <id>1240</id>
+    <revision>
+      <id>7669</id>
+      <parentid>7668</parentid>
+      <timestamp>2014-05-02T17:23:27Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <text xml:space="preserve" bytes="3231">&lt;div style=&quot;border:1px solid; background:#EEEEEE;; text-align:center;&quot;&gt;&lt;u&gt;Random News:&lt;/u&gt;
+&lt;random&gt;
+Bored? Want to chat with other Whonix users? Join us in [http://irc://irc.oftc.net/whonix IRC] chat ([https://webirc.oftc.net:8443/?channels=Whonix Webchat]).
+@@@
+Don't mind having your name connected to Whonix? Follow us. [https://twitter.com/Whonix Twitter] / [https://www.facebook.com/Whonix Facebook] / [https://plus.google.com/108150429836421683225 g ]
+@@@
+Check out [https://www.whonix.org Whonix blog].
+@@@
+Did you know that anyone can edit [https://www.whonix.org Whonix's wiki]?
+@@@
+Want to make Whonix more safe and usable? We're looking for helping hands. Check out [https://github.com/Whonix/Whonix/issues Github Issues] and [https://www.whonix.org/forum/index.php/board,5.0.html development forum].
+@@@
+Please consider a [https://www.whonix.org/wiki/Donate recurring donation]&lt;nowiki&gt;!&lt;/nowiki&gt;
+@@@
+Want to get involved with Whonix? Check out our [https://www.whonix.org/wiki/Contribute Contribute] page.
+@@@
+Did you know you can [https://www.whonix.org/wiki/Forcing_.onion_on_Whonix.org enforce using an alternative .onion domain] to access this website?
+@@@
+Did you know, that Whonix has some protection against [https://en.wikipedia.org/wiki/Backdoor_(computing) backdoors]? The [https://www.whonix.org/wiki/Verifiable_Builds Verifiable Builds] feature only adds security if people like you actually use it!
+@@@
+Do you know our [https://www.whonix.org/wiki/Documentation Documentation], [https://www.whonix.org/wiki/Design Technical Design] and [https://www.whonix.org/wiki/Dev/Developer_Portal Developer Portal] already?
+@@@
+There are [https://www.whonix.org/wiki/Dev/git#subscribe_to_code_changes 5 different options] to subscribe to Whonix source code changes.
+@@@
+Join us testing new [https://www.whonix.org/wiki/AppArmor AppArmor profiles] for improved security! ([https://www.whonix.org/forum/index.php/topic,97.0.html forum discussion])
+@@@
+Brainstorming: [https://www.whonix.org/forum/index.php/topic,215.0.html Where Whonix wants to be in 2 or 5 years?]
+@@@
+Interested in becoming author for [https://www.whonix.org/blog Whonix blog]? Writing about anonymity/privacy/security? Get in touch!
+@@@
+Wondering why Whonix will always be Free? Check out [https://www.whonix.org/wiki/Why_Whonix_is_Free_Software Why Whonix is Free Software].
+@@@
+It would be great if you could create a Wikipedia page for Whonix ([https://en.wikipedia.org/w/index.php?title=Whonix&amp;redirect=no its own article], not a [https://en.wikipedia.org/wiki/Whonix#Whonix_.28Anonymous_Operating_System.29 redirection] to another page).
+@@@
+Did you [https://www.whonix.org/wiki/Contribute contribiute] to Whonix? Feel free to add your name and what you did to the [https://www.whonix.org/wiki/Authorship Whonix Authorship] page.
+@@@
+Please [https://www.whonix.org/wiki/Contribute Contribute] by [http://https://www.whonix.org/wiki/Contribute#Answer_Questions answering questions].
+@@@
+[https://www.whonix.org/blog/translations-coordinator Whonix Project looking for Translations Coordinator!]
+@@@
+Know '''iptables'''? Want to contribute? Say hello in [https://www.whonix.org/forum/index.php/board,5.0.html development forum].
+&lt;/random&gt;
+&lt;/div&gt;</text>
+      <sha1>h3u39ji5pea1evuxnggn8biv04sj655</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
