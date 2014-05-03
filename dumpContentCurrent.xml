@@ -12056,14 +12056,15 @@ What would have to be done:
     <ns>0</ns>
     <id>114</id>
     <revision>
-      <id>7161</id>
-      <parentid>6973</parentid>
-      <timestamp>2014-03-28T17:05:34Z</timestamp>
+      <id>7674</id>
+      <parentid>7161</parentid>
+      <timestamp>2014-05-03T12:41:24Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="14131">{{Header}}
+      <comment>/* See Also */</comment>
+      <text xml:space="preserve" bytes="14341">{{Header}}
 {{#seo:
 |description=Copying files into and out of Whonix Virtual Machines.
 }}
@@ -12474,6 +12475,10 @@ sudo umount /mnt/whonix
 == Related ==
 * [[Dev/Source Code Intro]]
 
+= Usability Development Ticket =
+All solutions listed here are far from user friendly. Please help improving this. See also our github ticket about this issue: &lt;br&gt;
+https://github.com/Whonix/Whonix/issues/131
+
 = See Also =
 * [[Backup Whonix VMs|Backup Whonix VMs]]
 
@@ -12483,7 +12488,7 @@ sudo umount /mnt/whonix
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Development]]</text>
-      <sha1>0kfn8x8ybq8d4uwifxpahlyw4s2lemu</sha1>
+      <sha1>stuemwjd7m134xc69agtjvfqv17xxka</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -43111,14 +43116,15 @@ window.pg || $(document).ready( function($) {
     <ns>0</ns>
     <id>433</id>
     <revision>
-      <id>5889</id>
-      <parentid>5717</parentid>
-      <timestamp>2014-02-27T13:59:36Z</timestamp>
+      <id>7686</id>
+      <parentid>5889</parentid>
+      <timestamp>2014-05-03T19:50:59Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="2047">{{Header}}
+      <comment>/* Introduction */</comment>
+      <text xml:space="preserve" bytes="2198">{{Header}}
 {{#seo:
 |description=Development Notes Secure Downloader
 }}
@@ -43126,6 +43132,8 @@ window.pg || $(document).ready( function($) {
 '''Unfinished!'''
 
 = Introduction =
+Stub downloader. Similar to the one that Mozilla is providing for Firefox downloads. A small tool that is used to download and install the real tool.
+
 Securing downloads may be better when written as a general purpose tool (not specific to Whonix).
 
 No other projects such as Firefox or Debian support this use case.
@@ -43160,7 +43168,7 @@ The Tor Project never managed to get such a downloader up and running, see {{Cod
 {{Footer}}
 
 [[Category:Development]]</text>
-      <sha1>j60ovu4jb57p89m2vu9x9e6fzwndclb</sha1>
+      <sha1>ems5oa335cxwhlx2bd5cctwakw1olt5</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -54900,15 +54908,14 @@ Many thanks to Tails team for their discussion on the topic of password managers
     <ns>0</ns>
     <id>685</id>
     <revision>
-      <id>7554</id>
-      <parentid>7553</parentid>
-      <timestamp>2014-04-18T13:03:55Z</timestamp>
+      <id>7677</id>
+      <parentid>7554</parentid>
+      <timestamp>2014-05-03T14:31:53Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* KVM Setup Instructions */</comment>
-      <text xml:space="preserve" bytes="7364">{{Header}}
+      <text xml:space="preserve" bytes="8078">{{Header}}
 {{#seo:
 |description=Using Whonix with KVM instead of VirtualBox
 }}
@@ -55006,6 +55013,23 @@ Not enabling SPICE from the beginning, will prevent the spice channel device fro
 
 3. Install vdagent in guest and reboot.
 
+== .qcow file size too big? ==
+'''Short:''' &lt;br /&gt;
+It won't really take up 101 GB. Just ~ 2.6 GB. This is an issue with file managers, not Whonix.
+
+'''Long:''' &lt;br /&gt;
+&lt;ref&gt;
+Don't get fooled by {{Code|ls}} or usual GUI file managers. We're using [http://en.wikipedia.org/wiki/Sparse_file sparse files]. When you are using a reasonable modern file system - which you most likely do - it won't use up a lot space. You can check this for yourself.
+
+&lt;pre&gt;
+du -h --apparent-size Whonix-Gateway-8.2.qcow2
+101G    Whonix-Gateway-8.2.qcow2
+du -h Whonix-Gateway-8.2.qcow2
+2.6G    Whonix-Gateway-8.2.qcow2
+&lt;/pre&gt;
+
+This is tested. If you don't have 500 GB free space, you can have10 copies if Whonix-Gateway-8.2.qcow2.
+&lt;/ref&gt;
 
 = Footnotes =
 &lt;references /&gt;
@@ -55013,7 +55037,7 @@ Not enabling SPICE from the beginning, will prevent the spice channel device fro
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>tp0nmymkxtqfjdf65bm1ares0by50gk</sha1>
+      <sha1>8edqy2x1rwjji98i7ofjcvddl9r4b5k</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -62732,14 +62756,13 @@ Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/A
     <ns>10</ns>
     <id>894</id>
     <revision>
-      <id>7534</id>
-      <parentid>7530</parentid>
-      <timestamp>2014-04-14T21:26:28Z</timestamp>
+      <id>7676</id>
+      <parentid>7675</parentid>
+      <timestamp>2014-05-03T12:56:29Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>class=&quot;link-https&quot; for torrent downloads</comment>
       <text xml:space="preserve" bytes="4831">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
 &lt;!--T:7--&gt;
 &lt;big&gt;Version: &lt;span style=&quot;color: green&quot;&gt;{{VersionNew}}&lt;/span&gt;&lt;/big&gt;
@@ -69580,14 +69603,15 @@ Please consider a recurring donation!&lt;/translate&gt;
     <ns>0</ns>
     <id>966</id>
     <revision>
-      <id>7409</id>
-      <parentid>6987</parentid>
-      <timestamp>2014-04-08T03:16:43Z</timestamp>
+      <id>7673</id>
+      <parentid>7409</parentid>
+      <timestamp>2014-05-03T11:57:29Z</timestamp>
       <contributor>
-        <username>Fortasse</username>
-        <id>1</id>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="1893">{{Header}}
+      <comment>/* Adding the user rule */</comment>
+      <text xml:space="preserve" bytes="2019">{{Header}}
 {{#seo:
 |description=Instructions on how to set up a Whonix Download Mirror
 }}
@@ -69606,7 +69630,13 @@ HTTPS Everywhere is a very clever tool created by folks at the [https://www.eff.
 
 Locate the directory &quot;HTTPSEverywhereUserRules&quot;, it should be /home/user/tor-browser_en-US/Data/Browser/profile.default/HTTPSEverywhereUserRules or somewhere close to that. 
 
-Create a new file called WhonixOnion.xml paste:
+Create a new file called WhonixOnion.xml.
+
+&lt;pre&gt;
+kwrite /home/user/tor-browser_en-US/Data/Browser/profile.default/HTTPSEverywhereUserRules/WhonixOnion.xml
+&lt;/pre&gt;
+
+And paste.
 &lt;pre&gt;
 &lt;ruleset name=&quot;Whonix Onion&quot;&gt;
   &lt;target host=&quot;whonix.org&quot; /&gt;
@@ -69625,7 +69655,7 @@ Happy browsing!
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>bmtdwi2j5d0t5q9tcfrdkjwabhwebo9</sha1>
+      <sha1>rqce220sb30a7ah30rxuee5hdw2duq7</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -76603,6 +76633,101 @@ Know '''iptables'''? Want to contribute? Say hello in [https://www.whonix.org/fo
 &lt;/random&gt;
 &lt;/div&gt;</text>
       <sha1>0ocgxdr2i5ou2ybn7ewhezvosjjc7jm</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Dev/Download Wizard</title>
+    <ns>0</ns>
+    <id>1241</id>
+    <revision>
+      <id>7685</id>
+      <parentid>7684</parentid>
+      <timestamp>2014-05-03T19:47:33Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>/* By Download Target */</comment>
+      <text xml:space="preserve" bytes="3146">{{Header}}
+
+= User's Preferences =
+== By Host Operating System ==
+* Windows users -&gt; recommend VirtualBox ova's
+* Mac users -&gt; recommend VirtualBox ova's
+* Linux users -&gt;  recommend VirtualBox ova's / recommend [[KVM]] as soon as ready
+
+== By Download Target ==
+* VirtualBox
+* probably in mid term future [[KVM]] as well
+* probably in long term future other visualizers as well
+
+== By Security / Usability Compromise ==
+* {{Code|Download Easy}}
+** http-only, direct http download link ([https://github.com/Whonix/Whonix/issues/177 https as soon as implemented])
+** no notes about download anonymity
+* {{Code|Download More Secure}}
+** Torrent + note, that anonymous download is difficult&lt;ref&gt;or at least very hard without Whonix, which is what they want to download in the first place&lt;/ref&gt;
+** http-only, direct http download link + hash check + note anonymous download
+* {{Code|Download Most Secure}}
+** http([https://github.com/Whonix/Whonix/issues/177 s]) + gpg
+** notes about anonymous download
+* {{Code|Download Utmost Secure}}
+** Build from source code
+
+== By Download Method ==
+* http([https://github.com/Whonix/Whonix/issues/177 s])
+* torrent
+
+== By Download Anonymity ==
+Low priority. Perhaps leaving this out.
+
+* preferred download anonymity
+* no preference about download anonymity
+
+== By Release Life Cycle ==
+* stable releases
+* Testers-Only Releases
+
+= Threat Models =
+== No attacks prevented ==
+* Http-only download without verification.
+* Good for new users who should be warned that this is only to try Whonix and practice getting used to Linux.
+* -&gt; {{Code|Download Easy}}
+
+== MITM download ==
+* Man-in-the-middle attack between mirror and downloader.
+* Can be defeated by using hash check, SSL or BitTorrent.
+* -&gt; {{Code|Download More Secure}}
+
+== whonix.org server compromise ==
+* Prevented by OpenPGP verification.
+* -&gt; {{Code|Download Most Secure}}
+
+== build server compromise ==
+* Prevented by building from source code.
+* -&gt; {{Code|Download Utmost Secure}}
+
+= Windows Verification is hosed =
+To check the hash, windows users have to either: &lt;br /&gt;
+1. Download a utility from a website and follow the instructions about how to check a hash &lt;- Possible, but tedious. &lt;br /&gt;
+2. Download via Bittorrent &lt;- Requires prior knowledge of Bittorrent &lt;br /&gt;
+3. All downloads via SSL &lt;- [https://github.com/Whonix/Whonix/issues/177 Can't right now] &lt;br /&gt;
+4. Learn GPG &lt;- an important skill; but now we're jumping directory to the &quot;advanced verification&quot; stage
+
+Verifying file integrity isn't something Windows encourages.
+
+No one is providing a https enabled download link for a Windows hash verification tool. Maybe we should redistribute [rapid-crc-unicode-portable http://portableapps.com/apps/utilities/rapid-crc-unicode-portable] (just 1 MB) over https on whonix.org?
+
+= See Also =
+* Secure downloader. Stub downloader. Small tool that could be served from whonix.org over https, that could download and install the bigger files from elsewhere without https and do the verification. -&gt; [[Dev/SecureDownloader]] -&gt; Probably not. The Tor Project failed to implement such as tool (Thandy).
+
+= Footnotes =
+&lt;references /&gt;
+
+{{Footer}}</text>
+      <sha1>qdyai0z4vora8nyx991j2rdjsyz88xh</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
