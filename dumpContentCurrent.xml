@@ -12849,15 +12849,15 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>118</id>
     <revision>
-      <id>7650</id>
-      <parentid>7642</parentid>
-      <timestamp>2014-05-02T12:02:47Z</timestamp>
+      <id>7672</id>
+      <parentid>7671</parentid>
+      <timestamp>2014-05-02T22:51:26Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Development */</comment>
-      <text xml:space="preserve" bytes="8089">__NOTITLE__
+      <comment>/* Testing */</comment>
+      <text xml:space="preserve" bytes="8438">__NOTITLE__
 {{#seo:
 |description=Donate, Spread, Follow, Mirror, Translate, Develop, Testing. Contribute to Free Software / Open Source.
 }}
@@ -12922,8 +12922,8 @@ It would be great, if you could add Whonix to [https://en.wikipedia.org/w/index.
 === Testing ===
 Whonix needs more people to test new Whonix features, bug fixes and so on.
 
-Latest testers-wanted posts can be found here: &lt;br /&gt;
-https://www.whonix.org/blog/category/testers-wanted/
+* Test new versions. Latest testers-wanted posts can be found here: https://www.whonix.org/blog/category/testers-wanted/
+* Join us testing new [[AppArmor]] profiles for improved security! ([https://www.whonix.org/forum/index.php/topic,97.0.html forum discussion])
 
 === Screenshots ===
 
@@ -12949,6 +12949,8 @@ If you are willing to help or to maintain Whonix's Twitter account, Facebook pag
 * '''iptables''' '''Have good knowledge of Linux networking and iptables? Get in contact!'''
 * [https://www.whonix.org/blog/translations-coordinator Translations Coordinator]
 * {{Code2|#!/bin/bash}}
+* AppArmor: Know how to create AppArmor profiles? Join us testing new [[AppArmor]] profiles for improved security! ([https://www.whonix.org/forum/index.php/topic,97.0.html forum discussion])
+
 ==== General ====
 Join [[Mailing_Lists#whonix-devel|Whonix Development Mailing List]]!
 
@@ -13072,7 +13074,7 @@ The PayPal logo (60px-De-pp-logo-200px.png), the subscribe button (subscribeCC_L
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Development]]</text>
-      <sha1>1bg8wgjglsl6gnmv141xs5xprn3iqiq</sha1>
+      <sha1>065o30fxejl3b4djwd9cm3gd6c6o6nv</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -76550,14 +76552,14 @@ under certain conditions; see the wiki source code for details.
     <ns>10</ns>
     <id>1240</id>
     <revision>
-      <id>7669</id>
-      <parentid>7668</parentid>
-      <timestamp>2014-05-02T17:23:27Z</timestamp>
+      <id>7670</id>
+      <parentid>7669</parentid>
+      <timestamp>2014-05-02T22:14:57Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="3231">&lt;div style=&quot;border:1px solid; background:#EEEEEE;; text-align:center;&quot;&gt;&lt;u&gt;Random News:&lt;/u&gt;
+      <text xml:space="preserve" bytes="3274">&lt;div style=&quot;padding-bottom:1px; padding-top:6px; border:thin solid black; background:#EEEEEE; text-align:center;&quot;&gt;&lt;u&gt;Random News:&lt;/u&gt;
 &lt;random&gt;
 Bored? Want to chat with other Whonix users? Join us in [http://irc://irc.oftc.net/whonix IRC] chat ([https://webirc.oftc.net:8443/?channels=Whonix Webchat]).
 @@@
@@ -76600,7 +76602,7 @@ Please [https://www.whonix.org/wiki/Contribute Contribute] by [http://https://ww
 Know '''iptables'''? Want to contribute? Say hello in [https://www.whonix.org/forum/index.php/board,5.0.html development forum].
 &lt;/random&gt;
 &lt;/div&gt;</text>
-      <sha1>h3u39ji5pea1evuxnggn8biv04sj655</sha1>
+      <sha1>0ocgxdr2i5ou2ybn7ewhezvosjjc7jm</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
