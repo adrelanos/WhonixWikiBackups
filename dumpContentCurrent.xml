@@ -3333,15 +3333,15 @@ If you don't get into trouble, by letting others to know, that you like or use W
     <ns>0</ns>
     <id>59</id>
     <revision>
-      <id>7296</id>
-      <parentid>7295</parentid>
-      <timestamp>2014-04-05T01:44:18Z</timestamp>
+      <id>7693</id>
+      <parentid>7692</parentid>
+      <timestamp>2014-05-05T20:27:38Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Flash Proxy Bridges */</comment>
-      <text xml:space="preserve" bytes="8334">{{Header}}
+      <comment>/* If using Tor is dangerous in your country */</comment>
+      <text xml:space="preserve" bytes="8890">{{Header}}
 &lt;!--
 Copyright:
 
@@ -3396,7 +3396,7 @@ The Tor Project's [https://www.torproject.org/docs/bridges documentation on brid
 
 ''Bridges are important tools that work in many cases but'' '''they are not an absolute protection''' ''against the technical progress that an adversary could do to identify Tor users.''
 
-1. When starting Whonix for the first time, start it while the host internet connection is deactivated, which is most secure. Otherwise the Whonix-Gateway would automatically connect to the public Tor network. Alternatively, Start VirtualBox -&gt; Right Click in Whonix-Gateway -&gt; Settings -&gt; Network -&gt; Adapter 1 -&gt; Deactivate the box ''&quot;Enable Network Adapter&quot;''. (less secure)
+1. When Whonix starts for the first time, it won't automatically connect to the public Tor network, which is good. whonixsetup, which is automatically started, will guide you.
 
 2. Only use [https://www.torproject.org/docs/bridges#PluggableTransports {{Code|obfuscated bridges}}] since they are harder to identify than other bridges.
 
@@ -3407,14 +3407,51 @@ So the best is if you can find a trusted friend or an organization in a differen
 See also [[Hide Tor and Whonix from your ISP]]!
 
 = How to use bridges in Whonix =
-== Using obfuscated obfs2, (private) and/or ordinary bridges ==
+== Using obfuscated, (private) and/or ordinary bridges ==
 Whonix does not yet include a {{Code|bridge mode}} that guides you through the process of setting up bridges before connecting to Tor. You must add bridges manually to {{Code2|/etc/tor/torrc}}.
 
-({{Code|Private}}) {{Code|obfs2}} bridges can currently be configured on Whonix-Gateway the same way, they would be configured when not using Whonix, i.e. just like on a server without graphical user interface. Have a look at {{Code2|/etc/tor/torrc}} &lt;ref&gt;[https://github.com/Whonix/Whonix/blob/stable/whonix_gateway/etc/tor/torrc /etc/tor/torrc on github].&lt;/ref&gt;.
+({{Code|Private}}) Ordinary, {{Code|obfs2}} and {{Code|obfs3}} bridges can currently be configured on Whonix-Gateway the same way, they would be configured when not using Whonix, i.e. just like on a server without graphical user interface. Have a look at {{Code2|/etc/tor/torrc}} &lt;ref&gt;[https://github.com/Whonix/Whonix/blob/stable/whonix_gateway/etc/tor/torrc /etc/tor/torrc on github].&lt;/ref&gt;.
 
-&lt;pre&gt;sudo nano /etc/tor/torrc&lt;/pre&gt;
-== Using (private) obfuscated obfs3 bridges ==
-{{Code|obfs3}} bridges should work in Whonix-Gateway. {{Code|obfs3}} is already preinstalled from torproject's apt repository.
+If you are using a graphical Whonix-Gateway, for more documentation and examples, see:
+
+&lt;pre&gt;
+Start Menu -&gt; Applications -&gt; Settings -&gt; /etc/tor/torrc.examples
+&lt;/pre&gt;
+
+To edit your {{Code2|/etc/tor/torrc}}.
+
+&lt;pre&gt;
+Start Menu -&gt; Applications -&gt; Settings -&gt; /etc/tor/torrc
+&lt;/pre&gt;
+
+After editing your {{Code2|/etc/tor/torrc}} you must reload Tor so your changes take effect.
+
+&lt;pre&gt;
+Start Menu -&gt; Applications -&gt; Settings -&gt; Reload Tor
+&lt;/pre&gt;
+
+If you are using a terminal-only Whonix-Gateway, click on expand on the right side.&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+&lt;div class=&quot;mw-collapsible-content&quot;&gt;
+For more documentation and examples, see:
+
+&lt;pre&gt;
+nano /etc/tor/torrc.examples
+&lt;/pre&gt;
+
+To edit your {{Code2|/etc/tor/torrc}}.
+
+&lt;pre&gt;
+sudo nano /etc/tor/torrc
+&lt;/pre&gt;
+
+After editing your {{Code2|/etc/tor/torrc}} you must reload Tor so your changes take effect.
+
+&lt;pre&gt;
+sudo service tor reload
+&lt;/pre&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
 
 = Flash Proxy Bridges =
 '''Untested!'''
@@ -3474,7 +3511,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>k4xuomsnz5fey1gkunxl9u6omh7b3p1</sha1>
+      <sha1>macxlnffe6al441r13d9v94ubm36nzx</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -72556,14 +72593,14 @@ Go to http://127.0.0.1/wiki/index.php/Main_Page.
     <ns>0</ns>
     <id>1110</id>
     <revision>
-      <id>7622</id>
-      <parentid>7531</parentid>
-      <timestamp>2014-04-29T19:24:19Z</timestamp>
+      <id>7694</id>
+      <parentid>7622</parentid>
+      <timestamp>2014-05-05T21:07:03Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <username>Troubadour</username>
+        <id>230</id>
       </contributor>
-      <text xml:space="preserve" bytes="4635">{{Header}}
+      <text xml:space="preserve" bytes="4443">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
@@ -72580,7 +72617,7 @@ kdesudo kwrite /etc/apparmor.d/home.user.tor-browser_en-US.Browser.firefox
 Paste the following content.
 
 &lt;pre&gt;
-# Last modified: Mon Apr 14 19:01:23 UTC 2014
+# Last modified: Mon May  5 21:05:28 UTC 2014
 #include &lt;tunables/global&gt;
 
 /home/user/tor-browser_en-US/Browser/firefox {
@@ -72590,16 +72627,16 @@ Paste the following content.
 	#include &lt;abstractions/fonts&gt;
 	#include &lt;abstractions/kde&gt;
 	#include &lt;abstractions/gnome&gt;
-	#include &lt;abstractions/audio&gt;	
-	#include &lt;abstractions/freedesktop.org&gt;	
+	#include &lt;abstractions/audio&gt;
+	#include &lt;abstractions/freedesktop.org&gt;
 	#include &lt;abstractions/user-download&gt;
-	#include &lt;abstractions/whonix&gt;	
-	
+	#include &lt;abstractions/whonix&gt;
+
 	#include &lt;local/home.user.tor-browser_en-US.Browser.firefox&gt;
-		
+
 	capability sys_ptrace,
 
-	deny / r,	
+	deny / r,
 	deny /etc/host.conf r,
 	deny /etc/hosts r,
 	deny /etc/nsswitch.conf r,
@@ -72629,9 +72666,9 @@ Paste the following content.
 	deny /var/lib/dbus/machine-id r,
 
 	@{HOME}/tor-browser_en-US/ r,
-	@{HOME}/tor-browser_en-US/* rw, 
+	@{HOME}/tor-browser_en-US/* rw,
 	@{HOME}/tor-browser_en-US/.cache/ r,
-	@{HOME}/tor-browser_en-US/.cache/* rw, 
+	@{HOME}/tor-browser_en-US/.cache/* rw,
 	@{HOME}/tor-browser_en-US/.mozilla/ w,
 	@{HOME}/tor-browser_en-US/.mozilla/*/ w,
 	@{HOME}/tor-browser_en-US/Browser/** r,
@@ -72648,11 +72685,6 @@ Paste the following content.
 	@{HOME}/tor-browser_en-US/Tor/tor Px,
 	@{HOME}/tor-browser_en-US/Browser/dependentlibs.list r,
 
-#	@{HOME}/ r,
-#	@{HOME}/* r,
-#	@{HOME}/Desktop r,	
-#	@{HOME}/Downloads/ r,	
-#	@{HOME}/Downloads/** rw,
 	@{HOME}/.local/share/ r,
 	@{HOME}/.local/share/** rw,
 	@{HOME}/.thumbnails/ r,
@@ -72660,37 +72692,35 @@ Paste the following content.
 	@{HOME}/.themes/** r,
 	@{HOME}/.cache/ r,
 	@{HOME}/.cache/* rwk,
-	@{HOME}/.config/** rw,		
-	@{HOME}/.fontconfig/** rw,		
+	@{HOME}/.config/** rw,
+	@{HOME}/.fontconfig/** rw,
 	@{HOME}/.Xauthority r,
 	## NOT in &lt;abstractions/kde&gt;
 	@{HOME}/.kde/share/** rw,
 
-	/usr/bin/mkdir rix,	
-	
+	/usr/bin/mkdir rix,
+
 	/usr/share/ r,
 	/usr/share/mime/ r,
 	/usr/share/mime/** r,
-#	/usr/share/pixmaps/ r,
-#	/usr/share/pixmaps/** r,
 	/usr/share/themes/ r,
 	/usr/share/themes/** r,
 	/usr/share/whonix/kde/share/config/kdeglobals r,
-#	/usr/share/applications/ r,
  	/usr/share/applications/** rwk,
-	/usr/share/fontconfig/conf.avail/* r, 	 	
-	
+	/usr/share/fontconfig/conf.avail/* r,
+
  	/etc/drirc r,
 	/etc/X11/cursors/* r,
 	/etc/mime.types r,
 	/etc/mailcap r,
 	/etc/pkcs11/modules/ r,
 	/etc/pkcs11/modules/* r,
-	
+	/etc/gai.conf r,
+
 	/bin/dash rix,
 	/bin/open rix,
 	/bin/ps rix,
-	
+
 	/dev/dri/card0 rw,
 	/dev/vboxuser rw,
 	/dev/tty r,
@@ -72703,11 +72733,11 @@ Paste the following content.
 
 	# Not in &lt;abstractions/kde&gt;
 	/usr/bin/kde4-config rix,
-	
+
 	/usr/lib/i386-linux-gnu/** mr,
-	
+
 	/usr/share/libthai/thbrk.tri r,
-	
+
 	/var/cache/fontconfig/ rwk,
 }
 &lt;/pre&gt;
@@ -72742,7 +72772,7 @@ https://github.com/Whonix/apparmor-profile-torbrowser
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>akscg80m3ygafvvtwa0bhlfjolbetqi</sha1>
+      <sha1>jyassz842tej57r3w7up5n1o2tol21v</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
