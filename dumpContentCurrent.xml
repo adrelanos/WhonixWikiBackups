@@ -41998,14 +41998,14 @@ table.wikitable
     <ns>0</ns>
     <id>400</id>
     <revision>
-      <id>7618</id>
-      <parentid>7240</parentid>
-      <timestamp>2014-04-29T11:18:19Z</timestamp>
+      <id>7697</id>
+      <parentid>7618</parentid>
+      <timestamp>2014-05-06T15:06:23Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="11147">{{Header}}
+      <text xml:space="preserve" bytes="11757">{{Header}}
 {{#seo:
 |description=Awards / Certifications / Buttons / Widgets which whonix.org could use.
 }}
@@ -42257,10 +42257,15 @@ if (window.attachEvent) window.attachEvent('onload', async_load); else window.ad
 &lt;/a&gt;
 &lt;/html&gt;
 
+= gofundme =
+&lt;html&gt;
+&lt;object classid=&quot;clsid:D27CDB6E-AE6D-11cf-96B8-444553540000&quot; width=&quot;258&quot; height=&quot;338&quot; title=&quot;Click Here to donate!&quot; type=&quot;application/x-shockwave-flash&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;//funds.gofundme.com/Widgetflex.swf&quot; /&gt;&lt;param name=&quot;quality&quot; value=&quot;high&quot; /&gt;&lt;param name=&quot;flashvars&quot; value=&quot;page=8x50zw&amp;template=0&quot; /&gt;&lt;param name=&quot;wmode&quot; value=&quot;transparent&quot; /&gt;&lt;embed allowScriptAccess=&quot;always&quot; src=&quot;//funds.gofundme.com/Widgetflex.swf&quot; quality=&quot;high&quot; flashVars=&quot;page=8x50zw&amp;template=0&quot; type=&quot;application/x-shockwave-flash&quot; wmode=&quot;transparent&quot; width=&quot;258&quot; height=&quot;338&quot;&gt;&lt;/embed&gt;&lt;/object&gt;
+&lt;/html&gt;
+
 {{Footer}}
 
 [[Category:Development]]</text>
-      <sha1>nfmwlxqhuue5isbu45emhf7n0zurqt9</sha1>
+      <sha1>91qk0miubwhj7lwfiq5sqm83a6yhru9</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -74478,14 +74483,14 @@ Weiterführende Links (in Englischer Sprache):
     <ns>0</ns>
     <id>1146</id>
     <revision>
-      <id>7270</id>
-      <parentid>7237</parentid>
-      <timestamp>2014-04-04T07:50:01Z</timestamp>
+      <id>7698</id>
+      <parentid>7270</parentid>
+      <timestamp>2014-05-06T20:20:38Z</timestamp>
       <contributor>
         <username>Troubadour</username>
         <id>230</id>
       </contributor>
-      <text xml:space="preserve" bytes="5065">{{Header}}
+      <text xml:space="preserve" bytes="5105">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
@@ -74502,7 +74507,7 @@ kdesudo kwrite /etc/apparmor.d/usr.bin.sdwdate
 Paste the following content.
 
 &lt;pre&gt;
-# Last modified: Wed Mar 26 19:42:23 UTC 2014
+# Last modified: Tue May  6 20:18:21 UTC 2014
 #include &lt;tunables/global&gt;
 
 /usr/bin/sdwdate {
@@ -74644,10 +74649,10 @@ Paste the following content.
 	/usr/lib/whonix/whonixcheck/apt-get-update-simulate rix,
 	/usr/lib/whonix/uwtwrapper rix,
 	/usr/lib/whonix/whonixcheck/help_check_tor_bootstrap.py rix,
-	/usr/lib/python2.7/** mr,
-	/usr/lib/python2.7/lib-dynload/datetime.so mr,
+	/usr/lib/python*/** mr,
+	/usr/lib/python*/lib-dynload/datetime.so mr,
 	
-	/usr/local/lib/python2.7/dist-packages/ r,
+	deny /usr/local/lib/** r,
 
 	/usr/bin/sdwdate rix,
 	/usr/bin/basename  rix,
@@ -74686,13 +74691,15 @@ Paste the following content.
 
 	/var/cache/apt/pkgcache.bin rwk,
 	/var/cache/apt/pkgcache.bin* rwk,
-		
+	/var/cache/apt/srcpkgcache.bin rwk,
+	
 	/var/lib/dpkg/lock rwcxk,
 	/var/lib/dpkg/updates/ r,
 	/var/lib/dpkg/status r,
 	/var/lib/apt/lists/ r,
 	/var/lib/apt/extended_states r,
 	/var/lib/dpkg/** rwk,
+	/var/lib/apt/lists/* r,
 	
 	/var/log/bootclockrandomization.log rwk,
 	/var/log/timesanitycheck.log rwk,
@@ -74711,7 +74718,7 @@ sudo apparmor_parser -r /etc/apparmor.d/usr.bin.sdwdate
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>sc4w8asz16emauomca1sua7snzxtfid</sha1>
+      <sha1>6yv39z1iyb6eqa5ni37md5wzl9ttvfj</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
