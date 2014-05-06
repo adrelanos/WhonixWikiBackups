@@ -55660,12 +55660,13 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
     <ns>0</ns>
     <id>691</id>
     <revision>
-      <id>7557</id>
-      <parentid>7556</parentid>
-      <timestamp>2014-04-20T03:12:00Z</timestamp>
+      <id>7696</id>
+      <parentid>7557</parentid>
+      <timestamp>2014-05-06T07:33:44Z</timestamp>
       <contributor>
         <ip>127.0.0.1</ip>
       </contributor>
+      <comment>Fixed typo: kdn -&gt; kdm</comment>
       <text xml:space="preserve" bytes="25177">{{Header}}
 {{#seo:
 |description=Development Notes for adding KVM support to Whonix.
@@ -55707,7 +55708,7 @@ As soon as all blockers have been sorted out. We could recommend using [[KVM]] i
 
 = Non-Blockers =
 == Document: how to leave KVM when no X is running? ==
-Situation... User is in terminal in a VM... No X is running (&quot;sudo service kdn stop&quot;). User wants to switch back to the host... How to do this?
+Situation... User is in terminal in a VM... No X is running (&quot;sudo service kdm stop&quot;). User wants to switch back to the host... How to do this?
 
 == SPICE security implications ==
 http://lists.freedesktop.org/archives/spice-devel/2013-December/015810.html
@@ -56113,7 +56114,7 @@ whonixcheck (since Whonix 8) would tell you if kvmclock is enabled. whonixcheck 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>mf5ajtpjzhgkvpbc4v4e6muag8cipb4</sha1>
+      <sha1>httt5l2o5gewkd5rzir6hc24t65n4dh</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -57133,15 +57134,15 @@ Quelle: &lt;html&gt;&lt;a href=&quot;http://www.juraforum.de/impressum-generator
     <ns>0</ns>
     <id>698</id>
     <revision>
-      <id>7638</id>
-      <parentid>7587</parentid>
-      <timestamp>2014-05-01T17:56:50Z</timestamp>
+      <id>7695</id>
+      <parentid>7638</parentid>
+      <timestamp>2014-05-05T22:41:38Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
       <comment>/* Geltungsbereich */</comment>
-      <text xml:space="preserve" bytes="4510">&lt;!--
+      <text xml:space="preserve" bytes="4740">&lt;!--
 NOTE TO WIKI EDITORS:
 Do not add the default footer!
 Do not edit without asking Patrick Schleizer beforehand!
@@ -57219,6 +57220,10 @@ Dieses Impressum gilt auch für:
 ** https://github.com/adrelanos/torsocks-remove-ld-preload
 ** https://github.com/Whonix/bootclockrandomization
 ** https://github.com/adrelanos/bootclockrandomization
+** https://github.com/Whonix/apparmor-profile-anondist
+** https://github.com/adrelanos/apparmor-profile-anondist
+** https://github.com/Whonix/apparmor-profile-torbrowser
+** https://github.com/adrelanos/apparmor-profile-torbrowser
 
 Bitte beachten Sie, dass dieses Impressum gilt nicht für:
 
@@ -57233,7 +57238,7 @@ Die Datenschutzerklärung finden Sie [[Datenschutz|hier]].
 Den Haftungsausschluss (Disclaimer) finden Sie [[Disclaimer|hier]].
 
 [[Category:Documentation]]</text>
-      <sha1>qiczq96uhvfeyi5jkyslz3vy5g4liio</sha1>
+      <sha1>841xmejjbsgqsmgttkblxhm6cplgbmn</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
