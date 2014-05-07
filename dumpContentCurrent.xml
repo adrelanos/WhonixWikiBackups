@@ -436,14 +436,14 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
     <ns>10</ns>
     <id>15</id>
     <revision>
-      <id>7523</id>
-      <parentid>7512</parentid>
-      <timestamp>2014-04-13T16:21:11Z</timestamp>
+      <id>7704</id>
+      <parentid>7523</parentid>
+      <timestamp>2014-05-07T12:58:12Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="1460">&lt;br /&gt;&lt;hr&gt;&lt;font size=&quot;-3&quot;&gt;[[Special:UserLogin|Log in]] | [[Special:OpenIDLogin|OpenID]] | [[Contact|Contact]] | [[Impressum]] | [[Datenschutz|Datenschutz]] | [[Disclaimer|Haftungsausschluss]]
+      <text xml:space="preserve" bytes="1489">&lt;br /&gt;&lt;hr&gt;&lt;font size=&quot;-3&quot;&gt;[[Special:UserLogin|Log in]] | [[Special:OpenIDLogin|OpenID]] | [[Contact|Contact]] | [[Impressum]] | [[Datenschutz|Datenschutz]] | [[Disclaimer|Haftungsausschluss]] | [[Investors]] | [[Donate]]
 [https://www.whonix.org{{localurl:{{FULLPAGENAME}}}} https] | &lt;html&gt;&lt;a class=&quot;link-https&quot; href=&quot;http://xxxxxxxxxxh5kyrx.onion&lt;/html&gt;{{localurl:{{FULLPAGENAME}}}}&lt;html&gt;&quot; rel=&quot;nofollow&quot;&gt;.onion&lt;/a&gt;&lt;/html&gt; &lt;sup&gt;[[Forcing .onion on Whonix.org|[note]]]&lt;/sup&gt; | [http://whonix.org.nyud.net{{localurl:{{FULLPAGENAME}}}} Mirror] | [https://kkkkkkkkkk63ava6.tor2web.org{{localurl:{{FULLPAGENAME}}}} Mirror]
 &lt;!--
 inspired by http://aboli.sh/
@@ -453,7 +453,7 @@ This is a wiki. Want to improve this page? See [https://github.com/Whonix/Whonix
 
 Whonix (&lt;html&gt;&lt;a href=&quot;https://plus.google.com/108150429836421683225&quot; rel=&quot;publisher&quot; /&gt;g+&lt;/a&gt;&lt;/html&gt;) is a [http://www.openinventionnetwork.com/licensees.php licensee] of the Open Invention Network. Unless otherwise noted above, content of this  page is [[Whonix:Copyrights|copyrighted]] and licensed under the same Free (as in speech) [https://github.com/Whonix/Whonix/blob/master/debian/copyright license] as Whonix itself.
 &lt;/font&gt;</text>
-      <sha1>jd88v6a118471vi7m7q65cuzy1qsu5d</sha1>
+      <sha1>1mjiw3u3iwcku4gnhvfsndk2iobnt9d</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -55665,14 +55665,15 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
     <ns>0</ns>
     <id>691</id>
     <revision>
-      <id>7696</id>
-      <parentid>7557</parentid>
-      <timestamp>2014-05-06T07:33:44Z</timestamp>
+      <id>7700</id>
+      <parentid>7699</parentid>
+      <timestamp>2014-05-07T11:10:59Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <comment>Fixed typo: kdn -&gt; kdm</comment>
-      <text xml:space="preserve" bytes="25177">{{Header}}
+      <comment>/* qcow2 compression */</comment>
+      <text xml:space="preserve" bytes="25433">{{Header}}
 {{#seo:
 |description=Development Notes for adding KVM support to Whonix.
 }}
@@ -55683,6 +55684,10 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
 * [https://github.com/Whonix/Whonix/issues/121 KVM Support github ticket]
 
 = Blockers =
+== Leak ==
+* [https://www.whonix.org/forum/index.php/topic,243.msg1636.html New FIN ACK / RST ACK Leak Test]
+* [https://www.whonix.org/forum/index.php/topic,243.msg1636.html#msg1636 Reported by HulaHoop]
+
 == Instructions include how to set clock to UTC? ==
 As per http://libvirt.org/formatdomain.html#elementsTime
 
@@ -55901,7 +55906,7 @@ The https://github.com/Whonix/Whonix/blob/master/help-steps/analyze_image requir
 For better performance. (As per [http://www.ilsistemista.net/index.php/virtualization/11-kvm-io-slowness-on-rhel-6.html blog post].) Done in 7.7.8.0.
 
 == qcow2 compression ==
-When uncompressed, upload would take ~250 hours per image. Now compressing.
+When uncompressed, upload would take ~250 hours per image. Now compressing using tar. [Not using qcow2's compression feature.]
 
 == How to disable KVMClock? ==
 How to adjust KVM to have clock=vm on host.
@@ -56119,7 +56124,7 @@ whonixcheck (since Whonix 8) would tell you if kvmclock is enabled. whonixcheck 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>httt5l2o5gewkd5rzir6hc24t65n4dh</sha1>
+      <sha1>7s129in3lktr5b2qxtcy3v7s85yks3j</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -56129,14 +56134,14 @@ whonixcheck (since Whonix 8) would tell you if kvmclock is enabled. whonixcheck 
     <ns>0</ns>
     <id>692</id>
     <revision>
-      <id>5829</id>
-      <parentid>5659</parentid>
-      <timestamp>2014-02-27T13:05:34Z</timestamp>
+      <id>7705</id>
+      <parentid>5829</parentid>
+      <timestamp>2014-05-07T18:29:21Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="2674">{{Header}}
+      <text xml:space="preserve" bytes="2953">{{Header}}
 {{#seo:
 |description=Development Notes about File System Permissions
 }}
@@ -56169,13 +56174,17 @@ http://theinvisiblethings.blogspot.fr/2011/04/linux-security-circus-on-gui-isola
 
 http://git.qubes-os.org/?p=joanna/core-agent-linux.git;a=blob;f=misc/qubes.sudoers;h=8087a90a8c0a6f81d4fe45905a6aa9462de2a7ce;hb=HEAD
 
+http://git.qubes-os.org/?p=joanna/core-admin-linux.git;a=blob;f=system-config/qubes.sudoers;h=23086ede18e2de8c7c369e73fbe6e8df4d158b58;hb=HEAD
+
+http://git.qubes-os.org/?p=joanna/core-agent-linux.git;a=blob;f=misc/qubes.sudoers;h=8087a90a8c0a6f81d4fe45905a6aa9462de2a7ce;hb=HEAD
+
 = Footnotes =
 &lt;references /&gt;
 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>hnhcckg8wkz36ixetek2rxv30nz7r5e</sha1>
+      <sha1>12p66z5k3k2xt3mw0gvahlumbuxfbvu</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -76780,6 +76789,66 @@ No one is providing a https enabled download link for a Windows hash verificatio
 
 {{Footer}}</text>
       <sha1>qdyai0z4vora8nyx991j2rdjsyz88xh</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Donate</title>
+    <ns>8</ns>
+    <id>1242</id>
+    <revision>
+      <id>7701</id>
+      <timestamp>2014-05-07T12:54:22Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;Donate&quot;</comment>
+      <text xml:space="preserve" bytes="6">Donate</text>
+      <sha1>hffo3ek7ju874z2tos5bvm7zficp2k9</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Investors</title>
+    <ns>8</ns>
+    <id>1243</id>
+    <revision>
+      <id>7702</id>
+      <timestamp>2014-05-07T12:54:54Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;Investors&quot;</comment>
+      <text xml:space="preserve" bytes="9">Investors</text>
+      <sha1>4hmsrlts8ngu40hw4w4kd82xiqdv3oh</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Investors</title>
+    <ns>0</ns>
+    <id>1244</id>
+    <revision>
+      <id>7703</id>
+      <timestamp>2014-05-07T12:56:59Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;{{Header}}  '''Interested in becoming an investor? Get in [[Contact]]!'''  Otherwise please consider a [[Donate|Donation]].  {{Footer}}&quot;</comment>
+      <text xml:space="preserve" bytes="135">{{Header}}
+
+'''Interested in becoming an investor? Get in [[Contact]]!'''
+
+Otherwise please consider a [[Donate|Donation]].
+
+{{Footer}}</text>
+      <sha1>gfmrifp5tlvkmsjjvk7sc0pdug4l8ur</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
