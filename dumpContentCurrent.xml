@@ -14293,15 +14293,15 @@ When you are using them at the same time, the risks explained in the introductio
     <ns>0</ns>
     <id>127</id>
     <revision>
-      <id>7616</id>
-      <parentid>7615</parentid>
-      <timestamp>2014-04-28T11:32:58Z</timestamp>
+      <id>7715</id>
+      <parentid>7616</parentid>
+      <timestamp>2014-05-08T20:23:41Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Deactivate Automatic TimeSync */</comment>
-      <text xml:space="preserve" bytes="35292">{{Header}}
+      <comment>/* General */</comment>
+      <text xml:space="preserve" bytes="35300">{{Header}}
 &lt;!--
 Copyright:
 
@@ -14378,7 +14378,7 @@ Clock skew apart this small biossystemtimeoffset &lt;ref&gt;biossystemtimeoffset
 
 When you suspend/save the state of a VM, clock will stop and continue after resume, thus lag behind. You shouldn't suspend/save the state of Whonix-Gateway. Rather power the Gateway off, if you no longer need it. &lt;ref&gt;Otherwise Tor can get confused if time is more than 1 hour in past or more than 3 hour in future and will only reconnect to the Tor network, if clock is manually fixed or powered off and powered on again.&lt;/ref&gt; You can suspend/save the state of Whonix-Workstation, but then the clock will lag behind. To fix it run inside Whonix-Workstation Start Menu -&gt; Applications -&gt; System -&gt; Whonix Timesync.
 
-The host system clock synchronization mechanism still uses unauthenticated NTP from a single source. This is not optimal, but there is no real solution to this problem. &lt;ref&gt;See Design: [[TimeSync]].&lt;/ref&gt; The ISP and/or the time server could either non-intentionally or intentionally (as an attack) introduce a clock skew or the host clock could simply malfunction.
+The host system clock synchronization mechanism still uses unauthenticated NTP from a single source. This is not optimal, but there is no real solution to this problem. &lt;ref&gt;See Design: [[Dev/TimeSync]].&lt;/ref&gt; The ISP and/or the time server could either non-intentionally or intentionally (as an attack) introduce a clock skew or the host clock could simply malfunction.
 
 If the host clock is too much off, more than one hour in past or more than 3 hour in future, Tor can't connect to the Tor network. &lt;ref&gt;Because Tor can't verify the Tor consensus.&lt;/ref&gt; The easiest fix in this situation is to manually fix the clock on the host, to power off Whonix-Gateway and to power on Whonix-Gateway again.
 
@@ -14397,7 +14397,7 @@ Summary:
 * Tor can't connect if the host clock is too much off. In this case manually fix the host clock, power off Whonix-Gateway and power on Whonix-Gateway again.
 * Keep an eye on the host clock, ensure that it's always somewhat accurate.
 
-Even though it's a difficult topic, you are advised to read Technical Design chapter [[TimeSync]]. 
+Even though it's a difficult topic, you are advised to read Technical Design chapter [[Dev/TimeSync]]. 
 
 Footnotes. Additional information, reasoning, design for interested users, developers and auditors.
 
@@ -14875,7 +14875,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>77bo6a8xe67wenhbjd1k9xt5o0e0cfj</sha1>
+      <sha1>8uu5o701h3sym5nuypwd69yc0d9exle</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -18279,14 +18279,14 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
     <ns>0</ns>
     <id>155</id>
     <revision>
-      <id>7337</id>
-      <parentid>7334</parentid>
-      <timestamp>2014-04-06T15:23:08Z</timestamp>
+      <id>7714</id>
+      <parentid>7713</parentid>
+      <timestamp>2014-05-08T17:03:13Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <text xml:space="preserve" bytes="18247">{{Header}}
+      <comment>/* Conclusions */</comment>
+      <text xml:space="preserve" bytes="19609">{{Header}}
 &lt;!--
 Copyright:
 
@@ -18380,25 +18380,29 @@ For hidden services a correct clock is crucial, see:
 ** built in time synchronization features get disabled by ''VBoxManage setextradata &quot;$VMNAME&quot; &quot;VBoxInternal/Devices/VMMDev/0/Config/GetHostTimeDisabled&quot; &quot;1&quot;'' at build time.
 * Whonix-Gateway and Whonix-Workstation
 ** When get powered on, they still get their time from the host. The user is advised to modify the biossystemtimeoffset in Advanced Security Guide, chapter [[Advanced Security Guide#Network Time Synchronization|Network Time Synchronization]]. &lt;ref&gt;Developer information: If we needed or wanted to render the hardware clock unusable, we could set VirtualBox ''--biossystemtimeoffset'' several decades in past or future.&lt;/ref&gt;
-** {{Whonix6}} and above: Time Sanity Check before sdwdate will be executed, this ensures, that the host clock is sane and not slow in 1980. User gets advised to fix its host clock in such cases.
+** Time Sanity Check before sdwdate will be executed, this ensures, that the host clock is sane and not slow in 1980. User gets advised to fix its host clock in such cases.
 ** After they are connected to the Tor network, they use sdwdate (inspired by [https://tails.boum.org/contribute/design/Time_syncing/ tails_htp]) to set the system clock. &lt;ref&gt;Stream isolation has been added, for Whonix's sdwdate implementation i.e. people using Tor Browser prevent notifying their exit relay, that they are sdwdate or Whonix users.&lt;/ref&gt;
-** {{Whonix6}} and above: Time Sanity Check after sdwdate was executed. This should catch eventual bigger bugs and attacks. User gets informed if it fails.
+** Time Sanity Check after sdwdate was executed. This should catch eventual bigger bugs and attacks. User gets informed if it fails.
 * On Whonix-Workstation,
-** Using Boot Clock Randomization (Whonix {{Whonix6}} and above), i.e. after boot, the clock is set randomly between 5 and 180 seconds into the past or future. This is useful to enforce the design goal, that the host clock and Whonix-Workstation clock should always slightly differ. It's also useful to obfuscate the clock when sdwdate itself is running, because naturally at this time, sdwdate hasn't finished.
+** Using Boot Clock Randomization, i.e. after boot, the clock is set randomly between 5 and 180 seconds into the past or future. This is useful to enforce the design goal, that the host clock and Whonix-Workstation clock should always slightly differ. It's also useful to obfuscate the clock when sdwdate itself is running, because naturally at this time, sdwdate hasn't finished.
 ** Every hour, at a random time, sdwdate will set the clock again. This is useful for machines running for long time periods without reboot.
 ** An adversary could guess if someone is running a hidden service with constant clock adjustments, that it's hosted inside a Whonix-Workstation. It's unknown if the clock adjustments by sdwdate are big enough to enable an adversary to guess that.
-*** '''TODO''': Open question... &quot;''ntpd adjusts the clock in small steps so that the timescale is effectively continuous and without discontinuities''&quot; - is that possible with a sdwdate like approach as well?
+*** '''TODO''': Open question... &quot;''ntpd adjusts the clock in small steps so that the timescale is effectively continuous and without discontinuities''&quot; - is that possible with a sdwdate like approach as well? -&gt; Working on [https://github.com/Whonix/Whonix/issues/169 sclockadj].
 * Whonix-Gateway
-** Doesn't use Boot Clock Randomization. If the assumption is correct, that the ISP can detect clock jumps by observing Tor's TLS client hello, clock jumps should be avoided to prevent fingerprinting Whonix users.
+** Doesn't use Boot Clock Randomization. If the assumption is correct, that the ISP can detect clock jumps by observing Tor's TLS client hello &lt;ref name=tlsleakone /&gt;; &lt;ref name=tlsleaktwo /&gt;, clock jumps should be avoided to prevent fingerprinting Whonix users.
 ** Uses sdwdate after booting.
 ** Using it at all is better against Attack (1) when using a bridge.
 ** Running sdwdate also every \[1440 minutes + random(0-1440)\]. Not running this every hour at a random time, because Tor does not like clock jumps. When testing this, there were cases where the clock jumped about 800 seconds, which caused Tor to expire circuits, which caused connection interrupts.
-** '''TODO''': Open question... How often should sdwdate run on Whonix-Gateway? Every hour is a bad idea, as we see above. Not running it again when some people may run Whonix-Gateway for days or weeks is not good either, since the clock can drift. Maybe it should run wait 24 hours and then wait a random amount of minutes within 24 hours?
-*** The entry guard or bridge can see the time through TCP timestamp. &lt;ref name=tlsleakone&gt;[https://trac.torproject.org/projects/tor/ticket/7277 torproject.org #7277: timestamp leaked in TLS client hello]&lt;/ref&gt;; &lt;ref name=tlsleaktwo&gt;[https://trac.torproject.org/projects/tor/ticket/4852 torproject.org #4852: Clients send NETINFO with time]&lt;/ref&gt;
+** '''TODO''': Open question... How often should sdwdate run on Whonix-Gateway? Every hour is a bad idea, as we see above. Not running it again when some people may run Whonix-Gateway for days or weeks is not good either, since the clock can drift. Maybe it should run wait 24 hours and then wait a random amount of minutes within 24 hours? -&gt; Will be solved when [https://github.com/Whonix/Whonix/issues/169 sclockadj] gets finished.
+*** The entry guard or bridge can see the time through TCP timestamp. &lt;ref name=tlsleakone&gt;
+See [https://trac.torproject.org/projects/tor/ticket/7277 torproject.org #7277: timestamp leaked in TLS client hello]. The ticket says fixed. However, [https://packages.debian.org/de/wheezy/openssl Debian wheezy (currently: stable) (which Whonix 8 is based on) is using OpenSSL 1.0.1e] but Nick's [https://trac.torproject.org/projects/tor/ticket/7277#comment:15 patch will appear first in 1.0.1e]. It will be solved when Whonix is based on Debian jessie, because that contains [https://packages.debian.org/de/jessie/openssl a more recent version of OpenSSL].
+&lt;/ref&gt;; &lt;ref name=tlsleaktwo&gt;
+See [https://trac.torproject.org/projects/tor/ticket/4852 torproject.org #4852: Clients send NETINFO with time]. The ticket says fixed. However, [https://packages.debian.org/de/wheezy/tor Debian wheezy (currently: stable) (which Whonix 8 is based on) is using Tor 0.2.3] but Nick's [https://trac.torproject.org/projects/tor/ticket/4852#comment:20 patch will appear first in 0.2.4]. It will be solved when Whonix is based on Debian jessie, because that contains [https://packages.debian.org/de/jessie/tor a more recent version of Tor].
+&lt;/ref&gt;
 *** Continuous clock jumps could help the entry guard or bridge guessing, that a Whonix-Gateway is connected.
-*** '''TODO''': Open question... &quot;''ntpd adjusts the clock in small steps so that the timescale is effectively continuous and without discontinuities''&quot; - is that possible with a sdwdate like approach as well?
+*** '''TODO''': Open question... &quot;''ntpd adjusts the clock in small steps so that the timescale is effectively continuous and without discontinuities''&quot; - is that possible with a sdwdate like approach as well? -&gt; Will be solved when [https://github.com/Whonix/Whonix/issues/169 sclockadj] gets finished.
 * Hardware Clock:
-** Whonix-Gateway: set to UTC. Tor leaks it &lt;ref name=tlsleakone /&gt;; &lt;ref name=tlsleaktwo /&gt;, but that is of no concern. Tor is running on Linux and Linux is expected to be run in UTC. Therefore there is no point to set it to the local time zone of the user.
+** Whonix-Gateway: set to UTC. OpenSSL (used by Tor) leaks it &lt;ref name=tlsleakone /&gt;; &lt;ref name=tlsleaktwo /&gt;, but that is of no concern. Tor is running on Linux and Linux is expected to be run in UTC. Therefore there is no point to set it to the local time zone of the user.
 ** Whonix-Workstation: set to UTC
 * sdwdate runs at non-predictable times to prevent the ISP or Tor guard/bridge node to guess, that the user is running Whonix.
 * Implementation details are in Design-Shared, chapter [[Dev/Design-Shared#timesync|TimeSync]]
@@ -18413,7 +18417,7 @@ curl is also directed to only use TLSv1 as a &quot;secure&quot; protocol.
 === sdwdate source pools ===
 What sources should be trusted? This is of course also a problem with NTP.
 
-The sdwdate pools used by Whonix are based on stable and reliable webservers that get great amounts of traffic. They are categorized into three different pools according to their members' relationship to the members in the other pools; any member in a one pool should be unlikely to share logs (or other identifying data), or to agree to send fake time information, with a member from the the other pools. The pools are as follows:
+The sdwdate pools used by Whonix are based on stable and reliable webservers that get great amounts of traffic. They are categorized into three different pools according to their members' relationship to the members in the other pools; any member in a one pool should be unlikely to share logs (or other identifying data), or to agree to send fake time information, with a member from the other pools. The pools are as follows:
 
 * The &quot;pal&quot; pool are run by groups that are likely to take great care of their visitors' privacy.
 * The &quot;foe&quot; pool are managed by adversaries of the &quot;pal&quot; pool.
@@ -18424,8 +18428,8 @@ The pools are listed in {{Code2|whonix_shared/etc/sdwdate.d/30_sdwdate_default}}
 Basically, sdwdate picks three random servers - one from each pool, and then builds the mediate of the three advertised dates.
 
 = Conclusions =
-* '''Attack 1''' is a general Tor problem. It is impossible to solve for Whonix. It is unsolved in other projects as well.
-* '''Attack 2''' gets partially defeated.
+* &lt;span style=&quot;background-color: {{Red}}&quot;&gt;'''Attack 1'''&lt;/span&gt; is a general Tor problem. It is impossible to solve for Whonix. It is unsolved in other projects as well.
+* &lt;span style=&quot;background-color: {{Green}}&quot;&gt;'''Attack 2'''&lt;/span&gt; gets partially defeated.
 ** Whonix-Gateway and Whonix-Workstation are immune.
 ** This problem is unsolved in other projects as well.
 *** This is a general problem with all operating systems.
@@ -18434,9 +18438,9 @@ Basically, sdwdate picks three random servers - one from each pool, and then bui
 *** [http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=%23687166 Debian Bug Report ntp: NTP security vulnerability because not using authentication by default]
 *** [https://bugs.launchpad.net/ubuntu/+source/ntp/+bug/1039420 Ubuntu Bug Report NTP security vulnerability because not using authentication by default]
 ** Manual workaround: Check your clock manually and read [[Other Operating Systems#About_Ubuntu|About Ubuntu]] (stale mirror attack). ([https://bugs.launchpad.net/launchpad/+bug/716535 Bug #716535: Please support Valid-Until in release files for security.ubuntu.com])
-* '''Attack 3''' gets defeated, Whonix adds additional security.
-* '''Attack 4''' gets defeated, Whonix adds additional security.
-* '''Attack 5''' is a general Tor problem, which can not be solved by Whonix and which is unsolved in other projects as well. Since host, Whonix-Gateway and Whonix-Workstation time all differ, this attack at least becomes harder against Whonix.
+* &lt;span style=&quot;background-color: {{Green}}&quot;&gt;'''Attack 3'''&lt;/span&gt; gets defeated, Whonix adds additional security.
+* &lt;span style=&quot;background-color: {{Green}}&quot;&gt;'''Attack 4'''&lt;/span&gt; gets defeated, Whonix adds additional security.
+* &lt;span style=&quot;background-color: {{Red}}&quot;&gt;'''Attack 5'''&lt;/span&gt; is a general Tor problem, which can not be solved by Whonix and which is unsolved in other projects as well. Since host, Whonix-Gateway and Whonix-Workstation time all differ, this attack at least becomes harder against Whonix.
 
 When the user powers on Whonix-Gateway and the host time is too much off, it will not be able to connect to the Tor network. It is advised, when powering on Whonix-Gateway, to check that the host time is no more than 1 hour in past or more than 3 hour in future. Otherwise Tor will be unable to connect.&lt;ref&gt;https://lists.torproject.org/pipermail/tor-talk/2012-February/023264.html&lt;/ref&gt;
 
@@ -18483,7 +18487,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Design]]</text>
-      <sha1>2v1vn3ch8ow69n9j3e3c7b9k5q8q9lp</sha1>
+      <sha1>lalw0jazhr223xfvau9rt0pk1p0x2zz</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
