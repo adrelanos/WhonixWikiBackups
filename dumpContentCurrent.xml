@@ -15859,9 +15859,9 @@ See [[Dev/Leak Tests]].
     <ns>0</ns>
     <id>133</id>
     <revision>
-      <id>5766</id>
-      <parentid>4199</parentid>
-      <timestamp>2014-02-27T11:56:42Z</timestamp>
+      <id>7720</id>
+      <parentid>5766</parentid>
+      <timestamp>2014-05-09T09:34:16Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
@@ -15873,7 +15873,7 @@ See [[Dev/Leak Tests]].
 = Summary =
 This is a proposal to defend a '''permanent takedown threat'''. A mechanism to securely download project metadata, which includes censor resistance, defeating rollback and infinite freeze attacks.
 
-Both, &lt;code&gt;TUF (The Update Framework)&lt;/code&gt;&lt;ref&gt;https://www.updateframework.com/&lt;/ref&gt; &lt;ref&gt;https://github.com/theupdateframework/tuf&lt;/ref&gt; and pdt, do not require software to be running on a server and can be run on any (free) web space.
+Both, &lt;code&gt;TUF (The Update Framework)&lt;/code&gt;&lt;ref&gt;https://www.updateframework.com/&lt;/ref&gt; &lt;ref&gt;https://github.com/theupdateframework/tuf&lt;/ref&gt; and ptt, do not require software to be running on a server and can be run on any (free) web space.
 
 &lt;font size=&quot;-3&quot;&gt;&lt;s&gt;In comparison to &lt;code&gt;TUF (The Update Framework)&lt;/code&gt;, it does not require software to be running on a server and can be run on any (free) web space.&lt;/s&gt; &lt;-- This was a [https://github.com/theupdateframework/tuf/issues/78 misconception].&lt;/font&gt;
 
@@ -15975,7 +15975,7 @@ Specifically for Whonix, [[whonixcheck]] and the [[Dev/News|Whonix News Format]]
 {{Footer}}
 
 [[Category:Design]] [[Category:Design Proposal]] [[Category:Development]]</text>
-      <sha1>jp7t9ym4ps76vahq09ifrz24mm8tmsf</sha1>
+      <sha1>3qkuyaod9uzuer00xp2bsc45w2ds32i</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -19106,9 +19106,9 @@ When you go ahead now, and ask in a cracker forum, they probably won't spread a 
     <ns>0</ns>
     <id>162</id>
     <revision>
-      <id>7706</id>
-      <parentid>7068</parentid>
-      <timestamp>2014-05-07T22:12:01Z</timestamp>
+      <id>7721</id>
+      <parentid>7706</parentid>
+      <timestamp>2014-05-09T09:34:38Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
@@ -19181,7 +19181,7 @@ When you go ahead now, and ask in a cracker forum, they probably won't spread a 
 
 &lt;div style=&quot;column-count:3;-moz-column-count:3;-webkit-column-count:3&quot;&gt;
 &lt;small&gt;
-* [[Dev/pdt|proposal to defend a permanent takedown threat]]
+* [[Dev/ptt|proposal to defend a permanent takedown threat]]
 * [[Dev/MAC|controversy of anonymous MAC addresses]]
 &lt;/small&gt;
 &lt;/div&gt;
@@ -19286,7 +19286,7 @@ When you go ahead now, and ask in a cracker forum, they probably won't spread a 
 [[Category:Design]]
 
 {{Footer}}</text>
-      <sha1>12mrrq7c6q6ihf2yyeeimaof53n2ihw</sha1>
+      <sha1>0gtrdpf5xbk0bdyozsm5k6nb74nosen</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -41262,9 +41262,9 @@ The second part below every headline is Whonix's Example Implementation, how exa
     <ns>0</ns>
     <id>386</id>
     <revision>
-      <id>6843</id>
-      <parentid>5830</parentid>
-      <timestamp>2014-03-11T19:40:56Z</timestamp>
+      <id>7722</id>
+      <parentid>6843</parentid>
+      <timestamp>2014-05-09T09:34:49Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
@@ -41325,7 +41325,7 @@ free software license.
 PGPHTML also wouldn't work as a complete solution.
 
 * Users most likely won't copy and paste the text, so this would also require a browser addon automating the verification.
-* Adversaries in position to modify website content can always mount a rollback or indefinite freeze attacks (see &lt;ref&gt;[[Dev/pdt#Definitions]]&lt;/ref&gt; for definitions of those attacks). I.e. could pick an old message/website, which was signed years ago and now contains insecure/outdated information without the user being informed about the attack. To prevent that, the client application would have to check a field similar to Valid-Until field&lt;ref&gt;http://blog.ganneff.de/blog/2008/09/23/valid-until-field-in-release-f.html&lt;/ref&gt;.
+* Adversaries in position to modify website content can always mount a rollback or indefinite freeze attacks (see &lt;ref&gt;[[Dev/ptt#Definitions]]&lt;/ref&gt; for definitions of those attacks). I.e. could pick an old message/website, which was signed years ago and now contains insecure/outdated information without the user being informed about the attack. To prevent that, the client application would have to check a field similar to Valid-Until field&lt;ref&gt;http://blog.ganneff.de/blog/2008/09/23/valid-until-field-in-release-f.html&lt;/ref&gt;.
 * The website structure or link would have to be signed and verified as well.
 
 While relying on the OpenPGP web of trust, and not the [[SSL|SSL cartel]], this could provide strong verification. On the other hand, it probably couldn't provide end-to-end encryption, SSL or .onion would be required for that.
@@ -41338,7 +41338,7 @@ It's an interesting idea, but outside the scope of Whonix to invent such a solut
 {{Footer}}
 
 [[Category:Development]]</text>
-      <sha1>cz612plyom4u2n0hr81axzh91dweoe0</sha1>
+      <sha1>573h7w5c2z01o4r3p828w25fusqipqp</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -43168,15 +43168,15 @@ window.pg || $(document).ready( function($) {
     <ns>0</ns>
     <id>433</id>
     <revision>
-      <id>7686</id>
-      <parentid>5889</parentid>
-      <timestamp>2014-05-03T19:50:59Z</timestamp>
+      <id>7719</id>
+      <parentid>7718</parentid>
+      <timestamp>2014-05-09T09:32:45Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Introduction */</comment>
-      <text xml:space="preserve" bytes="2198">{{Header}}
+      <comment>/* Related */</comment>
+      <text xml:space="preserve" bytes="2419">{{Header}}
 {{#seo:
 |description=Development Notes Secure Downloader
 }}
@@ -43207,12 +43207,16 @@ The Tor Project never managed to get such a downloader up and running, see {{Cod
 = Related =
 
 * [https://mailman.stanford.edu/pipermail/liberationtech/2013-July/009620.html liberationtech: secure download tool - doesn't exist?!?]
-* [[Dev/pdt|proposal to defend a permanent takedown threat]]
+* [[Dev/ptt|proposal to defend a permanent takedown threat]]
 * &lt;code&gt;TUF (The Update Framework)&lt;/code&gt;&lt;ref&gt;https://www.updateframework.com/&lt;/ref&gt; &lt;ref&gt;https://github.com/theupdateframework/tuf&lt;/ref&gt;
-* TUF Threat Model, &lt;code&gt;TUF: Attacks and Weaknesses&lt;/code&gt;&lt;ref name=tufaaw&gt;https://www.updateframework.com/projects/project/wiki/Docs/Security http://www.webcitation.org/6F7Io2ncN&lt;/ref&gt;
+* TUF Threat Model, &lt;code&gt;TUF: Attacks and Weaknesses&lt;/code&gt;&lt;ref name=tufaaw&gt;
+https://github.com/theupdateframework/tuf/blob/develop/SECURITY.md
+http://www.webcitation.org/6PRDsuYHq
+http://www.webcitation.org/6F7Io2ncN&lt;/ref&gt;
 * [https://trac.torproject.org/projects/tor/ticket/2340 GPG signatures do not authenticate filenames]
 * https://trac.torproject.org/projects/tor/ticket/2340#comment:14
 * [https://github.com/Whonix/Whonix/issues/21 Metalink]
+* [https://en.bitcoin.it/wiki/User:Gmaxwell/update_checking_requirements en.bitcoin.it/wiki/User:Gmaxwell/update_checking_requirements] &lt;ref&gt;http://www.webcitation.org/6PRE4LfeZ&lt;/ref&gt;
 
 = Footnotes =
 &lt;references /&gt;
@@ -43220,7 +43224,7 @@ The Tor Project never managed to get such a downloader up and running, see {{Cod
 {{Footer}}
 
 [[Category:Development]]</text>
-      <sha1>ems5oa335cxwhlx2bd5cctwakw1olt5</sha1>
+      <sha1>oraxyynfmt6tv0x3gkhn0dyo9qa66rw</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -72617,19 +72621,25 @@ Go to http://127.0.0.1/wiki/index.php/Main_Page.
     <ns>0</ns>
     <id>1110</id>
     <revision>
-      <id>7694</id>
-      <parentid>7622</parentid>
-      <timestamp>2014-05-05T21:07:03Z</timestamp>
+      <id>7716</id>
+      <parentid>7694</parentid>
+      <timestamp>2014-05-09T09:02:22Z</timestamp>
       <contributor>
         <username>Troubadour</username>
         <id>230</id>
       </contributor>
-      <text xml:space="preserve" bytes="4443">{{Header}}
+      <text xml:space="preserve" bytes="4115">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
 __FORCETOC__
 {{AppArmorProfileWarning}}
+
+= Updates =
+May 09 2014.
+Major change. The profile was updated after packaging apparmor-profile-anondist.
+* Reference to &lt;abstractions/whonix&gt; removed.
+* Local profile removed. 
 
 = Profile =
 Create a file /etc/apparmor.d/home.user.tor-browser_en-US.Browser.firefox.
@@ -72641,7 +72651,7 @@ kdesudo kwrite /etc/apparmor.d/home.user.tor-browser_en-US.Browser.firefox
 Paste the following content.
 
 &lt;pre&gt;
-# Last modified: Mon May  5 21:05:28 UTC 2014
+# Last modified: Thu May  8 20:53:18 UTC 2014
 #include &lt;tunables/global&gt;
 
 /home/user/tor-browser_en-US/Browser/firefox {
@@ -72654,9 +72664,6 @@ Paste the following content.
 	#include &lt;abstractions/audio&gt;
 	#include &lt;abstractions/freedesktop.org&gt;
 	#include &lt;abstractions/user-download&gt;
-	#include &lt;abstractions/whonix&gt;
-
-	#include &lt;local/home.user.tor-browser_en-US.Browser.firefox&gt;
 
 	capability sys_ptrace,
 
@@ -72766,22 +72773,6 @@ Paste the following content.
 }
 &lt;/pre&gt;
 
-Create a file /etc/apparmor.d/local/home.user.tor-browser_en-US.Browser.firefox.
-
-&lt;pre&gt;
-kdesudo kwrite /etc/apparmor.d/local/home.user.tor-browser_en-US.Browser.firefox
-&lt;/pre&gt;
-
-Paste the following content.
-&lt;pre&gt;
-@{HOME}/tor-browser_en-US/.gnome2/accels/ rwk,
-@{HOME}/tor-browser_en-US/.gnome2/accels/* rwk,
-
-/usr/share/fontconfig/conf.avail/* r,
-/usr/share/poppler/cMap/ r,
-/usr/share/poppler/cMap/** r,
-&lt;/pre&gt;
-
 Run
 &lt;pre&gt;
 sudo apparmor_parser -r /etc/apparmor.d/home.user.tor-browser_en-US.Browser.firefox
@@ -72796,7 +72787,7 @@ https://github.com/Whonix/apparmor-profile-torbrowser
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>jyassz842tej57r3w7up5n1o2tol21v</sha1>
+      <sha1>n26sbsu84o0z2j7uwsx6sk3cmunl1cu</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
