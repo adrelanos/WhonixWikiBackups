@@ -10548,21 +10548,23 @@ Whonix's firewall on the Whonix-Gateway is very restrictive. You can make it eve
     <ns>0</ns>
     <id>106</id>
     <revision>
-      <id>6777</id>
-      <parentid>6764</parentid>
-      <timestamp>2014-03-09T21:53:33Z</timestamp>
+      <id>7761</id>
+      <parentid>7760</parentid>
+      <timestamp>2014-05-09T11:28:34Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
       <comment>/* Next Whonix Release in Development */</comment>
-      <text xml:space="preserve" bytes="1755">{{Header}}
+      <text xml:space="preserve" bytes="1890">{{Header}}
 {{#seo:
 |description=Overview about Different Instructions on How to Build Whonix Virtual Machine Images from Source Code.
 }}
 {{forkme}}
 = Next Whonix Release in Development =
 * [[Dev/Build Documentation/9 full|9 Build Documentation for creating full Whonix images from source code (long)]]
+* [[Dev/Build Documentation/apparmor-profile-torbrowser|apparmor-profile-torbrowser]]
+* [[Template:Build_Documentation_Build_Package]]
 
 = Current Whonix Release =
 * [[Dev/Build Documentation/8 full|8 Build Documentation for creating full Whonix images from source code (long)]]
@@ -10587,7 +10589,7 @@ Whonix's firewall on the Whonix-Gateway is very restrictive. You can make it eve
 [[Category:Development]]
 
 {{Footer}}</text>
-      <sha1>2kjvwuhty91sg328v2vdi36ehep8dh0</sha1>
+      <sha1>82ap6v0g6m56npuzeo42xl2dvi31w3o</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -49466,16 +49468,16 @@ ii  zsh-common            5.0.2-4         all             architecture independe
     <ns>10</ns>
     <id>491</id>
     <revision>
-      <id>7448</id>
-      <parentid>6849</parentid>
-      <timestamp>2014-04-10T11:56:22Z</timestamp>
+      <id>7763</id>
+      <parentid>7736</parentid>
+      <timestamp>2014-05-09T11:44:52Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="3105">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
-== Get Whonix Source Code ==
-Install git and get Whonix's source code from the git repository.&lt;ref&gt;From https://github.com/adrelanos/Whonix and not from https://github.com/Whonix/Whonix, because only adrelanos/Whonix contains git tags of the testers-only version.&lt;/ref&gt;
+      <text xml:space="preserve" bytes="2511">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
+== Get the Source Code ==
+Install git and get the source code from the git repository.&lt;ref&gt;From https://github.com/adrelanos/Whonix and not from https://github.com/Whonix/Whonix, because only adrelanos/Whonix contains git tags of the testers-only version.&lt;/ref&gt;
 
 &lt;pre&gt;
 ## Install git.
@@ -49487,10 +49489,10 @@ git clone https://github.com/Whonix/Whonix
 
 Remember it's '''W'''honix, not '''w'''honix! If you are prompted for a username for github, it means you have mistyped the web address.
 
-== Get Whonix Signing Key ==
+== Get the Signing Key ==
 '''This chapter is recommended for better security, but not strictly required.''' (See [[Trust]])
 
-Get into Whonix source folder.
+Get into the source folder.
 
 &lt;pre&gt;
 cd Whonix
@@ -49521,7 +49523,7 @@ sub   4096R/0xCB8D50BB77BB3C48 2014-01-16 [expires: 2015-01-16]
 
 Only getting the signing key from one source, from the download you want to verify isn't safe. For better security, [[Whonix Signing Key|Learn about Whonix Signing Key]].
 
-== Verify Whonix Source Code ==
+== OpenPGP Verify the Source Code ==
 '''This chapter is recommended for better security, but not strictly required.'''&lt;ref&gt;See [[Trust]].&lt;/ref&gt;
 
 Get a list of available git tags.
@@ -49532,7 +49534,7 @@ Verify the tag you want to build.
 
 &lt;pre&gt;
 ## ... Replace with tag you want to build.
-git tag -v 8.1
+git tag -v 8.2
 &lt;/pre&gt;
 
 Output should look similar to this.
@@ -49540,7 +49542,7 @@ Output should look similar to this.
 &lt;pre&gt;
 object 1844108109a5f2f8bddcf2257b9f3675be5cfb22
 type commit
-tag 8.1
+tag 8.2
 tagger Patrick Schleizer &lt;adrelanos@riseup.net&gt; 1392320095 +0000
 
 .
@@ -49557,20 +49559,15 @@ gpg:          There is no indication that the signature belongs to the owner.
 
 Is explained on the [[Whonix Signing Key]] page and can be ignored.
 
-== Choose Whonix Version ==
-Git checkout, which version (or [[Dev/git|git branch]]) you want to build.
-
-In case you want to build a specific git tag.
-
-&lt;pre&gt;
-git checkout 8.1
-&lt;/pre&gt;
-
-You have to replace {{Code2|8}} with the actual version you want to build. The stable version, the testers-only version or the developers version. You can learn about current versions reading [[Download#Stay_tuned|Whonix News Blogs]]. New versions are also announced on the [[Mailing_Lists#whonix-devel|whonix-devel mailing list]]. So you could alternatively check its archives. Signing up for whonix-devel is another way to get informed about new releases.&lt;noinclude&gt;
+{{
+Build Documentation Choose Version
+|version=8.2
+}}
+&lt;noinclude&gt;
 &lt;references /&gt;
 {{Footer}}
 &lt;/noinclude&gt;</text>
-      <sha1>d6t2y9n0lo23w3q1xd9im0uw7mi22yc</sha1>
+      <sha1>4cypr34lj9ar3nxyxyh9q7safnr1evg</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -76845,6 +76842,325 @@ Otherwise please consider a [[Donate|Donation]].
 
 {{Footer}}</text>
       <sha1>gfmrifp5tlvkmsjjvk7sc0pdug4l8ur</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Build Documentation Build Package</title>
+    <ns>10</ns>
+    <id>1245</id>
+    <revision>
+      <id>7767</id>
+      <parentid>7766</parentid>
+      <timestamp>2014-05-09T20:58:27Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>/* Get Build Dependncies */</comment>
+      <text xml:space="preserve" bytes="1949">{{Header}}
+
+== Get Build Dependncies ==
+&lt;code&gt;
+sudo apt-get update
+sudo apt-get install devscripts faketime git
+&lt;/code&gt;
+
+You also need config-package-dev version 5.1.1 or higher.
+
+Create a file {{Code|/etc/apt/sources.list.d/wheezy-backports.list}}.
+
+&lt;code&gt;
+sudo nano /etc/apt/sources.list.d/wheezy-backports.list
+&lt;/code&gt;
+
+With the following content.
+
+&lt;code&gt;
+deb http://ftp.de.debian.org/debian/ wheezy-backports main
+&lt;/code&gt;
+
+Install config-package-dev.
+
+&lt;code&gt;
+sudo apt-get update
+sudo apt-get install config-package-dev -t wheezy-backports
+&lt;/code&gt;
+
+Feel free to remove the wheezy-backports repository from your system.
+
+{{
+Build_Documentation_Get_SourceCode
+|package={{{package}}}
+}}
+
+{{
+Build_Documentation_Get_Signing_Key
+|fullname={{{fullname}}}
+|shortname={{{shortname}}}
+|link={{{link}}}
+|longfingerprint={{{longfingerprint}}}
+|gpgfingerprintparam={{{gpgfingerprintparam}}}
+}}
+
+== Change Directory ==
+Get into the package's source code folder.
+
+&lt;code&gt;
+cd {{{package}}}
+&lt;/code&gt;
+
+{{
+Build_Documentation_OpenPGP_Verify_the_Source_Code
+|version={{{version}}}
+}}
+
+{{
+Build_Documentation_Choose_Version
+|version={{{version}}}
+}}
+
+== Build the Package  ==
+Build the package without signing it. (Not required for personal use.)
+
+&lt;code&gt;
+./build -us -uc
+&lt;/code&gt;
+
+== Clean Up ==
+Clean up temporary files. Be careful, this deletes any extra files in that folder, that aren't committed to git.
+
+&lt;code&gt;
+./clean
+&lt;/code&gt;
+
+== Install the Package ==
+Your package can be found in the package's parent folder.
+
+&lt;code&gt;
+cd ..
+&lt;/code&gt;
+
+To install it.
+
+'''Easy.'''
+
+&lt;code&gt;
+sudo dpkg -i {{{package}}}_{{{version}}}-1_all.deb
+&lt;/code&gt;
+
+'''With debugging enabled.'''
+
+&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+&lt;div class=&quot;mw-collapsible-content&quot;&gt;
+&lt;code&gt;
+export DEBDEBUG=1
+&lt;/code&gt; &lt;br /&gt;
+&lt;code&gt;
+sudo -E dpkg -i {{{package}}}_{{{version}}}-1_all.deb
+&lt;/code&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+== Footnotes ==
+&lt;references /&gt;
+
+[[Category:Development]]
+{{Footer}}</text>
+      <sha1>ioi6cksf2exon3k99szle9a099wak92</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Dev/Build Documentation/apparmor-profile-torbrowser</title>
+    <ns>0</ns>
+    <id>1246</id>
+    <revision>
+      <id>7758</id>
+      <parentid>7757</parentid>
+      <timestamp>2014-05-09T11:26:28Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <minor/>
+      <comment>Patrick moved page [[Dev/Build Documentation/9 pkg]] to [[Dev/Build Documentation/apparmor-profile-torbrowser]] without leaving a redirect</comment>
+      <text xml:space="preserve" bytes="706">{{
+Build_Documentation_Build_Package
+|package=apparmor-profile-torbrowser
+|version=0.1
+|fullname=Patrick Schleizer (adrelanos)
+|shortname=patrick
+|link=&lt;html&gt;&lt;a class=&quot;link-https&quot; download href=&quot;/patrick.asc&quot;&gt;patrick.asc&lt;/a&gt;&lt;/html&gt;
+|longfingerprint=916B8D99C38EAF5E8ADC7A2A8D66066A2EEACCDA
+|gpgfingerprintparam=pub   4096R/2EEACCDA 2014-01-16 [expires: 2015-01-16]
+      Key fingerprint = 916B 8D99 C38E AF5E 8ADC  7A2A 8D66 066A 2EEA CCDA
+uid                 [ unknown] Patrick Schleizer &lt;adrelanos@riseup.net&gt;
+sub   4096R/0x3B1E6942CE998547 2014-01-16 [expires: 2015-01-16]
+sub   4096R/0x10FDAC53119B3FD6 2014-01-16 [expires: 2015-01-16]
+sub   4096R/0xCB8D50BB77BB3C48 2014-01-16 [expires: 2015-01-16]
+}}</text>
+      <sha1>h1n8ro4z0gl9luhpqwcw4u4hgqrpzo1</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Build Documentation Choose Version</title>
+    <ns>10</ns>
+    <id>1247</id>
+    <revision>
+      <id>7737</id>
+      <parentid>7735</parentid>
+      <timestamp>2014-05-09T10:53:13Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>/* Choose Version */</comment>
+      <text xml:space="preserve" bytes="827">== Choose Version ==
+Git checkout, which version (or [[Dev/git|git branch]]) you want to build.
+
+In case you want to build a specific git tag.
+
+&lt;code&gt;
+git checkout {{{version}}}
+&lt;/code&gt;
+
+You have to replace {{Code2|{{{version}}}}} with the actual version you want to build. The stable version, the testers-only version or the developers version. Common sense is required while choosing the right version number. For example, the biggest version number is not necessarily the most recommended / latest stable version. You can learn about current versions reading [[Download#Stay_tuned|Whonix News Blogs]]. New versions are also announced on the [[Mailing_Lists#whonix-devel|whonix-devel mailing list]]. So you could alternatively check its archives. Signing up for whonix-devel is another way to get informed about new releases.</text>
+      <sha1>qhh4ulw6a3j02ewzdho3s5x2vxox5is</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Build Documentation Get SourceCode</title>
+    <ns>10</ns>
+    <id>1248</id>
+    <revision>
+      <id>7762</id>
+      <parentid>7739</parentid>
+      <timestamp>2014-05-09T11:30:04Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>/* Get the Source Code */</comment>
+      <text xml:space="preserve" bytes="442">== Get the Source Code ==
+Install git.
+
+&lt;code&gt;
+sudo apt-get update
+sudo apt-get install git
+&lt;/code&gt;
+
+Get the the package's source code.
+
+&lt;!-- TODO: Can we get rid of the https lock symbol for this supposedly pre tag for copy paste? --&gt;
+&lt;code&gt;
+git clone https://github.com/Whonix/{{{package}}}.git
+&lt;/code&gt;
+
+Remember it's '''W'''honix, not '''w'''honix! If you are prompted for a username for github, it means you have mistyped the web address.</text>
+      <sha1>nx381wvzi2u8w4mp6icg4hwkn2pjrgr</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Build Documentation OpenPGP Verify the Source Code</title>
+    <ns>10</ns>
+    <id>1249</id>
+    <revision>
+      <id>7740</id>
+      <timestamp>2014-05-09T11:02:10Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;== OpenPGP Verify the Source Code == '''This chapter is recommended for better security, but not strictly required.'''&lt;ref&gt;See [[Trust]].&lt;/ref&gt;  Get a list of available git ta...&quot;</comment>
+      <text xml:space="preserve" bytes="913">== OpenPGP Verify the Source Code ==
+'''This chapter is recommended for better security, but not strictly required.'''&lt;ref&gt;See [[Trust]].&lt;/ref&gt;
+
+Get a list of available git tags.
+
+&lt;code&gt;
+git tag
+&lt;/code&gt;
+
+Verify the tag you want to build. Replace with tag you want to build.
+
+&lt;code&gt;
+git tag -v {{{version}}}
+&lt;/code&gt;
+
+Output should look similar to this.
+
+&lt;code&gt;
+object 1844108109a5f2f8bddcf2257b9f3675be5cfb22
+type commit
+tag {{{version}}}
+tagger Patrick Schleizer &lt;adrelanos@riseup.net&gt; 1392320095 +0000
+
+.
+gpg: Signature made Thu 13 Feb 2014 07:34:55 PM UTC using RSA key ID 77BB3C48
+gpg: Good signature from &quot;Patrick Schleizer &lt;adrelanos@riseup.net&gt;&quot; [ultimate]
+&lt;/code&gt;
+
+The warning.
+
+&lt;code&gt;
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+&lt;/code&gt;
+
+Is explained on the [[Whonix Signing Key]] page and can be ignored.</text>
+      <sha1>oq06d5bu0gipco923sk36yxxiwkqd4c</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Build Documentation Get Signing Key</title>
+    <ns>10</ns>
+    <id>1250</id>
+    <revision>
+      <id>7755</id>
+      <parentid>7754</parentid>
+      <timestamp>2014-05-09T11:23:58Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>/* Get the Signing Key */</comment>
+      <text xml:space="preserve" bytes="641">== Get the Signing Key ==
+'''This chapter is recommended for better security, but not strictly required.''' (See [[Trust]])
+
+1. Download {{{fullname}}} OpenPGP key. {{{link}}}
+
+2. Store it as {{{shortname}}}.asc.
+
+3. Import the key:
+
+&lt;code&gt;
+gpg --import {{{shortname}}}.asc
+&lt;/code&gt;
+
+4. Verify the key using this fingerprint:
+
+&lt;code&gt;
+gpg --fingerprint {{{longfingerprint}}}
+&lt;/code&gt;
+
+Should show:
+
+&lt;!-- TODO: Fix code tags below for gpgfingerprintparam. Someone line newlines are broken. --&gt;
+{{{gpgfingerprintparam}}}
+
+5. Only getting the signing key from one source. For better security, [[Whonix Signing Key|Learn about Whonix Signing Key]].</text>
+      <sha1>1pwjvh85b1ulju6rrvpkylj06njdzok</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
