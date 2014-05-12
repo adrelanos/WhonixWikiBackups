@@ -29,8 +29,6 @@
       <namespace key="105" case="first-letter">Type talk</namespace>
       <namespace key="108" case="first-letter">Concept</namespace>
       <namespace key="109" case="first-letter">Concept talk</namespace>
-      <namespace key="828" case="first-letter">Module</namespace>
-      <namespace key="829" case="first-letter">Module talk</namespace>
       <namespace key="1198" case="first-letter">Translations</namespace>
       <namespace key="1199" case="first-letter">Translations talk</namespace>
     </namespaces>
@@ -25631,7 +25629,7 @@ See [[Contact|Contacting Whonix developers / Feedback / Questions]].
     </revision>
   </page>
   <page>
-    <title>Module:HtmlBuilder</title>
+    <title>HtmlBuilder</title>
     <ns>828</ns>
     <id>223</id>
     <revision>
@@ -25825,12 +25823,12 @@ end
 
 return HtmlBuilder</text>
       <sha1>hc4dorx9fv0lfudrgehty7o1hfd1rq9</sha1>
-      <model>Scribunto</model>
-      <format>CONTENT_FORMAT_TEXT</format>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
     </revision>
   </page>
   <page>
-    <title>Module:Infobox</title>
+    <title>Infobox</title>
     <ns>828</ns>
     <id>224</id>
     <revision>
@@ -26228,8 +26226,8 @@ end
  
 return p</text>
       <sha1>s3ctteaxfxxwtw3rsmh8g7041uuq0gg</sha1>
-      <model>Scribunto</model>
-      <format>CONTENT_FORMAT_TEXT</format>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
     </revision>
   </page>
   <page>
@@ -26909,7 +26907,7 @@ For information about the parameters in this template, see [[Template:Infobox so
     </revision>
   </page>
   <page>
-    <title>Module:Citation/CS1</title>
+    <title>Citation/CS1</title>
     <ns>828</ns>
     <id>240</id>
     <revision>
@@ -28579,12 +28577,12 @@ end
 
 return z</text>
       <sha1>p33e5eowr0e268jqk3gnuqu5zqodh1j</sha1>
-      <model>Scribunto</model>
-      <format>CONTENT_FORMAT_TEXT</format>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
     </revision>
   </page>
   <page>
-    <title>Module:Citation/CS1/Configuration</title>
+    <title>Citation/CS1/Configuration</title>
     <ns>828</ns>
     <id>241</id>
     <revision>
@@ -29102,12 +29100,12 @@ citation_config.id_handlers = {
 
 return citation_config;</text>
       <sha1>1ey6poo13dwj2p8p4kw7o2lal8l5wkr</sha1>
-      <model>Scribunto</model>
-      <format>CONTENT_FORMAT_TEXT</format>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
     </revision>
   </page>
   <page>
-    <title>Module:Citation</title>
+    <title>Citation</title>
     <ns>828</ns>
     <id>244</id>
     <revision>
@@ -29661,12 +29659,12 @@ return z
 --
 --End</text>
       <sha1>bn0bkgu1e9g2vis9w2hkddtba2hjtfm</sha1>
-      <model>Scribunto</model>
-      <format>CONTENT_FORMAT_TEXT</format>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
     </revision>
   </page>
   <page>
-    <title>Module:Citation/CS1/Whitelist</title>
+    <title>Citation/CS1/Whitelist</title>
     <ns>828</ns>
     <id>245</id>
     <revision>
@@ -29920,12 +29918,12 @@ numbered_arguments = {
 
 return whitelist;</text>
       <sha1>o1zrmnmwevkurwoj914ss4rfyf11g9z</sha1>
-      <model>Scribunto</model>
-      <format>CONTENT_FORMAT_TEXT</format>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
     </revision>
   </page>
   <page>
-    <title>Module:InfoboxImage</title>
+    <title>InfoboxImage</title>
     <ns>828</ns>
     <id>246</id>
     <revision>
@@ -30130,12 +30128,12 @@ end
 
 return i;</text>
       <sha1>km5ojmj4authb9jw6f0foo1olkrpnub</sha1>
-      <model>Scribunto</model>
-      <format>CONTENT_FORMAT_TEXT</format>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
     </revision>
   </page>
   <page>
-    <title>Module:Math</title>
+    <title>Math</title>
     <ns>828</ns>
     <id>247</id>
     <revision>
@@ -30533,12 +30531,12 @@ end
 
 return z</text>
       <sha1>sf8415x8531zjrgc3kzaybbum4x2xi6</sha1>
-      <model>Scribunto</model>
-      <format>CONTENT_FORMAT_TEXT</format>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
     </revision>
   </page>
   <page>
-    <title>Module:Citation/CS1/Arguments</title>
+    <title>Citation/CS1/Arguments</title>
     <ns>828</ns>
     <id>248</id>
     <revision>
@@ -30648,12 +30646,12 @@ end
 
 return c;</text>
       <sha1>pcc7zzripls80y0hah3lrgmmxr9rhsc</sha1>
-      <model>Scribunto</model>
-      <format>CONTENT_FORMAT_TEXT</format>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
     </revision>
   </page>
   <page>
-    <title>Module:Citation/CS1/Suggestions</title>
+    <title>Citation/CS1/Suggestions</title>
     <ns>828</ns>
     <id>249</id>
     <revision>
@@ -30685,8 +30683,8 @@ suggestions = {
 }
 return suggestions;</text>
       <sha1>8go2tfmp3xp948hf3vj6j3nibe9q5u2</sha1>
-      <model>Scribunto</model>
-      <format>CONTENT_FORMAT_TEXT</format>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
     </revision>
   </page>
   <page>
@@ -70185,36 +70183,37 @@ license: public domain</text>
     <ns>0</ns>
     <id>978</id>
     <revision>
-      <id>7838</id>
-      <parentid>7837</parentid>
-      <timestamp>2014-05-11T21:54:13Z</timestamp>
+      <id>7860</id>
+      <parentid>7859</parentid>
+      <timestamp>2014-05-12T00:40:07Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="4739">{{Header}}
+      <text xml:space="preserve" bytes="5423">{{Header}}
 {{forkme}}
 
-'''UNFINISHED!''' &lt;br /&gt;
-'''UNTESTED!'''
+= Installation =
 
 (Iceweasel is required, because Tor Browser no longer supports visiting 127.0.0.1. Any other browser would work as well.)
 
-Install web software.
+(Due to no instructions available on how to get mediawiki's maintenance/install.php to work, we must do a normal install of mediawiki first. Then we upgrade it to replicate whonix.org.)
+
+Install web software:
 
 &lt;pre&gt;
-sudo apt-get install git apache2 php5-mysql php5 libapache2-mod-php5 php-apc mysql-client mysql-server iceweasel
+sudo apt-get install git apache2 libapache2-mod-removeip php5-mysql php5 libapache2-mod-php5 php-apc mysql-client mysql-server iceweasel php5-dev liblua5.1-dev lua5.1
 &lt;/pre&gt;
 
 You will be asked for a mysql root password. Remember it.
 
-Get our wiki images and content database backup.
+Get our wiki images and content database backup:
 
 &lt;pre&gt;
 git clone --depth=1 https://github.com/WhonixBOT/WhonixWikiBackups.git
 &lt;/pre&gt;
 
-Get and install the mediawiki web app.
+Get and install the mediawiki web app:
 
 &lt;pre&gt;
 sudo su
@@ -70229,7 +70228,7 @@ Start iceweasel.
 
 Setup mediawiki. Go to http://127.0.0.1/wiki/mw-config/index.php.
 
-Use the following settings.
+Use the following settings:
 
 &lt;pre&gt;
 Database name: wiki
@@ -70239,7 +70238,7 @@ Otherwise use the defaults.
 Name of wiki: Whonix
 &lt;/pre&gt;
 
-Download LocalSettings.php, safe as /home/user/LocalSettings.php.
+Download LocalSettings.php, save as /home/user/LocalSettings.php.
 
 &lt;pre&gt;
 sudo mv /home/user/LocalSettings.php /var/www/wiki/
@@ -70247,32 +70246,26 @@ sudo mv /home/user/LocalSettings.php /var/www/wiki/
 
 Go to http://127.0.0.1/wiki, see if you see a fresh wiki, log in, see if that works as well.
 
-TODO: ...
-
-
-
-
-Get into your /var/ folder.
+Move the dummy wiki out of the way:
 
 &lt;pre&gt;
-cd /var
+## Maybe rm when this instructions are finished.
+sudo mv /var/www /var/www_dummy
 &lt;/pre&gt;
 
-Switch user to root and remove the default /var/www folder.
-&lt;pre&gt;
-sudo -s
-rm -R /var/www
-&lt;/pre&gt;
-
-Replicate Whonix's /var/www folder from git.
+Replicate Whonix's {{Code|/var/www}} folder from git:
 
 &lt;pre&gt;
-git clone --depth=1 https://github.com/Whonix/www.git
+sudo git clone --depth=1 https://github.com/Whonix/www.git /var/www
 &lt;/pre&gt;
 
-Create a file {{Code|/etc/apache2/wikiSecrets.php}} (adjusting $wgDBpassword as needed).
+Create a file {{Code|/etc/apache2/wikiSecrets.php}} (adjusting $wgDBpassword as needed):
 
-With the following content.
+&lt;pre&gt;
+kdesudo kwrite /etc/apache2/wikiSecrets.php
+&lt;/pre&gt;
+
+With the following content:
 
 &lt;pre&gt;
 &lt;?php
@@ -70311,9 +70304,13 @@ foreach ( $arr as $key =&gt; $value ) {
 }
 &lt;/pre&gt;
 
-Create a file {{Code|/var/www/wiki/.htaccess}}.
+Edit {{Code|/etc/apache2/sites-enabled/000-default}}:
 
-With the following content.
+&lt;pre&gt;
+kdesudo kwrite /etc/apache2/sites-enabled/000-default
+&lt;/pre&gt;
+
+Insert the following at the end of the file, but before &lt;/VirtualHost&gt;:
 
 &lt;pre&gt;
 RewriteEngine On
@@ -70329,53 +70326,47 @@ RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} !-d
 RewriteRule ^/?w/images/thumb/archive/[0-9a-f]/[0-9a-f][0-9a-f]/([^/]+)/([0-9]+)px-.*$ %{DOCUMENT_ROOT}/w/thumb.php?f=$1&amp;width=$2&amp;archived=1 [L,QSA,B]
 &lt;/pre&gt;
 
-Run.
+Run:
 
 &lt;pre&gt;
-## Still required?
 sudo mkdir /var/www/w/cache
 &lt;/pre&gt;
 
-Your webserver must have read/write access to your /var/www folder. Run.
+Your webserver must have read/write access to your /var/www folder. Run:
 
 &lt;pre&gt;
-chown --recursive www-data:www-data /var/www
+sudo chown --recursive www-data:www-data /var/www
 &lt;/pre&gt;
 
-Run.
+Run:
 
 &lt;pre&gt;
 php /var/www/wiki/maintenance/update.php --quick
-php /var/www/wiki/maintenance/rebuildrecentchanges.php
 php /var/www/wiki/maintenance/importImages.php /home/user/WhonixWikiBackups/mediafiles/
 php /var/www/wiki/maintenance/importDump.php /home/user/WhonixWikiBackups/dumpContentCurrent.xml
+php /var/www/wiki/maintenance/rebuildrecentchanges.php
 &lt;/pre&gt;
 
-Run.
+Run:
 
 &lt;pre&gt;
 sudo a2enmod rewrite
+sudo a2enmod removeip
 &lt;/pre&gt;
 
-Run.
+Run:
 
 &lt;pre&gt;
 sudo service apache2 restart
 &lt;/pre&gt;
 
-
-http://127.0.0.1/wiki/index.php/Documentation
-
-and
-
-http://127.0.0.1/w/index.php/Documentation
-
-Should be working.
-
-http://127.0.0.1/w/Documentation not yet.
-
 = Debugging =
+== Apache Error Log ==
+&lt;pre&gt;
+tail -f /var/log/apache2/error.log
+&lt;/pre&gt;
 
+== Mediawiki Debug Log ==
 Run.
 
 &lt;pre&gt;
@@ -70401,8 +70392,22 @@ $wgDebugLogFile = &quot;/home/user/wgdebuglog&quot;;
 Watch the log while trying to access the wiki in iceweasel.
 
 &lt;pre&gt;
-/home/user/wgdebuglog
+## Replace &quot;user&quot; with your actual operating system user name.
+tail -f /home/user/wgdebuglog
 &lt;/pre&gt;
+
+== Rewrites ==
+Perhaps working:
+
+* http://127.0.0.1/wiki/index.php/Documentation
+* http://127.0.0.1/w/index.php/Documentation
+
+Perhaps not working:
+
+* http://127.0.0.1/w/Documentation
+* http://127.0.0.1/wiki/Documentation
+
+In that case, something is wrong with shorturl / rewrite.
 
 = Alternative Backup =
 Maybe it would be simpler if we shared a mysql backup without passwords.
@@ -70414,7 +70419,7 @@ mysqldump --ignore-table=wiki.user
 although it would result in a broken database if you restore it
 
 {{Footer}}</text>
-      <sha1>7bq9ol24mjmcxz4l5sets83j5l9745c</sha1>
+      <sha1>oqzlgumgakv8onx8ahs8stb2bzrcnjs</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -74834,14 +74839,14 @@ curl.whonix-orig https://check.torproject.org
     <ns>0</ns>
     <id>1350</id>
     <revision>
-      <id>7274</id>
-      <parentid>7269</parentid>
-      <timestamp>2014-04-04T09:14:31Z</timestamp>
+      <id>7854</id>
+      <parentid>7274</parentid>
+      <timestamp>2014-05-11T23:46:02Z</timestamp>
       <contributor>
-        <username>Troubadour</username>
-        <id>230</id>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="2060">{{Header}}
+      <text xml:space="preserve" bytes="2128">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
@@ -74858,7 +74863,7 @@ kdesudo kwrite /etc/apparmor.d/usr.bin.xchat
 Paste the following content.
 
 &lt;pre&gt;
-# Last modified: Fri Apr  4 08:53:34 UTC 2014
+# Last modified: Fri Apr  12 01:45:00 UTC 2014
 #include &lt;tunables/global&gt;
 
 /usr/bin/xchat {
@@ -74868,6 +74873,7 @@ Paste the following content.
 	#include &lt;abstractions/kde&gt;
 	#include &lt;abstractions/gnome&gt;
 	#include &lt;abstractions/X&gt;
+	#include &lt;abstractions/audio&gt;
 	#include &lt;abstractions/whonix&gt;
 	
 	deny @{PROC}/** r,
@@ -74886,6 +74892,7 @@ Paste the following content.
 	/dev/tty rwix,
 
 	/etc/passwd r,
+	/etc/group r,
 	/etc/host.conf r,
 	/etc/gai.conf r,
 	/etc/nsswitch.conf r,
@@ -74904,6 +74911,7 @@ Paste the following content.
 	/usr/bin/torbrowser rix,
 	/usr/bin/basename rix,
 	/usr/bin/kde4-config rix,
+	/usr/bin/aplay rix,
 	
 	/usr/lib/i386-linux-gnu/** mrix,
 	/usr/lib/xchat/plugins/* mr,
@@ -74936,7 +74944,7 @@ sudo apparmor_parser -r /etc/apparmor.d/usr.bin.xchat
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>iti6cnbef3wzvi61pil4qr28pt8x0b4</sha1>
+      <sha1>ft1eo8uqr2oda3wgk1tzjwa5f2it8qq</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
