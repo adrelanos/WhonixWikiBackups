@@ -13126,15 +13126,15 @@ The PayPal logo (60px-De-pp-logo-200px.png), the subscribe button (subscribeCC_L
     <ns>0</ns>
     <id>119</id>
     <revision>
-      <id>7488</id>
-      <parentid>6232</parentid>
-      <timestamp>2014-04-11T22:17:18Z</timestamp>
+      <id>7869</id>
+      <parentid>7868</parentid>
+      <timestamp>2014-05-12T14:29:09Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <username>Mutsuura</username>
+        <id>372</id>
       </contributor>
-      <comment>/* Recommendation to use multiple VM Snapshots */</comment>
-      <text xml:space="preserve" bytes="17204">{{Header}}
+      <comment>Modified based on updates to following section(s)</comment>
+      <text xml:space="preserve" bytes="22452">{{Header}}
 {{#seo:
 |description=Computer Security Guide for Whonix Linux for Users, Whonix Hardening
 }}
@@ -13386,18 +13386,37 @@ For the best security, you should consider using multiple physical systems, see 
 
 If this VM is compromised all data it has access to, all credentials, browser data, passwords... the user has entered can be compromised. The IP is never leaked but these information can still result in identity disclosure.
 
-The best practice is to create snapshots of the VM and &quot;roll back&quot; after risky activity and whenever the user suspect the integrity of the system could have been compromised, see the ''Recommendation to use multiple VM Snapshots'' below.
+The best practice is to back up the VM and &quot;roll back&quot; after risky activity and whenever the user suspect the integrity of the system could have been compromised, see the ''Reliable Alternative To Virtualbox VM Snapshots'' below.
 
 ''Whonix Example Implementation'' is currently based on Debian.
 
 For Technical Design notes, see [[Dev/Operating System]]. For information on how to use other operating systems, see [[Other Operating Systems]].
 
-== Recommendation to use multiple VM Snapshots ==
-'''Warning''': VirtualBox's VM Snapshot feature is recommended against, because [https://www.whonix.org/forum/index.php/topic,97.msg1586.html#msg1586 we experienced] data loss with it. You're better off using clones.
+== Reliable Alternative To Virtualbox VM Snapshots ==
 
-Apart from offering protection against hardware serial leaks, VMs got another great advantage: the ability to quickly discard and restore a system.
+Warning: VirtualBox's snapshot feature is not (highly) recommended as a reliable method for backing up virtual machines because of possible data loss primarily in the form of corrupted virtual hard drives [VHD]. Alternative methods are copy/paste, cloning, exporting/importing. While all these methods provide virtual machine [VM] backups, they nevertheless make inefficient use of disk resources and inherently require manual versioning. Virtualbox's 'snapshot' feature is very useful when it works properly particularly when making interim snapshots of live running systems prior to installing new application(s), reverting can be very painful, and sometimes impossible, if/when virtual hard drive file(s) is corrupted.
 
-It is recommended that you keep a master copy of Whonix-Workstation, keep it updated, make regular &quot;clean&quot; snapshots but do not edit any settings or install additional software or use it directly for any activity. Instead make a clone or use snapshotting (but never mix up clean and unclean states!) for activities that require anonymity.
+Alternative to methods mentioned above, [http://en.wikipedia.org/wiki/Subversion_(software) SubVersioN [SVN&lt;nowiki&gt;]&lt;/nowiki&gt;] in particular is a very reliable tool with which to make backups of VM operating environments. It is akin to Virtualbox's snapshot feature in many respects but much more reliable and efficient. For those that have never used SVN, it is recommended they familiarize themselves with the tool's [http://subversion.apache.org/docs/ documentation] - what it is/isn't and how it works prior to making use of it. Numerous implementations of SVN [http://en.wikipedia.org/wiki/Comparison_of_Subversion_clients clients] are available to choose from for various platforms.
+
+What is SVN? In a nutshell, SVN is a tool typically used by software developers to conduct collaborative configuration management, version control and backup/restore of file sets under development by many people over extended period of time.
+
+Why SVN as opposed to CVS, GIT, etc.? While most configuration management tools, including SVN, offer the same basic functionality of versioning, backing up and restoring changes to sets of files, by design SVN has no file size limitations - the operative words are &quot;by design&quot;. This means when used to back up virtual hard drives for example, regardless of how big or small the files are SVN can handle them reliably and efficiently. See section [http://svn.apache.org/repos/asf/subversion/trunk/doc/user/svn-best-practices.html &quot;Be patient with large files&quot; (link)]. When versioning file sets, SVN employs [http://en.wikipedia.org/wiki/Atomic_commit &quot;atomic commits&quot;]. By way of comparison, [http://en.wikipedia.org/wiki/Concurrent_Versions_System Concurrent Versions System (CVS)] does not employ [http://en.wikipedia.org/wiki/Atomic_commit atomic commits]. Manual backup procedures are inherently not [http://en.wikipedia.org/wiki/Atomic_commit atomic functions]. Additionally, SVN also handles [http://en.wikipedia.org/wiki/Sparse_file sparse (dynamic)] virtual hard disk files (an option Virtualbox offers when [http://www.virtualbox.org/manual/ch01.html#gui-createvm instantiating new virtual disk drives]).
+
+From version to version, like Virtualbox's snapshot capability, SVN also takes into consideration differences in files - both textual and binary. This means, for example, if a 50GB virtual hard drive was saved last week and has grown to 60GB this week, SVN's repository will not [necessarily] grow by an additional 60GB when a new back up is performed this week - it depends how much of the original file changed since the previous backup. It will analyse differences between newer files against older files in its repository and only save differences. Therefore the repository may only grow as little as 10GB+ making more efficient use of system resources.
+
+Virtualbox's snapshot feature provides [http://forums.virtualbox.org/viewtopic.php?f=3&amp;p=123806 'branching'] capability. This means, one can revert to an earlier version of your VM and start a new branch/version of your VM from where you left off earlier. By comparison, SVN also provides similar [http://svnbook.red-bean.com/en/1.7/svn.branchmerge.html branching] capability. 
+
+NOTE: When using configuration management tools like SVN for back ups and restores, a 50GB file for example typically requires approximately 150GB of disk space to manage that instance of the VM because you require 50GB for the original source file, 50GB in SVN's database [http://en.wikipedia.org/wiki/Apache_Subversion#Repository_types repository], and another 50GB for SVN's [http://svnbook.red-bean.com/en/1.6/svn.tour.initial.html local workspace] working folder ['./.svn']. How is this more efficient? In that sense, it is not. However, when you consider SVN's functionality and reliability compared to manual backup methods mentioned above, this overhead might be considered an investment.
+
+In addition to backing up Whonix gateway and workstation(s) virtual hard drive files, it is also possible to back up the whole of Virtualbox application in conjunction with Whonix for a complete restoreable environment. Cloning is also possible albeit that requires more advance technical skills.
+
+Typically, Virtualbox is an installable application as provided by [http://www.virtualbox.org Virtualbox.org]. A [http://en.wikipedia.org/wiki/Portable_application portable application] version of Virtualbox is possible via a tool provided by [http://www.vbox.me VBox.me]. This application converts Virtualbox 'install application' into a 'portable application' thereby providing the option to port VMs to other computers via external USB hard drives and/or sticks. By instantiating virtual machines under portable Virtualbox's '~/data/.VirtualBox/Machines' folder, it is possible to backup and restore the complete operating environment not only that of Whonix but also specific instance of Virtualbox as well via SVN for complete portability. This encapsulates the entire Whonix operating environment under one parent folder rather than distributing it across various user and system folders:
+&lt;br /&gt;&lt;br /&gt;
+[[File:2014-05-11 09_42_19.png|400px]]
+&lt;br /&gt;&lt;br /&gt;
+[[File:2014-05-11 09_46_43.png|400px]]
+&lt;br /&gt;&lt;br /&gt;
+[[File:2014-05-11 09_54_39.png|400px]]
 
 == Adding NAT adapter to Whonix-Workstation / Updates without Tor ==
 
@@ -13458,7 +13477,7 @@ For even more Security, see [[Advanced Security Guide]].
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>4f5hm135j3nbxn7dp1hgzqs6o4n713t</sha1>
+      <sha1>qy5katfljl4wqpmpw7cjzqtf8miu8yd</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -69668,15 +69687,13 @@ Please consider a recurring donation!&lt;/translate&gt;
     <ns>0</ns>
     <id>966</id>
     <revision>
-      <id>7673</id>
-      <parentid>7409</parentid>
-      <timestamp>2014-05-03T11:57:29Z</timestamp>
+      <id>7870</id>
+      <parentid>7673</parentid>
+      <timestamp>2014-05-12T18:48:11Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* Adding the user rule */</comment>
-      <text xml:space="preserve" bytes="2019">{{Header}}
+      <text xml:space="preserve" bytes="2149">{{Header}}
 {{#seo:
 |description=Instructions on how to set up a Whonix Download Mirror
 }}
@@ -69717,10 +69734,14 @@ After installing the user rule, start or restart your Tor browser. When you brow
 
 Happy browsing!
 
+== Other rules ==
+
+For other similar rules, you can check [https://github.com/chris-barry/darkweb-everywhere Darkweb Everywhere]
+
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>rqce220sb30a7ah30rxuee5hdw2duq7</sha1>
+      <sha1>cyj0lk29b10lopybt6v16ssrmaj9f2c</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -74006,14 +74027,14 @@ No one is providing a https enabled download link for a Windows hash verificatio
     <ns>10</ns>
     <id>1320</id>
     <revision>
-      <id>7670</id>
-      <parentid>7669</parentid>
-      <timestamp>2014-05-02T22:14:57Z</timestamp>
+      <id>7861</id>
+      <parentid>7670</parentid>
+      <timestamp>2014-05-12T12:24:19Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="3274">&lt;div style=&quot;padding-bottom:1px; padding-top:6px; border:thin solid black; background:#EEEEEE; text-align:center;&quot;&gt;&lt;u&gt;Random News:&lt;/u&gt;
+      <text xml:space="preserve" bytes="3359">&lt;div style=&quot;padding-bottom:1px; padding-top:6px; border:thin solid black; background:#EEEEEE; text-align:center;&quot;&gt;&lt;u&gt;Random News:&lt;/u&gt;
 &lt;random&gt;
 Bored? Want to chat with other Whonix users? Join us in [http://irc://irc.oftc.net/whonix IRC] chat ([https://webirc.oftc.net:8443/?channels=Whonix Webchat]).
 @@@
@@ -74054,9 +74075,11 @@ Please [https://www.whonix.org/wiki/Contribute Contribute] by [http://https://ww
 [https://www.whonix.org/blog/translations-coordinator Whonix Project looking for Translations Coordinator!]
 @@@
 Know '''iptables'''? Want to contribute? Say hello in [https://www.whonix.org/forum/index.php/board,5.0.html development forum].
+@@@
+Got spare bandwidth on your server? Please consider [[Hosting a Whonix Mirror]].
 &lt;/random&gt;
 &lt;/div&gt;</text>
-      <sha1>0ocgxdr2i5ou2ybn7ewhezvosjjc7jm</sha1>
+      <sha1>e6a8kcwmk3x0ur6yc513wi0a34l4zc6</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -75918,6 +75941,61 @@ sudo apparmor_parser -r /etc/apparmor.d/usr.bin.sdwdate
 
 [[Category:Documentation]]</text>
       <sha1>6yv39z1iyb6eqa5ni37md5wzl9ttvfj</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:2014-05-11 09 42 19.png</title>
+    <ns>6</ns>
+    <id>1373</id>
+    <revision>
+      <id>7862</id>
+      <timestamp>2014-05-12T12:28:50Z</timestamp>
+      <contributor>
+        <username>Mutsuura</username>
+        <id>372</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:2014-05-11 09 46 43.png</title>
+    <ns>6</ns>
+    <id>1374</id>
+    <revision>
+      <id>7863</id>
+      <timestamp>2014-05-12T12:28:56Z</timestamp>
+      <contributor>
+        <username>Mutsuura</username>
+        <id>372</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:2014-05-11 09 54 39.png</title>
+    <ns>6</ns>
+    <id>1375</id>
+    <revision>
+      <id>7865</id>
+      <parentid>7864</parentid>
+      <timestamp>2014-05-12T12:57:11Z</timestamp>
+      <contributor>
+        <username>Mutsuura</username>
+        <id>372</id>
+      </contributor>
+      <comment>Mutsuura uploaded a new version of &amp;quot;[[File:2014-05-11 09 54 39.png]]&amp;quot;</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
