@@ -798,14 +798,14 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>19</id>
     <revision>
-      <id>7643</id>
-      <parentid>7639</parentid>
-      <timestamp>2014-05-02T10:54:37Z</timestamp>
+      <id>7879</id>
+      <parentid>7875</parentid>
+      <timestamp>2014-05-13T17:26:44Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="15135">{{Header}}
+      <text xml:space="preserve" bytes="15277">{{Header}}
 &lt;!--
 Copyright:
 
@@ -942,7 +942,9 @@ Read and apply the [[Pre_Install_Advice|Security Advice]].
 
 &lt;translate&gt;
 &lt;!--T:28--&gt;
-* Download and install [https://www.virtualbox.org/wiki/Downloads VirtualBox]. &lt;ref&gt;You could alternatively search for a Portable VirtualBox&lt;/ref&gt;
+* Install VirtualBox.
+** Windows: [https://www.virtualbox.org/wiki/Downloads Download VirtualBox] and install. &lt;ref&gt;You could alternatively search for Portable VirtualBox.&lt;/ref&gt;
+** Linux and others: {{Code|sudo apt-get install virtualbox linux-headers-$(uname -r)}} to install virtualbox.
 * [[#Download Whonix|Download Whonix]] and import both Whonix images&lt;ref&gt;You need both Whonix-Gateway.ova and Whonix-Workstation.ova images. Whonix is a two machine setup.&lt;/ref&gt; into VirtualBox. Do not change any settings when importing!
 
 &lt;!--T:250--&gt;
@@ -1170,7 +1172,7 @@ under certain conditions; see the wiki source code for details.
 &lt;translate&gt;&lt;!--T:253--&gt;
 Some icons created by third parties, Free licenses as well, see [[Authorship#Images_created_by_third_parties|Authorship Images created by third parties]] for details.
 &lt;/translate&gt;[[Category:Documentation]]{{Footer}}</text>
-      <sha1>qum9p3btidmszzm400ayigov0y5i2mb</sha1>
+      <sha1>d3liu012e9yonk5fodsoyig3gkyb3qi</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -12535,13 +12537,15 @@ https://github.com/Whonix/Whonix/issues/131
     <ns>0</ns>
     <id>115</id>
     <revision>
-      <id>7603</id>
-      <parentid>6948</parentid>
-      <timestamp>2014-04-28T03:25:40Z</timestamp>
+      <id>7876</id>
+      <parentid>7603</parentid>
+      <timestamp>2014-05-13T16:19:52Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="5627">{{Header}}
+      <comment>/* New Instructions for Debian Wheezy */</comment>
+      <text xml:space="preserve" bytes="5628">{{Header}}
 {{#seo:
 |description=Instructions for installing VirtualBox Guest Additions in Whonix. Shared Folders, Mouse Integration, etc.
 }}
@@ -12571,7 +12575,7 @@ sudo apt-get update &amp;&amp; sudo apt-get dist-upgrade
 
 ## If you only want Shared Folder, for improved security,
 ## you can try using only the next line, but not the line after next.
-# You need kernel headers to be able to compile the kernel module
+## You need kernel headers to be able to compile the kernel module
 sudo apt-get install --no-install-recommends virtualbox-guest-dkms virtualbox-guest-utils
 
 ## If you want all features, such as dynamic resolution
@@ -12652,7 +12656,7 @@ Safe and reboot. Done.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>bdvhv09mkkww30pdom4md4o3jjvsuib</sha1>
+      <sha1>aj92ait0062y9yv1mwf8cdr476os4w6</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -13126,15 +13130,14 @@ The PayPal logo (60px-De-pp-logo-200px.png), the subscribe button (subscribeCC_L
     <ns>0</ns>
     <id>119</id>
     <revision>
-      <id>7869</id>
-      <parentid>7868</parentid>
-      <timestamp>2014-05-12T14:29:09Z</timestamp>
+      <id>7873</id>
+      <parentid>7872</parentid>
+      <timestamp>2014-05-13T13:39:45Z</timestamp>
       <contributor>
-        <username>Mutsuura</username>
-        <id>372</id>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <comment>Modified based on updates to following section(s)</comment>
-      <text xml:space="preserve" bytes="22452">{{Header}}
+      <text xml:space="preserve" bytes="22507">{{Header}}
 {{#seo:
 |description=Computer Security Guide for Whonix Linux for Users, Whonix Hardening
 }}
@@ -13392,6 +13395,7 @@ The best practice is to back up the VM and &quot;roll back&quot; after risky act
 
 For Technical Design notes, see [[Dev/Operating System]]. For information on how to use other operating systems, see [[Other Operating Systems]].
 
+{{anchor|Recommendation to use multiple VM Snapshots}}
 == Reliable Alternative To Virtualbox VM Snapshots ==
 
 Warning: VirtualBox's snapshot feature is not (highly) recommended as a reliable method for backing up virtual machines because of possible data loss primarily in the form of corrupted virtual hard drives [VHD]. Alternative methods are copy/paste, cloning, exporting/importing. While all these methods provide virtual machine [VM] backups, they nevertheless make inefficient use of disk resources and inherently require manual versioning. Virtualbox's 'snapshot' feature is very useful when it works properly particularly when making interim snapshots of live running systems prior to installing new application(s), reverting can be very painful, and sometimes impossible, if/when virtual hard drive file(s) is corrupted.
@@ -13477,7 +13481,7 @@ For even more Security, see [[Advanced Security Guide]].
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>qy5katfljl4wqpmpw7cjzqtf8miu8yd</sha1>
+      <sha1>kiztt99k9ny4pfr6ylc96ypqxx3t1ut</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -19125,14 +19129,14 @@ When you go ahead now, and ask in a cracker forum, they probably won't spread a 
     <ns>0</ns>
     <id>162</id>
     <revision>
-      <id>7721</id>
-      <parentid>7706</parentid>
-      <timestamp>2014-05-09T09:34:38Z</timestamp>
+      <id>7880</id>
+      <parentid>7721</parentid>
+      <timestamp>2014-05-13T17:27:44Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="6965">{{#seo:
+      <text xml:space="preserve" bytes="6991">{{#seo:
 |description=Technical Design and Conception of the Whonix Anonymous Operating System
 }}
 {{Header}}
@@ -19239,6 +19243,7 @@ When you go ahead now, and ask in a cracker forum, they probably won't spread a 
 * [[Dev/Replicating_whonix.org|Replicating whonix.org]]
 * [[Dev/APT_Pinning|Why we should avoid APT Pinning]]
 * [[Dev/Password_Manager|Comparing Password Managers, finding out best choice as default installed one]]
+* [[Dev/Download Wizard]]
 &lt;/small&gt;
 &lt;/div&gt;
 &lt;br /&gt;
@@ -19305,7 +19310,7 @@ When you go ahead now, and ask in a cracker forum, they probably won't spread a 
 [[Category:Design]]
 
 {{Footer}}</text>
-      <sha1>0gtrdpf5xbk0bdyozsm5k6nb74nosen</sha1>
+      <sha1>36i6supuzkth9t8qtppjiet0uzf4gvp</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -35516,14 +35521,15 @@ That's it. Link to Whonix is inside the video description.
     <ns>0</ns>
     <id>295</id>
     <revision>
-      <id>5741</id>
-      <parentid>5482</parentid>
-      <timestamp>2014-02-27T11:35:58Z</timestamp>
+      <id>7878</id>
+      <parentid>7877</parentid>
+      <timestamp>2014-05-13T16:50:39Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="4304">{{Header}}
+      <comment>/* RAM Adjusted Desktop Starter */</comment>
+      <text xml:space="preserve" bytes="4288">{{Header}}
 {{#seo:
 |description=Whonix Linux Desktop Tips and Tricks, RAM Adjusted Desktop Starter, Auto Login, Single vs Double Click, full-screen
 }}
@@ -35557,12 +35563,12 @@ To '''shut down''' the gateway simply enter
 [[File:RAM Adjusted Desktop Starter created by adrelanos.png|400px|thumb|RAM Adjusted Desktop Starter won't start the desktop environment. You can use the terminal based version of Whonix-Gateway.]]
 When booting up, you will be prompted and can always manually press ctrl + c to prevent KDE from starting.
 
-By default, since Whonix {{Whonix6}}, Whonix-Gateway comes with 768 MB virtual RAM. This can be reduced on systems with low resources.
+By default, Whonix-Gateway comes with 768 MB virtual RAM. This can be reduced on systems with low resources.
 
 * If there is more than 512 MB RAM in total, the desktop environment (KDE by default) will be started.
 * If less than 512 MB RAM in total (for example, only 128 MB RAM in total), KDE (kdm) will not be started.
 
-This should be quite convenient, because users with low RAM could reduce (Whonix-Gateway) RAM to 128 MB and even if they sometimes wanted to configure/check something, they could assign 512 RAM and automagically boot into the graphical KDE desktop. There are also many settings in /etc/whonix.d/ to configure this feature, so if you want, you can also add a lot RAM, but not boot into a desktop environment, or use different display managers and so on.
+This should be quite convenient, because users with low RAM could reduce (Whonix-Gateway) RAM to 128 MB and even if they sometimes wanted to configure/check something, they could assign 512 RAM and automagically boot into the graphical KDE desktop. There are also many settings in {{Code2|/etc/whonix.d/}} to configure this feature, so if you want, you can also add a lot RAM, but not boot into a desktop environment, or use different display managers and so on.
 
 = whonixcheck/timesync writing to tty1 =
 [[File:writing to tty1 by adrelanos.png|400px|thumb|[[whonixcheck]] wrote its results to tty1]]
@@ -35585,7 +35591,7 @@ See [[Higher_Screen_Resolution|Higher Screen Resolution without installing Virtu
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>egtzi1z0hycqqnqn3fpjheresrcry13</sha1>
+      <sha1>3nnkejszl0jfvwpwyac19yemlsvb0np</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -73932,21 +73938,21 @@ Otherwise please consider a [[Donate|Donation]].
     <ns>0</ns>
     <id>1319</id>
     <revision>
-      <id>7685</id>
-      <parentid>7684</parentid>
-      <timestamp>2014-05-03T19:47:33Z</timestamp>
+      <id>7881</id>
+      <parentid>7685</parentid>
+      <timestamp>2014-05-13T17:28:56Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* By Download Target */</comment>
-      <text xml:space="preserve" bytes="3146">{{Header}}
+      <comment>/* By Host Operating System */</comment>
+      <text xml:space="preserve" bytes="3276">{{Header}}
 
 = User's Preferences =
 == By Host Operating System ==
-* Windows users -&gt; recommend VirtualBox ova's
-* Mac users -&gt; recommend VirtualBox ova's
-* Linux users -&gt;  recommend VirtualBox ova's / recommend [[KVM]] as soon as ready
+* Windows users -&gt; Install VirtualBox from virtualbox.org -&gt; recommend VirtualBox ova's
+* Linux users -&gt; Install VirtualBox by using distribution's package manager -&gt; recommend VirtualBox ova's / recommend [[KVM]] as soon as ready
+* Mac users -&gt; Install VirtualBox by ? -&gt; recommend VirtualBox ova's
 
 == By Download Target ==
 * VirtualBox
@@ -74017,7 +74023,7 @@ No one is providing a https enabled download link for a Windows hash verificatio
 &lt;references /&gt;
 
 {{Footer}}</text>
-      <sha1>qdyai0z4vora8nyx991j2rdjsyz88xh</sha1>
+      <sha1>lb7hplteg7v36944osqxduxehlrzgsp</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
