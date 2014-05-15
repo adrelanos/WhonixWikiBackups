@@ -74868,13 +74868,13 @@ curl.whonix-orig https://check.torproject.org
     <ns>0</ns>
     <id>1350</id>
     <revision>
-      <id>7854</id>
-      <parentid>7274</parentid>
-      <timestamp>2014-05-11T23:46:02Z</timestamp>
+      <id>7882</id>
+      <parentid>7854</parentid>
+      <timestamp>2014-05-15T01:05:14Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
+      <comment>I changed the old onion key to the new onion key.</comment>
       <text xml:space="preserve" bytes="2128">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
@@ -74968,12 +74968,12 @@ Run.
 sudo apparmor_parser -r /etc/apparmor.d/usr.bin.xchat
 &lt;/pre&gt;
 
-[https://www.whonix.org/forum/index.php?action=profile;u=24 troubadour] created this profile. You can discuss it in this [http://kkkkkkkkkk63ava6.onion/forum/index.php/topic,97.0.html forum thread].
+[https://www.whonix.org/forum/index.php?action=profile;u=24 troubadour] created this profile. You can discuss it in this [http://xxxxxxxxxxh5kyrx.onion/forum/index.php/topic,97.0.html forum thread].
 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>ft1eo8uqr2oda3wgk1tzjwa5f2it8qq</sha1>
+      <sha1>0few0i8aagia0yo9wywg8qph9ql2mtb</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
