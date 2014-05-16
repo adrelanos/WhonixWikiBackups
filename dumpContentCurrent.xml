@@ -17943,21 +17943,24 @@ under certain conditions; see the wiki source code for details.
     <ns>0</ns>
     <id>149</id>
     <revision>
-      <id>5864</id>
-      <parentid>3277</parentid>
-      <timestamp>2014-02-27T13:42:34Z</timestamp>
+      <id>7888</id>
+      <parentid>7887</parentid>
+      <timestamp>2014-05-16T12:47:16Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="2101">{{Header}}
+      <comment>/* Arm */</comment>
+      <text xml:space="preserve" bytes="2675">{{Header}}
 {{#seo:
 |description=Using a Tor Controller with Whonix. Arm. Vidalia. Change your Tor circuit. Monitor Tor.
 }}
 
 = Tor Controller =
 
-Two options. '''Arm''' or Vidalia. '''Arm''' is already '''pre-installed''' on Whonix and '''recommended'''.
+Three options. {{Code|arm}}, {{Code|tor-ctrl}} or {{Code|Vidalia}}. {{Code|arm}} and {{Code|tor-ctrl}} are already {{Code2|pre-installed}} on Whonix.
+
+'''{{Code|arm}} is {{Code2|recommended}}.'''
 
 = Vidalia =
 
@@ -17980,13 +17983,45 @@ Since Whonix does not include Vidalia, Arm is '''recommended'''. It's already pr
 
 [[Image:screenshot_arm_page1_cropped.png|arm, Tor Controller|thumb]]
 
-To start it, simply type on Whonix-Gateway:
+If you are using a &lt;u&gt;graphical&lt;/u&gt; Whonix-Gateway, go to:
 
-&lt;pre&gt;arm&lt;/pre&gt;
+&lt;pre&gt;
+Start Menu -&gt; Applications -&gt; System -&gt; Arm
+&lt;/pre&gt;
 
-To get a new circuit, press.
+If you are using a &lt;u&gt;terminal&lt;/u&gt; Whonix-Gateway:
 
-&lt;pre&gt;n&lt;/pre&gt;
+&lt;pre&gt;
+arm
+&lt;/pre&gt;
+
+To get a new circuit, press:
+
+&lt;pre&gt;
+n
+&lt;/pre&gt;
+
+To exit arm, press:
+
+&lt;pre&gt;
+q
+q
+&lt;/pre&gt;
+
+= tor-ctrl =
+tor-ctrl&lt;ref&gt;https://svn.torproject.org/svn/tor/branches/hidserv-perf/contrib/tor-ctrl.sh&lt;/ref&gt; comes with Whonix by default.
+
+Example usage to get a new circuit, on Whonix-Gateway:
+
+&lt;pre&gt;
+tor-ctrl -a /var/run/tor/control.authcookie -P 9051 -c &quot;signal newnym&quot;
+&lt;/pre&gt;
+
+See also:
+
+&lt;pre&gt;
+man tor-ctrl
+&lt;/pre&gt;
 
 = Footnotes =
 &lt;references /&gt;
@@ -17997,7 +18032,7 @@ To get a new circuit, press.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>1w4df3lrjizp38y1wzcdif6ei9w8i0q</sha1>
+      <sha1>21t0tp8cl0l0itrvkr9thnm594wfoyw</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -38317,15 +38352,15 @@ There is an extra chapter about the [[Pre Install Advice#MAC Address|MAC address
     <ns>0</ns>
     <id>303</id>
     <revision>
-      <id>7399</id>
-      <parentid>5750</parentid>
-      <timestamp>2014-04-07T22:03:12Z</timestamp>
+      <id>7890</id>
+      <parentid>7399</parentid>
+      <timestamp>2014-05-16T16:09:53Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Attack Scenarios */</comment>
-      <text xml:space="preserve" bytes="7839">{{Header}}
+      <comment>/* Introduction */</comment>
+      <text xml:space="preserve" bytes="7815">{{Header}}
 {{#seo:
 |description=Control Port Filter Proxy - filtering dangerous Tor Control Port commands - Design Documentation
 }}
@@ -38336,7 +38371,7 @@ Tor's control port has at least one, in context of Whonix, dangerous feature. It
 
 Before Whonix {{Whonix6}}, this also broke Tor Button's New Identity feature, which essentially sends &quot;SIGNAL NEWNYM&quot; to Tor's control port. While Tor Button's New Identity is still the only feature that was not available when using Tor Browser in Whonix, Tor Button in future will get more and more dependent on Tor's control port.
 
-TBB (since version 3 alpha) [https://trac.torproject.org/projects/tor/ticket/6546#comment:33 by default performs its own control port verification]. It checks using Tor's control port(!), that the socks port Tor reports, is the same one as Tor Browser is configured to use. If it fails, and it would fail in Whonix 0.5.6, Tor Button would look like disabled and show a failure message.
+TBB [https://trac.torproject.org/projects/tor/ticket/6546#comment:33 by default performs its own control port verification]. It checks using Tor's control port(!), that the socks port Tor reports, is the same one as Tor Browser is configured to use. If it fails, and it would fail in Whonix 0.5.6, Tor Button would look like disabled and show a failure message.
 
 In future, Tor Button will likely also use something like [https://trac.torproject.org/projects/tor/ticket/3652 &quot;GETINFO clockskew&quot;]. TBB developer [https://trac.torproject.org/projects/tor/ticket/8032 rejected] the idea of not adding the statement &quot;require no access to Tor's control port&quot; to TBB's design.
 
@@ -38403,7 +38438,7 @@ grep -r torbutton_send_ctrl_cmd *
 {{Footer}}
 
 [[Category:Design]]</text>
-      <sha1>ahc91n1sdode0c2tp6hfw9vlxgih6lf</sha1>
+      <sha1>00g87bw8rewylmuje38efyme8585cr1</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -74033,9 +74068,9 @@ No one is providing a https enabled download link for a Windows hash verificatio
     <ns>10</ns>
     <id>1320</id>
     <revision>
-      <id>7861</id>
-      <parentid>7670</parentid>
-      <timestamp>2014-05-12T12:24:19Z</timestamp>
+      <id>7889</id>
+      <parentid>7861</parentid>
+      <timestamp>2014-05-16T15:02:52Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
@@ -74044,7 +74079,7 @@ No one is providing a https enabled download link for a Windows hash verificatio
 &lt;random&gt;
 Bored? Want to chat with other Whonix users? Join us in [http://irc://irc.oftc.net/whonix IRC] chat ([https://webirc.oftc.net:8443/?channels=Whonix Webchat]).
 @@@
-Don't mind having your name connected to Whonix? Follow us. [https://twitter.com/Whonix Twitter] / [https://www.facebook.com/Whonix Facebook] / [https://plus.google.com/108150429836421683225 g ]
+Don't mind having your name connected to Whonix? Follow us. [https://twitter.com/Whonix Twitter] / [https://www.facebook.com/Whonix Facebook] / [https://plus.google.com/108150429836421683225 g+]
 @@@
 Check out [https://www.whonix.org Whonix blog].
 @@@
@@ -74085,7 +74120,7 @@ Know '''iptables'''? Want to contribute? Say hello in [https://www.whonix.org/fo
 Got spare bandwidth on your server? Please consider [[Hosting a Whonix Mirror]].
 &lt;/random&gt;
 &lt;/div&gt;</text>
-      <sha1>e6a8kcwmk3x0ur6yc513wi0a34l4zc6</sha1>
+      <sha1>jucnewaxfmuyy9wjak3u727klop58pw</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
