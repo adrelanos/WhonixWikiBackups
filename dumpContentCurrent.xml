@@ -461,14 +461,13 @@ Whonix (&lt;html&gt;&lt;a href=&quot;https://plus.google.com/1081504298364216832
     <ns>0</ns>
     <id>16</id>
     <revision>
-      <id>5551</id>
-      <parentid>4740</parentid>
-      <timestamp>2014-02-22T02:13:34Z</timestamp>
+      <id>7892</id>
+      <parentid>5551</parentid>
+      <timestamp>2014-05-18T06:58:37Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <text xml:space="preserve" bytes="5888">&lt;!--
+      <text xml:space="preserve" bytes="5901">&lt;!--
 Copyright:
 
    Whonix About wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -504,7 +503,7 @@ This wiki page is a fork of the Tails About page, from this exact source &lt;htt
 }}
 {{Header}}
 = Introduction =
-Whonix aims at preserving your privacy and anonymity by helping you use your applications anonymously. A [[Tor Browser|web browser]], [[XChat|IRC client]], word processor, and more come pre-configured with security in mind.
+Whonix aims at preserving your privacy and anonymity by helping you use your applications anonymously. A [[Tor Browser|web browser]], [[XChat|IRC client]], word processor, and [[Software|more]] come pre-configured with security in mind.
 
 It is a complete operating system&lt;ref&gt;Which consists of two virtual machines: Whonix-Gateway and Whonix-Workstation&lt;/ref&gt; designed to be used inside a host operating system&lt;ref&gt;Such as your currently installed OS on your computer or an OS installed on an external drive.&lt;/ref&gt;. It is Free Software and based on Tor&lt;ref&gt;https://www.torproject.org/about/overview.html.en&lt;/ref&gt;, Debian GNU/Linux&lt;ref&gt;https://en.wikipedia.org/wiki/Debian&lt;/ref&gt; and security by isolation.
 
@@ -584,7 +583,7 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>98r12gem75wdsrrjlnn3io93bbf08dt</sha1>
+      <sha1>b8jjx3adiw7mtcdj7cn709t4sl7d6o6</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -49904,36 +49903,33 @@ Run.
     <ns>10</ns>
     <id>500</id>
     <revision>
-      <id>6932</id>
-      <parentid>6809</parentid>
-      <timestamp>2014-03-15T21:09:19Z</timestamp>
+      <id>7891</id>
+      <parentid>6932</parentid>
+      <timestamp>2014-05-17T23:14:46Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <text xml:space="preserve" bytes="4678">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
+      <text xml:space="preserve" bytes="4169">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
 '''OPTIONAL!'''
 
 Advanced users could install from Current Sources (custom) instead of from Frozen Sources (default in 7.4.0 and above). Both options have security advantages and disadvantages.
-
-If you are interested, click on Expand on the right.
 
 Whonix 8
 &lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
 &lt;div class=&quot;mw-collapsible-content&quot;&gt;
 
-CurrentSources builds are rarely tested due to lack of contributor manpower. Should work reasonable well in principle as long as no packages are removed from Debian. The worst thing that can probably happen, is that the build fails due to missing packages.
+CurrentSources builds are rarely tested due to lack of contributor manpower. Should work reasonably well in principle as long as no packages are removed from Debian. The worst thing that can probably happen, is that the build fails due to missing packages.
 
 Frozen Sources:
 
 * Whonix's build script will use http://snapshot.debian.org instead of the more popular ftp.us.debian.org.
 * Snapshot.debian.org will never change, i.e. their packages and versions will remain the same forever*&lt;ref group=currentsources&gt;Besides a few rare [http://snapshot.debian.org/removal/ exceptions].&lt;/ref&gt; &lt;ref group=currentsources&gt;As long the great snapshot.debian.org service lasts.&lt;/ref&gt;.
-* Using Frozen Sources has the advantage, that all builders end up with a very similar &lt;ref group=currentsources&gt;Timestamps, temporary files and who knows what else (open research question) differ.&lt;/ref&gt; image. This gives builders more confidence, that they have ended up with an intact image.
-* Are a precondition &lt;ref group=currentsources&gt;Actually, at least in theory, not a unsolvable precondition. But verifying an image against Debian's repository after building is a sinkhole. (Too many symlinks and auto generated files. - Help welcome!) Creating similar images because building from Frozen Sources seems to require only realistic implementation effort.&lt;/ref&gt; for some day providing the [[Comparison_with_Others#Verifiable_Builds|Verifiable Builds]] security feature.
+* Using Frozen Sources has the advantage that all builders end up with a very similar &lt;ref group=currentsources&gt;Timestamps, temporary files and who knows what else (open research question) differ.&lt;/ref&gt; image. This gives builders more confidence, that they have ended up with an intact image.
+* Are a precondition for the [[Comparison_with_Others#Verifiable_Builds|Verifiable Builds]] security feature.
 * It follows, when building a fresh image it will contain outdated packages. (You can upgrade after booting for the first time.)
 * Package downloads are still verified, but we have to ignore the [http://blog.ganneff.de/blog/2008/09/23/valid-until-field-in-release-f.html valid-until] field. Which means, a man-in-the-middle attack capable adversary could feed you with packages even older than configured in the version of Whonix you are building. Any packages which were ever signed with the APT repository signing key of that codename&lt;ref group=currentsources&gt;Codename as in Testing, Wheezy, Jessie.&lt;/ref&gt;. You might not like that and therefore prefer building from Current Sources.
 * At some point, for example if remotely exploitable vulnerabilities are found in the apt-get version (defined by Frozen Sources) it may be dangerous to continue building that version.
-* We should compare our images with each other to ensure no man-in-the-middle attach has happened while building Whonix. [Before we can do this, Verifiable Builds need to be implemented. (Help welcome!)]
+* We should compare our images with each other to ensure no man-in-the-middle attack has happened while building Whonix.
 
 Current Debian APT repository:
 
@@ -49998,7 +49994,7 @@ Whonix 9
 &lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;</text>
-      <sha1>2rtwixbwg4bl5mcw8cdwx5u9sw57dlo</sha1>
+      <sha1>s1wdmln7dn74x3qzv2ax6cu2a2rhroc</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
