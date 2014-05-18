@@ -2669,15 +2669,15 @@ Not compulsory, just nicely asking:
     <ns>0</ns>
     <id>56</id>
     <revision>
-      <id>7442</id>
-      <parentid>7358</parentid>
-      <timestamp>2014-04-09T14:21:21Z</timestamp>
+      <id>7897</id>
+      <parentid>7896</parentid>
+      <timestamp>2014-05-18T19:58:46Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Why not use a Live CD/DVD as Whonix-Workstation operating system? */</comment>
-      <text xml:space="preserve" bytes="49419">{{Header}}
+      <comment>/* Why aren't you using OpenBSD, it's the most secure OS ever!!!1! */</comment>
+      <text xml:space="preserve" bytes="49888">{{Header}}
 {{#seo:
 |description=FAQ. Frequently Asked Questions.
 }}
@@ -2792,11 +2792,11 @@ Old statement: 32bit software runs without problems on 32bit and 64bit hosts. 64
 
 = Why aren't you using OpenBSD, it's the most secure OS ever!!!1! =
 
-OpenBSD fails completely for the Tor threat model which downloading and updating software over untrusted exit relays. OpenBSD does not offer any signed files, they do not even offer hash sums for all required files (at least the ports tar ball doesn't have one). When asking about that the answer is &quot;buy the CDs&quot; (=something like $80 per year if you want to stay current). As if CDs via post through a 3rd party reseller offer a better trust chain than mirrors with hash sums, let alone proper WOT signatures. There are alternatives to GnuPG if it's just about the license... Further, tracking stable - which is recommended for production systems - is needlessly complex: it requires the user to recompile everything even though there are usually only a few packages that require an update. The most fitting approach would be to just apply the patches from the errata but apparently not all security related fixes in -stable are listed there and OpenBSD admits as much that patch branch is really not user-friendly. Further problems: OpenBSD seems to default to using very &quot;conservative&quot; hash algorithms, md5 or sha1 which are both broken. This clashes with their claimed crypto focus. FDE support is lacking/limited. There doesn't seem to be a modern mandatory access control (MAC&lt;ref&gt;https://en.wikipedia.org/wiki/Mandatory_access_control&lt;/ref&gt;), instead there's systrace which has been criticized for having fundamental security problems (this may or may not have changed since then). &lt;s&gt;OpenBSD doesn't seem to be using PIE executables by default, meaning, it doesn't really have ASLR.&lt;/s&gt; Documentation about such issues is completely lacking. &lt;s&gt;There's also the strange policy of sticking with bind and sendmail when there were secure-by-design alternatives (see [http://cr.yp.to/qmail/qmailsec-20071101.pdf PDF!]) with much better track record&lt;/s&gt;, BIND-9, despite the rewrite, continues to be a security hazard just judging by the OpenBSD errata entries. OpenBSD would otherwise be a great choice for Whonix-Gateway. It has a very capable firewall, the track record is probably better than of any other OS though they (just like their competition for fairness sakes) prefer to label &quot;potential&quot; code execution vulnerabilities as a DoS. OpenBSD is also a very small OS (small TCB), its kernel may be the most secure UNIX-like kernel, but it's still a monolithic kernel. Their claim of being THE most secure operating system has become more and more dubious since the introduction of actually usable microkernels. In summary: I don't like their attitude and several essential (for Whonix) security properties are missing.
+&lt;font size=-3&gt;&lt;s&gt;OpenBSD fails completely for the Tor threat model which downloading and updating software over untrusted exit relays. OpenBSD does not offer any signed files, they do not even offer hash sums for all required files (at least the ports tar ball doesn't have one). When asking about that the answer is &quot;buy the CDs&quot; (=something like $80 per year if you want to stay current). As if CDs via post through a 3rd party reseller offer a better trust chain than mirrors with hash sums, let alone proper WOT signatures. There are alternatives to GnuPG if it's just about the license...&lt;/s&gt;&lt;/font&gt; Further, tracking stable - which is recommended for production systems - is needlessly complex: it requires the user to recompile everything even though there are usually only a few packages that require an update. The most fitting approach would be to just apply the patches from the errata but apparently not all security related fixes in -stable are listed there and OpenBSD admits as much that patch branch is really not user-friendly. Further problems: OpenBSD seems to default to using very &quot;conservative&quot; hash algorithms, md5 or sha1 which are both broken. This clashes with their claimed crypto focus. FDE support is lacking/limited. There doesn't seem to be a modern mandatory access control (MAC&lt;ref&gt;https://en.wikipedia.org/wiki/Mandatory_access_control&lt;/ref&gt;), instead there's systrace which has been criticized for having fundamental security problems (this may or may not have changed since then). &lt;font size=-3&gt;&lt;s&gt;OpenBSD doesn't seem to be using PIE executables by default, meaning, it doesn't really have ASLR.&lt;/s&gt;&lt;/font&gt; Documentation about such issues is completely lacking. &lt;s&gt;There's also the strange policy of sticking with bind and sendmail when there were secure-by-design alternatives (see [http://cr.yp.to/qmail/qmailsec-20071101.pdf PDF!]) with much better track record,&lt;/s&gt; BIND-9, despite the rewrite, continues to be a security hazard just judging by the OpenBSD errata entries. OpenBSD would otherwise be a great choice for Whonix-Gateway. It has a very capable firewall, the track record is probably better than of any other OS though they (just like their competition for fairness sakes) prefer to label &quot;potential&quot; code execution vulnerabilities as a DoS. OpenBSD is also a very small OS (small TCB), its kernel may be the most secure UNIX-like kernel, but it's still a monolithic kernel. Their claim of being THE most secure operating system has become more and more dubious since the introduction of actually usable microkernels. In summary: I don't like their attitude and several essential (for Whonix) security properties are missing.
 
 Also see [http://thread.gmane.org/gmane.os.openbsd.bugs/18754 security vulnerability - NTP not authenticated] and it doesn't look like they step forward to fix it. The suggestion was to authenticate the connection to the NTP server, which is not possible for Whonix for many reasons. &lt;ref&gt;We need to distribute the trust, not using only one NTP server and we must use free services which are available for anyone and not something requiring an own server.&lt;/ref&gt;
 
-OpenBSD's target audience aren't end users, that's why they don't care to provide signed updates for the masses, see [http://unix.stackexchange.com/questions/38041/how-to-check-downloaded-package-on-openbsd-5-1 How to check downloaded package on OpenBSD 5.1?].
+&lt;font size=-3&gt;&lt;s&gt;OpenBSD's target audience aren't end users, that's why they don't care to provide signed updates for the masses, see [http://unix.stackexchange.com/questions/38041/how-to-check-downloaded-package-on-openbsd-5-1 How to check downloaded package on OpenBSD 5.1?].&lt;/s&gt;&lt;/font&gt; &lt;ref&gt;http://www.openbsd.org/faq/faq15.html#PkgSig&lt;/ref&gt;
 
 OpenBSD's website isn't reachable over SSL or as a Tor hidden service. How are users supposed to securely view the OpenBSD site and not learn things set up by a man-in-the-middle?
 
@@ -3211,13 +3211,15 @@ No.
 '''Long answer''': &lt;br /&gt;
 [[Warning#Whonix_is_not_amnesic]] and there is no [[#Will there be a Whonix Live CD or DVD?|Live CD/DVD of Whonix.]]
 
-Many people suggested workarounds such shredding Whonix's hard disk images, having a zip archive of Whonix's hard disk images and restoring them every time they are using Whonix, restoring a fresh [[Security_Guide#Recommendation_to_use_multiple_VM_Snapshots|snapshot]] every time they use Whonix, using [[Advanced_Security_Guide#Full_Disk_Encryption|Full Disk Encryption]] and so forth.
+Many people suggested workarounds such shredding Whonix's hard disk images, having a zip archive of Whonix's hard disk images and restoring them every time they are using Whonix, restoring a fresh [[Security_Guide#Recommendation_to_use_multiple_VM_Snapshots|snapshot]] every time they use Whonix, [https://www.whonix.org/forum/index.php/topic,309.msg2062.html#msg2062 running Whonix completely in ramdisks], using [[Advanced_Security_Guide#Full_Disk_Encryption|Full Disk Encryption]] and so forth.
 
 These aren't substitutes for having an amnesic system. Not storing sensitive data on hard disks in the first place is much safer than dealing with it after the fact. In that regard, amnesic live systems are superior, because they do exactly this by design.
 
 Never storing data unencrypted in the first place is much safer than trying to wipe it later. Using Full Disk Encryption is very useful. Still, this isn't an applicable stopgap as long as Whonix doesn't offer an amnesic version for every person in all cases. In some areas in the world, having encrypted disks isn't wise.
 
-You should be very cautious about disk forensics claims. We don't know about swap or other strange things operating systems and harddrives are doing nowadays. We are not experts in [https://en.wikipedia.org/wiki/Computer_forensics forensics]. Just have a basic understanding of it and know to be cautious. Check out [http://www.infosecisland.com/blogview/12153-Data-Remains-on-USB-and-SSDs-After-Secure-Erase.html Data Remains on USB and SSDs After Secure Erase] and [https://en.wikipedia.org/wiki/Wear_leveling wear levelling]. Ordinary hard disks also sometimes mark sectors as bad an never release their data. (?) See also [http://www.forensicswiki.org forensics wiki] to learn some more about the possibilities of forensics.
+You should be very cautious about disk forensics claims. We don't know about swap or other strange things operating systems and harddrives are doing nowadays. We are not experts in [https://en.wikipedia.org/wiki/Computer_forensics forensics]. Just have a basic understanding of it and know to be cautious. Check out [http://www.infosecisland.com/blogview/12153-Data-Remains-on-USB-and-SSDs-After-Secure-Erase.html Data Remains on USB and SSDs After Secure Erase] and [https://en.wikipedia.org/wiki/Wear_leveling wear leveling]. Ordinary hard disks also sometimes mark sectors as bad an never release their data. (?) See also [http://www.forensicswiki.org forensics wiki] to learn some more about the possibilities of forensics.
+
+See also [https://research.torproject.org/techreports/tbb-forensic-analysis-2013-06-28.pdf Forensic Analysis of the Tor Browser Bundle on OS X, Linux, and Windows] to get an idea of what kinds of disk traces may be leftover.
 
 No matter how clever the setup sounds, nothing can beat an amnesic system. At bare minimum, before making any claims:
 
@@ -3234,7 +3236,7 @@ Without performing these basics steps, the setup may sound clever, but may not w
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>it21r9cpopidgv8tmogpc5nhjvg5tqi</sha1>
+      <sha1>s8e7c9i5j6xhcgu3v5jaijkz1nidbg1</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -4594,15 +4596,14 @@ http://sourceforge.net/p/whonix/wiki/Dev_old_1/
     <ns>0</ns>
     <id>79</id>
     <revision>
-      <id>7360</id>
-      <parentid>7010</parentid>
-      <timestamp>2014-04-07T21:32:55Z</timestamp>
+      <id>7898</id>
+      <parentid>7360</parentid>
+      <timestamp>2014-05-18T20:48:21Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Even more security */</comment>
-      <text xml:space="preserve" bytes="9543">{{Header}}
+      <text xml:space="preserve" bytes="9375">{{Header}}
 {{#seo:
 |description=Anonymize any Operating System! Your operating system tunneled through the Tor Anonymity Network! Create your Custom-Whonix-Workstation!
 }}
@@ -4772,7 +4773,7 @@ Note: Whonix-BuildYourselfFromSource-Workstation is of course the same as Whonix
 |-
 | align=&quot;left&quot; | Includes Tor Browser
 | Yes
-| Your responsibility to install Tor Browser. &lt;ref name=tb&gt;For help using Tor Browser without Tor over Tor (recommended), see https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/WebBrowsers and http://www.wilderssecurity.com/showthread.php?t=339051&amp;page=14 beginning from &quot;Does anyone know if separating tor and vidalia from the browser is possible?&quot; and [[Special:AWCforum/st/id179/#post_1025]].&lt;/ref&gt;
+| Your responsibility to install Tor Browser. &lt;ref name=tb&gt;For help using Tor Browser without Tor over Tor (recommended), see: https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/WebBrowsers#UseTorBrowserwithoutbundledTorWindows&lt;/ref&gt;
 |-
 | align=&quot;left&quot; | Includes Firefox privacy patches &lt;ref&gt;https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/WebBrowsers&lt;/ref&gt; and Tor Button (=Tor Browser)
 | Yes, because it uses Tor Browser (without Tor/Vidalia).
@@ -4847,7 +4848,7 @@ A Whonix-Custom-Workstation ''can be made'' (Your responsibility!) as secure as 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>cv7ncckp52cefu7t30qwj5fxqj7h3dr</sha1>
+      <sha1>sxsi1v7k3kt1cgipmis5jku5g0rfakh</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -49903,16 +49904,19 @@ Run.
     <ns>10</ns>
     <id>500</id>
     <revision>
-      <id>7891</id>
-      <parentid>6932</parentid>
-      <timestamp>2014-05-17T23:14:46Z</timestamp>
+      <id>7893</id>
+      <parentid>7891</parentid>
+      <timestamp>2014-05-18T11:37:54Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="4169">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
+      <text xml:space="preserve" bytes="4223">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
 '''OPTIONAL!'''
 
 Advanced users could install from Current Sources (custom) instead of from Frozen Sources (default in 7.4.0 and above). Both options have security advantages and disadvantages.
+
+If you are interested, click on Expand on the right.
 
 Whonix 8
 &lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
@@ -49994,7 +49998,7 @@ Whonix 9
 &lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;</text>
-      <sha1>s1wdmln7dn74x3qzv2ax6cu2a2rhroc</sha1>
+      <sha1>lp4lil39u211pq1fb3p66bqki2m83zp</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
