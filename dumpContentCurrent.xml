@@ -38352,15 +38352,13 @@ There is an extra chapter about the [[Pre Install Advice#MAC Address|MAC address
     <ns>0</ns>
     <id>303</id>
     <revision>
-      <id>7890</id>
-      <parentid>7399</parentid>
-      <timestamp>2014-05-16T16:09:53Z</timestamp>
+      <id>7899</id>
+      <parentid>7890</parentid>
+      <timestamp>2014-05-19T22:45:08Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* Introduction */</comment>
-      <text xml:space="preserve" bytes="7815">{{Header}}
+      <text xml:space="preserve" bytes="7803">{{Header}}
 {{#seo:
 |description=Control Port Filter Proxy - filtering dangerous Tor Control Port commands - Design Documentation
 }}
@@ -38406,10 +38404,10 @@ Once Whonix-Workstation has been compromised, the adversary could continuously a
 More worrying is the extended attack surface. See &quot;Attack Surface&quot; above. We're not aware of anyone having audited tcpserver or /bin/bash for vulnerabilities. Please add this information if you know more.
 
 == Files ==
-* https://github.com/Whonix/Whonix/blob/master/whonix_gateway/usr/bin/controlportfilt
-* https://github.com/Whonix/Whonix/blob/master/whonix_gateway/usr/lib/whonix/cpf-tcpserver
-* https://github.com/Whonix/Whonix/blob/master/whonix_gateway/etc/controlportfilt.d/30_controlportfilt_default
-* https://github.com/Whonix/Whonix/blob/master/whonix_gateway/etc/init.d/controlportfiltd
+* https://github.com/Whonix/control-port-filter/blob/master/usr/bin/controlportfilt
+* https://github.com/Whonix/control-port-filter/blob/master/usr/lib/cpf-tcpserver
+* https://github.com/Whonix/control-port-filter/blob/master/etc/controlportfilt.d/30_controlportfilt_default
+* https://github.com/Whonix/control-port-filter/blob/master/etc/init.d/control-port-filter
 
 == Debugging Inspiration ==
 &lt;pre&gt;
@@ -38438,7 +38436,7 @@ grep -r torbutton_send_ctrl_cmd *
 {{Footer}}
 
 [[Category:Design]]</text>
-      <sha1>00g87bw8rewylmuje38efyme8585cr1</sha1>
+      <sha1>7byr5ckd8oqmxovvzzok1eij53qjxmc</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
