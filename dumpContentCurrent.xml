@@ -19164,14 +19164,14 @@ When you go ahead now, and ask in a cracker forum, they probably won't spread a 
     <ns>0</ns>
     <id>162</id>
     <revision>
-      <id>7880</id>
-      <parentid>7721</parentid>
-      <timestamp>2014-05-13T17:27:44Z</timestamp>
+      <id>7916</id>
+      <parentid>7880</parentid>
+      <timestamp>2014-05-21T14:58:32Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="6991">{{#seo:
+      <text xml:space="preserve" bytes="7010">{{#seo:
 |description=Technical Design and Conception of the Whonix Anonymous Operating System
 }}
 {{Header}}
@@ -19279,6 +19279,7 @@ When you go ahead now, and ask in a cracker forum, they probably won't spread a 
 * [[Dev/APT_Pinning|Why we should avoid APT Pinning]]
 * [[Dev/Password_Manager|Comparing Password Managers, finding out best choice as default installed one]]
 * [[Dev/Download Wizard]]
+* [[Dev/Qubes OS]]
 &lt;/small&gt;
 &lt;/div&gt;
 &lt;br /&gt;
@@ -19345,7 +19346,7 @@ When you go ahead now, and ask in a cracker forum, they probably won't spread a 
 [[Category:Design]]
 
 {{Footer}}</text>
-      <sha1>36i6supuzkth9t8qtppjiet0uzf4gvp</sha1>
+      <sha1>mhkvzwqucfzevuqepltp7drn02hc79q</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -76166,6 +76167,39 @@ sudo apparmor_parser -r /etc/apparmor.d/usr.bin.sdwdate
       <comment>Mutsuura uploaded a new version of &amp;quot;[[File:2014-05-11 09 54 39.png]]&amp;quot;</comment>
       <text xml:space="preserve" bytes="8">MsUpload</text>
       <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Dev/Qubes OS</title>
+    <ns>0</ns>
+    <id>1376</id>
+    <revision>
+      <id>7915</id>
+      <timestamp>2014-05-21T14:58:02Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;{{Header}}  = IPs =  [https://groups.google.com/d/msg/qubes-devel/jxr89--oGs0/IcA4pia70-0J source]  Qubes uses non-fixed LAN IPs? How do internal LAN IPs get assigned to TorVM...&quot;</comment>
+      <text xml:space="preserve" bytes="556">{{Header}}
+
+= IPs =
+
+[https://groups.google.com/d/msg/qubes-devel/jxr89--oGs0/IcA4pia70-0J source]
+
+Qubes uses non-fixed LAN IPs? How do internal LAN IPs get assigned to TorVM / AppVMs?
+
+QubesVm IP address is generated based on its netvm ID (subnet number) and the said VM static ID, so unless user is switching netvm, the IP is pretty static. We've chosen 10.137.&lt;subnet-id&gt;.&lt;vm-id&gt; which is quite exotic so conflicts with real LAN are very rare (even if rather harmless in isolated network).
+
+= Footnotes =
+&lt;references /&gt;
+
+{{Footer}}
+
+[[Category:Design]]</text>
+      <sha1>dfiqwspvkxo1dr0t4p1a0b3hje6igjd</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
