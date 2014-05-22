@@ -32078,14 +32078,15 @@ Anonymously cashing out Bitcoin directly into cash looks very difficult. (Imposs
     <ns>0</ns>
     <id>259</id>
     <revision>
-      <id>5903</id>
-      <parentid>3049</parentid>
-      <timestamp>2014-02-27T14:10:04Z</timestamp>
+      <id>7918</id>
+      <parentid>5903</parentid>
+      <timestamp>2014-05-21T22:42:00Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="2573">{{Header}}
+      <comment>/* Mixmaster inside Whonix-Workstation */</comment>
+      <text xml:space="preserve" bytes="2855">{{Header}}
 {{#seo:
 |description=Send anonymous E-Mails. Mixmaster over Tor. Tunnelling mixmaster through Tor. Connection Schema: user -&gt; Tor -&gt; mixmaster -&gt; recipient
 }}
@@ -32107,23 +32108,39 @@ This is quite an unusual setup. At time of writing there where no references tha
 == Mixmaster inside Whonix-Workstation ==
 A fresh list of Mixmaster nodes is required. You can either update using the ncurses interface or using the Debian method. Both are documented below.
 
-&lt;pre&gt;sudo mixmaster-update --verbose &lt;/pre&gt;
+&lt;pre&gt;
+sudo mixmaster-update --verbose
+&lt;/pre&gt;
 
 Mails can be send by command line.
 
-&lt;pre&gt;echo &quot;mail text&quot; | mixmaster --verbose --to=email@recipient.org --copies=1 --chain=breaka&lt;/pre&gt;
+/var/lib/mixmaster/stats/mlist2.txt
+
+&lt;pre&gt;
+echo &quot;mail text&quot; | mixmaster --verbose --to=email@recipient.org --copies=1 --chain=banana
+&lt;/pre&gt;
+
+{{Code|banana}} is an example here.
+
+If it says, {{Code2|Error: No such remailer: breaka}}, then choose another one. You can get a list of them and availablity stats by looking at the file {{Code|/var/lib/mixmaster/stats/mlist2.txt}}.
 
 Or instead of using echo text, you can also read the text from a file. This is handy, because you can (and should) use a spell checker and because you can (and should if applicable) encrypt the text beforehand.
 
-&lt;pre&gt;echo &quot;`cat maildraftfile`&quot; | mixmaster --verbose --to=email@recipient.org --copies=1 --chain=breaka&lt;/pre&gt;
+&lt;pre&gt;
+echo &quot;`cat maildraftfile`&quot; | mixmaster --verbose --to=email@recipient.org --copies=1 --chain=breaka
+&lt;/pre&gt;
 
 Or if you want to add a subject. (Which you most likely don't want, because the subject can not be encrypted.)
 
-&lt;pre&gt;echo &quot;mail text&quot; | mixmaster --verbose --to=email@recipient.org --subject=&quot;mail subject&quot; --copies=1 --chain=breaka&lt;/pre&gt;
+&lt;pre&gt;
+echo &quot;mail text&quot; | mixmaster --verbose --to=email@recipient.org --subject=&quot;mail subject&quot; --copies=1 --chain=breaka
+&lt;/pre&gt;
 
 Takes a moment and shows.
 
-&lt;pre&gt;Chain: breaka&lt;/pre&gt;
+&lt;pre&gt;
+Chain: banana
+&lt;/pre&gt;
 
 Done.
 
@@ -32143,7 +32160,7 @@ For technical stuff, see [[Dev/Mixmaster]].
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>9260t3y7ndydsv3vsmr7hnmkqrnfzta</sha1>
+      <sha1>pv3j95zctrsxwd6uxwabtgwfg2iwg1b</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -57342,15 +57359,14 @@ Quelle: &lt;html&gt;&lt;a href=&quot;http://www.juraforum.de/impressum-generator
     <ns>0</ns>
     <id>698</id>
     <revision>
-      <id>7886</id>
-      <parentid>7885</parentid>
-      <timestamp>2014-05-15T16:22:04Z</timestamp>
+      <id>7917</id>
+      <parentid>7886</parentid>
+      <timestamp>2014-05-21T22:26:51Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Geltungsbereich */</comment>
-      <text xml:space="preserve" bytes="4652">&lt;!--
+      <text xml:space="preserve" bytes="4759">&lt;!--
 NOTE TO WIKI EDITORS:
 Do not add the default footer!
 Do not edit without asking Patrick Schleizer beforehand!
@@ -57432,6 +57448,8 @@ Dieses Impressum gilt auch für:
 ** https://github.com/adrelanos/apparmor-profile-anondist
 ** https://github.com/Whonix/apparmor-profile-torbrowser
 ** https://github.com/adrelanos/apparmor-profile-torbrowser
+** https://github.com/Whonix/apparmor-profile-xchat
+** https://github.com/adrelanos/apparmor-profile-xchat
 
 Bitte beachten Sie, dass dieses Impressum gilt nicht für:
 
@@ -57446,7 +57464,7 @@ Die Datenschutzerklärung finden Sie [[Datenschutz|hier]].
 Den Haftungsausschluss (Disclaimer) finden Sie [[Disclaimer|hier]].
 
 [[Category:Documentation]]</text>
-      <sha1>sq4wob1io7yw8nhp06kcapt0q6d2xe2</sha1>
+      <sha1>fjvllbbht4mtuuqral92rubtuggchgc</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
