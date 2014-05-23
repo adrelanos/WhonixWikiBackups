@@ -38,9 +38,9 @@
     <ns>0</ns>
     <id>1</id>
     <revision>
-      <id>7662</id>
-      <parentid>7651</parentid>
-      <timestamp>2014-05-02T16:37:53Z</timestamp>
+      <id>7921</id>
+      <parentid>7920</parentid>
+      <timestamp>2014-05-23T01:00:29Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
@@ -74965,29 +74965,29 @@ curl.whonix-orig https://check.torproject.org
     <ns>0</ns>
     <id>1346</id>
     <revision>
-      <id>7508</id>
-      <parentid>7506</parentid>
-      <timestamp>2014-04-12T22:26:53Z</timestamp>
+      <id>7919</id>
+      <parentid>7508</parentid>
+      <timestamp>2014-05-23T00:56:54Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="1111">__NOTITLE__
+      <text xml:space="preserve" bytes="1293">__NOTITLE__
 {{Header}}
 
 = Why Whonix will always be free in price as well as Free as in freedom? =
 
 * &lt;u&gt;Security&lt;/u&gt;: The public scrutiny of [https://en.wikipedia.org/wiki/Secure_by_design security by design] has proven to be superior to [https://en.wikipedia.org/wiki/Security_through_obscurity security through obscurity].
-* &lt;u&gt;Legal&lt;/u&gt;: Whonix is based on Free Software. Their licenses do not grant the right to modify and distribute them without sharing the modified source code.
-* &lt;u&gt;Ethical&lt;/u&gt;: We believe it immoral to benefit from those Free Software components and give back nothing.
-* &lt;u&gt;Community&lt;/u&gt;: It is rewarding and fun to have all types of people [[Contribute|contributing]]. This works best in open source projects.
+* &lt;u&gt;Legal&lt;/u&gt;: Whonix is based on [http://www.libre.org/en/libre/libre-software-free-software/libre-software-definition Libre Software]. Their licenses do not grant the right to modify and distribute them without sharing the modified source code.
+* &lt;u&gt;Ethical&lt;/u&gt;: We believe it immoral to benefit from those [http://en.wikipedia.org/wiki/Free_Software Free]/Libre Software components and give back nothing.
+* &lt;u&gt;Community&lt;/u&gt;: It is rewarding and fun to have all types of people [[Contribute|contributing]]. This works best in [http://en.wikipedia.org/wiki/Open_Source Open Source] projects.
 * &lt;u&gt;Impact&lt;/u&gt;: When free in price, it can spread faster than commercial tools.
 * &lt;u&gt;Commercial&lt;/u&gt;: We hope to make a living on Whonix by selling additional services ([[Support#Professional_Support|professional support]]) and [[Donate|donations]].
 * &lt;u&gt;Career&lt;/u&gt;: Our experience volunteering on this project makes us more valuable.
 
 [[Category:Documentation]]
 {{Footer}}</text>
-      <sha1>0ejayyysk74lbbwor76dte57u1le24j</sha1>
+      <sha1>kna8v1whvpmdskpm3m2ehi8xx3sykst</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
