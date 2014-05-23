@@ -55876,15 +55876,15 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
     <ns>0</ns>
     <id>691</id>
     <revision>
-      <id>7700</id>
-      <parentid>7699</parentid>
-      <timestamp>2014-05-07T11:10:59Z</timestamp>
+      <id>7924</id>
+      <parentid>7700</parentid>
+      <timestamp>2014-05-23T14:01:47Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* qcow2 compression */</comment>
-      <text xml:space="preserve" bytes="25433">{{Header}}
+      <comment>/* How to enable AppArmor / SELinux for KVM on Debian? */</comment>
+      <text xml:space="preserve" bytes="25593">{{Header}}
 {{#seo:
 |description=Development Notes for adding KVM support to Whonix.
 }}
@@ -56001,9 +56001,12 @@ How to check, that '''virtio_pci''' is really being used and not some fallback d
 Details on how to install, configure and enable SELinux enforcing mode:
 https://wiki.debian.org/SELinux/Setup#Steps_to_setup_SELinux &lt;-- This is a start, but incomplete. When following these instructions it gets difficult at the &quot;audit2why -al&quot; step, because it shows a ton of policy violations which are non-trivial to fix without learning a lot about SELinux.
 
-For Debian hosts, Apparmor makes more sense.
+For Debian hosts, AppArmor makes more sense.
 
 http://libvirt.org/drvqemu.html#securitysvirtaa
+
+AppArmor profiles for Ubuntu could be ported to Debian:
+http://bazaar.launchpad.net/~ubuntu-branches/ubuntu/utopic/libvirt/utopic/files/head:/debian/apparmor/
 
 == How to add a random time offset? ==
 Having a small random offset (similar to [[Advanced_Security_Guide#Network_Time_Synchronization]]) would be a good thing.
@@ -56335,7 +56338,7 @@ whonixcheck (since Whonix 8) would tell you if kvmclock is enabled. whonixcheck 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>7s129in3lktr5b2qxtcy3v7s85yks3j</sha1>
+      <sha1>tbehljr7ip0tgh5ce64gb9ah1s32g9m</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -57359,14 +57362,15 @@ Quelle: &lt;html&gt;&lt;a href=&quot;http://www.juraforum.de/impressum-generator
     <ns>0</ns>
     <id>698</id>
     <revision>
-      <id>7917</id>
-      <parentid>7886</parentid>
-      <timestamp>2014-05-21T22:26:51Z</timestamp>
+      <id>7923</id>
+      <parentid>7917</parentid>
+      <timestamp>2014-05-23T13:56:19Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="4759">&lt;!--
+      <comment>/* Geltungsbereich */</comment>
+      <text xml:space="preserve" bytes="5398">&lt;!--
 NOTE TO WIKI EDITORS:
 Do not add the default footer!
 Do not edit without asking Patrick Schleizer beforehand!
@@ -57450,10 +57454,22 @@ Dieses Impressum gilt auch für:
 ** https://github.com/adrelanos/apparmor-profile-torbrowser
 ** https://github.com/Whonix/apparmor-profile-xchat
 ** https://github.com/adrelanos/apparmor-profile-xchat
+** https://github.com/Whonix/apparmor-profile-whonixcheck
+** https://github.com/adrelanos/apparmor-profile-whonixcheck
+** https://github.com/Whonix/apparmor-profile-torbrowser
+** https://github.com/adrelanos/apparmor-profile-torbrowser
+** https://github.com/Whonix/apparmor-profile-timesync
+** https://github.com/adrelanos/apparmor-profile-timesync
+** https://github.com/Whonix/apparmor-profile-pidgin
+** https://github.com/adrelanos/apparmor-profile-pidgin
+** https://github.com/Whonix/apparmor-profile-icedove
+** https://github.com/adrelanos/apparmor-profile-icedove
+** https://github.com/Whonix/apparmor-profile-sdwdate
+** https://github.com/adrelanos/apparmor-profile-sdwdate
 
 Bitte beachten Sie, dass dieses Impressum gilt nicht für:
 
-* alle restlichen Inhalte auf https://www.whonix.org / http://zo7fksnun4b4v4jv.onion / http://kkkkkkkkkk63ava6.onion / http://xxxxxxxxxxh5kyrx.onion / [https://www.whonix.org/forum/ Forum] . Der Eigentümer der domain https://www.whonix.org / http://zo7fksnun4b4v4jv.onion / http://kkkkkkkkkk63ava6.onion / http://xxxxxxxxxxh5kyrx.onion ist fortasse, welcher [[Contact#For_website_issues|hier]] kontaktiert werden kann. Fortasse ist auch der/die-jenige welche, der den Server adminstriert und bezahlt. Dieser ist mir nur unter Pseudonym &quot;fortasse&quot; bekannt und lebt laut eigenen Angaben nicht in Deutschland, ist daher nicht der deutschen Impressumspflicht unterworfen.
+* alle restlichen Inhalte auf https://www.whonix.org / http://zo7fksnun4b4v4jv.onion / http://kkkkkkkkkk63ava6.onion / http://xxxxxxxxxxh5kyrx.onion. Der Eigentümer der domain https://www.whonix.org / http://zo7fksnun4b4v4jv.onion / http://kkkkkkkkkk63ava6.onion / http://xxxxxxxxxxh5kyrx.onion ist fortasse, welcher [[Contact#For_website_issues|hier]] kontaktiert werden kann. Fortasse ist auch der/die-jenige welche, der den Server adminstriert und bezahlt. Dieser ist mir nur unter Pseudonym &quot;fortasse&quot; bekannt und lebt laut eigenen Angaben nicht in Deutschland, ist daher nicht der deutschen Impressumspflicht unterworfen.
 * Diaspora http://domesticempire.files.wordpress.com/2011/11/diaspora_button_94x16_blk.png (wird von Sean betrieben)
 * ohloh.net: https://www.ohloh.net/p/Whonix/ Admin ist [https://www.facebook.com/jasonjayala Jason Ayala] (Jason@JasonAyala.com)
 
@@ -57464,7 +57480,7 @@ Die Datenschutzerklärung finden Sie [[Datenschutz|hier]].
 Den Haftungsausschluss (Disclaimer) finden Sie [[Disclaimer|hier]].
 
 [[Category:Documentation]]</text>
-      <sha1>fjvllbbht4mtuuqral92rubtuggchgc</sha1>
+      <sha1>f54uztq30cpzkm4qptrn7sgahbg5uje</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -62873,14 +62889,15 @@ sudo rm -fR /var/lib/apt/lists/*
     <ns>0</ns>
     <id>891</id>
     <revision>
-      <id>7634</id>
-      <parentid>7624</parentid>
-      <timestamp>2014-05-01T14:37:38Z</timestamp>
+      <id>7922</id>
+      <parentid>7634</parentid>
+      <timestamp>2014-05-23T13:27:58Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="1490">{{Header}}
+      <comment>/* Additional inspiration */</comment>
+      <text xml:space="preserve" bytes="1587">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
@@ -62907,12 +62924,13 @@ The file is called by some of the profiles and has to be installed prior to the 
 * adrelanos: Whonix-Workstation's /usr/sbin/rinetd (Automatically started as an /etc/init.d service. Used by Tor Browser. Useful to run stock Tor Browser without need to modify proxy settings.)
 
 = Additional inspiration =
-Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/AppArmor in Debian]):
+* Use [https://en.wikipedia.org/wiki/AppArmor AppArmor] ([http://wiki.debian.org/AppArmor in Debian]):
+* http://bazaar.launchpad.net/~apparmor-dev/apparmor-profiles/master/files/head:/ubuntu/14.04/
 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>q2p8wzfkl4sg0s180fuvjkvgwfzfdnj</sha1>
+      <sha1>2t3mfzbpkxb0711t7y8havifn1snh52</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -76194,22 +76212,53 @@ sudo apparmor_parser -r /etc/apparmor.d/usr.bin.sdwdate
     <ns>0</ns>
     <id>1376</id>
     <revision>
-      <id>7915</id>
-      <timestamp>2014-05-21T14:58:02Z</timestamp>
+      <id>7926</id>
+      <parentid>7925</parentid>
+      <timestamp>2014-05-23T19:11:10Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>Created page with &quot;{{Header}}  = IPs =  [https://groups.google.com/d/msg/qubes-devel/jxr89--oGs0/IcA4pia70-0J source]  Qubes uses non-fixed LAN IPs? How do internal LAN IPs get assigned to TorVM...&quot;</comment>
-      <text xml:space="preserve" bytes="556">{{Header}}
+      <comment>/* Time Sync */</comment>
+      <text xml:space="preserve" bytes="2754">{{Header}}
+
+= Debian Template =
+https://groups.google.com/forum/#!topic/qubes-devel/EBxvtMlwp5k
+
+= Config Files Changes =
+[https://groups.google.com/d/msg/qubes-users/AqZV65yZLuU/RQlLPOn5yRsJ source]
+
+I don't know how rpm packaging works. However, the TorVM rpm packaging seems simpler to me and introduce less overhead than Debian packaging at first view. Is there something like config-package-dev for Fedora? config-package-dev is a package to overtake ownership of other
+&gt; package's files. Such as, in Debian the Tor package owns /usr/share/tor/tor-service-defaults-torrc. Whonix needs to modify that file and keep it updated. config-package-dev can be used to avoid getting the file being overwritten when upstream releases and upgrade. Is there something like this for Fedora or is this even required? That would make a port much simpler, because for many parts, it's just diverted config files.
+
+qubes-tor pacakages provides own config file (tor --defaults-torrc option used), so no need to override the one provided by tor package.
+
+But to answer your question - no, rpm do not have option to take ownership of files from other packages, but to workaround this (rather sensible) limitation you can modify the config in triggers (so the file will be modified after each original package update).
 
 = IPs =
-
 [https://groups.google.com/d/msg/qubes-devel/jxr89--oGs0/IcA4pia70-0J source]
 
 Qubes uses non-fixed LAN IPs? How do internal LAN IPs get assigned to TorVM / AppVMs?
 
 QubesVm IP address is generated based on its netvm ID (subnet number) and the said VM static ID, so unless user is switching netvm, the IP is pretty static. We've chosen 10.137.&lt;subnet-id&gt;.&lt;vm-id&gt; which is quite exotic so conflicts with real LAN are very rare (even if rather harmless in isolated network).
+
+= Time Sync =
+Discussion about insecurity of NTP: &lt;br /&gt;
+https://groups.google.com/d/msg/qubes-devel/YHK_rAUm0s0/ARrBPHrf0fkJ
+
+[https://groups.google.com/d/msg/qubes-users/AqZV65yZLuU/Lh8T7ZL6tdIJ source]
+
+Can Qubes OS leave VM's clocks untouched and keep time sync to the VM or is there some forced-VM-timesync-with-dom-0 that can not be turned off? In that case, that would be a bad.
+
+Currently time synchronization is done in some silly way: qvm-sync-clock called each 6min from dom0 cron. That tool fetch the current time using
+ntpdate in netvm (VM set as clockvm in qubes-prefs), then pass the result to 'date -s' in each VM.
+
+You can disable this mechanism globally by unsetting(*) clockvm (qubes-prefs -s clockvm none).
+
+(*) Which apparently was broken, fix will be included in updates soon.
+
+= How big is Qubes OS's user base? =
+https://groups.google.com/d/msg/qubes-users/AqZV65yZLuU/Kib1jFLZanUJ
 
 = Footnotes =
 &lt;references /&gt;
@@ -76217,7 +76266,7 @@ QubesVm IP address is generated based on its netvm ID (subnet number) and the sa
 {{Footer}}
 
 [[Category:Design]]</text>
-      <sha1>dfiqwspvkxo1dr0t4p1a0b3hje6igjd</sha1>
+      <sha1>rntofhk8kzs7fvxy1pgpa68ijf72mzk</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
