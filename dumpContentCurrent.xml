@@ -14214,14 +14214,15 @@ chattr +i /etc/resolv.conf
     <ns>0</ns>
     <id>125</id>
     <revision>
-      <id>5904</id>
-      <parentid>2870</parentid>
-      <timestamp>2014-02-27T14:10:34Z</timestamp>
+      <id>7927</id>
+      <parentid>5904</parentid>
+      <timestamp>2014-05-24T09:46:45Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="4985">{{Header}}
+      <comment>/* How to use more than one Whonix-Workstation - EASY */</comment>
+      <text xml:space="preserve" bytes="5113">{{Header}}
 {{#seo:
 |description=How to use Multiple Whonix-Workstations for better separation of different pseudonyms.
 }}
@@ -14244,28 +14245,39 @@ Leaving multiple Whonix-Workstations running at the same time introduces also ne
 Identity correlation through circuit sharing &lt;ref&gt;See [[Stream Isolation]] page for definition.&lt;/ref&gt; is not at risk as long as the Whonix-Workstation's aren't compromised. Multiple Whonix-Workstations using different internal IP's (as recommended in the instructions below) are automatically using [[Stream Isolation]].&lt;ref&gt;Because [https://www.torproject.org/docs/tor-manual.html.en IsolateClientAddr] is Tor's default.&lt;/ref&gt;
 
 == How to use more than one Whonix-Workstation - EASY ==
-
 The following instructions only apply for Download/Default-Whonix-Workstations or if you build yourself from source code. If you want to use other operating systems, such as Windows, other Linux, BSD etc. please see the [[Other Operating Systems]] article instead.
 
 To setup a second or any additional Whonix-Workstation only two minor details are required. It needs its own MAC address and its own internal LAN IP address.
 
 (1). Additional Whonix-Workstation and separate MAC address.
 
-Clone a clean Whonix-Workstation. This will assign a new MAC address to the newly created Whonix-Workstation.
+On the host. Clone a clean Whonix-Workstation. This will assign a new MAC address to the newly created Whonix-Workstation.
 
-Or in case you imported an extra Whonix-Workstation, go to VirtualBox -&gt; Settings -&gt; Network -&gt; Adapter 1 -&gt; Advanced -&gt; Mac Address -&gt; Create a new MAC address (press the green round arrow icon) -&gt; Ok.
+Or in case you imported an extra Whonix-Workstation, go to.
+
+&lt;pre&gt;
+VirtualBox -&gt; Settings -&gt; Network -&gt; Adapter 1 -&gt; Advanced -&gt; Mac Address -&gt;
+Create a new MAC address (press the green round arrow icon) -&gt; Ok.
+&lt;/pre&gt;
 
 (2). Open /etc/network/interfaces.
 
-&lt;pre&gt;sudo nano /etc/network/interfaces&lt;/pre&gt;
+In Whonix-Workstation.
 
-(3). And change the last octet. E.g. 192.168.0.'''11''' or 192.168.0.'''12'''.
+&lt;pre&gt;
+sudo nano /etc/network/interfaces
+&lt;/pre&gt;
+
+(3).
+In Whonix-Workstation's /etc/network/interfaces: And change the last octet. E.g. 192.168.0.'''11''' or 192.168.0.'''12'''.
 
 (4). Reboot or restart network using
 
+(In Whonix-Workstation.)
+
 &lt;pre&gt;sudo service networking restart&lt;/pre&gt;
 
-(4). Done.
+(5). Done.
 
 == How to use more than one Whonix-Workstation - More Security ==
 === Connections between Whonix-Gateway and Whonix-Workstation ===
@@ -14286,7 +14298,7 @@ When you are using them at the same time, the risks explained in the introductio
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>rbo0p4dfm2nrz5snlbyk9zg7jq88m7m</sha1>
+      <sha1>m0zocjjhfitt52dpw18adnzot7w41jd</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -50155,14 +50167,14 @@ Whonix 9
     <ns>10</ns>
     <id>502</id>
     <revision>
-      <id>3908</id>
-      <parentid>3906</parentid>
-      <timestamp>2013-11-02T11:19:56Z</timestamp>
+      <id>7928</id>
+      <parentid>3908</parentid>
+      <timestamp>2014-05-24T09:59:43Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="1260">&lt;!--
+      <text xml:space="preserve" bytes="1458">&lt;!--
 EDITOR'S NOTE:
 If you make changes here, check if it would make sense to copy these changes to Manually_Create_Whonix_VM_Settings as well.
 --&gt;
@@ -50170,15 +50182,15 @@ Easiest, but least secure option.
 
 '''Download and use the default Whonix-Gateway.'''
 
-Import it the same way you would do for Whonix-Default/Download-Version
+Import it the same way you would do for Whonix-Default/Download-Version. No other changes required to Whonix-Gateway for this use case!
 
 '''Create a VirtualBox VM.'''
 
-VirtualBox -&gt; Machine -&gt; New -&gt; Next -&gt; Enter Name -&gt; Enter Operating System and Version -&gt; Next -&gt; define RAM -&gt; Next -&gt; create a new hdd (or not) -&gt; Next -&gt; disk format doesn't matter, VDI works fine however -&gt; Next -&gt; dynamically or fixed size is a matter of preference -&gt; Next hdd size and location is a matter of preference -&gt; Next -&gt; Create
+VirtualBox -&gt; Machine -&gt; New -&gt; Next -&gt; Enter Name (for example: {{Code2|Windows}}) -&gt; Enter Operating System and Version -&gt; Next -&gt; define RAM -&gt; Next -&gt; create a new hdd (or not) -&gt; Next -&gt; disk format doesn't matter, VDI works fine however -&gt; Next -&gt; dynamically or fixed size is a matter of preference -&gt; Next hdd size and location is a matter of preference -&gt; Next -&gt; Create
 
 '''Switch VirtualBox VM settings.'''
 
-Choose the newly created VM -&gt; Settings -&gt; System -&gt; Motherboard -&gt; Hardware Clock in UTC
+Choose the newly created VM (for example: {{Code2|Windows}}) -&gt; Settings -&gt; System -&gt; Motherboard -&gt; Hardware Clock in UTC
 
 System -&gt; Processor -&gt; Enable PAE/NX if available
 
@@ -50192,10 +50204,11 @@ USB -&gt; uncheck Enable USB controller
 
 '''Start VM and Install Operating System.'''
 
-You don't have to install updates while installing. You can do that right after installing, after the network has been set up.
+Start the newly created VM (for example: {{Code2|Windows}}). You don't have to install updates while installing. You can do that right after installing, after the network has been set up.
 
-username: user computer name: host</text>
-      <sha1>rnonsicejxd12zd7zrtjsujm1dl6p8a</sha1>
+username: user &lt;br /&gt;
+computer name: host</text>
+      <sha1>17ied7qf5dckceeotq9wkg74o5xhr8k</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
