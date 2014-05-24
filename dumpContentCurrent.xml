@@ -4596,14 +4596,15 @@ http://sourceforge.net/p/whonix/wiki/Dev_old_1/
     <ns>0</ns>
     <id>79</id>
     <revision>
-      <id>7898</id>
-      <parentid>7360</parentid>
-      <timestamp>2014-05-18T20:48:21Z</timestamp>
+      <id>7932</id>
+      <parentid>7929</parentid>
+      <timestamp>2014-05-24T10:29:30Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="9375">{{Header}}
+      <comment>/* Easy */</comment>
+      <text xml:space="preserve" bytes="9477">{{Header}}
 {{#seo:
 |description=Anonymize any Operating System! Your operating system tunneled through the Tor Anonymity Network! Create your Custom-Whonix-Workstation!
 }}
@@ -4621,9 +4622,9 @@ XP, Vista and Windows 7 are are known to work behind Whonix-Gateway. While it's 
 == Easy ==
 {{VM Settings Easy Common}}
 
-(5). Configure network:
+'''Configure network.'''
 
-For Windows 7 (similar in Windows XP): In Control Panel -&gt; Network and Sharing Center: click on &quot;Change adapter settings&quot; Right-click on local area connection &gt; properties In property window: double-click Internet Protocol Version 4, use the following settings:
+For {{Code2|Windows}} 7 (similar in {{Code2|Windows}} XP): In Control Panel -&gt; Network and Sharing Center: click on &quot;Change adapter settings&quot; Right-click on local area connection &gt; properties In property window: double-click Internet Protocol Version 4, use the following settings:
 
 &lt;pre&gt;
 IP address 192.168.0.50
@@ -4632,21 +4633,24 @@ Default gateway 192.168.0.10
 Preferred DNS server 192.168.0.10
 &lt;/pre&gt;
 
-(6). Download operating system updates.
+'''Download operating system updates.'''
 
 = Whonix-GNU/Linux-Workstation =
 == Easy ==
 {{VM Settings Easy Common}}
 
-(5). Configure network:
+'''Configure network.'''
 
-Open a Terminal and type.
+In your Custom-Workstation. Open a Terminal and type.
 
-&lt;pre&gt;sudo nano /etc/network/interfaces&lt;/pre&gt;
+&lt;pre&gt;
+sudo nano /etc/network/interfaces
+&lt;/pre&gt;
 
 You only need to configure eth0:
 
-&lt;pre&gt;# This file describes the network interfaces available on your system
+&lt;pre&gt;
+# This file describes the network interfaces available on your system
 # and how to activate them. For more information, see interfaces(5).
 
 # The loopback network interface, leave as it is
@@ -4661,18 +4665,28 @@ iface eth0 inet static
        netmask 255.255.255.0
        #network 192.168.0.0
        #broadcast 192.168.0.255
-       gateway 192.168.0.10&lt;/pre&gt;
-Open /etc/resolv.conf.
+       gateway 192.168.0.10
+&lt;/pre&gt;
 
-&lt;pre&gt;sudo nano /etc/resolv.conf&lt;/pre&gt;
+In your Custom-Workstation. Open {{Code|/etc/resolv.conf}}.
+
+&lt;pre&gt;
+sudo nano /etc/resolv.conf
+&lt;/pre&gt;
+
 and delete everything, then add
 
-&lt;pre&gt;nameserver 192.168.0.10&lt;/pre&gt;
-(6). Download operating system updates.
+&lt;pre&gt;
+nameserver 192.168.0.10
+&lt;/pre&gt;
+
+'''Download operating system updates.'''
 
 Debian based Linux, such as Ubuntu:
 
-&lt;pre&gt;sudo apt-get update &amp;&amp; sudo apt-get dist-upgrade&lt;/pre&gt;
+&lt;pre&gt;
+sudo apt-get update &amp;&amp; sudo apt-get dist-upgrade
+&lt;/pre&gt;
 
 = More security =
 
@@ -4848,7 +4862,7 @@ A Whonix-Custom-Workstation ''can be made'' (Your responsibility!) as secure as 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>sxsi1v7k3kt1cgipmis5jku5g0rfakh</sha1>
+      <sha1>8yvsoxrvjwqsnwacwqvu016t4ft15u7</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -6255,14 +6269,15 @@ See warnings above first. Set up Tor to use private and obfuscated [[bridges]]. 
     <ns>0</ns>
     <id>90</id>
     <revision>
-      <id>5793</id>
-      <parentid>2807</parentid>
-      <timestamp>2014-02-27T12:28:05Z</timestamp>
+      <id>7936</id>
+      <parentid>5793</parentid>
+      <timestamp>2014-05-24T19:21:06Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="12689">{{Header}}
+      <comment>/* Riseup.net */</comment>
+      <text xml:space="preserve" bytes="12671">{{Header}}
 {{#seo:
 |description=Step by Step Instructions on how to set up VPNs in Conjunction with Whonix. Tor over VPN / VPN over Tor. VPN over Tor over VPN.
 }}
@@ -6293,7 +6308,7 @@ Known to support TCP, UDP, SSL.
 
 (3) Go to riseup.net -&gt; help -&gt; VPN and obtain your VPN secret. (VPN password)
 
-(4) Look inside the [https://help.riseup.net/en/vpn-howto riseup VPN help page] for [https://help.riseup.net/en/riseup-ca &lt;code&gt;RiseupCA.pem&lt;/code&gt;] and download it.
+(4) Look inside the [https://help.riseup.net/vpn riseup VPN help page] for [https://help.riseup.net/en/riseup-ca &lt;code&gt;RiseupCA.pem&lt;/code&gt;] and download it.
 
 (5) Open a terminal. (konsole) Get into the same folder, you stored &lt;code&gt;RiseupCA.pem&lt;/code&gt;.
 
@@ -6327,7 +6342,7 @@ Known to support TCP, UDP, SSL.
 
 (3) Go to riseup.net -&gt; help -&gt; VPN and obtain your VPN secret. (VPN password)
 
-(4) Look inside the [https://help.riseup.net/en/vpn-howto riseup VPN help page] for [https://help.riseup.net/en/riseup-ca &lt;code&gt;RiseupCA.pem&lt;/code&gt;] and download it.
+(4) Look inside the [https://help.riseup.net/vpn riseup VPN help page] for [https://help.riseup.net/en/riseup-ca &lt;code&gt;RiseupCA.pem&lt;/code&gt;] and download it.
 
 (5) Create a file auth.txt inside the same folder.
 
@@ -6674,7 +6689,7 @@ You could try the [https://www.riseup.net/en/openvpn-linux#gnome riseup.net Open
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>tpsyqs36o64hhfn9dfb4ph06852g2lv</sha1>
+      <sha1>knslc8yt39k4ep7s35l73gaup24asd6</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -31560,15 +31575,15 @@ If you don't get into trouble, by letting others to know, that you like or use W
     <ns>0</ns>
     <id>257</id>
     <revision>
-      <id>7914</id>
-      <parentid>7913</parentid>
-      <timestamp>2014-05-20T15:25:47Z</timestamp>
+      <id>7938</id>
+      <parentid>7914</parentid>
+      <timestamp>2014-05-24T21:50:41Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
       <comment>/* VPN on Whonix-Gateway */</comment>
-      <text xml:space="preserve" bytes="5975">{{Header}}
+      <text xml:space="preserve" bytes="6002">{{Header}}
 {{#seo:
 |description=Documentation for the NEXT Whonix version! ONLY for developers! No guarantee it really makes into the next Whonix version.
 }}
@@ -31649,6 +31664,8 @@ sudo nano /etc/whonix_firewall.d/50_user
 Add the following settings. You can skip comments (starting with {{Code|#}}). Unless you are using {{Code|seattle.vpn.riseup.net}} as your VPN service, which we use as an example, you have to adjust the {{Code|VPN_SERVERS}} variable in your config.
 
 &lt;pre&gt;
+ALLOW_GATEWAY_ROOT_USER=1
+
 ###########################
 ## VPN-Firewall Settings ##
 ###########################
@@ -31749,7 +31766,7 @@ Done.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>nrfduc2aayza9q229yq6hzy45h08x2f</sha1>
+      <sha1>42lh4xu0lbme5rtqgm8lur5d4ldy0qk</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -50167,9 +50184,9 @@ Whonix 9
     <ns>10</ns>
     <id>502</id>
     <revision>
-      <id>7928</id>
-      <parentid>3908</parentid>
-      <timestamp>2014-05-24T09:59:43Z</timestamp>
+      <id>7931</id>
+      <parentid>7930</parentid>
+      <timestamp>2014-05-24T10:26:12Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
@@ -50186,17 +50203,17 @@ Import it the same way you would do for Whonix-Default/Download-Version. No othe
 
 '''Create a VirtualBox VM.'''
 
-VirtualBox -&gt; Machine -&gt; New -&gt; Next -&gt; Enter Name (for example: {{Code2|Windows}}) -&gt; Enter Operating System and Version -&gt; Next -&gt; define RAM -&gt; Next -&gt; create a new hdd (or not) -&gt; Next -&gt; disk format doesn't matter, VDI works fine however -&gt; Next -&gt; dynamically or fixed size is a matter of preference -&gt; Next hdd size and location is a matter of preference -&gt; Next -&gt; Create
+VirtualBox -&gt; Machine -&gt; New -&gt; Next -&gt; Enter Name (for example: {{Code2|myVM}}) -&gt; Enter Operating System and Version -&gt; Next -&gt; define RAM -&gt; Next -&gt; create a new hdd (or not) -&gt; Next -&gt; disk format doesn't matter, VDI works fine however -&gt; Next -&gt; dynamically or fixed size is a matter of preference -&gt; Next hdd size and location is a matter of preference -&gt; Next -&gt; Create
 
 '''Switch VirtualBox VM settings.'''
 
-Choose the newly created VM (for example: {{Code2|Windows}}) -&gt; Settings -&gt; System -&gt; Motherboard -&gt; Hardware Clock in UTC
+Choose the newly created VM (for example: {{Code2|myVM}}) -&gt; Settings -&gt; System -&gt; Motherboard -&gt; Hardware Clock in UTC
 
 System -&gt; Processor -&gt; Enable PAE/NX if available
 
 Network -&gt; Adapter 1 -&gt; attached to Internal Network (Important!)
 
-Network -&gt; Adapter 1 -&gt; Name (of Internal Network) (Important!): Whonix
+Network -&gt; Adapter 1 -&gt; Name (of Internal Network) (Important!): {{Code|Whonix}}
 
 USB -&gt; uncheck Enable USB controller
 
@@ -50204,11 +50221,11 @@ USB -&gt; uncheck Enable USB controller
 
 '''Start VM and Install Operating System.'''
 
-Start the newly created VM (for example: {{Code2|Windows}}). You don't have to install updates while installing. You can do that right after installing, after the network has been set up.
+Start the newly created VM (for example: {{Code2|myVM}}). You don't have to install updates while installing. You can do that right after installing, after the network has been set up.
 
 username: user &lt;br /&gt;
 computer name: host</text>
-      <sha1>17ied7qf5dckceeotq9wkg74o5xhr8k</sha1>
+      <sha1>1kwa9c91oxha7237io7fzem8uwhuxvu</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -57375,15 +57392,15 @@ Quelle: &lt;html&gt;&lt;a href=&quot;http://www.juraforum.de/impressum-generator
     <ns>0</ns>
     <id>698</id>
     <revision>
-      <id>7923</id>
-      <parentid>7917</parentid>
-      <timestamp>2014-05-23T13:56:19Z</timestamp>
+      <id>7939</id>
+      <parentid>7923</parentid>
+      <timestamp>2014-05-24T21:55:39Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
       <comment>/* Geltungsbereich */</comment>
-      <text xml:space="preserve" bytes="5398">&lt;!--
+      <text xml:space="preserve" bytes="5515">&lt;!--
 NOTE TO WIKI EDITORS:
 Do not add the default footer!
 Do not edit without asking Patrick Schleizer beforehand!
@@ -57479,6 +57496,8 @@ Dieses Impressum gilt auch für:
 ** https://github.com/adrelanos/apparmor-profile-icedove
 ** https://github.com/Whonix/apparmor-profile-sdwdate
 ** https://github.com/adrelanos/apparmor-profile-sdwdate
+** https://github.com/Whonix/apparmor-profile-virtualbox
+** https://github.com/adrelanos/apparmor-profile-virtualbox
 
 Bitte beachten Sie, dass dieses Impressum gilt nicht für:
 
@@ -57493,7 +57512,7 @@ Die Datenschutzerklärung finden Sie [[Datenschutz|hier]].
 Den Haftungsausschluss (Disclaimer) finden Sie [[Disclaimer|hier]].
 
 [[Category:Documentation]]</text>
-      <sha1>f54uztq30cpzkm4qptrn7sgahbg5uje</sha1>
+      <sha1>g0l32jji65oh5vr9rj3dxpvmamaweza</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -72345,14 +72364,14 @@ sub   4096R/0xCB8D50BB77BB3C48 2014-01-16 [expires: 2015-01-16]
     <ns>0</ns>
     <id>1299</id>
     <revision>
-      <id>7265</id>
-      <parentid>7232</parentid>
-      <timestamp>2014-04-04T07:41:10Z</timestamp>
+      <id>7937</id>
+      <parentid>7265</parentid>
+      <timestamp>2014-05-24T19:56:19Z</timestamp>
       <contributor>
         <username>Troubadour</username>
         <id>230</id>
       </contributor>
-      <text xml:space="preserve" bytes="3345">{{Header}}
+      <text xml:space="preserve" bytes="2190">{{Header}}
 {{#seo:
 |description=AppArmor profiles (Security Hardening) for Whonix and other Linux. TBB, Pidgin, more soon.
 }}
@@ -72360,7 +72379,7 @@ __FORCETOC__
 {{AppArmorProfileWarning}}
 
 
-This profile has to be used in the host. It is tested with VirtualBox 4.3 (4.3_4.3.8-92456~Debian~wheezy_amd64), no other versions. If you build a Whonix image, it will install VirtualBox 4.1. Please report any message you might see in this  [http://kkkkkkkkkk63ava6.onion/forum/index.php/topic,97.0.html forum thread].
+This profile has to be used in the host. It is tested with VirtualBox 4.1 (4.1.18_Debian r78361), no other versions.  Please report any message you might see in this  [http://kkkkkkkkkk63ava6.onion/forum/index.php/topic,97.0.html forum thread].
 
 In the host, create a file /etc/apparmor.d/usr.bin.VBox.
 
@@ -72371,114 +72390,58 @@ kdesudo kwrite /etc/apparmor.d/usr.bin.VBox
 Paste the following content.
 
 &lt;pre&gt;
+# Last Modified: Sat May 24 04:32:08 2014
 #include &lt;tunables/global&gt;
 
-/usr/bin/VBox {
-	#include &lt;abstractions/base&gt;
-	#include &lt;abstractions/bash&gt;
-	#include &lt;abstractions/fonts&gt;	
-	#include &lt;abstractions/audio&gt;  	
+/usr/lib/virtualbox/VirtualBox {
+    #include &lt;abstractions/base&gt;
+    #include &lt;abstractions/gnome&gt;
+    #include &lt;abstractions/kde&gt;
+    #include &lt;abstractions/fonts&gt;
+    #include &lt;abstractions/audio&gt;
+    #include &lt;abstractions/user-download&gt;
 
-	capability net_admin, 
-	capability net_raw,
-	capability sys_ptrace,
+    capability net_raw,
+    capability sys_ptrace,
 
-	owner @{HOME}/ r,
-	owner @{HOME}/* r,    # Check. Files denied.
-	owner @{HOME}/.ICEauthority r,
-	owner @{HOME}/.Xauthority r,
-	owner @{HOME}/.config/** r,
-	owner @{HOME}/.config/VirtualBox/** rw,
-	owner @{HOME}/.config/Trolltech.conf rk,
-	owner @{HOME}/.local/share/mime/* r,			
-	owner @{HOME}/.gtk-bookmarks r,
-	owner @{HOME}/.VirtualBox/ r,
-	owner @{HOME}/.VirtualBox/* rw,
-	owner @{HOME}/Documents/ r,
-	owner @{HOME}/Documents/** r,
-	owner @{HOME}/Desktop/ r,
-	owner @{HOME}/Desktop/** rw,
-	owner @{HOME}/.local/share/recently-used.xbel* rw,
-	
-	## Disk images (ISO, OVF/OVA...) directory. Create.
-	owner @{HOME}/Disk_Images/ r,	
-	owner @{HOME}/Disk_Images/* r,
-	
-	## Default Virtual Machine directory.
-	owner &quot;@{HOME}/VirtualBox VMs/&quot; r,
-	owner &quot;@{HOME}/VirtualBox VMs/**&quot; rw,
-	
-	## Shared folders. Replace with your own host share.
-	owner @{HOME}/share/ r,
-	owner @{HOME}/share/* rw,
+    deny /etc/nsswitch.conf r,
+    deny /etc/passwd r,
+    deny /etc/resolv.conf r,
+    deny /etc/fstab r,
+    deny /etc/drirc r,
+    deny /etc/udev/udev.conf r,
+    deny @{PROC}/** r,
+    deny /var/lib/dbus/machine-id r,
+    deny /sys/** r,
 
-	/bin/dash rix,
-	/bin/kmod rix,
-	/bin/grep rix,
-	/bin/uname rix,
-	/bin/cat rix,
-	/bin/gawk rix,
-	/bin/ps rix,
-	/bin/rm rix,		
-	
-	/dev/dri/card0 rw,
-	/dev/vboxdrv rw,
-	/dev/vboxdrvu rw,
-	/dev/tty r,
+    /dev/dri/card0 rw,
+    /dev/vboxdrv rw,
+    /dev/vboxdrvu rw,
+    /dev/sr0 r,
+    /dev/tty r,
 
-	/etc/nsswitch.conf r,
-	/etc/passwd r,
-	/etc/resolv.conf r,
-	/etc/fstab r,
-	/etc/drirc r,
-	/etc/xdg/** r,
+    @{HOME}/.VirtualBox/* rw,
+    &quot;@{HOME}/VirtualBox VMs/&quot; r,
+    &quot;@{HOME}/VirtualBox VMs/**&quot; rw,
 
-	/usr/lib/virtualbox/** mrcux,
-	/usr/lib/x86_64-linux-gnu/** mrix,
-	
-	@{PROC}/ r,
-	@{PROC}/cmdline r,
-	@{PROC}/[0-9]*/cmdline r,
-	@{PROC}/modules r,
-	@{PROC}/net r,
-	@{PROC}/[0-9]*/net/** r,
-	@{PROC}/[0-9]*/stat r,
-	@{PROC}/[0-9]*/status r,
-	@{PROC}/[0-9]*/fd r,
-	@{PROC}/uptime r,
-	@{PROC}/tty/drivers r,
-	@{PROC}/sys/kernel/pid_max r,
-		
-	/run/gdm3/** r,
-	
-	/sys/devices/pci0000:00/** r,
-	/sys/devices/virtual/** r,
-	/sys/devices/system/cpu/** r,
-	/sys/devices/LNXSYSTM:00/LNXSYBUS:00/** r,
-	/sys/module/** r,	
-	/sys/block/ r,
-	/sys/class/** r,	
+    @{HOME}/ r,
+    ## The .iso, .ova. or .ovf files should be there
+    @{HOME}/Downloads/ r,
+    @{HOME}/Downloads/** r,
 
-	owner /tmp/** rw,
-	
-	/usr/bin/VBox rix,
-	/usr/bin/whoami	rix,
-	/usr/bin/basename rix,
-	/usr/bin/ps rix,
-	/usr/bin/gawk rix,
-	/usr/bin/mawk rix,
-	
-	/usr/share/themes/** r,
-	/usr/share/icons/ r,	
-	/usr/share/icons/** rk,	
-	/usr/share/mime/ r,
-	/usr/share/mime/** r,
-	/usr/share/pixmaps/ r,
-	/usr/share/pixmaps/** r,
-	/usr/share/gvfs/** r,
-	/usr/share/virtualbox/** r,
+    ## Shared folders. Replace with your own host share.
+    @{HOME}/share/ r,
+    @{HOME}/share/** rw,
 
-	/var/lib/dbus/machine-id r,
+    ## Should be in abstractions/audio? ##
+    /usr/bin/pulseaudio rix,
+    /usr/lib/pulse-2.0/** mrix,
+    ######################################
+
+    /usr/lib/virtualbox/** mrcux,
+
+    /usr/share/virtualbox/nls/* r,
+    /usr/share/icons/gnome/index.theme rwk, # ??
 }
 &lt;/pre&gt;
 
@@ -72493,7 +72456,7 @@ sudo apparmor_parser -r /etc/apparmor.d/usr.bin.VBox
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>2o80g3shwc00y2riwvnb8ixnvuo4m9x</sha1>
+      <sha1>g3krebp4rwbkby2v63jwgixiv2dvtg6</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -76225,15 +76188,15 @@ sudo apparmor_parser -r /etc/apparmor.d/usr.bin.sdwdate
     <ns>0</ns>
     <id>1376</id>
     <revision>
-      <id>7926</id>
-      <parentid>7925</parentid>
-      <timestamp>2014-05-23T19:11:10Z</timestamp>
+      <id>7935</id>
+      <parentid>7934</parentid>
+      <timestamp>2014-05-24T19:11:53Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Time Sync */</comment>
-      <text xml:space="preserve" bytes="2754">{{Header}}
+      <comment>/* Run updates over Proxy/Tor */</comment>
+      <text xml:space="preserve" bytes="4206">{{Header}}
 
 = Debian Template =
 https://groups.google.com/forum/#!topic/qubes-devel/EBxvtMlwp5k
@@ -76254,6 +76217,21 @@ But to answer your question - no, rpm do not have option to take ownership of fi
 Qubes uses non-fixed LAN IPs? How do internal LAN IPs get assigned to TorVM / AppVMs?
 
 QubesVm IP address is generated based on its netvm ID (subnet number) and the said VM static ID, so unless user is switching netvm, the IP is pretty static. We've chosen 10.137.&lt;subnet-id&gt;.&lt;vm-id&gt; which is quite exotic so conflicts with real LAN are very rare (even if rather harmless in isolated network).
+
+[https://groups.google.com/d/msg/qubes-devel/Dd0MVbIam5I/9z6GblxYQHwJ source]
+
+In your Torless TBB launcher script for use with Qubes' transparent Tor proxy, TOR_SOCKS_HOST=10.137.3.1. Is this supposed to be the same for all Qubes machines regardless of how many ProxyVMs users have created (or other user settings)? Or is the user supposed to change this before using the script?
+
+Perhaps it is good idea to add some firewall rule in TorVM to redirect traffic to any 10.137.0.0/16 IP + port 9050/9049 to the tor running in TorVM. This way AnonVM can use any IP as a sock proxy address.
+
+= Run updates over Proxy/Tor =
+[https://groups.google.com/d/msg/qubes-devel/2vnGqsoM9p0/0YCltU-Qs-MJ source]
+
+Without wasting a lot space, having lots of standalone VMs... How could one persistently install software in QubesOS using package managers over Tor just for a specific VM? Routing all traffic over Tor is also an option, but not a ideal one either (having some clearnet traffic is better for various reasons).
+
+Set TorVM as netvm for the template. By default template updates are routed via &quot;update proxy&quot; (simple http proxy, which allow access only to
+yum-repository-like sites). This proxy is running in netvm, so after TorVM. Because of that its you need to disable 'yum-proxy-setup' service for this
+template and allow some traffic in the firewall settings. Or enable 'qubes-yum-proxy' service in TorVM and ensure that its traffic goes through tor.
 
 = Time Sync =
 Discussion about insecurity of NTP: &lt;br /&gt;
@@ -76279,7 +76257,7 @@ https://groups.google.com/d/msg/qubes-users/AqZV65yZLuU/Kib1jFLZanUJ
 {{Footer}}
 
 [[Category:Design]]</text>
-      <sha1>rntofhk8kzs7fvxy1pgpa68ijf72mzk</sha1>
+      <sha1>lv987fk4l5n5kd8qei355paclk2ci1u</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
