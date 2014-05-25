@@ -31575,15 +31575,15 @@ If you don't get into trouble, by letting others to know, that you like or use W
     <ns>0</ns>
     <id>257</id>
     <revision>
-      <id>7938</id>
-      <parentid>7914</parentid>
-      <timestamp>2014-05-24T21:50:41Z</timestamp>
+      <id>7940</id>
+      <parentid>7938</parentid>
+      <timestamp>2014-05-24T22:07:46Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
       <comment>/* VPN on Whonix-Gateway */</comment>
-      <text xml:space="preserve" bytes="6002">{{Header}}
+      <text xml:space="preserve" bytes="6030">{{Header}}
 {{#seo:
 |description=Documentation for the NEXT Whonix version! ONLY for developers! No guarantee it really makes into the next Whonix version.
 }}
@@ -31707,22 +31707,22 @@ Test if you are able to connect using your VPN. One, less secure method would be
 
 &lt;pre&gt;
 ## TODO: There is no DNS and I know no test services accepting connections without DNS requests.
-curl.real https://check.torproject.org
+curl.whonix-orig https://check.torproject.org
 
 ## This is check.tpo. Should show something along &quot;Welcome to sergii&quot;.
 ## Unfortunately won't echo IP, but will show, that connectivity is functional.
-curl.real 38.229.72.22
+curl.whonix-orig 38.229.72.22
 &lt;/pre&gt;
 
 Another more secure method, that doesn't work with a few VPNs, would be.
 
 &lt;pre&gt;
 ## TODO: There is no DNS and I know no test services accepting connections without DNS requests.
-curl.real --tlsv1 --proto =https https://check.torproject.org 
+curl.whonix-orig --tlsv1 --proto =https https://check.torproject.org 
 
 ## This is check.tpo. Should show something along &quot;Welcome to sergii&quot;.
 ## Unfortunately won't echo IP, but will show, that connectivity is functional.
-curl.real --tlsv1 --proto =https 38.229.72.22
+curl.whonix-orig --tlsv1 --proto =https 38.229.72.22
 &lt;/pre&gt;
 
 Enable Tor using whonixsetup.
@@ -31766,7 +31766,7 @@ Done.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>42lh4xu0lbme5rtqgm8lur5d4ldy0qk</sha1>
+      <sha1>sra6w2dd5yvb52uzl8qtzblrkftnatx</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
