@@ -19191,14 +19191,14 @@ When you go ahead now, and ask in a cracker forum, they probably won't spread a 
     <ns>0</ns>
     <id>162</id>
     <revision>
-      <id>7916</id>
-      <parentid>7880</parentid>
-      <timestamp>2014-05-21T14:58:32Z</timestamp>
+      <id>7941</id>
+      <parentid>7916</parentid>
+      <timestamp>2014-05-26T21:19:41Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="7010">{{#seo:
+      <text xml:space="preserve" bytes="7040">{{#seo:
 |description=Technical Design and Conception of the Whonix Anonymous Operating System
 }}
 {{Header}}
@@ -19242,7 +19242,7 @@ When you go ahead now, and ask in a cracker forum, they probably won't spread a 
 * [[Dev/Control Port Filter Proxy|Control Port Filter Proxy]]
 * [[Dev/Download_Statistics|Statistics on Downloads and OpenPGP verification and how we can improve that]]
 * [[Dev/Automatic Updates|To use or not to use automatic updates, Update Notifier, GUI Updater, GUI package manager]]
-* [[Dev/Dummy Tor|Dummy Tor package on Whonix-Workstation]]
+* [[Dev/Dummy Tor|Dummy Tor package on Whonix-Workstation (anon-ws-disable-stacked-tor)]]
 * [[Dev/About Debian Packaging|About Debian Packaging]]
 * [[Dev/Default Application Policy|Criteria for installing applications by default in Whonix]]
 * [[Dev/Tor|Tor Config Files torrc]]
@@ -19373,7 +19373,7 @@ When you go ahead now, and ask in a cracker forum, they probably won't spread a 
 [[Category:Design]]
 
 {{Footer}}</text>
-      <sha1>mhkvzwqucfzevuqepltp7drn02hc79q</sha1>
+      <sha1>0f0pwzc01cgayw9qdi035bfrb5743b6</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -31575,15 +31575,15 @@ If you don't get into trouble, by letting others to know, that you like or use W
     <ns>0</ns>
     <id>257</id>
     <revision>
-      <id>7940</id>
-      <parentid>7938</parentid>
-      <timestamp>2014-05-24T22:07:46Z</timestamp>
+      <id>7943</id>
+      <parentid>7942</parentid>
+      <timestamp>2014-05-26T21:29:03Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* VPN on Whonix-Gateway */</comment>
-      <text xml:space="preserve" bytes="6030">{{Header}}
+      <comment>/* onionshare */</comment>
+      <text xml:space="preserve" bytes="6943">{{Header}}
 {{#seo:
 |description=Documentation for the NEXT Whonix version! ONLY for developers! No guarantee it really makes into the next Whonix version.
 }}
@@ -31618,6 +31618,39 @@ CONTROL_PORT_FILTER_WHITELIST=(
     &quot;SETCONF HiddenServiceDir&quot;
     &quot;SETCONF HiddenServicePort&quot;
     &quot;SETEVENTS STATUS_CLIENT&quot;
+)
+&lt;/pre&gt;
+
+Restart Control Port Filter Proxy.
+
+&lt;pre&gt;
+sudo service controlportfiltd restart
+&lt;/pre&gt;
+
+= onionshare =
+'''Unfinished!''' Work in progress! See also: &lt;br /&gt;
+https://www.whonix.org/forum/index.php/topic,316.0.html
+
+Security implications not researched yet.
+
+On Whonix-Gateway, Control Port Filter Proxy&lt;ref&gt;[[Dev/CPFP]]&lt;/ref&gt; needs some adjustments.
+
+Create a file {{Code|/etc/controlportfilt.d/50_controlportfilt_onionshare}}.
+
+&lt;pre&gt;
+kdesudo kwrite /etc/controlportfilt.d/50_controlportfilt_onionshare
+&lt;/pre&gt;
+
+Add the following content.
+
+&lt;pre&gt;
+## Keep existing contents of variable CONTROL_PORT_FILTER_WHITELIST
+## and extend it with control port commands required by onionshare as per:
+## https://github.com/micahflee/onionshare/blob/master/onionshare/onionshare.py
+CONTROL_PORT_FILTER_WHITELIST=(
+    &quot;${CONTROL_PORT_FILTER_WHITELIST[@]}&quot;
+    &quot;SETCONF HiddenServiceDir&quot;
+    &quot;SETCONF HiddenServicePort&quot;
 )
 &lt;/pre&gt;
 
@@ -31766,7 +31799,7 @@ Done.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>sra6w2dd5yvb52uzl8qtzblrkftnatx</sha1>
+      <sha1>1pou0gt0qznbepo3o67rixs7l0rx407</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
