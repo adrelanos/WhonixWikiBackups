@@ -434,15 +434,15 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
     <ns>10</ns>
     <id>15</id>
     <revision>
-      <id>7704</id>
-      <parentid>7523</parentid>
-      <timestamp>2014-05-07T12:58:12Z</timestamp>
+      <id>7948</id>
+      <parentid>7946</parentid>
+      <timestamp>2014-05-28T07:22:30Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="1489">&lt;br /&gt;&lt;hr&gt;&lt;font size=&quot;-3&quot;&gt;[[Special:UserLogin|Log in]] | [[Special:OpenIDLogin|OpenID]] | [[Contact|Contact]] | [[Impressum]] | [[Datenschutz|Datenschutz]] | [[Disclaimer|Haftungsausschluss]] | [[Investors]] | [[Donate]]
-[https://www.whonix.org{{localurl:{{FULLPAGENAME}}}} https] | &lt;html&gt;&lt;a class=&quot;link-https&quot; href=&quot;http://xxxxxxxxxxh5kyrx.onion&lt;/html&gt;{{localurl:{{FULLPAGENAME}}}}&lt;html&gt;&quot; rel=&quot;nofollow&quot;&gt;.onion&lt;/a&gt;&lt;/html&gt; &lt;sup&gt;[[Forcing .onion on Whonix.org|[note]]]&lt;/sup&gt; | [http://whonix.org.nyud.net{{localurl:{{FULLPAGENAME}}}} Mirror] | [https://kkkkkkkkkk63ava6.tor2web.org{{localurl:{{FULLPAGENAME}}}} Mirror]
+      <text xml:space="preserve" bytes="1508">&lt;br /&gt;&lt;hr&gt;&lt;font size=&quot;-3&quot;&gt;[[Special:UserLogin|Log in]] | [[Special:OpenIDLogin|OpenID]] | [[Contact|Contact]] | [[Impressum]] | [[Datenschutz|Datenschutz]] | [[Disclaimer|Haftungsausschluss]] | [[Investors]] | [[Donate]]
+[https://www.whonix.org{{localurl:{{FULLPAGENAME}}}} https] | &lt;html&gt;&lt;a class=&quot;link-https&quot; href=&quot;http://xxxxxxxxxxh5kyrx.onion&lt;/html&gt;{{localurl:{{FULLPAGENAME}}}}&lt;html&gt;&quot; rel=&quot;nofollow&quot;&gt;.onion&lt;/a&gt;&lt;/html&gt; &lt;sup&gt;[[Forcing .onion on Whonix.org|[note]]]&lt;/sup&gt; | [http://whonix.org.nyud.net{{localurl:{{FULLPAGENAME}}}} Mirror] | [https://kkkkkkkkkk63ava6.tor2web.org{{localurl:{{FULLPAGENAME}}}} Mirror] | Share: {{Share}}
 &lt;!--
 inspired by http://aboli.sh/
 @cnpirates ssl(tor) ssl(i2p) coralcdn .sdns .onion .i2p--&gt;
@@ -451,7 +451,7 @@ This is a wiki. Want to improve this page? See [https://github.com/Whonix/Whonix
 
 Whonix (&lt;html&gt;&lt;a href=&quot;https://plus.google.com/108150429836421683225&quot; rel=&quot;publisher&quot; /&gt;g+&lt;/a&gt;&lt;/html&gt;) is a [http://www.openinventionnetwork.com/licensees.php licensee] of the Open Invention Network. Unless otherwise noted above, content of this  page is [[Whonix:Copyrights|copyrighted]] and licensed under the same Free (as in speech) [https://github.com/Whonix/Whonix/blob/master/debian/copyright license] as Whonix itself.
 &lt;/font&gt;</text>
-      <sha1>1mjiw3u3iwcku4gnhvfsndk2iobnt9d</sha1>
+      <sha1>ck7y6um6ydi7kf0k8799wcg7h32h4so</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -797,14 +797,14 @@ Thanks to [https://anonymous-proxy-servers.net/ JonDos] ([https://anonymous-prox
     <ns>0</ns>
     <id>19</id>
     <revision>
-      <id>7879</id>
-      <parentid>7875</parentid>
-      <timestamp>2014-05-13T17:26:44Z</timestamp>
+      <id>7951</id>
+      <parentid>7950</parentid>
+      <timestamp>2014-05-28T07:30:56Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="15277">{{Header}}
+      <text xml:space="preserve" bytes="15049">{{Header}}
 &lt;!--
 Copyright:
 
@@ -1006,8 +1006,7 @@ Other choices.
 
 &lt;translate&gt;
 &lt;!--T:40--&gt;
-When you start '''Tor Browser Recommended''', there is a shortcut on the desktop, see&lt;/translate&gt; [[Image:important.png|alt=&lt;translate&gt;Tor Browser Recommend Icon&lt;/translate&gt;|r]] &lt;translate&gt;&lt;!--T:225--&gt;
-, it will open both Whonix News Blogs in a privacy friendly way. It's recommended at least to read Whonix Important Blog if you are in a hurry. Have a look into Whonix Feature Blog if you are generally interested to learn about anonymity/privacy/security related things or to see what's going on with Whonix.
+It's recommended at least to read Whonix Important Blog if you are in a hurry. Have a look into Whonix Feature Blog if you are generally interested to learn about anonymity/privacy/security related things or to see what's going on with Whonix.
 &lt;/translate&gt;
 
 &lt;translate&gt;== Operating System Updates == &lt;!--T:226--&gt;
@@ -1051,7 +1050,7 @@ Because some people will do so even though it is not recommended, messages from 
 
 &lt;translate&gt;
 &lt;!--T:52--&gt;
-If you won't get into trouble by letting others learn about Whonix, feel free to follow or like those profiles (with your anonymous account) as a little way to [[Contribute|Contribute]].
+If you won't get into trouble by letting others learn about Whonix, feel free to follow or like those profiles (with your anonymous account) as a little way to [[Contribute|Contribute]]. You can share this page on: {{Share}}.
 &lt;/translate&gt;
 
 &lt;translate&gt;== Source Code == &lt;!--T:237--&gt;
@@ -1171,7 +1170,7 @@ under certain conditions; see the wiki source code for details.
 &lt;translate&gt;&lt;!--T:253--&gt;
 Some icons created by third parties, Free licenses as well, see [[Authorship#Images_created_by_third_parties|Authorship Images created by third parties]] for details.
 &lt;/translate&gt;[[Category:Documentation]]{{Footer}}</text>
-      <sha1>d3liu012e9yonk5fodsoyig3gkyb3qi</sha1>
+      <sha1>2nxgf1ppn4tqzox1prxdr2f9rys9g49</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -31512,14 +31511,15 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
     <ns>0</ns>
     <id>256</id>
     <revision>
-      <id>5556</id>
-      <parentid>4981</parentid>
-      <timestamp>2014-02-22T02:23:32Z</timestamp>
+      <id>7945</id>
+      <parentid>5556</parentid>
+      <timestamp>2014-05-27T22:51:10Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="2961">{{Header}}
+      <comment>/* Whonix Social Media Profiles */</comment>
+      <text xml:space="preserve" bytes="3181">{{Header}}
 {{#seo:
 |description=Twitter, Facebook, G+ and other Official Social Network Profiles by Whonix
 }}
@@ -31529,10 +31529,13 @@ There are some Whonix Social Media Profiles, but please don't rely on them for g
 
 If you don't get into trouble, by letting others to know, that you like or use Whonix, feel free to follow or like those profiles (with your anonymous account) as a little way to [[Contribute]].
 
-* [https://twitter.com/Whonix Twitter Whonix]
-* [https://plus.google.com/108150429836421683225/about Google+ Whonix] &lt;font size=&quot;-3&quot;&gt;(registered by contributor, maintained by adrelanos)&lt;/font&gt;
-* [https://www.youtube.com/user/adrelanos YouTube Whonix] &lt;font size=&quot;-3&quot;&gt;(registered by contributor, maintained by adrelanos)&lt;/font&gt;
-* [https://www.facebook.com/Whonix Facebook Whonix]
+* [https://twitter.com/Whonix Twitter Whonix] &lt;font size=&quot;-3&quot;&gt;(maintained by Patrick)&lt;/font&gt;
+* [https://plus.google.com/108150429836421683225/about Google+ Whonix] &lt;font size=&quot;-3&quot;&gt;(maintained by Patrick)&lt;/font&gt;
+* [https://www.youtube.com/user/adrelanos YouTube Whonix] &lt;font size=&quot;-3&quot;&gt;(maintained by Patrick)&lt;/font&gt;
+* [https://www.facebook.com/Whonix Facebook Whonix] &lt;font size=&quot;-3&quot;&gt;(maintained by Patrick)&lt;/font&gt;
+* [https://pod.orkz.net/u/whonix Diaspora Whonix] &lt;font size=&quot;-3&quot;&gt;(maintained by Sean)&lt;/font&gt;
+
+&lt;!-- http://domesticempire.files.wordpress.com/2011/11/diaspora_button_94x16_blk.png --&gt;
 
 = Other Accounts =
 == Project Accounts ==
@@ -31565,7 +31568,7 @@ If you don't get into trouble, by letting others to know, that you like or use W
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>nvg5iki4b4vpaxv3f8v57n0witud6sx</sha1>
+      <sha1>511o8cwjhm5yh4mml47px5u6l5ddhdi</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -36904,14 +36907,14 @@ Whonix-Example-Implementation:
     <ns>0</ns>
     <id>299</id>
     <revision>
-      <id>7566</id>
-      <parentid>7482</parentid>
-      <timestamp>2014-04-25T19:03:51Z</timestamp>
+      <id>7949</id>
+      <parentid>7566</parentid>
+      <timestamp>2014-05-28T07:28:39Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="62051">{{Header}}
+      <text xml:space="preserve" bytes="62288">{{Header}}
 {{#seo:
 |description=Outdated, Deprecated, Archived Whonix Documentation.
 }}
@@ -38210,13 +38213,16 @@ Whonix
 
 Download LocalSettings.php, safe as /home/user/LocalSettings.php.
 
+= Tor Browser Recommended =
+When you start '''Tor Browser Recommended''', there is a shortcut on the desktop, see [[Image:important.png|alt=Tor Browser Recommend Icon&lt;|r]], it will open both Whonix News Blogs in a privacy friendly way.
+
 = Footnotes =
 &lt;references /&gt;
 
 {{Footer}}
 
 [[Category:Deprecated]]</text>
-      <sha1>7eof2avxvfubtsh4wonjll0i94ky8p5</sha1>
+      <sha1>qecmz0280srjpvvce0gsrrz9g4na52j</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -57425,15 +57431,14 @@ Quelle: &lt;html&gt;&lt;a href=&quot;http://www.juraforum.de/impressum-generator
     <ns>0</ns>
     <id>698</id>
     <revision>
-      <id>7939</id>
-      <parentid>7923</parentid>
-      <timestamp>2014-05-24T21:55:39Z</timestamp>
+      <id>7944</id>
+      <parentid>7939</parentid>
+      <timestamp>2014-05-27T22:48:42Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Geltungsbereich */</comment>
-      <text xml:space="preserve" bytes="5515">&lt;!--
+      <text xml:space="preserve" bytes="5467">&lt;!--
 NOTE TO WIKI EDITORS:
 Do not add the default footer!
 Do not edit without asking Patrick Schleizer beforehand!
@@ -57535,7 +57540,7 @@ Dieses Impressum gilt auch für:
 Bitte beachten Sie, dass dieses Impressum gilt nicht für:
 
 * alle restlichen Inhalte auf https://www.whonix.org / http://zo7fksnun4b4v4jv.onion / http://kkkkkkkkkk63ava6.onion / http://xxxxxxxxxxh5kyrx.onion. Der Eigentümer der domain https://www.whonix.org / http://zo7fksnun4b4v4jv.onion / http://kkkkkkkkkk63ava6.onion / http://xxxxxxxxxxh5kyrx.onion ist fortasse, welcher [[Contact#For_website_issues|hier]] kontaktiert werden kann. Fortasse ist auch der/die-jenige welche, der den Server adminstriert und bezahlt. Dieser ist mir nur unter Pseudonym &quot;fortasse&quot; bekannt und lebt laut eigenen Angaben nicht in Deutschland, ist daher nicht der deutschen Impressumspflicht unterworfen.
-* Diaspora http://domesticempire.files.wordpress.com/2011/11/diaspora_button_94x16_blk.png (wird von Sean betrieben)
+* [https://pod.orkz.net/u/whonix Diaspora] (wird von Sean betrieben)
 * ohloh.net: https://www.ohloh.net/p/Whonix/ Admin ist [https://www.facebook.com/jasonjayala Jason Ayala] (Jason@JasonAyala.com)
 
 = Datenschutz =
@@ -57545,7 +57550,7 @@ Die Datenschutzerklärung finden Sie [[Datenschutz|hier]].
 Den Haftungsausschluss (Disclaimer) finden Sie [[Disclaimer|hier]].
 
 [[Category:Documentation]]</text>
-      <sha1>g0l32jji65oh5vr9rj3dxpvmamaweza</sha1>
+      <sha1>gonw8zsweu8cq9sly53crwkv9dcanwa</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -76291,6 +76296,28 @@ https://groups.google.com/d/msg/qubes-users/AqZV65yZLuU/Kib1jFLZanUJ
 
 [[Category:Design]]</text>
       <sha1>lv987fk4l5n5kd8qei355paclk2ci1u</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Share</title>
+    <ns>10</ns>
+    <id>1377</id>
+    <revision>
+      <id>7947</id>
+      <timestamp>2014-05-28T07:22:08Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;&lt;html&gt; &lt;a href=&quot;https://twitter.com/intent/tweet?url=https://www.whonix.org&lt;/html&gt;{{localurl:{{FULLPAGENAME}}}}&lt;html&gt;&amp;text=&amp;via=Whonix&quot;&gt;Twitter&lt;/a&gt; | &lt;a href=&quot;https://facebook...&quot;</comment>
+      <text xml:space="preserve" bytes="402">&lt;html&gt;
+&lt;a href=&quot;https://twitter.com/intent/tweet?url=https://www.whonix.org&lt;/html&gt;{{localurl:{{FULLPAGENAME}}}}&lt;html&gt;&amp;text=&amp;via=Whonix&quot;&gt;Twitter&lt;/a&gt; |
+&lt;a href=&quot;https://facebook.com/sharer.php?u=https://www.whonix.org&lt;/html&gt;{{localurl:{{FULLPAGENAME}}}}&lt;html&gt;&quot;&gt;Facebook&lt;/a&gt; |
+&lt;a href=&quot;https://plus.google.com/share?url=https://www.whonix.org&lt;/html&gt;{{localurl:{{FULLPAGENAME}}}}&lt;html&gt;&quot;&gt;Google+&lt;/a&gt;
+&lt;/html&gt;</text>
+      <sha1>1rrhrpmc2rgv0uyy68dsscxltfsjv4u</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
