@@ -2,7 +2,7 @@
   <siteinfo>
     <sitename>Whonix</sitename>
     <base>http://localhost/wiki/Main_Page</base>
-    <generator>MediaWiki 1.22.6</generator>
+    <generator>MediaWiki 1.22.7</generator>
     <case>first-letter</case>
     <namespaces>
       <namespace key="-2" case="first-letter">Media</namespace>
@@ -7838,14 +7838,15 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
     <ns>0</ns>
     <id>96</id>
     <revision>
-      <id>7952</id>
-      <parentid>7641</parentid>
-      <timestamp>2014-05-29T18:28:38Z</timestamp>
+      <id>7954</id>
+      <parentid>7952</parentid>
+      <timestamp>2014-05-29T22:19:08Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <comment>tails has updated and released their newest version 1.0</comment>
-      <text xml:space="preserve" bytes="71395">{{Header}}
+      <comment>/* Last update */</comment>
+      <text xml:space="preserve" bytes="71792">{{Header}}
 {{#seo:
 |description=Comparison of Whonix, Tails, Tor Browser Bundle, QubesOS TorVM and corridor. About anonymity, privacy, security, circumvention, attacks, fingerprinting, usability, features, etc.
 }}
@@ -7857,19 +7858,26 @@ This page contains the comparisons of Whonix, Tails, Tor Browser and Qubes OS To
 |- style=&quot;background-color: #f9f9f9&quot;
 | style=&quot;height:30px&quot;| || style=&quot;width:125px&quot;| '''[[Main Page|Whonix]] || style=&quot;width:125px&quot;| '''[https://tails.boum.org/ Tails]''' || style=&quot;width:125px&quot;| '''[https://www.torproject.org/projects/torbrowser.html.en Tor Browser]''' || style=&quot;width:125px&quot;| '''[http://qubes-os.org/trac/wiki/UserDoc/TorVM Qubes OS TorVM]''' || style=&quot;width:125px&quot;| '''[https://github.com/rustybird/corridor corridor]''' ([https://lists.torproject.org/pipermail/tor-talk/2014-February/032152.html tor-talk])
 |-
-| style=&quot;height:35px;width:70px;background-color: #f9f9f9&quot;| Version &lt;ref&gt;At the time of comparing.&lt;/ref&gt;
+| style=&quot;height:35px;width:70px;background-color: #f9f9f9&quot;| Compared Version &lt;ref&gt;At the time of last comparison.&lt;/ref&gt;
 | style=&quot;background-color: {{Green}}&quot;| 8
-| style=&quot;background-color: {{Yellow}}&quot;| 1.0 &lt;ref name=old&gt;There is a newer version. The information on this page could be outdated.&lt;/ref&gt;
+| style=&quot;background-color: {{Yellow}}&quot;| 0.1.6
+| style=&quot;background-color: {{Green}}&quot;| 3.5
+| style=&quot;background-color: {{Green}}&quot;| 0.1.3
+| style=&quot;background-color: {{Green}}&quot;| (?)
+|-
+| style=&quot;height:35px;width:70px;background-color: #f9f9f9&quot;| Latest Version &lt;ref&gt;Most recent version.&lt;/ref&gt;
+| style=&quot;background-color: {{Green}}&quot;| 8
+| style=&quot;background-color: {{Green}}&quot;| 1.0
 | style=&quot;background-color: {{Green}}&quot;| 3.5
 | style=&quot;background-color: {{Green}}&quot;| 0.1.3
 | style=&quot;background-color: {{Green}}&quot;| (?)
 |-
 | Status
-| This wiki page is up to date.
-| There is a newer version. The information on this page could be outdated.
-| This wiki page is up to date.
-| There is a newer version. The information on this page could be outdated.
-| This wiki page is up to date.
+| style=&quot;background-color: {{Green}}&quot;| This wiki page is up to date.
+| style=&quot;background-color: {{Yellow}}&quot;| There is a newer version. The information &lt;u&gt;on this page&lt;/u&gt; could be outdated.
+| style=&quot;background-color: {{Green}}&quot;| This wiki page is up to date.
+| style=&quot;background-color: {{Green}}&quot;| This wiki page is up to date.
+| style=&quot;background-color: {{Green}}&quot;| This wiki page is up to date.
 |}
 
 = General =
@@ -9084,7 +9092,7 @@ One has always to be very careful, when talking about others. Especially, when t
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Design]]</text>
-      <sha1>e75evgtdmkhzzsu3ctxdorsch31s54g</sha1>
+      <sha1>f2v3o8mkhv5z0ik7tslzj4j2hm7knru</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -31579,15 +31587,15 @@ If you don't get into trouble, by letting others to know, that you like or use W
     <ns>0</ns>
     <id>257</id>
     <revision>
-      <id>7943</id>
-      <parentid>7942</parentid>
-      <timestamp>2014-05-26T21:29:03Z</timestamp>
+      <id>7958</id>
+      <parentid>7943</parentid>
+      <timestamp>2014-05-30T05:03:04Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
       <comment>/* onionshare */</comment>
-      <text xml:space="preserve" bytes="6943">{{Header}}
+      <text xml:space="preserve" bytes="6964">{{Header}}
 {{#seo:
 |description=Documentation for the NEXT Whonix version! ONLY for developers! No guarantee it really makes into the next Whonix version.
 }}
@@ -31653,6 +31661,7 @@ Add the following content.
 ## https://github.com/micahflee/onionshare/blob/master/onionshare/onionshare.py
 CONTROL_PORT_FILTER_WHITELIST=(
     &quot;${CONTROL_PORT_FILTER_WHITELIST[@]}&quot;
+    &quot;PROTOCOLINFO 1&quot;
     &quot;SETCONF HiddenServiceDir&quot;
     &quot;SETCONF HiddenServicePort&quot;
 )
@@ -31803,7 +31812,7 @@ Done.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>1pou0gt0qznbepo3o67rixs7l0rx407</sha1>
+      <sha1>64fg1pn7dkrxolt70lzwhcegahljocn</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -50224,14 +50233,14 @@ Whonix 9
     <ns>10</ns>
     <id>502</id>
     <revision>
-      <id>7931</id>
-      <parentid>7930</parentid>
-      <timestamp>2014-05-24T10:26:12Z</timestamp>
+      <id>7957</id>
+      <parentid>7953</parentid>
+      <timestamp>2014-05-30T04:34:32Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="1458">&lt;!--
+      <text xml:space="preserve" bytes="1569">&lt;!--
 EDITOR'S NOTE:
 If you make changes here, check if it would make sense to copy these changes to Manually_Create_Whonix_VM_Settings as well.
 --&gt;
@@ -50239,7 +50248,7 @@ Easiest, but least secure option.
 
 '''Download and use the default Whonix-Gateway.'''
 
-Import it the same way you would do for Whonix-Default/Download-Version. No other changes required to Whonix-Gateway for this use case!
+[[Download]] and [[Download#Install|import]] it the same way you would do for Whonix-Default/Download-Version. No other changes required to Whonix-Gateway for this use case!
 
 '''Create a VirtualBox VM.'''
 
@@ -50255,6 +50264,8 @@ Network -&gt; Adapter 1 -&gt; attached to Internal Network (Important!)
 
 Network -&gt; Adapter 1 -&gt; Name (of Internal Network) (Important!): {{Code|Whonix}}
 
+(Note: It's '''W'''honix, not whonix. Case sensitive. Capital '''W'''.)
+
 USB -&gt; uncheck Enable USB controller
 
 -&gt; OK
@@ -50265,7 +50276,7 @@ Start the newly created VM (for example: {{Code2|myVM}}). You don't have to inst
 
 username: user &lt;br /&gt;
 computer name: host</text>
-      <sha1>1kwa9c91oxha7237io7fzem8uwhuxvu</sha1>
+      <sha1>jnez7ppncwl6r6vgjqfnlovl2u4n2kp</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -57432,14 +57443,15 @@ Quelle: &lt;html&gt;&lt;a href=&quot;http://www.juraforum.de/impressum-generator
     <ns>0</ns>
     <id>698</id>
     <revision>
-      <id>7944</id>
-      <parentid>7939</parentid>
-      <timestamp>2014-05-27T22:48:42Z</timestamp>
+      <id>7956</id>
+      <parentid>7944</parentid>
+      <timestamp>2014-05-29T22:48:07Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="5467">&lt;!--
+      <comment>/* Geltungsbereich */</comment>
+      <text xml:space="preserve" bytes="5508">&lt;!--
 NOTE TO WIKI EDITORS:
 Do not add the default footer!
 Do not edit without asking Patrick Schleizer beforehand!
@@ -57537,6 +57549,7 @@ Dieses Impressum gilt auch für:
 ** https://github.com/adrelanos/apparmor-profile-sdwdate
 ** https://github.com/Whonix/apparmor-profile-virtualbox
 ** https://github.com/adrelanos/apparmor-profile-virtualbox
+** https://github.com/adrelanos/corridor
 
 Bitte beachten Sie, dass dieses Impressum gilt nicht für:
 
@@ -57551,7 +57564,7 @@ Die Datenschutzerklärung finden Sie [[Datenschutz|hier]].
 Den Haftungsausschluss (Disclaimer) finden Sie [[Disclaimer|hier]].
 
 [[Category:Documentation]]</text>
-      <sha1>gonw8zsweu8cq9sly53crwkv9dcanwa</sha1>
+      <sha1>dmt7e3z1fvkx1e9ck6q9cjl952uuhdd</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -76319,6 +76332,31 @@ https://groups.google.com/d/msg/qubes-users/AqZV65yZLuU/Kib1jFLZanUJ
 &lt;a href=&quot;https://plus.google.com/share?url=https://www.whonix.org&lt;/html&gt;{{localurl:{{FULLPAGENAME}}}}&lt;html&gt;&quot;&gt;Google+&lt;/a&gt;
 &lt;/html&gt;</text>
       <sha1>1rrhrpmc2rgv0uyy68dsscxltfsjv4u</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>YaCy</title>
+    <ns>0</ns>
+    <id>1378</id>
+    <revision>
+      <id>7955</id>
+      <timestamp>2014-05-29T22:43:32Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;{{Header}}  = Development = Looks like socks proxy support is not coming anytime soon: &lt;br /&gt; http://mantis.tokeek.de/view.php?id=219  [[Category:Documentation]] {{Footer}}&quot;</comment>
+      <text xml:space="preserve" bytes="172">{{Header}}
+
+= Development =
+Looks like socks proxy support is not coming anytime soon: &lt;br /&gt;
+http://mantis.tokeek.de/view.php?id=219
+
+[[Category:Documentation]]
+{{Footer}}</text>
+      <sha1>o8crgrtz9ga6q1u5oler3vlynxb7lis</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
