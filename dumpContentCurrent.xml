@@ -18077,15 +18077,15 @@ man tor-ctrl
     <ns>0</ns>
     <id>150</id>
     <revision>
-      <id>7577</id>
-      <parentid>7574</parentid>
-      <timestamp>2014-04-26T12:32:57Z</timestamp>
+      <id>7959</id>
+      <parentid>7577</parentid>
+      <timestamp>2014-05-31T10:51:32Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Tor Browser in Whonix differences */</comment>
-      <text xml:space="preserve" bytes="15043">&lt;!--
+      <comment>/* Tips */</comment>
+      <text xml:space="preserve" bytes="15075">&lt;!--
 Copyright:
 
    Whonix Tor Browser wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -18196,6 +18196,7 @@ NoScript also comes with Tor Browser and provides many protections, even though 
 For more information you can refer to the NoScript [http://noscript.net/ website] and [http://noscript.net/features features].
 
 = Tips =
+== Maximizing Browser Window ==
 It [https://trac.torproject.org/projects/tor/ticket/7255 might] be better not to maximize the Tor Browser window.
 
 = Tor Browser in Whonix differences =
@@ -18290,7 +18291,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>hx4uthvkvmhm8ylvdf7gbdqbdr6ejy4</sha1>
+      <sha1>sh6i80et5j4sls3t03wzojgfael7k1w</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -44414,14 +44415,14 @@ In case this feature is of interest to you, a solution for not requiring reboot 
     <ns>0</ns>
     <id>462</id>
     <revision>
-      <id>5871</id>
-      <parentid>3769</parentid>
-      <timestamp>2014-02-27T13:48:17Z</timestamp>
+      <id>7961</id>
+      <parentid>5871</parentid>
+      <timestamp>2014-05-31T20:23:44Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="2818">{{Header}}
+      <text xml:space="preserve" bytes="2873">{{Header}}
 {{#seo:
 |description=Everything you should know about Whonix's Configuration Files.
 }}
@@ -44458,6 +44459,7 @@ The same yet in other words... Files in {{Code|.d}} folders are usually sourced 
 
 For example, directly editing {{Code|/etc/whonix_firewall.d/30_default}} is recommended against. This is because, next time Whonix gets updated, {{Code|/etc/whonix_firewall.d/30_default}} may get new settings and improved settings. You would end up with an {{Code2|dpkg interactive conflict resolution dialog}}, which would for example look the following.
 
+{{Anchor|dpkg interactive conflict resolution dialog}}
 &lt;pre&gt;
 Configuration file `/etc/whonix_firewall.d/30_default'
  ==&gt; Modified (by you or by a script) since installation.
@@ -44479,7 +44481,7 @@ Modifications coming with Whonix will always fall back to reasonable defaults, i
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>a2ynukjsvbyg6ejp43r4m9dl8v2ogp9</sha1>
+      <sha1>qiw4wmm3dnsbxl8st75wkskh159gz1z</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -57443,15 +57445,15 @@ Quelle: &lt;html&gt;&lt;a href=&quot;http://www.juraforum.de/impressum-generator
     <ns>0</ns>
     <id>698</id>
     <revision>
-      <id>7956</id>
-      <parentid>7944</parentid>
-      <timestamp>2014-05-29T22:48:07Z</timestamp>
+      <id>7960</id>
+      <parentid>7956</parentid>
+      <timestamp>2014-05-31T15:02:35Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
       <comment>/* Geltungsbereich */</comment>
-      <text xml:space="preserve" bytes="5508">&lt;!--
+      <text xml:space="preserve" bytes="14951">&lt;!--
 NOTE TO WIKI EDITORS:
 Do not add the default footer!
 Do not edit without asking Patrick Schleizer beforehand!
@@ -57500,7 +57502,6 @@ Dieses Impressum gilt auch für:
 ** https://sourceforge.net/p/whonixoldarchivedreleases
 ** https://sourceforge.net/p/whonixdevelopermetafiles
 * github:
-** https://github.com/Whonix/Whonix
 ** https://github.com/adrelanos/nothing-to-see
 ** https://github.com/adrelanos/Inoffical-TBB-AppArmor
 ** https://github.com/adrelanos/WhonixWikiBackups
@@ -57509,47 +57510,232 @@ Dieses Impressum gilt auch für:
 ** https://github.com/adrelanos/gpg-key-creation-test
 ** https://github.com/adrelanos/minimal-grml-debootstrap-test
 ** https://github.com/adrelanos/Whonix-documentation
-** https://github.com/adrelanos/tor-ctrl
-** https://github.com/adrelanos/timeprivacy
-** https://github.com/adrelanos/tbb-scripts
 ** https://github.com/adrelanos/PasswordTrainer
 ** https://github.com/adrelanos/grml-debootstrap
 ** https://github.com/adrelanos/grml-debootstraptest
-** https://github.com/Whonix/sdwdate
-** https://github.com/adrelanos/sdwdate
 ** https://github.com/adrelanos/popcon-benchmark
 ** https://github.com/adrelanos/torbirdy
-** https://github.com/Whonix/anonymizer-config-gateway
-** https://github.com/Whonix/control-port-filter
-** https://github.com/adrelanos/control-port-filter
 ** https://github.com/adrelanos/wiki-seo
-** https://github.com/Whonix/msgcollector
-** https://github.com/adrelanos/msgcollector
-** https://github.com/Whonix/torsocks-remove-ld-preload
-** https://github.com/adrelanos/torsocks-remove-ld-preload
-** https://github.com/Whonix/bootclockrandomization
-** https://github.com/adrelanos/bootclockrandomization
+** https://github.com/adrelanos/corridor
+
+** https://github.com/Whonix/anon-apt-sources-list
+** https://github.com/adrelanos/anon-apt-sources-list
+** https://github.com/Whonix/anon-banned-packages
+** https://github.com/adrelanos/anon-banned-packages
+** https://github.com/Whonix/anon-base-files
+** https://github.com/adrelanos/anon-base-files
+** https://github.com/Whonix/anon-gpg-tweaks
+** https://github.com/adrelanos/anon-gpg-tweaks
+** https://github.com/Whonix/anon-gw-anonymizer-config
+** https://github.com/adrelanos/anon-gw-anonymizer-config
+** https://github.com/Whonix/anon-gw-base-files
+** https://github.com/adrelanos/anon-gw-base-files
+** https://github.com/Whonix/anon-gw-build-upgrade-tor
+** https://github.com/adrelanos/anon-gw-build-upgrade-tor
+** https://github.com/Whonix/anon-gw-clearnet-user
+** https://github.com/adrelanos/anon-gw-clearnet-user
+** https://github.com/Whonix/anon-gw-dhcp-conf
+** https://github.com/adrelanos/anon-gw-dhcp-conf
+** https://github.com/Whonix/anon-gw-dns-conf
+** https://github.com/adrelanos/anon-gw-dns-conf
+** https://github.com/Whonix/anon-gw-first-run-notice
+** https://github.com/adrelanos/anon-gw-first-run-notice
+** https://github.com/Whonix/anon-gw-kde-startmenu
+** https://github.com/adrelanos/anon-gw-kde-startmenu
+** https://github.com/Whonix/anon-gw-leaktest
+** https://github.com/adrelanos/anon-gw-leaktest
+** https://github.com/Whonix/anon-gw-sdwdate-conf
+** https://github.com/adrelanos/anon-gw-sdwdate-conf
+** https://github.com/Whonix/anon-iceweasel-warning
+** https://github.com/adrelanos/anon-iceweasel-warning
+** https://github.com/Whonix/anon-icon-pack
+** https://github.com/adrelanos/anon-icon-pack
+** https://github.com/Whonix/anon-kde-streamiso
+** https://github.com/adrelanos/anon-kde-streamiso
+** https://github.com/Whonix/anon-meta-packages
+** https://github.com/adrelanos/anon-meta-packages
+** https://github.com/Whonix/anon-mixmaster
+** https://github.com/adrelanos/anon-mixmaster
+** https://github.com/Whonix/anon-shared-build-apt-sources-tpo
+** https://github.com/adrelanos/anon-shared-build-apt-sources-tpo
+** https://github.com/Whonix/anon-shared-build-ban-nonfree
+** https://github.com/adrelanos/anon-shared-build-ban-nonfree
+** https://github.com/Whonix/anon-shared-build-fix-grub
+** https://github.com/adrelanos/anon-shared-build-fix-grub
+** https://github.com/Whonix/anon-shared-build-inst-linux-486
+** https://github.com/adrelanos/anon-shared-build-inst-linux-486
+** https://github.com/Whonix/anon-shared-build-inst-linux-686
+** https://github.com/adrelanos/anon-shared-build-inst-linux-686
+** https://github.com/Whonix/anon-shared-build-inst-linux-amd64
+** https://github.com/adrelanos/anon-shared-build-inst-linux-amd64
+** https://github.com/Whonix/anon-shared-build-inst-tb
+** https://github.com/adrelanos/anon-shared-build-inst-tb
+** https://github.com/Whonix/anon-shared-build-log-build-version
+** https://github.com/adrelanos/anon-shared-build-log-build-version
+** https://github.com/Whonix/anon-shared-build-remember-sources
+** https://github.com/adrelanos/anon-shared-build-remember-sources
+** https://github.com/Whonix/anon-shared-build-sanity-checks
+** https://github.com/adrelanos/anon-shared-build-sanity-checks
+** https://github.com/Whonix/anon-shared-build-upgrade-torsocks
+** https://github.com/adrelanos/anon-shared-build-upgrade-torsocks
+** https://github.com/Whonix/anon-shared-helper-scripts
+** https://github.com/adrelanos/anon-shared-helper-scripts
+** https://github.com/Whonix/anon-torchat
+** https://github.com/adrelanos/anon-torchat
+** https://github.com/Whonix/anon-ws-base-files
+** https://github.com/adrelanos/anon-ws-base-files
+** https://github.com/Whonix/anon-ws-disable-stacked-tor
+** https://github.com/adrelanos/anon-ws-disable-stacked-tor
+** https://github.com/Whonix/anon-ws-dns-conf
+** https://github.com/adrelanos/anon-ws-dns-conf
+** https://github.com/Whonix/anon-ws-kde-startmenu
+** https://github.com/adrelanos/anon-ws-kde-startmenu
+** https://github.com/Whonix/anon-ws-leaktest
+** https://github.com/adrelanos/anon-ws-leaktest
 ** https://github.com/Whonix/apparmor-profile-anondist
 ** https://github.com/adrelanos/apparmor-profile-anondist
-** https://github.com/Whonix/apparmor-profile-torbrowser
-** https://github.com/adrelanos/apparmor-profile-torbrowser
-** https://github.com/Whonix/apparmor-profile-xchat
-** https://github.com/adrelanos/apparmor-profile-xchat
-** https://github.com/Whonix/apparmor-profile-whonixcheck
-** https://github.com/adrelanos/apparmor-profile-whonixcheck
-** https://github.com/Whonix/apparmor-profile-torbrowser
-** https://github.com/adrelanos/apparmor-profile-torbrowser
-** https://github.com/Whonix/apparmor-profile-timesync
-** https://github.com/adrelanos/apparmor-profile-timesync
-** https://github.com/Whonix/apparmor-profile-pidgin
-** https://github.com/adrelanos/apparmor-profile-pidgin
 ** https://github.com/Whonix/apparmor-profile-icedove
 ** https://github.com/adrelanos/apparmor-profile-icedove
+** https://github.com/Whonix/apparmor-profile-pidgin
+** https://github.com/adrelanos/apparmor-profile-pidgin
 ** https://github.com/Whonix/apparmor-profile-sdwdate
 ** https://github.com/adrelanos/apparmor-profile-sdwdate
+** https://github.com/Whonix/apparmor-profile-timesync
+** https://github.com/adrelanos/apparmor-profile-timesync
+** https://github.com/Whonix/apparmor-profile-torbrowser
+** https://github.com/adrelanos/apparmor-profile-torbrowser
 ** https://github.com/Whonix/apparmor-profile-virtualbox
 ** https://github.com/adrelanos/apparmor-profile-virtualbox
-** https://github.com/adrelanos/corridor
+** https://github.com/Whonix/apparmor-profile-whonixcheck
+** https://github.com/adrelanos/apparmor-profile-whonixcheck
+** https://github.com/Whonix/apparmor-profile-xchat
+** https://github.com/adrelanos/apparmor-profile-xchat
+** https://github.com/Whonix/bootclockrandomization
+** https://github.com/adrelanos/bootclockrandomization
+** https://github.com/Whonix/buildconfig.d
+** https://github.com/adrelanos/buildconfig.d
+** https://github.com/Whonix/control-port-filter
+** https://github.com/adrelanos/control-port-filter
+** https://github.com/Whonix/curl-scripts
+** https://github.com/adrelanos/curl-scripts
+** https://github.com/Whonix/damngpl
+** https://github.com/adrelanos/damngpl
+** https://github.com/Whonix/gpl-sources-download
+** https://github.com/adrelanos/gpl-sources-download
+** https://github.com/Whonix/grub-enable-apparmor
+** https://github.com/adrelanos/grub-enable-apparmor
+** https://github.com/Whonix/ipv4-forward-disable
+** https://github.com/adrelanos/ipv4-forward-disable
+** https://github.com/Whonix/ipv6-disable
+** https://github.com/adrelanos/ipv6-disable
+** https://github.com/Whonix/kde-apper-no-autoupdate
+** https://github.com/adrelanos/kde-apper-no-autoupdate
+** https://github.com/Whonix/kde-dolphin-menubar-enable
+** https://github.com/adrelanos/kde-dolphin-menubar-enable
+** https://github.com/Whonix/kde-kdm-autologin
+** https://github.com/adrelanos/kde-kdm-autologin
+** https://github.com/Whonix/kde-kgpg-tweaks
+** https://github.com/adrelanos/kde-kgpg-tweaks
+** https://github.com/Whonix/kde-konsole-unlim-scrollback
+** https://github.com/adrelanos/kde-konsole-unlim-scrollback
+** https://github.com/Whonix/kde-lowfat
+** https://github.com/adrelanos/kde-lowfat
+** https://github.com/Whonix/kde-mouse-doubleclick
+** https://github.com/adrelanos/kde-mouse-doubleclick
+** https://github.com/Whonix/kde-no-move-max-win
+** https://github.com/adrelanos/kde-no-move-max-win
+** https://github.com/Whonix/kde-sounds-off
+** https://github.com/adrelanos/kde-sounds-off
+** https://github.com/Whonix/kmix-disable-autostart
+** https://github.com/adrelanos/kmix-disable-autostart
+** https://github.com/Whonix/knetattach-hide
+** https://github.com/adrelanos/knetattach-hide
+** https://github.com/Whonix/msgcollector
+** https://github.com/adrelanos/msgcollector
+** https://github.com/Whonix/open-link-confirmation
+** https://github.com/adrelanos/open-link-confirmation
+** https://github.com/Whonix/pidgin-improved-privacy
+** https://github.com/adrelanos/pidgin-improved-privacy
+** https://github.com/Whonix/pkg-manager-longer-timeouts
+** https://github.com/adrelanos/pkg-manager-longer-timeouts
+** https://github.com/Whonix/pkg-manager-no-autoupdate
+** https://github.com/adrelanos/pkg-manager-no-autoupdate
+** https://github.com/Whonix/poweroff-passwordless
+** https://github.com/adrelanos/poweroff-passwordless
+** https://github.com/Whonix/power-savings-disable-in-vms
+** https://github.com/adrelanos/power-savings-disable-in-vms
+** https://github.com/Whonix/rads
+** https://github.com/adrelanos/rads
+** https://github.com/Whonix/scurl
+** https://github.com/adrelanos/scurl
+** https://github.com/Whonix/sdwdate
+** https://github.com/adrelanos/sdwdate
+** https://github.com/Whonix/sdwdate-plugin-anon-shared-con-check
+** https://github.com/adrelanos/sdwdate-plugin-anon-shared-con-check
+** https://github.com/Whonix/sdwdate-plugin-anon-shared-streamiso
+** https://github.com/adrelanos/sdwdate-plugin-anon-shared-streamiso
+** https://github.com/Whonix/shared-folder-help
+** https://github.com/adrelanos/shared-folder-help
+** https://github.com/Whonix/swap-file-creator
+** https://github.com/adrelanos/swap-file-creator
+** https://github.com/Whonix/swappiness-lowest
+** https://github.com/adrelanos/swappiness-lowest
+** https://github.com/Whonix/tb-default-browser
+** https://github.com/adrelanos/tb-default-browser
+** https://github.com/Whonix/tb-starter
+** https://github.com/adrelanos/tb-starter
+** https://github.com/Whonix/tb-updater
+** https://github.com/adrelanos/tb-updater
+** https://github.com/Whonix/timesanitycheck
+** https://github.com/adrelanos/timesanitycheck
+** https://github.com/Whonix/timesync
+** https://github.com/adrelanos/timesync
+** https://github.com/Whonix/timezone-utc
+** https://github.com/adrelanos/timezone-utc
+** https://github.com/Whonix/tor-ctrl
+** https://github.com/adrelanos/tor-ctrl
+** https://github.com/Whonix/uwt
+** https://github.com/adrelanos/uwt
+** https://github.com/Whonix/vbox-disable-timesync
+** https://github.com/adrelanos/vbox-disable-timesync
+** https://github.com/Whonix/Whonix
+** https://github.com/adrelanos/Whonix
+** https://github.com/Whonix/whonix-base-files
+** https://github.com/adrelanos/whonix-base-files
+** https://github.com/Whonix/whonixcheck
+** https://github.com/adrelanos/whonixcheck
+** https://github.com/Whonix/whonix-developer-meta-files
+** https://github.com/adrelanos/whonix-developer-meta-files
+** https://github.com/Whonix/whonix-gw-desktop-shortcuts
+** https://github.com/adrelanos/whonix-gw-desktop-shortcuts
+** https://github.com/Whonix/whonix-gw-firewall
+** https://github.com/adrelanos/whonix-gw-firewall
+** https://github.com/Whonix/whonix-gw-kde-desktop-conf
+** https://github.com/adrelanos/whonix-gw-kde-desktop-conf
+** https://github.com/Whonix/whonix-gw-network-conf
+** https://github.com/adrelanos/whonix-gw-network-conf
+** https://github.com/Whonix/whonix-initializer
+** https://github.com/adrelanos/whonix-initializer
+** https://github.com/Whonix/whonix-legacy
+** https://github.com/adrelanos/whonix-legacy
+** https://github.com/Whonix/whonix-repository
+** https://github.com/adrelanos/whonix-repository
+** https://github.com/Whonix/whonixsetup
+** https://github.com/adrelanos/whonixsetup
+** https://github.com/Whonix/whonix-ws-desktop-shortcuts
+** https://github.com/adrelanos/whonix-ws-desktop-shortcuts
+** https://github.com/Whonix/whonix-ws-firewall
+** https://github.com/adrelanos/whonix-ws-firewall
+** https://github.com/Whonix/whonix-ws-irc-chat-support
+** https://github.com/adrelanos/whonix-ws-irc-chat-support
+** https://github.com/Whonix/whonix-ws-kde-desktop-conf
+** https://github.com/adrelanos/whonix-ws-kde-desktop-conf
+** https://github.com/Whonix/whonix-ws-network-conf
+** https://github.com/adrelanos/whonix-ws-network-conf
+** https://github.com/Whonix/whonix-ws-start-menu-additions
+** https://github.com/adrelanos/whonix-ws-start-menu-additions
+** https://github.com/Whonix/xchat-improved-privacy
+** https://github.com/adrelanos/xchat-improved-privacy
 
 Bitte beachten Sie, dass dieses Impressum gilt nicht für:
 
@@ -57564,7 +57750,7 @@ Die Datenschutzerklärung finden Sie [[Datenschutz|hier]].
 Den Haftungsausschluss (Disclaimer) finden Sie [[Disclaimer|hier]].
 
 [[Category:Documentation]]</text>
-      <sha1>dmt7e3z1fvkx1e9ck6q9cjl952uuhdd</sha1>
+      <sha1>9eo9d47zejk8xu4ng7w7zm0bq8vixzn</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
