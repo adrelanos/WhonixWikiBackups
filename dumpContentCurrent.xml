@@ -55249,14 +55249,14 @@ Many thanks to Tails team for their discussion on the topic of password managers
     <ns>0</ns>
     <id>685</id>
     <revision>
-      <id>7677</id>
-      <parentid>7554</parentid>
-      <timestamp>2014-05-03T14:31:53Z</timestamp>
+      <id>7964</id>
+      <parentid>7963</parentid>
+      <timestamp>2014-06-01T02:49:00Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <text xml:space="preserve" bytes="8078">{{Header}}
+      <comment>/* KVM Shared Folders */</comment>
+      <text xml:space="preserve" bytes="9023">{{Header}}
 {{#seo:
 |description=Using Whonix with KVM instead of VirtualBox
 }}
@@ -55372,13 +55372,40 @@ du -h Whonix-Gateway-8.2.qcow2
 This is tested. If you don't have 500 GB free space, you can have10 copies if Whonix-Gateway-8.2.qcow2.
 &lt;/ref&gt;
 
+== KVM Shared Folders ==
+To move data between the guest and host follow these steps:
+
+1. Set the following settings for shared folders in virt-manager:
+
+Driver:Path
+
+Mode: Mapped
+
+Write Policy: Default
+
+Source Path: [This is the path of the folder on. the Host you are sharing with the Guest]
+
+Target Path: [A custom tag for the shared directory that is used when running the mounting commands within the guest. for example: /tmpshare]
+
+
+2. Run terminal as root in Guest then use the following command:
+
+mount -t 9p -o trans=virtio [mount tag] [mount point] -oversion=9p2000.L
+
+Mount tag is: /tmpshare
+
+Mount point is the path of the directory that you will share in the Guest with the Host. If it doesn't exist you must create that folder.
+
+Note: you replace the parentheses in the command, they are just a placeholder in this example and should not be typed in.
+
 = Footnotes =
+[1] http://wiki.qemu.org/Documentation/9psetup#Starting_the_Guest_using_libvirt
 &lt;references /&gt;
 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>8edqy2x1rwjji98i7ofjcvddl9r4b5k</sha1>
+      <sha1>sc5v9m2m00o7pvfl6w7k4zit7hu5fkj</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
