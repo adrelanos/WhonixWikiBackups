@@ -55297,14 +55297,14 @@ Many thanks to Tails team for their discussion on the topic of password managers
     <ns>0</ns>
     <id>685</id>
     <revision>
-      <id>7965</id>
-      <parentid>7964</parentid>
-      <timestamp>2014-06-01T12:28:49Z</timestamp>
+      <id>7977</id>
+      <parentid>7965</parentid>
+      <timestamp>2014-06-02T14:57:06Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <text xml:space="preserve" bytes="9024">{{Header}}
+      <comment>modes</comment>
+      <text xml:space="preserve" bytes="9163">{{Header}}
 {{#seo:
 |description=Using Whonix with KVM instead of VirtualBox
 }}
@@ -55425,6 +55425,8 @@ To move data between the guest and host follow these steps:
 
 1. Set the following settings for shared folders in virt-manager:
 
+''The file sharing mode 'mapped' is just an example, using squash or passthrough is possible by selecting them from the drop down menu.''
+
 Driver:Path
 
 Mode: Mapped
@@ -55453,7 +55455,7 @@ Note: you replace the parentheses in the command, they are just a placeholder in
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>e7agebx49e8osjvdlhkbs9diglaz8tk</sha1>
+      <sha1>3bw1xo2b7gokvfnriy1pirerz8a6fjj</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -56034,15 +56036,15 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
     <ns>0</ns>
     <id>691</id>
     <revision>
-      <id>7924</id>
-      <parentid>7700</parentid>
-      <timestamp>2014-05-23T14:01:47Z</timestamp>
+      <id>7979</id>
+      <parentid>7978</parentid>
+      <timestamp>2014-06-02T19:43:50Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* How to enable AppArmor / SELinux for KVM on Debian? */</comment>
-      <text xml:space="preserve" bytes="25593">{{Header}}
+      <comment>/* = Sdwdate breaks when Transparent Proxy is disabled */</comment>
+      <text xml:space="preserve" bytes="25654">{{Header}}
 {{#seo:
 |description=Development Notes for adding KVM support to Whonix.
 }}
@@ -56056,6 +56058,9 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
 == Leak ==
 * [https://www.whonix.org/forum/index.php/topic,243.msg1636.html New FIN ACK / RST ACK Leak Test]
 * [https://www.whonix.org/forum/index.php/topic,243.msg1636.html#msg1636 Reported by HulaHoop]
+
+== Sdwdate breaks when Transparent Proxy is disabled ==
+...
 
 == Instructions include how to set clock to UTC? ==
 As per http://libvirt.org/formatdomain.html#elementsTime
@@ -56496,7 +56501,7 @@ whonixcheck (since Whonix 8) would tell you if kvmclock is enabled. whonixcheck 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>tbehljr7ip0tgh5ce64gb9ah1s32g9m</sha1>
+      <sha1>qxa4s7gmbfk8za21dqpkmwoe9iybvb4</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -74428,25 +74433,26 @@ Otherwise please consider a [[Donate|Donation]].
     <ns>0</ns>
     <id>1319</id>
     <revision>
-      <id>7881</id>
-      <parentid>7685</parentid>
-      <timestamp>2014-05-13T17:28:56Z</timestamp>
+      <id>7981</id>
+      <parentid>7980</parentid>
+      <timestamp>2014-06-02T19:51:51Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* By Host Operating System */</comment>
-      <text xml:space="preserve" bytes="3276">{{Header}}
+      <comment>/* By Download Target */</comment>
+      <text xml:space="preserve" bytes="3405">{{Header}}
 
 = User's Preferences =
 == By Host Operating System ==
 * Windows users -&gt; Install VirtualBox from virtualbox.org -&gt; recommend VirtualBox ova's
-* Linux users -&gt; Install VirtualBox by using distribution's package manager -&gt; recommend VirtualBox ova's / recommend [[KVM]] as soon as ready
+* Linux users -&gt; Install VirtualBox by using distribution's package manager -&gt; recommend VirtualBox ova's | As soon as [[KVM]] is ready, recommend using [[KVM]] and .qcow2 images
 * Mac users -&gt; Install VirtualBox by ? -&gt; recommend VirtualBox ova's
 
 == By Download Target ==
 * VirtualBox
 * probably in mid term future [[KVM]] as well
+* two physical computers ([[Dev/Build_Documentation/Physical_Isolation|Physical Isolation]])
 * probably in long term future other visualizers as well
 
 == By Security / Usability Compromise ==
@@ -74513,7 +74519,7 @@ No one is providing a https enabled download link for a Windows hash verificatio
 &lt;references /&gt;
 
 {{Footer}}</text>
-      <sha1>lb7hplteg7v36944osqxduxehlrzgsp</sha1>
+      <sha1>mx5x79lhns0tjtapzqp936b3mh5hlvy</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
