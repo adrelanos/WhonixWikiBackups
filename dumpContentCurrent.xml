@@ -56036,15 +56036,15 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
     <ns>0</ns>
     <id>691</id>
     <revision>
-      <id>7979</id>
-      <parentid>7978</parentid>
-      <timestamp>2014-06-02T19:43:50Z</timestamp>
+      <id>7982</id>
+      <parentid>7979</parentid>
+      <timestamp>2014-06-03T06:14:22Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* = Sdwdate breaks when Transparent Proxy is disabled */</comment>
-      <text xml:space="preserve" bytes="25654">{{Header}}
+      <comment>/* Sdwdate breaks when Transparent Proxy is disabled */</comment>
+      <text xml:space="preserve" bytes="25593">{{Header}}
 {{#seo:
 |description=Development Notes for adding KVM support to Whonix.
 }}
@@ -56058,9 +56058,6 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
 == Leak ==
 * [https://www.whonix.org/forum/index.php/topic,243.msg1636.html New FIN ACK / RST ACK Leak Test]
 * [https://www.whonix.org/forum/index.php/topic,243.msg1636.html#msg1636 Reported by HulaHoop]
-
-== Sdwdate breaks when Transparent Proxy is disabled ==
-...
 
 == Instructions include how to set clock to UTC? ==
 As per http://libvirt.org/formatdomain.html#elementsTime
@@ -56501,7 +56498,7 @@ whonixcheck (since Whonix 8) would tell you if kvmclock is enabled. whonixcheck 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>qxa4s7gmbfk8za21dqpkmwoe9iybvb4</sha1>
+      <sha1>tbehljr7ip0tgh5ce64gb9ah1s32g9m</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
