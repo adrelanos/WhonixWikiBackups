@@ -6268,15 +6268,15 @@ See warnings above first. Set up Tor to use private and obfuscated [[bridges]]. 
     <ns>0</ns>
     <id>90</id>
     <revision>
-      <id>7936</id>
-      <parentid>5793</parentid>
-      <timestamp>2014-05-24T19:21:06Z</timestamp>
+      <id>7988</id>
+      <parentid>7987</parentid>
+      <timestamp>2014-06-04T12:22:21Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Riseup.net */</comment>
-      <text xml:space="preserve" bytes="12671">{{Header}}
+      <comment>/* usaip.eu */</comment>
+      <text xml:space="preserve" bytes="12726">{{Header}}
 {{#seo:
 |description=Step by Step Instructions on how to set up VPNs in Conjunction with Whonix. Tor over VPN / VPN over Tor. VPN over Tor over VPN.
 }}
@@ -6331,7 +6331,7 @@ sudo openvpn --client --dev tun --auth-user-pass --remote vpn.riseup.net 1194 --
 
 (8) For DNS, see Riseup DNS below.
 
-=== Riseup.net riseup.ovpn ===
+=== Riseup.net riseup.conf ===
 
 Known to support TCP, UDP, SSL.
 
@@ -6350,7 +6350,7 @@ riseupusername
 vpnsecret
 &lt;/pre&gt;
 
-(6) Create a file riseup.ovpn inside the same folder.
+(6) Create a file riseup.conf inside the same folder.
 
 &lt;pre&gt;
 client
@@ -6370,7 +6370,7 @@ proto tcp
 (7) Start OpenVPN.
 
 &lt;code&gt;
-sudo openvpn riseup.ovpn
+sudo openvpn riseup.conf
 &lt;/code&gt;
 
 (8) For DNS, see Riseup DNS below.
@@ -6607,11 +6607,11 @@ DNS settings have not been considered for this securitykiss.com chapter.
 
 For testing purposes, in past, [https://www.usaip.eu/ usaip.eu] was used. They have been chosen, because they were free and didn't block the tested outgoing UDP port. The free version of usaip.eu can probably only be used for testing purposes, as it's only a test version, which force disconnects every 7 minutes. For longer and serious/stable use, you'll probably need another, VPN account.
 
-'''Note, usaip probably blocks SSL, therefore'''
+'''Note, at time of writing, it looked like, that usaip is probably blocking SSL, therefore'''
 
 &lt;code&gt;/usr/bin/curl --tlsv1 --proto =https https://check.torproject.org&lt;/code&gt;
 
-'''will not work.'''
+'''will probably not work.'''
 
 Install OpenVPN.
 
@@ -6688,7 +6688,7 @@ You could try the [https://www.riseup.net/en/openvpn-linux#gnome riseup.net Open
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>knslc8yt39k4ep7s35l73gaup24asd6</sha1>
+      <sha1>d13ki13st92df415wdhuq1lp3aqiumm</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -31636,15 +31636,15 @@ If you don't get into trouble, by letting others to know, that you like or use W
     <ns>0</ns>
     <id>257</id>
     <revision>
-      <id>7958</id>
-      <parentid>7943</parentid>
-      <timestamp>2014-05-30T05:03:04Z</timestamp>
+      <id>8003</id>
+      <parentid>7997</parentid>
+      <timestamp>2014-06-04T21:58:58Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* onionshare */</comment>
-      <text xml:space="preserve" bytes="6964">{{Header}}
+      <comment>/* VPN Connectivity Test */</comment>
+      <text xml:space="preserve" bytes="9168">{{Header}}
 {{#seo:
 |description=Documentation for the NEXT Whonix version! ONLY for developers! No guarantee it really makes into the next Whonix version.
 }}
@@ -31722,13 +31722,55 @@ Restart Control Port Filter Proxy.
 sudo service controlportfiltd restart
 &lt;/pre&gt;
 
-= VPN on Whonix-Gateway =
-This chapter is supposed to be added to the [[Tunnel_Tor_through_proxy_or_VPN_or_SSH]], specifically to extend the [[Tunnel_Tor_through_proxy_or_VPN_or_SSH#How]] section, if/when this feature gets finished.
+== Tunnel Tor through VPN ==
+This chapter is supposed to be added to the [[Tunnel_Tor_through_proxy_or_VPN_or_SSH]], specifically to extend the [[Tunnel_Tor_through_proxy_or_VPN_or_SSH#How]] section, when this feature gets finished.
 
-Tunnel Tor through VPN &lt;br /&gt;
+=== Introduction ===
+
 '''user -&gt; VPN -&gt; Tor'''
 
-If you want to hide Tor by using a VPN, do the following steps before activating Tor in {{Code|whonixsetup}}.
+There are too many different VPN protocols. Too many to add all of them to this guide. However, at least adding OpenVPN would be worth it.
+
+If you are using VPN not,
+
+* '''because you are forced to use VPN by your ISP''', but
+* want to '''add an additional layer of protection''', or
+* to '''hide the fact that you are using Tor''', in that case make sure you have read [[Hide Tor and Whonix from your ISP]]
+
+then be sure, that your VPN software is secure (ex: use OpenVPN, not pptp).
+
+=== Use a Fail Closed Mechanism ===
+
+This is not a Whonix specific problem. It is a general problem with VPNs. Most users are simply not aware of it. VPN's generally fail open. VPN servers and VPN software can occasionally break down without announcement. This means, if the VPN is unreachable, connections breaks down for whatever reasons and so on, in most cases, you can continue to connect to the internet without the VPN.
+
+In case of Whonix you would be left to the protections provided by Tor. Whonix-Workstation will seamlessly continue to make &quot;direct&quot; connections through Tor once the VPN breaks down. If you are using the VPN only to circumvent the censorship of Tor, you may not care so much. On the other hand, if you believe a VPN improves your security, it would be rational to make sure, the VPN is always used instead only most of the time.
+
+If you want to enforce, that the VPN gets always used:
+
+* Whonix-Gateway: Already includes a fail closed (firewall settings {{Code|VPN_FIREWALL}} setting) mechanism, which is documented below.
+* Other operating systems: See [[VPN-Firewall]].
+
+=== How ===
+==== Introduction ====
+If you are forced to use a VPN server or if you are already using a VPN server, you most likely know how you can connect to it.
+
+You can either add the VPN on the host. Whonix-Gateway will be tunneled through it.
+
+Or you can add the VPN into Whonix-Gateway.
+
+When your VPN is properly set up, all your connections are forced through the VPN first. If you start Tor on top of that, tunneling Tor through the VPN will work.
+
+See also [[TestVPN|Free example VPNs working with Whonix for testing purposes]].
+
+See also [[FAQ#What.27s_the_difference_of_installing_a_VPN_on_the_host_versus_installing_on_Whonix-Gateway.3F|What's the difference of installing a VPN on the host versus installing on Whonix-Gateway?]]
+
+==== VPN on the Host ====
+Besides what has been written above already, nothing special is required.
+
+==== VPN on Whonix-Gateway ====
+===== How =====
+
+If you want to hide Tor by using a VPN, after install Whonix-Gateway, do the following steps before activating Tor in {{Code|whonixsetup}}.
 
 Have a look at {{Code|/etc/whonix_firewall.d/30_default}}. To open.
 
@@ -31759,8 +31801,6 @@ sudo nano /etc/whonix_firewall.d/50_user
 Add the following settings. You can skip comments (starting with {{Code|#}}). Unless you are using {{Code|seattle.vpn.riseup.net}} as your VPN service, which we use as an example, you have to adjust the {{Code|VPN_SERVERS}} variable in your config.
 
 &lt;pre&gt;
-ALLOW_GATEWAY_ROOT_USER=1
-
 ###########################
 ## VPN-Firewall Settings ##
 ###########################
@@ -31772,7 +31812,7 @@ VPN_FIREWALL=1
 ## Get the IP using: nslookup vpn-example-server.org
 ## Example: seattle.vpn.riseup.net
 ## Some providers provide multiple VPN servers.
-## You can enter multiple IP addresses, separated by spaces
+## You can enter multiple IP addresses, separated by spaces.
 VPN_SERVERS=&quot;198.252.153.26&quot;
 
 ## For OpenVPN.
@@ -31797,28 +31837,6 @@ sudo whonix_firewall
 &lt;/pre&gt;
 
 Now setup OpenVPN. It should be able to connect. You find some help on setting up OpenVPN on the [[TestVPN]] page.
-
-Test if you are able to connect using your VPN. One, less secure method would be.
-
-&lt;pre&gt;
-## TODO: There is no DNS and I know no test services accepting connections without DNS requests.
-curl.whonix-orig https://check.torproject.org
-
-## This is check.tpo. Should show something along &quot;Welcome to sergii&quot;.
-## Unfortunately won't echo IP, but will show, that connectivity is functional.
-curl.whonix-orig 38.229.72.22
-&lt;/pre&gt;
-
-Another more secure method, that doesn't work with a few VPNs, would be.
-
-&lt;pre&gt;
-## TODO: There is no DNS and I know no test services accepting connections without DNS requests.
-curl.whonix-orig --tlsv1 --proto =https https://check.torproject.org 
-
-## This is check.tpo. Should show something along &quot;Welcome to sergii&quot;.
-## Unfortunately won't echo IP, but will show, that connectivity is functional.
-curl.whonix-orig --tlsv1 --proto =https 38.229.72.22
-&lt;/pre&gt;
 
 Enable Tor using whonixsetup.
 
@@ -31845,15 +31863,38 @@ Done.
 
 '''TODO high level overview''':
 
-* Integrate VPN-Firewall's features into Whonix-Gateway's firewall.
-* Install OpenVPN on Whonix-Gateway by default. (Otherwise installing OpenVPN while hiding Tor would be very difficult for the user.)
+* &lt;s&gt;Integrate VPN-Firewall's features into Whonix-Gateway's firewall.&lt;/s&gt;
+* &lt;s&gt;Install OpenVPN on Whonix-Gateway by default. (Otherwise installing OpenVPN while hiding Tor would be very difficult for the user.)&lt;/s&gt;
 * Make a new release integrating above points.
 
-'''TODO technical level''':
+&lt;s&gt;'''TODO technical level''':&lt;/s&gt;
 
-* Make NON_TOR_WHONIXG variable configurable.
-* Allow TCP and UDP to VPN server.
-* No longer allow Tor to connect to any outside target when VPN_FIREWALL=1.
+* &lt;s&gt;Allow TCP and UDP to VPN server.&lt;/s&gt;
+* &lt;s&gt;No longer allow Tor to connect to any outside target when VPN_FIREWALL=1.&lt;/s&gt;
+
+=====  Troubleshooting =====
+====== VPN Connectivity Test ======
+Test if you are able to connect using your VPN.
+
+Login as user {{Code|clearnet}}.
+
+&lt;pre&gt;
+sudo su clearnet
+&lt;/pre&gt;
+
+Try connecting to check.tpo. Note, at time of writing, it looked like, that usaip free trial is probably blocking SSL, therefore it might not work.
+
+&lt;pre&gt;
+curl.whonix-orig --tlsv1 --proto =https -H 'Host: check.torproject.org' -k https://38.229.72.22 | grep IP
+&lt;/pre&gt;
+
+Should show something along &quot;Welcome to sergii&quot;. Unfortunately won't echo IP, but will show, that connectivity is functional.
+
+Get back to normal user.
+
+&lt;pre&gt;
+exit
+&lt;/pre&gt;
 
 = Footnotes =
 &lt;references/&gt;
@@ -31861,7 +31902,7 @@ Done.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>64fg1pn7dkrxolt70lzwhcegahljocn</sha1>
+      <sha1>a5n1b6c4osvd98ejkrpsflmgzvur3qv</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -45351,14 +45392,14 @@ The reason you can't just get higher resolutions using {{Code2|xrandr}} &quot;{{
     <ns>10</ns>
     <id>479</id>
     <revision>
-      <id>6927</id>
-      <parentid>6806</parentid>
-      <timestamp>2014-03-15T20:50:15Z</timestamp>
+      <id>7984</id>
+      <parentid>7983</parentid>
+      <timestamp>2014-06-04T10:29:12Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="2711">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
+      <text xml:space="preserve" bytes="3362">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
 '''OPTIONAL!'''
 
 Advanced users can create 64bit instead of 32bit builds.
@@ -45437,10 +45478,24 @@ Footnotes:
 Whonix 9
 &lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
 &lt;div class=&quot;mw-collapsible-content&quot;&gt;
-Linux 64 bit. Less tested.
+By default, Linux 32 bit is used and {{Code|linux-image-686-pae linux-headers-686-pae linux-image-486 linux-headers-486}} kernel is installed. This can be changed using any of the following command line parameters.
+
+Linux 64 bit. Less tested. Only installs {{Code|linux-image-amd64 linux-headers-amd64}} kernel.
 
 &lt;pre&gt;
 --64bit-linux
+&lt;/pre&gt;
+
+Linux 32 bit. Only installs {{Code|linux-image-686-pae linux-headers-686-pae}} kernel. Does not install {{Code|linux-image-486 linux-headers-486}} kernel.
+
+&lt;pre&gt;
+--32bit-linux
+&lt;/pre&gt;
+
+Linux 32 bit. Only installs {{Code|linux-image-486 linux-headers-486}} kernel. Does not install {{Code|linux-image-686-pae linux-headers-686-pae}} kernel.
+
+&lt;pre&gt;
+--486-linux
 &lt;/pre&gt;
 
 kFreeBSD 64 bit. Entirely untested.
@@ -45457,7 +45512,7 @@ kFreeBSD 32 bit. Entirely untested.
 
 &lt;/div&gt;
 &lt;/div&gt;&lt;noinclude&gt;{{Footer}}&lt;/noinclude&gt;</text>
-      <sha1>h7bjx9gqli1jgmlku2tr0aqo8w5l2mh</sha1>
+      <sha1>f2y0onnorkvpfpk4cp9c15pw7wp5qxb</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -49801,20 +49856,20 @@ ii  zsh-common            5.0.2-4         all             architecture independe
     <ns>10</ns>
     <id>491</id>
     <revision>
-      <id>7763</id>
-      <parentid>7736</parentid>
-      <timestamp>2014-05-09T11:44:52Z</timestamp>
+      <id>8001</id>
+      <parentid>8000</parentid>
+      <timestamp>2014-06-04T21:02:02Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="2511">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
+      <text xml:space="preserve" bytes="2525">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
 == Get the Source Code ==
 Install git and get the source code from the git repository.&lt;ref&gt;From https://github.com/adrelanos/Whonix and not from https://github.com/Whonix/Whonix, because only adrelanos/Whonix contains git tags of the testers-only version.&lt;/ref&gt;
 
 &lt;pre&gt;
-## Install git.
-sudo apt-get install git
+## Install git and curl
+sudo apt-get install git curl
 
 ## Get source code.
 git clone https://github.com/Whonix/Whonix
@@ -49822,19 +49877,19 @@ git clone https://github.com/Whonix/Whonix
 
 Remember it's '''W'''honix, not '''w'''honix! If you are prompted for a username for github, it means you have mistyped the web address.
 
-== Get the Signing Key ==
-'''This chapter is recommended for better security, but not strictly required.''' (See [[Trust]])
-
 Get into the source folder.
 
 &lt;pre&gt;
 cd Whonix
 &lt;/pre&gt;
 
+== Get the Signing Key ==
+'''This chapter is recommended for better security, but not strictly required.''' (See [[Trust]])
+
 Import the key.
 
 &lt;pre&gt;
-gpg --import ./whonix_shared/usr/share/whonix/keys/whonix-keys.d/patrick.asc
+curl --tlsv1 --proto =https https://www.whonix.org/patrick.asc | gpg --import
 &lt;/pre&gt;
 
 Verify.
@@ -49900,7 +49955,7 @@ Build Documentation Choose Version
 &lt;references /&gt;
 {{Footer}}
 &lt;/noinclude&gt;</text>
-      <sha1>4cypr34lj9ar3nxyxyh9q7safnr1evg</sha1>
+      <sha1>ayuoqogftmwy7anfgvr4uusib0ek9rb</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -56036,15 +56091,15 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
     <ns>0</ns>
     <id>691</id>
     <revision>
-      <id>7982</id>
-      <parentid>7979</parentid>
-      <timestamp>2014-06-03T06:14:22Z</timestamp>
+      <id>7998</id>
+      <parentid>7982</parentid>
+      <timestamp>2014-06-04T15:44:14Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Sdwdate breaks when Transparent Proxy is disabled */</comment>
-      <text xml:space="preserve" bytes="25593">{{Header}}
+      <comment>/* Qemu Support */</comment>
+      <text xml:space="preserve" bytes="25623">{{Header}}
 {{#seo:
 |description=Development Notes for adding KVM support to Whonix.
 }}
@@ -56230,7 +56285,23 @@ git tag 7.8.0.1 and above will be using the &quot;-o cluster_size=2M&quot; optio
 I am yet to document this in the KVM page lets do this at the end. Is there any tangible speed gains?
 
 == Qemu Support ==
-To change existing kvm guest to use plain qemu: as per not available in virt-manager. do 'sudo virsh edit $vmname' and change &lt;domain type='kvm'&gt; to &lt;domain type='qemu'&gt; (source: #virt channel on irc.oftc.net).
+To change existing kvm guest to use plain qemu, because this can not be done yet with the virt-manager GUI.
+
+&lt;pre&gt;
+sudo virsh edit Whonix-Gateway
+&lt;/pre&gt;
+
+And change.
+
+&lt;pre&gt;
+&lt;domain type='kvm'&gt;
+&lt;/pre&gt;
+
+To.
+
+&lt;pre&gt;
+ &lt;domain type='qemu'&gt;
+&lt;/pre&gt;
 
 == Shared Folder ==
 We should add instructions on how to use shared folders.
@@ -56498,7 +56569,7 @@ whonixcheck (since Whonix 8) would tell you if kvmclock is enabled. whonixcheck 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>tbehljr7ip0tgh5ce64gb9ah1s32g9m</sha1>
+      <sha1>iaaatxtkfsx1xv1iyxupzr11zwpjo2q</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -57522,15 +57593,15 @@ Quelle: &lt;html&gt;&lt;a href=&quot;http://www.juraforum.de/impressum-generator
     <ns>0</ns>
     <id>698</id>
     <revision>
-      <id>7960</id>
-      <parentid>7956</parentid>
-      <timestamp>2014-05-31T15:02:35Z</timestamp>
+      <id>8002</id>
+      <parentid>7960</parentid>
+      <timestamp>2014-06-04T21:50:41Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
       <comment>/* Geltungsbereich */</comment>
-      <text xml:space="preserve" bytes="14951">&lt;!--
+      <text xml:space="preserve" bytes="14566">&lt;!--
 NOTE TO WIKI EDITORS:
 Do not add the default footer!
 Do not edit without asking Patrick Schleizer beforehand!
@@ -57639,12 +57710,6 @@ Dieses Impressum gilt auch für:
 ** https://github.com/adrelanos/anon-shared-build-ban-nonfree
 ** https://github.com/Whonix/anon-shared-build-fix-grub
 ** https://github.com/adrelanos/anon-shared-build-fix-grub
-** https://github.com/Whonix/anon-shared-build-inst-linux-486
-** https://github.com/adrelanos/anon-shared-build-inst-linux-486
-** https://github.com/Whonix/anon-shared-build-inst-linux-686
-** https://github.com/adrelanos/anon-shared-build-inst-linux-686
-** https://github.com/Whonix/anon-shared-build-inst-linux-amd64
-** https://github.com/adrelanos/anon-shared-build-inst-linux-amd64
 ** https://github.com/Whonix/anon-shared-build-inst-tb
 ** https://github.com/adrelanos/anon-shared-build-inst-tb
 ** https://github.com/Whonix/anon-shared-build-log-build-version
@@ -57827,7 +57892,7 @@ Die Datenschutzerklärung finden Sie [[Datenschutz|hier]].
 Den Haftungsausschluss (Disclaimer) finden Sie [[Disclaimer|hier]].
 
 [[Category:Documentation]]</text>
-      <sha1>9eo9d47zejk8xu4ng7w7zm0bq8vixzn</sha1>
+      <sha1>aoyu8ne8y3o06rfxkm26mksls3pfqxp</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
