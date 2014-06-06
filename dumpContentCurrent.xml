@@ -76569,15 +76569,15 @@ sudo apparmor_parser -r /etc/apparmor.d/usr.bin.sdwdate
     <ns>0</ns>
     <id>1376</id>
     <revision>
-      <id>7935</id>
-      <parentid>7934</parentid>
-      <timestamp>2014-05-24T19:11:53Z</timestamp>
+      <id>8004</id>
+      <parentid>7935</parentid>
+      <timestamp>2014-06-06T18:51:59Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Run updates over Proxy/Tor */</comment>
-      <text xml:space="preserve" bytes="4206">{{Header}}
+      <comment>/* IPs */</comment>
+      <text xml:space="preserve" bytes="4223">{{Header}}
 
 = Debian Template =
 https://groups.google.com/forum/#!topic/qubes-devel/EBxvtMlwp5k
@@ -76598,6 +76598,8 @@ But to answer your question - no, rpm do not have option to take ownership of fi
 Qubes uses non-fixed LAN IPs? How do internal LAN IPs get assigned to TorVM / AppVMs?
 
 QubesVm IP address is generated based on its netvm ID (subnet number) and the said VM static ID, so unless user is switching netvm, the IP is pretty static. We've chosen 10.137.&lt;subnet-id&gt;.&lt;vm-id&gt; which is quite exotic so conflicts with real LAN are very rare (even if rather harmless in isolated network).
+
+= Tor Browser =
 
 [https://groups.google.com/d/msg/qubes-devel/Dd0MVbIam5I/9z6GblxYQHwJ source]
 
@@ -76638,7 +76640,7 @@ https://groups.google.com/d/msg/qubes-users/AqZV65yZLuU/Kib1jFLZanUJ
 {{Footer}}
 
 [[Category:Design]]</text>
-      <sha1>lv987fk4l5n5kd8qei355paclk2ci1u</sha1>
+      <sha1>mleqnxncaotx8zdwjqukb05qgxs8xll</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
