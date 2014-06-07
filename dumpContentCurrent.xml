@@ -6268,15 +6268,15 @@ See warnings above first. Set up Tor to use private and obfuscated [[bridges]]. 
     <ns>0</ns>
     <id>90</id>
     <revision>
-      <id>7988</id>
-      <parentid>7987</parentid>
-      <timestamp>2014-06-04T12:22:21Z</timestamp>
+      <id>8013</id>
+      <parentid>7988</parentid>
+      <timestamp>2014-06-07T13:21:00Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* usaip.eu */</comment>
-      <text xml:space="preserve" bytes="12726">{{Header}}
+      <comment>/* Riseup.net riseup.conf */</comment>
+      <text xml:space="preserve" bytes="12752">{{Header}}
 {{#seo:
 |description=Step by Step Instructions on how to set up VPNs in Conjunction with Whonix. Tor over VPN / VPN over Tor. VPN over Tor over VPN.
 }}
@@ -6365,6 +6365,7 @@ script-security 1
 #user nobody
 #group nobody
 proto tcp
+#log /var/log/openvpn.log
 &lt;/pre&gt;
 
 (7) Start OpenVPN.
@@ -6688,7 +6689,7 @@ You could try the [https://www.riseup.net/en/openvpn-linux#gnome riseup.net Open
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>d13ki13st92df415wdhuq1lp3aqiumm</sha1>
+      <sha1>iy2rz6lsm5cfdpob7lhmjn233p9a96g</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -17291,15 +17292,15 @@ See also [[Security Guide]].
     <ns>0</ns>
     <id>145</id>
     <revision>
-      <id>7370</id>
-      <parentid>5796</parentid>
-      <timestamp>2014-04-07T21:39:14Z</timestamp>
+      <id>8032</id>
+      <parentid>8031</parentid>
+      <timestamp>2014-06-07T21:55:07Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Web Browser */</comment>
-      <text xml:space="preserve" bytes="21690">{{Header}}
+      <comment>/* HowTo */</comment>
+      <text xml:space="preserve" bytes="21716">{{Header}}
 {{#seo:
 |description=Connection Schema: user -&gt; Tor -&gt; Proxy/SSH/VPN
 }}
@@ -17370,31 +17371,31 @@ uwt uses torsocks. While the name implies it's Tor specific, it's not. You can p
 ===== uwt - wget Example =====
 &lt;pre&gt;
 ## For Tor stream isolation #1
-uwt -t 5 -i 192.168.0.10 -p 9153 /usr/bin/wget.real -c https://check.torproject.org
+uwt -t 5 -i 192.168.0.10 -p 9153 /usr/bin/wget.whonix-orig -c https://check.torproject.org
 
 ## For Tor stream isolation #2
-uwt -t 5 -i 192.168.0.10 -p 9154 /usr/bin/wget.real -c https://check.torproject.org
+uwt -t 5 -i 192.168.0.10 -p 9154 /usr/bin/wget.whonix-orig -c https://check.torproject.org
 
 ## For Tor stream isolation #3
 ## Requires deactivated wget uwt wrapper!
 uwt -t 5 -i 192.168.0.10 -p 9155 /usr/bin/wget -c https://check.torproject.org
 
 ## Proxy #1
-uwt -t 5 -i x.x.x.x -p xxxx /usr/bin/wget.real -c https://check.torproject.org
+uwt -t 5 -i x.x.x.x -p xxxx /usr/bin/wget.whonix-orig -c https://check.torproject.org
 
 ## Proxy #2
 ## Requires deactivated wget uwt wrapper!
 uwt -t 5 -i x.x.x.x -p xxxx /usr/bin/wget -c https://check.torproject.org
 &lt;/pre&gt;
 
-&lt;ref&gt;Using .real, i.e. /usr/bin/wget.real will circumvent the wget uwt wrapper.&lt;/ref&gt;
+&lt;ref&gt;Using .whonix-orig, i.e. /usr/bin/wget.whonix-orig will circumvent the wget uwt wrapper.&lt;/ref&gt;
 
 For testing, if you didn't disable the wget uwt wrapper, the following command will most likely get another IP, because still using Stream Isolation.
 
 &lt;pre&gt;
 ## Using Tor's TransPort
-## (/usr/bin/wget.real original non-uwt-wrapped version)
-wget.real https://check.torproject.org
+## (/usr/bin/wget.whonix-orig original non-uwt-wrapped version)
+wget.whonix-orig https://check.torproject.org
 &lt;/pre&gt;
 
 If you [[Stream_Isolation#Deactivate_uwt_Stream_Isolation_Wrapper|disabled]] wget's uwt wrapper, you could use.
@@ -17467,7 +17468,7 @@ Safe the configuration file. Test afterwards.
 ====== test uwt wrapped application ======
 For example:
 
-&lt;pre&gt;proxychains /usr/bin/wget.real https://check.torproject.org&lt;/pre&gt;
+&lt;pre&gt;proxychains /usr/bin/wget.whonix-orig https://check.torproject.org&lt;/pre&gt;
 
 Will do.
 
@@ -17475,8 +17476,8 @@ For testing, if you didn't disable the wget uwt wrapper, the following command w
 
 &lt;pre&gt;
 ## Using Tor's TransPort
-## (/usr/bin/wget.real original non-uwt-wrapped version)
-wget.real https://check.torproject.org
+## (/usr/bin/wget.whonix-orig original non-uwt-wrapped version)
+wget.whonix-orig https://check.torproject.org
 &lt;/pre&gt;
 
 ====== Tor Browser ======
@@ -17495,6 +17496,7 @@ Might be also interesting:
 === Transparent Proxying ===
 
 ==== Introduction ====
+'''Advanced users only!'''
 
 To make clear, what this is about. Whonix-Gateway is already serving as a Transparent Proxy &lt;ref&gt;anonymizing middlebox&lt;/ref&gt;, which means, that all applications not explicitly configured &lt;ref&gt;by uwt socksifier or proxy settings&lt;/ref&gt; to use a SocksPort, can connect through Tor without any settings. The Transparent Proxying chapter on the ''Tunnel Proxy/SSH/VPN through Tor'' page is about configuring Whonix-Workstation also to act as a Transparent Proxy &lt;ref&gt;local redirection&lt;/ref&gt;. Use case: a user wants to ensure all traffic goes through Tor (by using Whonix-Gateway) and want to additionally ensure, all traffic goes through a proxy choosen by the user behind Tor, i.e. user -&gt; Tor -&gt; proxy.
 
@@ -17534,6 +17536,8 @@ All DNS resolvers &lt;ref&gt;https://en.wikipedia.org/wiki/Comparison_of_DNS_ser
 Read the [[Secondary DNS Resolver|DNS related warnings]].
 
 ==== HowTo ====
+'''Unfinished!''' &lt;br /&gt;
+'''Advanced users only!'''
 
 Everything on Whonix-Workstation.
 
@@ -17542,29 +17546,46 @@ Get a working proxy and test if it works reliable.
 Install redsocks.
 
 &lt;pre&gt;
-## Untested, easier. Please try and leave feedback.
 sudo apt-get install redsocks
-
-## Or compile from git.
-#git clone https://github.com/darkk/redsocks.git
-## Build latest stable. 0.4 at time of writing. See
-## https://github.com/darkk/redsocks/tags for
-## most recent tag.
-#git tag -v &lt;version&gt;
-#compile...
 &lt;/pre&gt;
 
-Config redsocks. TODO: share config. Shouldn't be hard to do oneself. See [https://github.com/darkk/redsocks/blob/master/debian/redsocks.conf default config]. If you do, please share.
+Edit {{Code|/etc/default/redsocks}}. Look for.
 
-Add user redsocks.
+&lt;pre&gt;
+START=no
+&lt;/pre&gt;
 
-&lt;pre&gt;sudo adduser redsocks&lt;/pre&gt;
+And replace it with
+
+&lt;pre&gt;
+START=yes
+&lt;/pre&gt;
+
+Configure redsocks by editing {{Code|/etc/redsocks.conf}} to your needs.
+
+Under.
+
+&lt;pre&gt;
+redsocks {
+&lt;/pre&gt;
+
+You have to edit.
+
+&lt;pre&gt;
+        ip = 127.0.0.1;
+        port = 1080;
+        type = socks5
+&lt;/pre&gt;
+
+To your needs.
 
 Start redsocks.
 
-&lt;pre&gt;sudo -u redsocks ./redsocks&lt;/pre&gt;
+&lt;pre&gt;
+sudo service redsocks start
+&lt;/pre&gt;
 
-Create a fw.sh and use this firewall rules.
+Create a {{Code|fw.bsh}} and use this firewall rules.
 
 &lt;pre&gt;
 #!/bin/bash
@@ -17573,6 +17594,7 @@ Create a fw.sh and use this firewall rules.
 ## through the proxy.
 
 ## TODO: these iptables rules need review.
+## TODO: use iptables default policy drop.
 
 ## Choose either DNS rule #1 or DNS rule #2.
 
@@ -17628,11 +17650,11 @@ iptables -A OUTPUT -j REJECT
 
 Make the firewall script executable.
 
-&lt;pre&gt;sudo chmod +x fw.sh&lt;/pre&gt;
+&lt;pre&gt;sudo chmod +x fw.bsh&lt;/pre&gt;
 
 Apply the firewall rules.
 
-&lt;pre&gt;sudo ./fw.sh&lt;/pre&gt;
+&lt;pre&gt;sudo fw.bsh&lt;/pre&gt;
 
 == Tunnel SSH through Tor ==
 
@@ -17691,7 +17713,7 @@ See also [[TestVPN|Free example VPNs working with Whonix for testing purposes]].
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>c73dyrdlenmtvn2wcwsxnc7gd57m9my</sha1>
+      <sha1>2v2dv1x7wr1ug9uin2k8m77h9lnywm1</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -31636,15 +31658,15 @@ If you don't get into trouble, by letting others to know, that you like or use W
     <ns>0</ns>
     <id>257</id>
     <revision>
-      <id>8003</id>
-      <parentid>7997</parentid>
-      <timestamp>2014-06-04T21:58:58Z</timestamp>
+      <id>8020</id>
+      <parentid>8019</parentid>
+      <timestamp>2014-06-07T16:21:20Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* VPN Connectivity Test */</comment>
-      <text xml:space="preserve" bytes="9168">{{Header}}
+      <comment>/* How */</comment>
+      <text xml:space="preserve" bytes="10520">{{Header}}
 {{#seo:
 |description=Documentation for the NEXT Whonix version! ONLY for developers! No guarantee it really makes into the next Whonix version.
 }}
@@ -31778,6 +31800,12 @@ Have a look at {{Code|/etc/whonix_firewall.d/30_default}}. To open.
 Start menu -&gt; Applications -&gt; System -&gt; Whonix Default Firewall Settings
 &lt;/pre&gt;
 
+If you are using a terminal-only Whonix-Gateway, use.
+
+&lt;pre&gt;
+nano /etc/whonix_firewall.d/30_default
+&lt;/pre&gt;
+
 It contains default settings, settings you can use as template (copy and paste) and an interesting comment.
 
 &lt;pre&gt;
@@ -31852,27 +31880,65 @@ Or if you are using a terminal-only Whonix-Gateway, use.
 sudo whonixsetup
 &lt;/pre&gt;
 
-Done.
+The VPN may not be ready when Tor is attempting to connect, because the VPN connection initialization takes too long. Due to a bug in Tor, it won't keep trying to connect. You may have to manually restart Tor after boot, if whonixcheck reports, that Tor is not fully bootstrapped. The same may be necessary if your VPN software or connection temporarily broke down.
 
-'''Limitations''':
+&lt;pre&gt;
+Start Menu -&gt; Applications -&gt; System -&gt; Restart Tor
+
+Or.
+
+sudo service tor restart
+&lt;/pre&gt;
+
+===== Let Tor wait for OpenVPN =====
+To improve this situation, if you are using OpenVPN and Debian's init script to automatically start it, add an insserv override to wait for openvpn being started.
+
+Create a new file {{Code|/etc/insserv/overrides/tor}}. If using a graphical Whonix-Gateway.
+
+&lt;pre&gt;
+kdesudo kwrite /etc/insserv/overrides/tor
+&lt;/pre&gt;
+
+Or if using the terminal-only version.
+
+&lt;pre&gt;
+sudo nano /etc/insserv/overrides/tor
+&lt;/pre&gt;
+
+Add the following content.
+
+&lt;pre&gt;
+### BEGIN INIT INFO
+# Provides:          tor
+# Required-Start:    $local_fs $remote_fs $network $named $time
+# Required-Stop:     $local_fs $remote_fs $network $named $time
+# Should-Start:      $syslog openvpn
+# Should-Stop:       $syslog
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Starts The Onion Router daemon processes
+# Description:       Start The Onion Router, a TCP overlay
+#                    network client that provides anonymous
+#                    transport.
+### END INIT INFO
+&lt;/pre&gt;
+
+Then apply these changes by running.
+
+&lt;pre&gt;
+sudo update-rc.d tor defaults
+&lt;/pre&gt;
+
+===== Limitations =====
 
 * Only tested with OpenVPN. Most other VPN's have deficiencies anyway.
-* DNS has to be manually resolved. There is technically no way to automatically resolve DNS without making the setup much more complex. The VPN server's IP address should not be resolved over Tor, because that's what you wanted to hide in the first place. Since outside observers will know, that you are connecting to the VPN IP anyway, it is probably save to resolve the DNS over clearnet or by asking the VPN provider if they don't already document their IPs on their website anyway.
+* DNS (IP address) of VPN server has to be manually resolved. There is technically no way to automatically resolve DNS without making the setup much more complex. The VPN server's IP address should not be resolved over Tor, because that's what you wanted to hide in the first place. Since outside observers will know, that you are connecting to the VPN IP anyway, it is probably save to resolve the DNS over clearnet or by asking the VPN provider if they don't already document their IPs on their website anyway.
 * No support for IPv6 yet.
-* TODO: Find ip-check public service for testing/showing own VPN IP. Not sure if any exists. Is this important?
-
-'''TODO high level overview''':
-
-* &lt;s&gt;Integrate VPN-Firewall's features into Whonix-Gateway's firewall.&lt;/s&gt;
-* &lt;s&gt;Install OpenVPN on Whonix-Gateway by default. (Otherwise installing OpenVPN while hiding Tor would be very difficult for the user.)&lt;/s&gt;
-* Make a new release integrating above points.
-
-&lt;s&gt;'''TODO technical level''':&lt;/s&gt;
-
-* &lt;s&gt;Allow TCP and UDP to VPN server.&lt;/s&gt;
-* &lt;s&gt;No longer allow Tor to connect to any outside target when VPN_FIREWALL=1.&lt;/s&gt;
 
 =====  Troubleshooting =====
+====== VPN Logs ======
+Check your VPN software's logs.
+
 ====== VPN Connectivity Test ======
 Test if you are able to connect using your VPN.
 
@@ -31896,13 +31962,16 @@ Get back to normal user.
 exit
 &lt;/pre&gt;
 
+=====  Leak Tests =====
+When you shut down the VPN, neither Tor, nor Whonix-Gateway's whonixcheck/apt-get/etc. nor Whonix-Workstation should be able to connect anywhere anymore.
+
 = Footnotes =
 &lt;references/&gt;
 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>a5n1b6c4osvd98ejkrpsflmgzvur3qv</sha1>
+      <sha1>3sj4b74ovapd0sfs7jb6ebsgcx2hzg2</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -32973,14 +33042,15 @@ Undo Step 0 now!
     <ns>0</ns>
     <id>264</id>
     <revision>
-      <id>8005</id>
-      <parentid>7464</parentid>
-      <timestamp>2014-06-07T04:12:45Z</timestamp>
+      <id>8008</id>
+      <parentid>8007</parentid>
+      <timestamp>2014-06-07T10:19:24Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
       <comment>/* FIN ACK / RST ACK - Leak Test */</comment>
-      <text xml:space="preserve" bytes="7233">{{Header}}
+      <text xml:space="preserve" bytes="7438">{{Header}}
 {{#seo:
 |description=Testing for IP/DNS Leaks
 }}
@@ -33114,8 +33184,7 @@ sudo apt-get update
 sudo apt-get install tcpdump
 &lt;/pre&gt;
 
-Run tcpdump. Replace '-i wlan0' with your network interface. If you use '-i any', you
-will also see transproxied packets (which are not normally leaked).
+Run tcpdump. Replace {{Code|-i wlan0}} with your network interface. If you use {{Code|-i any}}, you will also see transproxied packets (which are not normally leaked).
 
 &lt;pre&gt;
 sudo tcpdump -n -i wlan0 host 74.125.28.104 and tcp port 80
@@ -33162,6 +33231,13 @@ Variations of this test:
 * You could also run tcpdump in Whonix-Workstation or on Whonix-Gateway.
 * You could also [[Whonix-Gateways_Own_Traffic_Transparent_Proxy|enable transparent proxying for Whonix-Gateway's own traffic]] and create the socket connection on Whonix-Gateway.
 
+&lt;font size=-3&gt;
+Forum discussion:
+
+* [https://www.whonix.org/forum/index.php/topic,243.0.html Part 1]
+* [https://www.whonix.org/forum/index.php/topic,331.msg2269.html#msg2269 Part 2]
+&lt;/font&gt;
+
 = Integrated tshark leaktest =
 
 The necessary scripts for leak testing are now integrated into the Whonix machines.
@@ -33207,7 +33283,7 @@ A similar project published another leak test. Read [https://github.com/ra--/Tor
 {{Footer}}
 
 [[Category:Development]] [[Category:Design]]</text>
-      <sha1>iqo3hyd2sn1g11v6qrpq27hdyszk291</sha1>
+      <sha1>8elpwmawbmbir1tbtjug2xpbxefh789</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -56091,15 +56167,14 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
     <ns>0</ns>
     <id>691</id>
     <revision>
-      <id>7998</id>
-      <parentid>7982</parentid>
-      <timestamp>2014-06-04T15:44:14Z</timestamp>
+      <id>8011</id>
+      <parentid>8010</parentid>
+      <timestamp>2014-06-07T10:33:02Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Qemu Support */</comment>
-      <text xml:space="preserve" bytes="25623">{{Header}}
+      <text xml:space="preserve" bytes="25773">{{Header}}
 {{#seo:
 |description=Development Notes for adding KVM support to Whonix.
 }}
@@ -56110,10 +56185,6 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
 * [https://github.com/Whonix/Whonix/issues/121 KVM Support github ticket]
 
 = Blockers =
-== Leak ==
-* [https://www.whonix.org/forum/index.php/topic,243.msg1636.html New FIN ACK / RST ACK Leak Test]
-* [https://www.whonix.org/forum/index.php/topic,243.msg1636.html#msg1636 Reported by HulaHoop]
-
 == Instructions include how to set clock to UTC? ==
 As per http://libvirt.org/formatdomain.html#elementsTime
 
@@ -56382,6 +56453,11 @@ https://bugzilla.redhat.com/show_bug.cgi?id=783921#c6 &lt; This link provides th
 
 whonixcheck (since Whonix 8) would tell you if kvmclock is enabled. whonixcheck --verbose will tell you, that it isn't enabled.
 
+== Leak ==
+* [https://www.whonix.org/forum/index.php/topic,243.msg1636.html New FIN ACK / RST ACK Leak Test]
+* [https://www.whonix.org/forum/index.php/topic,243.msg1636.html#msg1636 Reported by HulaHoop]
+* Was a [https://www.whonix.org/forum/index.php/topic,331.msg2269.html#msg2269 false positive] due to a bug in leak testing instructions (now fixed).
+
 = Archived Discussions =
 * [https://www.whonix.org/forum/index.php/topic,202.0/topicseen.html qcow2 with metadata preallocation file sizes]
 
@@ -56569,7 +56645,7 @@ whonixcheck (since Whonix 8) would tell you if kvmclock is enabled. whonixcheck 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>iaaatxtkfsx1xv1iyxupzr11zwpjo2q</sha1>
+      <sha1>nc9gmwuncqaeprk037cb67qpbd8p4pu</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -57593,15 +57669,14 @@ Quelle: &lt;html&gt;&lt;a href=&quot;http://www.juraforum.de/impressum-generator
     <ns>0</ns>
     <id>698</id>
     <revision>
-      <id>8002</id>
-      <parentid>7960</parentid>
-      <timestamp>2014-06-04T21:50:41Z</timestamp>
+      <id>8021</id>
+      <parentid>8002</parentid>
+      <timestamp>2014-06-07T16:42:29Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Geltungsbereich */</comment>
-      <text xml:space="preserve" bytes="14566">&lt;!--
+      <text xml:space="preserve" bytes="14461">&lt;!--
 NOTE TO WIKI EDITORS:
 Do not add the default footer!
 Do not edit without asking Patrick Schleizer beforehand!
@@ -57680,8 +57755,6 @@ Dieses Impressum gilt auch für:
 ** https://github.com/adrelanos/anon-gw-base-files
 ** https://github.com/Whonix/anon-gw-build-upgrade-tor
 ** https://github.com/adrelanos/anon-gw-build-upgrade-tor
-** https://github.com/Whonix/anon-gw-clearnet-user
-** https://github.com/adrelanos/anon-gw-clearnet-user
 ** https://github.com/Whonix/anon-gw-dhcp-conf
 ** https://github.com/adrelanos/anon-gw-dhcp-conf
 ** https://github.com/Whonix/anon-gw-dns-conf
@@ -57892,7 +57965,7 @@ Die Datenschutzerklärung finden Sie [[Datenschutz|hier]].
 Den Haftungsausschluss (Disclaimer) finden Sie [[Disclaimer|hier]].
 
 [[Category:Documentation]]</text>
-      <sha1>aoyu8ne8y3o06rfxkm26mksls3pfqxp</sha1>
+      <sha1>6j1sfnsw6bf6qlrhmnhz8deftx1bc1t</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -74915,14 +74988,14 @@ using Tor Browser is no longer possible due to a [https://trac.torproject.org/pr
     <ns>0</ns>
     <id>1327</id>
     <revision>
-      <id>7467</id>
-      <parentid>7463</parentid>
-      <timestamp>2014-04-10T23:22:46Z</timestamp>
+      <id>8009</id>
+      <parentid>7467</parentid>
+      <timestamp>2014-06-07T10:21:30Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="1592">{{Header}}
+      <text xml:space="preserve" bytes="1652">{{Header}}
 {{#seo:
 |description=Getting Transparent Proxying working for Whonix-Gateway's own traffic.
 }}
@@ -74987,7 +75060,7 @@ sudo service tor reload
 Test if you wish.
 
 &lt;pre&gt;
-curl.whonix-orig https://check.torproject.org
+curl.whonix-orig --tlsv1 --proto =https -H 'Host: check.torproject.org' -k https://38.229.72.22 | grep IP
 &lt;/pre&gt;
 
 = See Also =
@@ -74999,7 +75072,7 @@ curl.whonix-orig https://check.torproject.org
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>imqqc3lfbmg2y3imv9d6gxg2g64t2j2</sha1>
+      <sha1>f5jdnldlclbr4vzwx8exly5n06xlguv</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
