@@ -2,7 +2,7 @@
   <siteinfo>
     <sitename>Whonix</sitename>
     <base>http://localhost/wiki/Main_Page</base>
-    <generator>MediaWiki 1.22.7</generator>
+    <generator>MediaWiki 1.23.0</generator>
     <case>first-letter</case>
     <namespaces>
       <namespace key="-2" case="first-letter">Media</namespace>
@@ -55428,14 +55428,14 @@ Many thanks to Tails team for their discussion on the topic of password managers
     <ns>0</ns>
     <id>685</id>
     <revision>
-      <id>8033</id>
-      <parentid>7977</parentid>
-      <timestamp>2014-06-08T05:02:26Z</timestamp>
+      <id>8043</id>
+      <parentid>8033</parentid>
+      <timestamp>2014-06-08T15:55:59Z</timestamp>
       <contributor>
         <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* KVM Shared Folders */</comment>
-      <text xml:space="preserve" bytes="9357">{{Header}}
+      <comment>shared folder instruction brushup</comment>
+      <text xml:space="preserve" bytes="9339">{{Header}}
 {{#seo:
 |description=Using Whonix with KVM instead of VirtualBox
 }}
@@ -55558,11 +55558,11 @@ To move data between the guest and host follow these steps:
 
 ''The file sharing mode 'mapped' is just an example, using squash or passthrough is possible by selecting them from the drop down menu.''
 
-Driver:Path
+Driver:Default
 
 Mode: Mapped
 
-Write Policy: Default
+
 
 Source Path: [This is the path of the folder on the Host you are sharing with the Guest]
 
@@ -55591,7 +55591,7 @@ sudo nano /etc/fstab
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>icenqv7neneuu5q5vn1rdyoxsj77ujl</sha1>
+      <sha1>3jvxdo82yxr3b0fcsmpwuqna1gui54u</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -56172,15 +56172,14 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
     <ns>0</ns>
     <id>691</id>
     <revision>
-      <id>8040</id>
-      <parentid>8038</parentid>
-      <timestamp>2014-06-08T08:45:42Z</timestamp>
+      <id>8042</id>
+      <parentid>8041</parentid>
+      <timestamp>2014-06-08T13:10:07Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* How to get virtio running for storage? */</comment>
-      <text xml:space="preserve" bytes="27294">{{Header}}
+      <comment>latency</comment>
+      <text xml:space="preserve" bytes="29038">{{Header}}
 {{#seo:
 |description=Development Notes for adding KVM support to Whonix.
 }}
@@ -56286,9 +56285,37 @@ Patrick asks: How do we apply these settings in a way, so they do survive an &qu
 === System gets unbootable? ===
 Patrick comments: After editing  /boot/grub/grub.cfg, in worst case, maybe, the system will be no longer bootable then. You can test/simulate this case by running &quot;sudo update-grub&quot;. Please try.
 
+HulaHoop comments: I found a solution, one that survives kernel and grub upgrades: http://grumpymole.blogspot.nl/2007/05/ubuntu-how-to-edit-grub-boot-parameters.html
+
+&lt;pre&gt;2.2 Making a change survive upgrades
+
+Depending on how frequently you upgrade your system, you might find that when a new kernel is installed, or grub is upgraded (there may be other scenarios), the /boot/grub/menu.lst file may be replaced by a newer version, or a new line might be added for the new kernel. In this case, your &quot;permanent&quot; changes might be as permanent as you thought.
+
+The best way to address this is to change the &quot;#kopt...&quot; line in /boot/grub/menu.lst. Note that the line is not commented out, even though it starts with a &quot;#&quot;. See the excerpt below.
+
+    ### BEGIN AUTOMAGIC KERNELS LIST
+    ## lines between the AUTOMAGIC KERNELS LIST markers will be modified
+    ## by the debian update-grub script except for the default options below
+
+    ## DO NOT UNCOMMENT THEM, Just edit them to your needs
+
+    ## ## Start Default Options ##
+    ## default kernel options
+    ## default kernel options for automagic boot options
+    ## If you want special options for specific kernels use kopt_x_y_z
+    ## where x.y.z is kernel version. Minor versions can be omitted.
+    ## e.g. kopt=root=/dev/hda1 ro
+    ## kopt_2_6_8=root=/dev/hdc1 ro
+    ## kopt_2_6_8_2_686=root=/dev/hdc2 ro
+    # kopt=root=UUID=fccafcc7-d7cc-4594-9459-a8f0db7b9f7f ro
+
+Add the parameter changes to the end of the line &quot;#kopt...&quot;. These parameters will then be automatically added to any new kernel entries and should also survive an upgrade of grub&lt;/pre&gt;
+
 === Virtio Block Latency ===
 Not really important but is interesting: &lt;br /&gt;
 http://www.linux-kvm.org/page/Virtio/Block/Latency
+
+HulaHoop: Yes it could have been the situation that there is latency as the data shows, but I'm sure this was improved by now.
 
 == Boot from virtio block device? ==
 What is http://www.linux-kvm.org/page/Boot_from_virtio_block_device good for? Required?
@@ -56681,7 +56708,7 @@ whonixcheck (since Whonix 8) would tell you if kvmclock is enabled. whonixcheck 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>cj59mle5l8oftznpqchu0d7jtqtg888</sha1>
+      <sha1>ffmom2nt23mdpoew7t6zn6f5evzyrms</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -76869,6 +76896,26 @@ Otherwise, it would be a grave error ([[Dev/CPFP|CPFP]] not reachable).
 
 [[Category:Documentation]]</text>
       <sha1>11yn9rtq7hlphsid2v9y8uo6t7leyzh</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>This is MediaWiki:Mobile-frontend-terms-url.</title>
+    <ns>0</ns>
+    <id>1381</id>
+    <redirect title="Disclaimer" />
+    <revision>
+      <id>8046</id>
+      <parentid>8045</parentid>
+      <timestamp>2014-06-08T20:36:11Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>Redirected page to [[Disclaimer]]</comment>
+      <text xml:space="preserve" bytes="24">#REDIRECT [[Disclaimer]]</text>
+      <sha1>4p59mh9bhyk3ie0ob2vznqep9s1h80o</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
