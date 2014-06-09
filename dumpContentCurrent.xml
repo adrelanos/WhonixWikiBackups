@@ -51264,14 +51264,15 @@ Most of this text has been written by [https://alexcabal.com/creating-the-perfec
     <ns>0</ns>
     <id>520</id>
     <revision>
-      <id>5913</id>
-      <parentid>4050</parentid>
-      <timestamp>2014-02-27T14:18:08Z</timestamp>
+      <id>8051</id>
+      <parentid>8050</parentid>
+      <timestamp>2014-06-09T20:17:07Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="6852">{{Header}}
+      <comment>/* As user {{Code2|clearnet}} */</comment>
+      <text xml:space="preserve" bytes="7075">{{Header}}
 {{#seo:
 |description=Troubleshooting Installation and Network Issues with Whonix
 }}
@@ -51460,19 +51461,25 @@ nslookup google.com
 
 Should show timeout.
 
-=== As user {{Code2|unsafe}} ===
-Login as user {{Code2|unsafe}}.
+=== As user {{Code2|clearnet}} ===
+Login as user {{Code2|clearnet}}.
 
 &lt;pre&gt;
-sudo su unsafe
+sudo su clearnet
 &lt;/pre&gt;
 
-'''The following tests in this very &quot;Login as unsafe&quot; chapter might reveal, that you are a Whonix user. Omit them, if that is of concern for you.'''
+'''The following tests in this very &quot;Login as clearnet&quot; chapter might reveal, that you are a Whonix user. Omit them, if that is of concern for you.'''
 
-unsafe user account has no password. Login with
+clearnet user account has no password. Login with
 
 &lt;pre&gt;
-sudo su unsafe
+sudo su clearnet
+&lt;/pre&gt;
+
+Try if a connection to check.tpo is possible. (Only uses TCP, no DNS.)
+
+&lt;pre&gt;
+curl.whonix-orig --tlsv1 --proto =https -H 'Host: check.torproject.org' -k https://38.229.72.22 | grep IP
 &lt;/pre&gt;
 
 Remove write protection from /etc/resolv.conf
@@ -51499,7 +51506,7 @@ Content should be:
 nameserver 10.0.2.2
 &lt;/pre&gt;
 
-Check if dns resolution is functional.
+Check if dns resolution is functional as user &quot;clearnet&quot;.
 
 &lt;pre&gt;
 nslookup google.com
@@ -51589,7 +51596,7 @@ Maybe this will help: Try convert the vmdk to vdi, remove the old vmdk from the 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>jzxr9jbpusm7uqm4he8pecqfmic45wk</sha1>
+      <sha1>fvdb851auhf7xvuk5fdw85xwuwgtt7n</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
