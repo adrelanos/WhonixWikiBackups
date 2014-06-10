@@ -17173,15 +17173,15 @@ If you want to enforce, that the VPN gets always used, see: https://github.com/a
     <ns>0</ns>
     <id>144</id>
     <revision>
-      <id>7369</id>
-      <parentid>7368</parentid>
-      <timestamp>2014-04-07T21:38:46Z</timestamp>
+      <id>8052</id>
+      <parentid>7369</parentid>
+      <timestamp>2014-06-09T22:27:32Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Supported VMware Products */</comment>
-      <text xml:space="preserve" bytes="5185">{{Header}}
+      <comment>/* HowTo */</comment>
+      <text xml:space="preserve" bytes="5307">{{Header}}
 {{#seo:
 |description=Using Whonix with VMware
 }}
@@ -17239,6 +17239,8 @@ Due to a VMware upstream bug the network settings have to be adjusted.
 
 '''Note''', if ''vmnetX'', such as for example ''vmnet8'' is already used by the NAT adapter, do not re-use it for the custom adapter. In that case, use something else, such as ''vmnet9''.
 
+Due to a VMware upstream bug, VM time is not set to UTC. Set VM time to UTC, otherwise Tor might not be able to connect.
+
 (Windows 8 specific forum help thread: &lt;br /&gt;
 [[Special:AWCforum/st/id110/No_Tor/Internet_connection_on_VM....html|No Tor/Internet connection with Windows 8 on VMware - Whonix Gateway]].)
 
@@ -17282,7 +17284,7 @@ See also [[Security Guide]].
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>q72uk478y91wcbkaix3bear9amqbzaz</sha1>
+      <sha1>k8xq5nbh9ltf2t1g3ungz6rensig387</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -18442,14 +18444,15 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
     <ns>0</ns>
     <id>155</id>
     <revision>
-      <id>7714</id>
-      <parentid>7713</parentid>
-      <timestamp>2014-05-08T17:03:13Z</timestamp>
+      <id>8053</id>
+      <parentid>7714</parentid>
+      <timestamp>2014-06-09T22:32:24Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
       <comment>/* Conclusions */</comment>
-      <text xml:space="preserve" bytes="19609">{{Header}}
+      <text xml:space="preserve" bytes="19610">{{Header}}
 &lt;!--
 Copyright:
 
@@ -18592,7 +18595,7 @@ Basically, sdwdate picks three random servers - one from each pool, and then bui
 
 = Conclusions =
 * &lt;span style=&quot;background-color: {{Red}}&quot;&gt;'''Attack 1'''&lt;/span&gt; is a general Tor problem. It is impossible to solve for Whonix. It is unsolved in other projects as well.
-* &lt;span style=&quot;background-color: {{Green}}&quot;&gt;'''Attack 2'''&lt;/span&gt; gets partially defeated.
+* &lt;span style=&quot;background-color: {{Yellow}}&quot;&gt;'''Attack 2'''&lt;/span&gt; gets partially defeated.
 ** Whonix-Gateway and Whonix-Workstation are immune.
 ** This problem is unsolved in other projects as well.
 *** This is a general problem with all operating systems.
@@ -18603,7 +18606,7 @@ Basically, sdwdate picks three random servers - one from each pool, and then bui
 ** Manual workaround: Check your clock manually and read [[Other Operating Systems#About_Ubuntu|About Ubuntu]] (stale mirror attack). ([https://bugs.launchpad.net/launchpad/+bug/716535 Bug #716535: Please support Valid-Until in release files for security.ubuntu.com])
 * &lt;span style=&quot;background-color: {{Green}}&quot;&gt;'''Attack 3'''&lt;/span&gt; gets defeated, Whonix adds additional security.
 * &lt;span style=&quot;background-color: {{Green}}&quot;&gt;'''Attack 4'''&lt;/span&gt; gets defeated, Whonix adds additional security.
-* &lt;span style=&quot;background-color: {{Red}}&quot;&gt;'''Attack 5'''&lt;/span&gt; is a general Tor problem, which can not be solved by Whonix and which is unsolved in other projects as well. Since host, Whonix-Gateway and Whonix-Workstation time all differ, this attack at least becomes harder against Whonix.
+* &lt;span style=&quot;background-color: {{Red}}&quot;&gt;'''Attack 5'''&lt;/span&gt; is a general Tor problem, which can not be solved by Whonix and which is unsolved in other projects as well. Since host, Whonix-Gateway and Whonix-Workstation time all differ, at least this attack becomes harder against Whonix.
 
 When the user powers on Whonix-Gateway and the host time is too much off, it will not be able to connect to the Tor network. It is advised, when powering on Whonix-Gateway, to check that the host time is no more than 1 hour in past or more than 3 hour in future. Otherwise Tor will be unable to connect.&lt;ref&gt;https://lists.torproject.org/pipermail/tor-talk/2012-February/023264.html&lt;/ref&gt;
 
@@ -18650,7 +18653,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Design]]</text>
-      <sha1>lalw0jazhr223xfvau9rt0pk1p0x2zz</sha1>
+      <sha1>3408accyi649hhgjcp4z5ps14xbpl15</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -55435,14 +55438,15 @@ Many thanks to Tails team for their discussion on the topic of password managers
     <ns>0</ns>
     <id>685</id>
     <revision>
-      <id>8043</id>
-      <parentid>8033</parentid>
-      <timestamp>2014-06-08T15:55:59Z</timestamp>
+      <id>8055</id>
+      <parentid>8054</parentid>
+      <timestamp>2014-06-10T09:57:04Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <comment>shared folder instruction brushup</comment>
-      <text xml:space="preserve" bytes="9339">{{Header}}
+      <comment>/* KVM Setup Instructions */</comment>
+      <text xml:space="preserve" bytes="9638">{{Header}}
 {{#seo:
 |description=Using Whonix with KVM instead of VirtualBox
 }}
@@ -55492,6 +55496,18 @@ sudo apt-get install virt-manager
 &lt;/pre&gt;
 
 Make sure you use the qcow2 images that are provided by the Whonix project instead of rolling your own. &lt;ref&gt;As in, manually converting them from .ova to .qcow2 is no longer recommended, since you can download .qcow images from the Whonix project.&lt;/ref&gt; They contain important performance optimizations. &lt;ref&gt;As per [https://github.com/Whonix/Whonix/blob/master/build-steps.d/2400_convert-img-to-qcow2 build-steps.d/2400_convert-img-to-qcow2], these are &quot;-o cluster_size=2M&quot; and &quot;-o preallocation=metadata&quot;.&lt;/ref&gt; (Unless you [[Dev/Build_Documentation|created them from source]]. &lt;ref&gt;Because then you have the same performance optimizations.&lt;/ref&gt;)
+
+Make sure folder {{Code|/var/lib/libvirt/images/}} exists.
+
+&lt;pre&gt;
+sudo mkdir -p /var/lib/libvirt/images/
+&lt;/pre&gt;
+
+Do not use {{Code|unxz}}! Extract the images using {{Code|tar}} to {{Code|/var/lib/libvirt/images/}}.
+
+&lt;pre&gt;
+sudo tar xvf Whonix-Gateway-8.2.qcow2.xz -C /var/lib/libvirt/images/
+&lt;/pre&gt;
 
 Before starting the new vm wizard we must create an internal isolated network that connects the workstation with the gateway.
 
@@ -55598,7 +55614,7 @@ sudo nano /etc/fstab
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>3jvxdo82yxr3b0fcsmpwuqna1gui54u</sha1>
+      <sha1>1jzkppel8qthehcit9cemojw0v10fwk</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
