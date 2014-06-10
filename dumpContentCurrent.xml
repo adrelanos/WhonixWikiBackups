@@ -15623,15 +15623,15 @@ udisks --show-info /dev/cdrom
     <ns>0</ns>
     <id>132</id>
     <revision>
-      <id>7687</id>
-      <parentid>5862</parentid>
-      <timestamp>2014-05-04T12:39:58Z</timestamp>
+      <id>8057</id>
+      <parentid>8056</parentid>
+      <timestamp>2014-06-10T11:02:48Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Misc */</comment>
-      <text xml:space="preserve" bytes="6978">{{Header}}
+      <comment>/* Test on Whonix-Gateway */</comment>
+      <text xml:space="preserve" bytes="7260">{{Header}}
 {{#seo:
 |description=Help Testing Whonix
 }}
@@ -15769,31 +15769,65 @@ sudo service kdm start
 == Test on Whonix-Gateway ==
 Check Tor version.
 
-&lt;pre&gt;sudo tor --version&lt;/pre&gt;
+&lt;pre&gt;
+sudo tor --version
+&lt;/pre&gt;
 
 Check obfsproxy version. Must include obfs3.
 
-&lt;pre&gt;obfsproxy -h&lt;/pre&gt;
+&lt;pre&gt;
+obfsproxy -h
+&lt;/pre&gt;
 
-Check the logs.
+Check Tor logs.
 
-&lt;pre&gt;less /var/log/tor/log&lt;/pre&gt;
+&lt;pre&gt;
+less /var/log/tor/log
+&lt;/pre&gt;
+
+Check Tor warnings.
+
+&lt;pre&gt;
+grep warn /var/log/tor/log
+&lt;/pre&gt;
+
+The message {{Code2|[warn] Socks version 71 not recognized. (Tor is not an http proxy.)}} can be ignored.
+
+Check clock skew.
+
+&lt;pre&gt;
+grep clock /var/log/tor/log
+&lt;/pre&gt;
 
 Test if arm is fully functional.
 
-&lt;pre&gt;sudo arm&lt;/pre&gt;
+&lt;pre&gt;
+arm
+&lt;/pre&gt;
 
 Test if arm's new identity function is working.
 
-&lt;pre&gt;.&lt;/pre&gt;
+&lt;pre&gt;
+.
+&lt;/pre&gt;
 
 After logging in you should see Whonix help/welcome/disclaimer message.
 
-&lt;pre&gt;.&lt;/pre&gt;
+&lt;pre&gt;
+.
+&lt;/pre&gt;
 
-Test connecting to an obfsproxy bridge. Check /var/log/syslog for AppArmor error messages.
+Test connecting to an obfsproxy bridge.
 
-&lt;pre&gt;.&lt;/pre&gt;
+&lt;pre&gt;
+.
+&lt;/pre&gt;
+
+Check /var/log/syslog for AppArmor error messages.
+
+&lt;pre&gt;
+grep DENIED /var/log/syslog
+&lt;/pre&gt;
 
 == Test Whonix-Workstation ==
 
@@ -15955,7 +15989,7 @@ See [[Dev/Leak Tests]].
 {{Footer}}
 
 [[Category:Development]] [[Category:Design]] [[Category:Documentation]]</text>
-      <sha1>qtjx9wup1g8spi924aiak3j8dyj9npu</sha1>
+      <sha1>qfh2ykrhdl5nrbl4rzsugzt6jeyahcc</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
