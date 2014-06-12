@@ -434,15 +434,14 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
     <ns>10</ns>
     <id>15</id>
     <revision>
-      <id>7948</id>
-      <parentid>7946</parentid>
-      <timestamp>2014-05-28T07:22:30Z</timestamp>
+      <id>8062</id>
+      <parentid>7948</parentid>
+      <timestamp>2014-06-12T21:26:42Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
       <text xml:space="preserve" bytes="1508">&lt;br /&gt;&lt;hr&gt;&lt;font size=&quot;-3&quot;&gt;[[Special:UserLogin|Log in]] | [[Special:OpenIDLogin|OpenID]] | [[Contact|Contact]] | [[Impressum]] | [[Datenschutz|Datenschutz]] | [[Disclaimer|Haftungsausschluss]] | [[Investors]] | [[Donate]]
-[https://www.whonix.org{{localurl:{{FULLPAGENAME}}}} https] | &lt;html&gt;&lt;a class=&quot;link-https&quot; href=&quot;http://xxxxxxxxxxh5kyrx.onion&lt;/html&gt;{{localurl:{{FULLPAGENAME}}}}&lt;html&gt;&quot; rel=&quot;nofollow&quot;&gt;.onion&lt;/a&gt;&lt;/html&gt; &lt;sup&gt;[[Forcing .onion on Whonix.org|[note]]]&lt;/sup&gt; | [http://whonix.org.nyud.net{{localurl:{{FULLPAGENAME}}}} Mirror] | [https://kkkkkkkkkk63ava6.tor2web.org{{localurl:{{FULLPAGENAME}}}} Mirror] | Share: {{Share}}
+[https://www.whonix.org{{localurl:{{FULLPAGENAME}}}} https] | &lt;html&gt;&lt;a class=&quot;link-https&quot; href=&quot;http://xxxxxxxxxxh5kyrx.onion&lt;/html&gt;{{localurl:{{FULLPAGENAME}}}}&lt;html&gt;&quot; rel=&quot;nofollow&quot;&gt;.onion&lt;/a&gt;&lt;/html&gt; &lt;sup&gt;[[Forcing .onion on Whonix.org|[note]]]&lt;/sup&gt; | [http://whonix.org.nyud.net{{localurl:{{FULLPAGENAME}}}} Mirror] | [https://xxxxxxxxxxh5kyrx.tor2web.org{{localurl:{{FULLPAGENAME}}}} Mirror] | Share: {{Share}}
 &lt;!--
 inspired by http://aboli.sh/
 @cnpirates ssl(tor) ssl(i2p) coralcdn .sdns .onion .i2p--&gt;
@@ -451,7 +450,7 @@ This is a wiki. Want to improve this page? See [https://github.com/Whonix/Whonix
 
 Whonix (&lt;html&gt;&lt;a href=&quot;https://plus.google.com/108150429836421683225&quot; rel=&quot;publisher&quot; /&gt;g+&lt;/a&gt;&lt;/html&gt;) is a [http://www.openinventionnetwork.com/licensees.php licensee] of the Open Invention Network. Unless otherwise noted above, content of this  page is [[Whonix:Copyrights|copyrighted]] and licensed under the same Free (as in speech) [https://github.com/Whonix/Whonix/blob/master/debian/copyright license] as Whonix itself.
 &lt;/font&gt;</text>
-      <sha1>ck7y6um6ydi7kf0k8799wcg7h32h4so</sha1>
+      <sha1>1cfglt9iayhgi4gbpx34ng43l4wxrmm</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -49969,14 +49968,15 @@ ii  zsh-common            5.0.2-4         all             architecture independe
     <ns>10</ns>
     <id>491</id>
     <revision>
-      <id>8001</id>
-      <parentid>8000</parentid>
-      <timestamp>2014-06-04T21:02:02Z</timestamp>
+      <id>8061</id>
+      <parentid>8001</parentid>
+      <timestamp>2014-06-12T16:34:07Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="2525">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
+      <comment>/* Get the Source Code */</comment>
+      <text xml:space="preserve" bytes="2625">&lt;noinclude&gt;{{Header}}&lt;/noinclude&gt;
 == Get the Source Code ==
 Install git and get the source code from the git repository.&lt;ref&gt;From https://github.com/adrelanos/Whonix and not from https://github.com/Whonix/Whonix, because only adrelanos/Whonix contains git tags of the testers-only version.&lt;/ref&gt;
 
@@ -49985,7 +49985,11 @@ Install git and get the source code from the git repository.&lt;ref&gt;From http
 sudo apt-get install git curl
 
 ## Get source code.
+## Whonix 8 (stable)
 git clone https://github.com/Whonix/Whonix
+
+## Whonix 9 (unstable)
+git clone --recursive https://github.com/Whonix/Whonix
 &lt;/pre&gt;
 
 Remember it's '''W'''honix, not '''w'''honix! If you are prompted for a username for github, it means you have mistyped the web address.
@@ -50068,7 +50072,7 @@ Build Documentation Choose Version
 &lt;references /&gt;
 {{Footer}}
 &lt;/noinclude&gt;</text>
-      <sha1>ayuoqogftmwy7anfgvr4uusib0ek9rb</sha1>
+      <sha1>8cd7zg5kkfi9tpu556ix57wqab8gafx</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
