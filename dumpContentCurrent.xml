@@ -56233,14 +56233,14 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
     <ns>0</ns>
     <id>691</id>
     <revision>
-      <id>8060</id>
-      <parentid>8059</parentid>
-      <timestamp>2014-06-12T04:32:44Z</timestamp>
+      <id>8064</id>
+      <parentid>8063</parentid>
+      <timestamp>2014-06-12T22:27:14Z</timestamp>
       <contributor>
         <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* Fix subnet range in KVM instructions */</comment>
-      <text xml:space="preserve" bytes="29581">{{Header}}
+      <comment>archived thread</comment>
+      <text xml:space="preserve" bytes="31542">{{Header}}
 {{#seo:
 |description=Development Notes for adding KVM support to Whonix.
 }}
@@ -56261,7 +56261,7 @@ As soon as all blockers have been sorted out. We could recommend using [[KVM]] i
 
 = Non-Blockers =
 
-==Automated Exporting/Cloning of virtual machines==
+==Exporting/Cloning of virtual machines==
 
 Important links:
 
@@ -56269,9 +56269,74 @@ http://libvirt.org/sources/virshcmdref/html-single/
 
 https://unix.stackexchange.com/questions/8351/how-to-create-a-dupe-of-a-kvm-libvirt-virt-manager-vm
 
+Archived thread SE
+
+&lt;pre&gt;
+
+I'm a bit lost with virt-manager / libvirt / KVM.
+
+I've got a working KVM VM (Windows XP) which works nicely.
+
+The VM is backed by a 4GB file or so (a .img).
+
+Now I want to do something very simple: I want to duplicate my VM.
+
+I thought &quot;OK, no problem, let's copy the 4GB file and copy the XML&quot; file.
+
+But then the libvirt FAQ states in all uppercase: &quot;you SHOULD NOT CARE WHERE THE XML IS STORED&quot;
+
+http://wiki.libvirt.org/page/FAQ
+
+OK fine, I shouldn't care. But then how do I duplicate my VM?
+
+I want to create a new VM that is a copy of that VM.
+&lt;/pre&gt;
+
+&lt;pre&gt;
+
+The most convenient is simply:
+
+# virt-clone --connect=qemu://example.com/system -o this-vm -n that-vm --auto-clone
+
+Which will make a copy of this-vm, named that-vm, and takes care of duplicating storage devices. Nothing new here except detail.
+
+More to the point, What the FAQ is saying is that the XML domain descriptions are not directly editable, you need to go through libvirt. To complete the steps taken by the virt-clone command, you could:
+
+# You cannot &quot;clone&quot; a running vm, stop it.  suspend and destroy
+# are also valid options for less graceful cloning
+virsh shutdown this.vm
+
+# copy the storage.
+cp /var/lib/libvirt/images/{this-vm,that-vm}.img
+
+# dump the xml for the original
+virsh dumpxml this-vm &gt; /tmp/that-vm.xml
+
+# hardware addresses need to be removed, libvirt will assign
+# new addresses automatically
+sed -i /uuid/d /tmp/that-vm.xml
+sed -i '/mac address/d' /tmp/that-vm.xml
+
+# and actually rename the vm: (this also updates the storage path)
+sed -i s/this-vm/that-vm /tmp/that-vm.xml
+
+# finally, create the new vm
+virsh define /tmp/that-vm.xml
+virsh start this-vm
+virsh start that-vm
+
+&lt;/pre&gt;
+
+&lt;pre&gt;# dump the xml for the virtual isolated network
+virsh net-dumpxml whonix &gt; /tmp/whonix.xml
+
+# hardware addresses need to be removed, libvirt will assign
+# new addresses automatically
+sed -i /uuid/d /tmp/whonix.xml
+sed -i '/mac address/d' /whonix.xml
+&lt;/pre&gt;
+
 http://linux.die.net/man/1/virt-clone
-
-
 
 == Document: how to leave KVM when no X is running? ==
 Situation... User is in terminal in a VM... No X is running (&quot;sudo service kdm stop&quot;). User wants to switch back to the host... How to do this?
@@ -56787,7 +56852,7 @@ Does not seem to be a valid or accepted parameter by libvirt as its always sanit
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>22t2nbzxtsjdu0tj6g3c2tcbn3ckgbd</sha1>
+      <sha1>3866fhmtathhoge7uiztuq1ka0jodmq</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
