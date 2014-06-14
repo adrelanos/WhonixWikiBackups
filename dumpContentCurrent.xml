@@ -56233,14 +56233,15 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
     <ns>0</ns>
     <id>691</id>
     <revision>
-      <id>8064</id>
-      <parentid>8063</parentid>
-      <timestamp>2014-06-12T22:27:14Z</timestamp>
+      <id>8065</id>
+      <parentid>8064</parentid>
+      <timestamp>2014-06-14T10:02:35Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <comment>archived thread</comment>
-      <text xml:space="preserve" bytes="31542">{{Header}}
+      <comment>/* How to disable KVMClock? */</comment>
+      <text xml:space="preserve" bytes="31711">{{Header}}
 {{#seo:
 |description=Development Notes for adding KVM support to Whonix.
 }}
@@ -56600,6 +56601,8 @@ In xml file add:
 &lt;timer name='kvmclock' present='no'/&gt;
 
 
+What does KVMClock do? &quot;kvmclock or KVM pvclock lets guests read the host’s wall clock time.&quot; This is bad. [http://rwmj.wordpress.com/2010/10/15/kvm-pvclock/ source]
+
 
 How to adjust KVM to have clock=vm on host.
 
@@ -56852,7 +56855,7 @@ Does not seem to be a valid or accepted parameter by libvirt as its always sanit
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>3866fhmtathhoge7uiztuq1ka0jodmq</sha1>
+      <sha1>oc58xdpa4z0aaq21lkwvcwg7j13u6kg</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
