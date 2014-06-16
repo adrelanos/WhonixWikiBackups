@@ -12607,15 +12607,14 @@ https://github.com/Whonix/Whonix/issues/131
     <ns>0</ns>
     <id>115</id>
     <revision>
-      <id>7876</id>
-      <parentid>7603</parentid>
-      <timestamp>2014-05-13T16:19:52Z</timestamp>
+      <id>8066</id>
+      <parentid>7876</parentid>
+      <timestamp>2014-06-16T08:40:55Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* New Instructions for Debian Wheezy */</comment>
-      <text xml:space="preserve" bytes="5628">{{Header}}
+      <comment>/* New Instructions for Debian Wheezy */ mouse integration works without virtualbox-guest-x11</comment>
+      <text xml:space="preserve" bytes="5642">{{Header}}
 {{#seo:
 |description=Instructions for installing VirtualBox Guest Additions in Whonix. Shared Folders, Mouse Integration, etc.
 }}
@@ -12643,13 +12642,12 @@ Searching&lt;ref&gt;http://packages.debian.org/search?searchon=names&amp;keyword
 &lt;pre&gt;
 sudo apt-get update &amp;&amp; sudo apt-get dist-upgrade
 
-## If you only want Shared Folder, for improved security,
+## If you only want Shared Folder, mouse integration, for improved security,
 ## you can try using only the next line, but not the line after next.
 ## You need kernel headers to be able to compile the kernel module
 sudo apt-get install --no-install-recommends virtualbox-guest-dkms virtualbox-guest-utils
 
-## If you want all features, such as dynamic resolution
-## and mouse integration.
+## If you want all features, such as dynamic resolution and shared clipboard
 sudo apt-get install virtualbox-guest-x11
 &lt;/pre&gt;
 
@@ -12726,7 +12724,7 @@ Safe and reboot. Done.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>aj92ait0062y9yv1mwf8cdr476os4w6</sha1>
+      <sha1>febto4gjfe2odqk6bl4c9kbq8ftyo0b</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
