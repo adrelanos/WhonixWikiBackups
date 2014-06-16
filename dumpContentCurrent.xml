@@ -6267,15 +6267,15 @@ See warnings above first. Set up Tor to use private and obfuscated [[bridges]]. 
     <ns>0</ns>
     <id>90</id>
     <revision>
-      <id>8013</id>
-      <parentid>7988</parentid>
-      <timestamp>2014-06-07T13:21:00Z</timestamp>
+      <id>8067</id>
+      <parentid>8013</parentid>
+      <timestamp>2014-06-16T10:10:33Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Riseup.net riseup.conf */</comment>
-      <text xml:space="preserve" bytes="12752">{{Header}}
+      <comment>/* securityKISS.com */</comment>
+      <text xml:space="preserve" bytes="12917">{{Header}}
 {{#seo:
 |description=Step by Step Instructions on how to set up VPNs in Conjunction with Whonix. Tor over VPN / VPN over Tor. VPN over Tor over VPN.
 }}
@@ -6453,16 +6453,22 @@ Address: 198.252.153.35
 &lt;/pre&gt;
 
 == securityKISS.com ==
-
 Unfortunately securityKISS.com drops many TCP and UDP ports besides ports 80 and 443. That limits its usefulness for testing purposes, such as [[Tunnel UDP over Tor]]. If you know a less restrictive free VPN provider, we'd be thankful for a comment.
 
 Install openvpn.
 
-&lt;pre&gt;apt-get install openvpn&lt;/pre&gt;
+&lt;pre&gt;
+sudo apt-get install openvpn
+&lt;/pre&gt;
 
-Register at securitykiss.com, login and download their OpenVPN package to /home/user. Unpack. The folder contains contains ca.cert, client.cert, client.key, README.txt (with list of their servers and ports). Rename the folder to securitykiss. Structure should be like /home/user/ca.cert etc.
+Register at securitykiss.com, login and download their OpenVPN package to {{Code|/home/user}}. Unpack. The folder contains contains {{Code|ca.cert}}, {{Code|client.cert}}, {{Code|client.key}}, {{Code|README.txt}} (with list of their servers and ports). Rename the folder to securitykiss. Structure should be like /home/user/ca.cert etc.
 
-''nano /etc/openvpn/client.conf'', edit server IP and port and past it. (It's almost only the default openvpn client.conf with minor changes.)
+&lt;pre&gt;
+kdesudo kwrite /etc/openvpn/client.conf
+sudo nano /etc/openvpn/client.conf
+&lt;/pre&gt;
+
+Paste the following content.
 
 &lt;pre&gt;
 ##############################################
@@ -6590,16 +6596,28 @@ verb 3
 ;mute 20
 &lt;/pre&gt;
 
+Edit server IP and port and paste it. (It's almost only the default openvpn {{Code|client.conf}} with minor changes.)
+
+Save.
+
 To initially start the VPN type:
 
-&lt;pre&gt;sudo /etc/init.d/openvpn start
-sudo openvpn /etc/openvpn/client.conf&lt;/pre&gt;
+&lt;pre&gt;
+sudo service openvpn start
+&lt;/pre&gt;
 
 After rebooting the VPN will be automatically started.
 
-If you do not wish to start the VPN automatically for some reason: ''nano /etc/default/openvpn''
+If you do not wish to start the VPN automatically for some reason:
 
-&lt;pre&gt;AUTOSTART==&quot;none&quot;&lt;/pre&gt;
+&lt;pre&gt;
+kdesudo kwrite /etc/default/openvpn
+sudo nano /etc/default/openvpn
+&lt;/pre&gt;
+
+&lt;pre&gt;
+AUTOSTART==&quot;none&quot;
+&lt;/pre&gt;
 
 DNS settings have not been considered for this securitykiss.com chapter.
 
@@ -6688,7 +6706,7 @@ You could try the [https://www.riseup.net/en/openvpn-linux#gnome riseup.net Open
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>iy2rz6lsm5cfdpob7lhmjn233p9a96g</sha1>
+      <sha1>k34fcbct20dblo2iyy5rhx9norrrs50</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
