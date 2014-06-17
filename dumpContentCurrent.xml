@@ -56249,15 +56249,15 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
     <ns>0</ns>
     <id>691</id>
     <revision>
-      <id>8065</id>
-      <parentid>8064</parentid>
-      <timestamp>2014-06-14T10:02:35Z</timestamp>
+      <id>8069</id>
+      <parentid>8068</parentid>
+      <timestamp>2014-06-17T16:28:21Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* How to disable KVMClock? */</comment>
-      <text xml:space="preserve" bytes="31711">{{Header}}
+      <comment>/* Blockers */</comment>
+      <text xml:space="preserve" bytes="32020">{{Header}}
 {{#seo:
 |description=Development Notes for adding KVM support to Whonix.
 }}
@@ -56268,13 +56268,29 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
 * [https://github.com/Whonix/Whonix/issues/121 KVM Support github ticket]
 
 = Blockers =
+== What is timer pit? ==
+What is timer pit?
+
+We are using.
+&lt;pre&gt;
+    &lt;timer name='kvmclock' present='no'/&gt;
+    &lt;timer name='hpet' present='no'/&gt;
+&lt;/pre&gt;
+
+But why are we using?
+&lt;pre&gt;
+    &lt;timer name='pit' tickpolicy='no'/&gt;
+&lt;/pre&gt;
+
+Why are we not using?
+&lt;pre&gt;
+    &lt;timer name='pit' present='no'/&gt;
+&lt;/pre&gt;
+
 == Fix subnet range in KVM instructions ==
 As found out by zweeble in https://www.whonix.org/forum/index.php/topic,328.0.html, subnet range must be adjusted to make KVM work.
 
 HulaHoop: I think until we can be sure that this is a problem it shouldn't be considered a blocker
-
-== Weaker warning against KVM in whonixcheck ==
-As soon as all blockers have been sorted out. We could recommend using [[KVM]] instructions.
 
 = Non-Blockers =
 
@@ -56574,6 +56590,11 @@ virt-xml-validate libvirt.xml
 Patrick will be happy to add this command to the build process when using --kvm (or --qemu?) switch. Scripting this should be simple and the build process could fail early and closed (break).
 
 = Answered Questions =
+== Weaker warning against KVM in whonixcheck ==
+As soon as all blockers have been sorted out. We could recommend using [[KVM]] instructions.
+
+Done.
+
 == Leak Tests? ==
 [[HulaHoop1]] sorted that out in [[Special:AWCforum/st/id306/]].
 
@@ -56871,7 +56892,7 @@ Does not seem to be a valid or accepted parameter by libvirt as its always sanit
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>oc58xdpa4z0aaq21lkwvcwg7j13u6kg</sha1>
+      <sha1>9dmppu8jbeiysi204l4d21vmpdysd8l</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
