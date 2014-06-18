@@ -23955,15 +23955,15 @@ Some real world examples that are '''protected by using Whonix''':
     <ns>0</ns>
     <id>218</id>
     <revision>
-      <id>7611</id>
-      <parentid>7377</parentid>
-      <timestamp>2014-04-28T10:45:32Z</timestamp>
+      <id>8081</id>
+      <parentid>8080</parentid>
+      <timestamp>2014-06-18T09:49:21Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Press */</comment>
-      <text xml:space="preserve" bytes="7247">{{Header}}
+      <comment>/* October 2012 - Discussion */</comment>
+      <text xml:space="preserve" bytes="7067">{{Header}}
 {{#seo:
 |description=Security Reviews and Feedback, Whonix in the Media
 }}
@@ -24020,13 +24020,11 @@ Old questions on torproject.org:
 
 Unsorted:
 
-* [http://utup22qsb6ebeejs.onion/?x=entry:entry120219-220943 &quot;My Hidden Blog&quot;]; (adrelanos) small blog entry; unfortunately not much information or feedback
 * [https://thepiratebay.se/tag/torbox Whonix on theprivatebay.de]; (adrelanos) Interesting but pointless imo. 6 seeders right now in total. People should not even trust us but they trust the packager of that torrent. We are not against sharing through torrent. It's all Free Software. As long we do not offer trusted and gpg signed builds, however I recommend against downloading through torrent.
 * [https://encrypted.google.com/search?q=site%3Awilderssecurity.com+TorBOX Whonix on wilderssecurity.com]; few threads
 * [http://ra.fnord.at/2011/05/easy-and-secure-anonymous-internet-usage/ ra's blog]; Search for &quot;TorBOX that they have&quot;.; Negative feedback.
 * LulzSec / AntiSecOp: [https://www.facebook.com/notes/lulzsec/want-to-be-a-ghost-on-the-internet/230293097062823?_fb_noscript=1 Want to be a ghost on the internet?] or google for 'Want to be a ghost on the internet?'; Whonix (TorBOX) is a part of their instructions.
 * seclist.us: [http://www.seclist.us/2012/03/torbox-v-013-multi-vm-anonymity-setup.html Whonix V-0.1.3 - Multi-VM anonymity setup using Tor's Transparent Proxy]
-* [http://utup22qsb6ebeejs.onion/?x=entry:entry120401-121133 &quot;My Hidden Blog&quot;]: longer positive review
 * [http://www.reddit.com/r/TOR/comments/tyabf/torbox_critical_issue_help/ reddit] (This only applied to 0.1.3, was announced, workaround provided and fixed since 0.2.0)
 
 == October 2012 - Whonix 0.4.5 release announcement ==
@@ -24042,10 +24040,7 @@ Unsorted:
 * [https://tails.boum.org/forum/Are_hardware_serial_numbers_hidden_in_TAILS__63__/?updated#comment-36536cef25dd56a09043bc8bee85681e Are hardware serial numbers hidden in TAILS?]
 * Qubes OS Mailing List: [https://groups.google.com/forum/?fromgroups=#!topic/qubes-devel/aJGrmlkwO3M qubes vs whonix virtualization solution] - Summary: Qubes OS would be safer than VirtualBox. True. Other than that, no complaints.
 * Qubes OS Mailing List: [https://groups.google.com/forum/?fromgroups=#!topic/qubes-devel/aJGrmlkwO3M Whonix: VirtualBox vs Qubes OS] Summary: agreed, that Qubes OS would be safer than VirtualBox.
-
-Official:
-
-* [https://sourceforge.net/p/whonix/discussion/general/ Whonix Offical User Help Forum]
+* [https://sourceforge.net/p/whonix/discussion/general/ OLD Whonix User Help Forum]
 
 == Press ==
 
@@ -24054,6 +24049,7 @@ Official:
 * [http://www.signalnetworks.co.uk/whonix-the-all-tor-anonymous-platform/ signalnetworks.co.uk: Whonix- The all Tor anonymous platform]
 * [http://www.theregister.co.uk/2012/11/13/whonix/ The Register: Devs cook up 'leakproof' all-Tor untrackable platform]
 * [http://www.techradar.com/news/software/operating-systems/which-linux-distro-is-best-for-protecting-your-privacy--1192771 Which Linux distro is best for protecting your privacy?]
+* [http://www.wired.com/2014/06/be-anonymous-online/ How to Anonymize Everything You Do Online]
 
 == Newer ==
 
@@ -24062,7 +24058,7 @@ Sorry, we didn't add any more recent ones. There were simply to many to list the
 {{Footer}}
 
 [[Category:Design]]</text>
-      <sha1>7ifa9ndaehuntwgtvbcgczvgnuhqgrf</sha1>
+      <sha1>q9jamf7b8lpxd60j0pa01gc7x9aqfya</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -56249,15 +56245,14 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
     <ns>0</ns>
     <id>691</id>
     <revision>
-      <id>8069</id>
-      <parentid>8068</parentid>
-      <timestamp>2014-06-17T16:28:21Z</timestamp>
+      <id>8078</id>
+      <parentid>8077</parentid>
+      <timestamp>2014-06-18T09:34:40Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Blockers */</comment>
-      <text xml:space="preserve" bytes="32020">{{Header}}
+      <text xml:space="preserve" bytes="35431">{{Header}}
 {{#seo:
 |description=Development Notes for adding KVM support to Whonix.
 }}
@@ -56268,6 +56263,27 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
 * [https://github.com/Whonix/Whonix/issues/121 KVM Support github ticket]
 
 = Blockers =
+== xml does not validate ==
+&lt;pre&gt;
+virt-xml-validate whonix_gateway.xml
+Relax-NG validity error : Extra element clock in interleave
+whonix_gateway.xml:15: element clock: Relax-NG validity error : Element domain failed to validate content
+whonix_gateway.xml fails to validate
+&lt;/pre&gt;
+
+&lt;pre&gt;
+virt-xml-validate whonix_workstation.xml 
+Relax-NG validity error : Extra element clock in interleave
+whonix_workstation.xml:15: element clock: Relax-NG validity error : Element domain failed to validate content
+whonix_workstation.xml fails to validate
+&lt;/pre&gt;
+
+&lt;pre&gt;
+virt-xml-validate whonix_network.xml 
+whonix_network.xml:1: element network: Relax-NG validity error : Invalid attribute connections for element network
+whonix_network.xml fails to validate
+&lt;/pre&gt;
+
 == What is timer pit? ==
 What is timer pit?
 
@@ -56388,6 +56404,9 @@ https://wiki.debian.org/DebianKVMGuests
 Probably needs to be scripted in the build process for the KVM version in particular. The corresponding setting for it should be included outside in the xml file too.
 
 == How to get virtio running for storage? ==
+=== Blocked by ===
+Before [[Dev/KVM#How_to_check_if_virtio_storage_access_is_in_use_or_an_eventually_existing_fallback_driver.3F|How to check if virtio storage access is in use or an eventually existing fallback driver?]] is not answered, working on this makes little sense.
+
 === Initial Instructions ===
 Virtio-blk now works
 
@@ -56429,7 +56448,7 @@ So when there is a kernel upgrade, /boot/grub/grub.cfg will be regenerated and t
 Patrick asks: How do we apply these settings in a way, so they do survive an &quot;sudo update-grub&quot; (which is automatically run on every kernel upgrade).
 
 === System gets unbootable? ===
-Patrick comments: After editing  /boot/grub/grub.cfg, in worst case, maybe, the system will be no longer bootable then. You can test/simulate this case by running &quot;sudo update-grub&quot;. Please try.
+Patrick comments: After editing /boot/grub/grub.cfg, in worst case, maybe, the system will be no longer bootable then. You can test/simulate this case by running &quot;sudo update-grub&quot;. Please try.
 
 HulaHoop comments: I found a solution, one that survives kernel and grub upgrades: http://grumpymole.blogspot.nl/2007/05/ubuntu-how-to-edit-grub-boot-parameters.html
 
@@ -56456,6 +56475,10 @@ The best way to address this is to change the &quot;#kopt...&quot; line in /boot
     # kopt=root=UUID=fccafcc7-d7cc-4594-9459-a8f0db7b9f7f ro
 
 Add the parameter changes to the end of the line &quot;#kopt...&quot;. These parameters will then be automatically added to any new kernel entries and should also survive an upgrade of grub&lt;/pre&gt;
+
+Patrick comments: Have you tested this?
+
+Patrick comments: I am not sure editing /boot/grub/grub.cfg is a robust solution. We cannot directly ship a /boot/grub/grub.cfg in a deb, because it is an auto generated file by grub-mkconfig. (When that deb was updated, /boot/grub/grub.cfg would be outdated, system unbootable, you know?) Maybe a package could be created, that appends /boot/grub/grub.cfg, but still, any solution not touching /boot/grub/grub.cfg should be preferred. If we could edit/extend /etc/default/grub, /etc/default/grub.d or /etc/grub.d, that would be much more robust. What is the official suggestion by kvm devs to solve this as a distro?
 
 === Virtio Block Latency ===
 Not really important but is interesting: &lt;br /&gt;
@@ -56588,6 +56611,32 @@ virt-xml-validate libvirt.xml
 &lt;/pre&gt;
 
 Patrick will be happy to add this command to the build process when using --kvm (or --qemu?) switch. Scripting this should be simple and the build process could fail early and closed (break).
+
+== virt-v2v ==
+=== How to install virt-v2v on Debian? ===
+virt-v2v is not yet in Debian. [https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=743261 wishlist request]
+
+=== Can we copy and paste virt-v2v in meanwhile? ===
+Since virt2v2 is not yet in Debian, maybe it is a single script that can replace the [https://github.com/Whonix/Whonix/blob/master/libvirt/whonix_libvirt_import whonix_libvirt_import] script?
+
+=== How to export a VM using virt-v2v? ===
+This is what probably must be done in the build script. We got qcow2 files and xml. What command must be used to export a VM?
+
+=== How to export a VM using virt-v2v? ===
+This is probably what users have to do to import. What command must be used to import a VM?
+
+== libguestfs import/export feature request ==
+Let's together write a feature request for an import/export feature for libguestfs, similar to VirtualBox's import/export feature. Then post in [https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization%20Tools libguestfs's bug tracker].
+
+== virt-manager import/export feature request ==
+Let's together write a feature request for an import/export feature for virt-manager, similar to VirtualBox's import/export feature. Then post in [https://bugzilla.redhat.com/buglist.cgi?product=Virtualization%20Tools&amp;classification=Community&amp;component=virt-manager&amp;bug_status=NEW&amp;bug_status=ASSIGNED virt-manager's bug tracker].
+
+== write generic import script ==
+Maybe write generic import script as per: &lt;br /&gt;
+https://www.whonix.org/forum/index.php/topic,159.msg2412.html#msg2412
+
+== management tools ==
+There are quote some [http://www.linux-kvm.org/page/Management_Tools management tools]. Are any of these useful for Whonix's use case?
 
 = Answered Questions =
 == Weaker warning against KVM in whonixcheck ==
@@ -56892,7 +56941,7 @@ Does not seem to be a valid or accepted parameter by libvirt as its always sanit
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>9dmppu8jbeiysi204l4d21vmpdysd8l</sha1>
+      <sha1>s5l587pfp7hmmuxzyniru4xpngk44ni</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
