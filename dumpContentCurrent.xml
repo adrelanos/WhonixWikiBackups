@@ -56245,14 +56245,15 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
     <ns>0</ns>
     <id>691</id>
     <revision>
-      <id>8078</id>
-      <parentid>8077</parentid>
-      <timestamp>2014-06-18T09:34:40Z</timestamp>
+      <id>8086</id>
+      <parentid>8085</parentid>
+      <timestamp>2014-06-18T10:19:16Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="35431">{{Header}}
+      <comment>/* xml creation */</comment>
+      <text xml:space="preserve" bytes="36038">{{Header}}
 {{#seo:
 |description=Development Notes for adding KVM support to Whonix.
 }}
@@ -56309,8 +56310,33 @@ As found out by zweeble in https://www.whonix.org/forum/index.php/topic,328.0.ht
 HulaHoop: I think until we can be sure that this is a problem it shouldn't be considered a blocker
 
 = Non-Blockers =
+== virt-image ==
+=== Users Expected Scenario ===
+&lt;font size=-3&gt;[https://fedoraproject.org/wiki/Features/ApplianceTools#Users_Expected_Scenario source]&lt;/font&gt;
 
-==Exporting/Cloning of virtual machines==
+&lt;pre&gt;
+sudo apt-get install virt-manager
+&lt;/pre&gt;
+
+Extract Whonix-Gateway-8.3.qcow2.xz.
+
+Import.
+
+&lt;pre&gt;
+virt-image Whonix-Gateway-8.3.xml
+&lt;/pre&gt;
+
+Start Whonix-Gateway in virt-manager.
+
+=== xml creation ===
+How can we create an xml file, that can be imported using virt-image?
+
+Possible help: &lt;br /&gt;
+https://fedoraproject.org/wiki/Features/ApplianceTools#Release_Engineering
+
+Maybe we need to learn from their fedora-aos.xml to structure whonix xml.
+
+== Exporting/Cloning of virtual machines ==
 
 Important links:
 
@@ -56941,7 +56967,7 @@ Does not seem to be a valid or accepted parameter by libvirt as its always sanit
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>s5l587pfp7hmmuxzyniru4xpngk44ni</sha1>
+      <sha1>s552bp64fxjc34u2mfdzb6n3hvhxqdy</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
