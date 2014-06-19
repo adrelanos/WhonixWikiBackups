@@ -3332,15 +3332,15 @@ If you don't get into trouble, by letting others to know, that you like or use W
     <ns>0</ns>
     <id>59</id>
     <revision>
-      <id>7693</id>
-      <parentid>7692</parentid>
-      <timestamp>2014-05-05T20:27:38Z</timestamp>
+      <id>8100</id>
+      <parentid>7693</parentid>
+      <timestamp>2014-06-19T11:26:17Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* If using Tor is dangerous in your country */</comment>
-      <text xml:space="preserve" bytes="8890">{{Header}}
+      <comment>/* Using obfuscated, (private) and/or ordinary bridges */</comment>
+      <text xml:space="preserve" bytes="8876">{{Header}}
 &lt;!--
 Copyright:
 
@@ -3407,7 +3407,7 @@ See also [[Hide Tor and Whonix from your ISP]]!
 
 = How to use bridges in Whonix =
 == Using obfuscated, (private) and/or ordinary bridges ==
-Whonix does not yet include a {{Code|bridge mode}} that guides you through the process of setting up bridges before connecting to Tor. You must add bridges manually to {{Code2|/etc/tor/torrc}}.
+Whonix does not yet include a wizard that guides you through the process of setting up bridges before connecting to Tor. You must add bridges manually to {{Code2|/etc/tor/torrc}}.
 
 ({{Code|Private}}) Ordinary, {{Code|obfs2}} and {{Code|obfs3}} bridges can currently be configured on Whonix-Gateway the same way, they would be configured when not using Whonix, i.e. just like on a server without graphical user interface. Have a look at {{Code2|/etc/tor/torrc}} &lt;ref&gt;[https://github.com/Whonix/Whonix/blob/stable/whonix_gateway/etc/tor/torrc /etc/tor/torrc on github].&lt;/ref&gt;.
 
@@ -3510,7 +3510,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>macxlnffe6al441r13d9v94ubm36nzx</sha1>
+      <sha1>ill6zilg5kvtgywoxk4yylwoqt0wv6l</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -56245,15 +56245,15 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
     <ns>0</ns>
     <id>691</id>
     <revision>
-      <id>8097</id>
-      <parentid>8096</parentid>
-      <timestamp>2014-06-19T09:57:44Z</timestamp>
+      <id>8099</id>
+      <parentid>8098</parentid>
+      <timestamp>2014-06-19T11:15:39Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* virt-image */</comment>
-      <text xml:space="preserve" bytes="38118">{{Header}}
+      <comment>Preconfigured Shared Folders</comment>
+      <text xml:space="preserve" bytes="39932">{{Header}}
 {{#seo:
 |description=Development Notes for adding KVM support to Whonix.
 }}
@@ -56325,6 +56325,75 @@ Why are we not using?
 
 
 = Non-Blockers =
+== KVM Shared Folders ==
+To move data between the guest and host follow these steps.
+
+On the host.
+
+Run the following command in terminal (Start Menu -&gt; Applications -&gt; System -&gt; Terminal).
+
+&lt;pre&gt;
+sudo mkdir /mnt/shared
+&lt;/pre&gt;
+
+Enable shared folders in VirtManager go to.
+
+&lt;pre&gt;
+VirtManager -&gt; click once on virtual machine -&gt; Edit -&gt; Virtual Machine Details -&gt; Details -&gt;
+Add Hardware -&gt; File System
+&lt;/pre&gt;
+
+Set.
+
+Mode: Mapped &lt;ref&gt;The file sharing mode {{Code2|mapped}} is just an example, using squash or passthrough is possible by selecting them from the drop down menu.&lt;/ref&gt;
+
+Driver: Default
+
+Source Path: {{Code|/mnt/shared}}
+
+Target Path: {{Code|/mnt/shared}}
+
+Click finish. Done.
+
+In the VM.
+
+Run the following command in terminal (Start Menu -&gt; Applications -&gt; System -&gt; Terminal).
+
+&lt;pre&gt;
+sudo mount -t 9p -o trans=virtio shared /mnt/shared -oversion=9p2000.L
+&lt;/pre&gt;
+
+To automatically mount this every time at boot, open {{Code2|/etc/fstab}}.
+
+If you are using a graphical virtual machine.
+
+&lt;pre&gt;
+kdesudo kwrite /etc/fstab
+&lt;/pre&gt;
+
+Or if you are using a terminal-only virtual machine.
+
+&lt;pre&gt;
+sudo nano /etc/fstab
+&lt;/pre&gt;
+
+Add.
+
+&lt;pre&gt;
+shared /mnt/shared    9p  trans=virtio,version=9p2000.L,rw    0   0
+&lt;/pre&gt;
+
+Save.
+
+== Preconfigured Shared Folders ==
+Patrick asks: For better usability, should we add the necessary settings for shared folders by default to whonix_gateway.xml and whonix_workstation.xml?
+
+Patrick asks: Can you do this?
+
+Patrick comments: I could then, if kvm is detected (easy using virt-what), automatically mount the shared folder in Whonix VMs. Could be implemented into the [https://github.com/Whonix/shared-folder-help shared-folder-help] package.
+
+Patrick asks: If we decide to do so, what would be good default paths for the host shared folder? /mnt/shared_gw and /mnt/shared_ws?
+
 == Exporting/Cloning of virtual machines ==
 
 Important links:
@@ -57004,7 +57073,7 @@ http://blog.wikichoon.com/2014/04/deprecating-little-used-tool-virt-image1.html
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>t7s3sgrfs9tpxam9ldniv7srilbrpis</sha1>
+      <sha1>akuks1dz9vcfkgr3jmgsi104k7sru08</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
