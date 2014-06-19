@@ -56245,15 +56245,15 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
     <ns>0</ns>
     <id>691</id>
     <revision>
-      <id>8086</id>
-      <parentid>8085</parentid>
-      <timestamp>2014-06-18T10:19:16Z</timestamp>
+      <id>8097</id>
+      <parentid>8096</parentid>
+      <timestamp>2014-06-19T09:57:44Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* xml creation */</comment>
-      <text xml:space="preserve" bytes="36038">{{Header}}
+      <comment>/* virt-image */</comment>
+      <text xml:space="preserve" bytes="38118">{{Header}}
 {{#seo:
 |description=Development Notes for adding KVM support to Whonix.
 }}
@@ -56264,6 +56264,22 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
 * [https://github.com/Whonix/Whonix/issues/121 KVM Support github ticket]
 
 = Blockers =
+
+== Readme Commands and Warnings == 
+Until we compile and test a list of virsh commands needed for operating on vm templates and associated disk storage, we should shot release KVM version to the public.
+
+&lt;pre&gt;
+# virsh net-define [path]/whonix_network.xml
+Internal network 'Whonix' defined from network xml file residing in the following directory path.
+# virsh net-autostart Whonix
+Network 'Whonix' marked to be autostarted upon boot.
+# virsh net-start Whonix
+Network 'Whonix' has been started
+&lt;/pre&gt;
+
+
+Should be fixed now in git. kvmclock had to be under rtc for it to work. The Network xml validates on my machine without changes however. Please check if it works and post back.
+
 == xml does not validate ==
 &lt;pre&gt;
 virt-xml-validate whonix_gateway.xml
@@ -56288,6 +56304,9 @@ whonix_network.xml fails to validate
 == What is timer pit? ==
 What is timer pit?
 
+HulaHoop:
+Whatever it was, its now gone. I overlooked this by mistake.
+
 We are using.
 &lt;pre&gt;
     &lt;timer name='kvmclock' present='no'/&gt;
@@ -56304,38 +56323,8 @@ Why are we not using?
     &lt;timer name='pit' present='no'/&gt;
 &lt;/pre&gt;
 
-== Fix subnet range in KVM instructions ==
-As found out by zweeble in https://www.whonix.org/forum/index.php/topic,328.0.html, subnet range must be adjusted to make KVM work.
-
-HulaHoop: I think until we can be sure that this is a problem it shouldn't be considered a blocker
 
 = Non-Blockers =
-== virt-image ==
-=== Users Expected Scenario ===
-&lt;font size=-3&gt;[https://fedoraproject.org/wiki/Features/ApplianceTools#Users_Expected_Scenario source]&lt;/font&gt;
-
-&lt;pre&gt;
-sudo apt-get install virt-manager
-&lt;/pre&gt;
-
-Extract Whonix-Gateway-8.3.qcow2.xz.
-
-Import.
-
-&lt;pre&gt;
-virt-image Whonix-Gateway-8.3.xml
-&lt;/pre&gt;
-
-Start Whonix-Gateway in virt-manager.
-
-=== xml creation ===
-How can we create an xml file, that can be imported using virt-image?
-
-Possible help: &lt;br /&gt;
-https://fedoraproject.org/wiki/Features/ApplianceTools#Release_Engineering
-
-Maybe we need to learn from their fedora-aos.xml to structure whonix xml.
-
 == Exporting/Cloning of virtual machines ==
 
 Important links:
@@ -56645,6 +56634,17 @@ virt-v2v is not yet in Debian. [https://bugs.debian.org/cgi-bin/bugreport.cgi?bu
 === Can we copy and paste virt-v2v in meanwhile? ===
 Since virt2v2 is not yet in Debian, maybe it is a single script that can replace the [https://github.com/Whonix/Whonix/blob/master/libvirt/whonix_libvirt_import whonix_libvirt_import] script?
 
+HulaHoop: It is my opinion that we shelve the automated script idea completely and use virt-v2v when its possible/available. If virt-v2v does not work out, we should instead do the following: 1) ship multiple templates according to containment systems we want to support 2) A readme file with instructions on 
+[a] how to copy the sparse file properly to any location a user wants if they wish
+[b] how to introduce the sparse file into priviledged dirs like /var/lib..
+[c] how to import xml for machines
+[d] how to autostart the isolated network
+[e] how to edit xml files in the case that they want to use non-default paths
+
+The build process would be scripted to update the version number of the name and disk img xml fields and thats it. 
+
+The absence of an easy way to import a machine is too big of an issue. We cannot compensate for a shortcoming as big as this coming from upstream. It would take tremendous effort as we have seen and some people might not be happy that it doesn't do X. So I say we leave it as described above.
+
 === How to export a VM using virt-v2v? ===
 This is what probably must be done in the build script. We got qcow2 files and xml. What command must be used to export a VM?
 
@@ -56660,6 +56660,8 @@ Let's together write a feature request for an import/export feature for virt-man
 == write generic import script ==
 Maybe write generic import script as per: &lt;br /&gt;
 https://www.whonix.org/forum/index.php/topic,159.msg2412.html#msg2412
+
+A hellish solution and way too much work. Your time is spent better elsewhere. I'll use my time to get xml import validation working.
 
 == management tools ==
 There are quote some [http://www.linux-kvm.org/page/Management_Tools management tools]. Are any of these useful for Whonix's use case?
@@ -56744,6 +56746,12 @@ https://bugzilla.redhat.com/show_bug.cgi?id=783921#c6 &lt; This link provides th
 
 whonixcheck (since Whonix 8) would tell you if kvmclock is enabled. whonixcheck --verbose will tell you, that it isn't enabled.
 
+== Fix subnet range in KVM instructions ==
+As found out by zweeble in https://www.whonix.org/forum/index.php/topic,328.0.html, subnet range must be adjusted to make KVM work.
+
+HulaHoop: I think until we can be sure that this is a problem it shouldn't be considered a blocker
+
+
 == Leak ==
 * [https://www.whonix.org/forum/index.php/topic,243.msg1636.html New FIN ACK / RST ACK Leak Test]
 * [https://www.whonix.org/forum/index.php/topic,243.msg1636.html#msg1636 Reported by HulaHoop]
@@ -56779,6 +56787,35 @@ How to check, that KVM '''-rtc''' is set to '''clock=vm''' ?
 
 
 Does not seem to be a valid or accepted parameter by libvirt as its always sanitized from the xml file upon saving. But it is  accepted by QEMU directly. However I noticed that even with kvmclock enabled, I no longer see any change in a guest's time in response to a host skew of the time. In the recent past this was not true, as any change was immediately reflected in the Guest clock immediately. kvmclock on its own can be disabled  and confirmed to be so as outlined below.
+
+== virt-image ==
+=== Users Expected Scenario ===
+&lt;font size=-3&gt;[https://fedoraproject.org/wiki/Features/ApplianceTools#Users_Expected_Scenario source]&lt;/font&gt;
+
+&lt;pre&gt;
+sudo apt-get install virt-manager
+&lt;/pre&gt;
+
+Extract Whonix-Gateway-8.3.qcow2.xz.
+
+Import.
+
+&lt;pre&gt;
+virt-image Whonix-Gateway-8.3.xml
+&lt;/pre&gt;
+
+Start Whonix-Gateway in virt-manager.
+
+=== xml creation ===
+How can we create an xml file, that can be imported using virt-image?
+
+Possible help: &lt;br /&gt;
+https://fedoraproject.org/wiki/Features/ApplianceTools#Release_Engineering
+
+Maybe we need to learn from their fedora-aos.xml to structure whonix xml.
+
+Since virt-image has been deprecated, this is no option. Source: &lt;br /&gt;
+http://blog.wikichoon.com/2014/04/deprecating-little-used-tool-virt-image1.html
 
 = Archived Discussions =
 * [https://www.whonix.org/forum/index.php/topic,202.0/topicseen.html qcow2 with metadata preallocation file sizes]
@@ -56967,7 +57004,7 @@ Does not seem to be a valid or accepted parameter by libvirt as its always sanit
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>s552bp64fxjc34u2mfdzb6n3hvhxqdy</sha1>
+      <sha1>t7s3sgrfs9tpxam9ldniv7srilbrpis</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
