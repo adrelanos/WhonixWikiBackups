@@ -56245,15 +56245,15 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
     <ns>0</ns>
     <id>691</id>
     <revision>
-      <id>8099</id>
-      <parentid>8098</parentid>
-      <timestamp>2014-06-19T11:15:39Z</timestamp>
+      <id>8105</id>
+      <parentid>8104</parentid>
+      <timestamp>2014-06-20T09:06:18Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>Preconfigured Shared Folders</comment>
-      <text xml:space="preserve" bytes="39932">{{Header}}
+      <comment>/* xml does not validate */</comment>
+      <text xml:space="preserve" bytes="39871">{{Header}}
 {{#seo:
 |description=Development Notes for adding KVM support to Whonix.
 }}
@@ -56264,6 +56264,31 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
 * [https://github.com/Whonix/Whonix/issues/121 KVM Support github ticket]
 
 = Blockers =
+== xml does not validate ==
+&lt;pre&gt;
+virsh --version
+0.9.12.3
+&lt;/pre&gt;
+
+&lt;pre&gt;
+virt-xml-validate whonix_gateway.xml
+whonix_gateway.xml:24: element pm: Relax-NG validity error : Element domain has extra content: pm
+whonix_gateway.xml fails to validate
+&lt;/pre&gt;
+
+&lt;pre&gt;
+virt-xml-validate whonix_workstation.xml 
+whonix_workstation.xml:24: element pm: Relax-NG validity error : Element domain has extra content: pm
+whonix_workstation.xml fails to validate
+&lt;/pre&gt;
+
+&lt;pre&gt;
+virt-xml-validate whonix_network.xml 
+whonix_network.xml:1: element network: Relax-NG validity error : Invalid attribute connections for element network                                                                  
+whonix_network.xml fails to validate
+&lt;/pre&gt;
+
+kvmclock had to be under rtc for it to work. The Network xml validates on my machine without changes however. Please check if it works and post back.
 
 == Readme Commands and Warnings == 
 Until we compile and test a list of virsh commands needed for operating on vm templates and associated disk storage, we should shot release KVM version to the public.
@@ -56275,52 +56300,6 @@ Internal network 'Whonix' defined from network xml file residing in the followin
 Network 'Whonix' marked to be autostarted upon boot.
 # virsh net-start Whonix
 Network 'Whonix' has been started
-&lt;/pre&gt;
-
-
-Should be fixed now in git. kvmclock had to be under rtc for it to work. The Network xml validates on my machine without changes however. Please check if it works and post back.
-
-== xml does not validate ==
-&lt;pre&gt;
-virt-xml-validate whonix_gateway.xml
-Relax-NG validity error : Extra element clock in interleave
-whonix_gateway.xml:15: element clock: Relax-NG validity error : Element domain failed to validate content
-whonix_gateway.xml fails to validate
-&lt;/pre&gt;
-
-&lt;pre&gt;
-virt-xml-validate whonix_workstation.xml 
-Relax-NG validity error : Extra element clock in interleave
-whonix_workstation.xml:15: element clock: Relax-NG validity error : Element domain failed to validate content
-whonix_workstation.xml fails to validate
-&lt;/pre&gt;
-
-&lt;pre&gt;
-virt-xml-validate whonix_network.xml 
-whonix_network.xml:1: element network: Relax-NG validity error : Invalid attribute connections for element network
-whonix_network.xml fails to validate
-&lt;/pre&gt;
-
-== What is timer pit? ==
-What is timer pit?
-
-HulaHoop:
-Whatever it was, its now gone. I overlooked this by mistake.
-
-We are using.
-&lt;pre&gt;
-    &lt;timer name='kvmclock' present='no'/&gt;
-    &lt;timer name='hpet' present='no'/&gt;
-&lt;/pre&gt;
-
-But why are we using?
-&lt;pre&gt;
-    &lt;timer name='pit' tickpolicy='no'/&gt;
-&lt;/pre&gt;
-
-Why are we not using?
-&lt;pre&gt;
-    &lt;timer name='pit' present='no'/&gt;
 &lt;/pre&gt;
 
 
@@ -56857,6 +56836,28 @@ How to check, that KVM '''-rtc''' is set to '''clock=vm''' ?
 
 Does not seem to be a valid or accepted parameter by libvirt as its always sanitized from the xml file upon saving. But it is  accepted by QEMU directly. However I noticed that even with kvmclock enabled, I no longer see any change in a guest's time in response to a host skew of the time. In the recent past this was not true, as any change was immediately reflected in the Guest clock immediately. kvmclock on its own can be disabled  and confirmed to be so as outlined below.
 
+== What is timer pit? ==
+What is timer pit?
+
+HulaHoop:
+Whatever it was, its now gone. I overlooked this by mistake.
+
+We are using.
+&lt;pre&gt;
+    &lt;timer name='kvmclock' present='no'/&gt;
+    &lt;timer name='hpet' present='no'/&gt;
+&lt;/pre&gt;
+
+But why are we using?
+&lt;pre&gt;
+    &lt;timer name='pit' tickpolicy='no'/&gt;
+&lt;/pre&gt;
+
+Why are we not using?
+&lt;pre&gt;
+    &lt;timer name='pit' present='no'/&gt;
+&lt;/pre&gt;
+
 == virt-image ==
 === Users Expected Scenario ===
 &lt;font size=-3&gt;[https://fedoraproject.org/wiki/Features/ApplianceTools#Users_Expected_Scenario source]&lt;/font&gt;
@@ -57073,7 +57074,7 @@ http://blog.wikichoon.com/2014/04/deprecating-little-used-tool-virt-image1.html
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>akuks1dz9vcfkgr3jmgsi104k7sru08</sha1>
+      <sha1>cgv2g4vp4r8whbsr0v9l9cnun7x07xw</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
