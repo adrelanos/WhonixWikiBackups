@@ -56245,15 +56245,13 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
     <ns>0</ns>
     <id>691</id>
     <revision>
-      <id>8105</id>
-      <parentid>8104</parentid>
-      <timestamp>2014-06-20T09:06:18Z</timestamp>
+      <id>8106</id>
+      <parentid>8105</parentid>
+      <timestamp>2014-06-21T00:19:01Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* xml does not validate */</comment>
-      <text xml:space="preserve" bytes="39871">{{Header}}
+      <text xml:space="preserve" bytes="40091">{{Header}}
 {{#seo:
 |description=Development Notes for adding KVM support to Whonix.
 }}
@@ -56289,6 +56287,8 @@ whonix_network.xml fails to validate
 &lt;/pre&gt;
 
 kvmclock had to be under rtc for it to work. The Network xml validates on my machine without changes however. Please check if it works and post back.
+
+The virt-xml-validate I tested with is a newer version. Try updating to a more recent one and try again, I think it may be buggy or not updated enough to interpret new schema they may have added since .9x was released.
 
 == Readme Commands and Warnings == 
 Until we compile and test a list of virsh commands needed for operating on vm templates and associated disk storage, we should shot release KVM version to the public.
@@ -57074,7 +57074,7 @@ http://blog.wikichoon.com/2014/04/deprecating-little-used-tool-virt-image1.html
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>cgv2g4vp4r8whbsr0v9l9cnun7x07xw</sha1>
+      <sha1>p6k85xyaud0p74hu2i8vesqqksvb9zp</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
