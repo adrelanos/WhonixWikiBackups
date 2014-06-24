@@ -34947,14 +34947,15 @@ __NOTOC__
     <ns>0</ns>
     <id>288</id>
     <revision>
-      <id>5890</id>
-      <parentid>5694</parentid>
-      <timestamp>2014-02-27T13:59:54Z</timestamp>
+      <id>8126</id>
+      <parentid>8125</parentid>
+      <timestamp>2014-06-24T14:20:26Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="3986">{{Header}}
+      <comment>/* Wiki Page Updates */</comment>
+      <text xml:space="preserve" bytes="4148">{{Header}}
 {{#seo:
 |description=Design Documentation about Redistribution of Whonix
 }}
@@ -35046,6 +35047,13 @@ See [https://github.com/Whonix/whonix-developer-meta-files/tree/master/release R
 
 === Wiki Page Updates ===
 
+* wiki - only next time
+
+192.168.0.10 to 10.152.152.10 &lt;br /&gt;
+192.168.0.11 to 10.152.152.11 &lt;br /&gt;
+search for 192.168.0 &lt;br /&gt;
+search for netmask 255.255 &lt;br /&gt;
+
 * Check, if [[Manually Updating Tor Browser]] is still up to date. (If not, fixing is task of coders, not release manager.)
 * Update [[Download#Download_Whonix|Download Table]].
 * Update [[Download#Known_bugs|Known Bugs]].
@@ -35106,7 +35114,7 @@ Compress. Upload.
 {{Footer}}
 
 [[Category:Development]] [[Category:Design]]</text>
-      <sha1>56i190kg8cyndcrga6h0b8zjopo20l7</sha1>
+      <sha1>be09op7amqd7skn6iqf9xc1jjokc38m</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -38911,20 +38919,25 @@ There is an extra chapter about the [[Pre Install Advice#MAC Address|MAC address
     <ns>0</ns>
     <id>303</id>
     <revision>
-      <id>8115</id>
-      <parentid>7899</parentid>
-      <timestamp>2014-06-23T17:42:21Z</timestamp>
+      <id>8123</id>
+      <parentid>8122</parentid>
+      <timestamp>2014-06-24T14:18:24Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <comment>/* Whonix-Gateway */ fix address</comment>
-      <text xml:space="preserve" bytes="7801">{{Header}}
+      <comment>/* Control Port Filter Proxy */</comment>
+      <text xml:space="preserve" bytes="8009">{{Header}}
 {{#seo:
 |description=Control Port Filter Proxy - filtering dangerous Tor Control Port commands - Design Documentation
 }}
 
 = Control Port Filter Proxy =
+{{Testing}}
+
 == Introduction ==
+https://github.com/Whonix/control-port-filter
+
 Tor's control port has at least one, in context of Whonix, dangerous feature. Its &quot;GETINFO address&quot; and the answer to this request will be the real external IP of the Tor client. This can not be limited any other way, since the feature request [https://trac.torproject.org/projects/tor/ticket/8369 Option to limit information Tor's control port discloses] against Tor has not been implemented. By the way, this Tor control port feature makes also a [https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/BridgeFirewall Bridge Firewall] impossible. Therefore before Whonix {{Whonix6}}, Whonix-Workstation had no access to Tor's control port. This was because, Whonix-Workstation is not supposed to have an way of finding out its own external IP address.
 
 Before Whonix {{Whonix6}}, this also broke Tor Button's New Identity feature, which essentially sends &quot;SIGNAL NEWNYM&quot; to Tor's control port. While Tor Button's New Identity is still the only feature that was not available when using Tor Browser in Whonix, Tor Button in future will get more and more dependent on Tor's control port.
@@ -38941,14 +38954,18 @@ Therefore when Control Port Filter Proxy gets asked 'GETINFO net/listeners/socks
 
 For eventual further Tor control port access requirements by Tor Button, the configuration file of accepted commands has to be extended. If Tor Button would ever ask for anything which violates Whonix's design (Whonix-Workstation has no way of finding out its own external IP address in particular), such as &quot;GETINFO address&quot;, for example if Tor Button wanted to ensure, that the user isn't using its own external IP address, a new lie would have to be added to the Control Port Filter Proxy script. In case many more lies are required, lies should go into the config file as well, for now, hard coding is sufficient.
 
+CPFP limits maximum accepted command string length to 128 (configurable) (credits: &lt;ref&gt;[https://mailman.boum.org/pipermail/tails-dev/2014-February/005041.html As done by Tails.]&lt;/ref&gt; &lt;ref&gt;Thanks to [https://www.whonix.org/forum/index.php?action=profile;u=87 HulaHoop] for [https://www.whonix.org/forum/index.php/topic,342.0.html suggesting this].&lt;/ref&gt;) for better security.
+
 Forum discussion, [[Special:AWCforum/st/id201|Disable Tor Control Port Proxy by default]].
 
 == Whonix-Workstation ==
-Tor Browser points to Tor control port 127.0.0.1:9151 by default (no changes by Whonix).
-
 Whonix sets appropriate environment variables in /etc/profile.d/ for control port (9151), control port ip (127.0.0.1) and control port password &quot;password&quot;. The latter is not really in use, its just to make Tor Button happy, because it doesn't default to some password. Tor Button sends it, but its ignored by Control Port Filter Proxy.
 
 rinetd redirects 127.0.0.1:9151 to Whonix-Gateway 192.168.0.10:9052.
+
+This functionality is implemented by the [https://github.com/Whonix/anon-ws-disable-stacked-tor anon-ws-disable-stacked-tor] package.
+
+Tor Browser points to Tor control port 127.0.0.1:9151 by default (no changes by Whonix).
 
 == Whonix-Gateway ==
 Control Port Filter proxy listens on 0.0.0.0 port 9052, filters (white list) incoming control port messages and forwards them to the real Tor Control Port listening in 127.0.0.1:9051. Control Port Filter Proxy itself uses cookies authentication to authenticate Tor's control port. The latter is not important, since Whonix-Gateway's only purpose is running Tor, its not a multi user operating system, and if it were compromised, cookie authentication wouldn't be of help anymore either.
@@ -38971,12 +38988,7 @@ More worrying is the extended attack surface. See &quot;Attack Surface&quot; abo
 
 == Debugging Inspiration ==
 &lt;pre&gt;
-sudo cp whonix_gateway/etc/init.d/controlportfiltd /etc/init.d/
-sudo cp whonix_gateway/usr/bin/controlportfilt /usr/bin/
-sudo cp whonix_gateway/usr/lib/whonix/cpf-tcpserver /usr/lib/whonix/
-sudo cp whonix_workstation/etc/profile.d/20_controlportfilt.sh /etc/profile.d/
-sudo cp whonix_shared/usr/bin/tor-ctrl /usr/bin/
-sudo cp whonix_gateway/etc/controlportfilt.d/30_controlportfilt_defaul /etc/controlportfilt.d/
+sudo make install
 
 sudo service controlportfiltd restart
 
@@ -38993,10 +39005,13 @@ grep -r torbutton_send_ctrl_cmd *
 = See Also =
 * [https://labs.riseup.net/code/issues/6384 Tails' ticket: Filtering proxy for the Tor control port]
 
+= Footnotes =
+&lt;references /&gt;
+
 {{Footer}}
 
 [[Category:Design]]</text>
-      <sha1>1s7g9wz989voxovj1tz9tj13rcy6xco</sha1>
+      <sha1>hae2synr5bl69rnwfc7ny6adcu2ulo1</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -44567,18 +44582,18 @@ Because, /etc/tor/torrc comes with an out commented {{Code2|#DisableNetwork 0}} 
     <ns>10</ns>
     <id>457</id>
     <revision>
-      <id>3834</id>
-      <parentid>3646</parentid>
-      <timestamp>2013-10-22T03:13:21Z</timestamp>
+      <id>8124</id>
+      <parentid>3834</parentid>
+      <timestamp>2014-06-24T14:19:26Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="202">{{mbox
-| image      = [[Image:cornues.png|40px|alt=...]]
-| text       = The following information only apply to the &lt;u&gt;'''testers-only'''&lt;/u&gt; version of Whonix.&lt;br /&gt; (&lt;u&gt;Whonix 7.3.7 and above&lt;/u&gt;.)
+      <text xml:space="preserve" bytes="207">{{mbox
+| image   = [[Image:cornues.png|40px|alt=...]]
+| text       = The following information only apply to the &lt;u&gt;'''testers-only'''&lt;/u&gt; version of Whonix.&lt;br /&gt; (&lt;u&gt;Whonix 8.6.1.5 (9.x) and above&lt;/u&gt;.)
 }}</text>
-      <sha1>gnofohg15erwld39zod4o6c2kcb3mow</sha1>
+      <sha1>by2hp4lp8m0pwqzvikqe1hf4tk3w8oi</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -77281,62 +77296,6 @@ Otherwise, it would be a grave error ([[Dev/CPFP|CPFP]] not reachable).
       <comment>Redirected page to [[Disclaimer]]</comment>
       <text xml:space="preserve" bytes="24">#REDIRECT [[Disclaimer]]</text>
       <sha1>4p59mh9bhyk3ie0ob2vznqep9s1h80o</sha1>
-      <model>wikitext</model>
-      <format>text/x-wiki</format>
-    </revision>
-  </page>
-  <page>
-    <title>Tarot How Often For Those Who Have A Reading</title>
-    <ns>0</ns>
-    <id>1382</id>
-    <revision>
-      <id>8113</id>
-      <timestamp>2014-06-23T14:09:17Z</timestamp>
-      <contributor>
-        <username>NicholaSSD</username>
-        <id>378</id>
-      </contributor>
-      <comment>Created page with &quot;   [http://wn.com/FREE_tarot_reading_video wn.com]Online love readings that are free is just an easy and quick solution to  tarot fali online bak utilize the energy of the tar...&quot;</comment>
-      <text xml:space="preserve" bytes="4400">
-
- [http://wn.com/FREE_tarot_reading_video wn.com]Online love readings that are free is just an easy and quick solution to  tarot fali online bak utilize the energy of the tarot cards to improve your lovelife and love relationships that are existing.  If you cherished this posting and you would like to get a lot more information about [http://www.test1.mysites.info/space.php?uid=151382&amp;do=blog&amp;id=199785 online tarot reading free love] kindly stop by our own website. The solutions are immediate, aimed at love and easy to understand. Both women and men have useful for ages the tarot  [http://en.wikipilipinas.org/index.php/User:JanineSverjensk online tarot cards accurate] all over the world; now everybody has entry to this historical clairvoyant tool.&lt;br&gt;&lt;br&gt;Like a self-help manual to intuition, several observations can be learned from the read that was basic. By proceeding the excess action to contact an experienced reader, people could examine your [http://www.Squidoo.com/search/results?q=tarot+online tarot online] free there are lots of visitors who provide a reading for free Getting a examine your tarot online free tarot reading will reveal how the cards can give you smart guidance and awareness into an unique condition for anyone who comes willing to notice the words the cards chat, and trust a tarot reading will help modify the current condition and allow it to be better than it would have already been with no advice of the quality free tarot reading that will easily be observed online&lt;br&gt;&lt;br&gt;You will get a psychic that is freetarot reading using the objective that one may get yourself a greater understanding into your inner-self. Tarot readers and psychic readers also allow you to remedy the problems in life. Psychic reading that is free also includes forecasts linked to most situations in living. A totally free reading may also give you the issue that is very same. But, the processes are very different. Let's have a summary of how a free psychic reading along with a tarot reading vary from each other. We'll also discover the relation involving the two.&lt;br&gt;&lt;br&gt;Psychics.com.au will be the fastest and hottest approach to learn your chance through astrology Numbers and free psychic readings. There is a lot of website that had an improved- ability in regards to forecast. But people will think meticulously to obtain the top quality and site that is most truthful, which eventually they will ask advices because of their profession guide, love and joy. Psychic parts  [http://agmadhost.com/test/index.php?do=/blog/4050/the-meaning-of-the-ace-of-tarot-card-uncovered/add-comment/ online tarot card readings for free] are offered by them online and by phone. Understand your future predictions through our legitimate psychics, clairvoyants and methods. We promise appropriate and authentic psychic readings about different aspects of living.&lt;br&gt;&lt;br&gt;Everyday, huge numbers of people are looking the net for-free psychic readings tarot online readings, free-psychic conversation and also free online palm readings - when you yourself have a web cam yes, they do those,. But with so many psychic networks out-there trying to get your company, how will you know which mediums are reliable psychics and which do not give you genuine psychic readings? And the way are you aware which psychic sites offer free online numbers or free-psychic numbers? It could be very puzzling!&lt;br&gt;&lt;br&gt;The tarot deck of cards has 78 cards which are divided in to two communities called the arcana and the arcana. The minor arcana has fifty six cards whilst the major arcana has just twenty-two. The minor arcana's fiftysix cards are grouped further into four matches addressing aspects like water, air and hearth. Tarot readings derive from the card definitions therefore the online mediums that you may select will provide online readings according to that to you.&lt;br&gt;&lt;br&gt;How linked are psychic reading together? It is not that psychic reading relies on principles that are tarot. He/she must not be unable to comprehend and show the client what the Demon Tarot Card suggests concerning the lovelife of the client. Psychic capacity is needed by understanding the interior heart of the client and the connection between your tarot card significance. So, in case you get yourself a tarot reading that can offer you a psychic insight into your inner self, get a tarot reading that is free.</text>
-      <sha1>lh4lxbos6dgh0c097oehi7dslc0zzid</sha1>
-      <model>wikitext</model>
-      <format>text/x-wiki</format>
-    </revision>
-  </page>
-  <page>
-    <title>Best Tarot Reading Online</title>
-    <ns>0</ns>
-    <id>1383</id>
-    <revision>
-      <id>8114</id>
-      <timestamp>2014-06-23T16:21:06Z</timestamp>
-      <contributor>
-        <username>JackiPoate</username>
-        <id>380</id>
-      </contributor>
-      <comment>Created page with &quot;Tarot may be cards 78, useful for reading's extensive veranda. It truly is a classic convention. Listed here is how-to do it, and the meaning of every card. You may also get y...&quot;</comment>
-      <text xml:space="preserve" bytes="3170">Tarot may be cards 78, useful for reading's extensive veranda. It truly is a classic convention. Listed here is how-to do it, and the meaning of every card. You may also get your own personal online reading at no cost. Tarot Online Reading&lt;br&gt;&lt;br&gt;That you do not need to actually locate psychics to get a reading, todayAre many powerful services offering qualified companies that are psychic. Throughout the internet tarot card parts are available. Several of those solutions are not blame for all, while reasonably limited for each reading charges. Typically, gifted psychic readers who offer numbers in every areas of existence are hired by these sites. Recall, using cards will need a comprehensive pursuit and translation of the cards.&lt;br&gt;&lt;br&gt;It is simple just because a lot of charlatans is therapy or consultant reading cards. You have found the right choice which will fit the bill is. Ask around or possibly a reliable tarot readings for-free on the website to see opinions on the net. A close or neighbor friend you know who have attempted it before requesting. Any recommendations? Well, it really is time for you to find out on your own. Additionally, there are some websites that separate the tarot reading can be a listing of mindset. You and these websites can also visit. These sites additionally show perhaps the symptoms are available online plus they read you a free will.&lt;br&gt;&lt;br&gt;This can be done at length if you like to talk about a Tarot reading with someone else then,. This can be very useful for Tarot professionals who wish to attract consumers outside of their geographical area. Tarot doesn't need the clear presence of the individual the reading will be done-for. The consumer can use an internet deck to create the Tarot spread to become translated which can then be handed via a contact or just like the Tarot guide for interpretation.&lt;br&gt;&lt;br&gt;Today how are you ready to acquire the tarot numerology parts that are free? Well, often the long run will be predicted by an expert tarot reader in trade of money. He will declare expenses for supplying his service. However, you can even get free tarot readings from sources that are different. As an example, the web is quite powerful communicative tool for collecting current information in regards to the tarot numbers. If you look at internet, you will see that there are multitude numerologists and tarot readers who're awaiting counseling for their online consumers and providing their free crucial backs.&lt;br&gt;&lt;br&gt;You do not must literally discover psychics to acquire a tarot reading, today. There are many helpful services that offer qualified services that are psychic. All across the internet tarot card numbers is found. Many of these companies are free for all, although some charge a premium for each reading. Usually, these sites employ skilled psychic visitors who provide numbers in most regions of existence. Recall, using cards will demand a radical exploration and translation of the cards.&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;For more regarding [http://robbiedehaan.com/mw/index.php?title=Online_Tarot_Services:_Ways_to_Pick_the_Suitable_Viewers online tarot cards game] take a look at our webpage.</text>
-      <sha1>4p88x6bd5arb3t0dt62fuw9dnurtmu6</sha1>
-      <model>wikitext</model>
-      <format>text/x-wiki</format>
-    </revision>
-  </page>
-  <page>
-    <title>Future Look By Tarot Cards</title>
-    <ns>0</ns>
-    <id>1384</id>
-    <revision>
-      <id>8116</id>
-      <timestamp>2014-06-23T17:58:40Z</timestamp>
-      <contributor>
-        <username>PoppyMullin</username>
-        <id>381</id>
-      </contributor>
-      <comment>Created page with &quot;Free online tarot card reading is something individuals often seek to see their potential or to learn their present. It informs us a whole lot about our physical and spiritual...&quot;</comment>
-      <text xml:space="preserve" bytes="3601">Free online tarot card reading is something individuals often seek to see their potential or to learn their present. It informs us a whole lot about our physical and spiritual well being. Free tarot may be crucial as it reveals path to people about future lifestyle and their past. There are lots of great mediums who offer help in this field, while the interest in online tarot reading is increasing.&lt;br&gt;&lt;br&gt;In accordance with those who have studied the subject extensively, in the case of tarot, online readings are not less exact than face to face parts. The distinction might be inside the link between the customer as well as the audience that may alter the meaning. Nevertheless, most buyers that are online declare that the data is practical in an unusual technique in a particular level so that in case you are able to open your mind and center you will significantly benefit from the [http://wordpress.org/search/direction direction] of the cards.&lt;br&gt;&lt;br&gt;Make sure that you read all the fine-print before you subscribe to anything when looking for a totally free online card-reading. A website may consult you to your credit card information, even if they guarantee a free online card reading. This could imply any number of factors. The reading that is free might just be to get a specified amount of time, and after this time is up your bank card is going to be billed. Additionally, it may mean that you'll be incurred, if you aren't satisfied which you'll get your money back,.&lt;br&gt;&lt;br&gt;Tarot card reading actually is a choice for seeking psychic and mystic advice by psychics because the century.  If you enjoyed this article and you would certainly like to get additional information concerning [http://encipecom.metodista.br/mediawiki/index.php?title=Tarot_How_Often_For_Those_Who_Have_A_Reading free online tarot cards fortune telling] kindly see our own web-page. While in the recent past, mass consciousness accounts for which makes it a much-desired capability to get solutions to queries associated with career expansion alongside private concerns. Fantastic psychics have started presenting tarot reading online These solutions will come in a price, however it should be carefully checked whether the sites into consideration are real or bogus before receiving the offers. Free online reading works alongside easily obtainable additionally.&lt;br&gt;&lt;br&gt;What's a totally free reading that is online? Tarot reading could be the usage of tarot cards to obtain an understanding (or predict) into recent and probable circumstances which could happen later on. It is admitted by not many individuals freely, but everyone features a burning desire to understand what their future holds for them. Tarot readings are based on particular measurements and observations created by a tarot reader though the near future can be as unclear and unstable because the flow of water and these numbers estimate oneis potential - at the very least a rough idea.&lt;br&gt;&lt;br&gt;PsychicSource is another great psychic system that now offers readings and great readings. They do provide very good premiums on readings although they don't really free-psychic readings by itself and their psychics are top notch. Whether you want a phone reading, an online psychic reading, a reading or even a psychic medium reading with a clairvoyant, you will uncover all of their psychics are professional and provide good numbers. Like Hollywood Mediums, PsychicSource offers a $1/second specific for customers that are brand new. That is an amazing deal as some of their mediums are extremely pricey – as well as for good reason.</text>
-      <sha1>4xo3zo2xmryp1fn95l35kgr5la845b3</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
