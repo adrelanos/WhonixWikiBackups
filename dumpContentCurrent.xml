@@ -16812,14 +16812,14 @@ Optional, for debugging if you have problems.
     <ns>0</ns>
     <id>139</id>
     <revision>
-      <id>6793</id>
-      <parentid>6792</parentid>
-      <timestamp>2014-03-10T04:30:17Z</timestamp>
+      <id>8128</id>
+      <parentid>8127</parentid>
+      <timestamp>2014-06-29T23:13:18Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="5786">&lt;!--
+      <text xml:space="preserve" bytes="5722">&lt;!--
 Copyright:
 
    Whonix Verify_the_virtual_machine_images_using_the_command_line wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -16863,7 +16863,7 @@ Open a terminal and import Whonix signing key with the following commands:
 
 &lt;pre&gt;
 cd [the directory in which you downloaded the key]
-cat patrick.asc | gpg --keyid-format long --import
+cat patrick.asc | gpg --import
 &lt;/pre&gt;
 
 The output should tell you that the key was imported:
@@ -16898,7 +16898,7 @@ Then, '''start the cryptographic verification''', it can take several minutes:
 
 &lt;pre&gt;
 cd [the directory in which you downloaded the .ova and the .asc]
-gpg --keyid-format long --verify Whonix-Gateway-8.ova.asc Whonix-Gateway-8.ova
+gpg --verify Whonix-Gateway*.ova.asc Whonix-Gateway*.ova
 &lt;/pre&gt;
 
 '''If the Virtual Machine image is correct''' the output will tell you that the signature is good:
@@ -16933,7 +16933,7 @@ gpg: BAD signature from &quot;Patrick Schleizer &lt;adrelanos@riseup.net&gt;&quo
 
 &lt;pre&gt;
 cd [the directory in which you downloaded the .ova and the .asc]
-gpg --keyid-format long --verify Whonix-Workstation-8.ova.asc Whonix-Workstation-8.ova
+gpg --verify Whonix-Workstation*.ova.asc Whonix-Workstation*.ova
 &lt;/pre&gt;
 
 = License =
@@ -16951,7 +16951,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>inkjd7b5krvv2w9v9nd0z7ebsmt0uiu</sha1>
+      <sha1>rpgwwva68kjm978rjk58fpylw9enaxp</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -58110,15 +58110,15 @@ Quelle: &lt;html&gt;&lt;a href=&quot;http://www.juraforum.de/impressum-generator
     <ns>0</ns>
     <id>698</id>
     <revision>
-      <id>8058</id>
-      <parentid>8021</parentid>
-      <timestamp>2014-06-11T12:54:30Z</timestamp>
+      <id>8129</id>
+      <parentid>8058</parentid>
+      <timestamp>2014-06-29T23:28:13Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
       <comment>/* Geltungsbereich */</comment>
-      <text xml:space="preserve" bytes="14508">&lt;!--
+      <text xml:space="preserve" bytes="14609">&lt;!--
 NOTE TO WIKI EDITORS:
 Do not add the default footer!
 Do not edit without asking Patrick Schleizer beforehand!
@@ -58278,6 +58278,8 @@ Dieses Impressum gilt auch für:
 ** https://github.com/adrelanos/curl-scripts
 ** https://github.com/Whonix/damngpl
 ** https://github.com/adrelanos/damngpl
+** https://github.com/Whonix/generic-gui-message
+** https://github.com/adrelanos/generic-gui-message
 ** https://github.com/Whonix/gpl-sources-download
 ** https://github.com/adrelanos/gpl-sources-download
 ** https://github.com/Whonix/grub-enable-apparmor
@@ -58408,7 +58410,7 @@ Die Datenschutzerklärung finden Sie [[Datenschutz|hier]].
 Den Haftungsausschluss (Disclaimer) finden Sie [[Disclaimer|hier]].
 
 [[Category:Documentation]]</text>
-      <sha1>c9ennpvvl2i9yiega9uj8nnwu9gtz3m</sha1>
+      <sha1>68ashxmrgm7lvdt1c5t0elh545nmunn</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
