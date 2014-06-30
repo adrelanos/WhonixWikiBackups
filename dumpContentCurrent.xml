@@ -34947,15 +34947,15 @@ __NOTOC__
     <ns>0</ns>
     <id>288</id>
     <revision>
-      <id>8126</id>
-      <parentid>8125</parentid>
-      <timestamp>2014-06-24T14:20:26Z</timestamp>
+      <id>8130</id>
+      <parentid>8126</parentid>
+      <timestamp>2014-06-30T10:38:19Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
       <comment>/* Wiki Page Updates */</comment>
-      <text xml:space="preserve" bytes="4148">{{Header}}
+      <text xml:space="preserve" bytes="4170">{{Header}}
 {{#seo:
 |description=Design Documentation about Redistribution of Whonix
 }}
@@ -35054,6 +35054,8 @@ See [https://github.com/Whonix/whonix-developer-meta-files/tree/master/release R
 search for 192.168.0 &lt;br /&gt;
 search for netmask 255.255 &lt;br /&gt;
 
+/etc/whonix.d -&gt; ...
+
 * Check, if [[Manually Updating Tor Browser]] is still up to date. (If not, fixing is task of coders, not release manager.)
 * Update [[Download#Download_Whonix|Download Table]].
 * Update [[Download#Known_bugs|Known Bugs]].
@@ -35114,7 +35116,7 @@ Compress. Upload.
 {{Footer}}
 
 [[Category:Development]] [[Category:Design]]</text>
-      <sha1>be09op7amqd7skn6iqf9xc1jjokc38m</sha1>
+      <sha1>b5piz7gf1271ce2i22yjk9ub3s9cktq</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
