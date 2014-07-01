@@ -434,14 +434,15 @@ Thanks for the MAT public domain screenshot to [https://www.awxcnx.de/handbuch_4
     <ns>10</ns>
     <id>15</id>
     <revision>
-      <id>8062</id>
-      <parentid>7948</parentid>
-      <timestamp>2014-06-12T21:26:42Z</timestamp>
+      <id>8135</id>
+      <parentid>8062</parentid>
+      <timestamp>2014-07-01T14:17:33Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="1508">&lt;br /&gt;&lt;hr&gt;&lt;font size=&quot;-3&quot;&gt;[[Special:UserLogin|Log in]] | [[Special:OpenIDLogin|OpenID]] | [[Contact|Contact]] | [[Impressum]] | [[Datenschutz|Datenschutz]] | [[Disclaimer|Haftungsausschluss]] | [[Investors]] | [[Donate]]
-[https://www.whonix.org{{localurl:{{FULLPAGENAME}}}} https] | &lt;html&gt;&lt;a class=&quot;link-https&quot; href=&quot;http://xxxxxxxxxxh5kyrx.onion&lt;/html&gt;{{localurl:{{FULLPAGENAME}}}}&lt;html&gt;&quot; rel=&quot;nofollow&quot;&gt;.onion&lt;/a&gt;&lt;/html&gt; &lt;sup&gt;[[Forcing .onion on Whonix.org|[note]]]&lt;/sup&gt; | [http://whonix.org.nyud.net{{localurl:{{FULLPAGENAME}}}} Mirror] | [https://xxxxxxxxxxh5kyrx.tor2web.org{{localurl:{{FULLPAGENAME}}}} Mirror] | Share: {{Share}}
+      <text xml:space="preserve" bytes="1595">&lt;br /&gt;&lt;hr&gt;&lt;font size=&quot;-3&quot;&gt;[[Special:UserLogin|Log in]] | [[Special:OpenIDLogin|OpenID]] | [[Contact|Contact]] | [[Impressum]] | [[Datenschutz|Datenschutz]] | [[Disclaimer|Haftungsausschluss]] | [[Investors]] | [[Donate]]
+[https://www.whonix.org{{localurl:{{FULLPAGENAME}}}} https] | &lt;html&gt;&lt;a href=&quot;http://xxxxxxxxxxh5kyrx.onion&lt;/html&gt;{{localurl:{{FULLPAGENAME}}}}&lt;html&gt;&quot; rel=&quot;nofollow&quot;&gt;.onion&lt;/a&gt;&lt;/html&gt; &lt;sup&gt;[[Forcing .onion on Whonix.org|[note]]]&lt;/sup&gt; | &lt;html&gt;&lt;a href=&quot;http://whonix.org.nyud.net&lt;/html&gt;{{localurl:{{FULLPAGENAME}}}}&lt;html&gt;&quot; rel=&quot;nofollow&quot;&gt;Mirror&lt;/a&gt;&lt;/html&gt; | &lt;html&gt;&lt;a href=&quot;https://xxxxxxxxxxh5kyrx.tor2web.org&lt;/html&gt;{{localurl:{{FULLPAGENAME}}}}&lt;html&gt;&quot; rel=&quot;nofollow&quot;&gt;Mirror&lt;/a&gt;&lt;/html&gt; | Share: {{Share}}
 &lt;!--
 inspired by http://aboli.sh/
 @cnpirates ssl(tor) ssl(i2p) coralcdn .sdns .onion .i2p--&gt;
@@ -450,7 +451,7 @@ This is a wiki. Want to improve this page? See [https://github.com/Whonix/Whonix
 
 Whonix (&lt;html&gt;&lt;a href=&quot;https://plus.google.com/108150429836421683225&quot; rel=&quot;publisher&quot; /&gt;g+&lt;/a&gt;&lt;/html&gt;) is a [http://www.openinventionnetwork.com/licensees.php licensee] of the Open Invention Network. Unless otherwise noted above, content of this  page is [[Whonix:Copyrights|copyrighted]] and licensed under the same Free (as in speech) [https://github.com/Whonix/Whonix/blob/master/debian/copyright license] as Whonix itself.
 &lt;/font&gt;</text>
-      <sha1>1cfglt9iayhgi4gbpx34ng43l4wxrmm</sha1>
+      <sha1>fsvba4ni2ovrbq5ob4mqi49erhgk6p8</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -19321,14 +19322,14 @@ When you go ahead now, and ask in a cracker forum, they probably won't spread a 
     <ns>0</ns>
     <id>162</id>
     <revision>
-      <id>7971</id>
-      <parentid>7941</parentid>
-      <timestamp>2014-06-01T20:56:21Z</timestamp>
+      <id>8137</id>
+      <parentid>7971</parentid>
+      <timestamp>2014-07-01T14:48:22Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="7058">{{#seo:
+      <text xml:space="preserve" bytes="7073">{{#seo:
 |description=Technical Design and Conception of the Whonix Anonymous Operating System
 }}
 {{Header}}
@@ -19438,6 +19439,7 @@ When you go ahead now, and ask in a cracker forum, they probably won't spread a 
 * [[Dev/Download Wizard]]
 * [[Dev/Qubes OS]]
 * [[Dev/Porting]]
+* [[Dev/Logo]]
 &lt;/small&gt;
 &lt;/div&gt;
 &lt;br /&gt;
@@ -19504,7 +19506,7 @@ When you go ahead now, and ask in a cracker forum, they probably won't spread a 
 [[Category:Design]]
 
 {{Footer}}</text>
-      <sha1>8u53mhjl2m414bce7dzxxdb7csiqc23</sha1>
+      <sha1>henbwd38o6a6hgh4zl2ot96anbrxysf</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -75910,13 +75912,14 @@ curl.whonix-orig --tlsv1 --proto =https -H 'Host: check.torproject.org' -k https
     <ns>6</ns>
     <id>1348</id>
     <revision>
-      <id>7120</id>
-      <timestamp>2014-03-28T03:52:39Z</timestamp>
+      <id>8131</id>
+      <parentid>7120</parentid>
+      <timestamp>2014-07-01T12:39:34Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>MsUpload</comment>
+      <comment>Patrick uploaded a new version of &amp;quot;[[File:210-Banner.png]]&amp;quot;</comment>
       <text xml:space="preserve" bytes="8">MsUpload</text>
       <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
       <model>wikitext</model>
@@ -77300,6 +77303,179 @@ Otherwise, it would be a grave error ([[Dev/CPFP|CPFP]] not reachable).
       <comment>Redirected page to [[Disclaimer]]</comment>
       <text xml:space="preserve" bytes="24">#REDIRECT [[Disclaimer]]</text>
       <sha1>4p59mh9bhyk3ie0ob2vznqep9s1h80o</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:Whonixlock.png</title>
+    <ns>6</ns>
+    <id>1382</id>
+    <revision>
+      <id>8134</id>
+      <parentid>8133</parentid>
+      <timestamp>2014-07-01T12:52:44Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>Patrick uploaded a new version of &amp;quot;[[File:Whonixlock.png]]&amp;quot;</comment>
+      <text xml:space="preserve" bytes="0" />
+      <sha1>phoiac9h4m842xq45sp7s6u21eteeq1</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Dev/Logo</title>
+    <ns>0</ns>
+    <id>1383</id>
+    <revision>
+      <id>8157</id>
+      <parentid>8156</parentid>
+      <timestamp>2014-07-01T19:09:30Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>/* Requirements */</comment>
+      <text xml:space="preserve" bytes="5935">{{Header}}
+&lt;!--
+Copyright:
+
+   Whonix Dev/Logo wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
+   Whonix Dev/Logo wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
+   
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; either version 3 of the License, or
+   (at your option) any later version.
+         
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+      
+   You should have received a copy of the GNU General Public License
+   along with this program; if not, write to:
+
+    Free Software Foundation, Inc. 
+    51 Franklin St, Fifth Floor
+    Boston, MA 02110-1301, USA.
+
+On Debian GNU/Linux systems, the complete text of the GNU General Public
+License can be found in the /usr/share/common-licenses' directory.
+
+The complete text of the GNU General Public License can also be found online on gnu.org &lt;https://www.gnu.org/licenses/gpl.html&gt;, in Whonix virtual machine images in /usr/share/common-licenses/GPL-3 file or on Github &lt;https://github.com/Whonix/Whonix/blob/master/GPLv3&gt;.
+--&gt;
+&lt;!--
+This wiki page is a fork of the Tails Download page, from this exact source &lt;https://git-tails.immerda.ch/tails/plain/wiki/src/news/logo_contest.mdwn?id=af6d776f20c5b4feee4522aee00275976cee4d3e&gt;.
+--&gt;
+{{#seo:
+|description=Whonix Logo
+}}
+
+= Facebook =
+== Facebook Opengraph ==
+
+&lt;blockquote&gt;
+og:image This is an image associated with your media. We suggest that you use an image of at least 1200x630 pixels.
+&lt;/blockquote&gt;
+
+Source:
+
+* https://developers.facebook.com/docs/opengraph/howtos/maximizing-distribution-media-content
+
+== Facebook Cover Photo ==
+
+&lt;blockquote&gt;
+What are the dimensions for my Page's cover photo?
+
+Cover photos are 851 pixels wide and 315 pixels tall. If you upload an image that's smaller than these dimensions, it will be stretched to this larger size. The image you upload must be at least 399 pixels wide and 150 pixels tall.
+
+To get the fastest load times for your Page, upload an sRGB JPG file that's 851 pixels wide, 315 pixels tall and less than 100 kilobytes. For images with your logo or text, you may get a higher quality result by using a PNG file.
+&lt;/blockquote&gt;
+
+Source:
+
+* https://www.facebook.com/help/www/125379114252045
+
+See also:
+
+* https://www.facebook.com/PagesSizesDimensions
+* https://www.facebook.com/PagesSizesDimensions/photos/a.214509701989629.48753.214500051990594/606008246173104/?type=1
+
+= Twitter =
+== Twitter Picture in Tweet ==
+Twitter Currently Working Example: &lt;br /&gt;
+557 × 200 pixels seems to work quite well.
+
+* https://twitter.com/Whonix/status/450161753075109888/photo/1
+* https://pbs.twimg.com/media/Bj9LurfCUAAxK5l.png:large
+
+Best size?
+
+== Twitter Profile Photo ==
+&lt;blockquote&gt;
+Recommended dimensions for profile photos are 400x400 pixels.
+&lt;/blockquote&gt;
+
+Source:
+
+* https://support.twitter.com/entries/127871-how-to-change-your-profile-picture-or-information#
+
+== Twitter Header Photo ==
+&lt;blockquote&gt;
+Recommended dimensions for header photos are 1500x500 pixels.
+&lt;/blockquote&gt;
+
+Source:
+
+* https://support.twitter.com/entries/127871-how-to-change-your-profile-picture-or-information#
+
+= Logo Contest Draft =
+== Requirements ==
+* We cannot reuse the Tor or Debian logo for trademark/legal reasons.
+* Free licence, compatible with GPL3+.
+* Source in SVG (Scalable Vector Graphics) or EPS (Encapsulated PostScript) format.
+* An image with an approximate 1:1 ratio, like the [https://media.torproject.org/image/www-images/onion.jpg onion logo].
+* Plus the same image along with the &quot;Whonix&quot; word either:
+* on the side of the image.
+* The &quot;Whonix&quot; name must be spelled with an uppercase &quot;W&quot; only, and lowercase &quot;honix&quot;.
+* The image should convey the ideas behind Whonix: secrecy, privacy, anonymity, mystery, simplicity (Whonix is ready-to-use).
+* The logo has to be a bit serious, but not sad.
+* The image should be suited to print on nice stickers that people want to have on their computers, and on t-shirts that people are happy to wear.
+* Make sure that the fonts that you use are compatible with GPL3+. To be on the safe side, use [http://pkg-fonts.alioth.debian.org/review/debian-font-review.html fonts available in Debian main], otherwise we will ask you to prove their compatibility with GPL3+.
+
+== Complementary materials ==
+As the logo will be used in quite different places, we encourage you to submit complementary materials. These are not strict requirements but will help us evaluate your proposal better. Besides, if your logo is chosen, we will need them anyway before we are able to put it to use publicly.
+
+These complementary materials are:
+
+* A banner for the website. The current one is 986x60px, but the new one could be higher, maybe up to 150px.
+* Fonts to be used to create other material matching the logo.
+
+== Calendar ==
+
+* Send to XXX forum thread XXX or e-mail adrelanos@riseup.net (will be posted in forum thread).
+
+* **XXst of XXX**: Deadline for sending proposals
+* **Xth of XXX**: The winner is announced.
+* &lt;s&gt;**XXth of XXX**: All the complementary materials have to be ready so we have time to include them in Whonix 1.0. The designer of the winning logo is strongly encouraged to do this work, before or after the deadline for proposals.&lt;/s&gt;
+
+= License =
+&lt;pre&gt;
+Whonix Dev/Logo wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
+Whonix Dev/Logo wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
+
+This program comes with ABSOLUTELY NO WARRANTY; for details see the wiki source code.
+This is free software, and you are welcome to redistribute it
+under certain conditions; see the wiki source code for details.
+&lt;/pre&gt;
+
+{{Footer}}
+
+[[Category:Documentation]]</text>
+      <sha1>gnvizd9sl0qbm4s1j9n3e37pz2207oc</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
