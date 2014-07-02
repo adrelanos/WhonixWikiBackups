@@ -77331,14 +77331,15 @@ Otherwise, it would be a grave error ([[Dev/CPFP|CPFP]] not reachable).
     <ns>0</ns>
     <id>1383</id>
     <revision>
-      <id>8157</id>
-      <parentid>8156</parentid>
-      <timestamp>2014-07-01T19:09:30Z</timestamp>
+      <id>8164</id>
+      <parentid>8163</parentid>
+      <timestamp>2014-07-02T09:40:59Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
       <comment>/* Requirements */</comment>
-      <text xml:space="preserve" bytes="5935">{{Header}}
+      <text xml:space="preserve" bytes="6911">{{Header}}
 &lt;!--
 Copyright:
 
@@ -77375,6 +77376,19 @@ This wiki page is a fork of the Tails Download page, from this exact source &lt;
 }}
 
 = Facebook =
+== Facebook Profile Picture ==
+&lt;blockquote&gt;
+What are the dimensions of my Page's profile picture?
+
+Page profile pictures are square and display at 160x160 pixels on your Page. The photo you upload must be at least 180x180 pixels. We recommend uploading a square image. Rectangular images will be cropped to fit a square. Your Page's profile picture will also display next to your Page's name around Facebook to represent your Page.
+
+You can be creative with how your Page's profile picture and cover photo go together. On your Page, the profile picture is located 16 pixels from the left side of your cover photo and 176 pixels from the top of your cover photo.
+&lt;/blockquote&gt;
+
+Source:
+
+* https://www.facebook.com/help/315809258465467
+
 == Facebook Opengraph ==
 
 &lt;blockquote&gt;
@@ -77432,18 +77446,30 @@ Source:
 
 * https://support.twitter.com/entries/127871-how-to-change-your-profile-picture-or-information#
 
+= Summary =
+== Logo ==
+* 400x400 -&gt; 1x1
+* 180x180 -&gt; 1x1
+
+== Banner ==
+* 1500x500 -&gt; 3x1
+* 1200x630 -&gt; 1.9x1
+* 851x315 -&gt; 2.7x1
+
 = Logo Contest Draft =
 == Requirements ==
-* We cannot reuse the Tor or Debian logo for trademark/legal reasons.
-* Free licence, compatible with GPL3+.
+=== Graphical Requirements ===
 * Source in SVG (Scalable Vector Graphics) or EPS (Encapsulated PostScript) format.
-* An image with an approximate 1:1 ratio, like the [https://media.torproject.org/image/www-images/onion.jpg onion logo].
-* Plus the same image along with the &quot;Whonix&quot; word either:
-* on the side of the image.
+* A logo with an approximate 1:1 ratio. ([https://www.whonix.org/w/images/b/be/500.png old logo].) Size: xxx X xxx (500x500?)
+* A banner for the website including the logo. ([https://www.whonix.org/w/images/e/e0/210-Banner.png old banner]) Size: xxx X xxx
 * The &quot;Whonix&quot; name must be spelled with an uppercase &quot;W&quot; only, and lowercase &quot;honix&quot;.
 * The image should convey the ideas behind Whonix: secrecy, privacy, anonymity, mystery, simplicity (Whonix is ready-to-use).
 * The logo has to be a bit serious, but not sad.
 * The image should be suited to print on nice stickers that people want to have on their computers, and on t-shirts that people are happy to wear.
+
+=== Legal Requirements ===
+* We cannot reuse the Tor, Debian or other logos for trademark/legal reasons.
+* Free licence, compatible with GPL3+. (Very easy. Your least worries. If there is a will to donate your work, we'll help with licensing stuff.)
 * Make sure that the fonts that you use are compatible with GPL3+. To be on the safe side, use [http://pkg-fonts.alioth.debian.org/review/debian-font-review.html fonts available in Debian main], otherwise we will ask you to prove their compatibility with GPL3+.
 
 == Complementary materials ==
@@ -77451,7 +77477,6 @@ As the logo will be used in quite different places, we encourage you to submit c
 
 These complementary materials are:
 
-* A banner for the website. The current one is 986x60px, but the new one could be higher, maybe up to 150px.
 * Fonts to be used to create other material matching the logo.
 
 == Calendar ==
@@ -77475,7 +77500,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>gnvizd9sl0qbm4s1j9n3e37pz2207oc</sha1>
+      <sha1>ld362av0cw7zivt15gtskags8vjhymh</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
