@@ -15639,15 +15639,15 @@ udisks --show-info /dev/cdrom
     <ns>0</ns>
     <id>132</id>
     <revision>
-      <id>8057</id>
-      <parentid>8056</parentid>
-      <timestamp>2014-06-10T11:02:48Z</timestamp>
+      <id>8166</id>
+      <parentid>8057</parentid>
+      <timestamp>2014-07-02T11:59:09Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Test on Whonix-Gateway */</comment>
-      <text xml:space="preserve" bytes="7260">{{Header}}
+      <comment>/* Misc */</comment>
+      <text xml:space="preserve" bytes="7433">{{Header}}
 {{#seo:
 |description=Help Testing Whonix
 }}
@@ -15704,6 +15704,20 @@ Check {{Code2|/etc/apt/sources.list}}.
 Check iptables.
 
 &lt;pre&gt;sudo iptables --list | more&lt;/pre&gt;
+
+Reboot from terminal while X is running.
+
+&lt;pre&gt;
+Switch to terminal.
+&lt;/pre&gt;
+
+Reboot.
+
+&lt;pre&gt;
+sudo reboot
+&lt;/pre&gt;
+
+Should not show any errors such as &quot;failed to kill service&quot;.
 
 === Extra ===
 Check if aptitude is functional.
@@ -16005,7 +16019,7 @@ See [[Dev/Leak Tests]].
 {{Footer}}
 
 [[Category:Development]] [[Category:Design]] [[Category:Documentation]]</text>
-      <sha1>qfh2ykrhdl5nrbl4rzsugzt6jeyahcc</sha1>
+      <sha1>70zg2j0hk4tijvegdepowc99siw9rpz</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -58114,15 +58128,15 @@ Quelle: &lt;html&gt;&lt;a href=&quot;http://www.juraforum.de/impressum-generator
     <ns>0</ns>
     <id>698</id>
     <revision>
-      <id>8129</id>
-      <parentid>8058</parentid>
-      <timestamp>2014-06-29T23:28:13Z</timestamp>
+      <id>8165</id>
+      <parentid>8129</parentid>
+      <timestamp>2014-07-02T11:33:08Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
       <comment>/* Geltungsbereich */</comment>
-      <text xml:space="preserve" bytes="14609">&lt;!--
+      <text xml:space="preserve" bytes="14506">&lt;!--
 NOTE TO WIKI EDITORS:
 Do not add the default footer!
 Do not edit without asking Patrick Schleizer beforehand!
@@ -58190,8 +58204,6 @@ Dieses Impressum gilt auch für:
 
 ** https://github.com/Whonix/anon-apt-sources-list
 ** https://github.com/adrelanos/anon-apt-sources-list
-** https://github.com/Whonix/anon-banned-packages
-** https://github.com/adrelanos/anon-banned-packages
 ** https://github.com/Whonix/anon-base-files
 ** https://github.com/adrelanos/anon-base-files
 ** https://github.com/Whonix/anon-gpg-tweaks
@@ -58414,7 +58426,7 @@ Die Datenschutzerklärung finden Sie [[Datenschutz|hier]].
 Den Haftungsausschluss (Disclaimer) finden Sie [[Disclaimer|hier]].
 
 [[Category:Documentation]]</text>
-      <sha1>68ashxmrgm7lvdt1c5t0elh545nmunn</sha1>
+      <sha1>3jpneu8wb99ctwr7ygr6gbibbtzfdfp</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -77331,15 +77343,15 @@ Otherwise, it would be a grave error ([[Dev/CPFP|CPFP]] not reachable).
     <ns>0</ns>
     <id>1383</id>
     <revision>
-      <id>8164</id>
-      <parentid>8163</parentid>
-      <timestamp>2014-07-02T09:40:59Z</timestamp>
+      <id>8175</id>
+      <parentid>8174</parentid>
+      <timestamp>2014-07-02T21:27:38Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Requirements */</comment>
-      <text xml:space="preserve" bytes="6911">{{Header}}
+      <comment>/* Graphical Requirements */</comment>
+      <text xml:space="preserve" bytes="6715">{{Header}}
 &lt;!--
 Copyright:
 
@@ -77460,17 +77472,16 @@ Source:
 == Requirements ==
 === Graphical Requirements ===
 * Source in SVG (Scalable Vector Graphics) or EPS (Encapsulated PostScript) format.
-* A logo with an approximate 1:1 ratio. ([https://www.whonix.org/w/images/b/be/500.png old logo].) Size: xxx X xxx (500x500?)
-* A banner for the website including the logo. ([https://www.whonix.org/w/images/e/e0/210-Banner.png old banner]) Size: xxx X xxx
-* The &quot;Whonix&quot; name must be spelled with an uppercase &quot;W&quot; only, and lowercase &quot;honix&quot;.
 * The image should convey the ideas behind Whonix: secrecy, privacy, anonymity, mystery, simplicity (Whonix is ready-to-use).
-* The logo has to be a bit serious, but not sad.
+* A logo with an approximate 1:1 ratio. &lt;font size=-3&gt;([https://www.whonix.org/w/images/b/be/500.png old logo].)&lt;/font&gt; Size: 500x500 or 1000x1000.
+* An optional landscape graphical creation including the logo. &lt;font size=-3&gt;([https://www.whonix.org/w/images/e/e0/210-Banner.png old banner])&lt;/font&gt; Size: xxx X xxx
+* The &quot;Whonix&quot; name must be spelled with an uppercase &quot;W&quot; only, and lowercase &quot;honix&quot;.
 * The image should be suited to print on nice stickers that people want to have on their computers, and on t-shirts that people are happy to wear.
 
 === Legal Requirements ===
 * We cannot reuse the Tor, Debian or other logos for trademark/legal reasons.
-* Free licence, compatible with GPL3+. (Very easy. Your least worries. If there is a will to donate your work, we'll help with licensing stuff.)
-* Make sure that the fonts that you use are compatible with GPL3+. To be on the safe side, use [http://pkg-fonts.alioth.debian.org/review/debian-font-review.html fonts available in Debian main], otherwise we will ask you to prove their compatibility with GPL3+.
+* You'll surrender all rights of the image to Patrick Schleizer. The logo may be used for Whonix official branding/trademark.
+* Make sure that the fonts that you use are compatible with XXX
 
 == Complementary materials ==
 As the logo will be used in quite different places, we encourage you to submit complementary materials. These are not strict requirements but will help us evaluate your proposal better. Besides, if your logo is chosen, we will need them anyway before we are able to put it to use publicly.
@@ -77483,9 +77494,14 @@ These complementary materials are:
 
 * Send to XXX forum thread XXX or e-mail adrelanos@riseup.net (will be posted in forum thread).
 
-* **XXst of XXX**: Deadline for sending proposals
-* **Xth of XXX**: The winner is announced.
-* &lt;s&gt;**XXth of XXX**: All the complementary materials have to be ready so we have time to include them in Whonix 1.0. The designer of the winning logo is strongly encouraged to do this work, before or after the deadline for proposals.&lt;/s&gt;
+* **XXst of XXX**: Deadline for sending proposals (maybe 6 months after announcement of the logo contest?)
+* **Xth of XXX**: The winner is announced. (maybe 1 month after logo contest ended?)
+
+= Forum Discussion =
+For now: &lt;br /&gt;
+https://www.whonix.org/forum/index.php/topic,351.0.html
+
+Most likely soon a blog post and separate forum thread.
 
 = License =
 &lt;pre&gt;
@@ -77500,7 +77516,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>ld362av0cw7zivt15gtskags8vjhymh</sha1>
+      <sha1>sj8u1a512craikdb96gamos8do5jrz3</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
