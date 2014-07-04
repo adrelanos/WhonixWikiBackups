@@ -57467,15 +57467,14 @@ You can customize the header and footer of your directory listing as explained [
     <ns>0</ns>
     <id>696</id>
     <revision>
-      <id>7429</id>
-      <parentid>7428</parentid>
-      <timestamp>2014-04-08T22:51:41Z</timestamp>
+      <id>8180</id>
+      <parentid>7429</parentid>
+      <timestamp>2014-07-04T04:37:33Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Technical Information */</comment>
-      <text xml:space="preserve" bytes="36742">&lt;!--
+      <text xml:space="preserve" bytes="36754">&lt;!--
 NOTE TO WIKI EDITORS:
 Do not add the default footer!
 Do not edit without asking Patrick Schleizer beforehand!
@@ -57484,6 +57483,7 @@ Do not edit without asking Patrick Schleizer beforehand!
 {{#seo:
 |description=Whonix Privacy Policy Datenschutz
 }}
+__NOINDEX__
 
 = Datenschutz =
 
@@ -58003,7 +58003,7 @@ Do not edit without asking Patrick Schleizer beforehand!
 --&gt;
 
 [[Category:Documentation]]</text>
-      <sha1>onz9dj09a1glm5u54pegfgy0hphwpr9</sha1>
+      <sha1>2s2bssk37b6zyd0f3pdod0ie2v3fttr</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -58013,14 +58013,14 @@ Do not edit without asking Patrick Schleizer beforehand!
     <ns>0</ns>
     <id>697</id>
     <revision>
-      <id>5923</id>
-      <parentid>5767</parentid>
-      <timestamp>2014-02-27T14:26:40Z</timestamp>
+      <id>8181</id>
+      <parentid>5923</parentid>
+      <timestamp>2014-07-04T04:37:53Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="5698">&lt;!--
+      <text xml:space="preserve" bytes="5710">&lt;!--
 NOTE TO WIKI EDITORS:
 Do not add the default footer!
 Do not edit without asking Patrick Schleizer beforehand!
@@ -58028,6 +58028,7 @@ Do not edit without asking Patrick Schleizer beforehand!
 {{#seo:
 |description=Whonix Disclaimer Haftungsauschluss
 }}
+__NOINDEX__
 [[Impressum]] | [[Datenschutz|Datenschutzerklärung]] | [[Disclaimer|Haftungsausschluss]]
 
 = Haftungsausschluss (Disclaimer) – rechtliche Hinweise =
@@ -58118,7 +58119,7 @@ besonderen Nutzungsbedingungen.
 Quelle: &lt;html&gt;&lt;a href=&quot;http://www.juraforum.de/impressum-generator/&quot;&gt;Impressum Vorlage&lt;/a&gt; und &lt;a href=&quot;http://www.juraforum.de/rechtsanwalt/anwalt-leipzig/&quot;&gt;Anwalt Leipzig&lt;/a&gt;&lt;/html&gt; von Juraforum.de
 
 [[Category:Documentation]]</text>
-      <sha1>qfzopzgmutrqvodscfintdqpxb2a9cu</sha1>
+      <sha1>chsgilbvixjl81lqcbliwbqwe8wgl97</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -58128,15 +58129,14 @@ Quelle: &lt;html&gt;&lt;a href=&quot;http://www.juraforum.de/impressum-generator
     <ns>0</ns>
     <id>698</id>
     <revision>
-      <id>8165</id>
-      <parentid>8129</parentid>
-      <timestamp>2014-07-02T11:33:08Z</timestamp>
+      <id>8179</id>
+      <parentid>8178</parentid>
+      <timestamp>2014-07-04T04:37:00Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Geltungsbereich */</comment>
-      <text xml:space="preserve" bytes="14506">&lt;!--
+      <text xml:space="preserve" bytes="14417">&lt;!--
 NOTE TO WIKI EDITORS:
 Do not add the default footer!
 Do not edit without asking Patrick Schleizer beforehand!
@@ -58145,6 +58145,7 @@ Do not edit without asking Patrick Schleizer beforehand!
 {{#seo:
 |description=Whonix Imprint Impressum
 }}
+__NOINDEX__
 
 = Impressum =
 == Angaben (gemäß § 5 TMG) ==
@@ -58294,8 +58295,6 @@ Dieses Impressum gilt auch für:
 ** https://github.com/adrelanos/curl-scripts
 ** https://github.com/Whonix/damngpl
 ** https://github.com/adrelanos/damngpl
-** https://github.com/Whonix/generic-gui-message
-** https://github.com/adrelanos/generic-gui-message
 ** https://github.com/Whonix/gpl-sources-download
 ** https://github.com/adrelanos/gpl-sources-download
 ** https://github.com/Whonix/grub-enable-apparmor
@@ -58426,7 +58425,7 @@ Die Datenschutzerklärung finden Sie [[Datenschutz|hier]].
 Den Haftungsausschluss (Disclaimer) finden Sie [[Disclaimer|hier]].
 
 [[Category:Documentation]]</text>
-      <sha1>3jpneu8wb99ctwr7ygr6gbibbtzfdfp</sha1>
+      <sha1>6uajawsxc2hujk3sv5ryhhht63fihy8</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
