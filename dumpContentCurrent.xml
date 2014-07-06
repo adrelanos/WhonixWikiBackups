@@ -5644,13 +5644,15 @@ then choose etc (at the bottom) and then choose UTC.
     <ns>0</ns>
     <id>87</id>
     <revision>
-      <id>7598</id>
-      <parentid>7362</parentid>
-      <timestamp>2014-04-28T03:18:37Z</timestamp>
+      <id>8191</id>
+      <parentid>8189</parentid>
+      <timestamp>2014-07-06T12:41:44Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="22135">&lt;!--
+      <comment>/* Safer Upgrades */</comment>
+      <text xml:space="preserve" bytes="22663">&lt;!--
 Copyright:
 
    Whonix Pre Install Advice wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -5690,6 +5692,11 @@ The Whonix Pre Install Advice wiki page is forked from the Tails Enable MAC Chan
 
 == General ==
 Whonix with its default settings [[Comparison with Others#Security|may]] provide better protection than Tor alone. You can make it even more secure. It depends on how much you are willing to read, think about and practice with the procedures. See [[Documentation]].
+
+== Safer Upgrades ==
+If you already have Whonix installed, before performing an upgrade to your current Whonix setup, you are advised to shutdown any running Whonix instance currently attached to the internal virtual network named 'Whonix'. This is required to prevent cross contamination of the new machines you are importing, in the event that a powerful adversary has taken control over the ones currently in use.
+
+Note: This is not required if you intend to create a new virtual network for the machines you are importing.
 
 == Warnings ==
 
@@ -5964,7 +5971,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>jyer98mh1wiysk00klksqbtqs47gvi9</sha1>
+      <sha1>tal5r6thh8eq2lclino2t3xgbzdz299</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -55640,17 +55647,20 @@ Many thanks to Tails team for their discussion on the topic of password managers
     <ns>0</ns>
     <id>685</id>
     <revision>
-      <id>8111</id>
-      <parentid>8109</parentid>
-      <timestamp>2014-06-22T13:49:06Z</timestamp>
+      <id>8223</id>
+      <parentid>8215</parentid>
+      <timestamp>2014-07-06T15:06:38Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="4771">{{Header}}
+      <comment>/* Extra */</comment>
+      <text xml:space="preserve" bytes="12280">{{Header}}
 {{#seo:
 |description=Using Whonix with KVM instead of VirtualBox
 }}
 
+= General =
 == What is KVM? ==
 For an openly developed, FOSS GPL licensed hypervisor, it is recommended you use KVM [Kernel Virtual Machine] that comes with the GNU/Linux OS. KVM combined with the VirtualMachineManager front-end should provide a familiar and intuitive, easy to use GUI.
 
@@ -55670,31 +55680,263 @@ http://seclists.org/fulldisclosure/2012/Apr/343 &lt;&lt; A 0day reported private
 
 Furthermore VirtualBox contains significant functionality that is only available as a proprietary extension, such as USB and PCI passthrough and RDP connectivity. Seeing Oracle's unfriendly trackrecord with the free software community in the past; examples include OpenSolaris and OpenOffice, it would not be a stretch to imagine them charging money for the closed up features at some point in the future or simply abandoning the project if they cannot monetize it to their liking.
 
-== KVM Setup Instructions ==
-
-It is highly recommended you read and apply the steps outlined in the README file that's included in the tar archive you downloaded. By applying a known and tested configuration, you will be better off in convenience and security.
+= KVM Setup Instructions =
+{{testing}}
+== Download and Extract ==
+It is highly recommended you read and apply the steps outlined here. By applying a known and tested configuration, you will be better off in convenience and security.
 
 Make sure you use the qcow2 images that are provided by the Whonix project instead of rolling your own. &lt;ref&gt;As in, manually converting them from .ova to .qcow2 is no longer recommended, since you can download .qcow images from the Whonix project.&lt;/ref&gt; They contain important performance optimizations. &lt;ref&gt;As per [https://github.com/Whonix/Whonix/blob/master/build-steps.d/2400_convert-img-to-qcow2 build-steps.d/2400_convert-img-to-qcow2], these are &quot;-o cluster_size=2M&quot; and &quot;-o preallocation=metadata&quot;.&lt;/ref&gt; (Unless you [[Dev/Build_Documentation|created them from source]]. &lt;ref&gt;Because then you have the same performance optimizations.&lt;/ref&gt;)
 
 If you have issues with free disk space, using a file system supporting sparse files is recommended, also see [https://www.whonix.org/forum/index.php?topic=153 forum discussion].
 
+1. Already have existing Whonix libvirt images? Consider [[#Cleanup]] first.
 
-1. Make sure you verify the integrity of your download by using gpg to make sure that your downloads have not been tampered with. See here: https://www.whonix.org/wiki/Verify_the_virtual_machine_images_using_the_command_line
+2. For simplicity, so you can copy and paste the following commands without changes, download and store Whonix's images in your home folder ({{Code2|/home/&lt;your user name&gt;}}).
 
-2. Use tar or any graphical based file archiver to decompress the archive;
+3. Make sure you verify the integrity of your download by using gpg to make sure that your downloads have not been tampered with. See here: [[Download#Verify_the_Whonix_images]]
+
+4. Use tar or any graphical based file archiver to decompress the archive.
 
 &lt;pre&gt;
-sudo tar xvf Whonix-Gateway-X.X.qcow2.xz 
+tar xvf ~/Whonix-Gateway-*.libvirt.xz
 &lt;/pre&gt;
 
-Do not use unxz! Extract the images using tar
+&lt;pre&gt;
+tar xvf ~/Whonix-Workstation-*.libvirt.xz
+&lt;/pre&gt;
 
+Do not use unxz! Extract the images using tar.
+
+== XML Modification (OPTIONAL) ==
+Modifying a machine's XML file gives more fine grained control over its settings than what is exposed through the virt-manager GUI. Unless you know what you are doing, editing configuration defaults is neither recommended nor necessary.
+
+&lt;pre&gt;
+nano ~/Whonix-Gateway/Whonix-Gateway_kvm-*.xml
+&lt;/pre&gt;
+
+&lt;pre&gt;
+nano ~/Whonix-Gateway/Whonix-Workstation_kvm-*.xml
+&lt;/pre&gt;
+
+You could always edit the XML files later too, if needed as explained in the [[#Editing an imported Machine's XML Configuration]] chapter.
+
+== Importing Whonix VM Templates ==
+The supplied XML files serve as a description for libvirt, that tell it what properties a Whonix machine and networking it should have.
+
+1. First we will start with Whonix-Gateway:
+
+&lt;pre&gt;
+virsh define ~/Whonix-Gateway/Whonix-Gateway_kvm-*.xml
+&lt;/pre&gt;
+
+2. Followed by the Whonix isolated internal network (XML also in the same folder as Whonix Gateway):
+
+&lt;pre&gt;
+virsh net-define ~/Whonix-Gateway/Whonix_network-*.xml
+&lt;/pre&gt;
+
+&lt;pre&gt;
+virsh net-autostart Whonix
+&lt;/pre&gt;
+
+&lt;pre&gt;
+virsh net-start Whonix
+&lt;/pre&gt;
+
+3. Lastly the Whonix-Workstation:
+
+&lt;pre&gt;
+virsh define ~/Whonix-Workstation/Whonix-Workstation_kvm-*.xml
+&lt;/pre&gt;
+
+== Alternative Configurations ==
+By default the templates distributed are for KVM, to run alternative configurations like qemu-system-x86-64, import the corresponding file with virsh.
+
+== Moving Whonix Image Files ==
+The XML files are configured to point to the default storage location of: /var/lib/libvirt/images These steps will show how to move the images there in order for the machines to boot.
+
+Note: It is highly recommended you use this default path for storing the images to avoid any conflicts with AppArmor or SELinux, which will prevent the machines from booting.
+
+Whonix disk images are sparse files, meaning they expand when filled rather than allocating their entire size, 100GB outright. These are known as sparse files and need special commands when copying them to ensure they don't lose this property, leading them to occupy all the actual space. We are copying to a privileged location in the system, so we have run with higher privileges (sudo). Copy the image files by running.
+
+&lt;pre&gt;
+sudo cp --sparse=always ~/Whonix-Gateway-*.qcow2 /var/lib/libvirt/images/Whonix-Gateway.qcow2
+&lt;/pre&gt;
+
+&lt;pre&gt;
+sudo cp --sparse=always ~/Whonix-Workstation-*.qcow2 /var/lib/libvirt/images/Whonix-Workstation.qcow2
+&lt;/pre&gt;
+
+Or alternatively, if you are running on low disk space, you could move the images instead of copying them.
+
+&lt;pre&gt;
+sudo mv ~/Whonix-Gateway/Whonix-Gateway-*.qcow2 /var/lib/libvirt/images/Whonix-Gateway.qcow2
+&lt;/pre&gt;
+
+&lt;pre&gt;
+sudo mv ~/Whonix-Workstation/Whonix-Workstation-*.qcow2 /var/lib/libvirt/images/Whonix-Workstation.qcow2
+&lt;/pre&gt;
+
+== Cleanup ==
+After importing Whonix, you are advised to delete the archives ({{Code2|.libvirt.xz}} files) and the temporarily extracted folders or to move them into a custom location. This is useful to avoid conflicts and confusion should you later download a new version of Whonix.
+
+To delete them.
+
+&lt;pre&gt;
+rm ~/Whonix-Gateway-*.libvirt.xz
+&lt;/pre&gt;
+
+&lt;pre&gt;
+rm ~/Whonix-Workstation-*.libvirt.xz
+&lt;/pre&gt;
+
+&lt;pre&gt;
+rm -r ~/Whonix-Gateway
+&lt;/pre&gt;
+
+&lt;pre&gt;
+rm -r ~/Whonix-Workstation
+&lt;/pre&gt;
+
+= Extra =
+== KVM Shared Folders ==
+
+1. Set the following settings for shared folders in virt-manager:
+
+The file sharing mode 'mapped' is just an example, using squash or passthrough is possible by selecting them from the drop down menu.
+
+Driver: Default
+Mode: Mapped
+
+Source Path: [This is the path of the folder on the Host you are sharing with the Guest]
+Target Path: [A custom tag for the shared directory that is used when running the mounting commands within the guest. for example: /tmpshare]
+
+
+2. Run terminal as root in Guest then use the following command (not necessary unless using a different mount tag, see below):
+
+&lt;pre&gt;
+mount -t 9p -o trans=virtio [mount tag] [mount point] -oversion=9p2000.L
+&lt;/pre&gt;
+
+Mount tag is: /tmpshare
+Mount point is the path of the directory that you will share in the Guest with the Host. If it doesn't exist you must create that folder.
+
+Note: you replace the parentheses in the command, they are just a placeholder in this example and should not be typed in.
+
+
+3. To automatically mount this every time at boot, add the following to your guest's /etc/fstab:
+
+&lt;pre&gt;
+sudo nano /etc/fstab [mount tag] [mount point] 9p trans=virtio,version=9p2000.L,rw 0 0
+&lt;/pre&gt;
+
+Note: If your system is configured to use a Mandatory Access Control framework like AppArmor, you may need to configure an exception rule to allow the confined guests to communicate with the designated shared folder on the guest. Do NOT be tempted to disable AppArmor to get this working, as it removes a critical protection layer that protects your host. Be patient and read the documentation.
+By default Whonix can automount a shared folder on the host as long as you use set up virt-manager to use hostshare tag: shared
+If you are using commandline add this xml code to your configuration, this is an example and should be adapted for your usage:
+
+&lt;pre&gt;
+&lt;filesystem type='mount' accessmode='mapped'&gt;
+    &lt;source dir='/mnt/shared'/&gt;
+    &lt;target dir='tag'/&gt;
+&lt;/filesystem&gt;
+&lt;/pre&gt;
+
+== KVM Shared Folders ==
+To move data between the guest and host follow these steps.
+
+On the host.
+
+Run the following command in terminal (Start Menu -&gt; Applications -&gt; System -&gt; Terminal).
+
+&lt;pre&gt;
+sudo mkdir /mnt/shared
+&lt;/pre&gt;
+
+Enable shared folders in VirtManager go to.
+
+&lt;pre&gt;
+VirtManager -&gt; click once on virtual machine -&gt; Edit -&gt; Virtual Machine Details -&gt; Details -&gt;
+Add Hardware -&gt; File System
+&lt;/pre&gt;
+
+Set.
+
+Mode: Mapped &lt;ref&gt;The file sharing mode {{Code2|mapped}} is just an example, using squash or passthrough is possible by selecting them from the drop down menu.&lt;/ref&gt;
+
+Driver: Default
+
+Source Path: {{Code|/mnt/shared}}
+
+Target Path: {{Code|/mnt/shared}}
+
+Click finish. Done.
+
+In the VM.
+
+Run the following command in terminal (Start Menu -&gt; Applications -&gt; System -&gt; Terminal).
+
+&lt;pre&gt;
+sudo mount -t 9p -o trans=virtio shared /mnt/shared -oversion=9p2000.L
+&lt;/pre&gt;
+
+To automatically mount this every time at boot, open {{Code2|/etc/fstab}}.
+
+If you are using a graphical virtual machine.
+
+&lt;pre&gt;
+kdesudo kwrite /etc/fstab
+&lt;/pre&gt;
+
+Or if you are using a terminal-only virtual machine.
+
+&lt;pre&gt;
+sudo nano /etc/fstab
+&lt;/pre&gt;
+
+Add.
+
+&lt;pre&gt;
+shared /mnt/shared    9p  trans=virtio,version=9p2000.L,rw    0   0
+&lt;/pre&gt;
+
+Save.
+
+== Editing an imported Machine's XML Configuration ==
+
+&lt;pre&gt;
+EDITOR=nano sudo virsh edit Whonix-Gateway
+&lt;/pre&gt;
+
+== Enabling Clipboard Sharing ==
+SPICE allows accelerated graphics and clipboard sharing. The clipboard is disabled by default for security reasons &lt;ref&gt;So you don't accidentally copy for example a link to a website you visited anonymously to your non-anonymous host browser or vice versa.&lt;/ref&gt; but could be enabled in the xml for a machine by finding the option for it under the &lt;graphics&gt; section and changing it to'yes'.
+
+== Switch KVM/qemu ==
+To change existing kvm guest to use plain qemu or vice versa, because this can not be done yet with the virt-manager GUI.
+
+&lt;pre&gt;
+sudo virsh edit Whonix-Gateway
+&lt;/pre&gt;
+
+And change.
+
+&lt;pre&gt;
+&lt;domain type='kvm'&gt;
+&lt;/pre&gt;
+
+To.
+
+&lt;pre&gt;
+ &lt;domain type='qemu'&gt;
+&lt;/pre&gt;
+
+
+== Footnotes ==
 &lt;references/&gt;
 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>sf0tv72m9l8xoggjh565232ltuvnntg</sha1>
+      <sha1>prefm1w5kaw4fxy10673utyhqepjtg6</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -56275,13 +56517,14 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
     <ns>0</ns>
     <id>691</id>
     <revision>
-      <id>8182</id>
-      <parentid>8106</parentid>
-      <timestamp>2014-07-05T05:45:39Z</timestamp>
+      <id>8232</id>
+      <parentid>8231</parentid>
+      <timestamp>2014-07-06T15:52:27Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="40092">{{Header}}
+      <text xml:space="preserve" bytes="39435">{{Header}}
 {{#seo:
 |description=Development Notes for adding KVM support to Whonix.
 }}
@@ -56292,182 +56535,17 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
 * [https://github.com/Whonix/Whonix/issues/121 KVM Support github ticket]
 
 = Blockers =
-== xml does not validate ==
-&lt;pre&gt;
-virsh --version
-0.9.12.3
-&lt;/pre&gt;
-
-&lt;pre&gt;
-virt-xml-validate whonix_gateway.xml
-whonix_gateway.xml:24: element pm: Relax-NG validity error : Element domain has extra content: pm
-whonix_gateway.xml fails to validate
-&lt;/pre&gt;
-
-&lt;pre&gt;
-virt-xml-validate whonix_workstation.xml 
-whonix_workstation.xml:24: element pm: Relax-NG validity error : Element domain has extra content: pm
-whonix_workstation.xml fails to validate
-&lt;/pre&gt;
-
-&lt;pre&gt;
-virt-xml-validate whonix_network.xml 
-whonix_network.xml:1: element network: Relax-NG validity error : Invalid attribute connections for element network                                                                  
-whonix_network.xml fails to validate
-&lt;/pre&gt;
-
-kvmclock had to be under rtc for it to work. The Network xml validates on my machine without changes however. Please check if it works and post back.
-
-The virt-xml-validate I tested with is a newer version. Try updating to a more recent one and try again, I think it may be buggy or not updated enough to interpret new schema they may have added since .9x was released.
-
-
-
 = Non-Blockers =
-== KVM Shared Folders ==
-To move data between the guest and host follow these steps.
-
-On the host.
-
-Run the following command in terminal (Start Menu -&gt; Applications -&gt; System -&gt; Terminal).
-
-&lt;pre&gt;
-sudo mkdir /mnt/shared
-&lt;/pre&gt;
-
-Enable shared folders in VirtManager go to.
-
-&lt;pre&gt;
-VirtManager -&gt; click once on virtual machine -&gt; Edit -&gt; Virtual Machine Details -&gt; Details -&gt;
-Add Hardware -&gt; File System
-&lt;/pre&gt;
-
-Set.
-
-Mode: Mapped &lt;ref&gt;The file sharing mode {{Code2|mapped}} is just an example, using squash or passthrough is possible by selecting them from the drop down menu.&lt;/ref&gt;
-
-Driver: Default
-
-Source Path: {{Code|/mnt/shared}}
-
-Target Path: {{Code|/mnt/shared}}
-
-Click finish. Done.
-
-In the VM.
-
-Run the following command in terminal (Start Menu -&gt; Applications -&gt; System -&gt; Terminal).
-
-&lt;pre&gt;
-sudo mount -t 9p -o trans=virtio shared /mnt/shared -oversion=9p2000.L
-&lt;/pre&gt;
-
-To automatically mount this every time at boot, open {{Code2|/etc/fstab}}.
-
-If you are using a graphical virtual machine.
-
-&lt;pre&gt;
-kdesudo kwrite /etc/fstab
-&lt;/pre&gt;
-
-Or if you are using a terminal-only virtual machine.
-
-&lt;pre&gt;
-sudo nano /etc/fstab
-&lt;/pre&gt;
-
-Add.
-
-&lt;pre&gt;
-shared /mnt/shared    9p  trans=virtio,version=9p2000.L,rw    0   0
-&lt;/pre&gt;
-
-Save.
-
 == Preconfigured Shared Folders ==
 Patrick asks: For better usability, should we add the necessary settings for shared folders by default to whonix_gateway.xml and whonix_workstation.xml?
-
-Patrick asks: Can you do this?
 
 Patrick comments: I could then, if kvm is detected (easy using virt-what), automatically mount the shared folder in Whonix VMs. Could be implemented into the [https://github.com/Whonix/shared-folder-help shared-folder-help] package.
 
 Patrick asks: If we decide to do so, what would be good default paths for the host shared folder? /mnt/shared_gw and /mnt/shared_ws?
 
-== Exporting/Cloning of virtual machines ==
+Patrick said: HulaHoop reported, that &quot;virsh define&quot; will fail if the shared folder in the xml does not exist.
 
-Important links:
-
-http://libvirt.org/sources/virshcmdref/html-single/
-
-https://unix.stackexchange.com/questions/8351/how-to-create-a-dupe-of-a-kvm-libvirt-virt-manager-vm
-
-Archived thread SE
-
-&lt;pre&gt;
-
-I'm a bit lost with virt-manager / libvirt / KVM.
-
-I've got a working KVM VM (Windows XP) which works nicely.
-
-The VM is backed by a 4GB file or so (a .img).
-
-Now I want to do something very simple: I want to duplicate my VM.
-
-I thought &quot;OK, no problem, let's copy the 4GB file and copy the XML&quot; file.
-
-But then the libvirt FAQ states in all uppercase: &quot;you SHOULD NOT CARE WHERE THE XML IS STORED&quot;
-
-http://wiki.libvirt.org/page/FAQ
-
-OK fine, I shouldn't care. But then how do I duplicate my VM?
-
-I want to create a new VM that is a copy of that VM.
-&lt;/pre&gt;
-
-&lt;pre&gt;
-
-The most convenient is simply:
-
-# virt-clone --connect=qemu://example.com/system -o this-vm -n that-vm --auto-clone
-
-Which will make a copy of this-vm, named that-vm, and takes care of duplicating storage devices. Nothing new here except detail.
-
-More to the point, What the FAQ is saying is that the XML domain descriptions are not directly editable, you need to go through libvirt. To complete the steps taken by the virt-clone command, you could:
-
-# You cannot &quot;clone&quot; a running vm, stop it.  suspend and destroy
-# are also valid options for less graceful cloning
-virsh shutdown this.vm
-
-# copy the storage.
-cp /var/lib/libvirt/images/{this-vm,that-vm}.img
-
-# dump the xml for the original
-virsh dumpxml this-vm &gt; /tmp/that-vm.xml
-
-# hardware addresses need to be removed, libvirt will assign
-# new addresses automatically
-sed -i /uuid/d /tmp/that-vm.xml
-sed -i '/mac address/d' /tmp/that-vm.xml
-
-# and actually rename the vm: (this also updates the storage path)
-sed -i s/this-vm/that-vm /tmp/that-vm.xml
-
-# finally, create the new vm
-virsh define /tmp/that-vm.xml
-virsh start this-vm
-virsh start that-vm
-
-&lt;/pre&gt;
-
-&lt;pre&gt;# dump the xml for the virtual isolated network
-virsh net-dumpxml whonix &gt; /tmp/whonix.xml
-
-# hardware addresses need to be removed, libvirt will assign
-# new addresses automatically
-sed -i /uuid/d /tmp/whonix.xml
-sed -i '/mac address/d' /whonix.xml
-&lt;/pre&gt;
-
-http://linux.die.net/man/1/virt-clone
+See also: https://github.com/Whonix/Whonix/issues/223
 
 == Document: how to leave KVM when no X is running? ==
 Situation... User is in terminal in a VM... No X is running (&quot;sudo service kdm stop&quot;). User wants to switch back to the host... How to do this?
@@ -56602,20 +56680,6 @@ http://libvirt.org/drvqemu.html#securitysvirtaa
 AppArmor profiles for Ubuntu could be ported to Debian:
 http://bazaar.launchpad.net/~ubuntu-branches/ubuntu/utopic/libvirt/utopic/files/head:/debian/apparmor/
 
-== How to add a random time offset? ==
-Having a small random offset (similar to [[Advanced_Security_Guide#Network_Time_Synchronization]]) would be a good thing.
-
-== Script/automate creation of VM description files? ==
-So not following manual instructions is required anymore, but copy/paste some commands end up with the correct VM configuration.
-
-Once the necessary commands are documented, Patrick will be happy to automate the steps with a script.
-
-== Script/automate creation and upload of raw images? ==
-Because raw images have better performance than raw images? http://www.linux-kvm.org/page/Qcow2
-
-True that performance is better, but I don't think it supports snapshots AFAIK.
-For something that supports snapshots and good performance lets stick with qcow2.
-
 == Set cluster_size 512 - 2MB for better performance? ==
 HulaHoop1 wrote: The qcow2 defaults seem fine to me, however the one parameter of interest we should play with is image's : 'cluster_size' 512 - 2MB the larger the size the better performance but the size is bigger. I think we should try the largest and see if the image size stays reasonable.
 
@@ -56660,39 +56724,7 @@ It remains to be tested, if the images work well using these settings. (The appa
 
 git tag 7.8.0.1 and above will be using the &quot;-o cluster_size=2M&quot; option.
 
-
-I am yet to document this in the KVM page lets do this at the end. Is there any tangible speed gains?
-
-== Qemu Support ==
-To change existing kvm guest to use plain qemu, because this can not be done yet with the virt-manager GUI.
-
-&lt;pre&gt;
-sudo virsh edit Whonix-Gateway
-&lt;/pre&gt;
-
-And change.
-
-&lt;pre&gt;
-&lt;domain type='kvm'&gt;
-&lt;/pre&gt;
-
-To.
-
-&lt;pre&gt;
- &lt;domain type='qemu'&gt;
-&lt;/pre&gt;
-
-== Shared Folder ==
-We should add instructions on how to use shared folders.
-http://www.linux-kvm.org/page/9p_virtio
-
-== Run virt-xml-validate during build process ==
-We should use.
-&lt;pre&gt;
-virt-xml-validate libvirt.xml
-&lt;/pre&gt;
-
-Patrick will be happy to add this command to the build process when using --kvm (or --qemu?) switch. Scripting this should be simple and the build process could fail early and closed (break).
+HulaHoop said: I am yet to document this in the KVM page lets do this at the end. Is there any tangible speed gains?
 
 == virt-v2v ==
 === How to install virt-v2v on Debian? ===
@@ -56718,11 +56750,103 @@ This is what probably must be done in the build script. We got qcow2 files and x
 === How to export a VM using virt-v2v? ===
 This is probably what users have to do to import. What command must be used to import a VM?
 
+== Exporting/Cloning of virtual machines ==
+Important links:
+
+http://libvirt.org/sources/virshcmdref/html-single/
+
+https://unix.stackexchange.com/questions/8351/how-to-create-a-dupe-of-a-kvm-libvirt-virt-manager-vm
+
+Archived thread SE
+
+&lt;pre&gt;
+
+I'm a bit lost with virt-manager / libvirt / KVM.
+
+I've got a working KVM VM (Windows XP) which works nicely.
+
+The VM is backed by a 4GB file or so (a .img).
+
+Now I want to do something very simple: I want to duplicate my VM.
+
+I thought &quot;OK, no problem, let's copy the 4GB file and copy the XML&quot; file.
+
+But then the libvirt FAQ states in all uppercase: &quot;you SHOULD NOT CARE WHERE THE XML IS STORED&quot;
+
+http://wiki.libvirt.org/page/FAQ
+
+OK fine, I shouldn't care. But then how do I duplicate my VM?
+
+I want to create a new VM that is a copy of that VM.
+&lt;/pre&gt;
+
+&lt;pre&gt;
+
+The most convenient is simply:
+
+# virt-clone --connect=qemu://example.com/system -o this-vm -n that-vm --auto-clone
+
+Which will make a copy of this-vm, named that-vm, and takes care of duplicating storage devices. Nothing new here except detail.
+
+More to the point, What the FAQ is saying is that the XML domain descriptions are not directly editable, you need to go through libvirt. To complete the steps taken by the virt-clone command, you could:
+
+# You cannot &quot;clone&quot; a running vm, stop it.  suspend and destroy
+# are also valid options for less graceful cloning
+virsh shutdown this.vm
+
+# copy the storage.
+cp /var/lib/libvirt/images/{this-vm,that-vm}.img
+
+# dump the xml for the original
+virsh dumpxml this-vm &gt; /tmp/that-vm.xml
+
+# hardware addresses need to be removed, libvirt will assign
+# new addresses automatically
+sed -i /uuid/d /tmp/that-vm.xml
+sed -i '/mac address/d' /tmp/that-vm.xml
+
+# and actually rename the vm: (this also updates the storage path)
+sed -i s/this-vm/that-vm /tmp/that-vm.xml
+
+# finally, create the new vm
+virsh define /tmp/that-vm.xml
+virsh start this-vm
+virsh start that-vm
+
+&lt;/pre&gt;
+
+&lt;pre&gt;# dump the xml for the virtual isolated network
+virsh net-dumpxml whonix &gt; /tmp/whonix.xml
+
+# hardware addresses need to be removed, libvirt will assign
+# new addresses automatically
+sed -i /uuid/d /tmp/whonix.xml
+sed -i '/mac address/d' /whonix.xml
+&lt;/pre&gt;
+
+http://linux.die.net/man/1/virt-clone
+
 == libguestfs import/export feature request ==
 Let's together write a feature request for an import/export feature for libguestfs, similar to VirtualBox's import/export feature. Then post in [https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization%20Tools libguestfs's bug tracker].
 
 == virt-manager import/export feature request ==
 Let's together write a feature request for an import/export feature for virt-manager, similar to VirtualBox's import/export feature. Then post in [https://bugzilla.redhat.com/buglist.cgi?product=Virtualization%20Tools&amp;classification=Community&amp;component=virt-manager&amp;bug_status=NEW&amp;bug_status=ASSIGNED virt-manager's bug tracker].
+
+== management tools ==
+There are a lot [http://www.linux-kvm.org/page/Management_Tools management tools]. Are any of these useful for Whonix's use case?
+
+= Answered Questions =
+== Shared Folder ==
+We should add instructions on how to use shared folders.
+http://www.linux-kvm.org/page/9p_virtio
+
+Done: [[KVM#KVM_Shared_Folders]]
+
+== Script/automate creation and upload of raw images? ==
+Because raw images have better performance than raw images? http://www.linux-kvm.org/page/Qcow2
+
+True that performance is better, but I don't think it supports snapshots AFAIK.
+For something that supports snapshots and good performance lets stick with qcow2.
 
 == write generic import script ==
 Maybe write generic import script as per: &lt;br /&gt;
@@ -56730,10 +56854,60 @@ https://www.whonix.org/forum/index.php/topic,159.msg2412.html#msg2412
 
 A hellish solution and way too much work. Your time is spent better elsewhere. I'll use my time to get xml import validation working.
 
-== management tools ==
-There are quote some [http://www.linux-kvm.org/page/Management_Tools management tools]. Are any of these useful for Whonix's use case?
+== Script/automate creation of VM description files? ==
+So not following manual instructions is required anymore, but copy/paste some commands end up with the correct VM configuration.
 
-= Answered Questions =
+Once the necessary commands are documented, Patrick will be happy to automate the steps with a script.
+
+HulaHoop created [https://github.com/Whonix/Whonix/tree/master/libvirt xml files], because kvm xml files can not be created using libvirt as VirtualBox VM setting files can be created using vboxmanage. This is not a problem.
+
+== How to add a random time offset? ==
+Having a small random offset (similar to [[Advanced_Security_Guide#Network_Time_Synchronization]]) would be a good thing.
+
+Patrick said: Thanks to [https://github.com/Whonix/bootclockrandomization bootclockrandomization] this is no longer necessary.
+
+== xml does not validate ==
+&lt;pre&gt;
+virsh --version
+0.9.12.3
+&lt;/pre&gt;
+
+&lt;pre&gt;
+virt-xml-validate whonix_gateway.xml
+whonix_gateway.xml:24: element pm: Relax-NG validity error : Element domain has extra content: pm
+whonix_gateway.xml fails to validate
+&lt;/pre&gt;
+
+&lt;pre&gt;
+virt-xml-validate whonix_workstation.xml 
+whonix_workstation.xml:24: element pm: Relax-NG validity error : Element domain has extra content: pm
+whonix_workstation.xml fails to validate
+&lt;/pre&gt;
+
+&lt;pre&gt;
+virt-xml-validate whonix_network.xml 
+whonix_network.xml:1: element network: Relax-NG validity error : Invalid attribute connections for element network                                                                  
+whonix_network.xml fails to validate
+&lt;/pre&gt;
+
+kvmclock had to be under rtc for it to work. The Network xml validates on my machine without changes however. Please check if it works and post back.
+
+The virt-xml-validate I tested with is a newer version. Try updating to a more recent one and try again, I think it may be buggy or not updated enough to interpret new schema they may have added since .9x was released.
+
+Patrick said: HulaHoop said this is only due to different KVM versions and won't cause issues.
+
+Patrick said: Leaving automatic validation out for now. Can still be done manually after editing the xml files.
+
+== Run virt-xml-validate during build process ==
+We should use.
+&lt;pre&gt;
+virt-xml-validate libvirt.xml
+&lt;/pre&gt;
+
+Patrick will be happy to add this command to the build process when using --kvm (or --qemu?) switch. Scripting this should be simple and the build process could fail early and closed (break).
+
+Patrick said: Since validation is too version specific (see above), we're not doing this.
+
 == Weaker warning against KVM in whonixcheck ==
 As soon as all blockers have been sorted out. We could recommend using [[KVM]] instructions.
 
@@ -57105,7 +57279,7 @@ http://blog.wikichoon.com/2014/04/deprecating-little-used-tool-virt-image1.html
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>3rmma9jgrwqwwmpby4kc1ik4f6i7a4o</sha1>
+      <sha1>ap38s0djec4dvfvrkcvm8jsra0jyd4p</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
