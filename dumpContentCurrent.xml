@@ -56517,14 +56517,15 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
     <ns>0</ns>
     <id>691</id>
     <revision>
-      <id>8232</id>
-      <parentid>8231</parentid>
-      <timestamp>2014-07-06T15:52:27Z</timestamp>
+      <id>8237</id>
+      <parentid>8236</parentid>
+      <timestamp>2014-07-08T13:13:04Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="39435">{{Header}}
+      <comment>shuffle</comment>
+      <text xml:space="preserve" bytes="39744">{{Header}}
 {{#seo:
 |description=Development Notes for adding KVM support to Whonix.
 }}
@@ -56646,9 +56647,6 @@ http://www.linux-kvm.org/page/Virtio/Block/Latency
 
 HulaHoop: Yes it could have been the situation that there is latency as the data shows, but I'm sure this was improved by now.
 
-== Boot from virtio block device? ==
-What is http://www.linux-kvm.org/page/Boot_from_virtio_block_device good for? Required?
-
 == How to check if virtio storage access is in use or an eventually existing fallback driver? ==
 How to check if virtio storage access '''virtio_blk''' really is in use or an eventually existing fallback driver?
 
@@ -56667,6 +56665,9 @@ Only shows, that the virtio kernel module is loaded. It isn't hard to load arbit
 How to check, that '''virtio_pci''' is really being used and not some fallback driver?
 
 /sys/devices/virtio-pci/0/net/eth0/statistics/rx_bytes seems not to exist on Debian Wheezy.
+
+== Boot from virtio block device? ==
+What is http://www.linux-kvm.org/page/Boot_from_virtio_block_device good for? Required?
 
 == How to enable AppArmor / SELinux for KVM on Debian? ==
 
@@ -56726,6 +56727,107 @@ git tag 7.8.0.1 and above will be using the &quot;-o cluster_size=2M&quot; optio
 
 HulaHoop said: I am yet to document this in the KVM page lets do this at the end. Is there any tangible speed gains?
 
+== Exporting/Cloning of virtual machines ==
+Important links:
+
+* http://libvirt.org/sources/virshcmdref/html-single/
+* https://unix.stackexchange.com/questions/8351/how-to-create-a-dupe-of-a-kvm-libvirt-virt-manager-vm
+* http://linux.die.net/man/1/virt-clone
+
+Archived thread SE
+
+&lt;blockquote&gt;
+I'm a bit lost with virt-manager / libvirt / KVM.
+
+I've got a working KVM VM (Windows XP) which works nicely.
+
+The VM is backed by a 4GB file or so (a .img).
+
+Now I want to do something very simple: I want to duplicate my VM.
+
+I thought &quot;OK, no problem, let's copy the 4GB file and copy the XML&quot; file.
+
+But then the libvirt FAQ states in all uppercase: &quot;you SHOULD NOT CARE WHERE THE XML IS STORED&quot;
+
+http://wiki.libvirt.org/page/FAQ
+
+OK fine, I shouldn't care. But then how do I duplicate my VM?
+
+I want to create a new VM that is a copy of that VM.
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+
+The most convenient is simply:
+
+&lt;pre&gt;
+virt-clone --connect=qemu://example.com/system -o this-vm -n that-vm --auto-clone
+&lt;/pre&gt;
+
+Which will make a copy of this-vm, named that-vm, and takes care of duplicating storage devices. Nothing new here except detail.
+
+More to the point, What the FAQ is saying is that the XML domain descriptions are not directly editable, you need to go through libvirt. To complete the steps taken by the virt-clone command, you could:
+
+You cannot &quot;clone&quot; a running vm, stop it.  suspend and destroy are also valid options for less graceful cloning
+
+&lt;pre&gt;
+virsh shutdown this.vm
+&lt;/pre&gt;
+
+copy the storage.
+
+&lt;pre&gt;
+cp /var/lib/libvirt/images/{this-vm,that-vm}.img
+&lt;/pre&gt;
+
+dump the xml for the original
+
+&lt;pre&gt;
+virsh dumpxml this-vm &gt; /tmp/that-vm.xml
+&lt;/pre&gt;
+
+hardware addresses need to be removed, libvirt will assign new addresses automatically
+
+&lt;pre&gt;
+sed -i /uuid/d /tmp/that-vm.xml
+sed -i '/mac address/d' /tmp/that-vm.xml
+&lt;/pre&gt;
+
+and actually rename the vm: (this also updates the storage path)
+
+&lt;pre&gt;
+sed -i s/this-vm/that-vm /tmp/that-vm.xml
+&lt;/pre&gt;
+
+finally, create the new vm
+
+&lt;pre&gt;
+virsh define /tmp/that-vm.xml
+virsh start this-vm
+virsh start that-vm
+&lt;/pre&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;
+# dump the xml for the virtual isolated network
+virsh net-dumpxml whonix &gt; /tmp/whonix.xml
+
+# hardware addresses need to be removed, libvirt will assign
+# new addresses automatically
+sed -i /uuid/d /tmp/whonix.xml
+sed -i '/mac address/d' /whonix.xml
+&lt;/pre&gt;
+
+== libguestfs import/export feature request ==
+Let's together write a feature request for an import/export feature for libguestfs, similar to VirtualBox's import/export feature. Then post in [https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization%20Tools libguestfs's bug tracker].
+
+== virt-manager import/export feature request ==
+Let's together write a feature request for an import/export feature for virt-manager, similar to VirtualBox's import/export feature. Then post in [https://bugzilla.redhat.com/buglist.cgi?product=Virtualization%20Tools&amp;classification=Community&amp;component=virt-manager&amp;bug_status=NEW&amp;bug_status=ASSIGNED virt-manager's bug tracker].
+
+== management tools ==
+There are a lot [http://www.linux-kvm.org/page/Management_Tools management tools]. Are any of these useful for Whonix's use case?
+
+= Answered Questions =
 == virt-v2v ==
 === How to install virt-v2v on Debian? ===
 virt-v2v is not yet in Debian. [https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=743261 wishlist request]
@@ -56750,92 +56852,9 @@ This is what probably must be done in the build script. We got qcow2 files and x
 === How to export a VM using virt-v2v? ===
 This is probably what users have to do to import. What command must be used to import a VM?
 
-== Exporting/Cloning of virtual machines ==
-Important links:
+=== Closed ===
+Looks like we've settled on not using virt-v2v for either importing Whonix VMs or for cloning VMs. Probably mainly because v2v is not in Debian and hence doesn't make things simpler.
 
-http://libvirt.org/sources/virshcmdref/html-single/
-
-https://unix.stackexchange.com/questions/8351/how-to-create-a-dupe-of-a-kvm-libvirt-virt-manager-vm
-
-Archived thread SE
-
-&lt;pre&gt;
-
-I'm a bit lost with virt-manager / libvirt / KVM.
-
-I've got a working KVM VM (Windows XP) which works nicely.
-
-The VM is backed by a 4GB file or so (a .img).
-
-Now I want to do something very simple: I want to duplicate my VM.
-
-I thought &quot;OK, no problem, let's copy the 4GB file and copy the XML&quot; file.
-
-But then the libvirt FAQ states in all uppercase: &quot;you SHOULD NOT CARE WHERE THE XML IS STORED&quot;
-
-http://wiki.libvirt.org/page/FAQ
-
-OK fine, I shouldn't care. But then how do I duplicate my VM?
-
-I want to create a new VM that is a copy of that VM.
-&lt;/pre&gt;
-
-&lt;pre&gt;
-
-The most convenient is simply:
-
-# virt-clone --connect=qemu://example.com/system -o this-vm -n that-vm --auto-clone
-
-Which will make a copy of this-vm, named that-vm, and takes care of duplicating storage devices. Nothing new here except detail.
-
-More to the point, What the FAQ is saying is that the XML domain descriptions are not directly editable, you need to go through libvirt. To complete the steps taken by the virt-clone command, you could:
-
-# You cannot &quot;clone&quot; a running vm, stop it.  suspend and destroy
-# are also valid options for less graceful cloning
-virsh shutdown this.vm
-
-# copy the storage.
-cp /var/lib/libvirt/images/{this-vm,that-vm}.img
-
-# dump the xml for the original
-virsh dumpxml this-vm &gt; /tmp/that-vm.xml
-
-# hardware addresses need to be removed, libvirt will assign
-# new addresses automatically
-sed -i /uuid/d /tmp/that-vm.xml
-sed -i '/mac address/d' /tmp/that-vm.xml
-
-# and actually rename the vm: (this also updates the storage path)
-sed -i s/this-vm/that-vm /tmp/that-vm.xml
-
-# finally, create the new vm
-virsh define /tmp/that-vm.xml
-virsh start this-vm
-virsh start that-vm
-
-&lt;/pre&gt;
-
-&lt;pre&gt;# dump the xml for the virtual isolated network
-virsh net-dumpxml whonix &gt; /tmp/whonix.xml
-
-# hardware addresses need to be removed, libvirt will assign
-# new addresses automatically
-sed -i /uuid/d /tmp/whonix.xml
-sed -i '/mac address/d' /whonix.xml
-&lt;/pre&gt;
-
-http://linux.die.net/man/1/virt-clone
-
-== libguestfs import/export feature request ==
-Let's together write a feature request for an import/export feature for libguestfs, similar to VirtualBox's import/export feature. Then post in [https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization%20Tools libguestfs's bug tracker].
-
-== virt-manager import/export feature request ==
-Let's together write a feature request for an import/export feature for virt-manager, similar to VirtualBox's import/export feature. Then post in [https://bugzilla.redhat.com/buglist.cgi?product=Virtualization%20Tools&amp;classification=Community&amp;component=virt-manager&amp;bug_status=NEW&amp;bug_status=ASSIGNED virt-manager's bug tracker].
-
-== management tools ==
-There are a lot [http://www.linux-kvm.org/page/Management_Tools management tools]. Are any of these useful for Whonix's use case?
-
-= Answered Questions =
 == Shared Folder ==
 We should add instructions on how to use shared folders.
 http://www.linux-kvm.org/page/9p_virtio
@@ -57279,7 +57298,7 @@ http://blog.wikichoon.com/2014/04/deprecating-little-used-tool-virt-image1.html
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>ap38s0djec4dvfvrkcvm8jsra0jyd4p</sha1>
+      <sha1>h4riurts517dqpn6xc85oqtdnpqwpio</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -77691,6 +77710,26 @@ under certain conditions; see the wiki source code for details.
 
 [[Category:Documentation]]</text>
       <sha1>sj8u1a512craikdb96gamos8do5jrz3</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Online Tarot card Services: Ways to Select the Ideal Visitor</title>
+    <ns>0</ns>
+    <id>1384</id>
+    <revision>
+      <id>8238</id>
+      <timestamp>2014-07-08T21:04:48Z</timestamp>
+      <contributor>
+        <username>JacquelU18</username>
+        <id>392</id>
+      </contributor>
+      <comment>Created page with &quot;  [http://www.hayhouse.com/learning-to-do-psychic-tarot-card-readings-online-course hayhouse.com]Discovering an [http://atellpsychictarot.com online tarot] reader seems to be...&quot;</comment>
+      <text xml:space="preserve" bytes="4577">
+
+[http://www.hayhouse.com/learning-to-do-psychic-tarot-card-readings-online-course hayhouse.com]Discovering an [http://atellpsychictarot.com online tarot] reader seems to be easy and simple thing possible today as you can find so many sites and personal visitors providing solutions via the World Wide Web, but locating the perception or assistance you will need in the person that is best suited for your unique desires takes a very little time and research. Always a few items are you certainly can do to make certain you've the very best expertise possible with all the reader who will not be unable to not simply answer your issues but established your brain comfy at the same time. Let’s examine some of the factors you certainly can do to ensure you find perfect advisor to your online discussion.&lt;br&gt;Presents and Abilities&lt;br&gt;You could possibly feel like one viewer is more or less such as the next while searching for a tarot reading via the Internet, but nothing may be more from the reality. Tarot readers are merely that; those who study cards, but several intuitive experts or mediums also utilize tarot as being a device to conduct parts.&lt;br&gt;Before you decide to book a meeting with a particular reader, ask yourself whether what you would like is just plain tarot reading with insights and typical guidance, or are you looking for a reading that goes further? A Psychic will have the ability to offer understanding utilizing a number of presents or capabilities, along with tarot cards' utilization, and this reading form generally provides a significantly closer go through why’s and the who’s of a given situation.&lt;br&gt;Shipping Methods&lt;br&gt;Before booking a meeting a web based tarot reading might be supplied via a number of techniques thus often check the way a reader works. Although some are equally  accurate psychic readings online relaxed, some experts choose to operate via phone merely offering companies via messenger as well as videochat providers including Skype. Email numbers are on offer too and lots of intuitive advisors offer numbers via mail. The disadvantage to mail readings is that you won’t have the ability to request clarification in real time or whilst the reading is beginning and also the variety of concerns or areas of lifestyle are often restricted at the same time as a result of time constraints. The benefit to a message reading is that it’s frequently cheaper than an in-person or real time reading, as it can be completed at the reader’s leisure or different appointments that are inbetween.&lt;br&gt;Telephone sessions offer the possibility to speak to the viewer just like you'd should you and he visited with or her for an in-person reading, and it is a time distribution method that is efficient that is very. You need to be ready to match in more concerns or concentrate on over you would have the capacity to with an e-mail reading, but this kind of reading is usually accomplished via appointment and it usually takes aday or two, occasionally longer, to obtain a meeting. Skype parts work-in much the same means, with all the added reward of video chat to ensure that you’re in a position to start to see the audience you’re speaking to whilst the reading happens.&lt;br&gt;Per- solutions can also be available and several experts chat method wherever users spend per second for insight and guidance or provide online tarot readings via a cellphone. This kind of service's advantage is that the numbers are immediate, provided the counselor is defined to ‘available’ at the time. The drawback is that these examining varieties tend to be less cheap as a result of profits and support expenses consumed from the providers. This reading kind is very handy because no appointments are essential as well as the buyer is definitely of howmuch he/she uses in full control, nonetheless it can be quite a method of linking to your audience of choice.&lt;br&gt;Mediumship, Psychic Power&lt;br&gt;This really is another point before picking an audience to take into consideration,. In case you are in need of mediumship providers, constantly double-check the viewer you’re considering presents mediumship readings. Since they're capable to connect and communicate with family members who have entered over all mediums are psychic,, although not all psychics are channels. Mediumship is a psychic ability that is particular rather than all psychics are able to interact with dead family members. Should you consult with a tarot reader without any medium or psychic capability, you'll not receive communications from left loved ones.</text>
+      <sha1>r5tba8rm42p96uh8x8ubfwb9lqhdawn</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
