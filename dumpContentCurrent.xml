@@ -34206,21 +34206,21 @@ Another workaround: Buy, administrate and connect the SSH server anonymously tho
     <ns>0</ns>
     <id>274</id>
     <revision>
-      <id>5754</id>
-      <parentid>1011</parentid>
-      <timestamp>2014-02-27T11:49:28Z</timestamp>
+      <id>8241</id>
+      <parentid>8240</parentid>
+      <timestamp>2014-07-09T02:23:09Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <text xml:space="preserve" bytes="1532">{{Header}}
+      <comment>white</comment>
+      <text xml:space="preserve" bytes="1637">{{Header}}
 {{#seo:
 |description=Development Notes for adding Flash Proxy (circumvention) support to Whonix.
 }}
 
 = Flash Proxy =
 
-Credits: anonym on tails-dev wrote some things about Flash Proxy. These have been adapted for Whonix.
+Credits: anonym on tails-dev wrote some things about Flash Proxy. These have been adapted for Whonix. &lt;ref&gt;https://mailman.boum.org/pipermail/tails-dev/2013-June/003127.html&lt;/ref&gt;
 
 * Each flashproxy client requires a listening port on the open Internet. That's something we've never had in Whonix before, neither by default or through some options (our firewall even blocks it). That enables fingerprintability when scanning the ports of a Whonix host.
 * Listening on a port like that also increases the attack surface dramatically; before this, no random host could try to attack Whonix by connecting to it -- the Whonix host had to (some how) connect to them first. So, yeah, these two things are quite contradictory.
@@ -34229,8 +34229,10 @@ Credits: anonym on tails-dev wrote some things about Flash Proxy. These have bee
 
 {{Footer}}
 
+&lt;references&gt;&lt;/references&gt;
+
 [[Category:Design]] [[Category:Development]]</text>
-      <sha1>ezgu9s4etf9bg9nf4ixvz4muh5rguyt</sha1>
+      <sha1>hcxzfih4hd04lj4hfohddsebbyv902p</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -77710,26 +77712,6 @@ under certain conditions; see the wiki source code for details.
 
 [[Category:Documentation]]</text>
       <sha1>sj8u1a512craikdb96gamos8do5jrz3</sha1>
-      <model>wikitext</model>
-      <format>text/x-wiki</format>
-    </revision>
-  </page>
-  <page>
-    <title>Online Tarot card Services: Ways to Select the Ideal Visitor</title>
-    <ns>0</ns>
-    <id>1384</id>
-    <revision>
-      <id>8238</id>
-      <timestamp>2014-07-08T21:04:48Z</timestamp>
-      <contributor>
-        <username>JacquelU18</username>
-        <id>392</id>
-      </contributor>
-      <comment>Created page with &quot;  [http://www.hayhouse.com/learning-to-do-psychic-tarot-card-readings-online-course hayhouse.com]Discovering an [http://atellpsychictarot.com online tarot] reader seems to be...&quot;</comment>
-      <text xml:space="preserve" bytes="4577">
-
-[http://www.hayhouse.com/learning-to-do-psychic-tarot-card-readings-online-course hayhouse.com]Discovering an [http://atellpsychictarot.com online tarot] reader seems to be easy and simple thing possible today as you can find so many sites and personal visitors providing solutions via the World Wide Web, but locating the perception or assistance you will need in the person that is best suited for your unique desires takes a very little time and research. Always a few items are you certainly can do to make certain you've the very best expertise possible with all the reader who will not be unable to not simply answer your issues but established your brain comfy at the same time. Let’s examine some of the factors you certainly can do to ensure you find perfect advisor to your online discussion.&lt;br&gt;Presents and Abilities&lt;br&gt;You could possibly feel like one viewer is more or less such as the next while searching for a tarot reading via the Internet, but nothing may be more from the reality. Tarot readers are merely that; those who study cards, but several intuitive experts or mediums also utilize tarot as being a device to conduct parts.&lt;br&gt;Before you decide to book a meeting with a particular reader, ask yourself whether what you would like is just plain tarot reading with insights and typical guidance, or are you looking for a reading that goes further? A Psychic will have the ability to offer understanding utilizing a number of presents or capabilities, along with tarot cards' utilization, and this reading form generally provides a significantly closer go through why’s and the who’s of a given situation.&lt;br&gt;Shipping Methods&lt;br&gt;Before booking a meeting a web based tarot reading might be supplied via a number of techniques thus often check the way a reader works. Although some are equally  accurate psychic readings online relaxed, some experts choose to operate via phone merely offering companies via messenger as well as videochat providers including Skype. Email numbers are on offer too and lots of intuitive advisors offer numbers via mail. The disadvantage to mail readings is that you won’t have the ability to request clarification in real time or whilst the reading is beginning and also the variety of concerns or areas of lifestyle are often restricted at the same time as a result of time constraints. The benefit to a message reading is that it’s frequently cheaper than an in-person or real time reading, as it can be completed at the reader’s leisure or different appointments that are inbetween.&lt;br&gt;Telephone sessions offer the possibility to speak to the viewer just like you'd should you and he visited with or her for an in-person reading, and it is a time distribution method that is efficient that is very. You need to be ready to match in more concerns or concentrate on over you would have the capacity to with an e-mail reading, but this kind of reading is usually accomplished via appointment and it usually takes aday or two, occasionally longer, to obtain a meeting. Skype parts work-in much the same means, with all the added reward of video chat to ensure that you’re in a position to start to see the audience you’re speaking to whilst the reading happens.&lt;br&gt;Per- solutions can also be available and several experts chat method wherever users spend per second for insight and guidance or provide online tarot readings via a cellphone. This kind of service's advantage is that the numbers are immediate, provided the counselor is defined to ‘available’ at the time. The drawback is that these examining varieties tend to be less cheap as a result of profits and support expenses consumed from the providers. This reading kind is very handy because no appointments are essential as well as the buyer is definitely of howmuch he/she uses in full control, nonetheless it can be quite a method of linking to your audience of choice.&lt;br&gt;Mediumship, Psychic Power&lt;br&gt;This really is another point before picking an audience to take into consideration,. In case you are in need of mediumship providers, constantly double-check the viewer you’re considering presents mediumship readings. Since they're capable to connect and communicate with family members who have entered over all mediums are psychic,, although not all psychics are channels. Mediumship is a psychic ability that is particular rather than all psychics are able to interact with dead family members. Should you consult with a tarot reader without any medium or psychic capability, you'll not receive communications from left loved ones.</text>
-      <sha1>r5tba8rm42p96uh8x8ubfwb9lqhdawn</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
