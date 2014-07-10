@@ -4595,15 +4595,15 @@ http://sourceforge.net/p/whonix/wiki/Dev_old_1/
     <ns>0</ns>
     <id>79</id>
     <revision>
-      <id>7932</id>
-      <parentid>7929</parentid>
-      <timestamp>2014-05-24T10:29:30Z</timestamp>
+      <id>8245</id>
+      <parentid>7932</parentid>
+      <timestamp>2014-07-10T10:41:04Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Easy */</comment>
-      <text xml:space="preserve" bytes="9477">{{Header}}
+      <comment>/* Table */</comment>
+      <text xml:space="preserve" bytes="9639">{{Header}}
 {{#seo:
 |description=Anonymize any Operating System! Your operating system tunneled through the Tor Anonymity Network! Create your Custom-Whonix-Workstation!
 }}
@@ -4786,7 +4786,7 @@ Note: Whonix-BuildYourselfFromSource-Workstation is of course the same as Whonix
 |-
 | align=&quot;left&quot; | Includes Tor Browser
 | Yes
-| Your responsibility to install Tor Browser. &lt;ref name=tb&gt;For help using Tor Browser without Tor over Tor (recommended), see: https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/WebBrowsers#UseTorBrowserwithoutbundledTorWindows&lt;/ref&gt;
+| Your responsibility to install Tor Browser. &lt;ref name=tb&gt;For help using Tor Browser without Tor over Tor (recommended), see: https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/WebBrowsers#UseTorBrowserwithoutbundledTorWindows&lt;/ref&gt; &lt;ref&gt;For explanation of the about:tor &quot;Something went wrong&quot; error, please see this [https://www.whonix.org/forum/index.php/topic,368.0.html forum thread].&lt;/ref&gt;
 |-
 | align=&quot;left&quot; | Includes Firefox privacy patches &lt;ref&gt;https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/WebBrowsers&lt;/ref&gt; and Tor Button (=Tor Browser)
 | Yes, because it uses Tor Browser (without Tor/Vidalia).
@@ -4861,7 +4861,7 @@ A Whonix-Custom-Workstation ''can be made'' (Your responsibility!) as secure as 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>8yvsoxrvjwqsnwacwqvu016t4ft15u7</sha1>
+      <sha1>469ci20nlx534gvoxfgi8txiocs3zco</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -5165,15 +5165,15 @@ different license.
     <ns>0</ns>
     <id>85</id>
     <revision>
-      <id>7361</id>
-      <parentid>6334</parentid>
-      <timestamp>2014-04-07T21:33:27Z</timestamp>
+      <id>8248</id>
+      <parentid>8247</parentid>
+      <timestamp>2014-07-10T18:51:58Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Sources */</comment>
-      <text xml:space="preserve" bytes="12100">{{Header}}
+      <comment>/* Contributors */</comment>
+      <text xml:space="preserve" bytes="12520">{{Header}}
 {{#seo:
 |description=Authorship of Whonix. Code Contributors, Arts Contributors, Other Contributors, Credits, Inspiration, Alternatives, Sources.
 }}
@@ -5188,42 +5188,46 @@ See [[Whonix:General_disclaimer#Whonix_VPN_disclaimer]].
 = Code Contributors =
 '''Current Maintainers'''
 
-At the moment only Patrick Schleizer writes code for Whonix. Help is welcome!
+* &lt;u&gt;Patrick Schleizer&lt;/u&gt; (adrelanos@riseup.net) ([https://www.whonix.org/forum/index.php?action=profile;u=2 forum]) ([https://github.com/adrelanos github]): initially researched extensively and compiled all information floating around the web into a guide; Later created the Whonix build scripts, binary images, extended documentation, see [[History]].
+&lt;br /&gt;
 
-* Patrick Schleizer (adrelanos@riseup.net): initially researched extensively and compiled all information floating around the web into a guide; Later created the Whonix build scripts, binary images, extended documentation, see [[History]].
+'''Current Coders'''
+
+* &lt;u&gt;Patrick Schleizer&lt;/u&gt;
+* &lt;u&gt;troubadour&lt;/u&gt; ([https://www.whonix.org/forum/index.php?action=profile;u=24 forum]) ([https://github.com/troubadoour github]): Created and maintains [[AppArmor]] profiles, [https://github.com/Whonix/msgcollector msgcollector] python parts (msgdispatcher_dispatch_x) and more
 &lt;br /&gt;
 
 '''Past Code Contributors'''
 
-* smarm: made many things in TorBOX guide much clearer; English language fixes; created leaktest scripts; Thank you! (smarm [at] hushmail dot com)
-* cypherpunks/anonymous: Everyone can contribute! Feb 2012: added a shell script to automate set up TorBOX, changed guide to use VirtualBox instead of VMware, rewritten the iptables firewall and added a hardening section.
+* &lt;u&gt;smarm&lt;/u&gt;: made many things in TorBOX guide much clearer; English language fixes; created leaktest scripts (python); Thank you! (smarm [at] hushmail dot com)
+* &lt;u&gt;cypherpunks/anonymous&lt;/u&gt;: Everyone can contribute! Feb 2012: added a shell script to automate set up TorBOX, changed guide to use VirtualBox instead of VMware, rewritten the iptables firewall and added a hardening section.
 
 = Arts Contributors =
 
 * original TorBOX logo
 
-Made by CJ.
+Made by &lt;u&gt;CJ&lt;/u&gt;.
 
 * Whonix Stream Isolation Graphic
 
-Cuan Knaggs – graphic and web design [http://revolver.za.net revlover] print media – web design – web development – cms – e-commerce
+&lt;u&gt;Cuan Knaggs&lt;/u&gt; – graphic and web design [http://revolver.za.net revlover] print media – web design – web development – cms – e-commerce
 
 = Contributors =
 
 In random order.
 
-'''[https://sourceforge.net/u/jbwhonixxxx/profile/ Joshua]'''
+&lt;u&gt;Joshua&lt;/u&gt;
 
-* Forum Moderator
+* past [https://sourceforge.net/u/jbwhonixxxx/profile Forum Moderator]
 * contributed a phone number, so the Whonix Google+ and Youtube account could be set up
 * documentation feedback
 * testing Whonix images
 
-'''fortasse'''
+&lt;u&gt;fortasse&lt;/u&gt;
 * Wiki sysop and web sysadmin
 * documentation review
 
-'''scarp'''
+&lt;u&gt;scarp&lt;/u&gt;
 
 * comments on Whonix source code and changes
 * review Whonix build documentation
@@ -5231,15 +5235,15 @@ In random order.
 * helped with Whonix TorChat integration
 * reviewing public relation
 
-'''anonymous'''
+&lt;u&gt;anonymous&lt;/u&gt;
 
 * documentation feedback
 
-'''HulaHoop'''
+&lt;u&gt;HulaHoop&lt;/u&gt;
 
 * KVM leak testing and instructions.
 
-'''Jason Ayala'''
+&lt;u&gt;Jason Ayala&lt;/u&gt;
 
 * Creative Consultant
 * Usability testing and feedback
@@ -5381,7 +5385,7 @@ See license file in Whonix source code.
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Development]]</text>
-      <sha1>sjo0yzruhsc39p4o5yoks609dbh7duw</sha1>
+      <sha1>d3rp5wvp8lz9vau4bwtdsb21kiz9u66</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -7865,15 +7869,15 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
     <ns>0</ns>
     <id>96</id>
     <revision>
-      <id>7954</id>
-      <parentid>7952</parentid>
-      <timestamp>2014-05-29T22:19:08Z</timestamp>
+      <id>8254</id>
+      <parentid>7954</parentid>
+      <timestamp>2014-07-10T19:23:47Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Last update */</comment>
-      <text xml:space="preserve" bytes="71792">{{Header}}
+      <comment>/* Stream Isolation */</comment>
+      <text xml:space="preserve" bytes="72040">{{Header}}
 {{#seo:
 |description=Comparison of Whonix, Tails, Tor Browser Bundle, QubesOS TorVM and corridor. About anonymity, privacy, security, circumvention, attacks, fingerprinting, usability, features, etc.
 }}
@@ -8129,7 +8133,7 @@ This page contains the comparisons of Whonix, Tails, Tor Browser and Qubes OS To
 | {{Yes}} &lt;ref&gt;For details, see [[Stream Isolation]].&lt;/ref&gt;
 | {{Yes}} &lt;ref&gt;[https://tails.boum.org/todo/separate_Tor_streams/ Tails separate Tor streams]&lt;/ref&gt;
 | {{BlueBackground}} See &lt;ref name=browser&gt;[https://trac.torproject.org/projects/tor/ticket/3455 Tor Browser should set SOCKS username for a request based on referer]&lt;/ref&gt;&lt;ref&gt;Tor Browser comes with its own Tor instance. It's just a browser, not a live system or operating system.&lt;/ref&gt;
-| Manually &lt;ref&gt;One has to configure it's applications manually to use stream isolation. In comparison, yes means that pre-installed applications (such as wget, ssh, curl, apt-get) are pre-configured to use stream isolation.&lt;/ref&gt;
+| Manually &lt;ref&gt;Manual means, that one has to configure its applications manually to use stream isolation. In Whonix all default installed applications (curl, wget, ssh, tbb, torbirdy, etc.) are configured to use their own SocksPort. Tails does that as well, although not to that extend. Last time checked, QubesOS TorVM didn't do this. In comparison, yes means that pre-installed applications (such as wget, ssh, curl, apt-get) are pre-configured to use stream isolation.&lt;/ref&gt;
 | {{Yes}} 
 |-
 | style=&quot;height: 27px;background-color: #f9f9f9&quot;| Enforces Stream Isolation when one of X Workstations behind the same Gateway are compromised in default configuration &lt;ref name=xworkstations&gt;In case workstation x1, x2, ..., xn are behind the same gateway y.&lt;/ref&gt;
@@ -9119,7 +9123,7 @@ One has always to be very careful, when talking about others. Especially, when t
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Design]]</text>
-      <sha1>f2v3o8mkhv5z0ik7tslzj4j2hm7knru</sha1>
+      <sha1>lj7jsde3hntuykw4z6msxc5579gwqh5</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -34208,14 +34212,15 @@ Another workaround: Buy, administrate and connect the SSH server anonymously tho
     <ns>0</ns>
     <id>274</id>
     <revision>
-      <id>8241</id>
-      <parentid>8240</parentid>
-      <timestamp>2014-07-09T02:23:09Z</timestamp>
+      <id>8253</id>
+      <parentid>8252</parentid>
+      <timestamp>2014-07-10T18:56:22Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <comment>white</comment>
-      <text xml:space="preserve" bytes="1637">{{Header}}
+      <comment>/* Flash Proxy */</comment>
+      <text xml:space="preserve" bytes="1719">{{Header}}
 {{#seo:
 |description=Development Notes for adding Flash Proxy (circumvention) support to Whonix.
 }}
@@ -34228,13 +34233,15 @@ Credits: anonym on tails-dev wrote some things about Flash Proxy. These have bee
 * Listening on a port like that also increases the attack surface dramatically; before this, no random host could try to attack Whonix by connecting to it -- the Whonix host had to (some how) connect to them first. So, yeah, these two things are quite contradictory.
 * The above point also raises some practical issues: in order to listen on an Internet-exposed port, the user must either use IPv6 (which isn't served by all ISPs, and is unsupported/disabled by default in many routers in use) or, in the case of IPv4, set up port-forwarding (since most people are behind NAT). This limits the usefulness of flashproxy.
 * The flashproxy client requires a direct connection to gmail.com, which I feel a bit uncomfortable with for a number of reasons. Currently Whonix only &quot;speaks Tor&quot; outwards, i.e. it communicates directly only with the Tor network or Tor bridges (exceptions: unsafe user on Whonix-Gateawy (e.g. for physical isolation users and captive portal login).
+* [https://www.whonix.org/forum/index.php/topic,366.0.html forum discussion]
+
+== References ==
+&lt;references/&gt;
 
 {{Footer}}
 
-&lt;references&gt;&lt;/references&gt;
-
 [[Category:Design]] [[Category:Development]]</text>
-      <sha1>hcxzfih4hd04lj4hfohddsebbyv902p</sha1>
+      <sha1>qn48w4mx2nh7kcy9f8q1xxxuzgqjl6t</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
