@@ -75329,14 +75329,14 @@ No one is providing a https enabled download link for a Windows hash verificatio
     <ns>10</ns>
     <id>1320</id>
     <revision>
-      <id>7889</id>
-      <parentid>7861</parentid>
-      <timestamp>2014-05-16T15:02:52Z</timestamp>
+      <id>8256</id>
+      <parentid>8255</parentid>
+      <timestamp>2014-07-10T23:42:03Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <text xml:space="preserve" bytes="3359">&lt;div style=&quot;padding-bottom:1px; padding-top:6px; border:thin solid black; background:#EEEEEE; text-align:center;&quot;&gt;&lt;u&gt;Random News:&lt;/u&gt;
+      <comment>noticed the https was duplicated</comment>
+      <text xml:space="preserve" bytes="3352">&lt;div style=&quot;padding-bottom:1px; padding-top:6px; border:thin solid black; background:#EEEEEE; text-align:center;&quot;&gt;&lt;u&gt;Random News:&lt;/u&gt;
 &lt;random&gt;
 Bored? Want to chat with other Whonix users? Join us in [http://irc://irc.oftc.net/whonix IRC] chat ([https://webirc.oftc.net:8443/?channels=Whonix Webchat]).
 @@@
@@ -75372,7 +75372,7 @@ It would be great if you could create a Wikipedia page for Whonix ([https://en.w
 @@@
 Did you [https://www.whonix.org/wiki/Contribute contribiute] to Whonix? Feel free to add your name and what you did to the [https://www.whonix.org/wiki/Authorship Whonix Authorship] page.
 @@@
-Please [https://www.whonix.org/wiki/Contribute Contribute] by [http://https://www.whonix.org/wiki/Contribute#Answer_Questions answering questions].
+Please [https://www.whonix.org/wiki/Contribute Contribute] by [https://www.whonix.org/wiki/Contribute#Answer_Questions answering questions].
 @@@
 [https://www.whonix.org/blog/translations-coordinator Whonix Project looking for Translations Coordinator!]
 @@@
@@ -75381,7 +75381,7 @@ Know '''iptables'''? Want to contribute? Say hello in [https://www.whonix.org/fo
 Got spare bandwidth on your server? Please consider [[Hosting a Whonix Mirror]].
 &lt;/random&gt;
 &lt;/div&gt;</text>
-      <sha1>jucnewaxfmuyy9wjak3u727klop58pw</sha1>
+      <sha1>4u190aa0yx282ajvxkxj24rlnvfcez6</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
