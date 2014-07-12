@@ -75051,17 +75051,17 @@ You have to replace {{Code2|{{{version}}}}} with the actual version you want to 
     <ns>10</ns>
     <id>1315</id>
     <revision>
-      <id>7767</id>
-      <parentid>7766</parentid>
-      <timestamp>2014-05-09T20:58:27Z</timestamp>
+      <id>8259</id>
+      <parentid>8258</parentid>
+      <timestamp>2014-07-12T17:23:27Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
       <comment>/* Get Build Dependncies */</comment>
-      <text xml:space="preserve" bytes="1949">{{Header}}
+      <text xml:space="preserve" bytes="1857">{{Header}}
 
-== Get Build Dependncies ==
+== Get Build Dependencies ==
 &lt;code&gt;
 sudo apt-get update
 sudo apt-get install devscripts faketime git
@@ -75125,29 +75125,25 @@ Build_Documentation_Choose_Version
 Build the package without signing it. (Not required for personal use.)
 
 &lt;code&gt;
-./build -us -uc
+make deb-pkg
 &lt;/code&gt;
 
 == Clean Up ==
 Clean up temporary files. Be careful, this deletes any extra files in that folder, that aren't committed to git.
 
 &lt;code&gt;
-./clean
+make clean
 &lt;/code&gt;
 
 == Install the Package ==
 Your package can be found in the package's parent folder.
-
-&lt;code&gt;
-cd ..
-&lt;/code&gt;
 
 To install it.
 
 '''Easy.'''
 
 &lt;code&gt;
-sudo dpkg -i {{{package}}}_{{{version}}}-1_all.deb
+make deb-install
 &lt;/code&gt;
 
 '''With debugging enabled.'''
@@ -75158,7 +75154,7 @@ sudo dpkg -i {{{package}}}_{{{version}}}-1_all.deb
 export DEBDEBUG=1
 &lt;/code&gt; &lt;br /&gt;
 &lt;code&gt;
-sudo -E dpkg -i {{{package}}}_{{{version}}}-1_all.deb
+make deb-install
 &lt;/code&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -75168,7 +75164,7 @@ sudo -E dpkg -i {{{package}}}_{{{version}}}-1_all.deb
 
 [[Category:Development]]
 {{Footer}}</text>
-      <sha1>ioi6cksf2exon3k99szle9a099wak92</sha1>
+      <sha1>07ksr3j6vz2j2j79dsf5c91s4lt9kvj</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
