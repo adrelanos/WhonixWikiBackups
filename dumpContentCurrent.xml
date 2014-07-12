@@ -12196,15 +12196,14 @@ What would have to be done:
     <ns>0</ns>
     <id>114</id>
     <revision>
-      <id>7674</id>
-      <parentid>7161</parentid>
-      <timestamp>2014-05-03T12:41:24Z</timestamp>
+      <id>8257</id>
+      <parentid>7674</parentid>
+      <timestamp>2014-07-12T00:05:17Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* See Also */</comment>
-      <text xml:space="preserve" bytes="14341">{{Header}}
+      <comment>easier iso creation with Brasero</comment>
+      <text xml:space="preserve" bytes="14570">{{Header}}
 {{#seo:
 |description=Copying files into and out of Whonix Virtual Machines.
 }}
@@ -12240,7 +12239,13 @@ Mounting Virtual Machine images:
 
 = Transfer files from the Host into Whonix-Gateway or Whonix-Workstation through ISO images =
 
-On the host...
+== Linux host ==
+
+=== Brasero ===
+
+Act like you are burning a data disk with Brasero, and it gives you the option to create an iso. Go to the virtual machine window menu &gt; Devices &gt; CD/DVD devices &gt; Choose a virtual disk.
+
+=== Command line ===
 
 Install genisoimage:
 
@@ -12628,7 +12633,7 @@ https://github.com/Whonix/Whonix/issues/131
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Development]]</text>
-      <sha1>stuemwjd7m134xc69agtjvfqv17xxka</sha1>
+      <sha1>sn451tpm5ly9zyzauguj38hxvqh4yr4</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
