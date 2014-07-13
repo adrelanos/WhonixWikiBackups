@@ -12770,15 +12770,14 @@ Safe and reboot. Done.
     <ns>0</ns>
     <id>116</id>
     <revision>
-      <id>7484</id>
-      <parentid>5798</parentid>
-      <timestamp>2014-04-11T22:13:45Z</timestamp>
+      <id>8266</id>
+      <parentid>8265</parentid>
+      <timestamp>2014-07-13T21:20:44Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
       <comment>/* More secure */</comment>
-      <text xml:space="preserve" bytes="7058">{{Header}}
+      <text xml:space="preserve" bytes="7204">{{Header}}
 {{#seo:
 |description=Anonymous Ubuntu. Tunnel Ubuntu through the Tor Anonymity Network using Whonix.
 }}
@@ -12797,9 +12796,13 @@ Download [http://www.ubuntu.com/download Ubuntu] (or use a different install CD 
 
 Create a new VM and choose following settings: Under Network set Adapter 1 to &quot;Internal Network&quot;, rename &quot;intnet&quot; to &quot;Whonix&quot;.
 
-You can use the Live environment or install Ubuntu. When the installer asks questions, generally choose the default, most common or other non-identifying options. Language: English; keymap: choose yours (potentially risk...); Country (leave it as it is): United States; User Name: leave blank; Host Name (leave it as it is): ubuntu; Time Zone (change it): UTC (it's at the very bottom); Username (account name): user. This ensures that all Whonix users have the same settings. Additionally this is more safe, when an application leaks such data, such as SSH, if you simply ssh some.host.name, it will tell your current account name, and it would be very bad if this where you real name or anything which would identify you.
+You can use the Live environment or install Ubuntu. When the installer asks questions, generally choose the default, most common or other non-identifying options. Language: English; keymap: choose yours (potentially risk...); Country (leave it as it is): United States (New York for Ubuntu 14.04); User Name: leave blank; Host Name (leave it as it is): ubuntu (can't be ubuntu for Ubuntu 14.04 so use &quot;host&quot;); Time Zone (change it): UTC (it's at the very bottom. For Ubuntu 14.04 change it later using tzdata as instructed below); Username (account name): user. This ensures that all Whonix users have the same settings. Additionally this is more safe, when an application leaks such data, such as SSH, if you simply ssh some.host.name, it will tell your current account name, and it would be very bad if this where you real name or anything which would identify you.
 
-Reboot into the freshly installed system and open a terminal:
+Reboot into the freshly installed system and open a terminal.
+
+If you forgot to set the time to UTC you can do so at any time by typing the following into the terminal:
+
+&lt;pre&gt;sudo dpkg-reconfigure tzdata&lt;/pre&gt;
 
 Remove Ubuntu's “phone home” program(s). In a terminal type:
 
@@ -12846,10 +12849,6 @@ Open /etc/resolv.conf.
 and delete everything, then add
 
 &lt;pre&gt;nameserver 192.168.0.10&lt;/pre&gt;
-
-If you forgot to set the time to UTC you can do so at any time by type the following into the terminal:
-
-&lt;pre&gt;sudo dpkg-reconfigure tzdata&lt;/pre&gt;
 
 Update package lists.
 
@@ -12923,7 +12922,7 @@ Userland protection for Tor is great. &lt;ref&gt;This would only apply if you cr
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>8q3kdhv5gp8w5g5lzy0l8z62mdxz3pq</sha1>
+      <sha1>s7d507luwm2x3e48uyfhaxk15j2dugp</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -18008,14 +18007,15 @@ Essentially this feature allows to directly use physical PCI devices on the host
     <ns>0</ns>
     <id>148</id>
     <revision>
-      <id>8260</id>
-      <parentid>7204</parentid>
-      <timestamp>2014-07-13T02:11:37Z</timestamp>
+      <id>8261</id>
+      <parentid>8260</parentid>
+      <timestamp>2014-07-13T13:31:26Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <comment>/* Download the key */</comment>
-      <text xml:space="preserve" bytes="4324">&lt;!--
+      <comment>Rejected the last text change (by [[Special:Contributions/127.0.0.1|127.0.0.1]]) and restored revision 7204 by Patrick: let's discuss this somewhere</comment>
+      <text xml:space="preserve" bytes="4201">&lt;!--
 Copyright:
 
    Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -18057,12 +18057,6 @@ Since all Whonix releases are signed with the same key, you will not have to ver
 This page is strongly related to the [[Trust]] page.
 
 = Download the key =
-
-
-##### WARNING! This is not the right key, the packages are signed with an unknown key! WARNING! DO NOT TRUST!!! #####
-
-
-
 1. Download Patrick Schleizer's (adrelanos') OpenPGP key. &lt;html&gt;&lt;a class=&quot;link-https&quot; download href=&quot;/patrick.asc&quot;&gt;patrick.asc&lt;/a&gt;&lt;/html&gt;
 
 2. Store it as patrick.asc.
@@ -18125,7 +18119,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>etmc35h2l3m1xibjmipx7jcbd7aji3c</sha1>
+      <sha1>dbarsqm1r27y68iv23mxfbzyss85uyb</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -18234,15 +18228,14 @@ man tor-ctrl
     <ns>0</ns>
     <id>150</id>
     <revision>
-      <id>7959</id>
-      <parentid>7577</parentid>
-      <timestamp>2014-05-31T10:51:32Z</timestamp>
+      <id>8271</id>
+      <parentid>8270</parentid>
+      <timestamp>2014-07-13T21:58:36Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Tips */</comment>
-      <text xml:space="preserve" bytes="15075">&lt;!--
+      <text xml:space="preserve" bytes="16775">&lt;!--
 Copyright:
 
    Whonix Tor Browser wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -18336,6 +18329,9 @@ To learn more about Data Collection Techniques, Fingerprinting you can see:
 
 * [[Data Collection Techniques]]
 
+= New Identity Button =
+The New Identity button on Tor Browser isn't perfect yet (NOT a Whonix issue), there are open bugs.&lt;ref&gt;See [https://trac.torproject.org/projects/tor/query?status=accepted&amp;status=assigned&amp;status=needs_information&amp;status=needs_review&amp;status=new&amp;status=reopened&amp;order=priority&amp;col=id&amp;col=summary&amp;col=keywords&amp;col=status&amp;col=owner&amp;col=type&amp;col=priority&amp;keywords=tbb-linkability tbb-linkability] and [https://trac.torproject.org/projects/tor/query?status=accepted&amp;status=assigned&amp;status=needs_review&amp;status=needs_revision&amp;status=new&amp;status=reopened&amp;order=priority&amp;col=id&amp;col=summary&amp;col=keywords&amp;col=status&amp;col=owner&amp;col=type&amp;col=priority&amp;keywords=tbb-fingerprinting tbb-fingerprinting].&lt;/ref&gt;
+
 = Protection against dangerous JavaScript =
 
 Having all JavaScript disabled by default would disable a lot of harmless and possibly useful JavaScript and render unusable many websites. This would scare away lots of potential users &quot;because it just doesn't work&quot;. Torbutton disables all potentially dangerous JavaScript. On the other hand, having a big user base is important for good anonymity as this very interesting mail by Roger Dingledine explains.&lt;ref&gt;http://www.mail-archive.com/liberationtech@lists.stanford.edu/msg00022.html&lt;/ref&gt;
@@ -18361,9 +18357,6 @@ It [https://trac.torproject.org/projects/tor/ticket/7255 might] be better not to
 The regular Tor Browser Bundle and Tor Browser in Whonix slightly differ. The environment Tor Browser is running in has been adjusted by Whonix to work behind the Whonix-Gateway. The network and browser fingerprint however, is the same.
 
 Tor Browser's internal update check mechanism is untouched and works fine. Default homepage is currently blank instead of original about:tor. &lt;ref&gt;This is because Whonix's torbrowser starter starts Tor Browser with about:blank as start page. in Whonix 8, Tor Browser's homepage setting is untouched.&lt;/ref&gt;
-
-== New Identity Button ==
-The New Identity button on Tor Browser isn't perfect yet (NOT a Whonix issue), there are open bugs.&lt;ref&gt;See [https://trac.torproject.org/projects/tor/query?status=accepted&amp;status=assigned&amp;status=needs_information&amp;status=needs_review&amp;status=new&amp;status=reopened&amp;order=priority&amp;col=id&amp;col=summary&amp;col=keywords&amp;col=status&amp;col=owner&amp;col=type&amp;col=priority&amp;keywords=tbb-linkability tbb-linkability] and [https://trac.torproject.org/projects/tor/query?status=accepted&amp;status=assigned&amp;status=needs_review&amp;status=needs_revision&amp;status=new&amp;status=reopened&amp;order=priority&amp;col=id&amp;col=summary&amp;col=keywords&amp;col=status&amp;col=owner&amp;col=type&amp;col=priority&amp;keywords=tbb-fingerprinting tbb-fingerprinting].&lt;/ref&gt;
 
 == Whonix Proxy Settings ==
 '''Short''':
@@ -18409,7 +18402,40 @@ See [[Browser Plugins]].
 = Browser Language =
 If you want the browser interface in a different language than English, see [[Language]].
 
-= Change/Remove Proxy Settings =
+= Advanced Topics =
+== Verify New Identity ==
+'''This is an advanced topic. You most likely only need it in custom configurations, such as when using a [[Other Operating Systems|Whonix-Custom-Workstation]].'''
+
+First of all, should it have failed, TorButton should notice, that it could not connect to Tor's ControlPort and should report, that giving a new identity failed. If you don't get such an error popup, it is a good indication, that there are no issues.
+
+After the browser restarted, on the about:tor page, click &quot;Test Tor Network Settings&quot;. It will lead to https://check.torproject.org (check.tpo) (or manually visit check.tpo, it doesn't matter.). In most cases (Not all! &lt;ref&gt;Getting a new circuit, doesn't guarantee getting a new exit relay. This is normal. See also [[Stream_ solation]].&lt;/ref&gt;) you should have a new exit relay. Check.tpo should report different IP.
+
+On Whonix-Gateway, watch [[Dev/CPFP|Control Port Filter Proxy]]'s log while using TorButton's New Identity feature.
+
+&lt;pre&gt;
+tail -f /var/log/controlportfilt.log
+&lt;/pre&gt;
+
+If you see something like this.
+
+&lt;pre&gt;
+916aad59-f05d-4b26-b1bd-70f598719774 GOT: SIGNAL NEWNYM
+916aad59-f05d-4b26-b1bd-70f598719774 BACK: 250 OK
+&lt;/pre&gt;
+
+Then Control Port Filter Proxy received the request from Tor Browser and got Tor's okay, that it worked.
+
+== Get New Identity without Tor ControlPort Access ==
+'''This is an advanced topic. You most likely only need it in custom configurations, such as when not using [[Dev/CPFP|Control Port Filter Proxy]].'''
+
+Simulate, what TorButton would do.
+
+1. Close Tor Browser. &lt;br /&gt;
+2. Get new identity on Whonix-Gateway using [[Tor Controller|arm]]. &lt;br /&gt;
+3. Start Tor Browser again. &lt;br /&gt;
+4. Done.
+
+== Change/Remove Proxy Settings ==
 '''This is an advanced topic. You most likely only need it for advanced tunneling scenarios.'''
 
 You could either:
@@ -18448,7 +18474,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>sh6i80et5j4sls3t03wzojgfael7k1w</sha1>
+      <sha1>chkt8ry7j4wfpfwynqtzqz8d8porpxf</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -39400,65 +39426,15 @@ under certain conditions; see the wiki source code for details.
     <ns>0</ns>
     <id>305</id>
     <revision>
-      <id>5876</id>
-      <parentid>3346</parentid>
-      <timestamp>2014-02-27T13:51:49Z</timestamp>
+      <id>8262</id>
+      <parentid>5876</parentid>
+      <timestamp>2014-07-13T18:52:07Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <text xml:space="preserve" bytes="1421">{{Header}}
-{{#seo:
-|description=List of Censorship Circumvention Tools that may be helpful to get around network bans. Draft. Looking for contributor to extend instructions.
-}}
-
-'''UNFINISHED!'''
-
-https://trac.torproject.org/projects/tor/wiki/doc/GoAgent
-
-https://en.wikipedia.org/wiki/GoAgent
-
-http://www.freedomhouse.org/report/special-reports/leaping-over-firewall-review-censorship-circumvention-tools
-
-https://en.wikipedia.org/wiki/Internet_censorship_circumvention#Reverse_Proxy
-
-https://en.wikipedia.org/wiki/Flash_proxy
-
-http://www.scotty-transporter.org/
-
-http://jaxov.com/2009/09/how-to-unblock-any-website-in-ubuntu-via-ultrasurf-linux/
-
-https://s3.amazonaws.com/0ubz-2q11-gi9y/en.html
-
-https://en.wikipedia.org/wiki/Psiphon
-
-https://www.your-freedom.net/
-
-https://socialsourcecommons.org/tool/show/3368/
-
-http://www.vpngate.net/en/
-
-https://telex.cc/
-
-http://lahana.dreamcats.org/
-
-http://code.kryo.se/iodine/
-
-https://trac.torproject.org/projects/tor/wiki/doc/PluggableTransports
-
-Questions:
-
-* Type? (VPN, proxy, ssh?)
-* Usable with Open Source Software, without any proprietary client? (OpenVPN etc.)
-* Is there a Linux version?
-* Does it work in WINE?
-* Can Whonix (Tor) get tunneled through it? (Whonix (Tor) can get tunneled thought a VPN running on the host and also supports all kinds of proxy settings (http(s), socks4(a)/5).)
-* Instructions?
-
-{{Footer}}
-
-[[Category:Documentation]] [[Category:TODO]]</text>
-      <sha1>aodzxvfykbbdg2b6n3d65qyzubglw01</sha1>
+      <comment>Blanked the page</comment>
+      <text xml:space="preserve" bytes="0" />
+      <sha1>phoiac9h4m842xq45sp7s6u21eteeq1</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -45590,14 +45566,14 @@ In Whonix forum [https://www.whonix.org/forum/index.php?action=profile;area=acco
     <ns>0</ns>
     <id>478</id>
     <revision>
-      <id>5774</id>
-      <parentid>5571</parentid>
-      <timestamp>2014-02-27T12:05:47Z</timestamp>
+      <id>8267</id>
+      <parentid>5774</parentid>
+      <timestamp>2014-07-13T21:31:56Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <text xml:space="preserve" bytes="3765">{{Header}}
+      <comment>/* Higher Screen Resolution without installing VirtualBox guest additions */ Ubuntu 14.04 fix for 640x480</comment>
+      <text xml:space="preserve" bytes="4026">{{Header}}
 {{#seo:
 |description=Higher Screen Resolution without installing VirtualBox guest additions
 }}
@@ -45658,6 +45634,10 @@ vboxmanage setextradata &quot;VM Name&quot; &quot;CustomVideoMode1&quot; &quot;1
 
 If you do not see your Start Menu button anymore (because it's outside the screen), you can start Konsole and manually start System Settings by running {{Code2|systemsettings}}.
 
+==Ubuntu==
+
+If Ubuntu 14.04 has a screen resolution of 640x480 you may be able to get 1024x768 by simply by running xdiagnose and changing any setting under Debug. Marking them all or unmarking &quot;Enable automatic crash reporting&quot;, are reported to work. Reboot.
+
 = Security Considerations =
 * It [https://trac.torproject.org/projects/tor/ticket/7255 might] be better not to maximize the [[Tor Browser]] window.
 * To prevent accidentally maximizing a window, it is recommend to deactivate the following option: {{Code2|KDE -&gt; System Settings -&gt; Screen Edges -&gt; Uncheck: Maximize Windows by dragging them to the top of the screen.}}
@@ -45686,7 +45666,7 @@ The reason you can't just get higher resolutions using {{Code2|xrandr}} &quot;{{
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>7244jswwl5d1hlffq65xicvyepat6xi</sha1>
+      <sha1>7n6v8fzh4va7xea8gphf19ze50z93h7</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -75239,15 +75219,14 @@ Otherwise please consider a [[Donate|Donation]].
     <ns>0</ns>
     <id>1319</id>
     <revision>
-      <id>7981</id>
-      <parentid>7980</parentid>
-      <timestamp>2014-06-02T19:51:51Z</timestamp>
+      <id>8263</id>
+      <parentid>7981</parentid>
+      <timestamp>2014-07-13T20:13:37Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* By Download Target */</comment>
-      <text xml:space="preserve" bytes="3405">{{Header}}
+      <text xml:space="preserve" bytes="3934">{{Header}}
 
 = User's Preferences =
 == By Host Operating System ==
@@ -75321,11 +75300,29 @@ No one is providing a https enabled download link for a Windows hash verificatio
 = See Also =
 * Secure downloader. Stub downloader. Small tool that could be served from whonix.org over https, that could download and install the bigger files from elsewhere without https and do the verification. -&gt; [[Dev/SecureDownloader]] -&gt; Probably not. The Tor Project failed to implement such as tool (Thandy).
 
+= Test =
+&lt;html&gt;
+&lt;form class=&quot;form-download gap-from-top&quot; action=&quot;/download/&quot; method=&quot;get&quot;&gt;
+	&lt;fieldset&gt;
+		&lt;input type=&quot;hidden&quot; name=&quot;version&quot; value=&quot;9.1&quot; /&gt;
+		&lt;label for=&quot;input-operating-system&quot;&gt;Choose your operating system&lt;/label&gt;
+		&lt;select id=&quot;input-operating-system&quot; name=&quot;architecture&quot;&gt;
+			&lt;option value=&quot;Windows&quot; selected=&quot;selected&quot;&gt;Windows&lt;/option&gt;
+			&lt;option value=&quot;Linux&quot;&gt;Linux&lt;/option&gt;
+			&lt;option value=&quot;Mac&quot;&gt;Mac&lt;/option&gt;
+		&lt;/select&gt;
+	&lt;/fieldset&gt;
+	&lt;div&gt;
+		&lt;button type=&quot;submit&quot;&gt;Download&lt;/button&gt;
+	&lt;/div&gt;
+&lt;/form&gt;
+&lt;/html&gt;
+
 = Footnotes =
 &lt;references /&gt;
 
 {{Footer}}</text>
-      <sha1>mx5x79lhns0tjtapzqp936b3mh5hlvy</sha1>
+      <sha1>rotl5r70s5kjbe9bhgww4mx025jewst</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
