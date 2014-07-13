@@ -18008,15 +18008,14 @@ Essentially this feature allows to directly use physical PCI devices on the host
     <ns>0</ns>
     <id>148</id>
     <revision>
-      <id>7204</id>
-      <parentid>7203</parentid>
-      <timestamp>2014-03-30T18:22:23Z</timestamp>
+      <id>8260</id>
+      <parentid>7204</parentid>
+      <timestamp>2014-07-13T02:11:37Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
       <comment>/* Download the key */</comment>
-      <text xml:space="preserve" bytes="4201">&lt;!--
+      <text xml:space="preserve" bytes="4324">&lt;!--
 Copyright:
 
    Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -18058,6 +18057,12 @@ Since all Whonix releases are signed with the same key, you will not have to ver
 This page is strongly related to the [[Trust]] page.
 
 = Download the key =
+
+
+##### WARNING! This is not the right key, the packages are signed with an unknown key! WARNING! DO NOT TRUST!!! #####
+
+
+
 1. Download Patrick Schleizer's (adrelanos') OpenPGP key. &lt;html&gt;&lt;a class=&quot;link-https&quot; download href=&quot;/patrick.asc&quot;&gt;patrick.asc&lt;/a&gt;&lt;/html&gt;
 
 2. Store it as patrick.asc.
@@ -18120,7 +18125,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>dbarsqm1r27y68iv23mxfbzyss85uyb</sha1>
+      <sha1>etmc35h2l3m1xibjmipx7jcbd7aji3c</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
