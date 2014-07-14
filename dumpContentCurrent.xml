@@ -12770,21 +12770,22 @@ Safe and reboot. Done.
     <ns>0</ns>
     <id>116</id>
     <revision>
-      <id>8266</id>
-      <parentid>8265</parentid>
-      <timestamp>2014-07-13T21:20:44Z</timestamp>
+      <id>8277</id>
+      <parentid>8275</parentid>
+      <timestamp>2014-07-13T23:54:54Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
       <comment>/* More secure */</comment>
-      <text xml:space="preserve" bytes="7204">{{Header}}
+      <text xml:space="preserve" bytes="7198">{{Header}}
 {{#seo:
 |description=Anonymous Ubuntu. Tunnel Ubuntu through the Tor Anonymity Network using Whonix.
 }}
 
 = Most simple, least secure =
 
-Inoffical Video, using Whonix-Gateway to torify Ubuntu.
+Unofficial Video, using Whonix-Gateway to torify Ubuntu.
 
 Html5 Video. Works without Flash inside Tor Browser. Showing the Easiest, but least secure option, see [https://www.youtube.com/embed/id_l4fKqA4Q Youtube Link].
 
@@ -12796,7 +12797,7 @@ Download [http://www.ubuntu.com/download Ubuntu] (or use a different install CD 
 
 Create a new VM and choose following settings: Under Network set Adapter 1 to &quot;Internal Network&quot;, rename &quot;intnet&quot; to &quot;Whonix&quot;.
 
-You can use the Live environment or install Ubuntu. When the installer asks questions, generally choose the default, most common or other non-identifying options. Language: English; keymap: choose yours (potentially risk...); Country (leave it as it is): United States (New York for Ubuntu 14.04); User Name: leave blank; Host Name (leave it as it is): ubuntu (can't be ubuntu for Ubuntu 14.04 so use &quot;host&quot;); Time Zone (change it): UTC (it's at the very bottom. For Ubuntu 14.04 change it later using tzdata as instructed below); Username (account name): user. This ensures that all Whonix users have the same settings. Additionally this is more safe, when an application leaks such data, such as SSH, if you simply ssh some.host.name, it will tell your current account name, and it would be very bad if this where you real name or anything which would identify you.
+You can use the Live environment or install Ubuntu. When the installer asks questions, generally choose the default, most common or other non-identifying options. Language: English; keymap: choose yours (potentially risk...); Country (leave it as it is): United States (New York for Ubuntu 14.04); User Name: leave blank; Host Name: host ; Time Zone (change it): UTC (it's at the very bottom. For Ubuntu 14.04 change it later using tzdata as instructed below); Username (account name): user. This ensures that all Whonix users have the same settings. Additionally this is more safe, when an application leaks such data, such as SSH, if you simply ssh some.host.name, it will tell your current account name, and it would be very bad if this where you real name or anything which would identify you.
 
 Reboot into the freshly installed system and open a terminal.
 
@@ -12804,10 +12805,9 @@ If you forgot to set the time to UTC you can do so at any time by typing the fol
 
 &lt;pre&gt;sudo dpkg-reconfigure tzdata&lt;/pre&gt;
 
-Remove Ubuntu's “phone home” program(s). In a terminal type:
+Remove Ubuntu's “phone home” program(s). If any of these packages are not installed the error message should indicate which to delete from the command. In a terminal type:
 
 &lt;pre&gt;
-# If installed, will not hurt if not installed.
 sudo apt-get -y remove canonical-census unity-lens-shopping unity-scope-video-remote unity-scope-musicstores
 &lt;/pre&gt;
 
@@ -12922,7 +12922,7 @@ Userland protection for Tor is great. &lt;ref&gt;This would only apply if you cr
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>s7d507luwm2x3e48uyfhaxk15j2dugp</sha1>
+      <sha1>2b5sw4jp96jibgvbuenz1x9kzwb5igg</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -18228,14 +18228,15 @@ man tor-ctrl
     <ns>0</ns>
     <id>150</id>
     <revision>
-      <id>8271</id>
-      <parentid>8270</parentid>
-      <timestamp>2014-07-13T21:58:36Z</timestamp>
+      <id>8273</id>
+      <parentid>8272</parentid>
+      <timestamp>2014-07-13T22:01:19Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="16775">&lt;!--
+      <comment>/* Maximizing Browser Window */</comment>
+      <text xml:space="preserve" bytes="16791">&lt;!--
 Copyright:
 
    Whonix Tor Browser wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -18350,7 +18351,7 @@ For more information you can refer to the NoScript [http://noscript.net/ website
 
 = Tips =
 == Maximizing Browser Window ==
-It [https://trac.torproject.org/projects/tor/ticket/7255 might] be better not to maximize the Tor Browser window.
+It [https://trac.torproject.org/projects/tor/ticket/7255 might] be better for privacy and anonymity not to maximize the Tor Browser window.
 
 = Tor Browser in Whonix differences =
 == Introduction ==
@@ -18363,7 +18364,7 @@ Tor Browser's internal update check mechanism is untouched and works fine. Defau
 You don't need to change any proxy settings in Tor Browser.
 
 '''Long''': &lt;ref&gt;
-There is no Tor over Tor in Whonix, which would be [[DoNot#Prevent_Tor_over_Tor_scenarios.|recommended against]], due to Whonix's environment. Whonix does not modify Tor Browser's startup script, defaults, etc. In Whonix-Workstation rinetd listens on {{Code2|127.0.0.1}} {{Code2|9150}} and {{Code2|9151}} (TBB's default ports) and forwards them to Whonix-Gateway {{Code2|192.168.0.10 9150}} (where a Tor SocksPort is listening) and {{Code2|9151}} (where [[Dev/CPFP|Control Port Filter Proxy]] is listening). Tor does not get started by {{Code2|[https://gitweb.torproject.org/tor-launcher.git torbrowser-launcher]}} because the {{Code2|[https://trac.torproject.org/projects/tor/ticket/6009 TOR_SKIP_LAUNCH]}} environment variable has been set set to {{Code2|1}} in {{Code2|/etc/profile.d/}}. See also [[Dev/Dummy_Tor]].
+There is no Tor over Tor in Whonix, which would be [[DoNot#Prevent_Tor_over_Tor_scenarios.|recommended against]], due to Whonix's environment. Whonix does not modify Tor Browser's startup script, defaults, etc. In Whonix-Workstation rinetd listens on {{Code2|127.0.0.1}} {{Code2|9150}} and {{Code2|9151}} (TBB's default ports) and forwards them to Whonix-Gateway {{Code2|192.168.0.10 9150}} (where a Tor SocksPort is listening) and {{Code2|9151}} (where [[Dev/CPFP|Control Port Filter Proxy]] is listening). Tor does not get started by the {{Code2|[https://gitweb.torproject.org/tor-launcher.git torbrowser-launcher]}} Firefox add-on because the {{Code2|[https://trac.torproject.org/projects/tor/ticket/6009 TOR_SKIP_LAUNCH]}} environment variable has been set set to {{Code2|1}}. See also [[Dev/Dummy_Tor]].
 &lt;/ref&gt;
 
 == More than one Tor Browser in Whonix ==
@@ -18474,7 +18475,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>chkt8ry7j4wfpfwynqtzqz8d8porpxf</sha1>
+      <sha1>9p3vmzzho34dqvji5p89qxcd10tkmvo</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -39426,15 +39427,65 @@ under certain conditions; see the wiki source code for details.
     <ns>0</ns>
     <id>305</id>
     <revision>
-      <id>8262</id>
-      <parentid>5876</parentid>
-      <timestamp>2014-07-13T18:52:07Z</timestamp>
+      <id>8276</id>
+      <parentid>8262</parentid>
+      <timestamp>2014-07-13T23:51:37Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <comment>Blanked the page</comment>
-      <text xml:space="preserve" bytes="0" />
-      <sha1>phoiac9h4m842xq45sp7s6u21eteeq1</sha1>
+      <text xml:space="preserve" bytes="1421">{{Header}}
+{{#seo:
+|description=List of Censorship Circumvention Tools that may be helpful to get around network bans. Draft. Looking for contributor to extend instructions.
+}}
+
+'''UNFINISHED!'''
+
+https://trac.torproject.org/projects/tor/wiki/doc/GoAgent
+
+https://en.wikipedia.org/wiki/GoAgent
+
+http://www.freedomhouse.org/report/special-reports/leaping-over-firewall-review-censorship-circumvention-tools
+
+https://en.wikipedia.org/wiki/Internet_censorship_circumvention#Reverse_Proxy
+
+https://en.wikipedia.org/wiki/Flash_proxy
+
+http://www.scotty-transporter.org/
+
+http://jaxov.com/2009/09/how-to-unblock-any-website-in-ubuntu-via-ultrasurf-linux/
+
+https://s3.amazonaws.com/0ubz-2q11-gi9y/en.html
+
+https://en.wikipedia.org/wiki/Psiphon
+
+https://www.your-freedom.net/
+
+https://socialsourcecommons.org/tool/show/3368/
+
+http://www.vpngate.net/en/
+
+https://telex.cc/
+
+http://lahana.dreamcats.org/
+
+http://code.kryo.se/iodine/
+
+https://trac.torproject.org/projects/tor/wiki/doc/PluggableTransports
+
+Questions:
+
+* Type? (VPN, proxy, ssh?)
+* Usable with Open Source Software, without any proprietary client? (OpenVPN etc.)
+* Is there a Linux version?
+* Does it work in WINE?
+* Can Whonix (Tor) get tunneled through it? (Whonix (Tor) can get tunneled thought a VPN running on the host and also supports all kinds of proxy settings (http(s), socks4(a)/5).)
+* Instructions?
+
+{{Footer}}
+
+[[Category:Documentation]] [[Category:TODO]]</text>
+      <sha1>aodzxvfykbbdg2b6n3d65qyzubglw01</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
