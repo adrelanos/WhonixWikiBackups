@@ -38654,13 +38654,15 @@ When you start '''Tor Browser Recommended''', there is a shortcut on the desktop
     <ns>0</ns>
     <id>300</id>
     <revision>
-      <id>7401</id>
-      <parentid>7400</parentid>
-      <timestamp>2014-04-07T22:04:57Z</timestamp>
+      <id>8279</id>
+      <parentid>7401</parentid>
+      <timestamp>2014-07-15T19:23:57Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <username>Jekyll</username>
+        <id>161</id>
       </contributor>
+      <minor/>
+      <comment>Debian version change to 7.6</comment>
       <text xml:space="preserve" bytes="5754">{{Header}}
 {{#seo:
 |description=Debian tips, tricks, recommendations related to Whonix.
@@ -38690,7 +38692,7 @@ We'll be using a 32-bit network installation (netinst) CD for the following exam
 
 * SHA512SUMS
 * SHA512SUMS.sign 
-* debian-7.4.0-i386-netinst.iso 
+* debian-7.6.0-i386-netinst.iso 
 
 (3) Install the debian-keyring package, which contains the signing key. This is because the [http://www.debian.org/CD/verify Debian Verify] instructions are not accessible over SSL, neither the debian-keyring package can be downloaded over SSL. Downloading the debian-keyring package from the repository, let's apt-get verify its integrity.
 
@@ -38698,7 +38700,7 @@ We'll be using a 32-bit network installation (netinst) CD for the following exam
 sudo apt-get install debian-keyring
 &lt;/pre&gt;
 
-(4) Open a terminal and get into the folder where you downloaded SHA512SUMS and SHA512SUMS.sign (and debian-7.4.0-i386-netinst.iso ).
+(4) Open a terminal and get into the folder where you downloaded SHA512SUMS and SHA512SUMS.sign (and debian-7.6.0-i386-netinst.iso ).
 
 (5) Verify the SHA512SUMS file.
 
@@ -38802,7 +38804,7 @@ Some useful links. Parts of it are outdated (old Debian versions). Some stuff do
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>sx03y67hab9o9xs4c9a3yad16qos5tq</sha1>
+      <sha1>mr4bsv92gxtihbzqcqgr2niomd6xra1</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -62492,13 +62494,15 @@ inspired by http://aboli.sh/
     <ns>0</ns>
     <id>849</id>
     <revision>
-      <id>7485</id>
-      <parentid>7008</parentid>
-      <timestamp>2014-04-11T22:14:49Z</timestamp>
+      <id>8281</id>
+      <parentid>7485</parentid>
+      <timestamp>2014-07-15T19:25:58Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <username>Jekyll</username>
+        <id>161</id>
       </contributor>
+      <minor/>
+      <comment>Debian version change to 7.6</comment>
       <text xml:space="preserve" bytes="13428">{{Header}}
 {{#seo:
 |description=Instructions for building Whonix from Source Code inside a Virtual Machine.
@@ -62531,7 +62535,7 @@ Storage on physical hard drive: Dynamically allocated / Next
 File location and size: 50 GB / Create
 &lt;/pre&gt;
 
-Start the newly created virtual machine, select the ISO of Debian {{Version8Debian}} stable (debian-7.4.0-i386-netinst.iso) and click Start.
+Start the newly created virtual machine, select the ISO of Debian {{Version8Debian}} stable (debian-7.6.0-i386-netinst.iso) and click Start.
 
 &lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
 '''OPTIONAL.'''
@@ -63084,7 +63088,7 @@ From there follow the steps as you previously did and build the image you still 
 {{Footer}}
 
 [[Category:Development]]</text>
-      <sha1>4vvy6yfi7mf6h53m990dqku58eno92l</sha1>
+      <sha1>03uk8bhqx9qjqeao14b7ao9l6uwkiy6</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -76793,15 +76797,17 @@ There are lots of other Censorship Circumvention Tools other than Tor bridges. W
     <ns>10</ns>
     <id>1358</id>
     <revision>
-      <id>7005</id>
-      <timestamp>2014-03-20T20:43:03Z</timestamp>
+      <id>8282</id>
+      <parentid>7005</parentid>
+      <timestamp>2014-07-15T19:27:11Z</timestamp>
       <contributor>
         <username>Jekyll</username>
         <id>161</id>
       </contributor>
-      <comment>Version template for Debian for Whonix 8 instructions</comment>
-      <text xml:space="preserve" bytes="3">7.4</text>
-      <sha1>si38dwzdn4wgl76eaok07n6bbxsx2gj</sha1>
+      <minor/>
+      <comment>Debian version change to 7.6</comment>
+      <text xml:space="preserve" bytes="3">7.6</text>
+      <sha1>rivt712v5in0gf4et7tyo8z9239hutt</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -76938,15 +76944,17 @@ There are lots of other Censorship Circumvention Tools other than Tor bridges. W
     <ns>10</ns>
     <id>1366</id>
     <revision>
-      <id>6989</id>
-      <timestamp>2014-03-20T14:29:53Z</timestamp>
+      <id>8280</id>
+      <parentid>6989</parentid>
+      <timestamp>2014-07-15T19:25:00Z</timestamp>
       <contributor>
         <username>Jekyll</username>
         <id>161</id>
       </contributor>
-      <comment>Introducing a version template for Debian</comment>
-      <text xml:space="preserve" bytes="3">7.4</text>
-      <sha1>si38dwzdn4wgl76eaok07n6bbxsx2gj</sha1>
+      <minor/>
+      <comment>Debian version change to 7.6</comment>
+      <text xml:space="preserve" bytes="3">7.6</text>
+      <sha1>rivt712v5in0gf4et7tyo8z9239hutt</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
