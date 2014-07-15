@@ -7869,15 +7869,14 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
     <ns>0</ns>
     <id>96</id>
     <revision>
-      <id>8254</id>
-      <parentid>7954</parentid>
-      <timestamp>2014-07-10T19:23:47Z</timestamp>
+      <id>8278</id>
+      <parentid>8254</parentid>
+      <timestamp>2014-07-14T23:51:36Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* Stream Isolation */</comment>
-      <text xml:space="preserve" bytes="72040">{{Header}}
+      <comment>Tails 1.0 -&gt; 1.0.1</comment>
+      <text xml:space="preserve" bytes="72042">{{Header}}
 {{#seo:
 |description=Comparison of Whonix, Tails, Tor Browser Bundle, QubesOS TorVM and corridor. About anonymity, privacy, security, circumvention, attacks, fingerprinting, usability, features, etc.
 }}
@@ -7898,7 +7897,7 @@ This page contains the comparisons of Whonix, Tails, Tor Browser and Qubes OS To
 |-
 | style=&quot;height:35px;width:70px;background-color: #f9f9f9&quot;| Latest Version &lt;ref&gt;Most recent version.&lt;/ref&gt;
 | style=&quot;background-color: {{Green}}&quot;| 8
-| style=&quot;background-color: {{Green}}&quot;| 1.0
+| style=&quot;background-color: {{Green}}&quot;| 1.0.1
 | style=&quot;background-color: {{Green}}&quot;| 3.5
 | style=&quot;background-color: {{Green}}&quot;| 0.1.3
 | style=&quot;background-color: {{Green}}&quot;| (?)
@@ -9123,7 +9122,7 @@ One has always to be very careful, when talking about others. Especially, when t
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Design]]</text>
-      <sha1>lj7jsde3hntuykw4z6msxc5579gwqh5</sha1>
+      <sha1>rrtruylcya3jn47kcjf2pz737mfmp0f</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
