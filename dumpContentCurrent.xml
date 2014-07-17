@@ -18128,15 +18128,15 @@ under certain conditions; see the wiki source code for details.
     <ns>0</ns>
     <id>149</id>
     <revision>
-      <id>7888</id>
-      <parentid>7887</parentid>
-      <timestamp>2014-05-16T12:47:16Z</timestamp>
+      <id>8283</id>
+      <parentid>7888</parentid>
+      <timestamp>2014-07-17T21:33:49Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
       <comment>/* Arm */</comment>
-      <text xml:space="preserve" bytes="2675">{{Header}}
+      <text xml:space="preserve" bytes="3381">{{Header}}
 {{#seo:
 |description=Using a Tor Controller with Whonix. Arm. Vidalia. Change your Tor circuit. Monitor Tor.
 }}
@@ -18193,6 +18193,12 @@ q
 q
 &lt;/pre&gt;
 
+== Arm FAQ ==
+* &lt;blockquote&gt;Tor is preventing system utilities like netstat and lsof from working. This means that arm can't provide you with connection information. You can change this by adding 'DisableDebuggerAttachment 0' to your torrc and restarting tor. For more information see... https://trac.torproject.org/3313&lt;/blockquote&gt;: --&gt; Not of concern. If you want to learn about the technical details, read https://trac.torproject.org/3313.
+* DisableDebuggerAttachment even when running as root:
+This is a [https://trac.torproject.org/projects/tor/ticket/7709 bug] in arm.
+* &lt;blockquote&gt;man page (GENERAL OPTIONS and COMMAND-LINE OPTIONS)&lt;/blockquote&gt; --&gt; This is not of concern. This is a bug in arm.
+
 = tor-ctrl =
 tor-ctrl&lt;ref&gt;https://svn.torproject.org/svn/tor/branches/hidserv-perf/contrib/tor-ctrl.sh&lt;/ref&gt; comes with Whonix by default.
 
@@ -18217,7 +18223,7 @@ man tor-ctrl
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>21t0tp8cl0l0itrvkr9thnm594wfoyw</sha1>
+      <sha1>9eq4cvqaldjvgf53irv3xa9170sqpxo</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
