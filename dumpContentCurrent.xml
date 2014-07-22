@@ -75098,20 +75098,20 @@ You have to replace {{Code2|{{{version}}}}} with the actual version you want to 
     <ns>10</ns>
     <id>1315</id>
     <revision>
-      <id>8259</id>
-      <parentid>8258</parentid>
-      <timestamp>2014-07-12T17:23:27Z</timestamp>
+      <id>8287</id>
+      <parentid>8259</parentid>
+      <timestamp>2014-07-22T19:47:47Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Get Build Dependncies */</comment>
-      <text xml:space="preserve" bytes="1857">{{Header}}
+      <comment>/* Get Build Dependencies */</comment>
+      <text xml:space="preserve" bytes="1869">{{Header}}
 
 == Get Build Dependencies ==
 &lt;code&gt;
 sudo apt-get update
-sudo apt-get install devscripts faketime git
+sudo apt-get install devscripts dh-apparmor faketime git
 &lt;/code&gt;
 
 You also need config-package-dev version 5.1.1 or higher.
@@ -75211,7 +75211,7 @@ make deb-install
 
 [[Category:Development]]
 {{Footer}}</text>
-      <sha1>07ksr3j6vz2j2j79dsf5c91s4lt9kvj</sha1>
+      <sha1>dek6nt2vtp3dcyhqvz4hfvk0w8vlyqb</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
