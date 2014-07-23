@@ -12642,14 +12642,15 @@ https://github.com/Whonix/Whonix/issues/131
     <ns>0</ns>
     <id>115</id>
     <revision>
-      <id>8066</id>
-      <parentid>7876</parentid>
-      <timestamp>2014-06-16T08:40:55Z</timestamp>
+      <id>8295</id>
+      <parentid>8066</parentid>
+      <timestamp>2014-07-23T13:43:38Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <comment>/* New Instructions for Debian Wheezy */ mouse integration works without virtualbox-guest-x11</comment>
-      <text xml:space="preserve" bytes="5642">{{Header}}
+      <comment>/* Alternatives */</comment>
+      <text xml:space="preserve" bytes="5926">{{Header}}
 {{#seo:
 |description=Instructions for installing VirtualBox Guest Additions in Whonix. Shared Folders, Mouse Integration, etc.
 }}
@@ -12667,6 +12668,7 @@ https://github.com/Whonix/Whonix/issues/131
 == Alternatives ==
 * For file exchange with Whonix without installing guest additions, see [[File Transfer]].
 * To get a higher screen resolution without installing guest additions, see [[Higher Screen Resolution]]
+* To get mouse integration without installing guest additions, use USB tablet in VirtualBox settings. Recommended against, because it requires adding USB controller to VirtualBox. (VirtualBox -&gt; Right click on Virtual Machine -&gt; Settings -&gt; System -&gt; Enable absolute pointing device)
 
 == Installing VirtualBox Guest Additions ==
 === New Instructions for Debian Wheezy ===
@@ -12759,7 +12761,7 @@ Safe and reboot. Done.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>febto4gjfe2odqk6bl4c9kbq8ftyo0b</sha1>
+      <sha1>p4inzws5y09j3wlra3nd2i7t90an71w</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -15654,15 +15656,15 @@ udisks --show-info /dev/cdrom
     <ns>0</ns>
     <id>132</id>
     <revision>
-      <id>8166</id>
-      <parentid>8057</parentid>
-      <timestamp>2014-07-02T11:59:09Z</timestamp>
+      <id>8294</id>
+      <parentid>8166</parentid>
+      <timestamp>2014-07-23T13:39:12Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Misc */</comment>
-      <text xml:space="preserve" bytes="7433">{{Header}}
+      <comment>/* Default Browser */</comment>
+      <text xml:space="preserve" bytes="7566">{{Header}}
 {{#seo:
 |description=Help Testing Whonix
 }}
@@ -16018,6 +16020,15 @@ gnome-www-browser http://127.0.0.1
 xdg-open http://127.0.0.1
 &lt;/pre&gt;
 
+==== Terminal ====
+Remove open-link-confirmation.
+
+&lt;pre&gt;
+sudo apt-get remove open-link-confirmation
+&lt;/pre&gt;
+
+And repeat these tests.
+
 === Applications ===
 
 * [[Metadata]]
@@ -16034,7 +16045,7 @@ See [[Dev/Leak Tests]].
 {{Footer}}
 
 [[Category:Development]] [[Category:Design]] [[Category:Documentation]]</text>
-      <sha1>70zg2j0hk4tijvegdepowc99siw9rpz</sha1>
+      <sha1>hoijr9g6dpmwksl201qgp9vjl4etlar</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -19392,14 +19403,14 @@ When you go ahead now, and ask in a cracker forum, they probably won't spread a 
     <ns>0</ns>
     <id>162</id>
     <revision>
-      <id>8244</id>
-      <parentid>8137</parentid>
-      <timestamp>2014-07-09T11:41:34Z</timestamp>
+      <id>8293</id>
+      <parentid>8244</parentid>
+      <timestamp>2014-07-23T12:57:19Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="7097">{{#seo:
+      <text xml:space="preserve" bytes="7144">{{#seo:
 |description=Technical Design and Conception of the Whonix Anonymous Operating System
 }}
 {{Header}}
@@ -19511,6 +19522,7 @@ When you go ahead now, and ask in a cracker forum, they probably won't spread a 
 * [[Dev/Porting]]
 * [[Dev/Logo]]
 * [[Dev/TPO_Trademark]]
+* [[Dev/9|testers-only version 9 screenshots]]
 &lt;/small&gt;
 &lt;/div&gt;
 &lt;br /&gt;
@@ -19577,7 +19589,7 @@ When you go ahead now, and ask in a cracker forum, they probably won't spread a 
 [[Category:Design]]
 
 {{Footer}}</text>
-      <sha1>6jhw9vk28s3qkierjea2w8m8u5jhe9p</sha1>
+      <sha1>qxf1pmcqsiixy4nkpyn3rqn5zarlv7e</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -75281,14 +75293,15 @@ Otherwise please consider a [[Donate|Donation]].
     <ns>0</ns>
     <id>1319</id>
     <revision>
-      <id>8263</id>
-      <parentid>7981</parentid>
-      <timestamp>2014-07-13T20:13:37Z</timestamp>
+      <id>8296</id>
+      <parentid>8263</parentid>
+      <timestamp>2014-07-23T14:04:43Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="3934">{{Header}}
+      <comment>/* Test */</comment>
+      <text xml:space="preserve" bytes="4079">{{Header}}
 
 = User's Preferences =
 == By Host Operating System ==
@@ -75362,7 +75375,8 @@ No one is providing a https enabled download link for a Windows hash verificatio
 = See Also =
 * Secure downloader. Stub downloader. Small tool that could be served from whonix.org over https, that could download and install the bigger files from elsewhere without https and do the verification. -&gt; [[Dev/SecureDownloader]] -&gt; Probably not. The Tor Project failed to implement such as tool (Thandy).
 
-= Test =
+= Implementation Ideas =
+== Using html fieldset tag ==
 &lt;html&gt;
 &lt;form class=&quot;form-download gap-from-top&quot; action=&quot;/download/&quot; method=&quot;get&quot;&gt;
 	&lt;fieldset&gt;
@@ -75380,11 +75394,13 @@ No one is providing a https enabled download link for a Windows hash verificatio
 &lt;/form&gt;
 &lt;/html&gt;
 
+Compatibility, it looks like everyone supports it: http://www.w3schools.com/tags/tag_fieldset.asp
+
 = Footnotes =
 &lt;references /&gt;
 
 {{Footer}}</text>
-      <sha1>rotl5r70s5kjbe9bhgww4mx025jewst</sha1>
+      <sha1>cuhwrnxs57dh22gysmfpnnxot8a1ncs</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -77850,6 +77866,107 @@ https://lists.torproject.org/pipermail/tor-talk/2012-August/025197.html
 
 [[Category:Development]]</text>
       <sha1>o3un9grzgb77xeqkq849c2p0cfz0fb0</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:8.6.2.8-desktop.png</title>
+    <ns>6</ns>
+    <id>1386</id>
+    <revision>
+      <id>8288</id>
+      <timestamp>2014-07-23T12:45:09Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:8.6.2.8-generic-gui-tool-2.png</title>
+    <ns>6</ns>
+    <id>1387</id>
+    <revision>
+      <id>8289</id>
+      <timestamp>2014-07-23T12:45:16Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:8.6.2.8-generic-gui-tool.png</title>
+    <ns>6</ns>
+    <id>1388</id>
+    <revision>
+      <id>8290</id>
+      <timestamp>2014-07-23T12:45:26Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>File:8.6.2.8-start-menu.png</title>
+    <ns>6</ns>
+    <id>1389</id>
+    <revision>
+      <id>8291</id>
+      <timestamp>2014-07-23T12:45:31Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>MsUpload</comment>
+      <text xml:space="preserve" bytes="8">MsUpload</text>
+      <sha1>9j6n19e4kjhluyc9elvtdevb6xbvcjy</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Dev/9</title>
+    <ns>0</ns>
+    <id>1390</id>
+    <revision>
+      <id>8292</id>
+      <timestamp>2014-07-23T12:48:37Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;{{Header}}  [[File:8.6.2.8-desktop.png|400px]]  [[File:8.6.2.8-start-menu.png|400px]]  [[File:8.6.2.8-generic-gui-tool.png|400px]]  File:8.6.2.8-generic-gui-tool-2.png|400px...&quot;</comment>
+      <text xml:space="preserve" bytes="214">{{Header}}
+
+[[File:8.6.2.8-desktop.png|400px]]
+
+[[File:8.6.2.8-start-menu.png|400px]]
+
+[[File:8.6.2.8-generic-gui-tool.png|400px]]
+
+[[File:8.6.2.8-generic-gui-tool-2.png|400px]]
+
+[[Category:Development]]
+{{Footer}}</text>
+      <sha1>85p5tsqxodp368rzimuj93d0j2cki7q</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
