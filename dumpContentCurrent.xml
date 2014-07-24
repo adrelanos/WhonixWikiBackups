@@ -55720,15 +55720,14 @@ Many thanks to Tails team for their discussion on the topic of password managers
     <ns>0</ns>
     <id>685</id>
     <revision>
-      <id>8223</id>
-      <parentid>8215</parentid>
-      <timestamp>2014-07-06T15:06:38Z</timestamp>
+      <id>8300</id>
+      <parentid>8299</parentid>
+      <timestamp>2014-07-24T02:33:50Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* Extra */</comment>
-      <text xml:space="preserve" bytes="12280">{{Header}}
+      <comment>/* Uninstall */</comment>
+      <text xml:space="preserve" bytes="12843">{{Header}}
 {{#seo:
 |description=Using Whonix with KVM instead of VirtualBox
 }}
@@ -55755,6 +55754,19 @@ Furthermore VirtualBox contains significant functionality that is only available
 
 = KVM Setup Instructions =
 {{testing}}
+== Install KVM ==
+Install kvm.
+
+TODO:
+
+* Explain how to enable debian backports.
+* Explain why we install from debian backports (rng / entropy).
+
+&lt;pre&gt;
+sudo apt-get update
+sudo apt-get install qemu-kvm
+&lt;/pre&gt;
+
 == Download and Extract ==
 It is highly recommended you read and apply the steps outlined here. By applying a known and tested configuration, you will be better off in convenience and security.
 
@@ -55870,6 +55882,23 @@ rm -r ~/Whonix-Gateway
 &lt;pre&gt;
 rm -r ~/Whonix-Workstation
 &lt;/pre&gt;
+
+== Uninstall ==
+To remove Whonix KVM network and images.
+
+TODO
+
+
+virsh destroy Whonix-Gateway
+virsh destroy Whonix-Workstation
+virsh undefine Whonix-Gateway
+virsh undefine Whonix-Workstation
+
+virsh net-destroy Whonix
+virsh net-undefine Whonix
+
+sudo rm /var/lib/libvirt/images/Whonix-Gateway.qcow2
+sudo rm /var/lib/libvirt/images/Whonix-Workstation.qcow2
 
 = Extra =
 == KVM Shared Folders ==
@@ -56003,13 +56032,13 @@ To.
 &lt;/pre&gt;
 
 
-== Footnotes ==
+= Footnotes =
 &lt;references/&gt;
 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>prefm1w5kaw4fxy10673utyhqepjtg6</sha1>
+      <sha1>goim1tbjp3mjh44m13mpra9wxv58s6v</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
