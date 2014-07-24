@@ -7869,14 +7869,14 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
     <ns>0</ns>
     <id>96</id>
     <revision>
-      <id>8278</id>
-      <parentid>8254</parentid>
-      <timestamp>2014-07-14T23:51:36Z</timestamp>
+      <id>8308</id>
+      <parentid>8278</parentid>
+      <timestamp>2014-07-24T12:13:40Z</timestamp>
       <contributor>
         <ip>127.0.0.1</ip>
       </contributor>
-      <comment>Tails 1.0 -&gt; 1.0.1</comment>
-      <text xml:space="preserve" bytes="72042">{{Header}}
+      <comment>Tails 1.1 released July 22</comment>
+      <text xml:space="preserve" bytes="72040">{{Header}}
 {{#seo:
 |description=Comparison of Whonix, Tails, Tor Browser Bundle, QubesOS TorVM and corridor. About anonymity, privacy, security, circumvention, attacks, fingerprinting, usability, features, etc.
 }}
@@ -7897,7 +7897,7 @@ This page contains the comparisons of Whonix, Tails, Tor Browser and Qubes OS To
 |-
 | style=&quot;height:35px;width:70px;background-color: #f9f9f9&quot;| Latest Version &lt;ref&gt;Most recent version.&lt;/ref&gt;
 | style=&quot;background-color: {{Green}}&quot;| 8
-| style=&quot;background-color: {{Green}}&quot;| 1.0.1
+| style=&quot;background-color: {{Green}}&quot;| 1.1
 | style=&quot;background-color: {{Green}}&quot;| 3.5
 | style=&quot;background-color: {{Green}}&quot;| 0.1.3
 | style=&quot;background-color: {{Green}}&quot;| (?)
@@ -9122,7 +9122,7 @@ One has always to be very careful, when talking about others. Especially, when t
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Design]]</text>
-      <sha1>rrtruylcya3jn47kcjf2pz737mfmp0f</sha1>
+      <sha1>lkkh8heq36nxjzcs5745v1hukxd0swg</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -15656,15 +15656,15 @@ udisks --show-info /dev/cdrom
     <ns>0</ns>
     <id>132</id>
     <revision>
-      <id>8294</id>
-      <parentid>8166</parentid>
-      <timestamp>2014-07-23T13:39:12Z</timestamp>
+      <id>8309</id>
+      <parentid>8294</parentid>
+      <timestamp>2014-07-24T15:25:12Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Default Browser */</comment>
-      <text xml:space="preserve" bytes="7566">{{Header}}
+      <comment>/* Extra */</comment>
+      <text xml:space="preserve" bytes="7661">{{Header}}
 {{#seo:
 |description=Help Testing Whonix
 }}
@@ -15769,20 +15769,26 @@ sudo service timesanitycheck status
 echo $?
 &lt;/pre&gt;
 
-Check if /var/run/htpdate/success exists
+Check if /var/run/sdwdate/success exists
 
-&lt;pre&gt;ls -la /var/run/htpdate/success&lt;/pre&gt;
+&lt;pre&gt;ls -la /var/run/sdwdate/success&lt;/pre&gt;
 
-Check log of htpdate.
+Check log of sdwdate.
 
-&lt;pre&gt;cat /var/log/htpdate.log&lt;/pre&gt;
+&lt;pre&gt;cat /var/log/sdwdate.log&lt;/pre&gt;
 
-Check status of htpdate.
+Check status of sdwdate.
 
 &lt;pre&gt;
-sudo service htpdate status
+sudo service sdwdate status
 
 echo $?
+&lt;/pre&gt;
+
+Test re-installation of x11-common.
+
+&lt;pre&gt;
+sudo apt-get install --reinstall x11-common
 &lt;/pre&gt;
 
 === sdwdate / timesync ===
@@ -16045,7 +16051,7 @@ See [[Dev/Leak Tests]].
 {{Footer}}
 
 [[Category:Development]] [[Category:Design]] [[Category:Documentation]]</text>
-      <sha1>hoijr9g6dpmwksl201qgp9vjl4etlar</sha1>
+      <sha1>sq238tjvfrocwm4mhs1k9b1e3c2cll6</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -55720,14 +55726,15 @@ Many thanks to Tails team for their discussion on the topic of password managers
     <ns>0</ns>
     <id>685</id>
     <revision>
-      <id>8300</id>
-      <parentid>8299</parentid>
-      <timestamp>2014-07-24T02:33:50Z</timestamp>
+      <id>8307</id>
+      <parentid>8306</parentid>
+      <timestamp>2014-07-24T10:19:23Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
       <comment>/* Uninstall */</comment>
-      <text xml:space="preserve" bytes="12843">{{Header}}
+      <text xml:space="preserve" bytes="13574">{{Header}}
 {{#seo:
 |description=Using Whonix with KVM instead of VirtualBox
 }}
@@ -55759,13 +55766,17 @@ Install kvm.
 
 TODO:
 
-* Explain how to enable debian backports.
-* Explain why we install from debian backports (rng / entropy).
+* When using Debian stable, explain how to enable Debian backports.
+* Explain why we install from Debian backports (security / rng / entropy).
 
 &lt;pre&gt;
 sudo apt-get update
 sudo apt-get install qemu-kvm
 &lt;/pre&gt;
+
+TODO:
+
+* Alternatively install qemu (in case of lack of hardware support).
 
 == Download and Extract ==
 It is highly recommended you read and apply the steps outlined here. By applying a known and tested configuration, you will be better off in convenience and security.
@@ -55884,21 +55895,53 @@ rm -r ~/Whonix-Workstation
 &lt;/pre&gt;
 
 == Uninstall ==
-To remove Whonix KVM network and images.
+&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+If you want to remove Whonix KVM VMs, Whonix network and Whonix images, click on Expand on the right.
 
-TODO
+&lt;div class=&quot;mw-collapsible-content&quot;&gt;
+1. Make sure you powered off the VM you want to shut down. You can also make sure you have shut down the VM using command line.
 
-
+&lt;pre&gt;
 virsh destroy Whonix-Gateway
+&lt;/pre&gt;
+
+&lt;pre&gt;
 virsh destroy Whonix-Workstation
+&lt;/pre&gt;
+
+2. Remove KVM VM settings.
+
+&lt;pre&gt;
 virsh undefine Whonix-Gateway
+&lt;/pre&gt;
+
+&lt;pre&gt;
 virsh undefine Whonix-Workstation
+&lt;/pre&gt;
 
+3. Shut down KVM Network {{Code2|Whonix}}.
+
+&lt;pre&gt;
 virsh net-destroy Whonix
-virsh net-undefine Whonix
+&lt;/pre&gt;
 
+4. Remove Network {{Code2|Whonix}}.
+
+&lt;pre&gt;
+virsh net-undefine Whonix
+&lt;/pre&gt;
+
+5. Delete the images. (All data will be lost unless you made a backup of your valued data.)
+
+&lt;pre&gt;
 sudo rm /var/lib/libvirt/images/Whonix-Gateway.qcow2
+&lt;/pre&gt;
+
+&lt;pre&gt;
 sudo rm /var/lib/libvirt/images/Whonix-Workstation.qcow2
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
 = Extra =
 == KVM Shared Folders ==
@@ -56038,7 +56081,7 @@ To.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>goim1tbjp3mjh44m13mpra9wxv58s6v</sha1>
+      <sha1>o881lh1hyr79dbb0zesf94i7lbre0ke</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
