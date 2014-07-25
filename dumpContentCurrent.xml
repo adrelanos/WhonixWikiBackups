@@ -14432,15 +14432,15 @@ When you are using them at the same time, the risks explained in the introductio
     <ns>0</ns>
     <id>127</id>
     <revision>
-      <id>7715</id>
-      <parentid>7616</parentid>
-      <timestamp>2014-05-08T20:23:41Z</timestamp>
+      <id>8311</id>
+      <parentid>7715</parentid>
+      <timestamp>2014-07-25T16:55:59Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* General */</comment>
-      <text xml:space="preserve" bytes="35300">{{Header}}
+      <comment>/* Chaining Anonymizing Gateways */</comment>
+      <text xml:space="preserve" bytes="35468">{{Header}}
 &lt;!--
 Copyright:
 
@@ -14980,6 +14980,9 @@ You must know, understand and edit /etc/network/interfaces on Whonix-Gateway and
 
 It will be difficult, because there are no other Anonymizing Gateways (VPN/JonDo/i2p/Proxy/SSH/VPN) available for download besides Whonix-Gateway which uses Tor to anonymize traffic, which you already know about. You have to look for instructions (there are some for a pfSense based VPN-Gateway you can find using a search engine, but untested for leaks, which does not imply, that there are leaks) and/or build such a Anonymizing-Gateway yourself.
 
+For a VPN-Gateway, see also: &lt;br /&gt;
+[https://www.ivpn.net/privacy-guides/advanced-privacy-and-anonymity-part-6 VPN-Gateway] ([http://www.webcitation.org/6RKpGv2y9 w])
+
 = Useful External Links =
 
 * http://www.aboutdebian.com/security.htm
@@ -15014,7 +15017,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>8uu5o701h3sym5nuypwd69yc0d9exle</sha1>
+      <sha1>roe6kkxix74c1hm6l87eynn91ig0s8j</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -19882,14 +19885,15 @@ It's possible with Whonix. (See [[Other Anonymizing Networks]] in case you're in
     <ns>0</ns>
     <id>170</id>
     <revision>
-      <id>5756</id>
-      <parentid>4622</parentid>
-      <timestamp>2014-02-27T11:50:23Z</timestamp>
+      <id>8310</id>
+      <parentid>5756</parentid>
+      <timestamp>2014-07-25T16:54:34Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="9359">{{Header}}
+      <comment>/* Introduction */</comment>
+      <text xml:space="preserve" bytes="9508">{{Header}}
 {{#seo:
 |description=Inspiration for developing new Whonix Features.
 }}
@@ -19940,6 +19944,10 @@ In comparison to Tor, JonDo does not offer a TransPort or DnsPort. For that reas
 '''Not finished yet.''' '''''UNTESTED!''''' [Dev] &quot;#SupportforVPNsasTorreplacementOPTIONALFEATURE dev thread&quot;
 
 Read first: [[TestVPN]].
+
+Third party '''VPN-Gateway'''
+
+https://www.ivpn.net/privacy-guides/advanced-privacy-and-anonymity-part-6 ([http://www.webcitation.org/6RKpGv2y9 w])
 
 == VPN's as a Tor replacement (VPNBOX) ==
 
@@ -20070,7 +20078,7 @@ In fact [http://retroshare.sourceforge.net RetroShare] is not an [https://en.wik
 {{Footer}}
 
 [[Category:Development]] [[Category:Deprecated]]</text>
-      <sha1>qyafjyb02azes7qhytwos7xoqr7lsui</sha1>
+      <sha1>155n7uqfzyclho6yhdsgrhha6gmh6m5</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
