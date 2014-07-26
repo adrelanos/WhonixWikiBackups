@@ -13234,14 +13234,15 @@ The PayPal logo (60px-De-pp-logo-200px.png), the subscribe button (subscribeCC_L
     <ns>0</ns>
     <id>119</id>
     <revision>
-      <id>7873</id>
-      <parentid>7872</parentid>
-      <timestamp>2014-05-13T13:39:45Z</timestamp>
+      <id>8319</id>
+      <parentid>8318</parentid>
+      <timestamp>2014-07-26T12:58:31Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="22507">{{Header}}
+      <comment>/* Recommendation to use multiple VM Snapshots */</comment>
+      <text xml:space="preserve" bytes="23865">{{Header}}
 {{#seo:
 |description=Computer Security Guide for Whonix Linux for Users, Whonix Hardening
 }}
@@ -13493,13 +13494,21 @@ For the best security, you should consider using multiple physical systems, see 
 
 If this VM is compromised all data it has access to, all credentials, browser data, passwords... the user has entered can be compromised. The IP is never leaked but these information can still result in identity disclosure.
 
-The best practice is to back up the VM and &quot;roll back&quot; after risky activity and whenever the user suspect the integrity of the system could have been compromised, see the ''Reliable Alternative To Virtualbox VM Snapshots'' below.
+The best practice is to back up the VM and &quot;roll back&quot; after risky activity and whenever the user suspect the integrity of the system could have been compromised, see the ''Recommendation to use multiple VM Snapshots'' below.
 
 ''Whonix Example Implementation'' is currently based on Debian.
 
 For Technical Design notes, see [[Dev/Operating System]]. For information on how to use other operating systems, see [[Other Operating Systems]].
 
-{{anchor|Recommendation to use multiple VM Snapshots}}
+== Recommendation to use multiple VM Snapshots ==
+Apart from offering protection against hardware serial leaks, VMs got another great advantage: the ability to quickly discard and restore a system.
+
+It is recommended that you keep a master copy of Whonix-Workstation, keep it updated, make regular &quot;clean&quot; snapshots but do not edit any settings or install additional software or use it directly for any activity. Instead make a clone or use snapshotting (but never mix up clean and unclean states!) for activities that require anonymity.
+
+After importing the VMs, do a first run of the Whonix-Gateway and Whonix-Workstation virtual machines. [[Security_Guide#Recommendation_to_install_latest_security_updates_on_all_systems|Securely update it]]. After that stop and do not browse anywhere or open any unauthenticated communication channel to the internet. Shutdown the virtual machines and create snapshots of their clean state before browsing or initiating any connections with the outside world. Note: The only exception to this is running apt which has a guaranteed way to securely download and verify packages.
+
+'''Warning to VirtualBox users''': VirtualBox's VM Snapshot feature is recommended against, because [https://www.whonix.org/forum/index.php/topic,97.msg1586.html#msg1586 we experienced] data loss with it. You're better off using clones or see &quot;Reliable Alternative To Virtualbox VM Snapshots&quot; below.
+
 == Reliable Alternative To Virtualbox VM Snapshots ==
 
 Warning: VirtualBox's snapshot feature is not (highly) recommended as a reliable method for backing up virtual machines because of possible data loss primarily in the form of corrupted virtual hard drives [VHD]. Alternative methods are copy/paste, cloning, exporting/importing. While all these methods provide virtual machine [VM] backups, they nevertheless make inefficient use of disk resources and inherently require manual versioning. Virtualbox's 'snapshot' feature is very useful when it works properly particularly when making interim snapshots of live running systems prior to installing new application(s), reverting can be very painful, and sometimes impossible, if/when virtual hard drive file(s) is corrupted.
@@ -13585,7 +13594,7 @@ For even more Security, see [[Advanced Security Guide]].
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>kiztt99k9ny4pfr6ylc96ypqxx3t1ut</sha1>
+      <sha1>gx6us43obywf3vs99qq2jmg4kxbs16k</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -55734,15 +55743,15 @@ Many thanks to Tails team for their discussion on the topic of password managers
     <ns>0</ns>
     <id>685</id>
     <revision>
-      <id>8307</id>
-      <parentid>8306</parentid>
-      <timestamp>2014-07-24T10:19:23Z</timestamp>
+      <id>8321</id>
+      <parentid>8320</parentid>
+      <timestamp>2014-07-26T13:00:42Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Uninstall */</comment>
-      <text xml:space="preserve" bytes="13574">{{Header}}
+      <comment>/* KVM Setup Instructions */</comment>
+      <text xml:space="preserve" bytes="12529">{{Header}}
 {{#seo:
 |description=Using Whonix with KVM instead of VirtualBox
 }}
@@ -55769,6 +55778,10 @@ Furthermore VirtualBox contains significant functionality that is only available
 
 = KVM Setup Instructions =
 {{testing}}
+
+== Before installing == 
+Read and apply the [[Pre_Install_Advice|Security Advice]].
+
 == Install KVM ==
 Install kvm.
 
@@ -55953,48 +55966,6 @@ sudo rm /var/lib/libvirt/images/Whonix-Workstation.qcow2
 
 = Extra =
 == KVM Shared Folders ==
-
-1. Set the following settings for shared folders in virt-manager:
-
-The file sharing mode 'mapped' is just an example, using squash or passthrough is possible by selecting them from the drop down menu.
-
-Driver: Default
-Mode: Mapped
-
-Source Path: [This is the path of the folder on the Host you are sharing with the Guest]
-Target Path: [A custom tag for the shared directory that is used when running the mounting commands within the guest. for example: /tmpshare]
-
-
-2. Run terminal as root in Guest then use the following command (not necessary unless using a different mount tag, see below):
-
-&lt;pre&gt;
-mount -t 9p -o trans=virtio [mount tag] [mount point] -oversion=9p2000.L
-&lt;/pre&gt;
-
-Mount tag is: /tmpshare
-Mount point is the path of the directory that you will share in the Guest with the Host. If it doesn't exist you must create that folder.
-
-Note: you replace the parentheses in the command, they are just a placeholder in this example and should not be typed in.
-
-
-3. To automatically mount this every time at boot, add the following to your guest's /etc/fstab:
-
-&lt;pre&gt;
-sudo nano /etc/fstab [mount tag] [mount point] 9p trans=virtio,version=9p2000.L,rw 0 0
-&lt;/pre&gt;
-
-Note: If your system is configured to use a Mandatory Access Control framework like AppArmor, you may need to configure an exception rule to allow the confined guests to communicate with the designated shared folder on the guest. Do NOT be tempted to disable AppArmor to get this working, as it removes a critical protection layer that protects your host. Be patient and read the documentation.
-By default Whonix can automount a shared folder on the host as long as you use set up virt-manager to use hostshare tag: shared
-If you are using commandline add this xml code to your configuration, this is an example and should be adapted for your usage:
-
-&lt;pre&gt;
-&lt;filesystem type='mount' accessmode='mapped'&gt;
-    &lt;source dir='/mnt/shared'/&gt;
-    &lt;target dir='tag'/&gt;
-&lt;/filesystem&gt;
-&lt;/pre&gt;
-
-== KVM Shared Folders ==
 To move data between the guest and host follow these steps.
 
 On the host.
@@ -56020,7 +55991,7 @@ Driver: Default
 
 Source Path: {{Code|/mnt/shared}}
 
-Target Path: {{Code|/mnt/shared}}
+Target Path: {{Code|shared}}
 
 Click finish. Done.
 
@@ -56054,6 +56025,18 @@ shared /mnt/shared    9p  trans=virtio,version=9p2000.L,rw    0   0
 
 Save.
 
+
+Note: If your system is configured to use a Mandatory Access Control framework like AppArmor, you may need to configure an exception rule to allow the confined guests to communicate with the designated shared folder on the guest. Do NOT be tempted to disable AppArmor to get this working, as it removes a critical protection layer that protects your host. Be patient and read the documentation.
+By default Whonix can automount a shared folder on the host as long as you use set up virt-manager to use hostshare tag: shared
+If you are using commandline add this xml code to your configuration, this is an example and should be adapted for your usage:
+
+&lt;pre&gt;
+&lt;filesystem type='mount' accessmode='mapped'&gt;
+    &lt;source dir='/mnt/shared'/&gt;
+    &lt;target dir='tag'/&gt;
+&lt;/filesystem&gt;
+&lt;/pre&gt;
+
 == Editing an imported Machine's XML Configuration ==
 
 &lt;pre&gt;
@@ -56063,25 +56046,10 @@ EDITOR=nano sudo virsh edit Whonix-Gateway
 == Enabling Clipboard Sharing ==
 SPICE allows accelerated graphics and clipboard sharing. The clipboard is disabled by default for security reasons &lt;ref&gt;So you don't accidentally copy for example a link to a website you visited anonymously to your non-anonymous host browser or vice versa.&lt;/ref&gt; but could be enabled in the xml for a machine by finding the option for it under the &lt;graphics&gt; section and changing it to'yes'.
 
-== Switch KVM/qemu ==
-To change existing kvm guest to use plain qemu or vice versa, because this can not be done yet with the virt-manager GUI.
+== Alternative Configurations ==
+Libvirt can support a variety of containment mechanisms. Currently supported ones are KVM on the x86_64 platform and QEMU. More configurations could be added at a later date. If you have hardware virtualization extensions, always use the KVM one.
 
-&lt;pre&gt;
-sudo virsh edit Whonix-Gateway
-&lt;/pre&gt;
-
-And change.
-
-&lt;pre&gt;
-&lt;domain type='kvm'&gt;
-&lt;/pre&gt;
-
-To.
-
-&lt;pre&gt;
- &lt;domain type='qemu'&gt;
-&lt;/pre&gt;
-
+To use another configuration, import its XML file with virsh.
 
 = Footnotes =
 &lt;references/&gt;
@@ -56089,7 +56057,7 @@ To.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>o881lh1hyr79dbb0zesf94i7lbre0ke</sha1>
+      <sha1>psdetbix2almck3pe1pj15kwjgbaw20</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -75190,15 +75158,15 @@ You have to replace {{Code2|{{{version}}}}} with the actual version you want to 
     <ns>10</ns>
     <id>1315</id>
     <revision>
-      <id>8287</id>
-      <parentid>8259</parentid>
-      <timestamp>2014-07-22T19:47:47Z</timestamp>
+      <id>8326</id>
+      <parentid>8325</parentid>
+      <timestamp>2014-07-26T15:39:40Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Get Build Dependencies */</comment>
-      <text xml:space="preserve" bytes="1869">{{Header}}
+      <comment>/* Build and Install the Package */</comment>
+      <text xml:space="preserve" bytes="1854">{{Header}}
 
 == Get Build Dependencies ==
 &lt;code&gt;
@@ -75260,32 +75228,16 @@ Build_Documentation_Choose_Version
 |version={{{version}}}
 }}
 
-== Build the Package  ==
-Build the package without signing it. (Not required for personal use.)
-
-&lt;code&gt;
-make deb-pkg
-&lt;/code&gt;
-
-== Clean Up ==
-Clean up temporary files. Be careful, this deletes any extra files in that folder, that aren't committed to git.
-
-&lt;code&gt;
-make clean
-&lt;/code&gt;
-
-== Install the Package ==
-Your package can be found in the package's parent folder.
-
-To install it.
+== Build and Install the Package  ==
+Build the package without signing it (not required for personal use) and install it.
 
 '''Easy.'''
 
 &lt;code&gt;
-make deb-install
+make deb-pkg-install
 &lt;/code&gt;
 
-'''With debugging enabled.'''
+'''Of if you want to install with debugging enabled, click on expand on the right.'''
 
 &lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
 &lt;div class=&quot;mw-collapsible-content&quot;&gt;
@@ -75293,17 +75245,24 @@ make deb-install
 export DEBDEBUG=1
 &lt;/code&gt; &lt;br /&gt;
 &lt;code&gt;
-make deb-install
+make deb-pkg-install
 &lt;/code&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+
+== Clean Up ==
+Clean up temporary files debhelper files in package source folder as well as debhelper artifacts (.deb file etc.) in parent folder.
+
+&lt;code&gt;
+make deb-cleanup
+&lt;/code&gt;
 
 == Footnotes ==
 &lt;references /&gt;
 
 [[Category:Development]]
 {{Footer}}</text>
-      <sha1>dek6nt2vtp3dcyhqvz4hfvk0w8vlyqb</sha1>
+      <sha1>7vmmqmn1927ilg7qu9buvlbf7ydof5l</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
