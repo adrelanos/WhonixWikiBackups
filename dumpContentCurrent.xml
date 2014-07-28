@@ -55749,15 +55749,15 @@ Many thanks to Tails team for their discussion on the topic of password managers
     <ns>0</ns>
     <id>685</id>
     <revision>
-      <id>8321</id>
-      <parentid>8320</parentid>
-      <timestamp>2014-07-26T13:00:42Z</timestamp>
+      <id>8360</id>
+      <parentid>8359</parentid>
+      <timestamp>2014-07-28T01:06:26Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* KVM Setup Instructions */</comment>
-      <text xml:space="preserve" bytes="12529">{{Header}}
+      <comment>/* Debian stable */</comment>
+      <text xml:space="preserve" bytes="16046">{{Header}}
 {{#seo:
 |description=Using Whonix with KVM instead of VirtualBox
 }}
@@ -55789,21 +55789,126 @@ Furthermore VirtualBox contains significant functionality that is only available
 Read and apply the [[Pre_Install_Advice|Security Advice]].
 
 == Install KVM ==
-Install kvm.
 
-TODO:
+=== Debian stable ===
+&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+If you are using Debian {{Code2|stable}} (currently: {{Code2|wheezy}}), click on expand on the right.
 
-* When using Debian stable, explain how to enable Debian backports.
-* Explain why we install from Debian backports (security / rng / entropy).
+&lt;div class=&quot;mw-collapsible-content&quot;&gt;
+You need to enable {{Code2|wheezy-backports}} first, because we need a more recent version of kvm for security reasons. &lt;ref&gt;The one in {{Code2|wheezy}} does not support rng device.&lt;/ref&gt; This is not necessary if you are using Debian {{Code2|testing}} (currently: {{Code2|jessie}}).
+
+Open {{Code2|/etc/apt/sources.list}} with root rights.
+
+&lt;pre&gt;
+kdesudo kwrite /etc/apt/sources.list
+&lt;/pre&gt;
+
+Add the following line.
+
+&lt;pre&gt;
+deb http://ftp.de.debian.org/debian/ wheezy-backports main
+&lt;/pre&gt;
+
+Save.
+
+Update package lists.
 
 &lt;pre&gt;
 sudo apt-get update
-sudo apt-get install qemu-kvm
 &lt;/pre&gt;
 
-TODO:
+Install. &lt;ref&gt;
+Technically {{Code2|virt-manager}} gets installed from Debian {{Code2|stable}} (currently: {{Code2|wheezy}}), not Debian {{Code2|wheezy-backports}}. But that does not matter. Command works anyway. {{Code2|qemu-kvm}} and {{Code2|libvirt-bin}} get installed from {{Code2|wheezy-backports}} and  {{Code2|virt-manager}} gets installed from {{Code2|stable}}.
+&lt;/ref&gt;
 
-* Alternatively install qemu (in case of lack of hardware support).
+&lt;pre&gt;
+sudo apt-get install -t wheezy-backports qemu-kvm libvirt-bin virt-manager
+&lt;/pre&gt;
+
+Alternatively, if this does not work for you, see footnote. &lt;ref&gt;
+Try this.
+&lt;pre&gt;
+sudo apt-get install libvirt-bin=1.2.4-1~bpo70+1 qemu-kvm=2.0.0+dfsg-4~bpo70+1 virt-manager
+&lt;/pre&gt;
+
+If it still doesn't work, try this.
+&lt;pre&gt;
+sudo apt-get install libvirt-bin=1.2.4-1~bpo70+1 qemu-kvm=2.0.0+dfsg-4~bpo70+1 virt-manager libvirt0=1.2.4-1~bpo70+1 qemu-system-x86=2.0.0+dfsg-4~bpo70+1 qemu-system-common python-libvirt=1.2.1-2~bpo70+1
+&lt;/pre&gt;
+
+Maybe you need to update version numbers, see:
+https://packages.debian.org/wheezy-backports/libvirt-bin &lt;br /&gt;
+https://packages.debian.org/wheezy-backports/qemu-kvm
+&lt;/ref&gt;
+
+Check version numbers.
+
+&lt;pre&gt;
+dpkg-query --show --showformat='${Package} ${Version} \n' libvirt-bin qemu-kvm virt-manager
+&lt;/pre&gt;
+
+Should show.
+
+&lt;pre&gt;
+libvirt-bin 1.2.4-1~bpo70+1 
+qemu-kvm 2.0.0+dfsg-4~bpo70+1 
+virt-manager 0.9.1-4
+&lt;/pre&gt;
+
+(Higher version numbers would be okay as well.)
+&lt;/div&gt;
+&lt;/div&gt;
+
+=== Debian testing ===
+&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+If you are using Debian {{Code2|testing}} (currently: {{Code2|jessie}}), click on expand on the right.
+
+&lt;div class=&quot;mw-collapsible-content&quot;&gt;
+Update package lists.
+
+&lt;pre&gt;
+sudo apt-get update
+&lt;/pre&gt;
+
+Install.
+
+&lt;pre&gt;
+sudo apt-get install qemu-kvm libvirt-bin virt-manager
+&lt;/pre&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+=== Other Distributions ===
+&lt;div class=&quot;toccolours mw-collapsible mw-collapsed&quot; style=&quot;width:800px&quot;&gt;
+If you are using a Linux distribution, that is not documented above, click on expand on the right.
+
+&lt;div class=&quot;mw-collapsible-content&quot;&gt;
+You need to have qemu-kvm and libvirt-bin. If you want to use a graphical user interface, which you most likely want, you also need virt-manager. Likely the required software can be installed using your usual distribution's package manager.
+
+If you get one of the following errors while later using {{Code|virsh define}}.
+
+&lt;pre&gt;
+error: Failed to define domain from Whonix-Gateway_kvm-8.6.2.8.xml
+error: internal error Unknown controller type 'pci
+&lt;/pre&gt;
+
+&lt;pre&gt;
+Whonix-Gateway_kvm-8.6.2.8.xml:24: element pm: Relax-NG validity error : Element domain has extra content: pm
+Whonix-Gateway_kvm-8.6.2.8.xml fails to validate
+&lt;/pre&gt;
+
+&lt;pre&gt;
+Relax-NG validity error : Extra element devices in interleave
+Whonix-Gateway_kvm-8.6.2.8.xml:24: element devices: Relax-NG validity error : Element domain failed to validate content
+Whonix-Gateway_kvm-8.6.2.8.xml fails to validate
+&lt;/pre&gt;
+
+Then you most likely need a more recent version of libvirt and kvm.
+
+&lt;/div&gt;
+&lt;/div&gt;
+Please feel free to share detailed instructions for other distributions!
 
 == Download and Extract ==
 It is highly recommended you read and apply the steps outlined here. By applying a known and tested configuration, you will be better off in convenience and security.
@@ -56063,7 +56168,7 @@ To use another configuration, import its XML file with virsh.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>psdetbix2almck3pe1pj15kwjgbaw20</sha1>
+      <sha1>dpegjmobx45tkr3e30my8orj1o3kd0i</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
