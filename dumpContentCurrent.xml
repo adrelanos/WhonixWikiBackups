@@ -34436,14 +34436,15 @@ Other stuff.
     <ns>0</ns>
     <id>277</id>
     <revision>
-      <id>5824</id>
-      <parentid>2176</parentid>
-      <timestamp>2014-02-27T13:03:08Z</timestamp>
+      <id>8375</id>
+      <parentid>5824</parentid>
+      <timestamp>2014-07-28T14:50:17Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="3357">{{Header}}
+      <comment>/* haveged */</comment>
+      <text xml:space="preserve" bytes="3632">{{Header}}
 {{#seo:
 |description=Technical Design Documentation about Entropy
 }}
@@ -34514,7 +34515,10 @@ All 2 tests passed
 ==================
 &lt;/pre&gt;
 
-This was tested in VirtualBox.
+* This was successfully tested in VirtualBox without haveged running.
+* This was successfully tested in VirtualBox with haveged running.
+* This was successfully tested in kvm without rng device and without haveged running.
+* This was successfully tested in kvm without rng device and with haveged running.
 
 = Entropy Key =
 
@@ -34523,7 +34527,7 @@ This was tested in VirtualBox.
 {{Footer}}
 
 [[Category:Design]]</text>
-      <sha1>5sqhceeu4nvmvao2l5be1s92ar6edlb</sha1>
+      <sha1>afqaxvyrc6e4ra6xk8zogqhu8fisx14</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -55749,15 +55753,15 @@ Many thanks to Tails team for their discussion on the topic of password managers
     <ns>0</ns>
     <id>685</id>
     <revision>
-      <id>8360</id>
-      <parentid>8359</parentid>
-      <timestamp>2014-07-28T01:06:26Z</timestamp>
+      <id>8374</id>
+      <parentid>8373</parentid>
+      <timestamp>2014-07-28T14:23:31Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
       <comment>/* Debian stable */</comment>
-      <text xml:space="preserve" bytes="16046">{{Header}}
+      <text xml:space="preserve" bytes="18816">{{Header}}
 {{#seo:
 |description=Using Whonix with KVM instead of VirtualBox
 }}
@@ -55795,7 +55799,10 @@ Read and apply the [[Pre_Install_Advice|Security Advice]].
 If you are using Debian {{Code2|stable}} (currently: {{Code2|wheezy}}), click on expand on the right.
 
 &lt;div class=&quot;mw-collapsible-content&quot;&gt;
-You need to enable {{Code2|wheezy-backports}} first, because we need a more recent version of kvm for security reasons. &lt;ref&gt;The one in {{Code2|wheezy}} does not support rng device.&lt;/ref&gt; This is not necessary if you are using Debian {{Code2|testing}} (currently: {{Code2|jessie}}).
+You need to enable {{Code2|wheezy-backports}} first, because we need a more recent version of kvm for security reasons. &lt;ref&gt;
+The one in {{Code2|wheezy}} does not support rng device. &lt;br /&gt;
+Implemented in: http://fedoraproject.org/wiki/Features/Virtio_RNG
+&lt;/ref&gt; This is not necessary if you are using Debian {{Code2|testing}} (currently: {{Code2|jessie}}).
 
 Open {{Code2|/etc/apt/sources.list}} with root rights.
 
@@ -55806,7 +55813,7 @@ kdesudo kwrite /etc/apt/sources.list
 Add the following line.
 
 &lt;pre&gt;
-deb http://ftp.de.debian.org/debian/ wheezy-backports main
+deb http://ftp.us.debian.org/debian/ wheezy-backports main
 &lt;/pre&gt;
 
 Save.
@@ -55841,7 +55848,8 @@ https://packages.debian.org/wheezy-backports/libvirt-bin &lt;br /&gt;
 https://packages.debian.org/wheezy-backports/qemu-kvm
 &lt;/ref&gt;
 
-Check version numbers.
+==== Check version numbers ====
+To make sure you have recent enough versions.
 
 &lt;pre&gt;
 dpkg-query --show --showformat='${Package} ${Version} \n' libvirt-bin qemu-kvm virt-manager
@@ -55910,6 +55918,26 @@ Then you most likely need a more recent version of libvirt and kvm.
 &lt;/div&gt;
 Please feel free to share detailed instructions for other distributions!
 
+== Addgroup ==
+In order to be able to manage virtual machines as regular (non-root) user, you need to add that user to the {{Code|livirt}} and the {{Code|kvm}} group. Assuming the simple use case, that you wish to use KVM with the user you are currently logged in, and assuming you are using Debian, simply use the following command.
+
+&lt;pre&gt;
+sudo addgroup &quot;$(whoami)&quot; libvirt
+&lt;/pre&gt;
+
+&lt;pre&gt;
+sudo addgroup &quot;$(whoami)&quot; kvm
+&lt;/pre&gt;
+
+If you are using other distributions, have a look at your distribution's manual. (Such as [https://wiki.archlinux.org/index.php/libvirt Arch Linux's libvirt wiki page].)
+
+== Reboot ==
+After installation of kvm, reboot is required! After adding users to groups, reboot is required!
+
+&lt;pre&gt;
+sudo reboot
+&lt;/pre&gt;
+
 == Download and Extract ==
 It is highly recommended you read and apply the steps outlined here. By applying a known and tested configuration, you will be better off in convenience and security.
 
@@ -55954,27 +55982,27 @@ The supplied XML files serve as a description for libvirt, that tell it what pro
 1. First we will start with Whonix-Gateway:
 
 &lt;pre&gt;
-virsh define ~/Whonix-Gateway/Whonix-Gateway_kvm-*.xml
+virsh -c qemu:///system define ~/Whonix-Gateway/Whonix-Gateway_kvm-*.xml
 &lt;/pre&gt;
 
 2. Followed by the Whonix isolated internal network (XML also in the same folder as Whonix Gateway):
 
 &lt;pre&gt;
-virsh net-define ~/Whonix-Gateway/Whonix_network-*.xml
+virsh -c qemu:///system net-define ~/Whonix-Gateway/Whonix_network-*.xml
 &lt;/pre&gt;
 
 &lt;pre&gt;
-virsh net-autostart Whonix
+virsh -c qemu:///system net-autostart Whonix
 &lt;/pre&gt;
 
 &lt;pre&gt;
-virsh net-start Whonix
+virsh -c qemu:///system net-start Whonix
 &lt;/pre&gt;
 
 3. Lastly the Whonix-Workstation:
 
 &lt;pre&gt;
-virsh define ~/Whonix-Workstation/Whonix-Workstation_kvm-*.xml
+virsh -c qemu:///system define ~/Whonix-Workstation/Whonix-Workstation_kvm-*.xml
 &lt;/pre&gt;
 
 == Alternative Configurations ==
@@ -56034,33 +56062,33 @@ If you want to remove Whonix KVM VMs, Whonix network and Whonix images, click on
 1. Make sure you powered off the VM you want to shut down. You can also make sure you have shut down the VM using command line.
 
 &lt;pre&gt;
-virsh destroy Whonix-Gateway
+virsh -c qemu:///system destroy Whonix-Gateway
 &lt;/pre&gt;
 
 &lt;pre&gt;
-virsh destroy Whonix-Workstation
+virsh -c qemu:///system destroy Whonix-Workstation
 &lt;/pre&gt;
 
 2. Remove KVM VM settings.
 
 &lt;pre&gt;
-virsh undefine Whonix-Gateway
+virsh -c qemu:///system undefine Whonix-Gateway
 &lt;/pre&gt;
 
 &lt;pre&gt;
-virsh undefine Whonix-Workstation
+virsh -c qemu:///system undefine Whonix-Workstation
 &lt;/pre&gt;
 
 3. Shut down KVM Network {{Code2|Whonix}}.
 
 &lt;pre&gt;
-virsh net-destroy Whonix
+virsh -c qemu:///system net-destroy Whonix
 &lt;/pre&gt;
 
 4. Remove Network {{Code2|Whonix}}.
 
 &lt;pre&gt;
-virsh net-undefine Whonix
+virsh -c qemu:///system net-undefine Whonix
 &lt;/pre&gt;
 
 5. Delete the images. (All data will be lost unless you made a backup of your valued data.)
@@ -56149,9 +56177,16 @@ If you are using commandline add this xml code to your configuration, this is an
 &lt;/pre&gt;
 
 == Editing an imported Machine's XML Configuration ==
+Eventually configure your faviorite editor to make changes. Set visual to your favorite editor (must be installed, examples are kwrite, leafpad, kate, vi, nano, vim, etc.).
 
 &lt;pre&gt;
-EDITOR=nano sudo virsh edit Whonix-Gateway
+export VISUAL=kwrite
+&lt;/pre&gt;
+
+Edit.
+
+&lt;pre&gt;
+virsh -c qemu:///system edit Whonix-Gateway
 &lt;/pre&gt;
 
 == Enabling Clipboard Sharing ==
@@ -56162,13 +56197,81 @@ Libvirt can support a variety of containment mechanisms. Currently supported one
 
 To use another configuration, import its XML file with virsh.
 
+= Troubleshooting =
+== Reboot? ==
+Did you reboot after installing KVM?
+
+Did you reboot after adding users to groups?
+
+Add this information should you make a support request.
+
+== Unable to open a connection to the libvirt management daemon. ==
+If you are getting the following error.
+
+&lt;pre&gt;
+Unable to open a connection to the libvirt management daemon.
+
+Libvirt URI is: qemu:///system
+
+Verify that:
+- The 'libvirtd' daemon has been started
+&lt;/pre&gt;
+
+Check your KVM installation.
+
+&lt;pre&gt;
+sudo service qemu-system-x86 restart ; echo $? ; sudo service libvirt-bin restart ; echo $? ; sudo service libvirt-guests restart ; echo $?
+&lt;/pre&gt;
+
+Should show.
+
+&lt;pre&gt;
+0
+[ ok ] Restarting libvirt management daemon: /usr/sbin/libvirtd.
+0
+
+Running guests on default URI: no running guests.
+0
+&lt;/pre&gt;
+
+If you see that, it could be a permissions problem.
+
+== hda-duplex not supported in this QEMU binary ==
+Maybe you are a member of the {{Code|libvirt}} group, but not have the {{Code|lkvm}} group?
+
+Maybe changing
+
+&lt;pre&gt;
+    &lt;sound model='ich6'&gt;
+&lt;/pre&gt;
+
+to
+
+&lt;pre&gt;
+    &lt;sound model='ac97'&gt;
+&lt;/pre&gt;
+
+will help.
+
+== Permissions ==
+&lt;pre&gt;
+ls -la /var/run/libvirt/libvirt-sock
+&lt;/pre&gt;
+
+== Add Version Numbers to Support Request ==
+Having issues, make sure you add what versions of libvirt-bin, qemu-kvm and virt-manager you are using. If you are using Debian, you can use the following command to determine them.
+
+&lt;pre&gt;
+dpkg-query --show --showformat='${Package} ${Version} \n' libvirt-bin qemu-kvm virt-manager
+&lt;/pre&gt;
+
 = Footnotes =
 &lt;references/&gt;
 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>dpegjmobx45tkr3e30my8orj1o3kd0i</sha1>
+      <sha1>b7n6buxor6po4uuiqb9dow6bidas2iv</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
