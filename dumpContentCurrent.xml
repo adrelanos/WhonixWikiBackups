@@ -55753,15 +55753,15 @@ Many thanks to Tails team for their discussion on the topic of password managers
     <ns>0</ns>
     <id>685</id>
     <revision>
-      <id>8374</id>
-      <parentid>8373</parentid>
-      <timestamp>2014-07-28T14:23:31Z</timestamp>
+      <id>8377</id>
+      <parentid>8374</parentid>
+      <timestamp>2014-07-29T12:37:40Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Debian stable */</comment>
-      <text xml:space="preserve" bytes="18816">{{Header}}
+      <comment>/* Troubleshooting */</comment>
+      <text xml:space="preserve" bytes="19305">{{Header}}
 {{#seo:
 |description=Using Whonix with KVM instead of VirtualBox
 }}
@@ -56253,6 +56253,15 @@ to
 
 will help.
 
+== process exited while connecting to monitor: ioctl(KVM_CREATE_VM) failed ==
+If you get the following error.
+&lt;pre&gt;
+Error starting domain: internal error: process exited while connecting to monitor: ioctl(KVM_CREATE_VM) failed: 16 Device or resource busy
+failed to initialize KVM: Device or resource busy
+&lt;/pre&gt;
+
+Maybe you have other non-KVM VMs, such as VirtualBox VMs already running? This is not possible. Running two hypervisors at the same time is not supported by KVM / VirtualBox.
+
 == Permissions ==
 &lt;pre&gt;
 ls -la /var/run/libvirt/libvirt-sock
@@ -56271,7 +56280,7 @@ dpkg-query --show --showformat='${Package} ${Version} \n' libvirt-bin qemu-kvm v
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>b7n6buxor6po4uuiqb9dow6bidas2iv</sha1>
+      <sha1>os5j9zmf36m0gq1aj21e016p9hifz4p</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -56852,15 +56861,15 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
     <ns>0</ns>
     <id>691</id>
     <revision>
-      <id>8237</id>
-      <parentid>8236</parentid>
-      <timestamp>2014-07-08T13:13:04Z</timestamp>
+      <id>8378</id>
+      <parentid>8237</parentid>
+      <timestamp>2014-07-29T13:04:01Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>shuffle</comment>
-      <text xml:space="preserve" bytes="39744">{{Header}}
+      <comment>/* Non-Blockers */</comment>
+      <text xml:space="preserve" bytes="39847">{{Header}}
 {{#seo:
 |description=Development Notes for adding KVM support to Whonix.
 }}
@@ -56885,6 +56894,9 @@ See also: https://github.com/Whonix/Whonix/issues/223
 
 == Document: how to leave KVM when no X is running? ==
 Situation... User is in terminal in a VM... No X is running (&quot;sudo service kdm stop&quot;). User wants to switch back to the host... How to do this?
+
+== Two Separate Whonix-Gateway's ==
+https://www.whonix.org/forum/index.php/topic,397.msg2973.html#new
 
 == SPICE security implications ==
 http://lists.freedesktop.org/archives/spice-devel/2013-December/015810.html
@@ -57633,7 +57645,7 @@ http://blog.wikichoon.com/2014/04/deprecating-little-used-tool-virt-image1.html
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>h4riurts517dqpn6xc85oqtdnpqwpio</sha1>
+      <sha1>68o7k3846g96gs4o26ril4sbv2oqn2g</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
