@@ -58658,14 +58658,15 @@ Quelle: &lt;html&gt;&lt;a href=&quot;http://www.juraforum.de/impressum-generator
     <ns>0</ns>
     <id>698</id>
     <revision>
-      <id>8179</id>
-      <parentid>8178</parentid>
-      <timestamp>2014-07-04T04:37:00Z</timestamp>
+      <id>8376</id>
+      <parentid>8179</parentid>
+      <timestamp>2014-07-28T23:22:49Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="14417">&lt;!--
+      <comment>/* Geltungsbereich */</comment>
+      <text xml:space="preserve" bytes="14526">&lt;!--
 NOTE TO WIKI EDITORS:
 Do not add the default footer!
 Do not edit without asking Patrick Schleizer beforehand!
@@ -58800,6 +58801,8 @@ Dieses Impressum gilt auch für:
 ** https://github.com/adrelanos/apparmor-profile-anondist
 ** https://github.com/Whonix/apparmor-profile-icedove
 ** https://github.com/adrelanos/apparmor-profile-icedove
+** https://github.com/Whonix/apparmor-profile-okular
+** https://github.com/adrelanos/apparmor-profile-okular
 ** https://github.com/Whonix/apparmor-profile-pidgin
 ** https://github.com/adrelanos/apparmor-profile-pidgin
 ** https://github.com/Whonix/apparmor-profile-sdwdate
@@ -58954,7 +58957,7 @@ Die Datenschutzerklärung finden Sie [[Datenschutz|hier]].
 Den Haftungsausschluss (Disclaimer) finden Sie [[Disclaimer|hier]].
 
 [[Category:Documentation]]</text>
-      <sha1>6uajawsxc2hujk3sv5ryhhht63fihy8</sha1>
+      <sha1>n1zxrbggnv9uvaopgy9qwm16066c632</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
