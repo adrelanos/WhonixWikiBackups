@@ -2,7 +2,7 @@
   <siteinfo>
     <sitename>Whonix</sitename>
     <base>http://localhost/wiki/Main_Page</base>
-    <generator>MediaWiki 1.23.1</generator>
+    <generator>MediaWiki 1.23.2</generator>
     <case>first-letter</case>
     <namespaces>
       <namespace key="-2" case="first-letter">Media</namespace>
@@ -16877,14 +16877,14 @@ Optional, for debugging if you have problems.
     <ns>0</ns>
     <id>139</id>
     <revision>
-      <id>8128</id>
-      <parentid>8127</parentid>
-      <timestamp>2014-06-29T23:13:18Z</timestamp>
+      <id>8389</id>
+      <parentid>8383</parentid>
+      <timestamp>2014-07-30T13:45:35Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="5722">&lt;!--
+      <text xml:space="preserve" bytes="5306">&lt;!--
 Copyright:
 
    Whonix Verify_the_virtual_machine_images_using_the_command_line wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -16978,13 +16978,7 @@ Primary key fingerprint: 916B 8D99 C38E AF5E 8ADC  7A2A 8D66 066A 2EEA CCDA
 &lt;/pre&gt;
 
 This might be followed by a warning saying:
-
-&lt;pre&gt;
-gpg: WARNING: This key is not certified with a trusted signature!
-gpg:          There is no indication that the signature belongs to the owner.
-&lt;/pre&gt;
-
-This doesn't alter the validity of the signature according to the key you downloaded. This warning rather has to do with the trust that you put in Whonix signing key and the [[OpenPGP#The_OpenPGP_Web_of_Trust|web of trust]]. To remove this warning you would have to personally sign Whonix signing key with your own key.
+{{Template:GnuPG-Warning}}
 
 '''If the Virtual Machine image is not correct''' the output will tell you that the signature is bad:
 
@@ -17001,6 +16995,8 @@ cd [the directory in which you downloaded the .ova and the .asc]
 gpg --verify Whonix-Workstation*.ova.asc Whonix-Workstation*.ova
 &lt;/pre&gt;
 
+{{Template:GnuPG-Troubleshooting}}
+
 = License =
 &lt;blockquote&gt;
 Whonix Verify_the_virtual_machine_images_using_the_command_line wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -17016,7 +17012,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>rpgwwva68kjm978rjk58fpylw9enaxp</sha1>
+      <sha1>71ctipt2tnbl28prx9sd3c93o2uf78a</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -17044,14 +17040,14 @@ under certain conditions; see the wiki source code for details.
     <ns>0</ns>
     <id>141</id>
     <revision>
-      <id>5800</id>
-      <parentid>4732</parentid>
-      <timestamp>2014-02-27T12:36:32Z</timestamp>
+      <id>8388</id>
+      <parentid>5800</parentid>
+      <timestamp>2014-07-30T13:45:19Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="4039">{{Header}}
+      <text xml:space="preserve" bytes="4074">{{Header}}
 &lt;!--
 Copyright:
 
@@ -17128,8 +17124,9 @@ It will '''take a while''' and there is '''no progress meter'''. Please wait a f
 
 [[Image:kgpg_verification_failed.png]]
 
-= License =
+{{Template:GnuPG-Troubleshooting}}
 
+= License =
 &lt;code&gt;
 Whonix Verify_the_virtual_machine_images_using_Linux wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
 Whonix Verify_the_virtual_machine_images_using_Linux wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
@@ -17142,7 +17139,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>ogp67pv0q4f498ng5vfl5t52rohomzs</sha1>
+      <sha1>f957y8jf75h4uq9rpge67o5koubcuc9</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -17152,14 +17149,14 @@ under certain conditions; see the wiki source code for details.
     <ns>0</ns>
     <id>142</id>
     <revision>
-      <id>6788</id>
-      <parentid>6787</parentid>
-      <timestamp>2014-03-10T04:23:23Z</timestamp>
+      <id>8387</id>
+      <parentid>8385</parentid>
+      <timestamp>2014-07-30T13:44:39Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="4391">{{Header}}
+      <text xml:space="preserve" bytes="4204">{{Header}}
 &lt;!--
 Copyright:
 
@@ -17218,18 +17215,13 @@ If you see &quot;{{Code2|Not enough information to check signature validity}}&qu
 
 [[File:Kleopatra_not_enough_information_to_check_signature_validity.png|alt=&lt;translate&gt;Kleopatra Not enough information to check signature validity&lt;/translate&gt;|400px]]
 
-This warning equals.
-
-&lt;pre&gt;
-gpg: WARNING: This key is not certified with a trusted signature!
-gpg:          There is no indication that the signature belongs to the owner.
-&lt;/pre&gt;
-
-See [[Verify_the_virtual_machine_images_using_the_command_line|TODO]] for explanation.
+Then you did not import Whonix signing key.
 
 '''For Mac OS X using GPGTools'''
 
 After installing GPGTools, you should be able to follow the instruction for [[Verify the virtual machine images using the command line|Linux with the command line]]. To open the command line, navigate to your Applications folder, open Utilities, and double click on Terminal.
+
+{{Template:GnuPG-Troubleshooting}}
 
 = License =
 &lt;blockquote&gt;
@@ -17246,7 +17238,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>kmepl2cau9ozndh8spraaj5mculljtj</sha1>
+      <sha1>ibprngx6kerxo1j77347zjjyfelygid</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -78238,6 +78230,54 @@ https://lists.torproject.org/pipermail/tor-talk/2012-August/025197.html
 [[Category:Development]]
 {{Footer}}</text>
       <sha1>85p5tsqxodp368rzimuj93d0j2cki7q</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:GnuPG-Warning</title>
+    <ns>10</ns>
+    <id>1391</id>
+    <revision>
+      <id>8382</id>
+      <timestamp>2014-07-30T12:47:54Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;&lt;pre&gt; gpg: WARNING: This key is not certified with a trusted signature! gpg:          There is no indication that the signature belongs to the owner. &lt;/pre&gt;  This doesn't alte...&quot;</comment>
+      <text xml:space="preserve" bytes="477">&lt;pre&gt;
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+&lt;/pre&gt;
+
+This doesn't alter the validity of the signature according to the key you downloaded. This warning rather has to do with the trust that you put in Whonix signing key and the [[OpenPGP#The_OpenPGP_Web_of_Trust|web of trust]]. To remove this warning you would have to personally sign Whonix signing key with your own key.</text>
+      <sha1>ixd7lj1kw0rinfxlck5r4loua0ul0hr</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Template:GnuPG-Troubleshooting</title>
+    <ns>10</ns>
+    <id>1392</id>
+    <revision>
+      <id>8386</id>
+      <timestamp>2014-07-30T13:43:57Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <comment>Created page with &quot;= Troubleshooting = If you are having trouble and willingness to learn, you can do little two step exercise.  The Whonix distribution is user of GnuPG. You are a user of GnuPG...&quot;</comment>
+      <text xml:space="preserve" bytes="1270">= Troubleshooting =
+If you are having trouble and willingness to learn, you can do little two step exercise.
+
+The Whonix distribution is user of GnuPG. You are a user of GnuPG. The https://www.whonix.org website is not necessarily the the best of the best places to ask and learn about GnuPG, because it is not the main focus. The GnuPG community does a better job. But the GnuPG community doesn't necessarily use Whonix. Since Whonix images are quite big, asking someone not interested in Whonix to download them is a big request.
+
+Step 1) Go to https://www.gnupg.org/ (or windows users http://gpg4win.org). It contains lots of documentation and help about GnuPG. Download the GnuPG software, download the signature for the GnuPG software, learn to verify the GnuPG software. If it works for you, congratulations, you just learned how to verify files using GnuPG. If you are having issues, you advantage is, you don't have to mention Whonix, just GnuPG, you don't have to involve the extra complexity added by Whonix to your question. You can get help from the more specialized GnuPG community.
+
+Step 2) Go back to https://www.whonix.org and apply everything you learned in Step 1). Should you be still having issues, go through the [[Support|Whonix Support Channels]].</text>
+      <sha1>dt58cito6mm1qdl979r7d067j2tepvv</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
