@@ -56856,15 +56856,14 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
     <ns>0</ns>
     <id>691</id>
     <revision>
-      <id>8378</id>
-      <parentid>8237</parentid>
-      <timestamp>2014-07-29T13:04:01Z</timestamp>
+      <id>8392</id>
+      <parentid>8391</parentid>
+      <timestamp>2014-07-31T03:37:11Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* Non-Blockers */</comment>
-      <text xml:space="preserve" bytes="39847">{{Header}}
+      <comment>virtio bug workaround</comment>
+      <text xml:space="preserve" bytes="40660">{{Header}}
 {{#seo:
 |description=Development Notes for adding KVM support to Whonix.
 }}
@@ -56875,6 +56874,15 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
 * [https://github.com/Whonix/Whonix/issues/121 KVM Support github ticket]
 
 = Blockers =
+
+==Disable Microphone Input==
+
+Figure out how to disable Microphone input to Guests. While a nice feature for VOIP, is a very dangerous setting to have by default as its unexpected.
+
+https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Virtualization_Administration_Guide/section-libvirt-dom-xml-sound-devices.html
+
+http://libvirt.org/formatdomain.html
+
 = Non-Blockers =
 == Preconfigured Shared Folders ==
 Patrick asks: For better usability, should we add the necessary settings for shared folders by default to whonix_gateway.xml and whonix_workstation.xml?
@@ -56905,6 +56913,14 @@ https://wiki.debian.org/DebianKVMGuests
 
 == Do KVM instructions need changes to activate virtio? ==
 Probably needs to be scripted in the build process for the KVM version in particular. The corresponding setting for it should be included outside in the xml file too.
+
+==Well what'ya know It's a bug!==
+The reason I struggled so much to get this working is because of an ancient bug that has a workaround in the build process by naming disks to vdX instead of sdX.
+Please generate a test image with these changes.
+
+https://bugs.launchpad.net/ubuntu/+source/vm-builder/+bug/517067
+Please read this comment for the workarounds:
+https://bugs.launchpad.net/ubuntu/+source/vm-builder/+bug/517067/comments/4
 
 == How to get virtio running for storage? ==
 === Blocked by ===
@@ -57640,7 +57656,7 @@ http://blog.wikichoon.com/2014/04/deprecating-little-used-tool-virt-image1.html
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>68o7k3846g96gs4o26ril4sbv2oqn2g</sha1>
+      <sha1>hl33jvtsj3y8sroyj57hi2w9kgkzt6i</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
