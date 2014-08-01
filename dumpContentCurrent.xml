@@ -56865,14 +56865,13 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
     <ns>0</ns>
     <id>691</id>
     <revision>
-      <id>8395</id>
-      <parentid>8394</parentid>
-      <timestamp>2014-07-31T13:59:13Z</timestamp>
+      <id>8401</id>
+      <parentid>8400</parentid>
+      <timestamp>2014-08-01T00:55:03Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <text xml:space="preserve" bytes="40774">{{Header}}
+      <text xml:space="preserve" bytes="42099">{{Header}}
 {{#seo:
 |description=Development Notes for adding KVM support to Whonix.
 }}
@@ -56890,8 +56889,25 @@ https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Vi
 
 http://libvirt.org/formatdomain.html
 
+'''Somewhat Solved:'''
+After speaking with Cole Robinson, libvirt developer, its clear that this is a feature provided by SPICE rather than something having to do with the sound card. I found that all sound cards have this after testing yesterday. When I changed Spice to VNC this no longer happens. Before you say that we shouldn't use spice, its important to note that audio does not function without it at all.
+
+I've asked on the mailinglists if there is some xml attribute to disable the feature. From what I've seen in the documentation this is not possible. However it can be accomplished through the Host's audio popup menu in the taskbar. The devices show up with the name &quot;virt-manager: record&quot; and can be set to mute as with any other device on the host.
+
+http://libvirt.org/formatdomain.html#elementsGraphics
+
+Other spice channel functionality provided:
+&lt;pre&gt;Valid channel names include main, display, inputs, cursor, playback, record (all since 0.8.6); smartcard (since 0.8.8); and usbredir (since 0.9.12). &lt;/pre&gt;
+
 == Document: how to leave KVM when no X is running? ==
 Situation... User is in terminal in a VM... No X is running (&quot;sudo service kdm stop&quot;). User wants to switch back to the host... How to do this?
+
+The emulated tablet device handles this by not allowing the mouse to be captured by the guest.
+Its still possible though:
+
+serverfault.com/questions/457603/any-way-to-release-focus-on-a-kvm-guest-in-virt-manager-without-havin-g-to-click
+
+&lt;pre&gt;press Ctrl_L &amp; Alt_L&lt;/pre&gt;
 
 = Non-Blockers =
 == Preconfigured Shared Folders ==
@@ -56920,14 +56936,6 @@ https://wiki.debian.org/DebianKVMGuests
 
 == Do KVM instructions need changes to activate virtio? ==
 Probably needs to be scripted in the build process for the KVM version in particular. The corresponding setting for it should be included outside in the xml file too.
-
-==Well what'ya know It's a bug!==
-The reason I struggled so much to get this working is because of an ancient bug that has a workaround in the build process by naming disks to vdX instead of sdX.
-Please generate a test image with these changes.
-
-https://bugs.launchpad.net/ubuntu/+source/vm-builder/+bug/517067
-Please read this comment for the workarounds:
-https://bugs.launchpad.net/ubuntu/+source/vm-builder/+bug/517067/comments/4
 
 == How to get virtio running for storage? ==
 === Blocked by ===
@@ -57011,6 +57019,15 @@ Not really important but is interesting: &lt;br /&gt;
 http://www.linux-kvm.org/page/Virtio/Block/Latency
 
 HulaHoop: Yes it could have been the situation that there is latency as the data shows, but I'm sure this was improved by now.
+
+=== Well what'ya know It's a bug! ===
+HulaHoop wrote: &lt;br /&gt;
+The reason I struggled so much to get this working is because of an ancient bug that has a workaround in the build process by naming disks to vdX instead of sdX.
+Please generate a test image with these changes.
+
+https://bugs.launchpad.net/ubuntu/+source/vm-builder/+bug/517067
+Please read this comment for the workarounds:
+https://bugs.launchpad.net/ubuntu/+source/vm-builder/+bug/517067/comments/4
 
 == How to check if virtio storage access is in use or an eventually existing fallback driver? ==
 How to check if virtio storage access '''virtio_blk''' really is in use or an eventually existing fallback driver?
@@ -57666,7 +57683,7 @@ http://blog.wikichoon.com/2014/04/deprecating-little-used-tool-virt-image1.html
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>t1h68p0oama89obqusretqpck9gk5y3</sha1>
+      <sha1>hzdx6s8488x2sli291gu95xor2nkm7j</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
