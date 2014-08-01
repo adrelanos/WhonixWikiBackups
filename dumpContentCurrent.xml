@@ -18269,15 +18269,15 @@ man tor-ctrl
     <ns>0</ns>
     <id>150</id>
     <revision>
-      <id>8273</id>
-      <parentid>8272</parentid>
-      <timestamp>2014-07-13T22:01:19Z</timestamp>
+      <id>8407</id>
+      <parentid>8406</parentid>
+      <timestamp>2014-08-01T13:25:50Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Maximizing Browser Window */</comment>
-      <text xml:space="preserve" bytes="16791">&lt;!--
+      <comment>/* tor-launcher */</comment>
+      <text xml:space="preserve" bytes="19044">&lt;!--
 Copyright:
 
    Whonix Tor Browser wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -18434,6 +18434,23 @@ A future update of Tor Browser by The Tor Project might make Whonix's Tor Browse
 
 If the Tor Browser update script is ever broken, you are advised to update manually, see [[Manually Updating Tor Browser]].
 
+= Not installed by Default =
+Tor Browser is not installed by default anymore. &lt;ref&gt;
+
+Licensing reasons:
+
+* Mozilla trademark: https://trac.torproject.org/projects/tor/ticket/10888
+* The Tor Project trademark: https://www.whonix.org/wiki/Dev/TPO_Trademark
+
+Security reasons:
+
+* Forces the user to get an up to date version of Tor Browser. By the time users download Whonix, mostly the shipped version of Tor Browser would be already outdated.
+
+Technical reasons:
+
+* Users who build Whonix from source code won't have issues with a build script that is broken, just because of issues with downloading Tor Browser.
+&lt;/ref&gt;
+
 = Local Connections =
 '''Note''', accessing 127.0.0.1 {{Tor_Browser_Local_Connections}}.
 
@@ -18501,6 +18518,20 @@ and reboot.
 When using the regular Tor Browser Bundle from The Tor Project without Whonix, that menu can be used to change network settings inside Tor. It has the same effects as editing Tor's config file torrc. Using this graphical user interface isn't possible in Whonix, because for security reasons, in Whonix there is only limited access to Tor's control port. (See [[Dev/CPFP]] for more information.) (You could change such settings manually in /etc/tor/torrc on Whonix-Gateway. (See also [[Features#VPN_.2F_Tunnel_support|VPN/Tunnel suppprt]] for more information.)
 &lt;/ref&gt;
 
+== tor-launcher vs torbrowser-launcher ==
+Two totally different things with similar names.
+
+* [https://micahflee.com/torbrowser-launcher/ torbrowser-launcher] ([https://micahflee.com/wp-content/uploads/2013/04/tbl.png screenshot]) is an application to download the Tor Browser Bundle (TBB), an alternative to [https://github.com/Whonix/tb-updater tb-updater].
+* [https://lists.torproject.org/pipermail/tor-dev/2013-May/004761.html tor-launcher] ([http://trial.pearlcrescent.com/tor/torlauncher/2013-05-03/SetupWizard/wizard-all.png screenshots] ([http://www.webcitation.org/6RVFMxzEf w])) is a Tor Controller, a [https://www.torproject.org/projects/vidalia.html.en Vidalia] replacement, an add-on that is included in TBB by default.
+
+== tor-launcher ==
+In case you are wondering if tor-launcher will result in [[DoNot#Prevent_Tor_over_Tor_scenarios.|Tor over Tor]]... No, because Tor Browser and Whonix [[Tor_Browser#Whonix_Proxy_Settings|play well together]]. tor-launcher is disabled by default in Whonix-Workstation.
+
+Can or should you remove tor-launcher from TBB? In theory it makes no difference. In practice, it is untested and seems to provide no advantages. Just leave it enabled to have the same tested setup as everyone else.
+
+== torbrowser-launcher ==
+[https://github.com/Whonix/tb-updater tb-updater] (installed by default in Whonix) is specifically designed to be co-installable with torbrowser-launcher. Maybe one day Whonix will deprecate tb-updater and install torbrowser-launcher by default, see [https://www.whonix.org/forum/index.php/topic,404.0.html forum development discussion] if that is of interest to you.
+
 = Footnotes / References =
 &lt;references /&gt;
 
@@ -18516,7 +18547,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>9p3vmzzho34dqvji5p89qxcd10tkmvo</sha1>
+      <sha1>p7b1cuq4zpcxxqnrk8kic60hc1c4udj</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -56865,13 +56896,15 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
     <ns>0</ns>
     <id>691</id>
     <revision>
-      <id>8401</id>
-      <parentid>8400</parentid>
-      <timestamp>2014-08-01T00:55:03Z</timestamp>
+      <id>8408</id>
+      <parentid>8401</parentid>
+      <timestamp>2014-08-01T13:44:37Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="42099">{{Header}}
+      <comment>/* Using LABELs */</comment>
+      <text xml:space="preserve" bytes="43770">{{Header}}
 {{#seo:
 |description=Development Notes for adding KVM support to Whonix.
 }}
@@ -56966,6 +56999,41 @@ Quote
 
 === Using LABELs ===
 Patrick asks: How to use LABELs?
+
+=== Using UUIDs ===
+Patrick writes: In Whonix 9, fstab will look like this.
+
+&lt;pre&gt;
+cat /etc/fstab
+&lt;/pre&gt;
+
+&lt;pre&gt;
+/dev/disk/by-uuid/26ada0c0-1165-4098-884d-aafd2220c2c6 /  auto    defaults,errors=remount-ro 0   1
+proc           /proc        proc    defaults                      0   0
+/dev/cdrom     /mnt/cdrom0  iso9660 ro,user,noauto                0   0
+# some other examples:
+# /dev/sda2       none         swap    sw,pri=0             0   0
+# /dev/hda1       /Grml        ext3    dev,suid,user,noauto 0  2
+# //1.2.3.4/pub   /smb/pub     cifs    user,noauto,uid=grml,gid=grml 0 0                                                                                                            
+# linux:/pub      /beer        nfs     defaults             0  0                                                                                                                    
+# tmpfs           /tmp         tmpfs   size=300M            0  0                                                                                                                    
+# /dev/sda5       none         swap    sw                   0  0
+&lt;/pre&gt;
+
+The relevant part here is.
+
+&lt;pre&gt;
+/dev/disk/by-uuid/26ada0c0-1165-4098-884d-aafd2220c2c6 /  auto    defaults,errors=remount-ro 0   1
+&lt;/pre&gt;
+
+The UUID {{Code|26ada0c0-1165-4098-884d-aafd2220c2c6}} is a fixed one. (Feature by grml-debootstrap.)
+
+&lt;pre&gt;
+grep 26ada0c0-1165-4098-884d-aafd2220c2c6 /usr/sbin/grml-debootstrap                                                                                        
+           tune2fs &quot;$TARGET&quot; -U 26ada0c0-1165-4098-884d-aafd2220c2c6
+&lt;/pre&gt;
+
+Maybe using UUID and even a fixed one will aid this feature.
 
 === /boot/grub/grub.cfg issue ===
 Patrick comments: I think /boot/grub/grub.cfg is a unstable solution. That file says on top.
@@ -57683,7 +57751,7 @@ http://blog.wikichoon.com/2014/04/deprecating-little-used-tool-virt-image1.html
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>hzdx6s8488x2sli291gu95xor2nkm7j</sha1>
+      <sha1>d9p9ki19xyr424t6gvv3lqyhuk9262t</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
