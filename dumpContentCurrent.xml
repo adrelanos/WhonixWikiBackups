@@ -7528,14 +7528,15 @@ If you are going to use VirtualBox inside VirtualBox, be sure to change your hos
     <ns>0</ns>
     <id>95</id>
     <revision>
-      <id>7636</id>
-      <parentid>7633</parentid>
-      <timestamp>2014-05-01T15:37:50Z</timestamp>
+      <id>8419</id>
+      <parentid>7636</parentid>
+      <timestamp>2014-08-02T07:44:00Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="23724">{{Header}}
+      <comment>/* I2P-Bote */</comment>
+      <text xml:space="preserve" bytes="23738">{{Header}}
 &lt;!--
 Copyright:
 
@@ -7705,7 +7706,7 @@ The Tor Mail service is now offline&lt;ref&gt;https://openwatch.net/i/200/anonym
 
 == I2P-Bote ==
 
-Is not a classical e-mail provider and deserves its own chapter, see below.
+Is not a classical e-mail provider and deserves its own chapter, [[#I2P-Bote|see below]].
 
 == riseup.net ==
 
@@ -7865,7 +7866,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>4cim0x3jgpg25t4ljwsz1mxp1ryhfc0</sha1>
+      <sha1>5c4z1qwh4manghbtm7u0ekuvozjb27h</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -17047,14 +17048,15 @@ under certain conditions; see the wiki source code for details.
     <ns>0</ns>
     <id>141</id>
     <revision>
-      <id>8388</id>
-      <parentid>5800</parentid>
-      <timestamp>2014-07-30T13:45:19Z</timestamp>
+      <id>8421</id>
+      <parentid>8388</parentid>
+      <timestamp>2014-08-02T08:12:50Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="4074">{{Header}}
+      <comment>/* License */</comment>
+      <text xml:space="preserve" bytes="4086">{{Header}}
 &lt;!--
 Copyright:
 
@@ -17134,19 +17136,19 @@ It will '''take a while''' and there is '''no progress meter'''. Please wait a f
 {{Template:GnuPG-Troubleshooting}}
 
 = License =
-&lt;code&gt;
+&lt;blockquote&gt;
 Whonix Verify_the_virtual_machine_images_using_Linux wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
 Whonix Verify_the_virtual_machine_images_using_Linux wiki page Copyright (C) 2012 -2014 Patrick Schleizer &lt;adrelanos@riseup.net&gt;
 
 This program comes with ABSOLUTELY NO WARRANTY; for details see the wiki source code.
 This is free software, and you are welcome to redistribute it
 under certain conditions; see the wiki source code for details.
-&lt;/code&gt;
+&lt;/blockquote&gt;
 
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>f957y8jf75h4uq9rpge67o5koubcuc9</sha1>
+      <sha1>1pqieh4zdb65x2s3pg6pxos5nn8moox</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -18269,15 +18271,15 @@ man tor-ctrl
     <ns>0</ns>
     <id>150</id>
     <revision>
-      <id>8407</id>
-      <parentid>8406</parentid>
-      <timestamp>2014-08-01T13:25:50Z</timestamp>
+      <id>8420</id>
+      <parentid>8407</parentid>
+      <timestamp>2014-08-02T07:45:47Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* tor-launcher */</comment>
-      <text xml:space="preserve" bytes="19044">&lt;!--
+      <comment>/* Not installed by Default */</comment>
+      <text xml:space="preserve" bytes="19100">&lt;!--
 Copyright:
 
    Whonix Tor Browser wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -18435,7 +18437,7 @@ A future update of Tor Browser by The Tor Project might make Whonix's Tor Browse
 If the Tor Browser update script is ever broken, you are advised to update manually, see [[Manually Updating Tor Browser]].
 
 = Not installed by Default =
-Tor Browser is not installed by default anymore. &lt;ref&gt;
+Tor Browser is not installed by default anymore. If you are interested in the reasons why, see footnote. &lt;ref&gt;
 
 Licensing reasons:
 
@@ -18547,7 +18549,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>p7b1cuq4zpcxxqnrk8kic60hc1c4udj</sha1>
+      <sha1>t9fynz399s23zeqlf6rf1eyut0r2sk2</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -55785,15 +55787,13 @@ Many thanks to Tails team for their discussion on the topic of password managers
     <ns>0</ns>
     <id>685</id>
     <revision>
-      <id>8381</id>
-      <parentid>8380</parentid>
-      <timestamp>2014-07-29T23:46:28Z</timestamp>
+      <id>8414</id>
+      <parentid>8381</parentid>
+      <timestamp>2014-08-01T23:58:32Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* Extra */</comment>
-      <text xml:space="preserve" bytes="19563">{{Header}}
+      <text xml:space="preserve" bytes="19545">{{Header}}
 {{#seo:
 |description=Using Whonix with KVM instead of VirtualBox
 }}
@@ -56048,11 +56048,11 @@ Note: It is highly recommended you use this default path for storing the images 
 Whonix disk images are sparse files, meaning they expand when filled rather than allocating their entire size, 100GB outright. These are known as sparse files and need special commands when copying them to ensure they don't lose this property, leading them to occupy all the actual space. We are copying to a privileged location in the system, so we have run with higher privileges (sudo). Copy the image files by running.
 
 &lt;pre&gt;
-sudo cp --sparse=always ~/Whonix-Gateway-*.qcow2 /var/lib/libvirt/images/Whonix-Gateway.qcow2
+sudo cp --auto ~/Whonix-Gateway-*.qcow2 /var/lib/libvirt/images/Whonix-Gateway.qcow2
 &lt;/pre&gt;
 
 &lt;pre&gt;
-sudo cp --sparse=always ~/Whonix-Workstation-*.qcow2 /var/lib/libvirt/images/Whonix-Workstation.qcow2
+sudo cp --auto ~/Whonix-Workstation-*.qcow2 /var/lib/libvirt/images/Whonix-Workstation.qcow2
 &lt;/pre&gt;
 
 Or alternatively, if you are running on low disk space, you could move the images instead of copying them.
@@ -56315,7 +56315,7 @@ dpkg-query --show --showformat='${Package} ${Version} \n' libvirt-bin qemu-kvm v
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>pp6u2axyx91ytgewdzmkiaw5iz0v4ff</sha1>
+      <sha1>dii8jl9nd8yi3tl71ppn8nent7vfuaz</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -56896,15 +56896,13 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
     <ns>0</ns>
     <id>691</id>
     <revision>
-      <id>8408</id>
-      <parentid>8401</parentid>
-      <timestamp>2014-08-01T13:44:37Z</timestamp>
+      <id>8418</id>
+      <parentid>8417</parentid>
+      <timestamp>2014-08-02T03:48:23Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* Using LABELs */</comment>
-      <text xml:space="preserve" bytes="43770">{{Header}}
+      <text xml:space="preserve" bytes="48280">{{Header}}
 {{#seo:
 |description=Development Notes for adding KVM support to Whonix.
 }}
@@ -56932,6 +56930,10 @@ http://libvirt.org/formatdomain.html#elementsGraphics
 Other spice channel functionality provided:
 &lt;pre&gt;Valid channel names include main, display, inputs, cursor, playback, record (all since 0.8.6); smartcard (since 0.8.8); and usbredir (since 0.9.12). &lt;/pre&gt;
 
+Mailinglist reply:
+https://www.redhat.com/archives/virt-tools-list/2014-August/msg00002.html 
+Currently not supported through libvirt but may be planned. Not a problem, we can just document how to disable its easy and gui based. For those running from commandlines, they should just revert to a non SPICE adapter and they'll be fine. They are not missing much because they are not using the workstation as a desktop.
+
 == Document: how to leave KVM when no X is running? ==
 Situation... User is in terminal in a VM... No X is running (&quot;sudo service kdm stop&quot;). User wants to switch back to the host... How to do this?
 
@@ -56941,6 +56943,38 @@ Its still possible though:
 serverfault.com/questions/457603/any-way-to-release-focus-on-a-kvm-guest-in-virt-manager-without-havin-g-to-click
 
 &lt;pre&gt;press Ctrl_L &amp; Alt_L&lt;/pre&gt;
+
+
+=Long Term Feature Goal=
+
+Incorporating libvirt-sandbox as an insulating layer inside Whonix.
+
+About:
+KVM devs have been working on an finer grained isolation mechanism that confines a subset of daemons/processes by leveraging the strong isolation properties of full virtualization. This is achieved while consuming less resources as no full OS is needed to run in KVM for the processes in question to be run that way.
+
+http://sandbox.libvirt.org/quickstart/
+
+A brief description from the dev on how this works:
+lwn.net/Articles/515248 
+
+A python script is available allowing creation of sanboxes with some configuration parameters that could be defined by users as per info here:
+lwn.net/Aritcles/515034
+
+Benefits:
+Adds a strong isolation layer of isolation for high risk daemons running on a hidden service.
+The added protection is in the form of depriving the adversary of a full fledged kernel and its rich software stack as a platform from which to launch attacks in the event of a compromise.
+Besides this, note that running two fledged guest instances inside each other for security purposes is of little security benefit since being able to bypass one layer an attacker can pass two just as easily.
+
+Potential uses are for Hidden servers running httpd and other network facing processes. Support for GUI based software is under development.
+
+For regular desktop users, this could provide an easy, quick and secure way to confine software even if it has no MAC profile ex. Apparmor/SELinux directly. These security frameworks are automatically leveraged by libvirt-sandbox's sVirt driver. For graphics and latency sensitive software, the LXC container back-end could be used to provide an isolation layer so as to not reduce performance - even though its not robust as full virtualization.
+
+Dependencies:
+-Getting SELinux working on Debian
+-Getting Nested VMs working
+-The availability of libvirt-sandbox in Debian repos
+
+
 
 = Non-Blockers =
 == Preconfigured Shared Folders ==
@@ -57035,6 +57069,25 @@ grep 26ada0c0-1165-4098-884d-aafd2220c2c6 /usr/sbin/grml-debootstrap
 
 Maybe using UUID and even a fixed one will aid this feature.
 
+
+
+HulaHoop: Yes it will. I found very encouraging answers to your inquiries on the forum that I'll post here:
+
+&lt;pre&gt;
+1. activate virtio-blk in a booted image
+2. check virtio-blk is really in use (https://www.whonix.org/wiki/Dev/KVM#How_to_check_if_virtio_storage_access_is_in_use_or_an_eventually_existing_fallback_driver.3F)
+3. see how we can automate this using Whonix's build script / Whonix's packages
+&lt;/pre&gt;
+
+1. From my IRC chats with KVM devs, the virtio driverof concern has been included in all distros for a while now and is used by simply having libvirt select it so.
+
+2. lsmod : lists all currently running modules
+    modinfo &lt;module name&gt; : information about associated devices
+    hwinfo --short : see which driver is loaded for each particular device
+
+3. UUID is the answer from what I recall from different sources inluding KVM documentation. From a post towards the bottom of a thread, someone describes how to configure the kernel to use UUID to boot:
+forums.gentoo.org/viewtopic-p-6668919.html
+
 === /boot/grub/grub.cfg issue ===
 Patrick comments: I think /boot/grub/grub.cfg is a unstable solution. That file says on top.
 
@@ -57123,6 +57176,18 @@ What is http://www.linux-kvm.org/page/Boot_from_virtio_block_device good for? Re
 
 Details on how to install, configure and enable SELinux enforcing mode:
 https://wiki.debian.org/SELinux/Setup#Steps_to_setup_SELinux &lt;-- This is a start, but incomplete. When following these instructions it gets difficult at the &quot;audit2why -al&quot; step, because it shows a ton of policy violations which are non-trivial to fix without learning a lot about SELinux.
+
+Why Bother?
+SELinux is more robust than Apparmor because its label based vs file-path based. But his comes at the expense of being difficult to write policies. However the plans I have for it in mind, it won't matter since we won't be writing SELinux profiles, but leveraging the one already present in sVirt as a protection layer around application sandboxes.
+
+HulaHoop: This is probably a result of not having done a relabel of your filesystem after enabling SELinux. This aspect can be handled by a script from the link below. I'll need to test this at some point. Any files created before SELinux was prsent creates conflicts with policy when it is enforced. A relabel must also run if you want to isolate software that has a policy but was introduced after SELinux was enabled. Example KVM if we decide to ship it for nested purposes in the future.
+
+http://debian-handbook.info/browse/stable/sect.selinux.html
+Best guide has everything in one place:
+https://www.wzdftpd.net/docs/selinux/using_debian_selinux.html
+
+Note: Both MAC systems cannot be run simultaneously run. This is not supported by LSM and may also be a source of conflicts.
+
 
 For Debian hosts, AppArmor makes more sense.
 
@@ -57751,7 +57816,7 @@ http://blog.wikichoon.com/2014/04/deprecating-little-used-tool-virt-image1.html
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>d9p9ki19xyr424t6gvv3lqyhuk9262t</sha1>
+      <sha1>t8iqp6oxu9tldoy2bnp3vkmomlet44n</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
