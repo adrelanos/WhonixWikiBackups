@@ -18271,14 +18271,14 @@ man tor-ctrl
     <ns>0</ns>
     <id>150</id>
     <revision>
-      <id>8420</id>
-      <parentid>8407</parentid>
-      <timestamp>2014-08-02T07:45:47Z</timestamp>
+      <id>8423</id>
+      <parentid>8420</parentid>
+      <timestamp>2014-08-02T19:34:50Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Not installed by Default */</comment>
+      <comment>/* tor-launcher vs torbrowser-launcher */</comment>
       <text xml:space="preserve" bytes="19100">&lt;!--
 Copyright:
 
@@ -18523,8 +18523,8 @@ When using the regular Tor Browser Bundle from The Tor Project without Whonix, t
 == tor-launcher vs torbrowser-launcher ==
 Two totally different things with similar names.
 
-* [https://micahflee.com/torbrowser-launcher/ torbrowser-launcher] ([https://micahflee.com/wp-content/uploads/2013/04/tbl.png screenshot]) is an application to download the Tor Browser Bundle (TBB), an alternative to [https://github.com/Whonix/tb-updater tb-updater].
 * [https://lists.torproject.org/pipermail/tor-dev/2013-May/004761.html tor-launcher] ([http://trial.pearlcrescent.com/tor/torlauncher/2013-05-03/SetupWizard/wizard-all.png screenshots] ([http://www.webcitation.org/6RVFMxzEf w])) is a Tor Controller, a [https://www.torproject.org/projects/vidalia.html.en Vidalia] replacement, an add-on that is included in TBB by default.
+* [https://micahflee.com/torbrowser-launcher/ torbrowser-launcher] ([https://micahflee.com/wp-content/uploads/2013/04/tbl.png screenshot]) is an application to download the Tor Browser Bundle (TBB), an alternative to [https://github.com/Whonix/tb-updater tb-updater].
 
 == tor-launcher ==
 In case you are wondering if tor-launcher will result in [[DoNot#Prevent_Tor_over_Tor_scenarios.|Tor over Tor]]... No, because Tor Browser and Whonix [[Tor_Browser#Whonix_Proxy_Settings|play well together]]. tor-launcher is disabled by default in Whonix-Workstation.
@@ -18549,7 +18549,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>t9fynz399s23zeqlf6rf1eyut0r2sk2</sha1>
+      <sha1>iywms0a5a20khi6ucyi9wmheckrss6i</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -55787,13 +55787,15 @@ Many thanks to Tails team for their discussion on the topic of password managers
     <ns>0</ns>
     <id>685</id>
     <revision>
-      <id>8414</id>
-      <parentid>8381</parentid>
-      <timestamp>2014-08-01T23:58:32Z</timestamp>
+      <id>8424</id>
+      <parentid>8414</parentid>
+      <timestamp>2014-08-02T19:39:35Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="19545">{{Header}}
+      <comment>https://www.whonix.org/forum/index.php/topic,401.0.html</comment>
+      <text xml:space="preserve" bytes="19563">{{Header}}
 {{#seo:
 |description=Using Whonix with KVM instead of VirtualBox
 }}
@@ -56048,11 +56050,11 @@ Note: It is highly recommended you use this default path for storing the images 
 Whonix disk images are sparse files, meaning they expand when filled rather than allocating their entire size, 100GB outright. These are known as sparse files and need special commands when copying them to ensure they don't lose this property, leading them to occupy all the actual space. We are copying to a privileged location in the system, so we have run with higher privileges (sudo). Copy the image files by running.
 
 &lt;pre&gt;
-sudo cp --auto ~/Whonix-Gateway-*.qcow2 /var/lib/libvirt/images/Whonix-Gateway.qcow2
+sudo cp --sparse=always ~/Whonix-Gateway-*.qcow2 /var/lib/libvirt/images/Whonix-Gateway.qcow2
 &lt;/pre&gt;
 
 &lt;pre&gt;
-sudo cp --auto ~/Whonix-Workstation-*.qcow2 /var/lib/libvirt/images/Whonix-Workstation.qcow2
+sudo cp --sparse=always ~/Whonix-Workstation-*.qcow2 /var/lib/libvirt/images/Whonix-Workstation.qcow2
 &lt;/pre&gt;
 
 Or alternatively, if you are running on low disk space, you could move the images instead of copying them.
@@ -56315,7 +56317,7 @@ dpkg-query --show --showformat='${Package} ${Version} \n' libvirt-bin qemu-kvm v
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>dii8jl9nd8yi3tl71ppn8nent7vfuaz</sha1>
+      <sha1>pp6u2axyx91ytgewdzmkiaw5iz0v4ff</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -56896,13 +56898,15 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
     <ns>0</ns>
     <id>691</id>
     <revision>
-      <id>8418</id>
-      <parentid>8417</parentid>
-      <timestamp>2014-08-02T03:48:23Z</timestamp>
+      <id>8429</id>
+      <parentid>8428</parentid>
+      <timestamp>2014-08-02T19:49:52Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="48280">{{Header}}
+      <comment>/* modinfo wont`help */</comment>
+      <text xml:space="preserve" bytes="49005">{{Header}}
 {{#seo:
 |description=Development Notes for adding KVM support to Whonix.
 }}
@@ -57151,18 +57155,58 @@ Please read this comment for the workarounds:
 https://bugs.launchpad.net/ubuntu/+source/vm-builder/+bug/517067/comments/4
 
 == How to check if virtio storage access is in use or an eventually existing fallback driver? ==
+=== Question ===
 How to check if virtio storage access '''virtio_blk''' really is in use or an eventually existing fallback driver?
 
 http://www.linux-kvm.org/page/Boot_from_virtio_block_device &lt;br /&gt;
 http://wiki.libvirt.org/page/Virtio
 
+=== Asked on unix.stackexchange ===
+http://unix.stackexchange.com/questions/148055/kvm-how-to-check-if-virtio-storage-access-is-in-use
+
+=== lsmod won't help ===
 The following.
 
 &lt;pre&gt;
 lsmod | grep virtio
 &lt;/pre&gt;
 
-Only shows, that the virtio kernel module is loaded. It isn't hard to load arbitrary kernel modules for hardware that you don't have installed. The question remains, is this kernel module actually in use or an eventually existing fallback driver?
+Only shows, that the virtio kernel module is loaded. It isn't hard to load arbitrary kernel modules for hardware that you don't have installed (&quot;sudo modprobe virtio-blk&quot;). The question remains, is this kernel module actually in use or an eventually existing fallback driver?
+
+===  modinfo won't help ===
+&lt;pre&gt;
+modinfo virtio-blk
+&lt;/pre&gt;
+
+Won't help, because it only shows general information it would also show on VBox systems (after running &quot;sudo modprobe virtio-blk&quot;).
+
+=== ls Test ===
+/dev/sda and /dev/sda1 should not exist.
+
+&lt;pre&gt;
+ls -la /dev/sda
+&lt;/pre&gt;
+
+&lt;pre&gt;
+ls -la /dev/sda1
+&lt;/pre&gt;
+
+/dev/vda and /dev/vda1 should exist.
+
+&lt;pre&gt;
+ls -la /dev/vda
+&lt;/pre&gt;
+
+&lt;pre&gt;
+ls -la /dev/vda1
+&lt;/pre&gt;
+
+=== hwinfo Test ===
+See which driver is loaded for each particular device.
+
+&lt;pre&gt;
+hwinfo --short
+&lt;/pre&gt;
 
 == How to check if virtio network is really in use or an eventually existing fallback driver? ==
 How to check, that '''virtio_pci''' is really being used and not some fallback driver?
@@ -57816,7 +57860,7 @@ http://blog.wikichoon.com/2014/04/deprecating-little-used-tool-virt-image1.html
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>t8iqp6oxu9tldoy2bnp3vkmomlet44n</sha1>
+      <sha1>g5ms0ku3y23knct813o3tge17dcxvk7</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
