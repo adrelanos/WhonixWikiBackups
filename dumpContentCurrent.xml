@@ -13611,15 +13611,15 @@ For even more Security, see [[Advanced Security Guide]].
     <ns>0</ns>
     <id>120</id>
     <revision>
-      <id>8397</id>
-      <parentid>6210</parentid>
-      <timestamp>2014-07-31T16:24:10Z</timestamp>
+      <id>8432</id>
+      <parentid>8397</parentid>
+      <timestamp>2014-08-03T02:04:01Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* What do Digital Signatures Prove and What They DO NOT Prove */</comment>
-      <text xml:space="preserve" bytes="25921">&lt;!--
+      <comment>/* Appendix */</comment>
+      <text xml:space="preserve" bytes="25953">&lt;!--
 Copyright:
 
    Whonix Trust wiki page Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -13786,7 +13786,7 @@ It's a bit safer to use Whonix-Default-Download version and to disable Whonix's 
 == What do Digital Signatures Prove and What They DO NOT Prove ==
 Most people, even programmers, often confuse the basic ideas behind digital signatures. Most people should read this section, even if it looks trivial at first sight.
 
-Digital Signatures can prove, that a given file is authentic, i.e. that is has been indeed created by a person that signed it, and that its contents have not been tampered (so, integrity is preserved).
+Digital Signatures show that someone who had access to the private key has made a signature. It is an indication, that its contents have not been tampered (so, integrity is preserved) and can indicate, that a given file is authentic.
 
 Digital Signatures do '''not''' prove any other property, e.g. that the file is not malicious. In fact there is nothing that could stop people from signing a malicious program (and it happens from time to time in reality).
 
@@ -13850,7 +13850,7 @@ Thanks to Qubes OS ([https://groups.google.com/forum/?fromgroups=#!topic/qubes-d
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>e9zst5bly44h7f1tw2734egszpszrdb</sha1>
+      <sha1>ctmehkvg5es1i9duu5jj1cy588qjggr</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -55787,15 +55787,14 @@ Many thanks to Tails team for their discussion on the topic of password managers
     <ns>0</ns>
     <id>685</id>
     <revision>
-      <id>8424</id>
-      <parentid>8414</parentid>
-      <timestamp>2014-08-02T19:39:35Z</timestamp>
+      <id>8431</id>
+      <parentid>8430</parentid>
+      <timestamp>2014-08-02T23:46:30Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>https://www.whonix.org/forum/index.php/topic,401.0.html</comment>
-      <text xml:space="preserve" bytes="19563">{{Header}}
+      <comment>/* Extra */</comment>
+      <text xml:space="preserve" bytes="20440">{{Header}}
 {{#seo:
 |description=Using Whonix with KVM instead of VirtualBox
 }}
@@ -56134,6 +56133,12 @@ sudo rm /var/lib/libvirt/images/Whonix-Gateway.qcow2
 &lt;pre&gt;
 sudo rm /var/lib/libvirt/images/Whonix-Workstation.qcow2
 &lt;/pre&gt;
+
+==ATTENTION: Disable Microphone Input
+
+Microphone input to Guests, while a nice feature for VOIP, is a very dangerous setting to have by default as its unexpected. This is a feature provided by SPICE. Its not currently possible to ship a configuration file with this setting because libvirt does not support this at the moment. However it can be accomplished through the Host's audio popup menu in the taskbar. The devices show up with the name &quot;virt-manager: record&quot; and can be set to mute as with any other device on the host. 
+
+
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -56234,6 +56239,14 @@ Libvirt can support a variety of containment mechanisms. Currently supported one
 
 To use another configuration, import its XML file with virsh.
 
+==How to leave KVM when no X is running==
+
+Situation... User is in terminal in a VM... No X is running (&quot;sudo service kdm stop&quot;). User wants to switch back to the host... How to do this?
+
+The emulated tablet device handles this by not allowing the mouse to be captured by the guest. Its still possible though:
+
+&lt;pre&gt;press Ctrl_L &amp; Alt_L&lt;/pre&gt;
+
 = Troubleshooting =
 == Reboot? ==
 Did you reboot after installing KVM?
@@ -56317,7 +56330,7 @@ dpkg-query --show --showformat='${Package} ${Version} \n' libvirt-bin qemu-kvm v
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>pp6u2axyx91ytgewdzmkiaw5iz0v4ff</sha1>
+      <sha1>4qusniuxdl1bco50vm82z8ez5w9s8f8</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
