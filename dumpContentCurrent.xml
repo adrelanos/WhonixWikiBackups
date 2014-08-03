@@ -55787,14 +55787,15 @@ Many thanks to Tails team for their discussion on the topic of password managers
     <ns>0</ns>
     <id>685</id>
     <revision>
-      <id>8431</id>
-      <parentid>8430</parentid>
-      <timestamp>2014-08-02T23:46:30Z</timestamp>
+      <id>8454</id>
+      <parentid>8452</parentid>
+      <timestamp>2014-08-03T19:51:51Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <comment>/* Extra */</comment>
-      <text xml:space="preserve" bytes="20440">{{Header}}
+      <comment>/* Troubleshooting */</comment>
+      <text xml:space="preserve" bytes="20804">{{Header}}
 {{#seo:
 |description=Using Whonix with KVM instead of VirtualBox
 }}
@@ -56066,6 +56067,9 @@ sudo mv ~/Whonix-Gateway/Whonix-Gateway-*.qcow2 /var/lib/libvirt/images/Whonix-G
 sudo mv ~/Whonix-Workstation/Whonix-Workstation-*.qcow2 /var/lib/libvirt/images/Whonix-Workstation.qcow2
 &lt;/pre&gt;
 
+== ATTENTION: Disable Microphone Input ==
+Microphone input to Guests, while a nice feature for VOIP, is a very dangerous setting to have by default as its unexpected. This is a feature provided by SPICE. Its not currently possible to ship a configuration file with this setting because libvirt does not support this at the moment. However it can be accomplished through the Host's audio popup menu in the taskbar. The devices show up with the name &quot;virt-manager: record&quot; and can be set to mute as with any other device on the host. 
+
 == Cleanup ==
 After importing Whonix, you are advised to delete the archives ({{Code2|.libvirt.xz}} files) and the temporarily extracted folders or to move them into a custom location. This is useful to avoid conflicts and confusion should you later download a new version of Whonix.
 
@@ -56133,11 +56137,6 @@ sudo rm /var/lib/libvirt/images/Whonix-Gateway.qcow2
 &lt;pre&gt;
 sudo rm /var/lib/libvirt/images/Whonix-Workstation.qcow2
 &lt;/pre&gt;
-
-==ATTENTION: Disable Microphone Input
-
-Microphone input to Guests, while a nice feature for VOIP, is a very dangerous setting to have by default as its unexpected. This is a feature provided by SPICE. Its not currently possible to ship a configuration file with this setting because libvirt does not support this at the moment. However it can be accomplished through the Host's audio popup menu in the taskbar. The devices show up with the name &quot;virt-manager: record&quot; and can be set to mute as with any other device on the host. 
-
 
 &lt;/div&gt;
 &lt;/div&gt;
@@ -56229,7 +56228,19 @@ virsh -c qemu:///system edit Whonix-Gateway
 &lt;/pre&gt;
 
 == Enabling Clipboard Sharing ==
-SPICE allows accelerated graphics and clipboard sharing. The clipboard is disabled by default for security reasons &lt;ref&gt;So you don't accidentally copy for example a link to a website you visited anonymously to your non-anonymous host browser or vice versa.&lt;/ref&gt; but could be enabled in the xml for a machine by finding the option for it under the &lt;graphics&gt; section and changing it to'yes'.
+SPICE allows accelerated graphics and clipboard sharing. The clipboard is disabled by default for security reasons &lt;ref&gt;So you don't accidentally copy for example a link to a website you visited anonymously to your non-anonymous host browser or vice versa.&lt;/ref&gt; but could be enabled.
+
+When [[KVM#Editing_an_imported_Machine.27s_XML_Configuration|editing using xml]], search for.
+
+&lt;pre&gt;
+&lt;clipboard copypaste='no'/&gt;
+&lt;/pre&gt;
+
+And change to.
+
+&lt;pre&gt;
+&lt;clipboard copypaste='yes'/&gt;
+&lt;/pre&gt;
 
 == Creating Multiple Internal Networks ==
 Open Whonix's network XML file and change the name attribute to something different than the internal network you are currently running, for example 'Whonix2' 'Whonix3' and so on. The default name used is 'Whonix'.
@@ -56254,6 +56265,18 @@ Did you reboot after installing KVM?
 Did you reboot after adding users to groups?
 
 Add this information should you make a support request.
+
+== Unable to connect to libvirt. ==
+If you are getting the following error.
+&lt;pre&gt;
+Unable to connect to libvirt.
+
+Verify that the 'libvirtd' daemon is running.
+
+Libvirt URI is: qemu:///system
+&lt;/pre&gt;
+
+Make sure you [[KVM#Addgroup|added groups]] and [[KVM#Reboot|rebooted]].
 
 == Unable to open a connection to the libvirt management daemon. ==
 If you are getting the following error.
@@ -56330,7 +56353,7 @@ dpkg-query --show --showformat='${Package} ${Version} \n' libvirt-bin qemu-kvm v
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>4qusniuxdl1bco50vm82z8ez5w9s8f8</sha1>
+      <sha1>1wc4z4ampeau1becdqfomdjkgvwc38v</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -56911,15 +56934,13 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
     <ns>0</ns>
     <id>691</id>
     <revision>
-      <id>8429</id>
-      <parentid>8428</parentid>
-      <timestamp>2014-08-02T19:49:52Z</timestamp>
+      <id>8456</id>
+      <parentid>8455</parentid>
+      <timestamp>2014-08-03T21:51:54Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* modinfo wont`help */</comment>
-      <text xml:space="preserve" bytes="49005">{{Header}}
+      <text xml:space="preserve" bytes="49956">{{Header}}
 {{#seo:
 |description=Development Notes for adding KVM support to Whonix.
 }}
@@ -56994,6 +57015,27 @@ Dependencies:
 
 
 = Non-Blockers =
+== Disable Microphone Feature Request ==
+Let's together write a feature request for an option to disable sound. Maybe like this.
+
+Adds only speaker, no microphone.
+
+&lt;pre&gt;
+  &lt;devices&gt;
+    &lt;sound model='ich6'&gt;
+      &lt;codec type='speaker'/&gt;
+    &lt;sound/&gt;
+  &lt;/devices&gt;
+&lt;/pre&gt;
+
+Then post it... Where?
+
+== libguestfs import/export feature request ==
+Let's together write a feature request for an import/export feature for libguestfs, similar to VirtualBox's import/export feature. Then post in [https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization%20Tools libguestfs's bug tracker].
+
+== virt-manager import/export feature request ==
+Let's together write a feature request for an import/export feature for virt-manager, similar to VirtualBox's import/export feature. Then post in [https://bugzilla.redhat.com/buglist.cgi?product=Virtualization%20Tools&amp;classification=Community&amp;component=virt-manager&amp;bug_status=NEW&amp;bug_status=ASSIGNED virt-manager's bug tracker].
+
 == Preconfigured Shared Folders ==
 Patrick asks: For better usability, should we add the necessary settings for shared folders by default to whonix_gateway.xml and whonix_workstation.xml?
 
@@ -57012,160 +57054,6 @@ https://www.whonix.org/forum/index.php/topic,397.msg2973.html#new
 http://lists.freedesktop.org/archives/spice-devel/2013-December/015810.html
 
 http://lists.freedesktop.org/archives/spice-devel/2014-January/015815.html
-
-== Enable virtio by default? ==
-Probably yes?
-
-https://wiki.debian.org/DebianKVMGuests
-
-== Do KVM instructions need changes to activate virtio? ==
-Probably needs to be scripted in the build process for the KVM version in particular. The corresponding setting for it should be included outside in the xml file too.
-
-== How to get virtio running for storage? ==
-=== Blocked by ===
-Before [[Dev/KVM#How_to_check_if_virtio_storage_access_is_in_use_or_an_eventually_existing_fallback_driver.3F|How to check if virtio storage access is in use or an eventually existing fallback driver?]] is not answered, working on this makes little sense.
-
-=== Initial Instructions ===
-Virtio-blk now works
-
-Here are the steps, which I'll throw altogether here before the server downtime. Will move into the wiki later:
-
-http://www.linux-kvm.org/page/Boot_from_virtio_block_device        &lt; Original steps that needed to be changed so it can apply to Debian.
-
-Quote
-
-    in guest os, change /boot/grub/device.map from &quot;(hd0) /dev/sda&quot; to &quot;(hd0) /dev/vda&quot;
-    in guest os, change /boot/grub/grub.cfg from &quot;root=/dev/sda1&quot; to &quot;root=/dev/vda1&quot;, if you are using UUID, then no need to do this step. 
-
-
-I changed all mention of sda1 to vda1 in the grub file. I changed the disk controller type from virtmanager to virtio which takes care of this at the libvirt xml level. Now the vm boots normally with no hangups and I feel a little faster.
-
- A bit of advice, that I'll add so you can decide:
-
-
-Quote
-
-    &lt;iggy&gt; bancfc: the better option would be using LABELs and UUIDs and such in the source image
-    &lt;iggy&gt; unless this is a one time conversion kind of thing
-
-=== Using LABELs ===
-Patrick asks: How to use LABELs?
-
-=== Using UUIDs ===
-Patrick writes: In Whonix 9, fstab will look like this.
-
-&lt;pre&gt;
-cat /etc/fstab
-&lt;/pre&gt;
-
-&lt;pre&gt;
-/dev/disk/by-uuid/26ada0c0-1165-4098-884d-aafd2220c2c6 /  auto    defaults,errors=remount-ro 0   1
-proc           /proc        proc    defaults                      0   0
-/dev/cdrom     /mnt/cdrom0  iso9660 ro,user,noauto                0   0
-# some other examples:
-# /dev/sda2       none         swap    sw,pri=0             0   0
-# /dev/hda1       /Grml        ext3    dev,suid,user,noauto 0  2
-# //1.2.3.4/pub   /smb/pub     cifs    user,noauto,uid=grml,gid=grml 0 0                                                                                                            
-# linux:/pub      /beer        nfs     defaults             0  0                                                                                                                    
-# tmpfs           /tmp         tmpfs   size=300M            0  0                                                                                                                    
-# /dev/sda5       none         swap    sw                   0  0
-&lt;/pre&gt;
-
-The relevant part here is.
-
-&lt;pre&gt;
-/dev/disk/by-uuid/26ada0c0-1165-4098-884d-aafd2220c2c6 /  auto    defaults,errors=remount-ro 0   1
-&lt;/pre&gt;
-
-The UUID {{Code|26ada0c0-1165-4098-884d-aafd2220c2c6}} is a fixed one. (Feature by grml-debootstrap.)
-
-&lt;pre&gt;
-grep 26ada0c0-1165-4098-884d-aafd2220c2c6 /usr/sbin/grml-debootstrap                                                                                        
-           tune2fs &quot;$TARGET&quot; -U 26ada0c0-1165-4098-884d-aafd2220c2c6
-&lt;/pre&gt;
-
-Maybe using UUID and even a fixed one will aid this feature.
-
-
-
-HulaHoop: Yes it will. I found very encouraging answers to your inquiries on the forum that I'll post here:
-
-&lt;pre&gt;
-1. activate virtio-blk in a booted image
-2. check virtio-blk is really in use (https://www.whonix.org/wiki/Dev/KVM#How_to_check_if_virtio_storage_access_is_in_use_or_an_eventually_existing_fallback_driver.3F)
-3. see how we can automate this using Whonix's build script / Whonix's packages
-&lt;/pre&gt;
-
-1. From my IRC chats with KVM devs, the virtio driverof concern has been included in all distros for a while now and is used by simply having libvirt select it so.
-
-2. lsmod : lists all currently running modules
-    modinfo &lt;module name&gt; : information about associated devices
-    hwinfo --short : see which driver is loaded for each particular device
-
-3. UUID is the answer from what I recall from different sources inluding KVM documentation. From a post towards the bottom of a thread, someone describes how to configure the kernel to use UUID to boot:
-forums.gentoo.org/viewtopic-p-6668919.html
-
-=== /boot/grub/grub.cfg issue ===
-Patrick comments: I think /boot/grub/grub.cfg is a unstable solution. That file says on top.
-
-&lt;pre&gt;
-# DO NOT EDIT THIS FILE
-#
-# It is automatically generated by grub-mkconfig using templates
-# from /etc/grub.d and settings from /etc/default/grub
-&lt;/pre&gt;
-
-So when there is a kernel upgrade, /boot/grub/grub.cfg will be regenerated and the changes will be lost.
-
-Patrick asks: How do we apply these settings in a way, so they do survive an &quot;sudo update-grub&quot; (which is automatically run on every kernel upgrade).
-
-=== System gets unbootable? ===
-Patrick comments: After editing /boot/grub/grub.cfg, in worst case, maybe, the system will be no longer bootable then. You can test/simulate this case by running &quot;sudo update-grub&quot;. Please try.
-
-HulaHoop comments: I found a solution, one that survives kernel and grub upgrades: http://grumpymole.blogspot.nl/2007/05/ubuntu-how-to-edit-grub-boot-parameters.html
-
-&lt;pre&gt;2.2 Making a change survive upgrades
-
-Depending on how frequently you upgrade your system, you might find that when a new kernel is installed, or grub is upgraded (there may be other scenarios), the /boot/grub/menu.lst file may be replaced by a newer version, or a new line might be added for the new kernel. In this case, your &quot;permanent&quot; changes might be as permanent as you thought.
-
-The best way to address this is to change the &quot;#kopt...&quot; line in /boot/grub/menu.lst. Note that the line is not commented out, even though it starts with a &quot;#&quot;. See the excerpt below.
-
-    ### BEGIN AUTOMAGIC KERNELS LIST
-    ## lines between the AUTOMAGIC KERNELS LIST markers will be modified
-    ## by the debian update-grub script except for the default options below
-
-    ## DO NOT UNCOMMENT THEM, Just edit them to your needs
-
-    ## ## Start Default Options ##
-    ## default kernel options
-    ## default kernel options for automagic boot options
-    ## If you want special options for specific kernels use kopt_x_y_z
-    ## where x.y.z is kernel version. Minor versions can be omitted.
-    ## e.g. kopt=root=/dev/hda1 ro
-    ## kopt_2_6_8=root=/dev/hdc1 ro
-    ## kopt_2_6_8_2_686=root=/dev/hdc2 ro
-    # kopt=root=UUID=fccafcc7-d7cc-4594-9459-a8f0db7b9f7f ro
-
-Add the parameter changes to the end of the line &quot;#kopt...&quot;. These parameters will then be automatically added to any new kernel entries and should also survive an upgrade of grub&lt;/pre&gt;
-
-Patrick comments: Have you tested this?
-
-Patrick comments: I am not sure editing /boot/grub/grub.cfg is a robust solution. We cannot directly ship a /boot/grub/grub.cfg in a deb, because it is an auto generated file by grub-mkconfig. (When that deb was updated, /boot/grub/grub.cfg would be outdated, system unbootable, you know?) Maybe a package could be created, that appends /boot/grub/grub.cfg, but still, any solution not touching /boot/grub/grub.cfg should be preferred. If we could edit/extend /etc/default/grub, /etc/default/grub.d or /etc/grub.d, that would be much more robust. What is the official suggestion by kvm devs to solve this as a distro?
-
-=== Virtio Block Latency ===
-Not really important but is interesting: &lt;br /&gt;
-http://www.linux-kvm.org/page/Virtio/Block/Latency
-
-HulaHoop: Yes it could have been the situation that there is latency as the data shows, but I'm sure this was improved by now.
-
-=== Well what'ya know It's a bug! ===
-HulaHoop wrote: &lt;br /&gt;
-The reason I struggled so much to get this working is because of an ancient bug that has a workaround in the build process by naming disks to vdX instead of sdX.
-Please generate a test image with these changes.
-
-https://bugs.launchpad.net/ubuntu/+source/vm-builder/+bug/517067
-Please read this comment for the workarounds:
-https://bugs.launchpad.net/ubuntu/+source/vm-builder/+bug/517067/comments/4
 
 == How to check if virtio storage access is in use or an eventually existing fallback driver? ==
 === Question ===
@@ -57242,6 +57130,9 @@ HulaHoop: This is probably a result of not having done a relabel of your filesys
 http://debian-handbook.info/browse/stable/sect.selinux.html
 Best guide has everything in one place:
 https://www.wzdftpd.net/docs/selinux/using_debian_selinux.html
+
+Another guiede to test with:
+http://blog.danielcosta.pt/?p=440
 
 Note: Both MAC systems cannot be run simultaneously run. This is not supported by LSM and may also be a source of conflicts.
 
@@ -57390,17 +57281,25 @@ sed -i /uuid/d /tmp/whonix.xml
 sed -i '/mac address/d' /whonix.xml
 &lt;/pre&gt;
 
-== libguestfs import/export feature request ==
-Let's together write a feature request for an import/export feature for libguestfs, similar to VirtualBox's import/export feature. Then post in [https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization%20Tools libguestfs's bug tracker].
-
-== virt-manager import/export feature request ==
-Let's together write a feature request for an import/export feature for virt-manager, similar to VirtualBox's import/export feature. Then post in [https://bugzilla.redhat.com/buglist.cgi?product=Virtualization%20Tools&amp;classification=Community&amp;component=virt-manager&amp;bug_status=NEW&amp;bug_status=ASSIGNED virt-manager's bug tracker].
-
 == management tools ==
 There are a lot [http://www.linux-kvm.org/page/Management_Tools management tools]. Are any of these useful for Whonix's use case?
 
 == Nested Virtualization ==
 As a minor point, documenting how to use KVM with nested virtualization would be nice.
+
+Forum thread: &lt;br /&gt;
+https://www.whonix.org/forum/index.php/topic,415.0.html
+
+This is only possible using a 64 bit kernel. Install a 64 bit kernel. Don't get confused by the package name. Works with '''AMD''' and '''Intel'''.
+
+&lt;pre&gt;
+sudo apt-get update
+sudo apt-get install linux-image-amd64
+&lt;/pre&gt;
+
+== Preserve Comments in libvirt / virsh XML Files ==
+Asked on stackexchange: &lt;br /&gt;
+http://unix.stackexchange.com/questions/148163/is-it-possible-to-use-comments-in-virsh-libvirt-xml-files
 
 = Answered Questions =
 == virt-v2v ==
@@ -57686,6 +57585,167 @@ Maybe we need to learn from their fedora-aos.xml to structure whonix xml.
 Since virt-image has been deprecated, this is no option. Source: &lt;br /&gt;
 http://blog.wikichoon.com/2014/04/deprecating-little-used-tool-virt-image1.html
 
+== How to get virtio running for storage? ==
+=== Initial Instructions ===
+Virtio-blk now works
+
+Here are the steps, which I'll throw altogether here before the server downtime. Will move into the wiki later:
+
+http://www.linux-kvm.org/page/Boot_from_virtio_block_device        &lt; Original steps that needed to be changed so it can apply to Debian.
+
+Quote
+
+    in guest os, change /boot/grub/device.map from &quot;(hd0) /dev/sda&quot; to &quot;(hd0) /dev/vda&quot;
+    in guest os, change /boot/grub/grub.cfg from &quot;root=/dev/sda1&quot; to &quot;root=/dev/vda1&quot;, if you are using UUID, then no need to do this step. 
+
+
+I changed all mention of sda1 to vda1 in the grub file. I changed the disk controller type from virtmanager to virtio which takes care of this at the libvirt xml level. Now the vm boots normally with no hangups and I feel a little faster.
+
+ A bit of advice, that I'll add so you can decide:
+
+
+Quote
+
+    &lt;iggy&gt; bancfc: the better option would be using LABELs and UUIDs and such in the source image
+    &lt;iggy&gt; unless this is a one time conversion kind of thing
+
+=== Using LABELs ===
+Patrick asks: How to use LABELs?
+
+Patrick says: Nevermind. We're now using UUIDs.
+
+=== Using UUIDs ===
+Patrick writes: In Whonix 9, fstab will look like this.
+
+&lt;pre&gt;
+cat /etc/fstab
+&lt;/pre&gt;
+
+&lt;pre&gt;
+/dev/disk/by-uuid/26ada0c0-1165-4098-884d-aafd2220c2c6 /  auto    defaults,errors=remount-ro 0   1
+proc           /proc        proc    defaults                      0   0
+/dev/cdrom     /mnt/cdrom0  iso9660 ro,user,noauto                0   0
+# some other examples:
+# /dev/sda2       none         swap    sw,pri=0             0   0
+# /dev/hda1       /Grml        ext3    dev,suid,user,noauto 0  2
+# //1.2.3.4/pub   /smb/pub     cifs    user,noauto,uid=grml,gid=grml 0 0                                                                                                            
+# linux:/pub      /beer        nfs     defaults             0  0                                                                                                                    
+# tmpfs           /tmp         tmpfs   size=300M            0  0                                                                                                                    
+# /dev/sda5       none         swap    sw                   0  0
+&lt;/pre&gt;
+
+The relevant part here is.
+
+&lt;pre&gt;
+/dev/disk/by-uuid/26ada0c0-1165-4098-884d-aafd2220c2c6 /  auto    defaults,errors=remount-ro 0   1
+&lt;/pre&gt;
+
+The UUID {{Code|26ada0c0-1165-4098-884d-aafd2220c2c6}} is a fixed one. (Feature by grml-debootstrap.)
+
+&lt;pre&gt;
+grep 26ada0c0-1165-4098-884d-aafd2220c2c6 /usr/sbin/grml-debootstrap                                                                                        
+           tune2fs &quot;$TARGET&quot; -U 26ada0c0-1165-4098-884d-aafd2220c2c6
+&lt;/pre&gt;
+
+Maybe using UUID and even a fixed one will aid this feature.
+
+
+
+HulaHoop: Yes it will. I found very encouraging answers to your inquiries on the forum that I'll post here:
+
+&lt;pre&gt;
+1. activate virtio-blk in a booted image
+2. check virtio-blk is really in use (https://www.whonix.org/wiki/Dev/KVM#How_to_check_if_virtio_storage_access_is_in_use_or_an_eventually_existing_fallback_driver.3F)
+3. see how we can automate this using Whonix's build script / Whonix's packages
+&lt;/pre&gt;
+
+1. From my IRC chats with KVM devs, the virtio driverof concern has been included in all distros for a while now and is used by simply having libvirt select it so.
+
+2. lsmod : lists all currently running modules
+    modinfo &lt;module name&gt; : information about associated devices
+    hwinfo --short : see which driver is loaded for each particular device
+
+3. UUID is the answer from what I recall from different sources inluding KVM documentation. From a post towards the bottom of a thread, someone describes how to configure the kernel to use UUID to boot:
+forums.gentoo.org/viewtopic-p-6668919.html
+
+=== /boot/grub/grub.cfg issue ===
+Patrick comments: I think /boot/grub/grub.cfg is a unstable solution. That file says on top.
+
+&lt;pre&gt;
+# DO NOT EDIT THIS FILE
+#
+# It is automatically generated by grub-mkconfig using templates
+# from /etc/grub.d and settings from /etc/default/grub
+&lt;/pre&gt;
+
+So when there is a kernel upgrade, /boot/grub/grub.cfg will be regenerated and the changes will be lost.
+
+Patrick asks: How do we apply these settings in a way, so they do survive an &quot;sudo update-grub&quot; (which is automatically run on every kernel upgrade).
+
+Patrick says: this is no longer required, since we're now using UUID's in grub.cfg.
+
+=== System gets unbootable? ===
+Patrick comments: After editing /boot/grub/grub.cfg, in worst case, maybe, the system will be no longer bootable then. You can test/simulate this case by running &quot;sudo update-grub&quot;. Please try.
+
+HulaHoop comments: I found a solution, one that survives kernel and grub upgrades: http://grumpymole.blogspot.nl/2007/05/ubuntu-how-to-edit-grub-boot-parameters.html
+
+&lt;pre&gt;2.2 Making a change survive upgrades
+
+Depending on how frequently you upgrade your system, you might find that when a new kernel is installed, or grub is upgraded (there may be other scenarios), the /boot/grub/menu.lst file may be replaced by a newer version, or a new line might be added for the new kernel. In this case, your &quot;permanent&quot; changes might be as permanent as you thought.
+
+The best way to address this is to change the &quot;#kopt...&quot; line in /boot/grub/menu.lst. Note that the line is not commented out, even though it starts with a &quot;#&quot;. See the excerpt below.
+
+    ### BEGIN AUTOMAGIC KERNELS LIST
+    ## lines between the AUTOMAGIC KERNELS LIST markers will be modified
+    ## by the debian update-grub script except for the default options below
+
+    ## DO NOT UNCOMMENT THEM, Just edit them to your needs
+
+    ## ## Start Default Options ##
+    ## default kernel options
+    ## default kernel options for automagic boot options
+    ## If you want special options for specific kernels use kopt_x_y_z
+    ## where x.y.z is kernel version. Minor versions can be omitted.
+    ## e.g. kopt=root=/dev/hda1 ro
+    ## kopt_2_6_8=root=/dev/hdc1 ro
+    ## kopt_2_6_8_2_686=root=/dev/hdc2 ro
+    # kopt=root=UUID=fccafcc7-d7cc-4594-9459-a8f0db7b9f7f ro
+
+Add the parameter changes to the end of the line &quot;#kopt...&quot;. These parameters will then be automatically added to any new kernel entries and should also survive an upgrade of grub&lt;/pre&gt;
+
+Patrick comments: Have you tested this?
+
+Patrick comments: I am not sure editing /boot/grub/grub.cfg is a robust solution. We cannot directly ship a /boot/grub/grub.cfg in a deb, because it is an auto generated file by grub-mkconfig. (When that deb was updated, /boot/grub/grub.cfg would be outdated, system unbootable, you know?) Maybe a package could be created, that appends /boot/grub/grub.cfg, but still, any solution not touching /boot/grub/grub.cfg should be preferred. If we could edit/extend /etc/default/grub, /etc/default/grub.d or /etc/grub.d, that would be much more robust. What is the official suggestion by kvm devs to solve this as a distro?
+
+Patrick says: this is no longer required, since we're now using UUID's in grub.cfg.
+
+=== Virtio Block Latency ===
+Not really important but is interesting: &lt;br /&gt;
+http://www.linux-kvm.org/page/Virtio/Block/Latency
+
+HulaHoop: Yes it could have been the situation that there is latency as the data shows, but I'm sure this was improved by now.
+
+=== Well what'ya know It's a bug! ===
+HulaHoop wrote: &lt;br /&gt;
+The reason I struggled so much to get this working is because of an ancient bug that has a workaround in the build process by naming disks to vdX instead of sdX.
+Please generate a test image with these changes.
+
+https://bugs.launchpad.net/ubuntu/+source/vm-builder/+bug/517067
+Please read this comment for the workarounds:
+https://bugs.launchpad.net/ubuntu/+source/vm-builder/+bug/517067/comments/4
+
+&gt; b.) linux/udev : you could suggest that the vdX devices should be symlinked or other to sdX so that your fstab finds the devices independent of how they're connected. -&gt; A suggestion for linux/udev. Not Whonix.
+
+Patrick says: this is no longer required, since we're now using UUID's in grub.cfg.
+
+=== Solved ===
+https://www.whonix.org/forum/index.php/topic,401.msg3099.html#msg3099
+
+== Enable virtio by default? ==
+Probably yes?
+
+https://wiki.debian.org/DebianKVMGuests
+
 = Archived Discussions =
 * [https://www.whonix.org/forum/index.php/topic,202.0/topicseen.html qcow2 with metadata preallocation file sizes]
 
@@ -57873,7 +57933,7 @@ http://blog.wikichoon.com/2014/04/deprecating-little-used-tool-virt-image1.html
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>g5ms0ku3y23knct813o3tge17dcxvk7</sha1>
+      <sha1>be2g1t41evbx3dkvonp0uyq43rrzryd</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -78513,6 +78573,38 @@ Step 1) Go to https://www.gnupg.org/ (or windows users http://gpg4win.org). It c
 
 Step 2) Go back to https://www.whonix.org and apply everything you learned in Step 1). Should you be still having issues, go through the [[Support|Whonix Support Channels]].</text>
       <sha1>dt58cito6mm1qdl979r7d067j2tepvv</sha1>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+    </revision>
+  </page>
+  <page>
+    <title>Dev/64bit</title>
+    <ns>0</ns>
+    <id>1393</id>
+    <revision>
+      <id>8453</id>
+      <parentid>8446</parentid>
+      <timestamp>2014-08-03T18:09:57Z</timestamp>
+      <contributor>
+        <username>Patrick</username>
+        <id>2</id>
+      </contributor>
+      <text xml:space="preserve" bytes="658">{{#seo:
+|description=Whonix 64bit builds
+}}
+{{Header}}
+{{forkme}}
+
+During Whonix's build process, first a Debian raw image is created using grml-debootstrap. A raw image and not qcow2, vdi or vmdk, because creating a bootable raw image is difficult and there are no tools yet to create a qcow2, vdi or vmdk image from scratch.
+
+When (also) using the --vbox switch, the raw image gets converted to vdi. Then a VirtualBox virtual machine is created, the vdi added to it and exported. During export, VirtualBox unfortunately converts it to vmdk.
+
+When (also) using the --qcow2 switch, the raw image gets converted to qcow2.
+
+[[Category:Development]]
+
+{{Footer}}</text>
+      <sha1>ley6nt6pf0wn05uuoz8dfpzz4f01f8h</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
