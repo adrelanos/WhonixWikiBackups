@@ -7876,14 +7876,15 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
     <ns>0</ns>
     <id>96</id>
     <revision>
-      <id>8308</id>
-      <parentid>8278</parentid>
-      <timestamp>2014-07-24T12:13:40Z</timestamp>
+      <id>8468</id>
+      <parentid>8467</parentid>
+      <timestamp>2014-08-04T02:44:20Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <comment>Tails 1.1 released July 22</comment>
-      <text xml:space="preserve" bytes="72040">{{Header}}
+      <comment>/* Stream Isolation */</comment>
+      <text xml:space="preserve" bytes="71993">{{Header}}
 {{#seo:
 |description=Comparison of Whonix, Tails, Tor Browser Bundle, QubesOS TorVM and corridor. About anonymity, privacy, security, circumvention, attacks, fingerprinting, usability, features, etc.
 }}
@@ -8146,15 +8147,15 @@ This page contains the comparisons of Whonix, Tails, Tor Browser and Qubes OS To
 | {{No}}
 | {{BlueBackground}} Not a gateway.
 | {{BlueBackground}} Not a gateway.
-| {{No}}
+| {{Yes}} &lt;ref&gt;https://groups.google.com/d/msg/qubes-devel/le7-Rrq6yxY/k_fQdSTzvLAJ&lt;/ref&gt;
 | {{Yes}} &lt;ref name=uptotheclienttobuildtorcircuits&gt;Since it's up to the clients behind corridor-Gateway to build their own Tor circuits.&lt;/ref&gt;
 |-
 | style=&quot;height: 27px;background-color: #f9f9f9&quot;| Can enforce Stream Isolation when one of X workstations are compromised with special configuration &lt;ref name=xworkstations /&gt;
 | {{Yes}} &lt;ref&gt;By using [[Multiple_Whonix-Workstations#Multiple_Whonix-Gateways|Multiple Whonix-Gateways]] or by using [[Connections_between_Whonix-Gateway_and_Whonix-Workstation|encrypted and/or authenticated Connection Between Whonix-Gateway and Whonix-Workstation]].&lt;/ref&gt;
 | {{BlueBackground}} Not a gateway.
 | {{BlueBackground}} Not a gateway.
-| {{Yes}} &lt;ref&gt;By running multiple TorVMs.&lt;/ref&gt;
-| {{Yes}} &lt;ref&gt;Enforces Stream Isolation when one of X Workstations behind the same Gateway are compromised in default configuration, see above.&lt;/ref&gt;
+| {{BlueBackground}} No required.
+| {{BlueBackground}} No required.
 |-
 | style=&quot;height: 27px;background-color: #f9f9f9&quot;| Stream isolation in Tor Browser
 | {{No}} &lt;ref name=browser /&gt;
@@ -8321,7 +8322,7 @@ http://www.whonix.org/wiki/Template:Verifiable_Builds_Comparsion_Table
 | {{Yes}}
 | {{No}}, because [https://tails.boum.org/todo/persistence_preset_-_tor/ not yet] supporting persistent {{Code2|Entry Guards}}&lt;ref&gt;https://www.torproject.org/docs/faq.html.en#EntryGuards&lt;/ref&gt;.
 | {{Yes}}
-| (?)
+| {{Yes}}
 | {{Yes}}
 |-
 | style=&quot;height: 27px;background-color: #f9f9f9&quot;| Clearnet traffic
@@ -9129,7 +9130,7 @@ One has always to be very careful, when talking about others. Especially, when t
 {{Footer}}
 
 [[Category:Documentation]] [[Category:Design]]</text>
-      <sha1>lkkh8heq36nxjzcs5745v1hukxd0swg</sha1>
+      <sha1>93ahkwp7qg3t6qd4ltvc3nefv7ybz1p</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -58958,15 +58959,15 @@ Quelle: &lt;html&gt;&lt;a href=&quot;http://www.juraforum.de/impressum-generator
     <ns>0</ns>
     <id>698</id>
     <revision>
-      <id>8398</id>
-      <parentid>8376</parentid>
-      <timestamp>2014-07-31T20:18:31Z</timestamp>
+      <id>8465</id>
+      <parentid>8398</parentid>
+      <timestamp>2014-08-04T02:11:19Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
       <comment>/* Geltungsbereich */</comment>
-      <text xml:space="preserve" bytes="14633">&lt;!--
+      <text xml:space="preserve" bytes="14675">&lt;!--
 NOTE TO WIKI EDITORS:
 Do not add the default footer!
 Do not edit without asking Patrick Schleizer beforehand!
@@ -59032,6 +59033,7 @@ Dieses Impressum gilt auch für:
 ** https://github.com/adrelanos/torbirdy
 ** https://github.com/adrelanos/wiki-seo
 ** https://github.com/adrelanos/corridor
+** https://github.com/adrelanos/qubes-tor
 
 ** https://github.com/Whonix/anon-apt-sources-list
 ** https://github.com/adrelanos/anon-apt-sources-list
@@ -59259,7 +59261,7 @@ Die Datenschutzerklärung finden Sie [[Datenschutz|hier]].
 Den Haftungsausschluss (Disclaimer) finden Sie [[Disclaimer|hier]].
 
 [[Category:Documentation]]</text>
-      <sha1>lhguo38z9ehl95k2irmqizim2g93lb9</sha1>
+      <sha1>cz1qgnqyal9nn10ngppyd5kijt56815</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -77951,15 +77953,14 @@ sudo apparmor_parser -r /etc/apparmor.d/usr.bin.sdwdate
     <ns>0</ns>
     <id>1376</id>
     <revision>
-      <id>8004</id>
-      <parentid>7935</parentid>
-      <timestamp>2014-06-06T18:51:59Z</timestamp>
+      <id>8470</id>
+      <parentid>8469</parentid>
+      <timestamp>2014-08-04T02:58:25Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* IPs */</comment>
-      <text xml:space="preserve" bytes="4223">{{Header}}
+      <text xml:space="preserve" bytes="4524">{{Header}}
 
 = Debian Template =
 https://groups.google.com/forum/#!topic/qubes-devel/EBxvtMlwp5k
@@ -78016,13 +78017,22 @@ You can disable this mechanism globally by unsetting(*) clockvm (qubes-prefs -s 
 = How big is Qubes OS's user base? =
 https://groups.google.com/d/msg/qubes-users/AqZV65yZLuU/Kib1jFLZanUJ
 
+= IP Spoofing Protection =
+[https://groups.google.com/d/msg/qubes-devel/le7-Rrq6yxY/nhhpXX1QNRsJ source]
+
+AppVMs can't spoof eachother in Qubes' network.
+corollary: stream isolation can't be circumvented 
+
+= Forum Discussion =
+[https://www.whonix.org/forum/index.php/topic,392.0.html Qubes + Whonix]
+
 = Footnotes =
 &lt;references /&gt;
 
 {{Footer}}
 
 [[Category:Design]]</text>
-      <sha1>mleqnxncaotx8zdwjqukb05qgxs8xll</sha1>
+      <sha1>bekhcerfkhqpzspv4djbl6is1sldz8g</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -78582,29 +78592,119 @@ Step 2) Go back to https://www.whonix.org and apply everything you learned in St
     <ns>0</ns>
     <id>1393</id>
     <revision>
-      <id>8453</id>
-      <parentid>8446</parentid>
-      <timestamp>2014-08-03T18:09:57Z</timestamp>
+      <id>8464</id>
+      <parentid>8463</parentid>
+      <timestamp>2014-08-04T00:04:39Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="658">{{#seo:
+      <comment>/* non-Debian builds */</comment>
+      <text xml:space="preserve" bytes="4971">{{#seo:
 |description=Whonix 64bit builds
 }}
 {{Header}}
 {{forkme}}
 
+= Basics =
 During Whonix's build process, first a Debian raw image is created using grml-debootstrap. A raw image and not qcow2, vdi or vmdk, because creating a bootable raw image is difficult and there are no tools yet to create a qcow2, vdi or vmdk image from scratch.
 
 When (also) using the --vbox switch, the raw image gets converted to vdi. Then a VirtualBox virtual machine is created, the vdi added to it and exported. During export, VirtualBox unfortunately converts it to vmdk.
 
 When (also) using the --qcow2 switch, the raw image gets converted to qcow2.
 
+Maintenance effort definition: Images need to be build, [[Verifiable_Builds|checked for being verifiable]], tested, signed, uploaded, maintained (updates), supported (triage bugs, answer questions).
+
+= 32 bit vs 64 bit =
+64 bit builds can not be run on 32 bit computers, can not be run on computers without pae.
+
+64 bit libvirt builds could probably not run in qemu on 32 bit computers.
+
+= Current Situation =
+Maintenance effort currently includes 4 images.
+
+* Whonix-Gateway 32 bit ova
+* Whonix-Workstation 32 bit ova
+* Whonix-Gateway 32 bit libvirt
+* Whonix-Workstation 32 bit libvirt
+
+= With new Whonix-Custom-Workstation =
+Soon there will be also an empty [https://github.com/Whonix/Whonix/issues/183 Whonix-Custom-Workstation]. Maintenance effort will include 6.
+
+* Whonix-Gateway 32 bit ova
+* Whonix-Workstation 32 bit ova
+* Whonix-Custom-Workstation ova
+* Whonix-Gateway 32 bit libvirt
+* Whonix-Workstation 32 bit libvirt
+* Whonix-Custom-Workstation libvirt
+
+Although build time, upload time and maintenance effort for Whonix-Custom-Workstation won't add up so much.
+
+= With 64 bit builds =
+If Whonix offered official 64 bit builds, maintenance effort would multiply two times.
+
+Maintenance effort would include 10 images.
+
+* Whonix-Gateway 32 bit ova
+* Whonix-Gateway 64 bit ova
+* Whonix-Workstation 32 bit ova
+* Whonix-Workstation 64 bit ova
+* Whonix-Custom-Workstation ova
+* Whonix-Gateway 32 bit libvirt
+* Whonix-Gateway 64 bit libvirt
+* Whonix-Workstation 32 bit libvirt
+* Whonix-Workstation 64 bit libvirt
+* Whonix-Custom-Workstation libvirt
+
+= non-Debian builds =
+Unrealistic in near future. Just for a fun thought experiment, imagine Whonix offered official non-Debian, let's say for example Fedora based images.
+
+* Whonix-Debian-Gateway 32 bit ova
+* Whonix-Debian-Gateway 64 bit ova
+* Whonix-Debian-Workstation 32 bit ova
+* Whonix-Debian-Workstation 64 bit ova
+* Whonix-Custom-Workstation ova
+* Whonix-Debian-Gateway 32 bit libvirt
+* Whonix-Debian-Gateway 64 bit libvirt
+* Whonix-Debian-Workstation 32 bit libvirt
+* Whonix-Debian-Workstation 64 bit libvirt
+* Whonix-Custom-Workstation libvirt
+* Whonix-Fedora-Gateway 32 bit ova
+* Whonix-Fedora-Gateway 64 bit ova
+* Whonix-Fedora-Workstation 32 bit ova
+* Whonix-Fedora-Workstation 64 bit ova
+* Whonix-Fedora-Gateway 32 bit libvirt
+* Whonix-Fedora-Gateway 64 bit libvirt
+* Whonix-Fedora-Workstation 32 bit libvirt
+* Whonix-Fedora-Workstation 64 bit libvirt
+
+Getting crowded. 18 Images.
+
+How do other distributions deal with 32 bit vs 64 bit? They provide installer DVDs. Whonix can't do this, since we don't need only getting files installed, but also need the appropriate VM [https://github.com/Whonix/Whonix/blob/master/build-steps.d/2600_create-vbox-vm settings] / [https://github.com/Whonix/Whonix/tree/master/libvirt files].
+
+How do other distributions deal with ova vs libvirt? They don't ship any VM images. Leave this to the user. But this is what Whonix does. Shipping pre-configured, ready to use VM images.
+
+What could be attempted is 1) getting [https://github.com/Whonix Whonix's Debian packages] merged into Debian and Fedora, which would be a lot work. And 2) contributing to Debian, so they're not only shipping DVD images, but also VM images 3) making Whonix a [https://wiki.debian.org/DebianPureBlends blend] of Debian and also letting debian's cdimage.debian.org infrastructure build Whonix images.
+
+= Future =
+For now, the demand for 64 bit builds is too little. No longer shipping 32 bit builds would prevent many users from using Whonix, which already has high system demands.
+
+Maintaining 10 images seems like too much maintenance burden for Patrick.
+
+In meanwhile it is possible to [[Dev/Build_Documentation/9_full#64bit_Builds_.28Optional.29|create 64bit builds yourself from source code]].
+
+Maybe in future:
+
+* someone implements an automated test suite for Whonix images (see also [https://tails.boum.org/contribute/release_process/test/automated_tests/ Tails's automated test suite]).
+* [[Verifiable_Builds|checked for being verifiable]] gets automated on a build server among other stuff to ease development.
+* a [[Contribute#Release_Manager|Release Manager]] joins the project
+* a maintainer maintaining 64 bit ova builds joins the project
+* a maintainer maintaining 64 bit libvirt builds joins the project
+
 [[Category:Development]]
 
 {{Footer}}</text>
-      <sha1>ley6nt6pf0wn05uuoz8dfpzz4f01f8h</sha1>
+      <sha1>3hhhzi4vdropxr88izbrrdg9902mnbi</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
