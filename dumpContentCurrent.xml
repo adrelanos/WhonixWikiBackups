@@ -51957,15 +51957,15 @@ Maybe this will help: Try convert the vmdk to vdi, remove the old vmdk from the 
     <ns>0</ns>
     <id>530</id>
     <revision>
-      <id>8396</id>
-      <parentid>7607</parentid>
-      <timestamp>2014-07-31T16:14:54Z</timestamp>
+      <id>8472</id>
+      <parentid>8396</parentid>
+      <timestamp>2014-08-05T02:27:49Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Current Limitations */</comment>
-      <text xml:space="preserve" bytes="16019">{{Header}}
+      <comment>/* Possible Future Improvements */</comment>
+      <text xml:space="preserve" bytes="15560">{{Header}}
 {{#seo:
 |description=Checking Whonix for backdoors.
 }}
@@ -52000,7 +52000,9 @@ Unfortunately, we can not directly mount the {{Code2|.ova}}. We have to extract 
 The {{Code2|/help-steps/analyze_image}} script is the tool which comes with Whonix's source code to audit {{Code2|Whonix.ova}}. Nothing prevents you from cooking up your own custom method to verify {{Code2|Whonix.ova}}. On the contrary, we'd be very happy to hear about your methods, source code and results. Since this hasn't ever happened in past, Whonix came up with its own {{Code2|/help-steps/analyze_image}} script.
 
 === Possible Future Improvements ===
-[https://github.com/sleuthkit/sleuthkit/ sleuthkit] could be an interesting addition or even replacement for our custom script. Then we could create a report using something like {{Code|fls -f ext4 ./Whonix-Gateway-8.img}}. Does {{Code|fls}} very similar results when run on very similar images or does it mess up the ordering? The version in Debian even in [http://packages.debian.org/sid/sleuthkit sid] is outdated and does unfortunately not include support for ext4 and our images are using ext4. More recent sleuthkit upstream releases do support ext4, but there are no signed git tags yet ([https://github.com/sleuthkit/sleuthkit/issues/264 reported an issue]), so getting sleuthkit is a bit difficult. (If we want to defeat sophisticated backdoors, we shouldn't encourage auditors to blindly trust github's SSL alone for sleuthkit's integrity.) We could think about bending our images, downgrading from ext4 to ext3.
+[https://github.com/sleuthkit/sleuthkit/ sleuthkit] could be an interesting addition or even replacement for our custom script. Then we could create a report using something like {{Code|fls -f ext4 ./Whonix-Gateway-8.img}}. Does {{Code|fls}} produce very similar results when run on very similar images or does it mess up the ordering?
+
+[https://github.com/sleuthkit/sleuthkit/issues/354 fls / fstat issue: Invalid magic value (not an EXTxFS file system (magic))]
 
 === Expected Differences ===
 * {{Code|(mount_folder) /boot/initrd.img*}} - Those are extracted to the {{Code|initrd_folder}} and diffed.
@@ -52107,7 +52109,7 @@ In case you like to review the implementation, the related scripts can be found 
 
 [[Category:Documentation]]
 [[Category:Development]]</text>
-      <sha1>ozfz552ijnmnm1zii6eshon4cp3bas7</sha1>
+      <sha1>bekhqyersmcbbn14krsvypb99n9aeft</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -56935,13 +56937,14 @@ https://guardianproject.info/2013/11/12/your-own-private-dropbox-with-free-softw
     <ns>0</ns>
     <id>691</id>
     <revision>
-      <id>8456</id>
-      <parentid>8455</parentid>
-      <timestamp>2014-08-03T21:51:54Z</timestamp>
+      <id>8475</id>
+      <parentid>8474</parentid>
+      <timestamp>2014-08-05T02:55:02Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="49956">{{Header}}
+      <text xml:space="preserve" bytes="50085">{{Header}}
 {{#seo:
 |description=Development Notes for adding KVM support to Whonix.
 }}
@@ -56971,7 +56974,10 @@ Other spice channel functionality provided:
 
 Mailinglist reply:
 https://www.redhat.com/archives/virt-tools-list/2014-August/msg00002.html 
-Currently not supported through libvirt but may be planned. Not a problem, we can just document how to disable its easy and gui based. For those running from commandlines, they should just revert to a non SPICE adapter and they'll be fine. They are not missing much because they are not using the workstation as a desktop.
+Currently not supported through libvirt but planned. Not a problem, we can just document how to disable its easy and gui based. For those running from commandlines, they should just revert to a non SPICE adapter and they'll be fine. They are not missing much because they are not using the workstation as a desktop.
+
+Bugzilla Ticket:
+https://bugzilla.redhat.com/show_bug.cgi?id=1126641
 
 == Document: how to leave KVM when no X is running? ==
 Situation... User is in terminal in a VM... No X is running (&quot;sudo service kdm stop&quot;). User wants to switch back to the host... How to do this?
@@ -57016,21 +57022,6 @@ Dependencies:
 
 
 = Non-Blockers =
-== Disable Microphone Feature Request ==
-Let's together write a feature request for an option to disable sound. Maybe like this.
-
-Adds only speaker, no microphone.
-
-&lt;pre&gt;
-  &lt;devices&gt;
-    &lt;sound model='ich6'&gt;
-      &lt;codec type='speaker'/&gt;
-    &lt;sound/&gt;
-  &lt;/devices&gt;
-&lt;/pre&gt;
-
-Then post it... Where?
-
 == libguestfs import/export feature request ==
 Let's together write a feature request for an import/export feature for libguestfs, similar to VirtualBox's import/export feature. Then post in [https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization%20Tools libguestfs's bug tracker].
 
@@ -57114,9 +57105,6 @@ hwinfo --short
 How to check, that '''virtio_pci''' is really being used and not some fallback driver?
 
 /sys/devices/virtio-pci/0/net/eth0/statistics/rx_bytes seems not to exist on Debian Wheezy.
-
-== Boot from virtio block device? ==
-What is http://www.linux-kvm.org/page/Boot_from_virtio_block_device good for? Required?
 
 == How to enable AppArmor / SELinux for KVM on Debian? ==
 
@@ -57747,6 +57735,27 @@ Probably yes?
 
 https://wiki.debian.org/DebianKVMGuests
 
+== Boot from virtio block device? ==
+What is http://www.linux-kvm.org/page/Boot_from_virtio_block_device good for? Required?
+
+== Disable Microphone Feature Request ==
+Let's together write a feature request for an option to disable sound. Maybe like this.
+
+Adds only speaker, no microphone.
+
+&lt;pre&gt;
+  &lt;devices&gt;
+    &lt;sound model='ich6'&gt;
+      &lt;codec type='speaker'/&gt;
+    &lt;sound/&gt;
+  &lt;/devices&gt;
+&lt;/pre&gt;
+
+Then post it... Where?
+
+Done: &lt;br /&gt;
+https://bugzilla.redhat.com/show_bug.cgi?id=1126641
+
 = Archived Discussions =
 * [https://www.whonix.org/forum/index.php/topic,202.0/topicseen.html qcow2 with metadata preallocation file sizes]
 
@@ -57934,7 +57943,7 @@ https://wiki.debian.org/DebianKVMGuests
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>be2g1t41evbx3dkvonp0uyq43rrzryd</sha1>
+      <sha1>cciynhukuqnwhra1x8gvkote0o8s0rv</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
