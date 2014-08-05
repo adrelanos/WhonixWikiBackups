@@ -78576,22 +78576,19 @@ This doesn't alter the validity of the signature according to the key you downlo
     <ns>10</ns>
     <id>1392</id>
     <revision>
-      <id>8386</id>
-      <timestamp>2014-07-30T13:43:57Z</timestamp>
+      <id>8476</id>
+      <parentid>8386</parentid>
+      <timestamp>2014-08-05T21:50:16Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <username>JasonJAyalaP</username>
+        <id>9</id>
       </contributor>
-      <comment>Created page with &quot;= Troubleshooting = If you are having trouble and willingness to learn, you can do little two step exercise.  The Whonix distribution is user of GnuPG. You are a user of GnuPG...&quot;</comment>
-      <text xml:space="preserve" bytes="1270">= Troubleshooting =
-If you are having trouble and willingness to learn, you can do little two step exercise.
+      <comment>rewrite</comment>
+      <text xml:space="preserve" bytes="381">= Troubleshooting =
+If you encounter an error with GPG, first try a web search with the relevant error text. Additionally, [https://security.stackexchange.com the security stackexchange site]is able to help with GPG problems. Describe your problem thoroughly, but be sure that your question is GPG related and not Whonix specific. 
 
-The Whonix distribution is user of GnuPG. You are a user of GnuPG. The https://www.whonix.org website is not necessarily the the best of the best places to ask and learn about GnuPG, because it is not the main focus. The GnuPG community does a better job. But the GnuPG community doesn't necessarily use Whonix. Since Whonix images are quite big, asking someone not interested in Whonix to download them is a big request.
-
-Step 1) Go to https://www.gnupg.org/ (or windows users http://gpg4win.org). It contains lots of documentation and help about GnuPG. Download the GnuPG software, download the signature for the GnuPG software, learn to verify the GnuPG software. If it works for you, congratulations, you just learned how to verify files using GnuPG. If you are having issues, you advantage is, you don't have to mention Whonix, just GnuPG, you don't have to involve the extra complexity added by Whonix to your question. You can get help from the more specialized GnuPG community.
-
-Step 2) Go back to https://www.whonix.org and apply everything you learned in Step 1). Should you be still having issues, go through the [[Support|Whonix Support Channels]].</text>
-      <sha1>dt58cito6mm1qdl979r7d067j2tepvv</sha1>
+More help resources are on the [[Support]] page.</text>
+      <sha1>ow72narhwldyc1n03xau9btsgbr9bfa</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
