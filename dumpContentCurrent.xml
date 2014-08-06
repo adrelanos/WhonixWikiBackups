@@ -3816,14 +3816,14 @@ As soon as i2p over Tor is working in Whonix-Workstation, you can probably follo
     <ns>0</ns>
     <id>63</id>
     <revision>
-      <id>7617</id>
-      <parentid>7610</parentid>
-      <timestamp>2014-04-29T10:17:11Z</timestamp>
+      <id>8480</id>
+      <parentid>7617</parentid>
+      <timestamp>2014-08-06T01:05:10Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <text xml:space="preserve" bytes="10824">{{#seo:
+      <comment>/* Introduction */</comment>
+      <text xml:space="preserve" bytes="11035">{{#seo:
 |description=Anonymously host any server with Whonix and Tor hidden services
 }}
 {{Header}}
@@ -3836,6 +3836,8 @@ Be sure to read and understand [https://www.torproject.org/docs/hidden-services.
 You do not need SSL &lt;ref&gt;https://en.wikipedia.org/wiki/Secure_Sockets_Layer&lt;/ref&gt;, because connections to Tor hidden services are end-to-end encrypted by default &lt;ref&gt;http://www.quora.com/Is-there-an-SSL-equivalent-for-Tor-Hidden-Services&lt;/ref&gt;. &lt;ref&gt;To be exact, only tor-to-tor, see [[Hidden_Services#Notes_about_End-to-end_security_of_Hidden_Services|Notes about End-to-end security of Hidden Services]].&lt;/ref&gt; This is handy, as you do not have to bother with self signed certificates or certificate authorities.
 
 An adversary can see whether the service (and presumably Tor) is up and running or not.
+
+With the coming overhaul of the Hidden Service protocol, Hidden Service addresses will be private and encrypted - only visible to those who you explicitly hand out the addresses to. But as of now it is not so.
 
 == Hosting ANY Hidden Services ==
 You can provide '''any''' server service, which relies on TCP, such as web servers, IRC servers, chat servers and so forth. UDP and IPv6 are not supported by the Tor network, but if required you could use [[OnionCat]] as a workaround.
@@ -4020,7 +4022,7 @@ Hidden Services with Whonix are still safer than running Tor and the server soft
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>rvu62ypg8csddkdxfgf5d2m8w8kxwr5</sha1>
+      <sha1>q8tqbemnmuubwzuykqx8cx06dmmw909</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -14449,15 +14451,13 @@ When you are using them at the same time, the risks explained in the introductio
     <ns>0</ns>
     <id>127</id>
     <revision>
-      <id>8311</id>
-      <parentid>7715</parentid>
-      <timestamp>2014-07-25T16:55:59Z</timestamp>
+      <id>8479</id>
+      <parentid>8478</parentid>
+      <timestamp>2014-08-05T23:53:36Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>/* Chaining Anonymizing Gateways */</comment>
-      <text xml:space="preserve" bytes="35468">{{Header}}
+      <text xml:space="preserve" bytes="37035">{{Header}}
 &lt;!--
 Copyright:
 
@@ -14742,7 +14742,7 @@ This has also been discussed [https://sourceforge.net/p/whonix/discussion/genera
 
 = Hardware Security =
 
-It's recommended to use &quot;clean&quot; computers made of parts manufactured by reputable companies and to pay in cash so as to not have hardware IDs leak our identity.
+It's recommended to use &quot;clean&quot; computers made of parts manufactured by reputable companies and to pay in cash so as to not have hardware IDs leak your identity.
 
 Whonix doesn't do anything against hardware backdoors.
 
@@ -14894,6 +14894,39 @@ Whonix isn't a perfectly hardened system. Additional hardening would be very wel
 === AppArmor ===
 Learn about [http://wiki.apparmor.net AppArmor]. Check out Whonix's [[AppArmor]] profiles.
 
+
+==SELinux==
+
+SELinux is more robust than Apparmor because its label based vs file-path based. But his comes at the expense of being difficult to write policies. The good news is if you are a KVM user and want to harden your GNU/Linux host, its as simple as enabling SELinux and libvirt will automatically take advantage of it without any further effort needed on your part.
+
+These instructions apply to Whonix and could be easily replicated for your Debian host.
+First disable Apparmor if you are using it. Both MAC systems cannot be run simultaneously run. This is not supported by LSM and may also be a source of conflicts. 
+
+AppArmor is disabled, and the kernel module unloaded by entering the following&lt;ref&gt;https://help.ubuntu.com/12.04/serverguide/apparmor.html&lt;/ref&gt;:
+
+&lt;pre&gt;sudo /etc/init.d/apparmor stop
+sudo update-rc.d -f apparmor remove&lt;/pre&gt;
+
+To enable SELinux follow these steps.&lt;ref&gt;http://debian-handbook.info/browse/stable/sect.selinux.html&lt;/ref&gt; The cited guide also includes steps for writing custom policy for hardening.
+
+
+&lt;pre&gt;
+    # aptitude install selinux-basics selinux-policy-default
+    # selinux-activate
+    # reboot
+
+    # sudo nano /etc/default/grub
+
+    Replace all mention of apparmor in settings for GRUB_CMDLINE_LINUX with selinux=1 and the enforcing=1 parameter to the Linux kernel. The audit=1 parameter enables SELinux logging which records all the denied operations.
+
+    Remove the line under it that starts with: GRUB_CMDLINE_LINUX_DEFAULT
+
+    # update-grub
+&lt;/pre&gt;
+
+To check the status of SELinux run:
+&lt;pre&gt;# sestatus&lt;/pre&gt;
+
 == More than one Tor Browser in Whonix ==
 These instructions only work with TBB 3.x and above.
 
@@ -15034,7 +15067,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>roe6kkxix74c1hm6l87eynn91ig0s8j</sha1>
+      <sha1>mrrahia0gzd88wgs5dcyj61l98s1a8m</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -19460,14 +19493,14 @@ When you go ahead now, and ask in a cracker forum, they probably won't spread a 
     <ns>0</ns>
     <id>162</id>
     <revision>
-      <id>8293</id>
-      <parentid>8244</parentid>
-      <timestamp>2014-07-23T12:57:19Z</timestamp>
+      <id>8477</id>
+      <parentid>8293</parentid>
+      <timestamp>2014-08-05T23:03:28Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="7144">{{#seo:
+      <text xml:space="preserve" bytes="7124">{{#seo:
 |description=Technical Design and Conception of the Whonix Anonymous Operating System
 }}
 {{Header}}
@@ -19560,7 +19593,6 @@ When you go ahead now, and ask in a cracker forum, they probably won't spread a 
 * [[Dev/Buttons|(Award) Buttons from Third Parties]]
 * [[Dev/Fedora|Fedora as host operating system or even VM operating system - development discussion]]
 * [[Dev/Network Manager|Network Manager (NM) in Whonix instead of ifupdown - development discussion]]
-* [[Dev/bash trap]]
 * [[Dev/Other Virtualization Platforms]]
 * [[Dev/OpenPGP Signed Website]]
 * [[Dev/SecureDownloader|Secure Downloader to Download Whonix]]
@@ -19646,7 +19678,7 @@ When you go ahead now, and ask in a cracker forum, they probably won't spread a 
 [[Category:Design]]
 
 {{Footer}}</text>
-      <sha1>qxf1pmcqsiixy4nkpyn3rqn5zarlv7e</sha1>
+      <sha1>mt2mrpyguufh3d92k9hwxlnab3g5uka</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -34953,62 +34985,6 @@ Optional. Just sharing. Like it or not.
 
 [[Category:Development]] [[Category:Design]]</text>
       <sha1>oavoijtw37x4pobrpmhdjdaye5sgvrv</sha1>
-      <model>wikitext</model>
-      <format>text/x-wiki</format>
-    </revision>
-  </page>
-  <page>
-    <title>Dev/bash trap</title>
-    <ns>0</ns>
-    <id>285</id>
-    <revision>
-      <id>5833</id>
-      <parentid>3884</parentid>
-      <timestamp>2014-02-27T13:07:45Z</timestamp>
-      <contributor>
-        <username>Patrick</username>
-        <id>2</id>
-      </contributor>
-      <text xml:space="preserve" bytes="1833">{{Header}}
-{{#seo:
-|description=Development Notes about Bash Traps
-}}
-
-= Why trap ERR? =
-Useful in functions. Would for example spot mistakes such as this one.
-
-&lt;pre&gt;
-if [ &quot;$manualrun&quot; = &quot;1&quot; ]; then
-   ...
-if [ &quot;$DAEMON&quot; = &quot;1&quot; ]; then
-   ...
-else
-   ...
-fi
-&lt;/pre&gt;
-
-Because the name of the function would be no longer available.
-
-= INT TERM ERR =
-
-Whonix (build) scripts currently &quot;trap INT TERM ERR&quot;. ERR is used stop the script (in most cases) and to inform where the error occurred. For cleanup, it would be better if EXIT where used other than trapping individual signals. There is no real limitation because of this, would just be more correct to have separate ERR and EXIT traps.
-
-= Some extra old notes =
-
-HUP (Hang up detected on controlling terminal or death of controlling process) should be definitively added.
-
-INT (Issued if the user sends an interrupt signal (Ctrl + C).) is in, because users of my build scripts are free to press Ctrl + C to interrupt them for whatever reason. What it does is informing about the last $BASH_COMMAND, cleaning up, dismounting an image (because not doing so and re-running the build script while the image is still mounted could lead to strange errors).
-
-TERM (Software termination signal (sent by kill by default).) If one thinks &quot;build script takes to long, I forgot to add some files&quot; and uses kill to stop it, it's best to do the same cleanup as for INT.
-
-ERR (Non-expected non-zero return code in rare cases (bugs).) Same information and cleanup as if INT or TERM.
-
-SIGQUIT (Issued if the user sends a quit signal (Ctrl + D).) Well, I think Ctrl + C is more common than Ctrl + D. If one really wants this and stops my scripts this way, so be it. I think having one way to stop it while cleaning and one just exiting is good.
-
-{{Footer}}
-
-[[Category:Development]] [[Category:Design]]</text>
-      <sha1>3vc4pxzaw21kmvpemro0ezxoi6rjcnn</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
