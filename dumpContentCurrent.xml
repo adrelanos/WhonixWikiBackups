@@ -3816,14 +3816,15 @@ As soon as i2p over Tor is working in Whonix-Workstation, you can probably follo
     <ns>0</ns>
     <id>63</id>
     <revision>
-      <id>8480</id>
-      <parentid>7617</parentid>
-      <timestamp>2014-08-06T01:05:10Z</timestamp>
+      <id>8484</id>
+      <parentid>8480</parentid>
+      <timestamp>2014-08-06T13:40:30Z</timestamp>
       <contributor>
-        <ip>127.0.0.1</ip>
+        <username>Patrick</username>
+        <id>2</id>
       </contributor>
-      <comment>/* Introduction */</comment>
-      <text xml:space="preserve" bytes="11035">{{#seo:
+      <comment>&quot;private and encrypted&quot; - reference/link?</comment>
+      <text xml:space="preserve" bytes="10824">{{#seo:
 |description=Anonymously host any server with Whonix and Tor hidden services
 }}
 {{Header}}
@@ -3836,8 +3837,6 @@ Be sure to read and understand [https://www.torproject.org/docs/hidden-services.
 You do not need SSL &lt;ref&gt;https://en.wikipedia.org/wiki/Secure_Sockets_Layer&lt;/ref&gt;, because connections to Tor hidden services are end-to-end encrypted by default &lt;ref&gt;http://www.quora.com/Is-there-an-SSL-equivalent-for-Tor-Hidden-Services&lt;/ref&gt;. &lt;ref&gt;To be exact, only tor-to-tor, see [[Hidden_Services#Notes_about_End-to-end_security_of_Hidden_Services|Notes about End-to-end security of Hidden Services]].&lt;/ref&gt; This is handy, as you do not have to bother with self signed certificates or certificate authorities.
 
 An adversary can see whether the service (and presumably Tor) is up and running or not.
-
-With the coming overhaul of the Hidden Service protocol, Hidden Service addresses will be private and encrypted - only visible to those who you explicitly hand out the addresses to. But as of now it is not so.
 
 == Hosting ANY Hidden Services ==
 You can provide '''any''' server service, which relies on TCP, such as web servers, IRC servers, chat servers and so forth. UDP and IPv6 are not supported by the Tor network, but if required you could use [[OnionCat]] as a workaround.
@@ -4022,7 +4021,7 @@ Hidden Services with Whonix are still safer than running Tor and the server soft
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>q8tqbemnmuubwzuykqx8cx06dmmw909</sha1>
+      <sha1>rvu62ypg8csddkdxfgf5d2m8w8kxwr5</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -16410,15 +16409,15 @@ It should address all the current single points of failure:
     <ns>0</ns>
     <id>136</id>
     <revision>
-      <id>7315</id>
-      <parentid>7313</parentid>
-      <timestamp>2014-04-05T05:18:05Z</timestamp>
+      <id>8483</id>
+      <parentid>8482</parentid>
+      <timestamp>2014-08-06T13:36:23Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* Voip Server */</comment>
-      <text xml:space="preserve" bytes="14426">{{Header}}
+      <comment>/* Mumble Server Instructions */</comment>
+      <text xml:space="preserve" bytes="14424">{{Header}}
 {{#seo:
 |description=Anonymous Voice over IP (VOIP). Encrypted anonymous phone calls using the Tor Anonymity Network.
 }}
@@ -16495,8 +16494,9 @@ mumble&lt;ref&gt;http://mumble.sourceforge.net/&lt;/ref&gt;
 * When one of the two communication partners hosts a mumble server as Tor hidden service and the other one connects over Tor, encryption is already provided by Tor. There are different ways to achieve security. In this case, setting a server password (explained below), should be sufficient. &lt;font size=-3&gt;Mumble's own encryption isn't required. Alternatively, feel free to learn about mumble certificates for defense in depth, channel passwords instead of server password and so on.&lt;/font&gt;
 
 ===== Mumble Server Instructions =====
-
 If you want to read and introduction about hidden services and to learn about about hidden service security, see [[Hidden Services]].
+
+If you also want to run a hidden web server on the same .onion domain (nice for testing and learning Hidden Services basics), see [[Hidden Services]].
 
 On Whonix-Gateway.
 
@@ -16506,43 +16506,52 @@ Open your {{Code2|/etc/tor/torrc}}.
 
 Add.
 
+&lt;pre&gt;
 HiddenServiceDir /var/lib/tor/mumble_service/
-
-If you also want to run a hidden web server on the same .onion domain, optionally add. (Nice for testing, see [[Hidden Services]], you can comment it out later.)
-
-&lt;pre&gt;HiddenServicePort 80 192.168.0.11:80&lt;/pre&gt;
-
-Also add.
-
-&lt;pre&gt;HiddenServicePort 64738 192.168.0.11:64738&lt;/pre&gt;
+HiddenServicePort 64738 192.168.0.11:64738
+&lt;/pre&gt;
 
 Reload Tor.
 
-&lt;pre&gt;sudo service tor reload&lt;/pre&gt;
+&lt;pre&gt;
+sudo service tor reload
+&lt;/pre&gt;
 
 Reminder: To get your hidden service url.
 
-&lt;pre&gt;## must be root: sudo su
-nano /var/lib/tor/hidden_service/hostname&lt;/pre&gt;
+&lt;pre&gt;
+sudo cat /var/lib/tor/mumble_service/hostname
+&lt;/pre&gt;
 
-Reminder: Backup your hidden service key, in case you want to be able to restore it, on another machine, on a newer Whonix-Gateway, after hdd failure, etc.
+Reminder: Backup your hidden service key, in case you want to be able to restore it, on another machine, on a newer Whonix-Gateway, after hdd failure, etc. You can find it here and need sudo to access it.
 
-&lt;pre&gt;## must be root: sudo su
-/var/lib/tor/hidden_service/private_key&lt;/pre&gt;
+&lt;pre&gt;
+/var/lib/tor/hidden_service/private_key
+&lt;/pre&gt;
 
 On Whonix-Workstation.
 
+To host a mumble server, mumble-server from wheezy-backports.
+
+TODO: Explain how to enable wheezy-backports. We need a template for that.
+
 Update package lists.
 
-&lt;pre&gt;sudo apt-get update&lt;/pre&gt;
+&lt;pre&gt;
+sudo apt-get update
+&lt;/pre&gt;
 
-To host a mumble server, install. (Currently a bit more difficult, see [[Special:AWCforum/st/id232/#post_1098|forum]].)
+Install.
 
-&lt;pre&gt;sudo apt-get install mumble-server&lt;/pre&gt;
+&lt;pre&gt;
+sudo apt-get install -t wheezy-backports mumble-server
+&lt;/pre&gt;
 
 Configure the server.
 
-&lt;pre&gt;sudo dpkg-reconfigure mumble-server&lt;/pre&gt;
+&lt;pre&gt;
+sudo dpkg-reconfigure mumble-server
+&lt;/pre&gt;
 
 The following questions...
 
@@ -16554,15 +16563,21 @@ There is also an upstream [http://mumble.sourceforge.net/Running_Murmur Murmur],
 
 Set a server password. Open ''/etc/mumble-server.ini''.
 
-&lt;pre&gt;kdesudo kwrite /etc/mumble-server.ini&lt;/pre&gt;
+&lt;pre&gt;
+kdesudo kwrite /etc/mumble-server.ini
+&lt;/pre&gt;
 
 Search for &quot;''serverpassword=''&quot; and file in.
 
-&lt;pre&gt;serverpassword=use_a_long_and_secure_server_password&lt;/pre&gt;
+&lt;pre&gt;
+serverpassword=use_a_long_and_secure_server_password
+&lt;/pre&gt;
 
 Restart mumble-server.
 
-&lt;pre&gt;sudo service mumble-server restart&lt;/pre&gt;
+&lt;pre&gt;
+sudo service mumble-server restart
+&lt;/pre&gt;
 
 ===== Mumble Client =====
 
@@ -16663,7 +16678,7 @@ As it's author [https://lists.torproject.org/pipermail/tor-talk/2013-February/02
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>os5nf3end3ti2fvfgw8neredy0igq6z</sha1>
+      <sha1>4bwlmey15lz1v02fvjycubwr0uzqx2a</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
