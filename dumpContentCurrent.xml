@@ -3816,15 +3816,14 @@ As soon as i2p over Tor is working in Whonix-Workstation, you can probably follo
     <ns>0</ns>
     <id>63</id>
     <revision>
-      <id>8484</id>
-      <parentid>8480</parentid>
-      <timestamp>2014-08-06T13:40:30Z</timestamp>
+      <id>8485</id>
+      <parentid>8484</parentid>
+      <timestamp>2014-08-06T22:54:49Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>&quot;private and encrypted&quot; - reference/link?</comment>
-      <text xml:space="preserve" bytes="10824">{{#seo:
+      <comment>stated in Robert Ransom's proposal in the Hidden Services need some love blogpost</comment>
+      <text xml:space="preserve" bytes="11110">{{#seo:
 |description=Anonymously host any server with Whonix and Tor hidden services
 }}
 {{Header}}
@@ -3837,6 +3836,8 @@ Be sure to read and understand [https://www.torproject.org/docs/hidden-services.
 You do not need SSL &lt;ref&gt;https://en.wikipedia.org/wiki/Secure_Sockets_Layer&lt;/ref&gt;, because connections to Tor hidden services are end-to-end encrypted by default &lt;ref&gt;http://www.quora.com/Is-there-an-SSL-equivalent-for-Tor-Hidden-Services&lt;/ref&gt;. &lt;ref&gt;To be exact, only tor-to-tor, see [[Hidden_Services#Notes_about_End-to-end_security_of_Hidden_Services|Notes about End-to-end security of Hidden Services]].&lt;/ref&gt; This is handy, as you do not have to bother with self signed certificates or certificate authorities.
 
 An adversary can see whether the service (and presumably Tor) is up and running or not.
+
+With the coming overhaul of the Hidden Service protocol, Hidden Service addresses will be private and encrypted - only visible to those who you explicitly hand out the addresses to. But as of now it is not so. &lt;ref&gt;https://blog.torproject.org/blog/hidden-services-need-some-love&lt;/ref&gt;
 
 == Hosting ANY Hidden Services ==
 You can provide '''any''' server service, which relies on TCP, such as web servers, IRC servers, chat servers and so forth. UDP and IPv6 are not supported by the Tor network, but if required you could use [[OnionCat]] as a workaround.
@@ -4021,7 +4022,7 @@ Hidden Services with Whonix are still safer than running Tor and the server soft
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>rvu62ypg8csddkdxfgf5d2m8w8kxwr5</sha1>
+      <sha1>i7ss8mb255sorblrdlk5mb9tcx2a4wp</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -18091,14 +18092,13 @@ Essentially this feature allows to directly use physical PCI devices on the host
     <ns>0</ns>
     <id>148</id>
     <revision>
-      <id>8261</id>
-      <parentid>8260</parentid>
-      <timestamp>2014-07-13T13:31:26Z</timestamp>
+      <id>8486</id>
+      <parentid>8261</parentid>
+      <timestamp>2014-08-07T06:47:08Z</timestamp>
       <contributor>
-        <username>Patrick</username>
-        <id>2</id>
+        <ip>127.0.0.1</ip>
       </contributor>
-      <comment>Rejected the last text change (by [[Special:Contributions/127.0.0.1|127.0.0.1]]) and restored revision 7204 by Patrick: let's discuss this somewhere</comment>
+      <comment>/* Download the key */</comment>
       <text xml:space="preserve" bytes="4201">&lt;!--
 Copyright:
 
@@ -18164,8 +18164,8 @@ pub   4096R/2EEACCDA 2014-01-16 [expires: 2015-01-16]
       Key fingerprint = 916B 8D99 C38E AF5E 8ADC  7A2A 8D66 066A 2EEA CCDA
 uid                 [ unknown] Patrick Schleizer &lt;adrelanos@riseup.net&gt;
 sub   4096R/0x3B1E6942CE998547 2014-01-16 [expires: 2015-01-16]
-sub   4096R/0x10FDAC53119B3FD6 2014-01-16 [expires: 2015-01-16]
-sub   4096R/0xCB8D50BB77BB3C48 2014-01-16 [expires: 2015-01-16]
+sub   4096R/0x10FDAC53119B3FD6 2014-01-16 [expires: 2015-01-17]
+sub   4096R/0xCB8D50BB77BB3C48 2014-01-16 [expires: 2015-01-17]
 &lt;/pre&gt;
 
 &lt;s&gt;5. For better security, read below.&lt;/s&gt;
@@ -18203,7 +18203,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>dbarsqm1r27y68iv23mxfbzyss85uyb</sha1>
+      <sha1>8ifqn8ql0tg4x2g6gkfqqgbzc1rb8hi</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
