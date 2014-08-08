@@ -3816,15 +3816,15 @@ As soon as i2p over Tor is working in Whonix-Workstation, you can probably follo
     <ns>0</ns>
     <id>63</id>
     <revision>
-      <id>8488</id>
-      <parentid>8485</parentid>
-      <timestamp>2014-08-07T15:48:57Z</timestamp>
+      <id>8489</id>
+      <parentid>8488</parentid>
+      <timestamp>2014-08-08T00:48:56Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>There is no &quot;coming overhaul&quot;, just proposal and ask for help. - &quot;Hidden Services are in a peculiar situation. [...], there are no dedicated Tor developers to take care of them.&quot; Also the term &quot;privat</comment>
-      <text xml:space="preserve" bytes="10824">{{#seo:
+      <comment>/* Setup */</comment>
+      <text xml:space="preserve" bytes="10827">{{#seo:
 |description=Anonymously host any server with Whonix and Tor hidden services
 }}
 {{Header}}
@@ -3903,15 +3903,13 @@ Restart Tor.
 Reminder: To get your hidden service url.
 
 &lt;pre&gt;
-## requires root: sudo su
-nano /var/lib/tor/hidden_service/hostname
+sudo cat /var/lib/tor/hidden_service/hostname
 &lt;/pre&gt;
 
-Reminder: Backup your hidden service key, in case you want to be able to restore it, on another machine, on a newer Whonix-Gateway, after hdd failure, etc.
+Reminder: Backup your hidden service key, in case you want to be able to restore it, on another machine, on a newer Whonix-Gateway, after hdd failure, etc. You can find it here and you require root to access it.
 
 &lt;pre&gt;
-## requires root: sudo su
-nano /var/lib/tor/hidden_service/private_key
+/var/lib/tor/hidden_service/private_key
 &lt;/pre&gt;
 
 On your Whonix-Workstation:
@@ -4021,7 +4019,7 @@ Hidden Services with Whonix are still safer than running Tor and the server soft
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>rvu62ypg8csddkdxfgf5d2m8w8kxwr5</sha1>
+      <sha1>ncpl16xbpediz4s11mowi0rtxwsjusq</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
@@ -7529,15 +7527,15 @@ If you are going to use VirtualBox inside VirtualBox, be sure to change your hos
     <ns>0</ns>
     <id>95</id>
     <revision>
-      <id>8419</id>
-      <parentid>7636</parentid>
-      <timestamp>2014-08-02T07:44:00Z</timestamp>
+      <id>8492</id>
+      <parentid>8491</parentid>
+      <timestamp>2014-08-08T01:16:15Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <comment>/* I2P-Bote */</comment>
-      <text xml:space="preserve" bytes="23738">{{Header}}
+      <comment>/* Anonymity Friendly E-Mail Provider List */</comment>
+      <text xml:space="preserve" bytes="23565">{{Header}}
 &lt;!--
 Copyright:
 
@@ -7742,13 +7740,10 @@ Once we see that your account has a track record of being successfully accessed 
 * Recommended against. Not Tor friendly. It would be very difficult to sign up using Tor and to exclusively use it over Tor. They most likely ask for phone verification and this is almost impossible to do without jeopardizing anonymity. &lt;ref&gt;Because they are also aware of online phone and messaging services and blacklisting the for verification upon knowledge.&lt;/ref&gt;
 
 == Anonymity Friendly E-Mail Provider List ==
-
-Another anonymity network provider (JonDos), maintains a list of their recommended e-mail providers. Whonix developer Patrick Schleizer does NOT check this list. Might still be useful. See [https://anonymous-proxy-servers.net/en/help/thunderbird.html list], look for &quot;Recommended Mail Provider&quot;.
+Another anonymity network provider (JonDos), maintains a list of their recommended e-mail providers. Whonix developer Patrick Schleizer does NOT check this list. Might still be useful. See [https://anonymous-proxy-servers.net/en/help/email-provider.html list] ([https://archive.today/Rz9UN w]), look for &quot;Recommended Mail Provider&quot;.
 
 = Bitmessage =
-[https://bitmessage.org Bitmesage] might be another alternative to e-mail. See also [[Special:AWCforum/st/id239/Did_bitmassage_work_in_whonix%3F.html|Forum discussion]]. Not yet tested by Whonix developers, because [https://github.com/Bitmessage/PyBitmessage/issues/108 Bitmessage developers do not yet sign their their source code].
-
-&quot;Warning! Users report while Bitmessage runs is surfing over tor very slowly or even not possible.&quot; - Reference?
+[https://bitmessage.org Bitmesage] might be another alternative to e-mail. Not yet tested by Whonix developers, because [https://github.com/Bitmessage/PyBitmessage/issues/108 Bitmessage developers do not yet sign their their source code].
 
 = I2P-Bote =
 
@@ -7867,7 +7862,7 @@ under certain conditions; see the wiki source code for details.&lt;/pre&gt;
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>5c4z1qwh4manghbtm7u0ekuvozjb27h</sha1>
+      <sha1>25p6teuywikui4qwrc0c51wyoygf5qh</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
