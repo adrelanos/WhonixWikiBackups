@@ -18086,14 +18086,15 @@ Essentially this feature allows to directly use physical PCI devices on the host
     <ns>0</ns>
     <id>148</id>
     <revision>
-      <id>8487</id>
-      <parentid>8486</parentid>
-      <timestamp>2014-08-07T14:59:06Z</timestamp>
+      <id>8496</id>
+      <parentid>8495</parentid>
+      <timestamp>2014-08-09T22:31:52Z</timestamp>
       <contributor>
         <username>Patrick</username>
         <id>2</id>
       </contributor>
-      <text xml:space="preserve" bytes="4201">&lt;!--
+      <comment>/* Trusting the Key */</comment>
+      <text xml:space="preserve" bytes="3957">&lt;!--
 Copyright:
 
    Copyright (C) Amnesia &lt;amnesia at boum dot org&gt;
@@ -18162,13 +18163,7 @@ sub   4096R/0x10FDAC53119B3FD6 2014-01-16 [expires: 2015-01-16]
 sub   4096R/0xCB8D50BB77BB3C48 2014-01-16 [expires: 2015-01-16]
 &lt;/pre&gt;
 
-&lt;s&gt;5. For better security, read below.&lt;/s&gt;
-
-= Trusting the Key =
-== Download the key from multiple sources ==
-Was a flawed concept. [[Deprecated#Download_the_key_from_multiple_sources|Deprecated]].
-
-== Web of Trust ==
+= Web of Trust =
 No one signed Patrick Schleizer's (adrelanos') key yet. If you're active in the Free Software community and in the vicinity of Leipzig, Germany, please meet up with Patrick Schleizer for key signing.
 
 = Further reading on OpenPGP =
@@ -18180,9 +18175,6 @@ No one signed Patrick Schleizer's (adrelanos') key yet. If you're active in the 
 = See Also =
 * [[Trust]]
 * [[OpenPGP|OpenPGP key distribution strategies]]
-
-= Footnotes / References =
-&lt;references /&gt;
 
 = License =
 &lt;pre&gt;
@@ -18197,7 +18189,7 @@ under certain conditions; see the wiki source code for details.
 {{Footer}}
 
 [[Category:Documentation]]</text>
-      <sha1>dbarsqm1r27y68iv23mxfbzyss85uyb</sha1>
+      <sha1>anlqb8xr9pgsue3of0ayhg6zevpsice</sha1>
       <model>wikitext</model>
       <format>text/x-wiki</format>
     </revision>
